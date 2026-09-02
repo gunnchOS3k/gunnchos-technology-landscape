@@ -1,0 +1,45 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Setup Python
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -U pip
+          .venv/bin/pip install pyyaml pytest
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.7.32"
+      - name: Install TeX (TinyTeX) and SVG converter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+          quarto install tinytex --no-prompt
+      - name: Validate
+        run: make validate
+      - name: Test
+        run: make test
+      - name: HTML render
+        run: make preview
+      - name: EPUB render
+        run: make epub
+      - name: PDF render
+        run: make pdf
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter2-preview
+          path: |
+            preview/ch02.html
+            preview/ch02.epub
+            preview/ch02.pdf
+          if-no-files-found: error

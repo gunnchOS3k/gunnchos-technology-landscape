@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAB-TAP-001 Browser Route</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; max-width: 40rem; line-height: 1.45; }
+    button { font-size: 1rem; padding: 0.6rem 1rem; margin: 0.25rem 0.25rem 0.25rem 0; }
+    .pressed { background: #222; color: #fff; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #333; padding: 0.4rem; text-align: left; }
+    .note { color: #333; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>LAB-TAP-001 — Browser route</h1>
+  <p class="note">Local demo for observing input, handler, optional network, and visible update timing. Do not enter secrets.</p>
+  <button id="localBtn" type="button">Local only</button>
+  <button id="remoteBtn" type="button">Fetch remote sample</button>
+  <p id="status" aria-live="polite">Ready.</p>
+  <table>
+    <thead><tr><th>Marker</th><th>ms from navigationStart (performance.now basis)</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <script>
+    const rows = document.getElementById('rows');
+    const status = document.getElementById('status');
+    function mark(label) {
+      const t = performance.now().toFixed(2);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${label}</td><td>${t}</td>`;
+      rows.appendChild(tr);
+      return performance.now();
+    }
+    document.getElementById('localBtn').addEventListener('click', (ev) => {
+      const btn = ev.currentTarget;
+      const t0 = mark('input: click (local)');
+      const t1 = mark('handler: start (local)');
+      btn.classList.add('pressed');
+      status.textContent = 'Local state updated.';
+      requestAnimationFrame(() => {
+        mark('raf: before paint opportunity (local)');
+        requestAnimationFrame(() => mark('raf: after paint opportunity (local, inferred)'));
+      });
+      mark('handler: end (local)');
+      console.log('local path', {t0, t1});
+    });
+    document.getElementById('remoteBtn').addEventListener('click', async (ev) => {
+      const btn = ev.currentTarget;
+      mark('input: click (remote)');
+      mark('handler: start (remote)');
+      btn.classList.add('pressed');
+      status.textContent = 'Requesting sample...';
+      mark('network: request start');
+      try {
+        const res = await fetch('https://httpbin.org/delay/1');
+        mark('network: response headers received');
+        await res.text();
+        mark('network: body complete');
+        status.textContent = 'Remote sample received (httpbin delay demo).';
+      } catch (err) {
+        mark('network: failure');
+        status.textContent = 'Remote request failed (still useful evidence).';
+      }
+      requestAnimationFrame(() => mark('raf: after response (remote)'));
+      mark('handler: async path settled (remote)');
+    });
+  </script>
+</body>
+</html>

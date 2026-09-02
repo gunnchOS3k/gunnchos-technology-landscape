@@ -1,0 +1,25 @@
+modules:
+  - id: CE-1
+    title: "Technology Is a System, Not a Screen"
+    status: scaffold
+    maps_to: [CH01]
+  - id: CE-2
+    title: "Follow One Tap Through the Entire Stack"
+    status: full-prototype
+    maps_to: [CH02]
+  - id: CE-3
+    title: "CPU, Memory, Storage, and the OS"
+    status: scaffold
+    maps_to: [CH06, CH07, CH12]
+  - id: CE-4
+    title: "Packets, Wi-Fi/Cellular, Edge and Cloud"
+    status: scaffold
+    maps_to: [CH15, CH16, CH17, CH18]
+  - id: CE-5
+    title: "AI, Security, Privacy and Trust"
+    status: scaffold
+    maps_to: [CH21, CH23, CH24]
+  - id: CE-6
+    title: "The Stability Contract + Capstone"
+    status: scaffold
+    maps_to: [CH20, CH31]

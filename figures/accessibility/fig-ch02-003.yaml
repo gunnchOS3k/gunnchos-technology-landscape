@@ -1,0 +1,26 @@
+figure_id: FIG-CH02-003
+title: "Representative Device Exploded View"
+caption: "Representative educational architecture of a touch-capable device. Not a specific validated hardware revision."
+alt_text: "Exploded educational device: cover, digitizer, board, CPU, GPU, RAM, storage, radio, battery, thermal, input."
+text_equivalent: |
+  Spatially exploded educational device with vertically separated isometric-ish plates and chips:
+  Cover/display, Digitizer, Board/SoC, CPU, GPU, RAM, Storage, Radio (dashed border), Battery/power,
+  Thermal path (dashed outline), and side Input hardware. Each label includes name, short role, and
+  failure symptom. Banner text: Representative educational architecture. Explicitly not a validated
+  gunnchOS EVT unit.
+reading_order:
+  - "Banner: Representative educational architecture"
+  - "Cover / display — pixels out — Fail: blank / dead pixels"
+  - "Digitizer — touch sense — Fail: missed / ghost taps"
+  - "Board / SoC — compute hub — Fail: boot hang / reset"
+  - "CPU · GPU — Fail: stalls / jank · frame drops"
+  - "RAM — working set — Fail: OOM / thrash"
+  - "Storage — persist — Fail: corrupt / slow I/O"
+  - "Radio — link out — Fail: drop / timeout"
+  - "Battery / power — energy — Fail: brownout / shutdown"
+  - "Thermal path — heat out — Fail: throttle / heat kill"
+  - "Input hardware — buttons / sensors — Fail: stuck / mute"
+source: figures/exploded-views/fig-ch02-003-device-exploded.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.2.0"

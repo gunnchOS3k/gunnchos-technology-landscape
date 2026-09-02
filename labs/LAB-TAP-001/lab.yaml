@@ -1,0 +1,52 @@
+lab_id: LAB-TAP-001
+title: Trace and Measure One Tap
+chapter: CH02
+question: "How much of a tap-to-response path can I directly observe on a device I already own?"
+experience: "A button responds; some work may be local and some may be network-dependent."
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher]
+prerequisites:
+  concepts: [event, latency, event-loop, packet]
+  safety:
+    - Do not capture secrets, passwords, tokens, or private messages in screenshots or logs.
+    - Prefer local demo pages; avoid production accounts with sensitive data.
+  time_minutes: 45
+  equipment: []
+  software: [modern web browser with developer tools, Python 3]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_trace: true
+  simulation: false
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict which stage will take longest.
+    - Complete Route A or Route B baseline.
+    - Capture evidence artifacts.
+    - Separate observation from inference.
+  rollback:
+    - Close the demo page/app.
+    - Delete any accidental sensitive captures.
+evidence:
+  required_artifacts:
+    - timestamp table
+    - screenshot or log excerpt
+    - short explanation
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - logging overhead
+    - clock granularity
+    - browser instrumentation differs from kernel measurement
+  uncertainty:
+    - one run is not a benchmark
+    - software timestamps do not measure every physical stage
+portfolio:
+  outputs: [README.md, diagram, result table, evidence artifact, reflection, teach-back paragraph]
+teach_back:
+  required: true

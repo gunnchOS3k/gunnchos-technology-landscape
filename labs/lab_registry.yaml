@@ -1,0 +1,9 @@
+labs:
+  - lab_id: LAB-TAP-001
+    title: Trace and Measure One Tap
+    chapter: CH02
+    path: labs/LAB-TAP-001
+    baseline_routes: [browser, local_app]
+    extension_routes: [android]
+    no_specialized_hardware: true
+    status: draft

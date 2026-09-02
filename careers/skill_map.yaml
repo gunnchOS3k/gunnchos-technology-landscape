@@ -1,0 +1,10 @@
+skills:
+  - id: observe-events
+    label: Observe input and response events
+    chapters: [CH02]
+  - id: separate-observation-inference
+    label: Separate observation from inference
+    chapters: [CH02]
+  - id: latency-budgeting
+    label: Build an honest latency budget
+    chapters: [CH02, CH03, CH20]

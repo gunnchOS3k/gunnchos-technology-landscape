@@ -1,0 +1,5 @@
+/.quarto/
+chapter_files/
+*.html
+*.pdf
+*.epub

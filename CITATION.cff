@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this publication system, please cite it.
+title: "The Technology Landscape"
+authors:
+  - family-names: Gunn
+    given-names: Edmund
+    name-suffix: Jr.
+version: "0.1.0-foundation"
+date-released: "2026-09-02"
+license: "AUTHOR_DECISION_PENDING"
+repository-code: "https://github.com/gunnchOS3k/gunnchos-technology-landscape"
+abstract: >
+  An accessible systems-level guide connecting human experience, computers,
+  software, networks, AI, devices, infrastructure, security, and society
+  through evidence-backed examples and WAIKE labs.

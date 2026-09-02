@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "The Technology Landscape"
+  subtitle: "How Computers, Networks, AI, and Devices Create the Experiences We Depend On"
+  author: "Edmund Gunn, Jr."
+  chapters:
+    - index.qmd
+    - book/chapters/ch02/chapter.md
+
+bibliography: book/references/references.bib
+link-citations: true
+
+format:
+  html:
+    toc: true
+    theme: cosmo
+  pdf:
+    documentclass: book
+  epub:
+    toc: true

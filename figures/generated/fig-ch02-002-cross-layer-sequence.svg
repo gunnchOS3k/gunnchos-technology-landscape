@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Sequence diagram: Human, Input HW, OS, Application, Network, Service, Renderer with message arrows and failure branch.">
+  <title>FIG-CH02-002: Cross-Layer Tap Sequence</title>
+  <desc>Real sequence diagram with seven actor columns and vertical lifelines: Human, Input HW, OS, Application, Network, Service, Renderer. Solid message arrows show the happy path. A dashed optional path reaches Network and Service. A dashed failure return marked with an X shows network/service failure while a solid local path still reaches Renderer. Not a vertical list of rows.</desc>
+  <defs>
+    <marker id="arr002" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+    <marker id="arr002d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1F4B7A"/>
+    </marker>
+    <marker id="arr002f" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#666666"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="560" fill="#ffffff"/>
+  <rect x="1" y="1" width="1098" height="558" fill="none" stroke="#222222" stroke-width="2"/>
+
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH02-002 — Cross-Layer Tap Sequence</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram · Durations illustrative where shown</text>
+
+  <!-- Actor columns: x centers at 80, 220, 360, 500, 640, 780, 920 -->
+  <!-- Headers -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#111111">
+    <rect x="30" y="68" width="100" height="36" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+    <text x="80" y="90">Human</text>
+    <rect x="170" y="68" width="100" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="220" y="90">Input HW</text>
+    <rect x="310" y="68" width="100" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="360" y="90">OS</text>
+    <rect x="450" y="68" width="100" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="500" y="90">Application</text>
+    <rect x="590" y="68" width="100" height="36" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="640" y="90">Network</text>
+    <rect x="730" y="68" width="100" height="36" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="780" y="90">Service</text>
+    <rect x="870" y="68" width="100" height="36" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+    <text x="920" y="90">Renderer</text>
+  </g>
+
+  <!-- Lifelines -->
+  <g stroke="#888888" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="80" y1="104" x2="80" y2="500"/>
+    <line x1="220" y1="104" x2="220" y2="500"/>
+    <line x1="360" y1="104" x2="360" y2="500"/>
+    <line x1="500" y1="104" x2="500" y2="500"/>
+    <line x1="640" y1="104" x2="640" y2="500"/>
+    <line x1="780" y1="104" x2="780" y2="500"/>
+    <line x1="920" y1="104" x2="920" y2="500"/>
+  </g>
+
+  <!-- Messages -->
+  <!-- 1. Human → Input HW: tap -->
+  <line x1="80" y1="130" x2="212" y2="130" stroke="#111111" stroke-width="1.75" marker-end="url(#arr002)"/>
+  <text x="146" y="124" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">1. tap / contact</text>
+
+  <!-- 2. Input HW → OS: event -->
+  <line x1="220" y1="168" x2="352" y2="168" stroke="#111111" stroke-width="1.75" marker-end="url(#arr002)"/>
+  <text x="286" y="162" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">2. input event</text>
+
+  <!-- 3. OS → Application: deliver -->
+  <line x1="360" y1="206" x2="492" y2="206" stroke="#111111" stroke-width="1.75" marker-end="url(#arr002)"/>
+  <text x="426" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">3. deliver to app</text>
+
+  <!-- 4. Application local update -->
+  <line x1="500" y1="244" x2="500" y2="268" stroke="#111111" stroke-width="1.75"/>
+  <rect x="448" y="268" width="104" height="28" fill="#f5f5f5" stroke="#111111" stroke-width="1"/>
+  <text x="500" y="286" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#111111">4. local state</text>
+
+  <!-- 5. Optional: App → Network → Service -->
+  <line x1="500" y1="320" x2="632" y2="320" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" marker-end="url(#arr002d)"/>
+  <text x="566" y="314" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1F4B7A">5. OPTIONAL request</text>
+  <line x1="640" y1="350" x2="772" y2="350" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" marker-end="url(#arr002d)"/>
+  <text x="706" y="344" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1F4B7A">forward to service</text>
+
+  <!-- Failure branch: Service X back to App (dashed) -->
+  <line x1="780" y1="390" x2="508" y2="390" stroke="#666666" stroke-width="1.75" stroke-dasharray="4 3" marker-end="url(#arr002f)"/>
+  <text x="644" y="384" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">failure / retry</text>
+  <!-- X mark at failure -->
+  <line x1="768" y1="378" x2="792" y2="402" stroke="#111111" stroke-width="2"/>
+  <line x1="792" y1="378" x2="768" y2="402" stroke="#111111" stroke-width="2"/>
+  <text x="810" y="396" font-family="Helvetica,Arial,sans-serif" font-size="10" font-weight="bold" fill="#111111">X fail</text>
+
+  <!-- Success optional return (above failure, lighter) -->
+  <line x1="780" y1="370" x2="508" y2="370" stroke="#1F4B7A" stroke-width="1.25" stroke-dasharray="6 4" marker-end="url(#arr002d)"/>
+  <text x="644" y="364" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#1F4B7A">or response OK</text>
+
+  <!-- 6. App → Renderer (local always) -->
+  <line x1="500" y1="430" x2="912" y2="430" stroke="#111111" stroke-width="1.75" marker-end="url(#arr002)"/>
+  <text x="706" y="424" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">6. present frame (local path continues)</text>
+
+  <!-- 7. Renderer → Human -->
+  <line x1="920" y1="470" x2="88" y2="470" stroke="#111111" stroke-width="1.75" marker-end="url(#arr002)"/>
+  <text x="504" y="464" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">7. visible feedback · human perceives</text>
+
+  <!-- Footer actors again -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="10" text-anchor="middle" fill="#555555">
+    <text x="80" y="520">Human</text>
+    <text x="220" y="520">Input HW</text>
+    <text x="360" y="520">OS</text>
+    <text x="500" y="520">Application</text>
+    <text x="640" y="520">Network</text>
+    <text x="780" y="520">Service</text>
+    <text x="920" y="520">Renderer</text>
+  </g>
+
+  <text x="24" y="548" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Solid = required messages · Dashed = optional network/service · X = failure/retry branch</text>
+</svg>

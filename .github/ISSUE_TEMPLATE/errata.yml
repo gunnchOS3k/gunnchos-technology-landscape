@@ -1,0 +1,24 @@
+name: Errata
+description: Report an error in the publication
+title: "[errata] "
+labels: ["errata"]
+body:
+  - type: input
+    id: edition
+    attributes:
+      label: Edition / version
+      placeholder: "0.1.0-foundation"
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter ID
+      placeholder: CH02
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: [critical, major, minor, typo]
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong?

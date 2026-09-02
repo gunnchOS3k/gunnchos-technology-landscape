@@ -1,0 +1,19 @@
+prerequisites:
+  - concept: event
+    requires: []
+  - concept: touch-digitizer
+    requires: []
+  - concept: device-driver
+    requires: [touch-digitizer]
+  - concept: kernel
+    requires: [device-driver]
+  - concept: scheduler
+    requires: [kernel, process, thread]
+  - concept: event-loop
+    requires: [event]
+  - concept: packet
+    requires: [protocol]
+  - concept: latency
+    requires: [event]
+  - concept: stability-contract
+    requires: [latency, event-loop, packet]

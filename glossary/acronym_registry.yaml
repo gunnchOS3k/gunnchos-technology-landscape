@@ -1,0 +1,13 @@
+acronyms:
+  - acronym: API
+    expands_to: "API"
+    concept_id: api
+  - acronym: CPU
+    expands_to: "CPU"
+    concept_id: cpu
+  - acronym: GPU
+    expands_to: "GPU"
+    concept_id: gpu
+  - acronym: RAM
+    expands_to: "RAM"
+    concept_id: ram

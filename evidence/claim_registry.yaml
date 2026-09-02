@@ -1,0 +1,135 @@
+claims:
+  - claim_id: CLM-0001
+    chapter: CH02
+    text: "WAIKE accepted main hosts file-backed curriculum packages and lab validators, including COMPUTER_NETWORKING, GAME_DEV_INTERACTIVE, EMBEDDED_PROTOTYPING, and SOFTWARE_BUILDER digital_rc courses."
+    scope: project-specific
+    classification: repository-implemented
+    source:
+      type: github
+      repository: gunnchOS3k/waike-research-ops
+      branch: main
+      commit: "8eb2827dc58ffa391842da1bfb1ee665c25a31a7"
+      path: curriculum/digital_rc/COMPUTER_NETWORKING/course.json
+      lines: ""
+      supporting_paths:
+        - curriculum/catalog.yaml
+        - curriculum/digital_rc/GAME_DEV_INTERACTIVE/course.json
+        - curriculum/digital_rc/EMBEDDED_PROTOTYPING/course.json
+        - curriculum/digital_rc/SOFTWARE_BUILDER/course.json
+        - src/waike_course_ready/
+    verification:
+      method: "accepted-main course.json + catalog inspection"
+      command: "gh api repos/gunnchOS3k/waike-research-ops/commits/main"
+      result: "SHA 8eb2827... audited 2026-09-02"
+    limitations:
+      - "No literal UI tap-to-response lab ID exists in WAIKE."
+      - "README package-count text may be stale relative to on-disk count."
+    wording:
+      approved: "WAIKE provides file-backed digital course packages and validators on accepted main."
+      prohibited: ["WAIKE includes an official Trace One Tap course module"]
+    status: verified
+
+  - claim_id: CLM-0002
+    chapter: CH02
+    text: "gunnchOS device OS accepted main includes a software-simulated input routing path and an in-process digital runtime service catalog; beta_ready is false."
+    scope: project-specific
+    classification: repository-implemented
+    source:
+      type: github
+      repository: gunnchOS3k/gunnchos-device-os
+      branch: main
+      commit: "28562a8456207540c205a1c8a6434a491b0a4771"
+      path: gunnchos_device_os/shell/input_routing.py
+      lines: ""
+      supporting_paths:
+        - gunnchos_device_os/runtime/catalog.py
+        - beta_gate/beta_gate_status.yaml
+        - ring_input/STATUS.yaml
+    verification:
+      method: "accepted-main file inspection"
+      command: "git -C gunnchos-device-os rev-parse HEAD"
+      result: "SHA 28562a8... audited 2026-09-02"
+    limitations:
+      - "SOFTWARE_SIMULATED / digital; not a shipping OS."
+      - "Physical ring input not claimed."
+    wording:
+      approved: "gunnchOS device OS alpha exposes software-simulated input routing and digital runtime services."
+      prohibited: ["gunnchOS is a finished shipping OS", "physical ring is validated"]
+    status: verified
+
+  - claim_id: CLM-0003
+    chapter: CH02
+    text: "Device Quartet research form factors are defined in the hardware industrial-design repository as concept-complete learning benchmarks; physical fabrication remains pending."
+    scope: project-specific
+    classification: repository-documented
+    source:
+      type: github
+      repository: gunnchOS3k/gunnchos-hardware-industrial-design
+      branch: main
+      commit: "9ee0ef2f688b2c18428bfabc316b23687a02988d"
+      path: docs/device-quartet/README.md
+      lines: ""
+      supporting_paths:
+        - docs/device-quartet/student-14-5-research-spec.md
+        - docs/device-quartet/handheld-hybrid-research-spec.md
+        - docs/device-quartet/ds-xl-coder-research-spec.md
+        - docs/device-quartet/edge-io-wearables-research-spec.md
+        - DIGITAL_MANUFACTURING_READINESS.md
+    verification:
+      method: "accepted-main docs/device-quartet inspection"
+      command: "git -C gunnchos-hardware-industrial-design rev-parse HEAD"
+      result: "SHA 9ee0ef2... audited 2026-09-02"
+    limitations:
+      - "PHYSICAL_PENDING; DIGITAL_FABRICATION_PASS=FALSE."
+      - "Documentation of research form factors is not executable device implementation."
+      - "Not finished commercial products."
+    wording:
+      approved: "Device Quartet entries are research form factors / educational benchmarks, not validated manufactured products."
+      prohibited: ["Device Quartet units are shipping commercial products", "Device Quartet is repository-implemented silicon"]
+    status: verified
+
+  - claim_id: CLM-0004
+    chapter: CH02
+    text: "RAM is used as working memory by running software."
+    scope: general-knowledge
+    classification: textbook
+    source:
+      type: textbook
+      repository: ""
+      branch: ""
+      commit: ""
+      path: ""
+      lines: ""
+      citation_key: patterson-hennessy
+    verification:
+      method: "computer organization textbook consensus"
+      command: ""
+      result: "supported by patterson-hennessy bibliography entry"
+    limitations: []
+    wording:
+      approved: "RAM is working memory for running software."
+      prohibited: []
+    status: verified
+
+  - claim_id: CLM-0005
+    chapter: CH02
+    text: "Illustrative latency budget segments in FIG-CH02-006 are teaching aids, not measured gunnchOS benchmarks."
+    scope: project-specific
+    classification: illustrative
+    source:
+      type: publication
+      repository: gunnchOS3k/gunnchos-technology-landscape
+      branch: cursor/publication-foundation-v1
+      commit: "pending-on-push"
+      path: figures/architecture/fig-ch02-006-latency-budget.svg
+      lines: ""
+    verification:
+      method: "figure status label + SVG stacked segments"
+      command: ""
+      result: "status=illustrative"
+    limitations:
+      - "Do not present as measured device performance."
+    wording:
+      approved: "Illustrative latency budget for teaching."
+      prohibited: ["measured tap-to-photon latency on gunnchOS hardware"]
+    status: verified

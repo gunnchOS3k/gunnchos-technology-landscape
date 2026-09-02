@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-label="Horizontal stacked bar of latency budget segments: Sensing, Scheduling, Handler, Optional network, Render.">
+  <title>FIG-CH02-006: Tap Latency Budget</title>
+  <desc>A single horizontal stacked bar made of five adjacent rectangle segments with proportional widths: Sensing (narrow), Scheduling (narrow), Handler (medium), Optional network (longest), Render (medium). Each segment is labeled. Caption states Illustrative — not measured benchmarks. Accessibility: stacked bar segments exist as adjacent rects.</desc>
+
+  <rect width="1040" height="360" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="358" fill="none" stroke="#222222" stroke-width="2"/>
+
+  <text x="24" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH02-006 — Tap Latency Budget</text>
+  <text x="24" y="56" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#1F4B7A">Illustrative — not measured benchmarks</text>
+  <text x="24" y="76" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555555">Proportional teaching widths · network segment intentionally longest</text>
+
+  <!-- Axis labels -->
+  <text x="60" y="130" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">0</text>
+  <text x="980" y="130" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">total interaction time →</text>
+
+  <!-- Stacked bar: total width 900 from x=60 -->
+  <!-- Sensing: 80, Scheduling: 90, Handler: 160, Optional network: 400, Render: 170 = 900 -->
+  <g transform="translate(60,140)">
+    <!-- Sensing -->
+    <rect x="0" y="0" width="80" height="64" fill="#e8e8e8" stroke="#111111" stroke-width="2"/>
+    <text x="40" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Sensing</text>
+    <text x="40" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#444444">input</text>
+
+    <!-- Scheduling -->
+    <rect x="80" y="0" width="90" height="64" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+    <text x="125" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Scheduling</text>
+    <text x="125" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#444444">dispatch</text>
+
+    <!-- Handler -->
+    <rect x="170" y="0" width="160" height="64" fill="#dcdcdc" stroke="#111111" stroke-width="2"/>
+    <text x="250" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Handler</text>
+    <text x="250" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#444444">local update</text>
+
+    <!-- Optional network (longest, dashed border) -->
+    <rect x="330" y="0" width="400" height="64" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 3"/>
+    <text x="530" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1F4B7A">Optional network</text>
+    <text x="530" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#444444">RTT + service (if used) · longest segment</text>
+
+    <!-- Render -->
+    <rect x="730" y="0" width="170" height="64" fill="#f0f0f0" stroke="#111111" stroke-width="2"/>
+    <text x="815" y="28" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Render</text>
+    <text x="815" y="46" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#444444">compose · scanout</text>
+  </g>
+
+  <!-- Bracket under bar -->
+  <line x1="60" y1="220" x2="960" y2="220" stroke="#111111" stroke-width="1"/>
+  <line x1="60" y1="214" x2="60" y2="226" stroke="#111111" stroke-width="1"/>
+  <line x1="960" y1="214" x2="960" y2="226" stroke="#111111" stroke-width="1"/>
+
+  <!-- Legend / callouts -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">
+    <rect x="60" y="250" width="14" height="14" fill="#e8e8e8" stroke="#111111" stroke-width="1"/>
+    <text x="82" y="262">Sensing — contact → event</text>
+
+    <rect x="280" y="250" width="14" height="14" fill="#ffffff" stroke="#111111" stroke-width="1"/>
+    <text x="302" y="262">Scheduling — queue → handler</text>
+
+    <rect x="520" y="250" width="14" height="14" fill="#dcdcdc" stroke="#111111" stroke-width="1"/>
+    <text x="542" y="262">Handler — app work</text>
+
+    <rect x="60" y="280" width="14" height="14" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="82" y="292">Optional network — dashed border; omit when fully local</text>
+
+    <rect x="480" y="280" width="14" height="14" fill="#f0f0f0" stroke="#111111" stroke-width="1"/>
+    <text x="502" y="292">Render — frame to display</text>
+  </g>
+
+  <text x="24" y="340" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#666666">Status: illustrative · Adjacent rect segments form one stacked bar · Fill patterns + labels encode segments</text>
+</svg>

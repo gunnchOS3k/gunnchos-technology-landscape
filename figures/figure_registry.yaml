@@ -1,0 +1,43 @@
+figures:
+  - figure_id: FIG-CH02-001
+    title: "One Tap: Human-to-System Overview"
+    path: figures/ecosystem/fig-ch02-001-human-to-system.svg
+    accessibility: figures/accessibility/fig-ch02-001.yaml
+    status: conceptual
+    chapter: CH02
+  - figure_id: FIG-CH02-002
+    title: "Cross-Layer Tap Sequence"
+    path: figures/sequence/fig-ch02-002-cross-layer-sequence.svg
+    accessibility: figures/accessibility/fig-ch02-002.yaml
+    status: conceptual
+    chapter: CH02
+  - figure_id: FIG-CH02-003
+    title: "Representative Device Exploded View"
+    path: figures/exploded-views/fig-ch02-003-device-exploded.svg
+    accessibility: figures/accessibility/fig-ch02-003.yaml
+    status: conceptual
+    chapter: CH02
+  - figure_id: FIG-CH02-004
+    title: "Software Stack"
+    path: figures/architecture/fig-ch02-004-software-stack.svg
+    accessibility: figures/accessibility/fig-ch02-004.yaml
+    status: conceptual
+    chapter: CH02
+  - figure_id: FIG-CH02-005
+    title: "Local vs Network-Dependent Tap"
+    path: figures/ecosystem/fig-ch02-005-local-vs-network.svg
+    accessibility: figures/accessibility/fig-ch02-005.yaml
+    status: conceptual
+    chapter: CH02
+  - figure_id: FIG-CH02-006
+    title: "Tap Latency Budget"
+    path: figures/architecture/fig-ch02-006-latency-budget.svg
+    accessibility: figures/accessibility/fig-ch02-006.yaml
+    status: illustrative
+    chapter: CH02
+  - figure_id: FIG-CH02-007
+    title: "Stability Contract"
+    path: figures/architecture/fig-ch02-007-stability-contract.svg
+    accessibility: figures/accessibility/fig-ch02-007.yaml
+    status: conceptual
+    chapter: CH02

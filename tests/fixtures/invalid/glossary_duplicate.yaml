@@ -1,0 +1,13 @@
+entries:
+  - id: event
+    term: Event
+    plain_definition: a
+    technical_definition: b
+    experience_benefit: c
+    analogy: {text: x, explicitly_labeled: true}
+  - id: event
+    term: Event again
+    plain_definition: a
+    technical_definition: b
+    experience_benefit: c
+    analogy: {text: x, explicitly_labeled: true}
