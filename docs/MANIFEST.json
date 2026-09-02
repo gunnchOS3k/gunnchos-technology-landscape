@@ -1,0 +1,102 @@
+{
+  "review_id": "CH02-REVIEW-R1",
+  "source_commit": "a2a4af2f5e1002852933a1b50c24f65b3a3c4651",
+  "files": {
+    ".nojekyll": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "REVIEW_PROTOCOL.md": {
+      "sha256": "58246589ca6d6526a7f8dca67e92d7ce3f999cf2e38ede82af51a898abd2e306",
+      "bytes": 2880
+    },
+    "chapter/ch02.epub": {
+      "sha256": "13e22ece9ed7a32fe7bf6100e298ae9bd7c14db28984e9c76c5c02fd25f3fe1c",
+      "bytes": 56822
+    },
+    "chapter/ch02.html": {
+      "sha256": "584cd96bf313f6dadfb4f18b9a9e9101d31f3e387a3d1f719c757a0702eac627",
+      "bytes": 1309885
+    },
+    "chapter/ch02.pdf": {
+      "sha256": "9a06ef95f87502fd8e2be76c771a4ccb8a910091885cb2f73d8299d0a4420482",
+      "bytes": 426279
+    },
+    "figures/fig-ch02-001-human-to-system.svg": {
+      "sha256": "6242196323cb17df3b47714491508415f4ada398c0adbfb1f078ebe3edad4eee",
+      "bytes": 6941
+    },
+    "figures/fig-ch02-002-cross-layer-sequence.svg": {
+      "sha256": "96c4858376fcf818ebb594c1eea30f7391bbec584654d56b0c0c3515d963fc62",
+      "bytes": 7402
+    },
+    "figures/fig-ch02-003-device-exploded.svg": {
+      "sha256": "e4355a691eaafed339e1d9ced92384554f354221157dd3e82536c2a042eebe9e",
+      "bytes": 11194
+    },
+    "figures/fig-ch02-004-software-stack.svg": {
+      "sha256": "f1e98ef30a1131abb8174db3825a8b9f7e645b2d02210e8e6bd30bf1027c9739",
+      "bytes": 5942
+    },
+    "figures/fig-ch02-005-local-vs-network.svg": {
+      "sha256": "60f50f466944c380288f609a59267bd7d0a7c2493958a1c8e7a031856db5d24a",
+      "bytes": 7350
+    },
+    "figures/fig-ch02-006-latency-budget.svg": {
+      "sha256": "1e11df2daf74b661e1b8beb2c6e14a3c3f05b7e7fc4a3e0190effef5c596b554",
+      "bytes": 5317
+    },
+    "figures/fig-ch02-007-stability-contract.svg": {
+      "sha256": "7e742790b775bf55baa3417f219daf9303151544cd9edb81d67e97983703838e",
+      "bytes": 6331
+    },
+    "figures/index.html": {
+      "sha256": "b3f9a3032c907437f6d33631233b949eafa269dd1222dbf94a80dc34abd0765b",
+      "bytes": 1255
+    },
+    "forms/form-a-explorer.md": {
+      "sha256": "8fcb76c1c9f6d620730fa2ee93da99eba149e8801a325b8672fc61e14a2fc421",
+      "bytes": 1026
+    },
+    "forms/form-b-builder.md": {
+      "sha256": "e09cc38077f809c8bb977a3f630a5bcc6a35fe4f1788e3d425dfdf0c93b83322",
+      "bytes": 863
+    },
+    "forms/form-c-engineer.md": {
+      "sha256": "879e753bf893d06e63c08a610342d6ad3cf602aa8a3940d70384e6827d310dad",
+      "bytes": 969
+    },
+    "forms/form-d-educator.md": {
+      "sha256": "95454bcd1d4ff98488aa0dfc0cf559a334d94bec9e82c8771e1279a84cd92216",
+      "bytes": 832
+    },
+    "forms/packet.md": {
+      "sha256": "9b0ed383b8439c8ccc4b654467d4ff96ebeecf988556e791625683425dd73ffd",
+      "bytes": 4092
+    },
+    "index.html": {
+      "sha256": "a0185aaf0e1db8240980586be8e718bdb659f9be0a53570a2979a3ebd4aac7a9",
+      "bytes": 5059
+    },
+    "instructions.md": {
+      "sha256": "578c0f00d1be9812cf6634013f68d6c23b02b6b2c944adace9c050f53262d44d",
+      "bytes": 1228
+    },
+    "lab/README.md": {
+      "sha256": "0242d5d9ea86dd98837f96098a86fc23009240ba79be6fb991e0f35f758534ed",
+      "bytes": 2429
+    },
+    "lab/browser/index.html": {
+      "sha256": "6b045952f8117771df0ac284d8daaa7935fb6083a9dc4cffdb1f3072655352dc",
+      "bytes": 2971
+    },
+    "lab/fixtures/sample_observation.md": {
+      "sha256": "56166855c4aa8f0b13193c7c3444cd139307df7144ae61fb9dfda47e2b509758",
+      "bytes": 472
+    },
+    "lab/fixtures/sample_result_table.csv": {
+      "sha256": "77274da37944f683b34e59696fe4f462610ddd985cba1951043ff5f95a733113",
+      "bytes": 337
+    }
+  }
+}

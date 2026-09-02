@@ -1,0 +1,43 @@
+# SYNTHETIC_TEST_FIXTURE — DO_NOT_USE_AS_EVIDENCE
+# This file exists only under tests/fixtures/ for unit tests.
+# Never copy into publication/gates/gate-3/responses/.
+
+review_id: CH02-REVIEW-R1
+reader_level: explorer
+date: "2026-01-01"
+chapter_version: CH02-REVIEW-R1
+lab_route: browser
+reviewer_code: SYNTHETIC-EXPLORER-01
+
+comprehension:
+  score: 4
+  notes: "Synthetic fixture only"
+
+teach_back:
+  completed: true
+  summary: "Synthetic teach-back text"
+
+figures:
+  most_helpful: FIG-CH02-001
+  confusing: FIG-CH02-006
+  notes: "Synthetic"
+
+lab:
+  completed: true
+  blockers: ""
+  observation_vs_inference_clear: true
+
+terminology:
+  confusing_terms:
+    - interrupt
+    - packet
+
+technical_accuracy:
+  issues: []
+
+accessibility:
+  observations:
+    - "Synthetic a11y note"
+
+revision_recommendations:
+  - "Synthetic revision theme"

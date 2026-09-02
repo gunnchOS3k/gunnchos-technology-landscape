@@ -1,0 +1,37 @@
+# SYNTHETIC_TEST_FIXTURE — DO_NOT_USE_AS_EVIDENCE
+
+review_id: CH02-REVIEW-R1
+reader_level: engineer
+date: "2026-01-03"
+chapter_version: CH02-REVIEW-R1
+lab_route: browser
+reviewer_code: SYNTHETIC-ENGINEER-01
+
+comprehension:
+  score: 5
+
+teach_back:
+  completed: true
+  summary: "Synthetic engineer teach-back"
+
+figures:
+  most_helpful: FIG-CH02-007
+  confusing: FIG-CH02-006
+
+lab:
+  completed: true
+  observation_vs_inference_clear: true
+
+terminology:
+  confusing_terms: []
+
+technical_accuracy:
+  issues:
+    - "Synthetic scheduling wording nit"
+
+accessibility:
+  observations:
+    - "Synthetic contrast note"
+
+revision_recommendations:
+  - "Keep status labels near Device Quartet claims"
