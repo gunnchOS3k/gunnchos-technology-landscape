@@ -8,4 +8,4 @@ artifacts:
   - "chapter embeds verified in HTML (7 img) / EPUB (7 media + 7 alt) / PDF build"
 notes:
   - "Human visual review still required before publication"
-  - "Hosted CI validates + HTML + EPUB; PDF remains local/dev until TeX+rsvg provisioned in CI"
+  - "Hosted CI provisions TeX + librsvg and validates HTML + EPUB + PDF artifacts"

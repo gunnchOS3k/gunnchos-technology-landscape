@@ -18,7 +18,7 @@ TEX_BIN_DIR ?= $(shell \
 
 export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 
-.PHONY: setup validate test preview pdf epub all ci clean
+.PHONY: setup validate test preview pdf epub book all ci clean
 
 setup:
 	python3 -m venv .venv
@@ -58,11 +58,16 @@ epub:
 	@chmod +x scripts/render_formats.sh
 	@./scripts/render_formats.sh epub
 
-# Documented full automated build for local/dev completeness.
+book:
+	@chmod +x scripts/render_formats.sh
+	@./scripts/render_formats.sh book
+
+# Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).
 all: validate test preview pdf epub
 
-# Hosted CI uses a lighter path unless TeX/Quarto are provisioned.
+# TeX-free subset: validation, tests, and HTML only.
+# Hosted GitHub Actions provisions TeX/librsvg and additionally runs EPUB + PDF.
 ci: validate test preview
 
 clean:
-	rm -rf preview .pytest_cache __pycache__
+	rm -rf preview _book .pytest_cache __pycache__

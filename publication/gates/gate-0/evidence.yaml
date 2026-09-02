@@ -1,6 +1,16 @@
 gate: 0
 title: "Charter"
-status: GATE_0_READY_FOR_AUTHOR_APPROVAL
+status: GATE_0_PASS
 evaluated_at: "2026-09-02"
 artifacts:
-  - "README, PEDAGOGICAL_CONTRACT, STYLE_BIBLE, rights register, license"
+  - "README.md"
+  - "PEDAGOGICAL_CONTRACT.md"
+  - "STYLE_BIBLE.md"
+  - "BOOK_ARCHITECTURE.md"
+  - "publication/BOOK_LICENSE_DECISION.md"
+  - "publication/RIGHTS_AND_PERMISSIONS.md"
+  - "CONTRIBUTING.md"
+  - "CODE_OF_CONDUCT.md"
+notes:
+  - "Development-stage All Rights Reserved for manuscript/artwork; MIT for scripts/lab code only"
+  - "No CC book license claimed"

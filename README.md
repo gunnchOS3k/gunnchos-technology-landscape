@@ -69,16 +69,21 @@ Research/learning form factors (not mascots; not claimed as finished commercial 
 
 ## Status (truthful)
 
-**Highest legitimately claimed publication posture for this branch (closure pass):**  
-`GATE_2_PASS` — `GATE_3_IN_PROGRESS`  
-Gate 3 remains blocked on real three-reader-level evidence (templates only). Gates 4–7 are not claimed.
+**Highest legitimately claimed publication posture for this branch:**  
+`GATE_0_PASS` — `GATE_1_PASS` — `GATE_2_PASS` — `GATE_3_IN_PROGRESS`  
 
-## License
+Gate 3 remains blocked on real three-reader-level evidence (templates only). Gates 4–7 are not claimed. Merging the foundation PR does not imply Gate 3 PASS, Concept Edition completion, field validation, or publication readiness.
 
-**Book/artwork license:** `AUTHOR_DECISION_PENDING` — see [`publication/BOOK_LICENSE_DECISION.md`](publication/BOOK_LICENSE_DECISION.md).  
-Do not treat any prior CC BY 4.0 draft wording as an approved publication-content decision.  
-Upstream audited gunnchOS/WAIKE sources remain MIT-licensed; do not copy NDA vendor collateral.  
-Runnable lab code may use a separate proposed software license when documented.
+## Rights (development stage)
+
+Hybrid model — see [`publication/BOOK_LICENSE_DECISION.md`](publication/BOOK_LICENSE_DECISION.md):
+
+- Manuscript prose, original artwork/figures, instructor-only assets: **All Rights Reserved** (development)
+- Publication infrastructure/scripts and identified runnable lab code: **MIT**
+- Upstream WAIKE/gunnchOS materials retain upstream licenses
+- **No** blanket Creative Commons license for the book at this stage
+
+The repository as a whole does not inherit a single software license for manuscript content.
 
 ## Build commands
 
@@ -89,6 +94,8 @@ make test
 make preview
 make pdf
 make epub
-make all    # validate + test + HTML + PDF + EPUB
-make ci     # hosted CI path: validate + test + HTML
+make all    # authoritative: validate + test + HTML + PDF + EPUB
+make ci     # TeX-free subset: validate + test + HTML
 ```
+
+Hosted GitHub Actions provisions TeX + SVG conversion and also renders PDF/EPUB artifacts. Details: [`PUBLICATION_TOOLCHAIN.md`](PUBLICATION_TOOLCHAIN.md).

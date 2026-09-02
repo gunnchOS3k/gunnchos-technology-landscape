@@ -183,7 +183,7 @@ All must be labeled **Representative educational architecture** / conceptual unl
 
 ## Licensing considerations
 
-All three audited sources are **MIT**. Publication repository is created under **CC BY 4.0** for book prose/assets unless otherwise noted. Code labs in this publication repo may use MIT for runnable examples. Do not copy NDA vendor collateral. Prefer original educational diagrams.
+All three audited sources are **MIT**. This publication repository uses a **hybrid development-stage rights model**: manuscript prose, original artwork/figures, and instructor-only assets are **All Rights Reserved** during development; publication infrastructure/scripts and identified runnable lab code may use **MIT**. There is **no** blanket Creative Commons license for the book at this stage. Upstream WAIKE/gunnchOS materials retain their upstream licenses. See `publication/BOOK_LICENSE_DECISION.md`. Do not copy NDA vendor collateral. Prefer original educational diagrams.
 
 ---
 

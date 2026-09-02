@@ -19,10 +19,21 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.7.32"
-      - name: Validate + test + HTML preview (make ci)
-        run: make ci
+      - name: Install TeX (TinyTeX) and SVG converter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+          quarto install tinytex --no-prompt
+      - name: Validate
+        run: make validate
+      - name: Test
+        run: make test
+      - name: HTML render
+        run: make preview
       - name: EPUB render
         run: make epub
+      - name: PDF render
+        run: make pdf
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -30,7 +41,5 @@ jobs:
           path: |
             preview/ch02.html
             preview/ch02.epub
-          if-no-files-found: warn
-
-  # PDF remains local/dev until TeX is provisioned reliably in CI.
-  # Do not treat absence of hosted PDF as local PDF failure.
+            preview/ch02.pdf
+          if-no-files-found: error

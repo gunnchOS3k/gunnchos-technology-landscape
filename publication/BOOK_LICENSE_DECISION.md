@@ -1,37 +1,37 @@
 # Book / Artwork License Decision Record
 
-**Status:** `AUTHOR_DECISION_PENDING`  
-**Date opened:** 2026-09-02  
-**Owner:** Edmund Gunn, Jr.
+**Status:** `DEVELOPMENT_RIGHTS_MODEL_APPLIED`  
+**Decision date:** 2026-09-02  
+**Owner:** Edmund Gunn, Jr.  
+**Scope:** Foundation / Wave 1 development stage only
 
-## Current truth
+## Charter identity (Gate 0)
 
-Wave 1 must **not** advertise a final publication-content license as approved.
+| Field | Working default |
+|---|---|
+| Title | The Technology Landscape |
+| Subtitle | How Computers, Networks, AI, and Devices Create the Experiences We Depend On |
+| Series | A gunnchOS3k + WAIKE learning system |
+| Voice | Warm, direct, curious; middle-school-accessible baseline with progressive engineering/research depth |
 
-Earlier draft text mentioned CC BY 4.0 for Chapter 2 prose and original figures. That statement is **withdrawn as an approved decision** until Edmund explicitly chooses a model.
+## Development-stage rights model (conservative hybrid)
 
-## Separated license domains
-
-| Domain | Candidate handling | Status |
+| Domain | License / right | Notes |
 |---|---|---|
-| Runnable lab/code samples | May use a software license (for example MIT) if intentional | Documented as **proposed**, not final |
-| Manuscript prose / instructor assets | Open, dual-license, or commercial/paid | **AUTHOR_DECISION_PENDING** |
-| Original educational diagrams | Follow manuscript/artwork decision | **AUTHOR_DECISION_PENDING** |
-| Upstream gunnchOS/WAIKE citations | Remain MIT-licensed upstream | unchanged |
+| Manuscript prose | **All Rights Reserved** (development) | Not Creative Commons at this stage |
+| Original book artwork/figures | **All Rights Reserved** (development) | Educational diagrams remain rights-reserved |
+| Instructor-only assets | **All Rights Reserved** (development) | Educator packs stay closed unless later opened |
+| Publication infrastructure/scripts | **MIT** (software) | Build/validate/render tooling only |
+| Runnable lab/code samples | **MIT** where files explicitly identify as code samples | Does not license surrounding prose |
+| Upstream WAIKE/gunnchOS citations | Upstream licenses (typically MIT) | Cite SHAs; do not relicense upstream |
+| Future companion learning resources | Deferred | May be opened later only by explicit author decision |
 
-## Candidate approaches (no selection made)
+## Explicit non-claims
 
-1. **Open book (e.g. CC BY 4.0)** — maximum redistribution; harder to later sell exclusive print/instructor packs without relicensing.
-2. **Source-available / restricted commercial** — public reading of drafts; commercial rights reserved for print/instructor edition.
-3. **Hybrid** — open companion repos + labs; commercial book/instructor materials.
-4. **All-rights-reserved draft** until a public edition is declared.
-
-Consequences differ for redistribution, classroom reuse, paid instructor guides, and storefront distribution. Edmund must choose.
+- No blanket Creative Commons license for the book.
+- The repository as a whole does **not** inherit a single software license for manuscript content.
+- A later public/open edition requires a new explicit author decision.
 
 ## Publication wording rule
 
-Until this record is updated with an approved decision:
-
-- README and rights pages must say **license pending author decision**
-- Do not badge or market the book as CC BY 4.0
-- Do not treat repo `LICENSE` (if present for code/infra) as the book license
+README and rights pages must describe this hybrid model accurately and must not badge the book as CC BY.

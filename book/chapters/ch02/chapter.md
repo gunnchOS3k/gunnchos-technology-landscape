@@ -7,7 +7,9 @@ author: "Edmund Gunn, Jr."
 part: I
 concept_edition: true
 labs: [LAB-TAP-001]
-bibliography: ../../references/references.bib
+# Bibliography is declared by the active Quarto project
+# (render/ch02/metadata.yml or root book config), not here —
+# so chapter and book renders share one prose file without broken paths.
 figures:
   - FIG-CH02-001
   - FIG-CH02-002

@@ -10,6 +10,9 @@ book:
     - index.qmd
     - book/chapters/ch02/chapter.md
 
+bibliography: book/references/references.bib
+link-citations: true
+
 format:
   html:
     toc: true
