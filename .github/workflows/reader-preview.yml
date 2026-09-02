@@ -1,0 +1,72 @@
+name: reader-preview
+
+on:
+  push:
+    branches: [main, cursor/gate3-reader-validation-prep]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: reader-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Setup Python
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install -U pip
+          .venv/bin/pip install pyyaml pytest
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.7.32"
+      - name: Install TeX and SVG converter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+          quarto install tinytex --no-prompt
+      - name: Build reader-preview package
+        run: make reader-preview
+      - name: Upload reader-preview-bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: reader-preview-bundle
+          path: docs/
+          if-no-files-found: error
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy-pages:
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    needs: package
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Pages deploy note
+        if: steps.deployment.outcome == 'failure'
+        run: |
+          echo "GitHub Pages deploy did not succeed."
+          echo "Enable Pages (Source: GitHub Actions) in repository settings, or use the reader-preview-bundle artifact."

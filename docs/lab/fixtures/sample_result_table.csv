@@ -1,0 +1,9 @@
+marker,seconds_since_first_mark,label
+input_click_local,0.000000,observed
+handler_start_local,0.000800,observed
+output_update_local,0.004200,observed
+handler_end_local,0.004500,observed
+input_click_remote,1.000000,observed
+network_request_start,1.001000,observed
+network_response,2.050000,observed
+output_update_remote,2.053000,observed

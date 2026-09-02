@@ -1,0 +1,40 @@
+# SYNTHETIC_TEST_FIXTURE — DO_NOT_USE_AS_EVIDENCE
+# Missing lab.completed on purpose to test missing-vs-zero distinction.
+
+review_id: CH02-REVIEW-R1
+reader_level: builder
+date: "2026-01-02"
+chapter_version: CH02-REVIEW-R1
+lab_route: fixture
+reviewer_code: SYNTHETIC-BUILDER-01
+
+comprehension:
+  score: 3
+  notes: "Synthetic fixture only"
+
+teach_back:
+  completed: false
+  summary: ""
+
+figures:
+  most_helpful: FIG-CH02-002
+  confusing: FIG-CH02-003
+
+lab:
+  blockers: "Synthetic blocker note"
+  # completed intentionally omitted
+
+terminology:
+  confusing_terms:
+    - kernel
+    - interrupt
+
+technical_accuracy:
+  issues:
+    - "Synthetic accuracy note"
+
+accessibility:
+  observations: []
+
+revision_recommendations:
+  - "Clarify exploded-view caption"

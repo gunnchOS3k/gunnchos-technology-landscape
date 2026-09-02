@@ -70,9 +70,18 @@ Research/learning form factors (not mascots; not claimed as finished commercial 
 ## Status (truthful)
 
 **Highest legitimately claimed publication posture for this branch:**  
-`GATE_0_PASS` — `GATE_1_PASS` — `GATE_2_PASS` — `GATE_3_IN_PROGRESS`  
+`GATE_0_PASS` — `GATE_1_PASS` — `GATE_2_PASS` — `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`
 
-Gate 3 remains blocked on real three-reader-level evidence (templates only). Gates 4–7 are not claimed. Merging the foundation PR does not imply Gate 3 PASS, Concept Edition completion, field validation, or publication readiness.
+Gate 3 remains blocked on real Explorer + Builder + Engineer reviews for snapshot `CH02-REVIEW-R1`. Reader package lives under [`docs/`](docs/). Gates 4–7 are not claimed.
+
+## Reader review (Gate 3 prep)
+
+```bash
+make reader-preview          # assemble docs/ package + hashes
+make analyze-reader-feedback # reports NO_READER_EVIDENCE until real responses exist
+```
+
+Protocol: [`publication/gates/gate-3/REVIEW_PROTOCOL.md`](publication/gates/gate-3/REVIEW_PROTOCOL.md)
 
 ## Rights (development stage)
 
@@ -94,6 +103,7 @@ make test
 make preview
 make pdf
 make epub
+make reader-preview
 make all    # authoritative: validate + test + HTML + PDF + EPUB
 make ci     # TeX-free subset: validate + test + HTML
 ```

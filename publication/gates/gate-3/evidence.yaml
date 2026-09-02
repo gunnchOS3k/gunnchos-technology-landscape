@@ -1,6 +1,14 @@
 gate: 3
 title: "Chapter prototype"
-status: GATE_3_IN_PROGRESS
+status: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
 evaluated_at: "2026-09-02"
+review_snapshot: CH02-REVIEW-R1
+source_commit: "a2a4af2f5e1002852933a1b50c24f65b3a3c4651"
 artifacts:
-  - "CH02 draft prose + lab + glossary + claims; human review pending"
+  - "CH02 draft prose + lab + glossary + claims"
+  - "Reader preview package under docs/"
+  - "REVIEW_PROTOCOL.md + reader_feedback_schema.yaml + REVIEW_SNAPSHOT.yaml"
+  - "responses/ empty — NO_READER_EVIDENCE"
+notes:
+  - "Do not fabricate reader responses"
+  - "Prep infrastructure must not be mistaken for Gate 3 PASS"

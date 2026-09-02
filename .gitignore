@@ -7,8 +7,10 @@ _book/
 _site/
 site/
 preview/
-*.pdf
-*.epub
+# Keep docs/chapter PDF/EPUB out of default ignore so reader package can commit
+# downloadable formats when explicitly added; still ignore stray root renders.
+/*.pdf
+/*.epub
 .pytest_cache/
 node_modules/
 dist/
@@ -18,3 +20,6 @@ tools/quarto/
 tools/quarto.tgz
 
 /.quarto/
+
+# Quarto intermediate SVG→PDF conversions beside chapter sources
+book/chapters/figures/

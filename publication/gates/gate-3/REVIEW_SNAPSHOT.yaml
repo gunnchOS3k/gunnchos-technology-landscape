@@ -1,0 +1,55 @@
+review_id: CH02-REVIEW-R1
+chapter_id: CH02
+chapter_title: Follow One Tap Through the Entire Stack
+status: OPEN_FOR_REVIEW
+opened_on: '2026-09-02'
+gate_status: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
+source_commit: a2a4af2f5e1002852933a1b50c24f65b3a3c4651
+source_ref: main@a2a4af2
+bibliography:
+  path: book/references/references.bib
+  version_note: Wave-1 verified bibliography as of source_commit
+lab:
+  lab_id: LAB-TAP-001
+  version: 1.0.0-wave1
+  path: labs/LAB-TAP-001/
+  routes:
+  - browser
+  - fixture
+figures:
+  version_note: FIG-CH02-001..007 as of source_commit
+  ids:
+  - FIG-CH02-001
+  - FIG-CH02-002
+  - FIG-CH02-003
+  - FIG-CH02-004
+  - FIG-CH02-005
+  - FIG-CH02-006
+  - FIG-CH02-007
+artifacts:
+  package_root: docs/
+  html: docs/chapter/ch02.html
+  pdf: docs/chapter/ch02.pdf
+  epub: docs/chapter/ch02.epub
+  hashes:
+    html: 584cd96bf313f6dadfb4f18b9a9e9101d31f3e387a3d1f719c757a0702eac627
+    pdf: 9a06ef95f87502fd8e2be76c771a4ccb8a910091885cb2f73d8299d0a4420482
+    epub: 13e22ece9ed7a32fe7bf6100e298ae9bd7c14db28984e9c76c5c02fd25f3fe1c
+    fig-ch02-001: 6242196323cb17df3b47714491508415f4ada398c0adbfb1f078ebe3edad4eee
+    fig-ch02-002: 96c4858376fcf818ebb594c1eea30f7391bbec584654d56b0c0c3515d963fc62
+    fig-ch02-003: e4355a691eaafed339e1d9ced92384554f354221157dd3e82536c2a042eebe9e
+    fig-ch02-004: f1e98ef30a1131abb8174db3825a8b9f7e645b2d02210e8e6bd30bf1027c9739
+    fig-ch02-005: 60f50f466944c380288f609a59267bd7d0a7c2493958a1c8e7a031856db5d24a
+    fig-ch02-006: 1e11df2daf74b661e1b8beb2c6e14a3c3f05b7e7fc4a3e0190effef5c596b554
+    fig-ch02-007: 7e742790b775bf55baa3417f219daf9303151544cd9edb81d67e97983703838e
+delivery:
+  github_pages_path: docs/
+  actions_artifact_name: reader-preview-bundle
+  notes:
+  - Readers should not need to clone or install Quarto.
+  - PDF/EPUB may be provided via Actions artifact if not present in docs/chapter/.
+provenance_rule: 'Any response YAML under responses/ must set review_id to CH02-REVIEW-R1
+  (or a later superseding snapshot id). Feedback for a different commit/snapshot must
+  not be mixed into this snapshot''s analysis without explicit re-labeling.
+
+  '

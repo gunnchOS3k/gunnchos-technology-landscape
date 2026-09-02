@@ -1,0 +1,150 @@
+# Machine-ingestable reader feedback schema (Gate 3)
+
+# Human-readable forms live in:
+#   publication/gates/gate-3/CH02_READER_REVIEW_PACKET.md
+#   docs/forms/*.md
+#   reader-preview/forms/*.md
+#
+# Response YAML files placed under publication/gates/gate-3/responses/
+# MUST conform to `response_record` below.
+#
+# Do not populate real response records without actual human input.
+
+schema_id: gate3-reader-feedback-v1
+schema_version: "1.0.0"
+
+enums:
+  reader_level:
+    - explorer
+    - builder
+    - engineer
+    - educator
+  lab_route:
+    - browser
+    - fixture
+    - local_app
+    - not_attempted
+  comprehension_score:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+
+forbidden_fields:
+  - password
+  - passwords
+  - token
+  - tokens
+  - private_messages
+  - device_serial
+  - serial_number
+  - precise_location
+  - gps
+  - ssn
+  - credit_card
+
+response_record:
+  description: >
+    One YAML file per real human review. Filename pattern:
+    RESP-<reader_level>-<reviewer_code>.yaml
+  required:
+    - review_id
+    - reader_level
+    - date
+    - chapter_version
+    - lab_route
+    - reviewer_code
+  properties:
+    review_id:
+      type: string
+      description: Must match REVIEW_SNAPSHOT.yaml review_id (e.g. CH02-REVIEW-R1)
+    reader_level:
+      type: string
+      enum_ref: reader_level
+    date:
+      type: string
+      description: ISO date YYYY-MM-DD when the review was completed
+    chapter_version:
+      type: string
+      description: Snapshot id or source commit short SHA reviewed
+    lab_route:
+      type: string
+      enum_ref: lab_route
+    reviewer_code:
+      type: string
+      description: Pseudonym / reviewer code (preferred)
+    reviewer_name_optional:
+      type: string
+      description: Optional; omit if anonymity preferred
+      optional: true
+
+    comprehension:
+      type: object
+      properties:
+        score:
+          type: integer
+          enum_ref: comprehension_score
+          optional: true
+        notes:
+          type: string
+          optional: true
+
+    teach_back:
+      type: object
+      properties:
+        completed:
+          type: boolean
+        summary:
+          type: string
+          optional: true
+
+    figures:
+      type: object
+      properties:
+        most_helpful:
+          type: string
+          optional: true
+        confusing:
+          type: string
+          optional: true
+        notes:
+          type: string
+          optional: true
+
+    lab:
+      type: object
+      properties:
+        completed:
+          type: boolean
+        blockers:
+          type: string
+          optional: true
+        observation_vs_inference_clear:
+          type: boolean
+          optional: true
+
+    terminology:
+      type: object
+      properties:
+        confusing_terms:
+          type: list
+          item_type: string
+
+    technical_accuracy:
+      type: object
+      properties:
+        issues:
+          type: list
+          item_type: string
+
+    accessibility:
+      type: object
+      properties:
+        observations:
+          type: list
+          item_type: string
+
+    revision_recommendations:
+      type: list
+      item_type: string
