@@ -1,0 +1,7 @@
+# The Technology Landscape
+
+Welcome to the publication preview.
+
+Teaching model: **Human experience → system → component → code → network → society**
+
+Wave 1 focuses on publication infrastructure and the Chapter 2 canonical prototype.

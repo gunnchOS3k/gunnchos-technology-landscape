@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="188" role="img" aria-label="Side-by-side comparison of a local-only tap path and a network-dependent tap path.">
+<title>FIG-CH02-005: Local vs Network-Dependent Tap</title>
+<desc>Two columns share the human/input/OS prefix. The left column stays on device. The right column adds socket/API, packets, access network, and remote service before rejoining at render/perception.</desc>
+<rect width="100%" height="100%" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="20" y="28" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111">FIG-CH02-005 — Local vs Network-Dependent Tap</text>
+<text x="20" y="50" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333">Status: conceptual · Representative educational diagram · Color is not the sole encoding</text>
+<rect x="20" y="60" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="78" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">1. Left: local-only path ends at application/renderer</text>
+<rect x="20" y="96" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="114" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">2. Right: network-dependent path continues to packets and service</text>
+<rect x="20" y="132" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="150" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">3. Both share initial sensing and OS delivery</text>
+</svg>

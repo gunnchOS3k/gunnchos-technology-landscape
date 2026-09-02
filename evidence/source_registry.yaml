@@ -1,0 +1,85 @@
+audit:
+  generated_at: "2026-09-02"
+  auditor: "cursor-agent"
+  policy_version: 1
+  policy_ref: "05_EVIDENCE_AND_ACCEPTED_MAIN_AUDIT_SPEC.md"
+
+sources:
+  - source_id: SRC-WAIKE
+    repository: gunnchOS3k/waike-research-ops
+    branch: main
+    head_sha: "8eb2827dc58ffa391842da1bfb1ee665c25a31a7"
+    audited_at: "2026-09-02"
+    license: MIT
+    roles:
+      - curriculum
+      - labs
+      - assessment
+      - accessibility
+      - portfolio
+    status: audited
+    relevant_paths:
+      - curriculum/catalog.yaml
+      - curriculum/digital_rc/
+      - curriculum/taxonomy/eighteen_tracks.json
+      - schema/
+      - ACCESSIBILITY_AND_LOW_COST.md
+      - CLAIMS_TO_EVIDENCE.md
+      - labs/by_course/
+      - portfolio/
+      - src/waike_course_ready/
+    notes:
+      - "Dual ID systems: catalog snake_case (18 courses) and digital_rc SCREAMING_SNAKE (16 packages)."
+      - "No literal phone tap-to-response lab; closest patterns are packet trace, channel taps, input actions, ISR latency fixtures."
+      - "README still says 14 digital-RC packages; on-disk count is 16."
+
+  - source_id: SRC-DEVICE-OS
+    repository: gunnchOS3k/gunnchos-device-os
+    branch: main
+    head_sha: "28562a8456207540c205a1c8a6434a491b0a4771"
+    audited_at: "2026-09-02"
+    license: MIT
+    roles:
+      - device-os
+      - input-pipeline
+      - runtime-services
+      - accessibility
+    status: audited
+    relevant_paths:
+      - gunnchos_device_os/runtime/
+      - gunnchos_device_os/shell/input_routing.py
+      - gunnchos_device_os/device_lab/input_router.py
+      - ring_input/
+      - docs/WHAT_IS_REAL_TODAY.md
+      - docs/USER_FOCUSED_OS_ARCHITECTURE.md
+      - beta_gate/beta_gate_status.yaml
+      - CLAIMS_TO_EVIDENCE.md
+      - product/CLAIM_BOUNDARY.md
+    notes:
+      - "Device OS alpha / research prototype; beta_ready false."
+      - "Input path is SOFTWARE_SIMULATED / digital; physical ring not claimed."
+      - "18 cataloged digital runtime services; not systemd/kernel init."
+
+  - source_id: SRC-HARDWARE
+    repository: gunnchOS3k/gunnchos-hardware-industrial-design
+    branch: main
+    head_sha: "9ee0ef2f688b2c18428bfabc316b23687a02988d"
+    audited_at: "2026-09-02"
+    license: MIT
+    roles:
+      - device-quartet
+      - industrial-design
+      - hardware-architecture
+    status: audited
+    relevant_paths:
+      - docs/device-quartet/
+      - device_designs/
+      - architecture/SYSTEM_BLOCK_DIAGRAM.md
+      - architecture/DEVICE_COMPARISON_MATRIX.md
+      - DIGITAL_MANUFACTURING_READINESS.md
+      - physical_evidence/README.md
+      - CLAIMS_TO_EVIDENCE.md
+    notes:
+      - "PHYSICAL_PENDING; DIGITAL_FABRICATION_PASS=FALSE."
+      - "Device Quartet is concept-complete research form factors, not finished commercial products."
+      - "Chapter 2 exploded views must be labeled Representative educational architecture."

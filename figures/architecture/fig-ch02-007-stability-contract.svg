@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="368" role="img" aria-label="Diagram of hidden conditions that must stay good enough for a successful tap experience.">
+<title>FIG-CH02-007: Stability Contract</title>
+<desc>A central human experience node surrounded by condition chips. If any required chip fails, the experience can fail even when other chips succeed. Teaches that connected is not the same as usable.</desc>
+<rect width="100%" height="100%" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="20" y="28" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111">FIG-CH02-007 — Stability Contract</text>
+<text x="20" y="50" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333">Status: conceptual · Representative educational diagram · Color is not the sole encoding</text>
+<rect x="20" y="60" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="78" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">1. Touch recognized</text>
+<rect x="20" y="96" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="114" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">2. Event delivered</text>
+<rect x="20" y="132" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="150" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">3. App scheduled</text>
+<rect x="20" y="168" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="186" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">4. Handler completes</text>
+<rect x="20" y="204" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="222" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">5. Memory available</text>
+<rect x="20" y="240" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="258" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">6. Network/service if needed</text>
+<rect x="20" y="276" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="294" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">7. Frame reaches display</text>
+<rect x="20" y="312" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="330" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">8. Delay acceptable to person</text>
+</svg>

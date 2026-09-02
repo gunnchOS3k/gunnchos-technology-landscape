@@ -1,0 +1,5 @@
+marker,seconds_since_first_mark,observed_or_inferred
+input_click,,observed
+handler_start,,observed
+network_optional,,
+output_update,,observed

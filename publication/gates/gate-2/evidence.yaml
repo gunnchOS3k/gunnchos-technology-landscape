@@ -1,0 +1,6 @@
+gate: 2
+title: "Visual prototype"
+status: GATE_2_PASS
+evaluated_at: "2026-09-02"
+artifacts:
+  - "7 prototype figures with SVG + accessibility sidecars"

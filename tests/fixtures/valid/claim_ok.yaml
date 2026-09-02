@@ -1,0 +1,11 @@
+claims:
+  - claim_id: CLM-TEST
+    chapter: CH02
+    text: RAM is working memory.
+    scope: general-knowledge
+    classification: textbook
+    source: {type: textbook, repository: "", branch: "", commit: "", path: "", lines: ""}
+    verification: {method: textbook, command: "", result: ok}
+    limitations: []
+    wording: {approved: "RAM is working memory.", prohibited: []}
+    status: verified

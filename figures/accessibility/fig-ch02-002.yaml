@@ -1,0 +1,19 @@
+figure_id: FIG-CH02-002
+title: "Cross-Layer Tap Sequence"
+caption: "Cross-layer sequence for a tap with optional remote path and failure branch. Conceptual; durations illustrative where shown."
+alt_text: "Sequence diagram of actors exchanging events for a tap, including optional network and failure branches."
+text_equivalent: |
+  Actors: Human, Input hardware, OS, Application, Network, Service, Renderer. The happy path moves downward through messages. A side branch shows network/service failure while local visual feedback may still succeed. Any timing labels are illustrative, not measured benchmarks.
+reading_order:
+  - "Human taps"
+  - "Input hardware creates event"
+  - "OS delivers to application"
+  - "Application updates local state"
+  - "Optional request to network/service"
+  - "Response or failure"
+  - "Renderer presents frame"
+  - "Human perceives"
+source: figures/sequence/fig-ch02-002-cross-layer-sequence.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

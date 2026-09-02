@@ -1,0 +1,25 @@
+chapter_id: CH02
+chapter_number: 2
+title: "Follow One Tap Through the Entire Stack"
+part: I
+status: draft
+concept_edition: true
+human_question:
+  - What actually happens when I tap a button?
+experience:
+  - responsive touch interaction
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [input, operating-system, application, networking, rendering]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-TAP-001]
+figures: [FIG-CH02-001, FIG-CH02-002, FIG-CH02-003, FIG-CH02-004, FIG-CH02-005, FIG-CH02-006, FIG-CH02-007]
+concepts:
+  introduced: [event, touch-digitizer, interrupt, device-driver, kernel, process, thread, scheduler, event-loop, api, cpu, gpu, ram, storage, packet, protocol, radio, router, latency, jitter, rendering, frame, cache, service, edge-computing, cloud-computing, haptic-feedback]
+  required: []
+  related: [stability-contract]
+waike:
+  mapped: true
+  courses: [SOFTWARE_BUILDER, GAME_DEV_INTERACTIVE, COMPUTER_NETWORKING, EMBEDDED_PROTOTYPING]
+  note: "Mapped to existing digital_rc courses by competency adjacency; no invented tap-lab module ID."
+claims:
+  registry: evidence/claim_registry.yaml

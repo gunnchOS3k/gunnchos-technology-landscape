@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="368" role="img" aria-label="Sequence diagram of actors exchanging events for a tap, including optional network and failure branches.">
+<title>FIG-CH02-002: Cross-Layer Tap Sequence</title>
+<desc>Actors: Human, Input hardware, OS, Application, Network, Service, Renderer. The happy path moves downward through messages. A side branch shows network/service failure while local visual feedback may still succeed. Any timing labels are illustrative, not measured benchmarks.</desc>
+<rect width="100%" height="100%" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="20" y="28" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111">FIG-CH02-002 — Cross-Layer Tap Sequence</text>
+<text x="20" y="50" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333">Status: conceptual · Representative educational diagram · Color is not the sole encoding</text>
+<rect x="20" y="60" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="78" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">1. Human taps</text>
+<rect x="20" y="96" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="114" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">2. Input hardware creates event</text>
+<rect x="20" y="132" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="150" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">3. OS delivers to application</text>
+<rect x="20" y="168" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="186" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">4. Application updates local state</text>
+<rect x="20" y="204" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="222" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">5. Optional request to network/service</text>
+<rect x="20" y="240" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="258" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">6. Response or failure</text>
+<rect x="20" y="276" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="294" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">7. Renderer presents frame</text>
+<rect x="20" y="312" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="330" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">8. Human perceives</text>
+</svg>

@@ -1,0 +1,18 @@
+figure_id: FIG-CH02-004
+title: "Software Stack"
+caption: "Software stack supporting a tap-to-response path. Conceptual layering; real systems vary."
+alt_text: "Stacked layers from application down through runtime, libraries, kernel, drivers, firmware, and hardware."
+text_equivalent: |
+  A vertical stack with Application at top and Hardware at bottom. The tap event rises through drivers/kernel toward the application; rendered output descends toward display hardware.
+reading_order:
+  - "Application"
+  - "Runtime/framework"
+  - "Libraries and system services"
+  - "Kernel"
+  - "Drivers"
+  - "Firmware"
+  - "Hardware"
+source: figures/architecture/fig-ch02-004-software-stack.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

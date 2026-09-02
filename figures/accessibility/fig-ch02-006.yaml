@@ -1,0 +1,16 @@
+figure_id: FIG-CH02-006
+title: "Tap Latency Budget"
+caption: "Illustrative latency budget for teaching. Values are not benchmarks."
+alt_text: "Illustrative latency budget bars for sensing, scheduling, handler, network, and rendering stages."
+text_equivalent: |
+  A horizontal stacked bar divides total interaction time into labeled segments. Each segment is tagged illustrative or inferred. No segment is labeled measured unless a measurement bundle exists.
+reading_order:
+  - "Sensing/input delivery"
+  - "Scheduling and dispatch"
+  - "Handler and local update"
+  - "Optional network/service"
+  - "Render and display"
+source: figures/architecture/fig-ch02-006-latency-budget.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

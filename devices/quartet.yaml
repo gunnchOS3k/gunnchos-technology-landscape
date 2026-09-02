@@ -1,0 +1,31 @@
+devices:
+  - id: student-14-5
+    name: "Student 14.5-inch"
+    role: "Sustained desk compute for full learning and work sessions"
+    truth_status: requirement
+    evidence_source: SRC-HARDWARE
+    notes:
+      - "Research form factor; concept-complete with simulation substitutes on accepted main."
+      - "Not a finished commercial product."
+  - id: handheld-hybrid
+    name: "Handheld Hybrid"
+    role: "Mobile and docked compute"
+    truth_status: requirement
+    evidence_source: SRC-HARDWARE
+    notes:
+      - "Research form factor; never entertainment-only."
+  - id: ds-xl-coder
+    name: "DS-XL Coder"
+    role: "Strongest learn-to-build device"
+    truth_status: requirement
+    evidence_source: SRC-HARDWARE
+    notes:
+      - "Research form factor for local build-test-deploy learning."
+  - id: edge-io-wearables
+    name: "Edge IO Wearables"
+    role: "Embodied compute and safety-critical interaction"
+    truth_status: requirement
+    evidence_source: SRC-HARDWARE
+    notes:
+      - "Research form factor; not an optional novelty accessory."
+      - "Design package naming may appear as edge_io_rings / wearables_arena_set upstream."

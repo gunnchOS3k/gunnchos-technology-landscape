@@ -1,0 +1,22 @@
+relationships:
+  - from: touch-digitizer
+    type: produces
+    to: event
+  - from: device-driver
+    type: transmits
+    to: kernel
+  - from: scheduler
+    type: controls
+    to: thread
+  - from: event-loop
+    type: uses
+    to: event
+  - from: rendering
+    type: produces
+    to: frame
+  - from: packet
+    type: transmits
+    to: service
+  - from: cache
+    type: often-confused-with
+    to: storage

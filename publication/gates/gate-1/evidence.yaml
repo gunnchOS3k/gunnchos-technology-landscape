@@ -1,0 +1,6 @@
+gate: 1
+title: "Content architecture"
+status: GATE_1_PASS
+evaluated_at: "2026-09-02"
+artifacts:
+  - "31-chapter registry, CE registry, glossary/lab/device schemas, source-of-truth audit"

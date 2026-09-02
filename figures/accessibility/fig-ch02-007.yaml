@@ -1,0 +1,19 @@
+figure_id: FIG-CH02-007
+title: "Stability Contract"
+caption: "Stability Contract: hidden conditions behind a successful tap experience."
+alt_text: "Diagram of hidden conditions that must stay good enough for a successful tap experience."
+text_equivalent: |
+  A central human experience node surrounded by condition chips. If any required chip fails, the experience can fail even when other chips succeed. Teaches that connected is not the same as usable.
+reading_order:
+  - "Touch recognized"
+  - "Event delivered"
+  - "App scheduled"
+  - "Handler completes"
+  - "Memory available"
+  - "Network/service if needed"
+  - "Frame reaches display"
+  - "Delay acceptable to person"
+source: figures/architecture/fig-ch02-007-stability-contract.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

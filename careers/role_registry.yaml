@@ -1,0 +1,163 @@
+roles:
+  - role_id: ROLE-UX
+    title: "UX Designer"
+    owns: ["interaction specification"]
+    layers: ["Interaction"]
+    tools: ["Figma, user research notes"]
+    artifacts: ["interaction specification"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["lab teach-back + interaction notes"]
+    employment_guarantee: false
+  - role_id: ROLE-HCI
+    title: "HCI Engineer"
+    owns: ["interaction study / prototype evaluation"]
+    layers: ["Interaction"]
+    tools: ["prototyping tools, experiment logs"]
+    artifacts: ["interaction study / prototype evaluation"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["LAB-TAP-001 result table + reflection"]
+    employment_guarantee: false
+  - role_id: ROLE-EMBEDDED
+    title: "Embedded Engineer"
+    owns: ["hardware/firmware interface notes"]
+    layers: ["Input hardware"]
+    tools: ["oscilloscope/logs, firmware stubs"]
+    artifacts: ["hardware/firmware interface notes"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["component card explanations for digitizer path"]
+    employment_guarantee: false
+  - role_id: ROLE-FIRMWARE
+    title: "Firmware Engineer"
+    owns: ["firmware interface contract"]
+    layers: ["Firmware"]
+    tools: ["device bring-up notes"]
+    artifacts: ["firmware interface contract"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["boundary explanation of firmware vs OS"]
+    employment_guarantee: false
+  - role_id: ROLE-DRIVER
+    title: "Device-Driver Engineer"
+    owns: ["driver validation report"]
+    layers: ["Drivers"]
+    tools: ["kernel logs, CTS-like checklists"]
+    artifacts: ["driver validation report"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["driver component card + failure symptoms"]
+    employment_guarantee: false
+  - role_id: ROLE-KERNEL
+    title: "Kernel / OS Engineer"
+    owns: ["scheduler/input subsystem change notes"]
+    layers: ["Kernel/OS"]
+    tools: ["ftrace/perf, kernel docs"]
+    artifacts: ["scheduler/input subsystem change notes"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["scheduler discussion + load experiment notes"]
+    employment_guarantee: false
+  - role_id: ROLE-APP
+    title: "Application Developer"
+    owns: ["event-handling implementation"]
+    layers: ["Application"]
+    tools: ["IDE, debuggers"]
+    artifacts: ["event-handling implementation"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["local_app instrumentation"]
+    employment_guarantee: false
+  - role_id: ROLE-FRONTEND
+    title: "Frontend Engineer"
+    owns: ["UI event instrumentation"]
+    layers: ["Application"]
+    tools: ["browser DevTools"]
+    artifacts: ["UI event instrumentation"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["Route A DevTools capture"]
+    employment_guarantee: false
+  - role_id: ROLE-BACKEND
+    title: "Backend / Cloud Engineer"
+    owns: ["API/service implementation"]
+    layers: ["Service"]
+    tools: ["API logs, SLOs"]
+    artifacts: ["API/service implementation"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["remote path failure analysis"]
+    employment_guarantee: false
+  - role_id: ROLE-SRE
+    title: "SRE"
+    owns: ["service reliability evidence"]
+    layers: ["Service/Network"]
+    tools: ["metrics, traces"]
+    artifacts: ["service reliability evidence"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["distinguish connected vs usable"]
+    employment_guarantee: false
+  - role_id: ROLE-NET
+    title: "Network Engineer"
+    owns: ["packet/latency analysis"]
+    layers: ["Network"]
+    tools: ["pcap, traceroute"]
+    artifacts: ["packet/latency analysis"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["Route A network timing table"]
+    employment_guarantee: false
+  - role_id: ROLE-WIRELESS
+    title: "Wireless Engineer"
+    owns: ["radio-performance analysis"]
+    layers: ["Radio"]
+    tools: ["RF tools, link stats"]
+    artifacts: ["radio-performance analysis"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["weak-signal equity discussion"]
+    employment_guarantee: false
+  - role_id: ROLE-SEC
+    title: "Cybersecurity Engineer"
+    owns: ["threat model / control review"]
+    layers: ["Cross-cutting"]
+    tools: ["threat models"]
+    artifacts: ["threat model / control review"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["permissions/trusted UI notes"]
+    employment_guarantee: false
+  - role_id: ROLE-PERF
+    title: "Performance Engineer"
+    owns: ["trace / profile"]
+    layers: ["Cross-layer"]
+    tools: ["profilers, frame timing"]
+    artifacts: ["trace / profile"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["latency budget breakdown"]
+    employment_guarantee: false
+  - role_id: ROLE-ARCH
+    title: "Computer Architect"
+    owns: ["architecture tradeoff memo"]
+    layers: ["Hardware/Compute"]
+    tools: ["architecture docs"]
+    artifacts: ["architecture tradeoff memo"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["exploded-view reading"]
+    employment_guarantee: false
+  - role_id: ROLE-A11Y
+    title: "Accessibility Engineer"
+    owns: ["accessibility review"]
+    layers: ["Interaction"]
+    tools: ["a11y checkers, AT"]
+    artifacts: ["accessibility review"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["keyboard/switch/voice pathway writeup"]
+    employment_guarantee: false
+  - role_id: ROLE-RESEARCH
+    title: "Researcher"
+    owns: ["experiment report with uncertainty"]
+    layers: ["Method"]
+    tools: ["stats notebooks"]
+    artifacts: ["experiment report with uncertainty"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["researcher extension repeats"]
+    employment_guarantee: false
+  - role_id: ROLE-TPM
+    title: "Technical Program Manager"
+    owns: ["cross-team integration plan"]
+    layers: ["Cross-cutting"]
+    tools: ["roadmaps, risk registers"]
+    artifacts: ["cross-team integration plan"]
+    related_chapters: [CH02]
+    portfolio_analogues: ["Stability Contract ownership map"]
+    employment_guarantee: false

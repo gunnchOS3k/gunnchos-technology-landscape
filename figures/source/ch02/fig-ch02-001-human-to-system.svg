@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="296" role="img" aria-label="Numbered overview from human tap through input, software, optional network, and visible response.">
+<title>FIG-CH02-001: One Tap: Human-to-System Overview</title>
+<desc>This diagram shows six large stages in left-to-right order: Human, Input hardware, System software and application, Optional network and service, Output/renderer, Human perception. Arrows indicate forward progress. A dashed branch marks that network/service is optional. Status: conceptual educational architecture.</desc>
+<rect width="100%" height="100%" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="20" y="28" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111">FIG-CH02-001 — One Tap: Human-to-System Overview</text>
+<text x="20" y="50" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333">Status: conceptual · Representative educational diagram · Color is not the sole encoding</text>
+<rect x="20" y="60" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="78" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">1. 1 Human intent and tap</text>
+<rect x="20" y="96" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="114" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">2. 2 Input hardware senses contact</text>
+<rect x="20" y="132" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="150" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">3. 3 OS and application interpret the event</text>
+<rect x="20" y="168" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="186" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">4. 4 Optional network/service path</text>
+<rect x="20" y="204" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="222" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">5. 5 Renderer updates display</text>
+<rect x="20" y="240" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="32" y="258" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">6. 6 Human perceives feedback</text>
+</svg>

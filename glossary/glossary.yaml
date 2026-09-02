@@ -1,0 +1,645 @@
+entries:
+  - id: event
+    term: "Event"
+    acronym: null
+    plain_definition: >
+      A signal that something happened that software may need to handle.
+    technical_definition: >
+      In interactive systems, an event is a discrete notification—such as a touch, key press, timer, or network completion—queued and dispatched to interested handlers.
+    experience_benefit: >
+      Lets the app react when you do something.
+    analogy:
+      text: >
+        Like a doorbell ring that tells someone to answer the door.
+      explicitly_labeled: true
+    not_the_same_as:
+      - interrupt
+    failure_or_limit:
+      - "Missed, delayed, or duplicated reactions."
+    measure_it:
+      - "Log timestamps when an event is received and when handling finishes."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: touch-digitizer
+    term: "Touch digitizer"
+    acronym: null
+    plain_definition: >
+      The sensing layer that detects touch position and movement.
+    technical_definition: >
+      A touch digitizer converts physical contact into coordinates and related signals for the input controller and operating system.
+    experience_benefit: >
+      Turns a finger contact into usable input.
+    analogy:
+      text: >
+        Like a grid that notices where a pencil presses on paper.
+      explicitly_labeled: true
+    not_the_same_as:
+      - display-panel
+    failure_or_limit:
+      - "Missed, ghost, delayed, or inaccurate touches."
+    measure_it:
+      - "Compare reported coordinates with intended target positions in a test app."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: interrupt
+    term: "Interrupt"
+    acronym: null
+    plain_definition: >
+      A hardware or software signal that can request prompt attention from the processor or OS.
+    technical_definition: >
+      An interrupt notifies the system that a device or condition needs handling, often causing a temporary switch into an interrupt service routine. Not every application-visible touch is exposed as a raw hardware interrupt.
+    experience_benefit: >
+      Helps urgent input get attention quickly.
+    analogy:
+      text: >
+        Like a teacher tapping a student on the shoulder during silent work.
+      explicitly_labeled: true
+    not_the_same_as:
+      - polling
+    failure_or_limit:
+      - "Delayed response when interrupts are masked or mishandled."
+    measure_it:
+      - "Compare polled versus interrupt-driven toy examples on microcontroller labs where available."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: device-driver
+    term: "Device driver"
+    acronym: null
+    plain_definition: >
+      Software that lets the operating system talk with a specific hardware device.
+    technical_definition: >
+      A driver translates between OS input/output interfaces and device-specific registers, protocols, or firmware behaviors.
+    experience_benefit: >
+      Makes hardware usable to the rest of the stack.
+    analogy:
+      text: >
+        Like a translator between a visitor and a local specialist.
+      explicitly_labeled: true
+    not_the_same_as:
+      - application-plugin
+    failure_or_limit:
+      - "Device unavailable, unreliable, or misinterpreted."
+    measure_it:
+      - "Observe whether a device appears/disappears in OS device listings when drivers load."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: kernel
+    term: "Kernel"
+    acronym: null
+    plain_definition: >
+      The central part of an operating system that manages hardware access and core resources.
+    technical_definition: >
+      The kernel mediates privileged operations such as scheduling, memory management, and device access so applications do not each control hardware directly.
+    experience_benefit: >
+      Lets many programs share one device safely enough to be useful.
+    analogy:
+      text: >
+        Like building staff who control keys, elevators, and utilities for every tenant.
+      explicitly_labeled: true
+    not_the_same_as:
+      - user-interface
+    failure_or_limit:
+      - "Severe instability or unavailable resources."
+    measure_it:
+      - "Inspect process lists and resource monitors; kernel faults are rare and serious."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: process
+    term: "Process"
+    acronym: null
+    plain_definition: >
+      A running instance of a program with its own managed resources and execution state.
+    technical_definition: >
+      A process is an OS-managed unit that typically includes address space, credentials, and one or more threads.
+    experience_benefit: >
+      Keeps your app's work organized as a living program.
+    analogy:
+      text: >
+        Like a workshop room reserved for one project.
+      explicitly_labeled: true
+    not_the_same_as:
+      - thread
+    failure_or_limit:
+      - "App closes or freezes when the process is killed or stuck."
+    measure_it:
+      - "Use a system monitor to see process CPU and memory."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: thread
+    term: "Thread"
+    acronym: null
+    plain_definition: >
+      A single sequence of executing instructions inside a process.
+    technical_definition: >
+      Threads share a process's resources while maintaining separate execution context, enabling concurrent work.
+    experience_benefit: >
+      Allows an app to do more than one piece of work in overlapping time.
+    analogy:
+      text: >
+        Like multiple workers sharing one workshop.
+      explicitly_labeled: true
+    not_the_same_as:
+      - process
+    failure_or_limit:
+      - "UI freezes when a critical thread blocks."
+    measure_it:
+      - "Compare UI responsiveness when work runs on background threads."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: scheduler
+    term: "Scheduler"
+    acronym: null
+    plain_definition: >
+      The OS mechanism that decides when runnable software receives CPU time.
+    technical_definition: >
+      A scheduler orders and preempts runnable threads/processes according to policy, priority, and fairness constraints.
+    experience_benefit: >
+      Important work gets compute soon enough to feel responsive.
+    analogy:
+      text: >
+        Like a stage manager deciding who speaks next.
+      explicitly_labeled: true
+    not_the_same_as:
+      - event-loop
+    failure_or_limit:
+      - "Input lag, stutter, or sluggishness under load."
+    measure_it:
+      - "Create CPU load and observe latency changes."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: event-loop
+    term: "Event loop"
+    acronym: null
+    plain_definition: >
+      A program structure that waits for events and dispatches work in response.
+    technical_definition: >
+      An event loop repeatedly dequeues events and invokes handlers; blocking the loop delays all dependent UI work.
+    experience_benefit: >
+      Keeps the app responding to input and timers.
+    analogy:
+      text: >
+        Like a receptionist handling one visitor request at a time in order.
+      explicitly_labeled: true
+    not_the_same_as:
+      - thread
+    failure_or_limit:
+      - "Frozen interface when the loop is blocked."
+    measure_it:
+      - "Instrument handler start/end times around a button click."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: api
+    term: "API"
+    acronym: API
+    plain_definition: >
+      A defined way for one piece of software to request services from another.
+    technical_definition: >
+      An application programming interface specifies functions, messages, or endpoints and their expected behavior and constraints.
+    experience_benefit: >
+      Lets apps use system or network services without rewriting them.
+    analogy:
+      text: >
+        Like a restaurant menu: you order known items, not the kitchen itself.
+      explicitly_labeled: true
+    not_the_same_as:
+      - user-interface
+    failure_or_limit:
+      - "Broken features when contracts change or fail."
+    measure_it:
+      - "Inspect request/response pairs in developer tools."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: cpu
+    term: "CPU"
+    acronym: CPU
+    plain_definition: >
+      The general-purpose processor that executes program instructions.
+    technical_definition: >
+      A central processing unit fetches, decodes, and executes instructions, coordinating with memory and peripherals.
+    experience_benefit: >
+      Does the step-by-step thinking for most software.
+    analogy:
+      text: >
+        Like a versatile cook following recipes.
+      explicitly_labeled: true
+    not_the_same_as:
+      - gpu
+    failure_or_limit:
+      - "Slowdowns when the CPU is saturated."
+    measure_it:
+      - "Watch CPU utilization during an interaction."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: gpu
+    term: "GPU"
+    acronym: GPU
+    plain_definition: >
+      A processor specialized for highly parallel work such as graphics rendering.
+    technical_definition: >
+      Graphics processing units excel at parallel numeric workloads used in rendering and some compute tasks.
+    experience_benefit: >
+      Helps visuals appear smooth.
+    analogy:
+      text: >
+        Like many artists painting different parts of a mural at once.
+      explicitly_labeled: true
+    not_the_same_as:
+      - cpu
+    failure_or_limit:
+      - "Missed frames, stutter, delayed rendering."
+    measure_it:
+      - "Observe frame timing tools while animating UI."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: ram
+    term: "RAM"
+    acronym: RAM
+    plain_definition: >
+      Fast working memory used by running software.
+    technical_definition: >
+      Random-access memory holds active code and data; it is volatile under typical power-off conditions.
+    experience_benefit: >
+      Keeps active information quickly available.
+    analogy:
+      text: >
+        Like a desk surface holding papers you are using right now.
+      explicitly_labeled: true
+    not_the_same_as:
+      - storage
+    failure_or_limit:
+      - "Memory pressure, slowdowns, app termination."
+    measure_it:
+      - "Open many apps and watch memory pressure indicators."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: storage
+    term: "Storage"
+    acronym: null
+    plain_definition: >
+      Longer-term memory that keeps data when working memory is insufficient or power is removed.
+    technical_definition: >
+      Storage devices retain files and data across sessions, typically with higher latency than RAM.
+    experience_benefit: >
+      Remembers files and apps for later.
+    analogy:
+      text: >
+        Like a filing cabinet compared with a desk.
+      explicitly_labeled: true
+    not_the_same_as:
+      - ram
+    failure_or_limit:
+      - "Slow opens or stalls when storage is busy."
+    measure_it:
+      - "Time opening a large file from storage."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: packet
+    term: "Packet"
+    acronym: null
+    plain_definition: >
+      A formatted unit of data transmitted across a network.
+    technical_definition: >
+      Packets encapsulate payload and control information so networks can forward, route, and reassemble communication.
+    experience_benefit: >
+      Lets information move between systems.
+    analogy:
+      text: >
+        Like an addressed envelope carrying part of a message.
+      explicitly_labeled: true
+    not_the_same_as:
+      - frame
+    failure_or_limit:
+      - "Loss, retries, delay, incomplete responses."
+    measure_it:
+      - "Inspect request timing and failure states in network tools."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: protocol
+    term: "Protocol"
+    acronym: null
+    plain_definition: >
+      An agreed set of rules for exchanging information.
+    technical_definition: >
+      Protocols define formats, sequences, and error handling so different systems can interoperate.
+    experience_benefit: >
+      Makes remote cooperation possible.
+    analogy:
+      text: >
+        Like shared rules for a turn-taking conversation.
+      explicitly_labeled: true
+    not_the_same_as:
+      - api
+    failure_or_limit:
+      - "Communication fails when sides disagree on rules."
+    measure_it:
+      - "Identify protocol layers in a captured request path."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: radio
+    term: "Radio"
+    acronym: null
+    plain_definition: >
+      The wireless hardware and associated stack that send and receive signals over the air.
+    technical_definition: >
+      A radio subsystem converts digital information to/from electromagnetic signals under regulatory and link constraints.
+    experience_benefit: >
+      Lets a device communicate without a cable.
+    analogy:
+      text: >
+        Like a walkie-talkie built into the device.
+      explicitly_labeled: true
+    not_the_same_as:
+      - router
+    failure_or_limit:
+      - "Drops, weak signal, high latency."
+    measure_it:
+      - "Compare behavior on strong vs weak Wi-Fi without claiming field RF measurements you did not take."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: router
+    term: "Router"
+    acronym: null
+    plain_definition: >
+      A device or function that forwards packets between networks.
+    technical_definition: >
+      Routers use addressing and routing information to choose next hops for packets.
+    experience_benefit: >
+      Helps your data find a path beyond the local link.
+    analogy:
+      text: >
+        Like a mail sorting center choosing the next truck.
+      explicitly_labeled: true
+    not_the_same_as:
+      - packet
+    failure_or_limit:
+      - "Unreachable services despite local link connection."
+    measure_it:
+      - "Trace whether failure is local Wi-Fi, gateway, or remote service."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: latency
+    term: "Latency"
+    acronym: null
+    plain_definition: >
+      The delay between a cause and an observable effect.
+    technical_definition: >
+      Latency can be measured at many boundaries; application timestamps are not identical to physical touch-to-photon latency.
+    experience_benefit: >
+      Explains why something feels instant or late.
+    analogy:
+      text: >
+        Like the wait between knocking and hearing 'come in.'
+      explicitly_labeled: true
+    not_the_same_as:
+      - jitter
+    failure_or_limit:
+      - "Interactions feel sluggish."
+    measure_it:
+      - "Timestamp input and visible update; label what you truly measured."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: jitter
+    term: "Jitter"
+    acronym: null
+    plain_definition: >
+      Variation in delay over time.
+    technical_definition: >
+      Jitter describes instability in latency that can make motion or interaction feel uneven even when average delay is moderate.
+    experience_benefit: >
+      Helps explain uneven or 'hiccup' experiences.
+    analogy:
+      text: >
+        Like buses that are sometimes on time and sometimes late by different amounts.
+      explicitly_labeled: true
+    not_the_same_as:
+      - latency
+    failure_or_limit:
+      - "Stutter or unstable feel."
+    measure_it:
+      - "Collect multiple runs and report spread, not only the average."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: rendering
+    term: "Rendering"
+    acronym: null
+    plain_definition: >
+      The process of turning visual descriptions into pixels for display.
+    technical_definition: >
+      Rendering pipelines prepare frames from UI/scene state, often involving CPU and GPU stages before scanout.
+    experience_benefit: >
+      Turns app state into something you can see.
+    analogy:
+      text: >
+        Like developing a photo so the image becomes visible.
+      explicitly_labeled: true
+    not_the_same_as:
+      - frame
+    failure_or_limit:
+      - "Blank, delayed, or tearing visuals."
+    measure_it:
+      - "Use frame timing overlays where available."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: frame
+    term: "Frame"
+    acronym: null
+    plain_definition: >
+      One complete image update in a display sequence.
+    technical_definition: >
+      A frame is a discrete rendered output; missing deadlines can cause stutter.
+    experience_benefit: >
+      Smooth motion depends on frames arriving on time.
+    analogy:
+      text: >
+        Like one page in a flipbook.
+      explicitly_labeled: true
+    not_the_same_as:
+      - packet
+    failure_or_limit:
+      - "Stutter when frames are late."
+    measure_it:
+      - "Count missed frame deadlines in a profiling tool."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: cache
+    term: "Cache"
+    acronym: null
+    plain_definition: >
+      Small, fast storage that keeps likely-needed data close to where work happens.
+    technical_definition: >
+      Caches exploit locality to reduce average access latency across memory and content hierarchies.
+    experience_benefit: >
+      Avoids waiting when the answer is already nearby.
+    analogy:
+      text: >
+        Like keeping frequently used tools on a small workbench.
+      explicitly_labeled: true
+    not_the_same_as:
+      - storage
+    failure_or_limit:
+      - "Stalls when needed data is not cached."
+    measure_it:
+      - "Compare first load versus repeat load timing."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: service
+    term: "Service"
+    acronym: null
+    plain_definition: >
+      A program or component that performs work on request for other programs.
+    technical_definition: >
+      Services may run locally or remotely and expose APIs for clients.
+    experience_benefit: >
+      Does a job your app asks for.
+    analogy:
+      text: >
+        Like a specialist desk that handles one kind of request.
+      explicitly_labeled: true
+    not_the_same_as:
+      - process
+    failure_or_limit:
+      - "Feature fails when the service is down."
+    measure_it:
+      - "Distinguish local handler failure from remote service failure."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: edge-computing
+    term: "Edge computing"
+    acronym: null
+    plain_definition: >
+      Processing placed closer to users or devices than a distant central cloud.
+    technical_definition: >
+      Edge computing reduces some latency and can keep data nearer to its source, with deployment and consistency tradeoffs.
+    experience_benefit: >
+      Can make some responses feel nearer and faster.
+    analogy:
+      text: >
+        Like a neighborhood library versus a faraway archive.
+      explicitly_labeled: true
+    not_the_same_as:
+      - cloud-computing
+    failure_or_limit:
+      - "Still slow if the edge node is overloaded or far in network terms."
+    measure_it:
+      - "Compare response timing against a distant endpoint when ethically and safely possible."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: cloud-computing
+    term: "Cloud computing"
+    acronym: null
+    plain_definition: >
+      On-demand computing resources and services provided over a network, often in large shared facilities.
+    technical_definition: >
+      Cloud computing centralizes scalable compute/storage/services accessed remotely.
+    experience_benefit: >
+      Lets apps use powerful remote computers.
+    analogy:
+      text: >
+        Like renting workshop space instead of owning every tool.
+      explicitly_labeled: true
+    not_the_same_as:
+      - edge-computing
+    failure_or_limit:
+      - "Unavailable when connectivity or service fails."
+    measure_it:
+      - "Observe offline behavior of a network-dependent control."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: haptic-feedback
+    term: "Haptic feedback"
+    acronym: null
+    plain_definition: >
+      Touch-based feedback such as vibration or force cues.
+    technical_definition: >
+      Haptics provide non-visual confirmation channels that must be designed with accessibility and comfort in mind.
+    experience_benefit: >
+      Lets you feel that an action registered.
+    analogy:
+      text: >
+        Like a polite tap back on your fingertip.
+      explicitly_labeled: true
+    not_the_same_as:
+      - audio-feedback
+    failure_or_limit:
+      - "Missing confirmation for some users if haptics are the only cue."
+    measure_it:
+      - "Test interactions with haptics off and alternative cues on."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []
+  - id: stability-contract
+    term: "Stability Contract"
+    acronym: null
+    plain_definition: >
+      The set of hidden technical conditions that must remain good enough for a human experience to succeed.
+    technical_definition: >
+      The Stability Contract teaches that connectivity, completion of local work, and display update are distinct conditions.
+    experience_benefit: >
+      Explains why 'connected' is not the same as 'usable.'
+    analogy:
+      text: >
+        Like a bridge that needs many bolts tight, not only one.
+      explicitly_labeled: true
+    not_the_same_as:
+      - latency
+    failure_or_limit:
+      - "Experience fails while some indicators still look fine."
+    measure_it:
+      - "List which conditions you observed versus inferred."
+    related: []
+    introduced_in: [CH02]
+    labs: [LAB-TAP-001]
+    careers: []

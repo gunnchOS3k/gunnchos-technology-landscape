@@ -1,0 +1,19 @@
+figure_id: FIG-CH02-003
+title: "Representative Device Exploded View"
+caption: "Representative educational architecture of a touch-capable device. Not a specific validated hardware revision."
+alt_text: "Exploded educational view of display, digitizer, SoC, memory, storage, radio, battery, and thermal path."
+text_equivalent: |
+  Layers separate in space for teaching. Labels name each part, its role, and a failure symptom. This is not an exact manufactured gunnchOS EVT unit. PHYSICAL_PENDING hardware must not be implied.
+reading_order:
+  - "Cover glass and display"
+  - "Touch digitizer"
+  - "SoC with CPU and GPU"
+  - "RAM"
+  - "Storage"
+  - "Radio"
+  - "Battery and power"
+  - "Thermal path"
+source: figures/exploded-views/fig-ch02-003-device-exploded.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

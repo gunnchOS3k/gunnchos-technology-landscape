@@ -1,0 +1,85 @@
+concepts:
+  - id: event
+    term: "Event"
+    introduced_in: CH02
+  - id: touch-digitizer
+    term: "Touch digitizer"
+    introduced_in: CH02
+  - id: interrupt
+    term: "Interrupt"
+    introduced_in: CH02
+  - id: device-driver
+    term: "Device driver"
+    introduced_in: CH02
+  - id: kernel
+    term: "Kernel"
+    introduced_in: CH02
+  - id: process
+    term: "Process"
+    introduced_in: CH02
+  - id: thread
+    term: "Thread"
+    introduced_in: CH02
+  - id: scheduler
+    term: "Scheduler"
+    introduced_in: CH02
+  - id: event-loop
+    term: "Event loop"
+    introduced_in: CH02
+  - id: api
+    term: "API"
+    introduced_in: CH02
+  - id: cpu
+    term: "CPU"
+    introduced_in: CH02
+  - id: gpu
+    term: "GPU"
+    introduced_in: CH02
+  - id: ram
+    term: "RAM"
+    introduced_in: CH02
+  - id: storage
+    term: "Storage"
+    introduced_in: CH02
+  - id: packet
+    term: "Packet"
+    introduced_in: CH02
+  - id: protocol
+    term: "Protocol"
+    introduced_in: CH02
+  - id: radio
+    term: "Radio"
+    introduced_in: CH02
+  - id: router
+    term: "Router"
+    introduced_in: CH02
+  - id: latency
+    term: "Latency"
+    introduced_in: CH02
+  - id: jitter
+    term: "Jitter"
+    introduced_in: CH02
+  - id: rendering
+    term: "Rendering"
+    introduced_in: CH02
+  - id: frame
+    term: "Frame"
+    introduced_in: CH02
+  - id: cache
+    term: "Cache"
+    introduced_in: CH02
+  - id: service
+    term: "Service"
+    introduced_in: CH02
+  - id: edge-computing
+    term: "Edge computing"
+    introduced_in: CH02
+  - id: cloud-computing
+    term: "Cloud computing"
+    introduced_in: CH02
+  - id: haptic-feedback
+    term: "Haptic feedback"
+    introduced_in: CH02
+  - id: stability-contract
+    term: "Stability Contract"
+    introduced_in: CH02

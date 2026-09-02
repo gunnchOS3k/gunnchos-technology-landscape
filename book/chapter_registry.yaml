@@ -1,0 +1,206 @@
+chapters:
+  - chapter_id: CH01
+    chapter_number: 1
+    title: "Technology Is a System, Not a Screen"
+    part: "I"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH02
+    chapter_number: 2
+    title: "Follow One Tap Through the Entire Stack"
+    part: "I"
+    status: draft
+    concept_edition: true
+    human_question:
+      - What actually happens when I tap a button?
+    experience:
+      - responsive touch interaction
+    reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+    systems: [input, operating-system, application, networking, rendering]
+    devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+    labs: [LAB-TAP-001]
+    figures: [FIG-CH02-001, FIG-CH02-002, FIG-CH02-003, FIG-CH02-004, FIG-CH02-005, FIG-CH02-006, FIG-CH02-007]
+    concepts:
+      introduced: [event, touch-digitizer, interrupt, device-driver, kernel, process, thread, scheduler, event-loop, api, cpu, gpu, ram, storage, packet, protocol, radio, router, latency, jitter, rendering, frame, cache, service, edge-computing, cloud-computing, haptic-feedback]
+      required: []
+      related: [stability-contract]
+    waike:
+      mapped: true
+      courses: [SOFTWARE_BUILDER, GAME_DEV_INTERACTIVE, COMPUTER_NETWORKING, EMBEDDED_PROTOTYPING]
+      note: "Mapped to existing digital_rc courses by competency adjacency; no invented tap-lab module ID."
+    claims:
+      registry: evidence/claim_registry.yaml
+  - chapter_id: CH03
+    chapter_number: 3
+    title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
+    part: "I"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH04
+    chapter_number: 4
+    title: "The Device Quartet as a Learning Laboratory"
+    part: "I"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH05
+    chapter_number: 5
+    title: "Electricity, Signals, Clocks, and Logic"
+    part: "II"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH06
+    chapter_number: 6
+    title: "CPU, Instructions, and Parallel Work"
+    part: "II"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH07
+    chapter_number: 7
+    title: "Memory, Cache, and Storage"
+    part: "II"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH08
+    chapter_number: 8
+    title: "Graphics, Displays, Audio, Cameras, and Sensors"
+    part: "II"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH09
+    chapter_number: 9
+    title: "Power, Batteries, Thermals, and Mechanical Design"
+    part: "II"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH10
+    chapter_number: 10
+    title: "Ports, Buses, Boards, Packaging, and Manufacturing"
+    part: "II"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH11
+    chapter_number: 11
+    title: "Firmware, Boot, and Trust"
+    part: "III"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH12
+    chapter_number: 12
+    title: "Operating Systems, Processes, Threads, and Scheduling"
+    part: "III"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH13
+    chapter_number: 13
+    title: "Files, Databases, and Data Lifecycles"
+    part: "III"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH14
+    chapter_number: 14
+    title: "Applications, APIs, Runtimes, and User Interfaces"
+    part: "III"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH15
+    chapter_number: 15
+    title: "Containers, Virtualization, Cloud, and Edge Computing"
+    part: "III"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH16
+    chapter_number: 16
+    title: "Packets, Protocols, Routing, and the Internet"
+    part: "IV"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH17
+    chapter_number: 17
+    title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
+    part: "IV"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH18
+    chapter_number: 18
+    title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
+    part: "IV"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH19
+    chapter_number: 19
+    title: "NTN and Service Continuity Across Ground, Air, and Space"
+    part: "IV"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH20
+    chapter_number: 20
+    title: "Latency, Reliability, QoE, and the Stability Contract"
+    part: "IV"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH21
+    chapter_number: 21
+    title: "Data, Machine Learning, and Generative AI"
+    part: "V"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH22
+    chapter_number: 22
+    title: "Edge AI, Sensors, and Embodied Interaction"
+    part: "V"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH23
+    chapter_number: 23
+    title: "Cybersecurity from Chip to Cloud"
+    part: "V"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH24
+    chapter_number: 24
+    title: "Privacy, Identity, Safety, Accessibility, and Ethics"
+    part: "V"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH25
+    chapter_number: 25
+    title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
+    part: "V"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH26
+    chapter_number: 26
+    title: "Software Development and Version Control"
+    part: "VI"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH27
+    chapter_number: 27
+    title: "Testing, Observability, and Evidence"
+    part: "VI"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH28
+    chapter_number: 28
+    title: "Digital Twins, Simulation, and Reproducible Research"
+    part: "VI"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH29
+    chapter_number: 29
+    title: "Designing a Complete Technology Product"
+    part: "VI"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH30
+    chapter_number: 30
+    title: "Career Maps and Portfolio Proof"
+    part: "VI"
+    status: outline
+    concept_edition: false
+  - chapter_id: CH31
+    chapter_number: 31
+    title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
+    part: "VI"
+    status: outline
+    concept_edition: false

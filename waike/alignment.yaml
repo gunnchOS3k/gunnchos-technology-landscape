@@ -1,0 +1,22 @@
+# Evidence-based mappings only. No invented module IDs.
+alignment:
+  - chapter: CH02
+    lab: LAB-TAP-001
+    waike_source: SRC-WAIKE
+    waike_sha: "8eb2827dc58ffa391842da1bfb1ee665c25a31a7"
+    mapped_courses:
+      - course_id: SOFTWARE_BUILDER
+        id_system: digital_rc
+        competency_link: "software event handling / builder instrumentation adjacency"
+      - course_id: GAME_DEV_INTERACTIVE
+        id_system: digital_rc
+        competency_link: "lab_input_actions input remapping adjacency"
+      - course_id: COMPUTER_NETWORKING
+        id_system: digital_rc
+        competency_link: "one-packet / datapath tracing adjacency"
+      - course_id: EMBEDDED_PROTOTYPING
+        id_system: digital_rc
+        competency_link: "lab_ep_isr_vs_poll latency-budget adjacency"
+    explicit_non_mapping:
+      - "No WAIKE course module ID named Trace One Tap / LAB-TAP-001 exists on accepted main."
+    portfolio_artifact: labs/LAB-TAP-001/portfolio/

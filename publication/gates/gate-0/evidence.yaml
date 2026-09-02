@@ -1,0 +1,6 @@
+gate: 0
+title: "Charter"
+status: GATE_0_READY_FOR_AUTHOR_APPROVAL
+evaluated_at: "2026-09-02"
+artifacts:
+  - "README, PEDAGOGICAL_CONTRACT, STYLE_BIBLE, rights register, license"
