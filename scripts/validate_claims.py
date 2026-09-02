@@ -15,6 +15,7 @@ ALLOWED = {
     "standard",
     "peer-reviewed",
     "repository-implemented",
+    "repository-documented",
     "repository-tested",
     "measured",
     "simulated",

@@ -1,17 +1,21 @@
 figure_id: FIG-CH02-001
 title: "One Tap: Human-to-System Overview"
 caption: "A first-time-reader map of one tap from human intent to human-visible result. Conceptual educational diagram."
-alt_text: "Numbered overview from human tap through input, software, optional network, and visible response."
+alt_text: "End-to-end experience map: Human to input to software to optional network to output to perception."
 text_equivalent: |
-  This diagram shows six large stages in left-to-right order: Human, Input hardware, System software and application, Optional network and service, Output/renderer, Human perception. Arrows indicate forward progress. A dashed branch marks that network/service is optional. Status: conceptual educational architecture.
+  Six stages left to right: (1) Human, (2) Input hardware, (3) System software and Application,
+  (4) Optional Network/Service on a dashed OPTIONAL branch, (5) Output/renderer, (6) Human perception.
+  Solid line arrows connect the main path; dashed stroke-dasharray lines mark the optional network
+  branch that can be skipped via a solid local path underneath. Status: Conceptual educational diagram.
 reading_order:
-  - "1 Human intent and tap"
-  - "2 Input hardware senses contact"
-  - "3 OS and application interpret the event"
-  - "4 Optional network/service path"
-  - "5 Renderer updates display"
-  - "6 Human perceives feedback"
+  - "1 Human — intent / tap"
+  - "2 Input hardware — senses contact"
+  - "3 Software — Application over System software"
+  - "4 OPTIONAL Network / Service (dashed branch)"
+  - "local path (skip network)"
+  - "5 Output — renderer / display"
+  - "6 Perception — human sees result"
 source: figures/ecosystem/fig-ch02-001-human-to-system.svg
 status: conceptual
 reviewer: pending-human-visual-review
-version: "0.1.0"
+version: "0.2.0"

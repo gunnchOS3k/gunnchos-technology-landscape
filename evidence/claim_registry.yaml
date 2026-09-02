@@ -9,10 +9,16 @@ claims:
       repository: gunnchOS3k/waike-research-ops
       branch: main
       commit: "8eb2827dc58ffa391842da1bfb1ee665c25a31a7"
-      path: curriculum/digital_rc/
+      path: curriculum/digital_rc/COMPUTER_NETWORKING/course.json
       lines: ""
+      supporting_paths:
+        - curriculum/catalog.yaml
+        - curriculum/digital_rc/GAME_DEV_INTERACTIVE/course.json
+        - curriculum/digital_rc/EMBEDDED_PROTOTYPING/course.json
+        - curriculum/digital_rc/SOFTWARE_BUILDER/course.json
+        - src/waike_course_ready/
     verification:
-      method: "accepted-main directory listing + course.json presence"
+      method: "accepted-main course.json + catalog inspection"
       command: "gh api repos/gunnchOS3k/waike-research-ops/commits/main"
       result: "SHA 8eb2827... audited 2026-09-02"
     limitations:
@@ -35,6 +41,10 @@ claims:
       commit: "28562a8456207540c205a1c8a6434a491b0a4771"
       path: gunnchos_device_os/shell/input_routing.py
       lines: ""
+      supporting_paths:
+        - gunnchos_device_os/runtime/catalog.py
+        - beta_gate/beta_gate_status.yaml
+        - ring_input/STATUS.yaml
     verification:
       method: "accepted-main file inspection"
       command: "git -C gunnchos-device-os rev-parse HEAD"
@@ -51,24 +61,31 @@ claims:
     chapter: CH02
     text: "Device Quartet research form factors are defined in the hardware industrial-design repository as concept-complete learning benchmarks; physical fabrication remains pending."
     scope: project-specific
-    classification: repository-implemented
+    classification: repository-documented
     source:
       type: github
       repository: gunnchOS3k/gunnchos-hardware-industrial-design
       branch: main
       commit: "9ee0ef2f688b2c18428bfabc316b23687a02988d"
-      path: docs/device-quartet/
+      path: docs/device-quartet/README.md
       lines: ""
+      supporting_paths:
+        - docs/device-quartet/student-14-5-research-spec.md
+        - docs/device-quartet/handheld-hybrid-research-spec.md
+        - docs/device-quartet/ds-xl-coder-research-spec.md
+        - docs/device-quartet/edge-io-wearables-research-spec.md
+        - DIGITAL_MANUFACTURING_READINESS.md
     verification:
       method: "accepted-main docs/device-quartet inspection"
       command: "git -C gunnchos-hardware-industrial-design rev-parse HEAD"
       result: "SHA 9ee0ef2... audited 2026-09-02"
     limitations:
       - "PHYSICAL_PENDING; DIGITAL_FABRICATION_PASS=FALSE."
+      - "Documentation of research form factors is not executable device implementation."
       - "Not finished commercial products."
     wording:
       approved: "Device Quartet entries are research form factors / educational benchmarks, not validated manufactured products."
-      prohibited: ["Device Quartet units are shipping commercial products"]
+      prohibited: ["Device Quartet units are shipping commercial products", "Device Quartet is repository-implemented silicon"]
     status: verified
 
   - claim_id: CLM-0004
@@ -83,10 +100,11 @@ claims:
       commit: ""
       path: ""
       lines: ""
+      citation_key: patterson-hennessy
     verification:
-      method: "general computer organization knowledge"
+      method: "computer organization textbook consensus"
       command: ""
-      result: "not project-specific"
+      result: "supported by patterson-hennessy bibliography entry"
     limitations: []
     wording:
       approved: "RAM is working memory for running software."
@@ -102,11 +120,11 @@ claims:
       type: publication
       repository: gunnchOS3k/gunnchos-technology-landscape
       branch: cursor/publication-foundation-v1
-      commit: pending
+      commit: "pending-on-push"
       path: figures/architecture/fig-ch02-006-latency-budget.svg
       lines: ""
     verification:
-      method: "figure status label"
+      method: "figure status label + SVG stacked segments"
       command: ""
       result: "status=illustrative"
     limitations:

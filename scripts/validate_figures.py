@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Validate figure registry, assets, and Chapter 2 embedding."""
 from __future__ import annotations
 
 import sys
@@ -31,11 +32,23 @@ def main() -> int:
             errors.append(f"{fid}: invalid status {acc.get('status')}")
     if len(figure_ids) != len(set(figure_ids)):
         errors.append("duplicate figure ids")
-    # CH02 required figures
+
     meta = load_yaml(ROOT / "book/chapters/ch02/metadata.yaml")
+    ch2 = (ROOT / "book/chapters/ch02/chapter.md").read_text(encoding="utf-8")
     for fid in meta.get("figures") or []:
         if fid not in figure_ids:
             errors.append(f"CH02 references missing figure {fid}")
+        fig_meta = next(f for f in reg["figures"] if f["figure_id"] == fid)
+        leaf = Path(fig_meta["path"]).name
+        if leaf not in ch2:
+            errors.append(f"CH02 does not embed asset path for {fid} ({leaf})")
+        # Accept either {#fig-ch02-001} or {#fig-ch02-001 fig-cap="..."}
+        token = "#" + fid.lower()
+        if token not in ch2:
+            errors.append(f"CH02 missing Quarto figure id token {token}")
+    if "![" not in ch2:
+        errors.append("CH02 missing markdown image embeds")
+
     if errors:
         print("validate_figures: FAIL")
         for e in errors:

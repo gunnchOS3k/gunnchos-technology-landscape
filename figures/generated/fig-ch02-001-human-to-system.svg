@@ -1,19 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="296" role="img" aria-label="Numbered overview from human tap through input, software, optional network, and visible response.">
-<title>FIG-CH02-001: One Tap: Human-to-System Overview</title>
-<desc>This diagram shows six large stages in left-to-right order: Human, Input hardware, System software and application, Optional network and service, Output/renderer, Human perception. Arrows indicate forward progress. A dashed branch marks that network/service is optional. Status: conceptual educational architecture.</desc>
-<rect width="100%" height="100%" fill="#ffffff" stroke="#222222" stroke-width="2"/>
-<text x="20" y="28" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111">FIG-CH02-001 — One Tap: Human-to-System Overview</text>
-<text x="20" y="50" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333">Status: conceptual · Representative educational diagram · Color is not the sole encoding</text>
-<rect x="20" y="60" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
-<text x="32" y="78" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">1. 1 Human intent and tap</text>
-<rect x="20" y="96" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
-<text x="32" y="114" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">2. 2 Input hardware senses contact</text>
-<rect x="20" y="132" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
-<text x="32" y="150" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">3. 3 OS and application interpret the event</text>
-<rect x="20" y="168" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
-<text x="32" y="186" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">4. 4 Optional network/service path</text>
-<rect x="20" y="204" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
-<text x="32" y="222" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">5. 5 Renderer updates display</text>
-<rect x="20" y="240" width="880" height="28" fill="none" stroke="#111" stroke-width="1.5"/>
-<text x="32" y="258" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#111">6. 6 Human perceives feedback</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" role="img" aria-label="End-to-end experience map: Human to input to software to optional network to output to perception.">
+  <title>FIG-CH02-001: One Tap: Human-to-System Overview</title>
+  <desc>Six stages left to right: (1) Human, (2) Input hardware, (3) System software and Application, (4) Optional Network/Service on a dashed OPTIONAL branch, (5) Output/renderer, (6) Human perception. Solid line arrows connect the main path; dashed stroke-dasharray lines mark the optional network branch that can be skipped. Status label: Conceptual educational diagram.</desc>
+  <defs>
+    <marker id="arr001" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+    <marker id="arr001d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1F4B7A"/>
+    </marker>
+  </defs>
+
+  <rect width="1040" height="400" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="398" fill="none" stroke="#222222" stroke-width="2"/>
+
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH02-001 — One Tap: Human-to-System Overview</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram · Color is not the sole encoding</text>
+
+  <!-- 1 Human -->
+  <rect x="24" y="180" width="118" height="80" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <circle cx="83" cy="208" r="12" fill="none" stroke="#111111" stroke-width="2"/>
+  <line x1="83" y1="220" x2="83" y2="244" stroke="#111111" stroke-width="2"/>
+  <text x="83" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Human</text>
+  <text x="83" y="276" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">intent / tap</text>
+
+  <line x1="142" y1="220" x2="168" y2="220" stroke="#111111" stroke-width="2" marker-end="url(#arr001)"/>
+
+  <!-- 2 Input hardware -->
+  <rect x="170" y="180" width="128" height="80" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <rect x="192" y="198" width="84" height="34" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <circle cx="212" cy="215" r="3.5" fill="#111111"/>
+  <circle cx="234" cy="215" r="3.5" fill="#111111"/>
+  <circle cx="256" cy="215" r="3.5" fill="#111111"/>
+  <text x="234" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">2 Input hardware</text>
+  <text x="234" y="276" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">senses contact</text>
+
+  <line x1="298" y1="220" x2="324" y2="220" stroke="#111111" stroke-width="2" marker-end="url(#arr001)"/>
+
+  <!-- 3 System software + Application -->
+  <rect x="326" y="168" width="150" height="104" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <rect x="338" y="186" width="126" height="30" fill="#f0f0f0" stroke="#111111" stroke-width="1"/>
+  <text x="401" y="206" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Application</text>
+  <rect x="338" y="224" width="126" height="30" fill="#e4e4e4" stroke="#111111" stroke-width="1"/>
+  <text x="401" y="244" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">System software</text>
+  <text x="401" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 Software</text>
+  <text x="401" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">interpret event</text>
+
+  <!-- Solid local skip under optional -->
+  <path d="M476,240 L476,310 L700,310 L700,260" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#arr001)"/>
+  <text x="588" y="328" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">local path (skip network)</text>
+
+  <!-- 4 Optional Network/Service (dashed) -->
+  <path d="M476,190 C510,110 560,95 610,100" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr001d)"/>
+  <rect x="540" y="48" width="170" height="58" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="625" y="70" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#1F4B7A">4 OPTIONAL</text>
+  <text x="625" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Network / Service</text>
+  <path d="M710,100 C760,120 780,160 780,180" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr001d)"/>
+
+  <!-- 5 Output/renderer -->
+  <rect x="700" y="180" width="128" height="80" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <rect x="718" y="196" width="92" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <line x1="732" y1="212" x2="796" y2="212" stroke="#111111" stroke-width="1.5"/>
+  <line x1="732" y1="222" x2="780" y2="222" stroke="#888888" stroke-width="1.5"/>
+  <text x="764" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">5 Output</text>
+  <text x="764" y="276" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">renderer / display</text>
+
+  <line x1="828" y1="220" x2="862" y2="220" stroke="#111111" stroke-width="2" marker-end="url(#arr001)"/>
+
+  <!-- 6 Human perception -->
+  <rect x="864" y="180" width="150" height="80" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <circle cx="939" cy="206" r="12" fill="none" stroke="#111111" stroke-width="2"/>
+  <path d="M920,228 Q939,246 958,228" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="939" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">6 Perception</text>
+  <text x="939" y="276" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">human sees result</text>
+
+  <!-- Legend -->
+  <line x1="28" y1="360" x2="68" y2="360" stroke="#111111" stroke-width="2"/>
+  <text x="76" y="364" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">solid arrow = required path</text>
+  <line x1="260" y1="360" x2="300" y2="360" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="308" y="364" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">dashed = OPTIONAL network/service branch</text>
+  <text x="28" y="386" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#666666">Experience map · one tap from human intent to human-visible result</text>
 </svg>

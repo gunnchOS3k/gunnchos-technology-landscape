@@ -7,6 +7,7 @@ author: "Edmund Gunn, Jr."
 part: I
 concept_edition: true
 labs: [LAB-TAP-001]
+bibliography: ../../references/references.bib
 figures:
   - FIG-CH02-001
   - FIG-CH02-002
@@ -62,7 +63,11 @@ Optional comparison, available on almost any device you already own: tap a contr
 
 ## 3. Exploded ecosystem
 
-A tap is not a single object. It is a path through an ecosystem. Figure **FIG-CH02-001** (*One Tap: Human-to-System Overview*) is the first-minute map: person → device → optional network → result. Figure **FIG-CH02-003** (*Representative Device Exploded View*) opens the box conceptually. Both are **conceptual / Representative educational architecture**—not a claim that any specific manufactured revision looks exactly like the diagram. The Device Quartet used elsewhere in this series—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—are research form factors and learning benchmarks defined in the hardware industrial-design source of truth; physical fabrication remains pending (**PHYSICAL_PENDING**) (CLM-0003).
+A tap is not a single object. It is a path through an ecosystem. @fig-ch02-001 is the first-minute map: person → device → optional network → result. @fig-ch02-003 opens the box conceptually. Both are **conceptual / Representative educational architecture**—not a claim that any specific manufactured revision looks exactly like the diagram. The Device Quartet used elsewhere in this series—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—are research form factors and learning benchmarks defined in the hardware industrial-design source of truth; physical fabrication remains pending (**PHYSICAL_PENDING**) (CLM-0003).
+
+![End-to-end map from human tap through input, software, optional network, output, and perception.](../../../figures/ecosystem/fig-ch02-001-human-to-system.svg){#fig-ch02-001 fig-cap="One Tap: Human-to-System Overview. Conceptual educational experience map with a dashed optional network/service branch."}
+
+![Exploded educational device view with display, digitizer, SoC, memory, storage, radio, battery, and thermal path.](../../../figures/exploded-views/fig-ch02-003-device-exploded.svg){#fig-ch02-003 fig-cap="Representative educational architecture of a touch-capable device. Not a validated gunnchOS EVT."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -72,11 +77,11 @@ You form intent: refresh this page, send this note, open this file. Muscles move
 
 ### Input hardware
 
-Where a touchscreen is involved, cover glass, a touch-sensing layer (often called a **touch digitizer**), and input electronics convert contact into electrical signals. Controllers package those signals into digital reports—coordinates, contact state, sometimes pressure or size. Not every device uses the same sensing method, and not every interaction is a finger on glass. Keyboards, switches, voice, and assistive pointers enter through different hardware but must still become events software can interpret.
+Where a touchscreen is involved, cover glass, a touch-sensing layer (often called a **touch digitizer**), and input electronics convert contact into electrical signals. Controllers package those signals into digital reports—coordinates, contact state, sometimes pressure or size. On the web platform, related user-input event behavior is standardized in UI Events and Pointer Events [@w3c-uievents; @w3c-pointerevents]. Not every device uses the same sensing method, and not every interaction is a finger on glass. Keyboards, switches, voice, and assistive pointers enter through different hardware but must still become events software can interpret.
 
 ### Compute hardware
 
-A system-on-chip (**SoC**) typically gathers a **CPU** for general work, a **GPU** for highly parallel graphics and similar tasks, **RAM** as fast working memory, and storage for durable data. Radios, batteries, power regulation, and thermal paths sit nearby. When the book shows these parts for learning devices, treat exploded views as **Representative educational architecture** unless a dated, revision-specific hardware evidence package is cited—and for gunnchOS hardware sources audited for this edition, that physical EVT evidence is not yet available (CLM-0003).
+A system-on-chip (**SoC**) typically gathers a **CPU** for general work, a **GPU** for highly parallel graphics and similar tasks, **RAM** as fast working memory, and storage for durable data [@patterson-hennessy]. Radios, batteries, power regulation, and thermal paths sit nearby. When the book shows these parts for learning devices, treat exploded views as **Representative educational architecture** unless a dated, revision-specific hardware evidence package is cited—and for gunnchOS hardware sources audited for this edition, that physical EVT evidence is not yet available (CLM-0003).
 
 ### System software
 
@@ -86,11 +91,11 @@ On the gunnchOS device OS accepted `main`, what exists today is an **alpha / dig
 
 ### Application
 
-Your app runs an **event loop** or equivalent structure: wait for events, dispatch handlers, update **state**, maybe read local storage, maybe call a service. Local computation and remote calls are choices the application makes after it understands the event.
+Your app runs an **event loop** or equivalent structure: wait for events, dispatch handlers, update **state**, maybe read local storage, maybe call a service [@whatwg-html; @whatwg-dom]. Local computation and remote calls are choices the application makes after it understands the event.
 
 ### Networking (when applicable)
 
-A socket or higher-level API, a network stack, a Wi-Fi or cellular interface, an access network, and the wider Internet may carry a request to an **edge** or **cloud** service. Many taps never enter this layer. Teaching that “optional” word is part of the chapter’s honesty rule.
+A socket or higher-level API, a network stack, a Wi-Fi or cellular interface, an access network, and the wider Internet may carry a request to an **edge** or **cloud** service. Packet transport over the Internet commonly rests on IP and TCP foundations [@rfc791; @rfc9293]. Many taps never enter this layer. Teaching that “optional” word is part of the chapter’s honesty rule.
 
 ### Output
 
@@ -100,20 +105,24 @@ A renderer prepares pixels (and sometimes audio or haptic patterns). The GPU and
 
 Visual change, sound, vibration, and the felt sense of “alive” close the loop. The person does not experience layers; the person experiences the combined result.
 
-Figure **FIG-CH02-004** (*Software Stack*) stacks Application → Runtime/framework → Libraries/system services → Kernel → Drivers → Firmware → Hardware as a conceptual ladder. Names differ across platforms; the ladder’s purpose is orientation, not brand loyalty.
+@fig-ch02-004 stacks Application → Runtime/framework → Libraries/system services → Kernel → Drivers → Firmware → Hardware as a conceptual ladder. Names differ across platforms; the ladder’s purpose is orientation, not brand loyalty.
+
+![Vertical software stack from application down to hardware.](../../../figures/architecture/fig-ch02-004-software-stack.svg){#fig-ch02-004 fig-cap="Software stack supporting a tap-to-response path. Conceptual layering; real systems vary."}
 
 ---
 
 ## 4. Follow the signal
 
-Figure **FIG-CH02-002** (*Cross-Layer Tap Sequence*) shows a numbered path with optional branches and a failure branch. Read it as a logical story, not as a claim that a CPU executes exactly one step at a time with no overlap.
+@fig-ch02-002 shows a numbered path with optional branches and a failure branch. Read it as a logical story, not as a claim that a CPU executes exactly one step at a time with no overlap.
+
+![Sequence across Human, Input HW, OS, Application, Network, Service, and Renderer.](../../../figures/sequence/fig-ch02-002-cross-layer-sequence.svg){#fig-ch02-002 fig-cap="Cross-Layer Tap Sequence. Conceptual sequence diagram with optional network path and failure/retry branch."}
 
 1. **Human intent.** You decide to act.
 2. **Finger movement.** Contact begins.
 3. **Sensing.** Digitizer and controller detect contact (or another input path activates).
 4. **Event creation.** Coordinates and contact state become a digital touch (or key, switch, voice) event.
-5. **Driver / input subsystem.** Hardware reports become OS-level input events.
-6. **Scheduler / process availability.** The operating system’s **scheduler** decides when runnable software receives CPU time so the app can notice the event soon enough.
+5. **Driver / input subsystem.** Hardware reports become OS-level input events [@linux-input].
+6. **Scheduler / process availability.** The operating system’s **scheduler** decides when runnable software receives CPU time so the app can notice the event soon enough [@linux-scheduler; @tanenbaum-bos].
 7. **Application event dispatch.** The runtime delivers the event toward the control under your finger.
 8. **Handler executes.** Application code runs for that event.
 9. **Local state changes.** The button’s pressed appearance, a flag, a list selection—something in memory flips.
@@ -143,7 +152,9 @@ Several of these may overlap. Sensing can continue while earlier events are stil
 | **Cache hit** | Content already available locally or nearby | Skip or shorten remote fetch. |
 | **Cache miss** | Needed data is absent | Retrieve or compute elsewhere. |
 
-Figure **FIG-CH02-005** (*Local vs Network-Dependent Tap*) places these side by side. Immediate local feedback can succeed on the local-only path while a later remote path is still pending—or has already failed. That split is not a trick of one brand’s UI; it is a structural fact of modern interfaces.
+@fig-ch02-005 places these side by side. Immediate local feedback can succeed on the local-only path while a later remote path is still pending—or has already failed. That split is not a trick of one brand’s UI; it is a structural fact of modern interfaces.
+
+![Side-by-side local-only and network-dependent execution paths.](../../../figures/ecosystem/fig-ch02-005-local-vs-network.svg){#fig-ch02-005 fig-cap="Local-only versus network-dependent tap paths. Conceptual compare-and-choose plate."}
 
 ---
 
@@ -239,7 +250,9 @@ For Chapter 2, a successful tap-to-response experience may require all of the fo
 - frame reaches the display (and optional audio/haptics fire),
 - total delay remains acceptable to the person.
 
-Figure **FIG-CH02-007** (*Stability Contract*) shows these as concurrent conditions, not a vanity checklist.
+@fig-ch02-007 shows these as concurrent conditions, not a vanity checklist.
+
+![Hub-and-spoke diagram of concurrent Stability Contract conditions.](../../../figures/architecture/fig-ch02-007-stability-contract.svg){#fig-ch02-007 fig-cap="Stability Contract: concurrent hidden conditions behind a successful tap experience."}
 
 Three separations matter:
 
@@ -249,7 +262,9 @@ Three separations matter:
 
 You experience the combined result. Blaming “the Wi-Fi” or “the app” without evidence collapses those domains into one vague villain. Section 11 asks you to practice better blame.
 
-Figure **FIG-CH02-006** (*Tap Latency Budget*) sketches where time can accumulate. Any numeric bands shown there are labeled **illustrative**, **measured**, or **inferred**. This chapter does not invent gunnchOS hardware benchmarks. Commodity lab timings you collect in **LAB-TAP-001** are *your* measured evidence for *your* device and browser—not a universal score.
+@fig-ch02-006 sketches where time can accumulate. Segments shown there are labeled **illustrative** teaching aids (not measured gunnchOS benchmarks). This chapter does not invent hardware scores. Commodity lab timings you collect in **LAB-TAP-001** are *your* measured evidence for *your* device and browser—not a universal score.
+
+![Horizontal stacked bar of illustrative latency segments.](../../../figures/architecture/fig-ch02-006-latency-budget.svg){#fig-ch02-006 fig-cap="Illustrative tap latency budget. Segments are teaching aids, not measured gunnchOS benchmarks."}
 
 ---
 
@@ -267,7 +282,7 @@ Figure **FIG-CH02-006** (*Tap Latency Budget*) sketches where time can accumulat
 
 **Time estimate.** About 45–90 minutes for the baseline browser route, including write-up.
 
-**Equipment / software.** Browser developer tools. Optional: a small local GUI toolkit for Route B. Optional: Android logging tools for Route C without root.
+**Equipment / software.** Browser developer tools and timing interfaces such as the Performance API where available [@mdn-performance]. Optional: a small local GUI toolkit for Route B. Optional: Android logging tools for Route C without root.
 
 **No-specialized-hardware route.** Route A below.
 
@@ -440,6 +455,12 @@ Educator note: successful teach-backs show causal sequence and at least one alte
 
 ---
 
+## References
+
+Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`). Project-specific repository evidence remains in `evidence/claim_registry.yaml` and is cited by claim ID (for example, CLM-0002), separately from external literature.
+
+Inline citations used in this chapter include @w3c-uievents, @whatwg-dom, @rfc9293, @linux-scheduler, and @patterson-hennessy.
+
 ## 12. Glossary links
 
 Terms introduced or relied on as formal vocabulary in this chapter should resolve in the living glossary registry. This section lists them for linking—not as a dump of forty free-standing definitions.
@@ -481,7 +502,7 @@ Deeper entries, analogies labeled as analogies, and “not the same as” warnin
 
 ---
 
-## Figure references (accessibility metadata stubs)
+## Figure references (embedded above; accessibility metadata)
 
 All figures below are **conceptual** unless a future revision cites a specific validated hardware release. Source preference: editable SVG in the publication repository. Reviewer and version fields fill during art production.
 

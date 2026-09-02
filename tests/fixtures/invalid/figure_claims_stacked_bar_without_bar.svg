@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100">
+<title>bad stacked</title>
+<desc>A horizontal stacked bar of latency segments is claimed here.</desc>
+<text x="10" y="30">Sensing</text>
+<text x="10" y="50">Network</text>
+</svg>

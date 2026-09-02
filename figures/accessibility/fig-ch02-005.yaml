@@ -1,14 +1,21 @@
 figure_id: FIG-CH02-005
 title: "Local vs Network-Dependent Tap"
 caption: "Compare-and-choose plate: local-only action versus network-dependent action."
-alt_text: "Side-by-side comparison of a local-only tap path and a network-dependent tap path."
+alt_text: "Two columns: local-only path versus network-dependent path sharing Human Input OS prefix then splitting."
 text_equivalent: |
-  Two columns share the human/input/OS prefix. The left column stays on device. The right column adds socket/API, packets, access network, and remote service before rejoining at render/perception.
+  Shared prefix stages Human → Input → OS, then a split. Left LOCAL-ONLY column: Application →
+  Renderer → Perception, annotated cache hit · nearby (on device). Right NETWORK-DEPENDENT column:
+  Application → Packets/API → Access network → Remote service (dashed borders and arrows), annotated
+  cloud · far (RTT + service), then rejoins at Renderer/Perception. Solid = on-device; dashed = network.
 reading_order:
-  - "Left: local-only path ends at application/renderer"
-  - "Right: network-dependent path continues to packets and service"
-  - "Both share initial sensing and OS delivery"
+  - "SHARED PREFIX: Human → Input → OS"
+  - "split into two columns"
+  - "LOCAL-ONLY: Application → Renderer → Perception"
+  - "annotation: cache hit · nearby (on device)"
+  - "NETWORK-DEPENDENT: Application → Packets/API → Access network → Remote service"
+  - "annotation: cloud · far (RTT + service)"
+  - "rejoin · Renderer / Perception"
 source: figures/ecosystem/fig-ch02-005-local-vs-network.svg
 status: conceptual
 reviewer: pending-human-visual-review
-version: "0.1.0"
+version: "0.2.0"

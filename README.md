@@ -69,16 +69,26 @@ Research/learning form factors (not mascots; not claimed as finished commercial 
 
 ## Status (truthful)
 
-**Highest legitimately claimed publication posture for this branch:**  
-`GATE_2_PASS — GATE_3_IN_PROGRESS`
-
-- Gate 0–1 artifacts: present
-- Gate 2 visual prototype: present with accessibility metadata
-- Gate 3 chapter prototype: substantial draft + lab + figures; human editorial/reader acceptance still required
-- Gates 4–7: not claimed
-
-See `publication/gates/` and `evidence/ACCEPTED_MAIN_SOURCE_AUDIT.md`.
+**Highest legitimately claimed publication posture for this branch (closure pass):**  
+`GATE_2_PASS` — `GATE_3_IN_PROGRESS`  
+Gate 3 remains blocked on real three-reader-level evidence (templates only). Gates 4–7 are not claimed.
 
 ## License
 
-Publication content defaults to **CC BY 4.0**. Upstream audited gunnchOS/WAIKE sources are MIT-licensed; do not copy NDA vendor collateral.
+**Book/artwork license:** `AUTHOR_DECISION_PENDING` — see [`publication/BOOK_LICENSE_DECISION.md`](publication/BOOK_LICENSE_DECISION.md).  
+Do not treat any prior CC BY 4.0 draft wording as an approved publication-content decision.  
+Upstream audited gunnchOS/WAIKE sources remain MIT-licensed; do not copy NDA vendor collateral.  
+Runnable lab code may use a separate proposed software license when documented.
+
+## Build commands
+
+```bash
+make setup
+make validate
+make test
+make preview
+make pdf
+make epub
+make all    # validate + test + HTML + PDF + EPUB
+make ci     # hosted CI path: validate + test + HTML
+```

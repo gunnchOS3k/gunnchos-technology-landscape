@@ -1,20 +1,35 @@
 PYTHON ?= .venv/bin/python
 PIP ?= .venv/bin/pip
-QUARTO ?= $(shell if [ -x tools/quarto/bin/quarto ]; then echo tools/quarto/bin/quarto; elif command -v quarto >/dev/null 2>&1; then command -v quarto; else echo quarto; fi)
-TINYTEX_BIN := $(HOME)/Library/TinyTeX/bin/universal-darwin
-export PATH := $(CURDIR)/tools/quarto/bin:$(TINYTEX_BIN):$(PATH)
+QUARTO ?= $(shell \
+  if [ -n "$$QUARTO_BIN" ] && [ -x "$$QUARTO_BIN" ]; then echo "$$QUARTO_BIN"; \
+  elif [ -x tools/quarto/bin/quarto ]; then echo tools/quarto/bin/quarto; \
+  elif command -v quarto >/dev/null 2>&1; then command -v quarto; \
+  else echo quarto; fi)
 
-.PHONY: setup validate test preview pdf epub all clean
+# Portable TeX discovery: env override, then common TinyTeX / TeX Live locations.
+TEX_BIN_DIR ?= $(shell \
+  if [ -n "$$TEXLIVE_BIN" ] && [ -d "$$TEXLIVE_BIN" ]; then echo "$$TEXLIVE_BIN"; \
+  elif [ -d "$$HOME/Library/TinyTeX/bin/universal-darwin" ]; then echo "$$HOME/Library/TinyTeX/bin/universal-darwin"; \
+  elif [ -d "$$HOME/Library/TinyTeX/bin/aarch64-darwin" ]; then echo "$$HOME/Library/TinyTeX/bin/aarch64-darwin"; \
+  elif [ -d "$$HOME/Library/TinyTeX/bin/x86_64-darwin" ]; then echo "$$HOME/Library/TinyTeX/bin/x86_64-darwin"; \
+  elif [ -d "$$HOME/.TinyTeX/bin/x86_64-linux" ]; then echo "$$HOME/.TinyTeX/bin/x86_64-linux"; \
+  elif [ -d "$$HOME/bin" ] && [ -x "$$HOME/bin/xelatex" ]; then echo "$$HOME/bin"; \
+  else echo ""; fi)
+
+export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
+
+.PHONY: setup validate test preview pdf epub all ci clean
 
 setup:
 	python3 -m venv .venv
 	$(PIP) install -U pip
 	$(PIP) install pyyaml pytest
-	@if [ ! -x tools/quarto/bin/quarto ]; then \
-	  echo "NOTE: Local Quarto not found at tools/quarto. Run scripts/bootstrap_quarto.sh or install Quarto."; \
+	@if [ ! -x tools/quarto/bin/quarto ] && ! command -v quarto >/dev/null 2>&1; then \
+	  echo "NOTE: Quarto not found. Run scripts/bootstrap_quarto.sh or install Quarto."; \
 	fi
-	@if [ ! -x "$(TINYTEX_BIN)/xelatex" ]; then \
-	  echo "NOTE: TinyTeX/xelatex not found. PDF may fail until \`quarto install tinytex\`."; \
+	@if ! command -v xelatex >/dev/null 2>&1; then \
+	  echo "NOTE: xelatex not found on PATH. PDF may fail until TinyTeX/TeX Live is installed."; \
+	  echo "      Optional: export TEXLIVE_BIN=/path/to/tex/bin or QUARTO_BIN=/path/to/quarto"; \
 	fi
 
 validate:
@@ -26,6 +41,7 @@ validate:
 	$(PYTHON) scripts/validate_accessibility.py
 	$(PYTHON) scripts/validate_links.py
 	$(PYTHON) scripts/validate_waike.py
+	$(PYTHON) scripts/validate_citations.py
 
 test:
 	$(PYTHON) -m pytest -q
@@ -42,7 +58,11 @@ epub:
 	@chmod +x scripts/render_formats.sh
 	@./scripts/render_formats.sh epub
 
-all: validate test preview
+# Documented full automated build for local/dev completeness.
+all: validate test preview pdf epub
+
+# Hosted CI uses a lighter path unless TeX/Quarto are provisioned.
+ci: validate test preview
 
 clean:
 	rm -rf preview .pytest_cache __pycache__

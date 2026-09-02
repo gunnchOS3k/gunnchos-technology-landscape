@@ -15,16 +15,6 @@
 | Sphinx | Docs/HTML strength | Book+EPUB path less natural |
 | mdBook | Simple HTML books | Weak print/EPUB story |
 
-### Selection criteria (weighted)
-
-Markdown-first authoring, PDF quality, EPUB support, cross-references, citations, figure handling, accessibility hooks, reproducibility, automation, contributor usability.
-
-Quarto best balanced these for a synchronized publication system.
-
-## Fallback
-
-If Quarto is unavailable in an environment, `make preview` falls back to a static HTML preview generated from Markdown, and PDF/EPUB targets report FAIL honestly rather than fabricating PASS.
-
 ## Commands
 
 ```bash
@@ -35,4 +25,32 @@ make preview
 make pdf
 make epub
 make all
+make ci
 ```
+
+| Target | Meaning |
+|---|---|
+| `make all` | validate + test + HTML + PDF + EPUB (fails honestly if deps missing) |
+| `make ci` | validate + test + HTML (hosted CI default; EPUB attempted separately in workflow) |
+
+## Portability
+
+- Quarto: `QUARTO_BIN` env override, else `tools/quarto/bin/quarto`, else `PATH`
+- TeX/xelatex: `TEXLIVE_BIN` env override, else common TinyTeX/TeX Live locations on macOS and Linux
+- Do not hard-code only `${HOME}/Library/TinyTeX/bin/universal-darwin`
+
+Bootstrap helpers:
+
+- `scripts/bootstrap_quarto.sh`
+- TinyTeX via `quarto install tinytex` when PDF is required
+
+## Growth path
+
+Chapter 2 is the canonical prototype. Concept Edition modules and the full 31-chapter book should accumulate under `book/chapters/` and `concept-edition/` without rewriting the toolchain decision.
+
+## PDF SVG dependency
+
+PDF builds require an SVG converter on PATH (`rsvg-convert` from librsvg, or Inkscape).
+
+- macOS: `brew install librsvg`
+- Debian/Ubuntu: `apt-get install librsvg2-bin`

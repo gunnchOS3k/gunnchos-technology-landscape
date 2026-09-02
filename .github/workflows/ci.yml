@@ -3,21 +3,34 @@ on:
   push:
   pull_request:
 jobs:
-  validate:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Setup
+      - name: Setup Python
         run: |
           python -m venv .venv
           .venv/bin/pip install -U pip
           .venv/bin/pip install pyyaml pytest
-      - name: Validate
-        run: make validate
-      - name: Test
-        run: make test
-      - name: Preview
-        run: make preview
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.7.32"
+      - name: Validate + test + HTML preview (make ci)
+        run: make ci
+      - name: EPUB render
+        run: make epub
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter2-preview
+          path: |
+            preview/ch02.html
+            preview/ch02.epub
+          if-no-files-found: warn
+
+  # PDF remains local/dev until TeX is provisioned reliably in CI.
+  # Do not treat absence of hosted PDF as local PDF failure.
