@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+chapter_id: CH11
+figures:
+- provisional_id: FIG-CH11-001
+  figure_type: sequence_diagram
+  pedagogical_purpose: "Power to firmware to bootloader to kernel to lock screen handoff"
+  reader_should_notice: "Key teaching distinction for CH11."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH11-002
+  figure_type: system_map
+  pedagogical_purpose: "Root of trust to verified stages (policy intent, not product badge)"
+  reader_should_notice: "Key teaching distinction for CH11."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH11-003
+  figure_type: comparative_layers
+  pedagogical_purpose: "Lock screen (user auth) vs secure boot (software authenticity)"
+  reader_should_notice: "Key teaching distinction for CH11."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH11-004
+  figure_type: failure_map
+  pedagogical_purpose: "Update failure to recovery path to usable/unusable outcomes"
+  reader_should_notice: "Key teaching distinction for CH11."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

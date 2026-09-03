@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH18
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH18-001
+  text: "Radio links depend on spectrum use, antennas, and time-varying channel conditions—not only on having Wi-Fi on."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Wireless textbook + IEEE pointers."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH18-002
+  text: "MIMO and beamforming are spatial techniques; teaching survey depth must not invent device-specific dB gains."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "No fake link budgets as product truth."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH18-003
+  text: "Interference and blockage can degrade experience while connection icons remain lit."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys: []
+  overclaim_risk: "CE-4/CE-6 continuity."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH18-004
+  text: "Learner labs must not include unauthorized transmission or spectrum sniffing that violates law/policy."
+  claim_class: policy
+  status: SOURCE_IDENTIFIED
+  citation_keys: []
+  overclaim_risk: "Safety boundary."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH18-005
+  text: "Quartet / research RF measurements PHYSICAL_PENDING; WAIKE lab_fspl_budget is adjacency only."
+  claim_class: project_specific
+  status: PHYSICAL_PENDING
+  citation_keys: []
+  overclaim_risk: "Over-precise product claims without evidence."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."

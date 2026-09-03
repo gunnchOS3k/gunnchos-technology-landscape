@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+chapter_id: CH20
+figures:
+- provisional_id: FIG-CH20-001
+  figure_type: conceptual
+  pedagogical_purpose: "Stability Contract concurrent conditions — inherit CE-6"
+  reader_should_notice: "Key teaching distinction for CH20."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH20-002
+  figure_type: comparative_layers
+  pedagogical_purpose: "Latency vs reliability vs throughput symptom families"
+  reader_should_notice: "Key teaching distinction for CH20."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH20-003
+  figure_type: conceptual
+  pedagogical_purpose: "QoE vs QoS vs ping"
+  reader_should_notice: "Key teaching distinction for CH20."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH20-004
+  figure_type: measured
+  pedagogical_purpose: "Learner portfolio timings labeled n=1"
+  reader_should_notice: "Key teaching distinction for CH20."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: measured
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

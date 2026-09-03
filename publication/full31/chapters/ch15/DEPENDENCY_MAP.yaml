@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+chapter_id: CH15
+title: "Containers, Virtualization, Cloud, and Edge Computing"
+part: III
+prior_chapter_dependencies:
+- CH12
+- CH14
+ce_inheritance:
+- path: publication/preproduction/ce-04/
+  note: "Edge vs cloud placement; Wi-Fi≠cellular≠Internet≠cloud"
+- path: publication/preproduction/ce-03/
+  note: "Local resources being multiplexed"
+lab_inheritance:
+- lab_id: LAB-PKT-001
+  note: "Path + placement hypothesis adjacency."
+- lab_id: LAB-CMS-001
+  note: "Local resource pressure when many containers/VMs—optional stretch note only."
+later_chapter_dependencies:
+- CH16
+- CH20
+- CH23
+- CH28
+gate_dependencies:
+- "GATE_3"
+human_dependencies:
+- "Keep Wi-Fi/cellular/Internet/cloud disambiguation in editorial review"
+physical_dependencies:
+- "Edge IO / Quartet placement benches PHYSICAL_PENDING"
+device_quartet:
+  relevant: true
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH14
+figures:
+- provisional_id: FIG-CH14-001
+  figure_type: exploded_diagram
+  pedagogical_purpose: "UI to app logic to runtime to libraries to OS to optional remote API"
+  reader_should_notice: "Key teaching distinction for CH14."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH14-002
+  figure_type: sequence_diagram
+  pedagogical_purpose: "Event to handler to API to state to render"
+  reader_should_notice: "Key teaching distinction for CH14."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH14-003
+  figure_type: comparative_layers
+  pedagogical_purpose: "Local API vs remote API failure domains"
+  reader_should_notice: "Key teaching distinction for CH14."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

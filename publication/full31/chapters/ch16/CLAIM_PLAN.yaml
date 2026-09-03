@@ -1,0 +1,49 @@
+schema_version: 1.0.0
+chapter_id: CH16
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH16-001
+  text: "Packets are bounded chunks with headers; they are not an unbroken hose of bits."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - rfc791
+  overclaim_risk: "CE-4."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH16-002
+  text: "Local, LAN, and Internet are different reachability scopes."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - rfc791
+  overclaim_risk: "CE-4 FIG inheritance."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH16-003
+  text: "Routing decides where next; transport decides how conversation reliability is attempted."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - rfc9293
+  overclaim_risk: "Survey depth."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH16-004
+  text: "DNS failure can look like the Internet is down while other paths work."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys: []
+  overclaim_risk: "CE-4 + living DNS docs."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH16-005
+  text: "Wi-Fi and cellular are access on-ramps, not synonyms for the Internet."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys: []
+  overclaim_risk: "Critical Part IV rule."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH16-006
+  text: "Project-specific path measurements on Quartet PHYSICAL_PENDING."
+  claim_class: project_specific
+  status: PHYSICAL_PENDING
+  citation_keys: []
+  overclaim_risk: "Over-precise product claims without evidence."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."

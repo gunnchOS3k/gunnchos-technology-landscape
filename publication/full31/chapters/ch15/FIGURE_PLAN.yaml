@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH15
+figures:
+- provisional_id: FIG-CH15-001
+  figure_type: comparative_layers
+  pedagogical_purpose: "Hardware to hypervisor/VM vs shared kernel to containers"
+  reader_should_notice: "Key teaching distinction for CH15."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH15-002
+  figure_type: system_map
+  pedagogical_purpose: "User to access network to edge node vs regional cloud"
+  reader_should_notice: "Key teaching distinction for CH15."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH15-003
+  figure_type: illustrative
+  pedagogical_purpose: "Same app packaged as local vs container vs cloud URL"
+  reader_should_notice: "Key teaching distinction for CH15."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

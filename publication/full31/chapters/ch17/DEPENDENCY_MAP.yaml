@@ -1,0 +1,26 @@
+schema_version: 1.0.0
+chapter_id: CH17
+title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
+part: IV
+prior_chapter_dependencies:
+- CH16
+ce_inheritance:
+- path: publication/preproduction/ce-04/
+  note: "Wi-Fi ≠ cellular survey inheritance"
+lab_inheritance:
+- lab_id: LAB-PKT-001
+  note: "Access network labeling on path traces."
+later_chapter_dependencies:
+- CH18
+- CH19
+- CH20
+gate_dependencies:
+- "GATE_3"
+human_dependencies:
+- "Standards dating review for 6G claims"
+physical_dependencies:
+- "All RF field measurements PHYSICAL_PENDING"
+device_quartet:
+  relevant: false
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

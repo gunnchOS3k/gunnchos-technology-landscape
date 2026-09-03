@@ -1,0 +1,49 @@
+schema_version: 1.0.0
+chapter_id: CH13
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH13-001
+  text: "Files are the ordinary persistence contract on personal devices; RAM is not a substitute for durable storage."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  overclaim_risk: "CE-3 wording inheritance."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH13-002
+  text: "Write-back caches and buffers can delay durability; Save UI is not always proof bits are on stable media."
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  - saltzer-kaashoek
+  overclaim_risk: "No forensics claims."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH13-003
+  text: "Databases add structure, concurrency control, and often richer consistency/recovery than raw files—but introduce their own failure modes."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Textbook DB systems + official docs; avoid invented ACID slogans without definition."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH13-004
+  text: "Cloud sync conflicts are distributed-state problems, not proof that the filesystem is broken."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Prefer distributed systems textbook chapters / official sync docs."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH13-005
+  text: "Deletion is often policy plus garbage collection plus replicas; deleted in UI may not mean globally unrecoverable."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Privacy/standards docs; no data-recovery exploit steps."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+- provisional_id: CLM-CH13-006
+  text: "Quartet storage endurance/performance claims PHYSICAL_PENDING."
+  claim_class: project_specific
+  status: PHYSICAL_PENDING
+  citation_keys: []
+  overclaim_risk: "Over-precise product claims without evidence."
+  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."

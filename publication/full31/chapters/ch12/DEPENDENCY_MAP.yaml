@@ -1,0 +1,37 @@
+schema_version: 1.0.0
+chapter_id: CH12
+title: "Operating Systems, Processes, Threads, and Scheduling"
+part: III
+prior_chapter_dependencies:
+- CH01
+- CH02
+- CH06
+- CH07
+- CH11
+ce_inheritance:
+- path: publication/preproduction/ce-03/
+  note: "Primary inheritance — CPU/memory/storage/OS synthesis; LAB-CMS-001"
+- path: publication/preproduction/ce-01/
+  note: "System lens"
+- path: publication/preproduction/ce-06/
+  note: "Stability Contract concurrent conditions including scheduling"
+lab_inheritance:
+- lab_id: LAB-CMS-001
+  note: "Inherit as primary Try-it adjacency for local lag / process visibility (CE-3). Prefer link over duplication."
+- lab_id: LAB-TAP-001
+  note: "Optional method inheritance for observation vs inference craft (CH02)."
+later_chapter_dependencies:
+- CH13
+- CH14
+- CH15
+- CH20
+gate_dependencies:
+- "GATE_3 tone dependency via CH02"
+human_dependencies:
+- "CE-3 packet already exists — integrator should avoid glossary collisions"
+physical_dependencies:
+- "Quartet load traces PHYSICAL_PENDING"
+device_quartet:
+  relevant: true
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

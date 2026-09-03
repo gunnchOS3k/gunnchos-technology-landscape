@@ -1,0 +1,146 @@
+schema_version: 1.0.0
+chapter_id: CH16
+edition_scope: full_edition
+concepts:
+- concept_id: packet
+  canonical_term: "Packet"
+  plain_language_definition: "Bounded chunk of data with headers used by network layers."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: encapsulation
+  canonical_term: "Encapsulation"
+  plain_language_definition: "Wrapping payload with headers (and trailers) at each layer."
+  depends_on:
+  - packet
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: addressing
+  canonical_term: "Addressing"
+  plain_language_definition: "Identifiers used to deliver packets (e.g., IP addresses)."
+  depends_on:
+  - packet
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: routing
+  canonical_term: "Routing"
+  plain_language_definition: "Choosing next hops toward a destination across networks."
+  depends_on:
+  - addressing
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: protocol
+  canonical_term: "Protocol"
+  plain_language_definition: "Agreed rules for communication between parties."
+  depends_on:
+  - packet
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: transport
+  canonical_term: "Transport (intro)"
+  plain_language_definition: "End-to-end conversation behaviors (reliability, ports)—e.g., TCP/UDP survey."
+  depends_on:
+  - protocol
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: dns
+  canonical_term: "DNS"
+  plain_language_definition: "Name-to-address dependency often on the critical path."
+  depends_on:
+  - addressing
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: local-lan-internet
+  canonical_term: "Local vs LAN vs Internet"
+  plain_language_definition: "Distinct reachability scopes—not synonyms."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false

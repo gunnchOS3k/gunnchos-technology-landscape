@@ -1,0 +1,146 @@
+schema_version: 1.0.0
+chapter_id: CH20
+edition_scope: full_edition
+concepts:
+- concept_id: latency
+  canonical_term: "Latency"
+  plain_language_definition: "Delay until a useful response; many segments possible."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: reliability
+  canonical_term: "Reliability"
+  plain_language_definition: "Ability to complete correctly often enough over time."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: throughput
+  canonical_term: "Throughput"
+  plain_language_definition: "Amount of useful data transferred per time."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: qoe
+  canonical_term: "Quality of Experience (QoE)"
+  plain_language_definition: "Human-facing acceptability of the experience."
+  depends_on:
+  - latency
+  - reliability
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: qos
+  canonical_term: "Quality of Service (QoS)"
+  plain_language_definition: "Service characteristic language—related but not identical to QoE."
+  depends_on:
+  - qoe
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: stability-contract
+  canonical_term: "Stability Contract"
+  plain_language_definition: "Experience exists only while concurrent hidden conditions stay good enough."
+  depends_on:
+  - qoe
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: connected-not-usable
+  canonical_term: "Connected ≠ usable"
+  plain_language_definition: "Link indicators can succeed while experience fails."
+  depends_on:
+  - stability-contract
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: evidence-hierarchy
+  canonical_term: "Evidence hierarchy"
+  plain_language_definition: "Observation to instrumentation to correlation to controlled comparison to standards methods."
+  depends_on:
+  - stability-contract
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
