@@ -17,3 +17,14 @@ labs:
     status: IMPLEMENTED_DIGITAL
     fixture_available: true
     contract: labs/contracts/ce_lab_contract.schema.yaml
+  - lab_id: LAB-CMS-001
+    title: Make Local Slowness Visible
+    chapter: CE-3
+    path: labs/LAB-CMS-001
+    baseline_routes: [commodity_computer, safe_cli_snapshot]
+    extension_routes: [fixture_fallback]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

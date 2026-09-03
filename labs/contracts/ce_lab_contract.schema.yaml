@@ -1,11 +1,11 @@
-# Shared Concept Edition lab contract schema (Agent A / LAB-SYS-001 wave).
+# Shared Concept Edition lab contract schema (integrator-unified).
 # Status values describe implementation readiness for human learning labs.
 # PASS is never allowed — learning labs do not "pass" as a status.
 schema_version: "1.0.0"
 description: >
   Contract fields every CE lab.yaml should expose so integrators can
   discover routes, fixtures, boundaries, and portfolio outputs without
-  reading prose alone.
+  reading prose alone. Lab YAML should populate the required_fields below.
 
 required_fields:
   - lab_id
@@ -37,17 +37,57 @@ field_types:
   observation_inference_boundary: mapping
   portfolio_output: list
 
+field_notes:
+  lab_id: Stable publication lab ID (e.g., LAB-CMS-001).
+  chapter: Concept Edition module or chapter code (e.g., CE-3).
+  version: Semver string for the lab package.
+  status: One or more values from allowed_status.
+  reader_levels: Pathway depths such as explorer, operator, builder, engineer, researcher, educator.
+  routes: Named accessible routes (commodity computer, fixture, etc.).
+  fixture_available: Boolean; true when offline teaching fixtures are supplied.
+  evidence_artifacts: List of required learner evidence artifact types.
+  privacy_boundary: Rules for what must not be captured or shared.
+  safety_boundary: Stop rules and non-destructive constraints.
+  accessibility_notes: Keyboard, text-equivalent, and equity accommodations.
+  observation_inference_boundary: Explicit observation vs labeled-inference rules.
+  portfolio_output: Expected portfolio folder contents.
+
 allowed_status:
   - IMPLEMENTED_DIGITAL
   - FIXTURE_VALIDATED
   - PHYSICAL_PENDING
   - EXTERNAL_DEPENDENCY
 
+# Both keys retained for agent-A / agent-B validator compatibility.
 forbidden_status:
   - PASS
   - PASSED
   - COMPLETE
   - VERIFIED
+  - GATE_3_PASS
+  - HUMAN_LEARNING_PASS
+
+disallowed_status:
+  - PASS
+  - PASSED
+  - COMPLETE
+  - VERIFIED
+  - GATE_3_PASS
+  - HUMAN_LEARNING_PASS
+
+compatibility:
+  also_supports_legacy_lab_yaml_keys:
+    - title
+    - question
+    - prerequisites
+    - accessible_routes
+    - prediction
+    - procedure
+    - evidence
+    - interpretation
+    - limits
+    - portfolio
+    - teach_back
 
 notes:
   - status never means the learner "passed"; it describes lab packaging state
