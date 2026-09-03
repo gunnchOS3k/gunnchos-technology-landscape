@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+chapter_id: CH09
+chapter_number: 9
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+candidates:
+- provisional_id: GLOSS-CH09-001
+  canonical_term: "power budget"
+  plain_language_definition: "Sustainable energy delivery rate."
+  chapter_id: CH09
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH09-002
+  canonical_term: "thermal limit"
+  plain_language_definition: "Heat constraint forcing reduced performance or shutdown."
+  chapter_id: CH09
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH09-003
+  canonical_term: "throttle"
+  plain_language_definition: "Performance reduction to respect limits."
+  chapter_id: CH09
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH09-004
+  canonical_term: "battery"
+  plain_language_definition: "Stored chemical energy with constraints."
+  chapter_id: CH09
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH09-005
+  canonical_term: "mechanical design"
+  plain_language_definition: "Physical structure affecting durability, heat, UX."
+  chapter_id: CH09
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 

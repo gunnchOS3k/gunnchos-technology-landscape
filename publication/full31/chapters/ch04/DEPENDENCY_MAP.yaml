@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+chapter_id: CH04
+chapter_number: 4
+title: "The Device Quartet as a Learning Laboratory"
+part: I
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH02"
+  - "CH03"
+inherits_from:
+  - "CE-1 Quartet foreshadow"
+  - "devices/ quartet docs"
+feeds_later:
+  - "CH05–CH10 use Quartet as optional analogy only"
+  - "CH29 product design"
+gate_dependencies:
+  - "None beyond global Gate 3 posture"
+human_dependencies:
+  - "Editorial review to prevent marketing tone"
+physical_dependencies:
+  - "All quantitative Quartet claims PHYSICAL_PENDING"
+ce_inheritance_note: "Agent prompt CE-4↔Ch4 shorthand conflicts with concept-edition/registry.yaml (CE-4 maps to CH15–CH18). Ch4 is Device Quartet learning laboratory; inherit devices/ and CE-1 foreshadow only."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

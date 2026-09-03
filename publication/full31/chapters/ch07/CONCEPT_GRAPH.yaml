@@ -1,0 +1,125 @@
+schema_version: "1.0.0"
+chapter_id: CH07
+chapter_number: 7
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inheritance_note: "Link CE-3 hierarchy teaching; Ch7 deepens memory/cache/storage without full filesystem/DB encyclopedia (CH13)."
+concepts:
+- concept_id: CX-CH07-001
+  canonical_term: "memory hierarchy"
+  plain_language_definition: "Layers of storage with different speed/capacity/cost tradeoffs."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH07-002
+  canonical_term: "cache"
+  plain_language_definition: "Smaller faster memory holding recently/likely-needed data."
+  depends_on:
+  - CX-CH07-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH07-003
+  canonical_term: "RAM (main memory)"
+  plain_language_definition: "Volatile working memory for running programs."
+  depends_on:
+  - CX-CH07-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH07-004
+  canonical_term: "storage"
+  plain_language_definition: "Durable persistence (e.g., SSD/HDD/flash) distinct from RAM."
+  depends_on:
+  - CX-CH07-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH07-005
+  canonical_term: "volatility vs durability"
+  plain_language_definition: "What disappears on power loss vs what is meant to persist."
+  depends_on:
+  - CX-CH07-003
+  - CX-CH07-004
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH07-006
+  canonical_term: "working set"
+  plain_language_definition: "The memory a workload actively needs in a time window."
+  depends_on:
+  - CX-CH07-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH07-007
+  canonical_term: "thrashing (qualitative)"
+  plain_language_definition: "Excessive paging/I/O from memory pressure that destroys feel."
+  depends_on:
+  - CX-CH07-006
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true

@@ -1,0 +1,108 @@
+schema_version: "1.0.0"
+chapter_id: CH10
+chapter_number: 10
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inheritance_note: "Part II: how parts interconnect and become manufacturable products—not a connector encyclopedia."
+concepts:
+- concept_id: CX-CH10-001
+  canonical_term: "port"
+  plain_language_definition: "User- or system-facing interconnect for power and/or data."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH10-002
+  canonical_term: "bus"
+  plain_language_definition: "Shared interconnect with electrical and protocol rules."
+  depends_on:
+  - CX-CH10-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH10-003
+  canonical_term: "board (PCB)"
+  plain_language_definition: "Physical substrate organizing components and traces."
+  depends_on:
+  - CX-CH10-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH10-004
+  canonical_term: "packaging"
+  plain_language_definition: "How chips/modules/devices are enclosed and interfaced mechanically/thermally."
+  depends_on:
+  - CX-CH10-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH10-005
+  canonical_term: "manufacturing / DFM"
+  plain_language_definition: "Processes and constraints that turn designs into reproducible physical goods."
+  depends_on:
+  - CX-CH10-003
+  - CX-CH10-004
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH10-006
+  canonical_term: "protocol on a wire"
+  plain_language_definition: "Agreed rules for meaningful exchange over a physical interconnect."
+  depends_on:
+  - CX-CH10-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true

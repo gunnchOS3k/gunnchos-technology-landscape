@@ -1,0 +1,45 @@
+schema_version: "1.0.0"
+chapter_id: CH10
+chapter_number: 10
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+figures:
+- provisional_id: FIG-CH10-001
+  figure_type: system_map
+  pedagogical_purpose: "Chips/modules on a board ↔ buses ↔ ports ↔ external world."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH10-002
+  figure_type: sequence
+  pedagogical_purpose: "Host request → bus transaction → device response."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: illustrative
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH10-003
+  figure_type: comparative
+  pedagogical_purpose: "Electrical layer vs protocol layer on one interconnect."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH10-004
+  figure_type: exploded
+  pedagogical_purpose: "Packaging/manufacturing stages (conceptual; not Quartet EVT)."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii

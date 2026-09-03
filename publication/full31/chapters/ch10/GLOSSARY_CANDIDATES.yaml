@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+chapter_id: CH10
+chapter_number: 10
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+candidates:
+- provisional_id: GLOSS-CH10-001
+  canonical_term: "port"
+  plain_language_definition: "Interconnect for power and/or data."
+  chapter_id: CH10
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH10-002
+  canonical_term: "bus"
+  plain_language_definition: "Shared interconnect with electrical + protocol rules."
+  chapter_id: CH10
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH10-003
+  canonical_term: "PCB"
+  plain_language_definition: "Board organizing components and traces."
+  chapter_id: CH10
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH10-004
+  canonical_term: "packaging"
+  plain_language_definition: "Enclosure/interface of chips/modules/devices."
+  chapter_id: CH10
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH10-005
+  canonical_term: "DFM"
+  plain_language_definition: "Design-for-manufacturing constraints and practices."
+  chapter_id: CH10
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 

@@ -1,0 +1,125 @@
+schema_version: "1.0.0"
+chapter_id: CH06
+chapter_number: 6
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inheritance_note: "Link CE-3 for CPU/parallel concepts; full-book Ch6 stays instruction/CPU/parallel focused—not full OS encyclopedia."
+concepts:
+- concept_id: CX-CH06-001
+  canonical_term: "instruction"
+  plain_language_definition: "A discrete operation a CPU can execute."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH06-002
+  canonical_term: "CPU"
+  plain_language_definition: "Hardware that fetches/decodes/executes instructions."
+  depends_on:
+  - CX-CH06-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH06-003
+  canonical_term: "process / thread"
+  plain_language_definition: "OS abstractions for concurrent work units."
+  depends_on:
+  - CX-CH06-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH06-004
+  canonical_term: "scheduler"
+  plain_language_definition: "OS mechanism deciding what runs when on available cores."
+  depends_on:
+  - CX-CH06-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH06-005
+  canonical_term: "parallel work"
+  plain_language_definition: "Overlapping execution across cores/accelerators when the workload allows."
+  depends_on:
+  - CX-CH06-002
+  - CX-CH06-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH06-006
+  canonical_term: "accelerator / GPU (survey)"
+  plain_language_definition: "Specialized hardware that can take some parallel workloads."
+  depends_on:
+  - CX-CH06-005
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH06-007
+  canonical_term: "CPU-bound vs waiting"
+  plain_language_definition: "Busy executing vs blocked on memory/I/O/locks."
+  depends_on:
+  - CX-CH06-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true

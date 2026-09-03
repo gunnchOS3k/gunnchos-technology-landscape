@@ -1,0 +1,107 @@
+schema_version: "1.0.0"
+chapter_id: CH02
+chapter_number: 2
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inheritance_note: "CANONICAL PROTOTYPE under CH02-REVIEW-R1. This full31 packet links/inherits only. Do NOT duplicate deep CE/Lab-TAP content. Do NOT claim Gate 3 PASS. Production posture: DRAFT_COMPLETE + HUMAN_VALIDAT"
+concepts:
+- concept_id: CX-CH02-001
+  canonical_term: "experience-first method"
+  plain_language_definition: "Start from a human moment, then open the system."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH02-002
+  canonical_term: "cross-layer tap path"
+  plain_language_definition: "One gesture traverses input, OS, app, optional network, rendering/feedback."
+  depends_on:
+  - CX-CH02-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH02-003
+  canonical_term: "observation vs inference"
+  plain_language_definition: "Directly timed/logged fact vs causal guess."
+  depends_on:
+  - CX-CH02-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH02-004
+  canonical_term: "latency budget layers"
+  plain_language_definition: "Where time is spent across layers that shape feel."
+  depends_on:
+  - CX-CH02-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH02-005
+  canonical_term: "Stability Contract (prototype)"
+  plain_language_definition: "Concurrent conditions for usable experience."
+  depends_on:
+  - CX-CH02-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH02-INHERIT
+  canonical_term: "Full introduced concept list"
+  plain_language_definition: "See book/chapters/ch02/metadata.yaml — not re-authored here."
+  depends_on:
+  - CX-CH02-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true

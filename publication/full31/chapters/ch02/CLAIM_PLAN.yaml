@@ -1,0 +1,45 @@
+schema_version: "1.0.0"
+chapter_id: CH02
+chapter_number: 2
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH02-001
+  text: "CH02 exists as a draft prototype with figures, lab, and bibliography packaged for Gate 3 review."
+  claim_class: publication_internal
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: PROJECT_EVIDENCE_NEEDED
+  citation_keys:
+  - gate3-review-snapshot
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH02-002
+  text: "LAB-TAP-001 provides browser and fixture routes; it is not a Device Quartet EVT benchmark."
+  claim_class: project_specific
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - lab-tap-001
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH02-003
+  text: "No WAIKE course/lab ID is literally named Trace One Tap / LAB-TAP-001; mappings are adjacency only."
+  claim_class: project_specific
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - src-waike
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH02-004
+  text: "Gate 3 remains OPEN_FOR_REVIEW with reader evidence pending; PASS is not claimed."
+  claim_class: publication_internal
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: PROJECT_EVIDENCE_NEEDED
+  citation_keys:
+  - gate3-evidence
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 

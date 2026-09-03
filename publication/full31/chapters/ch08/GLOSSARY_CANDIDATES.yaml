@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+chapter_id: CH08
+chapter_number: 8
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+candidates:
+- provisional_id: GLOSS-CH08-001
+  canonical_term: "frame"
+  plain_language_definition: "One timed image update."
+  chapter_id: CH08
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH08-002
+  canonical_term: "display pipeline"
+  plain_language_definition: "Path to visible frames."
+  chapter_id: CH08
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH08-003
+  canonical_term: "sampling"
+  plain_language_definition: "Discrete measurement of a continuous phenomenon."
+  chapter_id: CH08
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH08-004
+  canonical_term: "sensor"
+  plain_language_definition: "Transducer from physical quantity to signal/data."
+  chapter_id: CH08
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH08-005
+  canonical_term: "audio pipeline"
+  plain_language_definition: "Capture/render path for sound."
+  chapter_id: CH08
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 

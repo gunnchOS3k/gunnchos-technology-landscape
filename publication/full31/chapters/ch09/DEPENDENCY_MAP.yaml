@@ -1,0 +1,28 @@
+schema_version: "1.0.0"
+chapter_id: CH09
+chapter_number: 9
+title: "Power, Batteries, Thermals, and Mechanical Design"
+part: II
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH03"
+  - "CH05"
+  - "CH06"
+  - "CH07"
+  - "CH08"
+inherits_from:
+  - "CE-3 thermal/power qualitative"
+  - "CH04 Quartet constraint contrast"
+feeds_later:
+  - "CH10 packaging"
+  - "CH20 Stability Contract energy dimensions"
+gate_dependencies:
+  - "Global Gate 3"
+human_dependencies:
+  - "Safety review of any physical lab"
+physical_dependencies:
+  - "All Quartet watt/°C curves PHYSICAL_PENDING"
+ce_inheritance_note: "Part II: energy, heat, and mechanics as first-class constraints on experience—not a battery SKU catalog."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

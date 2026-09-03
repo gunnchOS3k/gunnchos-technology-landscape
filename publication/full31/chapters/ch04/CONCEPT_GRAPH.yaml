@@ -1,0 +1,124 @@
+schema_version: "1.0.0"
+chapter_id: CH04
+chapter_number: 4
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inheritance_note: "Agent prompt CE-4↔Ch4 shorthand conflicts with concept-edition/registry.yaml (CE-4 maps to CH15–CH18). Ch4 is Device Quartet learning laboratory; inherit devices/ and CE-1 foreshadow only."
+concepts:
+- concept_id: CX-CH04-001
+  canonical_term: "learning laboratory"
+  plain_language_definition: "A recurring set of form factors used to teach constraints, not to sell SKUs."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH04-002
+  canonical_term: "Student 14.5-inch"
+  plain_language_definition: "Clamshell-class research form factor for general student compute."
+  depends_on:
+  - CX-CH04-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH04-003
+  canonical_term: "Handheld Hybrid"
+  plain_language_definition: "Portable/hybrid research form factor emphasizing mobility constraints."
+  depends_on:
+  - CX-CH04-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH04-004
+  canonical_term: "DS-XL Coder"
+  plain_language_definition: "Larger coding/display-oriented research form factor."
+  depends_on:
+  - CX-CH04-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH04-005
+  canonical_term: "Edge IO Wearables"
+  plain_language_definition: "Wearable/edge I/O research form factor emphasizing sensors, power, body proximity."
+  depends_on:
+  - CX-CH04-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH04-006
+  canonical_term: "constraint contrast"
+  plain_language_definition: "Same task, different thermal/power/I/O/UX constraints across form factors."
+  depends_on:
+  - CX-CH04-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH04-007
+  canonical_term: "PHYSICAL_PENDING"
+  plain_language_definition: "Physical fabrication/EVT evidence not yet available; no invented measurements."
+  depends_on:
+  - CX-CH04-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
