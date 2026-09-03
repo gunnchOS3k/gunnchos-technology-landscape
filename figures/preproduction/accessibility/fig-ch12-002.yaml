@@ -1,0 +1,19 @@
+figure_id: FIG-CH12-002
+title: Context-switch swimlane
+caption: Conceptual swimlane showing Thread A running, an OS context switch that saves/restores state, then Thread B running. Truth: conceptual. Color is not the sole encoding.
+alt_text: "FIG-CH12-002: Three-lane sequence: Thread A runs, OS performs context switch, Thread B runs."
+text_equivalent: |
+  FIG-CH12-002 reading order: (1) Thread A running with live CPU state, (2) OS/kernel
+  context switch that saves A, selects B, restores B, (3) Thread B running on a core.
+  Solid bars mean currently running; dashed bars mean not on CPU.
+reading_order:
+  - Thread A running
+  - OS context switch
+  - Thread B running
+source: figures/architecture/fig-ch12-002-context-switch.svg
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: Solid vs dashed bars plus lane labels; color not required.
+reviewer: pending-human-visual-review
+version: 0.1.0

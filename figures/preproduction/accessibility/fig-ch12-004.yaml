@@ -1,0 +1,20 @@
+figure_id: FIG-CH12-004
+title: Classroom OS-monitor before and during snapshots
+caption: Before/during OS-monitor readings reproduced from LAB-CMS-001 fixture FIG-CE3-009 for classroom teaching (n=1). Not a product SLO or Device Quartet EVT. Truth: measured teaching fixture. Color is not the sole encoding.
+alt_text: "FIG-CH12-004: Two panels of fixture monitor readings — Before CPU 8% and During CPU 41% with memory and disk notes."
+text_equivalent: |
+  FIG-CH12-004 reading order: Before panel (2026-09-03T15:00:00Z) CPU 8%, memory 6.2/16 GB,
+  disk idle, NotesApp ~3%. During panel (2026-09-03T15:00:25Z) CPU 41%, memory 6.9/16 GB,
+  brief disk spike, brief stutter then smooth. Source: LAB-CMS-001 fixture FIG-CE3-009.
+  Classroom n=1; not Gate 3 evidence; not Quartet EVT.
+reading_order:
+  - Before idle baseline
+  - During controlled action
+source: figures/architecture/fig-ch12-004-monitor-snapshots.svg
+truth_classification: measured
+status: measured_fixture
+production_status: working_draft
+measurement_source: labs/LAB-CMS-001/fixtures/FIG-CE3-009-monitor-transcript.md
+color_independent_encoding: Panel labels + numeric text; dashed border marks During panel.
+reviewer: pending-human-visual-review
+version: 0.1.0

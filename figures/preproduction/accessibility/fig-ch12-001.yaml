@@ -1,0 +1,21 @@
+figure_id: FIG-CH12-001
+title: Apps → processes/threads → scheduler → CPU cores
+caption: Conceptual educational map from app icons/windows through processes, threads, and OS scheduler to CPU cores. Truth: conceptual. Color is not the sole encoding.
+alt_text: "FIG-CH12-001: Left-to-right conceptual map: Apps, Processes, Threads, Scheduler, CPU cores."
+text_equivalent: |
+  FIG-CH12-001 reading order: (1) Apps as felt experience, (2) Processes with isolated
+  address spaces, (3) Threads as concurrent work sharing memory, (4) Scheduler deciding
+  who runs when, (5) CPU cores executing instructions. OS mediates; apps still compute.
+reading_order:
+  - Apps
+  - Processes
+  - Threads
+  - Scheduler
+  - CPU cores
+source: figures/architecture/fig-ch12-001-apps-to-scheduler.svg
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: Shape + label + fill/stroke pattern; core lanes use patterned vs solid fill.
+reviewer: pending-human-visual-review
+version: 0.1.0
