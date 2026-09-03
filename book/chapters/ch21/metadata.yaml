@@ -2,5 +2,44 @@ chapter_id: CH21
 chapter_number: 21
 title: "Data, Machine Learning, and Generative AI"
 part: V
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When an assistant answer appears, what path produced it—and where do uncertainty, logging, and deployment choice change the experience?
+experience:
+  - fluent-but-wrong assistant answer
+  - hedge or style shift after update
+  - local vs remote inference boundary surprise
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [data, model-parameters, inference, generative-ai, uncertainty, local-vs-cloud, evaluation]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-TRUST-001]
+figures:
+  - FIG-CH21-001
+  - FIG-CH21-002
+  - FIG-CH21-003
+concepts:
+  introduced: [training-input-data, model-parameters, inference-output, generative-ai-systems, uncertainty-errors, local-vs-cloud-ai, evaluation-under-uncertainty]
+  required: [stability-contract, observation-vs-inference, fluency-vs-correctness]
+  related: [consent-trust-card, dual-ledger, nist-ai-rmf]
+waike:
+  mapped: true
+  courses: [AI_ML_EDGE]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (AI_ML_EDGE labs: lab_score_model, lab_rag_redact, lab_quantize_budget; catalog ai_ml_data). LAB-TRUST-001 is publication-owned; no exact WAIKE module LAB-TRUST-001 / CH21 / CE-5."
+claims:
+  plan: publication/full31/chapters/ch21/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-05/
+  adjacent: [publication/preproduction/ce-06/]
+bibliography_note: "Cite keys present in book/references/references.bib: goodfellow_deep_learning, nist_ai_rmf_100_1, src-waike, saltzer_schroeder_1975, wcag22-20241212. Omit russell_norvig_aima until NEEDS_PRIMARY_VERIFICATION resolves. Peer-reviewed accessible eval methods remain SOURCE_NEEDED—do not invent."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 completion claim; LAB-TRUST-001 fixtures are not human validation"
+  - "russell_norvig_aima NEEDS_PRIMARY_VERIFICATION — omitted from inline citations"
+  - "peer_eval_methods SOURCE_NEEDED for Researcher-path depth"
+  - "No invented measured gunnchOS SKU AI latency/accuracy; Device Quartet AI benches PHYSICAL_PENDING"
+  - "No invented WAIKE module IDs for LAB-TRUST-001 / CH21 / CE-5"
