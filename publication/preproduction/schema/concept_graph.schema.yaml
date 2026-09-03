@@ -1,0 +1,26 @@
+schema_id: ce-preproduction-concept-graph
+schema_version: "1.0.0"
+top_level_collection: concepts
+required_concept_fields:
+  - concept_id
+  - canonical_term
+  - plain_language_definition
+  - depends_on
+  - introduced_here
+  - reinforced_here
+  - reader_pathways
+  - likely_misconception
+  - glossary_candidate
+  - requires_citation
+  - requires_figure
+  - requires_lab
+forbidden_top_level_keys:
+  - nodes
+forbidden_concept_fields:
+  - plain_language
+  - name
+  - id
+notes: >
+  introduced_here and reinforced_here are booleans.
+  depends_on is a list of concept_id strings (may be empty).
+  reader_pathways is a list from explorer|operator|builder|engineer|researcher|educator.

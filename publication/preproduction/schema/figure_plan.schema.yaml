@@ -1,0 +1,44 @@
+schema_id: ce-preproduction-figure-plan
+schema_version: "1.0.0"
+top_level_collection: figures
+required_figure_fields:
+  - provisional_id
+  - figure_type
+  - pedagogical_purpose
+  - reader_should_notice
+  - data_or_evidence_source
+  - truth_classification
+  - expected_geometry
+  - accessibility_description_requirement
+  - color_independent_encoding
+  - dependencies
+  - edition_scope
+allowed_truth_classification:
+  - conceptual
+  - illustrative
+  - measured
+  - project_specific
+  - mixed
+forbidden_truth_fields:
+  - truth_class
+  - conceptual_vs_measured
+compound_truth_migrations:
+  conceptual_project_qualified:
+    truth_classification: conceptual
+    qualification: project_qualified
+  project_specific_conceptual:
+    truth_classification: project_specific
+    qualification: conceptual
+  measured_later_fixture:
+    truth_classification: measured
+    qualification: later_fixture
+  project-specific:
+    truth_classification: project_specific
+optional_fields:
+  - qualification
+  - title_intent
+  - production_status
+notes: >
+  edition_scope is concept_edition | full_edition | both (string).
+  dependencies is a list (may be empty).
+  Do not encode arbitrary compounds into the truth_classification enum.

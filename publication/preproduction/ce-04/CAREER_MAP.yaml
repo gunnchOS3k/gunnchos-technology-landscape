@@ -1,73 +1,59 @@
-# CE-4 Career Map — chapter-local proposal
-# Not an employment guarantee. Integrator may align to shared careers/* later.
-
+schema_version: 1.0.0
 chapter_id: CE-4
 employment_guarantee: false
-lab_id: LAB-PKT-001
-
 careers:
-  - role_family: Network Engineer
-    related_role_ids: [ROLE-NET]
-    chapter_focus: "Addressing, routing/forwarding, packet path diagnosis, LAN vs Internet scope"
-    technical_skills: ["path tracing", "reading protocol roles", "separating DNS vs routing vs transport symptoms"]
-    evidence_student_can_show: "LAB-PKT-001 path diagram + observation table with ordered diagnosis plan"
-    portfolio_artifact_from_lab: "path_and_placement_one_pager.md"
-    next_deeper: "Full-book CH16; WAIKE COMPUTER_NETWORKING lab_datapath / lab_spf_routing adjacency"
-
-  - role_family: Wireless / RF Systems Engineer (survey entry)
-    related_role_ids: [ROLE-WIRELESS]
-    chapter_focus: "Wi-Fi vs cellular access distinction; qualitative radio conditions; continuity across access change"
-    technical_skills: ["access-network identification", "interference/congestion as hypotheses", "not inventing drive-test numbers"]
-    evidence_student_can_show: "Comparison notes Wi-Fi vs cellular under same app action"
-    portfolio_artifact_from_lab: "access_network_comparison.md"
-    next_deeper: "Full-book CH17–CH18; WAIKE WIRELESS_6G labs as advanced adjacency (not CE-4 core)"
-
-  - role_family: Cloud / Backend Engineer
-    related_role_ids: [ROLE-BACKEND]
-    chapter_focus: "Edge vs cloud placement; service dependency in sync path"
-    technical_skills: ["placement tradeoff notes", "dependency mapping", "reading client-visible failure without server logs"]
-    evidence_student_can_show: "Placement hypothesis with NIST cloud/fog citations"
-    portfolio_artifact_from_lab: "placement_hypothesis.md"
-    next_deeper: "Full-book CH15; WAIKE CLOUD_DEVOPS lab_cloud_cost / lab_slo_budget adjacency"
-
-  - role_family: Site Reliability / Service Reliability
-    related_role_ids: [ROLE-SRE]
-    chapter_focus: "Connected vs usable; latency/reliability/throughput separation; continuity"
-    technical_skills: ["symptom triage", "error-budget intuition at conceptual level", "evidence hygiene"]
-    evidence_student_can_show: "Stability checklist for anchor experience"
-    portfolio_artifact_from_lab: "stability_checklist.md"
-    next_deeper: "CE-6 Stability Contract synthesis; CLOUD_DEVOPS lab_incident_runbook adjacency"
-
-  - role_family: IT Support / Operator
-    related_role_ids: []
-    chapter_focus: "Captive portals, scope failures, teachable user guidance without blame"
-    technical_skills: ["condition comparison", "safe public-Wi-Fi guidance", "fixture-friendly reproduction"]
-    evidence_student_can_show: "Ticket-style writeup: symptom, scope hypothesis, next safe test"
-    portfolio_artifact_from_lab: "support_ticket_repro.md"
-    next_deeper: "WAIKE GENERAL_IT lab_dns_hosts / lab_ticket_queue adjacency"
-
-  - role_family: Cybersecurity (network-adjacent awareness)
-    related_role_ids: [ROLE-SEC]
-    chapter_focus: "Trust on open networks; TLS as transit protection concept; capture hygiene"
-    technical_skills: ["threat awareness without exploit steps", "redaction", "policy vs path failures"]
-    evidence_student_can_show: "Secure/Include short threat note tied to café Wi-Fi story"
-    portfolio_artifact_from_lab: "trust_on_access_network.md"
-    next_deeper: "CE-5; full-book CH23"
-
-  - role_family: Performance Engineer
-    related_role_ids: [ROLE-PERF]
-    chapter_focus: "Browser-visible timings; confounders; metric family separation"
-    technical_skills: ["Resource Timing reading", "experiment limits", "no fake RF attribution"]
-    evidence_student_can_show: "Timing table with confounders list"
-    portfolio_artifact_from_lab: "timing_table.csv"
-    next_deeper: "CE-6 measurement ethics; full-book CH20"
-
-  - role_family: Educator / Facilitator
-    related_role_ids: []
-    chapter_focus: "Misconception facilitation; accessible fixture labs"
-    technical_skills: ["probe questions", "lab adaptation", "equity-aware networking examples"]
-    evidence_student_can_show: "Facilitation notes for Wi-Fi≠Internet≠cellular≠cloud"
-    portfolio_artifact_from_lab: "educator_adaptation_sheet.md"
-    next_deeper: "CE-6 teach-back / capstone rubrics"
-
-disclaimer: "Completing LAB-PKT-001 does not qualify a learner for any job title or certification (including CCNA or cloud certifications)."
+- role_family: Network Engineer
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: Full-book CH16; WAIKE COMPUTER_NETWORKING lab_datapath / lab_spf_routing
+    adjacency
+- role_family: Wireless / RF Systems Engineer (survey entry)
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: "Full-book CH17\u2013CH18; WAIKE WIRELESS_6G labs as advanced adjacency\
+    \ (not CE-4 core)"
+- role_family: Cloud / Backend Engineer
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: Full-book CH15; WAIKE CLOUD_DEVOPS lab_cloud_cost / lab_slo_budget
+    adjacency
+- role_family: Site Reliability / Service Reliability
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-6 Stability Contract synthesis; CLOUD_DEVOPS lab_incident_runbook
+    adjacency
+- role_family: IT Support / Operator
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: WAIKE GENERAL_IT lab_dns_hosts / lab_ticket_queue adjacency
+- role_family: Cybersecurity (network-adjacent awareness)
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-5; full-book CH23
+- role_family: Performance Engineer
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-6 measurement ethics; full-book CH20
+- role_family: Educator / Facilitator
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-6 teach-back / capstone rubrics
+disclaimer: Completing LAB-PKT-001 does not qualify a learner for any job title or
+  certification (including CCNA or cloud certifications).
+lab_id: LAB-PKT-001

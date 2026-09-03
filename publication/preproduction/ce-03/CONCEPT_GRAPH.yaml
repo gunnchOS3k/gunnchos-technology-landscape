@@ -1,278 +1,366 @@
-# CE-3 Concept Graph — prerequisite-aware, experience-linked
-# Status: preproduction proposal (chapter-local). Integrator merges to shared glossary.
-
+schema_version: 1.0.0
 chapter_id: CE-3
-maps_to: [CH06, CH07, CH12]
+concepts:
+- concept_id: instruction-execution
+  canonical_term: Instruction execution
+  plain_language_definition: 'The CPU carries out a program one instruction (or a
+    small group) at a time: fetch, decode, execute, write results.'
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Software 'just runs' without a machine doing stepwise work.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: cpu
+  canonical_term: CPU
+  plain_language_definition: The general-purpose processor that executes most program
+    instructions for apps and the OS.
+  depends_on:
+  - instruction-execution
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: More CPU cores always make every experience faster.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: accelerator-gpu
+  canonical_term: Accelerator / GPU
+  plain_language_definition: Specialized processors that take certain parallel jobs
+    (graphics, media, some ML) off the CPU; the OS and drivers still mediate access.
+  depends_on:
+  - cpu
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: GPUs only matter for games; or the OS itself 'is' the GPU.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: register
+  canonical_term: Register
+  plain_language_definition: Tiny, extremely fast storage locations inside the CPU
+    that hold values the processor is working on right now.
+  depends_on:
+  - cpu
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Registers are the same as RAM chips on the board.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: cache
+  canonical_term: Cache
+  plain_language_definition: Small, fast memory near the CPU that keeps recently used
+    data so the processor waits less on slower RAM.
+  depends_on:
+  - cpu
+  - register
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Cache is the same as clearing 'cached files' in an app settings
+    menu (related word, different layer).
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: ram
+  canonical_term: RAM
+  plain_language_definition: 'The device''s main working memory: fast while powered,
+    but not the durable home for files.'
+  depends_on:
+  - cache
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: RAM and storage are interchangeable 'memory'.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: storage
+  canonical_term: Storage
+  plain_language_definition: Durable place for files and installed software that is
+    meant to survive quitting apps and reboots (subject to failures).
+  depends_on: []
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: If it is on screen, it is already safely stored.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: memory-hierarchy
+  canonical_term: Memory hierarchy
+  plain_language_definition: The layered stack from tiny/fast (registers, caches)
+    to large/slower (RAM, storage) that makes programs practical.
+  depends_on:
+  - register
+  - cache
+  - ram
+  - storage
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: There is one kind of memory; capacity alone explains speed.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: process
+  canonical_term: Process
+  plain_language_definition: An OS-managed running program instance with its own protected
+    resources.
+  depends_on:
+  - cpu
+  - ram
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: One app window always equals exactly one process (often false).
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: thread
+  canonical_term: Thread
+  plain_language_definition: A schedulable stream of execution inside a process; one
+    process may run many threads.
+  depends_on:
+  - process
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Threads are separate apps the user launches.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: scheduler
+  canonical_term: Scheduler
+  plain_language_definition: The OS policy/mechanism that decides which ready thread/process
+    runs on which CPU time slice.
+  depends_on:
+  - process
+  - thread
+  - cpu
+  introduced_here: false
+  reinforced_here: true
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: The OS executes application logic itself instead of scheduling
+    time for it.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: os-abstraction
+  canonical_term: OS abstraction
+  plain_language_definition: A simplified, safer interface the operating system presents
+    (processes, files, virtual memory) so apps need not manage every hardware detail.
+  depends_on:
+  - process
+  - storage
+  - scheduler
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - educator
+  likely_misconception: Abstractions mean nothing real is happening underneath.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: file-persistence
+  canonical_term: File / persistence
+  plain_language_definition: A named durable object managed by the OS/file system
+    so data can outlive a process.
+  depends_on:
+  - storage
+  - os-abstraction
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - educator
+  likely_misconception: Autosave UI guarantees durability in all failure cases.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: bottleneck-symptom
+  canonical_term: Bottleneck symptom
+  plain_language_definition: "A human-visible slowdown pattern that suggests which\
+    \ resource is scarce\u2014without by itself proving root cause."
+  depends_on:
+  - cpu
+  - ram
+  - storage
+  - scheduler
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: One monitor number is definitive causation.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: power-thermal-limit
+  canonical_term: Power / thermal limit
+  plain_language_definition: Hardware and firmware policies that reduce performance
+    to stay within power or temperature budgets.
+  depends_on:
+  - cpu
+  - accelerator-gpu
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Slowdown after heat always means malware or a broken app.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: virtual-memory
+  canonical_term: Virtual memory
+  plain_language_definition: OS technique that gives each process a private address
+    space and can move less-used pages between RAM and storage.
+  depends_on:
+  - ram
+  - storage
+  - os-abstraction
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Virtual memory means the computer has infinite free RAM with
+    no slowdown risk.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+maps_to:
+- CH06
+- CH07
+- CH12
 anchor_experience: local_lag_with_healthy_connectivity_icon
-teaching_model: "Human experience → system → component → code → network → society"
-
-nodes:
-  - concept_id: instruction-execution
-    canonical_term: "Instruction execution"
-    plain_language: "The CPU carries out a program one instruction (or a small group) at a time: fetch, decode, execute, write results."
-    depends_on: []
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
-    likely_misconception: "Software 'just runs' without a machine doing stepwise work."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "Why local work still consumes time even when the network is fine."
-
-  - concept_id: cpu
-    canonical_term: "CPU"
-    plain_language: "The general-purpose processor that executes most program instructions for apps and the OS."
-    depends_on: [instruction-execution]
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
-    likely_misconception: "More CPU cores always make every experience faster."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "High or contested CPU time during stutter."
-
-  - concept_id: accelerator-gpu
-    canonical_term: "Accelerator / GPU"
-    plain_language: "Specialized processors that take certain parallel jobs (graphics, media, some ML) off the CPU; the OS and drivers still mediate access."
-    depends_on: [cpu]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, builder, engineer, researcher, educator]
-    likely_misconception: "GPUs only matter for games; or the OS itself 'is' the GPU."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "UI composition or export work running beside CPU tasks."
-
-  - concept_id: register
-    canonical_term: "Register"
-    plain_language: "Tiny, extremely fast storage locations inside the CPU that hold values the processor is working on right now."
-    depends_on: [cpu]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [builder, engineer, researcher, educator]
-    likely_misconception: "Registers are the same as RAM chips on the board."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "Supports hierarchy story behind 'working set'."
-
-  - concept_id: cache
-    canonical_term: "Cache"
-    plain_language: "Small, fast memory near the CPU that keeps recently used data so the processor waits less on slower RAM."
-    depends_on: [cpu, register]
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [operator, builder, engineer, researcher, educator]
-    likely_misconception: "Cache is the same as clearing 'cached files' in an app settings menu (related word, different layer)."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "Why repeated work can feel faster until pressure forces misses."
-
-  - concept_id: ram
-    canonical_term: "RAM"
-    plain_language: "The device's main working memory: fast while powered, but not the durable home for files."
-    depends_on: [cache]
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
-    likely_misconception: "RAM and storage are interchangeable 'memory'."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "Many open documents / memory pressure symptoms."
-
-  - concept_id: storage
-    canonical_term: "Storage"
-    plain_language: "Durable place for files and installed software that is meant to survive quitting apps and reboots (subject to failures)."
-    depends_on: []
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
-    likely_misconception: "If it is on screen, it is already safely stored."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "Save hangs; reopen-after-quit checks."
-
-  - concept_id: memory-hierarchy
-    canonical_term: "Memory hierarchy"
-    plain_language: "The layered stack from tiny/fast (registers, caches) to large/slower (RAM, storage) that makes programs practical."
-    depends_on: [register, cache, ram, storage]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
-    likely_misconception: "There is one kind of memory; capacity alone explains speed."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "Anchor map for Experience A/B."
-
-  - concept_id: process
-    canonical_term: "Process"
-    plain_language: "An OS-managed running program instance with its own protected resources."
-    depends_on: [cpu, ram]
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
-    likely_misconception: "One app window always equals exactly one process (often false)."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "Monitor process list during lag."
-
-  - concept_id: thread
-    canonical_term: "Thread"
-    plain_language: "A schedulable stream of execution inside a process; one process may run many threads."
-    depends_on: [process]
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [operator, builder, engineer, researcher, educator]
-    likely_misconception: "Threads are separate apps the user launches."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "UI thread stuck while background work continues—or vice versa."
-
-  - concept_id: scheduler
-    canonical_term: "Scheduler"
-    plain_language: "The OS policy/mechanism that decides which ready thread/process runs on which CPU time slice."
-    depends_on: [process, thread, cpu]
-    introduced_here: false
-    reinforced_here: true
-    prior_intro: CH02
-    reader_pathways: [operator, builder, engineer, researcher, educator]
-    likely_misconception: "The OS executes application logic itself instead of scheduling time for it."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "Competing background updates during foreground stutter."
-
-  - concept_id: os-abstraction
-    canonical_term: "OS abstraction"
-    plain_language: "A simplified, safer interface the operating system presents (processes, files, virtual memory) so apps need not manage every hardware detail."
-    depends_on: [process, storage, scheduler]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, builder, engineer, educator]
-    likely_misconception: "Abstractions mean nothing real is happening underneath."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "Why Task Manager categories map to real shared hardware."
-
-  - concept_id: file-persistence
-    canonical_term: "File / persistence"
-    plain_language: "A named durable object managed by the OS/file system so data can outlive a process."
-    depends_on: [storage, os-abstraction]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, builder, engineer, educator]
-    likely_misconception: "Autosave UI guarantees durability in all failure cases."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-    experience_link: "Experience B save/quit/reopen."
-
-  - concept_id: bottleneck-symptom
-    canonical_term: "Bottleneck symptom"
-    plain_language: "A human-visible slowdown pattern that suggests which resource is scarce—without by itself proving root cause."
-    depends_on: [cpu, ram, storage, scheduler]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [operator, builder, engineer, researcher, educator]
-    likely_misconception: "One monitor number is definitive causation."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: true
-    experience_link: "LAB-CMS-001 observation vs inference."
-
-  - concept_id: power-thermal-limit
-    canonical_term: "Power / thermal limit"
-    plain_language: "Hardware and firmware policies that reduce performance to stay within power or temperature budgets."
-    depends_on: [cpu, accelerator-gpu]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [operator, engineer, researcher, educator]
-    likely_misconception: "Slowdown after heat always means malware or a broken app."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "Experience C heat-then-slow."
-
-  - concept_id: virtual-memory
-    canonical_term: "Virtual memory"
-    plain_language: "OS technique that gives each process a private address space and can move less-used pages between RAM and storage."
-    depends_on: [ram, storage, os-abstraction]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [engineer, researcher, educator]
-    likely_misconception: "Virtual memory means the computer has infinite free RAM with no slowdown risk."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-    experience_link: "Severe memory pressure / thrash symptoms."
-
+teaching_model: "Human experience \u2192 system \u2192 component \u2192 code \u2192\
+  \ network \u2192 society"
 edges:
-  - from: instruction-execution
-    to: cpu
-    relation: realized_by
-  - from: cpu
-    to: accelerator-gpu
-    relation: complementary_to
-  - from: register
-    to: cache
-    relation: next_slower_larger
-  - from: cache
-    to: ram
-    relation: next_slower_larger
-  - from: ram
-    to: storage
-    relation: next_slower_more_durable
-  - from: process
-    to: thread
-    relation: contains
-  - from: scheduler
-    to: cpu
-    relation: allocates_time_on
-  - from: file-persistence
-    to: storage
-    relation: uses
-  - from: virtual-memory
-    to: ram
-    relation: manages
-  - from: virtual-memory
-    to: storage
-    relation: may_spill_to
-  - from: power-thermal-limit
-    to: bottleneck-symptom
-    relation: can_cause
-
-explicit_non_duplication:
-  - "Do not mint separate nodes for 'main memory' vs 'RAM' or 'disk' vs 'storage' without a pedagogical reason."
-  - "Network/packet concepts remain CE-4; CE-3 only notes mis-attribution when connectivity looks fine."
+- from: instruction-execution
+  to: cpu
+  relation: realized_by
+- from: cpu
+  to: accelerator-gpu
+  relation: complementary_to
+- from: register
+  to: cache
+  relation: next_slower_larger
+- from: cache
+  to: ram
+  relation: next_slower_larger
+- from: ram
+  to: storage
+  relation: next_slower_more_durable
+- from: process
+  to: thread
+  relation: contains
+- from: scheduler
+  to: cpu
+  relation: allocates_time_on
+- from: file-persistence
+  to: storage
+  relation: uses
+- from: virtual-memory
+  to: ram
+  relation: manages
+- from: virtual-memory
+  to: storage
+  relation: may_spill_to
+- from: power-thermal-limit
+  to: bottleneck-symptom
+  relation: can_cause

@@ -1,209 +1,256 @@
+schema_version: 1.0.0
 status: CANDIDATE_PREPRODUCTION
-gate_note: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
-rights: Does not modify figures/figure_registry.yaml.
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
 figures:
 - source_package: ce-01
   provisional_id: FIG-CE1-001
-  type: system_map
   truth_classification: conceptual
+  qualification: null
+  figure_type: system_map
   edition_scope: concept_edition
 - source_package: ce-01
   provisional_id: FIG-CE1-002
-  type: causal_flow
   truth_classification: conceptual
+  qualification: null
+  figure_type: causal_flow
   edition_scope: concept_edition
 - source_package: ce-01
   provisional_id: FIG-CE1-003
-  type: comparative_layers
   truth_classification: conceptual
+  qualification: null
+  figure_type: comparative_layers
   edition_scope: concept_edition
 - source_package: ce-01
   provisional_id: FIG-CE1-004
-  type: path_branch_diagram
   truth_classification: illustrative
+  qualification: null
+  figure_type: path_branch_diagram
   edition_scope: concept_edition
 - source_package: ce-01
   provisional_id: FIG-CE1-005
-  type: failure_domain_map
   truth_classification: illustrative
+  qualification: null
+  figure_type: failure_domain_map
   edition_scope: concept_edition
 - source_package: ce-01
   provisional_id: FIG-CE1-006
-  type: exploded_ecosystem_preview
-  truth_classification: conceptual_project_qualified
+  truth_classification: conceptual
+  qualification: project_qualified
+  figure_type: exploded_ecosystem_preview
   edition_scope: concept_edition
 - source_package: ce-01
   provisional_id: FIG-CE1-007
-  type: stability_contract_preview
   truth_classification: conceptual
+  qualification: null
+  figure_type: stability_contract_preview
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-001
-  type: system_map
   truth_classification: conceptual
+  qualification: null
+  figure_type: system_map
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-002
-  type: comparative_layers
   truth_classification: conceptual
+  qualification: null
+  figure_type: comparative_layers
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-003
-  type: sequence_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: sequence_diagram
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-004
-  type: causal_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: causal_diagram
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-005
-  type: component_cards
   truth_classification: conceptual
+  qualification: null
+  figure_type: component_cards
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-006
-  type: before_after_compare
   truth_classification: conceptual
+  qualification: null
+  figure_type: before_after_compare
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-007
-  type: budget_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: budget_diagram
   edition_scope: concept_edition
 - source_package: ce-03
   provisional_id: FIG-CE3-008
-  type: representative_architecture
-  truth_classification: project_specific_conceptual
+  truth_classification: project_specific
+  qualification: conceptual
+  figure_type: representative_architecture
   edition_scope: concept_edition_optional
 - source_package: ce-03
   provisional_id: FIG-CE3-009
-  type: lab_fixture
-  truth_classification: measured_later_fixture
+  truth_classification: measured
+  qualification: later_fixture
+  figure_type: lab_fixture
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-001
-  type: comparative_layers
   truth_classification: conceptual
+  qualification: null
+  figure_type: comparative_layers
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-002
-  type: sequence_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: sequence_diagram
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-003
-  type: system_map
   truth_classification: conceptual
+  qualification: null
+  figure_type: system_map
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-004
-  type: comparative_layers
   truth_classification: conceptual
+  qualification: null
+  figure_type: comparative_layers
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-005
-  type: path_branch_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: path_branch_diagram
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-006
-  type: exploded_view
   truth_classification: conceptual
+  qualification: null
+  figure_type: exploded_view
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-007
-  type: causal_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: causal_diagram
   edition_scope: concept_edition
 - source_package: ce-04
   provisional_id: FIG-CE4-008
-  type: budget_diagram
   truth_classification: conceptual
+  qualification: null
+  figure_type: budget_diagram
   edition_scope: full_edition_only
 - source_package: ce-05
   provisional_id: FIG-CE5-001
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-05
   provisional_id: FIG-CE5-002
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-05
   provisional_id: FIG-CE5-003
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-05
   provisional_id: FIG-CE5-004
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-05
   provisional_id: FIG-CE5-005
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-05
   provisional_id: FIG-CE5-006
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-05
   provisional_id: FIG-CE5-007
-  type: null
   truth_classification: illustrative
-  edition_scope: null
+  qualification: null
+  figure_type: diagram
+  edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-001
-  type: causal / hub-and-spoke system map
   truth_classification: conceptual
+  qualification: null
+  figure_type: causal / hub-and-spoke system map
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-002
-  type: comparative layers / status vs experience
   truth_classification: conceptual
+  qualification: null
+  figure_type: comparative layers / status vs experience
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-003
-  type: sequence / diagnosis path
   truth_classification: conceptual
+  qualification: null
+  figure_type: sequence / diagnosis path
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-004
-  type: budget / stacked comparative
   truth_classification: conceptual
+  qualification: null
+  figure_type: budget / stacked comparative
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-005
-  type: hierarchy / ladder
   truth_classification: conceptual
+  qualification: null
+  figure_type: hierarchy / ladder
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-006
-  type: system map / observability
   truth_classification: conceptual
+  qualification: null
+  figure_type: system map / observability
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-007
-  type: tradeoff / radar-or-matrix
   truth_classification: conceptual
+  qualification: null
+  figure_type: tradeoff / radar-or-matrix
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-008
-  type: paths / capstone spine
   truth_classification: conceptual
+  qualification: null
+  figure_type: paths / capstone spine
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-009
-  type: comparative inclusion
   truth_classification: conceptual
+  qualification: null
+  figure_type: comparative inclusion
   edition_scope: concept_edition
 - source_package: ce-06
   provisional_id: FIG-CE06-010
-  type: ownership map
   truth_classification: conceptual
+  qualification: null
+  figure_type: ownership map
   edition_scope: both
+counts_by_truth_classification:
+  conceptual: 30
+  illustrative: 9
+  measured: 1
+  project_specific: 1

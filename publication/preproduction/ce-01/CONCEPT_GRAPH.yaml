@@ -1,198 +1,269 @@
-# CE-1 concept graph — chapter-local proposal for integrator merge
-# Do not invent duplicate aliases merely to inflate coverage.
-
+schema_version: 1.0.0
 chapter_id: CE-1
-maps_to: [CH01]
-anchor_experience: chrome_visible_before_content_usable
-
 concepts:
-  - concept_id: CX-CE1-001
-    canonical_term: "visible interface"
-    plain_language_definition: "What a person can see or hear on the device surface (screen chrome, icons, sound, haptics) without needing to know hidden machinery."
-    depends_on: []
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, educator]
-    likely_misconception: "If the interface is visible, the experience is complete and the system is healthy."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-002
-    canonical_term: "hidden layers"
-    plain_language_definition: "Cooperating parts under the interface—local software, operating-system services, storage, power, and optional network/services—that the person does not see directly."
-    depends_on: [CX-CE1-001]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, builder, engineer, educator]
-    likely_misconception: "Hidden means unimportant or optional."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-003
-    canonical_term: "technology ecosystem"
-    plain_language_definition: "The set of cooperating human, device, software, data, and optional network parts that together produce a usable experience."
-    depends_on: [CX-CE1-001, CX-CE1-002]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, builder, engineer, researcher, educator]
-    likely_misconception: "Ecosystem means brand marketing or only cloud services."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-004
-    canonical_term: "inputs → processing → state → outputs"
-    plain_language_definition: "A teaching path: something enters the system, work happens, remembered conditions update, then a result returns to the person."
-    depends_on: [CX-CE1-003]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, builder, engineer]
-    likely_misconception: "These steps always happen one-at-a-time with no overlap."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-005
-    canonical_term: "application state"
-    plain_language_definition: "What the software currently 'remembers' about the session or screen—selected items, loaded content, login session, draft text—so the interface can be rebuilt."
-    depends_on: [CX-CE1-004]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [operator, builder, engineer]
-    likely_misconception: "State lives only as pixels on the screen."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: false
-    requires_lab: true
-
-  - concept_id: CX-CE1-006
-    canonical_term: "dependency"
-    plain_language_definition: "A condition or component the experience needs—local storage available, process scheduled, optional network path, valid session—so the usable result can appear."
-    depends_on: [CX-CE1-003]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [operator, builder, engineer, researcher, educator]
-    likely_misconception: "If one dependency is healthy (e.g., Wi-Fi icon), all dependencies are healthy."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-007
-    canonical_term: "failure domain"
-    plain_language_definition: "A useful bucket for where trouble may live (UI, local app/OS, storage, network/service, human perception) before claiming a precise root cause."
-    depends_on: [CX-CE1-006]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [operator, engineer, researcher, educator]
-    likely_misconception: "Naming a domain proves the cause."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-008
-    canonical_term: "optional network/service branch"
-    plain_language_definition: "A path some experiences take to machines or services beyond the local device; many experiences never need it."
-    depends_on: [CX-CE1-004, CX-CE1-006]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, builder, engineer]
-    likely_misconception: "Every modern app always needs the cloud for every action."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-009
-    canonical_term: "the app is not one thing"
-    plain_language_definition: "Everyday 'app' talk usually compresses UI, runtime, OS services, storage, optional networking, and remote services into one word."
-    depends_on: [CX-CE1-003, CX-CE1-005, CX-CE1-008]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, builder, engineer, educator]
-    likely_misconception: "Reinstalling 'the app' is always the first correct fix."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: false
-
-  - concept_id: CX-CE1-010
-    canonical_term: "observation vs inference"
-    plain_language_definition: "Observation is what you directly saw or recorded; inference is a possible explanation that still needs evidence."
-    depends_on: []
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, operator, engineer, researcher, educator]
-    likely_misconception: "A confident story is the same as evidence."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: false
-    requires_lab: true
-
-  - concept_id: CX-CE1-011
-    canonical_term: "stability contract (preview)"
-    plain_language_definition: "A usable experience continues only while multiple hidden conditions stay within acceptable bounds; a system can look 'connected' after the human experience has already failed."
-    depends_on: [CX-CE1-006, CX-CE1-007]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [operator, engineer, researcher, educator]
-    likely_misconception: "Stability means the Wi-Fi icon is filled."
-    glossary_candidate: true
-    requires_citation: false
-    requires_figure: true
-    requires_lab: true
-
-  - concept_id: CX-CE1-012
-    canonical_term: "Device Quartet (learning laboratory foreshadow)"
-    plain_language_definition: "Four research form factors used across the publication as recurring learning benchmarks (desk, handheld hybrid, learn-to-build coder, embodied wearables)—not finished commercial products."
-    depends_on: [CX-CE1-003]
-    introduced_here: true
-    reinforced_here: false
-    reader_pathways: [explorer, builder, engineer, educator]
-    likely_misconception: "These are shipping SKUs required for CE-1 labs."
-    glossary_candidate: true
-    requires_citation: true
-    requires_figure: true
-    requires_lab: false
-
+- concept_id: CX-CE1-001
+  canonical_term: visible interface
+  plain_language_definition: What a person can see or hear on the device surface (screen
+    chrome, icons, sound, haptics) without needing to know hidden machinery.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - educator
+  likely_misconception: If the interface is visible, the experience is complete and
+    the system is healthy.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-002
+  canonical_term: hidden layers
+  plain_language_definition: "Cooperating parts under the interface\u2014local software,\
+    \ operating-system services, storage, power, and optional network/services\u2014\
+    that the person does not see directly."
+  depends_on:
+  - CX-CE1-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - educator
+  likely_misconception: Hidden means unimportant or optional.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-003
+  canonical_term: technology ecosystem
+  plain_language_definition: The set of cooperating human, device, software, data,
+    and optional network parts that together produce a usable experience.
+  depends_on:
+  - CX-CE1-001
+  - CX-CE1-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Ecosystem means brand marketing or only cloud services.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-004
+  canonical_term: "inputs \u2192 processing \u2192 state \u2192 outputs"
+  plain_language_definition: 'A teaching path: something enters the system, work happens,
+    remembered conditions update, then a result returns to the person.'
+  depends_on:
+  - CX-CE1-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  likely_misconception: These steps always happen one-at-a-time with no overlap.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-005
+  canonical_term: application state
+  plain_language_definition: "What the software currently 'remembers' about the session\
+    \ or screen\u2014selected items, loaded content, login session, draft text\u2014\
+    so the interface can be rebuilt."
+  depends_on:
+  - CX-CE1-004
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  likely_misconception: State lives only as pixels on the screen.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: false
+  requires_lab: true
+- concept_id: CX-CE1-006
+  canonical_term: dependency
+  plain_language_definition: "A condition or component the experience needs\u2014\
+    local storage available, process scheduled, optional network path, valid session\u2014\
+    so the usable result can appear."
+  depends_on:
+  - CX-CE1-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: If one dependency is healthy (e.g., Wi-Fi icon), all dependencies
+    are healthy.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-007
+  canonical_term: failure domain
+  plain_language_definition: A useful bucket for where trouble may live (UI, local
+    app/OS, storage, network/service, human perception) before claiming a precise
+    root cause.
+  depends_on:
+  - CX-CE1-006
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Naming a domain proves the cause.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-008
+  canonical_term: optional network/service branch
+  plain_language_definition: A path some experiences take to machines or services
+    beyond the local device; many experiences never need it.
+  depends_on:
+  - CX-CE1-004
+  - CX-CE1-006
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  likely_misconception: Every modern app always needs the cloud for every action.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-009
+  canonical_term: the app is not one thing
+  plain_language_definition: Everyday 'app' talk usually compresses UI, runtime, OS
+    services, storage, optional networking, and remote services into one word.
+  depends_on:
+  - CX-CE1-003
+  - CX-CE1-005
+  - CX-CE1-008
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - educator
+  likely_misconception: Reinstalling 'the app' is always the first correct fix.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: false
+- concept_id: CX-CE1-010
+  canonical_term: observation vs inference
+  plain_language_definition: Observation is what you directly saw or recorded; inference
+    is a possible explanation that still needs evidence.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: A confident story is the same as evidence.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: true
+- concept_id: CX-CE1-011
+  canonical_term: stability contract (preview)
+  plain_language_definition: A usable experience continues only while multiple hidden
+    conditions stay within acceptable bounds; a system can look 'connected' after
+    the human experience has already failed.
+  depends_on:
+  - CX-CE1-006
+  - CX-CE1-007
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Stability means the Wi-Fi icon is filled.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CE1-012
+  canonical_term: Device Quartet (learning laboratory foreshadow)
+  plain_language_definition: "Four research form factors used across the publication\
+    \ as recurring learning benchmarks (desk, handheld hybrid, learn-to-build coder,\
+    \ embodied wearables)\u2014not finished commercial products."
+  depends_on:
+  - CX-CE1-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - educator
+  likely_misconception: These are shipping SKUs required for CE-1 labs.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+maps_to:
+- CH01
+anchor_experience: chrome_visible_before_content_usable
 edges:
-  - from: CX-CE1-001
-    to: CX-CE1-002
-    relation: contrasted_with
-  - from: CX-CE1-002
-    to: CX-CE1-003
-    relation: composes
-  - from: CX-CE1-003
-    to: CX-CE1-004
-    relation: traversed_by
-  - from: CX-CE1-004
-    to: CX-CE1-005
-    relation: updates
-  - from: CX-CE1-003
-    to: CX-CE1-006
-    relation: requires
-  - from: CX-CE1-006
-    to: CX-CE1-007
-    relation: fails_inside
-  - from: CX-CE1-004
-    to: CX-CE1-008
-    relation: may_branch_to
-  - from: CX-CE1-003
-    to: CX-CE1-009
-    relation: implies
-  - from: CX-CE1-010
-    to: CX-CE1-007
-    relation: disciplines
-  - from: CX-CE1-006
-    to: CX-CE1-011
-    relation: constrains
-  - from: CX-CE1-003
-    to: CX-CE1-012
-    relation: foreshadows_lab_spine
+- from: CX-CE1-001
+  to: CX-CE1-002
+  relation: contrasted_with
+- from: CX-CE1-002
+  to: CX-CE1-003
+  relation: composes
+- from: CX-CE1-003
+  to: CX-CE1-004
+  relation: traversed_by
+- from: CX-CE1-004
+  to: CX-CE1-005
+  relation: updates
+- from: CX-CE1-003
+  to: CX-CE1-006
+  relation: requires
+- from: CX-CE1-006
+  to: CX-CE1-007
+  relation: fails_inside
+- from: CX-CE1-004
+  to: CX-CE1-008
+  relation: may_branch_to
+- from: CX-CE1-003
+  to: CX-CE1-009
+  relation: implies
+- from: CX-CE1-010
+  to: CX-CE1-007
+  relation: disciplines
+- from: CX-CE1-006
+  to: CX-CE1-011
+  relation: constrains
+- from: CX-CE1-003
+  to: CX-CE1-012
+  relation: foreshadows_lab_spine

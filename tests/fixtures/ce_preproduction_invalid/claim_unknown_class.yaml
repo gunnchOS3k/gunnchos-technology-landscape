@@ -1,0 +1,12 @@
+schema_version: "1.0.0"
+chapter_id: CE-X
+claims:
+  - provisional_id: CLM-BAD-CLASS
+    text: Unknown class
+    claim_class: not_a_real_class
+    evidence_required: x
+    preferred_source_type: x
+    status: SOURCE_IDENTIFIED
+    citation_keys: []
+    overclaim_risk: x
+    wording_boundary: x

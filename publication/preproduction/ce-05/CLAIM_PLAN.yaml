@@ -1,153 +1,152 @@
-# CE-5 Claim Plan (chapter-local; do not merge into shared claim_registry yet)
+schema_version: 1.0.0
 chapter_id: CE-5
-package_status: preproduction
-accepted_main_sha: "166e9544bc6e2aee344bc962ace76d49ee3e04e4"
-policy: "05_EVIDENCE_AND_ACCEPTED_MAIN_AUDIT_SPEC.md"
-note: >
-  Planned claims for CE-5 prose/labs. Status values are preproduction classifications.
-  Do not render planned as implemented. Do not invent measurements.
-
 claims:
-  - claim_id: CLM-CE5-001
-    text: "WAIKE accepted main hosts digital_rc course packages AI_ML_EDGE, CYBERSECURITY, and COMM_PD_ETHICS with file-backed labs relevant to AI evaluation, identity/RBAC, and consent/AI disclosure."
-    scope: project-specific
-    classification: repository-implemented
-    status: verified
-    evidence:
-      source_id: SRC-WAIKE
-      repository: gunnchOS3k/waike-research-ops
-      branch: main
-      commit: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
-      paths:
-        - curriculum/digital_rc/AI_ML_EDGE/course.json
-        - curriculum/digital_rc/CYBERSECURITY/course.json
-        - curriculum/digital_rc/COMM_PD_ETHICS/course.json
-        - curriculum/digital_rc/AI_ML_EDGE/labs/lab_rag_redact/README.md
-        - curriculum/digital_rc/CYBERSECURITY/labs/lab_iam_rbac/README.md
-        - curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_consent_disclosure/README.md
-    wording:
-      approved: "WAIKE provides file-backed AI/ML, cybersecurity, and ethics course packages with labs on accepted main."
-      prohibited:
-        - "WAIKE contains an official CE-5 / LAB-TRUST-001 course module ID"
-        - "WAIKE certifies learner cybersecurity credentials"
-
-  - claim_id: CLM-CE5-002
-    text: "gunnchOS device OS accepted main models opt-in telemetry consent with default-off posture in documented claim boundaries; it is not a shipping OS and beta_ready is false."
-    scope: project-specific
-    classification: repository-documented
-    status: verified
-    evidence:
-      source_id: SRC-DEVICE-OS
-      repository: gunnchOS3k/gunnchos-device-os
-      branch: main
-      commit: "28562a8456207540c205a1c8a6434a491b0a4771"
-      paths:
-        - beta_gate/beta_gate_status.yaml
-        - CLAIMS_TO_EVIDENCE.md
-        - product/CLAIM_BOUNDARY.md
-    wording:
-      approved: "Device OS alpha documents opt-in telemetry consent modeling; not a finished shipping OS."
-      prohibited:
-        - "gunnchOS ships production MDM / certified secure boot as proven on accepted main"
-
-  - claim_id: CLM-CE5-003
-    text: "Device Quartet form factors remain research/learning benchmarks with physical fabrication pending; not commercial AI/security appliances."
-    scope: project-specific
-    classification: repository-documented
-    status: verified
-    evidence:
-      source_id: SRC-HARDWARE
-      repository: gunnchOS3k/gunnchos-hardware-industrial-design
-      branch: main
-      commit: "9ee0ef2f688b2c18428bfabc316b23687a02988d"
-      paths:
-        - docs/device-quartet/README.md
-        - DIGITAL_MANUFACTURING_READINESS.md
-    wording:
-      approved: "Device Quartet is concept-complete research form factor documentation; physical units pending."
-      prohibited:
-        - "Device Quartet units are shipping products with measured AI/security benchmarks"
-
-  - claim_id: CLM-CE5-004
-    text: "At a systems level, many modern AI features can be taught as data conditioning a model whose parameters are applied at inference time to produce outputs."
-    scope: general-knowledge
-    classification: textbook
-    status: planned
-    evidence:
-      bib_keys: [russell_norvig_aima, goodfellow_deep_learning]
-    wording:
-      approved: "Accessible systems framing: data → model → inference/output."
-      prohibited:
-        - "The model understands the user's intent"
-        - "Neural nets think"
-
-  - claim_id: CLM-CE5-005
-    text: "NIST AI RMF 1.0 provides voluntary organizational guidance for managing AI risks and discussing trustworthy/responsible AI system characteristics without treating trust as a binary property of 'AI' itself."
-    scope: standards
-    classification: standard
-    status: verified
-    evidence:
-      bib_keys: [nist_ai_rmf_100_1]
-      url: "https://doi.org/10.6028/NIST.AI.100-1"
-    wording:
-      approved: "Use NIST AI RMF language for organizational risk management and characteristics of trustworthy AI systems."
-      prohibited:
-        - "AI is inherently trustworthy"
-        - "AI is inherently untrustworthy"
-
-  - claim_id: CLM-CE5-006
-    text: "Digital identity guidance distinguishes assurance concepts around identity proofing and authentication; authorization remains a separate access-decision concern in systems teaching."
-    scope: standards
-    classification: standard
-    status: verified
-    evidence:
-      bib_keys: [nist_sp_800_63_4]
-      url: "https://doi.org/10.6028/NIST.SP.800-63-4"
-      note: "SP 800-63-3 withdrawn 2025-08-01; superseded by SP 800-63-4 (July 2025)."
-    wording:
-      approved: "Separate identity, authentication, and authorization in learner language."
-      prohibited:
-        - "Login alone proves entitlement to all actions"
-
-  - claim_id: CLM-CE5-007
-    text: "Classical protection design principles (e.g., least privilege, fail-safe defaults, psychological acceptability) remain useful for connecting security controls to usable experience."
-    scope: peer-reviewed
-    classification: peer-reviewed
-    status: verified
-    evidence:
-      bib_keys: [saltzer_schroeder_1975]
-      url: "https://doi.org/10.1109/PROC.1975.9939"
-    wording:
-      approved: "Teach security principles as UX-compatible design constraints."
-      prohibited:
-        - "Detached vulnerability trivia without user-visible consequence"
-
-  - claim_id: CLM-CE5-008
-    text: "Illustrative local-vs-cloud latency/privacy comparison tables in CE-5 figures/labs are teaching aids unless a measurement bundle is attached."
-    scope: publication-internal
-    classification: illustrative
-    status: planned
-    evidence:
-      bib_keys: []
-      local_refs: [FIGURE_PLAN.yaml, LAB_PLAN.md]
-    wording:
-      approved: "Label comparison tables illustrative unless measured."
-      prohibited:
-        - "Claimed measured on-device vs cloud latency for gunnchOS SKUs without evidence bundle"
-
-  - claim_id: CLM-CE5-009
-    text: "Proposed book lab LAB-TRUST-001 is a publication-side learning design; it is not an existing WAIKE course module ID."
-    scope: publication-internal
-    classification: planned
-    status: planned
-    evidence:
-      local_refs: [LAB_PLAN.md, WAIKE_CROSSWALK.md]
-    wording:
-      approved: "LAB-TRUST-001 is proposed for the book; map to WAIKE by adjacency only."
-      prohibited:
-        - "Exact WAIKE module LAB-TRUST-001"
-
-counts:
-  verified: 6
-  planned: 3
-  total: 9
+- provisional_id: CLM-CE5-001
+  text: WAIKE accepted main hosts digital_rc course packages AI_ML_EDGE, CYBERSECURITY,
+    and COMM_PD_ETHICS with file-backed labs relevant to AI evaluation, identity/RBAC,
+    and consent/AI disclosure.
+  claim_class: project_specific
+  evidence_required: Repository paths + SHA
+  preferred_source_type: accepted-main repository evidence
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-WAIKE
+  overclaim_risk: '[''WAIKE contains an official CE-5 / LAB-TRUST-001 course module
+    ID'', ''WAIKE certifies learner cybersecurity credentials'']'
+  wording_boundary: 'approved: WAIKE provides file-backed AI/ML, cybersecurity, and
+    ethics course packages with labs on accepted main. | prohibited: WAIKE contains
+    an official CE-5 / LAB-TRUST-001 course module ID; WAIKE certifies learner cybersecurity
+    credentials'
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    paths:
+    - curriculum/digital_rc/AI_ML_EDGE/course.json
+    - curriculum/digital_rc/CYBERSECURITY/course.json
+    - curriculum/digital_rc/COMM_PD_ETHICS/course.json
+    - curriculum/digital_rc/AI_ML_EDGE/labs/lab_rag_redact/README.md
+    - curriculum/digital_rc/CYBERSECURITY/labs/lab_iam_rbac/README.md
+    - curriculum/digital_rc/COMM_PD_ETHICS/labs/lab_consent_disclosure/README.md
+    source_id: SRC-WAIKE
+- provisional_id: CLM-CE5-002
+  text: gunnchOS device OS accepted main models opt-in telemetry consent with default-off
+    posture in documented claim boundaries; it is not a shipping OS and beta_ready
+    is false.
+  claim_class: project_specific
+  evidence_required: Repository paths + SHA
+  preferred_source_type: accepted-main repository evidence
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-DEVICE-OS
+  overclaim_risk: '[''gunnchOS ships production MDM / certified secure boot as proven
+    on accepted main'']'
+  wording_boundary: 'approved: Device OS alpha documents opt-in telemetry consent
+    modeling; not a finished shipping OS. | prohibited: gunnchOS ships production
+    MDM / certified secure boot as proven on accepted main'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-device-os
+    commit: 28562a8456207540c205a1c8a6434a491b0a4771
+    paths:
+    - beta_gate/beta_gate_status.yaml
+    - CLAIMS_TO_EVIDENCE.md
+    - product/CLAIM_BOUNDARY.md
+    source_id: SRC-DEVICE-OS
+- provisional_id: CLM-CE5-003
+  text: Device Quartet form factors remain research/learning benchmarks with physical
+    fabrication pending; not commercial AI/security appliances.
+  claim_class: project_specific
+  evidence_required: Physical fabrication / measured validation
+  preferred_source_type: accepted-main repository evidence
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - SRC-HARDWARE
+  overclaim_risk: '[''Device Quartet units are shipping products with measured AI/security
+    benchmarks'']'
+  wording_boundary: 'approved: Device Quartet is concept-complete research form factor
+    documentation; physical units pending. | prohibited: Device Quartet units are
+    shipping products with measured AI/security benchmarks'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-hardware-industrial-design
+    commit: 9ee0ef2f688b2c18428bfabc316b23687a02988d
+    paths:
+    - docs/device-quartet/README.md
+    - DIGITAL_MANUFACTURING_READINESS.md
+    source_id: SRC-HARDWARE
+- provisional_id: CLM-CE5-004
+  text: At a systems level, many modern AI features can be taught as data conditioning
+    a model whose parameters are applied at inference time to produce outputs.
+  claim_class: general_technical
+  evidence_required: Primary source citation
+  preferred_source_type: textbook or official documentation
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - russell_norvig_aima
+  - goodfellow_deep_learning
+  overclaim_risk: '["The model understands the user''s intent", ''Neural nets think'']'
+  wording_boundary: "approved: Accessible systems framing: data \u2192 model \u2192\
+    \ inference/output. | prohibited: The model understands the user's intent; Neural\
+    \ nets think"
+- provisional_id: CLM-CE5-005
+  text: NIST AI RMF 1.0 provides voluntary organizational guidance for managing AI
+    risks and discussing trustworthy/responsible AI system characteristics without
+    treating trust as a binary property of 'AI' itself.
+  claim_class: standards_based
+  evidence_required: Primary source citation
+  preferred_source_type: standards/specifications
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - nist_ai_rmf_100_1
+  overclaim_risk: '[''AI is inherently trustworthy'', ''AI is inherently untrustworthy'']'
+  wording_boundary: 'approved: Use NIST AI RMF language for organizational risk management
+    and characteristics of trustworthy AI systems. | prohibited: AI is inherently
+    trustworthy; AI is inherently untrustworthy'
+- provisional_id: CLM-CE5-006
+  text: Digital identity guidance distinguishes assurance concepts around identity
+    proofing and authentication; authorization remains a separate access-decision
+    concern in systems teaching.
+  claim_class: standards_based
+  evidence_required: Primary source citation
+  preferred_source_type: standards/specifications
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - nist_sp_800_63_4
+  overclaim_risk: '[''Login alone proves entitlement to all actions'']'
+  wording_boundary: 'approved: Separate identity, authentication, and authorization
+    in learner language. | prohibited: Login alone proves entitlement to all actions'
+- provisional_id: CLM-CE5-007
+  text: Classical protection design principles (e.g., least privilege, fail-safe defaults,
+    psychological acceptability) remain useful for connecting security controls to
+    usable experience.
+  claim_class: peer_reviewed
+  evidence_required: Primary source citation
+  preferred_source_type: peer-reviewed literature
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - saltzer_schroeder_1975
+  overclaim_risk: '[''Detached vulnerability trivia without user-visible consequence'']'
+  wording_boundary: 'approved: Teach security principles as UX-compatible design constraints.
+    | prohibited: Detached vulnerability trivia without user-visible consequence'
+- provisional_id: CLM-CE5-008
+  text: Illustrative local-vs-cloud latency/privacy comparison tables in CE-5 figures/labs
+    are teaching aids unless a measurement bundle is attached.
+  claim_class: publication_internal
+  evidence_required: Illustrative teaching construct only
+  preferred_source_type: publication-internal
+  status: ILLUSTRATIVE_ONLY
+  citation_keys: []
+  overclaim_risk: '[''Claimed measured on-device vs cloud latency for gunnchOS SKUs
+    without evidence bundle'']'
+  wording_boundary: 'approved: Label comparison tables illustrative unless measured.
+    | prohibited: Claimed measured on-device vs cloud latency for gunnchOS SKUs without
+    evidence bundle'
+- provisional_id: CLM-CE5-009
+  text: Proposed book lab LAB-TRUST-001 is a publication-side learning design; it
+    is not an existing WAIKE course module ID.
+  claim_class: publication_internal
+  evidence_required: Project/lab evidence bundle
+  preferred_source_type: publication-internal
+  status: PROJECT_EVIDENCE_NEEDED
+  citation_keys: []
+  overclaim_risk: '[''Exact WAIKE module LAB-TRUST-001'']'
+  wording_boundary: 'approved: LAB-TRUST-001 is proposed for the book; map to WAIKE
+    by adjacency only. | prohibited: Exact WAIKE module LAB-TRUST-001'

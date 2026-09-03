@@ -1,0 +1,14 @@
+schema_version: "1.0.0"
+chapter_id: CE-X
+figures:
+  - provisional_id: FIG-BAD-ENUM
+    figure_type: diagram
+    pedagogical_purpose: x
+    reader_should_notice: x
+    data_or_evidence_source: x
+    truth_classification: conceptual_project_qualified
+    expected_geometry: x
+    accessibility_description_requirement: x
+    color_independent_encoding: x
+    dependencies: []
+    edition_scope: concept_edition

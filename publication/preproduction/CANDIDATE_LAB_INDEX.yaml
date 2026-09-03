@@ -1,40 +1,17 @@
+schema_version: 1.0.0
 status: CANDIDATE_PREPRODUCTION
-gate_note: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
-rights: Does not modify labs/lab_registry.yaml.
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
 labs:
 - source_package: ce-01
   lab_id: LAB-SYS-001
-  also_mentions:
-  - LAB-TAP-001
-  title: Name the System Behind a Familiar “Open”
-  has_fallback: true
-  has_evidence: true
-  progress_role: observe / identify systems behind open
+- source_package: ce-01
+  lab_id: LAB-TAP-001
 - source_package: ce-03
   lab_id: LAB-CMS-001
-  also_mentions: []
-  title: null
-  has_fallback: true
-  has_evidence: true
-  progress_role: inspect local compute hierarchy under lag
 - source_package: ce-04
   lab_id: LAB-PKT-001
-  also_mentions: []
-  title: Trace One Connected Action Across Path and Access
-  has_fallback: true
-  has_evidence: true
-  progress_role: build/inspect packet path & access scopes
 - source_package: ce-05
   lab_id: LAB-TRUST-001
-  also_mentions: []
-  title: Compare local vs remote AI paths and write a consent/trust card
-  has_fallback: true
-  has_evidence: true
-  progress_role: measure/diagnose trust + AI boundaries
 - source_package: ce-06
   lab_id: LAB-CE06-001
-  also_mentions: []
-  title: Explain, Measure, Improve, and Teach One Real Technology Experience
-  has_fallback: true
-  has_evidence: true
-  progress_role: synthesize EMIT capstone diagnosis

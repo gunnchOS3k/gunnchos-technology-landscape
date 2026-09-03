@@ -1,212 +1,154 @@
 # Concept Edition Integration Report
 
-**Branch:** `cursor/concept-edition-preproduction-001`  
-**Wave:** Concept Edition evidence-first preproduction (CE-1/3/4/5/6)  
-**Gate status (unchanged):** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`  
-**Integrator rule:** Chapter packages merged as-is; shared live registries (glossary, claims, figures, labs, WAIKE, CH02-REVIEW-R1) were **not** rewritten. Candidate indexes live under `publication/preproduction/CANDIDATE_*.yaml`.
+**schema_version:** `1.0.0`  
+**Gate posture:** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`  
+**Integration branch:** `cursor/concept-edition-preproduction-001`  
+**CH02 review snapshot:** `CH02-REVIEW-R1` — **untouched**
 
 ---
 
 ## A. Accepted-main SHA
 
-| Item | Value |
-|---|---|
-| Accepted `origin/main` | `166e9544bc6e2aee344bc962ace76d49ee3e04e4` |
-| Tip commit | Merge pull request **#2** (`cursor/gate3-reader-validation-prep`) |
-| Contains PR #2 | **Yes** (verified via `git fetch --all --prune` + `git log`) |
-| Advanced beyond brief? | No — matches wave brief SHA |
-
-Integration branch was created from this accepted-main tip. Local stale `main` pointers were reset to `origin/main` before branching.
-
----
+`166e9544bc6e2aee344bc962ace76d49ee3e04e4` (contains merged PR #2)
 
 ## B. Five chapter package status
 
-All five packages were brought in with `git checkout <agent-branch> -- publication/preproduction/ce-0N/`. **No merge conflicts.** Each package has all **13** required artifacts.
-
-| CE | Agent branch | Commit | Artifacts | Concepts | Claims | Figures | Anchor lab |
-|---|---|---|---:|---:|---:|---:|---|
-| CE-1 | `agent-a/ce-01-preproduction` | `17461af` | 13/13 | 12 | 10 | 7 | `LAB-SYS-001` |
-| CE-3 | `agent-b/ce-03-preproduction` | `05852b1` | 13/13 | 16 | 14 | 9 | `LAB-CMS-001` |
-| CE-4 | `agent-c/ce-04-preproduction` | `3bb563d` | 13/13 | 18 | 15 | 8 | `LAB-PKT-001` |
-| CE-5 | `agent-d/ce-05-preproduction` | `5d4a74b` | 13/13 | 15 | 9 | 7 | `LAB-TRUST-001` |
-| CE-6 | `agent-e/ce-06-preproduction` | `864de4d` | 13/13 | 14 | 14 | 10 | `LAB-CE06-001` |
-
-Schema note (honest): packages use slightly different YAML field names (`concepts` vs `nodes`; `truth_classification` vs `truth_class` vs `conceptual_vs_measured`; CE-5 claim statuses `verified`/`planned`). Validator accepts these variants. Candidate indexes normalize IDs without rewriting chapter-local files.
-
-`scripts/validate_ce_preproduction.py` + `tests/test_ce_preproduction.py` **PASS**.
-
----
-
-## C. Cross-chapter prerequisite graph
-
-```text
-CE-1 (systems lens; no prior CE deps)
-  └─► CE-2 / CH02 (prototype; under R1 — do not modify)
-        ├─► CE-3 (local CPU/memory/storage/OS)
-        │     └─► CE-4 (packets / access / edge-cloud)
-        │           └─► CE-5 (AI / security / privacy / trust)
-        └─► CE-6 (Stability Contract + EMIT capstone synthesizes CE-1…CE-5)
-```
-
-| Chapter | Declared priors | Feeds |
+| Package | Required artifacts | Structured YAML contract |
 |---|---|---|
-| CE-1 | None (entry) | CE-2 method; CE-3–6 ecosystem lens |
-| CE-3 | CE-1 systems lens; CE-2 experience method (light CPU/RAM terms) | CE-4 local-vs-network; CE-5 local AI; CE-6 bottlenecks |
-| CE-4 | CE-1 optional network branch; CE-2 packet named; CE-3 local machine | CE-5 placement/trust; CE-6 path conditions |
-| CE-5 | CE-1–4 ecosystem + path + local machine | CE-6 trust/privacy as contract conditions |
-| CE-6 | All prior CE + CE-2 Stability Contract intro | Full-book CH20/CH25/CH30/CH31 depth |
+| `ce-01` | 13/13 | Normalized to schema 1.0.0 |
+| `ce-03` | 13/13 | Normalized to schema 1.0.0 |
+| `ce-04` | 13/13 | Normalized to schema 1.0.0 |
+| `ce-05` | 13/13 | Normalized to schema 1.0.0 |
+| `ce-06` | 13/13 | Normalized to schema 1.0.0 |
 
-Canonical drafting of CE-1/3/4/5/6 prose should wait on CH02 human feedback shaping tone/depth/example density.
+No full canonical prose drafts. No Gate 3 PASS claims.
 
----
+## C. Cross-chapter prerequisite graph (summary)
+
+CE-1 (systems lens) → CE-2 open prototype (tap path; R1) → CE-3 (compute/storage/OS) → CE-4 (packets/access/edge-cloud) → CE-5 (AI/security/privacy/trust) → CE-6 (Stability Contract synthesis / EMIT capstone).
+
+Chapter-local `depends_on` edges live in each `CONCEPT_GRAPH.yaml` under canonical `concepts:`.
 
 ## D. Glossary collisions
 
-Candidate index: `publication/preproduction/CANDIDATE_GLOSSARY.yaml` (**75** glossary-leaning entries). Live `glossary/glossary.yaml` **not** modified.
+Candidate glossary rebuilt from normalized concepts with `glossary_candidate: true`.
 
-| Finding | Detail |
-|---|---|
-| Exact cross-CE term collisions | **None** found on normalized `canonical_term` / `name` |
-| Conflicting definitions | No same-term multi-CE conflicts requiring immediate rewrite |
-| Aliases / schema drift | CE-3/4 use `nodes` + `plain_language`; CE-1/6 use `concepts` + `plain_language_definition`; CE-5 uses `name` / `plain_language` — integrator should canonicalize later |
-| Terms introduced early | CE-1 foreshadows Device Quartet, failure domains, optional network — intentional. CE-3 reinforces CPU/RAM/storage lightly introduced in CH02 (`reinforced_here` / `prior_intro: CH02`) |
-| CH02 compatibility later | Live glossary already defines **stability contract** (CE-6 reinforces). Packet / process / latency terms from CH02 should be aligned post-R1 without editing R1 snapshot materials now |
-| Do-not-touch | `CH02-REVIEW-R1`, live glossary, open Gate 3 responses |
-
----
+- Exact cross-CE canonical-term collisions: **none detected in candidate rebuild**
+- Alias / schema drift from Wave-13 agents: **migrated** (`nodes`→`concepts`, `plain_language`→`plain_language_definition`, …)
+- CH02 compatibility: “Stability Contract” already taught in CH02 — align wording **after** R1 closes; do **not** edit R1 now
+- Live `glossary/glossary.yaml` **not** modified
 
 ## E. Citation / source overlap
 
-Candidate index: `CANDIDATE_SOURCE_INDEX.yaml`. Canonical `book/references/references.bib` and live `evidence/source_registry.yaml` **not** modified.
+From regenerated `CANDIDATE_SOURCE_INDEX.yaml` (deterministic):
 
-### Reusable across chapters (bib key overlaps observed)
+| Metric | Count |
+|---|---:|
+| Chapter source occurrences | 64 |
+| Unique source records (by bib key) | 58 |
+| standards/specifications | 18 |
+| official technical documentation | 13 |
+| peer-reviewed | 3 |
+| textbooks | 9 |
+| project accepted-main evidence | 7 |
+| other explanatory | 8 |
 
-| Key / theme | Appears in |
-|---|---|
-| `rfc791`, `rfc9293` | CE-1, CE-4 |
-| `tanenbaum-bos`, `linux-scheduler`, `mdn-performance` | CE-1, CE-3 |
-| `wcag22` | CE-1, CE-6 |
-| WAIKE / hardware / device-os SHAs | CE-1, CE-3, CE-4, CE-5, CE-6 |
+**Metadata conflicts flagged:**
 
-### Conflicting metadata
+- `wcag22`: year `2023` (CE-1; W3C Recommendation 05 Oct 2023 note) vs `2024` (CE-6; cites 12 Dec 2024 Recommendation update) — same URL `https://www.w3.org/TR/WCAG22/`. Canonical dated-edition choice deferred; do not invent a third year.
 
-| Topic | Finding |
-|---|---|
-| WAIKE accepted-main SHA | Chapter audits agree on `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`; live shared registry still records CH02 audit `8eb2827…`. **Candidate note only** — defer live refresh until after R1 |
-| Hardware / device-os SHAs | Consistent with publication audit (`9ee0ef2…`, `28562a8…`) |
+Verification statuses used in the source index are truthful classes (`PRIMARY_METADATA_VERIFIED`, `REPOSITORY_EVIDENCE_VERIFIED`, `NEEDS_PRIMARY_VERIFICATION`) — **not** a blanket “verified because URL exists.”
 
-### Weak / deferred sources (not inflated)
-
-- Peer-reviewed journals largely deferred (CE-1/3/4/6 = **0** peer-reviewed entries by design; CE-5 has **2**)
-- 3GPP / NVMe revision pins left living / `SOURCE_NEEDED` rather than invented
-- Marketing / undated blogs explicitly rejected in chapter registers
-
-Exact class counts: see section J in the parent final report / `CANDIDATE_SOURCE_INDEX.yaml`.
-
----
+Local bibs remain chapter-local; global `book/references/references.bib` not auto-merged.
 
 ## F. Figure system
 
-Candidate index: `CANDIDATE_FIGURE_INDEX.yaml` (**41** proposed figures).
+**41** proposed figures after normalization.
 
-### Repeated templates (should become shared visual patterns)
+| `truth_classification` | Count |
+|---|---:|
+| conceptual | 30 |
+| illustrative | 9 |
+| project_specific | 1 |
+| measured | 1 |
+| mixed | 0 |
 
-1. **System map / exploded ecosystem** — CE-1, CE-3, CE-4, CE-6  
-2. **Comparative layers / scopes** — CE-1 app cards; CE-3 memory hierarchy; CE-4 local/LAN/Internet; CE-5 local vs cloud AI  
-3. **Sequence / path diagrams** — CE-3 instruction path; CE-4 packet path; CE-6 diagnosis path  
-4. **Status vs usable experience** — CE-1 readiness; CE-4 connectivity; CE-6 chrome vs outcome  
-5. **Failure-domain / trust-boundary maps** — CE-1, CE-5, CE-6  
+Compound enums (`conceptual_project_qualified`, `project_specific_conceptual`, `measured_later_fixture`) migrated to base enum + optional `qualification`.
 
-### Unique / chapter-specific
-
-- CE-3 Device Quartet compute callout (`PHYSICAL_PENDING` only)  
-- CE-4 Wi-Fi vs cellular on-ramps (must not synonymize)  
-- CE-5 identity ladder + privacy lifecycle  
-- CE-6 EMIT / Stability Contract hub-and-spoke + rubric visualization  
-
-### Workload
-
-~41 planned Concept Edition figures (not drawn). Production should prioritize templates above before one-off art. No decorative-as-evidence proposals accepted.
-
----
+Shared visual templates still: system maps, sequences, comparative layers, status-vs-usable, failure/trust maps. None drawn yet.
 
 ## G. Lab progression
 
-| Stage | Lab | Role |
+| Lab | Chapter | Role in progression |
 |---|---|---|
-| Observe | `LAB-SYS-001` (CE-1) | Name system behind a familiar “open”; chrome vs usable |
-| Inspect | `LAB-CMS-001` (CE-3) | Local lag with healthy connectivity icon; hierarchy inspection |
-| Build / path | `LAB-PKT-001` (CE-4) | Packet/connectivity path across scopes with fixture fallback |
-| Measure / diagnose trust | `LAB-TRUST-001` (CE-5) | Local vs remote AI + identity/privacy boundaries |
-| Synthesize | `LAB-CE06-001` (CE-6) | EMIT capstone — explain, measure, improve, teach |
+| `LAB-SYS-001` | CE-1 | Observe / identify |
+| `LAB-TAP-001` | CE-2 (live; R1) | Prototype measure (out of this PR’s CE-1/3–6 set) |
+| `LAB-CMS-001` | CE-3 | Inspect hierarchy |
+| `LAB-PKT-001` | CE-4 | Build/inspect path |
+| `LAB-TRUST-001` | CE-5 | Measure/diagnose trust |
+| `LAB-CE06-001` | CE-6 | Synthesize EMIT |
 
-All five lab plans include evidence/portfolio language and offline/fixture fallback. None require Device Quartet hardware. Depth ladders cover Explorer → Operator → Builder → Engineer → Researcher (Educator facilitation where present). Progression intentionally avoids duplicating `LAB-TAP-001` as the CE-1/3/4/5/6 primary lab.
+All CE-1/3/4/5/6 labs plan evidence artifacts + offline/fixture fallbacks. Distinct from `LAB-TAP-001`.
 
----
+## H. WAIKE crosswalk
 
-## H. WAIKE crosswalk (CE-wide)
+Accepted `gunnchOS3k/waike-research-ops/main` SHA reconfirmed:
 
-Candidate index: `CANDIDATE_WAIKE_CROSSWALK.yaml`.
+`e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`
 
-| Package | Relationship vocabulary | Known courses cited (examples) |
-|---|---|---|
-| CE-1 | exact / adjacent / proposed / no-map | `GENERAL_IT`, `SOFTWARE_BUILDER`, … |
-| CE-3 | exact / adjacent / proposed / no-map | `EMBEDDED_PROTOTYPING`, `HARDWARE_ENGINEERING`, … |
-| CE-4 | exact / adjacent / proposed / no-map | `COMPUTER_NETWORKING`, `CLOUD_DEVOPS`, `WIRELESS_6G` |
-| CE-5 | exact / adjacent / proposed / no-map | `AI_ML_EDGE`, `CYBERSECURITY`, `COMM_PD_ETHICS` |
-| CE-6 | exact / adjacent / proposed / no-map | multi-course adjacency; **no exact** Stability Contract / EMIT module |
+Relationship vocabulary retained: **exact / adjacent / proposed / no-map**.  
+Publication lab IDs remain no-map/proposed as WAIKE modules. Live `waike/alignment.yaml` / CH02 R1 evidence **not** rewritten solely to refresh SHA.
 
-Shared findings:
+## I. Device Quartet use
 
-- Preferred audit SHA across chapter packages: `e97e74f…`  
-- Publication-owned labs (`LAB-SYS-001`, `LAB-CMS-001`, `LAB-PKT-001`, `LAB-TRUST-001`, `LAB-CE06-001`) are **no-map / proposed** as WAIKE IDs — not invented upstream module IDs  
-- Live `waike/alignment.yaml` left untouched
+Foreshadow / `PHYSICAL_PENDING` only where claims require it. Labs do not require Quartet hardware. Balanced mentions: Student 14.5", Handheld Hybrid, DS-XL Coder, Edge IO Wearables — not forced into every chapter.
 
----
+## J. Gate 3 dependency (waits on CH02 human feedback)
 
-## I. Device Quartet use balance
+Before canonical CE prose drafting:
 
-| Form factor | Intended learning role | CE coverage (honest) |
-|---|---|---|
-| Student 14.5″ | Sustained learning/work | Named in CE-1 foreshadow; CE-3 representative compute/storage; not forced elsewhere |
-| Handheld Hybrid | Mobile / docked interaction | CE-1 foreshadow; CE-3 form-factor contrast |
-| DS-XL Coder | Strongest learn-to-build form | CE-1 foreshadow; CE-3 builder adjacency |
-| Edge IO Wearables | Embodied sensing / haptics / HUD / safety | CE-1 foreshadow; light CE-5/6 analogy only |
+1. Real Explorer / Builder / Engineer reviews of `CH02-REVIEW-R1`
+2. Optional Educator review
+3. Editorial judgment on tone/depth/figure readability from R1
+4. Promote selected candidates into live registries only after R1
 
-Balance check:
-
-- **CE-1:** Introduces Quartet as future lab spine — **non-marketing**, labs on commodity devices  
-- **CE-3:** Optional figure/callout with `PHYSICAL_PENDING`  
-- **CE-4:** Explicit non-requirement (commodity connectivity)  
-- **CE-5 / CE-6:** Research form factor / analogy only; capstone must not require Quartet SKUs  
-
-No chapter forces a device into every section. All project-specific Quartet claims remain `PHYSICAL_PENDING`.
+This PR may merge as **preproduction research/contracts** while Gate 3 remains open.
 
 ---
 
-## J. Gate 3 dependency — waits for CH02 human feedback
+## Schema migrations performed (this closure)
 
-Do **not** close Gate 3. Do **not** alter `CH02-REVIEW-R1`.
+| Drift | Canonical action |
+|---|---|
+| `verified` / `planned` claim statuses | Mapped by meaning → Wave-13 statuses |
+| `nodes:` | → `concepts:` |
+| `plain_language` / `name` / `id` | → `plain_language_definition` / `canonical_term` / `concept_id` |
+| `truth_class` / `conceptual_vs_measured` | → `truth_classification` |
+| Compound truth enums | → base enum + `qualification` |
+| `claim_text` / `claim_id` | → `text` / `provisional_id` |
+| Claim class hyphen/space variants | → snake_case enum |
+| Pathway-keyed learning objectives | → flat `objectives[]` with `reader_pathways` |
+| `roles:` career collections | → `careers:` |
+| Candidate indexes | Regenerated deterministically (`--check` clean) |
 
-Must wait on real Explorer / Builder / Engineer (/ optional Educator) feedback before:
+Contract path: `publication/preproduction/schema/` (`schema_version: "1.0.0"`).
 
-1. Final chapter **tone, depth, and example density** for CE-1/3/4/5/6 canonical prose  
-2. Whether CE anatomy section lengths should match CH02 mechanically or adapt  
-3. Figure density / reading-order preferences validated by humans  
-4. Lab friction and portfolio rigor calibrated to CH02 `LAB-TAP-001` results  
-5. Glossary term plain-language finalization where CH02 terms overlap  
-6. Any promotion of chapter-local claims/figures/labs into **live** shared registries  
-7. Refresh of live WAIKE SHA in `evidence/source_registry.yaml` (candidate note only for now)
+Validator: `scripts/validate_ce_preproduction.py` **rejects** legacy drift (no longer tolerates variants).
 
-Allowed now (and done in this PR): source research, concept graphs, claim plans, figure briefs, lab plans, WAIKE adjacency maps, career maps, SEA planning, candidate indexes, validators.
+## Exact claim counts by canonical status
 
----
+| Status | Count |
+|---|---:|
+| SOURCE_IDENTIFIED | 43 |
+| ILLUSTRATIVE_ONLY | 7 |
+| PROJECT_EVIDENCE_NEEDED | 7 |
+| PHYSICAL_PENDING | 4 |
+| SOURCE_NEEDED | 1 |
+| **Total** | **62** |
 
-## Integrator deliverables in this PR
+## Remaining automatable work
 
-- `publication/preproduction/ce-0{1,3,4,5,6}/` — five complete packages  
-- `publication/preproduction/CANDIDATE_*.yaml` — six candidate indexes  
-- `scripts/validate_ce_preproduction.py` + `tests/test_ce_preproduction.py`  
-- Makefile `validate` target includes CE preproduction check  
-- This report
+- Promote candidates into live registries **after** R1
+- Implement runnable labs / draw figures from plans
+- Resolve WCAG dated-edition preference when promoting global bib
+- Optional: refresh live WAIKE SHA note in `evidence/source_registry.yaml` post-R1

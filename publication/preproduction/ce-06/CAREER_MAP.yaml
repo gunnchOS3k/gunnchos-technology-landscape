@@ -1,97 +1,76 @@
-# CE-6 Career Map
-
-chapter: CE-6
-status: preproduction
-disclaimer: >
-  Completing LAB-CE06-001 does not qualify a learner for employment.
-  Artifacts are portfolio analogues only (employment_guarantee: false).
-
+schema_version: 1.0.0
+chapter_id: CE-6
+employment_guarantee: false
 careers:
+- role_family: Site Reliability / Production Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Diagnosis shortlist + comparison runs + honest limitations
+  portfolio_artifact: ''
+  next_deeper: Full-book CH20/CH27; WAIKE CLOUD_DEVOPS lab_slo_budget / lab_incident_runbook
+    (adjacent)
+- role_family: Performance Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Measured-on-this-device timings with illustrative/measured labels
+  portfolio_artifact: ''
+  next_deeper: CH20; optional Linux scheduler docs for Engineer path
+- role_family: Frontend / Application Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Local-vs-remote observation pair
+  portfolio_artifact: ''
+  next_deeper: CE-2 LAB-TAP-001 reuse; SOFTWARE_BUILDER adjacency
+- role_family: Backend / Cloud Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: HTTP/status observations without attacking systems
+  portfolio_artifact: ''
+  next_deeper: "CH17\u201318 / CE-4 synthesis"
+- role_family: Network Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: "Wi\u2011Fi vs cellular or online vs captive-portal notes"
+  portfolio_artifact: ''
+  next_deeper: CE-4 labs; COMPUTER_NETWORKING lab_datapath adjacency
+- role_family: Cybersecurity / Trust
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Redaction checklist applied to portfolio
+  portfolio_artifact: ''
+  next_deeper: CE-5; CYBERSECURITY lab_incident_playbook adjacency
+- role_family: Accessibility Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Experience C run or a11y divergence notes
+  portfolio_artifact: ''
+  next_deeper: WCAG 2.2 intent study; COMM_PD_ETHICS lab_accessibility_comm adjacency
+- role_family: Technical Program Management
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: "Condition\u2192owner map"
+  portfolio_artifact: ''
+  next_deeper: "CH29\u201330; PM_AGILE track adjacency"
+- role_family: Research / Measurement Science
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Researcher protocol with uncertainty section
+  portfolio_artifact: ''
+  next_deeper: CH20/CH28; catalog course reproducible_research adjacency
+- role_family: Educator / Mentorship
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Facilitation plan + scored sample portfolio
+  portfolio_artifact: ''
+  next_deeper: Educator guides; COMM_PD_ETHICS lab_feedback_rubric / lab_pd_capstone
+    adjacency
+- role_family: UX / HCI
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Moment + notice writeup tied to conditions
+  portfolio_artifact: ''
+  next_deeper: CH02 prototype patterns; full-book interaction chapters
+disclaimer: 'Completing LAB-CE06-001 does not qualify a learner for employment. Artifacts
+  are portfolio analogues only (employment_guarantee: false).
 
-  - role_family: "Site Reliability / Production Engineering"
-    role_ids_ref: [ROLE-SRE]
-    chapter_focus: "Connected vs usable; error budgets as analogy; incident diagnosis across layers"
-    technical_skills: ["symptom triage", "SLI/SLO literacy (conceptual)", "runbook thinking"]
-    student_evidence: "Diagnosis shortlist + comparison runs + honest limitations"
-    portfolio_from_lab: "result_table.csv + improve_plan.md tied to reliability symptoms"
-    next_deeper: "Full-book CH20/CH27; WAIKE CLOUD_DEVOPS lab_slo_budget / lab_incident_runbook (adjacent)"
-
-  - role_family: "Performance Engineering"
-    role_ids_ref: [ROLE-PERF]
-    chapter_focus: "Latency/variability as one contract dimension among many; measurement labeling"
-    technical_skills: ["timing instrumentation", "main-thread awareness", "budget thinking without fake numbers"]
-    student_evidence: "Measured-on-this-device timings with illustrative/measured labels"
-    portfolio_from_lab: "Performance notes + FIG-style budget table from learner data"
-    next_deeper: "CH20; optional Linux scheduler docs for Engineer path"
-
-  - role_family: "Frontend / Application Engineering"
-    role_ids_ref: [ROLE-FRONTEND, ROLE-APP]
-    chapter_focus: "Local UI success vs remote confirmation; event-loop contract conditions"
-    technical_skills: ["DevTools", "async UI patterns", "user-visible error design"]
-    student_evidence: "Local-vs-remote observation pair"
-    portfolio_from_lab: "Builder helper or instrumented demo README"
-    next_deeper: "CE-2 LAB-TAP-001 reuse; SOFTWARE_BUILDER adjacency"
-
-  - role_family: "Backend / Cloud Engineering"
-    role_ids_ref: [ROLE-BACKEND]
-    chapter_focus: "Service availability, auth, and durable effect vs optimistic UI"
-    technical_skills: ["API error literacy", "idempotency concepts", "timeouts/retries as UX"]
-    student_evidence: "HTTP/status observations without attacking systems"
-    portfolio_from_lab: "Service-domain branch of diagnosis tree"
-    next_deeper: "CH17–18 / CE-4 synthesis"
-
-  - role_family: "Network Engineering"
-    role_ids_ref: [ROLE-NET, ROLE-WIRELESS]
-    chapter_focus: "Link-up vs path-usable; when not to blame the radio first"
-    technical_skills: ["basic path mental model", "comparison under network classes"]
-    student_evidence: "Wi‑Fi vs cellular or online vs captive-portal notes"
-    portfolio_from_lab: "Network domain evidence rows"
-    next_deeper: "CE-4 labs; COMPUTER_NETWORKING lab_datapath adjacency"
-
-  - role_family: "Cybersecurity / Trust"
-    role_ids_ref: [ROLE-SEC]
-    chapter_focus: "Permissions, session, and safe evidence handling as contract conditions"
-    technical_skills: ["threat-aware logging", "redaction", "least privilege for learning tools"]
-    student_evidence: "Redaction checklist applied to portfolio"
-    portfolio_from_lab: "evidence/ with scrub notes"
-    next_deeper: "CE-5; CYBERSECURITY lab_incident_playbook adjacency"
-
-  - role_family: "Accessibility Engineering"
-    role_ids_ref: [ROLE-A11Y]
-    chapter_focus: "Equivalent experience paths; exclusion as contract failure"
-    technical_skills: ["keyboard/AT checks", "text equivalents", "inclusive success criteria"]
-    student_evidence: "Experience C run or a11y divergence notes"
-    portfolio_from_lab: "Inclusion branch in improve_plan.md"
-    next_deeper: "WCAG 2.2 intent study; COMM_PD_ETHICS lab_accessibility_comm adjacency"
-
-  - role_family: "Technical Program Management"
-    role_ids_ref: [ROLE-TPM]
-    chapter_focus: "Ownership map across concurrent conditions; cross-team integration"
-    technical_skills: ["dependency mapping", "risk register lite", "clarity of interfaces"]
-    student_evidence: "Condition→owner map"
-    portfolio_from_lab: "diagram.md ownership annotations"
-    next_deeper: "CH29–30; PM_AGILE track adjacency"
-
-  - role_family: "Research / Measurement Science"
-    role_ids_ref: [ROLE-RESEARCH]
-    chapter_focus: "Evidence hierarchy; uncertainty; refusing overclaim"
-    technical_skills: ["hypothesis design", "confounders", "standards literacy (QoE)"]
-    student_evidence: "Researcher protocol with uncertainty section"
-    portfolio_from_lab: "hypothesis + limitations"
-    next_deeper: "CH20/CH28; catalog course reproducible_research adjacency"
-
-  - role_family: "Educator / Mentorship"
-    role_ids_ref: []
-    chapter_focus: "Facilitation of EMIT capstone; misconception detection; equitable fallbacks"
-    technical_skills: ["rubric application", "pathway differentiation", "teach-back coaching"]
-    student_evidence: "Facilitation plan + scored sample portfolio"
-    portfolio_from_lab: "educator addendum in teach_back.md"
-    next_deeper: "Educator guides; COMM_PD_ETHICS lab_feedback_rubric / lab_pd_capstone adjacency"
-
-  - role_family: "UX / HCI"
-    role_ids_ref: [ROLE-UX, ROLE-HCI]
-    chapter_focus: "Human consequence of contract failure; feedback design when remote work fails"
-    technical_skills: ["experience mapping", "honest UI status design"]
-    student_evidence: "Moment + notice writeup tied to conditions"
-    portfolio_from_lab: "teach_back.md + experience narrative"
-    next_deeper: "CH02 prototype patterns; full-book interaction chapters"
+  '

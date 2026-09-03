@@ -1,0 +1,21 @@
+schema_id: ce-preproduction-career-map
+schema_version: "1.0.0"
+required_top_level:
+  - chapter_id
+  - employment_guarantee
+  - careers
+required_career_fields:
+  - role_family
+  - chapter_work
+  - technical_skill
+  - student_evidence
+  - portfolio_artifact
+optional_career_fields:
+  - next_deeper
+  - related_concepts
+  - role_id
+forbidden_top_level_keys_as_primary:
+  - roles
+notes: >
+  roles: collections are migrated to careers:.
+  employment_guarantee must be false for Concept Edition honesty.

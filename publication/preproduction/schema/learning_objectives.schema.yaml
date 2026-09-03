@@ -1,0 +1,22 @@
+schema_id: ce-preproduction-learning-objectives
+schema_version: "1.0.0"
+required_top_level:
+  - chapter_id
+  - objectives
+required_objective_fields:
+  - objective_id
+  - text
+  - reader_pathways
+optional_objective_fields:
+  - evidence_artifact
+  - bloom
+  - anatomy_sections
+allowed_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+notes: >
+  Pathway-keyed dictionaries must be flattened into objectives[] with reader_pathways.

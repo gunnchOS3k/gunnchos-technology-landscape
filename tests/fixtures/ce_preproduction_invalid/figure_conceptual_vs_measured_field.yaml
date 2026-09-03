@@ -1,0 +1,14 @@
+schema_version: "1.0.0"
+chapter_id: CE-X
+figures:
+  - provisional_id: FIG-BAD-CVM
+    figure_type: diagram
+    pedagogical_purpose: x
+    reader_should_notice: x
+    data_or_evidence_source: x
+    conceptual_vs_measured: conceptual
+    expected_geometry: x
+    accessibility_description_requirement: x
+    color_independent_encoding: x
+    dependencies: []
+    edition_scope: concept_edition

@@ -1,0 +1,12 @@
+schema_version: "1.0.0"
+chapter_id: CE-X
+claims:
+  - provisional_id: CLM-BAD-PLANNED
+    text: Bad legacy status
+    claim_class: general_technical
+    evidence_required: x
+    preferred_source_type: x
+    status: planned
+    citation_keys: []
+    overclaim_risk: x
+    wording_boundary: x

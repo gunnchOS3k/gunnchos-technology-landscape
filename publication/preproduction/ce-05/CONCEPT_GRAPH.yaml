@@ -1,166 +1,350 @@
-# CE-5 Concept Graph (preproduction)
+schema_version: 1.0.0
 chapter_id: CE-5
-maps_to: [CH21, CH23, CH24]
-status: scaffold
-teaching_model: "human experience → system → component → code → network → society"
-
 concepts:
-  - id: CX-CE5-DATA
-    name: Training and input data
-    plain_language: "Examples and records used to fit a model or answer a question."
-    layer: system
-    introduced_in: CE-5
-    prerequisites: [CE-1]
-    related: [CX-CE5-LIFECYCLE]
-    human_observable: "Your photos, typed prompts, or uploaded files become part of a request."
-
-  - id: CX-CE5-MODEL
-    name: Model parameters
-    plain_language: "Stored numbers that shape how inputs become outputs; not a mind."
-    layer: component
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-DATA]
-    related: [CX-CE5-INFERENCE]
-    human_observable: "The same question can get different styles of answers after an app update."
-
-  - id: CX-CE5-INFERENCE
-    name: Inference / output
-    plain_language: "Running the model on new inputs to produce a prediction or generated text."
-    layer: code
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-MODEL]
-    related: [CX-CE5-UNCERTAINTY, CX-CE5-LOCALCLOUD]
-    human_observable: "A reply appears after a short wait."
-
-  - id: CX-CE5-GENAI
-    name: Generative AI (systems view)
-    plain_language: "Systems that produce new text, images, or code by predicting likely continuations."
-    layer: system
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-INFERENCE]
-    related: [CX-CE5-UNCERTAINTY]
-    human_observable: "Fluent paragraphs that may still be wrong."
-    wording_guard: "Do not say the model knows or understands unless metaphor is explicitly bounded."
-
-  - id: CX-CE5-LOCALCLOUD
-    name: Local vs cloud AI
-    plain_language: "Whether inference runs on your device or on someone else's computers."
-    layer: network
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-INFERENCE]
-    related: [CX-CE5-PRIVACY, CX-CE5-TRUST]
-    human_observable: "Works offline vs needs network; privacy notice differs."
-
-  - id: CX-CE5-UNCERTAINTY
-    name: Uncertainty and errors
-    plain_language: "Outputs can be wrong, biased, or incomplete even when confident-sounding."
-    layer: human
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-GENAI]
-    related: [CX-CE5-TRUST]
-    human_observable: "You catch a fabricated citation or unsafe instruction."
-
-  - id: CX-CE5-ATTACKSURFACE
-    name: Attack surface (UX-linked)
-    plain_language: "Places where misuse can enter—through the same screens and flows people use."
-    layer: system
-    introduced_in: CE-5
-    prerequisites: [CE-1]
-    related: [CX-CE5-IDENTITY, CX-CE5-AUTHZ]
-    human_observable: "Phishing page, over-broad permission, leaked session, poisoned prompt/doc."
-    wording_guard: "Tie each surface to a user experience; no exploit recipes."
-
-  - id: CX-CE5-IDENTITY
-    name: Identity
-    plain_language: "A claim about who or what an actor is."
-    layer: component
-    introduced_in: CE-5
-    prerequisites: []
-    related: [CX-CE5-AUTHN, CX-CE5-AUTHZ]
-    human_observable: "Account name, device badge, service account for a bot."
-
-  - id: CX-CE5-AUTHN
-    name: Authentication
-    plain_language: "Checking that an identity claim is sufficiently believable for this risk."
-    layer: component
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-IDENTITY]
-    related: [CX-CE5-AUTHZ, CX-CE5-CRYPTO]
-    human_observable: "Password, passkey, MFA prompt, 'verify it's you'."
-
-  - id: CX-CE5-AUTHZ
-    name: Authorization
-    plain_language: "Deciding what an authenticated actor is allowed to do."
-    layer: code
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-AUTHN]
-    related: [CX-CE5-ATTACKSURFACE]
-    human_observable: "You can view but not delete; a bot can read but not admin."
-
-  - id: CX-CE5-CRYPTO
-    name: Encryption concepts
-    plain_language: "Transforms that make data unreadable without keys; goals and limits matter."
-    layer: network
-    introduced_in: CE-5
-    prerequisites: []
-    related: [CX-CE5-PRIVACY, CX-CE5-TRUST]
-    human_observable: "Padlock icon; encrypted backup; still readable on unlocked phone."
-
-  - id: CX-CE5-PRIVACY
-    name: Privacy / data lifecycle
-    plain_language: "Rules and practices for collect, use, retain, share, delete/redact."
-    layer: society
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-DATA]
-    related: [CX-CE5-LIFECYCLE, CX-CE5-TRUST]
-    human_observable: "Retention notice, export/delete request, surprise ad targeting."
-
-  - id: CX-CE5-LIFECYCLE
-    name: Data lifecycle stages
-    plain_language: "Named stages from collection through deletion or archival."
-    layer: system
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-PRIVACY]
-    related: [CX-CE5-DATA]
-    human_observable: "A prompt remains in history after you wanted it gone."
-
-  - id: CX-CE5-TRUST
-    name: Human trust vs technical trust
-    plain_language: "Felt reliability versus controls and evidence that bound risk."
-    layer: human
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-UNCERTAINTY, CX-CE5-AUTHN]
-    related: [CX-CE5-RESPONSIBLE]
-    human_observable: "You feel safe—or you demand a receipt/log/peer review."
-
-  - id: CX-CE5-RESPONSIBLE
-    name: Responsible use
-    plain_language: "Practices that align capability with disclosure, consent, equity, and accessibility."
-    layer: society
-    introduced_in: CE-5
-    prerequisites: [CX-CE5-TRUST]
-    related: [CX-CE5-PRIVACY]
-    human_observable: "AI disclosure in a ticket; accessible MFA alternative; redacted demo."
-
+- concept_id: CX-CE5-DATA
+  canonical_term: Training and input data
+  plain_language_definition: Examples and records used to fit a model or answer a
+    question.
+  depends_on:
+  - CE-1
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Your photos, typed prompts, or uploaded files become part
+    of a request.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-MODEL
+  canonical_term: Model parameters
+  plain_language_definition: Stored numbers that shape how inputs become outputs;
+    not a mind.
+  depends_on:
+  - CX-CE5-DATA
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: The same question can get different styles of answers after
+    an app update.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-INFERENCE
+  canonical_term: Inference / output
+  plain_language_definition: Running the model on new inputs to produce a prediction
+    or generated text.
+  depends_on:
+  - CX-CE5-MODEL
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: A reply appears after a short wait.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-GENAI
+  canonical_term: Generative AI (systems view)
+  plain_language_definition: Systems that produce new text, images, or code by predicting
+    likely continuations.
+  depends_on:
+  - CX-CE5-INFERENCE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Do not say the model knows or understands unless metaphor
+    is explicitly bounded.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-LOCALCLOUD
+  canonical_term: Local vs cloud AI
+  plain_language_definition: Whether inference runs on your device or on someone else's
+    computers.
+  depends_on:
+  - CX-CE5-INFERENCE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Works offline vs needs network; privacy notice differs.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-UNCERTAINTY
+  canonical_term: Uncertainty and errors
+  plain_language_definition: Outputs can be wrong, biased, or incomplete even when
+    confident-sounding.
+  depends_on:
+  - CX-CE5-GENAI
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: You catch a fabricated citation or unsafe instruction.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-ATTACKSURFACE
+  canonical_term: Attack surface (UX-linked)
+  plain_language_definition: "Places where misuse can enter\u2014through the same\
+    \ screens and flows people use."
+  depends_on:
+  - CE-1
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Tie each surface to a user experience; no exploit recipes.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-IDENTITY
+  canonical_term: Identity
+  plain_language_definition: A claim about who or what an actor is.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Account name, device badge, service account for a bot.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-AUTHN
+  canonical_term: Authentication
+  plain_language_definition: Checking that an identity claim is sufficiently believable
+    for this risk.
+  depends_on:
+  - CX-CE5-IDENTITY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Password, passkey, MFA prompt, 'verify it's you'.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-AUTHZ
+  canonical_term: Authorization
+  plain_language_definition: Deciding what an authenticated actor is allowed to do.
+  depends_on:
+  - CX-CE5-AUTHN
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: You can view but not delete; a bot can read but not admin.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-CRYPTO
+  canonical_term: Encryption concepts
+  plain_language_definition: Transforms that make data unreadable without keys; goals
+    and limits matter.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Padlock icon; encrypted backup; still readable on unlocked
+    phone.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-PRIVACY
+  canonical_term: Privacy / data lifecycle
+  plain_language_definition: Rules and practices for collect, use, retain, share,
+    delete/redact.
+  depends_on:
+  - CX-CE5-DATA
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Retention notice, export/delete request, surprise ad targeting.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-LIFECYCLE
+  canonical_term: Data lifecycle stages
+  plain_language_definition: Named stages from collection through deletion or archival.
+  depends_on:
+  - CX-CE5-PRIVACY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: A prompt remains in history after you wanted it gone.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-TRUST
+  canonical_term: Human trust vs technical trust
+  plain_language_definition: Felt reliability versus controls and evidence that bound
+    risk.
+  depends_on:
+  - CX-CE5-UNCERTAINTY
+  - CX-CE5-AUTHN
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: "You feel safe\u2014or you demand a receipt/log/peer review."
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-RESPONSIBLE
+  canonical_term: Responsible use
+  plain_language_definition: Practices that align capability with disclosure, consent,
+    equity, and accessibility.
+  depends_on:
+  - CX-CE5-TRUST
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: AI disclosure in a ticket; accessible MFA alternative; redacted
+    demo.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+maps_to:
+- CH21
+- CH23
+- CH24
+teaching_model: "human experience \u2192 system \u2192 component \u2192 code \u2192\
+  \ network \u2192 society"
 edges:
-  - {from: CX-CE5-DATA, to: CX-CE5-MODEL, relation: fits_or_conditions}
-  - {from: CX-CE5-MODEL, to: CX-CE5-INFERENCE, relation: enables}
-  - {from: CX-CE5-INFERENCE, to: CX-CE5-GENAI, relation: specializes}
-  - {from: CX-CE5-INFERENCE, to: CX-CE5-LOCALCLOUD, relation: deployment_choice}
-  - {from: CX-CE5-GENAI, to: CX-CE5-UNCERTAINTY, relation: produces_risk_of}
-  - {from: CX-CE5-LOCALCLOUD, to: CX-CE5-PRIVACY, relation: changes_exposure}
-  - {from: CX-CE5-IDENTITY, to: CX-CE5-AUTHN, relation: verified_by}
-  - {from: CX-CE5-AUTHN, to: CX-CE5-AUTHZ, relation: precedes}
-  - {from: CX-CE5-AUTHZ, to: CX-CE5-ATTACKSURFACE, relation: mediates}
-  - {from: CX-CE5-CRYPTO, to: CX-CE5-PRIVACY, relation: supports_goal}
-  - {from: CX-CE5-PRIVACY, to: CX-CE5-LIFECYCLE, relation: structured_as}
-  - {from: CX-CE5-UNCERTAINTY, to: CX-CE5-TRUST, relation: challenges}
-  - {from: CX-CE5-TRUST, to: CX-CE5-RESPONSIBLE, relation: guides}
-
-pathway_entry_points:
-  explorer: [CX-CE5-GENAI, CX-CE5-UNCERTAINTY, CX-CE5-TRUST]
-  operator: [CX-CE5-AUTHN, CX-CE5-AUTHZ, CX-CE5-ATTACKSURFACE]
-  builder: [CX-CE5-LIFECYCLE, CX-CE5-AUTHZ, CX-CE5-RESPONSIBLE]
-  engineer: [CX-CE5-LOCALCLOUD, CX-CE5-CRYPTO, CX-CE5-INFERENCE]
-  researcher: [CX-CE5-UNCERTAINTY, CX-CE5-DATA, CX-CE5-TRUST]
-  educator: [CX-CE5-TRUST, CX-CE5-RESPONSIBLE, CX-CE5-PRIVACY]
+- from: CX-CE5-DATA
+  to: CX-CE5-MODEL
+  relation: fits_or_conditions
+- from: CX-CE5-MODEL
+  to: CX-CE5-INFERENCE
+  relation: enables
+- from: CX-CE5-INFERENCE
+  to: CX-CE5-GENAI
+  relation: specializes
+- from: CX-CE5-INFERENCE
+  to: CX-CE5-LOCALCLOUD
+  relation: deployment_choice
+- from: CX-CE5-GENAI
+  to: CX-CE5-UNCERTAINTY
+  relation: produces_risk_of
+- from: CX-CE5-LOCALCLOUD
+  to: CX-CE5-PRIVACY
+  relation: changes_exposure
+- from: CX-CE5-IDENTITY
+  to: CX-CE5-AUTHN
+  relation: verified_by
+- from: CX-CE5-AUTHN
+  to: CX-CE5-AUTHZ
+  relation: precedes
+- from: CX-CE5-AUTHZ
+  to: CX-CE5-ATTACKSURFACE
+  relation: mediates
+- from: CX-CE5-CRYPTO
+  to: CX-CE5-PRIVACY
+  relation: supports_goal
+- from: CX-CE5-PRIVACY
+  to: CX-CE5-LIFECYCLE
+  relation: structured_as
+- from: CX-CE5-UNCERTAINTY
+  to: CX-CE5-TRUST
+  relation: challenges
+- from: CX-CE5-TRUST
+  to: CX-CE5-RESPONSIBLE
+  relation: guides

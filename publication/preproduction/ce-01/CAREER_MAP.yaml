@@ -1,71 +1,50 @@
-# CE-1 career map — chapter-local proposal
-# No employment guarantees. Portfolio analogues ≠ job qualifications.
-
+schema_version: 1.0.0
 chapter_id: CE-1
-maps_to: [CH01]
 employment_guarantee: false
-disclaimer: "Completing CE-1 or LAB-SYS-001 does not qualify a learner for any role."
-
 careers:
-  - role_family: "UX / Product Design"
-    chapter_focus: "Perceived readiness, chrome vs content, human expectations"
-    technical_skill: "Interaction specification; loading-state communication"
-    student_evidence: "Teach-back + annotated readiness observations"
-    portfolio_artifact_from_lab: "readiness_observation_table + teach_back_paragraph"
-    next_deeper_chapter_or_lab: "CE-2 / LAB-TAP-001"
-
-  - role_family: "Application / Frontend Engineering"
-    chapter_focus: "Why 'the app' is not one thing; state and UI layers"
-    technical_skill: "Event-driven UI; separating render of chrome from data readiness"
-    student_evidence: "Ecosystem map with UI/runtime/state cards"
-    portfolio_artifact_from_lab: "ecosystem_map"
-    next_deeper_chapter_or_lab: "CE-2; later full-book CH14"
-
-  - role_family: "IT Support / Operations"
-    chapter_focus: "Failure domains; tickets that separate observation from inference"
-    technical_skill: "Triage language; dependency checks"
-    student_evidence: "Two symptom→domain tickets with inference labels"
-    portfolio_artifact_from_lab: "failure_domain_writeups"
-    next_deeper_chapter_or_lab: "CE-6 diagnosis synthesis; WAIKE GENERAL_IT adjacency"
-
-  - role_family: "SRE / Backend / Cloud"
-    chapter_focus: "Optional remote branch; service health ≠ link icon"
-    technical_skill: "Service dependency reasoning; user-visible failure modes"
-    student_evidence: "Online vs offline comparison notes"
-    portfolio_artifact_from_lab: "readiness_observation_table (remote branch section)"
-    next_deeper_chapter_or_lab: "CE-4; full-book CH15/CH27"
-
-  - role_family: "Network Engineering"
-    chapter_focus: "Optional network path as one dependency among many"
-    technical_skill: "Distinguishing association/connectivity from application success"
-    student_evidence: "Experience C analysis without invented RF numbers"
-    portfolio_artifact_from_lab: "dependency_checklist"
-    next_deeper_chapter_or_lab: "CE-4 / packet labs"
-
-  - role_family: "Accessibility Engineering"
-    chapter_focus: "Ready/busy communication beyond visual chrome"
-    technical_skill: "Inclusive input paths; non-color status encoding"
-    student_evidence: "Accessibility notes on chosen open path"
-    portfolio_artifact_from_lab: "a11y_path_notes"
-    next_deeper_chapter_or_lab: "CE-5 trust/inclusion; full-book CH24"
-
-  - role_family: "Systems / OS Engineering"
-    chapter_focus: "Hidden local layers: processes, scheduling, storage roles"
-    technical_skill: "Layered system explanation at accessible depth"
-    student_evidence: "Mapping CE-1 layers to textbook abstractions with citations"
-    portfolio_artifact_from_lab: "layer_to_abstraction_table"
-    next_deeper_chapter_or_lab: "CE-3"
-
-  - role_family: "Technical Educator / Mentorship"
-    chapter_focus: "Misconception detection; facilitation of system lens"
-    technical_skill: "Probe questions; lab adaptation"
-    student_evidence: "Facilitation notes for screen-as-surface misconception"
-    portfolio_artifact_from_lab: "educator_probe_set"
-    next_deeper_chapter_or_lab: "CE-6 teach-back capstone"
-
-  - role_family: "Security / Identity (introductory)"
-    chapter_focus: "Session/auth as a failure domain inside the ecosystem"
-    technical_skill: "Least-privilege mindset for evidence capture; session expiry symptoms"
-    student_evidence: "Privacy scrub checklist applied to lab artifacts"
-    portfolio_artifact_from_lab: "privacy_scrub_log"
-    next_deeper_chapter_or_lab: "CE-5"
+- role_family: UX / Product Design
+  chapter_work: ''
+  technical_skill: Interaction specification; loading-state communication
+  student_evidence: Teach-back + annotated readiness observations
+  portfolio_artifact: ''
+- role_family: Application / Frontend Engineering
+  chapter_work: ''
+  technical_skill: Event-driven UI; separating render of chrome from data readiness
+  student_evidence: Ecosystem map with UI/runtime/state cards
+  portfolio_artifact: ''
+- role_family: IT Support / Operations
+  chapter_work: ''
+  technical_skill: Triage language; dependency checks
+  student_evidence: "Two symptom\u2192domain tickets with inference labels"
+  portfolio_artifact: ''
+- role_family: SRE / Backend / Cloud
+  chapter_work: ''
+  technical_skill: Service dependency reasoning; user-visible failure modes
+  student_evidence: Online vs offline comparison notes
+  portfolio_artifact: ''
+- role_family: Network Engineering
+  chapter_work: ''
+  technical_skill: Distinguishing association/connectivity from application success
+  student_evidence: Experience C analysis without invented RF numbers
+  portfolio_artifact: ''
+- role_family: Accessibility Engineering
+  chapter_work: ''
+  technical_skill: Inclusive input paths; non-color status encoding
+  student_evidence: Accessibility notes on chosen open path
+  portfolio_artifact: ''
+- role_family: Systems / OS Engineering
+  chapter_work: ''
+  technical_skill: Layered system explanation at accessible depth
+  student_evidence: Mapping CE-1 layers to textbook abstractions with citations
+  portfolio_artifact: ''
+- role_family: Technical Educator / Mentorship
+  chapter_work: ''
+  technical_skill: Probe questions; lab adaptation
+  student_evidence: Facilitation notes for screen-as-surface misconception
+  portfolio_artifact: ''
+- role_family: Security / Identity (introductory)
+  chapter_work: ''
+  technical_skill: Least-privilege mindset for evidence capture; session expiry symptoms
+  student_evidence: Privacy scrub checklist applied to lab artifacts
+  portfolio_artifact: ''
+disclaimer: Completing CE-1 or LAB-SYS-001 does not qualify a learner for any role.
