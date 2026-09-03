@@ -1,0 +1,21 @@
+figure_id: FIG-CH15-003
+title: "Same app packaged as local vs container vs cloud URL"
+caption: "Illustrative parallel of one human task as local install, container/image, or cloud URL. Truth: illustrative. Color is not the sole encoding."
+alt_text: "FIG-CH15-003: One human task forks into local install, container/image, and cloud URL paths."
+text_equivalent: |
+  FIG-CH15-003 reading order: Human task, then three presentations—
+  (A) Local install on device (placement local; may be offline),
+  (B) Container/image on a host (shared-kernel isolation typical; may still call remote APIs),
+  (C) Browser client to cloud URL (placement hypothesis cloud; access Wi-Fi or cellular).
+reading_order:
+  - Human task
+  - Local install path
+  - Container/image path
+  - Cloud URL path
+source: "figures/sequence/fig-ch15-003-same-app-three-ways.svg"
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: "Three labeled panels; dashed border marks container path; contrasting stroke marks URL path."
+reviewer: pending-human-visual-review
+version: 0.1.0

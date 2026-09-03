@@ -1,0 +1,20 @@
+figure_id: FIG-CH15-001
+title: "Hardware → hypervisor/VM vs shared kernel → containers"
+caption: "Conceptual educational comparison of virtual-machine and container multiplexing stacks. Both share hardware; isolation layers differ. Truth: conceptual. Color is not the sole encoding."
+alt_text: "FIG-CH15-001: Two stacks. Left: Hardware, Hypervisor, VM A, VM B. Right: Hardware, Shared host kernel, Container A, Container B."
+text_equivalent: |
+  FIG-CH15-001 reading order:
+  Stack A (VMs): (1) Hardware, (2) Hypervisor, (3) VM B, (4) VM A with guest OS + apps.
+  Stack B (containers): (1) Hardware, (2) Shared host kernel, (3) Container B, (4) Container A with process group + image.
+  Teaching point: both multiplex hardware; isolation layers differ; isolation is not absolute safety.
+reading_order:
+  - Hardware (both stacks)
+  - Hypervisor vs shared host kernel
+  - VM instances vs container instances
+source: "figures/architecture/fig-ch15-001-vm-vs-container.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; dashed border marks hypervisor; solid contrasting stroke marks shared kernel."
+reviewer: pending-human-visual-review
+version: 0.1.0

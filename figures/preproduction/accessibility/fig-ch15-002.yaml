@@ -1,0 +1,21 @@
+figure_id: FIG-CH15-002
+title: "User → access network → edge vs regional cloud"
+caption: "Conceptual educational map separating access networks (Wi-Fi or cellular) from edge versus regional cloud placement. Truth: conceptual. Color is not the sole encoding."
+alt_text: "FIG-CH15-002: User/device to access network (Wi-Fi or cellular) to path, then fork to edge placement or regional cloud placement."
+text_equivalent: |
+  FIG-CH15-002 reading order: (1) User/device, (2) Access network labeled Wi-Fi OR cellular,
+  (3) Path toward service, (4a) Edge placement nearer to user, (4b) Regional cloud placement.
+  Hard rule: access is not placement; cloud/edge are not synonyms for Wi-Fi/cellular.
+reading_order:
+  - User/device
+  - Access network (Wi-Fi or cellular)
+  - Path
+  - Edge placement
+  - Regional cloud placement
+source: "figures/ecosystem/fig-ch15-002-access-vs-placement.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Dashed border marks access layer; labels name Wi-Fi OR cellular; fork geometry separates edge vs cloud."
+reviewer: pending-human-visual-review
+version: 0.1.0
