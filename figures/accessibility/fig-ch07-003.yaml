@@ -1,0 +1,20 @@
+figure_id: FIG-CH07-003
+title: "Healthy network icon with memory-pressure hitch"
+caption: "Illustrative contrast: a connected network icon beside local memory-pressure symptoms that can still make the experience hitch."
+alt_text: "Two panels: left shows connected Wi-Fi status; right lists working-set growth, reclaim/paging, storage I/O wait, and UI stutter."
+text_equivalent: |
+  Panel A (solid border): Connectivity looks fine — Wi-Fi status Connected; icon is not proof of local health.
+  Panel B (dashed border): Local pressure path — (1) working set grows, (2) RAM reclaim/paging, (3) extra storage I/O wait, (4) UI stutter/hang feel.
+  Labeled ILLUSTRATIVE. Truth classification: illustrative. Color is not the sole encoding.
+reading_order:
+  - "A Connectivity looks fine"
+  - "B Working set grows"
+  - "B RAM reclaim / paging"
+  - "B Extra storage I/O wait"
+  - "B UI stutter / hang feel"
+source: figures/architecture/fig-ch07-003-memory-pressure.svg
+status: illustrative
+truth_classification: illustrative
+color_independent_encoding: "Panel titles + numbered steps + solid vs dashed borders."
+reviewer: pending-human-visual-review
+version: "0.1.0"
