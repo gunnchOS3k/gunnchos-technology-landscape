@@ -1,0 +1,21 @@
+figure_id: FIG-CH23-001
+title: "Identity, authentication, and authorization decision ladder"
+caption: "Identity claim → authentication assurance → authorization decision. Conceptual educational ladder; AuthN ≠ AuthZ. Inherits CE-5 FIG-CE5-003."
+alt_text: "FIG-CH23-001: Three-step ladder Identity, Authentication, Authorization leading to Allow or Deny."
+text_equivalent: |
+  FIG-CH23-001 reading order: (1) Identity — who/what you claim, (2) Authentication — proof for the risk,
+  (3) Authorization — what you may do, then Allow or Deny. Login success does not prove every action is allowed.
+reading_order:
+  - "Identity"
+  - "Authentication"
+  - "Authorization"
+  - "Allow"
+  - "Deny"
+source: "figures/architecture/fig-ch23-001-identity-authn-authz.svg"
+inherits: FIG-CE5-003
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"
