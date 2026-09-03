@@ -131,12 +131,20 @@ claims:
   claim_class: project_specific
   evidence_required: Accepted-main hardware industrial-design audit artifacts.
   preferred_source_type: repository_implemented
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - src-hardware
   overclaim_risk: Treating comparison-matrix RAM/storage targets as measured shipping
     specs.
   wording_boundary: Representative educational architecture / PHYSICAL_PENDING.
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-hardware-industrial-design
+    commit: 9ee0ef2f688b2c18428bfabc316b23687a02988d
+    paths:
+    - docs/device-quartet/README.md
+    - DIGITAL_MANUFACTURING_READINESS.md
+    - DIGITAL_TO_PHYSICAL_HANDOFF.md
+    source_id: SRC-HARDWARE
 - provisional_id: CLM-CE3-011
   text: gunnchOS device OS accepted main provides an alpha digital experience layer
     with claim boundaries; it is not a shipping kernel/init OS and must not be cited
@@ -144,13 +152,21 @@ claims:
   claim_class: project_specific
   evidence_required: Accepted-main device-os WHAT_IS_REAL_TODAY / claim boundaries.
   preferred_source_type: repository_implemented
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - src-device-os
   overclaim_risk: Calling device-os a complete operating system teaching substitute
     for Linux/Windows/Android internals.
   wording_boundary: Optional adjacent illustration only; commodity OS monitors remain
     primary lab substrate.
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-device-os
+    commit: 28562a8456207540c205a1c8a6434a491b0a4771
+    paths:
+    - docs/WHAT_IS_REAL_TODAY.md
+    - product/CLAIM_BOUNDARY.md
+    - beta_gate/beta_gate_status.yaml
+    source_id: SRC-DEVICE-OS
 - provisional_id: CLM-CE3-012
   text: WAIKE accepted main hosts file-backed courses with adjacent labs (e.g., MCU
     memory map, storage triage, power budget) but no exact CE-3 'local lag diagnosis'

@@ -65,7 +65,7 @@ claims:
     not measured device teardowns or validated EVT hardware.
 - source_package: ce-01
   provisional_id: CLM-CE1-010
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: measured_later
   text: Wall-clock 'chrome visible' versus 'content usable' timings collected in LAB-SYS-001
     are learner observations on commodity devices, not publication benchmarks or touch-to-photon
@@ -127,13 +127,13 @@ claims:
     device and stay within budgets.
 - source_package: ce-03
   provisional_id: CLM-CE3-010
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: project_specific
   text: gunnchOS Device Quartet documents define research form factors / learning
     benchmarks that are concept-complete with physical validation still pending.
 - source_package: ce-03
   provisional_id: CLM-CE3-011
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: project_specific
   text: gunnchOS device OS accepted main provides an alpha digital experience layer
     with claim boundaries; it is not a shipping kernel/init OS and must not be cited
@@ -224,7 +224,7 @@ claims:
     classroom observation of connectivity-dependent pages.
 - source_package: ce-04
   provisional_id: CLM-CE4-012
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: project_specific
   text: WAIKE accepted main hosts a COMPUTER_NETWORKING digital_rc course including
     offline-gradable labs such as lab_datapath for crafted Ethernet/IPv4 forwarding
@@ -302,7 +302,7 @@ claims:
     are teaching aids unless a measurement bundle is attached.
 - source_package: ce-05
   provisional_id: CLM-CE5-009
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: publication_internal
   text: Proposed book lab LAB-TRUST-001 is a publication-side learning design; it
     is not an existing WAIKE course module ID.
@@ -360,14 +360,14 @@ claims:
     as a claim of product certification.
 - source_package: ce-06
   provisional_id: CLM-CE06-009
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: project_specific
   text: WAIKE accepted main hosts file-backed curriculum packages and lab validators
     (dual catalog + digital_rc ID systems); it does not currently ship a module ID
     literally named for the book's Stability Contract or EMIT capstone.
 - source_package: ce-06
   provisional_id: CLM-CE06-010
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   claim_class: project_specific
   text: WAIKE documents phone-first, offline-friendly, and low-cost learning intent;
     accessibility checklist items in-repo are not fully completed and must not be
@@ -400,6 +400,5 @@ claims:
 counts_by_status:
   ILLUSTRATIVE_ONLY: 7
   PHYSICAL_PENDING: 4
-  PROJECT_EVIDENCE_NEEDED: 7
-  SOURCE_IDENTIFIED: 43
+  SOURCE_IDENTIFIED: 50
   SOURCE_NEEDED: 1

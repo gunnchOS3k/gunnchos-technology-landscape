@@ -73,3 +73,7 @@ Publication-repo `evidence/source_registry.yaml` still records older WAIKE SHA `
 | peer-reviewed | 2 |
 | textbook | 2 |
 | **Total entries** | **9** |
+
+## Project evidence closure (2026-09-03)
+
+See `evidence/PROJECT_EVIDENCE_CLOSURE_B.md` for accepted-main SHA citations resolving prior `PROJECT_EVIDENCE_NEEDED` claims in this package.

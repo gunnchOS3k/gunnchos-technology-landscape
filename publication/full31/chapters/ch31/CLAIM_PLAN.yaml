@@ -2,18 +2,22 @@ schema_version: 1.0.0
 chapter_id: CH31
 claims:
 - provisional_id: CLM-CH31-001
-  text: "LAB-CE06-001 implements EMIT with blank template, illustrative example, rubric,\
-    \ validator, and tests; status FIXTURE_VALIDATED on agent-e branch \u2014 not\
-    \ Gate 3 PASS / not human-validated from fixtures alone."
+  text: LAB-CE06-001 implements EMIT with blank template, illustrative example, rubric, validator, and tests; status FIXTURE_VALIDATED on accepted main — not Gate 3 PASS / not human-validated from fixtures alone.
+
   claim_class: publication_internal
   evidence_required: Primary source citation or project evidence as status requires
   preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
     / publication-internal
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys: []
   overclaim_risk: 'prohibited: human evidence from illustrative example; Gate 3 PASS'
   wording_boundary: 'approved: FIXTURE_VALIDATED infra | prohibited: human evidence
     from illustrative example; Gate 3 PASS'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-CE06-001/
 - provisional_id: CLM-CH31-002
   text: There is no exact WAIKE EMIT / Stability Contract / TECHNOLOGY_LANDSCAPE_CAPSTONE
     module at audited SHA; mappings are adjacent or no-map.

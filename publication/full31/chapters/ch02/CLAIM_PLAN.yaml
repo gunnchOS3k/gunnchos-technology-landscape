@@ -7,16 +7,23 @@ claims:
   text: CH02 exists as a draft prototype with figures, lab, and bibliography packaged
     for Gate 3 review.
   claim_class: publication_internal
-  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
-    project evidence for CH02.
+  evidence_required: "Accepted-main CH02 package: book/chapters/ch02/, labs/LAB-TAP-001/, figures/source/ch02/."
+
   preferred_source_type: repository_accepted_main
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - gate3-review-snapshot
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
     measurements; shipping Quartet SKUs; Gate 3 PASS'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - book/chapters/ch02/
+    - labs/LAB-TAP-001/
+    - figures/source/ch02/
 - provisional_id: CLM-CH02-002
   text: LAB-TAP-001 provides browser and fixture routes; it is not a Device Quartet
     EVT benchmark.
@@ -46,13 +53,21 @@ claims:
 - provisional_id: CLM-CH02-004
   text: Gate 3 remains OPEN_FOR_REVIEW with reader evidence pending; PASS is not claimed.
   claim_class: publication_internal
-  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
-    project evidence for CH02.
+  evidence_required: Gate 3 REVIEW_SNAPSHOT.yaml OPEN_FOR_REVIEW + evidence.yaml READER_EVIDENCE_PENDING (read-only cite; Gate 3 not modified).
+
   preferred_source_type: repository_accepted_main
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - gate3-evidence
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
     measurements; shipping Quartet SKUs; Gate 3 PASS'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - publication/gates/gate-3/REVIEW_SNAPSHOT.yaml
+    - publication/gates/gate-3/evidence.yaml
+    - publication/gates/gate-3/checklist.md
+    role: gate3_status_read_only

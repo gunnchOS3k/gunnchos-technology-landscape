@@ -143,12 +143,19 @@ claims:
   claim_class: project_specific
   evidence_required: waike-research-ops accepted main SHA + course/lab paths.
   preferred_source_type: project accepted-main audit
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - waike-main-ce4-audit
   overclaim_risk: Claiming LAB-PKT-001 is an official WAIKE module ID.
   wording_boundary: Publication-owned lab; WAIKE IDs used only as adjacency with exact
     course/lab names.
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    paths:
+    - curriculum/digital_rc/COMPUTER_NETWORKING/course.json
+    - curriculum/digital_rc/COMPUTER_NETWORKING/labs/lab_datapath/README.md
+    source_id: SRC-WAIKE
 - provisional_id: CLM-CE4-013
   text: A connectivity icon can remain positive while an application-level sync experience
     fails.

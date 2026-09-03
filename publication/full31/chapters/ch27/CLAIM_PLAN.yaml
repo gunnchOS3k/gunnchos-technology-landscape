@@ -39,7 +39,14 @@ claims:
   claim_class: publication_internal
   evidence_required: Primary source citation or project evidence as status requires
   preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys: []
   overclaim_risk: "prohibited: human-validated from fixtures alone"
   wording_boundary: "approved: FIXTURE_VALIDATED lab infra | prohibited: human-validated from fixtures alone"
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-CE06-001/lab.yaml
+    - labs/LAB-CE06-001/validate_portfolio.py
+    - labs/LAB-CE06-001/README.md

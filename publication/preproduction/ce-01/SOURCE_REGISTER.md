@@ -71,3 +71,7 @@
 - [x] Living standards labeled as living  
 - [x] Project claims tied to SHAs  
 - [x] Chapter-local bib only (`references.local.bib`)
+
+## Project evidence closure (2026-09-03)
+
+See `evidence/PROJECT_EVIDENCE_CLOSURE_B.md` for accepted-main SHA citations resolving prior `PROJECT_EVIDENCE_NEEDED` claims in this package.

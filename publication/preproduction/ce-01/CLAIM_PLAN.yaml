@@ -141,12 +141,19 @@ claims:
   evidence_required: Lab evidence artifact with observation vs inference section;
     no hardware EVT claims.
   preferred_source_type: lab_artifact
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys: []
   overclaim_risk: Publishing student timings as universal performance laws.
   wording_boundary: '{''approved'': ''Learner observation timings with explicit limits.'',
     ''prohibited'': [''Official Device Quartet benchmark'', ''Touch-to-photon validated
     result'']}'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-SYS-001/lab.yaml
+    - labs/LAB-SYS-001/README.md
+    - labs/LAB-SYS-001/local/observation_sheet.py
 maps_to:
 - CH01
 gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
