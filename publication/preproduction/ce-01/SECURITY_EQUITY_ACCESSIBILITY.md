@@ -30,7 +30,7 @@
 ## Accessibility concerns
 
 - “Open” must include keyboard, switch, voice, and assistive pointer paths.  
-- Readiness states (busy vs ready) should be communicable beyond color alone (WCAG-oriented guidance; cite `wcag22` in prose wave).  
+- Readiness states (busy vs ready) should be communicable beyond color alone (WCAG-oriented guidance; cite `wcag22-20231005` in prose wave).  
 - Figures need alt text, long descriptions, and reading order (see FIGURE_PLAN).  
 - Labs must allow non-visual evidence (audio notes, structured text tables).
 

@@ -47,10 +47,12 @@ Peer-reviewed QoE empirical papers are **deferred** (SOURCE_NEEDED for later ful
 - **Verified use:** Evidence hierarchy context (subjective vs objective estimation)  
 - **Do not:** imply CE labs are formal G.1011 campaigns  
 
-### SRC-CE06-03 — WCAG 2.2
+### SRC-CE06-03 — WCAG 2.2 (2024-12-12 Recommendation)
+- **Citation key:** `wcag22-20241212`
 - **Title:** Web Content Accessibility Guidelines (WCAG) 2.2  
 - **Status:** W3C Recommendation 12 December 2024  
-- **URL:** https://www.w3.org/TR/WCAG22/  
+- **URL:** https://www.w3.org/TR/2024/REC-WCAG22-20241212/  
+- **Note:** Distinct from CE-1 `wcag22-20231005` (5 October 2023). Undated shortcut `/TR/WCAG22/` currently resolves to this 2024 edition.  
 - **Verified use:** Accessibility intent; non-certification framing  
 
 ### SRC-CE06-04 — WHATWG HTML (Living Standard) — event loop / scripting context
