@@ -41,3 +41,21 @@ figures:
     accessibility: figures/accessibility/fig-ch02-007.yaml
     status: conceptual
     chapter: CH02
+  - figure_id: FIG-CH07-001
+    title: "Memory hierarchy — registers, cache, RAM, storage"
+    path: figures/architecture/fig-ch07-001-memory-hierarchy.svg
+    accessibility: figures/accessibility/fig-ch07-001.yaml
+    status: conceptual
+    chapter: CH07
+  - figure_id: FIG-CH07-002
+    title: "Open file path — storage to RAM to cache to CPU"
+    path: figures/sequence/fig-ch07-002-open-file-path.svg
+    accessibility: figures/accessibility/fig-ch07-002.yaml
+    status: conceptual
+    chapter: CH07
+  - figure_id: FIG-CH07-003
+    title: "Healthy network icon with memory-pressure hitch"
+    path: figures/architecture/fig-ch07-003-memory-pressure.svg
+    accessibility: figures/accessibility/fig-ch07-003.yaml
+    status: illustrative
+    chapter: CH07

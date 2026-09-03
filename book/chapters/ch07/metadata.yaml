@@ -2,5 +2,51 @@ chapter_id: CH07
 chapter_number: 7
 title: "Memory, Cache, and Storage"
 part: II
-status: outline
+status: draft
 concept_edition: false
+human_question:
+  - Why is RAM not the same as storage, and how do hierarchy misses change how technology feels?
+experience:
+  - reopen or open a local file with uneven responsiveness
+  - local lag while connectivity appears healthy
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [memory-hierarchy, cache, ram, storage, operating-system]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-CMS-001]
+figures: [FIG-CH07-001, FIG-CH07-002, FIG-CH07-003]
+concepts:
+  introduced:
+    - memory-hierarchy
+    - cache
+    - ram
+    - storage
+    - volatility-vs-durability
+    - working-set
+    - thrashing
+  required:
+    - process
+    - thread
+    - scheduler
+    - stability-contract
+  related:
+    - locality
+    - paging
+    - file
+waike:
+  mapped: true
+  courses: [EMBEDDED_PROTOTYPING, GENERAL_IT]
+  note: "Adjacent digital_rc labs only (memory map, storage triage, backup, SPI flash); no exact CH07 module ID; no invented WAIKE lab IDs."
+claims:
+  registry: publication/full31/chapters/ch07/CLAIM_PLAN.yaml
+  provisional:
+    - CLM-CH07-001
+    - CLM-CH07-002
+    - CLM-CH07-003
+    - CLM-CH07-004
+inherits_from:
+  - CE-3 memory/storage slices
+  - LAB-CMS-001
+feeds_later:
+  - CH12
+  - CH13
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING (no Gate 3 PASS claimed)"

@@ -1,0 +1,23 @@
+figure_id: FIG-CH07-001
+title: "Memory hierarchy — registers, cache, RAM, storage"
+caption: "Conceptual pyramid from registers through cache and RAM to durable storage. Qualitative capacity/speed tradeoffs only; RAM is not storage."
+alt_text: "Pyramid diagram with four layers: registers, cache, RAM, and storage, labeled tiny/fastest to large/durable."
+text_equivalent: |
+  Reading order top to bottom:
+  (1) Registers — tiny, fastest
+  (2) Cache — small, fast, locality
+  (3) RAM (main memory) — working set, usually volatile
+  (4) Storage — large, durable home for files (dashed border)
+  Callout: RAM ≠ storage. Truth classification: conceptual. Color is not the sole encoding.
+reading_order:
+  - "1 Registers"
+  - "2 Cache"
+  - "3 RAM (main memory)"
+  - "4 Storage"
+  - "RAM ≠ storage callout"
+source: figures/architecture/fig-ch07-001-memory-hierarchy.svg
+status: conceptual
+truth_classification: conceptual
+color_independent_encoding: "Shape + label + stroke pattern; dashed border marks durable storage layer."
+reviewer: pending-human-visual-review
+version: "0.1.0"

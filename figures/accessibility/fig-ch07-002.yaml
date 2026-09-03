@@ -1,0 +1,24 @@
+figure_id: FIG-CH07-002
+title: "Open file path — storage to RAM to cache to CPU"
+caption: "Conceptual left-to-right path when opening a durable file into working memory and nearby cache before the CPU and UI make progress."
+alt_text: "Five numbered boxes in a row: Storage, RAM, Cache, CPU, UI, connected by arrows."
+text_equivalent: |
+  Reading order left to right:
+  (1) Storage — durable file
+  (2) RAM — working copy
+  (3) Cache — nearby copy
+  (4) CPU — uses data
+  (5) UI — progress
+  Notes: hits cost less wait; misses fetch from a farther layer. Truth classification: conceptual.
+reading_order:
+  - "1 Storage"
+  - "2 RAM"
+  - "3 Cache"
+  - "4 CPU"
+  - "5 UI"
+source: figures/sequence/fig-ch07-002-open-file-path.svg
+status: conceptual
+truth_classification: conceptual
+color_independent_encoding: "Numbered boxes + labels; dashed stroke on storage for durability."
+reviewer: pending-human-visual-review
+version: "0.1.0"
