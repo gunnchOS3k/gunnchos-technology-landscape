@@ -1,0 +1,25 @@
+# Forbidden content patterns (fixture safety contract)
+
+# Tests scan fixtures for these patterns (case-insensitive).
+# Keep fixtures free of real secrets and sensitive personal data.
+
+patterns:
+  - "BEGIN PRIVATE KEY"
+  - "AKIA"
+  - "password="
+  - "api_key="
+  - "Authorization: Bearer"
+  - "ssn"
+  - "social security"
+  - "latitude"
+  - "longitude"
+  - "gps"
+  - "medical record"
+  - "confidential: employee"
+allowed_synthetic_markers:
+  - "FIXTURE"
+  - "illustrative"
+  - "demo_user_01"
+  - "sess_DEMO_ONLY"
+  - "sha256:00ffee"
+  - "assistant.example"

@@ -1,0 +1,24 @@
+figure_id: FIG-CE1-005
+title: Map everyday symptoms to failure-domain buckets without claiming root cause.
+caption: 'Map everyday symptoms to failure-domain buckets without claiming root cause..
+  Healthy connectivity icon can still sit beside an unusable experience. Truth: illustrative.
+  Color is not the sole encoding.'
+alt_text: Table semantics preferred; if graphic, provide equivalent table.
+text_equivalent: "Table semantics preferred; if graphic, provide equivalent table.\
+  \ Reading order: Symptom; Failure domain; Evidence still needed.\nEvidence: Illustrative\
+  \ operator triage aid.\nGeometry intent: Symptom column \u2192 domain column \u2192\
+  \ 'evidence still needed' column."
+reading_order:
+- Symptom
+- Failure domain
+- Evidence still needed
+source: figures/preproduction/ce-01/fig-ce1-005.svg
+evidence_note: Illustrative operator triage aid.
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-failure-domain-trust-boundary
+color_independent_encoding: Icons + text labels; status words not color alone.
+reviewer: pending-human-visual-review
+version: 0.1.0

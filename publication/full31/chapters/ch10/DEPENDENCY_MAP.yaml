@@ -1,0 +1,28 @@
+schema_version: "1.0.0"
+chapter_id: CH10
+chapter_number: 10
+title: "Ports, Buses, Boards, Packaging, and Manufacturing"
+part: II
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH05"
+  - "CH06"
+  - "CH07"
+  - "CH08"
+  - "CH09"
+inherits_from:
+  - "CH05 signals/logic"
+  - "CH09 mechanical"
+feeds_later:
+  - "CH11 firmware/boot/trust"
+  - "CH29 product"
+gate_dependencies:
+  - "Global Gate 3"
+human_dependencies:
+  - "Avoid connector-catalog tone in editorial review"
+physical_dependencies:
+  - "Quartet PCB/EVT/manufacturing PHYSICAL_PENDING"
+ce_inheritance_note: "Part II: how parts interconnect and become manufacturable products—not a connector encyclopedia."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

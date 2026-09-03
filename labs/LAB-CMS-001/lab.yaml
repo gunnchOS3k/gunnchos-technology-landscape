@@ -1,0 +1,150 @@
+lab_id: LAB-CMS-001
+title: Make Local Slowness Visible
+chapter: CE-3
+version: "1.0.0"
+status:
+  - IMPLEMENTED_DIGITAL
+  - FIXTURE_VALIDATED
+  - PHYSICAL_PENDING
+question: >
+  When a familiar local app feels slow but the connectivity icon looks fine,
+  what evidence can I gather—using only commodity tools—to separate CPU,
+  memory, storage, and scheduling/thermal hypotheses?
+experience: >
+  Local lag with a healthy connectivity icon (Experience A), with an optional
+  save/quit/reopen persistence check (Experience B).
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  - id: commodity_computer
+    label: Commodity computer OS monitor
+    path: routes/commodity_computer.md
+    specialized_hardware: false
+  - id: safe_cli_snapshot
+    label: Safe non-destructive CLI snapshot
+    path: local_app/safe_snapshot.py
+    specialized_hardware: false
+  - id: fixture_fallback
+    label: Offline anonymized monitor fixtures
+    path: fixtures/
+    specialized_hardware: false
+fixture_available: true
+evidence_artifacts:
+  - observation table (CSV or Markdown)
+  - two monitor snapshots or fixture IDs with timestamps
+  - teach-back (RAM vs storage; OS schedules / apps still compute)
+  - optional Builder hierarchy/process map
+privacy_boundary:
+  - Do not capture personal document contents.
+  - Blur or redact filenames, account names, and thumbnails before sharing screenshots.
+  - Do not sync lab evidence to cloud accounts as a requirement.
+  - Prefer anonymized fixtures when portfolio leaves the learner device.
+safety_boundary:
+  - Use only built-in OS monitors or the supplied safe_snapshot.py script.
+  - Do not enable kernel debug modes, disable security software, or run untrusted optimizer tools.
+  - Do not stress devices to unsafe temperatures; stop if the device warns or becomes uncomfortably hot.
+  - No kernel modules, custom firmware, rooting, or jailbreaking.
+  - Mild intentional load only (extra documents/tabs); never sustained destructive stress.
+accessibility_notes:
+  - Keyboard-only paths to OS monitors are documented where possible.
+  - Color-independent reading: use labels and patterns, not color alone.
+  - Text equivalents supplied for all screenshot/transcript fixtures.
+  - Verbal or dictated observation tables are allowed.
+  - Offline fixtures support learners without admin rights or high-end devices.
+observation_inference_boundary:
+  observation_allowed:
+    - CPU percent rose from A to B during the action
+    - Memory used rose; disk showed activity
+    - Save completed and file reopen succeeded
+    - Device felt warmer
+  inference_must_label:
+    - Claiming CPU-bound root cause from percent alone
+    - Claiming thrashing without page-fault or swap evidence
+    - Claiming all future autosaves are durable from one reopen
+    - Claiming thermal throttle at a specific temperature without sensor evidence
+portfolio_output:
+  directory: labs/LAB-CMS-001/portfolio/
+  outputs:
+    - README.md
+    - observation_table.csv
+    - teach_back.md
+    - hierarchy_map.md
+    - diagnosis_plan.md
+    - hypothesis_note.md
+    - facilitation_sheet.md
+    - evidence/NOTE.md
+prerequisites:
+  concepts:
+    - cpu-activity
+    - memory-hierarchy
+    - persistent-storage
+    - process
+    - scheduling
+    - bottleneck
+  safety:
+    - Do not capture personal document contents; redact filenames in shared screenshots.
+    - Do not install untrusted optimizer tools or disable security software.
+    - Stop if the device warns about heat or becomes uncomfortably hot.
+  time_minutes: 45
+  equipment: []
+  software:
+    - built-in OS monitor (Task Manager / Activity Monitor / top) or Python 3 for safe_snapshot.py
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_trace: true
+  simulation: false
+  commodity_computer: true
+  fixture_fallback: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict whether CPU, memory, storage, or scheduling pressure will dominate.
+    - Complete commodity-computer route or fixture fallback.
+    - Capture before/during snapshots (or fixture IDs).
+    - Fill observation vs inference columns.
+    - Optional Experience B: save / quit / reopen persistence check.
+  rollback:
+    - Close extra documents/tabs opened for the mild load.
+    - Delete or redact any accidental personal captures.
+    - Stop immediately on thermal warnings.
+evidence:
+  required_artifacts:
+    - observation table
+    - two monitor snapshots or fixture IDs
+    - short teach-back
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - background processes not under learner control
+    - battery vs plugged power mode
+    - thermal state and ambient conditions
+    - monitor sampling interval and aggregation
+    - display composition / GPU work not always visible as CPU percent
+  uncertainty:
+    - one classroom run is not a published benchmark
+    - OS monitor percentages are not proof of root cause
+    - no unsupported hardware timing or thermal claims
+    - fixture numbers are teaching illustrations, not device measurements
+portfolio:
+  outputs:
+    - README.md
+    - observation table
+    - evidence note
+    - teach-back
+    - hierarchy/process map
+    - diagnosis plan
+    - hypothesis note
+    - facilitation sheet
+teach_back:
+  required: true
+  prompts:
+    - Explain RAM versus persistent storage without calling both simply memory.
+    - Explain that the OS schedules work while apps still compute their own instructions.
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+no_waike_module_id: true

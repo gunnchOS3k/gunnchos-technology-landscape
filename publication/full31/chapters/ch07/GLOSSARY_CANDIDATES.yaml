@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+chapter_id: CH07
+chapter_number: 7
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+candidates:
+- provisional_id: GLOSS-CH07-001
+  canonical_term: "memory hierarchy"
+  plain_language_definition: "Speed/capacity layers from registers to storage."
+  chapter_id: CH07
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH07-002
+  canonical_term: "cache"
+  plain_language_definition: "Smaller faster holding of likely-needed data."
+  chapter_id: CH07
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH07-003
+  canonical_term: "RAM"
+  plain_language_definition: "Volatile main memory."
+  chapter_id: CH07
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH07-004
+  canonical_term: "storage"
+  plain_language_definition: "Durable persistence medium."
+  chapter_id: CH07
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH07-005
+  canonical_term: "working set"
+  plain_language_definition: "Actively needed memory in a time window."
+  chapter_id: CH07
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 

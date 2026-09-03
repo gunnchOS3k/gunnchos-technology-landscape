@@ -1,0 +1,35 @@
+figure_id: FIG-CE1-006
+title: "Representative educational architecture preview of device layers supporting\
+  \ readiness (\u2026"
+caption: "Representative educational architecture preview of device layers supporting\
+  \ readiness (\u2026. Labeled Representative educational architecture / PHYSICAL_PENDING\
+  \ for Quartet foreshadow callout. Truth: conceptual. Qualification: PHYSICAL_PENDING.\
+  \ Color is not the sole encoding."
+alt_text: Must state conceptual status and that Quartet physical fabrication is pending;
+  not a teardown photo.
+text_equivalent: 'Must state conceptual status and that Quartet physical fabrication
+  is pending; not a teardown photo. Reading order: Display; Compute; Memory/storage;
+  Radio; Power; Quartet foreshadow PHYSICAL_PENDING.
+
+  Evidence: SRC-HARDWARE research form factor docs for naming only; geometry is conceptual.
+
+  Geometry intent: Simple exploded blocks + sidebar listing four Quartet form-factor
+  names as future lab spine.'
+reading_order:
+- Display
+- Compute
+- Memory/storage
+- Radio
+- Power
+- Quartet foreshadow PHYSICAL_PENDING
+source: figures/preproduction/ce-01/fig-ce1-006.svg
+evidence_note: SRC-HARDWARE research form factor docs for naming only; geometry is
+  conceptual.
+truth_classification: conceptual
+qualification: PHYSICAL_PENDING
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Leader lines + labels.
+reviewer: pending-human-visual-review
+version: 0.1.0

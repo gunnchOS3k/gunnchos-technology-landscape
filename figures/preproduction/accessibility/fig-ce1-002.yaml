@@ -1,0 +1,34 @@
+figure_id: FIG-CE1-002
+title: "Teach inputs \u2192 processing \u2192 state \u2192 outputs for the chrome-before-content\
+  \ moment."
+caption: "Teach inputs \u2192 processing \u2192 state \u2192 outputs for the chrome-before-content\
+  \ moment.. State update can happen before content is usable; processing may continue\
+  \ after chrome appears. Truth: conceptual. Color is not the sole encoding."
+alt_text: Numbered step list in reading order; announce that steps may overlap in
+  real systems.
+text_equivalent: 'Numbered step list in reading order; announce that steps may overlap
+  in real systems. Reading order: 1 Inputs; 2 Processing; 3 State; 4 Outputs; Human
+  judgment feedback.
+
+  Evidence: Pedagogical; aligned to WHATWG event/state language at high level without
+  claiming one implementation.
+
+  Geometry intent: Numbered horizontal pipeline with a feedback arrow from outputs
+  to human judgment.'
+reading_order:
+- 1 Inputs
+- 2 Processing
+- 3 State
+- 4 Outputs
+- Human judgment feedback
+source: figures/preproduction/ce-01/fig-ce1-002.svg
+evidence_note: Pedagogical; aligned to WHATWG event/state language at high level without
+  claiming one implementation.
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Numbers + arrows; overlap noted in caption text.
+reviewer: pending-human-visual-review
+version: 0.1.0

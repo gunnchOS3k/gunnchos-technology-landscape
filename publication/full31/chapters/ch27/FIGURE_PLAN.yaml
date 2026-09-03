@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH27
+figures:
+- provisional_id: FIG-CH27-001
+  figure_type: hierarchy
+  pedagogical_purpose: Evidence hierarchy ladder
+  reader_should_notice: Evidence hierarchy ladder
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Evidence hierarchy ladder; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH27-002
+  figure_type: comparison
+  pedagogical_purpose: Test pass vs usable experience divergence
+  reader_should_notice: Test pass vs usable experience divergence
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Test pass vs usable experience divergence; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH27-003
+  figure_type: sequence
+  pedagogical_purpose: Signal → observation → inference gate
+  reader_should_notice: Signal → observation → inference gate
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Signal → observation → inference gate; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

@@ -1,0 +1,45 @@
+schema_version: "1.0.0"
+chapter_id: CH05
+chapter_number: 5
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+figures:
+- provisional_id: FIG-CH05-001
+  figure_type: causal_flow
+  pedagogical_purpose: "Press → electrical change → signal → clocked logic → perceptible effect."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH05-002
+  figure_type: comparative
+  pedagogical_purpose: "Analog continuous vs digital levels."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH05-003
+  figure_type: timing
+  pedagogical_purpose: "Clock edges sequencing decisions (no invented GHz claims)."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: illustrative
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH05-004
+  figure_type: logic
+  pedagogical_purpose: "Tiny Boolean building blocks → larger behavior."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii

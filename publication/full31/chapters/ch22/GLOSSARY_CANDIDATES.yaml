@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+chapter_id: CH22
+glossary_candidates:
+- term_id: GL-CH22-SENSOR
+  preferred_term: Embodied sensing
+  plain_language_definition: Capturing physical-world signals for interaction.
+  introduced_in: CH22
+  related_concepts:
+  - CX-CH22-SENSOR
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH22-EDGE-AI
+  preferred_term: Edge / on-device inference
+  plain_language_definition: Running models near the sensor/actuator.
+  introduced_in: CH22
+  related_concepts:
+  - CX-CH22-EDGE-AI
+  - CX-CH22-SENSOR
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH22-BUDGET
+  preferred_term: Edge resource budget
+  plain_language_definition: "Latency, energy, memory, thermal limits that bound experience."
+  introduced_in: CH22
+  related_concepts:
+  - CX-CH22-BUDGET
+  - CX-CH22-EDGE-AI
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH22-EMBODIED
+  preferred_term: Embodied interaction loop
+  plain_language_definition: Sense → infer → actuate/feedback under human timing.
+  introduced_in: CH22
+  related_concepts:
+  - CX-CH22-EMBODIED
+  - CX-CH22-EDGE-AI
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH22-PRIVACY-SENSE
+  preferred_term: Sensing privacy boundary
+  plain_language_definition: What continuous capture may expose beyond the visible UI.
+  introduced_in: CH22
+  related_concepts:
+  - CX-CH22-PRIVACY-SENSE
+  - CX-CH22-SENSOR
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH22-FALLBACK
+  preferred_term: Edge/cloud fallback
+  plain_language_definition: Degraded path when local inference cannot complete.
+  introduced_in: CH22
+  related_concepts:
+  - CX-CH22-FALLBACK
+  - CX-CH22-EDGE-AI
+  status: candidate
+  promotion: pending_integrator

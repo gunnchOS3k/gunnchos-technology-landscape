@@ -1,0 +1,256 @@
+schema_version: 1.0.0
+fragment_id: part_iii_iv_registry_fragment
+agent: agent-i
+accepted_main_sha: 0e694176652d4729c7f2b71df08b871a863afb8c
+waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+rights: "Fragment only. Does not modify live CH02 / Gate 3 evidence registries."
+chapters:
+- chapter_number: 11
+  chapter_id: CH11
+  title: "Firmware, Boot, and Trust"
+  part: III
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH01
+  - CH02
+  - CH05
+  - CH06
+  - CH10
+  gate_dependencies:
+  - "GATE_3 human reader evidence for tone/depth (CH02-REVIEW-R1) — does not block packet scaffold"
+  human_dependencies:
+  - "Educator review of recovery/update safety framing"
+  - "No Gate 3 PASS claimed"
+  physical_dependencies:
+  - "Device Quartet boot measurements PHYSICAL_PENDING"
+  - "No custom firmware flashing labs"
+  next_automatable_action: "Resolve SOURCE_NEEDED secure-boot/attestation cites; draft LAB-BOOT-OBS-001 outline linking LAB-TRUST-001 adjacency only."
+- chapter_number: 12
+  chapter_id: CH12
+  title: "Operating Systems, Processes, Threads, and Scheduling"
+  part: III
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH01
+  - CH02
+  - CH06
+  - CH07
+  - CH11
+  gate_dependencies:
+  - "GATE_3 tone dependency via CH02"
+  human_dependencies:
+  - "CE-3 packet already exists — integrator should avoid glossary collisions"
+  physical_dependencies:
+  - "Quartet load traces PHYSICAL_PENDING"
+  next_automatable_action: "Merge CE-3 claim/source inheritance into full-book SOURCE_NEEDS; keep LAB-CMS-001 as primary Try-it link."
+- chapter_number: 13
+  chapter_id: CH13
+  title: "Files, Databases, and Data Lifecycles"
+  part: III
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH07
+  - CH12
+  gate_dependencies:
+  - "GATE_3 tone"
+  human_dependencies:
+  - "Privacy counsel-friendly deletion wording review"
+  physical_dependencies:
+  - "Quartet storage benches PHYSICAL_PENDING"
+  next_automatable_action: "Identify textbook DB + sync sources; outline LAB-DATA-LIFE-001 fixture route."
+- chapter_number: 14
+  chapter_id: CH14
+  title: "Applications, APIs, Runtimes, and User Interfaces"
+  part: III
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH01
+  - CH02
+  - CH12
+  - CH13
+  gate_dependencies:
+  - "GATE_3 / CH02 prototype method"
+  human_dependencies:
+  - "A11y review of UI examples"
+  physical_dependencies:
+  - "Quartet UI metrics PHYSICAL_PENDING"
+  next_automatable_action: "Link CH02/LAB-TAP-001 method; fill API versioning SOURCE_NEEDED bib keys."
+- chapter_number: 15
+  chapter_id: CH15
+  title: "Containers, Virtualization, Cloud, and Edge Computing"
+  part: III
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH12
+  - CH14
+  gate_dependencies:
+  - "GATE_3"
+  human_dependencies:
+  - "Keep Wi-Fi/cellular/Internet/cloud disambiguation in editorial review"
+  physical_dependencies:
+  - "Edge IO / Quartet placement benches PHYSICAL_PENDING"
+  next_automatable_action: "Confirm NIST SP 800-145 + OCI doc cites; keep Wi-Fi/cellular/Internet/cloud disambiguation in figure briefs."
+- chapter_number: 16
+  chapter_id: CH16
+  title: "Packets, Protocols, Routing, and the Internet"
+  part: IV
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH01
+  - CH02
+  - CH14
+  - CH15
+  gate_dependencies:
+  - "GATE_3"
+  human_dependencies:
+  - "Editorial: never synonymize Wi-Fi/Internet/cloud"
+  physical_dependencies:
+  - "Drive-test / Quartet RF PHYSICAL_PENDING"
+  next_automatable_action: "Inherit CE-4/LAB-PKT-001 artifacts by reference; extend routing textbook SOURCE_NEEDED only where CE-4 gaps."
+- chapter_number: 17
+  chapter_id: CH17
+  title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
+  part: IV
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH16
+  gate_dependencies:
+  - "GATE_3"
+  human_dependencies:
+  - "Standards dating review for 6G claims"
+  physical_dependencies:
+  - "All RF field measurements PHYSICAL_PENDING"
+  next_automatable_action: "Pin 3GPP TS 23.501 + IEEE 802.11 edition cites; label 6G as roadmap-only."
+- chapter_number: 18
+  chapter_id: CH18
+  title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
+  part: IV
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH05
+  - CH16
+  - CH17
+  gate_dependencies:
+  - "GATE_3"
+  human_dependencies:
+  - "Safety review: no TX labs"
+  physical_dependencies:
+  - "All measured RF PHYSICAL_PENDING"
+  next_automatable_action: "Select wireless textbook cites; mark all RF measured figures PHYSICAL_PENDING; safety-review no-TX labs."
+- chapter_number: 19
+  chapter_id: CH19
+  title: "NTN and Service Continuity Across Ground, Air, and Space"
+  part: IV
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH16
+  - CH17
+  - CH18
+  gate_dependencies:
+  - "GATE_3"
+  human_dependencies:
+  - "Capability-class fact checking vs marketing"
+  physical_dependencies:
+  - "NTN demos PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED"
+  next_automatable_action: "Pin 3GPP NTN spec IDs; keep PROJECT_EVIDENCE_NEEDED for research twins; draft LAB-CONT-001 doc-only worksheet."
+- chapter_number: 20
+  chapter_id: CH20
+  title: "Latency, Reliability, QoE, and the Stability Contract"
+  part: IV
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+  - CH03
+  - CH12
+  - CH16
+  - CH17
+  - CH18
+  - CH19
+  gate_dependencies:
+  - "GATE_3 — READER_EVIDENCE_PENDING strongly affects final CH20 prose tone"
+  human_dependencies:
+  - "CH02-REVIEW-R1 reader evidence before canonical draft depth"
+  - "HUMAN_VALIDATION_PENDING via CH02-REVIEW-R1 / Gate 3 reader evidence before final prose depth"
+  physical_dependencies:
+  - "Quartet QoE PHYSICAL_PENDING"
+  next_automatable_action: "Inherit CE-6 Stability Contract; add ITU-T QoE SOURCE_NEEDED; wait on Gate 3 reader evidence before canonical prose."

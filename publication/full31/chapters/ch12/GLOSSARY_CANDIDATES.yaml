@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH12
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: process
+  proposed_term: "process"
+  plain_language_definition: "OS abstraction for a running program instance with isolation boundaries."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: thread
+  proposed_term: "thread"
+  plain_language_definition: "Schedulable execution context that shares a process address space."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: scheduler
+  proposed_term: "scheduler"
+  plain_language_definition: "OS mechanism allocating CPU time among runnable entities."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: context-switch
+  proposed_term: "context switch"
+  plain_language_definition: "Switching the CPU from one runnable entity to another."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: system-call
+  proposed_term: "system call"
+  plain_language_definition: "Controlled request from user mode into kernel services."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: isolation
+  proposed_term: "isolation"
+  plain_language_definition: "Protection preventing unrestricted cross-process memory access."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

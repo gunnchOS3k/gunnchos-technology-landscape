@@ -1,0 +1,40 @@
+schema_version: 1.0.0
+chapter_id: CH29
+figures:
+- provisional_id: FIG-CH29-001
+  figure_type: ecosystem
+  pedagogical_purpose: Complete product layers under Stability Contract
+  reader_should_notice: Complete product layers under Stability Contract
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Complete product layers under Stability Contract; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH29-002
+  figure_type: checklist
+  pedagogical_purpose: Design gates including secure/include
+  reader_should_notice: Design gates including secure/include
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Design gates including secure/include; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH29-003
+  figure_type: boundary
+  pedagogical_purpose: Claim boundary board — PHYSICAL_PENDING badges
+  reader_should_notice: Claim boundary board — PHYSICAL_PENDING badges
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  qualification: PHYSICAL_PENDING
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Claim boundary board — PHYSICAL_PENDING badges; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

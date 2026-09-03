@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH30
+figures:
+- provisional_id: FIG-CH30-001
+  figure_type: map
+  pedagogical_purpose: Role family → artifact → review criteria
+  reader_should_notice: Role family → artifact → review criteria
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Role family → artifact → review criteria; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH30-002
+  figure_type: checklist
+  pedagogical_purpose: Portfolio index fields + claim boundary
+  reader_should_notice: Portfolio index fields + claim boundary
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Portfolio index fields + claim boundary; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH30-003
+  figure_type: boundary
+  pedagogical_purpose: Learning proof ≠ employment guarantee
+  reader_should_notice: Learning proof ≠ employment guarantee
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Learning proof ≠ employment guarantee; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

@@ -1,0 +1,22 @@
+figure_id: FIG-CE06-010
+title: Career/ownership map for contract conditions (who debugs what).
+caption: 'Career/ownership map for contract conditions (who debugs what).. Cross-team
+  nature of Stability Contract; TPM/SRE/a11y roles visible. Truth: conceptual. Color
+  is not the sole encoding.'
+alt_text: "List condition\u2192role pairs."
+text_equivalent: "List condition\u2192role pairs. Reading order: Condition chips;\
+  \ Role families.\nEvidence: CAREER_MAP.yaml\nGeometry intent: Condition chips linked\
+  \ to role families."
+reading_order:
+- Condition chips
+- Role families
+source: figures/preproduction/ce-06/fig-ce06-010.svg
+evidence_note: CAREER_MAP.yaml
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Text links; optional shape per role family.
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,61 @@
+schema_version: 1.0.0
+chapter_id: CH30
+claims:
+- provisional_id: CLM-CH30-001
+  text: Publication careers/ (role_registry, skill_map, chapter_role_map) provide
+    project-local career mapping scaffolds without employment guarantees.
+  claim_class: publication_internal
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys: []
+  overclaim_risk: 'prohibited: guarantee jobs/salaries'
+  wording_boundary: 'approved: scaffolds | prohibited: guarantee jobs/salaries'
+  project_evidence:
+    repo: gunnchOS3k/gunnchos-technology-landscape
+    commit: 0e694176652d4729c7f2b71df08b871a863afb8c
+    path: careers/
+    role: publication_internal_structure
+- provisional_id: CLM-CH30-002
+  text: 'CE CAREER_MAP.yaml files explicitly set employment_guarantee: false; CH30
+    must preserve that contract.'
+  claim_class: publication_internal
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys: []
+  overclaim_risk: 'prohibited: placement claims'
+  wording_boundary: 'approved: false guarantee | prohibited: placement claims'
+  project_evidence:
+    repo: gunnchOS3k/gunnchos-technology-landscape
+    commit: 0e694176652d4729c7f2b71df08b871a863afb8c
+    path: publication/preproduction/
+    role: publication_internal_structure
+- provisional_id: CLM-CH30-003
+  text: WAIKE waike/portfolio_evidence.md and capstone culture are adjacent portfolio
+    patterns.
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-WAIKE
+  overclaim_risk: 'prohibited: invent career_course CH30 ID'
+  wording_boundary: 'approved: adjacent | prohibited: invent career_course CH30 ID'
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    source_id: SRC-WAIKE
+- provisional_id: CLM-CH30-004
+  text: Labor-market statistics for role demand require official sources if cited.
+  claim_class: standards_based
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: 'prohibited: invent job-growth percentages'
+  wording_boundary: 'approved: SOURCE_NEEDED | prohibited: invent job-growth percentages'

@@ -1,0 +1,22 @@
+schema_id: full31-glossary-candidates
+schema_version: "1.0.0"
+accepted_collections:
+  - candidates
+  - entries
+  - terms
+  - glossary_candidates
+required_entry_fields_any_of:
+  - provisional_id
+  - term_id
+  - canonical_term
+  - proposed_term
+  - term
+definition_fields_any_of:
+  - plain_language_definition
+  - definition
+inheritance_fields_any_of:
+  - inherited_from
+  - inheritance_note
+  - inherits_from
+notes: >
+  Non-empty candidates/entries/terms OR an explicit inheritance note is required.

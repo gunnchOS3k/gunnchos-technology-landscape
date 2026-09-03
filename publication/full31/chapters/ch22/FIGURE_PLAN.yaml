@@ -1,0 +1,40 @@
+schema_version: 1.0.0
+chapter_id: CH22
+figures:
+- provisional_id: FIG-CH22-001
+  figure_type: sequence
+  pedagogical_purpose: Sense → feature → edge inference → haptic/UI feedback
+  reader_should_notice: Sense → feature → edge inference → haptic/UI feedback
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Sense → feature → edge inference → haptic/UI feedback; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH22-002
+  figure_type: budget
+  pedagogical_purpose: Edge resource budget bands (label illustrative)
+  reader_should_notice: Edge resource budget bands (label illustrative)
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Edge resource budget bands (label illustrative); color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH22-003
+  figure_type: ecosystem
+  pedagogical_purpose: Edge IO Wearables learning context — PHYSICAL_PENDING badge required
+  reader_should_notice: Edge IO Wearables learning context — PHYSICAL_PENDING badge required
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  qualification: PHYSICAL_PENDING
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Edge IO Wearables learning context — PHYSICAL_PENDING badge required; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

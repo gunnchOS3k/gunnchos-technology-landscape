@@ -1,0 +1,35 @@
+# LAB-CE06-001 rubric concept (not a final gradebook)
+lab_id: LAB-CE06-001
+schema_version: "0.1.0"
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+dimensions:
+  Explain:
+    Emerging: Lists parts without path
+    Meeting: Clear human→system→component→code→network→society path
+    Strong: Path + ownership/failure domains
+  Measure:
+    Emerging: No artifacts / unlabeled guesses
+    Meeting: Artifacts with observation/inference labels
+    Strong: Comparison + limitations
+  Improve:
+    Emerging: Vague wish
+    Meeting: Bounded change + evidence criteria
+    Strong: Tradeoffs + equity check
+  Teach:
+    Emerging: Slogan copy
+    Meeting: Accurate teach-back
+    Strong: Adapts depth to audience + checks understanding
+  Integrity:
+    Emerging: Overclaims / invented numbers
+    Meeting: Honest labels
+    Strong: Explicit non-claims + fixture honesty
+automatic_fail:
+  - invented measurements
+  - secrets in evidence
+  - claiming Gate/product certification
+  - requiring specialized hardware without using fallback
+  - bare PASS as portfolio evidence
+scoring_notes:
+  - This rubric is a facilitation aid, not institutional grading policy.
+  - Fixture route completion is first-class, not a lesser grade path.
+  - Illustrative example packets must never be submitted as human reader evidence.

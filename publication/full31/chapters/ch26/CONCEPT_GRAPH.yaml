@@ -1,0 +1,145 @@
+schema_version: 1.0.0
+chapter_id: CH26
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
+concepts:
+- concept_id: CX-CH26-VCS
+  canonical_term: Version control
+  plain_language_definition: Recording changes so history can be inspected and recovered.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Version control as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: CX-CH26-COMMIT
+  canonical_term: Commit
+  plain_language_definition: A snapshot of change with message and identity metadata.
+  depends_on:
+  - CX-CH26-VCS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Commit as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH26-BRANCH
+  canonical_term: Branch / integration
+  plain_language_definition: Parallel lines of work later combined carefully.
+  depends_on:
+  - CX-CH26-VCS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Branch / integration as the whole story instead of
+    one cooperating part of the experience.
+- concept_id: CX-CH26-REVIEW
+  canonical_term: Code review
+  plain_language_definition: Human inspection of diffs before integration.
+  depends_on:
+  - CX-CH26-COMMIT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Code review as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH26-SECRETS
+  canonical_term: Secrets hygiene
+  plain_language_definition: Credentials/tokens must not enter history.
+  depends_on:
+  - CX-CH26-VCS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Secrets hygiene as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: CX-CH26-LOOP
+  canonical_term: Build-test loop
+  plain_language_definition: "Change \u2192 verify \u2192 evidence before claiming\
+    \ done."
+  depends_on:
+  - CX-CH26-COMMIT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Build-test loop as the whole story instead of one
+    cooperating part of the experience.
+edges:
+- from: CX-CH26-VCS
+  to: CX-CH26-COMMIT
+  relation: records
+- from: CX-CH26-COMMIT
+  to: CX-CH26-REVIEW
+  relation: enables
+- from: CX-CH26-VCS
+  to: CX-CH26-BRANCH
+  relation: structures
+- from: CX-CH26-VCS
+  to: CX-CH26-SECRETS
+  relation: must_protect
+- from: CX-CH26-COMMIT
+  to: CX-CH26-LOOP
+  relation: verified_by
+inherits_from:
+- Builder pathway habits from CE packages
+- SOFTWARE_BUILDER adjacency

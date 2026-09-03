@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH14
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: application
+  proposed_term: "application"
+  plain_language_definition: "Program providing a user-facing experience via UI and supporting services."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: api
+  proposed_term: "api"
+  plain_language_definition: "Interface contract for invoking functionality across a boundary."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: runtime
+  proposed_term: "runtime"
+  plain_language_definition: "Execution environment for program code."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: user-interface
+  proposed_term: "user interface"
+  plain_language_definition: "Surface through which humans interact with software."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: event-loop
+  proposed_term: "event loop"
+  plain_language_definition: "Dispatcher of asynchronous UI and timer events."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: framework
+  proposed_term: "framework"
+  plain_language_definition: "Opinionated reusable structure for building applications."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

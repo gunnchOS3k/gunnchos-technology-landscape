@@ -1,0 +1,26 @@
+figure_id: FIG-CE3-002
+title: "Memory hierarchy: registers \u2192 cache \u2192 RAM \u2192 storage"
+caption: "Memory hierarchy: registers \u2192 cache \u2192 RAM \u2192 storage. RAM\
+  \ \u2260 storage', 'Closer to CPU is smaller/faster; storage is durable home for\
+  \ files Truth: conceptual. Color is not the sole encoding."
+alt_text: "FIG-CE3-002: Memory hierarchy: registers \u2192 cache \u2192 RAM \u2192\
+  \ storage. Educational diagram."
+text_equivalent: "FIG-CE3-002: Memory hierarchy: registers \u2192 cache \u2192 RAM\
+  \ \u2192 storage. Educational diagram. Reading order: Registers; Cache; RAM; Storage.\n\
+  Evidence: patterson-hennessy-riscv (qualitative hierarchy)\nGeometry intent: Pyramid\
+  \ or stepped bars with qualitative adjectives only (tiny/fast \u2192 large/durable)."
+reading_order:
+- Registers
+- Cache
+- RAM
+- Storage
+source: figures/preproduction/ce-03/fig-ce3-002.svg
+evidence_note: patterson-hennessy-riscv (qualitative hierarchy)
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

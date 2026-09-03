@@ -1,0 +1,36 @@
+figure_id: FIG-CE1-003
+title: "Why 'the app' is not one thing \u2014 stacked cards for UI, runtime, OS services,\
+  \ storage, n\u2026"
+caption: "Why 'the app' is not one thing \u2014 stacked cards for UI, runtime, OS\
+  \ services, storage, n\u2026. Everyday language collapses multiple cards into one\
+  \ word. Truth: conceptual. Color is not the sole encoding."
+alt_text: Read stack bottom-up or top-down consistently; define brace grouping in
+  long description.
+text_equivalent: 'Read stack bottom-up or top-down consistently; define brace grouping
+  in long description. Reading order: UI; Runtime; OS services; Storage; Network interface;
+  Remote service; Everyday ''the app'' brace.
+
+  Evidence: Conceptual; Saltzer/Kaashoek and Tanenbaum abstractions at accessible
+  depth.
+
+  Geometry intent: Vertical stack with braces grouping ''what people call the app''.'
+reading_order:
+- UI
+- Runtime
+- OS services
+- Storage
+- Network interface
+- Remote service
+- Everyday 'the app' brace
+source: figures/preproduction/ce-01/fig-ce1-003.svg
+evidence_note: Conceptual; Saltzer/Kaashoek and Tanenbaum abstractions at accessible
+  depth.
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Labeled layers + brace; texture/hatching optional but
+  not color-only.
+reviewer: pending-human-visual-review
+version: 0.1.0

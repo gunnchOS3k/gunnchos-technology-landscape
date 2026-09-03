@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH13
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: file
+  proposed_term: "file"
+  plain_language_definition: "Named durable sequence of bytes managed by a filesystem."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: filesystem
+  proposed_term: "filesystem"
+  plain_language_definition: "Software organizing files and metadata on storage."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: database
+  proposed_term: "database"
+  plain_language_definition: "Structured durable store with query and concurrency controls."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: durability
+  proposed_term: "durability"
+  plain_language_definition: "Property that committed data survives expected failures."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: data-lifecycle
+  proposed_term: "data lifecycle"
+  plain_language_definition: "Stages of data from creation through deletion/redaction."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: consistency
+  proposed_term: "consistency"
+  plain_language_definition: "Rules governing visibility of updates across readers/replicas."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

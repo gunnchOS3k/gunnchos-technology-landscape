@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH31
+figures:
+- provisional_id: FIG-CH31-001
+  figure_type: hub
+  pedagogical_purpose: Stability Contract concurrent conditions — inherit CE-6 FIG pattern
+  reader_should_notice: Stability Contract concurrent conditions — inherit CE-6 FIG pattern
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Stability Contract concurrent conditions — inherit CE-6 FIG pattern; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH31-002
+  figure_type: sequence
+  pedagogical_purpose: EMIT cycle with evidence gates
+  reader_should_notice: EMIT cycle with evidence gates
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe EMIT cycle with evidence gates; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH31-003
+  figure_type: boundary
+  pedagogical_purpose: Fixture/illustrative vs human evidence wall
+  reader_should_notice: Fixture/illustrative vs human evidence wall
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Fixture/illustrative vs human evidence wall; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

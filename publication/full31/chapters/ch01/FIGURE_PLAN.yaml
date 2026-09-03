@@ -1,0 +1,45 @@
+schema_version: "1.0.0"
+chapter_id: CH01
+chapter_number: 1
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+figures:
+- provisional_id: FIG-CH01-001
+  figure_type: system_map
+  pedagogical_purpose: "Person → interface → hidden local → optional network → usable result."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH01-002
+  figure_type: causal_flow
+  pedagogical_purpose: "Inputs → processing → state → outputs."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH01-003
+  figure_type: comparative_layers
+  pedagogical_purpose: "Why ‘the app’ is not one thing."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH01-004
+  figure_type: path_branch
+  pedagogical_purpose: "Local-only vs network-dependent readiness."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: illustrative
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i

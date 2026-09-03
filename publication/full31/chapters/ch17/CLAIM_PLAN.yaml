@@ -1,0 +1,52 @@
+schema_version: 1.0.0
+chapter_id: CH17
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH17-001
+  text: Wi-Fi and cellular are different access technologies; neither is the Internet.
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: CE-4 cornerstone.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH17-002
+  text: 5G refers to a 3GPP system generation; icon presence does not prove a specific
+    latency/reliability class for the user's app.
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: 3GPP TS 23.501 survey cite needed.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH17-003
+  text: 6G is a future/roadmap topic; do not claim deployed 6G consumer networks as
+    present fact without dated evidence.
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: Standards body roadmaps only.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH17-004
+  text: Handover and offload can cause transient experience failures while icons stay
+    lit.
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: Over-precise product claims without evidence.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH17-005
+  text: Any gunnchOS/Quartet cellular/Wi-Fi drive-test numbers are PHYSICAL_PENDING.
+  claim_class: project_specific
+  status: PHYSICAL_PENDING
+  citation_keys: []
+  overclaim_risk: Over-precise product claims without evidence.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.

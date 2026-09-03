@@ -1,0 +1,122 @@
+schema_version: 1.0.0
+chapter_id: CH29
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
+concepts:
+- concept_id: CX-CH29-PRODUCT
+  canonical_term: Complete technology product
+  plain_language_definition: Experience + stack + evidence + responsibility, not UI
+    alone.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Complete technology product as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: CX-CH29-GATES
+  canonical_term: Design gates
+  plain_language_definition: Checks that must pass before claiming ship/usable.
+  depends_on:
+  - CX-CH29-PRODUCT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Design gates as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH29-EVIDENCE-PLAN
+  canonical_term: Evidence plan
+  plain_language_definition: What will be measured/tested before claims.
+  depends_on:
+  - CX-CH29-GATES
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Evidence plan as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH29-TRADEOFF
+  canonical_term: Explicit tradeoffs
+  plain_language_definition: Latency, cost, privacy, power, inclusion named together.
+  depends_on:
+  - CX-CH29-PRODUCT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Explicit tradeoffs as the whole story instead of
+    one cooperating part of the experience.
+- concept_id: CX-CH29-CLAIM-BOUNDARY
+  canonical_term: Claim boundary
+  plain_language_definition: What the product may assert given evidence state.
+  depends_on:
+  - CX-CH29-EVIDENCE-PLAN
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Claim boundary as the whole story instead of one
+    cooperating part of the experience.
+edges:
+- from: CX-CH29-PRODUCT
+  to: CX-CH29-GATES
+  relation: enforced_by
+- from: CX-CH29-GATES
+  to: CX-CH29-EVIDENCE-PLAN
+  relation: requires
+- from: CX-CH29-PRODUCT
+  to: CX-CH29-TRADEOFF
+  relation: navigates
+- from: CX-CH29-EVIDENCE-PLAN
+  to: CX-CH29-CLAIM-BOUNDARY
+  relation: defines
+inherits_from:
+- Whole-book ecosystem model
+- CE-5/CE-6 responsibility + contract

@@ -1,0 +1,122 @@
+schema_version: 1.0.0
+chapter_id: CH31
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
+concepts:
+- concept_id: CX-CH31-EMIT
+  canonical_term: EMIT spine
+  plain_language_definition: Explain, Measure, Improve, Teach as required capstone
+    cycle.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating EMIT spine as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH31-CONTRACT
+  canonical_term: Stability Contract (capstone use)
+  plain_language_definition: Concurrent conditions that must hold for experience success.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Stability Contract (capstone use) as the whole story
+    instead of one cooperating part of the experience.
+- concept_id: CX-CH31-TEACHBACK
+  canonical_term: Teach-back
+  plain_language_definition: Explaining the ecosystem so another person can use the
+    model.
+  depends_on:
+  - CX-CH31-EMIT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Teach-back as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH31-LIMITS
+  canonical_term: Evidence limitations
+  plain_language_definition: What the packet does not prove.
+  depends_on:
+  - CX-CH31-EMIT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Evidence limitations as the whole story instead of
+    one cooperating part of the experience.
+- concept_id: CX-CH31-FIXTURE
+  canonical_term: Fixture-validated infrastructure
+  plain_language_definition: "Deterministic lab validation \u2260 human reader validation."
+  depends_on:
+  - CX-CH31-LIMITS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Fixture-validated infrastructure as the whole story
+    instead of one cooperating part of the experience.
+edges:
+- from: CX-CH31-EMIT
+  to: CX-CH31-CONTRACT
+  relation: applies
+- from: CX-CH31-EMIT
+  to: CX-CH31-TEACHBACK
+  relation: culminates_in
+- from: CX-CH31-EMIT
+  to: CX-CH31-LIMITS
+  relation: must_state
+- from: CX-CH31-FIXTURE
+  to: CX-CH31-LIMITS
+  relation: clarifies
+inherits_from:
+- CE-6 full spine (primary inherit)
+- "CE-1\u2026CE-5 synthesis"

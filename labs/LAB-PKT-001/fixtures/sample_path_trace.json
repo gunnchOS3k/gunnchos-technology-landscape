@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "lab_id": "LAB-PKT-001",
+  "label": "ILLUSTRATIVE_FIXTURE",
+  "honesty": "Fixture rows and fields are NOT the learner's device measurements. Crafted Ethernet/IPv4 teaching story with WAIKE lab_datapath competency adjacency (not a WAIKE validator submission).",
+  "documentation_addresses_note": "IPv4 addresses use RFC 5737 documentation ranges (192.0.2.0/24, 203.0.113.0/24).",
+  "frame": {
+    "ethernet": {
+      "dst_mac": "00:11:22:33:44:55",
+      "src_mac": "aa:bb:cc:dd:ee:ff",
+      "ethertype": "0x0800",
+      "ethertype_meaning": "IPv4",
+      "scope_hint": "LAN / link layer on an access network — not 'the Internet' by itself"
+    },
+    "ipv4": {
+      "version": 4,
+      "ihl": 5,
+      "ttl": 64,
+      "protocol": 6,
+      "protocol_meaning": "TCP",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.50",
+      "scope_hint": "Network-layer forwarding toward a remote service"
+    }
+  },
+  "scopes": {
+    "device": "Local app initiates the sync/send action",
+    "lan": "On-link Ethernet/Wi-Fi segment and typically a gateway/NAT",
+    "internet": "Routed path beyond the local network boundary",
+    "dns": "Name resolution dependency that may precede connect (separate failure mode)",
+    "service": "Destination application endpoint the user thinks of as 'the app'"
+  },
+  "access_network": {
+    "mode": "wifi",
+    "distinct_from": ["internet", "cellular", "cloud"],
+    "note": "Wi-Fi is an access network. Cellular is a different access network. Neither synonym equals Internet or cloud."
+  },
+  "placement_hypothesis": {
+    "edge_or_cloud": "cloud-far",
+    "confidence": "inference",
+    "evidence_needed": "RTT/region hints, CDN or provider documentation — not signal bars alone"
+  },
+  "metric_family": "latency",
+  "ordered_hypotheses": [
+    "access",
+    "dns",
+    "reachability",
+    "transport_retries",
+    "remote_placement"
+  ],
+  "parse_questions": [
+    {
+      "id": "q_ttl",
+      "ask": "What is the IPv4 TTL in this fixture?",
+      "answer": 64,
+      "kind": "observation"
+    },
+    {
+      "id": "q_ethertype",
+      "ask": "Does ethertype 0x0800 indicate IPv4?",
+      "answer": true,
+      "kind": "observation"
+    },
+    {
+      "id": "q_wifi_eq_internet",
+      "ask": "Is Wi-Fi the same thing as the Internet in this lab's teaching model?",
+      "answer": false,
+      "kind": "concept"
+    },
+    {
+      "id": "q_placement",
+      "ask": "Is 'cloud-far' marked as observation or inference in this fixture?",
+      "answer": "inference",
+      "kind": "observation"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+chapter_id: CH27
+chapter_number: 27
+title: "Testing, Observability, and Evidence"
+part: VI
+requires:
+  - CH20
+  - CH26
+  - CE-6
+reinforces:
+  - CH23 evidence discipline
+feeds:
+  - CH28
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3
+physical_dependencies: []
+ce_inheritance:
+  - CE-6 evidence hierarchy / observation vs inference
+  - LAB-CE06-001 evidence fields
+lab_inheritance:
+  - LAB-CE06-001
+  - CLOUD_DEVOPS SLO/incident adjacency
+  - DATA_DASHBOARDS debug adjacency
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Verify OpenTelemetry (or chosen) primary docs; align claim IDs with CE-6 evidence hierarchy figures

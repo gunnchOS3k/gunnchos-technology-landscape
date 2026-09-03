@@ -30,7 +30,7 @@
 | SRC-CE1-S3 | `rfc9293` | TCP | IETF RFC 9293 (2022) | standard | Reliable transport foreshadow for remote branch |
 | SRC-CE1-S4 | `whatwg-html` | HTML Living Standard | Living Standard | standard | Event loop / scripting context (accessible depth) |
 | SRC-CE1-S5 | `whatwg-dom` | DOM Living Standard | Living Standard | standard | Events / dispatch model |
-| SRC-CE1-S6 | `wcag22` | W3C WCAG 2.2 | W3C Recommendation (2023-10-05) | standard | Accessibility obligations for readiness UI |
+| SRC-CE1-S6 | `wcag22-20231005` | W3C WCAG 2.2 | W3C Recommendation (2023-10-05) dated TR | standard | Accessibility obligations for readiness UI; distinct from CE-6 `wcag22-20241212` |
 
 **Living vs fixed:** WHATWG HTML/DOM are living standards (no single frozen year as authority). RFCs and ISO 25010:2023 are fixed publications. WCAG 2.2 is a dated W3C Recommendation.
 

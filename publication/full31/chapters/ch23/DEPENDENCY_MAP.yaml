@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH23
+chapter_number: 23
+title: Cybersecurity from Chip to Cloud
+part: V
+requires:
+  - CH02
+  - CH11
+  - CH12
+  - CH14
+  - CH16
+reinforces:
+  - CE-5
+feeds:
+  - CH24
+  - CH27
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3 reader evidence pending
+physical_dependencies:
+  - Any chip/boot measured claims
+ce_inheritance:
+  - CE-5 attack-surface / identity / crypto-goal slices
+  - CH11 firmware/trust adjacency (link)
+lab_inheritance:
+  - LAB-TRUST-001 authn/authz + trust restore adjacency
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Inherit CE-5 FIG-CE5-003/004/007 IDs into CH23 figure plan; keep security content non-offensive in drafting checklist

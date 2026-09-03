@@ -1,0 +1,123 @@
+schema_version: 1.0.0
+chapter_id: CH05
+chapter_number: 5
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+inheritance_note: "Part II fundamentals: electricity/signals/clocks/logic as the substrate\
+  \ of computing\u2014not a parts catalog."
+concepts:
+- concept_id: CX-CH05-001
+  canonical_term: electricity as useful energy/control
+  plain_language_definition: Charge/voltage/current as the medium devices use to do
+    work and communicate.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+  likely_misconception: Treating electricity as useful energy/control as the whole
+    story instead of one cooperating part of the experience.
+- concept_id: CX-CH05-002
+  canonical_term: signal
+  plain_language_definition: A physical quantity varying in time that carries information.
+  depends_on:
+  - CX-CH05-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+  likely_misconception: Treating signal as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH05-003
+  canonical_term: clock
+  plain_language_definition: A shared timing reference that sequences digital work.
+  depends_on:
+  - CX-CH05-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+  likely_misconception: Treating clock as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH05-004
+  canonical_term: logic gate / Boolean decision
+  plain_language_definition: Simple decision elements that implement digital behavior
+    from signals.
+  depends_on:
+  - CX-CH05-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+  likely_misconception: Treating logic gate / Boolean decision as the whole story
+    instead of one cooperating part of the experience.
+- concept_id: CX-CH05-005
+  canonical_term: analog vs digital
+  plain_language_definition: Continuous physical quantities vs discrete symbolic levels.
+  depends_on:
+  - CX-CH05-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+  likely_misconception: Treating analog vs digital as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: CX-CH05-006
+  canonical_term: noise / integrity (qualitative)
+  plain_language_definition: Unwanted disturbance that can corrupt interpretation
+    of a signal.
+  depends_on:
+  - CX-CH05-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+  likely_misconception: Treating noise / integrity (qualitative) as the whole story
+    instead of one cooperating part of the experience.

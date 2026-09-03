@@ -1,0 +1,17 @@
+schema_id: full31-dependency-map
+schema_version: "1.0.0"
+required_any_of_top_level:
+  - prerequisites
+  - depends_on
+  - upstream_chapters
+  - later_links
+  - downstream_chapters
+  - reinforces
+  - inherits_from
+  - related_chapters
+  - dependencies
+notes: >
+  Map must name real prerequisites and/or later links (chapter IDs, CE packages, or labs).
+  Empty maps are invalid unless an explicit no_dependencies_reason is present.
+optional_explicit_none:
+  - no_dependencies_reason

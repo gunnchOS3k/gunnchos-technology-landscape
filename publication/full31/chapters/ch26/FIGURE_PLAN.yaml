@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH26
+figures:
+- provisional_id: FIG-CH26-001
+  figure_type: sequence
+  pedagogical_purpose: Edit → status → diff → commit → review
+  reader_should_notice: Edit → status → diff → commit → review
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Edit → status → diff → commit → review; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH26-002
+  figure_type: comparison
+  pedagogical_purpose: Working tree vs committed history
+  reader_should_notice: Working tree vs committed history
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Working tree vs committed history; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH26-003
+  figure_type: boundary
+  pedagogical_purpose: Secrets must not enter the repository
+  reader_should_notice: Secrets must not enter the repository
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Secrets must not enter the repository; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

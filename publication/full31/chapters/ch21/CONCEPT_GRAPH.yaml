@@ -1,0 +1,168 @@
+schema_version: 1.0.0
+chapter_id: CH21
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
+concepts:
+- concept_id: CX-CH21-DATA
+  canonical_term: Training and input data
+  plain_language_definition: Examples/records used to fit a model or answer a question.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Training and input data as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: CX-CH21-MODEL
+  canonical_term: Model parameters
+  plain_language_definition: "Stored numbers shaping inputs\u2192outputs; not a mind."
+  depends_on:
+  - CX-CH21-DATA
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Model parameters as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: CX-CH21-INFERENCE
+  canonical_term: Inference / output
+  plain_language_definition: Running a model on new inputs to produce a prediction
+    or generation.
+  depends_on:
+  - CX-CH21-MODEL
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Inference / output as the whole story instead of
+    one cooperating part of the experience.
+- concept_id: CX-CH21-GENAI
+  canonical_term: Generative AI (systems view)
+  plain_language_definition: Systems that produce new text/images/code by predicting
+    likely continuations.
+  depends_on:
+  - CX-CH21-INFERENCE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Generative AI (systems view) as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: CX-CH21-UNCERTAINTY
+  canonical_term: Uncertainty and errors
+  plain_language_definition: Outputs can be wrong or incomplete even when fluent.
+  depends_on:
+  - CX-CH21-GENAI
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Uncertainty and errors as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: CX-CH21-LOCALCLOUD
+  canonical_term: Local vs cloud AI
+  plain_language_definition: Whether inference runs on-device or on remote computers.
+  depends_on:
+  - CX-CH21-INFERENCE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Local vs cloud AI as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: CX-CH21-EVAL
+  canonical_term: Evaluation under uncertainty
+  plain_language_definition: Checking usefulness with labeled observations and limits.
+  depends_on:
+  - CX-CH21-UNCERTAINTY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Evaluation under uncertainty as the whole story instead
+    of one cooperating part of the experience.
+edges:
+- from: CX-CH21-DATA
+  to: CX-CH21-MODEL
+  relation: fits_or_conditions
+- from: CX-CH21-MODEL
+  to: CX-CH21-INFERENCE
+  relation: enables
+- from: CX-CH21-INFERENCE
+  to: CX-CH21-GENAI
+  relation: specializes
+- from: CX-CH21-INFERENCE
+  to: CX-CH21-LOCALCLOUD
+  relation: deployment_choice
+- from: CX-CH21-GENAI
+  to: CX-CH21-UNCERTAINTY
+  relation: produces_risk_of
+- from: CX-CH21-UNCERTAINTY
+  to: CX-CH21-EVAL
+  relation: requires
+inherits_from:
+- CE-5 (AI/data/model/inference/genAI/uncertainty slices)

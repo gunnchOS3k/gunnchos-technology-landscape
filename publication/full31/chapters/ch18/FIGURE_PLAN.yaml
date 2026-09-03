@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+chapter_id: CH18
+figures:
+- provisional_id: FIG-CH18-001
+  figure_type: conceptual
+  pedagogical_purpose: "Device—obstacle—AP path loss cartoon"
+  reader_should_notice: "Key teaching distinction for CH18."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH18-002
+  figure_type: conceptual
+  pedagogical_purpose: "Omni vs beam pattern intuition"
+  reader_should_notice: "Key teaching distinction for CH18."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH18-003
+  figure_type: illustrative
+  pedagogical_purpose: "MIMO spatial streams metaphor (clearly illustrative)"
+  reader_should_notice: "Key teaching distinction for CH18."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH18-004
+  figure_type: project_specific
+  pedagogical_purpose: "Quartet antenna placement — PHYSICAL_PENDING overlay"
+  reader_should_notice: "Key teaching distinction for CH18."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: project_specific
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

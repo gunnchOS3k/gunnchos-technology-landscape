@@ -1,0 +1,888 @@
+schema_version: 1.0.0
+registry_id: full31-chapter-production-registry
+accepted_main_sha: 0e694176652d4729c7f2b71df08b871a863afb8c
+waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+gate_posture: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
+integrator_note: >
+  Merged from agent-h/i/j registry fragments with integrator truth repair. packet_state is file/semantic completeness only; current_state is honest maturity. PREPRODUCTION / DEVELOPMENT — not canonical final prose and not Gate 3 reader evidence. CH02-REVIEW-R1 and publication/gates/gate-3/ remain untouched.
+vocabulary:
+  - SCAFFOLD
+  - PREPRODUCTION_STARTED
+  - PREPRODUCTION_COMPLETE
+  - DRAFT_STARTED
+  - DRAFT_COMPLETE
+  - TECH_REVIEW_PENDING
+  - HUMAN_VALIDATION_PENDING
+  - REVISION_REQUIRED
+  - READY_FOR_EDITORIAL
+  - PUBLICATION_READY
+source_fragments:
+  - publication/full31/parts/part_i_ii_registry_fragment.yaml
+  - publication/full31/parts/part_iii_iv_registry_fragment.yaml
+  - publication/full31/parts/part_v_vi_registry_fragment.yaml
+counts:
+  chapters: 31
+  unique_chapter_numbers: 31
+  unique_titles: 31
+  with_next_automatable_action: 31
+  architecture_registered: 31
+  minimum_packet_coverage: 31
+  packet_complete: 31
+  substantive_preproduction_started: 30
+  substantive_preproduction_complete: 0
+  canonical_full_drafts: 1
+  human_validated: 0
+  publication_ready: 0
+packet_state_counts:
+  PACKET_COMPLETE: 31
+current_state_counts:
+  HUMAN_VALIDATION_PENDING: 1
+  PREPRODUCTION_STARTED: 30
+waike_mapping_totals:
+  exact: 0
+  adjacent: 122
+  proposed: 24
+  no_map: 43
+waike_unique_upstream_objects: 85
+waike_mapping_note: Authoritative totals from deterministic parse of all chapter WAIKE_CROSSWALK.md files (scripts/aggregate_full31_waike.py). Fragment row totals are not authoritative.
+chapters:
+- chapter_number: 1
+  chapter_id: CH01
+  title: "Technology Is a System, Not a Screen"
+  part: I
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    []
+  gate_dependencies:
+    - Gate 3 reader evidence before canonical CE prose promotion
+  human_dependencies:
+    - Teach-back clarity review after R1
+  physical_dependencies:
+    - Device Quartet PHYSICAL_PENDING
+  next_automatable_action: "Keep CH01 prose scaffolded; after Gate 3 R1, promote selected CE-1 candidates into live registries."
+  packet_path: publication/full31/chapters/ch01/
+- chapter_number: 2
+  chapter_id: CH02
+  title: Follow One Tap Through the Entire Stack
+  part: I
+  packet_state: PACKET_COMPLETE
+  current_state: HUMAN_VALIDATION_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
+  concept_preproduction_state: DRAFT_COMPLETE
+  source_state: DRAFT_COMPLETE
+  claim_state: HUMAN_VALIDATION_PENDING
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
+  glossary_state: DRAFT_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+  gate_dependencies:
+    - CH02-REVIEW-R1 reader responses REQUIRED before tone/depth revision
+  human_dependencies:
+    - Explorer / Builder / Engineer reviews; optional Educator
+  physical_dependencies:
+    - Quartet PHYSICAL_PENDING; not required for LAB-TAP-001
+  next_automatable_action: Await real Gate 3 response YAML under publication/gates/gate-3/responses/; do not fabricate evidence.
+  packet_path: publication/full31/chapters/ch02/
+- chapter_number: 3
+  chapter_id: CH03
+  title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
+  part: I
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+  gate_dependencies:
+    - Gate 3 R1 may inform tone/depth of performance explanations
+  human_dependencies:
+    - Reader clarity on feel vs measure distinction
+  physical_dependencies:
+    - Quartet perf numbers PHYSICAL_PENDING
+  next_automatable_action: Identify authoritative HCI/systems citations for perceived-response categories; draft LAB-PERF-001 fixture outline without numeric invention.
+  packet_path: publication/full31/chapters/ch03/
+- chapter_number: 4
+  chapter_id: CH04
+  title: The Device Quartet as a Learning Laboratory
+  part: I
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+    - CH03
+  gate_dependencies:
+    - None beyond global Gate 3 posture
+  human_dependencies:
+    - Editorial review to prevent marketing tone
+  physical_dependencies:
+    - All quantitative Quartet claims PHYSICAL_PENDING
+  next_automatable_action: Reconfirm hardware-repo Quartet SHA; draft LAB-QUARTET-001 matrix template; forbid any fabricated SKU measurements.
+  packet_path: publication/full31/chapters/ch04/
+- chapter_number: 5
+  chapter_id: CH05
+  title: "Electricity, Signals, Clocks, and Logic"
+  part: II
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+  gate_dependencies:
+    - Global Gate 3 posture only
+  human_dependencies:
+    - "Educator check: keep fundamentals experience-tied"
+  physical_dependencies:
+    - Scope/Quartet measurements PHYSICAL_PENDING
+  next_automatable_action: Select primary textbook citation set; outline LAB-SIG-001 simulation route with offline fixture.
+  packet_path: publication/full31/chapters/ch05/
+- chapter_number: 6
+  chapter_id: CH06
+  title: "CPU, Instructions, and Parallel Work"
+  part: II
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+    - CH03
+    - CH05
+  gate_dependencies:
+    - Global Gate 3
+  human_dependencies:
+    - Keep parallel-work misconceptions checked
+  physical_dependencies:
+    - Quartet CPU EVT PHYSICAL_PENDING
+  next_automatable_action: Diff CE-3 packet for CPU-only claim subset; mark CH12 OS depth as later dependency; avoid duplicating LAB-CMS-001.
+  packet_path: publication/full31/chapters/ch06/
+- chapter_number: 7
+  chapter_id: CH07
+  title: "Memory, Cache, and Storage"
+  part: II
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+    - CH03
+    - CH05
+    - CH06
+  gate_dependencies:
+    - Global Gate 3
+  human_dependencies:
+    - "Misconception check: RAM≠storage"
+  physical_dependencies:
+    - Quartet capacity figures PHYSICAL_PENDING
+  next_automatable_action: Extract CE-3 hierarchy claims into CH07-owned IDs; defer filesystem/DB depth to CH13.
+  packet_path: publication/full31/chapters/ch07/
+- chapter_number: 8
+  chapter_id: CH08
+  title: "Graphics, Displays, Audio, Cameras, and Sensors"
+  part: II
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+    - CH03
+    - CH05
+    - CH06
+    - CH07
+  gate_dependencies:
+    - Global Gate 3
+  human_dependencies:
+    - Privacy review for camera/mic labs
+  physical_dependencies:
+    - Quartet camera/sensor EVT PHYSICAL_PENDING
+  next_automatable_action: Pick primary graphics/multimedia textbook; draft permission-safe LAB-IO-001 fixture.
+  packet_path: publication/full31/chapters/ch08/
+- chapter_number: 9
+  chapter_id: CH09
+  title: "Power, Batteries, Thermals, and Mechanical Design"
+  part: II
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH03
+    - CH05
+    - CH06
+    - CH07
+    - CH08
+  gate_dependencies:
+    - Global Gate 3
+  human_dependencies:
+    - Safety review of any physical lab
+  physical_dependencies:
+    - All Quartet watt/°C curves PHYSICAL_PENDING
+  next_automatable_action: Select safe citation set; draft LAB-PWR-001 with mandatory safety non-goals; keep Quartet analogy-only.
+  packet_path: publication/full31/chapters/ch09/
+- chapter_number: 10
+  chapter_id: CH10
+  title: "Ports, Buses, Boards, Packaging, and Manufacturing"
+  part: II
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_COMPLETE
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH05
+    - CH06
+    - CH07
+    - CH08
+    - CH09
+  gate_dependencies:
+    - Global Gate 3
+  human_dependencies:
+    - Avoid connector-catalog tone in editorial review
+  physical_dependencies:
+    - Quartet PCB/EVT/manufacturing PHYSICAL_PENDING
+  next_automatable_action: Select interconnect textbook + one optional standards citation policy; outline LAB-BUS-001 commodity diagram route.
+  packet_path: publication/full31/chapters/ch10/
+- chapter_number: 11
+  chapter_id: CH11
+  title: "Firmware, Boot, and Trust"
+  part: III
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH01
+    - CH02
+    - CH05
+    - CH06
+    - CH10
+  gate_dependencies:
+    - GATE_3 human reader evidence for tone/depth (CH02-REVIEW-R1) — does not block packet scaffold
+  human_dependencies:
+    - Educator review of recovery/update safety framing
+    - No Gate 3 PASS claimed
+  physical_dependencies:
+    - Device Quartet boot measurements PHYSICAL_PENDING
+    - No custom firmware flashing labs
+  next_automatable_action: Resolve SOURCE_NEEDED secure-boot/attestation cites; draft LAB-BOOT-OBS-001 outline linking LAB-TRUST-001 adjacency only.
+  packet_path: publication/full31/chapters/ch11/
+- chapter_number: 12
+  chapter_id: CH12
+  title: "Operating Systems, Processes, Threads, and Scheduling"
+  part: III
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH01
+    - CH02
+    - CH06
+    - CH07
+    - CH11
+  gate_dependencies:
+    - GATE_3 tone dependency via CH02
+  human_dependencies:
+    - CE-3 packet already exists — integrator should avoid glossary collisions
+  physical_dependencies:
+    - Quartet load traces PHYSICAL_PENDING
+  next_automatable_action: Merge CE-3 claim/source inheritance into full-book SOURCE_NEEDS; keep LAB-CMS-001 as primary Try-it link.
+  packet_path: publication/full31/chapters/ch12/
+- chapter_number: 13
+  chapter_id: CH13
+  title: "Files, Databases, and Data Lifecycles"
+  part: III
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH07
+    - CH12
+  gate_dependencies:
+    - GATE_3 tone
+  human_dependencies:
+    - Privacy counsel-friendly deletion wording review
+  physical_dependencies:
+    - Quartet storage benches PHYSICAL_PENDING
+  next_automatable_action: Identify textbook DB + sync sources; outline LAB-DATA-LIFE-001 fixture route.
+  packet_path: publication/full31/chapters/ch13/
+- chapter_number: 14
+  chapter_id: CH14
+  title: "Applications, APIs, Runtimes, and User Interfaces"
+  part: III
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH01
+    - CH02
+    - CH12
+    - CH13
+  gate_dependencies:
+    - GATE_3 / CH02 prototype method
+  human_dependencies:
+    - A11y review of UI examples
+  physical_dependencies:
+    - Quartet UI metrics PHYSICAL_PENDING
+  next_automatable_action: Link CH02/LAB-TAP-001 method; fill API versioning SOURCE_NEEDED bib keys.
+  packet_path: publication/full31/chapters/ch14/
+- chapter_number: 15
+  chapter_id: CH15
+  title: "Containers, Virtualization, Cloud, and Edge Computing"
+  part: III
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH12
+    - CH14
+  gate_dependencies:
+    - GATE_3
+  human_dependencies:
+    - Keep Wi-Fi/cellular/Internet/cloud disambiguation in editorial review
+  physical_dependencies:
+    - Edge IO / Quartet placement benches PHYSICAL_PENDING
+  next_automatable_action: Confirm NIST SP 800-145 + OCI doc cites; keep Wi-Fi/cellular/Internet/cloud disambiguation in figure briefs.
+  packet_path: publication/full31/chapters/ch15/
+- chapter_number: 16
+  chapter_id: CH16
+  title: "Packets, Protocols, Routing, and the Internet"
+  part: IV
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH01
+    - CH02
+    - CH14
+    - CH15
+  gate_dependencies:
+    - GATE_3
+  human_dependencies:
+    - "Editorial: never synonymize Wi-Fi/Internet/cloud"
+  physical_dependencies:
+    - Drive-test / Quartet RF PHYSICAL_PENDING
+  next_automatable_action: Inherit CE-4/LAB-PKT-001 artifacts by reference; extend routing textbook SOURCE_NEEDED only where CE-4 gaps.
+  packet_path: publication/full31/chapters/ch16/
+- chapter_number: 17
+  chapter_id: CH17
+  title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
+  part: IV
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH16
+  gate_dependencies:
+    - GATE_3
+  human_dependencies:
+    - Standards dating review for 6G claims
+  physical_dependencies:
+    - All RF field measurements PHYSICAL_PENDING
+  next_automatable_action: Pin 3GPP TS 23.501 + IEEE 802.11 edition cites; label 6G as roadmap-only.
+  packet_path: publication/full31/chapters/ch17/
+- chapter_number: 18
+  chapter_id: CH18
+  title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
+  part: IV
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH05
+    - CH16
+    - CH17
+  gate_dependencies:
+    - GATE_3
+  human_dependencies:
+    - "Safety review: no TX labs"
+  physical_dependencies:
+    - All measured RF PHYSICAL_PENDING
+  next_automatable_action: Select wireless textbook cites; mark all RF measured figures PHYSICAL_PENDING; safety-review no-TX labs.
+  packet_path: publication/full31/chapters/ch18/
+- chapter_number: 19
+  chapter_id: CH19
+  title: "NTN and Service Continuity Across Ground, Air, and Space"
+  part: IV
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH16
+    - CH17
+    - CH18
+  gate_dependencies:
+    - GATE_3
+  human_dependencies:
+    - Capability-class fact checking vs marketing
+  physical_dependencies:
+    - NTN demos PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+  next_automatable_action: Pin 3GPP NTN spec IDs; keep PROJECT_EVIDENCE_NEEDED for research twins; draft LAB-CONT-001 doc-only worksheet.
+  packet_path: publication/full31/chapters/ch19/
+- chapter_number: 20
+  chapter_id: CH20
+  title: "Latency, Reliability, QoE, and the Stability Contract"
+  part: IV
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_STARTED
+  claim_state: PREPRODUCTION_STARTED
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_STARTED
+  glossary_state: PREPRODUCTION_STARTED
+  waike_state: PREPRODUCTION_STARTED
+  dependencies:
+    - CH03
+    - CH12
+    - CH16
+    - CH17
+    - CH18
+    - CH19
+  gate_dependencies:
+    - GATE_3 — READER_EVIDENCE_PENDING strongly affects final CH20 prose tone
+  human_dependencies:
+    - CH02-REVIEW-R1 reader evidence before canonical draft depth
+    - HUMAN_VALIDATION_PENDING via CH02-REVIEW-R1 / Gate 3 reader evidence before final prose depth
+  physical_dependencies:
+    - Quartet QoE PHYSICAL_PENDING
+  next_automatable_action: Inherit CE-6 Stability Contract; add ITU-T QoE SOURCE_NEEDED; wait on Gate 3 reader evidence before canonical prose.
+  packet_path: publication/full31/chapters/ch20/
+- chapter_number: 21
+  chapter_id: CH21
+  title: "Data, Machine Learning, and Generative AI"
+  part: V
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH01
+    - CH02
+    - CH07
+    - CH14
+    - CH15
+  gate_dependencies:
+    - CH02-REVIEW-R1 human feedback before final prose tone
+  human_dependencies:
+    - Gate 3 reader evidence pending
+  physical_dependencies:
+    []
+  next_automatable_action: Promote CE-5 AI claim/figure IDs into CH21 packet crosswalk; draft section-intent only after Gate 3 R1 themes land
+  packet_path: publication/full31/chapters/ch21/
+- chapter_number: 22
+  chapter_id: CH22
+  title: "Edge AI, Sensors, and Embodied Interaction"
+  part: V
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH08
+    - CH09
+    - CH15
+    - CH21
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3 reader evidence pending
+  physical_dependencies:
+    - Device Quartet Edge IO Wearables fabrication/measurements
+  next_automatable_action: Select primary edge-ML and sensing-privacy sources; keep figure FIG-CH22-003 blocked until PHYSICAL_PENDING resolved or downgraded to conceptual
+  packet_path: publication/full31/chapters/ch22/
+- chapter_number: 23
+  chapter_id: CH23
+  title: Cybersecurity from Chip to Cloud
+  part: V
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH02
+    - CH11
+    - CH12
+    - CH14
+    - CH16
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3 reader evidence pending
+  physical_dependencies:
+    - Any chip/boot measured claims
+  next_automatable_action: Inherit CE-5 FIG-CE5-003/004/007 IDs into CH23 figure plan; keep security content non-offensive in drafting checklist
+  packet_path: publication/full31/chapters/ch23/
+- chapter_number: 24
+  chapter_id: CH24
+  title: "Privacy, Identity, Safety, Accessibility, and Ethics"
+  part: V
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH21
+    - CH23
+    - CE-5
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3 reader evidence pending
+    - later a11y human review
+  physical_dependencies:
+    []
+  next_automatable_action: Wire both WCAG dated keys into CH24 SOURCE_NEEDS and claim plan; never collapse dates on merge
+  packet_path: publication/full31/chapters/ch24/
+- chapter_number: 25
+  chapter_id: CH25
+  title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
+  part: V
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH20
+    - CH24
+    - CE-6
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3
+    - later equity/educator review
+  physical_dependencies:
+    - Device Quartet comparative measurements if claimed
+  next_automatable_action: Select official ICT access statistical sources; keep all population claims blocked until verified
+  packet_path: publication/full31/chapters/ch25/
+- chapter_number: 26
+  chapter_id: CH26
+  title: Software Development and Version Control
+  part: VI
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH02
+    - CH14
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3
+  physical_dependencies:
+    - DS-XL Coder if claimed
+  next_automatable_action: Pin official Git documentation URLs with verification status; scaffold LAB-CH26-GIT-001 fixture design
+  packet_path: publication/full31/chapters/ch26/
+- chapter_number: 27
+  chapter_id: CH27
+  title: "Testing, Observability, and Evidence"
+  part: VI
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH20
+    - CH26
+    - CE-6
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3
+  physical_dependencies:
+    []
+  next_automatable_action: Verify OpenTelemetry (or chosen) primary docs; align claim IDs with CE-6 evidence hierarchy figures
+  packet_path: publication/full31/chapters/ch27/
+- chapter_number: 28
+  chapter_id: CH28
+  title: "Digital Twins, Simulation, and Reproducible Research"
+  part: VI
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH27
+    - CH20
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3
+  physical_dependencies:
+    - Any twin-validated hardware claims
+  next_automatable_action: Verify digital-twin standard designation; draft reproducibility card schema shared with CH31
+  packet_path: publication/full31/chapters/ch28/
+- chapter_number: 29
+  chapter_id: CH29
+  title: Designing a Complete Technology Product
+  part: VI
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH21
+    - CH23
+    - CH24
+    - CH26
+    - CH27
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3
+    - later product/editorial review
+  physical_dependencies:
+    - Device Quartet / OS shipping claims
+  next_automatable_action: Draft non-marketing product one-pager template fields; keep PHYSICAL_PENDING badges mandatory in figures
+  packet_path: publication/full31/chapters/ch29/
+- chapter_number: 30
+  chapter_id: CH30
+  title: Career Maps and Portfolio Proof
+  part: VI
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CH26
+    - CH27
+    - CH29
+  gate_dependencies:
+    - CH02-REVIEW-R1
+  human_dependencies:
+    - Gate 3
+    - mentor/educator review of portfolio quality
+  physical_dependencies:
+    []
+  next_automatable_action: Draft portfolio index schema aligned to CE CAREER_MAP fields; forbid employment-guarantee language in checklist
+  packet_path: publication/full31/chapters/ch30/
+- chapter_number: 31
+  chapter_id: CH31
+  title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
+  part: VI
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies:
+    - CE-1
+    - CE-2
+    - CE-3
+    - CE-4
+    - CE-5
+    - CE-6
+    - CH20
+    - CH21
+    - CH23
+    - CH24
+    - CH25
+    - CH27
+    - CH30
+  gate_dependencies:
+    - CH02-REVIEW-R1 — required before final capstone prose tone
+  human_dependencies:
+    - Gate 3 reader evidence
+    - capstone mentor review
+  physical_dependencies:
+    - optional Device Quartet if learner chooses hardware claims
+  next_automatable_action: Link LAB-CE06-001 into CH31 lab opportunities after integrator merges agent-e; keep illustrative example firewall in drafting checklist
+  packet_path: publication/full31/chapters/ch31/

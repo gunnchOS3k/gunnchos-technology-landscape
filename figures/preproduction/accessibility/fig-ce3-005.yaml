@@ -1,0 +1,26 @@
+figure_id: FIG-CE3-005
+title: CPU vs accelerator/GPU role cards
+caption: 'CPU vs accelerator/GPU role cards. Who orchestrates vs who executes specialized
+  work'', ''Shared resource limits (memory bandwidth, power) Truth: conceptual. Color
+  is not the sole encoding.'
+alt_text: 'FIG-CE3-005: CPU vs accelerator/GPU role cards. Educational diagram.'
+text_equivalent: 'FIG-CE3-005: CPU vs accelerator/GPU role cards. Educational diagram.
+  Reading order: CPU card; Accelerator/GPU card.
+
+  Evidence: patterson-hennessy-riscv; khronos-vulkan-overview (pointer)
+
+  Geometry intent: Two side-by-side cards with definition / analogy / function / failure
+  symptoms.'
+reading_order:
+- CPU card
+- Accelerator/GPU card
+source: figures/preproduction/ce-03/fig-ce3-005.svg
+evidence_note: patterson-hennessy-riscv; khronos-vulkan-overview (pointer)
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

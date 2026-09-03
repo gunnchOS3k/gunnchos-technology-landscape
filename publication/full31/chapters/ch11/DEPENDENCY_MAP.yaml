@@ -1,0 +1,38 @@
+schema_version: 1.0.0
+chapter_id: CH11
+title: "Firmware, Boot, and Trust"
+part: III
+prior_chapter_dependencies:
+- CH01
+- CH02
+- CH05
+- CH06
+- CH10
+ce_inheritance:
+- path: publication/preproduction/ce-05/
+  note: "Trust/identity/privacy themes (adjacent; CE-5 owns AI×trust synthesis)"
+- path: publication/preproduction/ce-03/
+  note: "Inside-device context for what firmware hands to the OS"
+- path: publication/preproduction/ce-01/
+  note: "System lens: visible surface vs hidden cooperating parts"
+lab_inheritance:
+- lab_id: LAB-TRUST-001
+  note: "CE-5 / labs worktree agent-d — adjacency only for trust/consent literacy; Ch11 does not claim LAB-TRUST-001 as its chapter lab. Forward link to CH23 for chip-to-cloud security depth."
+- lab_id: LAB-CMS-001
+  note: "CE-3 — optional Operator path for post-boot local health after a failed/slow boot narrative (do not duplicate CMS as Ch11 core)."
+later_chapter_dependencies:
+- CH12
+- CH23
+- CH24
+gate_dependencies:
+- "GATE_3 human reader evidence for tone/depth (CH02-REVIEW-R1) — does not block packet scaffold"
+human_dependencies:
+- "Educator review of recovery/update safety framing"
+- "No Gate 3 PASS claimed"
+physical_dependencies:
+- "Device Quartet boot measurements PHYSICAL_PENDING"
+- "No custom firmware flashing labs"
+device_quartet:
+  relevant: true
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

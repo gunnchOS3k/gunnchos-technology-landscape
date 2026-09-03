@@ -1,0 +1,104 @@
+lab_id: LAB-PKT-001
+title: Trace One Connected Action Across Path and Access
+chapter: CE-4
+question: "When a connected action feels stuck, what parts of the path can I observe on a device I already own—and what must I treat as inference—including latency, reliability, or throughput, and whether Wi-Fi, cellular, or a fixture path was in play?"
+experience: "Sync/send stalls or recovers when path or access changes."
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+status_labels:
+  - IMPLEMENTED_DIGITAL
+  - FIXTURE_VALIDATED
+  - PHYSICAL_PENDING
+  - EXTERNAL_DEPENDENCY
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+prerequisites:
+  concepts:
+    - device
+    - LAN
+    - Internet
+    - DNS
+    - service
+    - Wi-Fi
+    - cellular
+    - edge
+    - cloud
+    - latency
+    - throughput
+    - reliability
+  safety:
+    - Do not capture passwords, session tokens, message bodies, banking amounts, or classmate personal data.
+    - Do not capture other users' traffic; no unauthorized scanning or packet capture on networks you do not administer.
+    - Prefer demo pages, public documentation URLs, or fixtures; redact hostnames/emails from screenshots.
+    - No radio transmission experiments; no captive-portal term bypass.
+  time_minutes: 60
+  equipment: []
+  software:
+    - modern web browser with developer tools or OS network settings screens
+    - Python 3 (optional; Markdown/CSV editor sufficient for fixture route)
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_trace: true
+  simulation: true
+  fixture_fallback: true
+prediction:
+  required: true
+  prompt: "Will failure feel like wait (latency), retry/error (reliability), or long transfer (throughput)?"
+procedure:
+  checkpoints:
+    - Predict metric family (latency / reliability / throughput).
+    - Complete Route A (browser/CLI live commodity) or Route B (fixture).
+    - Change one condition when Route A is used, or answer fixture parse questions on Route B.
+    - Label observation vs inference; name access network if known (Wi-Fi / cellular / unknown / fixture).
+    - Capture portfolio artifacts without secrets.
+  rollback:
+    - Close demo page or CLI.
+    - Delete accidental sensitive captures.
+    - Prefer fixture route on public/untrusted Wi-Fi.
+evidence:
+  required_artifacts:
+    - observation / timing table
+    - path diagram (local/LAN/Internet + access + placement hypothesis)
+    - screenshot or fixture note proving which route was used
+    - reflection separating observation vs inference
+    - teach-back paragraph (Wi-Fi ≠ Internet ≠ cellular ≠ cloud)
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - browser instrumentation differs from kernel measurement
+    - access icons/bars are not RF root-cause evidence
+    - captive portals and filters can look like "Internet failure"
+    - one run is learning, not a published benchmark
+  uncertainty:
+    - software timestamps do not measure every physical hop
+    - edge vs cloud placement without provider evidence is inference
+    - PHYSICAL_PENDING for drive-test / Quartet RF claims
+    - EXTERNAL_DEPENDENCY when Route A uses live DNS/Internet
+portfolio:
+  outputs:
+    - README.md
+    - diagram
+    - observation / timing table
+    - evidence artifact or fixture note
+    - reflection
+    - teach-back paragraph
+teach_back:
+  required: true
+  prompt: "Explain Wi-Fi ≠ Internet ≠ cellular ≠ cloud, and why latency, reliability, and throughput feel different."
+routes:
+  A:
+    name: live_commodity_browser_or_cli
+    status: IMPLEMENTED_DIGITAL
+    dependency: EXTERNAL_DEPENDENCY
+  B:
+    name: fixture_fallback
+    status: FIXTURE_VALIDATED
+    files:
+      - fixtures/sample_path_trace.json
+      - fixtures/sample_timing_table.csv
+      - fixtures/sample_observation.md
+waike_adjacency:
+  note: Publication-owned lab; adjacent to COMPUTER_NETWORKING/lab_datapath and GENERAL_IT/lab_dns_hosts — not a WAIKE module ID.

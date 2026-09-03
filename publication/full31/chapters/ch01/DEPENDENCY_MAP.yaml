@@ -1,0 +1,23 @@
+schema_version: "1.0.0"
+chapter_id: CH01
+chapter_number: 1
+title: "Technology Is a System, Not a Screen"
+part: I
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  []
+inherits_from:
+  - "CE-1 package"
+feeds_later:
+  - "CH02"
+  - "CH03"
+  - "CH04"
+gate_dependencies:
+  - "Gate 3 reader evidence before canonical CE prose promotion"
+human_dependencies:
+  - "Teach-back clarity review after R1"
+physical_dependencies:
+  - "Device Quartet PHYSICAL_PENDING"
+ce_inheritance_note: "Link/inherit CE-1 preproduction rather than duplicating deep content. Full31 packet restates contracts for integrator merge."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

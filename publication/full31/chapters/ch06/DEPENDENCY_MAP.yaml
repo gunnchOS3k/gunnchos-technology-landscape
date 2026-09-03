@@ -1,0 +1,26 @@
+schema_version: "1.0.0"
+chapter_id: CH06
+chapter_number: 6
+title: "CPU, Instructions, and Parallel Work"
+part: II
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH02"
+  - "CH03"
+  - "CH05"
+inherits_from:
+  - "CE-3 CPU/parallel slices"
+  - "CH02 process/thread/CPU naming"
+feeds_later:
+  - "CH07"
+  - "CH12"
+gate_dependencies:
+  - "Global Gate 3"
+human_dependencies:
+  - "Keep parallel-work misconceptions checked"
+physical_dependencies:
+  - "Quartet CPU EVT PHYSICAL_PENDING"
+ce_inheritance_note: "Link CE-3 for CPU/parallel concepts; full-book Ch6 stays instruction/CPU/parallel focused—not full OS encyclopedia."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

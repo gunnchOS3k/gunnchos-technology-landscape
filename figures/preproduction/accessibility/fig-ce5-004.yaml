@@ -1,0 +1,29 @@
+figure_id: FIG-CE5-004
+title: Show what encryption can and cannot guarantee for user experience.
+caption: "Show what encryption can and cannot guarantee for user experience.. Encryption\
+  \ boundary sketch \u2014 transit, at rest, endpoint Truth: illustrative. Color is\
+  \ not the sole encoding."
+alt_text: Diagram of data encrypted between device and server, stored encrypted at
+  rest, then readable on an unlocked authenticated endpoint.
+text_equivalent: 'Diagram of data encrypted between device and server, stored encrypted
+  at rest, then readable on an unlocked authenticated endpoint. Reading order: Transit
+  encrypted; At rest encrypted; Endpoint readable; What encryption cannot guarantee.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Transit encrypted
+- At rest encrypted
+- Endpoint readable
+- What encryption cannot guarantee
+source: figures/preproduction/ce-05/fig-ce5-004.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

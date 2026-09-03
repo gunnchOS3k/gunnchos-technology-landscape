@@ -1,0 +1,12 @@
+phase,metric,value,unit,observation_or_inference,notes
+before,cpu_overall,,percent,observation,
+before,memory_used,,GB_or_percent,observation,
+before,disk_activity,,qualitative_or_percent,observation,
+during,cpu_overall,,percent,observation,
+during,memory_used,,GB_or_percent,observation,
+during,disk_activity,,qualitative_or_percent,observation,
+during,feel,,qualitative,observation,
+during,connectivity_icon,,qualitative,observation,
+optional_B,reopen_succeeded,,boolean,observation,
+optional_B,durability_forever,,boolean,inference,must remain labelled if claimed
+during,root_cause,,text,inference,upgrade criteria required

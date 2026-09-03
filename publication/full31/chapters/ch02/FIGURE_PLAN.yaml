@@ -1,0 +1,75 @@
+schema_version: "1.0.0"
+chapter_id: CH02
+chapter_number: 2
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+figures:
+- provisional_id: FIG-CH02-001
+  figure_type: system_map
+  pedagogical_purpose: "INHERIT — human to system."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH02-002
+  figure_type: sequence
+  pedagogical_purpose: "INHERIT — cross-layer sequence."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH02-003
+  figure_type: exploded
+  pedagogical_purpose: "INHERIT — device exploded."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH02-004
+  figure_type: architecture
+  pedagogical_purpose: "INHERIT — software stack."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH02-005
+  figure_type: comparative
+  pedagogical_purpose: "INHERIT — local vs network."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: illustrative
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH02-006
+  figure_type: architecture
+  pedagogical_purpose: "INHERIT — latency budget."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i
+- provisional_id: FIG-CH02-007
+  figure_type: contract
+  pedagogical_purpose: "INHERIT — Stability Contract."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_i

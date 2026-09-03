@@ -1,0 +1,27 @@
+figure_id: FIG-CE5-006
+title: Contrast felt reliability with controls and evidence.
+caption: 'Contrast felt reliability with controls and evidence.. Human trust vs technical
+  trust dual ledger Truth: illustrative. Color is not the sole encoding.'
+alt_text: Two-column ledger comparing feelings of trust with technical controls and
+  evidence artifacts.
+text_equivalent: 'Two-column ledger comparing feelings of trust with technical controls
+  and evidence artifacts. Reading order: Human trust feelings; Technical controls;
+  Evidence artifacts.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Human trust feelings
+- Technical controls
+- Evidence artifacts
+source: figures/preproduction/ce-05/fig-ce5-006.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

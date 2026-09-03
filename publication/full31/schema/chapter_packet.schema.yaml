@@ -1,0 +1,62 @@
+schema_id: full31-chapter-packet
+schema_version: "1.0.0"
+required_files:
+  - CHAPTER_BRIEF.md
+  - CONCEPT_GRAPH.yaml
+  - CLAIM_PLAN.yaml
+  - SOURCE_NEEDS.md
+  - FIGURE_PLAN.yaml
+  - LAB_OPPORTUNITIES.md
+  - GLOSSARY_CANDIDATES.yaml
+  - WAIKE_CROSSWALK.md
+  - DEPENDENCY_MAP.yaml
+chapter_brief_required_topics:
+  - reader_promise
+  - anchor_human_moment
+  - measurable_outcomes
+  - stability_contract
+  - security_equity_accessibility
+  - career_lens
+  - non_goals
+  - next_action
+chapter_brief_topic_matchers:
+  reader_promise:
+    - "reader promise"
+    - "primary reader promise"
+  anchor_human_moment:
+    - "anchor human moment"
+    - "experience-first opening"
+    - "human moment"
+    - "opening moment"
+  measurable_outcomes:
+    - "measurable outcomes"
+  stability_contract:
+    - "stability contract"
+  security_equity_accessibility:
+    - "security"
+    - "equity"
+    - "accessibility"
+    - "secure / include"
+    - "secure and include"
+  career_lens:
+    - "career lens"
+  non_goals:
+    - "non-goals"
+    - "explicit non-goals"
+  next_action:
+    - "next automatable"
+    - "next action"
+    - "integrator handoff"
+    - "handoff"
+source_needs_required_topics:
+  - identified
+  - gaps
+waike_allowed_relationships:
+  - exact
+  - adjacent
+  - proposed
+  - no-map
+  - no_map
+notes: >
+  PACKET_COMPLETE requires every required file to exist and pass semantic minimums
+  enforced by scripts/validate_full31.py.

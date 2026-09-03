@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+chapter_id: CH13
+figures:
+- provisional_id: FIG-CH13-001
+  figure_type: lifecycle_diagram
+  pedagogical_purpose: "Create to use to retain to share to delete/redact"
+  reader_should_notice: "Key teaching distinction for CH13."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH13-002
+  figure_type: comparative_layers
+  pedagogical_purpose: "App buffer to FS to device media to optional cloud replica"
+  reader_should_notice: "Key teaching distinction for CH13."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH13-003
+  figure_type: sequence_diagram
+  pedagogical_purpose: "Save click vs fsync/durability point"
+  reader_should_notice: "Key teaching distinction for CH13."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH13-004
+  figure_type: system_map
+  pedagogical_purpose: "File vs database responsibilities"
+  reader_should_notice: "Key teaching distinction for CH13."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

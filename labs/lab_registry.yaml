@@ -7,3 +7,68 @@ labs:
     extension_routes: [android]
     no_specialized_hardware: true
     status: draft
+  - lab_id: LAB-SYS-001
+    title: Name the System Behind a Familiar “Open”
+    chapter: CH01
+    path: labs/LAB-SYS-001
+    baseline_routes: [browser, local]
+    extension_routes: [fixture_offline]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+  - lab_id: LAB-CMS-001
+    title: Make Local Slowness Visible
+    chapter: CE-3
+    path: labs/LAB-CMS-001
+    baseline_routes: [commodity_computer, safe_cli_snapshot]
+    extension_routes: [fixture_fallback]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-PKT-001
+    title: Trace One Connected Action Across Path and Access
+    chapter: CE-4
+    path: labs/LAB-PKT-001
+    baseline_routes: [browser, cli, fixture]
+    extension_routes: []
+    no_specialized_hardware: true
+    status_labels:
+      - IMPLEMENTED_DIGITAL
+      - FIXTURE_VALIDATED
+      - PHYSICAL_PENDING
+      - EXTERNAL_DEPENDENCY
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-TRUST-001
+    title: Compare local vs remote AI paths and write a consent/trust card
+    chapter: CE-5
+    path: labs/LAB-TRUST-001
+    baseline_routes: [browser, local_app, fixture]
+    extension_routes: []
+    no_specialized_hardware: true
+    status_labels:
+      - IMPLEMENTED_DIGITAL
+      - FIXTURE_VALIDATED
+      - PHYSICAL_PENDING
+      - EXTERNAL_DEPENDENCY
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-CE06-001
+    title: Explain, Measure, Improve, and Teach One Real Technology Experience
+    chapter: CE-6
+    path: labs/LAB-CE06-001
+    baseline_routes: [notebook_status_ui, fixture_offline]
+    extension_routes: [browser_stall_demo]
+    no_specialized_hardware: true
+    status: FIXTURE_VALIDATED
+    fixture_available: true
+    emit_spine: [Explain, Measure, Improve, Teach]
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

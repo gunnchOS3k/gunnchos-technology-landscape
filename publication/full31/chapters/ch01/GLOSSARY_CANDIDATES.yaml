@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+chapter_id: CH01
+chapter_number: 1
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+candidates:
+- provisional_id: GLOSS-CH01-001
+  canonical_term: "visible interface"
+  plain_language_definition: "What the person can see/hear on the surface."
+  chapter_id: CH01
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH01-002
+  canonical_term: "hidden layers"
+  plain_language_definition: "Cooperating parts under the interface."
+  chapter_id: CH01
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH01-003
+  canonical_term: "technology ecosystem"
+  plain_language_definition: "Cooperating parts that produce a usable experience."
+  chapter_id: CH01
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH01-004
+  canonical_term: "failure domain"
+  plain_language_definition: "Bucket for where trouble may live."
+  chapter_id: CH01
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH01-005
+  canonical_term: "Device Quartet"
+  plain_language_definition: "Research form-factor learning laboratory (PHYSICAL_PENDING)."
+  chapter_id: CH01
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 

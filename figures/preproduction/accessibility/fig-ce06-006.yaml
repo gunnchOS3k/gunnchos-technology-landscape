@@ -1,0 +1,28 @@
+figure_id: FIG-CE06-006
+title: Map logs, metrics, and traces (conceptually) onto Stability Contract conditions.
+caption: 'Map logs, metrics, and traces (conceptually) onto Stability Contract conditions..
+  Different signals illuminate different conditions; no single signal is omniscient.
+  Truth: conceptual. Color is not the sole encoding.'
+alt_text: Explain each signal type and which conditions it can support.
+text_equivalent: 'Explain each signal type and which conditions it can support. Reading
+  order: Logs; Metrics; Traces; Condition chips.
+
+  Evidence: OpenTelemetry Signals concepts (analogy)
+
+  Geometry intent: Three signal columns overlapping condition chips; Explorer callout:
+  DevTools/status can substitute.'
+reading_order:
+- Logs
+- Metrics
+- Traces
+- Condition chips
+source: figures/preproduction/ce-06/fig-ce06-006.svg
+evidence_note: OpenTelemetry Signals concepts (analogy)
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Column headers + icons with text.
+reviewer: pending-human-visual-review
+version: 0.1.0

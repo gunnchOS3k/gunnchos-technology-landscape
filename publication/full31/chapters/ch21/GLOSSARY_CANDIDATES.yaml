@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+chapter_id: CH21
+glossary_candidates:
+- term_id: GL-CH21-DATA
+  preferred_term: Training and input data
+  plain_language_definition: Examples/records used to fit a model or answer a question.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-DATA
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH21-MODEL
+  preferred_term: Model parameters
+  plain_language_definition: Stored numbers shaping inputs→outputs; not a mind.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-MODEL
+  - CX-CH21-DATA
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH21-INFERENCE
+  preferred_term: Inference / output
+  plain_language_definition: Running a model on new inputs to produce a prediction or generation.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-INFERENCE
+  - CX-CH21-MODEL
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH21-GENAI
+  preferred_term: Generative AI (systems view)
+  plain_language_definition: Systems that produce new text/images/code by predicting likely continuations.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-GENAI
+  - CX-CH21-INFERENCE
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH21-UNCERTAINTY
+  preferred_term: Uncertainty and errors
+  plain_language_definition: Outputs can be wrong or incomplete even when fluent.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-UNCERTAINTY
+  - CX-CH21-GENAI
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH21-LOCALCLOUD
+  preferred_term: Local vs cloud AI
+  plain_language_definition: Whether inference runs on-device or on remote computers.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-LOCALCLOUD
+  - CX-CH21-INFERENCE
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH21-EVAL
+  preferred_term: Evaluation under uncertainty
+  plain_language_definition: Checking usefulness with labeled observations and limits.
+  introduced_in: CH21
+  related_concepts:
+  - CX-CH21-EVAL
+  - CX-CH21-UNCERTAINTY
+  status: candidate
+  promotion: pending_integrator

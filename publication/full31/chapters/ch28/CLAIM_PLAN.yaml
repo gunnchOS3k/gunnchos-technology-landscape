@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+chapter_id: CH28
+claims:
+- provisional_id: CLM-CH28-001
+  text: WAIKE catalog course_id reproducible_research exists as an adjacent track;
+    it is not an exact CH28 twin module.
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-WAIKE
+  overclaim_risk: 'prohibited: invent digital_twin WAIKE course ID'
+  wording_boundary: 'approved: adjacent catalog track | prohibited: invent digital_twin
+    WAIKE course ID'
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    source_id: SRC-WAIKE
+- provisional_id: CLM-CH28-002
+  text: Primary digital twin standards (e.g., ISO twin vocabulary) require verification
+    before citation.
+  claim_class: standards_based
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: 'prohibited: fake ISO numbers'
+  wording_boundary: 'approved: SOURCE_NEEDED | prohibited: fake ISO numbers'
+- provisional_id: CLM-CH28-003
+  text: Device Quartet digital twins as measured validation of physical units remain
+    PHYSICAL_PENDING.
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - SRC-HARDWARE
+  overclaim_risk: 'prohibited: measured product twin claims'
+  wording_boundary: 'approved: conceptual twin pedagogy | prohibited: measured product
+    twin claims'
+- provisional_id: CLM-CH28-004
+  text: Publication fixtures across CE labs are illustrative/deterministic teaching
+    aids unless labeled measured.
+  claim_class: publication_internal
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: ILLUSTRATIVE_ONLY
+  citation_keys: []
+  overclaim_risk: 'prohibited: fixture equals physical proof'
+  wording_boundary: 'approved: fixture teaching | prohibited: fixture equals physical
+    proof | illustrative teaching model only; not measured/general product fact'

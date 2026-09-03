@@ -1,0 +1,44 @@
+schema_version: "1.0.0"
+chapter_id: CH07
+chapter_number: 7
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH07-001
+  text: "Registers/cache/RAM/storage form a hierarchy with different roles; RAM is not the same as durable storage."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH07-002
+  text: "Caches exploit locality to reduce average access time; misses cost time."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH07-003
+  text: "Memory pressure can degrade experience even when connectivity appears healthy."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH07-004
+  text: "Device Quartet RAM/storage capacity figures requiring physical validation remain PHYSICAL_PENDING."
+  claim_class: project_specific
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - src-hardware-quartet
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 

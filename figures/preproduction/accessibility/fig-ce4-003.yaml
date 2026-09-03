@@ -1,0 +1,35 @@
+figure_id: FIG-CE4-003
+title: Separate Wi-Fi access, cellular access, and Internet backbone as different
+  boxes.
+caption: 'Separate Wi-Fi access, cellular access, and Internet backbone as different
+  boxes.. Wi-Fi and cellular are on-ramps; cloud is placement of service, not an access
+  radio. Truth: conceptual. Color is not the sole encoding.'
+alt_text: Explicit statement that branches are alternatives/complements, not identical
+text_equivalent: 'Explicit statement that branches are alternatives/complements, not
+  identical Reading order: User device; Wi-Fi AP; Cellular RAN/core; Internet path;
+  Edge; Cloud.
+
+  Evidence: IEEE 802.11 family (Wi-Fi LAN); 3GPP TS 23.501 family (5G system architecture
+  survey); NIST cloud definition
+
+  Geometry intent: Left: user device; two access branches (Wi-Fi AP, cellular RAN/core
+  simplified); right: Internet path to edge node and cloud region'
+reading_order:
+- User device
+- Wi-Fi AP
+- Cellular RAN/core
+- Internet path
+- Edge
+- Cloud
+source: figures/preproduction/ce-04/fig-ce4-003.svg
+evidence_note: IEEE 802.11 family (Wi-Fi LAN); 3GPP TS 23.501 family (5G system architecture
+  survey); NIST cloud definition
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Distinct line styles (solid/dashed/dotted) per access
+  type
+reviewer: pending-human-visual-review
+version: 0.1.0

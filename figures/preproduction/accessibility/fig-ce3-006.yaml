@@ -1,0 +1,24 @@
+figure_id: FIG-CE3-006
+title: Save buffer vs durable file
+caption: 'Save buffer vs durable file. Quit+reopen outcome differs if durability incomplete
+  Truth: conceptual. Color is not the sole encoding.'
+alt_text: 'FIG-CE3-006: Save buffer vs durable file. Educational diagram.'
+text_equivalent: 'FIG-CE3-006: Save buffer vs durable file. Educational diagram. Reading
+  order: RAM working set (volatile); Storage file object (durable).
+
+  Evidence: illustrative_lab
+
+  Geometry intent: Two panels: RAM working set vs storage file object.'
+reading_order:
+- RAM working set (volatile)
+- Storage file object (durable)
+source: figures/preproduction/ce-03/fig-ce3-006.svg
+evidence_note: illustrative_lab
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

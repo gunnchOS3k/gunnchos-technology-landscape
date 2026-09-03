@@ -1,0 +1,27 @@
+figure_id: FIG-CE06-002
+title: Show connected status chrome vs usable experience divergence.
+caption: 'Show connected status chrome vs usable experience divergence.. Green connected
+  indicators can coexist with stalled human outcomes. Truth: conceptual. Color is
+  not the sole encoding.'
+alt_text: Describe both columns and the contradiction explicitly.
+text_equivalent: 'Describe both columns and the contradiction explicitly. Reading
+  order: Status indicators; Experience timeline; Observation vs inference.
+
+  Evidence: Illustrative teaching scenario
+
+  Geometry intent: Two columns: Status indicators (connected) vs Experience timeline
+  (stall/fail); annotations for observation vs inference.'
+reading_order:
+- Status indicators
+- Experience timeline
+- Observation vs inference
+source: figures/preproduction/ce-06/fig-ce06-002.svg
+evidence_note: Illustrative teaching scenario
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-status-vs-usable-experience
+color_independent_encoding: Checkmark/cross glyphs + text; avoid green/red-only.
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,35 @@
+schema_version: "1.0.0"
+chapter_id: CH06
+chapter_number: 6
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+figures:
+- provisional_id: FIG-CH06-001
+  figure_type: system_map
+  pedagogical_purpose: "App → process/threads → scheduler → cores/accelerator."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH06-002
+  figure_type: timeline
+  pedagogical_purpose: "Single-thread vs parallelizable work."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: illustrative
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii
+- provisional_id: FIG-CH06-003
+  figure_type: comparative
+  pedagogical_purpose: "CPU-bound vs waiting-on-I/O symptoms."
+  reader_should_notice: "Experience-first structure; conceptual unless labeled measured."
+  data_or_evidence_source: "Preproduction intent only; no fabricated telemetry."
+  truth_classification: conceptual
+  expected_geometry: "Clear left-to-right or layered reading order."
+  accessibility_description_requirement: "Alt text must list nodes/steps in reading order and state truth classification."
+  color_independent_encoding: "Shape + label + stroke pattern; do not rely on color alone."
+  edition_scope: full31_part_ii

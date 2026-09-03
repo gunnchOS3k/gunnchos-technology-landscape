@@ -1,0 +1,171 @@
+schema_version: 1.0.0
+chapter_id: CH13
+edition_scope: full_edition
+concepts:
+- concept_id: file
+  canonical_term: File
+  plain_language_definition: Named durable byte sequence abstraction provided by an
+    OS/filesystem.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating File as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: filesystem
+  canonical_term: Filesystem
+  plain_language_definition: Organization of files/directories on storage with metadata
+    and durability rules.
+  depends_on:
+  - file
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Filesystem as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: database
+  canonical_term: Database
+  plain_language_definition: Structured durable store with query/consistency models
+    beyond a single file blob.
+  depends_on:
+  - file
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Database as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: durability
+  canonical_term: Durability
+  plain_language_definition: "Promise that committed data survives crashes/power loss\u2014\
+    within stated assumptions."
+  depends_on:
+  - filesystem
+  - database
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Durability as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: consistency-model
+  canonical_term: Consistency model (intro)
+  plain_language_definition: "Rules for when readers see writers' updates\u2014especially\
+    \ across replicas/sync."
+  depends_on:
+  - database
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Consistency model (intro) as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: data-lifecycle
+  canonical_term: Data lifecycle
+  plain_language_definition: Collect/create to use to retain to share to delete/redact
+    over time.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Data lifecycle as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: cache-vs-durable
+  canonical_term: Cache vs durable store
+  plain_language_definition: Fast temporary copies can lie about durability until
+    flushed.
+  depends_on:
+  - durability
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Cache vs durable store as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: deletion
+  canonical_term: Deletion / redaction
+  plain_language_definition: "Removing or limiting recoverability of data\u2014policy\
+    \ and mechanism differ."
+  depends_on:
+  - data-lifecycle
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Deletion / redaction as the whole story instead of
+    one cooperating part of the experience.

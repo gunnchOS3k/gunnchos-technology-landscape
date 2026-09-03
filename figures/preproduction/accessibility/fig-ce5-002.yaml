@@ -1,0 +1,28 @@
+figure_id: FIG-CE5-002
+title: Compare on-device inference vs remote API for privacy, latency, dependency.
+caption: "Compare on-device inference vs remote API for privacy, latency, dependency..\
+  \ Local vs cloud AI \u2014 same question, different boundaries Truth: illustrative.\
+  \ Color is not the sole encoding."
+alt_text: 'Two parallel paths for answering a question: one staying on the device,
+  one crossing the network to a remote model service.'
+text_equivalent: 'Two parallel paths for answering a question: one staying on the
+  device, one crossing the network to a remote model service. Reading order: Same
+  question; On-device path; Remote API path.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Same question
+- On-device path
+- Remote API path
+source: figures/preproduction/ce-05/fig-ce5-002.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

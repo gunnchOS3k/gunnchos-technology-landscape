@@ -1,0 +1,27 @@
+figure_id: FIG-CE3-003
+title: "Instruction \u2192 schedule \u2192 execute \u2192 result path (accessible)"
+caption: "Instruction \u2192 schedule \u2192 execute \u2192 result path (accessible).\
+  \ Scheduler chooses who runs', 'App instructions still execute on the CPU/accelerator\
+  \ Truth: conceptual. Color is not the sole encoding."
+alt_text: "FIG-CE3-003: Instruction \u2192 schedule \u2192 execute \u2192 result path\
+  \ (accessible). Educational diagram."
+text_equivalent: "FIG-CE3-003: Instruction \u2192 schedule \u2192 execute \u2192 result\
+  \ path (accessible). Educational diagram. Reading order: App thread; Scheduler;\
+  \ CPU; Memory; UI feedback.\nEvidence: tanenbaum-bos / linux-scheduler (concept-level)\n\
+  Geometry intent: Swimlanes: App thread | Scheduler | CPU | Memory | UI feedback."
+reading_order:
+- App thread
+- Scheduler
+- CPU
+- Memory
+- UI feedback
+source: figures/preproduction/ce-03/fig-ce3-003.svg
+evidence_note: tanenbaum-bos / linux-scheduler (concept-level)
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,68 @@
+schema_version: 1.0.0
+chapter_id: CH11
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH11-001
+  text: Firmware initializes and configures hardware so later software can treat devices
+    as usable abstractions.
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  - saltzer-kaashoek
+  overclaim_risk: Do not claim a specific SoC bring-up sequence as universal.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH11-002
+  text: Boot is an ordered trust and capability handoff, not a single mysterious moment
+    when the OS appears.
+  claim_class: general_technical
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  overclaim_risk: Avoid vendor-specific boot timelines as universal facts.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH11-003
+  text: Secure boot is a policy intent to constrain what may run; presence of the
+    feature name is not proof of a measured trust guarantee for a reader's device.
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: Need standards/docs (e.g., UEFI Secure Boot overview) before numeric
+    or product claims.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH11-004
+  text: Attestation and measured boot are evidence mechanisms distinct from UI lock
+    screens; they are not interchangeable with entering a PIN.
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: Prefer TCG/IETF attestation overviews; no fabricated attestations.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH11-005
+  text: Device Quartet boot/firmware behavior remains PHYSICAL_PENDING until hardware-repo
+    evidence exists; treat as research form factors only.
+  claim_class: project_specific
+  status: PHYSICAL_PENDING
+  citation_keys: []
+  overclaim_risk: Do not invent EVT boot timings.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH11-006
+  text: "Failed or interrupted firmware updates can leave a device in recovery or\
+    \ unusable states\u2014an experience Stability Contract failure."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: Prefer vendor update documentation + textbook recovery discussion.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.

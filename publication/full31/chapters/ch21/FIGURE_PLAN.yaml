@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH21
+figures:
+- provisional_id: FIG-CH21-001
+  figure_type: diagram
+  pedagogical_purpose: Data → model → inference → output path without anthropomorphizing
+  reader_should_notice: Data → model → inference → output path without anthropomorphizing
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Data → model → inference → output path without anthropomorphizing; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH21-002
+  figure_type: layered comparison
+  pedagogical_purpose: Local vs cloud AI boundaries (privacy/latency/control)
+  reader_should_notice: Local vs cloud AI boundaries (privacy/latency/control)
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Local vs cloud AI boundaries (privacy/latency/control); color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH21-003
+  figure_type: hierarchy
+  pedagogical_purpose: "Uncertainty: fluency vs correctness vs evaluation evidence"
+  reader_should_notice: "Uncertainty: fluency vs correctness vs evaluation evidence"
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: "Describe Uncertainty: fluency vs correctness vs evaluation evidence; color never sole cue."
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

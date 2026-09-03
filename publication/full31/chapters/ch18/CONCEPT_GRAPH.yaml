@@ -1,0 +1,148 @@
+schema_version: 1.0.0
+chapter_id: CH18
+edition_scope: full_edition
+concepts:
+- concept_id: spectrum
+  canonical_term: Spectrum
+  plain_language_definition: Frequency resources used by radio systems, regulated
+    and shared.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Spectrum as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: antenna
+  canonical_term: Antenna
+  plain_language_definition: Transducer between circuits and radiated waves; patterns
+    matter.
+  depends_on:
+  - spectrum
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Antenna as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: path-loss
+  canonical_term: Path loss (intro)
+  plain_language_definition: Tendency for received power to drop with distance/obstacles.
+  depends_on:
+  - spectrum
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Path loss (intro) as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: interference
+  canonical_term: Interference
+  plain_language_definition: Unwanted energy degrading a desired link.
+  depends_on:
+  - spectrum
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Interference as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: mimo
+  canonical_term: MIMO (survey)
+  plain_language_definition: Using multiple antennas to send/receive spatial streams.
+  depends_on:
+  - antenna
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating MIMO (survey) as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: beamforming
+  canonical_term: Beamforming / beams (survey)
+  plain_language_definition: Directing energy/sensitivity preferentially in space.
+  depends_on:
+  - antenna
+  - mimo
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Beamforming / beams (survey) as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: radio-condition
+  canonical_term: Radio condition
+  plain_language_definition: Time-varying state of the wireless channel affecting
+    links.
+  depends_on:
+  - path-loss
+  - interference
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+  likely_misconception: Treating Radio condition as the whole story instead of one
+    cooperating part of the experience.

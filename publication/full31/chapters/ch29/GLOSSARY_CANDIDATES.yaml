@@ -1,0 +1,47 @@
+schema_version: 1.0.0
+chapter_id: CH29
+glossary_candidates:
+- term_id: GL-CH29-PRODUCT
+  preferred_term: Complete technology product
+  plain_language_definition: "Experience + stack + evidence + responsibility, not UI alone."
+  introduced_in: CH29
+  related_concepts:
+  - CX-CH29-PRODUCT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH29-GATES
+  preferred_term: Design gates
+  plain_language_definition: Checks that must pass before claiming ship/usable.
+  introduced_in: CH29
+  related_concepts:
+  - CX-CH29-GATES
+  - CX-CH29-PRODUCT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH29-EVIDENCE-PLAN
+  preferred_term: Evidence plan
+  plain_language_definition: What will be measured/tested before claims.
+  introduced_in: CH29
+  related_concepts:
+  - CX-CH29-EVIDENCE-PLAN
+  - CX-CH29-GATES
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH29-TRADEOFF
+  preferred_term: Explicit tradeoffs
+  plain_language_definition: "Latency, cost, privacy, power, inclusion named together."
+  introduced_in: CH29
+  related_concepts:
+  - CX-CH29-TRADEOFF
+  - CX-CH29-PRODUCT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH29-CLAIM-BOUNDARY
+  preferred_term: Claim boundary
+  plain_language_definition: What the product may assert given evidence state.
+  introduced_in: CH29
+  related_concepts:
+  - CX-CH29-CLAIM-BOUNDARY
+  - CX-CH29-EVIDENCE-PLAN
+  status: candidate
+  promotion: pending_integrator

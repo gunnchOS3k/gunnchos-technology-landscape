@@ -1,0 +1,22 @@
+schema_id: full31-figure-plan
+schema_version: "1.0.0"
+inherits_semantics_from: publication/preproduction/schema/figure_plan.schema.yaml
+top_level_collection: figures
+required_figure_fields:
+  - provisional_id
+  - figure_type
+  - pedagogical_purpose
+  - truth_classification
+minimum_figures_or_explicit_none: true
+explicit_none_fields:
+  - no_figures_reason
+  - explicit_none_reason
+  - none_reason
+allowed_truth_classification:
+  - conceptual
+  - illustrative
+  - measured
+  - project_specific
+  - mixed
+notes: >
+  At least one useful figure opportunity OR an explicit reason none is required.

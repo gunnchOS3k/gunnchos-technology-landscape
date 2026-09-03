@@ -1,0 +1,123 @@
+schema_version: 1.0.0
+chapter_id: CH28
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
+concepts:
+- concept_id: CX-CH28-SIM
+  canonical_term: Simulation
+  plain_language_definition: A computational stand-in for selected real behaviors.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Simulation as the whole story instead of one cooperating
+    part of the experience.
+- concept_id: CX-CH28-TWIN
+  canonical_term: Digital twin (teaching sense)
+  plain_language_definition: A maintained model paired to a real or planned system
+    with update/validity rules.
+  depends_on:
+  - CX-CH28-SIM
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Digital twin (teaching sense) as the whole story
+    instead of one cooperating part of the experience.
+- concept_id: CX-CH28-REPRO
+  canonical_term: Reproducible research
+  plain_language_definition: Others can regenerate results from declared inputs and
+    environment.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Reproducible research as the whole story instead
+    of one cooperating part of the experience.
+- concept_id: CX-CH28-BOUNDS
+  canonical_term: Validity bounds
+  plain_language_definition: "Where the model is trusted\u2014and where it is not."
+  depends_on:
+  - CX-CH28-SIM
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Validity bounds as the whole story instead of one
+    cooperating part of the experience.
+- concept_id: CX-CH28-FIXTURE
+  canonical_term: Fixture
+  plain_language_definition: Deterministic teaching/measurement stand-in when live
+    systems vary.
+  depends_on:
+  - CX-CH28-REPRO
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+  likely_misconception: Treating Fixture as the whole story instead of one cooperating
+    part of the experience.
+edges:
+- from: CX-CH28-SIM
+  to: CX-CH28-TWIN
+  relation: may_specialize
+- from: CX-CH28-SIM
+  to: CX-CH28-BOUNDS
+  relation: requires
+- from: CX-CH28-REPRO
+  to: CX-CH28-FIXTURE
+  relation: often_uses
+- from: CX-CH28-TWIN
+  to: CX-CH28-BOUNDS
+  relation: constrained_by
+inherits_from:
+- CE-6 measurement/limitations habits
+- reproducible_research catalog adjacency

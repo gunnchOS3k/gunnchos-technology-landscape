@@ -1,0 +1,11 @@
+phase,metric,value,unit,observation_or_inference,notes
+before,cpu_overall,8,percent,observation,FIG-CE3-009 synthetic baseline
+before,memory_used,6.2,GB,observation,of 16 GB total RAM
+before,disk_activity,idle,qualitative,observation,near-zero persistent storage traffic
+during,cpu_overall,41,percent,observation,rise during local scroll/open
+during,memory_used,6.9,GB,observation,RAM rose; headroom remained
+during,disk_activity,brief_spike,qualitative,observation,short burst then settle
+during,feel,brief_stutter,qualitative,observation,human-experienced hitch
+during,root_cause_cpu_bound,true,boolean,inference,LABELLED INFERENCE — needs more evidence for causation
+during,thrashing,false,boolean,inference,swap unused in fixture; do not claim thrashing
+during,thermal_throttle_celsius,,celsius,inference,NOT CLAIMED — no sensor evidence

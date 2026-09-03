@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="FIG-CE06-004-title FIG-CE06-004-desc" data-figure-id="FIG-CE06-004" data-truth-classification="conceptual" data-template="tmpl-layered-comparison" data-qualification="">
+  <title id="FIG-CE06-004-title">FIG-CE06-004: Where time and failure can accumulate; teach labeling discipline.</title>
+  <desc id="FIG-CE06-004-desc">State that numbers are illustrative unless labeled measured; provide table equivalent. Reading order: input; local work; optional network/service; render; display. Where time and failure can accumulate; teach labeling discipline. Segments are placeholders until learner measures; connected≠done. Truth: conceptual. Color is not the sole encoding.</desc>
+  <rect width="960" height="360" fill="#ffffff" />
+  <rect x="1" y="1" width="958" height="358" fill="none" stroke="#222222" stroke-width="2" />
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE06-004 — Where time and failure can accumulate; teach labeling discipline.</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Illustrative bands only unless replaced by learner LAB data</text><text x="24" y="340" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Where time and failure can accumulate; teach labeling discipline.</text><rect x="40" y="160" width="140" height="70" fill="#f0f0f0" stroke="#111111" stroke-width="1.75" />
+<text x="110.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">input</text>
+<text x="110.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">placeholder</text>
+<rect x="180" y="160" width="180" height="70" fill="#e4e4e4" stroke="#111111" stroke-width="1.75" />
+<text x="270.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">local work</text>
+<text x="270.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">placeholder</text>
+<rect x="360" y="160" width="200" height="70" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
+<text x="460.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">opt. network</text>
+<text x="460.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">placeholder</text>
+<rect x="560" y="160" width="160" height="70" fill="#e4e4e4" stroke="#111111" stroke-width="1.75" />
+<text x="640.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">render</text>
+<text x="640.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">placeholder</text>
+<rect x="720" y="160" width="180" height="70" fill="#e4e4e4" stroke="#111111" stroke-width="1.75" />
+<text x="810.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">display</text>
+<text x="810.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">placeholder</text>
+<text x="40" y="280" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Legend: pattern = illustrative/placeholder until learner measures. Connected ≠ done. No fake numbers.</text>
+  </svg>
