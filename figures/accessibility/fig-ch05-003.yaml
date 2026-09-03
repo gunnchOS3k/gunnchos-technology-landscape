@@ -1,0 +1,15 @@
+figure_id: FIG-CH05-003
+title: "Clock Edges Sequencing Decisions"
+caption: "Illustrative clock edges marking when a digital signal is sampled. Teaching sketch only."
+alt_text: "Timing diagram with a clock waveform and a data waveform; arrows at selected edges mark sample times."
+text_equivalent: |
+  Top: clock waveform with three rising edges labeled sample (dashed vertical markers).
+  Bottom: data waveform alternating low/high. No numeric frequency or period claimed.
+reading_order:
+  - "Clock trace left to right"
+  - "Sample markers at rising edges"
+  - "Data trace left to right"
+source: figures/sequence/fig-ch05-003-clock-edges.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

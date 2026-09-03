@@ -116,3 +116,27 @@ figures:
     accessibility: figures/accessibility/fig-ch04-003.yaml
     status: conceptual
     chapter: CH04
+  - figure_id: FIG-CH05-001
+    title: "Press to Logic Flow"
+    path: figures/ecosystem/fig-ch05-001-press-to-logic.svg
+    accessibility: figures/accessibility/fig-ch05-001.yaml
+    status: conceptual
+    chapter: CH05
+  - figure_id: FIG-CH05-002
+    title: "Analog versus Digital"
+    path: figures/architecture/fig-ch05-002-analog-vs-digital.svg
+    accessibility: figures/accessibility/fig-ch05-002.yaml
+    status: conceptual
+    chapter: CH05
+  - figure_id: FIG-CH05-003
+    title: "Clock Edges Sequencing Decisions"
+    path: figures/sequence/fig-ch05-003-clock-edges.svg
+    accessibility: figures/accessibility/fig-ch05-003.yaml
+    status: illustrative
+    chapter: CH05
+  - figure_id: FIG-CH05-004
+    title: "Logic Building Blocks"
+    path: figures/architecture/fig-ch05-004-logic-blocks.svg
+    accessibility: figures/accessibility/fig-ch05-004.yaml
+    status: conceptual
+    chapter: CH05

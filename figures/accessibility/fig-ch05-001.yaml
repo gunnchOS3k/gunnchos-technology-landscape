@@ -1,0 +1,18 @@
+figure_id: FIG-CH05-001
+title: "Press to Logic Flow"
+caption: "Human press through electrical change, signal, clocked logic, and perceptible effect. Conceptual educational diagram."
+alt_text: "Left-to-right causal flow: Press; Electrical change; Signal; Clocked logic; Effect."
+text_equivalent: |
+  Five stages left to right: (1) Press — human action; (2) Electrical — voltage/energy;
+  (3) Signal — information over time; (4) Clocked logic — timed decisions (dashed border for sync path);
+  (5) Effect — person notices. Solid arrows connect stages. Not measured Device Quartet telemetry.
+reading_order:
+  - "1 Press"
+  - "2 Electrical"
+  - "3 Signal"
+  - "4 Clocked logic"
+  - "5 Effect"
+source: figures/ecosystem/fig-ch05-001-press-to-logic.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"
