@@ -1,0 +1,65 @@
+# CE-3 Learning Objectives — measurable by pathway
+# Status: preproduction proposal (chapter-local). Not Gate 3 PASS.
+
+chapter_id: CE-3
+maps_to: [CH06, CH07, CH12]
+teaching_model: "Human experience → system → component → code → network → society"
+anchor_experience: "local_lag_with_healthy_connectivity_icon"
+
+objectives:
+  explorer:
+    - id: LO-CE3-EX-01
+      statement: "Given a local stutter/hang moment with a healthy network icon, name at least four cooperating parts (app work, OS scheduling, CPU or accelerator, memory, storage, power/thermal) in ordinary language."
+      evidence_of_learning: "Labeled sketch or two-column list: what I felt ↔ hidden parts."
+    - id: LO-CE3-EX-02
+      statement: "Explain the difference between RAM and storage using one everyday save/reopen example."
+      evidence_of_learning: "Teach-back paragraph that states volatility vs persistence without calling them interchangeable."
+    - id: LO-CE3-EX-03
+      statement: "State why 'more cores' does not guarantee a faster experience for every task."
+      evidence_of_learning: "One counterexample scenario (single-threaded wait, storage-bound save, thermal limit) marked as illustration, not measured claim."
+
+  operator:
+    - id: LO-CE3-OP-01
+      statement: "On a commodity device, run a guided before/during monitor snapshot (CPU, memory, disk) for one controlled local action and record observations."
+      evidence_of_learning: "Observation table with timestamps, monitor readings, and observation-vs-inference labels."
+    - id: LO-CE3-OP-02
+      statement: "Map two distinct symptoms to a likely failure domain (CPU-bound, memory pressure, storage I/O, scheduler contention, thermal/power) without asserting proven root cause."
+      evidence_of_learning: "Two symptom→domain tickets with required next evidence listed."
+    - id: LO-CE3-OP-03
+      statement: "Identify whether a hung save is more consistent with volatile working memory vs persistent storage behavior using reopen-after-quit checks."
+      evidence_of_learning: "Checklist result: data present/absent after quit+reopen, plus inference note."
+
+  builder:
+    - id: LO-CE3-BU-01
+      statement: "Construct a personal memory-hierarchy and process map for one chosen local experience, including at least one OS abstraction (process, thread, file, or scheduler)."
+      evidence_of_learning: "Diagram or structured Markdown/YAML map with labeled layers."
+    - id: LO-CE3-BU-02
+      statement: "Modify a simple local workload or configuration (e.g., open-document count, export quality, background sync toggle) and document one observed tradeoff."
+      evidence_of_learning: "Before/after observation notes + tradeoff sentence (quality vs time, offline cache vs storage)."
+
+  engineer:
+    - id: LO-CE3-EN-01
+      statement: "Propose a diagnosis plan that separates CPU utilization, memory pressure, and storage I/O waits using commodity tools, citing what would be needed to claim causation."
+      evidence_of_learning: "Diagnosis plan with ordered inspections and claim-upgrade criteria."
+    - id: LO-CE3-EN-02
+      statement: "Relate CE-3 concepts to at least two textbook or living-doc abstractions (instruction execution, memory hierarchy, process/thread, scheduling, file system) with citation keys—no invented measurements."
+      evidence_of_learning: "Mapping table: concept ↔ abstraction ↔ citation key."
+    - id: LO-CE3-EN-03
+      statement: "Explain CPU vs accelerator/GPU role for one workload class without claiming the OS itself performs the accelerated math."
+      evidence_of_learning: "Short role card: who issues work, who executes kernels/shaders, who schedules/mediates."
+
+  researcher:
+    - id: LO-CE3-RE-01
+      statement: "State a testable hypothesis about local responsiveness under two controlled load conditions (e.g., idle baseline vs intentional background CPU or I/O load)."
+      evidence_of_learning: "Hypothesis + variables + planned N runs + explicit limits (not a published benchmark)."
+    - id: LO-CE3-RE-02
+      statement: "Document confounders (thermal state, background updates, battery mode, other users/processes) and what evidence would upgrade an illustrative claim to measured."
+      evidence_of_learning: "Claim triage note with status change criteria."
+
+  educator:
+    - id: LO-CE3-ED-01
+      statement: "Facilitate a 10–15 minute misconception check covering RAM≠storage, cores≠always-faster, and OS-schedules-but-does-not-do-all-app-work."
+      evidence_of_learning: "Facilitation notes + three probe questions + expected wrong answers."
+    - id: LO-CE3-ED-02
+      statement: "Adapt LAB-CMS-001 for a no-specialized-hardware classroom including offline/fixture screenshots and accessibility alternatives to color-only charts."
+      evidence_of_learning: "Adapted lab sheet with fallback route and accessibility notes."

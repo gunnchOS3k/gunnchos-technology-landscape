@@ -1,0 +1,89 @@
+# CE-5 Learning Objectives (preproduction)
+# Status: scaffold — objectives for eventual prose/labs; not assessment-complete.
+chapter_id: CE-5
+maps_to: [CH21, CH23, CH24]
+taxonomy_version: 1
+pathways: [explorer, operator, builder, engineer, researcher, educator]
+
+objectives:
+  - id: LO-CE5-01
+    text: "Describe an everyday AI or login/permission moment in ordinary language, then name the hidden layers that made it possible."
+    bloom: understand
+    pathway_emphasis: [explorer, educator]
+    anatomy_sections: [1, 2, 3]
+    evidence_artifact: "experience journal entry (observation only)"
+
+  - id: LO-CE5-02
+    text: "Trace a simplified path from input data (or prompt) through model/parameters to inference output, without claiming the model 'knows' or 'understands'."
+    bloom: apply
+    pathway_emphasis: [explorer, builder, engineer]
+    anatomy_sections: [4, 5]
+    evidence_artifact: "labeled signal-path diagram (text or figure worksheet)"
+
+  - id: LO-CE5-03
+    text: "Compare local and cloud AI inference on latency, privacy exposure, dependency, and update/control tradeoffs using observations—not invented benchmarks."
+    bloom: analyze
+    pathway_emphasis: [operator, engineer, researcher]
+    anatomy_sections: [6, 7]
+    evidence_artifact: "LAB-TRUST-001 comparison table"
+
+  - id: LO-CE5-04
+    text: "Separate model fluency from correctness; classify statements as observation, interpretation, or causal claim requiring more evidence."
+    bloom: evaluate
+    pathway_emphasis: [researcher, educator, explorer]
+    anatomy_sections: [11]
+    evidence_artifact: "misconception checklist + teach-back"
+
+  - id: LO-CE5-05
+    text: "Map attack surfaces to user-visible experience (permissions, sessions, prompts, updates) rather than listing threats in isolation."
+    bloom: analyze
+    pathway_emphasis: [operator, engineer]
+    anatomy_sections: [9]
+    evidence_artifact: "UX-linked threat notes (no exploit steps)"
+
+  - id: LO-CE5-06
+    text: "Distinguish identity, authentication, and authorization with a concrete access decision example."
+    bloom: understand
+    pathway_emphasis: [operator, builder, engineer]
+    anatomy_sections: [5, 8]
+    evidence_artifact: "authn/authz decision card"
+
+  - id: LO-CE5-07
+    text: "Explain encryption goals and limits at systems level (confidentiality in transit/at rest vs. endpoint trust, key handling, and metadata)."
+    bloom: understand
+    pathway_emphasis: [explorer, engineer]
+    anatomy_sections: [5, 9]
+    evidence_artifact: "encryption boundary sketch"
+
+  - id: LO-CE5-08
+    text: "Outline a privacy/data lifecycle for an AI or account feature: collect, use, retain, share, delete/redact—and identify who can decide each stage."
+    bloom: apply
+    pathway_emphasis: [builder, educator, operator]
+    anatomy_sections: [4, 9]
+    evidence_artifact: "consent/lifecycle card"
+
+  - id: LO-CE5-09
+    text: "Contrast human trust (felt reliability) with technical trust (controls, evidence, and failure modes), including accessibility and equity impacts."
+    bloom: evaluate
+    pathway_emphasis: [educator, researcher, explorer]
+    anatomy_sections: [6, 9, 10]
+    evidence_artifact: "trust dual-ledger worksheet"
+
+  - id: LO-CE5-10
+    text: "Propose a responsible-use practice (disclosure, consent, least privilege, or redaction) and state what evidence would show it worked."
+    bloom: create
+    pathway_emphasis: [builder, engineer, educator]
+    anatomy_sections: [8, 10, 11]
+    evidence_artifact: "portfolio responsible-use note"
+
+misconceptions_to_address:
+  - "The model understands me like a person."
+  - "A confident answer is a correct answer."
+  - "HTTPS means nobody can ever see or reuse my data."
+  - "Signing in proves I am allowed to do anything in the app."
+  - "Security is only about hackers, not everyday usability or inclusion."
+  - "AI is inherently safe / inherently unsafe."
+
+assessment_note: >
+  Formal assessment items are deferred. Preproduction defines objective → artifact links only.
+  No invented quiz scores or pass rates.

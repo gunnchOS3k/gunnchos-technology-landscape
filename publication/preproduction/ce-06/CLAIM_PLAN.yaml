@@ -1,0 +1,172 @@
+# CE-6 Claim Plan (pre-prose)
+
+chapter: CE-6
+status: preproduction
+rules:
+  - "No invented measurements, MOS scores, or product benchmarks."
+  - "No fabricated hardware validation."
+  - "Project-specific claims must cite accepted-main SHA evidence."
+  - "Chapter-local only; integrator promotes to shared claim registry."
+
+claims:
+
+  - provisional_id: CLM-CE06-001
+    claim_text: >
+      The Stability Contract teaching definition — a user experience exists only
+      while multiple hidden technical conditions remain within acceptable bounds —
+      is a publication signature concept (not an ITU term).
+    claim_class: illustrative
+    evidence_required: "PEDAGOGICAL_CONTRACT.md + CH02 prototype wording consistency"
+    preferred_source_type: "publication internal"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Readers may treat the phrase as an ITU standard name."
+    wording_boundary: "Call it the book's teaching model; do not attribute the phrase to ITU."
+
+  - provisional_id: CLM-CE06-002
+    claim_text: >
+      A system can remain technically connected while the human experience has
+      already failed.
+    claim_class: general technical
+    evidence_required: "Pedagogical demonstration + ordinary engineering practice; optional lab observation"
+    preferred_source_type: "publication pedagogy + learner observation"
+    status: ILLUSTRATIVE_ONLY
+    overclaim_risk: "Stating universal frequency/statistics of such failures."
+    wording_boundary: "Teach as a distinction and failure mode class, not a measured incidence rate."
+
+  - provisional_id: CLM-CE06-003
+    claim_text: >
+      ITU-T P.10/G.100 provides vocabulary associating Quality of Experience (QoE)
+      with the degree of delight or annoyance of the user of an application or service
+      (see in-force Recommendation text / widely cited 2017 consolidation).
+    claim_class: standards-based
+    evidence_required: "ITU-T Recommendation P.10/G.100 page + verified definition wording"
+    preferred_source_type: "standards/specifications"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Quoting superseded Appendix-I-only wording as if it were the only definition ever used."
+    wording_boundary: "Cite recommendation identity; note vocabulary evolves; do not invent page numbers."
+
+  - provisional_id: CLM-CE06-004
+    claim_text: >
+      QoE and QoS are related but not identical: QoS concerns service characteristics
+      bearing on ability to satisfy user needs; QoE concerns user delight/annoyance
+      (per ITU-T vocabulary).
+    claim_class: standards-based
+    evidence_required: "ITU-T P.10/G.100 definitions for QoE and QoS"
+    preferred_source_type: "standards/specifications"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Claiming that meeting any particular QoS KPI guarantees QoE."
+    wording_boundary: "Teach distinction; forbid KPI→delight entailment without evidence."
+
+  - provisional_id: CLM-CE06-005
+    claim_text: >
+      ITU-T G.1011 (in force 07/2016) is a reference guide to QoE assessment
+      methodologies and distinguishes subjective assessment from objective estimation models.
+    claim_class: standards-based
+    evidence_required: "ITU-T G.1011 recommendation status page"
+    preferred_source_type: "standards/specifications"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Implying CE-6 labs are full G.1011 subjective test campaigns."
+    wording_boundary: "Use as hierarchy/context only; learner labs remain commodity observation."
+
+  - provisional_id: CLM-CE06-006
+    claim_text: >
+      Browser-exposed Performance API interfaces can provide learner-visible timing
+      instrumentation for some web experiences.
+    claim_class: general technical
+    evidence_required: "MDN Performance API documentation"
+    preferred_source_type: "official technical documentation"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Claiming Performance API measures every physical/OS stage."
+    wording_boundary: "Software timestamps; platform-dependent; not full-stack truth."
+
+  - provisional_id: CLM-CE06-007
+    claim_text: >
+      OpenTelemetry conceptual documentation describes telemetry signals including
+      traces, metrics, and logs as complementary views of system behavior.
+    claim_class: general technical
+    evidence_required: "opentelemetry.io Signals documentation"
+    preferred_source_type: "official technical documentation"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Requiring OpenTelemetry installation for Explorer pathway."
+    wording_boundary: "Concept analogy for observability; Explorer may use DevTools/status only."
+
+  - provisional_id: CLM-CE06-008
+    claim_text: >
+      WCAG 2.2 is a W3C Recommendation (12 December 2024) providing web content
+      accessibility guidelines; this publication uses it for intent and teaching,
+      not as a claim of product certification.
+    claim_class: standards-based
+    evidence_required: "https://www.w3.org/TR/WCAG22/"
+    preferred_source_type: "standards/specifications"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Claiming gunnchOS/WAIKE/book web edition is WCAG certified."
+    wording_boundary: "Accessibility intent + checklist practice only."
+
+  - provisional_id: CLM-CE06-009
+    claim_text: >
+      WAIKE accepted main hosts file-backed curriculum packages and lab validators
+      (dual catalog + digital_rc ID systems); it does not currently ship a module ID
+      literally named for the book's Stability Contract or EMIT capstone.
+    claim_class: project-specific
+    evidence_required: "waike-research-ops accepted main SHA tree + catalog/digital_rc listing"
+    preferred_source_type: "accepted-main repository evidence"
+    status: PROJECT_EVIDENCE_NEEDED
+    overclaim_risk: "Inventing a WAIKE course/module ID for CE-6."
+    wording_boundary: "Map adjacent competencies only; record SHA; mark exact/adjacent/proposed/no-map."
+
+  - provisional_id: CLM-CE06-010
+    claim_text: >
+      WAIKE documents phone-first, offline-friendly, and low-cost learning intent;
+      accessibility checklist items in-repo are not fully completed and must not be
+      narrated as certification.
+    claim_class: project-specific
+    evidence_required: "ACCESSIBILITY_AND_LOW_COST.md at audited SHA"
+    preferred_source_type: "accepted-main repository evidence"
+    status: PROJECT_EVIDENCE_NEEDED
+    overclaim_risk: "Overstating completed accessibility implementation."
+    wording_boundary: "Design principles / intent; incomplete checklist explicit."
+
+  - provisional_id: CLM-CE06-011
+    claim_text: >
+      Publication-owned LAB-CE06-001 is the Concept Edition capstone lab; it is not
+      a renamed WAIKE lab ID.
+    claim_class: illustrative
+    evidence_required: "This chapter-local LAB_PLAN.md + WAIKE crosswalk non-mapping"
+    preferred_source_type: "publication internal"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Presenting LAB-CE06-001 as upstream WAIKE curriculum."
+    wording_boundary: "Publication-owned; WAIKE adjacency only."
+
+  - provisional_id: CLM-CE06-012
+    claim_text: >
+      Device Quartet form factors may appear as optional educational context in
+      CE-6 career/equity discussion but remain PHYSICAL_PENDING research form factors
+      (not required lab hardware).
+    claim_class: project-specific
+    evidence_required: "SRC-HARDWARE accepted-main audit already in publication evidence/"
+    preferred_source_type: "accepted-main repository evidence"
+    status: PHYSICAL_PENDING
+    overclaim_risk: "Requiring Device Quartet hardware for capstone completion."
+    wording_boundary: "Optional analogy only; commodity fallback mandatory."
+
+  - provisional_id: CLM-CE06-013
+    claim_text: >
+      Any numeric latency/reliability bands shown in CE-6 figures prior to learner
+      measurement are illustrative teaching aids, not measured gunnchOS benchmarks.
+    claim_class: illustrative
+    evidence_required: "Figure plan truth classification"
+    preferred_source_type: "publication internal"
+    status: ILLUSTRATIVE_ONLY
+    overclaim_risk: "Readers treating illustrative bands as product claims."
+    wording_boundary: "Mandatory illustrative/measured/inferred labels."
+
+  - provisional_id: CLM-CE06-014
+    claim_text: >
+      Capstone completion means supported artifacts for Explain, Measure, Improve,
+      and Teach — not a bare command exit code or the string PASS.
+    claim_class: illustrative
+    evidence_required: "PEDAGOGICAL_CONTRACT WAIKE evidence rule + LAB_PLAN portfolio section"
+    preferred_source_type: "publication internal"
+    status: SOURCE_IDENTIFIED
+    overclaim_risk: "Equating tool installation with mastery."
+    wording_boundary: "Artifact-backed completion only."

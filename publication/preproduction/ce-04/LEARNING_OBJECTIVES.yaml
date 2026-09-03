@@ -1,0 +1,62 @@
+# CE-4 Learning Objectives — measurable by pathway
+# Status: preproduction proposal (chapter-local). Not Gate 3 PASS.
+
+chapter_id: CE-4
+maps_to: [CH15, CH16, CH17, CH18]
+teaching_model: "Human experience → system → component → code → network → society"
+anchor_experience: "connected_sync_stalls_or_recovers_across_path_or_access_change"
+
+objectives:
+  explorer:
+    - id: LO-CE4-EX-01
+      statement: "Given a familiar send/sync moment, label whether work is likely local-only, LAN-local, or Internet-reaching using ordinary language."
+      evidence_of_learning: "Three-column map (local / LAN / Internet) tied to one lived experience."
+    - id: LO-CE4-EX-02
+      statement: "State one sentence each distinguishing Wi-Fi, cellular, the Internet, and cloud placement without treating them as synonyms."
+      evidence_of_learning: "Four-definition teach-back card with at least one contrast example."
+    - id: LO-CE4-EX-03
+      statement: "Identify a symptom where a connectivity icon stays positive while the human experience fails."
+      evidence_of_learning: "Written example with observation vs inference labels."
+
+  operator:
+    - id: LO-CE4-OP-01
+      statement: "On a commodity device, compare the same action on Wi-Fi vs cellular (or online vs offline/fixture) and record what changed in the experience."
+      evidence_of_learning: "Observation table: condition, visible cue, outcome, timestamp source."
+    - id: LO-CE4-OP-02
+      statement: "Separate latency-like stalls, reliability-like retries/failures, and throughput-like long transfers for two incidents without claiming root cause certainty."
+      evidence_of_learning: "Two tickets tagged latency|reliability|throughput with evidence cited."
+    - id: LO-CE4-OP-03
+      statement: "Name the access network in use and whether a gateway/DNS step was involved for one successful path (using OS/browser indicators or fixture notes)."
+      evidence_of_learning: "Path checklist completed for Route A or Route B."
+
+  builder:
+    - id: LO-CE4-BU-01
+      statement: "Construct a labeled packet-path diagram for one experience including headers-as-sticky-notes, a next-hop/gateway, and an edge-or-cloud placement hypothesis."
+      evidence_of_learning: "Diagram or structured Markdown with named hops and placement note."
+    - id: LO-CE4-BU-02
+      statement: "Modify a provided fixture or template (hosts file story, timing table, or crafted datapath JSON fields) and document one tradeoff (detail vs privacy/safety)."
+      evidence_of_learning: "Edited artifact + tradeoff note; no capture of secrets."
+
+  engineer:
+    - id: LO-CE4-EN-01
+      statement: "Propose a diagnosis plan that distinguishes access-network issues, name resolution, routing/reachability, transport/retries, and remote-service placement before blaming 'the Wi-Fi.'"
+      evidence_of_learning: "Ordered diagnosis plan with observation vs causal-claim gates."
+    - id: LO-CE4-EN-02
+      statement: "Map CE-4 concepts to at least two cited abstractions (e.g., IP datagram, TCP, NIST cloud/edge definitions) without inventing measurements."
+      evidence_of_learning: "Mapping table: concept ↔ abstraction ↔ citation key."
+
+  researcher:
+    - id: LO-CE4-RE-01
+      statement: "State a testable hypothesis about sync completion under two controlled connectivity conditions (e.g., Wi-Fi vs cellular, or online vs fixture-only)."
+      evidence_of_learning: "Hypothesis + variables + planned N runs + explicit non-benchmark limits."
+    - id: LO-CE4-RE-02
+      statement: "Document what evidence would be required to upgrade an illustrative latency/reliability claim to a measured claim, including confounders (clock granularity, caching, server load)."
+      evidence_of_learning: "Claim triage note with status-change criteria."
+
+  educator:
+    - id: LO-CE4-ED-01
+      statement: "Facilitate a 10–15 minute misconception check that Wi-Fi ≠ Internet ≠ cellular ≠ cloud."
+      evidence_of_learning: "Facilitation notes + three probe questions + expected wrong answers."
+    - id: LO-CE4-ED-02
+      statement: "Adapt LAB-PKT-001 for a no-specialized-hardware classroom including the offline/fixture fallback and an accessibility path."
+      evidence_of_learning: "Adapted lab sheet with fallback route and a11y notes."

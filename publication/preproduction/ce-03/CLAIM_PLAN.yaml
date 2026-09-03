@@ -1,0 +1,160 @@
+# CE-3 Claim Plan — factual claims before prose
+# Status: preproduction proposal (chapter-local). No invented measurements.
+
+chapter_id: CE-3
+maps_to: [CH06, CH07, CH12]
+
+claims:
+  - provisional_id: CLM-CE3-001
+    text: "A CPU executes program instructions; application logic runs on processors under OS mediation rather than being wholly performed by the OS itself."
+    claim_class: general_technical
+    evidence_required: "Standard OS/architecture textbook treatment of user mode vs kernel services and scheduling."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [tanenbaum-bos, silberschatz-galvin-gagne, linux-scheduler]
+    overclaim_risk: "Wording that 'the OS runs the app' as if kernel code replaces user computation."
+    wording_boundary: "Say schedule/mediate/provide services—not 'the OS does the app's work'."
+
+  - provisional_id: CLM-CE3-002
+    text: "Registers, caches, main memory (RAM), and secondary storage form a memory hierarchy with different capacity, latency, and volatility/durability properties."
+    claim_class: general_technical
+    evidence_required: "Architecture textbook hierarchy chapters."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [patterson-hennessy-riscv]
+    overclaim_risk: "Numeric latency tables presented as measured on reader devices."
+    wording_boundary: "Qualitative ordering OK; device-specific timings require measurement bundles."
+
+  - provisional_id: CLM-CE3-003
+    text: "RAM is volatile working memory under normal power-off conditions; storage is the ordinary durable home for files— these layers are not interchangeable."
+    claim_class: general_technical
+    evidence_required: "Architecture + OS textbook treatment of main memory vs secondary storage; JEDEC DRAM context as standards backdrop for 'main memory' devices."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [patterson-hennessy-riscv, tanenbaum-bos, jedec-jesd79-4d]
+    overclaim_risk: "Ignoring NVRAM/persistent-memory edge cases; ignoring that caches/buffers can delay durability."
+    wording_boundary: "Teach ordinary personal-computing case; note write-back/crash caveats without claiming forensics expertise."
+
+  - provisional_id: CLM-CE3-004
+    text: "Processes and threads are OS abstractions for concurrent execution; the scheduler allocates processor time among runnable entities."
+    claim_class: general_technical
+    evidence_required: "OS textbook + living kernel scheduler documentation."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [tanenbaum-bos, silberschatz-galvin-gagne, linux-scheduler]
+    overclaim_risk: "Describing one vendor scheduler algorithm as universal law."
+    wording_boundary: "Concept-level scheduling; Linux docs as one concrete living example."
+
+  - provisional_id: CLM-CE3-005
+    text: "Adding CPU cores can improve throughput for parallelizable work but does not guarantee lower latency for every user interaction."
+    claim_class: general_technical
+    evidence_required: "Architecture discussion of parallelism limits / Amdahl-style intuition without fake speedup percentages."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [patterson-hennessy-riscv]
+    overclaim_risk: "Invented speedup curves or 'N cores ⇒ N× faster UX'."
+    wording_boundary: "Qualitative: depends on workload parallelism, contention, and other bottlenecks."
+
+  - provisional_id: CLM-CE3-006
+    text: "GPUs and other accelerators execute specialized parallel workloads; host software and OS/device interfaces still orchestrate submission and resource sharing."
+    claim_class: general_technical
+    evidence_required: "Architecture DSA/GPU overview; optional Khronos API living docs for 'how software talks to GPU' at accessible depth."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [patterson-hennessy-riscv, khronos-vulkan-overview]
+    overclaim_risk: "Anthropomorphizing GPUs as independently 'understanding' tasks."
+    wording_boundary: "Role split: CPU orchestration + accelerator execution for suited kernels."
+
+  - provisional_id: CLM-CE3-007
+    text: "Files are OS-managed durable objects; completing a durable save can require storage I/O beyond keeping data in RAM."
+    claim_class: general_technical
+    evidence_required: "OS textbook file-system chapter."
+    preferred_source_type: textbook
+    status: SOURCE_IDENTIFIED
+    sources: [tanenbaum-bos, silberschatz-galvin-gagne]
+    overclaim_risk: "Guaranteeing durability semantics of every consumer app autosave."
+    wording_boundary: "Distinguish buffer vs durable write at concept level."
+
+  - provisional_id: CLM-CE3-008
+    text: "Human-visible local lag can arise from CPU contention, memory pressure, storage I/O wait, scheduling competition, or power/thermal limits—even when a connectivity icon appears healthy."
+    claim_class: illustrative
+    evidence_required: "Pedagogical synthesis tied to lab observations; not a universal measured distribution."
+    preferred_source_type: explanatory_plus_lab
+    status: ILLUSTRATIVE_ONLY
+    sources: [lab-cms-001-plan]
+    overclaim_risk: "Presenting classroom anecdotes as statistically general."
+    wording_boundary: "Use as diagnosis hypothesis set; require observation/inference labels."
+
+  - provisional_id: CLM-CE3-009
+    text: "Power and thermal management can reduce available performance to protect the device and stay within budgets."
+    claim_class: general_technical
+    evidence_required: "Living OS/power documentation and/or architecture power discussion; qualitative only in CE-3."
+    preferred_source_type: official_technical_documentation
+    status: SOURCE_IDENTIFIED
+    sources: [linux-cpu-freq, patterson-hennessy-riscv]
+    overclaim_risk: "Invented temperature thresholds or battery-minute claims."
+    wording_boundary: "Qualitative throttling/governor concept; platform-specific UI may vary."
+
+  - provisional_id: CLM-CE3-010
+    text: "gunnchOS Device Quartet documents define research form factors / learning benchmarks that are concept-complete with physical validation still pending."
+    claim_class: project_specific
+    evidence_required: "Accepted-main hardware industrial-design audit artifacts."
+    preferred_source_type: repository_implemented
+    status: PROJECT_EVIDENCE_NEEDED
+    sources: [src-hardware]
+    project_sha_at_plan: "9ee0ef2f688b2c18428bfabc316b23687a02988d"
+    overclaim_risk: "Treating comparison-matrix RAM/storage targets as measured shipping specs."
+    wording_boundary: "Representative educational architecture / PHYSICAL_PENDING."
+
+  - provisional_id: CLM-CE3-011
+    text: "gunnchOS device OS accepted main provides an alpha digital experience layer with claim boundaries; it is not a shipping kernel/init OS and must not be cited as proof of production process scheduling on hardware."
+    claim_class: project_specific
+    evidence_required: "Accepted-main device-os WHAT_IS_REAL_TODAY / claim boundaries."
+    preferred_source_type: repository_implemented
+    status: PROJECT_EVIDENCE_NEEDED
+    sources: [src-device-os]
+    project_sha_at_plan: "28562a8456207540c205a1c8a6434a491b0a4771"
+    overclaim_risk: "Calling device-os a complete operating system teaching substitute for Linux/Windows/Android internals."
+    wording_boundary: "Optional adjacent illustration only; commodity OS monitors remain primary lab substrate."
+
+  - provisional_id: CLM-CE3-012
+    text: "WAIKE accepted main hosts file-backed courses with adjacent labs (e.g., MCU memory map, storage triage, power budget) but no exact CE-3 'local lag diagnosis' course module ID."
+    claim_class: project_specific
+    evidence_required: "WAIKE catalog/digital_rc listing at audited SHA."
+    preferred_source_type: repository_implemented
+    status: SOURCE_IDENTIFIED
+    sources: [src-waike]
+    project_sha_at_plan: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+    overclaim_risk: "Inventing a WAIKE module ID named for LAB-CMS-001."
+    wording_boundary: "Adjacent alignment only; publication-owned lab ID."
+
+  - provisional_id: CLM-CE3-013
+    text: "DDR4 SDRAM devices are specified by JEDEC JESD79-4 family documents (revision D published July 2021 at audit time)."
+    claim_class: standards_based
+    evidence_required: "JEDEC publication record for JESD79-4D."
+    preferred_source_type: standards
+    status: SOURCE_IDENTIFIED
+    sources: [jedec-jesd79-4d]
+    overclaim_risk: "Implying all reader devices use DDR4 specifically."
+    wording_boundary: "Example of main-memory device standards; hierarchy teaching does not depend on one DRAM generation."
+
+  - provisional_id: CLM-CE3-014
+    text: "NVMe is an industry interface for accessing non-volatile memory over PCI Express used by many modern SSDs; exact revision claims require citing a specific NVMe Base Specification version."
+    claim_class: standards_based
+    evidence_required: "NVM Express published base specification version page."
+    preferred_source_type: standards
+    status: SOURCE_NEEDED
+    sources: [nvme-base-spec]
+    overclaim_risk: "Inventing revision numbers or performance claims."
+    wording_boundary: "Until revision pinned, speak of NVMe as named interface class with living standards home at nvmexpress.org."
+
+deferred_measurements:
+  - id: MEAS-CE3-PENDING-01
+    description: "Controlled local responsiveness study across devices with disclosed thermal/battery confounders."
+    status: measured_later
+    blocker: "No CE-3 measurement bundle yet; LAB-CMS-001 is observation-first."
+
+  - id: MEAS-CE3-PENDING-02
+    description: "Physical EVT thermal/power curves for Device Quartet form factors."
+    status: PHYSICAL_PENDING
+    blocker: "Hardware repo PHYSICAL_PENDING / DIGITAL_FABRICATION_PASS=FALSE."

@@ -1,0 +1,224 @@
+# CE-6 Concept Graph (prerequisite-aware)
+
+chapter: CE-6
+status: preproduction
+note: "Chapter-local proposals only. Integrator merges into shared glossary/concept registries."
+
+concepts:
+
+  - concept_id: CE06-C-STABILITY-CONTRACT
+    canonical_term: "Stability Contract"
+    plain_language_definition: >
+      A user experience exists only while multiple hidden technical conditions
+      remain within acceptable bounds at the same time.
+    depends_on: [CE06-C-CONCURRENT-CONDITIONS, CE06-C-CONNECTED-VS-USABLE]
+    introduced_here: false
+    reinforced_here: true
+    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
+    likely_misconception: "The contract is just a latency number."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+    notes: "Introduced in CE-2/CH02; CE-6 formalizes teaching model + synthesis."
+
+  - concept_id: CE06-C-CONCURRENT-CONDITIONS
+    canonical_term: "Concurrent hidden conditions"
+    plain_language_definition: >
+      Multiple independent technical conditions (input delivery, scheduling,
+      memory, network/service, render, power, trust, accessibility path, etc.)
+      that must stay good enough together for the experience to succeed.
+    depends_on: []
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [explorer, operator, engineer, educator]
+    likely_misconception: "Fixing one condition always restores the experience."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+
+  - concept_id: CE06-C-CONNECTED-VS-USABLE
+    canonical_term: "Connected versus usable"
+    plain_language_definition: >
+      Link or service indicators can report connectivity while the human-facing
+      experience has already failed.
+    depends_on: []
+    introduced_here: false
+    reinforced_here: true
+    reader_pathways: [explorer, operator, engineer, educator]
+    likely_misconception: "Green status chrome equals success."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+
+  - concept_id: CE06-C-QOE
+    canonical_term: "Quality of Experience (QoE)"
+    plain_language_definition: >
+      Standards vocabulary for the degree of delight or annoyance of a user of
+      an application or service; distinct from raw network probes.
+    depends_on: [CE06-C-CONNECTED-VS-USABLE]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [operator, engineer, researcher, educator]
+    likely_misconception: "QoE is the same as ping or bandwidth."
+    glossary_candidate: true
+    requires_citation: true
+    requires_figure: true
+    requires_lab: false
+    citation_hint: "ITU-T P.10/G.100 vocabulary"
+
+  - concept_id: CE06-C-QOS
+    canonical_term: "Quality of Service (QoS)"
+    plain_language_definition: >
+      Characteristics of a telecommunications service that bear on its ability
+      to satisfy stated and implied user needs; related to but not identical with QoE.
+    depends_on: [CE06-C-QOE]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [engineer, researcher]
+    likely_misconception: "Meeting a QoS metric guarantees good QoE."
+    glossary_candidate: true
+    requires_citation: true
+    requires_figure: false
+    requires_lab: false
+    citation_hint: "ITU-T P.10/G.100 vocabulary"
+
+  - concept_id: CE06-C-CROSS-LAYER-DIAGNOSIS
+    canonical_term: "Cross-layer failure diagnosis"
+    plain_language_definition: >
+      Structured practice of assigning symptoms to candidate layers/domains and
+      seeking boundary evidence before declaring root cause.
+    depends_on: [CE06-C-CONCURRENT-CONDITIONS, CE06-C-OBS-VS-INFERENCE]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [operator, builder, engineer, researcher, educator]
+    likely_misconception: "The first plausible layer is the cause."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+
+  - concept_id: CE06-C-EVIDENCE-HIERARCHY
+    canonical_term: "Evidence hierarchy"
+    plain_language_definition: >
+      Ordered strength of support: illustrative teaching aid → single-device
+      observation → repeated/commodity measurement → correlated multi-signal
+      evidence → standards-aligned QoE assessment methods.
+    depends_on: [CE06-C-OBS-VS-INFERENCE]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [builder, engineer, researcher, educator]
+    likely_misconception: "Any screenshot is top-tier evidence."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+
+  - concept_id: CE06-C-OBS-VS-INFERENCE
+    canonical_term: "Observation versus inference"
+    plain_language_definition: >
+      What was directly seen or recorded versus what is hypothesized; causal
+      claims need extra evidence.
+    depends_on: []
+    introduced_here: false
+    reinforced_here: true
+    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
+    likely_misconception: "Interpretation equals observation."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: false
+    requires_lab: true
+
+  - concept_id: CE06-C-OBSERVABILITY
+    canonical_term: "Observability"
+    plain_language_definition: >
+      Ability to understand system behavior from external signals such as logs,
+      metrics, and traces — without claiming a specific vendor stack is required.
+    depends_on: [CE06-C-EVIDENCE-HIERARCHY]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [operator, builder, engineer, researcher]
+    likely_misconception: "Observability means installing one proprietary APM."
+    glossary_candidate: true
+    requires_citation: true
+    requires_figure: true
+    requires_lab: true
+    citation_hint: "OpenTelemetry signals concepts (traces, metrics, logs)"
+
+  - concept_id: CE06-C-TRADEOFFS
+    canonical_term: "Experience tradeoffs"
+    plain_language_definition: >
+      Improving one contract dimension (e.g., richer telemetry, stronger checks,
+      higher fidelity media) can worsen others (privacy, latency, cost, inclusion).
+    depends_on: [CE06-C-STABILITY-CONTRACT]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [builder, engineer, researcher, educator]
+    likely_misconception: "More telemetry always improves the experience."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+
+  - concept_id: CE06-C-EQUITY-A11Y-CONSEQUENCE
+    canonical_term: "Equity and accessibility consequence"
+    plain_language_definition: >
+      Contract failures and design assumptions can exclude people by device cost,
+      network quality, disability, language, or offline constraints.
+    depends_on: [CE06-C-STABILITY-CONTRACT, CE06-C-TRADEOFFS]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [explorer, educator, engineer, researcher]
+    likely_misconception: "If it works on the author's device, the contract is met."
+    glossary_candidate: true
+    requires_citation: true
+    requires_figure: false
+    requires_lab: true
+    citation_hint: "WCAG 2.2 for accessibility intent; WAIKE accessibility principles for phone-first/low-cost"
+
+  - concept_id: CE06-C-CAPSTONE-EMIT
+    canonical_term: "Explain–Measure–Improve–Teach"
+    plain_language_definition: >
+      Capstone spine: explain the ecosystem, measure what you can, propose an
+      improvement with evidence criteria, and teach another person.
+    depends_on: [CE06-C-STABILITY-CONTRACT, CE06-C-EVIDENCE-HIERARCHY, CE06-C-CROSS-LAYER-DIAGNOSIS]
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [explorer, operator, builder, engineer, researcher, educator]
+    likely_misconception: "Capstone is only a long essay without artifacts."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: true
+    requires_lab: true
+
+  - concept_id: CE06-C-TEACH-BACK
+    canonical_term: "Teach-back"
+    plain_language_definition: >
+      Learner restates the model in their own words to demonstrate transfer,
+      not memorization of slogans.
+    depends_on: [CE06-C-CAPSTONE-EMIT]
+    introduced_here: false
+    reinforced_here: true
+    reader_pathways: [explorer, educator]
+    likely_misconception: "Teach-back is optional decoration."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: false
+    requires_lab: true
+
+  - concept_id: CE06-C-PORTFOLIO-PROOF
+    canonical_term: "Portfolio proof"
+    plain_language_definition: >
+      Durable artifacts (tables, diagrams, redacted evidence, reflection,
+      teach-back) that support claims — not a bare PASS string.
+    depends_on: [CE06-C-EVIDENCE-HIERARCHY, CE06-C-TEACH-BACK]
+    introduced_here: false
+    reinforced_here: true
+    reader_pathways: [builder, engineer, researcher, educator]
+    likely_misconception: "Running a command equals completion."
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: false
+    requires_lab: true

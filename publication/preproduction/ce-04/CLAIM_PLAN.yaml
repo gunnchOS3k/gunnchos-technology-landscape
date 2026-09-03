@@ -1,0 +1,157 @@
+# CE-4 Claim Plan — factual claims before prose
+# Status: preproduction proposal (chapter-local). No invented measurements.
+
+chapter_id: CE-4
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+
+claims:
+  - provisional_id: CLM-CE4-001
+    claim_text: "IPv4 defines a datagram (packet) model with header fields including source/destination addresses, protocol, and TTL."
+    claim_class: standards-based
+    evidence_required: "Primary RFC text for Internet Protocol."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc791]
+    overclaim_risk: "Implying IPv4 is the only Internet network protocol in use."
+    wording_boundary: "Say 'classic IPv4 datagram model' and note IPv6 as parallel modern network-layer standard."
+
+  - provisional_id: CLM-CE4-002
+    claim_text: "IPv6 is specified as the Internet Protocol version 6 standard (RFC 8200)."
+    claim_class: standards-based
+    evidence_required: "RFC 8200."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc8200]
+    overclaim_risk: "Claiming CE-4 teaches full IPv6 deployment engineering."
+    wording_boundary: "Survey existence and address-size difference; no invented adoption percentages."
+
+  - provisional_id: CLM-CE4-003
+    claim_text: "TCP provides a connection-oriented byte-stream transport service with sequenced data and acknowledgment-based recovery mechanisms as specified in RFC 9293."
+    claim_class: standards-based
+    evidence_required: "RFC 9293."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc9293]
+    overclaim_risk: "Claiming TCP makes the physical medium lossless."
+    wording_boundary: "Emphasize end-to-end recovery attempt over unreliable IP delivery."
+
+  - provisional_id: CLM-CE4-004
+    claim_text: "UDP provides a minimal message-oriented transport without TCP-style connection reliability machinery (RFC 768)."
+    claim_class: standards-based
+    evidence_required: "RFC 768."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc768]
+    overclaim_risk: "Saying UDP is 'unreliable' as a moral judgment rather than a service model."
+    wording_boundary: "Describe service properties; applications may add their own reliability."
+
+  - provisional_id: CLM-CE4-005
+    claim_text: "DNS defines concepts for domain names and resolution (RFC 1034/1035)."
+    claim_class: standards-based
+    evidence_required: "RFC 1034 and RFC 1035."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc1034, rfc1035]
+    overclaim_risk: "Claiming every failure with a hostname is DNS without evidence."
+    wording_boundary: "Present DNS as a common dependency on named Internet paths."
+
+  - provisional_id: CLM-CE4-006
+    claim_text: "RFC 1918 reserves IPv4 address blocks for private internets, commonly used behind gateways/NAT on LANs."
+    claim_class: standards-based
+    evidence_required: "RFC 1918; NAT discussion may cite informational RFC 3022 historically and modern practice carefully."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc1918, rfc3022]
+    overclaim_risk: "Claiming RFC 3022 is the sole modern NAT standard of record for all deployments."
+    wording_boundary: "Teach private addressing as a LAN reality; describe NAT as common middlebox behavior without over-precise vendor claims."
+
+  - provisional_id: CLM-CE4-007
+    claim_text: "IEEE 802.11 is the standards family underlying Wi-Fi wireless LAN technologies."
+    claim_class: standards-based
+    evidence_required: "IEEE 802.11 working group / standards pages."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [ieee80211-wg, ieee80211-2020]
+    overclaim_risk: "Equating a specific Wi-Fi Alliance certification mark with all 802.11 behavior; inventing amendment performance numbers."
+    wording_boundary: "Wi-Fi is access technology for wireless LAN; not synonymous with Internet."
+
+  - provisional_id: CLM-CE4-008
+    claim_text: "3GPP specifies a 5G System architecture (TS 23.501) distinct from IEEE 802.11 Wi-Fi LAN access."
+    claim_class: standards-based
+    evidence_required: "3GPP specification record for TS 23.501 (portal entry verified)."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [threegpp-ts23501]
+    overclaim_risk: "Teaching full 5G/6G protocol stacks or claiming commercial 6G availability."
+    wording_boundary: "Cellular access is a distinct operator-oriented architecture family; CE-4 stays at concept survey depth."
+
+  - provisional_id: CLM-CE4-009
+    claim_text: "NIST SP 800-145 defines cloud computing via on-demand network access to a shared pool of configurable computing resources, with listed essential characteristics and service/deployment models."
+    claim_class: standards-based
+    evidence_required: "NIST SP 800-145 (Sep 2011)."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [nist-sp800-145]
+    overclaim_risk: "Equating 'cloud' with any remote website without the NIST characteristics."
+    wording_boundary: "Use NIST definition as the chapter's cloud anchor; brand names are examples only."
+
+  - provisional_id: CLM-CE4-010
+    claim_text: "NIST SP 500-325 describes a fog computing conceptual model related to distributing compute/storage/networking closer to users/things (edge-adjacent framing)."
+    claim_class: standards-based
+    evidence_required: "NIST SP 500-325 (March 2018)."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [nist-sp500-325]
+    overclaim_risk: "Claiming a single universal industry definition of 'edge' identical to NIST fog nodes."
+    wording_boundary: "Teach placement tradeoffs; cite NIST fog model as one rigorous conceptual source."
+
+  - provisional_id: CLM-CE4-011
+    claim_text: "Browser developer tools can expose network request timing phases useful for classroom observation of connectivity-dependent pages."
+    claim_class: general technical
+    evidence_required: "MDN Network Monitor / Resource Timing documentation."
+    preferred_source_type: official technical documentation
+    status: SOURCE_IDENTIFIED
+    citation_keys: [mdn-network-monitor, mdn-resource-timing]
+    overclaim_risk: "Treating browser timings as kernel-level or RF measurements."
+    wording_boundary: "Label as browser-visible timings with confounders."
+
+  - provisional_id: CLM-CE4-012
+    claim_text: "WAIKE accepted main hosts a COMPUTER_NETWORKING digital_rc course including offline-gradable labs such as lab_datapath for crafted Ethernet/IPv4 forwarding reasoning."
+    claim_class: project-specific
+    evidence_required: "waike-research-ops accepted main SHA + course/lab paths."
+    preferred_source_type: project accepted-main audit
+    status: PROJECT_EVIDENCE_NEEDED
+    citation_keys: [waike-main-ce4-audit]
+    audited_waike_sha: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+    overclaim_risk: "Claiming LAB-PKT-001 is an official WAIKE module ID."
+    wording_boundary: "Publication-owned lab; WAIKE IDs used only as adjacency with exact course/lab names."
+
+  - provisional_id: CLM-CE4-013
+    claim_text: "A connectivity icon can remain positive while an application-level sync experience fails."
+    claim_class: illustrative
+    evidence_required: "Classroom observation protocol; no fabricated telemetry."
+    preferred_source_type: high-quality explanatory + learner observation
+    status: ILLUSTRATIVE_ONLY
+    citation_keys: []
+    overclaim_risk: "Presenting one anecdote as a universal measured rate."
+    wording_boundary: "Frame as stability-contract teaching claim; require observation vs inference separation in labs."
+
+  - provisional_id: CLM-CE4-014
+    claim_text: "Specific millisecond latency budgets for CE-4 anchor experiences on reader devices."
+    claim_class: measured later
+    evidence_required: "Controlled repeated measurements with disclosed method—not available in preproduction."
+    preferred_source_type: measured study
+    status: PHYSICAL_PENDING
+    citation_keys: []
+    overclaim_risk: "Inventing budgets to look precise."
+    wording_boundary: "Forbidden in CE-4 prose until measured; use qualitative language only."
+
+  - provisional_id: CLM-CE4-015
+    claim_text: "QUIC is an IETF transport protocol specified in RFC 9000, often used with HTTP/3 stacks."
+    claim_class: standards-based
+    evidence_required: "RFC 9000."
+    preferred_source_type: standards/specifications
+    status: SOURCE_IDENTIFIED
+    citation_keys: [rfc9000]
+    overclaim_risk: "Requiring deep QUIC implementation knowledge in Concept Edition."
+    wording_boundary: "Optional survey pointer for modern transport; TCP/UDP remain primary CE-4 teaching pair."

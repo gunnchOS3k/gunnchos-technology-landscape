@@ -1,0 +1,132 @@
+# CE-6 Figure Plan
+
+chapter: CE-6
+status: preproduction
+rules:
+  - "No decorative art as evidence."
+  - "Numeric bands must be labeled illustrative, measured, or inferred."
+  - "Color never sole encoding."
+  - "Chapter-local proposals; integrator merges visual registry."
+
+figures:
+
+  - provisional_id: FIG-CE06-001
+    figure_type: "causal / hub-and-spoke system map"
+    pedagogical_purpose: "Formal Stability Contract teaching model: human experience succeeds only while concurrent hidden conditions remain acceptable."
+    what_reader_should_notice: "Multiple conditions are concurrent, not a single ordered blame chain; any one can break the experience."
+    data_evidence_source: "Publication pedagogy (PEDAGOGICAL_CONTRACT); conceptual"
+    truth_class: conceptual
+    expected_geometry: "Center: Human experience succeeds. Spokes: input delivery, schedule/handler, memory/storage, network path, service availability, render/display, power/thermal, trust/permissions, accessibility path, total delay acceptability."
+    accessibility_description_requirement: "Alt text naming center + each spoke; reading order clockwise from input; long text equivalent list."
+    color_independent_encoding: "Spoke icons + labels; failure state uses dashed outline + text FAIL, not red-only."
+    dependencies: ["CE-2 FIG-CH02-007 as pattern ancestor — synthesize, do not duplicate identically"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-002
+    figure_type: "comparative layers / status vs experience"
+    pedagogical_purpose: "Show connected status chrome vs usable experience divergence."
+    what_reader_should_notice: "Green connected indicators can coexist with stalled human outcomes."
+    data_evidence_source: "Illustrative teaching scenario"
+    truth_class: conceptual
+    expected_geometry: "Two columns: Status indicators (connected) vs Experience timeline (stall/fail); annotations for observation vs inference."
+    accessibility_description_requirement: "Describe both columns and the contradiction explicitly."
+    color_independent_encoding: "Checkmark/cross glyphs + text; avoid green/red-only."
+    dependencies: []
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-003
+    figure_type: "sequence / diagnosis path"
+    pedagogical_purpose: "Cross-layer failure diagnosis walkthrough for the anchor experience."
+    what_reader_should_notice: "Questions escalate by domain; open questions remain labeled undetermined."
+    data_evidence_source: "Conceptual procedure aligned to LAB-CE06-001"
+    truth_class: conceptual
+    expected_geometry: "Horizontal swimlanes: Human, App/Code, OS/Device, Network, Service, Society/Equity; decision diamonds for evidence gates."
+    accessibility_description_requirement: "Reading order by swimlane then time; text equivalent of decision gates."
+    color_independent_encoding: "Lane labels + numbered steps."
+    dependencies: ["CE06-C-CROSS-LAYER-DIAGNOSIS"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-004
+    figure_type: "budget / stacked comparative"
+    pedagogical_purpose: "Where time and failure can accumulate; teach labeling discipline."
+    what_reader_should_notice: "Segments are placeholders until learner measures; connected≠done."
+    data_evidence_source: "Illustrative bands only unless replaced by learner LAB data"
+    truth_class: conceptual
+    expected_geometry: "Stacked bar: input → local work → optional network/service → render → display; legend for illustrative/measured/inferred."
+    accessibility_description_requirement: "State that numbers are illustrative unless labeled measured; provide table equivalent."
+    color_independent_encoding: "Pattern fills (hatch/solid/dot) per label class."
+    dependencies: ["FIG-CH02-006 pattern ancestor"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-005
+    figure_type: "hierarchy / ladder"
+    pedagogical_purpose: "Evidence hierarchy from illustrative aid to standards-aligned QoE methods."
+    what_reader_should_notice: "Learner commodity labs sit mid-ladder; G.1011-style subjective studies are higher and not required for CE completion."
+    data_evidence_source: "CLAIM_PLAN + ITU G.1011 as context"
+    truth_class: conceptual
+    expected_geometry: "Vertical ladder with five rungs and example artifacts per rung."
+    accessibility_description_requirement: "List rungs in ascending strength order."
+    color_independent_encoding: "Rung numbers + labels."
+    dependencies: ["SRC-CE06-02"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-006
+    figure_type: "system map / observability"
+    pedagogical_purpose: "Map logs, metrics, and traces (conceptually) onto Stability Contract conditions."
+    what_reader_should_notice: "Different signals illuminate different conditions; no single signal is omniscient."
+    data_evidence_source: "OpenTelemetry Signals concepts (analogy)"
+    truth_class: conceptual
+    expected_geometry: "Three signal columns overlapping condition chips; Explorer callout: DevTools/status can substitute."
+    accessibility_description_requirement: "Explain each signal type and which conditions it can support."
+    color_independent_encoding: "Column headers + icons with text."
+    dependencies: ["SRC-CE06-06"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-007
+    figure_type: "tradeoff / radar-or-matrix"
+    pedagogical_purpose: "Tradeoffs among latency, reliability, privacy, cost, power, and inclusion."
+    what_reader_should_notice: "Improving one axis can degrade another; equity is a first-class axis."
+    data_evidence_source: "Conceptual"
+    truth_class: conceptual
+    expected_geometry: "Prefer labeled matrix over decorative radar; pairs of design choices with +/- effects."
+    accessibility_description_requirement: "Table equivalent mandatory if radar used."
+    color_independent_encoding: "+/− text markers."
+    dependencies: []
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-008
+    figure_type: "paths / capstone spine"
+    pedagogical_purpose: "Explain → Measure → Improve → Teach portfolio loop."
+    what_reader_should_notice: "Each stage produces artifacts; teach-back closes the loop."
+    data_evidence_source: "LAB_PLAN portfolio requirements"
+    truth_class: conceptual
+    expected_geometry: "Four-stage cycle with artifact callouts (diagram, table, improve plan, teach-back)."
+    accessibility_description_requirement: "List stages and required artifacts."
+    color_independent_encoding: "Numbered stages + artifact icons with text."
+    dependencies: ["LAB-CE06-001"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-009
+    figure_type: "comparative inclusion"
+    pedagogical_purpose: "Works-for-me vs excluded path under the same nominal feature."
+    what_reader_should_notice: "Contract assumptions about device, network, and interaction modality create unequal experiences."
+    data_evidence_source: "Illustrative + WCAG intent"
+    truth_class: conceptual
+    expected_geometry: "Split path: default GUI path vs keyboard/AT/low-bandwidth path; failure markers."
+    accessibility_description_requirement: "Explicitly describe exclusion points."
+    color_independent_encoding: "Path labels + failure text."
+    dependencies: ["SRC-CE06-03"]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE06-010
+    figure_type: "ownership map"
+    pedagogical_purpose: "Career/ownership map for contract conditions (who debugs what)."
+    what_reader_should_notice: "Cross-team nature of Stability Contract; TPM/SRE/a11y roles visible."
+    data_evidence_source: "CAREER_MAP.yaml"
+    truth_class: conceptual
+    expected_geometry: "Condition chips linked to role families."
+    accessibility_description_requirement: "List condition→role pairs."
+    color_independent_encoding: "Text links; optional shape per role family."
+    dependencies: []
+    edition_scope: both
+    notes: "Full edition may expand; Concept Edition needs simplified version."

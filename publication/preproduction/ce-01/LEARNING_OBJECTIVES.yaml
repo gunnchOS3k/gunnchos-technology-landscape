@@ -1,0 +1,62 @@
+# CE-1 Learning Objectives — measurable by pathway
+# Status: preproduction proposal (chapter-local). Not Gate 3 PASS.
+
+chapter_id: CE-1
+maps_to: [CH01]
+teaching_model: "Human experience → system → component → code → network → society"
+anchor_experience: "chrome_visible_before_content_usable"
+
+objectives:
+  explorer:
+    - id: LO-CE1-EX-01
+      statement: "Given a familiar app-opening moment, label at least three visible cues and at least three hidden cooperating parts using ordinary language."
+      evidence_of_learning: "Labeled sketch or bullet map with visible vs hidden columns."
+    - id: LO-CE1-EX-02
+      statement: "Explain in one short paragraph why 'the app' is usually not a single object."
+      evidence_of_learning: "Teach-back paragraph that names UI, local software, and at least one optional remote dependency without jargon overload."
+    - id: LO-CE1-EX-03
+      statement: "Identify one everyday failure that can occur while the screen still looks 'normal.'"
+      evidence_of_learning: "Written example with symptom + guessed failure domain marked as inference, not proven cause."
+
+  operator:
+    - id: LO-CE1-OP-01
+      statement: "On a commodity device, compare a local-only readiness path with a network-dependent readiness path and record observed differences."
+      evidence_of_learning: "Observation table: action, chrome-visible time, content-usable time, offline vs online condition."
+    - id: LO-CE1-OP-02
+      statement: "Name the likely failure domain (input/UI, local app/OS, storage, network/service, human perception) for two distinct symptoms without claiming root cause certainty."
+      evidence_of_learning: "Two symptom→domain tickets with observation vs inference labels."
+    - id: LO-CE1-OP-03
+      statement: "List dependencies that must remain within acceptable bounds for the anchor experience to stay usable (qualitative)."
+      evidence_of_learning: "Stability checklist of ≥5 conditions tied to the anchor experience."
+
+  builder:
+    - id: LO-CE1-BU-01
+      statement: "Construct a personal technology-ecosystem map for one chosen experience with named layers and at least one optional branch."
+      evidence_of_learning: "Diagram or structured YAML/Markdown map with layer labels and optional network/service branch."
+    - id: LO-CE1-BU-02
+      statement: "Modify a simple readiness checklist template to match the learner's chosen experience and document one tradeoff."
+      evidence_of_learning: "Edited checklist + tradeoff note (e.g., richer logging vs privacy)."
+
+  engineer:
+    - id: LO-CE1-EN-01
+      statement: "Propose a diagnosis plan that separates observation, interpretation, and causal claims for a readiness failure."
+      evidence_of_learning: "Diagnosis plan with evidence needed before blaming network vs app vs device."
+    - id: LO-CE1-EN-02
+      statement: "Relate the CE-1 layer map to at least one standards-or-textbook abstraction (process, event, packet, or storage hierarchy) without inventing measurements."
+      evidence_of_learning: "Short mapping table: CE-1 layer ↔ cited abstraction ↔ citation key."
+
+  researcher:
+    - id: LO-CE1-RE-01
+      statement: "State a testable hypothesis about chrome-visible vs content-usable timing under two controlled conditions (e.g., airplane mode on/off)."
+      evidence_of_learning: "Hypothesis + variables + planned N runs + explicit limits (not a published benchmark)."
+    - id: LO-CE1-RE-02
+      statement: "Document uncertainty and what evidence would be required to upgrade an illustrative claim to a measured claim."
+      evidence_of_learning: "Claim triage note with status change criteria."
+
+  educator:
+    - id: LO-CE1-ED-01
+      statement: "Facilitate a 10–15 minute misconception check distinguishing screen-as-system from screen-as-surface."
+      evidence_of_learning: "Facilitation notes + two probe questions + expected wrong answers."
+    - id: LO-CE1-ED-02
+      statement: "Adapt LAB-SYS-001 for a no-specialized-hardware classroom including an offline/fixture fallback."
+      evidence_of_learning: "Adapted lab sheet with fallback route and accessibility notes."

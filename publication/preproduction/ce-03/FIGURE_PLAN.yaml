@@ -1,0 +1,173 @@
+# CE-3 Figure Plan
+# Status: preproduction proposal (chapter-local). No decorative art-as-evidence.
+
+chapter_id: CE-3
+maps_to: [CH06, CH07, CH12]
+
+figures:
+  - provisional_id: FIG-CE3-001
+    figure_type: system_map
+    title_intent: "Inside-the-device map for local lag"
+    pedagogical_purpose: "Show person → app → process/threads → OS → CPU/GPU → memory hierarchy → storage → power/thermal in one readable composition."
+    reader_should_notice:
+      - "Network is optional/out-of-scope for the failure story when the connectivity icon is healthy."
+      - "OS sits as mediator/scheduler, not as the sole compute engine."
+    data_evidence_source: conceptual_synthesis
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Left-to-right or center-out layers with numbered callouts; no fake timing numbers."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Shape + label + number; color never sole channel."
+    dependencies: [EXPERIENCE_MAP.md]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-002
+    figure_type: comparative_layers
+    title_intent: "Memory hierarchy: registers → cache → RAM → storage"
+    pedagogical_purpose: "Make capacity/speed/volatility tradeoffs visible without invented nanosecond tables."
+    reader_should_notice:
+      - "RAM ≠ storage"
+      - "Closer to CPU is smaller/faster; storage is durable home for files"
+    data_evidence_source: "patterson-hennessy-riscv (qualitative hierarchy)"
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Pyramid or stepped bars with qualitative adjectives only (tiny/fast → large/durable)."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Position + text labels for each layer."
+    dependencies: [CONCEPT_GRAPH.yaml]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-003
+    figure_type: sequence_diagram
+    title_intent: "Instruction → schedule → execute → result path (accessible)"
+    pedagogical_purpose: "Show a simplified path from runnable thread to CPU execution and UI-visible progress."
+    reader_should_notice:
+      - "Scheduler chooses who runs"
+      - "App instructions still execute on the CPU/accelerator"
+    data_evidence_source: "tanenbaum-bos / linux-scheduler (concept-level)"
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Swimlanes: App thread | Scheduler | CPU | Memory | UI feedback."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Numbered steps + lane labels."
+    dependencies: [CLAIM_PLAN.yaml]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-004
+    figure_type: causal_diagram
+    title_intent: "Bottleneck symptom branches"
+    pedagogical_purpose: "Help Operators separate CPU, memory, storage, scheduler contention, and thermal hypotheses."
+    reader_should_notice:
+      - "Same human lag can have different hidden causes"
+      - "Observation vs inference boundary"
+    data_evidence_source: illustrative
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Tree or branched flowchart from symptom → candidate domains → next inspection."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Branch labels; icons with text, not color alone."
+    dependencies: [LAB_PLAN.md, STABILITY_CONTRACT.md]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-005
+    figure_type: component_cards
+    title_intent: "CPU vs accelerator/GPU role cards"
+    pedagogical_purpose: "Prevent 'GPU only for games' and 'OS is the GPU' misconceptions."
+    reader_should_notice:
+      - "Who orchestrates vs who executes specialized work"
+      - "Shared resource limits (memory bandwidth, power)"
+    data_evidence_source: "patterson-hennessy-riscv; khronos-vulkan-overview (pointer)"
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Two side-by-side cards with definition / analogy / function / failure symptoms."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Card titles + bullet structure."
+    dependencies: [CONCEPT_GRAPH.yaml]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-006
+    figure_type: before_after_compare
+    title_intent: "Save buffer vs durable file"
+    pedagogical_purpose: "Experience B: on-screen text vs persisted file."
+    reader_should_notice:
+      - "Quit+reopen outcome differs if durability incomplete"
+    data_evidence_source: illustrative_lab
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Two panels: RAM working set vs storage file object."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: false
+      color_independent_encoding: "Panel titles + status words (volatile/durable)."
+    dependencies: [EXPERIENCE_MAP.md]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-007
+    figure_type: budget_diagram
+    title_intent: "Qualitative power/thermal ceiling"
+    pedagogical_purpose: "Show performance available under a thermal/power ceiling without fake °C or watt numbers."
+    reader_should_notice:
+      - "Sustained work can reduce available performance"
+      - "Not necessarily a software 'bug'"
+    data_evidence_source: "linux-cpu-freq (concept); hardware POWER_TREE as optional representative architecture"
+    conceptual_vs_measured: conceptual
+    expected_geometry: "Ceiling line over a qualitative performance-vs-time sketch; label ILLUSTRATIVE."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Line style + text annotation; avoid red=bad only."
+    dependencies: [CLAIM_PLAN.yaml]
+    edition_scope: concept_edition
+
+  - provisional_id: FIG-CE3-008
+    figure_type: representative_architecture
+    title_intent: "Device Quartet compute/storage roles (optional callout)"
+    pedagogical_purpose: "If used, show form-factor differences as learning benchmarks only."
+    reader_should_notice:
+      - "PHYSICAL_PENDING / not shipping products"
+      - "Different form factors stress different bottlenecks"
+    data_evidence_source: "SRC-HARDWARE device-quartet docs + comparison matrix (targets, not measurements)"
+    conceptual_vs_measured: project_specific_conceptual
+    expected_geometry: "Four labeled silhouettes with role tags; watermark Representative educational architecture."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Names + role tags."
+    dependencies: [SOURCE_REGISTER.md]
+    edition_scope: concept_edition_optional
+    inclusion_rule: "Include only with PHYSICAL_PENDING labeling; otherwise defer to full-book CH04/CH09."
+
+  - provisional_id: FIG-CE3-009
+    figure_type: lab_fixture
+    title_intent: "Annotated commodity monitor snapshot"
+    pedagogical_purpose: "Teach what to read in Task Manager / Activity Monitor / top without requiring proprietary tools."
+    reader_should_notice:
+      - "CPU vs Memory vs Disk columns"
+      - "Observation fields vs interpretation fields"
+    data_evidence_source: "LAB-CMS-001 fixture screenshots (to be captured; no fake numbers in finals)"
+    conceptual_vs_measured: measured_later_fixture
+    expected_geometry: "Screenshot + callout overlay with reading order."
+    accessibility:
+      alt_text_required: true
+      long_description_required: true
+      reading_order_required: true
+      color_independent_encoding: "Numbered callouts; provide CSV/text equivalent of readings."
+    dependencies: [LAB_PLAN.md]
+    edition_scope: concept_edition
+
+non_goals:
+  - "Decorative gradients or abstract 'tech meshes' as evidence."
+  - "Fake flame graphs with invented stack samples presented as reader-device truth."
+  - "Unlabeled Device Quartet marketing renders."

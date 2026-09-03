@@ -1,0 +1,75 @@
+# CE-6 Learning Objectives (measurable)
+
+chapter: CE-6
+title: "The Stability Contract + Capstone"
+status: preproduction
+gate_status_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+assessment_spine: "Explain, Measure, Improve, and Teach"
+
+pathways:
+
+  explorer:
+    - id: LO-CE06-EX-01
+      objective: "Given a failed or degraded everyday experience, name at least four concurrent Stability Contract conditions that could be involved without claiming a single root cause."
+      evidence: "Written condition list labeled observed vs guessed."
+    - id: LO-CE06-EX-02
+      objective: "Explain in ordinary language why a system can show connected while the human experience has already failed."
+      evidence: "Teach-back paragraph using a chosen real experience."
+    - id: LO-CE06-EX-03
+      objective: "Produce a portfolio diagram of human experience → system → component → code → network → society for one chosen experience."
+      evidence: "Labeled ecosystem sketch (hand-drawn or digital)."
+
+  operator:
+    - id: LO-CE06-OP-01
+      objective: "Collect at least three inspection artifacts (status, timing, log excerpt, or DevTools entry) for one experience and classify each as observation or inference."
+      evidence: "Result table with classification column."
+    - id: LO-CE06-OP-02
+      objective: "Compare two conditions of the same experience (e.g., local-only vs network-dependent, or strong vs weak link) and state what changed in symptoms without inventing causal certainty."
+      evidence: "Side-by-side observation notes."
+    - id: LO-CE06-OP-03
+      objective: "Identify the most likely failure domain candidates and which domain remains under-determined."
+      evidence: "Failure-domain shortlist with open questions."
+
+  builder:
+    - id: LO-CE06-BU-01
+      objective: "Build or adapt a small checklist, worksheet, or local demo that makes at least one hidden condition newly inspectable."
+      evidence: "Artifact + README of how a peer can reuse it."
+    - id: LO-CE06-BU-02
+      objective: "Document one intentional tradeoff (e.g., more logging vs privacy/overhead) introduced by the builder artifact."
+      evidence: "Tradeoff note ≤1 page."
+    - id: LO-CE06-BU-03
+      objective: "Propose one improvement change and the minimum evidence that would confirm it worked."
+      evidence: "Improve plan with success criteria (no fabricated numbers)."
+
+  engineer:
+    - id: LO-CE06-EN-01
+      objective: "Construct a cross-layer diagnosis tree that separates input, schedule/compute, storage, network/service, render/display, trust/permissions, and accessibility-path domains."
+      evidence: "Diagnosis tree linked to observations."
+    - id: LO-CE06-EN-02
+      objective: "Apply an evidence hierarchy: state what would escalate a claim from illustrative → measured-on-this-device → correlated multi-signal → standards-aligned QoE method."
+      evidence: "Claim escalation table for two claims."
+    - id: LO-CE06-EN-03
+      objective: "Select commodity instrumentation appropriate to the experience (browser Performance API, OS status, app logs, supplied fixture) and state measurement limitations."
+      evidence: "Instrumentation choice + limitations section."
+
+  researcher:
+    - id: LO-CE06-RE-01
+      objective: "Form a falsifiable hypothesis about one contract condition and design a controlled comparison with named confounders."
+      evidence: "Hypothesis + protocol with ≥3 confounders listed."
+    - id: LO-CE06-RE-02
+      objective: "Report uncertainty explicitly (repeatability, clock granularity, instrumentation overhead, selection bias) without fabricating statistics."
+      evidence: "Uncertainty section in portfolio."
+    - id: LO-CE06-RE-03
+      objective: "Distinguish publication-owned teaching claims from project-specific repository evidence and from standards vocabulary (QoE/QoS)."
+      evidence: "Claim-class labels on three statements."
+
+  educator:
+    - id: LO-CE06-ED-01
+      objective: "Facilitate the capstone for mixed pathways using the accessible fallback route when specialized tools are unavailable."
+      evidence: "Facilitation plan with fallback branch."
+    - id: LO-CE06-ED-02
+      objective: "Detect at least three target misconceptions (connected=usable; latency-only contract; screenshot=cause) and plan corrective prompts."
+      evidence: "Misconception → prompt table."
+    - id: LO-CE06-ED-03
+      objective: "Apply the capstone rubric concept to score Explain / Measure / Improve / Teach with observation-vs-inference integrity."
+      evidence: "Rubric application on a sample (own or fixture) portfolio."

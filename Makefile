@@ -43,6 +43,7 @@ validate:
 	$(PYTHON) scripts/validate_waike.py
 	$(PYTHON) scripts/validate_citations.py
 	$(PYTHON) scripts/validate_gate3_review.py
+	$(PYTHON) scripts/validate_ce_preproduction.py
 
 test:
 	$(PYTHON) -m pytest -q

@@ -1,0 +1,107 @@
+# CE-4 Figure Plan
+# Status: preproduction proposal (chapter-local). No decorative-as-evidence art.
+
+chapter_id: CE-4
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+
+figures:
+  - figure_id: FIG-CE4-001
+    figure_type: comparative_layers
+    pedagogical_purpose: "Show local vs LAN vs Internet reachability as nested scopes, not synonyms."
+    reader_should_notice: "A device can be 'on Wi-Fi' while still failing Internet-scoped work."
+    data_evidence_source: "Conceptual; aligned to RFC 1122 host/internet layering intuition + chapter teaching model"
+    truth_class: conceptual
+    expected_geometry: "Three nested or stacked regions (device / LAN / Internet) with one failed request crossing only some regions"
+    accessibility_description_requirement: "Long description naming each scope and one example path that stops at LAN vs one that reaches Internet"
+    color_independent_encoding: "Region boundaries + labels + patterned fills; do not rely on green/red alone"
+    dependencies: [CE4-C-LOCAL-SCOPE, CE4-C-LAN-SCOPE, CE4-C-INTERNET-SCOPE]
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-002
+    figure_type: sequence_diagram
+    pedagogical_purpose: "Follow one sync request as encapsulation and hops (sticky-note headers)."
+    reader_should_notice: "Order of header add/remove; gateway as a hop; remote service as endpoint."
+    data_evidence_source: "Conceptual sequence consistent with RFC 791/9293 service models; no measured timings"
+    truth_class: conceptual
+    expected_geometry: "Horizontal swimlanes: App → OS stack → NIC/radio → Gateway → Path → Edge/Cloud service"
+    accessibility_description_requirement: "Numbered step list equivalent to the sequence"
+    color_independent_encoding: "Numbered arrows + lane labels"
+    dependencies: [CE4-C-PACKET, CE4-C-ENCAPSULATION, CE4-C-ROUTING]
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-003
+    figure_type: system_map
+    pedagogical_purpose: "Separate Wi-Fi access, cellular access, and Internet backbone as different boxes."
+    reader_should_notice: "Wi-Fi and cellular are on-ramps; cloud is placement of service, not an access radio."
+    data_evidence_source: "IEEE 802.11 family (Wi-Fi LAN); 3GPP TS 23.501 family (5G system architecture survey); NIST cloud definition"
+    truth_class: conceptual
+    expected_geometry: "Left: user device; two access branches (Wi-Fi AP, cellular RAN/core simplified); right: Internet path to edge node and cloud region"
+    accessibility_description_requirement: "Explicit statement that branches are alternatives/complements, not identical"
+    color_independent_encoding: "Distinct line styles (solid/dashed/dotted) per access type"
+    dependencies: [CE4-C-WIFI, CE4-C-CELLULAR, CE4-C-CLOUD, CE4-C-EDGE]
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-004
+    figure_type: comparative_layers
+    pedagogical_purpose: "Latency vs reliability vs throughput as three different failure stories."
+    reader_should_notice: "Same 'bad experience' word can hide three different metrics."
+    data_evidence_source: "Illustrative axes only; no fabricated numeric budgets"
+    truth_class: conceptual
+    expected_geometry: "Three columns with example symptoms; optional qualitative icons (hourglass / broken arrow / filling bar) with text labels"
+    accessibility_description_requirement: "Table alternative with symptom → metric family"
+    color_independent_encoding: "Column headers + icons with text, not color alone"
+    dependencies: [CE4-C-LATENCY, CE4-C-RELIABILITY, CE4-C-THROUGHPUT]
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-005
+    figure_type: path_branch_diagram
+    pedagogical_purpose: "Service continuity across Wi-Fi↔cellular change while app session continues or fails."
+    reader_should_notice: "Radio attachment success ≠ experience continuity."
+    data_evidence_source: "Illustrative; continuity is qualitative CE-4 claim (CLM-CE4-013)"
+    truth_class: conceptual
+    expected_geometry: "Before/after path switch with experience state annotation (usable / degraded / failed)"
+    accessibility_description_requirement: "Two-state textual storyboard"
+    color_independent_encoding: "State labels in words; line style change for path switch"
+    dependencies: [CE4-C-CONTINUITY]
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-006
+    figure_type: exploded_view
+    pedagogical_purpose: "Component cards overview for packet path objects."
+    reader_should_notice: "Each card has plain definition, function, constraint, failure symptom."
+    data_evidence_source: "Chapter component-card pedagogy; standards-backed terms"
+    truth_class: conceptual
+    expected_geometry: "Card strip or 2×4 grid: packet, address, gateway, DNS, Wi-Fi link, cellular attachment, edge, cloud"
+    accessibility_description_requirement: "Each card available as structured text"
+    color_independent_encoding: "Consistent card template; icons optional and labeled"
+    dependencies: []
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-007
+    figure_type: causal_diagram
+    pedagogical_purpose: "Lab evidence map: observation vs inference for Route A/B."
+    reader_should_notice: "Browser timings are not RF proof."
+    data_evidence_source: "LAB-PKT-001 plan; MDN timing docs"
+    truth_class: conceptual
+    expected_geometry: "Evidence boxes → allowed inferences → forbidden leaps"
+    accessibility_description_requirement: "Bulleted do/don't list matching figure"
+    color_independent_encoding: "Border styles for observation vs inference"
+    dependencies: []
+    edition_scope: concept_edition
+
+  - figure_id: FIG-CE4-008
+    figure_type: budget_diagram
+    pedagogical_purpose: "Full-book preview of radio link budget / delay-spread intuition."
+    reader_should_notice: "CE-4 only needs qualitative radio conditions; deep MIMO/beamforming waits."
+    data_evidence_source: "Deferred to CH18; optional textbook pointer"
+    truth_class: conceptual
+    expected_geometry: "Simplified path-loss cartoon with explicit 'not to scale / not measured' banner"
+    accessibility_description_requirement: "State that no numeric CE-4 measurement is claimed"
+    color_independent_encoding: "Labels over gradient myths"
+    dependencies: [CE4-C-RADIO-CONDITIONS]
+    edition_scope: full_edition_only
+
+non_goals:
+  - "No hero photography of cell towers as evidence of 6G capability."
+  - "No fake heatmaps with invented dBm values."
+  - "No logo walls implying vendor endorsement."

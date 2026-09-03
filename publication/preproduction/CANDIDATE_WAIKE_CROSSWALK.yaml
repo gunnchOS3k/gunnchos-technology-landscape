@@ -1,0 +1,86 @@
+status: CANDIDATE_PREPRODUCTION
+gate_note: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
+rights: Does not modify waike/alignment.yaml.
+audited_waike_sha_preferred: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+note: Live evidence/source_registry.yaml still records older CH02 audit SHA 8eb2827…;
+  refresh deferred until after CH02-REVIEW-R1.
+packages:
+- source_package: ce-01
+  relationship_vocabulary_present:
+  - adjacent
+  - exact
+  - no-map
+  - proposed
+  known_courses_mentioned:
+  - COMM_PD_ETHICS
+  - COMPUTER_NETWORKING
+  - GAME_DEV_INTERACTIVE
+  - GENERAL_IT
+  - GUNNCHOS_PRODUCT_LAB
+  - HARDWARE_ENGINEERING
+  - SOFTWARE_BUILDER
+  shas_mentioned:
+  - e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+- source_package: ce-03
+  relationship_vocabulary_present:
+  - adjacent
+  - exact
+  - no-map
+  - proposed
+  known_courses_mentioned:
+  - EMBEDDED_PROTOTYPING
+  - GENERAL_IT
+  - GUNNCHOS_PRODUCT_LAB
+  - HARDWARE_ENGINEERING
+  - SOFTWARE_BUILDER
+  shas_mentioned:
+  - 8eb2827dc58ffa391842da1bfb1ee665c25a31a7
+  - e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+- source_package: ce-04
+  relationship_vocabulary_present:
+  - adjacent
+  - exact
+  - no-map
+  - proposed
+  known_courses_mentioned:
+  - CLOUD_DEVOPS
+  - COMPUTER_NETWORKING
+  - GENERAL_IT
+  - WIRELESS_6G
+  shas_mentioned:
+  - 8eb2827dc58ffa391842da1bfb1ee665c25a31a7
+  - e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+- source_package: ce-05
+  relationship_vocabulary_present:
+  - adjacent
+  - exact
+  - no-map
+  - proposed
+  known_courses_mentioned:
+  - AI_ML_EDGE
+  - CLOUD_DEVOPS
+  - COMM_PD_ETHICS
+  - EMBEDDED_PROTOTYPING
+  - SOFTWARE_BUILDER
+  - WIRELESS_6G
+  shas_mentioned:
+  - 8eb2827dc58ffa391842da1bfb1ee665c25a31a7
+  - e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+- source_package: ce-06
+  relationship_vocabulary_present:
+  - adjacent
+  - exact
+  - no-map
+  - proposed
+  known_courses_mentioned:
+  - CLOUD_DEVOPS
+  - COMM_PD_ETHICS
+  - COMPUTER_NETWORKING
+  - DATA_DASHBOARDS
+  - EMBEDDED_PROTOTYPING
+  - GAME_DEV_INTERACTIVE
+  - GENERAL_IT
+  - SOFTWARE_BUILDER
+  shas_mentioned:
+  - 8eb2827dc58ffa391842da1bfb1ee665c25a31a7
+  - e97e74fc9bfb44b1cdc26b272dc4848264f15fe0

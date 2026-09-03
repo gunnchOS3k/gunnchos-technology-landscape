@@ -1,0 +1,55 @@
+status: CANDIDATE_PREPRODUCTION
+gate_note: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
+rights: Does not modify evidence/source_registry.yaml or book/references/references.bib.
+waike_sha_candidate_refresh:
+  current_live_registry_sha: 8eb2827dc58ffa391842da1bfb1ee665c25a31a7
+  chapter_audits_agree_on: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  action: Defer live registry rewrite until after CH02-REVIEW-R1; candidate note only.
+packages:
+- source_package: ce-01
+  class_counts_as_declared:
+    standards/specifications: 6
+    official technical documentation: 2
+    peer-reviewed: 0
+    textbooks: 3
+    project/repository evidence: 3
+    total: 14
+  local_bib_entries: 13
+- source_package: ce-03
+  class_counts_as_declared:
+    standards/specifications: 3
+    official technical documentation: 3
+    peer-reviewed: 0
+    textbooks: 3
+    project/repository evidence: 3
+    high-quality explanatory / lab-owned: 2
+    total: 14
+  local_bib_entries: 13
+- source_package: ce-04
+  class_counts_as_declared:
+    standards/specifications: 16
+    official technical documentation: 3
+    peer-reviewed: 0
+    textbooks: 1
+    project/repository evidence: 2
+    total: 22
+  local_bib_entries: 21
+- source_package: ce-05
+  class_counts_as_declared:
+    repository-implemented/documented: 3
+    standards: 2
+    peer-reviewed: 2
+    textbooks: 2
+    total: 9
+  local_bib_entries: 6
+- source_package: ce-06
+  class_counts_as_declared:
+    standards/specifications: 4
+    official technical documentation: 3
+    peer-reviewed: 0
+    textbooks: 1
+    high-quality explanatory: 1
+    project/repository evidence: 3
+    publication-internal pedagogy: 2
+    total: 14
+  local_bib_entries: 11

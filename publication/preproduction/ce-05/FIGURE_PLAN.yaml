@@ -1,0 +1,92 @@
+# CE-5 Figure Plan (preproduction)
+chapter_id: CE-5
+status: planned
+rights_policy: "Prefer original educational diagrams. No third-party textbook figure copies."
+accessibility_policy: "publication/ACCESSIBILITY_REQUIREMENTS.md"
+
+figures:
+  - figure_id: FIG-CE5-001
+    title: "From prompt to output — data, model, inference"
+    anatomy_section: 4
+    truth_class: illustrative
+    purpose: "Show accessible systems path without anthropomorphizing the model."
+    required_layers: [human, app, model_runtime, output]
+    alt_text_draft: "Flowchart from user prompt through application and model inference to on-screen output, with a side path for optional logging."
+    text_equivalent: "Required long description listing numbered steps and trust boundaries."
+    color_encoding: "Shape + label; color never sole cue."
+    claims_touched: [CLM-CE5-004]
+    production_status: not_drawn
+
+  - figure_id: FIG-CE5-002
+    title: "Local vs cloud AI — same question, different boundaries"
+    anatomy_section: 3
+    truth_class: illustrative
+    purpose: "Compare on-device inference vs remote API for privacy, latency, dependency."
+    required_layers: [device, network, cloud_endpoint, keys]
+    alt_text_draft: "Two parallel paths for answering a question: one staying on the device, one crossing the network to a remote model service."
+    text_equivalent: "Table of tradeoffs must accompany figure; mark latency numbers illustrative unless measured."
+    claims_touched: [CLM-CE5-008]
+    production_status: not_drawn
+
+  - figure_id: FIG-CE5-003
+    title: "Identity, authentication, authorization decision ladder"
+    anatomy_section: 5
+    truth_class: illustrative
+    purpose: "Separate who you claim to be, proof of that claim, and allowed actions."
+    required_layers: [identity, authenticator, policy, resource]
+    alt_text_draft: "Three-step ladder labeled identity, authentication, and authorization leading to allow or deny."
+    text_equivalent: "Worked example: desk volunteer vs admin bot."
+    claims_touched: [CLM-CE5-006]
+    production_status: not_drawn
+
+  - figure_id: FIG-CE5-004
+    title: "Encryption boundary sketch — transit, at rest, endpoint"
+    anatomy_section: 5
+    truth_class: illustrative
+    purpose: "Show what encryption can and cannot guarantee for user experience."
+    required_layers: [client, tls, server, unlocked_endpoint]
+    alt_text_draft: "Diagram of data encrypted between device and server, stored encrypted at rest, then readable on an unlocked authenticated endpoint."
+    text_equivalent: "Explicit callout: padlock ≠ total privacy."
+    claims_touched: [CLM-CE5-007]
+    production_status: not_drawn
+
+  - figure_id: FIG-CE5-005
+    title: "Privacy / data lifecycle wheel"
+    anatomy_section: 9
+    truth_class: illustrative
+    purpose: "Collect → use → retain → share → delete/redact with decision owners."
+    required_layers: [consent, processing, retention, sharing, deletion]
+    alt_text_draft: "Circular lifecycle of personal data stages with owner labels on each stage."
+    text_equivalent: "Consent card fields mirrored in LAB-TRUST-001."
+    claims_touched: [CLM-CE5-001]
+    production_status: not_drawn
+
+  - figure_id: FIG-CE5-006
+    title: "Human trust vs technical trust dual ledger"
+    anatomy_section: 6
+    truth_class: illustrative
+    purpose: "Contrast felt reliability with controls and evidence."
+    required_layers: [human_feeling, controls, evidence, failure_modes]
+    alt_text_draft: "Two-column ledger comparing feelings of trust with technical controls and evidence artifacts."
+    text_equivalent: "Must state AI is neither inherently trustworthy nor untrustworthy."
+    claims_touched: [CLM-CE5-005]
+    production_status: not_drawn
+
+  - figure_id: FIG-CE5-007
+    title: "UX-linked attack surfaces on one assistant session"
+    anatomy_section: 9
+    truth_class: illustrative
+    purpose: "Attach threats to visible flows (prompt, permission, session, update)—not a scare collage."
+    required_layers: [ui, session, model_input, update_channel]
+    alt_text_draft: "Annotated assistant session highlighting permission dialog, session cookie/token, prompt box, and update badge as related risk points."
+    text_equivalent: "Each annotation names user-visible symptom and control—no exploit steps."
+    claims_touched: [CLM-CE5-007]
+    production_status: not_drawn
+
+counts:
+  planned_figures: 7
+  drawn: 0
+  truth_classes:
+    illustrative: 7
+    measured: 0
+    repository-implemented: 0
