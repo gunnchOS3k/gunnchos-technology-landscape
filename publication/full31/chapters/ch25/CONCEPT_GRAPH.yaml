@@ -1,0 +1,109 @@
+schema_version: 1.0.0
+chapter_id: CH25
+teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+concepts:
+- concept_id: CX-CH25-EQUITY
+  canonical_term: Digital equity
+  plain_language_definition: Who can benefit from a technology experience and who is excluded.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH25-EXCLUSION
+  canonical_term: Exclusion mechanism
+  plain_language_definition: "Device, cost, bandwidth, skill, language, disability, policy barriers."
+  depends_on:
+  - CX-CH25-EQUITY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH25-MEASURE
+  canonical_term: Measurable inclusion signals
+  plain_language_definition: Observations that can be collected without inventing population stats.
+  depends_on:
+  - CX-CH25-EQUITY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH25-CONSTRAINED
+  canonical_term: Constrained completion route
+  plain_language_definition: A path that works without specialized hardware or paid APIs.
+  depends_on:
+  - CX-CH25-EXCLUSION
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH25-LABELING
+  canonical_term: Honest evidence labeling
+  plain_language_definition: Observed / inferred / illustrative / population-claim distinctions.
+  depends_on:
+  - CX-CH25-MEASURE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+edges:
+- from: CX-CH25-EQUITY
+  to: CX-CH25-EXCLUSION
+  relation: analyzed_via
+- from: CX-CH25-EXCLUSION
+  to: CX-CH25-CONSTRAINED
+  relation: mitigated_by
+- from: CX-CH25-EQUITY
+  to: CX-CH25-MEASURE
+  relation: requires
+- from: CX-CH25-MEASURE
+  to: CX-CH25-LABELING
+  relation: disciplined_by
+inherits_from:
+- CE-6 equity/accessibility as contract conditions
+- CE-5 responsible use

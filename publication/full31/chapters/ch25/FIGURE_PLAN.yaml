@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH25
+figures:
+- provisional_id: FIG-CH25-001
+  figure_type: comparison
+  pedagogical_purpose: Same task; divergent completion across constraints
+  reader_should_notice: Same task; divergent completion across constraints
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Same task; divergent completion across constraints; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH25-002
+  figure_type: hierarchy
+  pedagogical_purpose: Evidence labels for equity claims
+  reader_should_notice: Evidence labels for equity claims
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Evidence labels for equity claims; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH25-003
+  figure_type: map
+  pedagogical_purpose: Exclusion mechanism cards (device/cost/bandwidth/a11y/language)
+  reader_should_notice: Exclusion mechanism cards (device/cost/bandwidth/a11y/language)
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Exclusion mechanism cards (device/cost/bandwidth/a11y/language); color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

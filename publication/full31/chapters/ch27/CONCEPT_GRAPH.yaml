@@ -1,0 +1,128 @@
+schema_version: 1.0.0
+chapter_id: CH27
+teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+concepts:
+- concept_id: CX-CH27-TEST
+  canonical_term: Testing
+  plain_language_definition: Checking claimed behavior with deliberate cases.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH27-OBS
+  canonical_term: Observability
+  plain_language_definition: Ability to ask new questions of a running system via signals.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH27-EVIDENCE
+  canonical_term: Evidence hierarchy
+  plain_language_definition: From illustrative aid to stronger measurement methods.
+  depends_on:
+  - CX-CH27-OBS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH27-OI
+  canonical_term: Observation vs inference
+  plain_language_definition: What happened vs what may explain it.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH27-ORACLE
+  canonical_term: Test oracle
+  plain_language_definition: How we know a test outcome matches the experience claim.
+  depends_on:
+  - CX-CH27-TEST
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH27-REDACT
+  canonical_term: Evidence redaction
+  plain_language_definition: Removing secrets/PII before sharing artifacts.
+  depends_on:
+  - CX-CH27-OBS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+edges:
+- from: CX-CH27-TEST
+  to: CX-CH27-ORACLE
+  relation: requires
+- from: CX-CH27-OBS
+  to: CX-CH27-EVIDENCE
+  relation: feeds
+- from: CX-CH27-OBS
+  to: CX-CH27-OI
+  relation: disciplined_by
+- from: CX-CH27-OBS
+  to: CX-CH27-REDACT
+  relation: must_apply
+- from: CX-CH27-EVIDENCE
+  to: CX-CH27-OI
+  relation: depends_on
+inherits_from:
+- CE-6 evidence hierarchy / observation vs inference
+- LAB-CE06-001 evidence fields

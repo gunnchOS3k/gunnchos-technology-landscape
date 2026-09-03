@@ -1,0 +1,62 @@
+schema_version: 1.0.0
+chapter_id: CH23
+glossary_candidates:
+- term_id: GL-CH23-ATTACKSURFACE
+  preferred_term: Attack surface (UX-linked)
+  plain_language_definition: Places misuse can enter through the same flows people use.
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-ATTACKSURFACE
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH23-IDENTITY
+  preferred_term: Identity
+  plain_language_definition: A claim about who/what an actor is.
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-IDENTITY
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH23-AUTHN
+  preferred_term: Authentication
+  plain_language_definition: Checking an identity claim is believable enough for the risk.
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-AUTHN
+  - CX-CH23-IDENTITY
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH23-AUTHZ
+  preferred_term: Authorization
+  plain_language_definition: Deciding what an authenticated actor may do.
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-AUTHZ
+  - CX-CH23-AUTHN
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH23-CRYPTO
+  preferred_term: Encryption goals and limits
+  plain_language_definition: Unreadability without keys; endpoints still matter.
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-CRYPTO
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH23-CHIPCLOUD
+  preferred_term: Chip-to-cloud trust path
+  plain_language_definition: Boot/firmware/OS/app/network/cloud controls as one chain of conditions.
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-CHIPCLOUD
+  - CX-CH23-ATTACKSURFACE
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH23-PRINCIPLES
+  preferred_term: Protection design principles
+  plain_language_definition: "Least privilege, fail-safe defaults, psychological acceptability, etc."
+  introduced_in: CH23
+  related_concepts:
+  - CX-CH23-PRINCIPLES
+  status: candidate
+  promotion: pending_integrator

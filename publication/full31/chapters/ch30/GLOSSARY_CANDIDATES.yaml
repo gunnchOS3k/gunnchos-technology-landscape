@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+chapter_id: CH30
+glossary_candidates:
+- term_id: GL-CH30-ROLE
+  preferred_term: Role family
+  plain_language_definition: "A cluster of related work, not a job promise."
+  introduced_in: CH30
+  related_concepts:
+  - CX-CH30-ROLE
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH30-PORTFOLIO
+  preferred_term: Portfolio proof
+  plain_language_definition: Artifacts that make skill inspectable.
+  introduced_in: CH30
+  related_concepts:
+  - CX-CH30-PORTFOLIO
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH30-CRITERIA
+  preferred_term: Review criteria
+  plain_language_definition: What makes an artifact convincing.
+  introduced_in: CH30
+  related_concepts:
+  - CX-CH30-CRITERIA
+  - CX-CH30-PORTFOLIO
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH30-BOUNDARY
+  preferred_term: Employment non-guarantee
+  plain_language_definition: Learning evidence ≠ hired outcome.
+  introduced_in: CH30
+  related_concepts:
+  - CX-CH30-BOUNDARY
+  - CX-CH30-ROLE
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH30-INDEX
+  preferred_term: Portfolio index
+  plain_language_definition: Map from artifact → claim → limitation.
+  introduced_in: CH30
+  related_concepts:
+  - CX-CH30-INDEX
+  - CX-CH30-PORTFOLIO
+  status: candidate
+  promotion: pending_integrator

@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH21
+chapter_number: 21
+title: "Data, Machine Learning, and Generative AI"
+part: V
+requires:
+  - CH01
+  - CH02
+  - CH07
+  - CH14
+  - CH15
+reinforces:
+  - CE-5
+feeds:
+  - CH22
+  - CH23
+  - CH24
+  - CH27
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1 human feedback before final prose tone
+human_dependencies:
+  - Gate 3 reader evidence pending
+physical_dependencies: []
+ce_inheritance:
+  - CE-5 (AI/data/model/inference/genAI/uncertainty slices)
+lab_inheritance:
+  - LAB-TRUST-001 (adjacency for data→model→inference + uncertainty)
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Promote CE-5 AI claim/figure IDs into CH21 packet crosswalk; draft section-intent only after Gate 3 R1 themes land

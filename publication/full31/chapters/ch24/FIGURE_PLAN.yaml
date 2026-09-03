@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH24
+figures:
+- provisional_id: FIG-CH24-001
+  figure_type: lifecycle
+  pedagogical_purpose: Privacy data lifecycle wheel with owners
+  reader_should_notice: Privacy data lifecycle wheel with owners
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Privacy data lifecycle wheel with owners; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH24-002
+  figure_type: comparison
+  pedagogical_purpose: Accessible vs blocked recovery/auth paths
+  reader_should_notice: Accessible vs blocked recovery/auth paths
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Accessible vs blocked recovery/auth paths; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH24-003
+  figure_type: ladder
+  pedagogical_purpose: "Ethics ladder: observation → inference → disclosure"
+  reader_should_notice: "Ethics ladder: observation → inference → disclosure"
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: "Describe Ethics ladder: observation → inference → disclosure; color never sole cue."
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

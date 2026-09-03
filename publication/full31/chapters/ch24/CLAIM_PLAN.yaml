@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+chapter_id: CH24
+claims:
+- provisional_id: CLM-CH24-001
+  text: WCAG 2.2 exists as dated W3C Recommendations; Agent G split keys wcag22-20231005 (2023-10-05) and wcag22-20241212 (2024-12-12) sharing the /TR/WCAG22/ family—do not silently overwrite dates.
+  claim_class: standards_based
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - wcag22-20231005
+  - wcag22-20241212
+  overclaim_risk: "prohibited: collapse conflicting dates into one silent key"
+  wording_boundary: "approved: cite dated key explicitly | prohibited: collapse conflicting dates into one silent key"
+- provisional_id: CLM-CH24-002
+  text: NIST SP 800-63-4 digital identity guidance supports teaching identity proofing/authentication separately from authorization.
+  claim_class: standards_based
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - nist_sp_800_63_4
+  overclaim_risk: "prohibited: book claims WCAG/NIST certification of products"
+  wording_boundary: "approved: assurance concepts | prohibited: book claims WCAG/NIST certification of products"
+- provisional_id: CLM-CH24-003
+  text: Solove taxonomy provides peer-reviewed privacy-harm vocabulary useful for learner language (page cites deferred until PDF check).
+  claim_class: peer_reviewed
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - solove_taxonomy_2006
+  overclaim_risk: "prohibited: invented page numbers"
+  wording_boundary: "approved: harm vocabulary | prohibited: invented page numbers"
+- provisional_id: CLM-CH24-004
+  text: "WAIKE COMM_PD_ETHICS labs (consent, AI disclosure, ethics ladder, accessibility communication) are adjacent."
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-WAIKE
+  overclaim_risk: "prohibited: invent ethics course ID for CH24"
+  wording_boundary: "approved: adjacent | prohibited: invent ethics course ID for CH24"
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    source_id: SRC-WAIKE

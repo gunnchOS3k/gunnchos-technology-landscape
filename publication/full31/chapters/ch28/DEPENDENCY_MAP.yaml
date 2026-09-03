@@ -1,0 +1,31 @@
+schema_version: 1.0.0
+chapter_id: CH28
+chapter_number: 28
+title: "Digital Twins, Simulation, and Reproducible Research"
+part: VI
+requires:
+  - CH27
+  - CH20
+reinforces:
+  - CH04 Device Quartet learning lab (conceptual)
+feeds:
+  - CH29
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3
+physical_dependencies:
+  - Any twin-validated hardware claims
+ce_inheritance:
+  - CE-6 measurement/limitations habits
+  - reproducible_research catalog adjacency
+lab_inheritance:
+  - fixture-based simulation routes across CE labs
+  - WAIKE reproducible_research track
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Verify digital-twin standard designation; draft reproducibility card schema shared with CH31

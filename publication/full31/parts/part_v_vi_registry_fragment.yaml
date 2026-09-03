@@ -1,0 +1,220 @@
+# Agent J registry fragment — Part V + Part VI
+# Integrator merges into publication/full31/CHAPTER_PRODUCTION_REGISTRY.yaml
+schema_version: 1.0.0
+fragment_id: part_v_vi
+agent: agent-j/full31-part-v-vi
+accepted_main_sha: 0e694176652d4729c7f2b71df08b871a863afb8c
+waike_audited_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+notes:
+  - Concept preproduction packets complete for ch21–ch31; canonical prose remains SCAFFOLD.
+  - Ch21/23/24 inherit CE-5; Ch31/Ch20-adjacent themes inherit CE-6; link not duplicate.
+  - LAB-TRUST-001 / LAB-CE06-001 referenced as FIXTURE_VALIDATED infrastructure on agent branches — not Gate 3 human evidence.
+  - Ch31 illustrative EMIT examples must never be represented as human reader evidence.
+  - Device Quartet physical claims remain PHYSICAL_PENDING.
+  - Ch24 WCAG keys: wcag22-20231005 and wcag22-20241212 (do not silently overwrite).
+chapters:
+- chapter_number: 21
+  chapter_id: CH21
+  title: "Data, Machine Learning, and Generative AI"
+  part: V
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH01', 'CH02', 'CH07', 'CH14', 'CH15']
+  gate_dependencies: ['CH02-REVIEW-R1 human feedback before final prose tone']
+  human_dependencies: ['Gate 3 reader evidence pending']
+  physical_dependencies: []
+  next_automatable_action: Promote CE-5 AI claim/figure IDs into CH21 packet crosswalk; draft section-intent only after Gate 3 R1 themes land
+- chapter_number: 22
+  chapter_id: CH22
+  title: "Edge AI, Sensors, and Embodied Interaction"
+  part: V
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH08', 'CH09', 'CH15', 'CH21']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3 reader evidence pending']
+  physical_dependencies: ['Device Quartet Edge IO Wearables fabrication/measurements']
+  next_automatable_action: Select primary edge-ML and sensing-privacy sources; keep figure FIG-CH22-003 blocked until PHYSICAL_PENDING resolved or downgraded to conceptual
+- chapter_number: 23
+  chapter_id: CH23
+  title: Cybersecurity from Chip to Cloud
+  part: V
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH02', 'CH11', 'CH12', 'CH14', 'CH16']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3 reader evidence pending']
+  physical_dependencies: ['Any chip/boot measured claims']
+  next_automatable_action: Inherit CE-5 FIG-CE5-003/004/007 IDs into CH23 figure plan; keep security content non-offensive in drafting checklist
+- chapter_number: 24
+  chapter_id: CH24
+  title: "Privacy, Identity, Safety, Accessibility, and Ethics"
+  part: V
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH21', 'CH23', 'CE-5']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3 reader evidence pending', 'later a11y human review']
+  physical_dependencies: []
+  next_automatable_action: Wire both WCAG dated keys into CH24 SOURCE_NEEDS and claim plan; never collapse dates on merge
+- chapter_number: 25
+  chapter_id: CH25
+  title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
+  part: V
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH20', 'CH24', 'CE-6']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3', 'later equity/educator review']
+  physical_dependencies: ['Device Quartet comparative measurements if claimed']
+  next_automatable_action: Select official ICT access statistical sources; keep all population claims blocked until verified
+- chapter_number: 26
+  chapter_id: CH26
+  title: Software Development and Version Control
+  part: VI
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH02', 'CH14']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3']
+  physical_dependencies: ['DS-XL Coder if claimed']
+  next_automatable_action: Pin official Git documentation URLs with verification status; scaffold LAB-CH26-GIT-001 fixture design
+- chapter_number: 27
+  chapter_id: CH27
+  title: "Testing, Observability, and Evidence"
+  part: VI
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH20', 'CH26', 'CE-6']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3']
+  physical_dependencies: []
+  next_automatable_action: Verify OpenTelemetry (or chosen) primary docs; align claim IDs with CE-6 evidence hierarchy figures
+- chapter_number: 28
+  chapter_id: CH28
+  title: "Digital Twins, Simulation, and Reproducible Research"
+  part: VI
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH27', 'CH20']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3']
+  physical_dependencies: ['Any twin-validated hardware claims']
+  next_automatable_action: Verify digital-twin standard designation; draft reproducibility card schema shared with CH31
+- chapter_number: 29
+  chapter_id: CH29
+  title: Designing a Complete Technology Product
+  part: VI
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH21', 'CH23', 'CH24', 'CH26', 'CH27']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3', 'later product/editorial review']
+  physical_dependencies: ['Device Quartet / OS shipping claims']
+  next_automatable_action: Draft non-marketing product one-pager template fields; keep PHYSICAL_PENDING badges mandatory in figures
+- chapter_number: 30
+  chapter_id: CH30
+  title: Career Maps and Portfolio Proof
+  part: VI
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CH26', 'CH27', 'CH29']
+  gate_dependencies: ['CH02-REVIEW-R1']
+  human_dependencies: ['Gate 3', 'mentor/educator review of portfolio quality']
+  physical_dependencies: []
+  next_automatable_action: Draft portfolio index schema aligned to CE CAREER_MAP fields; forbid employment-guarantee language in checklist
+- chapter_number: 31
+  chapter_id: CH31
+  title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
+  part: VI
+  current_state: PREPRODUCTION_COMPLETE
+  canonical_prose_state: SCAFFOLD
+  concept_preproduction_state: PREPRODUCTION_COMPLETE
+  source_state: PREPRODUCTION_COMPLETE
+  claim_state: PREPRODUCTION_COMPLETE
+  figure_state: PREPRODUCTION_STARTED
+  lab_state: PREPRODUCTION_COMPLETE
+  glossary_state: PREPRODUCTION_COMPLETE
+  waike_state: PREPRODUCTION_COMPLETE
+  dependencies: ['CE-1', 'CE-2', 'CE-3', 'CE-4', 'CE-5', 'CE-6', 'CH20', 'CH21', 'CH23', 'CH24', 'CH25', 'CH27', 'CH30']
+  gate_dependencies: ['CH02-REVIEW-R1 — required before final capstone prose tone']
+  human_dependencies: ['Gate 3 reader evidence', 'capstone mentor review']
+  physical_dependencies: ['optional Device Quartet if learner chooses hardware claims']
+  next_automatable_action: Link LAB-CE06-001 into CH31 lab opportunities after integrator merges agent-e; keep illustrative example firewall in drafting checklist
+
+waike_mapping_totals_this_fragment:
+  exact: 0
+  adjacent: 46
+  proposed: 11
+  no_map: 14

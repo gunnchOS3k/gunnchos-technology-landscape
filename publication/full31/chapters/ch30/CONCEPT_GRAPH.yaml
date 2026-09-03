@@ -1,0 +1,108 @@
+schema_version: 1.0.0
+chapter_id: CH30
+teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+concepts:
+- concept_id: CX-CH30-ROLE
+  canonical_term: Role family
+  plain_language_definition: "A cluster of related work, not a job promise."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH30-PORTFOLIO
+  canonical_term: Portfolio proof
+  plain_language_definition: Artifacts that make skill inspectable.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH30-CRITERIA
+  canonical_term: Review criteria
+  plain_language_definition: What makes an artifact convincing.
+  depends_on:
+  - CX-CH30-PORTFOLIO
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH30-BOUNDARY
+  canonical_term: Employment non-guarantee
+  plain_language_definition: Learning evidence ≠ hired outcome.
+  depends_on:
+  - CX-CH30-ROLE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH30-INDEX
+  canonical_term: Portfolio index
+  plain_language_definition: Map from artifact → claim → limitation.
+  depends_on:
+  - CX-CH30-PORTFOLIO
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+edges:
+- from: CX-CH30-ROLE
+  to: CX-CH30-PORTFOLIO
+  relation: evidenced_by
+- from: CX-CH30-PORTFOLIO
+  to: CX-CH30-CRITERIA
+  relation: judged_by
+- from: CX-CH30-ROLE
+  to: CX-CH30-BOUNDARY
+  relation: constrained_by
+- from: CX-CH30-PORTFOLIO
+  to: CX-CH30-INDEX
+  relation: organized_as
+inherits_from:
+- CE CAREER_MAP.yaml patterns
+- careers/ role_registry in publication repo

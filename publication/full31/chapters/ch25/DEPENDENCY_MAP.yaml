@@ -1,0 +1,33 @@
+schema_version: 1.0.0
+chapter_id: CH25
+chapter_number: 25
+title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
+part: V
+requires:
+  - CH20
+  - CH24
+  - CE-6
+reinforces:
+  - CH03 performance equity seeds
+feeds:
+  - CH30
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3
+  - later equity/educator review
+physical_dependencies:
+  - Device Quartet comparative measurements if claimed
+ce_inheritance:
+  - CE-6 equity/accessibility as contract conditions
+  - CE-5 responsible use
+lab_inheritance:
+  - LAB-CE06-001 equity fields (link)
+  - phone-first / low-cost WAIKE docs adjacency
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Select official ICT access statistical sources; keep all population claims blocked until verified
