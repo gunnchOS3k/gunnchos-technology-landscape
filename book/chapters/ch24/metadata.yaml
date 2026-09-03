@@ -2,5 +2,45 @@ chapter_id: CH24
 chapter_number: 24
 title: "Privacy, Identity, Safety, Accessibility, and Ethics"
 part: V
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When a permission, recovery, or accessibility path decides whether someone can finish a task others complete easily—which conditions broke, and what evidence do I actually have?
+experience:
+  - permission-or-privacy-notice friction
+  - account recovery lockout
+  - accessible-path exclusion on verify
+  - surprise retain-or-share after delete request
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [privacy-lifecycle, identity, authentication, authorization, safety-constraints, accessibility-path, ethics-ladder, stability-contract]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-TRUST-001]
+figures:
+  - FIG-CH24-001
+  - FIG-CH24-002
+  - FIG-CH24-003
+concepts:
+  introduced: [privacy-lifecycle, identity-human-systems, safety-constraints, accessibility-path, ethics-ladder, wcag-dated-guidance, consent-trust-card]
+  required: [privacy-ne-security, a11y-ne-convenience, authn-vs-authz, observation-vs-inference, stability-contract]
+  related: [local-vs-cloud-ai, least-privilege, psychological-acceptability]
+waike:
+  mapped: true
+  courses: [COMM_PD_ETHICS, CYBERSECURITY, AI_ML_EDGE]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (lab_consent_disclosure, lab_ai_disclosure_modes, lab_ethics_ladder, lab_accessibility_comm). LAB-TRUST-001 is publication-owned; no exact WAIKE CH24 module."
+claims:
+  plan: publication/full31/chapters/ch24/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-05/
+  adjacent: [publication/preproduction/ce-06/]
+bibliography_note: "Cite dual WCAG dated keys wcag22-20231005 and wcag22-20241212—never collapse. Also nist_sp_800_63_4, solove_taxonomy_2006 (pages deferred), src-waike, saltzer_schroeder_1975, nist_ai_rmf_100_1. No product certification claims."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; fixtures are not human validation"
+  - "FIG-CH24-001..003 draft-blocked pending SVG + a11y sidecars"
+  - "safety_std_selection SOURCE_NEEDED if claiming beyond pedagogical NIST AI RMF vocabulary"
+  - "Solove page cites deferred until PDF page-check"
+  - "No invented WAIKE ethics course ID; no WCAG/NIST certification of book or products"
