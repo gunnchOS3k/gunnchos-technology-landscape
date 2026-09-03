@@ -1,0 +1,17 @@
+figure_id: FIG-CH16-004
+title: "Lab timing classroom n=1"
+caption: "Classroom n=1 timing fixture. Truth: illustrative; not a product SLO or Gate 3 evidence."
+alt_text: "FIG-CH16-004: Before/during timing snapshot labeled classroom n=1."
+text_equivalent: |
+  FIG-CH16-004 reading order: Before, During, n=1 classroom label.
+reading_order:
+  - "Before"
+  - "During"
+  - "n=1 label"
+source: "figures/measured/fig-ch16-004-lab-timing.svg"
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"
