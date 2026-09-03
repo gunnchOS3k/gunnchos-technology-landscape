@@ -35,3 +35,9 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## EVIDENCE-A update
+
+| Need | Status |
+|---|---|
+| `ict_access_stats` / `CLM-CH25-003` | `SOURCE_IDENTIFIED` via `itu-facts-figures-2025` (cite specific tables before quoting numbers) |

@@ -35,3 +35,10 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## EVIDENCE-A update
+
+| Need | Status |
+|---|---|
+| `digital_twin_std` / `CLM-CH28-002` | `SOURCE_IDENTIFIED` via `iso-23247-1-2021` |
+| `repro_research_guide` | Still `SOURCE_NEEDED` — select peer-reviewed/official reproducibility guide with verified metadata |

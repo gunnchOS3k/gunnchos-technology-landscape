@@ -21,8 +21,10 @@ claims:
   claim_class: general_technical
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - patterson-hennessy
+  - patterson-hennessy-riscv
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated

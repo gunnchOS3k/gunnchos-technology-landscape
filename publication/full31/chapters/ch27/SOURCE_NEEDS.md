@@ -2,7 +2,7 @@
 
 **Chapter:** CH27 — Testing, Observability, and Evidence  
 **WAIKE audit SHA (this packet):** `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`  
-**Publication accepted-main:** `0e694176652d4729c7f2b71df08b871a863afb8c`  
+**Publication accepted-main:** `18ec58005529bd16d680ee7419e4dea13150e9c6`  
 **Policy:** No fake citations. Prefer standards → official docs → peer-reviewed → textbooks. Mark gaps honestly.
 
 ## Status vocabulary
@@ -15,8 +15,8 @@
 |---|---|---|---|
 | `SRC-CE06-02` | SOURCE_IDENTIFIED | standards | ITU-T G.1011 context for evidence hierarchy |
 | `SRC-WAIKE` | SOURCE_IDENTIFIED | repository | CLOUD_DEVOPS + DATA_DASHBOARDS labs @ e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 |
-| `otel_docs` | SOURCE_NEEDED | official docs/standards | Verify OpenTelemetry primary docs if cited |
-| `LAB-CE06-001` | PROJECT_EVIDENCE_NEEDED | publication lab | FIXTURE_VALIDATED on agent-e branch pending integrator merge |
+| `otel_docs` / `otel-signals` | SOURCE_IDENTIFIED | official docs/standards | `CLM-CH27-003` via existing `otel-signals` (no fake version pins) |
+| `LAB-CE06-001` | SOURCE_IDENTIFIED | publication lab | `CLM-CH27-004` FIXTURE_VALIDATED @ `18ec580…` (not Gate 3 human validation) |
 
 ## Inheritance
 
@@ -39,3 +39,9 @@ Do not merge candidates into global `book/references/references.bib` until promo
 ## Project evidence closure (2026-09-03)
 
 - `CLM-CH27-004` resolved via `labs/LAB-CE06-001/` @ `18ec58005529bd16d680ee7419e4dea13150e9c6` (`FIXTURE_VALIDATED`; not Gate 3 human validation).
+
+## EVIDENCE-A update
+
+| Need | Status |
+|---|---|
+| `otel_docs` / `CLM-CH27-003` | `SOURCE_IDENTIFIED` via existing `otel-signals` |

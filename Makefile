@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check
 
 setup:
 	python3 -m venv .venv
@@ -121,6 +121,9 @@ ce-visual-text-check:
 ce-sources-check:
 	$(PYTHON) scripts/validate_ce_sources.py --check
 
+full31-claim-sources-check:
+	$(PYTHON) scripts/check_full31_claim_sources.py --check
+
 full31-report:
 	$(PYTHON) scripts/merge_full31_registry.py
 	$(PYTHON) scripts/aggregate_full31_waike.py
@@ -129,6 +132,7 @@ full31-check:
 	$(PYTHON) scripts/merge_full31_registry.py --check
 	$(PYTHON) scripts/aggregate_full31_waike.py --check
 	$(PYTHON) scripts/validate_full31.py
+	$(PYTHON) scripts/check_full31_claim_sources.py --check
 
 full31-draft-check:
 	$(PYTHON) scripts/validate_full31_draft.py --mode $(FULL31_DRAFT_CHECK_MODE)
