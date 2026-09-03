@@ -18,7 +18,7 @@ TEX_BIN_DIR ?= $(shell \
 
 export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check
 
 setup:
 	python3 -m venv .venv
@@ -43,6 +43,7 @@ validate:
 	$(PYTHON) scripts/validate_waike.py
 	$(PYTHON) scripts/validate_citations.py
 	$(PYTHON) scripts/validate_gate3_review.py
+	$(PYTHON) scripts/validate_ce_preproduction.py
 
 test:
 	$(PYTHON) -m pytest -q
@@ -69,6 +70,14 @@ reader-preview:
 
 analyze-reader-feedback:
 	$(PYTHON) scripts/analyze_reader_feedback.py
+
+ce-preproduction-normalize:
+	$(PYTHON) scripts/normalize_ce_preproduction.py
+	$(PYTHON) scripts/regenerate_ce_candidate_indexes.py
+
+ce-preproduction-check:
+	$(PYTHON) scripts/regenerate_ce_candidate_indexes.py --check
+	$(PYTHON) scripts/validate_ce_preproduction.py
 
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).
 all: validate test preview pdf epub

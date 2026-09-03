@@ -1,0 +1,76 @@
+schema_version: 1.0.0
+chapter_id: CE-6
+employment_guarantee: false
+careers:
+- role_family: Site Reliability / Production Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Diagnosis shortlist + comparison runs + honest limitations
+  portfolio_artifact: ''
+  next_deeper: Full-book CH20/CH27; WAIKE CLOUD_DEVOPS lab_slo_budget / lab_incident_runbook
+    (adjacent)
+- role_family: Performance Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Measured-on-this-device timings with illustrative/measured labels
+  portfolio_artifact: ''
+  next_deeper: CH20; optional Linux scheduler docs for Engineer path
+- role_family: Frontend / Application Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Local-vs-remote observation pair
+  portfolio_artifact: ''
+  next_deeper: CE-2 LAB-TAP-001 reuse; SOFTWARE_BUILDER adjacency
+- role_family: Backend / Cloud Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: HTTP/status observations without attacking systems
+  portfolio_artifact: ''
+  next_deeper: "CH17\u201318 / CE-4 synthesis"
+- role_family: Network Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: "Wi\u2011Fi vs cellular or online vs captive-portal notes"
+  portfolio_artifact: ''
+  next_deeper: CE-4 labs; COMPUTER_NETWORKING lab_datapath adjacency
+- role_family: Cybersecurity / Trust
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Redaction checklist applied to portfolio
+  portfolio_artifact: ''
+  next_deeper: CE-5; CYBERSECURITY lab_incident_playbook adjacency
+- role_family: Accessibility Engineering
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Experience C run or a11y divergence notes
+  portfolio_artifact: ''
+  next_deeper: WCAG 2.2 intent study; COMM_PD_ETHICS lab_accessibility_comm adjacency
+- role_family: Technical Program Management
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: "Condition\u2192owner map"
+  portfolio_artifact: ''
+  next_deeper: "CH29\u201330; PM_AGILE track adjacency"
+- role_family: Research / Measurement Science
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Researcher protocol with uncertainty section
+  portfolio_artifact: ''
+  next_deeper: CH20/CH28; catalog course reproducible_research adjacency
+- role_family: Educator / Mentorship
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Facilitation plan + scored sample portfolio
+  portfolio_artifact: ''
+  next_deeper: Educator guides; COMM_PD_ETHICS lab_feedback_rubric / lab_pd_capstone
+    adjacency
+- role_family: UX / HCI
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: Moment + notice writeup tied to conditions
+  portfolio_artifact: ''
+  next_deeper: CH02 prototype patterns; full-book interaction chapters
+disclaimer: 'Completing LAB-CE06-001 does not qualify a learner for employment. Artifacts
+  are portfolio analogues only (employment_guarantee: false).
+
+  '

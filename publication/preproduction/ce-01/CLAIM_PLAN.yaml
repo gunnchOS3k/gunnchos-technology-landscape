@@ -1,0 +1,152 @@
+schema_version: 1.0.0
+chapter_id: CE-1
+claims:
+- provisional_id: CLM-CE1-001
+  text: A graphical user interface is only the visible surface of a larger cooperating
+    technology system.
+  claim_class: general_technical
+  evidence_required: Textbook / systems-design framing of layered computer systems;
+    pedagogical diagram labeled conceptual.
+  preferred_source_type: textbook
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - saltzer-kaashoek
+  - tanenbaum-bos
+  overclaim_risk: Implying every consumer device uses identical layers.
+  wording_boundary: '{''approved'': ''The screen is a visible surface of a larger
+    system of cooperating parts.'', ''prohibited'': [''The UI is irrelevant'', ''All
+    devices share one fixed stack'']}'
+- provisional_id: CLM-CE1-002
+  text: Everyday interactive software commonly follows an event-driven path in which
+    inputs are processed, application state is updated, and outputs are presented
+    to the person.
+  claim_class: standards_based
+  evidence_required: Standards/docs describing events, event loops, or process abstractions
+    at accessible depth.
+  preferred_source_type: standards_or_official_docs
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - whatwg-html
+  - whatwg-dom
+  - tanenbaum-bos
+  overclaim_risk: Claiming all platforms use identical event-loop implementations.
+  wording_boundary: '{''approved'': ''Many interactive programs wait for inputs, update
+    remembered state, then present outputs.'', ''prohibited'': [''Every app uses the
+    HTML event loop'', ''This is a measured latency law'']}'
+- provisional_id: CLM-CE1-003
+  text: Not every useful device experience requires a remote network service; some
+    paths remain local-only.
+  claim_class: general_technical
+  evidence_required: Pedagogical contrast plus optional IP/TCP citations only when
+    discussing remote branch.
+  preferred_source_type: textbook_plus_standards
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - rfc791
+  - rfc9293
+  overclaim_risk: Overgeneralizing from one demo to all apps.
+  wording_boundary: '{''approved'': ''Some experiences finish on-device; others optionally
+    depend on remote services.'', ''prohibited'': [''Modern apps never work offline'',
+    ''Local-only means no operating system'']}'
+- provisional_id: CLM-CE1-004
+  text: A connectivity indicator (for example, Wi-Fi/cellular bars) is not sufficient
+    evidence that a specific application service is healthy.
+  claim_class: general_technical
+  evidence_required: Systems reasoning + lab observation separating icon state from
+    usable result; no invented RF measurements.
+  preferred_source_type: explanatory_plus_lab
+  status: ILLUSTRATIVE_ONLY
+  citation_keys: []
+  overclaim_risk: Stating a universal numerical correlation between RSSI and app success.
+  wording_boundary: '{''approved'': ''Link status and application success are related
+    but not identical observations.'', ''prohibited'': [''Bars guarantee service uptime'',
+    ''Any specific dBm threshold claimed without measurement'']}'
+- provisional_id: CLM-CE1-005
+  text: Device Quartet entries (Student 14.5-inch, Handheld Hybrid, DS-XL Coder, Edge
+    IO Wearables) are research form factors / educational learning benchmarks; physical
+    fabrication remains pending.
+  claim_class: project_specific
+  evidence_required: Accepted-main audit of gunnchos-hardware-industrial-design device-quartet
+    docs.
+  preferred_source_type: repository_accepted_main
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - src-hardware-quartet
+  overclaim_risk: Product marketing language or 'shipping SKU' implication.
+  wording_boundary: '{''approved'': ''Research form factors / educational benchmarks;
+    PHYSICAL_PENDING.'', ''prohibited'': [''Device Quartet units are shipping commercial
+    products'', ''Required proprietary hardware for CE-1 labs'']}'
+- provisional_id: CLM-CE1-006
+  text: WAIKE accepted main hosts file-backed digital_rc course packages that can
+    support adjacent systems-thinking competencies (for example GENERAL_IT observation/inference
+    and ticket triage), but no course module is literally titled Technology Is a System,
+    Not a Screen.
+  claim_class: project_specific
+  evidence_required: Accepted-main waike-research-ops curriculum/catalog + digital_rc
+    course.json inspection at recorded SHA.
+  preferred_source_type: repository_accepted_main
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - src-waike
+  overclaim_risk: Inventing a WAIKE module ID for CE-1.
+  wording_boundary: '{''approved'': ''Evidence-backed adjacency to existing WAIKE
+    courses; no exact CE-1 module ID.'', ''prohibited'': [''WAIKE module CE-1 exists'',
+    ''Exact alignment to a nonexistent course ID'']}'
+- provisional_id: CLM-CE1-007
+  text: "ISO/IEC 25010 provides a product-quality model whose characteristics (including\
+    \ interaction capability / related usability concepts and reliability) can frame\
+    \ why human-visible quality depends on multiple system properties\u2014not only\
+    \ pixels."
+  claim_class: standards_based
+  evidence_required: Cite current ISO/IEC 25010:2023 product quality model without
+    inventing numeric conformance scores.
+  preferred_source_type: standard
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - iso-iec-25010-2023
+  overclaim_risk: Claiming the book or labs are ISO certified.
+  wording_boundary: '{''approved'': ''Quality characteristics provide vocabulary for
+    multi-property product quality.'', ''prohibited'': [''This chapter is ISO 25010
+    certified'', ''Invented quality scores'']}'
+- provisional_id: CLM-CE1-008
+  text: Working memory (RAM) and durable storage are different roles in computer systems
+    and are not interchangeable explanations for every 'slow open' symptom.
+  claim_class: general_technical
+  evidence_required: Computer organization textbook consensus.
+  preferred_source_type: textbook
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - patterson-hennessy
+  overclaim_risk: Deep CH03/CE-3 content dump inside CE-1.
+  wording_boundary: "{'approved': 'RAM is working memory; storage holds durable data\u2014\
+    different jobs.', 'prohibited': ['Any fabricated ns/ms timings for CE-1']}"
+- provisional_id: CLM-CE1-009
+  text: Illustrative CE-1 ecosystem diagrams are conceptual educational architecture,
+    not measured device teardowns or validated EVT hardware.
+  claim_class: illustrative
+  evidence_required: Figure truth labels in FIGURE_PLAN; no photo-teardown claims.
+  preferred_source_type: publication_policy
+  status: ILLUSTRATIVE_ONLY
+  citation_keys: []
+  overclaim_risk: Readers mistaking conceptual art for photographed internals of a
+    specific SKU.
+  wording_boundary: '{''approved'': ''Conceptual / Representative educational architecture.'',
+    ''prohibited'': [''Validated gunnchOS EVT exploded view'', ''Measured teardown
+    of Device Quartet'']}'
+- provisional_id: CLM-CE1-010
+  text: Wall-clock 'chrome visible' versus 'content usable' timings collected in LAB-SYS-001
+    are learner observations on commodity devices, not publication benchmarks or touch-to-photon
+    laboratory measurements.
+  claim_class: measured_later
+  evidence_required: Lab evidence artifact with observation vs inference section;
+    no hardware EVT claims.
+  preferred_source_type: lab_artifact
+  status: PROJECT_EVIDENCE_NEEDED
+  citation_keys: []
+  overclaim_risk: Publishing student timings as universal performance laws.
+  wording_boundary: '{''approved'': ''Learner observation timings with explicit limits.'',
+    ''prohibited'': [''Official Device Quartet benchmark'', ''Touch-to-photon validated
+    result'']}'
+maps_to:
+- CH01
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"

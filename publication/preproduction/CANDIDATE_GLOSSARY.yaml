@@ -1,0 +1,411 @@
+schema_version: 1.0.0
+status: CANDIDATE_PREPRODUCTION
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
+entries:
+- source_package: ce-01
+  concept_id: CX-CE1-001
+  canonical_term: visible interface
+  plain_language_definition: What a person can see or hear on the device surface (screen
+    chrome, icons, sound, haptics) without needing to know hidden machinery.
+- source_package: ce-01
+  concept_id: CX-CE1-002
+  canonical_term: hidden layers
+  plain_language_definition: "Cooperating parts under the interface\u2014local software,\
+    \ operating-system services, storage, power, and optional network/services\u2014\
+    that the person does not see directly."
+- source_package: ce-01
+  concept_id: CX-CE1-003
+  canonical_term: technology ecosystem
+  plain_language_definition: The set of cooperating human, device, software, data,
+    and optional network parts that together produce a usable experience.
+- source_package: ce-01
+  concept_id: CX-CE1-004
+  canonical_term: "inputs \u2192 processing \u2192 state \u2192 outputs"
+  plain_language_definition: 'A teaching path: something enters the system, work happens,
+    remembered conditions update, then a result returns to the person.'
+- source_package: ce-01
+  concept_id: CX-CE1-005
+  canonical_term: application state
+  plain_language_definition: "What the software currently 'remembers' about the session\
+    \ or screen\u2014selected items, loaded content, login session, draft text\u2014\
+    so the interface can be rebuilt."
+- source_package: ce-01
+  concept_id: CX-CE1-006
+  canonical_term: dependency
+  plain_language_definition: "A condition or component the experience needs\u2014\
+    local storage available, process scheduled, optional network path, valid session\u2014\
+    so the usable result can appear."
+- source_package: ce-01
+  concept_id: CX-CE1-007
+  canonical_term: failure domain
+  plain_language_definition: A useful bucket for where trouble may live (UI, local
+    app/OS, storage, network/service, human perception) before claiming a precise
+    root cause.
+- source_package: ce-01
+  concept_id: CX-CE1-008
+  canonical_term: optional network/service branch
+  plain_language_definition: A path some experiences take to machines or services
+    beyond the local device; many experiences never need it.
+- source_package: ce-01
+  concept_id: CX-CE1-009
+  canonical_term: the app is not one thing
+  plain_language_definition: Everyday 'app' talk usually compresses UI, runtime, OS
+    services, storage, optional networking, and remote services into one word.
+- source_package: ce-01
+  concept_id: CX-CE1-010
+  canonical_term: observation vs inference
+  plain_language_definition: Observation is what you directly saw or recorded; inference
+    is a possible explanation that still needs evidence.
+- source_package: ce-01
+  concept_id: CX-CE1-011
+  canonical_term: stability contract (preview)
+  plain_language_definition: A usable experience continues only while multiple hidden
+    conditions stay within acceptable bounds; a system can look 'connected' after
+    the human experience has already failed.
+- source_package: ce-01
+  concept_id: CX-CE1-012
+  canonical_term: Device Quartet (learning laboratory foreshadow)
+  plain_language_definition: "Four research form factors used across the publication\
+    \ as recurring learning benchmarks (desk, handheld hybrid, learn-to-build coder,\
+    \ embodied wearables)\u2014not finished commercial products."
+- source_package: ce-03
+  concept_id: instruction-execution
+  canonical_term: Instruction execution
+  plain_language_definition: 'The CPU carries out a program one instruction (or a
+    small group) at a time: fetch, decode, execute, write results.'
+- source_package: ce-03
+  concept_id: cpu
+  canonical_term: CPU
+  plain_language_definition: The general-purpose processor that executes most program
+    instructions for apps and the OS.
+- source_package: ce-03
+  concept_id: accelerator-gpu
+  canonical_term: Accelerator / GPU
+  plain_language_definition: Specialized processors that take certain parallel jobs
+    (graphics, media, some ML) off the CPU; the OS and drivers still mediate access.
+- source_package: ce-03
+  concept_id: register
+  canonical_term: Register
+  plain_language_definition: Tiny, extremely fast storage locations inside the CPU
+    that hold values the processor is working on right now.
+- source_package: ce-03
+  concept_id: cache
+  canonical_term: Cache
+  plain_language_definition: Small, fast memory near the CPU that keeps recently used
+    data so the processor waits less on slower RAM.
+- source_package: ce-03
+  concept_id: ram
+  canonical_term: RAM
+  plain_language_definition: 'The device''s main working memory: fast while powered,
+    but not the durable home for files.'
+- source_package: ce-03
+  concept_id: storage
+  canonical_term: Storage
+  plain_language_definition: Durable place for files and installed software that is
+    meant to survive quitting apps and reboots (subject to failures).
+- source_package: ce-03
+  concept_id: memory-hierarchy
+  canonical_term: Memory hierarchy
+  plain_language_definition: The layered stack from tiny/fast (registers, caches)
+    to large/slower (RAM, storage) that makes programs practical.
+- source_package: ce-03
+  concept_id: process
+  canonical_term: Process
+  plain_language_definition: An OS-managed running program instance with its own protected
+    resources.
+- source_package: ce-03
+  concept_id: thread
+  canonical_term: Thread
+  plain_language_definition: A schedulable stream of execution inside a process; one
+    process may run many threads.
+- source_package: ce-03
+  concept_id: scheduler
+  canonical_term: Scheduler
+  plain_language_definition: The OS policy/mechanism that decides which ready thread/process
+    runs on which CPU time slice.
+- source_package: ce-03
+  concept_id: os-abstraction
+  canonical_term: OS abstraction
+  plain_language_definition: A simplified, safer interface the operating system presents
+    (processes, files, virtual memory) so apps need not manage every hardware detail.
+- source_package: ce-03
+  concept_id: file-persistence
+  canonical_term: File / persistence
+  plain_language_definition: A named durable object managed by the OS/file system
+    so data can outlive a process.
+- source_package: ce-03
+  concept_id: bottleneck-symptom
+  canonical_term: Bottleneck symptom
+  plain_language_definition: "A human-visible slowdown pattern that suggests which\
+    \ resource is scarce\u2014without by itself proving root cause."
+- source_package: ce-03
+  concept_id: power-thermal-limit
+  canonical_term: Power / thermal limit
+  plain_language_definition: Hardware and firmware policies that reduce performance
+    to stay within power or temperature budgets.
+- source_package: ce-03
+  concept_id: virtual-memory
+  canonical_term: Virtual memory
+  plain_language_definition: OS technique that gives each process a private address
+    space and can move less-used pages between RAM and storage.
+- source_package: ce-04
+  concept_id: CE4-C-LOCAL-SCOPE
+  canonical_term: local (on-device) scope
+  plain_language_definition: Work that can complete using only resources already on
+    the device, without leaving the enclosure.
+- source_package: ce-04
+  concept_id: CE4-C-LAN-SCOPE
+  canonical_term: LAN scope
+  plain_language_definition: Reachability limited to a local network neighborhood
+    (home/campus/office segment), not the global Internet.
+- source_package: ce-04
+  concept_id: CE4-C-INTERNET-SCOPE
+  canonical_term: Internet scope
+  plain_language_definition: Multi-network reachability across independently administered
+    networks using shared addressing/routing conventions.
+- source_package: ce-04
+  concept_id: CE4-C-PACKET
+  canonical_term: packet
+  plain_language_definition: A bounded chunk of data plus headers that help different
+    network workers deliver and interpret it.
+- source_package: ce-04
+  concept_id: CE4-C-ENCAPSULATION
+  canonical_term: encapsulation
+  plain_language_definition: "Stacking headers like sticky notes\u2014outer notes\
+    \ for nearer workers, inner notes for later ones."
+- source_package: ce-04
+  concept_id: CE4-C-ADDRESSING
+  canonical_term: addressing
+  plain_language_definition: Identifiers that say who a packet is for (and often who
+    sent it) at a given layer.
+- source_package: ce-04
+  concept_id: CE4-C-ROUTING
+  canonical_term: routing / forwarding
+  plain_language_definition: Choosing the next hop for a packet toward its destination
+    across interconnected networks.
+- source_package: ce-04
+  concept_id: CE4-C-DNS
+  canonical_term: DNS name resolution
+  plain_language_definition: A system that maps human-meaningful names to network
+    addresses for a time, often with caching.
+- source_package: ce-04
+  concept_id: CE4-C-TRANSPORT
+  canonical_term: transport (reliability mechanisms)
+  plain_language_definition: End-to-end conversation rules that may detect loss, order
+    data, or leave reliability to the application.
+- source_package: ce-04
+  concept_id: CE4-C-WIFI
+  canonical_term: Wi-Fi access
+  plain_language_definition: A wireless LAN access technology that links devices to
+    a local network neighborhood; it is not itself the Internet.
+- source_package: ce-04
+  concept_id: CE4-C-CELLULAR
+  canonical_term: cellular access
+  plain_language_definition: A mobile-operator radio access path that can provide
+    on-ramps to operator networks and often the Internet; distinct from Wi-Fi.
+- source_package: ce-04
+  concept_id: CE4-C-RADIO-CONDITIONS
+  canonical_term: radio / spectrum conditions (survey)
+  plain_language_definition: Shared-medium and propagation realities (distance, obstacles,
+    interference, congestion) that change wireless feel.
+- source_package: ce-04
+  concept_id: CE4-C-EDGE
+  canonical_term: edge placement
+  plain_language_definition: Putting compute or state closer to users or devices to
+    meet latency, bandwidth, privacy, or continuity constraints.
+- source_package: ce-04
+  concept_id: CE4-C-CLOUD
+  canonical_term: cloud placement
+  plain_language_definition: On-demand networked access to shared configurable computing
+    resources, often remote from the user device.
+- source_package: ce-04
+  concept_id: CE4-C-LATENCY
+  canonical_term: latency
+  plain_language_definition: "How long it takes for a useful response to begin or\
+    \ complete along a path\u2014experienced as delay."
+- source_package: ce-04
+  concept_id: CE4-C-RELIABILITY
+  canonical_term: reliability (connectivity experience)
+  plain_language_definition: Whether needed messages arrive correctly often enough
+    for the experience to continue, including under loss and change.
+- source_package: ce-04
+  concept_id: CE4-C-THROUGHPUT
+  canonical_term: throughput
+  plain_language_definition: "How much useful data can be transferred per unit time\u2014\
+    experienced as how long large transfers take."
+- source_package: ce-04
+  concept_id: CE4-C-CONTINUITY
+  canonical_term: service continuity
+  plain_language_definition: "Keeping the human experience working across changes\
+    \ in path, access network, or placement\u2014not merely keeping a radio attached."
+- source_package: ce-05
+  concept_id: CX-CE5-DATA
+  canonical_term: Training and input data
+  plain_language_definition: Examples and records used to fit a model or answer a
+    question.
+- source_package: ce-05
+  concept_id: CX-CE5-MODEL
+  canonical_term: Model parameters
+  plain_language_definition: Stored numbers that shape how inputs become outputs;
+    not a mind.
+- source_package: ce-05
+  concept_id: CX-CE5-INFERENCE
+  canonical_term: Inference / output
+  plain_language_definition: Running the model on new inputs to produce a prediction
+    or generated text.
+- source_package: ce-05
+  concept_id: CX-CE5-GENAI
+  canonical_term: Generative AI (systems view)
+  plain_language_definition: Systems that produce new text, images, or code by predicting
+    likely continuations.
+- source_package: ce-05
+  concept_id: CX-CE5-LOCALCLOUD
+  canonical_term: Local vs cloud AI
+  plain_language_definition: Whether inference runs on your device or on someone else's
+    computers.
+- source_package: ce-05
+  concept_id: CX-CE5-UNCERTAINTY
+  canonical_term: Uncertainty and errors
+  plain_language_definition: Outputs can be wrong, biased, or incomplete even when
+    confident-sounding.
+- source_package: ce-05
+  concept_id: CX-CE5-ATTACKSURFACE
+  canonical_term: Attack surface (UX-linked)
+  plain_language_definition: "Places where misuse can enter\u2014through the same\
+    \ screens and flows people use."
+- source_package: ce-05
+  concept_id: CX-CE5-IDENTITY
+  canonical_term: Identity
+  plain_language_definition: A claim about who or what an actor is.
+- source_package: ce-05
+  concept_id: CX-CE5-AUTHN
+  canonical_term: Authentication
+  plain_language_definition: Checking that an identity claim is sufficiently believable
+    for this risk.
+- source_package: ce-05
+  concept_id: CX-CE5-AUTHZ
+  canonical_term: Authorization
+  plain_language_definition: Deciding what an authenticated actor is allowed to do.
+- source_package: ce-05
+  concept_id: CX-CE5-CRYPTO
+  canonical_term: Encryption concepts
+  plain_language_definition: Transforms that make data unreadable without keys; goals
+    and limits matter.
+- source_package: ce-05
+  concept_id: CX-CE5-PRIVACY
+  canonical_term: Privacy / data lifecycle
+  plain_language_definition: Rules and practices for collect, use, retain, share,
+    delete/redact.
+- source_package: ce-05
+  concept_id: CX-CE5-LIFECYCLE
+  canonical_term: Data lifecycle stages
+  plain_language_definition: Named stages from collection through deletion or archival.
+- source_package: ce-05
+  concept_id: CX-CE5-TRUST
+  canonical_term: Human trust vs technical trust
+  plain_language_definition: Felt reliability versus controls and evidence that bound
+    risk.
+- source_package: ce-05
+  concept_id: CX-CE5-RESPONSIBLE
+  canonical_term: Responsible use
+  plain_language_definition: Practices that align capability with disclosure, consent,
+    equity, and accessibility.
+- source_package: ce-06
+  concept_id: CE06-C-STABILITY-CONTRACT
+  canonical_term: Stability Contract
+  plain_language_definition: 'A user experience exists only while multiple hidden
+    technical conditions remain within acceptable bounds at the same time.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-CONCURRENT-CONDITIONS
+  canonical_term: Concurrent hidden conditions
+  plain_language_definition: 'Multiple independent technical conditions (input delivery,
+    scheduling, memory, network/service, render, power, trust, accessibility path,
+    etc.) that must stay good enough together for the experience to succeed.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-CONNECTED-VS-USABLE
+  canonical_term: Connected versus usable
+  plain_language_definition: 'Link or service indicators can report connectivity while
+    the human-facing experience has already failed.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-QOE
+  canonical_term: Quality of Experience (QoE)
+  plain_language_definition: 'Standards vocabulary for the degree of delight or annoyance
+    of a user of an application or service; distinct from raw network probes.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-QOS
+  canonical_term: Quality of Service (QoS)
+  plain_language_definition: 'Characteristics of a telecommunications service that
+    bear on its ability to satisfy stated and implied user needs; related to but not
+    identical with QoE.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-CROSS-LAYER-DIAGNOSIS
+  canonical_term: Cross-layer failure diagnosis
+  plain_language_definition: 'Structured practice of assigning symptoms to candidate
+    layers/domains and seeking boundary evidence before declaring root cause.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-EVIDENCE-HIERARCHY
+  canonical_term: Evidence hierarchy
+  plain_language_definition: "Ordered strength of support: illustrative teaching aid\
+    \ \u2192 single-device observation \u2192 repeated/commodity measurement \u2192\
+    \ correlated multi-signal evidence \u2192 standards-aligned QoE assessment methods.\n"
+- source_package: ce-06
+  concept_id: CE06-C-OBS-VS-INFERENCE
+  canonical_term: Observation versus inference
+  plain_language_definition: 'What was directly seen or recorded versus what is hypothesized;
+    causal claims need extra evidence.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-OBSERVABILITY
+  canonical_term: Observability
+  plain_language_definition: "Ability to understand system behavior from external\
+    \ signals such as logs, metrics, and traces \u2014 without claiming a specific\
+    \ vendor stack is required.\n"
+- source_package: ce-06
+  concept_id: CE06-C-TRADEOFFS
+  canonical_term: Experience tradeoffs
+  plain_language_definition: 'Improving one contract dimension (e.g., richer telemetry,
+    stronger checks, higher fidelity media) can worsen others (privacy, latency, cost,
+    inclusion).
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-EQUITY-A11Y-CONSEQUENCE
+  canonical_term: Equity and accessibility consequence
+  plain_language_definition: 'Contract failures and design assumptions can exclude
+    people by device cost, network quality, disability, language, or offline constraints.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-CAPSTONE-EMIT
+  canonical_term: "Explain\u2013Measure\u2013Improve\u2013Teach"
+  plain_language_definition: 'Capstone spine: explain the ecosystem, measure what
+    you can, propose an improvement with evidence criteria, and teach another person.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-TEACH-BACK
+  canonical_term: Teach-back
+  plain_language_definition: 'Learner restates the model in their own words to demonstrate
+    transfer, not memorization of slogans.
+
+    '
+- source_package: ce-06
+  concept_id: CE06-C-PORTFOLIO-PROOF
+  canonical_term: Portfolio proof
+  plain_language_definition: "Durable artifacts (tables, diagrams, redacted evidence,\
+    \ reflection, teach-back) that support claims \u2014 not a bare PASS string.\n"
+n_entries: 75

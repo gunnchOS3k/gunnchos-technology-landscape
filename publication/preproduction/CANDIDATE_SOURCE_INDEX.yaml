@@ -1,0 +1,528 @@
+schema_version: 1.0.0
+status: CANDIDATE_PREPRODUCTION
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
+chapter_source_occurrences: 64
+unique_source_records: 58
+unique_by_class:
+  official_technical_documentation: 13
+  other_explanatory: 8
+  peer_reviewed: 3
+  project_accepted_main: 7
+  standards_specifications: 18
+  textbooks: 9
+metadata_conflicts:
+- 'wcag22: conflicting year: ''2023'' vs ''2024'''
+sources:
+- source_package: ce-01
+  bib_key: saltzer-kaashoek
+  entry_type: book
+  title: 'Principles of Computer System Design: An Introduction'
+  year: '2009'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: tanenbaum-bos
+  entry_type: book
+  title: Modern Operating Systems
+  year: '2022'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: patterson-hennessy
+  entry_type: book
+  title: 'Computer Organization and Design: The Hardware/Software Interface'
+  year: '2020'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: iso-iec-25010-2023
+  entry_type: misc
+  title: null
+  year: '2023'
+  url: https://www.iso.org/standard/78176.html
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: rfc791
+  entry_type: misc
+  title: Internet Protocol
+  year: '1981'
+  url: https://www.rfc-editor.org/rfc/rfc791
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: rfc9293
+  entry_type: misc
+  title: null
+  year: '2022'
+  url: https://www.rfc-editor.org/rfc/rfc9293
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: whatwg-html
+  entry_type: misc
+  title: HTML Standard
+  year: '2026'
+  url: https://html.spec.whatwg.org/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: whatwg-dom
+  entry_type: misc
+  title: DOM Standard
+  year: '2026'
+  url: https://dom.spec.whatwg.org/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: wcag22
+  entry_type: misc
+  title: null
+  year: '2023'
+  url: https://www.w3.org/TR/WCAG22/
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: linux-scheduler
+  entry_type: misc
+  title: CPU Scheduler
+  year: '2026'
+  url: https://docs.kernel.org/scheduler/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: mdn-performance
+  entry_type: misc
+  title: Performance API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-01
+  bib_key: src-waike
+  entry_type: misc
+  title: waike-research-ops accepted main audit for CE-1 adjacency
+  year: '2026'
+  url: https://github.com/gunnchOS3k/waike-research-ops
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+- source_package: ce-01
+  bib_key: src-hardware-quartet
+  entry_type: misc
+  title: gunnchos-hardware-industrial-design Device Quartet docs
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+- source_package: ce-03
+  bib_key: patterson-hennessy-riscv
+  entry_type: book
+  title: 'Computer Organization and Design RISC-V Edition: The Hardware/Software Interface'
+  year: '2020'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: tanenbaum-bos
+  entry_type: book
+  title: Modern Operating Systems
+  year: '2022'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: silberschatz-galvin-gagne
+  entry_type: book
+  title: Operating System Concepts
+  year: '2018'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: jedec-jesd79-4d
+  entry_type: misc
+  title: DDR4 SDRAM Standard (JESD79-4D)
+  year: '2021'
+  url: https://www.jedec.org/standards-documents/docs/jesd79-4a
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: nvme-base-spec
+  entry_type: misc
+  title: NVM Express Base Specification (family)
+  year: '2026'
+  url: https://nvmexpress.org/specifications/
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: khronos-vulkan-overview
+  entry_type: misc
+  title: Vulkan Overview
+  year: '2026'
+  url: https://www.khronos.org/vulkan/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: linux-scheduler
+  entry_type: misc
+  title: CPU Scheduler
+  year: '2026'
+  url: https://docs.kernel.org/scheduler/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: linux-cpu-freq
+  entry_type: misc
+  title: CPU Performance Scaling
+  year: '2026'
+  url: https://docs.kernel.org/admin-guide/pm/cpufreq.html
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: linux-memory
+  entry_type: misc
+  title: Memory Management
+  year: '2026'
+  url: https://docs.kernel.org/admin-guide/mm/index.html
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: mdn-performance
+  entry_type: misc
+  title: Performance API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-03
+  bib_key: src-waike-ce3
+  entry_type: misc
+  title: waike-research-ops accepted main (CE-3 audit)
+  year: '2026'
+  url: https://github.com/gunnchOS3k/waike-research-ops
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+- source_package: ce-03
+  bib_key: src-device-os-ce3
+  entry_type: misc
+  title: gunnchos-device-os accepted main (CE-3 audit)
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-device-os
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+- source_package: ce-03
+  bib_key: src-hardware-ce3
+  entry_type: misc
+  title: gunnchos-hardware-industrial-design accepted main (CE-3 audit)
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+- source_package: ce-04
+  bib_key: rfc791
+  entry_type: misc
+  title: Internet Protocol
+  year: '1981'
+  url: https://www.rfc-editor.org/rfc/rfc791
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc768
+  entry_type: misc
+  title: User Datagram Protocol
+  year: '1980'
+  url: https://www.rfc-editor.org/rfc/rfc768
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc9293
+  entry_type: misc
+  title: Transmission Control Protocol (TCP)
+  year: '2022'
+  url: https://www.rfc-editor.org/rfc/rfc9293
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc8200
+  entry_type: misc
+  title: Internet Protocol, Version 6 (IPv6) Specification
+  year: '2017'
+  url: https://www.rfc-editor.org/rfc/rfc8200
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc1034
+  entry_type: misc
+  title: "Domain Names \u2014 Concepts and Facilities"
+  year: '1987'
+  url: https://www.rfc-editor.org/rfc/rfc1034
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc1035
+  entry_type: misc
+  title: "Domain Names \u2014 Implementation and Specification"
+  year: '1987'
+  url: https://www.rfc-editor.org/rfc/rfc1035
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc1918
+  entry_type: misc
+  title: Address Allocation for Private Internets
+  year: '1996'
+  url: https://www.rfc-editor.org/rfc/rfc1918
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc1122
+  entry_type: misc
+  title: "Requirements for Internet Hosts \u2014 Communication Layers"
+  year: '1989'
+  url: https://www.rfc-editor.org/rfc/rfc1122
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc3022
+  entry_type: misc
+  title: Traditional IP Network Address Translator (Traditional NAT)
+  year: '2001'
+  url: https://www.rfc-editor.org/rfc/rfc3022
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc9000
+  entry_type: misc
+  title: 'QUIC: A UDP-Based Multiplexed and Secure Transport'
+  year: '2021'
+  url: https://www.rfc-editor.org/rfc/rfc9000
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: rfc8446
+  entry_type: misc
+  title: The Transport Layer Security (TLS) Protocol Version 1.3
+  year: '2018'
+  url: https://www.rfc-editor.org/rfc/rfc8446
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: nist-sp800-145
+  entry_type: techreport
+  title: null
+  year: '2011'
+  url: https://csrc.nist.gov/pubs/sp/800/145/final
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: nist-sp500-325
+  entry_type: techreport
+  title: Fog Computing Conceptual Model
+  year: '2018'
+  url: https://csrc.nist.gov/pubs/sp/500/325/final
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: ieee80211-wg
+  entry_type: misc
+  title: null
+  year: '2026'
+  url: https://www.ieee802.org/11/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: ieee80211-2020
+  entry_type: misc
+  title: null
+  year: '2020'
+  url: https://standards.ieee.org/standard/802_11-2020.html
+  source_class: peer_reviewed
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: threegpp-ts23501
+  entry_type: misc
+  title: System architecture for the 5G System (5GS)
+  year: '2026'
+  url: https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: mdn-network-monitor
+  entry_type: misc
+  title: Network Monitor
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: mdn-resource-timing
+  entry_type: misc
+  title: Resource Timing API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: wifi-alliance-discover
+  entry_type: misc
+  title: Discover Wi-Fi
+  year: '2026'
+  url: https://www.wi-fi.org/discover-wi-fi
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: kurose-ross-8
+  entry_type: book
+  title: 'Computer Networking: A Top-Down Approach'
+  year: '2020'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-04
+  bib_key: waike-main-ce4-audit
+  entry_type: misc
+  title: WAIKE research-ops accepted main audit for CE-4 crosswalk
+  year: '2026'
+  url: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-05
+  bib_key: nist_ai_rmf_100_1
+  entry_type: techreport
+  title: null
+  year: '2023'
+  url: https://doi.org/10.6028/NIST.AI.100-1
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-05
+  bib_key: nist_sp_800_63_4
+  entry_type: techreport
+  title: Digital Identity Guidelines
+  year: '2025'
+  url: https://doi.org/10.6028/NIST.SP.800-63-4
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-05
+  bib_key: saltzer_schroeder_1975
+  entry_type: article
+  title: The Protection of Information in Computer Systems
+  year: '1975'
+  url: https://doi.org/10.1109/PROC.1975.9939
+  source_class: peer_reviewed
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-05
+  bib_key: russell_norvig_aima
+  entry_type: book
+  title: 'Artificial Intelligence: A Modern Approach'
+  year: null
+  url: null
+  source_class: textbooks
+  verification_status: NEEDS_PRIMARY_VERIFICATION
+- source_package: ce-05
+  bib_key: goodfellow_deep_learning
+  entry_type: book
+  title: Deep Learning
+  year: '2016'
+  url: https://www.deeplearningbook.org/
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-05
+  bib_key: solove_taxonomy_2006
+  entry_type: article
+  title: A Taxonomy of Privacy
+  year: '2006'
+  url: null
+  source_class: peer_reviewed
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: itu-t-p10-g100
+  entry_type: misc
+  title: Vocabulary for performance, quality of service and quality of experience
+  year: null
+  url: https://www.itu.int/rec/T-REC-P.10/en
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: itu-t-g1011
+  entry_type: misc
+  title: Reference guide to quality of experience assessment methodologies
+  year: '2016'
+  url: https://www.itu.int/rec/T-REC-G.1011
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: wcag22
+  entry_type: misc
+  title: Web Content Accessibility Guidelines (WCAG) 2.2
+  year: '2024'
+  url: https://www.w3.org/TR/WCAG22/
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: whatwg-html-ce06
+  entry_type: misc
+  title: HTML Standard
+  year: '2026'
+  url: https://html.spec.whatwg.org/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: mdn-performance-ce06
+  entry_type: misc
+  title: Performance API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: otel-signals
+  entry_type: misc
+  title: Signals
+  year: '2026'
+  url: https://opentelemetry.io/docs/concepts/signals/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: linux-scheduler-ce06
+  entry_type: misc
+  title: CPU Scheduler
+  year: '2026'
+  url: https://docs.kernel.org/scheduler/
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: patterson-hennessy-ce06
+  entry_type: book
+  title: 'Computer Organization and Design: The Hardware/Software Interface'
+  year: '2020'
+  url: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: digitalregulation-qos-qoe
+  entry_type: misc
+  title: "Technical regulation \u2013 Quality of service"
+  year: '2024'
+  url: https://digitalregulation.org/technical-regulation-quality-of-service/
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+- source_package: ce-06
+  bib_key: waike-research-ops-ce06
+  entry_type: misc
+  title: waike-research-ops accepted main curriculum evidence
+  year: '2026'
+  url: https://github.com/gunnchOS3k/waike-research-ops
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+- source_package: ce-06
+  bib_key: gunnchos-technology-landscape-ce06
+  entry_type: misc
+  title: The Technology Landscape
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-technology-landscape
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED

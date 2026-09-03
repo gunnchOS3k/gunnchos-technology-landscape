@@ -1,0 +1,350 @@
+schema_version: 1.0.0
+chapter_id: CE-5
+concepts:
+- concept_id: CX-CE5-DATA
+  canonical_term: Training and input data
+  plain_language_definition: Examples and records used to fit a model or answer a
+    question.
+  depends_on:
+  - CE-1
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Your photos, typed prompts, or uploaded files become part
+    of a request.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-MODEL
+  canonical_term: Model parameters
+  plain_language_definition: Stored numbers that shape how inputs become outputs;
+    not a mind.
+  depends_on:
+  - CX-CE5-DATA
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: The same question can get different styles of answers after
+    an app update.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-INFERENCE
+  canonical_term: Inference / output
+  plain_language_definition: Running the model on new inputs to produce a prediction
+    or generated text.
+  depends_on:
+  - CX-CE5-MODEL
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: A reply appears after a short wait.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-GENAI
+  canonical_term: Generative AI (systems view)
+  plain_language_definition: Systems that produce new text, images, or code by predicting
+    likely continuations.
+  depends_on:
+  - CX-CE5-INFERENCE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Do not say the model knows or understands unless metaphor
+    is explicitly bounded.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-LOCALCLOUD
+  canonical_term: Local vs cloud AI
+  plain_language_definition: Whether inference runs on your device or on someone else's
+    computers.
+  depends_on:
+  - CX-CE5-INFERENCE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Works offline vs needs network; privacy notice differs.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-UNCERTAINTY
+  canonical_term: Uncertainty and errors
+  plain_language_definition: Outputs can be wrong, biased, or incomplete even when
+    confident-sounding.
+  depends_on:
+  - CX-CE5-GENAI
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: You catch a fabricated citation or unsafe instruction.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-ATTACKSURFACE
+  canonical_term: Attack surface (UX-linked)
+  plain_language_definition: "Places where misuse can enter\u2014through the same\
+    \ screens and flows people use."
+  depends_on:
+  - CE-1
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Tie each surface to a user experience; no exploit recipes.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-IDENTITY
+  canonical_term: Identity
+  plain_language_definition: A claim about who or what an actor is.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Account name, device badge, service account for a bot.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-AUTHN
+  canonical_term: Authentication
+  plain_language_definition: Checking that an identity claim is sufficiently believable
+    for this risk.
+  depends_on:
+  - CX-CE5-IDENTITY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Password, passkey, MFA prompt, 'verify it's you'.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-AUTHZ
+  canonical_term: Authorization
+  plain_language_definition: Deciding what an authenticated actor is allowed to do.
+  depends_on:
+  - CX-CE5-AUTHN
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: You can view but not delete; a bot can read but not admin.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-CRYPTO
+  canonical_term: Encryption concepts
+  plain_language_definition: Transforms that make data unreadable without keys; goals
+    and limits matter.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Padlock icon; encrypted backup; still readable on unlocked
+    phone.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-PRIVACY
+  canonical_term: Privacy / data lifecycle
+  plain_language_definition: Rules and practices for collect, use, retain, share,
+    delete/redact.
+  depends_on:
+  - CX-CE5-DATA
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: Retention notice, export/delete request, surprise ad targeting.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-LIFECYCLE
+  canonical_term: Data lifecycle stages
+  plain_language_definition: Named stages from collection through deletion or archival.
+  depends_on:
+  - CX-CE5-PRIVACY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: A prompt remains in history after you wanted it gone.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-TRUST
+  canonical_term: Human trust vs technical trust
+  plain_language_definition: Felt reliability versus controls and evidence that bound
+    risk.
+  depends_on:
+  - CX-CE5-UNCERTAINTY
+  - CX-CE5-AUTHN
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: "You feel safe\u2014or you demand a receipt/log/peer review."
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CE5-RESPONSIBLE
+  canonical_term: Responsible use
+  plain_language_definition: Practices that align capability with disclosure, consent,
+    equity, and accessibility.
+  depends_on:
+  - CX-CE5-TRUST
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - researcher
+  - engineer
+  - explorer
+  - educator
+  - operator
+  - builder
+  likely_misconception: AI disclosure in a ticket; accessible MFA alternative; redacted
+    demo.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+maps_to:
+- CH21
+- CH23
+- CH24
+teaching_model: "human experience \u2192 system \u2192 component \u2192 code \u2192\
+  \ network \u2192 society"
+edges:
+- from: CX-CE5-DATA
+  to: CX-CE5-MODEL
+  relation: fits_or_conditions
+- from: CX-CE5-MODEL
+  to: CX-CE5-INFERENCE
+  relation: enables
+- from: CX-CE5-INFERENCE
+  to: CX-CE5-GENAI
+  relation: specializes
+- from: CX-CE5-INFERENCE
+  to: CX-CE5-LOCALCLOUD
+  relation: deployment_choice
+- from: CX-CE5-GENAI
+  to: CX-CE5-UNCERTAINTY
+  relation: produces_risk_of
+- from: CX-CE5-LOCALCLOUD
+  to: CX-CE5-PRIVACY
+  relation: changes_exposure
+- from: CX-CE5-IDENTITY
+  to: CX-CE5-AUTHN
+  relation: verified_by
+- from: CX-CE5-AUTHN
+  to: CX-CE5-AUTHZ
+  relation: precedes
+- from: CX-CE5-AUTHZ
+  to: CX-CE5-ATTACKSURFACE
+  relation: mediates
+- from: CX-CE5-CRYPTO
+  to: CX-CE5-PRIVACY
+  relation: supports_goal
+- from: CX-CE5-PRIVACY
+  to: CX-CE5-LIFECYCLE
+  relation: structured_as
+- from: CX-CE5-UNCERTAINTY
+  to: CX-CE5-TRUST
+  relation: challenges
+- from: CX-CE5-TRUST
+  to: CX-CE5-RESPONSIBLE
+  relation: guides

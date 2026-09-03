@@ -1,0 +1,125 @@
+schema_version: 1.0.0
+chapter_id: CE-5
+objectives:
+- objective_id: LO-CE5-01
+  text: Describe an everyday AI or login/permission moment in ordinary language, then
+    name the hidden layers that made it possible.
+  reader_pathways:
+  - explorer
+  - educator
+  evidence_artifact: experience journal entry (observation only)
+  bloom: understand
+  anatomy_sections:
+  - 1
+  - 2
+  - 3
+- objective_id: LO-CE5-02
+  text: Trace a simplified path from input data (or prompt) through model/parameters
+    to inference output, without claiming the model 'knows' or 'understands'.
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  evidence_artifact: labeled signal-path diagram (text or figure worksheet)
+  bloom: apply
+  anatomy_sections:
+  - 4
+  - 5
+- objective_id: LO-CE5-03
+  text: "Compare local and cloud AI inference on latency, privacy exposure, dependency,\
+    \ and update/control tradeoffs using observations\u2014not invented benchmarks."
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  evidence_artifact: LAB-TRUST-001 comparison table
+  bloom: analyze
+  anatomy_sections:
+  - 6
+  - 7
+- objective_id: LO-CE5-04
+  text: Separate model fluency from correctness; classify statements as observation,
+    interpretation, or causal claim requiring more evidence.
+  reader_pathways:
+  - researcher
+  - educator
+  - explorer
+  evidence_artifact: misconception checklist + teach-back
+  bloom: evaluate
+  anatomy_sections:
+  - 11
+- objective_id: LO-CE5-05
+  text: Map attack surfaces to user-visible experience (permissions, sessions, prompts,
+    updates) rather than listing threats in isolation.
+  reader_pathways:
+  - operator
+  - engineer
+  evidence_artifact: UX-linked threat notes (no exploit steps)
+  bloom: analyze
+  anatomy_sections:
+  - 9
+- objective_id: LO-CE5-06
+  text: Distinguish identity, authentication, and authorization with a concrete access
+    decision example.
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  evidence_artifact: authn/authz decision card
+  bloom: understand
+  anatomy_sections:
+  - 5
+  - 8
+- objective_id: LO-CE5-07
+  text: Explain encryption goals and limits at systems level (confidentiality in transit/at
+    rest vs. endpoint trust, key handling, and metadata).
+  reader_pathways:
+  - explorer
+  - engineer
+  evidence_artifact: encryption boundary sketch
+  bloom: understand
+  anatomy_sections:
+  - 5
+  - 9
+- objective_id: LO-CE5-08
+  text: "Outline a privacy/data lifecycle for an AI or account feature: collect, use,\
+    \ retain, share, delete/redact\u2014and identify who can decide each stage."
+  reader_pathways:
+  - builder
+  - educator
+  - operator
+  evidence_artifact: consent/lifecycle card
+  bloom: apply
+  anatomy_sections:
+  - 4
+  - 9
+- objective_id: LO-CE5-09
+  text: Contrast human trust (felt reliability) with technical trust (controls, evidence,
+    and failure modes), including accessibility and equity impacts.
+  reader_pathways:
+  - educator
+  - researcher
+  - explorer
+  evidence_artifact: trust dual-ledger worksheet
+  bloom: evaluate
+  anatomy_sections:
+  - 6
+  - 9
+  - 10
+- objective_id: LO-CE5-10
+  text: Propose a responsible-use practice (disclosure, consent, least privilege,
+    or redaction) and state what evidence would show it worked.
+  reader_pathways:
+  - builder
+  - engineer
+  - educator
+  evidence_artifact: portfolio responsible-use note
+  bloom: create
+  anatomy_sections:
+  - 8
+  - 10
+  - 11
+maps_to:
+- CH21
+- CH23
+- CH24

@@ -1,0 +1,52 @@
+schema_version: 1.0.0
+chapter_id: CE-3
+employment_guarantee: false
+careers:
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: '[''Diagnosis plan separating observation and causation criteria'']'
+  portfolio_artifact: ''
+  next_deeper: '[''Full-book CH12; Linux scheduler living docs practice'', ''CE-6
+    Stability Contract synthesis'']'
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: '[''Builder hierarchy/process map for a chosen app experience'']'
+  portfolio_artifact: ''
+  next_deeper: '[''CE-2 event path; full-book CH14 runtimes/UI'', ''CE-5 local vs
+    cloud compute placement'']'
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: '[''Observation tables with labeled inferences'']'
+  portfolio_artifact: ''
+  next_deeper: '[''CE-6 cross-layer diagnosis'', ''Full-book CH03 / CH20 performance
+    & QoE'']'
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: '[''Teach-back contrasting volatile vs durable memory'']'
+  portfolio_artifact: ''
+  next_deeper: '[''WAIKE EMBEDDED_PROTOTYPING lab_ep_memory_map / lab_ep_sleep_mode
+    (adjacent)'', ''Full-book CH09 power/thermals'']'
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: '[''Component cards for CPU vs GPU with honest boundaries'']'
+  portfolio_artifact: ''
+  next_deeper: "['Full-book CH06\u2013CH08; hardware repo architecture docs']"
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: "['Two symptom\u2192domain tickets with next-evidence lists']"
+  portfolio_artifact: ''
+  next_deeper: '[''WAIKE GENERAL_IT lab_storage / lab_os_users (adjacent)'', ''CE-4
+    when network truly is the domain'']'
+- role_family: None
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: '[''Facilitation notes + probe questions'']'
+  portfolio_artifact: ''
+  next_deeper: '[''CE-6 teach-back / capstone facilitation'']'
+lab_id: LAB-CMS-001

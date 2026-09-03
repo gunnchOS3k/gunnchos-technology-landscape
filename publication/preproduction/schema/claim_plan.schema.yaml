@@ -1,0 +1,48 @@
+schema_id: ce-preproduction-claim-plan
+schema_version: "1.0.0"
+top_level_collection: claims
+required_claim_fields:
+  - provisional_id
+  - text
+  - claim_class
+  - evidence_required
+  - preferred_source_type
+  - status
+  - citation_keys
+  - overclaim_risk
+  - wording_boundary
+allowed_status:
+  - SOURCE_IDENTIFIED
+  - SOURCE_NEEDED
+  - PROJECT_EVIDENCE_NEEDED
+  - ILLUSTRATIVE_ONLY
+  - PHYSICAL_PENDING
+forbidden_status:
+  - verified
+  - planned
+allowed_claim_class:
+  - general_technical
+  - standards_based
+  - peer_reviewed
+  - project_specific
+  - illustrative
+  - measured_later
+  - publication_internal
+claim_class_aliases_migrated:
+  "general technical": general_technical
+  "general-knowledge": general_technical
+  "standards-based": standards_based
+  standards: standards_based
+  "project-specific": project_specific
+  "measured later": measured_later
+  "publication-internal": publication_internal
+  textbook: general_technical
+  standard: standards_based
+  illustrative: illustrative
+  "peer-reviewed": peer_reviewed
+  repository-implemented: project_specific
+  repository-documented: project_specific
+  planned: publication_internal
+notes: >
+  citation_keys is a list (may be empty).
+  Additional project-evidence fields (e.g. project_evidence) are optional extras.

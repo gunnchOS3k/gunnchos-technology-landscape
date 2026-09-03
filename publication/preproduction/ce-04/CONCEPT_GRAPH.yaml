@@ -1,0 +1,340 @@
+schema_version: 1.0.0
+chapter_id: CE-4
+concepts:
+- concept_id: CE4-C-LOCAL-SCOPE
+  canonical_term: local (on-device) scope
+  plain_language_definition: Work that can complete using only resources already on
+    the device, without leaving the enclosure.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - educator
+  likely_misconception: Anything that uses an app icon must be local-only.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-LAN-SCOPE
+  canonical_term: LAN scope
+  plain_language_definition: Reachability limited to a local network neighborhood
+    (home/campus/office segment), not the global Internet.
+  depends_on:
+  - CE4-C-LOCAL-SCOPE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - educator
+  likely_misconception: LAN and Internet are the same once Wi-Fi is on.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-INTERNET-SCOPE
+  canonical_term: Internet scope
+  plain_language_definition: Multi-network reachability across independently administered
+    networks using shared addressing/routing conventions.
+  depends_on:
+  - CE4-C-LAN-SCOPE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - educator
+  likely_misconception: The Internet is one company's Wi-Fi.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-PACKET
+  canonical_term: packet
+  plain_language_definition: A bounded chunk of data plus headers that help different
+    network workers deliver and interpret it.
+  depends_on:
+  - CE4-C-LOCAL-SCOPE
+  introduced_here: true
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Data moves as one unbroken hose of bits without chunking or
+    loss.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-ENCAPSULATION
+  canonical_term: encapsulation
+  plain_language_definition: "Stacking headers like sticky notes\u2014outer notes\
+    \ for nearer workers, inner notes for later ones."
+  depends_on:
+  - CE4-C-PACKET
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - builder
+  - engineer
+  - educator
+  likely_misconception: You debug the innermost protocol first regardless of which
+    header is wrong.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-ADDRESSING
+  canonical_term: addressing
+  plain_language_definition: Identifiers that say who a packet is for (and often who
+    sent it) at a given layer.
+  depends_on:
+  - CE4-C-PACKET
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - educator
+  likely_misconception: One kind of address works at every layer.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-ROUTING
+  canonical_term: routing / forwarding
+  plain_language_definition: Choosing the next hop for a packet toward its destination
+    across interconnected networks.
+  depends_on:
+  - CE4-C-ADDRESSING
+  - CE4-C-INTERNET-SCOPE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Your device talks directly to every remote server with no
+    intermediate hops.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-DNS
+  canonical_term: DNS name resolution
+  plain_language_definition: A system that maps human-meaningful names to network
+    addresses for a time, often with caching.
+  depends_on:
+  - CE4-C-ADDRESSING
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - builder
+  - engineer
+  - educator
+  likely_misconception: If the radio works, names cannot be the problem.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: false
+  requires_lab: true
+- concept_id: CE4-C-TRANSPORT
+  canonical_term: transport (reliability mechanisms)
+  plain_language_definition: End-to-end conversation rules that may detect loss, order
+    data, or leave reliability to the application.
+  depends_on:
+  - CE4-C-PACKET
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Transport makes the wire itself physically reliable.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: CE4-C-WIFI
+  canonical_term: Wi-Fi access
+  plain_language_definition: A wireless LAN access technology that links devices to
+    a local network neighborhood; it is not itself the Internet.
+  depends_on:
+  - CE4-C-LAN-SCOPE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - educator
+  likely_misconception: Wi-Fi means Internet.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-CELLULAR
+  canonical_term: cellular access
+  plain_language_definition: A mobile-operator radio access path that can provide
+    on-ramps to operator networks and often the Internet; distinct from Wi-Fi.
+  depends_on:
+  - CE4-C-INTERNET-SCOPE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - engineer
+  - educator
+  likely_misconception: Cellular is just another brand of Wi-Fi.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-RADIO-CONDITIONS
+  canonical_term: radio / spectrum conditions (survey)
+  plain_language_definition: Shared-medium and propagation realities (distance, obstacles,
+    interference, congestion) that change wireless feel.
+  depends_on:
+  - CE4-C-WIFI
+  - CE4-C-CELLULAR
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Bars always equal usable service; CE-4 is a full 6G course.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: CE4-C-EDGE
+  canonical_term: edge placement
+  plain_language_definition: Putting compute or state closer to users or devices to
+    meet latency, bandwidth, privacy, or continuity constraints.
+  depends_on:
+  - CE4-C-INTERNET-SCOPE
+  introduced_here: true
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Edge is only a marketing synonym for cloud.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: CE4-C-CLOUD
+  canonical_term: cloud placement
+  plain_language_definition: On-demand networked access to shared configurable computing
+    resources, often remote from the user device.
+  depends_on:
+  - CE4-C-INTERNET-SCOPE
+  introduced_here: true
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - builder
+  - engineer
+  - educator
+  likely_misconception: Cloud means one specific company's data center brand.
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: CE4-C-LATENCY
+  canonical_term: latency
+  plain_language_definition: "How long it takes for a useful response to begin or\
+    \ complete along a path\u2014experienced as delay."
+  depends_on:
+  - CE4-C-PACKET
+  introduced_here: true
+  reinforced_here: true
+  reader_pathways:
+  - explorer
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Latency is the same metric as download speed.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-RELIABILITY
+  canonical_term: reliability (connectivity experience)
+  plain_language_definition: Whether needed messages arrive correctly often enough
+    for the experience to continue, including under loss and change.
+  depends_on:
+  - CE4-C-TRANSPORT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: Connected icon proves reliability of the user experience.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CE4-C-THROUGHPUT
+  canonical_term: throughput
+  plain_language_definition: "How much useful data can be transferred per unit time\u2014\
+    experienced as how long large transfers take."
+  depends_on:
+  - CE4-C-PACKET
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - operator
+  - engineer
+  - researcher
+  - educator
+  likely_misconception: High throughput guarantees low latency and high reliability.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: false
+- concept_id: CE4-C-CONTINUITY
+  canonical_term: service continuity
+  plain_language_definition: "Keeping the human experience working across changes\
+    \ in path, access network, or placement\u2014not merely keeping a radio attached."
+  depends_on:
+  - CE4-C-WIFI
+  - CE4-C-CELLULAR
+  - CE4-C-EDGE
+  - CE4-C-CLOUD
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - engineer
+  - educator
+  likely_misconception: Handover/attachment success equals uninterrupted user experience.
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+anchor_experience: connected_sync_stalls_or_recovers_across_path_or_access_change

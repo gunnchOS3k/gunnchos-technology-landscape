@@ -1,0 +1,133 @@
+schema_version: 1.0.0
+chapter_id: CE-1
+figures:
+- provisional_id: FIG-CE1-001
+  figure_type: system_map
+  pedagogical_purpose: "First-minute map: person \u2192 visible interface \u2192 hidden\
+    \ local system \u2192 optional network/service \u2192 human-usable result."
+  reader_should_notice: The screen is only one node; optional remote branch is dashed.
+  data_or_evidence_source: Conceptual synthesis from EXPERIENCE_MAP anchor A; no measured
+    telemetry.
+  truth_classification: conceptual
+  expected_geometry: Left-to-right swimlane with dashed optional service branch and
+    failure callout.
+  accessibility_description_requirement: Alt text must list every node in reading
+    order and state that the diagram is conceptual educational architecture.
+  color_independent_encoding: Shape + label + dashed vs solid stroke; do not rely
+    on color alone for optional branch.
+  dependencies:
+  - CX-CE1-001
+  - CX-CE1-002
+  - CX-CE1-003
+  - CX-CE1-008
+  edition_scope: concept_edition
+- provisional_id: FIG-CE1-002
+  figure_type: causal_flow
+  pedagogical_purpose: "Teach inputs \u2192 processing \u2192 state \u2192 outputs\
+    \ for the chrome-before-content moment."
+  reader_should_notice: State update can happen before content is usable; processing
+    may continue after chrome appears.
+  data_or_evidence_source: Pedagogical; aligned to WHATWG event/state language at
+    high level without claiming one implementation.
+  truth_classification: conceptual
+  expected_geometry: Numbered horizontal pipeline with a feedback arrow from outputs
+    to human judgment.
+  accessibility_description_requirement: Numbered step list in reading order; announce
+    that steps may overlap in real systems.
+  color_independent_encoding: Numbers + arrows; overlap noted in caption text.
+  dependencies:
+  - CX-CE1-004
+  - CX-CE1-005
+  edition_scope: concept_edition
+- provisional_id: FIG-CE1-003
+  figure_type: comparative_layers
+  pedagogical_purpose: "Why 'the app' is not one thing \u2014 stacked cards for UI,\
+    \ runtime, OS services, storage, network interface, remote service."
+  reader_should_notice: Everyday language collapses multiple cards into one word.
+  data_or_evidence_source: Conceptual; Saltzer/Kaashoek and Tanenbaum abstractions
+    at accessible depth.
+  truth_classification: conceptual
+  expected_geometry: Vertical stack with braces grouping 'what people call the app'.
+  accessibility_description_requirement: Read stack bottom-up or top-down consistently;
+    define brace grouping in long description.
+  color_independent_encoding: Labeled layers + brace; texture/hatching optional but
+    not color-only.
+  dependencies:
+  - CX-CE1-009
+  edition_scope: concept_edition
+- provisional_id: FIG-CE1-004
+  figure_type: path_branch_diagram
+  pedagogical_purpose: Local-only readiness vs network-dependent readiness branches
+    for the same visible chrome.
+  reader_should_notice: Same starting human moment; different dependency sets.
+  data_or_evidence_source: Illustrative contrast for LAB-SYS-001; not a benchmark.
+  truth_classification: illustrative
+  expected_geometry: Fork after 'app chrome visible' into Local path and Optional
+    remote path.
+  accessibility_description_requirement: Describe both branches and the join at 'content
+    usable or failed'.
+  color_independent_encoding: Solid vs dashed branch labels.
+  dependencies:
+  - CX-CE1-008
+  - CX-CE1-006
+  edition_scope: concept_edition
+- provisional_id: FIG-CE1-005
+  figure_type: failure_domain_map
+  pedagogical_purpose: Map everyday symptoms to failure-domain buckets without claiming
+    root cause.
+  reader_should_notice: Healthy connectivity icon can still sit beside an unusable
+    experience.
+  data_or_evidence_source: Illustrative operator triage aid.
+  truth_classification: illustrative
+  expected_geometry: "Symptom column \u2192 domain column \u2192 'evidence still needed'\
+    \ column."
+  accessibility_description_requirement: Table semantics preferred; if graphic, provide
+    equivalent table.
+  color_independent_encoding: Icons + text labels; status words not color alone.
+  dependencies:
+  - CX-CE1-007
+  - CX-CE1-010
+  edition_scope: concept_edition
+- provisional_id: FIG-CE1-006
+  figure_type: exploded_ecosystem_preview
+  pedagogical_purpose: Representative educational architecture preview of device layers
+    supporting readiness (display, compute, memory/storage, radio, power) without
+    Device Quartet product art.
+  reader_should_notice: Labeled Representative educational architecture / PHYSICAL_PENDING
+    for Quartet foreshadow callout.
+  data_or_evidence_source: SRC-HARDWARE research form factor docs for naming only;
+    geometry is conceptual.
+  truth_classification: conceptual
+  expected_geometry: Simple exploded blocks + sidebar listing four Quartet form-factor
+    names as future lab spine.
+  accessibility_description_requirement: Must state conceptual status and that Quartet
+    physical fabrication is pending; not a teardown photo.
+  color_independent_encoding: Leader lines + labels.
+  dependencies:
+  - CX-CE1-012
+  - CLM-CE1-005
+  - CLM-CE1-009
+  edition_scope: concept_edition
+  qualification: project_qualified
+- provisional_id: FIG-CE1-007
+  figure_type: stability_contract_preview
+  pedagogical_purpose: Show concurrent hidden conditions that must remain acceptable
+    for 'usable' experience.
+  reader_should_notice: Multiple lights can be green while one critical dependency
+    fails the human experience.
+  data_or_evidence_source: Qualitative pedagogical model; no invented numeric budgets.
+  truth_classification: conceptual
+  expected_geometry: Parallel condition bars feeding a single 'human usable?' gate.
+  accessibility_description_requirement: List each condition and the gate outcome
+    in text.
+  color_independent_encoding: Pass/fail words + icons; not green/red alone.
+  dependencies:
+  - CX-CE1-011
+  edition_scope: concept_edition
+maps_to:
+- CH01
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+non_goals:
+- Decorative hero art without explanatory structure.
+- Photoreal Device Quartet product shots implying availability.
+- Measured latency charts pretending to be publication benchmarks.

@@ -1,0 +1,59 @@
+schema_version: 1.0.0
+chapter_id: CE-4
+employment_guarantee: false
+careers:
+- role_family: Network Engineer
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: Full-book CH16; WAIKE COMPUTER_NETWORKING lab_datapath / lab_spf_routing
+    adjacency
+- role_family: Wireless / RF Systems Engineer (survey entry)
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: "Full-book CH17\u2013CH18; WAIKE WIRELESS_6G labs as advanced adjacency\
+    \ (not CE-4 core)"
+- role_family: Cloud / Backend Engineer
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: Full-book CH15; WAIKE CLOUD_DEVOPS lab_cloud_cost / lab_slo_budget
+    adjacency
+- role_family: Site Reliability / Service Reliability
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-6 Stability Contract synthesis; CLOUD_DEVOPS lab_incident_runbook
+    adjacency
+- role_family: IT Support / Operator
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: WAIKE GENERAL_IT lab_dns_hosts / lab_ticket_queue adjacency
+- role_family: Cybersecurity (network-adjacent awareness)
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-5; full-book CH23
+- role_family: Performance Engineer
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-6 measurement ethics; full-book CH20
+- role_family: Educator / Facilitator
+  chapter_work: ''
+  technical_skill: ''
+  student_evidence: ''
+  portfolio_artifact: ''
+  next_deeper: CE-6 teach-back / capstone rubrics
+disclaimer: Completing LAB-PKT-001 does not qualify a learner for any job title or
+  certification (including CCNA or cloud certifications).
+lab_id: LAB-PKT-001

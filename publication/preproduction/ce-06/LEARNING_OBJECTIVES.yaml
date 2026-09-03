@@ -1,0 +1,116 @@
+schema_version: 1.0.0
+chapter_id: CE-6
+objectives:
+- objective_id: LO-CE06-EX-01
+  text: Given a failed or degraded everyday experience, name at least four concurrent
+    Stability Contract conditions that could be involved without claiming a single
+    root cause.
+  reader_pathways:
+  - explorer
+  evidence_artifact: Written condition list labeled observed vs guessed.
+- objective_id: LO-CE06-EX-02
+  text: Explain in ordinary language why a system can show connected while the human
+    experience has already failed.
+  reader_pathways:
+  - explorer
+  evidence_artifact: Teach-back paragraph using a chosen real experience.
+- objective_id: LO-CE06-EX-03
+  text: "Produce a portfolio diagram of human experience \u2192 system \u2192 component\
+    \ \u2192 code \u2192 network \u2192 society for one chosen experience."
+  reader_pathways:
+  - explorer
+  evidence_artifact: Labeled ecosystem sketch (hand-drawn or digital).
+- objective_id: LO-CE06-OP-01
+  text: Collect at least three inspection artifacts (status, timing, log excerpt,
+    or DevTools entry) for one experience and classify each as observation or inference.
+  reader_pathways:
+  - operator
+  evidence_artifact: Result table with classification column.
+- objective_id: LO-CE06-OP-02
+  text: Compare two conditions of the same experience (e.g., local-only vs network-dependent,
+    or strong vs weak link) and state what changed in symptoms without inventing causal
+    certainty.
+  reader_pathways:
+  - operator
+  evidence_artifact: Side-by-side observation notes.
+- objective_id: LO-CE06-OP-03
+  text: Identify the most likely failure domain candidates and which domain remains
+    under-determined.
+  reader_pathways:
+  - operator
+  evidence_artifact: Failure-domain shortlist with open questions.
+- objective_id: LO-CE06-BU-01
+  text: Build or adapt a small checklist, worksheet, or local demo that makes at least
+    one hidden condition newly inspectable.
+  reader_pathways:
+  - builder
+  evidence_artifact: Artifact + README of how a peer can reuse it.
+- objective_id: LO-CE06-BU-02
+  text: Document one intentional tradeoff (e.g., more logging vs privacy/overhead)
+    introduced by the builder artifact.
+  reader_pathways:
+  - builder
+  evidence_artifact: "Tradeoff note \u22641 page."
+- objective_id: LO-CE06-BU-03
+  text: Propose one improvement change and the minimum evidence that would confirm
+    it worked.
+  reader_pathways:
+  - builder
+  evidence_artifact: Improve plan with success criteria (no fabricated numbers).
+- objective_id: LO-CE06-EN-01
+  text: Construct a cross-layer diagnosis tree that separates input, schedule/compute,
+    storage, network/service, render/display, trust/permissions, and accessibility-path
+    domains.
+  reader_pathways:
+  - engineer
+  evidence_artifact: Diagnosis tree linked to observations.
+- objective_id: LO-CE06-EN-02
+  text: "Apply an evidence hierarchy: state what would escalate a claim from illustrative\
+    \ \u2192 measured-on-this-device \u2192 correlated multi-signal \u2192 standards-aligned\
+    \ QoE method."
+  reader_pathways:
+  - engineer
+  evidence_artifact: Claim escalation table for two claims.
+- objective_id: LO-CE06-EN-03
+  text: Select commodity instrumentation appropriate to the experience (browser Performance
+    API, OS status, app logs, supplied fixture) and state measurement limitations.
+  reader_pathways:
+  - engineer
+  evidence_artifact: Instrumentation choice + limitations section.
+- objective_id: LO-CE06-RE-01
+  text: Form a falsifiable hypothesis about one contract condition and design a controlled
+    comparison with named confounders.
+  reader_pathways:
+  - researcher
+  evidence_artifact: "Hypothesis + protocol with \u22653 confounders listed."
+- objective_id: LO-CE06-RE-02
+  text: Report uncertainty explicitly (repeatability, clock granularity, instrumentation
+    overhead, selection bias) without fabricating statistics.
+  reader_pathways:
+  - researcher
+  evidence_artifact: Uncertainty section in portfolio.
+- objective_id: LO-CE06-RE-03
+  text: Distinguish publication-owned teaching claims from project-specific repository
+    evidence and from standards vocabulary (QoE/QoS).
+  reader_pathways:
+  - researcher
+  evidence_artifact: Claim-class labels on three statements.
+- objective_id: LO-CE06-ED-01
+  text: Facilitate the capstone for mixed pathways using the accessible fallback route
+    when specialized tools are unavailable.
+  reader_pathways:
+  - educator
+  evidence_artifact: Facilitation plan with fallback branch.
+- objective_id: LO-CE06-ED-02
+  text: Detect at least three target misconceptions (connected=usable; latency-only
+    contract; screenshot=cause) and plan corrective prompts.
+  reader_pathways:
+  - educator
+  evidence_artifact: "Misconception \u2192 prompt table."
+- objective_id: LO-CE06-ED-03
+  text: Apply the capstone rubric concept to score Explain / Measure / Improve / Teach
+    with observation-vs-inference integrity.
+  reader_pathways:
+  - educator
+  evidence_artifact: Rubric application on a sample (own or fixture) portfolio.
+assessment_spine: Explain, Measure, Improve, and Teach

@@ -1,0 +1,101 @@
+schema_version: 1.0.0
+chapter_id: CE-4
+objectives:
+- objective_id: LO-CE4-EX-01
+  text: Given a familiar send/sync moment, label whether work is likely local-only,
+    LAN-local, or Internet-reaching using ordinary language.
+  reader_pathways:
+  - explorer
+  evidence_artifact: Three-column map (local / LAN / Internet) tied to one lived experience.
+- objective_id: LO-CE4-EX-02
+  text: State one sentence each distinguishing Wi-Fi, cellular, the Internet, and
+    cloud placement without treating them as synonyms.
+  reader_pathways:
+  - explorer
+  evidence_artifact: Four-definition teach-back card with at least one contrast example.
+- objective_id: LO-CE4-EX-03
+  text: Identify a symptom where a connectivity icon stays positive while the human
+    experience fails.
+  reader_pathways:
+  - explorer
+  evidence_artifact: Written example with observation vs inference labels.
+- objective_id: LO-CE4-OP-01
+  text: On a commodity device, compare the same action on Wi-Fi vs cellular (or online
+    vs offline/fixture) and record what changed in the experience.
+  reader_pathways:
+  - operator
+  evidence_artifact: 'Observation table: condition, visible cue, outcome, timestamp
+    source.'
+- objective_id: LO-CE4-OP-02
+  text: Separate latency-like stalls, reliability-like retries/failures, and throughput-like
+    long transfers for two incidents without claiming root cause certainty.
+  reader_pathways:
+  - operator
+  evidence_artifact: Two tickets tagged latency|reliability|throughput with evidence
+    cited.
+- objective_id: LO-CE4-OP-03
+  text: Name the access network in use and whether a gateway/DNS step was involved
+    for one successful path (using OS/browser indicators or fixture notes).
+  reader_pathways:
+  - operator
+  evidence_artifact: Path checklist completed for Route A or Route B.
+- objective_id: LO-CE4-BU-01
+  text: Construct a labeled packet-path diagram for one experience including headers-as-sticky-notes,
+    a next-hop/gateway, and an edge-or-cloud placement hypothesis.
+  reader_pathways:
+  - builder
+  evidence_artifact: Diagram or structured Markdown with named hops and placement
+    note.
+- objective_id: LO-CE4-BU-02
+  text: Modify a provided fixture or template (hosts file story, timing table, or
+    crafted datapath JSON fields) and document one tradeoff (detail vs privacy/safety).
+  reader_pathways:
+  - builder
+  evidence_artifact: Edited artifact + tradeoff note; no capture of secrets.
+- objective_id: LO-CE4-EN-01
+  text: Propose a diagnosis plan that distinguishes access-network issues, name resolution,
+    routing/reachability, transport/retries, and remote-service placement before blaming
+    'the Wi-Fi.'
+  reader_pathways:
+  - engineer
+  evidence_artifact: Ordered diagnosis plan with observation vs causal-claim gates.
+- objective_id: LO-CE4-EN-02
+  text: Map CE-4 concepts to at least two cited abstractions (e.g., IP datagram, TCP,
+    NIST cloud/edge definitions) without inventing measurements.
+  reader_pathways:
+  - engineer
+  evidence_artifact: "Mapping table: concept \u2194 abstraction \u2194 citation key."
+- objective_id: LO-CE4-RE-01
+  text: State a testable hypothesis about sync completion under two controlled connectivity
+    conditions (e.g., Wi-Fi vs cellular, or online vs fixture-only).
+  reader_pathways:
+  - researcher
+  evidence_artifact: Hypothesis + variables + planned N runs + explicit non-benchmark
+    limits.
+- objective_id: LO-CE4-RE-02
+  text: Document what evidence would be required to upgrade an illustrative latency/reliability
+    claim to a measured claim, including confounders (clock granularity, caching,
+    server load).
+  reader_pathways:
+  - researcher
+  evidence_artifact: Claim triage note with status-change criteria.
+- objective_id: LO-CE4-ED-01
+  text: "Facilitate a 10\u201315 minute misconception check that Wi-Fi \u2260 Internet\
+    \ \u2260 cellular \u2260 cloud."
+  reader_pathways:
+  - educator
+  evidence_artifact: Facilitation notes + three probe questions + expected wrong answers.
+- objective_id: LO-CE4-ED-02
+  text: Adapt LAB-PKT-001 for a no-specialized-hardware classroom including the offline/fixture
+    fallback and an accessibility path.
+  reader_pathways:
+  - educator
+  evidence_artifact: Adapted lab sheet with fallback route and a11y notes.
+maps_to:
+- CH15
+- CH16
+- CH17
+- CH18
+teaching_model: "Human experience \u2192 system \u2192 component \u2192 code \u2192\
+  \ network \u2192 society"
+anchor_experience: connected_sync_stalls_or_recovers_across_path_or_access_change

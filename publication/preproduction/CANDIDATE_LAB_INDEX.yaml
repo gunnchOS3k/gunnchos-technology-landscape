@@ -1,0 +1,17 @@
+schema_version: 1.0.0
+status: CANDIDATE_PREPRODUCTION
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
+labs:
+- source_package: ce-01
+  lab_id: LAB-SYS-001
+- source_package: ce-01
+  lab_id: LAB-TAP-001
+- source_package: ce-03
+  lab_id: LAB-CMS-001
+- source_package: ce-04
+  lab_id: LAB-PKT-001
+- source_package: ce-05
+  lab_id: LAB-TRUST-001
+- source_package: ce-06
+  lab_id: LAB-CE06-001

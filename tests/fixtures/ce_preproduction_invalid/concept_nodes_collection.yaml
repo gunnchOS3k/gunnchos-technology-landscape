@@ -1,0 +1,15 @@
+schema_version: "1.0.0"
+chapter_id: CE-X
+nodes:
+  - concept_id: CX-BAD
+    canonical_term: Bad
+    plain_language_definition: Uses nodes instead of concepts
+    depends_on: []
+    introduced_here: true
+    reinforced_here: false
+    reader_pathways: [explorer]
+    likely_misconception: x
+    glossary_candidate: true
+    requires_citation: false
+    requires_figure: false
+    requires_lab: false

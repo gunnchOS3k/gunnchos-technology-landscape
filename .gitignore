@@ -23,3 +23,6 @@ tools/quarto.tgz
 
 # Quarto intermediate SVG→PDF conversions beside chapter sources
 book/chapters/figures/
+
+# Isolated agent worktrees (do not commit)
+.worktrees/

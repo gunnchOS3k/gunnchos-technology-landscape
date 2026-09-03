@@ -1,0 +1,60 @@
+schema_version: 1.0.0
+status: CANDIDATE_PREPRODUCTION
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
+packages:
+- source_package: ce-01
+  waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  relationship_vocabulary:
+  - exact
+  - adjacent
+  - proposed
+  - no-map
+  mentions_exact: true
+  mentions_adjacent: true
+  mentions_proposed: true
+  mentions_no_map: true
+- source_package: ce-03
+  waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  relationship_vocabulary:
+  - exact
+  - adjacent
+  - proposed
+  - no-map
+  mentions_exact: true
+  mentions_adjacent: true
+  mentions_proposed: true
+  mentions_no_map: true
+- source_package: ce-04
+  waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  relationship_vocabulary:
+  - exact
+  - adjacent
+  - proposed
+  - no-map
+  mentions_exact: true
+  mentions_adjacent: true
+  mentions_proposed: true
+  mentions_no_map: true
+- source_package: ce-05
+  waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  relationship_vocabulary:
+  - exact
+  - adjacent
+  - proposed
+  - no-map
+  mentions_exact: true
+  mentions_adjacent: true
+  mentions_proposed: true
+  mentions_no_map: true
+- source_package: ce-06
+  waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  relationship_vocabulary:
+  - exact
+  - adjacent
+  - proposed
+  - no-map
+  mentions_exact: true
+  mentions_adjacent: true
+  mentions_proposed: true
+  mentions_no_map: true

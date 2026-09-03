@@ -1,0 +1,102 @@
+schema_version: 1.0.0
+chapter_id: CE-5
+employment_guarantee: false
+careers:
+- role_family: Machine Learning / Applied AI Engineer
+  chapter_work: inference path design; evaluation of error modes; local vs remote
+    deployment tradeoffs
+  technical_skill: notebooks, eval harnesses, model cards
+  student_evidence: evaluation report with limitations
+  portfolio_artifact: LAB-TRUST-001 uncertainty note + comparison table
+  related_concepts:
+  - CX-CE5-INFERENCE
+  - CX-CE5-UNCERTAINTY
+  - CX-CE5-LOCALCLOUD
+  role_id: ROLE-CE5-ML
+- role_family: Cybersecurity Engineer
+  chapter_work: UX-linked threat model; control review; session/identity risk notes
+  technical_skill: threat-model templates, policy reviews
+  student_evidence: threat model / control review
+  portfolio_artifact: FIG-CE5-007 annotation worksheet (no exploits)
+  related_concepts:
+  - CX-CE5-ATTACKSURFACE
+  - CX-CE5-AUTHN
+  - CX-CE5-AUTHZ
+  role_id: ROLE-CE5-SEC
+- role_family: Privacy Engineer / Analyst
+  chapter_work: data lifecycle map; consent language review; retention/deletion evidence
+  technical_skill: DPIA-style worksheets, data inventories
+  student_evidence: privacy review memo
+  portfolio_artifact: consent/trust card from LAB-TRUST-001
+  related_concepts:
+  - CX-CE5-PRIVACY
+  - CX-CE5-LIFECYCLE
+  role_id: ROLE-CE5-PRIVACY
+- role_family: Identity / IAM Engineer
+  chapter_work: authn assurance choices; authz matrix; recovery UX risks
+  technical_skill: IdP configs, RBAC/ABAC reviews
+  student_evidence: identity assurance + authz design note
+  portfolio_artifact: authn/authz decision card
+  related_concepts:
+  - CX-CE5-IDENTITY
+  - CX-CE5-AUTHN
+  - CX-CE5-AUTHZ
+  role_id: ROLE-CE5-IAM
+- role_family: SRE / Reliability Engineer
+  chapter_work: usable uptime of AI/auth dependencies; error budgets for verify flows
+  technical_skill: metrics, traces, status pages
+  student_evidence: dependency failure blameless note
+  portfolio_artifact: connected-vs-usable table for assistant outage
+  related_concepts:
+  - CX-CE5-TRUST
+  - CX-CE5-LOCALCLOUD
+  role_id: ROLE-CE5-SRE
+- role_family: Accessibility Engineer
+  chapter_work: accessible auth and disclosure; AT-friendly AI UI semantics
+  technical_skill: screen readers, keyboard checks, a11y linters
+  student_evidence: accessibility review of verify + disclosure flows
+  portfolio_artifact: no-device / keyboard lab completion notes
+  related_concepts:
+  - CX-CE5-RESPONSIBLE
+  - CX-CE5-TRUST
+  role_id: ROLE-CE5-A11Y
+- role_family: Frontend / UX Engineer
+  chapter_work: permission UX; uncertainty presentation; trusted UI patterns
+  technical_skill: design systems, DevTools
+  student_evidence: interaction spec for consent + hedges
+  portfolio_artifact: Explorer observation journal + UI friction list
+  related_concepts:
+  - CX-CE5-UNCERTAINTY
+  - CX-CE5-RESPONSIBLE
+  role_id: ROLE-CE5-FRONTEND
+- role_family: Researcher (AI/security/privacy)
+  chapter_work: hypothesis; uncertainty reporting; limitation statements
+  technical_skill: stats notebooks, reproducible scripts
+  student_evidence: experiment report with uncertainty
+  portfolio_artifact: researcher extension on LAB-TRUST-001
+  related_concepts:
+  - CX-CE5-UNCERTAINTY
+  - CX-CE5-DATA
+  role_id: ROLE-CE5-RESEARCH
+- role_family: Technical Program Manager
+  chapter_work: cross-team trust boundaries; risk register across ML/security/privacy
+  technical_skill: risk registers, RACI
+  student_evidence: integration plan for AI feature launch gates
+  portfolio_artifact: Stability Contract ownership map
+  related_concepts:
+  - CX-CE5-TRUST
+  - CX-CE5-RESPONSIBLE
+  role_id: ROLE-CE5-TPM
+- role_family: Educator / Mentorship facilitator
+  chapter_work: misconception detection; lab adaptation; inclusive pacing
+  technical_skill: rubrics, facilitation guides
+  student_evidence: lesson adaptation notes
+  portfolio_artifact: teach-back + misconception drill facilitation
+  related_concepts:
+  - CX-CE5-TRUST
+  - CX-CE5-GENAI
+  role_id: ROLE-CE5-EDU
+disclaimer: 'Roles describe ownership and portfolio analogues only. Do not promise
+  jobs or salaries.
+
+  '

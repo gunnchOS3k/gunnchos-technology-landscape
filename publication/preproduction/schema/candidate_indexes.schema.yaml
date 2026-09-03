@@ -1,0 +1,22 @@
+schema_id: ce-preproduction-candidate-indexes
+schema_version: "1.0.0"
+indexes:
+  - CANDIDATE_CLAIM_INDEX.yaml
+  - CANDIDATE_FIGURE_INDEX.yaml
+  - CANDIDATE_GLOSSARY.yaml
+  - CANDIDATE_LAB_INDEX.yaml
+  - CANDIDATE_SOURCE_INDEX.yaml
+  - CANDIDATE_WAIKE_CROSSWALK.yaml
+generation:
+  script: scripts/regenerate_ce_candidate_indexes.py
+  deterministic: true
+  check_mode: "--check (exit non-zero if regenerate would change files)"
+required_common_fields:
+  - schema_version
+  - status
+  - gate_note
+status_value: CANDIDATE_PREPRODUCTION
+gate_note_value: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+notes: >
+  Indexes are regenerated from normalized chapter packages.
+  Do not hand-edit indexes independently of chapter sources.

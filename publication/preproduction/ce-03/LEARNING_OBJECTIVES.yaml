@@ -1,0 +1,112 @@
+schema_version: 1.0.0
+chapter_id: CE-3
+objectives:
+- objective_id: LO-CE3-EX-01
+  text: Given a local stutter/hang moment with a healthy network icon, name at least
+    four cooperating parts (app work, OS scheduling, CPU or accelerator, memory, storage,
+    power/thermal) in ordinary language.
+  reader_pathways:
+  - explorer
+  evidence_artifact: "Labeled sketch or two-column list: what I felt \u2194 hidden\
+    \ parts."
+- objective_id: LO-CE3-EX-02
+  text: Explain the difference between RAM and storage using one everyday save/reopen
+    example.
+  reader_pathways:
+  - explorer
+  evidence_artifact: Teach-back paragraph that states volatility vs persistence without
+    calling them interchangeable.
+- objective_id: LO-CE3-EX-03
+  text: State why 'more cores' does not guarantee a faster experience for every task.
+  reader_pathways:
+  - explorer
+  evidence_artifact: One counterexample scenario (single-threaded wait, storage-bound
+    save, thermal limit) marked as illustration, not measured claim.
+- objective_id: LO-CE3-OP-01
+  text: On a commodity device, run a guided before/during monitor snapshot (CPU, memory,
+    disk) for one controlled local action and record observations.
+  reader_pathways:
+  - operator
+  evidence_artifact: Observation table with timestamps, monitor readings, and observation-vs-inference
+    labels.
+- objective_id: LO-CE3-OP-02
+  text: Map two distinct symptoms to a likely failure domain (CPU-bound, memory pressure,
+    storage I/O, scheduler contention, thermal/power) without asserting proven root
+    cause.
+  reader_pathways:
+  - operator
+  evidence_artifact: "Two symptom\u2192domain tickets with required next evidence\
+    \ listed."
+- objective_id: LO-CE3-OP-03
+  text: Identify whether a hung save is more consistent with volatile working memory
+    vs persistent storage behavior using reopen-after-quit checks.
+  reader_pathways:
+  - operator
+  evidence_artifact: 'Checklist result: data present/absent after quit+reopen, plus
+    inference note.'
+- objective_id: LO-CE3-BU-01
+  text: Construct a personal memory-hierarchy and process map for one chosen local
+    experience, including at least one OS abstraction (process, thread, file, or scheduler).
+  reader_pathways:
+  - builder
+  evidence_artifact: Diagram or structured Markdown/YAML map with labeled layers.
+- objective_id: LO-CE3-BU-02
+  text: Modify a simple local workload or configuration (e.g., open-document count,
+    export quality, background sync toggle) and document one observed tradeoff.
+  reader_pathways:
+  - builder
+  evidence_artifact: Before/after observation notes + tradeoff sentence (quality vs
+    time, offline cache vs storage).
+- objective_id: LO-CE3-EN-01
+  text: Propose a diagnosis plan that separates CPU utilization, memory pressure,
+    and storage I/O waits using commodity tools, citing what would be needed to claim
+    causation.
+  reader_pathways:
+  - engineer
+  evidence_artifact: Diagnosis plan with ordered inspections and claim-upgrade criteria.
+- objective_id: LO-CE3-EN-02
+  text: "Relate CE-3 concepts to at least two textbook or living-doc abstractions\
+    \ (instruction execution, memory hierarchy, process/thread, scheduling, file system)\
+    \ with citation keys\u2014no invented measurements."
+  reader_pathways:
+  - engineer
+  evidence_artifact: "Mapping table: concept \u2194 abstraction \u2194 citation key."
+- objective_id: LO-CE3-EN-03
+  text: Explain CPU vs accelerator/GPU role for one workload class without claiming
+    the OS itself performs the accelerated math.
+  reader_pathways:
+  - engineer
+  evidence_artifact: 'Short role card: who issues work, who executes kernels/shaders,
+    who schedules/mediates.'
+- objective_id: LO-CE3-RE-01
+  text: State a testable hypothesis about local responsiveness under two controlled
+    load conditions (e.g., idle baseline vs intentional background CPU or I/O load).
+  reader_pathways:
+  - researcher
+  evidence_artifact: Hypothesis + variables + planned N runs + explicit limits (not
+    a published benchmark).
+- objective_id: LO-CE3-RE-02
+  text: Document confounders (thermal state, background updates, battery mode, other
+    users/processes) and what evidence would upgrade an illustrative claim to measured.
+  reader_pathways:
+  - researcher
+  evidence_artifact: Claim triage note with status change criteria.
+- objective_id: LO-CE3-ED-01
+  text: "Facilitate a 10\u201315 minute misconception check covering RAM\u2260storage,\
+    \ cores\u2260always-faster, and OS-schedules-but-does-not-do-all-app-work."
+  reader_pathways:
+  - educator
+  evidence_artifact: Facilitation notes + three probe questions + expected wrong answers.
+- objective_id: LO-CE3-ED-02
+  text: Adapt LAB-CMS-001 for a no-specialized-hardware classroom including offline/fixture
+    screenshots and accessibility alternatives to color-only charts.
+  reader_pathways:
+  - educator
+  evidence_artifact: Adapted lab sheet with fallback route and accessibility notes.
+maps_to:
+- CH06
+- CH07
+- CH12
+teaching_model: "Human experience \u2192 system \u2192 component \u2192 code \u2192\
+  \ network \u2192 society"
+anchor_experience: local_lag_with_healthy_connectivity_icon

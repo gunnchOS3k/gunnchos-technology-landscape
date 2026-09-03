@@ -1,0 +1,124 @@
+% CE-3 chapter-local bibliography proposal
+% DO NOT merge into book/references/references.bib until integrator validation.
+% Verified identities only; no invented DOI/ISBN/pages.
+
+@book{patterson-hennessy-riscv,
+  title     = {Computer Organization and Design RISC-V Edition: The Hardware/Software Interface},
+  author    = {Patterson, David A. and Hennessy, John L.},
+  year      = {2020},
+  edition   = {2},
+  publisher = {Morgan Kaufmann},
+  isbn      = {978-0-12-820331-6},
+  note      = {Verified via Elsevier shop (published Dec 2020). Alternate format ISBN also listed 978-0-12-824558-3. Use for instruction execution, memory hierarchy, parallelism, domain-specific architectures.}
+}
+
+@book{tanenbaum-bos,
+  title     = {Modern Operating Systems},
+  author    = {Tanenbaum, Andrew S. and Bos, Herbert},
+  year      = {2022},
+  edition   = {5},
+  publisher = {Pearson},
+  isbn      = {978-0-13-761888-0},
+  note      = {Verified via Pearson catalog (published 2022, copyright notice commonly 2023). Print ISBN also listed 978-0-13-761887-3. Processes, threads, scheduling, files, memory management.}
+}
+
+@book{silberschatz-galvin-gagne,
+  title     = {Operating System Concepts},
+  author    = {Silberschatz, Abraham and Galvin, Peter B. and Gagne, Greg},
+  year      = {2018},
+  edition   = {10},
+  publisher = {Wiley},
+  isbn      = {978-1-119-32091-3},
+  note      = {Verified via Wiley/os-book.com OS10. Loose-leaf reprint ISBN 978-1-119-80036-1 (2021). Alternate OS textbook; prefer one primary citation in prose.}
+}
+
+@misc{jedec-jesd79-4d,
+  title        = {DDR4 SDRAM Standard (JESD79-4D)},
+  author       = {{JEDEC Solid State Technology Association}},
+  year         = {2021},
+  howpublished = {JEDEC Standard JESD79-4D},
+  month        = jul,
+  url          = {https://www.jedec.org/standards-documents/docs/jesd79-4a},
+  note         = {Bibliographic identity verified on jedec.org (Jul 2021). Full text typically paywalled. Example main-memory device standard—do not imply all reader devices are DDR4.}
+}
+
+@misc{nvme-base-spec,
+  title        = {NVM Express Base Specification (family)},
+  author       = {{NVM Express}},
+  year         = {2026},
+  howpublished = {Industry specification family},
+  url          = {https://nvmexpress.org/specifications/},
+  note         = {Living standards home verified. Specific revision number intentionally NOT asserted until integrator pins an exact published version.}
+}
+
+@misc{khronos-vulkan-overview,
+  title        = {Vulkan Overview},
+  author       = {{Khronos Group}},
+  year         = {2026},
+  howpublished = {Living documentation hub},
+  url          = {https://www.khronos.org/vulkan/},
+  note         = {Living; accessible pointer for GPU API mediation. Do not invent extension or version claims.}
+}
+
+@misc{linux-scheduler,
+  title        = {CPU Scheduler},
+  author       = {{The Linux Kernel Documentation}},
+  year         = {2026},
+  howpublished = {kernel.org documentation},
+  url          = {https://docs.kernel.org/scheduler/},
+  note         = {Living documentation; one concrete OS scheduling example.}
+}
+
+@misc{linux-cpu-freq,
+  title        = {CPU Performance Scaling},
+  author       = {{The Linux Kernel Documentation}},
+  year         = {2026},
+  howpublished = {kernel.org documentation},
+  url          = {https://docs.kernel.org/admin-guide/pm/cpufreq.html},
+  note         = {Living documentation for CPU frequency/power scaling concepts.}
+}
+
+@misc{linux-memory,
+  title        = {Memory Management},
+  author       = {{The Linux Kernel Documentation}},
+  year         = {2026},
+  howpublished = {kernel.org documentation},
+  url          = {https://docs.kernel.org/admin-guide/mm/index.html},
+  note         = {Living documentation index for virtual memory / reclaim topics at Engineer depth.}
+}
+
+@misc{mdn-performance,
+  title        = {Performance API},
+  author       = {{MDN Web Docs}},
+  year         = {2026},
+  howpublished = {Mozilla Developer Network},
+  url          = {https://developer.mozilla.org/en-US/docs/Web/API/Performance},
+  note         = {Living; optional Builder instrumentation if using a tiny browser workload.}
+}
+
+@misc{src-waike-ce3,
+  title        = {waike-research-ops accepted main (CE-3 audit)},
+  author       = {{gunnchOS3k}},
+  year         = {2026},
+  howpublished = {Git repository},
+  url          = {https://github.com/gunnchOS3k/waike-research-ops},
+  note         = {Audited SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 on 2026-09-02. Curriculum adjacency only.}
+}
+
+@misc{src-device-os-ce3,
+  title        = {gunnchos-device-os accepted main (CE-3 audit)},
+  author       = {{gunnchOS3k}},
+  year         = {2026},
+  howpublished = {Git repository},
+  url          = {https://github.com/gunnchOS3k/gunnchos-device-os},
+  note         = {Audited SHA 28562a8456207540c205a1c8a6434a491b0a4771. Alpha/digital claim boundaries; not shipping OS.}
+}
+
+@misc{src-hardware-ce3,
+  title        = {gunnchos-hardware-industrial-design accepted main (CE-3 audit)},
+  author       = {{gunnchOS3k}},
+  year         = {2026},
+  howpublished = {Git repository},
+  url          = {https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design},
+  note         = {Audited SHA 9ee0ef2f688b2c18428bfabc316b23687a02988d. Device Quartet representative educational form factors; PHYSICAL_PENDING.}
+}

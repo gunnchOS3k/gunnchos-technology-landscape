@@ -1,0 +1,50 @@
+schema_version: 1.0.0
+chapter_id: CE-1
+employment_guarantee: false
+careers:
+- role_family: UX / Product Design
+  chapter_work: ''
+  technical_skill: Interaction specification; loading-state communication
+  student_evidence: Teach-back + annotated readiness observations
+  portfolio_artifact: ''
+- role_family: Application / Frontend Engineering
+  chapter_work: ''
+  technical_skill: Event-driven UI; separating render of chrome from data readiness
+  student_evidence: Ecosystem map with UI/runtime/state cards
+  portfolio_artifact: ''
+- role_family: IT Support / Operations
+  chapter_work: ''
+  technical_skill: Triage language; dependency checks
+  student_evidence: "Two symptom\u2192domain tickets with inference labels"
+  portfolio_artifact: ''
+- role_family: SRE / Backend / Cloud
+  chapter_work: ''
+  technical_skill: Service dependency reasoning; user-visible failure modes
+  student_evidence: Online vs offline comparison notes
+  portfolio_artifact: ''
+- role_family: Network Engineering
+  chapter_work: ''
+  technical_skill: Distinguishing association/connectivity from application success
+  student_evidence: Experience C analysis without invented RF numbers
+  portfolio_artifact: ''
+- role_family: Accessibility Engineering
+  chapter_work: ''
+  technical_skill: Inclusive input paths; non-color status encoding
+  student_evidence: Accessibility notes on chosen open path
+  portfolio_artifact: ''
+- role_family: Systems / OS Engineering
+  chapter_work: ''
+  technical_skill: Layered system explanation at accessible depth
+  student_evidence: Mapping CE-1 layers to textbook abstractions with citations
+  portfolio_artifact: ''
+- role_family: Technical Educator / Mentorship
+  chapter_work: ''
+  technical_skill: Probe questions; lab adaptation
+  student_evidence: Facilitation notes for screen-as-surface misconception
+  portfolio_artifact: ''
+- role_family: Security / Identity (introductory)
+  chapter_work: ''
+  technical_skill: Least-privilege mindset for evidence capture; session expiry symptoms
+  student_evidence: Privacy scrub checklist applied to lab artifacts
+  portfolio_artifact: ''
+disclaimer: Completing CE-1 or LAB-SYS-001 does not qualify a learner for any role.

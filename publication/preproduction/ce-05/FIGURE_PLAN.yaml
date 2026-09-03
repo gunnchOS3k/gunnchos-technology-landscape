@@ -1,0 +1,111 @@
+schema_version: 1.0.0
+chapter_id: CE-5
+figures:
+- provisional_id: FIG-CE5-001
+  figure_type: diagram
+  pedagogical_purpose: Show accessible systems path without anthropomorphizing the
+    model.
+  reader_should_notice: "From prompt to output \u2014 data, model, inference"
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Flowchart from user prompt through application
+    and model inference to on-screen output, with a side path for optional logging.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-004
+  edition_scope: concept_edition
+  production_status: not_drawn
+- provisional_id: FIG-CE5-002
+  figure_type: diagram
+  pedagogical_purpose: Compare on-device inference vs remote API for privacy, latency,
+    dependency.
+  reader_should_notice: "Local vs cloud AI \u2014 same question, different boundaries"
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: 'Two parallel paths for answering a question:
+    one staying on the device, one crossing the network to a remote model service.'
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-008
+  edition_scope: concept_edition
+  production_status: not_drawn
+- provisional_id: FIG-CE5-003
+  figure_type: diagram
+  pedagogical_purpose: Separate who you claim to be, proof of that claim, and allowed
+    actions.
+  reader_should_notice: Identity, authentication, authorization decision ladder
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Three-step ladder labeled identity, authentication,
+    and authorization leading to allow or deny.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-006
+  edition_scope: concept_edition
+  production_status: not_drawn
+- provisional_id: FIG-CE5-004
+  figure_type: diagram
+  pedagogical_purpose: Show what encryption can and cannot guarantee for user experience.
+  reader_should_notice: "Encryption boundary sketch \u2014 transit, at rest, endpoint"
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Diagram of data encrypted between device
+    and server, stored encrypted at rest, then readable on an unlocked authenticated
+    endpoint.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-007
+  edition_scope: concept_edition
+  production_status: not_drawn
+- provisional_id: FIG-CE5-005
+  figure_type: diagram
+  pedagogical_purpose: "Collect \u2192 use \u2192 retain \u2192 share \u2192 delete/redact\
+    \ with decision owners."
+  reader_should_notice: Privacy / data lifecycle wheel
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Circular lifecycle of personal data stages
+    with owner labels on each stage.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-001
+  edition_scope: concept_edition
+  production_status: not_drawn
+- provisional_id: FIG-CE5-006
+  figure_type: diagram
+  pedagogical_purpose: Contrast felt reliability with controls and evidence.
+  reader_should_notice: Human trust vs technical trust dual ledger
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Two-column ledger comparing feelings of trust
+    with technical controls and evidence artifacts.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-005
+  edition_scope: concept_edition
+  production_status: not_drawn
+- provisional_id: FIG-CE5-007
+  figure_type: diagram
+  pedagogical_purpose: "Attach threats to visible flows (prompt, permission, session,\
+    \ update)\u2014not a scare collage."
+  reader_should_notice: UX-linked attack surfaces on one assistant session
+  data_or_evidence_source: educational original
+  truth_classification: illustrative
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Annotated assistant session highlighting
+    permission dialog, session cookie/token, prompt box, and update badge as related
+    risk points.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies:
+  - CLM-CE5-007
+  edition_scope: concept_edition
+  production_status: not_drawn
+rights_policy: Prefer original educational diagrams. No third-party textbook figure
+  copies.
+accessibility_policy: publication/ACCESSIBILITY_REQUIREMENTS.md
