@@ -2,5 +2,35 @@ chapter_id: CH19
 chapter_number: 19
 title: "NTN and Service Continuity Across Ground, Air, and Space"
 part: IV
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When terrestrial service fails, what does an NTN or satellite feature actually continue—and what does an icon alone hide?
+experience:
+  - flight mode or cabin connectivity story
+  - rural coverage gap
+  - outage then limited satellite messaging
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [terrestrial-network, ntn, service-continuity, multi-path-continuity]
+devices: [commodity-phone, commodity-computer]
+labs: [LAB-PKT-001, LAB-CE06-001]
+figures:
+  - FIG-CH19-001
+  - FIG-CH19-002
+  - FIG-CH19-003
+concepts:
+  introduced: [ntn, terrestrial-network, service-continuity, coverage-gap, delay-regime, multi-path-continuity]
+  required: [stability-contract, packet, qos-qoe]
+  related: [wi-fi, cellular, edge-cloud]
+waike:
+  mapped: true
+  courses: [WIRELESS_6G]
+  note: "Adjacent digital_rc only (WIRELESS_6G); no exact NTN WAIKE lab ID. Continuity micro-lab remains proposed. Inherit LAB-PKT-001 / LAB-CE06-001 adjacency."
+claims:
+  packet: publication/full31/chapters/ch19/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+bibliography_note: "Cite keys present in book/references/references.bib (threegpp-ts23501, itu-t-p10-g100, itu-t-g1011). CLM-CH19-003/004 remain SOURCE_NEEDED; CLM-CH19-005 PHYSICAL_PENDING via synthetic WAIKE polar NTN fixture @ e97e74f…."
