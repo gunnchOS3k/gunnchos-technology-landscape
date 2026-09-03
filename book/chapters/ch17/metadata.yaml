@@ -2,5 +2,35 @@ chapter_id: CH17
 chapter_number: 17
 title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
 part: IV
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When my access icon changes—or stays lit while the experience fails—what actually changed?
+experience:
+  - leaving a building as Wi-Fi drops and cellular takes over
+  - seeing a 5G badge while a call or send still feels bad
+  - icon lit during handover or offload stall
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [wifi, cellular, radio-access-network, 5g-system, mobility, internet-path]
+devices: [commodity-phone, commodity-laptop]
+labs: [LAB-PKT-001]
+figures:
+  - FIG-CH17-001
+  - FIG-CH17-002
+  - FIG-CH17-003
+concepts:
+  introduced: [wifi, cellular, rat, 5g-system, 6g-roadmap, handover, bars-vs-experience]
+  required: [stability-contract, packet]
+  related: [internet, edge, cloud, spectrum]
+waike:
+  mapped: true
+  courses: [WIRELESS_6G, COMPUTER_NETWORKING]
+  note: "Adjacent digital_rc / catalog only (WIRELESS_6G, wireless_dsp_6g); LAB-PKT-001 is publication-owned; do not overclaim 6G course equivalence."
+claims:
+  packet: publication/full31/chapters/ch17/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+bibliography_note: "Cite keys ieee80211-2020, threegpp-ts23501, kurose-ross-8 in book/references/references.bib; CLM-CH17-003 remains SOURCE_NEEDED (6G roadmap boundary, no fabricated study-item IDs); Quartet RF via CLM-CH17-005 PHYSICAL_PENDING."
