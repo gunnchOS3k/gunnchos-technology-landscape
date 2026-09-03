@@ -1,0 +1,6 @@
+marker,condition,value_or_note,source,observed_or_inferred_or_fixture
+experience_start,,,live_or_fixture,
+connectivity_status,,,live_or_fixture,
+action_attempt,,,live_or_fixture,
+human_usable_outcome,,,live_or_fixture,
+comparison_condition,,,live_or_fixture,

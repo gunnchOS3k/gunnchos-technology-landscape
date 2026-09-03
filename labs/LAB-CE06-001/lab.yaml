@@ -1,0 +1,186 @@
+# LAB-CE06-001 — CE-6 EMIT Capstone
+# Publication-owned. Not a WAIKE module ID.
+lab_id: LAB-CE06-001
+title: Explain, Measure, Improve, and Teach One Real Technology Experience
+chapter: CE-6
+version: "0.1.0"
+status: FIXTURE_VALIDATED
+publication_owned: true
+waike_map_class: no-map
+waike_note: "No exact WAIKE EMIT / Stability Contract module. Adjacent: capstones/, reproducible_research."
+question: >
+  Using the book’s full model, what evidence can I gather—on devices and tools
+  I already have—to explain a real experience, measure what is actually
+  observable, propose one improvement, and teach the ecosystem to someone else?
+experience: >
+  Connected-but-unusable send/submit/sync (default anchor). Status may show
+  online while the human action stalls, flickers, or never finishes.
+emit_spine: [Explain, Measure, Improve, Teach]
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  notebook_status_ui: labs/LAB-CE06-001/README.md#route-a--notebook--status-ui-baseline
+  browser_stall_demo: labs/LAB-CE06-001/browser/index.html
+  fixture_offline: labs/LAB-CE06-001/fixtures/
+  illustrative_example: labs/LAB-CE06-001/fixtures/illustrative_example/
+fixture_available: true
+evidence_artifacts:
+  - experience_statement_and_prediction
+  - ecosystem_diagram
+  - concurrent_conditions_list
+  - result_inspection_table
+  - redacted_evidence_or_fixture_citation
+  - improve_plan
+  - reflection_limits
+  - teach_back
+  - portfolio_summary
+capstone_fields:
+  - human_experience
+  - system_boundary
+  - components
+  - software_code_role
+  - network_role
+  - stability_contract
+  - observations
+  - inferences
+  - measurements
+  - evidence_limitations
+  - security_privacy_accessibility
+  - equity_societal_impact
+  - proposed_improvement
+  - teach_back
+  - portfolio_summary
+privacy_boundary:
+  - No passwords, tokens, private messages, health data, or classmate PII in portfolio.
+  - Prefer local demos, benign public endpoints, or supplied fixtures.
+  - Screenshots must be cropped/redacted before commit or share.
+safety_boundary:
+  - No rooting, jailbreaking, unauthorized scanning, or attacking systems.
+  - Metered-data warning: use throttle or fixture route.
+  - Do not capture others’ screens without consent.
+  - No Device Quartet / specialized RF / silicon / EVT hardware required.
+accessibility_notes:
+  - Explorer path works with OS status UI + notes; DevTools optional.
+  - Keyboard-only and screen-reader users may choose Experience C (assistive-path divergence).
+  - All figure/table portfolio pieces need text equivalents.
+  - Timing tasks allow extended time; no flicker-heavy demos.
+  - Phone-first path is valid for Explorer.
+observation_inference_boundary:
+  observation_examples:
+    - timestamps and wall-clock windows
+    - status strings and connectivity icon text
+    - HTTP codes visible in DevTools (if used)
+    - visible stalls, retry prompts, AT announcements heard
+  inference_until_more_evidence:
+    - DNS is broken
+    - CPU thermal throttle
+    - server overloaded
+    - 'the network as sole cause without supporting signals'
+portfolio_output:
+  - portfolio/README.md
+  - portfolio/human_experience.md
+  - portfolio/system_boundary.md
+  - portfolio/components.md
+  - portfolio/software_code_role.md
+  - portfolio/network_role.md
+  - portfolio/stability_contract.md
+  - portfolio/observations.md
+  - portfolio/inferences.md
+  - portfolio/measurements.md
+  - portfolio/evidence_limitations.md
+  - portfolio/security_privacy_accessibility.md
+  - portfolio/equity_societal_impact.md
+  - portfolio/improve_plan.md
+  - portfolio/teach_back.md
+  - portfolio/portfolio_summary.md
+  - portfolio/diagram.md
+  - portfolio/result_table.csv
+  - portfolio/evidence/NOTE.md
+  - portfolio/reflection.md
+prerequisites:
+  concepts:
+    - stability-contract
+    - observation-vs-inference
+    - failure-domain
+    - evidence-hierarchy
+    - emit-capstone
+  safety:
+    - Do not capture secrets, passwords, tokens, or private messages.
+    - Prefer fixtures or local demos over production accounts with sensitive data.
+  time_minutes: 60
+  equipment: []
+  software:
+    - phone tablet or computer already owned
+    - modern browser with developer tools OR OS status UI
+    - text editor / markdown
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+  phone_first: true
+  no_network_required: true
+prediction:
+  required: true
+  prompt: "Predict which failure domain will dominate the degradation (input, compute, memory/storage, network, service, render, power/thermal, trust, equity/access)."
+procedure:
+  checkpoints:
+    - Choose one real experience (or use Route F fixture).
+    - Complete EMIT spine: Explain → Measure → Improve → Teach.
+    - List ≥4 Stability Contract conditions; mark observed vs guessed.
+    - Capture result table with fixture rows labeled fixture when applicable.
+    - Write Improve plan with success criteria (no invented numbers).
+    - Produce teach-back for a peer/family audience.
+  rollback:
+    - Close demos and DevTools.
+    - Delete accidental sensitive captures.
+    - Restore network/safety settings if temporarily changed.
+evidence:
+  required_artifacts:
+    - experience statement + prediction
+    - ecosystem diagram
+    - concurrent conditions list (observed vs guessed)
+    - result / inspection table
+    - redacted evidence excerpt OR fixture citation
+    - Improve plan with evidence criteria
+    - reflection (limits & uncertainty)
+    - teach-back paragraph
+    - portfolio summary
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - logging and DevTools overhead
+    - clock granularity
+    - fixture delays are illustrative, not product SLOs
+    - one run is not a benchmark
+  uncertainty:
+    - commodity tools cannot see every kernel / RF / silicon stage
+    - connected status chrome does not prove usable experience
+    - illustrative example is NOT human reader evidence
+portfolio:
+  outputs:
+    - README.md
+    - capstone field set (15 fields)
+    - diagram
+    - result table
+    - evidence note
+    - improve plan
+    - reflection
+    - teach-back
+    - portfolio summary
+teach_back:
+  required: true
+rubric: labs/LAB-CE06-001/rubric.yaml
+validator: labs/LAB-CE06-001/validate_portfolio.py
+export: labs/LAB-CE06-001/export_portfolio.py
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+automatic_fail_conditions:
+  - invented measurements
+  - secrets in evidence
+  - claiming Gate or product certification
+  - requiring specialized hardware without using fallback
+  - bare PASS as evidence

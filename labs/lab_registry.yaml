@@ -44,3 +44,31 @@ labs:
     fixture_available: true
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-TRUST-001
+    title: Compare local vs remote AI paths and write a consent/trust card
+    chapter: CE-5
+    path: labs/LAB-TRUST-001
+    baseline_routes: [browser, local_app, fixture]
+    extension_routes: []
+    no_specialized_hardware: true
+    status_labels:
+      - IMPLEMENTED_DIGITAL
+      - FIXTURE_VALIDATED
+      - PHYSICAL_PENDING
+      - EXTERNAL_DEPENDENCY
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-CE06-001
+    title: Explain, Measure, Improve, and Teach One Real Technology Experience
+    chapter: CE-6
+    path: labs/LAB-CE06-001
+    baseline_routes: [notebook_status_ui, fixture_offline]
+    extension_routes: [browser_stall_demo]
+    no_specialized_hardware: true
+    status: FIXTURE_VALIDATED
+    fixture_available: true
+    emit_spine: [Explain, Measure, Improve, Teach]
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

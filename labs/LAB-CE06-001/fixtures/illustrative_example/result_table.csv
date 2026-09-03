@@ -1,0 +1,5 @@
+marker,condition,value_or_note,source,observed_or_inferred_or_fixture
+connectivity_status,wifi_icon,Connected,illustrative_example,fixture
+send_click,local_ui,Sending,illustrative_example,fixture
+no_completion,remote_path,15s_wall_clock,illustrative_example,fixture
+retry_prompt,local_ui,shown,illustrative_example,fixture

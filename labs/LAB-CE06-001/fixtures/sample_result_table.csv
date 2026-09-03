@@ -1,0 +1,8 @@
+marker,condition,value_or_note,source,observed_or_inferred_or_fixture
+connectivity_status,wifi_icon,Connected,fixture,fixture
+send_click,local_ui,button_label=Sending,fixture,fixture
+local_feedback_ms,local_ui,~immediate_same_second,fixture,fixture
+remote_completion,remote_path,no_completion_within_15s_wall_clock,fixture,fixture
+retry_prompt,local_ui,appeared_after_approx_15s,fixture,fixture
+http_status,devtools,not_captured_in_this_fixture,fixture,fixture
+dominant_domain_guess,diagnosis,remote_path_or_service_underdetermined,fixture,inferred
