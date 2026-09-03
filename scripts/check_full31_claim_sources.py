@@ -36,6 +36,9 @@ ALLOWLIST = frozenset(
         "lab-tap-001",
         "src-hardware-quartet",
         "wcag22",  # undated shortcut discouraged; dual dated keys preferred
+        # Gate 3 status/read-only aliases (paths under publication/gates/gate-3/; never invent bib).
+        "gate3-review-snapshot",
+        "gate3-evidence",
     }
 )
 
