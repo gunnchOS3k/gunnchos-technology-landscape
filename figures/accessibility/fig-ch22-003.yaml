@@ -1,0 +1,20 @@
+figure_id: FIG-CH22-003
+title: "Wearables PHYSICAL_PENDING badge"
+caption: "Wearables PHYSICAL_PENDING badge. Truth classification: project_specific. Color is not the sole encoding."
+alt_text: "Wearables PHYSICAL_PENDING badge. Reading order: Edge IO Wearables; Embodied sensing; PHYSICAL_PENDING; No shipping specs."
+text_equivalent: |
+  Wearables PHYSICAL_PENDING badge. Nodes in reading order: Edge IO Wearables; Embodied sensing; PHYSICAL_PENDING; No shipping specs. Truth: project_specific. Educational architecture; no invented measurements.
+reading_order:
+- Edge IO Wearables
+- Embodied sensing
+- PHYSICAL_PENDING
+- No shipping specs
+source: figures/full31/ch22/fig-ch22-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: project_specific
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

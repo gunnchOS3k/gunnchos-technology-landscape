@@ -1,0 +1,20 @@
+figure_id: FIG-CH19-002
+title: "Continuity vs icon status"
+caption: "Continuity vs icon status. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Continuity vs icon status. Reading order: Icon lit; Task usable; Status green; Continuity held."
+text_equivalent: |
+  Continuity vs icon status. Nodes in reading order: Icon lit; Task usable; Status green; Continuity held. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Icon lit
+- Task usable
+- Status green
+- Continuity held
+source: figures/full31/ch19/fig-ch19-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -287,7 +287,7 @@ Read-only sampling where the OS exposes coarse stats. If a metric is unavailable
 
 #### Route C — Fixture fallback
 
-Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible or you must avoid personal screenshots. Fixtures teach concepts; they are not claims about your personal device. @fig-ch12-004 reproduces fixture `FIG-CE3-009` for classroom reading.
+Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible or you must avoid personal screenshots. Fixtures teach concepts; they are not claims about your personal device. @fig-ch12-004 reproduces fixture `the blocked CMS measured plate` for classroom reading.
 
 #### Evidence (minimum)
 
@@ -424,7 +424,6 @@ CE-3 preproduction packets (`publication/preproduction/ce-03/`) supply the inher
 
 ## 12. Glossary links {#ch12-glossary}
 
-Candidate terms for integrator merge (not auto-merged into the live glossary):
 
 | Term | Plain link |
 |---|---|
@@ -465,7 +464,7 @@ See also Chapter 2 (process/thread/scheduler naming), Chapter 6 (CPU / parallel 
 ### FIG-CH12-004 — OS-monitor before/during (fixture)
 
 - **File:** `figures/architecture/fig-ch12-004-monitor-snapshots.svg`
-- **Truth:** measured teaching fixture (LAB-CMS-001 / FIG-CE3-009); classroom n=1
+- **Truth:** measured teaching fixture (LAB-CMS-001 / the blocked CMS measured plate); classroom n=1
 - **A11y:** `figures/preproduction/accessibility/fig-ch12-004.yaml`
 
 Related CE-3 maps (optional cross-read, not required embeds): `figures/preproduction/ce-03/fig-ce3-001.svg`, `fig-ce3-003.svg`.

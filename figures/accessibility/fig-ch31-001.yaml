@@ -1,0 +1,21 @@
+figure_id: FIG-CH31-001
+title: "Capstone concurrent-condition hub"
+caption: "Capstone concurrent-condition hub. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Capstone concurrent-condition hub. Reading order: Human experience; System; Network; Security/privacy; Society."
+text_equivalent: |
+  Capstone concurrent-condition hub. Nodes in reading order: Human experience; System; Network; Security/privacy; Society. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Human experience
+- System
+- Network
+- Security/privacy
+- Society
+source: figures/full31/ch31/fig-ch31-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

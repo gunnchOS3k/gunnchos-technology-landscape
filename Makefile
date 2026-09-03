@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check
 
 setup:
 	python3 -m venv .venv
@@ -137,6 +137,17 @@ full31-check:
 full31-draft-check:
 	$(PYTHON) scripts/validate_full31_draft.py --mode $(FULL31_DRAFT_CHECK_MODE)
 
+full31-assets-check:
+	$(PYTHON) scripts/validate_full31_assets.py --check
+
+full31-reference-check:
+	$(PYTHON) scripts/validate_full31_assets.py --check
+	FULL31_DRAFT_CHECK_MODE=strict $(MAKE) full31-draft-check
+
+full31-inventory:
+	$(PYTHON) scripts/generate_full31_manuscript_inventory.py --write
+	$(PYTHON) scripts/generate_full31_manuscript_inventory.py --check
+
 continuation-preview:
 	$(PYTHON) scripts/build_continuation_preview.py
 
@@ -145,6 +156,7 @@ continuation-check:
 	$(MAKE) ce-sources-check
 	$(MAKE) full31-check
 	$(MAKE) full31-draft-check
+	$(MAKE) full31-assets-check
 	@echo "continuation-check: PASS"
 
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).

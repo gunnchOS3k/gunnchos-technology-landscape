@@ -61,7 +61,7 @@ Optional comparison, available on almost any device you already own: plug a fami
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A plug-in is not a single object. It is a path through an ecosystem. **FIG-CH10-001** (conceptual) is the first-minute map: chips and modules on a board ↔ shared buses ↔ ports ↔ the external world of cables and accessories. Treat it as **Representative educational architecture**, not a claim that any sealed phone or laptop looks exactly like the diagram inside.
+A plug-in is not a single object. It is a path through an ecosystem. **FIG-CH10-001** is the first-minute map: chips and modules on a board ↔ shared buses ↔ ports ↔ the external world of cables and accessories. Treat it as **Representative educational architecture**, not a claim that any sealed phone or laptop looks exactly like the diagram inside.
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -97,20 +97,20 @@ A **bus** is a shared interconnect with electrical conventions *and* communicati
 
 Firmware and operating-system drivers eventually interpret enumeration, power roles, and device classes. Part III will deepen boot and trust. Here, keep the honesty rule: a host UI message is an interpretation, not a complete bus trace.
 
-**FIG-CH10-004** (conceptual) later sketches packaging/manufacturing stages as a teaching sequence—not as Quartet EVT evidence.
+**FIG-CH10-004** later sketches packaging/manufacturing stages as a teaching sequence—not as Quartet EVT evidence.
 
 ---
 
 ## 4. Follow the signal {#sec-signal}
 
-**FIG-CH10-002** (illustrative sequence) shows a numbered path: host request → bus transaction → device response, with failure branches. Read it as a logical story, not as a claim that every commodity cable executes exactly these steps with no overlap.
+**FIG-CH10-002** shows a numbered path: host request → bus transaction → device response, with failure branches. Read it as a logical story, not as a claim that every commodity cable executes exactly these steps with no overlap.
 
 1. **Intent and seating.** A person aligns the connector and seats it. Mechanical incomplete seating can look identical to a protocol failure from the outside.
 2. **Detection / presence.** Host-side circuits may notice attachment (or not). Absence of a UI change is an observation, not a root cause.
 3. **Power domain agreement (when applicable).** Voltage, current limits, and role (source vs sink) must stay within intended bounds. Unsafe electrical experiments are forbidden in this book’s labs.
 4. **Electrical link.** Contacts and traces must provide a usable path for the signals the protocol expects. Noise, damage, and contamination can break that path without changing the plastic shape of the connector.
 5. **Protocol negotiation.** Devices exchange identity, capabilities, or mode selection according to agreed rules. A bus typically combines electrical conventions and a communication protocol [@patterson-hennessy].
-6. **Transaction.** The host requests; the device responds—or times out. **FIG-CH10-003** (conceptual) separates the electrical layer from the protocol layer on one interconnect so readers stop treating “the wire” as one idea.
+6. **Transaction.** The host requests; the device responds—or times out. **FIG-CH10-003** separates the electrical layer from the protocol layer on one interconnect so readers stop treating “the wire” as one idea.
 7. **Software interpretation.** Drivers and services translate bus events into charging icons, mount dialogs, or error strings [@tanenbaum-bos].
 8. **Human feedback.** Light, sound, haptics, or on-screen text close the loop—or fail to.
 

@@ -59,7 +59,7 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH31-001** (planned conceptual hub; inherit CE-6 concurrent-condition geometry) is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **representative educational architecture**, not a claim that every app fails the same way [@saltzer-kaashoek].
+A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH31-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **representative educational architecture**, not a claim that every app fails the same way [@saltzer-kaashoek].
 
 Walk the layers in ordinary language—the book’s central chain: **human experience → system → component → code → network → society**.
 
@@ -99,7 +99,7 @@ Battery and thermal modes can collapse performance. Identity and scopes must all
 
 Who can complete this experience under real constraints—metered data, shared devices, older hardware, language load, assistive technology—belongs inside the ecosystem map, not only in a final disclaimer.
 
-**FIG-CH31-002** (planned sequence) shows the EMIT cycle with evidence gates so readers stop treating one screenshot as Explain, Measure, Improve, and Teach all at once.
+**FIG-CH31-002** shows the EMIT cycle with evidence gates so readers stop treating one screenshot as Explain, Measure, Improve, and Teach all at once.
 
 ---
 
@@ -118,7 +118,7 @@ Here the “signal” is the human action’s fate across layers—and the portf
 9. **Teach.** Produce a teach-back another person can use at Explorer depth.
 10. **Limitations.** State what the packet does *not* prove—especially that illustrative fixtures are not human reader evidence.
 
-**FIG-CH31-003** (planned boundary diagram) is the firewall: fixture / illustrative teaching aids on one side; human-validated Gate evidence on the other. Crossing that wall is an integrity failure, not a shortcut.
+**FIG-CH31-003** is the firewall: fixture / illustrative teaching aids on one side; human-validated Gate evidence on the other. Crossing that wall is an integrity failure, not a shortcut.
 
 ---
 

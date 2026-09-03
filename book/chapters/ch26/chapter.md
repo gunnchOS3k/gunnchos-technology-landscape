@@ -61,7 +61,7 @@ Optional commodity notice (no paid IDE required): open any small text project yo
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A single commit is not a lone object. It is a path through an ecosystem. **FIG-CH26-001** (planned conceptual sequence) is the first-minute map: edit → status → diff → commit → review. Treat it as **Representative educational architecture**, not a claim that every team uses identical tools or hosting vendors.
+A single commit is not a lone object. It is a path through an ecosystem. **FIG-CH26-001** is the first-minute map: edit → status → diff → commit → review. Treat it as **Representative educational architecture**, not a claim that every team uses identical tools or hosting vendors.
 
 ### Human and intent
 
@@ -77,7 +77,7 @@ The optional “what I intend to include next” set. Confusion here produces co
 
 ### Committed history
 
-Snapshots linked as history. **FIG-CH26-002** (planned comparison) separates working tree vs committed history so readers stop treating “I edited a file” as “it is in history.”
+Snapshots linked as history. **FIG-CH26-002** separates working tree vs committed history so readers stop treating “I edited a file” as “it is in history.”
 
 ### Message and identity metadata
 
@@ -97,7 +97,7 @@ Change → verify → evidence before claiming done. Chapter 27 deepens testing 
 
 ### Secrets boundary
 
-Credentials and tokens must not enter history. **FIG-CH26-003** (planned boundary) makes the refuse-line visible.
+Credentials and tokens must not enter history. **FIG-CH26-003** makes the refuse-line visible.
 
 ### Project evidence neighbors (adjacency only)
 

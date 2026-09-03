@@ -17,7 +17,7 @@ figures:
   - FIG-CH03-003
   - FIG-CH03-004
 blocked_figures:
-  - FIG-CE3-009
+  - the blocked CMS measured plate
 ---
 
 # Chapter 3 — Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable
@@ -64,7 +64,7 @@ Optional comparison on a device you already own: scroll a mostly local document,
 
 ## 3. Exploded ecosystem
 
-Feel is not a single object. It is a path through an ecosystem. **FIG-CH03-001** (planned conceptual plate) maps everyday feel words onto diagnostic axes: latency, jitter, throughput, stall/hitch, and availability. Read it as orientation, not as a measured scoreboard.
+Feel is not a single object. It is a path through an ecosystem. **FIG-CH03-001** maps everyday feel words onto diagnostic axes: latency, jitter, throughput, stall/hitch, and availability. Read it as orientation, not as a measured scoreboard.
 
 Walk the teaching model used across this book:
 
@@ -104,7 +104,7 @@ Device Quartet silhouettes, when shown elsewhere, remain **representative educat
 
 ## 4. Follow the signal
 
-**FIG-CH03-002** (planned conceptual plate) is the causal spine for this chapter:
+**FIG-CH03-002** is the causal spine for this chapter:
 
 > Action → work → contention or wait → perceptible hitch or delay → human judgment
 
@@ -131,9 +131,9 @@ Read the numbered story as logic, not as a claim that hardware executes exactly 
 
 Quality models for systems and software treat characteristics such as performance efficiency and reliability as related but not identical vocabulary [@iso-iec-25010-2023]. Telecommunications vocabulary likewise separates performance, quality of service, and quality of experience as related families of terms—not one interchangeable slogan [@itu-t-p10-g100]. This chapter uses that separation pedagogically: **do not collapse every complaint into “the network” or “the CPU.”**
 
-**FIG-CH03-003** (planned illustrative timeline) shows the teaching point: two traces can share a similar *average* latency while one has calm spacing and the other has clusters of long gaps. The second often feels unstable even when a single average looks “fine.” Labels on that plate remain **illustrative**—not measured gunnchOS benchmarks.
+**FIG-CH03-003** shows the teaching point: two traces can share a similar *average* latency while one has calm spacing and the other has clusters of long gaps. The second often feels unstable even when a single average looks “fine.” Labels on that plate remain **illustrative**—not measured gunnchOS benchmarks.
 
-**FIG-CH03-004** (planned conceptual map) contrasts local contributors (CPU/memory/storage/scheduler/thermal) with optional network contributors. Use it to ask “which branch has evidence?”—not to declare a villain from habit.
+**FIG-CH03-004** contrasts local contributors (CPU/memory/storage/scheduler/thermal) with optional network contributors. Use it to ask “which branch has evidence?”—not to declare a villain from habit.
 
 ### Local contention with a healthy icon
 
@@ -270,7 +270,7 @@ Follow **LAB-CMS-001** Route A or fixture fallback: before/during CPU, memory, a
 
 #### Route C — Offline / fixture fallback
 
-If monitors are inaccessible, use LAB-CMS-001 fixtures for local-diagnosis literacy. Treat fixture numbers as **teaching illustrations**, not measurements of your device. **FIG-CE3-009** (measured annotated monitor snapshot) remains **`BLOCKED_EVIDENCE_REQUIRED`**; synthetic fixtures labeled with that ID do **not** unblock the measured figure.
+If monitors are inaccessible, use LAB-CMS-001 fixtures for local-diagnosis literacy. Treat fixture numbers as **teaching illustrations**, not measurements of your device. a measured CMS monitor plate (still blocked pending qualifying evidence) (measured annotated monitor snapshot) remains **`BLOCKED_EVIDENCE_REQUIRED`**; synthetic fixtures labeled with that ID do **not** unblock the measured figure.
 
 #### Evidence (minimum)
 
@@ -383,7 +383,7 @@ Answer with reasoning. Prefer short paragraphs over one-word guesses.
 4. Give one example where local contention could produce instability while a connectivity icon looks healthy.
 5. What evidence would you need before blaming thermal limits—and what must stay labeled inference without sensors?
 6. Why are CH02 / LAB-TAP-001 timings not universal product SLOs for this chapter?
-7. How should a classroom treat FIG-CE3-009 while it remains blocked?
+7. How should a classroom treat the blocked CMS measured plate while it remains blocked?
 8. **Teach-back.** Explain to a family member why “fast chip” and “feels fast” are not the same sentence—without using the words *throughput*, *jitter*, or *scheduler*. Then introduce those three terms one at a time, tying each to something already understood.
 
 Educator note: successful teach-backs show at least two axes and one alternate cause branch (local vs network), not memorized vocabulary lists.
@@ -424,7 +424,7 @@ Deeper entries and “not the same as” warnings live in the glossary network.
 
 ---
 
-## Figure references (planned conceptual plates; accessibility metadata)
+## Figure references (conceptual plates; accessibility metadata)
 
 All figures below are **conceptual** or **illustrative** unless a future revision cites a dated measurement bundle. SVG production may follow; absence of a rendered file does not authorize invented telemetry. Source preference: editable SVG in the publication repository.
 
@@ -459,7 +459,7 @@ All figures below are **conceptual** or **illustrative** unless a future revisio
 - **Status.** Conceptual.
 - **Source.** Publication-owned original (preproduction intent).
 
-### FIG-CE3-009 — Annotated commodity monitor snapshot (**BLOCKED**)
+### the blocked CMS measured plate — Annotated commodity monitor snapshot (**BLOCKED**)
 
 - **Status.** `BLOCKED_EVIDENCE_REQUIRED`.
 - **Note.** LAB-CMS-001 ships synthetic teaching fixtures that may carry this ID for offline literacy. Those fixtures do **not** unblock a measured figure. Do not present fixture numbers as Device Quartet or fleet evidence.

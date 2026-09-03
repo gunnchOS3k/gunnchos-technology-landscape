@@ -413,7 +413,6 @@ CE-3 preproduction packets (`publication/preproduction/ce-03/`) supply the inher
 
 ## 12. Glossary links {#ch06-glossary}
 
-Candidate terms for integrator merge (not auto-merged into the live glossary):
 
 | Term | Plain link |
 |---|---|

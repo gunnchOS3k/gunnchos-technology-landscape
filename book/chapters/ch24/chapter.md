@@ -64,7 +64,7 @@ Optional commodity notice (no specialized gear): open one familiar app’s priva
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A stuck recovery or opaque consent is not a single object. It is a path through an ecosystem. **FIG-CH24-001** (planned conceptual embed; privacy lifecycle wheel with owners) is the first-minute map: human experience at the center, with concurrent spokes for collect → use → retain → share → delete/redact. Treat it as **Representative educational architecture**, not a claim that every app shares one vendor topology.
+A stuck recovery or opaque consent is not a single object. It is a path through an ecosystem. **FIG-CH24-001** is the first-minute map: human experience at the center, with concurrent spokes for collect → use → retain → share → delete/redact. Treat it as **Representative educational architecture**, not a claim that every app shares one vendor topology.
 
 Walk the layers in ordinary language.
 
@@ -100,7 +100,7 @@ Transit protections can be real while endpoints still process plaintext for the 
 
 Vendors, reviewers, regulators, and equity of private compute shape who can complete labs and who is surveilled by default. Fixtures exist so unpaid API credits do not gate Explorer completion.
 
-**FIG-CH24-002** (planned comparative) separates accessible recovery/auth paths from blocked ones so readers stop treating “security worked” as “everyone could finish.”
+**FIG-CH24-002** separates accessible recovery/auth paths from blocked ones so readers stop treating “security worked” as “everyone could finish.”
 
 ---
 

@@ -41,6 +41,8 @@ jobs:
         run: make test
       - name: Full31 draft check (strict)
         run: make full31-draft-check FULL31_DRAFT_CHECK_MODE=strict
+      - name: Full31 assets/reference check (strict)
+        run: make full31-assets-check
       - name: Confirm NO_READER_EVIDENCE while responses empty
         run: |
           out="$(.venv/bin/python scripts/analyze_reader_feedback.py)"

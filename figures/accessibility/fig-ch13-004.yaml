@@ -1,0 +1,20 @@
+figure_id: FIG-CH13-004
+title: "Files vs databases"
+caption: "Files vs databases. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Files vs databases. Reading order: Named bytes (files); Structured store (DB); Paths/names; Queries/indexes."
+text_equivalent: |
+  Files vs databases. Nodes in reading order: Named bytes (files); Structured store (DB); Paths/names; Queries/indexes. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Named bytes (files)
+- Structured store (DB)
+- Paths/names
+- Queries/indexes
+source: figures/full31/ch13/fig-ch13-004.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

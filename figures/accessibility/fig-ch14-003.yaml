@@ -1,0 +1,20 @@
+figure_id: FIG-CH14-003
+title: "Local vs remote API domains"
+caption: "Local vs remote API domains. Truth classification: illustrative. Color is not the sole encoding."
+alt_text: "Local vs remote API domains. Reading order: Local API; Remote API; Device failure; Network/service failure."
+text_equivalent: |
+  Local vs remote API domains. Nodes in reading order: Local API; Remote API; Device failure; Network/service failure. Truth: illustrative. Educational architecture; no invented measurements.
+reading_order:
+- Local API
+- Remote API
+- Device failure
+- Network/service failure
+source: figures/full31/ch14/fig-ch14-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

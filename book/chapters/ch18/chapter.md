@@ -59,7 +59,7 @@ Optional comparison, available on almost any device you already own: pick one fa
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A wireless moment is not a single object. It is a path through an ecosystem. **FIG-CH18-001** (conceptual) is the first-minute map: device ↔ obstacles/body ↔ antennas ↔ shared spectrum ↔ access point or cell site ↔ beyond. Treat it as **Representative educational architecture**, not a claim that your sealed phone’s antenna layout matches the cartoon (CLM-CH18-005).
+A wireless moment is not a single object. It is a path through an ecosystem. **FIG-CH18-001** is the first-minute map: device ↔ obstacles/body ↔ antennas ↔ shared spectrum ↔ access point or cell site ↔ beyond. Treat it as **Representative educational architecture**, not a claim that your sealed phone’s antenna layout matches the cartoon (CLM-CH18-005).
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -89,7 +89,7 @@ Packets, DNS, transport retries, and edge/cloud placement still apply (CH16–CH
 
 ### Measurement honesty overlay
 
-**FIG-CH18-004** (project-specific teaching overlay) marks Device Quartet / research RF measurements as **PHYSICAL_PENDING**. WAIKE `lab_fspl_budget` and `lab_delay_spread` are competency adjacencies—math toys or lab neighbors—not publication proof of your device’s dB path (CLM-CH18-005).
+**FIG-CH18-004** marks Device Quartet / research RF measurements as **PHYSICAL_PENDING**. WAIKE `lab_fspl_budget` and `lab_delay_spread` are competency adjacencies—math toys or lab neighbors—not publication proof of your device’s dB path (CLM-CH18-005).
 
 ---
 

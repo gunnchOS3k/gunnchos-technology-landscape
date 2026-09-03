@@ -58,7 +58,7 @@ Optional notice on a device you already own (safe, commodity only): open a page 
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A stalled sync is not one object. It is a path through an ecosystem. **FIG-CH16-001** (conceptual) is the first-minute map: **device (local)**, **LAN**, and **Internet** as nested reachability scopes—not synonyms (CLM-CH16-002).
+A stalled sync is not one object. It is a path through an ecosystem. **FIG-CH16-001** is the first-minute map: **device (local)**, **LAN**, and **Internet** as nested reachability scopes—not synonyms (CLM-CH16-002).
 
 ![Conceptual nested scopes: device, LAN, and Internet.](../../../figures/ecosystem/fig-ch16-001-scopes.svg){#fig-ch16-001 fig-cap="Local / LAN / Internet scopes. Conceptual educational map; Wi-Fi association is not Internet usability."}
 
@@ -104,7 +104,7 @@ Browsers and OS tools can expose request phases useful for classroom observation
 
 ## 4. Follow the signal {#sec-signal}
 
-**FIG-CH16-002** (conceptual) follows one connected action as encapsulation “sticky notes” across hops. Read it as a logical story, not as a claim that every messenger executes identical steps with measured timings.
+**FIG-CH16-002** follows one connected action as encapsulation “sticky notes” across hops. Read it as a logical story, not as a claim that every messenger executes identical steps with measured timings.
 
 ![Encapsulation sequence from app through gateway and path to service.](../../../figures/sequence/fig-ch16-002-encapsulation.svg){#fig-ch16-002 fig-cap="Encapsulation sticky notes along one path. Conceptual; no measured timings."}
 

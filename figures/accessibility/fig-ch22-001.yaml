@@ -1,0 +1,21 @@
+figure_id: FIG-CH22-001
+title: "Sense to edge feedback"
+caption: "Sense to edge feedback. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Sense to edge feedback. Reading order: Sense; Feature; Edge inference; Haptic/UI; Human notice."
+text_equivalent: |
+  Sense to edge feedback. Nodes in reading order: Sense; Feature; Edge inference; Haptic/UI; Human notice. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Sense
+- Feature
+- Edge inference
+- Haptic/UI
+- Human notice
+source: figures/full31/ch22/fig-ch22-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,21 @@
+figure_id: FIG-CH27-001
+title: "Evidence hierarchy ladder"
+caption: "Evidence hierarchy ladder. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Evidence hierarchy ladder. Reading order: Illustrative; Commodity observe; Instrumentation; Multi-signal; Controlled compare."
+text_equivalent: |
+  Evidence hierarchy ladder. Nodes in reading order: Illustrative; Commodity observe; Instrumentation; Multi-signal; Controlled compare. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Illustrative
+- Commodity observe
+- Instrumentation
+- Multi-signal
+- Controlled compare
+source: figures/full31/ch27/fig-ch27-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

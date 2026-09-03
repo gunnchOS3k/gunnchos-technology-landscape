@@ -1,0 +1,20 @@
+figure_id: FIG-CH13-002
+title: "Durability stack"
+caption: "Durability stack. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Durability stack. Reading order: App buffer; Filesystem; Device cache; Persistent media."
+text_equivalent: |
+  Durability stack. Nodes in reading order: App buffer; Filesystem; Device cache; Persistent media. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- App buffer
+- Filesystem
+- Device cache
+- Persistent media
+source: figures/full31/ch13/fig-ch13-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

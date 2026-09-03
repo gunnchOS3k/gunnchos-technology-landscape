@@ -1,0 +1,20 @@
+figure_id: FIG-CH21-003
+title: "Model vs product vs claim families"
+caption: "Model vs product vs claim families. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Model vs product vs claim families. Reading order: Model capability; Product behavior; Human claim; Do not collapse."
+text_equivalent: |
+  Model vs product vs claim families. Nodes in reading order: Model capability; Product behavior; Human claim; Do not collapse. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Model capability
+- Product behavior
+- Human claim
+- Do not collapse
+source: figures/full31/ch21/fig-ch21-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

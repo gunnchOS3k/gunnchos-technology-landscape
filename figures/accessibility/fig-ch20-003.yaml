@@ -1,0 +1,21 @@
+figure_id: FIG-CH20-003
+title: "Evidence ladder for QoE"
+caption: "Evidence ladder for QoE. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Evidence ladder for QoE. Reading order: Illustrative; Observation; Instrumentation; Correlated signals; Controlled compare."
+text_equivalent: |
+  Evidence ladder for QoE. Nodes in reading order: Illustrative; Observation; Instrumentation; Correlated signals; Controlled compare. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Illustrative
+- Observation
+- Instrumentation
+- Correlated signals
+- Controlled compare
+source: figures/full31/ch20/fig-ch20-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

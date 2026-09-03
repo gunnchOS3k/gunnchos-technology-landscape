@@ -59,7 +59,7 @@ Optional commodity notice (no specialized gear): open one completed CE or full-b
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A reviewable portfolio is not a single PDF. It is a path through an ecosystem of people, artifacts, and constraints. **FIG-CH30-001** (planned conceptual map) is the first-minute geometry: **role family → artifact → review criteria**, with the employment non-guarantee as a hard outer boundary. Treat it as **Representative educational architecture**, not a claim that every organization hires the same way.
+A reviewable portfolio is not a single PDF. It is a path through an ecosystem of people, artifacts, and constraints. **FIG-CH30-001** is the first-minute geometry: **role family → artifact → review criteria**, with the employment non-guarantee as a hard outer boundary. Treat it as **Representative educational architecture**, not a claim that every organization hires the same way.
 
 Walk the layers in ordinary language.
 
@@ -99,7 +99,7 @@ Formats must be openable without private accounts when possible. Color must not 
 
 Learning evidence is not a hired outcome. Every CE career map in this repository sets `employment_guarantee: false`; this chapter preserves that contract (CLM-CH30-002).
 
-**FIG-CH30-003** (planned boundary figure) states the same rule visually: learning proof ≠ employment guarantee.
+**FIG-CH30-003** states the same rule visually: learning proof ≠ employment guarantee.
 
 ---
 
@@ -131,7 +131,7 @@ Here the “signal” is the fate of one skill claim as it becomes reviewable—
 | **Redaction status** | Is PII/secret scrubbed? | Unsafe share |
 | **Reviewer ask** | What should a mentor check first? | No front door |
 
-**FIG-CH30-002** (planned checklist) is this table as a visual form: portfolio index fields + claim boundary.
+**FIG-CH30-002** is this table as a visual form: portfolio index fields + claim boundary.
 
 ### Evidence honesty ladder (portfolio edition)
 

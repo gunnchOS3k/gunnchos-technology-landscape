@@ -1,0 +1,21 @@
+figure_id: FIG-CH17-003
+title: "Indoor Wi-Fi to outdoor handoff"
+caption: "Indoor Wi-Fi to outdoor handoff. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Indoor Wi-Fi to outdoor handoff. Reading order: Indoor Wi-Fi; Approach exit; Wi-Fi weak; Cellular attach; Continue task."
+text_equivalent: |
+  Indoor Wi-Fi to outdoor handoff. Nodes in reading order: Indoor Wi-Fi; Approach exit; Wi-Fi weak; Cellular attach; Continue task. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Indoor Wi-Fi
+- Approach exit
+- Wi-Fi weak
+- Cellular attach
+- Continue task
+source: figures/full31/ch17/fig-ch17-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

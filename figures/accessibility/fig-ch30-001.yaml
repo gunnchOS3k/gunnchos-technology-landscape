@@ -1,0 +1,20 @@
+figure_id: FIG-CH30-001
+title: "Role to artifact to review"
+caption: "Role to artifact to review. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Role to artifact to review. Reading order: Role family; Artifact; Review criteria; Non-guarantee boundary."
+text_equivalent: |
+  Role to artifact to review. Nodes in reading order: Role family; Artifact; Review criteria; Non-guarantee boundary. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Role family
+- Artifact
+- Review criteria
+- Non-guarantee boundary
+source: figures/full31/ch30/fig-ch30-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

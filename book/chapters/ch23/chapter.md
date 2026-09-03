@@ -399,7 +399,6 @@ Selected authoritative sources for this chapter’s general technical explanatio
 
 ## 12. Glossary links {#ch23-glossary}
 
-Terms introduced or relied on as formal vocabulary in this chapter should resolve in the living glossary registry. Candidate definitions also appear in the chapter packet’s `GLOSSARY_CANDIDATES.yaml` for integrator merge; do not treat the table below as an automatic glossary write.
 
 | Term | Plain link |
 |---|---|

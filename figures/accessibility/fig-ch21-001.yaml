@@ -1,0 +1,21 @@
+figure_id: FIG-CH21-001
+title: "Data to model to inference"
+caption: "Data to model to inference. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Data to model to inference. Reading order: Data; Model; Inference; Output; Human review."
+text_equivalent: |
+  Data to model to inference. Nodes in reading order: Data; Model; Inference; Output; Human review. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Data
+- Model
+- Inference
+- Output
+- Human review
+source: figures/full31/ch21/fig-ch21-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

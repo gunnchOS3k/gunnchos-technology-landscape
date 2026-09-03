@@ -1,0 +1,20 @@
+figure_id: FIG-CH25-001
+title: "Same task divergent completion"
+caption: "Same task divergent completion. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Same task divergent completion. Reading order: Task A privileged; Task A constrained; Completed; Blocked/excluded."
+text_equivalent: |
+  Same task divergent completion. Nodes in reading order: Task A privileged; Task A constrained; Completed; Blocked/excluded. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Task A privileged
+- Task A constrained
+- Completed
+- Blocked/excluded
+source: figures/full31/ch25/fig-ch25-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,20 @@
+figure_id: FIG-CH28-003
+title: "Validity bounds annulus"
+caption: "Validity bounds annulus. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Validity bounds annulus. Reading order: Trusted inside ring; Declared limits; Unlabeled outside; Do not overclaim."
+text_equivalent: |
+  Validity bounds annulus. Nodes in reading order: Trusted inside ring; Declared limits; Unlabeled outside; Do not overclaim. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Trusted inside ring
+- Declared limits
+- Unlabeled outside
+- Do not overclaim
+source: figures/full31/ch28/fig-ch28-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

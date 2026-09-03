@@ -63,7 +63,7 @@ Optional commodity notice (no specialized twin platform required): pick one smal
 
 ## 3. Exploded ecosystem {#ch28-ecosystem}
 
-A disputed simulation or a failed reproduction is not a single object. It is a path through an ecosystem. **FIG-CH28-001** (planned conceptual comparison) separates the simulated/twin story from the measured world. Treat it as **Representative educational architecture**, not a claim that every lab or plant looks like the diagram.
+A disputed simulation or a failed reproduction is not a single object. It is a path through an ecosystem. **FIG-CH28-001** separates the simulated/twin story from the measured world. Treat it as **Representative educational architecture**, not a claim that every lab or plant looks like the diagram.
 
 Walk the layers in ordinary language.
 
@@ -103,7 +103,7 @@ Another person (or future you) with the declared inputs. Reproducible research, 
 
 Who can run the stand-in? Who is excluded by specialized software, paid twin platforms, or unlabeled personal data inside a “demo”? Commodity and fixture routes are equity conditions, not optional garnish.
 
-**FIG-CH28-003** (planned conceptual boundary figure) is the validity-bounds annulus: trusted inside a declared ring; unlabeled outside.
+**FIG-CH28-003** is the validity-bounds annulus: trusted inside a declared ring; unlabeled outside.
 
 ---
 

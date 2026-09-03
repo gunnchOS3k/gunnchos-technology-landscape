@@ -1,0 +1,20 @@
+figure_id: FIG-CH11-003
+title: "AuthN vs AuthZ at boot"
+caption: "AuthN vs AuthZ at boot. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "AuthN vs AuthZ at boot. Reading order: Authentication; Authorization; Identity proved; Permission granted."
+text_equivalent: |
+  AuthN vs AuthZ at boot. Nodes in reading order: Authentication; Authorization; Identity proved; Permission granted. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Authentication
+- Authorization
+- Identity proved
+- Permission granted
+source: figures/full31/ch11/fig-ch11-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -60,7 +60,7 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH20-001** (planned conceptual embed; inherit CE-6 concurrent-condition geometry) is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **Representative educational architecture**, not a claim that every app fails the same way.
+A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH20-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **Representative educational architecture**, not a claim that every app fails the same way.
 
 Walk the layers in ordinary language.
 
@@ -108,7 +108,7 @@ Equivalent feedback along assistive or non-pointer paths. SC-10. Accessibility i
 
 SC-11: delay and variability remain acceptable *to this person in this context*. Total delay is an aggregate of the above—not a license to invent product SLOs.
 
-**FIG-CH20-002** (planned comparative) separates latency vs reliability vs throughput symptom families so readers stop treating one green probe as all three.
+**FIG-CH20-002** separates latency vs reliability vs throughput symptom families so readers stop treating one green probe as all three.
 
 ---
 
@@ -140,7 +140,7 @@ Latency, reliability, and throughput are different failure/success families; col
 
 ### Evidence hierarchy (climb only as far as tools and ethics allow)
 
-**FIG-CH20-003** (planned conceptual) and CE-6’s evidence ladder teach the same honesty:
+**FIG-CH20-003** and CE-6’s evidence ladder teach the same honesty:
 
 1. Illustrative teaching aid (labeled)
 2. Commodity observation (status UI, wall-clock, visible stalls)

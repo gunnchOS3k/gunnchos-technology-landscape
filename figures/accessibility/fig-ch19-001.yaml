@@ -1,0 +1,21 @@
+figure_id: FIG-CH19-001
+title: "NTN continuity map"
+caption: "NTN continuity map. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "NTN continuity map. Reading order: Human task; Device; Terrestrial; NTN path; Usable result."
+text_equivalent: |
+  NTN continuity map. Nodes in reading order: Human task; Device; Terrestrial; NTN path; Usable result. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Human task
+- Device
+- Terrestrial
+- NTN path
+- Usable result
+source: figures/full31/ch19/fig-ch19-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

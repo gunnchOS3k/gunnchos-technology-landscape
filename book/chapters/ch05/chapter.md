@@ -366,7 +366,6 @@ Inline citations used in this chapter include @harris-harris-riscv, @patterson-h
 
 ## 12. Glossary links
 
-Terms introduced or relied on as formal vocabulary in this chapter should resolve in the living glossary registry. This section lists them for linking—not as a dump of free-standing encyclopedia entries. Candidate definitions also appear in the chapter packet’s glossary candidates file for integrator merge; do not treat the table below as an automatic glossary write.
 
 | Term | Role in this chapter |
 |---|---|

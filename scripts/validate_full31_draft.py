@@ -339,15 +339,27 @@ def check_chapter(
         msg = f"{cid}: lab {lab} not found under labs/"
         (errors if mode == "strict" else warnings).append(msg)
 
-    # Figure refs (best-effort)
+    if "FIG-CE3-009" in prose:
+        msg = f"{cid}: FIG-CE3-009 is BLOCKED_EVIDENCE_REQUIRED and must not be a live reader ref"
+        (errors if mode == "strict" else warnings).append(msg)
+
+    # Figure refs — strict mode requires live assets (see validate_full31_assets.py)
     for m in FIG_RE.findall(prose):
         fid = m.upper()
         if fid.startswith("@FIG-"):
             fid = fid[1:]
-        if fid.startswith("FIG-CH") and fig_ids and fid not in fig_ids:
-            # Allow planned figures not yet on disk in infra; strict warns/fails lightly
-            msg = f"{cid}: figure {fid} not found in figures tree/registry"
-            warnings.append(msg)
+        if not (fid.startswith("FIG-CH") or fid.startswith("FIG-CE")):
+            continue
+        if fig_ids and fid not in fig_ids:
+            # filesystem fallback
+            hits = list((ROOT / "figures").rglob(f"{fid.lower()}.svg"))
+            if not hits:
+                mm = re.match(r"FIG-CH(\d{2})-(\d{3})", fid)
+                if mm:
+                    hits = list((ROOT / "figures").rglob(f"fig-ch{mm.group(1)}-{mm.group(2)}*.svg"))
+            if not hits:
+                msg = f"{cid}: figure {fid} not found in figures tree/registry"
+                (errors if mode == "strict" else warnings).append(msg)
 
     if not missing_anatomy and not scaffold:
         status[cid] = "STRUCTURE_COMPLETE"

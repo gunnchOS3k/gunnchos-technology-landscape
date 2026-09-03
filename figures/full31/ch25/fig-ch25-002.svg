@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+     aria-labelledby="fig-ch25-002-title fig-ch25-002-desc"
+     data-figure-id="FIG-CH25-002">
+  <title id="fig-ch25-002-title">Equity evidence hierarchy</title>
+  <desc id="fig-ch25-002-desc">Equity evidence hierarchy. Truth class: conceptual. Nodes: Anecdote, Structured observation, Measured access, Population claim. Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</desc>
+  <defs>
+    <marker id="arr-fig-ch25-002" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">Equity evidence hierarchy</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">FIG-CH25-002 · truth: conceptual · educational architecture (not a product measurement)</text>
+  <rect x="240" y="90" width="520" height="44" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="256" y="118" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">4. Anecdote</text>
+  <line x1="500.0" y1="134" x2="500.0" y2="146" stroke="#111111" stroke-width="2"/>
+  <rect x="240" y="146" width="520" height="44" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="256" y="174" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">3. Structured observation</text>
+  <line x1="500.0" y1="190" x2="500.0" y2="202" stroke="#111111" stroke-width="2"/>
+  <rect x="240" y="202" width="520" height="44" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="256" y="230" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">2. Measured access</text>
+  <line x1="500.0" y1="246" x2="500.0" y2="258" stroke="#111111" stroke-width="2"/>
+  <rect x="240" y="258" width="520" height="44" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="256" y="286" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">1. Population claim</text>
+  <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</text>
+</svg>

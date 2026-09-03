@@ -65,7 +65,7 @@ Optional commodity notice (no specialized gear): pick one recent change you made
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-Evidence about an experience is not a single object. It is a path through layers that produce tests, signals, and claims. **FIG-CH27-001** (planned conceptual) is the evidence hierarchy ladder: illustrative aid → commodity observation → instrumentation → correlated multi-signal inspection → controlled comparison → standards-aligned QoE methods. Treat the ladder as **Representative educational architecture**. Learner labs sit mid-ladder; they are not ITU-T G.1011 assessment campaigns (CLM-CH27-001) [@itu-t-g1011].
+Evidence about an experience is not a single object. It is a path through layers that produce tests, signals, and claims. **FIG-CH27-001** is the evidence hierarchy ladder: illustrative aid → commodity observation → instrumentation → correlated multi-signal inspection → controlled comparison → standards-aligned QoE methods. Treat the ladder as **Representative educational architecture**. Learner labs sit mid-ladder; they are not ITU-T G.1011 assessment campaigns (CLM-CH27-001) [@itu-t-g1011].
 
 Walk the layers in ordinary language.
 
@@ -101,7 +101,7 @@ Stories that explain observations. Allowed—and required to stay labeled until 
 
 Secrets and PII in traces/logs/screenshots. Portfolio literacy includes what you must remove before share.
 
-**FIG-CH27-002** (planned comparative) separates *test pass* from *usable experience* so readers stop treating a green suite as QoE.
+**FIG-CH27-002** separates *test pass* from *usable experience* so readers stop treating a green suite as QoE.
 
 ---
 
@@ -129,7 +129,7 @@ Here the “signal” is the chain from human claim → test or observation → 
 | **Simulation / fixture** | What did the teaching or synthetic setup show? | Silent upgrade to measured human evidence |
 | **Inference** | What may explain the observations? | Writing inference in the observation column |
 
-**FIG-CH27-003** (planned sequence) is the observation → inference gate: signals enter; labels are required; causal claims need extra evidence.
+**FIG-CH27-003** is the observation → inference gate: signals enter; labels are required; causal claims need extra evidence.
 
 ### Evidence hierarchy (climb only as far as tools and ethics allow)
 

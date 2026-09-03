@@ -59,7 +59,7 @@ Optional commodity notice (no specialized gear): pick one familiar send/submit/s
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-Exclusion is rarely a single broken widget. It is a path through an ecosystem where one privileged configuration can hide concurrent failures. **FIG-CH25-001** (planned comparative embed) is the first-minute map: same task, divergent completion across constraints. Treat it as **Representative educational architecture**, not a claim that every product fails the same way.
+Exclusion is rarely a single broken widget. It is a path through an ecosystem where one privileged configuration can hide concurrent failures. **FIG-CH25-001** is the first-minute map: same task, divergent completion across constraints. Treat it as **Representative educational architecture**, not a claim that every product fails the same way.
 
 Walk the layers in ordinary language.
 
@@ -91,7 +91,7 @@ Equivalent feedback along keyboard, switch, captions, or screen-reader paths is 
 
 How teams label observations, what they publish as “inclusive,” and what privacy they demand from comparative notes all shape who can safely participate in measurement itself.
 
-**FIG-CH25-003** (planned map) groups exclusion mechanism cards—device, cost, bandwidth, accessibility, language/literacy, policy—so readers stop treating “Wi‑Fi” as a synonym for every exclusion.
+**FIG-CH25-003** groups exclusion mechanism cards—device, cost, bandwidth, accessibility, language/literacy, policy—so readers stop treating “Wi‑Fi” as a synonym for every exclusion.
 
 ---
 
@@ -110,7 +110,7 @@ Here the “signal” is the human task’s fate across privileged and constrain
 
 ### Evidence labels for equity claims
 
-**FIG-CH25-002** (planned hierarchy) and CE-6’s evidence ladder teach the same honesty:
+**FIG-CH25-002** and CE-6’s evidence ladder teach the same honesty:
 
 | Label | Means | Equity misuse to refuse |
 |---|---|---|

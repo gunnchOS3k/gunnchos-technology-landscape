@@ -1,0 +1,20 @@
+figure_id: FIG-CH18-002
+title: "Beam and path geometry"
+caption: "Beam and path geometry. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Beam and path geometry. Reading order: Transmitter; Beam/path; Reflect/block; Receiver."
+text_equivalent: |
+  Beam and path geometry. Nodes in reading order: Transmitter; Beam/path; Reflect/block; Receiver. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Transmitter
+- Beam/path
+- Reflect/block
+- Receiver
+source: figures/full31/ch18/fig-ch18-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

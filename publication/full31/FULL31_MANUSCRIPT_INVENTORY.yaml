@@ -1,0 +1,503 @@
+schema_version: "1.0.0"
+total_words: 120089
+word_min: 3160
+word_max: 4976
+word_mean: 3873.84
+word_median: 3881.00
+chapters:
+  - id: CH01
+    title: "Technology Is a System, Not a Screen"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4275
+    citation_occurrences: 40
+    unique_citation_keys: 19
+    figure_refs: 14
+    resolved_figures: 14
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH02
+    title: "Follow One Tap Through the Entire Stack"
+    status: "draft"
+    words: 4976
+    citation_occurrences: 23
+    unique_citation_keys: 18
+    figure_refs: 7
+    resolved_figures: 7
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH03
+    title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3922
+    citation_occurrences: 42
+    unique_citation_keys: 14
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 3
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH04
+    title: "The Device Quartet as a Learning Laboratory"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3628
+    citation_occurrences: 25
+    unique_citation_keys: 7
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH05
+    title: "Electricity, Signals, Clocks, and Logic"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4147
+    citation_occurrences: 31
+    unique_citation_keys: 8
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH06
+    title: "CPU, Instructions, and Parallel Work"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4043
+    citation_occurrences: 50
+    unique_citation_keys: 9
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH07
+    title: "Memory, Cache, and Storage"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3723
+    citation_occurrences: 24
+    unique_citation_keys: 5
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH08
+    title: "Graphics, Displays, Audio, Cameras, and Sensors"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3507
+    citation_occurrences: 31
+    unique_citation_keys: 11
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH09
+    title: "Power, Batteries, Thermals, and Mechanical Design"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3642
+    citation_occurrences: 30
+    unique_citation_keys: 8
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH10
+    title: "Ports, Buses, Boards, Packaging, and Manufacturing"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3817
+    citation_occurrences: 16
+    unique_citation_keys: 2
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH11
+    title: "Firmware, Boot, and Trust"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4290
+    citation_occurrences: 34
+    unique_citation_keys: 4
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 3
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH12
+    title: "Operating Systems, Processes, Threads, and Scheduling"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4154
+    citation_occurrences: 74
+    unique_citation_keys: 9
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 3
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH13
+    title: "Files, Databases, and Data Lifecycles"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4250
+    citation_occurrences: 25
+    unique_citation_keys: 2
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 3
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH14
+    title: "Applications, APIs, Runtimes, and User Interfaces"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4076
+    citation_occurrences: 33
+    unique_citation_keys: 8
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 4
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH15
+    title: "Containers, Virtualization, Cloud, and Edge Computing"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3881
+    citation_occurrences: 44
+    unique_citation_keys: 7
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 3
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH16
+    title: "Packets, Protocols, Routing, and the Internet"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3778
+    citation_occurrences: 74
+    unique_citation_keys: 15
+    figure_refs: 6
+    resolved_figures: 6
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH17
+    title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3930
+    citation_occurrences: 31
+    unique_citation_keys: 3
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH18
+    title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3765
+    citation_occurrences: 32
+    unique_citation_keys: 4
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH19
+    title: "NTN and Service Continuity Across Ground, Air, and Space"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3329
+    citation_occurrences: 22
+    unique_citation_keys: 6
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH20
+    title: "Latency, Reliability, QoE, and the Stability Contract"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4358
+    citation_occurrences: 41
+    unique_citation_keys: 9
+    figure_refs: 5
+    resolved_figures: 5
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH21
+    title: "Data, Machine Learning, and Generative AI"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 4083
+    citation_occurrences: 23
+    unique_citation_keys: 5
+    figure_refs: 5
+    resolved_figures: 5
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH22
+    title: "Edge AI, Sensors, and Embodied Interaction"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3359
+    citation_occurrences: 28
+    unique_citation_keys: 6
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH23
+    title: "Cybersecurity from Chip to Cloud"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3893
+    citation_occurrences: 51
+    unique_citation_keys: 8
+    figure_refs: 6
+    resolved_figures: 6
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH24
+    title: "Privacy, Identity, Safety, Accessibility, and Ethics"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3907
+    citation_occurrences: 42
+    unique_citation_keys: 7
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH25
+    title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3951
+    citation_occurrences: 30
+    unique_citation_keys: 5
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH26
+    title: "Software Development and Version Control"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3160
+    citation_occurrences: 32
+    unique_citation_keys: 5
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 0
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH27
+    title: "Testing, Observability, and Evidence"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3608
+    citation_occurrences: 27
+    unique_citation_keys: 4
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH28
+    title: "Digital Twins, Simulation, and Reproducible Research"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3808
+    citation_occurrences: 35
+    unique_citation_keys: 6
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH29
+    title: "Designing a Complete Technology Product"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3815
+    citation_occurrences: 33
+    unique_citation_keys: 8
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 3
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH30
+    title: "Career Maps and Portfolio Proof"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3199
+    citation_occurrences: 5
+    unique_citation_keys: 1
+    figure_refs: 3
+    resolved_figures: 3
+    unresolved_figures: []
+    lab_refs: 2
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0
+  - id: CH31
+    title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
+    status: "WORKING_DRAFT_COMPLETE"
+    words: 3815
+    citation_occurrences: 44
+    unique_citation_keys: 15
+    figure_refs: 4
+    resolved_figures: 4
+    unresolved_figures: []
+    lab_refs: 1
+    unknown_labs: []
+    try_it: true
+    build_it: true
+    placeholders: 0
+    meta_findings: 0
+    unresolved_reader_assets: 0

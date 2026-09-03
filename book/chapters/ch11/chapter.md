@@ -60,7 +60,7 @@ Optional comparison on a device you already own: cold boot once (power fully off
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-Boot is not a single object. It is a path through an ecosystem. **FIG-CH11-001** (conceptual) is the first-minute map: power/reset → firmware → bootloader → kernel → userspace → lock screen or recovery. Treat it as **Representative educational architecture**, not a claim that every phone or laptop implements identical stages with identical names.
+Boot is not a single object. It is a path through an ecosystem. **FIG-CH11-001** is the first-minute map: power/reset → firmware → bootloader → kernel → userspace → lock screen or recovery. Treat it as **Representative educational architecture**, not a claim that every phone or laptop implements identical stages with identical names.
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -92,13 +92,13 @@ The kernel takes control of privileged hardware mediation; userspace eventually 
 
 Platforms often provide alternate paths when primary images fail verification or when an update leaves the device needing an honest recovery UI. Naming the path is literacy. Inventing vendor-specific brick rates or Quartet EVT recovery timings is not. Device Quartet boot and firmware behavior remains **PHYSICAL_PENDING** research form-factor context only (CLM-CH11-005).
 
-**FIG-CH11-002** (conceptual) later sketches root-of-trust → verified stages as policy intent—not a product badge for any reader’s unit.
+**FIG-CH11-002** later sketches root-of-trust → verified stages as policy intent—not a product badge for any reader’s unit.
 
 ---
 
 ## 4. Follow the signal {#sec-signal}
 
-**FIG-CH11-001** (conceptual sequence) shows a numbered path. Read it as a logical story, not as a universal SoC bring-up with invented millisecond budgets.
+**FIG-CH11-001** shows a numbered path. Read it as a logical story, not as a universal SoC bring-up with invented millisecond budgets.
 
 1. **Power / reset.** Energy and clocks become available enough for early code to run (Chapter 5 and Chapter 9 adjacency). Incomplete power is an observation domain, not a root-cause claim from outside.
 2. **Firmware init.** Early software probes memory controllers, storage, display, and input paths enough for later stages—or fails before anything readable appears [@tanenbaum-bos].

@@ -62,7 +62,7 @@ A second optional notice: if you already use a cloud document, open the same not
 
 ## 3. Exploded ecosystem
 
-Persistence is not one object. It is a path through an ecosystem. **FIG-CH13-002** (conceptual) is the first-minute durability stack: app buffer → filesystem → device media → optional cloud replica. Treat it as **Representative educational architecture**, not a claim that every phone or laptop wires exactly like the diagram.
+Persistence is not one object. It is a path through an ecosystem. **FIG-CH13-002** is the first-minute durability stack: app buffer → filesystem → device media → optional cloud replica. Treat it as **Representative educational architecture**, not a claim that every phone or laptop wires exactly like the diagram.
 
 Walk the layers in ordinary language.
 
@@ -88,7 +88,7 @@ Flash, disk, and related controllers hold durable bytes—until wear, full volum
 
 ### Structured stores (qualitative)
 
-Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—without citing a pinned database-systems textbook edition. Formal recovery and consistency slogans stay out of the cited-claim set until SOURCE_NEEDED closes (CLM-CH13-003 omitted as a sourced claim). **FIG-CH13-004** (conceptual) sketches file versus database responsibilities as a teaching plate, not as product endorsement.
+Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—without citing a pinned database-systems textbook edition. Formal recovery and consistency slogans stay out of the cited-claim set until SOURCE_NEEDED closes (CLM-CH13-003 omitted as a sourced claim). **FIG-CH13-004** sketches file versus database responsibilities as a teaching plate, not as product endorsement.
 
 ### Sync and replicas (qualitative)
 
@@ -96,7 +96,7 @@ Optional cloud sync adds copies that update over time. From the seat, a conflict
 
 ### Lifecycle policy
 
-Beyond mechanism sits **lifecycle**: create/collect → use → retain → share → delete/redact. **FIG-CH13-001** (conceptual) is the lifecycle arc. Policy language (“we delete after…”) and mechanism (what the UI removes) can diverge; later sections stay qualitative and refuse recoverability cookbooks.
+Beyond mechanism sits **lifecycle**: create/collect → use → retain → share → delete/redact. **FIG-CH13-001** is the lifecycle arc. Policy language (“we delete after…”) and mechanism (what the UI removes) can diverge; later sections stay qualitative and refuse recoverability cookbooks.
 
 ### System software
 
@@ -106,7 +106,7 @@ The OS mediates process lifetime, file APIs, permissions, and often sync agents.
 
 ## 4. Follow the signal
 
-Here the “signal” is durable state moving through time—not a tap packet. **FIG-CH13-003** (illustrative) contrasts a Save click with a later durability point such as flush/fsync conceptually. Read it as a logical story, not as a claim that every app executes identical steps.
+Here the “signal” is durable state moving through time—not a tap packet. **FIG-CH13-003** contrasts a Save click with a later durability point such as flush/fsync conceptually. Read it as a logical story, not as a claim that every app executes identical steps.
 
 1. **Intent.** You decide content should survive quit, crash, or tomorrow’s reopen.
 2. **Edit in working memory.** Keystrokes update an in-memory buffer; the screen looks complete.

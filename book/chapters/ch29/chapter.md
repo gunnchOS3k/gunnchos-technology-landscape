@@ -59,7 +59,7 @@ Optional commodity notice (no specialized gear): pick one feature you already us
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-A “complete product” is not a single screen. It is a stack of cooperating layers under a Stability Contract. **FIG-CH29-001** (planned conceptual embed) is the first-minute map: human experience at the center; surrounding rings for interaction, application/code, local resources, network path, services/identity, evidence/observability, and society (privacy, equity, accessibility). Treat it as **Representative educational architecture**, not a claim that every product shares one topology [@saltzer-kaashoek].
+A “complete product” is not a single screen. It is a stack of cooperating layers under a Stability Contract. **FIG-CH29-001** is the first-minute map: human experience at the center; surrounding rings for interaction, application/code, local resources, network path, services/identity, evidence/observability, and society (privacy, equity, accessibility). Treat it as **Representative educational architecture**, not a claim that every product shares one topology [@saltzer-kaashoek].
 
 Walk the layers in ordinary language.
 

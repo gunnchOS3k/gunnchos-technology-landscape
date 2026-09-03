@@ -56,7 +56,7 @@ Notice the split timelines. A radio indicator can remain green while an applicat
 
 ## 3. Exploded ecosystem
 
-A continuity moment is not a single radio. It is a path through cooperating layers. **FIG-CH19-001** (conceptual) is the first-minute map: human task → device → terrestrial and/or NTN path classes → core/service → human-visible outcome. Treat it as **Representative educational architecture**, not a claim that any one operator’s sky looks exactly like the diagram.
+A continuity moment is not a single radio. It is a path through cooperating layers. **FIG-CH19-001** is the first-minute map: human task → device → terrestrial and/or NTN path classes → core/service → human-visible outcome. Treat it as **Representative educational architecture**, not a claim that any one operator’s sky looks exactly like the diagram.
 
 ### Human
 
@@ -141,7 +141,7 @@ Common honest failures: no usable path for the required capability; path exists 
 - **Role.** Propagation and system delay classes that differ sharply across terrestrial vs orbit classes.
 - **Plain contract.** Compare regimes qualitatively; refuse invented product latency tables (CLM-CH19-003 · SOURCE_NEEDED).
 - **Misread.** One “satellite latency” number fits all orbits and operators.
-- **Figure.** **FIG-CH19-003** (illustrative) may show comparative bars only when labeled illustrative—never as measured product data.
+- **Figure.** **FIG-CH19-003** may show comparative bars only when labeled illustrative—never as measured product data.
 
 ### Multi-path continuity
 
@@ -304,7 +304,6 @@ Selected authoritative sources for this chapter’s general technical explanatio
 
 ## 12. Glossary links
 
-Chapter-local candidates (integrator merge required; do not treat this list as an auto-merge into the live glossary):
 
 | Term | Plain link |
 |---|---|

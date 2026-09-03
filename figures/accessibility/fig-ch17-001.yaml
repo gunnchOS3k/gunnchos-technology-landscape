@@ -1,0 +1,20 @@
+figure_id: FIG-CH17-001
+title: "Wi-Fi vs cellular on-ramps"
+caption: "Wi-Fi vs cellular on-ramps. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Wi-Fi vs cellular on-ramps. Reading order: Device; Wi-Fi AP path; Cellular path; Internet beyond."
+text_equivalent: |
+  Wi-Fi vs cellular on-ramps. Nodes in reading order: Device; Wi-Fi AP path; Cellular path; Internet beyond. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Device
+- Wi-Fi AP path
+- Cellular path
+- Internet beyond
+source: figures/full31/ch17/fig-ch17-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

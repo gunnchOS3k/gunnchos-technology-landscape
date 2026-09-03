@@ -1,0 +1,20 @@
+figure_id: FIG-CH17-002
+title: "Cellular generations timeline"
+caption: "Cellular generations timeline. Truth classification: illustrative. Color is not the sole encoding."
+alt_text: "Cellular generations timeline. Reading order: 2G/3G era; 4G; 5G deployed; 6G roadmap only."
+text_equivalent: |
+  Cellular generations timeline. Nodes in reading order: 2G/3G era; 4G; 5G deployed; 6G roadmap only. Truth: illustrative. Educational architecture; no invented measurements.
+reading_order:
+- 2G/3G era
+- 4G
+- 5G deployed
+- 6G roadmap only
+source: figures/full31/ch17/fig-ch17-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

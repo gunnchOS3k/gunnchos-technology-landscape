@@ -57,7 +57,7 @@ Optional commodity notice (no specialized wearables): on a device you already ow
 
 ## 3. Exploded ecosystem
 
-An embodied assist is not “the model.” It is a path through cooperating layers. **FIG-CH22-001** (planned conceptual embed) is the first-minute map: sense → feature → edge inference → haptic/UI feedback. Treat it as **Representative educational architecture**, not a wiring diagram for any shipping wearable SKU.
+An embodied assist is not “the model.” It is a path through cooperating layers. **FIG-CH22-001** is the first-minute map: sense → feature → edge inference → haptic/UI feedback. Treat it as **Representative educational architecture**, not a wiring diagram for any shipping wearable SKU.
 
 ### Human and context
 
@@ -77,7 +77,7 @@ Motors, speakers, displays, and assistive announcements close the loop. Feedback
 
 ### Budgets and thermal/power managers
 
-Latency, energy, memory, and heat bound what the local path may do. **FIG-CH22-002** (illustrative budget bands) may show qualitative bands only when labeled illustrative—never as measured Edge IO Wearables EVT.
+Latency, energy, memory, and heat bound what the local path may do. **FIG-CH22-002** may show qualitative bands only when labeled illustrative—never as measured Edge IO Wearables EVT.
 
 ### Policy, identity, and privacy boundary
 
@@ -130,7 +130,7 @@ Common honest failures: permission denied; sensor occluded; thermal/power budget
 ### Edge resource budget
 
 - **Role.** Latency, energy, memory, and thermal limits that bound experience.
-- **Plain contract.** Embodiment lives inside a budget envelope—**FIG-CH22-002** (illustrative).
+- **Plain contract.** Embodiment lives inside a budget envelope—**FIG-CH22-002**.
 - **Misread.** One universal millisecond table fits every assistive cue.
 - **Evidence note.** Measured Device Quartet budgets remain **PHYSICAL_PENDING** (CLM-CH22-002).
 
@@ -309,7 +309,6 @@ Selected authoritative sources for this chapter’s general technical explanatio
 
 ## 12. Glossary links
 
-Chapter-local candidates (integrator merge required; do not treat this list as an auto-merge into the live glossary):
 
 | Term | Plain link |
 |---|---|

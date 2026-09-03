@@ -1,0 +1,21 @@
+figure_id: FIG-CH31-002
+title: "EMIT cycle with evidence gates"
+caption: "EMIT cycle with evidence gates. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "EMIT cycle with evidence gates. Reading order: Explain; Measure; Improve; Teach; Evidence gate."
+text_equivalent: |
+  EMIT cycle with evidence gates. Nodes in reading order: Explain; Measure; Improve; Teach; Evidence gate. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Explain
+- Measure
+- Improve
+- Teach
+- Evidence gate
+source: figures/full31/ch31/fig-ch31-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

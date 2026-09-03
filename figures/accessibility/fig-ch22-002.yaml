@@ -1,0 +1,20 @@
+figure_id: FIG-CH22-002
+title: "Illustrative latency budget bands"
+caption: "Illustrative latency budget bands. Truth classification: illustrative. Color is not the sole encoding."
+alt_text: "Illustrative latency budget bands. Reading order: Sense; Compute; Actuate; Illustrative bands only."
+text_equivalent: |
+  Illustrative latency budget bands. Nodes in reading order: Sense; Compute; Actuate; Illustrative bands only. Truth: illustrative. Educational architecture; no invented measurements.
+reading_order:
+- Sense
+- Compute
+- Actuate
+- Illustrative bands only
+source: figures/full31/ch22/fig-ch22-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

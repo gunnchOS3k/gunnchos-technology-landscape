@@ -55,7 +55,7 @@ Optional commodity comparison (no paid cloud account required): open one familia
 
 ## 3. Exploded ecosystem {#ch15-ecosystem}
 
-A packaged or remote experience is not a single object. It is a path through an ecosystem. **FIG-CH15-001** (conceptual) compares two common multiplexing stories: hardware → hypervisor → virtual machines versus shared kernel → containers. **FIG-CH15-002** (conceptual) separates the **access network** from **edge vs cloud placement**. Treat both as **Representative educational architecture**, not a claim that any sealed phone or school Chromebook looks exactly like the diagram inside.
+A packaged or remote experience is not a single object. It is a path through an ecosystem. **FIG-CH15-001** compares two common multiplexing stories: hardware → hypervisor → virtual machines versus shared kernel → containers. **FIG-CH15-002** separates the **access network** from **edge vs cloud placement**. Treat both as **Representative educational architecture**, not a claim that any sealed phone or school Chromebook looks exactly like the diagram inside.
 
 ![Comparative stacks: hardware to hypervisor and VMs versus hardware to shared kernel and containers.](../../../figures/architecture/fig-ch15-001-vm-vs-container.svg){#fig-ch15-001 fig-cap="Hardware → hypervisor/VM vs shared kernel → containers. Conceptual educational comparison; not measured Device Quartet telemetry."}
 
@@ -105,7 +105,7 @@ Device Quartet / Edge IO placement benches remain **PHYSICAL_PENDING** (CLM-CH15
 
 ## 4. Follow the signal {#ch15-signal}
 
-**FIG-CH15-003** (illustrative) shows the same human task packaged three ways: local install, container/image, and cloud URL. Read it as a logical story, not as proof that every vendor product uses identical steps.
+**FIG-CH15-003** shows the same human task packaged three ways: local install, container/image, and cloud URL. Read it as a logical story, not as proof that every vendor product uses identical steps.
 
 ![Same human task as local install, container/image, or cloud URL.](../../../figures/sequence/fig-ch15-003-same-app-three-ways.svg){#fig-ch15-003 fig-cap="Same task, three presentations. Illustrative teaching parallel; not vendor performance data."}
 

@@ -61,7 +61,7 @@ Accessibility belongs in this noticing, not later as a disclaimer. If the only �
 
 ## 3. Exploded ecosystem {#sec-ch14-ecosystem}
 
-An ordinary app experience is not a single binary floating alone. It is a path through cooperating parts: people, UI, application logic, runtime, libraries, OS services, and optional remote APIs (CLM-CH14-001) [@saltzer-kaashoek; @whatwg-html]. **FIG-CH14-001** (conceptual) is the first-minute stack map: UI → app logic → runtime → libraries → OS services → optional remote API. Treat it as **Representative educational architecture**—not a measured teardown of any brand’s process list.
+An ordinary app experience is not a single binary floating alone. It is a path through cooperating parts: people, UI, application logic, runtime, libraries, OS services, and optional remote APIs (CLM-CH14-001) [@saltzer-kaashoek; @whatwg-html]. **FIG-CH14-001** is the first-minute stack map: UI → app logic → runtime → libraries → OS services → optional remote API. Treat it as **Representative educational architecture**—not a measured teardown of any brand’s process list.
 
 Walk the layers in ordinary language. Keep the same layers when vocabulary deepens.
 
@@ -103,7 +103,7 @@ Equity belongs in the map: always-online assumptions exclude learners on metered
 
 ## 4. Follow the signal {#sec-ch14-signal}
 
-Everyday interactive software commonly waits for inputs, dispatches handlers, updates remembered **state**, and presents outputs [@whatwg-html; @whatwg-dom]. **FIG-CH14-002** (conceptual sequence) shows one teaching path for a feature after chrome is already visible: event → handler → API call → state update → render / AT feedback. Read it as a logical story, not as a claim that every platform uses one identical event-loop implementation or that steps never overlap.
+Everyday interactive software commonly waits for inputs, dispatches handlers, updates remembered **state**, and presents outputs [@whatwg-html; @whatwg-dom]. **FIG-CH14-002** shows one teaching path for a feature after chrome is already visible: event → handler → API call → state update → render / AT feedback. Read it as a logical story, not as a claim that every platform uses one identical event-loop implementation or that steps never overlap.
 
 A useful reading of the chrome-before-content moment inside an already-running app:
 
@@ -115,7 +115,7 @@ A useful reading of the chrome-before-content moment inside an already-running a
 6. **Outputs update** — pixels, sound, haptics, and AT announcements reach the human.
 7. **Human judgment** — ready enough to use, still busy, or failed.
 
-**FIG-CH14-003** (illustrative comparative layers) separates **local API** failure domains from **remote API** failure domains. Same call metaphor (“ask for data”); different latency, authorization, and blame stories. Association ≠ DNS ≠ route ≠ auth ≠ this API version.
+**FIG-CH14-003** separates **local API** failure domains from **remote API** failure domains. Same call metaphor (“ask for data”); different latency, authorization, and blame stories. Association ≠ DNS ≠ route ≠ auth ≠ this API version.
 
 ### Alternate paths (the honesty rule)
 

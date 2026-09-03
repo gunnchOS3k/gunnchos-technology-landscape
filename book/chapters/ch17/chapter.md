@@ -56,7 +56,7 @@ Optional comparison, available on a phone or laptop you already own (or via fixt
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-An everyday walk is not one radio. It is a path through an ecosystem. **FIG-CH17-001** (conceptual) is the first-minute map: device ↔ Wi-Fi access point path **versus** cellular radio access network (RAN) path ↔ operator or campus backhaul ↔ Internet path ↔ edge/cloud service. Treat it as **Representative educational architecture**, not a claim that your phone’s sealed internals look exactly like the diagram.
+An everyday walk is not one radio. It is a path through an ecosystem. **FIG-CH17-001** is the first-minute map: device ↔ Wi-Fi access point path **versus** cellular radio access network (RAN) path ↔ operator or campus backhaul ↔ Internet path ↔ edge/cloud service. Treat it as **Representative educational architecture**, not a claim that your phone’s sealed internals look exactly like the diagram.
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -88,13 +88,13 @@ Packets that leave the access network still need addressing, routing, and a plac
 
 Status UI summarizes radio and attachment state for humans. It is an interpretation layer—not a QoE meter, not a latency class certificate, and not proof that a particular 5G feature set is active for your app (CLM-CH17-002).
 
-**FIG-CH17-002** (illustrative timeline) later places cellular generations through 5G and marks **6G as roadmap**—research and standards direction, not a deployed consumer fact in this manuscript (CLM-CH17-003; `SOURCE_NEEDED` for a dated 3GPP study-item primary).
+**FIG-CH17-002** later places cellular generations through 5G and marks **6G as roadmap**—research and standards direction, not a deployed consumer fact in this manuscript (CLM-CH17-003; `SOURCE_NEEDED` for a dated 3GPP study-item primary).
 
 ---
 
 ## 4. Follow the signal {#sec-signal}
 
-**FIG-CH17-003** (conceptual sequence) shows a walk: indoor Wi-Fi association → approach exit → Wi-Fi weakens → cellular attachment or handover/offload → app traffic continues or stalls. Read it as a logical story, not as a measured drive test of your city.
+**FIG-CH17-003** shows a walk: indoor Wi-Fi association → approach exit → Wi-Fi weakens → cellular attachment or handover/offload → app traffic continues or stalls. Read it as a logical story, not as a measured drive test of your city.
 
 1. **Intent.** A person starts or continues a task that needs a path.
 2. **Access choice.** The device uses Wi-Fi, cellular, or switches between them according to policy and conditions [@kurose-ross-8].

@@ -59,7 +59,7 @@ Optional commodity notice (no specialized gear): ask one non-sensitive practical
 
 ## 3. Exploded ecosystem {#sec-ecosystem}
 
-An assistant answer is not a single object. It is a path through an ecosystem. **FIG-CH21-001** (planned conceptual embed; inherit CE-5 data→model→inference geometry) is the first-minute map: human experience at the center, with cooperating layers—not a cartoon brain. Treat it as **representative educational architecture**, not a claim that every product wires the same stack.
+An assistant answer is not a single object. It is a path through an ecosystem. **FIG-CH21-001** is the first-minute map: human experience at the center, with cooperating layers—not a cartoon brain. Treat it as **representative educational architecture**, not a claim that every product wires the same stack.
 
 Walk the layers in ordinary language.
 
@@ -81,7 +81,7 @@ Stored parameters shape how inputs map to outputs. Deep-learning teaching vocabu
 
 ### Local vs remote placement
 
-Inference may run on-device, on a nearby edge box, or on remote computers. That deployment choice changes privacy exposure, dependency, update control, and often delay. **FIG-CH21-002** (planned comparative) keeps those boundaries visible.
+Inference may run on-device, on a nearby edge box, or on remote computers. That deployment choice changes privacy exposure, dependency, update control, and often delay. **FIG-CH21-002** keeps those boundaries visible.
 
 ### Network and service (when remote)
 
@@ -131,7 +131,7 @@ Illustrative comparison tables for latency, energy, privacy, and control are **t
 
 ### Uncertainty families without collapse
 
-**FIG-CH21-003** (planned conceptual) separates three families readers must not collapse:
+**FIG-CH21-003** separates three families readers must not collapse:
 
 | Family | Everyday question | Typical mis-use |
 |---|---|---|

@@ -1,0 +1,21 @@
+figure_id: FIG-CH14-001
+title: "App stack map"
+caption: "App stack map. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "App stack map. Reading order: UI; App logic; Runtime; Libraries; OS services."
+text_equivalent: |
+  App stack map. Nodes in reading order: UI; App logic; Runtime; Libraries; OS services. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- UI
+- App logic
+- Runtime
+- Libraries
+- OS services
+source: figures/full31/ch14/fig-ch14-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

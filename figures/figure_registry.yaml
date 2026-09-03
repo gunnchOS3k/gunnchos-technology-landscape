@@ -369,3 +369,553 @@ figures:
     accessibility: figures/accessibility/fig-ch16-004.yaml
     status: illustrative
     chapter: CH16
+
+  - figure_id: FIG-CH11-001
+    id: FIG-CH11-001
+    title: "Boot path sequence"
+    path: figures/full31/ch11/fig-ch11-001.svg
+    accessibility: figures/accessibility/fig-ch11-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH11-002
+    id: FIG-CH11-002
+    title: "Root-of-trust stages"
+    path: figures/full31/ch11/fig-ch11-002.svg
+    accessibility: figures/accessibility/fig-ch11-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH11-003
+    id: FIG-CH11-003
+    title: "AuthN vs AuthZ at boot"
+    path: figures/full31/ch11/fig-ch11-003.svg
+    accessibility: figures/accessibility/fig-ch11-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH11-004
+    id: FIG-CH11-004
+    title: "Update and recovery boundary"
+    path: figures/full31/ch11/fig-ch11-004.svg
+    accessibility: figures/accessibility/fig-ch11-004.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-001
+    id: FIG-CH13-001
+    title: "Data lifecycle arc"
+    path: figures/full31/ch13/fig-ch13-001.svg
+    accessibility: figures/accessibility/fig-ch13-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-002
+    id: FIG-CH13-002
+    title: "Durability stack"
+    path: figures/full31/ch13/fig-ch13-002.svg
+    accessibility: figures/accessibility/fig-ch13-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-003
+    id: FIG-CH13-003
+    title: "Save click vs durability"
+    path: figures/full31/ch13/fig-ch13-003.svg
+    accessibility: figures/accessibility/fig-ch13-003.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-004
+    id: FIG-CH13-004
+    title: "Files vs databases"
+    path: figures/full31/ch13/fig-ch13-004.svg
+    accessibility: figures/accessibility/fig-ch13-004.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH14-001
+    id: FIG-CH14-001
+    title: "App stack map"
+    path: figures/full31/ch14/fig-ch14-001.svg
+    accessibility: figures/accessibility/fig-ch14-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH14-002
+    id: FIG-CH14-002
+    title: "Feature after chrome path"
+    path: figures/full31/ch14/fig-ch14-002.svg
+    accessibility: figures/accessibility/fig-ch14-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH14-003
+    id: FIG-CH14-003
+    title: "Local vs remote API domains"
+    path: figures/full31/ch14/fig-ch14-003.svg
+    accessibility: figures/accessibility/fig-ch14-003.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH17-001
+    id: FIG-CH17-001
+    title: "Wi-Fi vs cellular on-ramps"
+    path: figures/full31/ch17/fig-ch17-001.svg
+    accessibility: figures/accessibility/fig-ch17-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH17-002
+    id: FIG-CH17-002
+    title: "Cellular generations timeline"
+    path: figures/full31/ch17/fig-ch17-002.svg
+    accessibility: figures/accessibility/fig-ch17-002.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH17-003
+    id: FIG-CH17-003
+    title: "Indoor Wi-Fi to outdoor handoff"
+    path: figures/full31/ch17/fig-ch17-003.svg
+    accessibility: figures/accessibility/fig-ch17-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-001
+    id: FIG-CH18-001
+    title: "Radio path conditions"
+    path: figures/full31/ch18/fig-ch18-001.svg
+    accessibility: figures/accessibility/fig-ch18-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-002
+    id: FIG-CH18-002
+    title: "Beam and path geometry"
+    path: figures/full31/ch18/fig-ch18-002.svg
+    accessibility: figures/accessibility/fig-ch18-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-003
+    id: FIG-CH18-003
+    title: "MIMO teaching metaphor"
+    path: figures/full31/ch18/fig-ch18-003.svg
+    accessibility: figures/accessibility/fig-ch18-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-004
+    id: FIG-CH18-004
+    title: "Quartet RF PHYSICAL_PENDING overlay"
+    path: figures/full31/ch18/fig-ch18-004.svg
+    accessibility: figures/accessibility/fig-ch18-004.yaml
+    status: project_specific
+    truth_classification: project_specific
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH19-001
+    id: FIG-CH19-001
+    title: "NTN continuity map"
+    path: figures/full31/ch19/fig-ch19-001.svg
+    accessibility: figures/accessibility/fig-ch19-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH19-002
+    id: FIG-CH19-002
+    title: "Continuity vs icon status"
+    path: figures/full31/ch19/fig-ch19-002.svg
+    accessibility: figures/accessibility/fig-ch19-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH19-003
+    id: FIG-CH19-003
+    title: "Illustrative delay families"
+    path: figures/full31/ch19/fig-ch19-003.svg
+    accessibility: figures/accessibility/fig-ch19-003.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-001
+    id: FIG-CH20-001
+    title: "Stability Contract concurrent conditions"
+    path: figures/full31/ch20/fig-ch20-001.svg
+    accessibility: figures/accessibility/fig-ch20-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-002
+    id: FIG-CH20-002
+    title: "Latency vs reliability vs throughput"
+    path: figures/full31/ch20/fig-ch20-002.svg
+    accessibility: figures/accessibility/fig-ch20-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-003
+    id: FIG-CH20-003
+    title: "Evidence ladder for QoE"
+    path: figures/full31/ch20/fig-ch20-003.svg
+    accessibility: figures/accessibility/fig-ch20-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-004
+    id: FIG-CH20-004
+    title: "Status vs usable experience"
+    path: figures/full31/ch20/fig-ch20-004.svg
+    accessibility: figures/accessibility/fig-ch20-004.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH21-001
+    id: FIG-CH21-001
+    title: "Data to model to inference"
+    path: figures/full31/ch21/fig-ch21-001.svg
+    accessibility: figures/accessibility/fig-ch21-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH21-002
+    id: FIG-CH21-002
+    title: "Local vs remote AI placement"
+    path: figures/full31/ch21/fig-ch21-002.svg
+    accessibility: figures/accessibility/fig-ch21-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH21-003
+    id: FIG-CH21-003
+    title: "Model vs product vs claim families"
+    path: figures/full31/ch21/fig-ch21-003.svg
+    accessibility: figures/accessibility/fig-ch21-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH22-001
+    id: FIG-CH22-001
+    title: "Sense to edge feedback"
+    path: figures/full31/ch22/fig-ch22-001.svg
+    accessibility: figures/accessibility/fig-ch22-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH2-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH22-002
+    id: FIG-CH22-002
+    title: "Illustrative latency budget bands"
+    path: figures/full31/ch22/fig-ch22-002.svg
+    accessibility: figures/accessibility/fig-ch22-002.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH2-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH22-003
+    id: FIG-CH22-003
+    title: "Wearables PHYSICAL_PENDING badge"
+    path: figures/full31/ch22/fig-ch22-003.svg
+    accessibility: figures/accessibility/fig-ch22-003.yaml
+    status: project_specific
+    truth_classification: project_specific
+    chapter: CH2-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH24-001
+    id: FIG-CH24-001
+    title: "Privacy lifecycle wheel"
+    path: figures/full31/ch24/fig-ch24-001.svg
+    accessibility: figures/accessibility/fig-ch24-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH24-002
+    id: FIG-CH24-002
+    title: "Accessible vs blocked recovery"
+    path: figures/full31/ch24/fig-ch24-002.svg
+    accessibility: figures/accessibility/fig-ch24-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH24-003
+    id: FIG-CH24-003
+    title: "Ethics and inclusion ladder"
+    path: figures/full31/ch24/fig-ch24-003.svg
+    accessibility: figures/accessibility/fig-ch24-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH25-001
+    id: FIG-CH25-001
+    title: "Same task divergent completion"
+    path: figures/full31/ch25/fig-ch25-001.svg
+    accessibility: figures/accessibility/fig-ch25-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH5-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH25-002
+    id: FIG-CH25-002
+    title: "Equity evidence hierarchy"
+    path: figures/full31/ch25/fig-ch25-002.svg
+    accessibility: figures/accessibility/fig-ch25-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH5-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH25-003
+    id: FIG-CH25-003
+    title: "Exclusion mechanism cards"
+    path: figures/full31/ch25/fig-ch25-003.svg
+    accessibility: figures/accessibility/fig-ch25-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH5-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH26-001
+    id: FIG-CH26-001
+    title: "Edit to review sequence"
+    path: figures/full31/ch26/fig-ch26-001.svg
+    accessibility: figures/accessibility/fig-ch26-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH6-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH26-002
+    id: FIG-CH26-002
+    title: "Working tree vs history"
+    path: figures/full31/ch26/fig-ch26-002.svg
+    accessibility: figures/accessibility/fig-ch26-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH6-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH26-003
+    id: FIG-CH26-003
+    title: "Employment non-guarantee boundary"
+    path: figures/full31/ch26/fig-ch26-003.svg
+    accessibility: figures/accessibility/fig-ch26-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH6-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH27-001
+    id: FIG-CH27-001
+    title: "Evidence hierarchy ladder"
+    path: figures/full31/ch27/fig-ch27-001.svg
+    accessibility: figures/accessibility/fig-ch27-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH27-002
+    id: FIG-CH27-002
+    title: "Test pass vs usable experience"
+    path: figures/full31/ch27/fig-ch27-002.svg
+    accessibility: figures/accessibility/fig-ch27-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH27-003
+    id: FIG-CH27-003
+    title: "Observation to inference gate"
+    path: figures/full31/ch27/fig-ch27-003.svg
+    accessibility: figures/accessibility/fig-ch27-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH28-001
+    id: FIG-CH28-001
+    title: "Twin story vs measured world"
+    path: figures/full31/ch28/fig-ch28-001.svg
+    accessibility: figures/accessibility/fig-ch28-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH28-002
+    id: FIG-CH28-002
+    title: "Reproducibility checklist path"
+    path: figures/full31/ch28/fig-ch28-002.svg
+    accessibility: figures/accessibility/fig-ch28-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH28-003
+    id: FIG-CH28-003
+    title: "Validity bounds annulus"
+    path: figures/full31/ch28/fig-ch28-003.svg
+    accessibility: figures/accessibility/fig-ch28-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH29-001
+    id: FIG-CH29-001
+    title: "Complete product ecosystem map"
+    path: figures/full31/ch29/fig-ch29-001.svg
+    accessibility: figures/accessibility/fig-ch29-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH29-002
+    id: FIG-CH29-002
+    title: "Secure/include inside design gates"
+    path: figures/full31/ch29/fig-ch29-002.svg
+    accessibility: figures/accessibility/fig-ch29-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH29-003
+    id: FIG-CH29-003
+    title: "One-pager evidence fields"
+    path: figures/full31/ch29/fig-ch29-003.svg
+    accessibility: figures/accessibility/fig-ch29-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH30-001
+    id: FIG-CH30-001
+    title: "Role to artifact to review"
+    path: figures/full31/ch30/fig-ch30-001.svg
+    accessibility: figures/accessibility/fig-ch30-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH30-002
+    id: FIG-CH30-002
+    title: "Portfolio checklist fields"
+    path: figures/full31/ch30/fig-ch30-002.svg
+    accessibility: figures/accessibility/fig-ch30-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH30-003
+    id: FIG-CH30-003
+    title: "Learning proof vs employment"
+    path: figures/full31/ch30/fig-ch30-003.svg
+    accessibility: figures/accessibility/fig-ch30-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH31-001
+    id: FIG-CH31-001
+    title: "Capstone concurrent-condition hub"
+    path: figures/full31/ch31/fig-ch31-001.svg
+    accessibility: figures/accessibility/fig-ch31-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH31-002
+    id: FIG-CH31-002
+    title: "EMIT cycle with evidence gates"
+    path: figures/full31/ch31/fig-ch31-002.svg
+    accessibility: figures/accessibility/fig-ch31-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH31-003
+    id: FIG-CH31-003
+    title: "Fixture vs human-evidence firewall"
+    path: figures/full31/ch31/fig-ch31-003.svg
+    accessibility: figures/accessibility/fig-ch31-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."

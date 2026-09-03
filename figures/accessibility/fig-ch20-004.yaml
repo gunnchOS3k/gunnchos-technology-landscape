@@ -1,0 +1,20 @@
+figure_id: FIG-CH20-004
+title: "Status vs usable experience"
+caption: "Status vs usable experience. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Status vs usable experience. Reading order: Connected icon; Usable send; Green probe; Human-finished task."
+text_equivalent: |
+  Status vs usable experience. Nodes in reading order: Connected icon; Usable send; Green probe; Human-finished task. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Connected icon
+- Usable send
+- Green probe
+- Human-finished task
+source: figures/full31/ch20/fig-ch20-004.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0
