@@ -1,0 +1,11 @@
+---
+title: "Figure index"
+---
+
+# Figure index
+
+Canonical figure assets live under `figures/` with registries and accessibility metadata enforced by validation scripts.
+
+Chapter 2 prototype figures (`FIG-CH02-001` … `FIG-CH02-007`) are the historical Gate 3 reader-package set. Additional Concept Edition and Full31 figure plans are tracked in preproduction / chapter packets and must keep `PHYSICAL_PENDING` / illustrative labels honest.
+
+This appendix is an index stub for the full-book build; it does not freeze figure inventories as publication-final.

@@ -167,12 +167,12 @@ def merge() -> dict:
     packet_counts = Counter(c["packet_state"] for c in chapters)
     waike = aggregate_all_waike()
 
-    # Coverage metrics for report
+    # Coverage metrics for report (normalized dimensions — see PROGRESS_DIMENSIONS.md)
     canonical_full = sum(1 for c in chapters if c.get("canonical_prose_state") == "DRAFT_COMPLETE")
-    human_validated = sum(1 for c in chapters if c.get("current_state") == "PUBLICATION_READY")
-    # truthful: zero human-validated manuscripts
+    # truthful: zero completed technical review / human validation / publication-ready in this wave
+    technical_review = 0
     human_validated = 0
-    publication_ready = sum(1 for c in chapters if c.get("current_state") == "PUBLICATION_READY")
+    publication_ready = 0
     substantive_preprod_complete = sum(
         1 for c in chapters if c.get("current_state") == "PREPRODUCTION_COMPLETE"
     )
@@ -209,6 +209,8 @@ def merge() -> dict:
             "substantive_preproduction_started": substantive_preprod_started,
             "substantive_preproduction_complete": substantive_preprod_complete,
             "canonical_full_drafts": canonical_full,
+            "working_draft": canonical_full,
+            "technical_review": technical_review,
             "human_validated": human_validated,
             "publication_ready": publication_ready,
         },
@@ -240,6 +242,23 @@ def write_report(doc: dict) -> str:
     lines.append("**CH02-REVIEW-R1 / gate-3:** UNCHANGED vs accepted main")
     lines.append("")
     lines.append("## Coverage (do not collapse)")
+    lines.append("")
+    lines.append("Normalized dimensions — see `publication/full31/PROGRESS_DIMENSIONS.md`.")
+    lines.append("")
+    lines.append("```text")
+    lines.append(f"architecture:              {counts['architecture_registered']}/31")
+    lines.append(f"packet:                    {counts['minimum_packet_coverage']}/31")
+    lines.append(
+        f"substantive_preproduction: {counts['substantive_preproduction_complete']}/31 complete "
+        f"({counts['substantive_preproduction_started']}/31 started)"
+    )
+    lines.append(f"working_draft:             {counts['canonical_full_drafts']}/31")
+    lines.append(f"technical_review:          {counts.get('technical_review', 0)}/31")
+    lines.append(f"human_validation:          {counts['human_validated']}/31")
+    lines.append(f"publication_readiness:     {counts['publication_ready']}/31")
+    lines.append("```")
+    lines.append("")
+    lines.append("Legacy synonyms (validators / continuity):")
     lines.append("")
     lines.append("```text")
     lines.append("31/31 architecture registered")

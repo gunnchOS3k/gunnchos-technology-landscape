@@ -31,6 +31,8 @@ counts:
   substantive_preproduction_started: 30
   substantive_preproduction_complete: 0
   canonical_full_drafts: 1
+  working_draft: 1
+  technical_review: 0
   human_validated: 0
   publication_ready: 0
 packet_state_counts:

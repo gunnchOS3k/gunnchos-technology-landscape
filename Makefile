@@ -18,7 +18,10 @@ TEX_BIN_DIR ?= $(shell \
 
 export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report continuation-check continuation-preview ce-source-integrity ce-visual-text-check
+# full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
+FULL31_DRAFT_CHECK_MODE ?= infra
+
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check
 
 setup:
 	python3 -m venv .venv
@@ -66,6 +69,23 @@ book:
 	@chmod +x scripts/render_formats.sh
 	@./scripts/render_formats.sh book
 
+# Full 31-chapter book artifacts (separate from CH02 reader package preview/ch02.*)
+full31-html:
+	@chmod +x scripts/render_full31.sh
+	@./scripts/render_full31.sh html
+
+full31-pdf:
+	@chmod +x scripts/render_full31.sh
+	@./scripts/render_full31.sh pdf
+
+full31-epub:
+	@chmod +x scripts/render_full31.sh
+	@./scripts/render_full31.sh epub
+
+full31-book:
+	@chmod +x scripts/render_full31.sh
+	@./scripts/render_full31.sh all
+
 reader-preview:
 	@chmod +x scripts/build_reader_preview.sh
 	@./scripts/build_reader_preview.sh
@@ -110,6 +130,9 @@ full31-check:
 	$(PYTHON) scripts/aggregate_full31_waike.py --check
 	$(PYTHON) scripts/validate_full31.py
 
+full31-draft-check:
+	$(PYTHON) scripts/validate_full31_draft.py --mode $(FULL31_DRAFT_CHECK_MODE)
+
 continuation-preview:
 	$(PYTHON) scripts/build_continuation_preview.py
 
@@ -117,6 +140,7 @@ continuation-check:
 	$(MAKE) ce-figures-check
 	$(MAKE) ce-sources-check
 	$(MAKE) full31-check
+	$(MAKE) full31-draft-check
 	@echo "continuation-check: PASS"
 
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).

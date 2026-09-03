@@ -8,7 +8,50 @@ book:
   author: "Edmund Gunn, Jr."
   chapters:
     - index.qmd
+    - book/frontmatter/status.qmd
+    - book/frontmatter/how-to-use.qmd
+    - book/frontmatter/reader-pathways.qmd
+    - book/frontmatter/device-quartet.qmd
+    - book/frontmatter/waike.qmd
+    - book/frontmatter/evidence-legend.qmd
+    - book/frontmatter/preface.md
+    - book/chapters/ch01/chapter.md
     - book/chapters/ch02/chapter.md
+    - book/chapters/ch03/chapter.md
+    - book/chapters/ch04/chapter.md
+    - book/chapters/ch05/chapter.md
+    - book/chapters/ch06/chapter.md
+    - book/chapters/ch07/chapter.md
+    - book/chapters/ch08/chapter.md
+    - book/chapters/ch09/chapter.md
+    - book/chapters/ch10/chapter.md
+    - book/chapters/ch11/chapter.md
+    - book/chapters/ch12/chapter.md
+    - book/chapters/ch13/chapter.md
+    - book/chapters/ch14/chapter.md
+    - book/chapters/ch15/chapter.md
+    - book/chapters/ch16/chapter.md
+    - book/chapters/ch17/chapter.md
+    - book/chapters/ch18/chapter.md
+    - book/chapters/ch19/chapter.md
+    - book/chapters/ch20/chapter.md
+    - book/chapters/ch21/chapter.md
+    - book/chapters/ch22/chapter.md
+    - book/chapters/ch23/chapter.md
+    - book/chapters/ch24/chapter.md
+    - book/chapters/ch25/chapter.md
+    - book/chapters/ch26/chapter.md
+    - book/chapters/ch27/chapter.md
+    - book/chapters/ch28/chapter.md
+    - book/chapters/ch29/chapter.md
+    - book/chapters/ch30/chapter.md
+    - book/chapters/ch31/chapter.md
+    - book/appendices/glossary.qmd
+    - book/appendices/references.qmd
+    - book/appendices/lab-index.qmd
+    - book/appendices/figure-index.qmd
+    - book/appendices/career-role-map.qmd
+    - book/appendices/acknowledgments.qmd
 
 bibliography: book/references/references.bib
 link-citations: true

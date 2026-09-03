@@ -169,6 +169,13 @@ def main() -> int:
         "1/31 canonical full drafts",
         "0/31 human-validated",
         "0/31 publication-ready",
+        "architecture:",
+        "packet:",
+        "substantive_preproduction:",
+        "working_draft:",
+        "technical_review:",
+        "human_validation:",
+        "publication_readiness:",
     ):
         if needle not in report:
             errors.append(f"progress report missing truthful coverage line: {needle}")

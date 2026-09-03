@@ -9,6 +9,20 @@
 
 ## Coverage (do not collapse)
 
+Normalized dimensions — see `publication/full31/PROGRESS_DIMENSIONS.md`.
+
+```text
+architecture:              31/31
+packet:                    31/31
+substantive_preproduction: 0/31 complete (30/31 started)
+working_draft:             1/31
+technical_review:          0/31
+human_validation:          0/31
+publication_readiness:     0/31
+```
+
+Legacy synonyms (validators / continuity):
+
 ```text
 31/31 architecture registered
 31/31 minimum packet coverage

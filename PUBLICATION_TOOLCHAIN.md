@@ -22,7 +22,8 @@ Two Quarto project layers coexist; **neither build path moves or renames** root 
 | Project | Config | Purpose | Deterministic output |
 |---|---|---|---|
 | Chapter prototype | `book/chapters/ch02/_quarto.yml` | Independent Chapter 2 HTML/PDF/EPUB | `preview/ch02.{html,pdf,epub}` |
-| Book project | `_quarto.yml` (repo root) | Accumulating book (`index.qmd` + chapters) | `_book/` |
+| Full 31-chapter book | `_quarto.yml` (repo root) | All 31 chapters + front/back matter | `preview/full31/technology-landscape-full31-{html,pdf,epub}` |
+| Legacy book render | `_quarto.yml` via `make book` | Quarto default `_book/` | `_book/` |
 
 ### Why a chapter-local project?
 
@@ -30,9 +31,8 @@ Root `_quarto.yml` is a Quarto **book** project. Rendering a single chapter thro
 
 - keeps figure paths valid relative to `chapter.md`,
 - sets `output-dir` to repo `preview/`,
-- never touches the book config.
-
-Earlier Wave-1 scripts temporarily renamed `_quarto.yml` during builds. That workaround is removed.
+- never touches the book config,
+- **preserves the historical CH02 reader package** used by Gate 3 / `docs/`.
 
 ### Extending to Concept Edition (six modules)
 
@@ -49,13 +49,20 @@ Each uses `project.type: default`, a deterministic `output-dir` under `preview/`
 ### Commands
 
 ```bash
-make preview   # quarto render book/chapters/ch02 --to html
-make pdf       # quarto render book/chapters/ch02 --to pdf
-make epub      # quarto render book/chapters/ch02 --to epub
-make book      # quarto render .  (root book → _book/)
+make preview      # CH02 HTML → preview/ch02.html (reader package path)
+make pdf          # CH02 PDF
+make epub         # CH02 EPUB
+make book         # root book → _book/ (legacy)
+make full31-html  # full 31 → preview/full31/technology-landscape-full31-html/
+make full31-pdf   # full 31 → preview/full31/technology-landscape-full31-pdf.pdf
+make full31-epub  # full 31 → preview/full31/technology-landscape-full31-epub.epub
+make full31-book  # html + epub + pdf
+make full31-draft-check   # infra mode by default; FULL31_DRAFT_CHECK_MODE=strict for Batch 1+
 ```
 
 `scripts/render_formats.sh` normalizes Quarto’s `chapter.*` filenames to `preview/ch02.*`. It does **not** search `$HOME` or other arbitrary paths for outputs.
+
+`scripts/render_full31.sh` renders the root book project into named full31 artifacts and does **not** overwrite `preview/ch02.*` or `docs/`.
 
 ## Make targets
 
@@ -67,14 +74,21 @@ make preview
 make pdf
 make epub
 make book
+make full31-html
+make full31-pdf
+make full31-epub
+make full31-book
+make full31-draft-check
 make all
 make ci
 ```
 
 | Target | Meaning |
 |---|---|
-| `make all` | **Authoritative full build:** validate + test + HTML + PDF + EPUB |
+| `make all` | **Authoritative full build:** validate + test + HTML + PDF + EPUB (CH02 path) |
 | `make ci` | TeX-free subset: validate + test + HTML (useful without a TeX install) |
+| `make full31-*` | Full 31-chapter artifacts under `preview/full31/` (separate from CH02 reader package) |
+| `make full31-draft-check` | Manuscript QA (`infra` default; `FULL31_DRAFT_CHECK_MODE=strict` for WORKING_DRAFT_COMPLETE) |
 | Hosted GitHub Actions | Provisions Quarto + TeX + librsvg, then runs validate, test, HTML, EPUB, **and PDF**; uploads artifacts |
 
 ## Portability

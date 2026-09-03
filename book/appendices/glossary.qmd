@@ -1,0 +1,9 @@
+---
+title: "Glossary"
+---
+
+# Glossary
+
+Working glossary entries are maintained in `glossary/glossary.yaml` (with aliases and acronyms in sibling registries). Chapter “Glossary links” sections should point to defined terms rather than inventing conflicting definitions.
+
+This appendix is a **navigation stub** for the full-book build. As chapters leave scaffold state, term lists here may expand; do not treat an incomplete glossary as publication-ready terminology.

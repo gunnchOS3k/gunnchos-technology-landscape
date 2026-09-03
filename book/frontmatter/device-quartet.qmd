@@ -1,0 +1,21 @@
+---
+title: "Device Quartet"
+---
+
+# Device Quartet (learning laboratory)
+
+The Device Quartet is a set of **research form factors** used as a recurring learning laboratory across the book:
+
+| ID | Name | Learning role |
+|---|---|---|
+| `student-14-5` | Student 14.5-inch | Sustained desk compute for learning and work sessions |
+| `handheld-hybrid` | Handheld Hybrid | Mobile and docked compute |
+| `ds-xl-coder` | DS-XL Coder | Strongest learn-to-build device lens |
+| `edge-io-wearables` | Edge IO Wearables | Embodied compute and safety-critical interaction |
+
+## Integrity rules
+
+- Form factors are **learning benchmarks**, not commercial product promises.
+- Physical fabrication / EVT measurement claims remain **`PHYSICAL_PENDING`** until dated evidence exists.
+- Chapters must not pressure readers to purchase hardware.
+- Canonical machine-readable definitions live in `devices/quartet.yaml`.

@@ -1,0 +1,19 @@
+---
+title: "Evidence and status legend"
+---
+
+# Evidence and status legend
+
+| Label | Meaning |
+|---|---|
+| `WORKING FULL-MANUSCRIPT DRAFT` | Full-book prose in progress; not publication-ready |
+| `SCAFFOLD` / `outline` | Placeholder structure only — not teachable final prose |
+| `DRAFT_COMPLETE` | Working draft prose exists for that chapter |
+| `PHYSICAL_PENDING` | Requires measured Device Quartet / hardware evidence not yet available |
+| `ILLUSTRATIVE_ONLY` | Teaching illustration; not field measurement |
+| `SOURCE_NEEDED` | Claim still needs a citable source |
+| `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING` | Gate 3 open; CH02 prototype review historical; full-book human validation deferred |
+| `DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT` | Full-book reader recruitment waits for all 31 working drafts |
+| `PUBLICATION_READY` | **Not claimed** for this working draft |
+
+Successful rendering of HTML/PDF/EPUB is **toolchain evidence**, not human validation and not a release decision.

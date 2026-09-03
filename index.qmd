@@ -1,7 +1,17 @@
 # The Technology Landscape
 
-Welcome to the publication preview.
+::: {.callout-important}
+## WORKING FULL-MANUSCRIPT DRAFT
+
+Human reader validation pending.
+
+Technical/editorial revision pending.
+
+Not publication-ready.
+:::
+
+Welcome to the full-book working manuscript preview.
 
 Teaching model: **Human experience → system → component → code → network → society**
 
-Wave 1 focuses on publication infrastructure and the Chapter 2 canonical prototype.
+Gate posture remains `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`. Historical `CH02-REVIEW-R1` is chapter-prototype evidence only; full-book human validation is deferred until all 31 working drafts exist.

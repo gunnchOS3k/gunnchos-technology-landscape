@@ -1,0 +1,16 @@
+---
+title: "Lab index"
+---
+
+# Lab index
+
+| Lab ID | Primary chapter / module | Notes |
+|---|---|---|
+| `LAB-TAP-001` | CH02 | Canonical Gate 3 prototype lab |
+| `LAB-SYS-001` | CE-1 / CH01 | Concept Edition systems lab |
+| `LAB-CMS-001` | CE-3 | CPU/memory/storage teaching fixtures |
+| `LAB-PKT-001` | CE-4 | Packets / network path lab |
+| `LAB-TRUST-001` | CE-5 | Trust / security teaching lab |
+| `LAB-CE06-001` | CE-6 | Stability Contract / capstone lab |
+
+Lab packages live under `labs/`. Fixture data is teaching material unless labeled as measured evidence. Synthetic fixtures must never be described as human reader validation.
