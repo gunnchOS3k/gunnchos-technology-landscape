@@ -34,6 +34,16 @@
 - **Do not create** that snapshot, packet, or response tree in this authoring-infra wave.
 - Create it only after the full working manuscript exists and owner opens recruitment.
 
+## Working-draft milestone (Batch 3 integrator)
+
+As of the full-manuscript draft branch tip that completes CH01–CH31 working prose:
+
+- `WORKING_DRAFT_COMPLETE = 31` (honest manuscript structure under `make full31-draft-check --mode strict`).
+- `HUMAN_VALIDATED = 0` and `PUBLICATION_READY = 0` remain true.
+- Recruitment for full-book readers remains **owner-gated**.
+- `publication/full31/FULL_MANUSCRIPT_REVIEW_PLAN.md` is plan-only; **Do not create** `FULL31-REVIEW-R1` snapshot/response trees until the owner opens recruitment.
+- This milestone does **not** claim Gate 3 PASS.
+
 ## Implications for Batch 1+ chapter agents
 
 - Author all 31 chapters to working-draft quality under the publication status banner.

@@ -8,15 +8,18 @@ glossary_candidates:
   related_concepts:
   - CX-CH27-TEST
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: testing
 - term_id: GL-CH27-OBS
   preferred_term: Observability
-  plain_language_definition: Ability to ask new questions of a running system via signals.
+  plain_language_definition: Ability to ask new questions of a running system via
+    signals.
   introduced_in: CH27
   related_concepts:
   - CX-CH27-OBS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: observability
 - term_id: GL-CH27-EVIDENCE
   preferred_term: Evidence hierarchy
   plain_language_definition: From illustrative aid to stronger measurement methods.
@@ -25,7 +28,8 @@ glossary_candidates:
   - CX-CH27-EVIDENCE
   - CX-CH27-OBS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: evidence-hierarchy
 - term_id: GL-CH27-OI
   preferred_term: Observation vs inference
   plain_language_definition: What happened vs what may explain it.
@@ -33,7 +37,8 @@ glossary_candidates:
   related_concepts:
   - CX-CH27-OI
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: observation-vs-inference
 - term_id: GL-CH27-ORACLE
   preferred_term: Test oracle
   plain_language_definition: How we know a test outcome matches the experience claim.
@@ -42,7 +47,8 @@ glossary_candidates:
   - CX-CH27-ORACLE
   - CX-CH27-TEST
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: test-oracle
 - term_id: GL-CH27-REDACT
   preferred_term: Evidence redaction
   plain_language_definition: Removing secrets/PII before sharing artifacts.
@@ -51,4 +57,5 @@ glossary_candidates:
   - CX-CH27-REDACT
   - CX-CH27-OBS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: evidence-redaction

@@ -3,45 +3,55 @@ chapter_id: CH25
 glossary_candidates:
 - term_id: GL-CH25-EQUITY
   preferred_term: Digital equity
-  plain_language_definition: Who can benefit from a technology experience and who is excluded.
+  plain_language_definition: Who can benefit from a technology experience and who
+    is excluded.
   introduced_in: CH25
   related_concepts:
   - CX-CH25-EQUITY
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: digital-equity
 - term_id: GL-CH25-EXCLUSION
   preferred_term: Exclusion mechanism
-  plain_language_definition: "Device, cost, bandwidth, skill, language, disability, policy barriers."
+  plain_language_definition: Device, cost, bandwidth, skill, language, disability,
+    policy barriers.
   introduced_in: CH25
   related_concepts:
   - CX-CH25-EXCLUSION
   - CX-CH25-EQUITY
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: exclusion-mechanism
 - term_id: GL-CH25-MEASURE
   preferred_term: Measurable inclusion signals
-  plain_language_definition: Observations that can be collected without inventing population stats.
+  plain_language_definition: Observations that can be collected without inventing
+    population stats.
   introduced_in: CH25
   related_concepts:
   - CX-CH25-MEASURE
   - CX-CH25-EQUITY
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: measurable-inclusion-signals
 - term_id: GL-CH25-CONSTRAINED
   preferred_term: Constrained completion route
-  plain_language_definition: A path that works without specialized hardware or paid APIs.
+  plain_language_definition: A path that works without specialized hardware or paid
+    APIs.
   introduced_in: CH25
   related_concepts:
   - CX-CH25-CONSTRAINED
   - CX-CH25-EXCLUSION
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: constrained-completion-route
 - term_id: GL-CH25-LABELING
   preferred_term: Honest evidence labeling
-  plain_language_definition: Observed / inferred / illustrative / population-claim distinctions.
+  plain_language_definition: Observed / inferred / illustrative / population-claim
+    distinctions.
   introduced_in: CH25
   related_concepts:
   - CX-CH25-LABELING
   - CX-CH25-MEASURE
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: honest-evidence-labeling

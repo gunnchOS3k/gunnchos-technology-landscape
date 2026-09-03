@@ -8,7 +8,8 @@ glossary_candidates:
   related_concepts:
   - CX-CH26-VCS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: version-control
 - term_id: GL-CH26-COMMIT
   preferred_term: Commit
   plain_language_definition: A snapshot of change with message and identity metadata.
@@ -17,7 +18,8 @@ glossary_candidates:
   - CX-CH26-COMMIT
   - CX-CH26-VCS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: commit
 - term_id: GL-CH26-BRANCH
   preferred_term: Branch / integration
   plain_language_definition: Parallel lines of work later combined carefully.
@@ -26,7 +28,8 @@ glossary_candidates:
   - CX-CH26-BRANCH
   - CX-CH26-VCS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: branch-integration
 - term_id: GL-CH26-REVIEW
   preferred_term: Code review
   plain_language_definition: Human inspection of diffs before integration.
@@ -35,7 +38,8 @@ glossary_candidates:
   - CX-CH26-REVIEW
   - CX-CH26-COMMIT
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: code-review
 - term_id: GL-CH26-SECRETS
   preferred_term: Secrets hygiene
   plain_language_definition: Credentials/tokens must not enter history.
@@ -44,13 +48,16 @@ glossary_candidates:
   - CX-CH26-SECRETS
   - CX-CH26-VCS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: secrets-hygiene
 - term_id: GL-CH26-LOOP
   preferred_term: Build-test loop
-  plain_language_definition: Change → verify → evidence before claiming done.
+  plain_language_definition: "Change \u2192 verify \u2192 evidence before claiming\
+    \ done."
   introduced_in: CH26
   related_concepts:
   - CX-CH26-LOOP
   - CX-CH26-COMMIT
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: build-test-loop

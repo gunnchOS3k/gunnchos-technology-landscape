@@ -26,10 +26,13 @@ def test_full31_draft_check_infra_passes():
     assert "GATE_3_IN_PROGRESS" in proc.stdout
 
 
-def test_full31_draft_check_strict_fails_while_scaffolds_remain():
+def test_full31_draft_check_strict_passes_when_manuscript_complete():
+    """After all 31 working drafts land, strict mode must PASS (no scaffold leftover)."""
     proc = run_draft_check("--mode", "strict")
-    assert proc.returncode != 0, proc.stdout + proc.stderr
-    assert "scaffold" in proc.stdout.lower() or "FAIL" in proc.stdout
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+    assert "full31-draft-check: PASS" in proc.stdout
+    assert "structure_complete: 31/31" in proc.stdout
+    assert "WORKING_DRAFT_COMPLETE criteria satisfied" in proc.stdout
 
 
 def test_validation_sequence_decision_exists():

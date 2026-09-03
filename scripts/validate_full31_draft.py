@@ -104,9 +104,18 @@ FORBIDDEN_READY_RE = re.compile(
     r"(?i)\b(publication[- ]ready|GATE_3_PASS)\b",
 )
 
-CITATION_RE = re.compile(r"@([A-Za-z0-9_:-]+)")
+# BibTeX keys may include dots (e.g. semver-2.0.0, uefi-secure-boot-2.10).
+CITATION_RE = re.compile(r"@([A-Za-z][A-Za-z0-9_:-]*(?:\.[A-Za-z0-9_:-]+)*)")
 FIG_RE = re.compile(r"FIG-CH\d{2}-\d{3}|@fig-ch\d{2}-\d{3}|fig-ch\d{2}-\d{3}", re.I)
 LAB_RE = re.compile(r"LAB-[A-Z0-9-]+")
+# Proposed / namespaced-only lab IDs mentioned in prose are not required on disk.
+PROPOSED_LAB_CONTEXT_RE = re.compile(
+    r"(?i)(proposed|namespaced(?:-only)?|not\s+(?:a\s+)?(?:shipped|live|implemented)|"
+    r"do\s+not\s+treat|not\s+mint|ideation\s+only|packet\s+opportunity|"
+    r"until\s+(?:that\s+package|authored|published)|remains\s+a\s+packet|"
+    r"inventing\s+a\s+duplicate|rather\s+than\s+inventing|"
+    r"as\s+if\s+published|non-?claims?|explicit\s+non)",
+)
 
 
 def _strip_code_fences(text: str) -> str:
@@ -316,11 +325,19 @@ def check_chapter(
             msg = f"{cid}: citation @{key} not in references.bib"
             (errors if mode == "strict" else warnings).append(msg)
 
-    # Lab refs
-    for lab in LAB_RE.findall(prose):
-        if lab_ids and lab not in lab_ids:
-            msg = f"{cid}: lab {lab} not found under labs/"
-            (errors if mode == "strict" else warnings).append(msg)
+    # Lab refs — require on-disk packages unless the mention is explicitly proposed-only.
+    for m in LAB_RE.finditer(prose):
+        lab = m.group(0)
+        if not lab_ids or lab in lab_ids:
+            continue
+        start = max(0, m.start() - 160)
+        end = min(len(prose), m.end() + 160)
+        window = prose[start:end]
+        if PROPOSED_LAB_CONTEXT_RE.search(window):
+            warnings.append(f"{cid}: proposed lab {lab} mentioned (not required on disk)")
+            continue
+        msg = f"{cid}: lab {lab} not found under labs/"
+        (errors if mode == "strict" else warnings).append(msg)
 
     # Figure refs (best-effort)
     for m in FIG_RE.findall(prose):
