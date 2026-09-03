@@ -2,5 +2,47 @@ chapter_id: CH11
 chapter_number: 11
 title: "Firmware, Boot, and Trust"
 part: III
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - How does a device become a trustworthy-enough computer from power-on through firmware and boot?
+experience:
+  - pressing power or waking a device
+  - logo then lock screen or recovery warning
+  - update and recovery banners
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [firmware, boot, root-of-trust, secure-boot, attestation, recovery]
+devices: [commodity-computer, commodity-phone]
+labs: [LAB-BOOT-OBS-001]
+figures:
+  - FIG-CH11-001
+  - FIG-CH11-002
+  - FIG-CH11-003
+  - FIG-CH11-004
+concepts:
+  introduced: [firmware, boot-sequence, bootloader, root-of-trust, secure-boot, measured-boot, attestation, recovery-mode]
+  required: [stability-contract]
+  related: [authentication, authorization, update-trust]
+waike:
+  mapped: true
+  courses: [EMBEDDED_PROTOTYPING, HARDWARE_ENGINEERING, CYBERSECURITY]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (lab_ep_zephyr_qemu / bring-up neighbors; CYBERSECURITY hardening adjacency). LAB-BOOT-OBS-001 is publication-owned; LAB-TRUST-001 is CE-5 adjacency only, not this chapter's lab."
+claims:
+  packet: publication/full31/chapters/ch11/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+bibliography_note: "Cite keys in book/references/references.bib (tanenbaum-bos, saltzer-kaashoek, uefi-secure-boot-2.10, tcg-pc-client-pfp-1.06). Omit CLM-CH11-006 (SOURCE_NEEDED). Quartet boot/firmware remains PHYSICAL_PENDING (CLM-CH11-005)."
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+blockers:
+  - "CLM-CH11-006 interrupted firmware-update failure modes remain SOURCE_NEEDED — omitted as cited claim; recovery discussed qualitatively only"
+  - "Device Quartet boot/firmware measurements PHYSICAL_PENDING (CLM-CH11-005)"
+  - "Human reader validation deferred until full manuscript draft (VALIDATION_SEQUENCE_DECISION.md)"
+  - "No Gate 3 PASS claimed; CH02-REVIEW-R1 / gate-3 untouched"
+lab_adjacency:
+  - lab_id: LAB-TRUST-001
+    note: "CE-5 trust/consent literacy adjacency only; forward CH23 for chip-to-cloud depth"
+  - lab_id: LAB-CMS-001
+    note: "Optional Operator post-boot local-health path; not Ch11 core"
