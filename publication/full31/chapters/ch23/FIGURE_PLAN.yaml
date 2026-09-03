@@ -4,36 +4,42 @@ figures:
 - provisional_id: FIG-CH23-001
   figure_type: ladder
   pedagogical_purpose: Identity → authentication → authorization
-  reader_should_notice: Identity → authentication → authorization
-  data_or_evidence_source: educational original / inherited CE pattern
+  reader_should_notice: Identity → authentication → authorization (AuthN ≠ AuthZ)
+  data_or_evidence_source: educational original / inherited CE pattern FIG-CE5-003
   truth_classification: conceptual
-  expected_geometry: TBD layout
+  expected_geometry: left-to-right ladder to Allow/Deny
   accessibility_description_requirement: Describe Identity → authentication → authorization; color never sole cue.
   color_independent_encoding: Shape + label; color never sole cue.
-  dependencies: []
+  dependencies: [FIG-CE5-003]
   edition_scope: full_book
-  production_status: not_drawn
+  production_status: working_draft
+  asset_path: figures/architecture/fig-ch23-001-identity-authn-authz.svg
+  a11y_sidecar: figures/preproduction/accessibility/fig-ch23-001.yaml
 - provisional_id: FIG-CH23-002
   figure_type: ecosystem
   pedagogical_purpose: Chip-to-cloud trust path with UX symptoms
   reader_should_notice: Chip-to-cloud trust path with UX symptoms
-  data_or_evidence_source: educational original / inherited CE pattern
+  data_or_evidence_source: educational original / inherited CE pattern FIG-CE5-007
   truth_classification: conceptual
-  expected_geometry: TBD layout
+  expected_geometry: left-to-right layers + UX symptom band
   accessibility_description_requirement: Describe Chip-to-cloud trust path with UX symptoms; color never sole cue.
   color_independent_encoding: Shape + label; color never sole cue.
-  dependencies: []
+  dependencies: [FIG-CE5-007]
   edition_scope: full_book
-  production_status: not_drawn
+  production_status: working_draft
+  asset_path: figures/ecosystem/fig-ch23-002-chip-to-cloud-trust.svg
+  a11y_sidecar: figures/preproduction/accessibility/fig-ch23-002.yaml
 - provisional_id: FIG-CH23-003
   figure_type: boundary
   pedagogical_purpose: Encryption transit/at-rest/endpoint limits
   reader_should_notice: Encryption transit/at-rest/endpoint limits
-  data_or_evidence_source: educational original / inherited CE pattern
+  data_or_evidence_source: educational original / inherited CE pattern FIG-CE5-004
   truth_classification: conceptual
-  expected_geometry: TBD layout
+  expected_geometry: transit → at rest → unlocked endpoint + limits note
   accessibility_description_requirement: Describe Encryption transit/at-rest/endpoint limits; color never sole cue.
   color_independent_encoding: Shape + label; color never sole cue.
-  dependencies: []
+  dependencies: [FIG-CE5-004]
   edition_scope: full_book
-  production_status: not_drawn
+  production_status: working_draft
+  asset_path: figures/architecture/fig-ch23-003-encryption-boundaries.svg
+  a11y_sidecar: figures/preproduction/accessibility/fig-ch23-003.yaml
