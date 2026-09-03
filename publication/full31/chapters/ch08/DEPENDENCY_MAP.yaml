@@ -1,0 +1,28 @@
+schema_version: "1.0.0"
+chapter_id: CH08
+chapter_number: 8
+title: "Graphics, Displays, Audio, Cameras, and Sensors"
+part: II
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH02"
+  - "CH03"
+  - "CH05"
+  - "CH06"
+  - "CH07"
+inherits_from:
+  - "CH02 rendering/frame"
+  - "CE-3 GPU survey"
+feeds_later:
+  - "CH22 Edge AI/sensors"
+  - "CH24 a11y/privacy"
+gate_dependencies:
+  - "Global Gate 3"
+human_dependencies:
+  - "Privacy review for camera/mic labs"
+physical_dependencies:
+  - "Quartet camera/sensor EVT PHYSICAL_PENDING"
+ce_inheritance_note: "Part II: human I/O modalities as system interfaces—not a gadget catalog."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

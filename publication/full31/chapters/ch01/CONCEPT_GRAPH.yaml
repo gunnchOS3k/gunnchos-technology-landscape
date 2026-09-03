@@ -1,0 +1,125 @@
+schema_version: "1.0.0"
+chapter_id: CH01
+chapter_number: 1
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inheritance_note: "Link/inherit CE-1 preproduction rather than duplicating deep content. Full31 packet restates contracts for integrator merge."
+concepts:
+- concept_id: CX-CH01-001
+  canonical_term: "visible interface"
+  plain_language_definition: "Surface the person can see/hear."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH01-002
+  canonical_term: "hidden layers"
+  plain_language_definition: "Cooperating parts under the interface."
+  depends_on:
+  - CX-CH01-001
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH01-003
+  canonical_term: "technology ecosystem"
+  plain_language_definition: "Human+device+software+optional network producing usability."
+  depends_on:
+  - CX-CH01-001
+  - CX-CH01-002
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH01-004
+  canonical_term: "inputs → processing → state → outputs"
+  plain_language_definition: "Teaching path for everyday interactive software."
+  depends_on:
+  - CX-CH01-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH01-005
+  canonical_term: "dependency"
+  plain_language_definition: "Condition/component needed for usable result."
+  depends_on:
+  - CX-CH01-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH01-006
+  canonical_term: "failure domain"
+  plain_language_definition: "Bucket for where trouble may live."
+  depends_on:
+  - CX-CH01-005
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true
+- concept_id: CX-CH01-007
+  canonical_term: "Device Quartet (foreshadow)"
+  plain_language_definition: "Research form factors; PHYSICAL_PENDING."
+  depends_on:
+  - CX-CH01-003
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: true
+  requires_lab: true

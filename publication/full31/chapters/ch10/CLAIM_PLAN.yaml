@@ -1,0 +1,42 @@
+schema_version: "1.0.0"
+chapter_id: CH10
+chapter_number: 10
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH10-001
+  text: "Ports and buses provide structured interconnects for power and/or data between components and systems."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook_or_standards
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH10-002
+  text: "A bus typically combines electrical conventions and a communication protocol; connectors alone are not the whole story."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH10-003
+  text: "PCB layout and manufacturing constraints affect signal integrity, thermals, cost, and reliability (qualitative)."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH10-004
+  text: "Device Quartet board/EVT/manufacturing evidence remains PHYSICAL_PENDING where not documented."
+  claim_class: project_specific
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - src-hardware-quartet
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 

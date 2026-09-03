@@ -1,0 +1,26 @@
+schema_version: "1.0.0"
+chapter_id: CH05
+chapter_number: 5
+title: "Electricity, Signals, Clocks, and Logic"
+part: II
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH02"
+inherits_from:
+  - "CH02 interrupt/sensor naming (light)"
+feeds_later:
+  - "CH06"
+  - "CH07"
+  - "CH08"
+  - "CH09"
+  - "CH10"
+gate_dependencies:
+  - "Global Gate 3 posture only"
+human_dependencies:
+  - "Educator check: keep fundamentals experience-tied"
+physical_dependencies:
+  - "Scope/Quartet measurements PHYSICAL_PENDING"
+ce_inheritance_note: "Part II fundamentals: electricity/signals/clocks/logic as the substrate of computing—not a parts catalog."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

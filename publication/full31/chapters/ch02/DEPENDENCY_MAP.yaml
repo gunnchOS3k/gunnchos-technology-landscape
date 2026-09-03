@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+chapter_id: CH02
+chapter_number: 2
+title: "Follow One Tap Through the Entire Stack"
+part: I
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+inherits_from:
+  - "live CH02 draft"
+  - "LAB-TAP-001"
+  - "Gate 3 review packet"
+feeds_later:
+  - "CH03"
+  - "CH05–CH10 deepen named layers"
+  - "CE-3/CE-4 synthesize selected later full-book chapters"
+gate_dependencies:
+  - "CH02-REVIEW-R1 reader responses REQUIRED before tone/depth revision"
+human_dependencies:
+  - "Explorer / Builder / Engineer reviews; optional Educator"
+physical_dependencies:
+  - "Quartet PHYSICAL_PENDING; not required for LAB-TAP-001"
+ce_inheritance_note: "CANONICAL PROTOTYPE under CH02-REVIEW-R1. This full31 packet links/inherits only. Do NOT duplicate deep CE/Lab-TAP content. Do NOT claim Gate 3 PASS. Production posture: DRAFT_COMPLETE + HUMAN_VALIDATION_PENDING."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

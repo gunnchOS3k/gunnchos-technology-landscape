@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+chapter_id: CH03
+chapter_number: 3
+title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
+part: I
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH02"
+inherits_from:
+  - "CH02 latency method"
+  - "CE-3 adjacent local bottleneck vocabulary"
+  - "CE-6 Stability Contract foreshadow"
+feeds_later:
+  - "CH06–CH09"
+  - "CH20"
+gate_dependencies:
+  - "Gate 3 R1 may inform tone/depth of performance explanations"
+human_dependencies:
+  - "Reader clarity on feel vs measure distinction"
+physical_dependencies:
+  - "Quartet perf numbers PHYSICAL_PENDING"
+ce_inheritance_note: "Agent prompt CE-3↔Ch3 shorthand conflicts with concept-edition/registry.yaml (CE-3 maps to CH06/CH07/CH12). This packet follows the registry: Ch3 is performance/perception; inherit CE-3 only for adjacent local-slowness vocabulary."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."

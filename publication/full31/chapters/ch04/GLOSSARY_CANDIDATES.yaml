@@ -1,0 +1,29 @@
+schema_version: "1.0.0"
+chapter_id: CH04
+chapter_number: 4
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+candidates:
+- provisional_id: GLOSS-CH04-001
+  canonical_term: "Device Quartet"
+  plain_language_definition: "Four research form factors used as a learning laboratory."
+  chapter_id: CH04
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH04-002
+  canonical_term: "research form factor"
+  plain_language_definition: "Educational/design benchmark; not a shipping SKU claim."
+  chapter_id: CH04
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH04-003
+  canonical_term: "PHYSICAL_PENDING"
+  plain_language_definition: "Physical/EVT evidence not yet available."
+  chapter_id: CH04
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 
+- provisional_id: GLOSS-CH04-004
+  canonical_term: "constraint contrast"
+  plain_language_definition: "Same task, different limiting conditions by form factor."
+  chapter_id: CH04
+  status: CANDIDATE
+  notes: "Candidate only; do not auto-merge into live glossary/glossary.yaml." 

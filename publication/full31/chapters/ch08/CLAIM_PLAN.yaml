@@ -1,0 +1,43 @@
+schema_version: "1.0.0"
+chapter_id: CH08
+chapter_number: 8
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH08-001
+  text: "Displays present timed sequences of frames; missed deadlines can appear as hitching or tearing (qualitative)."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook_or_official_docs
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH08-002
+  text: "Cameras and microphones sample the physical world; digital media are representations, not the world itself."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH08-003
+  text: "Multiple media pipelines contend for CPU/GPU/memory/power budgets on one device."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tanenbaum-bos
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH08-004
+  text: "Wearable/camera Quartet sensing claims requiring EVT remain PHYSICAL_PENDING."
+  claim_class: project_specific
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - src-hardware-quartet
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 

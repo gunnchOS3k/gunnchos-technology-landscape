@@ -1,0 +1,46 @@
+schema_version: "1.0.0"
+chapter_id: CH01
+chapter_number: 1
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+claims:
+- provisional_id: CLM-CH01-001
+  text: "A GUI is only the visible surface of a larger cooperating technology system."
+  claim_class: general_technical
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: textbook
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - saltzer-kaashoek
+  - tanenbaum-bos
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH01-002
+  text: "Everyday interactive software commonly processes inputs, updates state, and presents outputs."
+  claim_class: standards_based
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: standards_or_official_docs
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - whatwg-html
+  - whatwg-dom
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH01-003
+  text: "A connectivity indicator is not sufficient evidence that a specific application service is healthy."
+  claim_class: illustrative
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: explanatory_plus_lab
+  status: ILLUSTRATIVE_ONLY
+  citation_keys: []
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+- provisional_id: CLM-CH01-004
+  text: "Device Quartet entries are research form factors / educational benchmarks; physical fabrication remains pending."
+  claim_class: project_specific
+  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  preferred_source_type: repository_accepted_main
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - src-hardware-quartet
+  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
+  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 

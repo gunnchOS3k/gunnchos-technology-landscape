@@ -1,0 +1,26 @@
+schema_version: "1.0.0"
+chapter_id: CH07
+chapter_number: 7
+title: "Memory, Cache, and Storage"
+part: II
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+depends_on_chapters:
+  - "CH01"
+  - "CH02"
+  - "CH03"
+  - "CH05"
+  - "CH06"
+inherits_from:
+  - "CE-3 memory/storage slices"
+feeds_later:
+  - "CH12"
+  - "CH13"
+gate_dependencies:
+  - "Global Gate 3"
+human_dependencies:
+  - "Misconception check: RAM≠storage"
+physical_dependencies:
+  - "Quartet capacity figures PHYSICAL_PENDING"
+ce_inheritance_note: "Link CE-3 hierarchy teaching; Ch7 deepens memory/cache/storage without full filesystem/DB encyclopedia (CH13)."
+teaching_model: "Human experience → system → component → code → network → society"
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."
