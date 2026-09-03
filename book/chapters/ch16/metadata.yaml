@@ -2,5 +2,47 @@ chapter_id: CH16
 chapter_number: 16
 title: "Packets, Protocols, Routing, and the Internet"
 part: IV
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING; not Gate 3 PASS. Do not alter publication/gates/gate-3/."
+human_question:
+  - When a message shows sent then stalls, what packet, address, route, and name-resolution conditions failed—and which scopes still worked?
+experience:
+  - message shows sent then stalls
+  - refresh fails DNS or hangs on connect
+  - "Internet broken" from the seat while icons stay green
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [packet, protocol, routing, dns, transport, lan, internet, access-network]
+devices: [commodity-computer, commodity-phone]
+labs: [LAB-PKT-001]
+figures:
+  - FIG-CH16-001
+  - FIG-CH16-002
+  - FIG-CH16-003
+  - FIG-CH16-004
+concepts:
+  introduced: [packet, encapsulation, addressing, routing, protocol, transport, dns, local-lan-internet]
+  required: [stability-contract, device, service]
+  related: [wifi, cellular, edge, cloud, latency, reliability, throughput]
+waike:
+  mapped: true
+  courses: [COMPUTER_NETWORKING]
+  note: "Adjacent digital_rc labs only (lab_datapath, lab_dns_resolution, lab_dns_hosts, lab_cidr_math, lab_spf_routing); LAB-PKT-001 is publication-owned — no WAIKE ID named LAB-PKT-001."
+claims:
+  packet: publication/full31/chapters/ch16/CLAIM_PLAN.yaml
+bibliography_note: "Cite keys present in book/references/references.bib (CH16 keys inherited from CE-4 verified register). Quartet path measurements PHYSICAL_PENDING (CLM-CH16-006)."
+blockers:
+  - "CLM-CH16-006 Device Quartet / project path measurements remain PHYSICAL_PENDING."
+  - "Gate 3 reader evidence pending; chapter is not PUBLICATION_READY."
+  - "Human full-manuscript validation deferred."
+ce_inheritance:
+  - publication/preproduction/ce-04/
+  - publication/preproduction/ce-06/
+safety:
+  - Safe commodity/fixture routes only
+  - No unauthorized packet capture of other users' traffic
+  - Prefer LAB-PKT-001 Route B on public/untrusted Wi-Fi
