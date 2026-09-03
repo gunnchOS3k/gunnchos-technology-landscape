@@ -2,5 +2,43 @@ chapter_id: CH26
 chapter_number: 26
 title: "Software Development and Version Control"
 part: VI
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - After I change one behavior, can I show what differed, leave a clear message, and recover without history myths?
+experience:
+  - one-behavior edit then show the diff
+  - clear commit message as evidence
+  - recover from mistake without rewrite folklore
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [version-control, commit, branch, diff, code-review, secrets-hygiene, build-test-loop]
+devices: [commodity-computer, commodity-phone]
+labs: []
+figures:
+  - FIG-CH26-001
+  - FIG-CH26-002
+  - FIG-CH26-003
+concepts:
+  introduced: [version-control, commit, branch-integration, code-review, secrets-hygiene, build-test-loop]
+  required: [stability-contract, observation-vs-inference]
+  related: [semantic-versioning, working-tree, sha]
+waike:
+  mapped: true
+  courses: [SOFTWARE_BUILDER]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (SOFTWARE_BUILDER / software_engineering). No exact CH26 WAIKE module; publication git fixture lab remains proposed—not minted as a WAIKE ID."
+claims:
+  plan: publication/full31/chapters/ch26/CLAIM_PLAN.yaml
+ce_inheritance:
+  adjacent: [publication/preproduction/ce-01/, publication/preproduction/ce-06/]
+bibliography_note: "Cite keys in book/references/references.bib including promoted git-scm-docs (CLM-CH26-001) and semver-2.0.0 when compatibility vocabulary is claimed. Project evidence via src-waike / src-hardware-quartet with PHYSICAL_PENDING for DS-XL Coder."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; fixtures are not human validation"
+  - "Proposed publication git fixture lab not shipped under labs/ this wave"
+  - "CLM-CH26-003 DS-XL Coder measured local-build claims PHYSICAL_PENDING"
+  - "Portfolio evidence is not an employment promise"
+employment_disclaimer: "Portfolio evidence demonstrates reviewable change; it is not a guarantee of employment, promotion, or hiring outcomes."
