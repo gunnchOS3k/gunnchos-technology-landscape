@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="440" viewBox="0 0 1040 440" role="img" aria-labelledby="FIG-CH12-003-title FIG-CH12-003-desc" data-figure-id="FIG-CH12-003" data-truth-classification="illustrative">
+  <title id="FIG-CH12-003-title">FIG-CH12-003: Concurrency versus parallelism</title>
+  <desc id="FIG-CH12-003-desc">Illustrative comparative layers. Left column concurrency: overlapping work structured on one or more cores by interleaving. Right column parallelism: simultaneous execution on multiple cores. Labels state that concurrency is structure; parallelism is simultaneous hardware progress. Truth classification: illustrative. Color is not the sole encoding.</desc>
+  <rect width="1040" height="440" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="438" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH12-003  Concurrency vs parallelism</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: illustrative  Teaching comparison, not measured speedups  Color is not the sole encoding</text>
+
+  <rect x="40" y="80" width="460" height="280" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="270" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Concurrency</text>
+  <text x="270" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">overlapping work structured over time</text>
+  <rect x="70" y="160" width="180" height="36" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="160" y="183" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Task A</text>
+  <rect x="260" y="160" width="180" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="350" y="183" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Task B</text>
+  <rect x="70" y="210" width="180" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="160" y="233" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Task B</text>
+  <rect x="260" y="210" width="180" height="36" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="350" y="233" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Task A</text>
+  <text x="270" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Interleaving on limited cores</text>
+  <text x="270" y="318" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Can exist with one core</text>
+
+  <rect x="540" y="80" width="460" height="280" fill="#ffffff" stroke="#111111" stroke-width="1.75" stroke-dasharray="6 4"/>
+  <text x="770" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Parallelism</text>
+  <text x="770" y="132" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">simultaneous progress on multiple cores</text>
+  <rect x="580" y="170" width="180" height="50" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="670" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Task A · core 0</text>
+  <rect x="780" y="170" width="180" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <text x="870" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Task B · core 1</text>
+  <text x="770" y="280" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">True overlap in hardware time</text>
+  <text x="770" y="308" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Needs ready independent work</text>
+
+  <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Concurrency structures overlapping work; parallelism executes simultaneously when hardware and workload allow.</text>
+  <text x="24" y="424" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Illustrative teaching comparison  dashed outer border marks the parallelism column; fill/pattern distinguish tasks.</text>
+</svg>

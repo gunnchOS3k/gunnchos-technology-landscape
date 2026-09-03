@@ -1,6 +1,83 @@
 chapter_id: CH12
 chapter_number: 12
 title: "Operating Systems, Processes, Threads, and Scheduling"
+author: "Edmund Gunn, Jr."
 part: III
-status: outline
+status: working_draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+inherits_from:
+  - CE-3
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING (no Gate 3 PASS claimed)"
+human_question:
+  - When two apps seem to run at once, what is the OS doing—and how is that different from the OS doing my app's work?
+experience:
+  - multitasking feel / hung UI with other work continuing
+  - process isolation and scheduler mediation
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [operating-system, process, thread, scheduler, context-switch, isolation]
+devices: [commodity-computer]
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."
+labs: [LAB-CMS-001]
+figures:
+  - FIG-CH12-001
+  - FIG-CH12-002
+  - FIG-CH12-003
+  - FIG-CH12-004
+concepts:
+  introduced:
+    - operating-system
+    - process
+    - thread
+    - scheduler
+    - context-switch
+    - isolation
+    - syscall
+    - concurrency-vs-parallelism
+  required:
+    - stability-contract
+  related:
+    - cpu
+    - memory-hierarchy
+    - storage
+    - thermal-power
+waike:
+  mapped: true
+  exact: []
+  adjacent:
+    - EMBEDDED_PROTOTYPING/lab_ep_isr_vs_poll
+    - GENERAL_IT/lab_os_users
+    - SOFTWARE_BUILDER/lab_observability
+  note: "Adjacent digital_rc labs only; no exact CH12 module; do not mint LAB-SCHED-001 as a WAIKE ID."
+claims:
+  taught:
+    - CLM-CH12-001
+    - CLM-CH12-002
+    - CLM-CH12-003
+    - CLM-CH12-004
+    - CLM-CH12-005
+  evidence_notes:
+    - "CLM-CH12-001..004 SOURCE_IDENTIFIED via WORKING_BIBLIOGRAPHY keys"
+    - "CLM-CH12-005 PHYSICAL_PENDING"
+    - "LAB-CMS-001 inherited from CE-3; link over duplication"
+citation_keys:
+  - tanenbaum-bos
+  - silberschatz-galvin-gagne
+  - linux-scheduler
+  - patterson-hennessy
+  - src-hardware-quartet
+anatomy_anchors:
+  - ch12-moment
+  - ch12-notice
+  - ch12-ecosystem
+  - ch12-signal
+  - ch12-components
+  - ch12-stability
+  - ch12-try
+  - ch12-build
+  - ch12-secure-include
+  - ch12-career
+  - ch12-check
+  - ch12-glossary

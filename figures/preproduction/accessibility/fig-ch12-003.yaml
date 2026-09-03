@@ -1,0 +1,18 @@
+figure_id: FIG-CH12-003
+title: Concurrency versus parallelism
+caption: Illustrative comparison of concurrency (interleaved overlapping work) versus parallelism (simultaneous multi-core progress). Truth: illustrative. Color is not the sole encoding.
+alt_text: "FIG-CH12-003: Two columns comparing concurrency interleaving with parallel multi-core execution."
+text_equivalent: |
+  FIG-CH12-003 reading order: Left column Concurrency shows Task A and Task B interleaved
+  over time and notes concurrency can exist with one core. Right column Parallelism shows
+  Task A on core 0 and Task B on core 1 at the same time, needing ready independent work.
+reading_order:
+  - Concurrency column
+  - Parallelism column
+source: figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: Column border pattern + solid/dashed task bars + labels.
+reviewer: pending-human-visual-review
+version: 0.1.0
