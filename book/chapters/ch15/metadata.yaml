@@ -1,6 +1,94 @@
 chapter_id: CH15
 chapter_number: 15
 title: "Containers, Virtualization, Cloud, and Edge Computing"
+author: "Edmund Gunn, Jr."
 part: III
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+inherits_from:
+  - CE-4
+  - CE-3
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING (no Gate 3 PASS claimed)"
+human_question:
+  - When an app runs in a container or "in the cloud," what is being multiplexed—and why is edge/cloud placement not the same thing as Wi-Fi or cellular?
+experience:
+  - containerized classroom lab or browser-only school Chromebook workflow
+  - sync stall with green connectivity icons
+  - local install vs remote URL for the same task
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [virtualization, container, hypervisor, cloud-placement, edge-placement, multitenancy]
+devices: [commodity-computer, commodity-phone, student-14-5, edge-io-wearables]
+device_quartet_policy: "Research form-factor analogies only; Edge IO / Quartet placement benches PHYSICAL_PENDING; never required for baseline labs."
+labs: [LAB-PKT-001]
+lab_stretch_optional: [LAB-CMS-001]
+figures:
+  - FIG-CH15-001
+  - FIG-CH15-002
+  - FIG-CH15-003
+concepts:
+  introduced:
+    - virtual-machine
+    - container
+    - hypervisor
+    - image
+    - cloud-placement
+    - edge-placement
+    - multitenancy
+    - orchestration-intro
+  required:
+    - stability-contract
+  related:
+    - packet-path
+    - access-network
+    - isolation
+    - local-resources
+waike:
+  mapped: true
+  exact: []
+  adjacent:
+    - CLOUD_DEVOPS
+    - lab_cloud_cost
+    - lab_slo_budget
+    - cloud_devops
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; no exact CH15 module; do not mint WAIKE lab IDs; LAB-PKT-001 is publication-owned."
+claims:
+  taught:
+    - CLM-CH15-001
+    - CLM-CH15-002
+    - CLM-CH15-003
+    - CLM-CH15-004
+  pending:
+    - CLM-CH15-005
+  packet: publication/full31/chapters/ch15/CLAIM_PLAN.yaml
+  evidence_notes:
+    - "CLM-CH15-001…004 SOURCE_IDENTIFIED via tanenbaum-bos, oci-runtime-spec, nist-sp800-145, nist-sp500-325, ieee80211-2020, threegpp-ts23501"
+    - "CLM-CH15-005 Quartet/edge placement benches PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED"
+    - "placement ≠ access radio is a hard editorial constraint inherited from CE-4"
+citation_keys:
+  - tanenbaum-bos
+  - oci-runtime-spec
+  - nist-sp800-145
+  - nist-sp500-325
+  - ieee80211-2020
+  - threegpp-ts23501
+anatomy_anchors:
+  - ch15-moment
+  - ch15-notice
+  - ch15-ecosystem
+  - ch15-signal
+  - ch15-components
+  - ch15-stability
+  - ch15-try
+  - ch15-build
+  - ch15-secure-include
+  - ch15-career
+  - ch15-check
+  - ch15-glossary
+blockers:
+  - "CLM-CH15-005 Device Quartet / Edge IO placement benchmarks PHYSICAL_PENDING"
+  - "Gate 3 reader evidence pending — no PASS claimed; do not alter gate-3 responses"
+  - "LAB-PLACE-001 remains proposed-only; not a live publication lab ID"
+bibliography_note: "Cite keys present in book/references/references.bib (CH15 additions from CE-4 verified candidates); project physical claims stay PHYSICAL_PENDING."
