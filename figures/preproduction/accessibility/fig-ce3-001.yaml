@@ -1,0 +1,33 @@
+figure_id: FIG-CE3-001
+title: Inside-the-device map for local lag
+caption: 'Inside-the-device map for local lag. Network is optional/out-of-scope for
+  the failure story when the connectivity icon is healthy.'', ''OS sits as mediator/scheduler,
+  not as the sole compute engine. Truth: conceptual. Color is not the sole encoding.'
+alt_text: 'FIG-CE3-001: Inside-the-device map for local lag. Educational diagram.'
+text_equivalent: 'FIG-CE3-001: Inside-the-device map for local lag. Educational diagram.
+  Reading order: Person; App; Process/threads; OS; CPU/GPU; Memory hierarchy; Storage;
+  Power/thermal.
+
+  Evidence: conceptual_synthesis
+
+  Geometry intent: Left-to-right or center-out layers with numbered callouts; no fake
+  timing numbers.'
+reading_order:
+- Person
+- App
+- Process/threads
+- OS
+- CPU/GPU
+- Memory hierarchy
+- Storage
+- Power/thermal
+source: figures/preproduction/ce-03/fig-ce3-001.svg
+evidence_note: conceptual_synthesis
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

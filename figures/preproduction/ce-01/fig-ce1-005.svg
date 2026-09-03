@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+     aria-labelledby="FIG-CE1-005-title FIG-CE1-005-desc"
+     data-figure-id="FIG-CE1-005"
+     data-truth-classification="illustrative"
+     data-template="tmpl-failure-domain-trust-boundary"
+     data-qualification="">
+  <title id="FIG-CE1-005-title">FIG-CE1-005: Map everyday symptoms to failure-domain buckets without claiming root cause.</title>
+  <desc id="FIG-CE1-005-desc">Table semantics preferred; if graphic, provide equivalent table. Reading order: Symptom; Failure domain; Evidence still needed.</desc>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE1-005 — Map everyday symptoms to failure-domain buckets without claiming root </text>
+  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: illustrative · Color is not the sole encoding</text>
+  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Illustrative operator triage aid.</text>
+<rect x="40" y="100" width="280" height="40" fill="#f0f0f0" stroke="#111111" stroke-width="1.75"/>
+<text x="180.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Symptom (observed)</text>
+<rect x="360" y="100" width="280" height="40" fill="#f0f0f0" stroke="#111111" stroke-width="1.75"/>
+<text x="500.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Failure domain (hypothesis)</text>
+<rect x="680" y="100" width="280" height="40" fill="#f0f0f0" stroke="#111111" stroke-width="1.75"/>
+<text x="820.0" y="120.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Evidence still needed</text>
+<rect x="40" y="160" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="180.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Spinner / blank</text>
+<rect x="360" y="160" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="500.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Service or path</text>
+<rect x="680" y="160" width="280" height="56" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<text x="820.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">reachability / logs</text>
+<rect x="40" y="230" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="180.0" y="258.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Healthy icon + lag</text>
+<rect x="360" y="230" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="500.0" y="258.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Local compute/mem</text>
+<rect x="680" y="230" width="280" height="56" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<text x="820.0" y="258.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">monitor snapshot</text>
+<rect x="40" y="300" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="180.0" y="328.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Auth prompt loop</text>
+<rect x="360" y="300" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="500.0" y="328.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Trust / permissions</text>
+<rect x="680" y="300" width="280" height="56" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<text x="820.0" y="328.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">session / policy</text>
+<text x="40" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Does not claim root cause. Healthy connectivity can sit beside unusable experience.</text>
+  <text x="24" y="404" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Map everyday symptoms to failure-domain buckets without claiming root cause.. Healthy connectivity icon can still sit beside an unusable experience. Truth: illu</text>
+</svg>

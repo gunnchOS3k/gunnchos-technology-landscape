@@ -1,0 +1,33 @@
+figure_id: FIG-CE4-001
+title: Show local vs LAN vs Internet reachability as nested scopes, not synonyms.
+caption: 'Show local vs LAN vs Internet reachability as nested scopes, not synonyms..
+  A device can be ''on Wi-Fi'' while still failing Internet-scoped work. Truth: conceptual.
+  Color is not the sole encoding.'
+alt_text: Long description naming each scope and one example path that stops at LAN
+  vs one that reaches Internet
+text_equivalent: 'Long description naming each scope and one example path that stops
+  at LAN vs one that reaches Internet Reading order: Device scope; LAN scope; Internet
+  scope; Failed request example.
+
+  Evidence: Conceptual; aligned to RFC 1122 host/internet layering intuition + chapter
+  teaching model
+
+  Geometry intent: Three nested or stacked regions (device / LAN / Internet) with
+  one failed request crossing only some regions'
+reading_order:
+- Device scope
+- LAN scope
+- Internet scope
+- Failed request example
+source: figures/preproduction/ce-04/fig-ce4-001.svg
+evidence_note: Conceptual; aligned to RFC 1122 host/internet layering intuition +
+  chapter teaching model
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Region boundaries + labels + patterned fills; do not rely
+  on green/red alone
+reviewer: pending-human-visual-review
+version: 0.1.0

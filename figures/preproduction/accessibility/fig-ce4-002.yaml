@@ -1,0 +1,29 @@
+figure_id: FIG-CE4-002
+title: Follow one sync request as encapsulation and hops (sticky-note headers).
+caption: 'Follow one sync request as encapsulation and hops (sticky-note headers)..
+  Order of header add/remove; gateway as a hop; remote service as endpoint. Truth:
+  conceptual. Color is not the sole encoding.'
+alt_text: Numbered step list equivalent to the sequence
+text_equivalent: "Numbered step list equivalent to the sequence Reading order: App;\
+  \ OS stack; NIC/radio; Gateway; Path; Edge/Cloud.\nEvidence: Conceptual sequence\
+  \ consistent with RFC 791/9293 service models; no measured timings\nGeometry intent:\
+  \ Horizontal swimlanes: App \u2192 OS stack \u2192 NIC/radio \u2192 Gateway \u2192\
+  \ Path \u2192 Edge/Cloud service"
+reading_order:
+- App
+- OS stack
+- NIC/radio
+- Gateway
+- Path
+- Edge/Cloud
+source: figures/preproduction/ce-04/fig-ce4-002.svg
+evidence_note: Conceptual sequence consistent with RFC 791/9293 service models; no
+  measured timings
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Numbered arrows + lane labels
+reviewer: pending-human-visual-review
+version: 0.1.0

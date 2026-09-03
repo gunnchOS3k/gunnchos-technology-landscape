@@ -1,0 +1,28 @@
+figure_id: FIG-CE4-008
+title: Full-book preview of radio link budget / delay-spread intuition.
+caption: 'Full-book preview of radio link budget / delay-spread intuition.. CE-4 only
+  needs qualitative radio conditions; deep MIMO/beamforming waits. Truth: conceptual.
+  Color is not the sole encoding.'
+alt_text: State that no numeric CE-4 measurement is claimed
+text_equivalent: 'State that no numeric CE-4 measurement is claimed Reading order:
+  Transmitter; Path conditions; Receiver; not to scale banner.
+
+  Evidence: Deferred to CH18; optional textbook pointer
+
+  Geometry intent: Simplified path-loss cartoon with explicit ''not to scale / not
+  measured'' banner'
+reading_order:
+- Transmitter
+- Path conditions
+- Receiver
+- not to scale banner
+source: figures/preproduction/ce-04/fig-ce4-008.svg
+evidence_note: Deferred to CH18; optional textbook pointer
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Labels over gradient myths
+reviewer: pending-human-visual-review
+version: 0.1.0

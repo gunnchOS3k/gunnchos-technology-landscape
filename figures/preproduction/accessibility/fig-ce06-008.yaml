@@ -1,0 +1,28 @@
+figure_id: FIG-CE06-008
+title: "Explain \u2192 Measure \u2192 Improve \u2192 Teach portfolio loop."
+caption: "Explain \u2192 Measure \u2192 Improve \u2192 Teach portfolio loop.. Each\
+  \ stage produces artifacts; teach-back closes the loop. Truth: conceptual. Color\
+  \ is not the sole encoding."
+alt_text: List stages and required artifacts.
+text_equivalent: 'List stages and required artifacts. Reading order: Explain; Measure;
+  Improve; Teach.
+
+  Evidence: LAB_PLAN portfolio requirements
+
+  Geometry intent: Four-stage cycle with artifact callouts (diagram, table, improve
+  plan, teach-back).'
+reading_order:
+- Explain
+- Measure
+- Improve
+- Teach
+source: figures/preproduction/ce-06/fig-ce06-008.svg
+evidence_note: LAB_PLAN portfolio requirements
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Numbered stages + artifact icons with text.
+reviewer: pending-human-visual-review
+version: 0.1.0

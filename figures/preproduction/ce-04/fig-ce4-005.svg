@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" role="img"
+     aria-labelledby="FIG-CE4-005-title FIG-CE4-005-desc"
+     data-figure-id="FIG-CE4-005"
+     data-truth-classification="conceptual"
+     data-template="tmpl-sequence-path"
+     data-qualification="">
+  <title id="FIG-CE4-005-title">FIG-CE4-005: Service continuity across Wi-Fi↔cellular change while app session continues or fails.</title>
+  <desc id="FIG-CE4-005-desc">Two-state textual storyboard Reading order: Before path; Radio switch; After path; Experience state.</desc>
+  <rect width="960" height="400" fill="#ffffff"/>
+  <rect x="1" y="1" width="958" height="398" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE4-005 — Service continuity across Wi-Fi↔cellular change while app session cont</text>
+  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
+  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Illustrative; continuity is qualitative CE-4 claim (CLM-CE4-013)</text>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+
+<rect x="40" y="140" width="200" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<text x="140.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Before: Wi-Fi</text>
+<text x="140.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">attached</text>
+<line x1="240" y1="175" x2="320" y2="175" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)"/>
+  <text x="280.0" y="167.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">switch</text>
+<rect x="320" y="140" width="200" height="70" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<text x="420.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">After: Cellular</text>
+<text x="420.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">attached OK</text>
+<line x1="520" y1="175" x2="600" y2="175" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)"/>
+<rect x="600" y="100" width="300" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="750.0" y="119.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Experience: USABLE</text>
+<text x="750.0" y="139.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">[OK] session continues</text>
+<rect x="600" y="170" width="300" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="750.0" y="189.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Experience: DEGRADED</text>
+<text x="750.0" y="209.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">words not color</text>
+<rect x="600" y="240" width="300" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<text x="750.0" y="259.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Experience: FAILED</text>
+<text x="750.0" y="279.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">[FAIL] session broken</text>
+<text x="40" y="360" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Radio attachment success ≠ experience continuity.</text>
+  <text x="24" y="384" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Service continuity across Wi-Fi↔cellular change while app session continues or fails.. Radio attachment success ≠ experience continuity. Truth: conceptual. Colo</text>
+</svg>

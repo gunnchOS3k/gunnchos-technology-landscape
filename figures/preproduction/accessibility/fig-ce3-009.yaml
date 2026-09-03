@@ -1,0 +1,21 @@
+figure_id: FIG-CE3-009
+title: Annotated commodity monitor snapshot
+caption: Annotated commodity monitor snapshot. BLOCKED pending real lab fixture evidence.
+alt_text: 'FIG-CE3-009 blocked: measured figure requires real fixture evidence before
+  drawing.'
+text_equivalent: 'FIG-CE3-009 is planned as a measured annotated monitor snapshot
+  but LAB fixture screenshots are not yet captured. Status: BLOCKED_EVIDENCE_REQUIRED.
+  No invented measurement values are shown.'
+reading_order:
+- Blocked pending evidence
+source: figures/preproduction/manifests/fig-ce3-009.blocked.yaml
+evidence_note: LAB-CMS-001 fixture screenshots (to be captured; no fake numbers in
+  finals)
+truth_classification: measured
+qualification: later_fixture
+status: measured
+production_status: blocked
+block_reason: BLOCKED_EVIDENCE_REQUIRED
+template: tmpl-status-vs-usable-experience
+reviewer: pending-human-visual-review
+version: 0.1.0

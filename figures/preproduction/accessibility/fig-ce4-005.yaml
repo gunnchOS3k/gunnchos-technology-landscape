@@ -1,0 +1,29 @@
+figure_id: FIG-CE4-005
+title: "Service continuity across Wi-Fi\u2194cellular change while app session continues\
+  \ or fails."
+caption: "Service continuity across Wi-Fi\u2194cellular change while app session continues\
+  \ or fails.. Radio attachment success \u2260 experience continuity. Truth: conceptual.\
+  \ Color is not the sole encoding."
+alt_text: Two-state textual storyboard
+text_equivalent: 'Two-state textual storyboard Reading order: Before path; Radio switch;
+  After path; Experience state.
+
+  Evidence: Illustrative; continuity is qualitative CE-4 claim (CLM-CE4-013)
+
+  Geometry intent: Before/after path switch with experience state annotation (usable
+  / degraded / failed)'
+reading_order:
+- Before path
+- Radio switch
+- After path
+- Experience state
+source: figures/preproduction/ce-04/fig-ce4-005.svg
+evidence_note: Illustrative; continuity is qualitative CE-4 claim (CLM-CE4-013)
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: State labels in words; line style change for path switch
+reviewer: pending-human-visual-review
+version: 0.1.0

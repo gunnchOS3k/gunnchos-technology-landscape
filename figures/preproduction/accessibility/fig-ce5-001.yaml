@@ -1,0 +1,30 @@
+figure_id: FIG-CE5-001
+title: Show accessible systems path without anthropomorphizing the model.
+caption: "Show accessible systems path without anthropomorphizing the model.. From\
+  \ prompt to output \u2014 data, model, inference Truth: illustrative. Color is not\
+  \ the sole encoding."
+alt_text: Flowchart from user prompt through application and model inference to on-screen
+  output, with a side path for optional logging.
+text_equivalent: 'Flowchart from user prompt through application and model inference
+  to on-screen output, with a side path for optional logging. Reading order: Prompt;
+  Application; Model inference; On-screen output; Optional logging.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Prompt
+- Application
+- Model inference
+- On-screen output
+- Optional logging
+source: figures/preproduction/ce-05/fig-ce5-001.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

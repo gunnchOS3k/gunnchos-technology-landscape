@@ -1,0 +1,27 @@
+figure_id: FIG-CE3-004
+title: Bottleneck symptom branches
+caption: 'Bottleneck symptom branches. Same human lag can have different hidden causes'',
+  ''Observation vs inference boundary Truth: conceptual. Color is not the sole encoding.'
+alt_text: 'FIG-CE3-004: Bottleneck symptom branches. Educational diagram.'
+text_equivalent: "FIG-CE3-004: Bottleneck symptom branches. Educational diagram. Reading\
+  \ order: Human lag symptom; CPU; Memory; Storage; Scheduler contention; Thermal;\
+  \ Next inspection.\nEvidence: illustrative\nGeometry intent: Tree or branched flowchart\
+  \ from symptom \u2192 candidate domains \u2192 next inspection."
+reading_order:
+- Human lag symptom
+- CPU
+- Memory
+- Storage
+- Scheduler contention
+- Thermal
+- Next inspection
+source: figures/preproduction/ce-03/fig-ce3-004.svg
+evidence_note: illustrative
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,22 @@
+figure_id: FIG-CE4-007
+title: 'Lab evidence map: observation vs inference for Route A/B.'
+caption: 'Lab evidence map: observation vs inference for Route A/B.. Browser timings
+  are not RF proof. Truth: conceptual. Color is not the sole encoding.'
+alt_text: Bulleted do/don't list matching figure
+text_equivalent: "Bulleted do/don't list matching figure Reading order: Observation;\
+  \ Allowed inference; Forbidden leap.\nEvidence: LAB-PKT-001 plan; MDN timing docs\n\
+  Geometry intent: Evidence boxes \u2192 allowed inferences \u2192 forbidden leaps"
+reading_order:
+- Observation
+- Allowed inference
+- Forbidden leap
+source: figures/preproduction/ce-04/fig-ce4-007.svg
+evidence_note: LAB-PKT-001 plan; MDN timing docs
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Border styles for observation vs inference
+reviewer: pending-human-visual-review
+version: 0.1.0

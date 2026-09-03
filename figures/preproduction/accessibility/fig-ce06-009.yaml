@@ -1,0 +1,27 @@
+figure_id: FIG-CE06-009
+title: Works-for-me vs excluded path under the same nominal feature.
+caption: 'Works-for-me vs excluded path under the same nominal feature.. Contract
+  assumptions about device, network, and interaction modality create unequal experiences.
+  Truth: conceptual. Color is not the sole encoding.'
+alt_text: Explicitly describe exclusion points.
+text_equivalent: 'Explicitly describe exclusion points. Reading order: Default GUI
+  path; Keyboard/AT/low-bandwidth path; Exclusion points.
+
+  Evidence: Illustrative + WCAG intent
+
+  Geometry intent: Split path: default GUI path vs keyboard/AT/low-bandwidth path;
+  failure markers.'
+reading_order:
+- Default GUI path
+- Keyboard/AT/low-bandwidth path
+- Exclusion points
+source: figures/preproduction/ce-06/fig-ce06-009.svg
+evidence_note: Illustrative + WCAG intent
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Path labels + failure text.
+reviewer: pending-human-visual-review
+version: 0.1.0

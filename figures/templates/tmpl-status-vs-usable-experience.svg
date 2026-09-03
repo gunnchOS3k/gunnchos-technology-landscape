@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img"
+     aria-labelledby="tmpl-title tmpl-desc"
+     data-template-id="tmpl-status-vs-usable-experience"
+     data-figure-family="status_vs_usable_experience">
+  <title id="tmpl-title">TEMPLATE - Status vs usable experience</title>
+  <desc id="tmpl-desc">Two-column contrast: status chrome indicators versus human-usable experience timeline. Check/cross glyphs and words encode outcome; color is never the sole cue.</desc>
+  <rect width="960" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="958" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">TEMPLATE - Status vs usable experience</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Connected != done; observation vs inference boundary</text>
+  <rect x="40" y="80" width="400" height="260" fill="#fafafa" stroke="#111111" stroke-width="2"/>
+  <text x="240" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Status indicators</text>
+  <text x="80" y="150" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">[OK] Wi-Fi / cellular attached</text>
+  <text x="80" y="180" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">[OK] App chrome visible</text>
+  <text x="80" y="210" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">[OK] Connectivity icon shows connected</text>
+  <text x="80" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Observation: chrome and status words</text>
+  <text x="80" y="300" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1F4B7A">Do not infer usability from status alone</text>
+  <rect x="520" y="80" width="400" height="260" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="720" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Usable experience</text>
+  <text x="560" y="150" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">t0 intent</text>
+  <text x="560" y="180" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">t1 waiting...</text>
+  <text x="560" y="210" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">[FAIL] content still not usable</text>
+  <text x="560" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Observation: human outcome stalled</text>
+  <text x="560" y="300" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Contradiction is the teaching point</text>
+  <text x="24" y="380" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Encoding: [OK]/[FAIL] words + column headers. Avoid green/red-only meaning.</text>
+  <text x="24" y="404" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence note placeholder; caption draft placeholder</text>
+</svg>

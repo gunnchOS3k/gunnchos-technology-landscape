@@ -1,0 +1,24 @@
+figure_id: FIG-CE4-004
+title: Latency vs reliability vs throughput as three different failure stories.
+caption: 'Latency vs reliability vs throughput as three different failure stories..
+  Same ''bad experience'' word can hide three different metrics. Truth: conceptual.
+  Color is not the sole encoding.'
+alt_text: "Table alternative with symptom \u2192 metric family"
+text_equivalent: "Table alternative with symptom \u2192 metric family Reading order:\
+  \ Latency; Reliability; Throughput.\nEvidence: Illustrative axes only; no fabricated\
+  \ numeric budgets\nGeometry intent: Three columns with example symptoms; optional\
+  \ qualitative icons (hourglass / broken arrow / filling bar) with text labels"
+reading_order:
+- Latency
+- Reliability
+- Throughput
+source: figures/preproduction/ce-04/fig-ce4-004.svg
+evidence_note: Illustrative axes only; no fabricated numeric budgets
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Column headers + icons with text, not color alone
+reviewer: pending-human-visual-review
+version: 0.1.0

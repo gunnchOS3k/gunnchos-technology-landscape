@@ -1,0 +1,28 @@
+figure_id: FIG-CE3-007
+title: Qualitative power/thermal ceiling
+caption: 'Qualitative power/thermal ceiling. Sustained work can reduce available performance'',
+  "Not necessarily a software ''bug Truth: conceptual. Color is not the sole encoding.'
+alt_text: 'FIG-CE3-007: Qualitative power/thermal ceiling. Educational diagram.'
+text_equivalent: 'FIG-CE3-007: Qualitative power/thermal ceiling. Educational diagram.
+  Reading order: Performance available; Thermal/power ceiling; Time axis (illustrative).
+
+  Evidence: linux-cpu-freq (concept); hardware POWER_TREE as optional representative
+  architecture
+
+  Geometry intent: Ceiling line over a qualitative performance-vs-time sketch; label
+  ILLUSTRATIVE.'
+reading_order:
+- Performance available
+- Thermal/power ceiling
+- Time axis (illustrative)
+source: figures/preproduction/ce-03/fig-ce3-007.svg
+evidence_note: linux-cpu-freq (concept); hardware POWER_TREE as optional representative
+  architecture
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0
