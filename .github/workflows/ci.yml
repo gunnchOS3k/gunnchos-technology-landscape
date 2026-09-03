@@ -25,7 +25,16 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y librsvg2-bin
-          quarto install tinytex --no-prompt
+          # TinyTeX download can 500 transiently; retry a few times.
+          for i in 1 2 3 4 5; do
+            if quarto install tinytex --no-prompt; then
+              exit 0
+            fi
+            echo "TinyTeX install attempt $i failed; retrying..."
+            sleep $((i * 5))
+          done
+          echo "TinyTeX install failed after retries" >&2
+          exit 1
       - name: Validate
         run: make validate
       - name: Test

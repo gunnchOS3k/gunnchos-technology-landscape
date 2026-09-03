@@ -1,1 +1,33 @@
-../preproduction/ce-01/fig-ce1-001.svg
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" role="img" aria-labelledby="FIG-CE1-001-title FIG-CE1-001-desc" data-figure-id="FIG-CE1-001" data-truth-classification="conceptual" data-template="tmpl-ecosystem-system-map" data-qualification="">
+  <title id="FIG-CE1-001-title">FIG-CE1-001: First-minute map: person → visible interface → hidden local system → optional network/s…</title>
+  <desc id="FIG-CE1-001-desc">Alt text must list every node in reading order and state that the diagram is conceptual educational architecture. Reading order: Person; Visible interface; Hidden local system; Optional network/service; Human-usable result. First-minute map: person → visible interface → hidden local system → optional network/s…. The screen is only one node; optional remote branch is dashed. Truth: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1040" height="400" fill="#ffffff" />
+  <rect x="1" y="1" width="1038" height="398" fill="none" stroke="#222222" stroke-width="2" />
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111" />
+    </marker>
+  </defs>
+
+<text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE1-001 — First-minute map: person → visible interface → hidden</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Conceptual synthesis from EXPERIENCE_MAP anchor A; no measured telemetry.</text><text x="24" y="380" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: First-minute map: person → visible interface → hidden local system → optional network/s….</text><text x="24" y="380" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">network/s….</text><rect x="24" y="160" width="130" height="80" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
+<text x="89.0" y="194.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Person</text>
+<text x="89.0" y="214.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">intent</text>
+<line x1="154" y1="200" x2="178" y2="200" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)" />
+<rect x="180" y="160" width="140" height="80" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
+<text x="250.0" y="194.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">2 Interface</text>
+<text x="250.0" y="214.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">visible chrome</text>
+<line x1="320" y1="200" x2="344" y2="200" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)" />
+<rect x="346" y="150" width="160" height="100" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
+<text x="426.0" y="194.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 Local system</text>
+<text x="426.0" y="214.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">hidden work</text>
+<path d="M506,180 C550,100 610,90 670,100" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr)" />
+<rect x="600" y="40" width="170" height="56" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
+<path d="M770,100 C820,130 840,160 840,180" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr)" />
+<path d="M506,220 L506,290 L840,290 L840,230" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#arr)" />
+<text x="670" y="312" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">local path (skip optional)</text>
+<rect x="860" y="160" width="150" height="80" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
+<text x="935.0" y="194.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">5 Usable result</text>
+<text x="935.0" y="214.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">human outcome</text>
+<text x="24" y="360" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Screen is only one node · dashed = optional remote · failure may still occur with healthy chrome</text>
+  </svg>
