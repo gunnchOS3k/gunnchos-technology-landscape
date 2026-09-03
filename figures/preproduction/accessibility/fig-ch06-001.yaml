@@ -1,0 +1,21 @@
+figure_id: FIG-CH06-001
+title: App → process/threads → scheduler → cores/accelerator
+caption: Conceptual educational map from app experience through process/threads and OS scheduler to CPU cores, with an optional accelerator/GPU path. Truth: conceptual. Color is not the sole encoding.
+alt_text: "FIG-CH06-001: Left-to-right conceptual map: App, Process/threads, Scheduler, CPU cores, optional Accelerator/GPU."
+text_equivalent: |
+  FIG-CH06-001 reading order: (1) App experience, (2) Process/threads as OS work units,
+  (3) Scheduler deciding who runs when, (4) CPU cores executing instructions,
+  (5) optional Accelerator/GPU for some workloads. OS mediates; apps still compute on hardware.
+reading_order:
+  - App
+  - Process/threads
+  - Scheduler
+  - CPU cores
+  - Optional accelerator/GPU
+source: figures/architecture/fig-ch06-001-app-to-cores.svg
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: Shape + label + stroke pattern; dashed border marks optional accelerator.
+reviewer: pending-human-visual-review
+version: 0.1.0
