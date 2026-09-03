@@ -7,3 +7,17 @@ labs:
     extension_routes: [android]
     no_specialized_hardware: true
     status: draft
+  - lab_id: LAB-PKT-001
+    title: Trace One Connected Action Across Path and Access
+    chapter: CE-4
+    path: labs/LAB-PKT-001
+    baseline_routes: [browser, cli, fixture]
+    extension_routes: []
+    no_specialized_hardware: true
+    status_labels:
+      - IMPLEMENTED_DIGITAL
+      - FIXTURE_VALIDATED
+      - PHYSICAL_PENDING
+      - EXTERNAL_DEPENDENCY
+    status: IMPLEMENTED_DIGITAL
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

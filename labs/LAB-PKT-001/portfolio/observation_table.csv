@@ -1,0 +1,5 @@
+run_id,condition,access_mode,phase,ms_or_note,metric_family,observed_or_inferred,route
+1,baseline,,,,latency,,
+1,baseline,,,,reliability,,
+1,baseline,,,,throughput,,
+2,one_change,,,,,,,

@@ -1,0 +1,15 @@
+lab_id: LAB-PKT-001
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+statuses:
+  IMPLEMENTED_DIGITAL:
+    meaning: Browser and CLI digital routes exist on commodity devices; no specialized hardware required.
+    evidence: browser/index.html, cli/path_inspect.py, README.md
+  FIXTURE_VALIDATED:
+    meaning: Offline fixtures parse and pass lab tests; honesty banners present.
+    evidence: fixtures/*, tests/test_lab_pkt_001.py
+  PHYSICAL_PENDING:
+    meaning: No RF drive-test, spectrum, or Device Quartet physical measurements claimed.
+    evidence: limits in lab.yaml and README
+  EXTERNAL_DEPENDENCY:
+    meaning: Route A optional live DNS/Internet or public documentation fetch depends on learner network policy and reachability.
+    evidence: Route A procedure; prefer Route B when unsafe/unavailable
