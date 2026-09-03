@@ -25,3 +25,10 @@
 - Marketing pages as sole authority for technical laws.
 - Invented DOIs/ISBNs/page numbers.
 - Fabricated Gate 3 reader quotes.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| `CLM-CH08-001` display frame deadlines / hitching | Pin multimedia systems textbook edition OR platform display-timing official docs; no invented hitch thresholds. |
+| Camera/mic sampling | `SOURCE_IDENTIFIED` via `w3c-mediacapture-streams-20251009` |

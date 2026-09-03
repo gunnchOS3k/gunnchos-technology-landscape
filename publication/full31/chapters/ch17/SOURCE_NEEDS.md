@@ -16,3 +16,10 @@ Prefer standards/specs, official docs, peer-reviewed, and textbooks. Do not inve
 - `SOURCE_IDENTIFIED` only when a real accepted-main or packet-local bib/register entry exists.
 - `SOURCE_NEEDED` for gaps above.
 - `PROJECT_EVIDENCE_NEEDED` / `PHYSICAL_PENDING` for Quartet/project measurements.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| Wi-Fi vs cellular / 5G icon literacy | `SOURCE_IDENTIFIED` via `ieee80211-2020`, `threegpp-ts23501`, `kurose-ross-8` |
+| `CLM-CH17-003` 6G | Cite 3GPP study-item / roadmap primary only; keep “not deployed consumer fact” boundary. |

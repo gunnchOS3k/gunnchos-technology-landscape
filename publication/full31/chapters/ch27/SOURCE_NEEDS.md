@@ -35,3 +35,9 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## EVIDENCE-A update
+
+| Need | Status |
+|---|---|
+| `otel_docs` / `CLM-CH27-003` | `SOURCE_IDENTIFIED` via existing `otel-signals` |

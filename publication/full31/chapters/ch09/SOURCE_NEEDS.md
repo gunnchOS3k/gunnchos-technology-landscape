@@ -25,3 +25,11 @@
 - Marketing pages as sole authority for technical laws.
 - Invented DOIs/ISBNs/page numbers.
 - Fabricated Gate 3 reader quotes.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| `CLM-CH09-001` power/thermal budgets | `SOURCE_IDENTIFIED` via `linux-cpu-freq` |
+| `CLM-CH09-002` batteries | Select specific IEC/UL battery-safety designation from catalogue; no DIY abuse labs. |
+| `CLM-CH09-003` mechanical design | Select non-marketing mechanical/industrial-design textbook or standards survey. |

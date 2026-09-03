@@ -10,9 +10,9 @@
 
 | Metric | Prior (PR #3 index) | Current |
 |---|---:|---:|
-| Chapter source occurrences | 64 | 64 |
-| Unique bib keys | 58 | 59 |
-| Unique canonical works | — | 52 |
+| Chapter source occurrences | 64 | 72 |
+| Unique bib keys | 58 | 67 |
+| Unique canonical works | — | 60 |
 | Same-work aliases (canonical grouping) | — | 10 |
 
 Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC → URL+dated edition → repo+commit+role → title/author/year uncertain fallback. The two WCAG dated Recommendations remain distinct works.
@@ -22,7 +22,7 @@ Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC �
 | verification_status | count |
 |---|---:|
 | `NEEDS_PRIMARY_VERIFICATION` | 1 |
-| `PRIMARY_METADATA_VERIFIED` | 44 |
+| `PRIMARY_METADATA_VERIFIED` | 52 |
 | `REPOSITORY_EVIDENCE_VERIFIED` | 7 |
 | `SECONDARY_EXPLANATORY` | 7 |
 
@@ -30,11 +30,11 @@ Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC �
 
 | source_class | count |
 |---|---:|
-| `official_technical_documentation` | 13 |
-| `other_explanatory` | 5 |
+| `official_technical_documentation` | 15 |
+| `other_explanatory` | 9 |
 | `peer_reviewed` | 2 |
 | `project_accepted_main` | 7 |
-| `standards_specifications` | 23 |
+| `standards_specifications` | 25 |
 | `textbooks` | 9 |
 
 ## WCAG 2.2 conflict resolution
@@ -86,11 +86,14 @@ W3C primary history ([WCAG22 publication history](https://www.w3.org/standards/h
 | bib_key | source_class | verification_status | chapter_usage | canonical_identifier | metadata_conflict_status |
 |---|---|---|---|---|---|
 | `digitalregulation-qos-qoe` | `other_explanatory` | `SECONDARY_EXPLANATORY` | ce-06 | `url:https://digitalregulation.org/technical-regulation-quality-of-service/|year:2024` | `NONE` |
+| `git-scm-docs` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `url:https://git-scm.com/docs|year:2026` | `NONE` |
 | `goodfellow_deep_learning` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `url:https://www.deeplearningbook.org/|year:2016` | `NONE` |
 | `gunnchos-technology-landscape-ce06` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-06 | `url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026` | `NONE` |
 | `ieee80211-2020` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:ieee80211-2020|dated:2020` | `NONE` |
 | `ieee80211-wg` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `url:https://www.ieee802.org/11/|year:2026` | `NONE` |
+| `iso-23247-1-2021` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://www.iso.org/standard/75066.html|year:2021` | `NONE` |
 | `iso-iec-25010-2023` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `url:https://www.iso.org/standard/78176.html|year:2023` | `NONE` |
+| `itu-facts-figures-2025` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx|year:2025` | `NONE` |
 | `itu-t-g1011` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://www.itu.int/rec/T-REC-G.1011|year:2016` | `NONE` |
 | `itu-t-p10-g100` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://www.itu.int/rec/T-REC-P.10/en` | `NONE` |
 | `jedec-jesd79-4d` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `url:https://www.jedec.org/standards-documents/docs/jesd79-4a|year:2021` | `NONE` |
@@ -109,6 +112,7 @@ W3C primary history ([WCAG22 publication history](https://www.w3.org/standards/h
 | `nist_ai_rmf_100_1` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `doi:10.6028/nist.ai.100-1` | `NONE` |
 | `nist_sp_800_63_4` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `doi:10.6028/nist.sp.800-63-4` | `NONE` |
 | `nvme-base-spec` | `official_technical_documentation` | `SECONDARY_EXPLANATORY` | ce-03 | `url:https://nvmexpress.org/specifications/|year:2026` | `NONE` |
+| `oci-runtime-spec` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `url:https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md|year:2026` | `NONE` |
 | `otel-signals` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://opentelemetry.io/docs/concepts/signals/|year:2026` | `NONE` |
 | `patterson-hennessy` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `title:computer organization and design: the hardware/software interface|author:patterson, david a. and hennessy, john l.|year:2020` | `NONE` |
 | `patterson-hennessy-ce06` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `title:computer organization and design: the hardware/software interface|author:patterson, david a. and hennessy, john l.|year:2020` | `NONE` |
@@ -127,6 +131,7 @@ W3C primary history ([WCAG22 publication history](https://www.w3.org/standards/h
 | `russell_norvig_aima` | `textbooks` | `NEEDS_PRIMARY_VERIFICATION` | ce-05 | `title:artificial intelligence: a modern approach|author:russell, stuart and norvig, peter|year:unknown` | `NONE` |
 | `saltzer-kaashoek` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `isbn:9780123749574|edition:2009` | `NONE` |
 | `saltzer_schroeder_1975` | `peer_reviewed` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `doi:10.1109/proc.1975.9939` | `NONE` |
+| `semver-2.0.0` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `url:https://semver.org/spec/v2.0.0.html` | `NONE` |
 | `silberschatz-galvin-gagne` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `isbn:9781119320913|edition:10` | `NONE` |
 | `solove_taxonomy_2006` | `peer_reviewed` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `title:a taxonomy of privacy|author:solove, daniel j.|year:2006` | `NONE` |
 | `src-device-os-ce3` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-03 | `url:https://github.com/gunnchOS3k/gunnchos-device-os|year:2026` | `NONE` |
@@ -135,7 +140,10 @@ W3C primary history ([WCAG22 publication history](https://www.w3.org/standards/h
 | `src-waike` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-01 | `url:https://github.com/gunnchOS3k/waike-research-ops|year:2026` | `NONE` |
 | `src-waike-ce3` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-03 | `url:https://github.com/gunnchOS3k/waike-research-ops|year:2026` | `NONE` |
 | `tanenbaum-bos` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ce-03 | `title:modern operating systems|author:tanenbaum, andrew s. and bos, herbert|year:2022` | `NONE` |
+| `tcg-pc-client-pfp-1.06` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `url:https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf|year:2023` | `NONE` |
 | `threegpp-ts23501` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:threegpp-ts23501|dated:2026` | `NONE` |
+| `uefi-secure-boot-2.10` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `url:https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html` | `NONE` |
+| `w3c-mediacapture-streams-20251009` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `url:https://www.w3.org/TR/mediacapture-streams/|year:2025` | `NONE` |
 | `waike-main-ce4-audit` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `title:waike research-ops accepted main audit for ce-4 crosswalk|author:|year:2026` | `NONE` |
 | `waike-research-ops-ce06` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-06 | `url:https://github.com/gunnchOS3k/waike-research-ops|year:2026` | `NONE` |
 | `wcag22-20231005` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `standard:wcag22-20231005|dated:2023` | `NONE` |

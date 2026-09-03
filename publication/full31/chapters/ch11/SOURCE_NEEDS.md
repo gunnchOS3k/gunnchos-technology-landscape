@@ -18,3 +18,11 @@ Prefer standards/specs, official docs, peer-reviewed, and textbooks. Do not inve
 - `SOURCE_IDENTIFIED` only when a real accepted-main or packet-local bib/register entry exists.
 - `SOURCE_NEEDED` for gaps above.
 - `PROJECT_EVIDENCE_NEEDED` / `PHYSICAL_PENDING` for Quartet/project measurements.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| Secure Boot | `SOURCE_IDENTIFIED` via `uefi-secure-boot-2.10` |
+| Attestation / measured boot | `SOURCE_IDENTIFIED` via `tcg-pc-client-pfp-1.06` |
+| `CLM-CH11-006` interrupted firmware updates | Pin vendor/OS capsule or A/B update recovery docs (living) before flipping status. |

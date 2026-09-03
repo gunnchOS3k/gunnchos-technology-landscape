@@ -25,8 +25,9 @@ claims:
   evidence_required: Primary source citation or project evidence as status requires
   preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
     / publication-internal
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - iso-23247-1-2021
   overclaim_risk: 'prohibited: fake ISO numbers'
   wording_boundary: 'approved: SOURCE_NEEDED | prohibited: fake ISO numbers'
 - provisional_id: CLM-CH28-003

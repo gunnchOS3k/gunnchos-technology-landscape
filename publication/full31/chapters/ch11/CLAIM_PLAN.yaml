@@ -29,8 +29,9 @@ claims:
   text: Secure boot is a policy intent to constrain what may run; presence of the
     feature name is not proof of a measured trust guarantee for a reader's device.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - uefi-secure-boot-2.10
   overclaim_risk: Need standards/docs (e.g., UEFI Secure Boot overview) before numeric
     or product claims.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
@@ -40,8 +41,9 @@ claims:
   text: Attestation and measured boot are evidence mechanisms distinct from UI lock
     screens; they are not interchangeable with entering a PIN.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - tcg-pc-client-pfp-1.06
   overclaim_risk: Prefer TCG/IETF attestation overviews; no fabricated attestations.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.

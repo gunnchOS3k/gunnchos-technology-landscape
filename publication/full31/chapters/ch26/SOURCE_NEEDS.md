@@ -35,3 +35,10 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## EVIDENCE-A update
+
+| Need | Status |
+|---|---|
+| `git_official_docs` / `CLM-CH26-001` | `SOURCE_IDENTIFIED` via `git-scm-docs` (https://git-scm.com/docs) |
+| `semver_or_conventional_commits` | Optional; SemVer available as `semver-2.0.0` if chapter claims conventions |

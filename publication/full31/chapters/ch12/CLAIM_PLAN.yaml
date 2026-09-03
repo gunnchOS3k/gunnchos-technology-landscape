@@ -41,8 +41,9 @@ claims:
   text: "A frozen UI can be scheduling/priority/lock contention as well as CPU busy\u2014\
     diagnosis needs evidence."
   claim_class: general_technical
-  status: SOURCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
+  - tanenbaum-bos
   - linux-scheduler
   overclaim_risk: Living docs + textbook concurrency chapters.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED

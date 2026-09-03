@@ -35,3 +35,9 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| `CLM-CH22-004` sensing / IMU / camera privacy | Select primary sensing/privacy standards or official platform privacy docs with verified designation. |

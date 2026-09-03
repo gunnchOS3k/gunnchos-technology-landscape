@@ -5,8 +5,11 @@ claims:
 - provisional_id: CLM-CH17-001
   text: Wi-Fi and cellular are different access technologies; neither is the Internet.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - ieee80211-2020
+  - threegpp-ts23501
+  - kurose-ross-8
   overclaim_risk: CE-4 cornerstone.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -15,8 +18,9 @@ claims:
   text: 5G refers to a 3GPP system generation; icon presence does not prove a specific
     latency/reliability class for the user's app.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - threegpp-ts23501
   overclaim_risk: 3GPP TS 23.501 survey cite needed.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -35,8 +39,10 @@ claims:
   text: Handover and offload can cause transient experience failures while icons stay
     lit.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - threegpp-ts23501
+  - kurose-ross-8
   overclaim_risk: Over-precise product claims without evidence.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
