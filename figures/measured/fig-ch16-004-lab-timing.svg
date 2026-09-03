@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="360" viewBox="0 0 880 360" role="img" aria-labelledby="FIG-CH16-004-title FIG-CH16-004-desc" data-figure-id="FIG-CH16-004" data-truth-classification="measured">
+  <title id="FIG-CH16-004-title">FIG-CH16-004: Classroom timing phases from LAB-PKT-001 (n=1 learning).</title>
+  <desc id="FIG-CH16-004-desc">Table of illustrative or learner-recorded phases: DNS, connect, waiting/TTFB, download. Honesty banner: one run is learning, not a published benchmark. Fixture rows are not the learner device unless labeled.</desc>
+  <rect width="880" height="360" fill="#ffffff"/>
+  <rect x="1" y="1" width="878" height="358" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CH16-004  LAB-PKT-001 timing phases (classroom n=1)</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: measured (learner/fixture) · not a product benchmark · EXTERNAL_DEPENDENCY on live Route A</text>
+
+  <rect x="40" y="80" width="800" height="40" fill="#f0f0f0" stroke="#111111" stroke-width="1.25"/>
+  <text x="60" y="105" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Phase</text>
+  <text x="260" y="105" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">What it names</text>
+  <text x="560" y="105" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Keep distinct from</text>
+
+  <rect x="40" y="120" width="800" height="36" fill="#ffffff" stroke="#111111" stroke-width="1"/>
+  <text x="60" y="143" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">DNS</text>
+  <text x="260" y="143" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Name ’ address dependency</text>
+  <text x="560" y="143" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">routing / the Internet</text>
+
+  <rect x="40" y="156" width="800" height="36" fill="#fafafa" stroke="#111111" stroke-width="1"/>
+  <text x="60" y="179" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Connect</text>
+  <text x="260" y="179" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Transport setup toward destination</text>
+  <text x="560" y="179" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">DNS alone / service body</text>
+
+  <rect x="40" y="192" width="800" height="36" fill="#ffffff" stroke="#111111" stroke-width="1"/>
+  <text x="60" y="215" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Waiting / TTFB</text>
+  <text x="260" y="215" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Wait before first useful response</text>
+  <text x="560" y="215" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">download throughput</text>
+
+  <rect x="40" y="228" width="800" height="36" fill="#fafafa" stroke="#111111" stroke-width="1"/>
+  <text x="60" y="251" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Download</text>
+  <text x="260" y="251" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">Body transfer after response starts</text>
+  <text x="560" y="251" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">latency-only stalls</text>
+
+  <text x="24" y="300" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Honesty: record your Route A browser/CLI numbers or mark Route B fixture rows as illustrative.</text>
+  <text x="24" y="325" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Safe routes only. No other-user traffic capture. Browser timings ` RF drive-test (PHYSICAL_PENDING).</text>
+</svg>
