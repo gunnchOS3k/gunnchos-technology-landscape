@@ -28,6 +28,18 @@ labs:
     fixture_available: true
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-PERF-001
+    title: Make Feel Visible
+    chapter: CH03
+    path: labs/LAB-PERF-001
+    baseline_routes: [browser_feel_timeline]
+    extension_routes: [os_monitor_neighbor, fixture_fallback]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    related_labs: [LAB-CMS-001, LAB-TAP-001]
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+    note: "Publication-owned CH03 lab; not a minted WAIKE module ID."
   - lab_id: LAB-PKT-001
     title: Trace One Connected Action Across Path and Access
     chapter: CE-4
