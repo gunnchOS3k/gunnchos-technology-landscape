@@ -72,3 +72,14 @@ labs:
     emit_spine: [Explain, Measure, Improve, Teach]
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-BUS-001
+    title: Name the Interconnect
+    chapter: CH10
+    path: labs/LAB-BUS-001
+    baseline_routes: [commodity_observation, fixture_offline]
+    extension_routes: []
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
