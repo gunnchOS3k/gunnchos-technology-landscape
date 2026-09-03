@@ -1,0 +1,21 @@
+# Standalone Chapter 8 render project (does not affect root book `_quarto.yml`).
+project:
+  type: default
+  output-dir: ../../../preview
+  render:
+    - chapter.md
+
+bibliography:
+  - ../../references/references.bib
+  - ../../../publication/full31/WORKING_BIBLIOGRAPHY.bib
+link-citations: true
+
+format:
+  html:
+    toc: true
+    embed-resources: true
+  pdf:
+    documentclass: scrartcl
+    pdf-engine: xelatex
+  epub:
+    toc: true

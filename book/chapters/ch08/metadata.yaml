@@ -2,5 +2,33 @@ chapter_id: CH08
 chapter_number: 8
 title: "Graphics, Displays, Audio, Cameras, and Sensors"
 part: II
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+human_question:
+  - How do displays, audio, cameras, and sensors turn between the physical world and digital representations—and why do frames, sampling, and pipelines shape feel?
+experience:
+  - multi-pipeline media on one device
+  - capture-to-present and present-to-capture loops
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [display, audio, camera, sensors, compositor, gpu, permissions]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-IO-001]
+figures: [FIG-CH08-001, FIG-CH08-002, FIG-CH08-003]
+concepts:
+  introduced: [display-pipeline, frame, audio-pipeline, camera-pipeline, sensor, sampling, compositor]
+  required: [gpu, rendering, stability-contract]
+  related: [permissions, accessibility, privacy]
+waike:
+  mapped: true
+  courses: [GAME_DEV_INTERACTIVE, ROBOTICS_CONTROL, EMBEDDED_PROTOTYPING]
+  note: "Adjacency only (lab_game_loop, lab_sensor_noise, lab_ep_adc_scale, lab_game_a11y); no exact CH08 module ID; LAB-IO-001 is publication-owned."
+claims:
+  packet: publication/full31/chapters/ch08/CLAIM_PLAN.yaml
+blockers:
+  - "CLM-CH08-001 remains SOURCE_NEEDED (frame-deadline / hitch survey cite); omitted from prose pending pinned textbook or display-timing docs."
+  - "SRC-CH08-02 platform OS permission encyclopedia still SOURCE_NEEDED; chapter uses W3C Media Capture permission model as representative web path."
+  - "CLM-CH08-004 Device Quartet camera/sensor EVT remains PHYSICAL_PENDING."
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING; not Gate 3 PASS."
