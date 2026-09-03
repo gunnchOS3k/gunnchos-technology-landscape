@@ -1,0 +1,3 @@
+route,source_label,wall_time_note,network_required,data_leaving_device,errors_or_hedges,stability_bounds_notes
+Route L,FIXTURE illustrative,not a product benchmark — learner may leave blank or note "immediate" from simulator,N,claimed N / OS telemetry unknown,"Hedge present: checklist not a diagnosis",SC-CE5-L in-bounds (claimed); SC-CE5-U in-bounds
+Route C,FIXTURE illustrative,not a product benchmark — streaming delay claimed only,Y,claimed Y — prompt to remote service,"Fluent unverifiable claim about carrier + city origin",SC-CE5-L out-of-bounds for privacy locality; SC-CE5-U out-of-bounds (overconfident)

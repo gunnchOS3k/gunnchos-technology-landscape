@@ -1,0 +1,17 @@
+# Synthetic sample log line for Builder redaction — LAB-TRUST-001
+
+**Label:** `FIXTURE` / `illustrative`  
+**Safety:** Contains ONLY synthetic tokens. Not a real secret. Not a real person.
+
+```
+2026-09-03T18:00:00Z level=INFO route=C user=demo_user_01 prompt_hash=sha256:00ffee session=sess_DEMO_ONLY msg="assistant replied" note="public library website latency checklist"
+```
+
+## Builder task
+
+Propose one redaction rule (observation → safer log), for example:
+
+- replace `user=demo_user_01` with `user=[REDACTED]`
+- replace `session=sess_DEMO_ONLY` with `session=[REDACTED]`
+
+Do not invent real credentials. Do not practice exfiltration.
