@@ -1,0 +1,1671 @@
+schema_version: 1.0.0
+status: WORKING_FULL31_BIBLIOGRAPHY
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+rights: Working Full31 bibliography. Does not modify Gate 3 evidence. Does not authorize
+  silent merge into book/references/references.bib.
+integration_path:
+  working_bib: publication/full31/WORKING_BIBLIOGRAPHY.bib
+  quarto_cite_target: Point chapter Quarto bibliographies at WORKING_BIBLIOGRAPHY.bib
+    during manuscript wave, or merge selected keys into book/references/references.bib
+    after integrator authorization.
+  live_book_bib: book/references/references.bib
+  ce_candidate_truth: publication/preproduction/CANDIDATE_BIBLIOGRAPHY.bib
+  validator: scripts/validate_ce_sources.py
+  builder: scripts/build_full31_working_bibliography.py
+counts:
+  ce_source_occurrences: 64
+  full31_citation_token_occurrences: 159
+  unique_bib_keys: 63
+  unique_canonical_works: 55
+  same_work_alias_groups: 7
+verification_counts:
+  NEEDS_PRIMARY_VERIFICATION: 1
+  PRIMARY_METADATA_VERIFIED: 47
+  REPOSITORY_EVIDENCE_VERIFIED: 8
+  SECONDARY_EXPLANATORY: 7
+classification_counts:
+  official_technical_documentation: 14
+  other_explanatory: 5
+  peer_reviewed: 2
+  project_accepted_main: 8
+  standards_specifications: 25
+  textbooks: 9
+wcag_resolution:
+  strategy: two_dated_recommendation_keys
+  keys:
+    wcag22-20231005: &id001
+      year: '2023'
+      url: https://www.w3.org/TR/2023/REC-WCAG22-20231005/
+      edition: W3C Recommendation 5 October 2023
+    wcag22-20241212: &id002
+      year: '2024'
+      url: https://www.w3.org/TR/2024/REC-WCAG22-20241212/
+      edition: W3C Recommendation 12 December 2024
+  undated_latest_shortcut: https://www.w3.org/TR/WCAG22/
+  history: https://www.w3.org/standards/history/WCAG22/
+  blocked_bib_keys:
+  - wcag22
+source_register_alias_map:
+  SRC-WAIKE:
+  - src-waike
+  - src-waike-ce3
+  - waike-research-ops-ce06
+  SRC-HARDWARE:
+  - src-hardware-quartet
+  - src-hardware-ce3
+  SRC-DEVICE-OS:
+  - src-device-os-ce3
+  SRC-CE06-02:
+  - itu-t-g1011
+same_work_aliases:
+- canonical_identifier: 'title:computer organization and design: the hardware/software
+    interface|author:patterson, david a. and hennessy, john l.|year:2020'
+  bib_keys:
+  - patterson-hennessy
+  - patterson-hennessy-ce06
+- canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
+  bib_keys:
+  - mdn-performance
+  - mdn-performance-ce06
+- canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
+  bib_keys:
+  - linux-scheduler
+  - linux-scheduler-ce06
+- canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
+  bib_keys:
+  - src-hardware-ce3
+  - src-hardware-quartet
+- canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026
+  bib_keys:
+  - gunnchos-technology-landscape-ce06
+  - gunnchosTechnologyLandscape2026
+- canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
+  bib_keys:
+  - src-waike
+  - src-waike-ce3
+  - waike-research-ops-ce06
+- canonical_identifier: url:https://html.spec.whatwg.org/|year:2026
+  bib_keys:
+  - whatwg-html
+  - whatwg-html-ce06
+blocked_undated_wcag_occurrences:
+- chapter: ch14
+  token: wcag22
+  origin: claim_plan.citation_keys
+non_bib_tokens:
+- chapter: ch02
+  token: gate3-review-snapshot
+  origin: claim_plan.citation_keys
+- chapter: ch02
+  token: lab-tap-001
+  origin: claim_plan.citation_keys
+- chapter: ch02
+  token: gate3-evidence
+  origin: claim_plan.citation_keys
+- chapter: ch03
+  token: lab-tap-001
+  origin: claim_plan.citation_keys
+unresolved_citation_tokens:
+- chapter: ch01
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch01
+  token: SRC-CH01-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch01
+  token: SRC-CH01-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch01
+  token: SRC-CH01-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch01
+  token: SRC-CH01-04
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch02
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch02
+  token: SRC-CH02-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch02
+  token: SRC-CH02-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch02
+  token: SRC-CH02-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch03
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch03
+  token: SRC-CH03-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch03
+  token: SRC-CH03-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch03
+  token: SRC-CH03-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch03
+  token: SRC-CH03-04
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch04
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch04
+  token: SRC-CH04-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch04
+  token: SRC-CH04-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch04
+  token: SRC-CH04-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch05
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch05
+  token: SRC-CH05-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch05
+  token: SRC-CH05-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch05
+  token: SRC-CH05-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch06
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch06
+  token: SRC-CH06-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch06
+  token: SRC-CH06-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch06
+  token: SRC-CH06-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch07
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch07
+  token: SRC-CH07-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch07
+  token: SRC-CH07-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch07
+  token: SRC-CH07-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch08
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch08
+  token: SRC-CH08-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch08
+  token: SRC-CH08-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch08
+  token: SRC-CH08-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch09
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch09
+  token: SRC-CH09-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch09
+  token: SRC-CH09-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch09
+  token: SRC-CH09-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch10
+  token: ID
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch10
+  token: SRC-CH10-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch10
+  token: SRC-CH10-02
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch10
+  token: SRC-CH10-03
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch10
+  token: SRC-CH10-04
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch21
+  token: peer_eval_methods
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch22
+  token: edge_ml_sys_refs
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch22
+  token: sensing_privacy_std
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch23
+  token: owasp_living
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch24
+  token: safety_std_selection
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch25
+  token: ict_access_stats
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch26
+  token: git_official_docs
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch26
+  token: semver_or_conventional_commits
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch27
+  token: otel_docs
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch27
+  token: LAB-CE06-001
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch28
+  token: digital_twin_std
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch28
+  token: repro_research_guide
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch29
+  token: product_design_refs
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch30
+  token: bls_or_equivalent
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch31
+  token: LAB-CE06-001
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+- chapter: ch31
+  token: SRC-CE06-01
+  origin: source_needs.table
+  reason: bib_key_not_in_working_set
+records:
+- bib_key: digitalregulation-qos-qoe
+  entry_type: misc
+  title: "Technical regulation \u2013 Quality of service"
+  year: '2024'
+  url: https://digitalregulation.org/technical-regulation-quality-of-service/
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://digitalregulation.org/technical-regulation-quality-of-service/|year:2024
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: goodfellow_deep_learning
+  entry_type: book
+  title: Deep Learning
+  year: '2016'
+  url: https://www.deeplearningbook.org/
+  doi: null
+  isbn: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.deeplearningbook.org/|year:2016
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch21
+  - ch22
+  chapter_usage:
+  - ce-05
+  - ch21
+  - ch22
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: gunnchos-technology-landscape-ce06
+  entry_type: misc
+  title: The Technology Landscape
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-technology-landscape
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: gunnchosTechnologyLandscape2026
+  entry_type: misc
+  title: The Technology Landscape
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-technology-landscape
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026
+  ce_chapter_usage: []
+  full31_chapter_usage:
+  - ch02
+  chapter_usage:
+  - book/references
+  - ch02
+  promotion_origin: book_references_accepted_main
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: ieee80211-2020
+  entry_type: misc
+  title: null
+  year: '2020'
+  url: https://standards.ieee.org/standard/802_11-2020.html
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:ieee80211-2020|dated:2020
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: ieee80211-wg
+  entry_type: misc
+  title: null
+  year: '2026'
+  url: https://www.ieee802.org/11/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.ieee802.org/11/|year:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: iso-iec-25010-2023
+  entry_type: misc
+  title: null
+  year: '2023'
+  url: https://www.iso.org/standard/78176.html
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.iso.org/standard/78176.html|year:2023
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-01
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: itu-t-g1011
+  entry_type: misc
+  title: Reference guide to quality of experience assessment methodologies
+  year: '2016'
+  url: https://www.itu.int/rec/T-REC-G.1011
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.itu.int/rec/T-REC-G.1011|year:2016
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage:
+  - ch27
+  chapter_usage:
+  - ce-06
+  - ch27
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: itu-t-p10-g100
+  entry_type: misc
+  title: Vocabulary for performance, quality of service and quality of experience
+  year: null
+  url: https://www.itu.int/rec/T-REC-P.10/en
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.itu.int/rec/T-REC-P.10/en
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: jedec-jesd79-4d
+  entry_type: misc
+  title: DDR4 SDRAM Standard (JESD79-4D)
+  year: '2021'
+  url: https://www.jedec.org/standards-documents/docs/jesd79-4a
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.jedec.org/standards-documents/docs/jesd79-4a|year:2021
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-03
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: khronos-vulkan-overview
+  entry_type: misc
+  title: Vulkan Overview
+  year: '2026'
+  url: https://www.khronos.org/vulkan/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.khronos.org/vulkan/|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-03
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: kurose-ross-8
+  entry_type: book
+  title: 'Computer Networking: A Top-Down Approach'
+  year: '2020'
+  url: null
+  doi: null
+  isbn: '9780136681557'
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: isbn:9780136681557|edition:8
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: linux-cpu-freq
+  entry_type: misc
+  title: CPU Performance Scaling
+  year: '2026'
+  url: https://docs.kernel.org/admin-guide/pm/cpufreq.html
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://docs.kernel.org/admin-guide/pm/cpufreq.html|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-03
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: linux-input
+  entry_type: misc
+  title: Introduction (Linux Input Subsystem userspace API)
+  year: '2026'
+  url: https://docs.kernel.org/input/input.html
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://docs.kernel.org/input/input.html|year:2026
+  ce_chapter_usage: []
+  full31_chapter_usage:
+  - ch02
+  chapter_usage:
+  - book/references
+  - ch02
+  promotion_origin: book_references_accepted_main
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: linux-memory
+  entry_type: misc
+  title: Memory Management
+  year: '2026'
+  url: https://docs.kernel.org/admin-guide/mm/index.html
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://docs.kernel.org/admin-guide/mm/index.html|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-03
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: linux-scheduler
+  entry_type: misc
+  title: CPU Scheduler
+  year: '2026'
+  url: https://docs.kernel.org/scheduler/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
+  ce_chapter_usage:
+  - ce-01
+  - ce-03
+  full31_chapter_usage:
+  - ch12
+  chapter_usage:
+  - ce-01
+  - ce-03
+  - ch12
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: linux-scheduler-ce06
+  entry_type: misc
+  title: CPU Scheduler
+  year: '2026'
+  url: https://docs.kernel.org/scheduler/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: mdn-network-monitor
+  entry_type: misc
+  title: Network Monitor
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor|year:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: mdn-performance
+  entry_type: misc
+  title: Performance API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
+  ce_chapter_usage:
+  - ce-01
+  - ce-03
+  full31_chapter_usage:
+  - ch14
+  chapter_usage:
+  - ce-01
+  - ce-03
+  - ch14
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: mdn-performance-ce06
+  entry_type: misc
+  title: Performance API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: mdn-resource-timing
+  entry_type: misc
+  title: Resource Timing API
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing|year:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: nist-sp500-325
+  entry_type: techreport
+  title: Fog Computing Conceptual Model
+  year: '2018'
+  url: https://csrc.nist.gov/pubs/sp/500/325/final
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/500/325/final|year:2018
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: nist-sp800-145
+  entry_type: techreport
+  title: null
+  year: '2011'
+  url: https://csrc.nist.gov/pubs/sp/800/145/final
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/800/145/final|year:2011
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: nist_ai_rmf_100_1
+  entry_type: techreport
+  title: null
+  year: '2023'
+  url: https://doi.org/10.6028/NIST.AI.100-1
+  doi: 10.6028/NIST.AI.100-1
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: doi:10.6028/nist.ai.100-1
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch21
+  chapter_usage:
+  - ce-05
+  - ch21
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: nist_sp_800_63_4
+  entry_type: techreport
+  title: Digital Identity Guidelines
+  year: '2025'
+  url: https://doi.org/10.6028/NIST.SP.800-63-4
+  doi: 10.6028/NIST.SP.800-63-4
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: doi:10.6028/nist.sp.800-63-4
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch23
+  - ch24
+  chapter_usage:
+  - ce-05
+  - ch23
+  - ch24
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: nvme-base-spec
+  entry_type: misc
+  title: NVM Express Base Specification (family)
+  year: '2026'
+  url: https://nvmexpress.org/specifications/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://nvmexpress.org/specifications/|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-03
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: otel-signals
+  entry_type: misc
+  title: Signals
+  year: '2026'
+  url: https://opentelemetry.io/docs/concepts/signals/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://opentelemetry.io/docs/concepts/signals/|year:2026
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: patterson-hennessy
+  entry_type: book
+  title: 'Computer Organization and Design: The Hardware/Software Interface'
+  year: '2020'
+  url: null
+  doi: null
+  isbn: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: 'title:computer organization and design: the hardware/software
+    interface|author:patterson, david a. and hennessy, john l.|year:2020'
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch12
+  chapter_usage:
+  - ce-01
+  - ch12
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: patterson-hennessy-ce06
+  entry_type: book
+  title: 'Computer Organization and Design: The Hardware/Software Interface'
+  year: '2020'
+  url: null
+  doi: null
+  isbn: null
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: 'title:computer organization and design: the hardware/software
+    interface|author:patterson, david a. and hennessy, john l.|year:2020'
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: patterson-hennessy-riscv
+  entry_type: book
+  title: 'Computer Organization and Design RISC-V Edition: The Hardware/Software Interface'
+  year: '2020'
+  url: null
+  doi: null
+  isbn: 978-0-12-820331-6
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: isbn:9780128203316|edition:2
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-03
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc1034
+  entry_type: misc
+  title: "Domain Names \u2014 Concepts and Facilities"
+  year: '1987'
+  url: https://www.rfc-editor.org/rfc/rfc1034
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc1034|dated:1987
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc1035
+  entry_type: misc
+  title: "Domain Names \u2014 Implementation and Specification"
+  year: '1987'
+  url: https://www.rfc-editor.org/rfc/rfc1035
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc1035|dated:1987
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc1122
+  entry_type: misc
+  title: "Requirements for Internet Hosts \u2014 Communication Layers"
+  year: '1989'
+  url: https://www.rfc-editor.org/rfc/rfc1122
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc1122|dated:1989
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc1918
+  entry_type: misc
+  title: Address Allocation for Private Internets
+  year: '1996'
+  url: https://www.rfc-editor.org/rfc/rfc1918
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc1918|dated:1996
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc3022
+  entry_type: misc
+  title: Traditional IP Network Address Translator (Traditional NAT)
+  year: '2001'
+  url: https://www.rfc-editor.org/rfc/rfc3022
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc3022|dated:2001
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc768
+  entry_type: misc
+  title: User Datagram Protocol
+  year: '1980'
+  url: https://www.rfc-editor.org/rfc/rfc768
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc768|dated:1980
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc791
+  entry_type: misc
+  title: Internet Protocol
+  year: '1981'
+  url: https://www.rfc-editor.org/rfc/rfc791
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc791|dated:1981
+  ce_chapter_usage:
+  - ce-01
+  - ce-04
+  full31_chapter_usage:
+  - ch16
+  chapter_usage:
+  - ce-01
+  - ce-04
+  - ch16
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc8200
+  entry_type: misc
+  title: Internet Protocol, Version 6 (IPv6) Specification
+  year: '2017'
+  url: https://www.rfc-editor.org/rfc/rfc8200
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc8200|dated:2017
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc8446
+  entry_type: misc
+  title: The Transport Layer Security (TLS) Protocol Version 1.3
+  year: '2018'
+  url: https://www.rfc-editor.org/rfc/rfc8446
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc8446|dated:2018
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc9000
+  entry_type: misc
+  title: 'QUIC: A UDP-Based Multiplexed and Secure Transport'
+  year: '2021'
+  url: https://www.rfc-editor.org/rfc/rfc9000
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc9000|dated:2021
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: rfc9293
+  entry_type: misc
+  title: Transmission Control Protocol (TCP)
+  year: '2022'
+  url: https://www.rfc-editor.org/rfc/rfc9293
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:rfc9293|dated:2022
+  ce_chapter_usage:
+  - ce-01
+  - ce-04
+  full31_chapter_usage:
+  - ch16
+  chapter_usage:
+  - ce-01
+  - ce-04
+  - ch16
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: russell_norvig_aima
+  entry_type: book
+  title: 'Artificial Intelligence: A Modern Approach'
+  year: null
+  url: null
+  doi: null
+  isbn: null
+  source_class: textbooks
+  verification_status: NEEDS_PRIMARY_VERIFICATION
+  canonical_identifier: 'title:artificial intelligence: a modern approach|author:russell,
+    stuart and norvig, peter|year:unknown'
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch21
+  chapter_usage:
+  - ce-05
+  - ch21
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: saltzer-kaashoek
+  entry_type: book
+  title: 'Principles of Computer System Design: An Introduction'
+  year: '2009'
+  url: null
+  doi: null
+  isbn: 978-0-12-374957-4
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: isbn:9780123749574|edition:2009
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch01
+  - ch11
+  - ch13
+  - ch14
+  chapter_usage:
+  - ce-01
+  - ch01
+  - ch11
+  - ch13
+  - ch14
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: saltzer_schroeder_1975
+  entry_type: article
+  title: The Protection of Information in Computer Systems
+  year: '1975'
+  url: https://doi.org/10.1109/PROC.1975.9939
+  doi: 10.1109/PROC.1975.9939
+  isbn: null
+  source_class: peer_reviewed
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: doi:10.1109/proc.1975.9939
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch23
+  chapter_usage:
+  - ce-05
+  - ch23
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: silberschatz-galvin-gagne
+  entry_type: book
+  title: Operating System Concepts
+  year: '2018'
+  url: null
+  doi: null
+  isbn: 978-1-119-32091-3
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: isbn:9781119320913|edition:10
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage:
+  - ch12
+  chapter_usage:
+  - ce-03
+  - ch12
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: solove_taxonomy_2006
+  entry_type: article
+  title: A Taxonomy of Privacy
+  year: '2006'
+  url: null
+  doi: null
+  isbn: null
+  source_class: peer_reviewed
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: title:a taxonomy of privacy|author:solove, daniel j.|year:2006
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch24
+  chapter_usage:
+  - ce-05
+  - ch24
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: src-device-os-ce3
+  entry_type: misc
+  title: gunnchos-device-os accepted main (CE-3 audit)
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-device-os
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-device-os|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage:
+  - ch23
+  - ch29
+  chapter_usage:
+  - ce-03
+  - ch23
+  - ch29
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: src-hardware-ce3
+  entry_type: misc
+  title: gunnchos-hardware-industrial-design accepted main (CE-3 audit)
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage:
+  - ch22
+  - ch23
+  - ch25
+  - ch26
+  - ch28
+  - ch29
+  chapter_usage:
+  - ce-03
+  - ch22
+  - ch23
+  - ch25
+  - ch26
+  - ch28
+  - ch29
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: src-hardware-quartet
+  entry_type: misc
+  title: gunnchos-hardware-industrial-design Device Quartet docs
+  year: '2026'
+  url: https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch01
+  - ch03
+  - ch04
+  - ch05
+  - ch06
+  - ch07
+  - ch08
+  - ch09
+  - ch10
+  - ch22
+  - ch23
+  - ch25
+  - ch26
+  - ch28
+  - ch29
+  chapter_usage:
+  - ce-01
+  - ch01
+  - ch03
+  - ch04
+  - ch05
+  - ch06
+  - ch07
+  - ch08
+  - ch09
+  - ch10
+  - ch22
+  - ch23
+  - ch25
+  - ch26
+  - ch28
+  - ch29
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: src-waike
+  entry_type: misc
+  title: waike-research-ops accepted main audit for CE-1 adjacency
+  year: '2026'
+  url: https://github.com/gunnchOS3k/waike-research-ops
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch02
+  - ch21
+  - ch22
+  - ch23
+  - ch24
+  - ch25
+  - ch26
+  - ch27
+  - ch28
+  - ch30
+  - ch31
+  chapter_usage:
+  - ce-01
+  - ch02
+  - ch21
+  - ch22
+  - ch23
+  - ch24
+  - ch25
+  - ch26
+  - ch27
+  - ch28
+  - ch30
+  - ch31
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: src-waike-ce3
+  entry_type: misc
+  title: waike-research-ops accepted main (CE-3 audit)
+  year: '2026'
+  url: https://github.com/gunnchOS3k/waike-research-ops
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage:
+  - ch21
+  - ch22
+  - ch23
+  - ch24
+  - ch25
+  - ch26
+  - ch27
+  - ch28
+  - ch30
+  - ch31
+  chapter_usage:
+  - ce-03
+  - ch21
+  - ch22
+  - ch23
+  - ch24
+  - ch25
+  - ch26
+  - ch27
+  - ch28
+  - ch30
+  - ch31
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: tanenbaum-bos
+  entry_type: book
+  title: Modern Operating Systems
+  year: '2022'
+  url: null
+  doi: null
+  isbn: 978-0-13-761888-0
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: title:modern operating systems|author:tanenbaum, andrew s.
+    and bos, herbert|year:2022
+  ce_chapter_usage:
+  - ce-01
+  - ce-03
+  full31_chapter_usage:
+  - ch01
+  - ch03
+  - ch06
+  - ch07
+  - ch08
+  - ch11
+  - ch12
+  - ch13
+  chapter_usage:
+  - ce-01
+  - ce-03
+  - ch01
+  - ch03
+  - ch06
+  - ch07
+  - ch08
+  - ch11
+  - ch12
+  - ch13
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: threegpp-ts23501
+  entry_type: misc
+  title: System architecture for the 5G System (5GS)
+  year: '2026'
+  url: https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:threegpp-ts23501|dated:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: w3c-pointerevents
+  entry_type: misc
+  title: Pointer Events
+  year: '2026'
+  url: https://www.w3.org/TR/pointerevents3/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.w3.org/TR/pointerevents3/|year:2026
+  ce_chapter_usage: []
+  full31_chapter_usage:
+  - ch02
+  chapter_usage:
+  - book/references
+  - ch02
+  promotion_origin: book_references_accepted_main
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: w3c-uievents
+  entry_type: misc
+  title: UI Events
+  year: '2026'
+  url: https://www.w3.org/TR/uievents/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.w3.org/TR/uievents/|year:2026
+  ce_chapter_usage: []
+  full31_chapter_usage:
+  - ch02
+  chapter_usage:
+  - book/references
+  - ch02
+  promotion_origin: book_references_accepted_main
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: waike-main-ce4-audit
+  entry_type: misc
+  title: WAIKE research-ops accepted main audit for CE-4 crosswalk
+  year: '2026'
+  url: null
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: title:waike research-ops accepted main audit for ce-4 crosswalk|author:|year:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: waike-research-ops-ce06
+  entry_type: misc
+  title: waike-research-ops accepted main curriculum evidence
+  year: '2026'
+  url: https://github.com/gunnchOS3k/waike-research-ops
+  doi: null
+  isbn: null
+  source_class: project_accepted_main
+  verification_status: REPOSITORY_EVIDENCE_VERIFIED
+  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage:
+  - ch21
+  - ch22
+  - ch23
+  - ch24
+  - ch25
+  - ch26
+  - ch27
+  - ch28
+  - ch30
+  - ch31
+  chapter_usage:
+  - ce-06
+  - ch21
+  - ch22
+  - ch23
+  - ch24
+  - ch25
+  - ch26
+  - ch27
+  - ch28
+  - ch30
+  - ch31
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: wcag22-20231005
+  entry_type: misc
+  title: null
+  year: '2023'
+  url: https://www.w3.org/TR/2023/REC-WCAG22-20231005/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:wcag22-20231005|dated:2023
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch24
+  chapter_usage:
+  - ce-01
+  - ch24
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: *id001
+- bib_key: wcag22-20241212
+  entry_type: misc
+  title: Web Content Accessibility Guidelines (WCAG) 2.2
+  year: '2024'
+  url: https://www.w3.org/TR/2024/REC-WCAG22-20241212/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:wcag22-20241212|dated:2024
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage:
+  - ch24
+  - ch25
+  chapter_usage:
+  - ce-06
+  - ch24
+  - ch25
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: *id002
+- bib_key: whatwg-dom
+  entry_type: misc
+  title: DOM Standard
+  year: '2026'
+  url: https://dom.spec.whatwg.org/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://dom.spec.whatwg.org/|year:2026
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch01
+  chapter_usage:
+  - ce-01
+  - ch01
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: whatwg-html
+  entry_type: misc
+  title: HTML Standard
+  year: '2026'
+  url: https://html.spec.whatwg.org/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://html.spec.whatwg.org/|year:2026
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch01
+  - ch14
+  chapter_usage:
+  - ce-01
+  - ch01
+  - ch14
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: whatwg-html-ce06
+  entry_type: misc
+  title: HTML Standard
+  year: '2026'
+  url: https://html.spec.whatwg.org/
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://html.spec.whatwg.org/|year:2026
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: wifi-alliance-discover
+  entry_type: misc
+  title: Discover Wi-Fi
+  year: '2026'
+  url: https://www.wi-fi.org/discover-wi-fi
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: SECONDARY_EXPLANATORY
+  canonical_identifier: url:https://www.wi-fi.org/discover-wi-fi|year:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-04
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
