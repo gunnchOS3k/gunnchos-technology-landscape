@@ -77,7 +77,13 @@ ce-preproduction-normalize:
 
 ce-preproduction-check:
 	$(PYTHON) scripts/regenerate_ce_candidate_indexes.py --check
+	$(PYTHON) scripts/validate_ce_sources.py --check
 	$(PYTHON) scripts/validate_ce_preproduction.py
+
+ce-source-integrity:
+	$(PYTHON) scripts/validate_ce_sources.py
+	$(PYTHON) scripts/regenerate_ce_candidate_indexes.py
+	$(PYTHON) scripts/validate_ce_sources.py --check
 
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).
 all: validate test preview pdf epub
