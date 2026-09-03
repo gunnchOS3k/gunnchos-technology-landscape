@@ -41,3 +41,60 @@ figures:
     accessibility: figures/accessibility/fig-ch02-007.yaml
     status: conceptual
     chapter: CH02
+
+  - figure_id: FIG-CH01-001
+    id: FIG-CH01-001
+    title: "First-minute ecosystem map"
+    path: figures/ecosystem/fig-ch01-001-ecosystem-map.svg
+    accessibility: figures/accessibility/fig-ch01-001.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-001; not a duplicate artwork."
+  - figure_id: FIG-CH01-002
+    id: FIG-CH01-002
+    title: "Inputs to processing to state to outputs"
+    path: figures/sequence/fig-ch01-002-inputs-state-outputs.svg
+    accessibility: figures/accessibility/fig-ch01-002.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-002."
+  - figure_id: FIG-CH01-003
+    id: FIG-CH01-003
+    title: "Why the app is not one thing"
+    path: figures/architecture/fig-ch01-003-app-not-one-thing.svg
+    accessibility: figures/accessibility/fig-ch01-003.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-003."
+  - figure_id: FIG-CH01-004
+    id: FIG-CH01-004
+    title: "Local-only vs network-dependent readiness"
+    path: figures/ecosystem/fig-ch01-004-local-vs-network.svg
+    accessibility: figures/accessibility/fig-ch01-004.yaml
+    status: illustrative
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-004."
+  - figure_id: FIG-CH01-005
+    id: FIG-CH01-005
+    title: "Failure-domain map"
+    path: figures/architecture/fig-ch01-005-failure-domains.svg
+    accessibility: figures/accessibility/fig-ch01-005.yaml
+    status: illustrative
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-005."
+  - figure_id: FIG-CH01-006
+    id: FIG-CH01-006
+    title: "Exploded ecosystem preview"
+    path: figures/exploded-views/fig-ch01-006-ecosystem-preview.svg
+    accessibility: figures/accessibility/fig-ch01-006.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-006; PHYSICAL_PENDING Quartet callout."
+  - figure_id: FIG-CH01-007
+    id: FIG-CH01-007
+    title: "Stability Contract preview"
+    path: figures/architecture/fig-ch01-007-stability-preview.svg
+    accessibility: figures/accessibility/fig-ch01-007.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-007."

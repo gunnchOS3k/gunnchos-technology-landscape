@@ -2,5 +2,27 @@ chapter_id: CH01
 chapter_number: 1
 title: "Technology Is a System, Not a Screen"
 part: I
-status: outline
-concept_edition: false
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+concept_edition: true
+human_question:
+  - Why is the screen not the whole system?
+experience:
+  - chrome visible before content usable
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [interface, application, operating-system, storage, networking, services]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-SYS-001]
+figures: [FIG-CH01-001, FIG-CH01-002, FIG-CH01-003, FIG-CH01-004, FIG-CH01-005, FIG-CH01-006, FIG-CH01-007]
+concepts:
+  introduced: [visible-interface, hidden-layers, technology-ecosystem, dependency, failure-domain, inputs-processing-state-outputs]
+  required: []
+  related: [stability-contract, event-loop, ram, storage, service]
+waike:
+  mapped: true
+  courses: [GENERAL_IT, SOFTWARE_BUILDER, COMPUTER_NETWORKING, COMM_PD_ETHICS]
+  note: "Mapped by competency adjacency only; no invented CH01 module ID."
+claims:
+  registry: evidence/claim_registry.yaml

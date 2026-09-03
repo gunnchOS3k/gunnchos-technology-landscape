@@ -1,0 +1,33 @@
+figure_id: FIG-CH01-001
+title: "First-minute map: person \u2192 visible interface \u2192 hidden local system\
+  \ \u2192 optional network/s\u2026"
+caption: "First-minute map: person \u2192 visible interface \u2192 hidden local system\
+  \ \u2192 optional network/s\u2026. The screen is only one node; optional remote\
+  \ branch is dashed. Truth: conceptual. Color is not the sole encoding."
+alt_text: Alt text must list every node in reading order and state that the diagram
+  is conceptual educational architecture.
+text_equivalent: 'Alt text must list every node in reading order and state that the
+  diagram is conceptual educational architecture. Reading order: Person; Visible interface;
+  Hidden local system; Optional network/service; Human-usable result.
+
+  Evidence: Conceptual synthesis from EXPERIENCE_MAP anchor A; no measured telemetry.
+
+  Geometry intent: Left-to-right swimlane with dashed optional service branch and
+  failure callout.'
+reading_order:
+- Person
+- Visible interface
+- Hidden local system
+- Optional network/service
+- Human-usable result
+source: figures/preproduction/ce-01/fig-ce1-001.svg
+evidence_note: Conceptual synthesis from EXPERIENCE_MAP anchor A; no measured telemetry.
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label + dashed vs solid stroke; do not rely on
+  color alone for optional branch.
+reviewer: pending-human-visual-review
+version: 0.1.0
