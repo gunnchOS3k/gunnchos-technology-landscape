@@ -1,0 +1,37 @@
+# Sample top transcript (text-only fixture)
+
+**Fixture ID:** `FIG-CE3-009-top`  
+**Purpose:** Learners without GUI monitor access can still practice observation vs inference.  
+**Note:** Synthetic teaching data. Not a live capture from a classroom device.
+
+```
+top - 15:00:00 up 2:10,  1 user,  load average: 0.45, 0.50, 0.55
+Tasks: 180 total,   1 running, 179 sleeping
+%Cpu(s):  8.0 us,  2.0 sy,  0.0 ni, 90.0 id,  0.0 wa
+MiB Mem :  16384.0 total,   4200.0 free,   6200.0 used,   5984.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used
+
+  PID USER  %CPU %MEM  COMMAND
+ 2201 you    3.0  2.1  NotesApp
+  801 you    1.2  1.0  BrowserHelper
+  110 root   0.4  0.3  OS_SchedulerView
+```
+
+```
+top - 15:00:25 up 2:10,  1 user,  load average: 1.80, 0.90, 0.70
+Tasks: 182 total,   2 running, 180 sleeping
+%Cpu(s): 35.0 us,  6.0 sy,  0.0 ni, 54.0 id,  5.0 wa
+MiB Mem :  16384.0 total,   3600.0 free,   6900.0 used,   5884.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used
+
+  PID USER  %CPU %MEM  COMMAND
+ 2201 you   28.0  2.8  NotesApp
+  801 you    4.0  1.1  BrowserHelper
+  110 root   0.5  0.3  OS_SchedulerView
+```
+
+## Text equivalents
+
+- Before: mostly idle CPU (~90% idle), ~6.2 GiB RAM used, swap unused, NotesApp light.  
+- During: CPU user+system higher, ~5% I/O wait, RAM ~6.9 GiB used, NotesApp ~28% CPU.  
+- Swap still unused → fixture does **not** support a thrashing claim.
