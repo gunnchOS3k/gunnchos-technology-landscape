@@ -1,12 +1,11 @@
 # CH26 — Software Development and Version Control
 
 **Package status:** `preproduction`  
-**Manuscript status:** scaffold (no canonical chapter prose in this wave)  
+**Manuscript status:** `WORKING_DRAFT_COMPLETE` (working prose on `agent/ch26-draft`; human validation pending; not publication-ready)  
 **Full-book chapter:** CH26 (ch26)  
 **Part:** VI — Build, prove, and contribute  
-**Agent:** J (`agent-j/full31-part-v-vi`)  
-**Accepted-main base:** `0e694176652d4729c7f2b71df08b871a863afb8c` (PR #3 merge)  
-**Gate note:** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`. Do not claim PASS. Do not alter `CH02-REVIEW-R1`. Do not fabricate reader evidence.
+**Agent:** chapter draft on `agent/ch26-draft` (base `03acc7dae7bdbe777581103de266a7e16ff12688`)  
+**Gate note:** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`. Do not claim PASS. Do not alter `CH02-REVIEW-R1`. Do not fabricate reader evidence. Do not modify `publication/gates/gate-3/`.
 
 ---
 
@@ -86,12 +85,12 @@ DS-XL Coder as learn-to-build lens only; PHYSICAL_PENDING for hardware claims
 
 ## Explicit non-goals this wave
 
-- Final canonical prose  
 - Gate 3 PASS / fabricated human reviews  
 - Invented WAIKE course/lab IDs  
 - Fake citations or marketing Device Quartet claims  
-- Representing illustrative EMIT / fixture examples as human evidence
+- Representing illustrative EMIT / fixture examples as human evidence  
+- Employment promises from portfolio artifacts
 
 ## Next automatable action
 
-Pin official Git documentation URLs with verification status; scaffold LAB-CH26-GIT-001 fixture design
+Scaffold publication-owned git fixture lab under `labs/` (proposed packet name only; not a WAIKE ID); draw FIG-CH26-001…003 SVG + a11y sidecars
