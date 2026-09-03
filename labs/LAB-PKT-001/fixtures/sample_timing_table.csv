@@ -1,0 +1,11 @@
+run_id,condition,access_mode,phase,ms,metric_family,label,observed_or_inferred
+1,baseline_home,wifi,dns,12,latency,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+1,baseline_home,wifi,connect,48,latency,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+1,baseline_home,wifi,waiting_ttfb,210,latency,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+1,baseline_home,wifi,download,35,throughput,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+1,baseline_home,wifi,ui_outcome,success_after_wait,reliability,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+2,one_change_cellular,cellular,dns,22,latency,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+2,one_change_cellular,cellular,connect,90,latency,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+2,one_change_cellular,cellular,waiting_ttfb,420,latency,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+2,one_change_cellular,cellular,download,40,throughput,ILLUSTRATIVE_FIXTURE,observed_in_fixture
+2,one_change_cellular,cellular,ui_outcome,success_slower,reliability,ILLUSTRATIVE_FIXTURE,observed_in_fixture

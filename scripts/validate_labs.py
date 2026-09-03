@@ -59,6 +59,20 @@ def main() -> int:
             ]:
                 if not (path.parent / rel).exists():
                     errors.append(f"{lab_id}: missing {rel}")
+        if lab_id == "LAB-PKT-001":
+            for rel in [
+                "browser/index.html",
+                "cli/path_inspect.py",
+                "portfolio/README.md",
+                "fixtures/sample_path_trace.json",
+                "fixtures/sample_timing_table.csv",
+                "fixtures/sample_observation.md",
+                "ACCESSIBILITY.md",
+                "PRIVACY_AND_SAFETY.md",
+                "STATUS.yaml",
+            ]:
+                if not (path.parent / rel).exists():
+                    errors.append(f"{lab_id}: missing {rel}")
     if errors:
         print("validate_labs: FAIL")
         for e in errors:

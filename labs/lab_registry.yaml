@@ -28,3 +28,19 @@ labs:
     fixture_available: true
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-PKT-001
+    title: Trace One Connected Action Across Path and Access
+    chapter: CE-4
+    path: labs/LAB-PKT-001
+    baseline_routes: [browser, cli, fixture]
+    extension_routes: []
+    no_specialized_hardware: true
+    status_labels:
+      - IMPLEMENTED_DIGITAL
+      - FIXTURE_VALIDATED
+      - PHYSICAL_PENDING
+      - EXTERNAL_DEPENDENCY
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

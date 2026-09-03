@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAB-PKT-001 Browser Route</title>
+  <style>
+    body {
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      margin: 0;
+      color: #142019;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #d9ebe1 0%, transparent 55%),
+        linear-gradient(180deg, #e8f0eb 0%, #f3f6f4 40%, #eef2f0 100%);
+      line-height: 1.45;
+    }
+    main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.55rem; margin: 0 0 0.4rem; letter-spacing: -0.02em; }
+    .banner {
+      border-left: 4px solid #1f6b4a;
+      background: #e7f4ec;
+      padding: 0.75rem 0.9rem;
+      margin: 1rem 0;
+    }
+    label { display: block; margin: 0.75rem 0 0.25rem; font-weight: 600; }
+    select, button {
+      font: inherit;
+      padding: 0.55rem 0.85rem;
+      margin: 0.25rem 0.35rem 0.25rem 0;
+    }
+    button { cursor: pointer; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; background: #fff; }
+    th, td { border: 1px solid #5d7266; padding: 0.45rem; text-align: left; vertical-align: top; }
+    th { background: #dfeae3; }
+    .note { color: #3d4f44; font-size: 0.95rem; }
+    .path {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      white-space: pre-wrap;
+      background: #fff;
+      border: 1px solid #5d7266;
+      padding: 0.75rem;
+      margin: 1rem 0;
+    }
+    #status[data-kind="error"] { color: #7a1f1f; font-weight: 600; }
+    #status[data-kind="ok"] { color: #145c38; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LAB-PKT-001 — Browser route</h1>
+    <p class="note">Commodity demo for path/access labeling. Do not enter secrets. Do not capture other users’ traffic.</p>
+    <div class="banner" role="note">
+      <strong>Honesty:</strong> The fixture-timed demo uses illustrative timings.
+      Optional live fetch is an <code>EXTERNAL_DEPENDENCY</code>. Prefer Route B fixtures on public Wi-Fi.
+    </div>
+
+    <label for="accessMode">Access network (text label — not color alone)</label>
+    <select id="accessMode">
+      <option value="wifi">Wi-Fi</option>
+      <option value="cellular">Cellular</option>
+      <option value="unknown">Unknown / mixed</option>
+      <option value="fixture">Fixture only (no live claim)</option>
+    </select>
+
+    <label for="prediction">Predicted metric family</label>
+    <select id="prediction">
+      <option value="latency">Latency (wait / TTFB feel)</option>
+      <option value="reliability">Reliability (retry / error)</option>
+      <option value="throughput">Throughput (long transfer)</option>
+    </select>
+
+    <p>
+      <button id="fixtureBtn" type="button">Run fixture-timed sync demo</button>
+      <button id="liveBtn" type="button">Fetch public documentation sample</button>
+      <button id="clearBtn" type="button">Clear table</button>
+    </p>
+    <p id="status" aria-live="polite" data-kind="ok">Ready. Local demo — no credentials.</p>
+
+    <h2>Path scopes (text diagram)</h2>
+    <div class="path" id="pathBox" aria-label="Path scopes diagram">device → LAN (access: unset) → DNS? → Internet → service (edge/cloud: inference)
+Wi-Fi ≠ Internet ≠ cellular ≠ cloud
+latency ≠ throughput ≠ reliability</div>
+
+    <table>
+      <caption>Observation / timing table</caption>
+      <thead>
+        <tr>
+          <th scope="col">Marker</th>
+          <th scope="col">ms</th>
+          <th scope="col">Scope / phase</th>
+          <th scope="col">Observed or inferred</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </main>
+  <script>
+    const rows = document.getElementById('rows');
+    const status = document.getElementById('status');
+    const accessMode = document.getElementById('accessMode');
+    const prediction = document.getElementById('prediction');
+    const pathBox = document.getElementById('pathBox');
+
+    const FIXTURE_PHASES = [
+      { marker: 'action: sync start', ms: 0, scope: 'device', kind: 'observed' },
+      { marker: 'dns (illustrative)', ms: 12, scope: 'dns', kind: 'observed_in_fixture' },
+      { marker: 'connect (illustrative)', ms: 48, scope: 'lan→internet', kind: 'observed_in_fixture' },
+      { marker: 'waiting_ttfb (illustrative)', ms: 210, scope: 'service', kind: 'observed_in_fixture' },
+      { marker: 'download (illustrative)', ms: 35, scope: 'service', kind: 'observed_in_fixture' },
+      { marker: 'ui: sync complete', ms: 305, scope: 'device', kind: 'observed' }
+    ];
+
+    function setStatus(text, kind) {
+      status.textContent = text;
+      status.dataset.kind = kind || 'ok';
+    }
+
+    function updatePath() {
+      const a = accessMode.value;
+      pathBox.textContent =
+        'device → LAN (access: ' + a + ') → DNS? → Internet → service (edge/cloud: inference)\n' +
+        'Wi-Fi ≠ Internet ≠ cellular ≠ cloud\n' +
+        'prediction: ' + prediction.value + ' | latency ≠ throughput ≠ reliability';
+    }
+
+    function addRow(marker, ms, scope, kind) {
+      const tr = document.createElement('tr');
+      ['marker', 'ms', 'scope', 'kind'].forEach(() => {});
+      const cells = [marker, String(ms), scope, kind];
+      cells.forEach((text) => {
+        const td = document.createElement('td');
+        td.textContent = text;
+        tr.appendChild(td);
+      });
+      rows.appendChild(tr);
+    }
+
+    accessMode.addEventListener('change', updatePath);
+    prediction.addEventListener('change', updatePath);
+    updatePath();
+
+    document.getElementById('clearBtn').addEventListener('click', () => {
+      rows.innerHTML = '';
+      setStatus('Table cleared.', 'ok');
+    });
+
+    document.getElementById('fixtureBtn').addEventListener('click', () => {
+      updatePath();
+      setStatus('Running fixture-timed sync demo (ILLUSTRATIVE_FIXTURE).', 'ok');
+      addRow('prediction recorded', prediction.value, 'metric_family', 'learner_prediction');
+      addRow('access mode', accessMode.value, 'access_network', 'observed_ui_or_learner_label');
+      FIXTURE_PHASES.forEach((p) => addRow(p.marker, p.ms, p.scope, p.kind));
+      addRow('placement edge/cloud', 'cloud-far?', 'service placement', 'inference_without_extra_evidence');
+      setStatus('Fixture-timed demo complete. Copy rows into portfolio. Not a device benchmark.', 'ok');
+    });
+
+    document.getElementById('liveBtn').addEventListener('click', async () => {
+      updatePath();
+      setStatus('Live fetch starting (EXTERNAL_DEPENDENCY). Prefer public docs; never send secrets.', 'ok');
+      addRow('live: request start', performance.now().toFixed(1), 'device→internet', 'observed');
+      const t0 = performance.now();
+      try {
+        const res = await fetch('https://example.com/', { method: 'GET', mode: 'cors', cache: 'no-store' });
+        const t1 = performance.now();
+        addRow('live: response status ' + res.status, (t1 - t0).toFixed(1), 'service', 'observed');
+        const entries = performance.getEntriesByType('resource').filter((e) => (e.name || '').includes('example.com'));
+        const last = entries[entries.length - 1];
+        if (last && last.domainLookupEnd) {
+          addRow('live: dns', (last.domainLookupEnd - last.domainLookupStart).toFixed(1), 'dns', 'observed');
+          addRow('live: connect', (last.connectEnd - last.connectStart).toFixed(1), 'lan→internet', 'observed');
+          addRow('live: waiting', (last.responseStart - last.requestStart).toFixed(1), 'service', 'observed');
+          addRow('live: download', (last.responseEnd - last.responseStart).toFixed(1), 'service', 'observed');
+        } else {
+          addRow('live: phase detail unavailable', 'n/a', 'browser_limits', 'observed');
+        }
+        setStatus('Live sample finished. Scrub screenshots. Do not claim RF root cause from bars.', 'ok');
+      } catch (err) {
+        addRow('live: failure', (performance.now() - t0).toFixed(1), 'path_or_policy', 'observed');
+        setStatus('Live request failed (offline, CORS, filter, or policy). Failure is valid evidence — or use Route B fixtures.', 'error');
+      }
+    });
+  </script>
+</body>
+</html>
