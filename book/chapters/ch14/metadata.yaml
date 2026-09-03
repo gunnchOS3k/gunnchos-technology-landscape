@@ -2,5 +2,38 @@ chapter_id: CH14
 chapter_number: 14
 title: "Applications, APIs, Runtimes, and User Interfaces"
 part: III
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+human_question:
+  - How do I explode an app into UI, runtime, libraries, and APIs—and why is chrome-ready not work-complete?
+experience:
+  - chrome visible before content usable
+  - API call on a user interaction
+  - local vs remote failure domains
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [user-interface, application, runtime, libraries, apis, accessibility]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-TAP-001, LAB-SYS-001, LAB-PKT-001]
+figures: [FIG-CH14-001, FIG-CH14-002, FIG-CH14-003]
+concepts:
+  introduced: [application, user-interface, runtime, api, library-framework, event-loop, local-vs-remote-api]
+  required: [stability-contract, visible-interface, failure-domain]
+  related: [chrome-vs-content, accessibility-api, versioning]
+waike:
+  mapped: true
+  courses: [SOFTWARE_BUILDER, GAME_DEV_INTERACTIVE, software_engineering]
+  note: "Adjacency only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; no exact CH14 module ID; labs are publication-owned."
+claims:
+  plan: publication/full31/chapters/ch14/CLAIM_PLAN.yaml
+ce_inheritance:
+  - publication/preproduction/ce-01/
+  - book/chapters/ch02/
+  - publication/preproduction/ce-04/
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING; not Gate 3 PASS. Does not modify publication/gates/gate-3/."
+blockers:
+  - "CLM-CH14-005 Quartet UI latency budgets remain PHYSICAL_PENDING — qualitative Stability Contract only."
+  - "FIG-CH14-001/002/003 planned embeds; prose references IDs until SVG production."
+  - "Full-manuscript human validation pending; Gate 3 / CH02-REVIEW-R1 reader evidence not claimed here."
