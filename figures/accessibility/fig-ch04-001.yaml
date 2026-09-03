@@ -1,0 +1,19 @@
+figure_id: FIG-CH04-001
+title: "Device Quartet as a Learning Laboratory"
+caption: "Four research form factors presented as a learning laboratory, not a product catalog."
+alt_text: "Four research form factors as a learning laboratory, not a product catalog."
+text_equivalent: |
+  Four equal panels left to right: (1) Student 14.5-inch — desk / sustained work;
+  (2) Handheld Hybrid — mobile / docked; (3) DS-XL Coder — learn-to-build;
+  (4) Edge IO Wearables — embodied sensing. Banner: research form factors,
+  PHYSICAL_PENDING, not shipping SKUs. Conceptual educational diagram.
+reading_order:
+  - "Student 14.5-inch desk panel"
+  - "Handheld Hybrid mobile/docked panel"
+  - "DS-XL Coder learn-to-build panel"
+  - "Edge IO Wearables embodied sensing panel"
+  - "Footer honesty line: no fabricated watt/°C/FPS/RF numbers"
+source: figures/ecosystem/fig-ch04-001-quartet-learning-lab.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

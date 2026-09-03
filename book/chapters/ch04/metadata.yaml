@@ -2,5 +2,40 @@ chapter_id: CH04
 chapter_number: 4
 title: "The Device Quartet as a Learning Laboratory"
 part: I
-status: outline
+status: draft
 concept_edition: false
+human_question:
+  - Why do four research form factors make a better learning laboratory than one “ideal” device?
+experience:
+  - same human task across desk, mobile/docked, learn-to-build, and embodied sensing constraints
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [form-factor, input, power-thermal, display, sensing, mobility]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-QUARTET-001]
+figures: [FIG-CH04-001, FIG-CH04-002, FIG-CH04-003]
+concepts:
+  introduced:
+    - learning-laboratory
+    - research-form-factor
+    - student-14-5
+    - handheld-hybrid
+    - ds-xl-coder
+    - edge-io-wearables
+    - constraint-contrast
+    - physical-pending
+  required: [stability-contract]
+  related: [system, failure-domain, observation]
+waike:
+  mapped: true
+  courses: [GUNNCHOS_PRODUCT_LAB, HARDWARE_ENGINEERING]
+  labs_adjacent:
+    - lab_gpl_product_charter
+    - lab_failure_diagnosis
+    - lab_gpl_compat_matrix
+  note: "Adjacent WAIKE digital_rc labs only; no exact Quartet physical module; LAB-QUARTET-001 is publication-owned."
+claims:
+  registry: evidence/claim_registry.yaml
+  chapter_plan: publication/full31/chapters/ch04/CLAIM_PLAN.yaml
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_validation: DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT
+physical_claims: PHYSICAL_PENDING

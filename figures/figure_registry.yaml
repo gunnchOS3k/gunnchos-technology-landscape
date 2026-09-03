@@ -98,3 +98,21 @@ figures:
     status: conceptual
     chapter: CH01
     note: "Alias to CE-1 FIG-CE1-007."
+  - figure_id: FIG-CH04-001
+    title: "Device Quartet as a Learning Laboratory"
+    path: figures/ecosystem/fig-ch04-001-quartet-learning-lab.svg
+    accessibility: figures/accessibility/fig-ch04-001.yaml
+    status: conceptual
+    chapter: CH04
+  - figure_id: FIG-CH04-002
+    title: "Same Task Across Form Factors"
+    path: figures/ecosystem/fig-ch04-002-same-task-constraints.svg
+    accessibility: figures/accessibility/fig-ch04-002.yaml
+    status: illustrative
+    chapter: CH04
+  - figure_id: FIG-CH04-003
+    title: "Constraint Matrix (Conceptual)"
+    path: figures/ecosystem/fig-ch04-003-constraint-matrix.svg
+    accessibility: figures/accessibility/fig-ch04-003.yaml
+    status: conceptual
+    chapter: CH04

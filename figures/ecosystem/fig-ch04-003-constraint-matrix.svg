@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img" aria-label="Conceptual constraint matrix across four form factors and five constraint domains.">
+  <title>FIG-CH04-003: Constraint Matrix</title>
+  <desc>Table with rows Power class, Thermals class, I/O, Mobility, Accessibility and columns for four Quartet form factors. All numeric cells show PHYSICAL_PENDING. Conceptual educational table diagram.</desc>
+  <rect width="1100" height="480" fill="#ffffff"/>
+  <rect x="1" y="1" width="1098" height="478" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH04-003  Constraint Matrix (Conceptual)</text>
+  <text x="28" y="56" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual · Cells are role labels, not measured Quartet EVT values</text>
+
+  <!-- header row -->
+  <rect x="40" y="80" width="180" height="50" fill="#eeeeee" stroke="#111111" stroke-width="1.5"/>
+  <rect x="220" y="80" width="200" height="50" fill="#eeeeee" stroke="#111111" stroke-width="1.5"/>
+  <rect x="420" y="80" width="200" height="50" fill="#eeeeee" stroke="#111111" stroke-width="1.5"/>
+  <rect x="620" y="80" width="200" height="50" fill="#eeeeee" stroke="#111111" stroke-width="1.5"/>
+  <rect x="820" y="80" width="240" height="50" fill="#eeeeee" stroke="#111111" stroke-width="1.5"/>
+  <text x="130" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Domain</text>
+  <text x="320" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Student 14.53</text>
+  <text x="520" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Handheld Hybrid</text>
+  <text x="720" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">DS-XL Coder</text>
+  <text x="940" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Edge IO Wearables</text>
+
+  <!-- rows -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#222222">
+    <!-- Power -->
+    <rect x="40" y="130" width="180" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="220" y="130" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="420" y="130" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="620" y="130" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="820" y="130" width="240" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="130" y="162" text-anchor="middle" font-weight="bold">Power class</text>
+    <text x="320" y="162" text-anchor="middle">desk sustained*</text>
+    <text x="520" y="162" text-anchor="middle">battery + dock*</text>
+    <text x="720" y="162" text-anchor="middle">build-session*</text>
+    <text x="940" y="162" text-anchor="middle">body-budget*</text>
+
+    <!-- Thermals -->
+    <rect x="40" y="185" width="180" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="220" y="185" width="200" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="420" y="185" width="200" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="620" y="185" width="200" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="820" y="185" width="240" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <text x="130" y="217" text-anchor="middle" font-weight="bold">Thermals class</text>
+    <text x="320" y="217" text-anchor="middle">lap/desk heat*</text>
+    <text x="520" y="217" text-anchor="middle">pocket/hand heat*</text>
+    <text x="720" y="217" text-anchor="middle">sustained compile*</text>
+    <text x="940" y="217" text-anchor="middle">skin comfort*</text>
+
+    <!-- I/O -->
+    <rect x="40" y="240" width="180" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="220" y="240" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="420" y="240" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="620" y="240" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="820" y="240" width="240" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="130" y="272" text-anchor="middle" font-weight="bold">I/O</text>
+    <text x="320" y="272" text-anchor="middle">keyboard + pointer</text>
+    <text x="520" y="272" text-anchor="middle">touch ” dock I/O</text>
+    <text x="720" y="272" text-anchor="middle">wide edit surface</text>
+    <text x="940" y="272" text-anchor="middle">sensors / haptics</text>
+
+    <!-- Mobility -->
+    <rect x="40" y="295" width="180" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="220" y="295" width="200" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="420" y="295" width="200" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="620" y="295" width="200" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <rect x="820" y="295" width="240" height="55" fill="#f7f7f7" stroke="#111111" stroke-width="1.5"/>
+    <text x="130" y="327" text-anchor="middle" font-weight="bold">Mobility</text>
+    <text x="320" y="327" text-anchor="middle">stationary desk</text>
+    <text x="520" y="327" text-anchor="middle">carry + dock</text>
+    <text x="720" y="327" text-anchor="middle">semi-stationary lab</text>
+    <text x="940" y="327" text-anchor="middle">on-body movement</text>
+
+    <!-- A11y -->
+    <rect x="40" y="350" width="180" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="220" y="350" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="420" y="350" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="620" y="350" width="200" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <rect x="820" y="350" width="240" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="130" y="382" text-anchor="middle" font-weight="bold">Accessibility</text>
+    <text x="320" y="382" text-anchor="middle">full keyboard path</text>
+    <text x="520" y="382" text-anchor="middle">mode switches</text>
+    <text x="720" y="382" text-anchor="middle">large targets / text</text>
+    <text x="940" y="382" text-anchor="middle">non-visual cues</text>
+  </g>
+
+  <text x="550" y="440" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">* = qualitative class only · All Quartet numeric cells remain PHYSICAL_PENDING · Color is not required to read the table</text>
+</svg>
