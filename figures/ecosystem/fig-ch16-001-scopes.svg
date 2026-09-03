@@ -4,8 +4,8 @@
   <desc id="FIG-CH16-001-desc">Nested scopes labeled Device (local), LAN, and Internet. A request can stop inside LAN while Wi-Fi association remains. Conceptual teaching map; color is not the sole encoding.</desc>
   <rect width="800" height="420" fill="#ffffff"/>
   <rect x="1" y="1" width="798" height="418" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CH16-001  Local / LAN / Internet scopes</text>
-  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · inherit FIG-CE4-001 intent · color not sole encoding</text>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CH16-001  Local / LAN / Internet scopes</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual Â· inherit FIG-CE4-001 intent Â· color not sole encoding</text>
   <rect x="80" y="90" width="640" height="270" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
   <text x="100" y="118" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Internet scope</text>
   <text x="100" y="136" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">multi-network reachability toward a named service</text>

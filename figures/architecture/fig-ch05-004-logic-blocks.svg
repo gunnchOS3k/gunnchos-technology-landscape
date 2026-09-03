@@ -8,8 +8,8 @@
   </defs>
   <rect width="1040" height="340" fill="#ffffff"/>
   <rect x="1" y="1" width="1038" height="338" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-004  Boolean blocks compose larger behavior</text>
-  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual · Labels identify gate types (not color alone)</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-004  Boolean blocks compose larger behavior</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual Â· Labels identify gate types (not color alone)</text>
 
   <text x="80" y="120" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">A</text>
   <text x="80" y="170" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">B</text>
@@ -37,5 +37,5 @@
   <text x="850" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Output decision</text>
   <text x="850" y="202" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">(A AND B) OR (NOT C)</text>
 
-  <text x="28" y="310" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: inputs A/B/C ’ AND / NOT ’ OR ’ output. Example Boolean composition only.</text>
+  <text x="28" y="310" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: inputs A/B/C Â’ AND / NOT Â’ OR Â’ output. Example Boolean composition only.</text>
 </svg>

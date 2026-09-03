@@ -3,18 +3,18 @@
   <desc id="desc002">Two panels. Left: continuous analog waveform labeled continuous quantity. Right: digital high and low bands with an uncertain middle region and a stepped waveform. Status: Conceptual.</desc>
   <rect width="1040" height="360" fill="#ffffff"/>
   <rect x="1" y="1" width="1038" height="358" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-002  Analog continuous vs digital levels</text>
-  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual · Shape and labels encode meaning (not color alone)</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-002  Analog continuous vs digital levels</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual Â· Shape and labels encode meaning (not color alone)</text>
 
   <rect x="40" y="80" width="460" height="230" fill="#fafafa" stroke="#111111" stroke-width="2"/>
-  <text x="270" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">A · Analog (continuous)</text>
+  <text x="270" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">A Â· Analog (continuous)</text>
   <line x1="80" y1="260" x2="440" y2="260" stroke="#111111" stroke-width="1.5"/>
   <line x1="80" y1="140" x2="80" y2="260" stroke="#111111" stroke-width="1.5"/>
   <path d="M90,220 C130,120 170,280 220,170 C270,80 320,250 370,150 C400,110 420,180 430,160" fill="none" stroke="#111111" stroke-width="2.5"/>
   <text x="270" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">smooth variation over time</text>
 
   <rect x="540" y="80" width="460" height="230" fill="#fafafa" stroke="#111111" stroke-width="2"/>
-  <text x="770" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">B · Digital (discrete levels)</text>
+  <text x="770" y="108" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">B Â· Digital (discrete levels)</text>
   <line x1="580" y1="260" x2="940" y2="260" stroke="#111111" stroke-width="1.5"/>
   <line x1="580" y1="140" x2="580" y2="260" stroke="#111111" stroke-width="1.5"/>
   <rect x="590" y="130" width="390" height="36" fill="none" stroke="#111111" stroke-width="1.5" stroke-dasharray="4 3"/>

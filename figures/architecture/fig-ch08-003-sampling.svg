@@ -7,12 +7,12 @@
   <desc id="desc">Conceptual compare plate: continuous physical phenomenon versus discrete samples over time that become digital media buffers. Truth classification: conceptual.</desc>
   <rect width="1000" height="440" fill="#ffffff"/>
   <rect x="1" y="1" width="998" height="438" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CH08-003  Sampling: continuous ’ discrete</text>
-  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Conceptual · media are representations, not the world itself</text>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CH08-003  Sampling: continuous Â’ discrete</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Conceptual Â· media are representations, not the world itself</text>
   <rect x="40" y="90" width="420" height="280" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
   <text x="250" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">A Continuous phenomenon</text>
   <path d="M80,300 C140,120 200,340 260,180 C320,80 380,300 430,200" fill="none" stroke="#111111" stroke-width="2.5"/>
-  <text x="250" y="340" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">light · sound · motion · temperature</text>
+  <text x="250" y="340" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">light Â· sound Â· motion Â· temperature</text>
   <rect x="540" y="90" width="420" height="280" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
   <text x="750" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">B Discrete samples</text>
   <line x1="580" y1="300" x2="920" y2="300" stroke="#dddddd" stroke-width="2"/>
@@ -26,6 +26,6 @@
   <line x1="750" y1="228" x2="750" y2="300" stroke="#111111" stroke-width="1.5"/>
   <line x1="820" y1="168" x2="820" y2="300" stroke="#111111" stroke-width="1.5"/>
   <line x1="890" y1="248" x2="890" y2="300" stroke="#111111" stroke-width="1.5"/>
-  <text x="750" y="340" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">pixels · PCM samples · IMU readings</text>
+  <text x="750" y="340" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">pixels Â· PCM samples Â· IMU readings</text>
   <text x="24" y="410" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Reading order: A then B. Filled circles = samples at chosen times/levels. Encoding uses position and labels, not color alone.</text>
 </svg>

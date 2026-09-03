@@ -3,8 +3,8 @@
   <desc>Table with rows Power class, Thermals class, I/O, Mobility, Accessibility and columns for four Quartet form factors. All numeric cells show PHYSICAL_PENDING. Conceptual educational table diagram.</desc>
   <rect width="1100" height="480" fill="#ffffff"/>
   <rect x="1" y="1" width="1098" height="478" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH04-003  Constraint Matrix (Conceptual)</text>
-  <text x="28" y="56" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual · Cells are role labels, not measured Quartet EVT values</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH04-003  Constraint Matrix (Conceptual)</text>
+  <text x="28" y="56" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual Â· Cells are role labels, not measured Quartet EVT values</text>
 
   <!-- header row -->
   <rect x="40" y="80" width="180" height="50" fill="#eeeeee" stroke="#111111" stroke-width="1.5"/>
@@ -52,7 +52,7 @@
     <rect x="820" y="240" width="240" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
     <text x="130" y="272" text-anchor="middle" font-weight="bold">I/O</text>
     <text x="320" y="272" text-anchor="middle">keyboard + pointer</text>
-    <text x="520" y="272" text-anchor="middle">touch ” dock I/O</text>
+    <text x="520" y="272" text-anchor="middle">touch Â” dock I/O</text>
     <text x="720" y="272" text-anchor="middle">wide edit surface</text>
     <text x="940" y="272" text-anchor="middle">sensors / haptics</text>
 
@@ -81,5 +81,5 @@
     <text x="940" y="382" text-anchor="middle">non-visual cues</text>
   </g>
 
-  <text x="550" y="440" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">* = qualitative class only · All Quartet numeric cells remain PHYSICAL_PENDING · Color is not required to read the table</text>
+  <text x="550" y="440" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">* = qualitative class only Â· All Quartet numeric cells remain PHYSICAL_PENDING Â· Color is not required to read the table</text>
 </svg>

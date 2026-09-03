@@ -8,8 +8,8 @@
   </defs>
   <rect width="1040" height="360" fill="#ffffff"/>
   <rect x="1" y="1" width="1038" height="358" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-003  Clock edges sequence sampling</text>
-  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Illustrative · No invented GHz / period claims</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-003  Clock edges sequence sampling</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Illustrative Â· No invented GHz / period claims</text>
 
   <text x="40" y="110" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Clock</text>
   <path d="M120,130 L200,130 L200,90 L320,90 L320,130 L440,130 L440,90 L560,90 L560,130 L680,130 L680,90 L800,90 L800,130 L920,130" fill="none" stroke="#111111" stroke-width="2.5"/>
@@ -29,6 +29,6 @@
   <text x="610" y="270" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">low</text>
   <text x="820" y="178" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">high</text>
 
-  <text x="28" y="320" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: clock trace left’right; dashed markers; then data trace. Teaching sketch only.</text>
-  <text x="28" y="342" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Legend: solid = waveform · dashed vertical = rising-edge sample time</text>
+  <text x="28" y="320" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: clock trace leftÂ’right; dashed markers; then data trace. Teaching sketch only.</text>
+  <text x="28" y="342" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Legend: solid = waveform Â· dashed vertical = rising-edge sample time</text>
 </svg>

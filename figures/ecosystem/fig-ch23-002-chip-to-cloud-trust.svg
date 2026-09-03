@@ -9,8 +9,8 @@
       <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
     </marker>
   </defs>
-  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH23-002  Chip-to-cloud trust path with UX symptoms</text>
-  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · UX-linked surfaces (not a scare collage) · Color is not the sole encoding</text>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH23-002  Chip-to-cloud trust path with UX symptoms</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual Â· UX-linked surfaces (not a scare collage) Â· Color is not the sole encoding</text>
 
   <rect x="28" y="100" width="150" height="100" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
   <text x="103" y="135" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Chip / boot</text>
@@ -42,9 +42,9 @@
   <text x="828" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">recovery paths</text>
 
   <rect x="28" y="250" width="880" height="110" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
-  <text x="48" y="280" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Human UX symptoms (attach threats to flows  not a scare list)</text>
-  <text x="48" y="308" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Login succeeds · MFA / verify its you · Permission denied · Lockout · Connected but unusable recovery</text>
-  <text x="48" y="332" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Principles and symptoms only  no exploit recipes. Device Quartet measured secure-boot remains PHYSICAL_PENDING.</text>
+  <text x="48" y="280" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Human UX symptoms (attach threats to flows  not a scare list)</text>
+  <text x="48" y="308" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Login succeeds Â· MFA / verify its you Â· Permission denied Â· Lockout Â· Connected but unusable recovery</text>
+  <text x="48" y="332" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Principles and symptoms only  no exploit recipes. Device Quartet measured secure-boot remains PHYSICAL_PENDING.</text>
 
   <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Chip-to-cloud conditions that keep a session usable and trustworthy. Conceptual educational map.</text>
 </svg>

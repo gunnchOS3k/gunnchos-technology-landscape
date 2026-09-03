@@ -8,12 +8,12 @@
   </defs>
   <rect width="1100" height="460" fill="#ffffff"/>
   <rect x="1" y="1" width="1098" height="458" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH04-002  Same Task Across Form Factors</text>
-  <text x="28" y="56" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Illustrative teaching diagram · Constraint callouts are conceptual, not EVT measurements</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH04-002  Same Task Across Form Factors</text>
+  <text x="28" y="56" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Illustrative teaching diagram Â· Constraint callouts are conceptual, not EVT measurements</text>
 
   <rect x="420" y="190" width="260" height="80" fill="#f7f7f7" stroke="#111111" stroke-width="2"/>
   <text x="550" y="225" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">Same human task</text>
-  <text x="550" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">write · measure · sense · carry</text>
+  <text x="550" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">write Â· measure Â· sense Â· carry</text>
 
   <rect x="40" y="100" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2"/>
   <text x="150" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Student 14.53</text>
@@ -35,5 +35,5 @@
   <text x="950" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">sensing proximity / consent</text>
   <line x1="840" y1="355" x2="680" y2="250" stroke="#111111" stroke-width="2" marker-end="url(#arr404)"/>
 
-  <text x="550" y="430" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Goal identical · Constraint domains differ · PHYSICAL_PENDING for Quartet numeric claims</text>
+  <text x="550" y="430" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Goal identical Â· Constraint domains differ Â· PHYSICAL_PENDING for Quartet numeric claims</text>
 </svg>

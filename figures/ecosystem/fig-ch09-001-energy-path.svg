@@ -11,8 +11,8 @@
   </defs>
   <rect width="1040" height="420" fill="#ffffff"/>
   <rect x="1" y="1" width="1038" height="418" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH09-001  Energy Path with Throttle Feedback</text>
-  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram · Color is not the sole encoding</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH09-001  Energy Path with Throttle Feedback</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram Â· Color is not the sole encoding</text>
 
   <rect x="40" y="160" width="160" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
   <text x="120" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">1 Energy in</text>
@@ -28,13 +28,13 @@
 
   <rect x="460" y="160" width="160" height="90" fill="#ffffff" stroke="#111111" stroke-width="2"/>
   <text x="540" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">3 Loads</text>
-  <text x="540" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">CPU · display · radio</text>
+  <text x="540" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">CPU Â· display Â· radio</text>
 
   <line x1="620" y1="205" x2="670" y2="205" stroke="#111111" stroke-width="2" marker-end="url(#arr901)"/>
 
   <rect x="670" y="160" width="160" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
   <text x="750" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">4 Heat out</text>
-  <text x="750" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">case ’ room</text>
+  <text x="750" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">case Â’ room</text>
 
   <path d="M750,250 L750,320 L540,320 L540,250" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr901d)"/>
   <rect x="560" y="292" width="170" height="36" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>

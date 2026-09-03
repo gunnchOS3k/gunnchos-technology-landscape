@@ -8,8 +8,8 @@
   </defs>
   <rect width="1040" height="320" fill="#ffffff"/>
   <rect x="1" y="1" width="1038" height="318" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-001  Press ’ Logic ’ Effect</text>
-  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram · Color is not the sole encoding</text>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-001  Press Â’ Logic Â’ Effect</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram Â· Color is not the sole encoding</text>
 
   <rect x="30" y="120" width="150" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
   <text x="105" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">1 Press</text>
@@ -36,5 +36,5 @@
   <text x="898" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">5 Effect</text>
   <text x="898" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">person notices</text>
 
-  <text x="28" y="280" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: 1’2’3’4’5. Not measured Device Quartet telemetry (PHYSICAL_PENDING).</text>
+  <text x="28" y="280" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: 1Â’2Â’3Â’4Â’5. Not measured Device Quartet telemetry (PHYSICAL_PENDING).</text>
 </svg>
