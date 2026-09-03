@@ -2,5 +2,44 @@ chapter_id: CH25
 chapter_number: 25
 title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
 part: V
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - Who can complete this experience—and who is excluded—and what evidence do we actually have?
+experience:
+  - same-task peer divergence under device/network/assistive constraints
+  - works-for-me vs fails-for-them
+  - inclusive marketing claims without measured inclusion
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [digital-equity, exclusion-mechanism, constrained-completion-route, evidence-labeling, stability-contract, accessibility-path]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-CE06-001]
+figures:
+  - FIG-CH25-001
+  - FIG-CH25-002
+  - FIG-CH25-003
+concepts:
+  introduced: [digital-equity, exclusion-mechanism, measurable-inclusion-signals, constrained-completion-route, honest-evidence-labeling]
+  required: [stability-contract, observation-vs-inference, accessibility-path]
+  related: [qoe, evidence-hierarchy, emit-capstone, responsible-use]
+waike:
+  mapped: true
+  courses: []
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (ACCESSIBILITY_AND_LOW_COST.md, COMM_PD_ETHICS/lab_accessibility_comm, capstones/). No exact DIGITAL_EQUITY / CH25 WAIKE module. LAB-CE06-001 is publication-owned."
+claims:
+  plan: publication/full31/chapters/ch25/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-06/
+  adjacent: [publication/preproduction/ce-05/]
+bibliography_note: "Cite keys present in book/references/references.bib (including itu-facts-figures-2025 promoted for CH25). Do not invent census percentages or quote ITU table numbers without citing the specific table. Device Quartet equity benches remain PHYSICAL_PENDING."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; EMIT fixtures are not human validation"
+  - "CLM-CH25-004 Device Quartet multi-form-factor equity measurements PHYSICAL_PENDING"
+  - "Population / national ICT access numeric quotes require specific ITU Facts and Figures table citations before use"
+  - "No invented inclusion benchmarks, a11y certification claims, or marketing Device Quartet inclusivity claims"
+  - "proposed LAB-CH25-PAIR-001 not yet authored — use LAB-CE06-001 equity fields for Try/Build"
