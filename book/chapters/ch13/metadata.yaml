@@ -2,5 +2,43 @@ chapter_id: CH13
 chapter_number: 13
 title: "Files, Databases, and Data Lifecycles"
 part: III
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When I hit Save, what durable-state contracts and lifecycle stages must hold for the experience to stay honest?
+experience:
+  - save or close a tab; later missing content, old version, or cloud conflict
+  - file vs in-the-cloud expectations
+  - create → use → retain → share → delete/redact as a personal map
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [filesystem, durability, cache, database, sync, data-lifecycle]
+devices: [commodity-computer, commodity-phone, commodity-tablet]
+labs: [LAB-CMS-001, LAB-TRUST-001]
+figures:
+  - FIG-CH13-001
+  - FIG-CH13-002
+  - FIG-CH13-003
+  - FIG-CH13-004
+concepts:
+  introduced: [file, filesystem, database, durability, consistency-model, data-lifecycle, cache-vs-durable, deletion]
+  required: [stability-contract]
+  related: [ram, process, storage, privacy-boundary]
+waike:
+  mapped: true
+  courses: [GENERAL_IT, COMM_PD_ETHICS, CLOUD_DEVOPS]
+  note: "Adjacent digital_rc labs only (lab_storage, lab_backup, lab_consent_disclosure, lab_cloud_cost) at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; LAB-DATA-LIFE-001 remains publication-proposed only."
+claims:
+  packet: publication/full31/chapters/ch13/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+bibliography_note: "Cite keys present in book/references/references.bib (tanenbaum-bos, saltzer-kaashoek). CLM-CH13-003/004/005 remain SOURCE_NEEDED — omitted as cited claims; qualitative framing only. No invented textbook ISBNs."
+blockers:
+  - "CLM-CH13-003 databases vs files SOURCE_NEEDED — omitted as cited claim; qualitative responsibility split only; no invented DB textbook ISBN"
+  - "CLM-CH13-004 cloud sync conflicts SOURCE_NEEDED — reframed as observable conflict symptoms; not a sourced distributed-systems theorem"
+  - "CLM-CH13-005 deletion/replicas/GC SOURCE_NEEDED — qualitative uncertainty and privacy hygiene only; no recoverability cookbook"
+  - "CLM-CH13-006 Device Quartet storage endurance/performance PHYSICAL_PENDING"
+  - "Human reader validation deferred until full manuscript draft; Gate 3 evidence pending"
+  - "LAB-DATA-LIFE-001 remains proposed; Try it inherits LAB-CMS-001 Experience B and LAB-TRUST-001 lifecycle adjacency"
