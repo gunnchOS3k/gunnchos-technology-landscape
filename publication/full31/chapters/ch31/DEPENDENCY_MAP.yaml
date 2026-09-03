@@ -1,0 +1,40 @@
+schema_version: 1.0.0
+chapter_id: CH31
+chapter_number: 31
+title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
+part: VI
+requires:
+  - CE-1
+  - CE-2
+  - CE-3
+  - CE-4
+  - CE-5
+  - CE-6
+  - CH20
+  - CH21
+  - CH23
+  - CH24
+  - CH25
+  - CH27
+  - CH30
+reinforces:
+  - entire book model
+feeds: []
+gate_dependencies:
+  - CH02-REVIEW-R1 — required before final capstone prose tone
+human_dependencies:
+  - Gate 3 reader evidence
+  - capstone mentor review
+physical_dependencies:
+  - optional Device Quartet if learner chooses hardware claims
+ce_inheritance:
+  - CE-6 full spine (primary inherit)
+  - CE-1…CE-5 synthesis
+lab_inheritance:
+  - LAB-CE06-001 EMIT (FIXTURE_VALIDATED infrastructure; not human Gate 3 evidence)
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Link LAB-CE06-001 into CH31 lab opportunities after integrator merges agent-e; keep illustrative example firewall in drafting checklist

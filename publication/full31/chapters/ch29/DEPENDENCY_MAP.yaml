@@ -1,0 +1,36 @@
+schema_version: 1.0.0
+chapter_id: CH29
+chapter_number: 29
+title: Designing a Complete Technology Product
+part: VI
+requires:
+  - CH21
+  - CH23
+  - CH24
+  - CH26
+  - CH27
+reinforces:
+  - CH04
+  - CH10
+feeds:
+  - CH30
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3
+  - later product/editorial review
+physical_dependencies:
+  - Device Quartet / OS shipping claims
+ce_inheritance:
+  - Whole-book ecosystem model
+  - CE-5/CE-6 responsibility + contract
+lab_inheritance:
+  - Portfolio product one-pager from prior labs
+  - Device Quartet as learning laboratory only
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Draft non-marketing product one-pager template fields; keep PHYSICAL_PENDING badges mandatory in figures

@@ -1,0 +1,31 @@
+schema_version: 1.0.0
+chapter_id: CH30
+chapter_number: 30
+title: Career Maps and Portfolio Proof
+part: VI
+requires:
+  - CH26
+  - CH27
+  - CH29
+reinforces:
+  - all CE career maps
+feeds:
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3
+  - mentor/educator review of portfolio quality
+physical_dependencies: []
+ce_inheritance:
+  - CE CAREER_MAP.yaml patterns
+  - careers/ role_registry in publication repo
+lab_inheritance:
+  - All CE lab portfolio outputs
+  - WAIKE portfolio_evidence adjacency
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Draft portfolio index schema aligned to CE CAREER_MAP fields; forbid employment-guarantee language in checklist

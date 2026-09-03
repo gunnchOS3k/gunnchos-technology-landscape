@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+chapter_id: CH26
+chapter_number: 26
+title: Software Development and Version Control
+part: VI
+requires:
+  - CH02
+  - CH14
+reinforces: []
+feeds:
+  - CH27
+  - CH29
+  - CH30
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3
+physical_dependencies:
+  - DS-XL Coder if claimed
+ce_inheritance:
+  - Builder pathway habits from CE packages
+  - SOFTWARE_BUILDER adjacency
+lab_inheritance:
+  - WAIKE SOFTWARE_BUILDER labs (adjacent)
+  - publication repo as living example without marketing
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Pin official Git documentation URLs with verification status; scaffold LAB-CH26-GIT-001 fixture design

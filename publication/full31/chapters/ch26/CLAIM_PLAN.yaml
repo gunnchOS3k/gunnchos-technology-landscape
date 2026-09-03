@@ -1,0 +1,36 @@
+schema_version: 1.0.0
+chapter_id: CH26
+claims:
+- provisional_id: CLM-CH26-001
+  text: Git official documentation is the preferred primary reference for core VCS concepts in this chapter.
+  claim_class: general_technical
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "prohibited: invent git behavior"
+  wording_boundary: "approved: pin official git-scm docs URL/edition on verification | prohibited: invent git behavior"
+- provisional_id: CLM-CH26-002
+  text: "WAIKE SOFTWARE_BUILDER package is an adjacent builder competency neighbor, not a CH26 module ID."
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-WAIKE
+  overclaim_risk: "prohibited: invent lab_git_ch26 WAIKE ID"
+  wording_boundary: "approved: adjacent | prohibited: invent lab_git_ch26 WAIKE ID"
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    source_id: SRC-WAIKE
+- provisional_id: CLM-CH26-003
+  text: DS-XL Coder learn-to-build form factor remains PHYSICAL_PENDING for any measured local-build claims.
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: PHYSICAL_PENDING
+  citation_keys:
+  - SRC-HARDWARE
+  overclaim_risk: "prohibited: shipping coder-device marketing"
+  wording_boundary: "approved: learning lens | prohibited: shipping coder-device marketing"

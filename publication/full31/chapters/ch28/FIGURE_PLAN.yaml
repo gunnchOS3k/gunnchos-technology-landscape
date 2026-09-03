@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH28
+figures:
+- provisional_id: FIG-CH28-001
+  figure_type: comparison
+  pedagogical_purpose: Simulation/twin vs measured world
+  reader_should_notice: Simulation/twin vs measured world
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Simulation/twin vs measured world; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH28-002
+  figure_type: checklist
+  pedagogical_purpose: Reproducibility card fields
+  reader_should_notice: Reproducibility card fields
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Reproducibility card fields; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH28-003
+  figure_type: boundary
+  pedagogical_purpose: Validity bounds annulus
+  reader_should_notice: Validity bounds annulus
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Validity bounds annulus; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

@@ -1,0 +1,35 @@
+schema_version: 1.0.0
+chapter_id: CH22
+chapter_number: 22
+title: "Edge AI, Sensors, and Embodied Interaction"
+part: V
+requires:
+  - CH08
+  - CH09
+  - CH15
+  - CH21
+reinforces:
+  - CE-5
+feeds:
+  - CH23
+  - CH24
+  - CH29
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3 reader evidence pending
+physical_dependencies:
+  - Device Quartet Edge IO Wearables fabrication/measurements
+ce_inheritance:
+  - CE-5 local-vs-cloud / edge budget themes
+  - "CE-3/CH08 sensor adjacency (link, do not re-teach catalog)"
+lab_inheritance:
+  - LAB-TRUST-001 local path adjacency
+  - Device Quartet Edge IO Wearables as PHYSICAL_PENDING learning context
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Select primary edge-ML and sensing-privacy sources; keep figure FIG-CH22-003 blocked until PHYSICAL_PENDING resolved or downgraded to conceptual

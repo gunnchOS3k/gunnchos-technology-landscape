@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+chapter_id: CH21
+claims:
+- provisional_id: CLM-CH21-001
+  text: Accessible systems teaching can frame many AI features as data conditioning a model applied at inference to produce outputs.
+  claim_class: general_technical
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - russell_norvig_aima
+  - goodfellow_deep_learning
+  overclaim_risk: "prohibited: the model understands/knows"
+  wording_boundary: "approved: data→model→inference framing | prohibited: the model understands/knows"
+- provisional_id: CLM-CH21-002
+  text: NIST AI RMF 1.0 provides voluntary organizational guidance for managing AI risks without treating trust as a binary property of AI itself.
+  claim_class: standards_based
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - nist_ai_rmf_100_1
+  overclaim_risk: "prohibited: AI inherently trustworthy/untrustworthy"
+  wording_boundary: "approved: RMF risk-management language | prohibited: AI inherently trustworthy/untrustworthy"
+- provisional_id: CLM-CH21-003
+  text: "WAIKE digital_rc AI_ML_EDGE hosts file-backed labs on scoring/inference, edge budgets, and RAG redaction at audited SHA (adjacency only)."
+  claim_class: project_specific
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - SRC-WAIKE
+  overclaim_risk: "prohibited: invent WAIKE module LAB-TRUST-001 / CH21"
+  wording_boundary: "approved: adjacent course package exists | prohibited: invent WAIKE module LAB-TRUST-001 / CH21"
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    source_id: SRC-WAIKE
+- provisional_id: CLM-CH21-004
+  text: Publication LAB-TRUST-001 is a book-side lab design inheriting CE-5 themes; not a WAIKE course ID.
+  claim_class: publication_internal
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: PROJECT_EVIDENCE_NEEDED
+  citation_keys: []
+  overclaim_risk: "prohibited: exact WAIKE ID LAB-TRUST-001"
+  wording_boundary: "approved: publication-owned lab | prohibited: exact WAIKE ID LAB-TRUST-001"
+- provisional_id: CLM-CH21-005
+  text: Illustrative local-vs-cloud comparison tables are teaching aids unless a measurement bundle is attached.
+  claim_class: illustrative
+  evidence_required: Primary source citation or project evidence as status requires
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  status: ILLUSTRATIVE_ONLY
+  citation_keys: []
+  overclaim_risk: "prohibited: measured gunnchOS SKU latency without evidence"
+  wording_boundary: "approved: label illustrative | prohibited: measured gunnchOS SKU latency without evidence"

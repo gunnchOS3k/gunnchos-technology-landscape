@@ -1,0 +1,145 @@
+schema_version: 1.0.0
+chapter_id: CH23
+teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+concepts:
+- concept_id: CX-CH23-ATTACKSURFACE
+  canonical_term: Attack surface (UX-linked)
+  plain_language_definition: Places misuse can enter through the same flows people use.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH23-IDENTITY
+  canonical_term: Identity
+  plain_language_definition: A claim about who/what an actor is.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH23-AUTHN
+  canonical_term: Authentication
+  plain_language_definition: Checking an identity claim is believable enough for the risk.
+  depends_on:
+  - CX-CH23-IDENTITY
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH23-AUTHZ
+  canonical_term: Authorization
+  plain_language_definition: Deciding what an authenticated actor may do.
+  depends_on:
+  - CX-CH23-AUTHN
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH23-CRYPTO
+  canonical_term: Encryption goals and limits
+  plain_language_definition: Unreadability without keys; endpoints still matter.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH23-CHIPCLOUD
+  canonical_term: Chip-to-cloud trust path
+  plain_language_definition: Boot/firmware/OS/app/network/cloud controls as one chain of conditions.
+  depends_on:
+  - CX-CH23-ATTACKSURFACE
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH23-PRINCIPLES
+  canonical_term: Protection design principles
+  plain_language_definition: "Least privilege, fail-safe defaults, psychological acceptability, etc."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+edges:
+- from: CX-CH23-IDENTITY
+  to: CX-CH23-AUTHN
+  relation: verified_by
+- from: CX-CH23-AUTHN
+  to: CX-CH23-AUTHZ
+  relation: precedes
+- from: CX-CH23-AUTHZ
+  to: CX-CH23-ATTACKSURFACE
+  relation: mediates
+- from: CX-CH23-CRYPTO
+  to: CX-CH23-CHIPCLOUD
+  relation: supports
+- from: CX-CH23-PRINCIPLES
+  to: CX-CH23-CHIPCLOUD
+  relation: guides
+inherits_from:
+- CE-5 attack-surface / identity / crypto-goal slices
+- CH11 firmware/trust adjacency (link)

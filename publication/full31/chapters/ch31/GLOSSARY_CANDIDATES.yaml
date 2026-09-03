@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+chapter_id: CH31
+glossary_candidates:
+- term_id: GL-CH31-EMIT
+  preferred_term: EMIT spine
+  plain_language_definition: "Explain, Measure, Improve, Teach as required capstone cycle."
+  introduced_in: CH31
+  related_concepts:
+  - CX-CH31-EMIT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH31-CONTRACT
+  preferred_term: Stability Contract (capstone use)
+  plain_language_definition: Concurrent conditions that must hold for experience success.
+  introduced_in: CH31
+  related_concepts:
+  - CX-CH31-CONTRACT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH31-TEACHBACK
+  preferred_term: Teach-back
+  plain_language_definition: Explaining the ecosystem so another person can use the model.
+  introduced_in: CH31
+  related_concepts:
+  - CX-CH31-TEACHBACK
+  - CX-CH31-EMIT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH31-LIMITS
+  preferred_term: Evidence limitations
+  plain_language_definition: What the packet does not prove.
+  introduced_in: CH31
+  related_concepts:
+  - CX-CH31-LIMITS
+  - CX-CH31-EMIT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH31-FIXTURE
+  preferred_term: Fixture-validated infrastructure
+  plain_language_definition: Deterministic lab validation ≠ human reader validation.
+  introduced_in: CH31
+  related_concepts:
+  - CX-CH31-FIXTURE
+  - CX-CH31-LIMITS
+  status: candidate
+  promotion: pending_integrator

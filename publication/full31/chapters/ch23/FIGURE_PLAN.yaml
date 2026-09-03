@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH23
+figures:
+- provisional_id: FIG-CH23-001
+  figure_type: ladder
+  pedagogical_purpose: Identity → authentication → authorization
+  reader_should_notice: Identity → authentication → authorization
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Identity → authentication → authorization; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH23-002
+  figure_type: ecosystem
+  pedagogical_purpose: Chip-to-cloud trust path with UX symptoms
+  reader_should_notice: Chip-to-cloud trust path with UX symptoms
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Chip-to-cloud trust path with UX symptoms; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn
+- provisional_id: FIG-CH23-003
+  figure_type: boundary
+  pedagogical_purpose: Encryption transit/at-rest/endpoint limits
+  reader_should_notice: Encryption transit/at-rest/endpoint limits
+  data_or_evidence_source: educational original / inherited CE pattern
+  truth_classification: conceptual
+  expected_geometry: TBD layout
+  accessibility_description_requirement: Describe Encryption transit/at-rest/endpoint limits; color never sole cue.
+  color_independent_encoding: Shape + label; color never sole cue.
+  dependencies: []
+  edition_scope: full_book
+  production_status: not_drawn

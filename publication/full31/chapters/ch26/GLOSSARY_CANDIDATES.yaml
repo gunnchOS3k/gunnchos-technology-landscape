@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+chapter_id: CH26
+glossary_candidates:
+- term_id: GL-CH26-VCS
+  preferred_term: Version control
+  plain_language_definition: Recording changes so history can be inspected and recovered.
+  introduced_in: CH26
+  related_concepts:
+  - CX-CH26-VCS
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH26-COMMIT
+  preferred_term: Commit
+  plain_language_definition: A snapshot of change with message and identity metadata.
+  introduced_in: CH26
+  related_concepts:
+  - CX-CH26-COMMIT
+  - CX-CH26-VCS
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH26-BRANCH
+  preferred_term: Branch / integration
+  plain_language_definition: Parallel lines of work later combined carefully.
+  introduced_in: CH26
+  related_concepts:
+  - CX-CH26-BRANCH
+  - CX-CH26-VCS
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH26-REVIEW
+  preferred_term: Code review
+  plain_language_definition: Human inspection of diffs before integration.
+  introduced_in: CH26
+  related_concepts:
+  - CX-CH26-REVIEW
+  - CX-CH26-COMMIT
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH26-SECRETS
+  preferred_term: Secrets hygiene
+  plain_language_definition: Credentials/tokens must not enter history.
+  introduced_in: CH26
+  related_concepts:
+  - CX-CH26-SECRETS
+  - CX-CH26-VCS
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH26-LOOP
+  preferred_term: Build-test loop
+  plain_language_definition: Change → verify → evidence before claiming done.
+  introduced_in: CH26
+  related_concepts:
+  - CX-CH26-LOOP
+  - CX-CH26-COMMIT
+  status: candidate
+  promotion: pending_integrator

@@ -1,0 +1,33 @@
+schema_version: 1.0.0
+chapter_id: CH24
+chapter_number: 24
+title: "Privacy, Identity, Safety, Accessibility, and Ethics"
+part: V
+requires:
+  - CH21
+  - CH23
+  - CE-5
+reinforces:
+  - CE-6 a11y/equity seeds
+feeds:
+  - CH25
+  - CH30
+  - CH31
+gate_dependencies:
+  - CH02-REVIEW-R1
+human_dependencies:
+  - Gate 3 reader evidence pending
+  - later a11y human review
+physical_dependencies: []
+ce_inheritance:
+  - CE-5 privacy/lifecycle/responsible-use
+  - CE-6 accessibility-as-contract-condition
+lab_inheritance:
+  - LAB-TRUST-001 consent/trust card
+  - COMM_PD_ETHICS adjacency
+pathway_notes:
+  ai_pathway: CH01→CH02→CH07→CH14→CH15→CH21→CH22→CH23→CH27
+  cybersecurity_pathway: CH01→CH02→CH11→CH12→CH14→CH16→CH23→CH24→CH27
+  research_pathway: CH01→CH02→CH03→domain→CH27→CH28→CH31
+  software_pathway: CH01→CH02→CH06→CH07→CH12→CH14→CH15→CH26→CH27
+next_automatable_action: Wire both WCAG dated keys into CH24 SOURCE_NEEDS and claim plan; never collapse dates on merge

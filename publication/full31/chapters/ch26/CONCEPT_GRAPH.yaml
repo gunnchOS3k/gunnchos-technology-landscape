@@ -1,0 +1,130 @@
+schema_version: 1.0.0
+chapter_id: CH26
+teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+concepts:
+- concept_id: CX-CH26-VCS
+  canonical_term: Version control
+  plain_language_definition: Recording changes so history can be inspected and recovered.
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH26-COMMIT
+  canonical_term: Commit
+  plain_language_definition: A snapshot of change with message and identity metadata.
+  depends_on:
+  - CX-CH26-VCS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH26-BRANCH
+  canonical_term: Branch / integration
+  plain_language_definition: Parallel lines of work later combined carefully.
+  depends_on:
+  - CX-CH26-VCS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH26-REVIEW
+  canonical_term: Code review
+  plain_language_definition: Human inspection of diffs before integration.
+  depends_on:
+  - CX-CH26-COMMIT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH26-SECRETS
+  canonical_term: Secrets hygiene
+  plain_language_definition: Credentials/tokens must not enter history.
+  depends_on:
+  - CX-CH26-VCS
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+- concept_id: CX-CH26-LOOP
+  canonical_term: Build-test loop
+  plain_language_definition: Change → verify → evidence before claiming done.
+  depends_on:
+  - CX-CH26-COMMIT
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: false
+  requires_figure: false
+  requires_lab: false
+edges:
+- from: CX-CH26-VCS
+  to: CX-CH26-COMMIT
+  relation: records
+- from: CX-CH26-COMMIT
+  to: CX-CH26-REVIEW
+  relation: enables
+- from: CX-CH26-VCS
+  to: CX-CH26-BRANCH
+  relation: structures
+- from: CX-CH26-VCS
+  to: CX-CH26-SECRETS
+  relation: must_protect
+- from: CX-CH26-COMMIT
+  to: CX-CH26-LOOP
+  relation: verified_by
+inherits_from:
+- Builder pathway habits from CE packages
+- SOFTWARE_BUILDER adjacency

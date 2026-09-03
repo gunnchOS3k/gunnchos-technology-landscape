@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+chapter_id: CH28
+glossary_candidates:
+- term_id: GL-CH28-SIM
+  preferred_term: Simulation
+  plain_language_definition: A computational stand-in for selected real behaviors.
+  introduced_in: CH28
+  related_concepts:
+  - CX-CH28-SIM
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH28-TWIN
+  preferred_term: Digital twin (teaching sense)
+  plain_language_definition: A maintained model paired to a real or planned system with update/validity rules.
+  introduced_in: CH28
+  related_concepts:
+  - CX-CH28-TWIN
+  - CX-CH28-SIM
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH28-REPRO
+  preferred_term: Reproducible research
+  plain_language_definition: Others can regenerate results from declared inputs and environment.
+  introduced_in: CH28
+  related_concepts:
+  - CX-CH28-REPRO
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH28-BOUNDS
+  preferred_term: Validity bounds
+  plain_language_definition: Where the model is trusted—and where it is not.
+  introduced_in: CH28
+  related_concepts:
+  - CX-CH28-BOUNDS
+  - CX-CH28-SIM
+  status: candidate
+  promotion: pending_integrator
+- term_id: GL-CH28-FIXTURE
+  preferred_term: Fixture
+  plain_language_definition: Deterministic teaching/measurement stand-in when live systems vary.
+  introduced_in: CH28
+  related_concepts:
+  - CX-CH28-FIXTURE
+  - CX-CH28-REPRO
+  status: candidate
+  promotion: pending_integrator
