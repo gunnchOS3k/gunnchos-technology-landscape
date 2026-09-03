@@ -7,3 +7,13 @@ labs:
     extension_routes: [android]
     no_specialized_hardware: true
     status: draft
+  - lab_id: LAB-SYS-001
+    title: Name the System Behind a Familiar “Open”
+    chapter: CH01
+    path: labs/LAB-SYS-001
+    baseline_routes: [browser, local]
+    extension_routes: [fixture_offline]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml

@@ -1,0 +1,116 @@
+# LAB-SYS-001 — systems observation (CE-1 / CH01)
+# Distinct from LAB-TAP-001 (tap-to-response timing): this lab teaches
+# chrome-visible vs content-usable readiness, layers, and failure domains.
+lab_id: LAB-SYS-001
+title: Name the System Behind a Familiar “Open”
+chapter: CH01
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "When I open something I already use, what becomes visible first, what becomes usable later, and which hidden parts might still be working?"
+experience: "App chrome can appear before content is usable; online and offline conditions change readiness without proving a single root cause."
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  browser: labs/LAB-SYS-001/browser/index.html
+  local: labs/LAB-SYS-001/local/observation_sheet.py
+  fixture_offline: labs/LAB-SYS-001/fixtures/readiness_demo.html
+  scenario_card: labs/LAB-SYS-001/fixtures/scenario_card.md
+fixture_available: true
+evidence_artifacts:
+  - readiness_observation_table
+  - ecosystem_map
+  - observation_vs_inference_paragraph
+  - scrubbed_notes
+privacy_boundary:
+  - Do not capture passwords, tokens, private chats, photos of ID documents, or classmate PII.
+  - Prefer school/public demo pages or the supplied fixture in shared spaces.
+  - Scrub personal identifiers before saving portfolio evidence.
+safety_boundary:
+  - No packet capture of others’ traffic.
+  - Do not disable security features required for the learner’s safety context.
+  - Stop if airplane-mode or offline trials would put the learner at risk.
+  - No Device Quartet hardware, root, or jailbreak required.
+accessibility_notes:
+  - Accept keyboard, switch, and voice paths as first-class “open” actions.
+  - Allow audio description of on-screen changes instead of screenshots.
+  - Provide large-print / structured-text observation sheet (local route).
+  - Do not require color vision; readiness states use text labels, not color alone.
+  - Fixture and browser demos expose aria-live status for chrome vs content readiness.
+observation_inference_boundary:
+  observation_examples:
+    - Chrome appeared at wall-clock time T1
+    - Content usable or failed at wall-clock time T2
+    - Airplane mode / offline toggle was on or off
+    - Connectivity icon text showed connected or offline
+  inference_until_more_evidence:
+    - Network is bad
+    - Storage is dying
+    - DNS failed
+    - Server is down
+portfolio_output:
+  - portfolio/README.md
+  - portfolio/readiness_observation_table.csv
+  - portfolio/ecosystem_map.md
+  - portfolio/observation_vs_inference.md
+  - portfolio/teach_back.md
+  - portfolio/evidence/NOTE.md
+prerequisites:
+  concepts: [system, dependency, failure-domain, observation]
+  safety:
+    - Do not capture secrets, passwords, tokens, or private messages in screenshots or logs.
+    - Prefer the local fixture or public demo pages; avoid production accounts with sensitive data.
+  time_minutes: 45
+  equipment: []
+  software: [modern web browser, Python 3 optional for local sheet helper]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict whether chrome or content will become ready first.
+    - Complete Explorer baseline on browser, local sheet, or fixture route.
+    - Optionally compare online vs offline (Operator).
+    - Capture evidence artifacts and separate observation from inference.
+  rollback:
+    - Close the demo page/app.
+    - Delete any accidental sensitive captures.
+    - Re-enable network/safety features if temporarily toggled for the exercise.
+evidence:
+  required_artifacts:
+    - readiness observation table
+    - labeled ecosystem map
+    - observation vs inference paragraph
+    - scrubbed notes
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - wall-clock granularity
+    - personal-app variability
+    - fixture delays are illustrative, not device measurements
+  uncertainty:
+    - one run is not a benchmark
+    - chrome-before-content on a fixture does not prove a specific app’s architecture
+portfolio:
+  outputs:
+    - README.md
+    - readiness observation table
+    - ecosystem map
+    - observation vs inference
+    - evidence note
+    - teach-back paragraph
+teach_back:
+  required: true
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+not_a_duplicate_of: LAB-TAP-001
+distinction_from_lab_tap_001: >
+  LAB-TAP-001 times a tap-to-response path. LAB-SYS-001 observes system
+  readiness (chrome visible vs content usable), layers/dependencies, and
+  failure-domain guesses without requiring tap-path instrumentation.

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LAB-SYS-001 Offline Fixture — Readiness Demo</title>
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --ink: #1a1a1a;
+      --chrome: #2c3d4f;
+      --chrome-text: #f7f4ee;
+      --panel: #fffdf8;
+      --border: #1a1a1a;
+      --focus: #0b5fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background:
+        radial-gradient(ellipse at top left, #e7efe8 0%, transparent 50%),
+        linear-gradient(160deg, #f3efe6 0%, #e4ddd0 100%);
+      color: var(--ink);
+      line-height: 1.45;
+      min-height: 100vh;
+    }
+    .page { max-width: 44rem; margin: 0 auto; padding: 1.25rem; }
+    h1 { font-size: 1.45rem; margin: 0 0 0.5rem; }
+    .note { font-size: 0.95rem; margin-bottom: 1rem; }
+    .controls { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    button, label.toggle {
+      font: inherit;
+      font-size: 1rem;
+      padding: 0.55rem 0.9rem;
+      border: 2px solid var(--border);
+      background: var(--panel);
+      cursor: pointer;
+    }
+    button:focus-visible, label.toggle:focus-within, #openBtn:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    label.toggle { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .app-shell {
+      border: 2px solid var(--border);
+      background: var(--panel);
+      min-height: 16rem;
+    }
+    .chrome {
+      background: var(--chrome);
+      color: var(--chrome-text);
+      padding: 0.65rem 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      opacity: 0;
+      transition: opacity 0.15s linear;
+    }
+    .chrome.visible { opacity: 1; }
+    .chrome strong { font-weight: 700; }
+    .content {
+      padding: 1rem 0.85rem 1.25rem;
+      min-height: 10rem;
+    }
+    .status-block {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: 2px solid var(--border);
+      background: var(--panel);
+    }
+    table { border-collapse: collapse; width: 100%; margin-top: 0.75rem; }
+    th, td { border: 1px solid var(--border); padding: 0.4rem; text-align: left; font-size: 0.95rem; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>LAB-SYS-001 — Offline fixture (illustrative)</h1>
+    <p class="note">
+      Systems readiness demo: observe <strong>chrome visible</strong> versus
+      <strong>content usable</strong>. This is not LAB-TAP-001 tap timing.
+      Do not enter secrets. Labeled <strong>fixture / illustrative</strong>. Not measured device evidence. Works from disk offline after open.
+    </p>
+
+    <div class="controls">
+      <button id="openBtn" type="button">Open familiar experience (demo)</button>
+      <label class="toggle">
+        <input id="offlineToggle" type="checkbox" />
+        Simulate offline
+      </label>
+      <button id="resetBtn" type="button">Reset</button>
+    </div>
+
+    <section class="app-shell" aria-label="Demo application shell">
+      <div id="chrome" class="chrome" aria-hidden="true">
+        <strong id="chromeTitle">Demo Notes</strong>
+        <span id="connLabel">Connectivity: online</span>
+      </div>
+      <div class="content">
+        <p id="bodyText">Press <strong>Open</strong> and watch what appears first.</p>
+        <ul id="bodyList" hidden>
+          <li>Layer: local UI chrome</li>
+          <li>Layer: content / data dependency</li>
+          <li>Optional remote branch (when online)</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="status-block">
+      <p id="liveStatus" aria-live="polite" aria-atomic="true">Ready. Chrome not visible yet.</p>
+      <p class="sr-only" id="readinessAnnouncement" aria-live="assertive"></p>
+      <table>
+        <caption class="sr-only">Observation markers</caption>
+        <thead>
+          <tr><th>Marker</th><th>ms from open click</th><th>Class</th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+  <script>
+    const chromeEl = document.getElementById('chrome');
+    const bodyText = document.getElementById('bodyText');
+    const bodyList = document.getElementById('bodyList');
+    const liveStatus = document.getElementById('liveStatus');
+    const announce = document.getElementById('readinessAnnouncement');
+    const rows = document.getElementById('rows');
+    const offlineToggle = document.getElementById('offlineToggle');
+    const connLabel = document.getElementById('connLabel');
+    let t0 = 0;
+    let timer = null;
+
+    function clearRows() { rows.innerHTML = ''; }
+    function mark(label, klass) {
+      const ms = (performance.now() - t0).toFixed(0);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${label}</td><td>${ms}</td><td>${klass}</td>`;
+      rows.appendChild(tr);
+    }
+    function setConn() {
+      const off = offlineToggle.checked;
+      connLabel.textContent = off ? 'Connectivity: offline (simulated)' : 'Connectivity: online';
+    }
+    function reset() {
+      if (timer) clearTimeout(timer);
+      chromeEl.classList.remove('visible');
+      chromeEl.setAttribute('aria-hidden', 'true');
+      bodyList.hidden = true;
+      bodyText.textContent = 'Press Open and watch what appears first.';
+      liveStatus.textContent = 'Ready. Chrome not visible yet.';
+      announce.textContent = '';
+      clearRows();
+      setConn();
+    }
+    document.getElementById('resetBtn').addEventListener('click', reset);
+    offlineToggle.addEventListener('change', () => { setConn(); });
+    document.getElementById('openBtn').addEventListener('click', () => {
+      reset();
+      t0 = performance.now();
+      const offline = offlineToggle.checked;
+      // Chrome appears first (local shell)
+      requestAnimationFrame(() => {
+        chromeEl.classList.add('visible');
+        chromeEl.setAttribute('aria-hidden', 'false');
+        mark('chrome visible', 'observation');
+        liveStatus.textContent = 'Chrome visible. Content not usable yet (busy).';
+        announce.textContent = 'Chrome visible. Content busy.';
+        bodyText.textContent = offline
+          ? 'Loading content… (offline simulation)'
+          : 'Loading content…';
+        // Content becomes usable later, or fails offline
+        timer = setTimeout(() => {
+          if (offline) {
+            bodyText.textContent = 'Content failed while chrome remained visible. Failure domain is inference until more evidence.';
+            mark('content failed (offline path)', 'observation');
+            mark('guess: network or remote dependency', 'inference');
+            liveStatus.textContent = 'Content failed. Chrome still visible. Label causes as inference.';
+            announce.textContent = 'Content failed. Chrome still visible.';
+          } else {
+            bodyText.textContent = 'Content usable: checklist and layer labels below.';
+            bodyList.hidden = false;
+            mark('content usable', 'observation');
+            liveStatus.textContent = 'Content usable. Record chrome-visible vs content-usable gap.';
+            announce.textContent = 'Content usable.';
+          }
+        }, offline ? 900 : 700);
+      });
+    });
+    setConn();
+  </script>
+</body>
+</html>

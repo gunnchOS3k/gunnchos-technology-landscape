@@ -1,0 +1,4 @@
+condition,chrome_visible,content_usable_or_failed,notes,observation_or_inference
+online_fixture,yes_at_~0ms,usable_after_delay,chrome before content,observation
+offline_fixture,yes_at_~0ms,failed_while_chrome_visible,offline toggle on,observation
+failure_domain_guess,n/a,n/a,possible remote dependency,inference
