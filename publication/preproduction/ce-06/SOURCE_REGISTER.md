@@ -130,3 +130,7 @@ Peer-reviewed QoE empirical papers are **deferred** (SOURCE_NEEDED for later ful
 - Peer-reviewed empirical QoE web-browsing / MOS studies for CH20 depth  
 - Specific carrier SLA datasets  
 - Any gunnchOS measured field QoE campaign (none claimed)
+
+## Project evidence closure (2026-09-03)
+
+See `evidence/PROJECT_EVIDENCE_CLOSURE_B.md` for accepted-main SHA citations resolving prior `PROJECT_EVIDENCE_NEEDED` claims in this package.

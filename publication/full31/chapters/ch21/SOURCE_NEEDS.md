@@ -35,3 +35,7 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## Project evidence closure (2026-09-03)
+
+- `CLM-CH21-004` resolved via `labs/LAB-TRUST-001/` @ `18ec58005529bd16d680ee7419e4dea13150e9c6` (publication-side; not a WAIKE module ID).

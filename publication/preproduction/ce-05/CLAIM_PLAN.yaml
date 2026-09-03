@@ -145,8 +145,18 @@ claims:
   claim_class: publication_internal
   evidence_required: Project/lab evidence bundle
   preferred_source_type: publication-internal
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys: []
   overclaim_risk: '[''Exact WAIKE module LAB-TRUST-001'']'
   wording_boundary: 'approved: LAB-TRUST-001 is proposed for the book; map to WAIKE
     by adjacency only. | prohibited: Exact WAIKE module LAB-TRUST-001'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-TRUST-001/lab.yaml
+    - labs/LAB-TRUST-001/STATUS.md
+    waike_non_map:
+      repository: gunnchOS3k/waike-research-ops
+      commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+      note: No LAB-TRUST-001 course/module ID in curriculum/catalog.yaml or curriculum/digital_rc/

@@ -113,3 +113,7 @@ Prior publication audit SHA for WAIKE (`8eb2827…`) is an ancestor of current W
 - Do **not** silently copy into `book/references/references.bib` until conflict check.  
 - Reuse existing global keys (`rfc791`, `rfc9293`) where identical.  
 - Keep chapter-local keys in `references.local.bib` for CE-4-only items.
+
+## Project evidence closure (2026-09-03)
+
+See `evidence/PROJECT_EVIDENCE_CLOSURE_B.md` for accepted-main SHA citations resolving prior `PROJECT_EVIDENCE_NEEDED` claims in this package.

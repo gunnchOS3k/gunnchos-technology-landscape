@@ -35,3 +35,7 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## Project evidence closure (2026-09-03)
+
+- `CLM-CH31-001` resolved via `labs/LAB-CE06-001/` @ `18ec58005529bd16d680ee7419e4dea13150e9c6` (EMIT fixtures on accepted main; not Gate 3 PASS).
