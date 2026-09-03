@@ -1,0 +1,18 @@
+figure_id: FIG-CH08-001
+title: "World ↔ sensing ↔ processing ↔ presentation"
+caption: "World ↔ sensing ↔ processing ↔ presentation ↔ perception. Conceptual educational map."
+alt_text: "Left-to-right conceptual map from physical world through capture and processing to display/speakers and human perception."
+text_equivalent: |
+  Reading order: (1) Physical world; (2) Capture (cameras, mics, sensors);
+  (3) Process (ISP/codecs/apps/compositor/GPU); (4) Present (frames, speakers);
+  (5) Human perception. Truth: conceptual. Color is not the sole encoding.
+reading_order:
+  - "1 Physical world"
+  - "2 Capture"
+  - "3 Process"
+  - "4 Present"
+  - "5 Human perception"
+source: figures/ecosystem/fig-ch08-001-media-sensorium.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

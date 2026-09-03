@@ -1,0 +1,21 @@
+figure_id: FIG-CH28-002
+title: "Reproducibility checklist path"
+caption: "Reproducibility checklist path. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Reproducibility checklist path. Reading order: Inputs pinned; Code/version; Environment; Outputs; Audit trail."
+text_equivalent: |
+  Reproducibility checklist path. Nodes in reading order: Inputs pinned; Code/version; Environment; Outputs; Audit trail. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Inputs pinned
+- Code/version
+- Environment
+- Outputs
+- Audit trail
+source: figures/full31/ch28/fig-ch28-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

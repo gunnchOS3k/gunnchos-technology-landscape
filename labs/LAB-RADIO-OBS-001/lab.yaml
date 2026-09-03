@@ -1,0 +1,115 @@
+# LAB-RADIO-OBS-001 — Observe Radio Conditions Without Transmitting (CH18)
+# Observation-only radio-condition literacy. No TX labs. No invented dB gains.
+lab_id: LAB-RADIO-OBS-001
+title: Observe Radio Conditions Without Transmitting
+chapter: CH18
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "When I change one geometric condition relative to a wireless path I already use, what experience changes can I observe—and what RF claims must stay inference or PHYSICAL_PENDING?"
+experience: "Standing by a window, rotating a phone, or moving one room changes smoothness or stalls while connection icons may stay lit."
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  observation_sheet: labs/LAB-RADIO-OBS-001/fixtures/observation_worksheet.md
+  fixture_offline: labs/LAB-RADIO-OBS-001/fixtures/radio_condition_card.md
+  scenario_card: labs/LAB-RADIO-OBS-001/fixtures/scenario_card.md
+fixture_available: true
+evidence_artifacts:
+  - observation_vs_inference_table
+  - radio_condition_diagram
+  - scrubbed_notes
+  - teach_back
+privacy_boundary:
+  - Do not capture passwords, tokens, private message bodies, or classmate PII.
+  - Scrub SSIDs that reveal home addresses before portfolio share.
+  - Prefer fixture route on public/untrusted networks.
+safety_boundary:
+  - Legal end-user spectrum use only; no unauthorized transmission.
+  - No jamming, amplifiers, homemade transmitters, or improvised external antennas.
+  - No spectrum sniffing on networks you do not administer.
+  - No climbing for signal; no opening sealed devices; no Device Quartet RF campaign required.
+  - Stop if any step requires tools beyond ordinary device use and written observation.
+accessibility_notes:
+  - Require text status (usable / stalled / icon-only), not color-only bars.
+  - Accept verbal/audio description instead of photos.
+  - Fixture route mandatory when live wireless is unavailable or inequitable.
+observation_inference_boundary:
+  observation_examples:
+    - Icon stayed lit while video stalled
+    - Experience improved near a window
+    - Orientation change correlated with feel
+    - Coarse wall-clock stall duration
+  inference_until_more_evidence:
+    - Exact dBm path loss
+    - Antenna gain or sensitivity numbers
+    - Named interferer without authorization/evidence
+    - Quartet EVT RF results
+portfolio_output:
+  - portfolio/README.md
+  - portfolio/observation_vs_inference.md
+  - portfolio/radio_condition_diagram.md
+  - portfolio/teach_back.md
+  - portfolio/evidence/NOTE.md
+prerequisites:
+  concepts: [spectrum, antenna, radio-condition, observation]
+  safety:
+    - Observation and ordinary end-user device use only.
+    - Prefer offline fixture if no safe commodity path is available.
+  time_minutes: 40
+  equipment: []
+  software: [text editor or notebook]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict whether one geometry change will alter feel, icons, or both.
+    - Complete Explorer baseline with worksheet or offline fixture.
+    - Separate observation from inference; no invented antenna gains.
+    - Mark Quartet/project RF claims PHYSICAL_PENDING.
+  rollback:
+    - Return device to ordinary use.
+    - Delete accidental sensitive captures.
+evidence:
+  required_artifacts:
+    - observation vs inference table
+    - labeled radio-condition diagram
+    - teach-back paragraph
+truth_classification:
+  commodity_observation: learner_local_evidence
+  fixture_rows: ILLUSTRATIVE_FIXTURE
+  quartet_rf: PHYSICAL_PENDING
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inherits:
+  - LAB-PKT-001
+waike_adjacency:
+  - lab_fspl_budget
+  - lab_delay_spread
+  - WIRELESS_6G
+
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - wall-clock granularity
+    - opaque vendor radio stacks
+    - multipath and congestion without instrumentation
+  uncertainty:
+    - fixture rows are illustrative
+    - learner observations are device-local, not product RF specs
+    - Quartet / project RF remains PHYSICAL_PENDING
+portfolio:
+  outputs:
+    - README.md
+    - observation_vs_inference.md
+    - radio_condition_diagram.md
+    - teach_back.md
+teach_back:
+  required: true

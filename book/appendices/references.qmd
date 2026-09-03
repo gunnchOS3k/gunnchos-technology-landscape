@@ -1,0 +1,11 @@
+---
+title: "References"
+---
+
+# References
+
+Citations resolve through the shared BibTeX file:
+
+`book/references/references.bib`
+
+Chapter prose should use Quarto/Pandoc citation syntax (for example `@rfc791`). Do not paste unverifiable citation keys. Project-specific claims belong in the claim registry with explicit evidence status — not as invented endorsements.

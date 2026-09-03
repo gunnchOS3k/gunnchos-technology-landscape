@@ -28,6 +28,18 @@ labs:
     fixture_available: true
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-PERF-001
+    title: Make Feel Visible
+    chapter: CH03
+    path: labs/LAB-PERF-001
+    baseline_routes: [browser_feel_timeline]
+    extension_routes: [os_monitor_neighbor, fixture_fallback]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    related_labs: [LAB-CMS-001, LAB-TAP-001]
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+    note: "Publication-owned CH03 lab; not a minted WAIKE module ID."
   - lab_id: LAB-PKT-001
     title: Trace One Connected Action Across Path and Access
     chapter: CE-4
@@ -72,3 +84,72 @@ labs:
     emit_spine: [Explain, Measure, Improve, Teach]
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-QUARTET-001
+    title: Constraint Contrast Without Quartet Hardware
+    chapter: CH04
+    path: labs/LAB-QUARTET-001
+    baseline_routes: [paper_matrix, commodity_analogy]
+    extension_routes: [local_sheet]
+  - lab_id: LAB-SIG-001
+    title: From Press to Logic
+    chapter: CH05
+    path: labs/LAB-SIG-001
+    baseline_routes: [simulation_fixture]
+    extension_routes: [supervised_commodity_kit]
+  - lab_id: LAB-PWR-001
+    title: Budget Collapse Observation
+    chapter: CH09
+    path: labs/LAB-PWR-001
+    baseline_routes: [commodity_device, fixture_offline]
+    extension_routes: [os_status_pages]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+    safety_note: "No battery teardown, puncture, crush, external heating, or defeat of thermal protections."
+  - lab_id: LAB-IO-001
+    title: Map One Media Pipeline (Capture → Process → Present)
+    chapter: CH08
+    path: labs/LAB-IO-001
+    baseline_routes: [fixture, local_media, permission_deny]
+    extension_routes: []
+    no_specialized_hardware: true
+    status: DRAFT_DIGITAL
+    fixture_available: true
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-BUS-001
+    title: Name the Interconnect
+    chapter: CH10
+    path: labs/LAB-BUS-001
+    baseline_routes: [commodity_observation, fixture_offline]
+    extension_routes: []
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-RADIO-OBS-001
+    title: Observe Radio Conditions Without Transmitting
+    chapter: CH18
+    path: labs/LAB-RADIO-OBS-001
+    baseline_routes: [commodity_observation, fixture_offline]
+    extension_routes: []
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+    safety_note: "Observation-only; no unauthorized transmission, sniffing, jamming, or invented antenna gain/sensitivity."
+
+  - lab_id: LAB-BOOT-OBS-001
+    title: Observe Boot and Wake
+    chapter: CH11
+    path: labs/LAB-BOOT-OBS-001
+    baseline_routes: [commodity_observation, fixture_offline]
+    extension_routes: []
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+    safety_note: "Observation-only; no flashing, unlock/bypass, sealed teardown, or invented attestation/Quartet boot timings."

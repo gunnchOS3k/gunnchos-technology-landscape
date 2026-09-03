@@ -1,0 +1,20 @@
+figure_id: FIG-CH28-001
+title: "Twin story vs measured world"
+caption: "Twin story vs measured world. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Twin story vs measured world. Reading order: Simulation/twin; Measured world; Declared fidelity; Outside bounds."
+text_equivalent: |
+  Twin story vs measured world. Nodes in reading order: Simulation/twin; Measured world; Declared fidelity; Outside bounds. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Simulation/twin
+- Measured world
+- Declared fidelity
+- Outside bounds
+source: figures/full31/ch28/fig-ch28-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

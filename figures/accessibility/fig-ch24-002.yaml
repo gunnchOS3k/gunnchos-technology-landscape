@@ -1,0 +1,20 @@
+figure_id: FIG-CH24-002
+title: "Accessible vs blocked recovery"
+caption: "Accessible vs blocked recovery. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Accessible vs blocked recovery. Reading order: Accessible recovery; Blocked recovery; Auth succeeded; Task finished."
+text_equivalent: |
+  Accessible vs blocked recovery. Nodes in reading order: Accessible recovery; Blocked recovery; Auth succeeded; Task finished. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Accessible recovery
+- Blocked recovery
+- Auth succeeded
+- Task finished
+source: figures/full31/ch24/fig-ch24-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

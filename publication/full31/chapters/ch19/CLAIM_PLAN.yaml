@@ -6,8 +6,9 @@ claims:
   text: NTN adds non-ground path classes; it is not automatically identical to terrestrial
     5G service.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - threegpp-ts23501
   overclaim_risk: 3GPP NTN study/spec pointers.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -16,8 +17,11 @@ claims:
   text: "Service continuity is about experience across changes\u2014not merely keeping\
     \ an icon lit."
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - itu-t-p10-g100
+  - itu-t-g1011
+  - threegpp-ts23501
   overclaim_risk: CE-4/CE-6.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -43,12 +47,19 @@ claims:
     honestly.
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH19-005
-  text: Project NTN twin/demo evidence PROJECT_EVIDENCE_NEEDED / PHYSICAL_PENDING
-    per accepted-main audit posture.
+  text: "Project NTN twin/demo remains PHYSICAL_PENDING: WAIKE accepted main hosts only a synthetic polar NTN teaching case study requiring local validation, not field-validated twin evidence."
+
   claim_class: project_specific
-  status: PROJECT_EVIDENCE_NEEDED
+  status: PHYSICAL_PENDING
   citation_keys: []
   overclaim_risk: Do not pull unaudited research repos into claims.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    paths:
+    - case_studies/7gc/graham_land/polar_ntn_simulation/README.md
+    - case_studies/7gc/graham_land/polar_ntn_simulation/local_validation_needed.md
+    note: synthetic teaching fixture only; not physical twin validation

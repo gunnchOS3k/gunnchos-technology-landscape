@@ -1,0 +1,20 @@
+figure_id: FIG-CH27-002
+title: "Test pass vs usable experience"
+caption: "Test pass vs usable experience. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Test pass vs usable experience. Reading order: Suite green; Usable experience; Unit pass; Human-finished task."
+text_equivalent: |
+  Test pass vs usable experience. Nodes in reading order: Suite green; Usable experience; Unit pass; Human-finished task. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Suite green
+- Usable experience
+- Unit pass
+- Human-finished task
+source: figures/full31/ch27/fig-ch27-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

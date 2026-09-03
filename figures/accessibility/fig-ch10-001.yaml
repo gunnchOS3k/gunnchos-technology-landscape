@@ -1,0 +1,19 @@
+figure_id: FIG-CH10-001
+title: "Board buses ports world"
+caption: "Board buses ports world. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Chips/modules; Buses; Ports; World."
+text_equivalent: |
+  1. Chips/modules — on board
+  2. Buses — shared
+  3. Ports — edge
+  4. World — cables
+  Truth: conceptual. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Chips/modules"
+  - "2 Buses"
+  - "3 Ports"
+  - "4 World"
+source: figures/architecture/fig-ch10-001-board-buses-ports.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

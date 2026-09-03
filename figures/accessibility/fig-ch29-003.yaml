@@ -1,0 +1,21 @@
+figure_id: FIG-CH29-003
+title: "One-pager evidence fields"
+caption: "One-pager evidence fields. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "One-pager evidence fields. Reading order: Experience; System boundary; Risks; Evidence; Limitations."
+text_equivalent: |
+  One-pager evidence fields. Nodes in reading order: Experience; System boundary; Risks; Evidence; Limitations. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Experience
+- System boundary
+- Risks
+- Evidence
+- Limitations
+source: figures/full31/ch29/fig-ch29-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

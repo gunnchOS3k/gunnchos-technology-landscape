@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="title003 desc003">
+  <title id="title003">FIG-CH09-003: Enclosure Roles</title>
+  <desc id="desc003">Conceptual exploded enclosure with three labeled roles: (1) Protection shell, (2) Heat path toward vents or surface, (3) Human interface controls. Inner block labeled electronics. Status: Conceptual; not a validated EVT. Color is not the sole encoding.</desc>
+  <rect width="1040" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH09-003  Mechanical Enclosure Roles</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual · Not a validated Device Quartet EVT · Color is not the sole encoding</text>
+
+  <!-- outer shell -->
+  <rect x="220" y="100" width="420" height="260" fill="none" stroke="#111111" stroke-width="3"/>
+  <text x="430" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">1 Protection</text>
+
+  <!-- inner electronics -->
+  <rect x="300" y="160" width="260" height="120" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="430" y="215" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Electronics</text>
+  <text x="430" y="238" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">SoC · battery · boards</text>
+
+  <!-- heat path -->
+  <line x1="560" y1="220" x2="700" y2="160" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="560" y1="240" x2="700" y2="280" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="700" y="130" width="200" height="50" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="800" y="160" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#1F4B7A">2 Heat path</text>
+  <rect x="700" y="250" width="200" height="50" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="800" y="280" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#1F4B7A">vents / surface</text>
+
+  <!-- human interface -->
+  <rect x="80" y="180" width="100" height="70" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="130" y="210" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 Human</text>
+  <text x="130" y="230" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">interface</text>
+  <line x1="180" y1="215" x2="220" y2="215" stroke="#111111" stroke-width="2"/>
+  <circle cx="250" cy="320" r="10" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="280" y="325" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">buttons / ports / grips</text>
+
+  <text x="28" y="400" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Solid outer rectangle = protective shell · Dashed lines = heat leaving toward room · Circles/rects = reachable controls</text>
+</svg>

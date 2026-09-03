@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460" role="img" aria-label="Same human task fans out into four form-factor constraint callouts.">
+  <title>FIG-CH04-002: Same Task, Different Constraints</title>
+  <desc>Center node labeled Same human task. Four arrows to Student 14.5 desk posture, Handheld Hybrid mobility interrupts, DS-XL Coder local build loop, Edge IO Wearables sensing and consent. Illustrative teaching diagram; not measured EVT.</desc>
+  <defs>
+    <marker id="arr404" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="460" fill="#ffffff"/>
+  <rect x="1" y="1" width="1098" height="458" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH04-002  Same Task Across Form Factors</text>
+  <text x="28" y="56" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Illustrative teaching diagram · Constraint callouts are conceptual, not EVT measurements</text>
+
+  <rect x="420" y="190" width="260" height="80" fill="#f7f7f7" stroke="#111111" stroke-width="2"/>
+  <text x="550" y="225" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">Same human task</text>
+  <text x="550" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">write · measure · sense · carry</text>
+
+  <rect x="40" y="100" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="150" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Student 14.53</text>
+  <text x="150" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">desk posture / sustained focus</text>
+  <line x1="260" y1="135" x2="420" y2="210" stroke="#111111" stroke-width="2" marker-end="url(#arr404)"/>
+
+  <rect x="840" y="100" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="950" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Handheld Hybrid</text>
+  <text x="950" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">mobility / dock transitions</text>
+  <line x1="840" y1="135" x2="680" y2="210" stroke="#111111" stroke-width="2" marker-end="url(#arr404)"/>
+
+  <rect x="40" y="320" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="150" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">DS-XL Coder</text>
+  <text x="150" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">local build-test-deploy loop</text>
+  <line x1="260" y1="355" x2="420" y2="250" stroke="#111111" stroke-width="2" marker-end="url(#arr404)"/>
+
+  <rect x="840" y="320" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="950" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Edge IO Wearables</text>
+  <text x="950" y="372" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">sensing proximity / consent</text>
+  <line x1="840" y1="355" x2="680" y2="250" stroke="#111111" stroke-width="2" marker-end="url(#arr404)"/>
+
+  <text x="550" y="430" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Goal identical · Constraint domains differ · PHYSICAL_PENDING for Quartet numeric claims</text>
+</svg>

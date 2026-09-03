@@ -1,0 +1,17 @@
+figure_id: FIG-CH05-002
+title: "Analog versus Digital"
+caption: "Continuous analog variation beside discrete digital level bands. Conceptual."
+alt_text: "Two panels: smooth continuous waveform; stepped high/low digital levels with labeled bands."
+text_equivalent: |
+  Panel A: continuous analog waveform on axes. Panel B: digital stepped waveform with HIGH band,
+  uncertain middle region, and LOW band labeled by text and stroke patterns.
+reading_order:
+  - "Panel A Analog continuous"
+  - "Panel B Digital discrete levels"
+  - "HIGH band"
+  - "uncertain region"
+  - "LOW band"
+source: figures/architecture/fig-ch05-002-analog-vs-digital.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

@@ -1,0 +1,15 @@
+figure_id: FIG-CH08-002
+title: "Presentation timing and feel (illustrative)"
+caption: "Illustrative steady versus uneven presentation feel. Not product benchmarks."
+alt_text: "Two illustrative timelines of frames; dashed boxes mark delayed or missing updates without numeric thresholds."
+text_equivalent: |
+  Reading order: (1) Steady presentation timeline F1–F6;
+  (2) Uneven presentation timeline with late/gap markers.
+  Truth: illustrative. No hitch thresholds claimed. Color is not the sole encoding.
+reading_order:
+  - "1 Steady presentation timeline"
+  - "2 Uneven presentation timeline with late/gap markers"
+source: figures/sequence/fig-ch08-002-presentation-timing.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

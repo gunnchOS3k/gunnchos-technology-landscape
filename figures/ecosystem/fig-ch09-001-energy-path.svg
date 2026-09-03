@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="title001 desc001">
+  <title id="title001">FIG-CH09-001: Energy Path with Throttle Feedback</title>
+  <desc id="desc001">Left to right: Energy in, Conversion, Loads, Heat out. A dashed feedback arrow labeled Throttle returns from Heat/policy toward Loads. Status: Conceptual educational diagram. Color is not the sole encoding; shapes and labels carry meaning.</desc>
+  <defs>
+    <marker id="arr901" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+    <marker id="arr901d" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1F4B7A"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH09-001  Energy Path with Throttle Feedback</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram · Color is not the sole encoding</text>
+
+  <rect x="40" y="160" width="160" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="120" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">1 Energy in</text>
+  <text x="120" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">wall / battery</text>
+
+  <line x1="200" y1="205" x2="250" y2="205" stroke="#111111" stroke-width="2" marker-end="url(#arr901)"/>
+
+  <rect x="250" y="160" width="160" height="90" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="330" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">2 Conversion</text>
+  <text x="330" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">rails / PMIC</text>
+
+  <line x1="410" y1="205" x2="460" y2="205" stroke="#111111" stroke-width="2" marker-end="url(#arr901)"/>
+
+  <rect x="460" y="160" width="160" height="90" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="540" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">3 Loads</text>
+  <text x="540" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">CPU · display · radio</text>
+
+  <line x1="620" y1="205" x2="670" y2="205" stroke="#111111" stroke-width="2" marker-end="url(#arr901)"/>
+
+  <rect x="670" y="160" width="160" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="750" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">4 Heat out</text>
+  <text x="750" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">case  room</text>
+
+  <path d="M750,250 L750,320 L540,320 L540,250" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr901d)"/>
+  <rect x="560" y="292" width="170" height="36" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="645" y="315" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#1F4B7A">5 Throttle feedback</text>
+
+  <text x="880" y="200" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Policy may</text>
+  <text x="880" y="218" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">cut clocks /</text>
+  <text x="880" y="236" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">dim display</text>
+
+  <line x1="40" y1="380" x2="80" y2="380" stroke="#111111" stroke-width="2"/>
+  <text x="90" y="384" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">solid = energy forward path</text>
+  <line x1="300" y1="380" x2="340" y2="380" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="384" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">dashed = throttle / policy feedback</text>
+</svg>

@@ -9,7 +9,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 CHAPTERS_DIR = ROOT / "publication/full31/chapters"
-ACCEPTED_MAIN = "0e694176652d4729c7f2b71df08b871a863afb8c"
+ACCEPTED_MAIN = "18ec58005529bd16d680ee7419e4dea13150e9c6"
 WAIKE_ACCEPTED_MAIN = "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
 GATE = "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
 
@@ -123,23 +123,19 @@ def _load_yaml(path: Path) -> Any:
 def derive_current_state(chapter: dict[str, Any]) -> str:
     """Honest current_state from canonical prose + preproduction substates."""
     prose = str(chapter.get("canonical_prose_state") or "SCAFFOLD")
-    gate_deps = " ".join(str(x) for x in (chapter.get("gate_dependencies") or []))
-    human_deps = " ".join(str(x) for x in (chapter.get("human_dependencies") or []))
-    under_human = (
-        prose in {"DRAFT_COMPLETE", "DRAFT_STARTED"}
-        and (
-            "Gate 3" in gate_deps
-            or "reader" in gate_deps.lower()
-            or "Explorer" in human_deps
-            or "Builder" in human_deps
-            or "Engineer" in human_deps
-            or chapter.get("claim_state") == "HUMAN_VALIDATION_PENDING"
-            or chapter.get("current_state") == "HUMAN_VALIDATION_PENDING"
-        )
+    # Only CH02 (historical Gate 3 / CH02-REVIEW-R1) — or an explicit claim_state —
+    # counts as HUMAN_VALIDATION_PENDING. Mentions of CH02-REVIEW as a tone dependency
+    # on other chapters must not inflate this count.
+    under_human = prose in {"DRAFT_COMPLETE", "DRAFT_STARTED"} and (
+        chapter.get("chapter_id") == "CH02"
+        or chapter.get("claim_state") == "HUMAN_VALIDATION_PENDING"
     )
-    # CH02 (and any draft under Gate 3 reader validation) stays HUMAN_VALIDATION_PENDING.
     if under_human and prose == "DRAFT_COMPLETE":
         return "HUMAN_VALIDATION_PENDING"
+
+    # Full working manuscript draft complete → technical review pending (not publication-ready).
+    if prose == "DRAFT_COMPLETE":
+        return "TECH_REVIEW_PENDING"
 
     dims = [str(chapter.get(k) or "SCAFFOLD") for k in PREPRODUCTION_SUBSTATES]
     if all(s == "PREPRODUCTION_COMPLETE" for s in dims):

@@ -1,0 +1,21 @@
+figure_id: FIG-CH03-001
+title: "Feel words to diagnostic axes"
+caption: "Feel words to diagnostic axes. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Feel words; Latency; Jitter; Throughput; Stall/hitch."
+text_equivalent: |
+  1. Feel words — slow/smooth/...
+  2. Latency — delay
+  3. Jitter — spacing
+  4. Throughput — work/time
+  5. Stall/hitch — gap
+  Truth: conceptual. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Feel words"
+  - "2 Latency"
+  - "3 Jitter"
+  - "4 Throughput"
+  - "5 Stall/hitch"
+source: figures/ecosystem/fig-ch03-001-feel-axes.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

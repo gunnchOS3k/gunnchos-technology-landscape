@@ -2,5 +2,45 @@ chapter_id: CH29
 chapter_number: 29
 title: "Designing a Complete Technology Product"
 part: VI
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - What must a complete technology product keep true—experience, stack, evidence, security/inclusion, and honest claims—before anyone may say it is usable?
+experience:
+  - demo-works but fails real users on weaker devices
+  - unclear privacy with no evidence packet
+  - missing accessibility feedback on assistive paths
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [complete-product, design-gates, evidence-plan, claim-boundary, explicit-tradeoffs, stability-contract]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-CH29-ONEPAGER-001, LAB-CE06-001, LAB-TRUST-001]
+figures:
+  - FIG-CH29-001
+  - FIG-CH29-002
+  - FIG-CH29-003
+concepts:
+  introduced: [complete-technology-product, design-gates, evidence-plan, explicit-tradeoffs, claim-boundary]
+  required: [stability-contract, observation-vs-inference]
+  related: [device-quartet-learning-lab, beta-ready-false, emit-capstone]
+waike:
+  mapped: true
+  courses: [COMM_PD_ETHICS, CLOUD_DEVOPS]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (capstones/, lab_pd_capstone, CLOUD_DEVOPS). No exact CH29 WAIKE module. LAB-CH29-ONEPAGER-001 is publication-proposed."
+claims:
+  plan: publication/full31/chapters/ch29/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-05/
+  adjacent: [publication/preproduction/ce-06/, publication/preproduction/ce-01/]
+bibliography_note: "Cite keys present in book/references/references.bib. CLM-CH29-003 PM BoK omitted (SOURCE_NEEDED—no invented PMI/ISBN). Prefer iso-iec-25010-2023 and saltzer-kaashoek for non-marketing product/systems vocabulary."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; fixtures are not human validation"
+  - "CLM-CH29-001 Device Quartet shipping claims PHYSICAL_PENDING"
+  - "CLM-CH29-002 finished shipping OS claims prohibited (beta_ready false; claim-boundary teaching only)"
+  - "CLM-CH29-003 PM BoK / product_design_refs SOURCE_NEEDED — omitted pending verified ISBN"
+  - "LAB-CH29-ONEPAGER-001 is proposed; figures FIG-CH29-001..003 not_drawn"
+  - "No invented WAIKE module IDs or Device Quartet marketing"

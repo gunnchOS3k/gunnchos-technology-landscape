@@ -1,0 +1,21 @@
+figure_id: FIG-CH14-002
+title: "Feature after chrome path"
+caption: "Feature after chrome path. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Feature after chrome path. Reading order: Chrome ready; Feature request; Runtime call; Result; UI update."
+text_equivalent: |
+  Feature after chrome path. Nodes in reading order: Chrome ready; Feature request; Runtime call; Result; UI update. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Chrome ready
+- Feature request
+- Runtime call
+- Result
+- UI update
+source: figures/full31/ch14/fig-ch14-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

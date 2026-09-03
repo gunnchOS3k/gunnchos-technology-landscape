@@ -1,0 +1,33 @@
+figure_id: FIG-CH01-007
+title: Show concurrent hidden conditions that must remain acceptable for 'usable'
+  experience.
+caption: 'Show concurrent hidden conditions that must remain acceptable for ''usable''
+  experience.. Multiple lights can be green while one critical dependency fails the
+  human experience. Truth: conceptual. Color is not the sole encoding.'
+alt_text: List each condition and the gate outcome in text.
+text_equivalent: 'List each condition and the gate outcome in text. Reading order:
+  Input delivery; Schedule/handler; Memory/storage; Network if needed; Render/display;
+  Power/thermal; Trust; Human usable? gate.
+
+  Evidence: Qualitative pedagogical model; no invented numeric budgets.
+
+  Geometry intent: Parallel condition bars feeding a single ''human usable?'' gate.'
+reading_order:
+- Input delivery
+- Schedule/handler
+- Memory/storage
+- Network if needed
+- Render/display
+- Power/thermal
+- Trust
+- Human usable? gate
+source: figures/preproduction/ce-01/fig-ce1-007.svg
+evidence_note: Qualitative pedagogical model; no invented numeric budgets.
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-stability-contract-condition-map
+color_independent_encoding: Pass/fail words + icons; not green/red alone.
+reviewer: pending-human-visual-review
+version: 0.1.0

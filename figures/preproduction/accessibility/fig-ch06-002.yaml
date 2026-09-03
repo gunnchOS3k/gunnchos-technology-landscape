@@ -1,0 +1,21 @@
+figure_id: FIG-CH06-002
+title: "Single-thread vs parallelizable work"
+caption: "Illustrative timelines comparing a long serial dependency chain with independent chunks that can overlap across cores. Truth: illustrative teaching model, not measured speedups."
+alt_text: "FIG-CH06-002: Two illustrative timelines—serial chain versus three parallel chunks joining later."
+text_equivalent: |
+  FIG-CH06-002 reading order: (A) mostly serial dependency as one long bar;
+  (B) three independent chunks on different cores, then a join/finish bar.
+  Pedagogical bar lengths only; not lab-measured speedups.
+reading_order:
+  - Serial dependency lane
+  - Parallel chunk 1
+  - Parallel chunk 2
+  - Parallel chunk 3
+  - Join/finish
+source: "figures/architecture/fig-ch06-002-serial-vs-parallel.svg"
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: "Position + stroke patterns distinguish lanes; labels carry meaning."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -163,14 +163,53 @@ def main() -> int:
         errors.append("progress report must retain GATE_3_IN_PROGRESS")
     if "Gate 3 PASS" in report and "Never claim Gate 3 PASS" not in report:
         errors.append("progress report must not claim Gate 3 PASS")
+    working_n = int((doc.get("counts") or {}).get("canonical_full_drafts") or 0)
+    draft_needles = [
+        f"{working_n}/31 WORKING_DRAFT_COMPLETE",
+        f"{working_n}/31 canonical full drafts",
+        f"WORKING_DRAFT_COMPLETE = {working_n}",
+    ]
+    if not any(n in report for n in draft_needles):
+        errors.append(
+            "progress report missing truthful working-draft coverage "
+            f"(expected one of {draft_needles})"
+        )
     for needle in (
         "31/31 architecture registered",
         "31/31 minimum packet coverage",
-        "1/31 canonical full drafts",
+        "0/31 HUMAN_VALIDATED",
         "0/31 human-validated",
+        "0/31 PUBLICATION_READY",
         "0/31 publication-ready",
+        "architecture:",
+        "packet:",
+        "substantive_preproduction:",
+        "working_draft:",
+        "technical_review:",
+        "human_validation:",
+        "publication_readiness:",
     ):
-        if needle not in report:
+        # Accept either legacy lowercase or UPPER maturity labels for 0/31 lines.
+        if needle.startswith("0/31 ") and needle not in report:
+            alt = needle.replace("HUMAN_VALIDATED", "human-validated").replace(
+                "PUBLICATION_READY", "publication-ready"
+            )
+            alt2 = needle.replace("human-validated", "HUMAN_VALIDATED").replace(
+                "publication-ready", "PUBLICATION_READY"
+            )
+            if alt not in report and alt2 not in report and needle not in report:
+                # only error once per concept
+                if "human" in needle.lower() and (
+                    "0/31 HUMAN_VALIDATED" in report or "0/31 human-validated" in report
+                ):
+                    continue
+                if "publication" in needle.lower() and (
+                    "0/31 PUBLICATION_READY" in report or "0/31 publication-ready" in report
+                ):
+                    continue
+                errors.append(f"progress report missing truthful coverage line: {needle}")
+            continue
+        if needle not in report and not needle.startswith("0/31 "):
             errors.append(f"progress report missing truthful coverage line: {needle}")
 
     if invalid_source_identified:

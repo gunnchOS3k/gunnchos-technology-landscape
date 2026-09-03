@@ -167,17 +167,47 @@ def merge() -> dict:
     packet_counts = Counter(c["packet_state"] for c in chapters)
     waike = aggregate_all_waike()
 
-    # Coverage metrics for report
+    # Coverage metrics for report (normalized dimensions — see PROGRESS_DIMENSIONS.md)
     canonical_full = sum(1 for c in chapters if c.get("canonical_prose_state") == "DRAFT_COMPLETE")
-    human_validated = sum(1 for c in chapters if c.get("current_state") == "PUBLICATION_READY")
-    # truthful: zero human-validated manuscripts
+    # truthful: zero completed technical review / human validation / publication-ready in this wave
+    technical_review = 0
     human_validated = 0
-    publication_ready = sum(1 for c in chapters if c.get("current_state") == "PUBLICATION_READY")
+    publication_ready = 0
+    # Working drafts imply substantive preproduction completed for those chapters.
     substantive_preprod_complete = sum(
-        1 for c in chapters if c.get("current_state") == "PREPRODUCTION_COMPLETE"
+        1
+        for c in chapters
+        if c.get("current_state")
+        in {
+            "PREPRODUCTION_COMPLETE",
+            "TECH_REVIEW_PENDING",
+            "HUMAN_VALIDATION_PENDING",
+            "READY_FOR_EDITORIAL",
+            "PUBLICATION_READY",
+        }
+        or c.get("canonical_prose_state") == "DRAFT_COMPLETE"
     )
     substantive_preprod_started = sum(
-        1 for c in chapters if c.get("current_state") == "PREPRODUCTION_STARTED"
+        1
+        for c in chapters
+        if c.get("current_state")
+        in {
+            "PREPRODUCTION_STARTED",
+            "PREPRODUCTION_COMPLETE",
+            "TECH_REVIEW_PENDING",
+            "HUMAN_VALIDATION_PENDING",
+            "DRAFT_STARTED",
+            "DRAFT_COMPLETE",
+        }
+        or c.get("canonical_prose_state")
+        in {
+            "PREPRODUCTION_STARTED",
+            "PREPRODUCTION_COMPLETE",
+            "DRAFT_STARTED",
+            "DRAFT_COMPLETE",
+            "TECH_REVIEW_PENDING",
+            "HUMAN_VALIDATION_PENDING",
+        }
     )
 
     return {
@@ -187,9 +217,10 @@ def merge() -> dict:
         "waike_accepted_main_sha": WAIKE_ACCEPTED_MAIN,
         "gate_posture": GATE,
         "integrator_note": (
-            "Merged from agent-h/i/j registry fragments with integrator truth repair. "
+            "Merged from agent-h/i/j registry fragments after Batch 3 full-manuscript draft. "
             "packet_state is file/semantic completeness only; current_state is honest maturity. "
-            "PREPRODUCTION / DEVELOPMENT — not canonical final prose and not Gate 3 reader evidence. "
+            f"WORKING_DRAFT_COMPLETE={canonical_full}; HUMAN_VALIDATED=0; PUBLICATION_READY=0. "
+            "PREPRODUCTION / DEVELOPMENT — not Gate 3 reader evidence. "
             "CH02-REVIEW-R1 and publication/gates/gate-3/ remain untouched."
         ),
         "vocabulary": VOCABULARY,
@@ -209,6 +240,9 @@ def merge() -> dict:
             "substantive_preproduction_started": substantive_preprod_started,
             "substantive_preproduction_complete": substantive_preprod_complete,
             "canonical_full_drafts": canonical_full,
+            "working_draft": canonical_full,
+            "working_draft_complete": canonical_full,
+            "technical_review": technical_review,
             "human_validated": human_validated,
             "publication_ready": publication_ready,
         },
@@ -241,6 +275,31 @@ def write_report(doc: dict) -> str:
     lines.append("")
     lines.append("## Coverage (do not collapse)")
     lines.append("")
+    lines.append("Normalized dimensions — see `publication/full31/PROGRESS_DIMENSIONS.md`.")
+    lines.append("")
+    lines.append("```text")
+    lines.append(f"architecture:              {counts['architecture_registered']}/31")
+    lines.append(f"packet:                    {counts['minimum_packet_coverage']}/31")
+    lines.append(
+        f"substantive_preproduction: {counts['substantive_preproduction_complete']}/31 complete "
+        f"({counts['substantive_preproduction_started']}/31 started)"
+    )
+    lines.append(f"working_draft:             {counts['canonical_full_drafts']}/31")
+    lines.append(f"technical_review:          {counts.get('technical_review', 0)}/31")
+    lines.append(f"human_validation:          {counts['human_validated']}/31")
+    lines.append(f"publication_readiness:     {counts['publication_ready']}/31")
+    lines.append("```")
+    lines.append("")
+    lines.append("Honest manuscript maturity (do not collapse):")
+    lines.append("")
+    lines.append("```text")
+    lines.append(f"WORKING_DRAFT_COMPLETE = {counts.get('working_draft_complete', counts['canonical_full_drafts'])}")
+    lines.append("HUMAN_VALIDATED = 0")
+    lines.append("PUBLICATION_READY = 0")
+    lines.append("```")
+    lines.append("")
+    lines.append("Legacy synonyms (validators / continuity):")
+    lines.append("")
     lines.append("```text")
     lines.append("31/31 architecture registered")
     lines.append("31/31 minimum packet coverage")
@@ -248,12 +307,11 @@ def write_report(doc: dict) -> str:
         f"{counts['substantive_preproduction_complete']}/31 substantive preproduction complete"
     )
     lines.append(
-        f"{counts['substantive_preproduction_started']}/31 substantive preproduction started "
-        "(not manuscript-complete)"
+        f"{counts['substantive_preproduction_started']}/31 substantive preproduction started"
     )
-    lines.append(f"{counts['canonical_full_drafts']}/31 canonical full drafts")
-    lines.append("0/31 human-validated")
-    lines.append("0/31 publication-ready")
+    lines.append(f"{counts['canonical_full_drafts']}/31 WORKING_DRAFT_COMPLETE")
+    lines.append("0/31 HUMAN_VALIDATED")
+    lines.append("0/31 PUBLICATION_READY")
     lines.append("```")
     lines.append("")
     lines.append(
@@ -263,6 +321,10 @@ def write_report(doc: dict) -> str:
     lines.append(
         "- Packets under `publication/full31/chapters/ch01`–`ch31/`; "
         "unified registry `publication/full31/CHAPTER_PRODUCTION_REGISTRY.yaml`"
+    )
+    lines.append(
+        "- Review plan: `publication/full31/FULL_MANUSCRIPT_REVIEW_PLAN.md` "
+        "(plan only; no fabricated responses)"
     )
     lines.append(
         f"- Every chapter has `next_automatable_action`: "

@@ -9,8 +9,11 @@ claims:
   claim_class: general_technical
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_or_hci
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - saltzer-kaashoek
+  - mdn-performance
+  - iso-iec-25010-2023
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
@@ -21,8 +24,10 @@ claims:
   claim_class: general_technical
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_plus_standards
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - iso-iec-25010-2023
+  - itu-t-p10-g100
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
@@ -57,13 +62,19 @@ claims:
   text: CH02 Wave-1 lab timings are prototype evidence, not universal product SLOs
     for all chapters.
   claim_class: publication_internal
-  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
-    project evidence for CH03.
+  evidence_required: "LAB-TAP-001 accepted-main lab contract: one run is not a benchmark / not universal product SLO."
+
   preferred_source_type: repository_accepted_main
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - lab-tap-001
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
     measurements; shipping Quartet SKUs; Gate 3 PASS'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-TAP-001/lab.yaml
+    - labs/LAB-TAP-001/README.md

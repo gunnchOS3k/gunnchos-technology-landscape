@@ -19,11 +19,11 @@ chapters:
   title: "Data, Machine Learning, and Generative AI"
   part: V
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -37,11 +37,11 @@ chapters:
   title: "Edge AI, Sensors, and Embodied Interaction"
   part: V
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -55,11 +55,11 @@ chapters:
   title: Cybersecurity from Chip to Cloud
   part: V
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -73,11 +73,11 @@ chapters:
   title: "Privacy, Identity, Safety, Accessibility, and Ethics"
   part: V
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -91,11 +91,11 @@ chapters:
   title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
   part: V
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -109,11 +109,11 @@ chapters:
   title: Software Development and Version Control
   part: VI
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -127,11 +127,11 @@ chapters:
   title: "Testing, Observability, and Evidence"
   part: VI
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -145,11 +145,11 @@ chapters:
   title: "Digital Twins, Simulation, and Reproducible Research"
   part: VI
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -163,11 +163,11 @@ chapters:
   title: Designing a Complete Technology Product
   part: VI
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -181,11 +181,11 @@ chapters:
   title: Career Maps and Portfolio Proof
   part: VI
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -199,11 +199,11 @@ chapters:
   title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
   part: VI
   current_state: PREPRODUCTION_COMPLETE
-  canonical_prose_state: SCAFFOLD
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE

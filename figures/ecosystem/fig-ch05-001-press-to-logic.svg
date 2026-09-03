@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="320" viewBox="0 0 1040 320" role="img" aria-labelledby="title001 desc001">
+  <title id="title001">FIG-CH05-001: Press to Logic Flow</title>
+  <desc id="desc001">Five stages left to right: (1) Press, (2) Electrical change, (3) Signal, (4) Clocked logic, (5) Effect. Solid arrows connect stages. Status: Conceptual educational diagram.</desc>
+  <defs>
+    <marker id="arr501" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="320" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="318" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-001  Press  Logic  Effect</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Conceptual educational diagram · Color is not the sole encoding</text>
+
+  <rect x="30" y="120" width="150" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="105" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">1 Press</text>
+  <text x="105" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">human action</text>
+  <line x1="180" y1="165" x2="210" y2="165" stroke="#111111" stroke-width="2" marker-end="url(#arr501)"/>
+
+  <rect x="212" y="120" width="160" height="90" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="292" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">2 Electrical</text>
+  <text x="292" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">voltage / energy</text>
+  <line x1="372" y1="165" x2="402" y2="165" stroke="#111111" stroke-width="2" marker-end="url(#arr501)"/>
+
+  <rect x="404" y="120" width="150" height="90" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="479" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">3 Signal</text>
+  <text x="479" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">info over time</text>
+  <line x1="554" y1="165" x2="584" y2="165" stroke="#111111" stroke-width="2" marker-end="url(#arr501)"/>
+
+  <rect x="586" y="120" width="180" height="90" fill="#ffffff" stroke="#111111" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="676" y="152" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">4 Clocked logic</text>
+  <text x="676" y="176" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">timed decisions</text>
+  <text x="676" y="196" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">dashed = sync path</text>
+  <line x1="766" y1="165" x2="796" y2="165" stroke="#111111" stroke-width="2" marker-end="url(#arr501)"/>
+
+  <rect x="798" y="120" width="200" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="898" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">5 Effect</text>
+  <text x="898" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">person notices</text>
+
+  <text x="28" y="280" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: 12345. Not measured Device Quartet telemetry (PHYSICAL_PENDING).</text>
+</svg>

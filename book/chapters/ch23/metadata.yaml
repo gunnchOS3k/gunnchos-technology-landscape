@@ -1,6 +1,92 @@
 chapter_id: CH23
 chapter_number: 23
 title: "Cybersecurity from Chip to Cloud"
+author: "Edmund Gunn, Jr."
 part: V
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+inherits_from:
+  - CE-5
+  - CH11
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING (no Gate 3 PASS claimed)"
+human_question:
+  - "When a login succeeds but an action is denied—or a verify-it-is-you step appears—what trust conditions from chip to cloud still have to hold?"
+experience:
+  - login succeeds but action denied
+  - MFA / verify-it-is-you interrupt while app looks connected
+  - lockout or recovery friction
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [identity, authentication, authorization, encryption-boundary, session-recovery, chip-to-cloud-trust]
+devices: [commodity-computer, commodity-phone]
+device_quartet_policy: "Conceptual across form factors; chip/boot measured secure-boot claims PHYSICAL_PENDING; never required for baseline labs."
+labs: [LAB-TRUST-001]
+figures:
+  - FIG-CH23-001
+  - FIG-CH23-002
+  - FIG-CH23-003
+concepts:
+  introduced:
+    - attack-surface-ux
+    - identity
+    - authentication
+    - authorization
+    - encryption-goals-limits
+    - chip-to-cloud-trust
+    - protection-design-principles
+  required:
+    - stability-contract
+  related:
+    - firmware-trust
+    - privacy-lifecycle
+    - least-privilege
+waike:
+  mapped: true
+  exact: []
+  adjacent:
+    - CYBERSECURITY
+    - lab_iam_rbac
+    - lab_incident_playbook
+    - lab_authz
+    - lab_iam_secrets
+    - cybersecurity
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; no exact CH23 / LAB-TRUST-001 WAIKE module; do not mint IDs; LAB-TRUST-001 is publication-owned."
+claims:
+  taught:
+    - CLM-CH23-001
+    - CLM-CH23-002
+    - CLM-CH23-003
+  pending:
+    - CLM-CH23-004
+  packet: publication/full31/chapters/ch23/CLAIM_PLAN.yaml
+  evidence_notes:
+    - "CLM-CH23-001 SOURCE_IDENTIFIED via saltzer_schroeder_1975"
+    - "CLM-CH23-002 SOURCE_IDENTIFIED via nist_sp_800_63_4"
+    - "CLM-CH23-003 SOURCE_IDENTIFIED via src-waike adjacency (lab_iam_rbac / lab_incident_playbook neighbors)"
+    - "CLM-CH23-004 PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED for measured chip/firmware secure-boot"
+citation_keys:
+  - saltzer_schroeder_1975
+  - nist_sp_800_63_4
+  - src-waike
+  - src-device-os-ce3
+  - src-hardware-quartet
+anatomy_anchors:
+  - ch23-moment
+  - ch23-notice
+  - ch23-ecosystem
+  - ch23-signal
+  - ch23-components
+  - ch23-stability
+  - ch23-try
+  - ch23-build
+  - ch23-secure-include
+  - ch23-career
+  - ch23-check
+  - ch23-glossary
+blockers:
+  - "CLM-CH23-004 Device Quartet / gunnchOS measured secure-boot PHYSICAL_PENDING"
+  - "Gate 3 reader evidence pending — no PASS claimed; do not alter gate-3 responses"
+  - "Do not invent WAIKE module IDs for CH23 or LAB-TRUST-001"
+bibliography_note: "Cite keys present in book/references/references.bib; no offensive content; AuthN ≠ AuthZ is a hard editorial constraint."

@@ -1,42 +1,54 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH09
 chapter_number: 9
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH09-001
-  text: "Interactive devices operate under finite power and thermal budgets that can reduce available performance."
+  text: Interactive devices operate under finite power and thermal budgets that can
+    reduce available performance.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook
-  status: SOURCE_NEEDED
-  citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - linux-cpu-freq
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH09-002
-  text: "Batteries provide finite energy with rate and environmental constraints; they are not ideal voltage sources."
+  text: Batteries provide finite energy with rate and environmental constraints; they
+    are not ideal voltage sources.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_or_standards
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH09-003
-  text: "Mechanical design choices affect thermals, durability, accessibility of controls, and repairability (qualitative)."
+  text: Mechanical design choices affect thermals, durability, accessibility of controls,
+    and repairability (qualitative).
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_or_design_refs
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH09-004
-  text: "Device Quartet thermal/battery EVT curves remain PHYSICAL_PENDING."
+  text: Device Quartet thermal/battery EVT curves remain PHYSICAL_PENDING.
   claim_class: project_specific
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: repository_accepted_main
   status: PHYSICAL_PENDING
   citation_keys:
   - src-hardware-quartet
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'

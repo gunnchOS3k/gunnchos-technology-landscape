@@ -2,19 +2,19 @@ schema_version: 1.0.0
 status: CANDIDATE_PREPRODUCTION
 gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
-chapter_source_occurrences: 64
-unique_source_records: 59
-unique_canonical_works: 52
+chapter_source_occurrences: 72
+unique_source_records: 67
+unique_canonical_works: 60
 unique_by_class:
-  official_technical_documentation: 13
-  other_explanatory: 5
+  official_technical_documentation: 15
+  other_explanatory: 9
   peer_reviewed: 2
   project_accepted_main: 7
-  standards_specifications: 23
+  standards_specifications: 25
   textbooks: 9
 verification_counts:
   NEEDS_PRIMARY_VERIFICATION: 1
-  PRIMARY_METADATA_VERIFIED: 44
+  PRIMARY_METADATA_VERIFIED: 52
   REPOSITORY_EVIDENCE_VERIFIED: 7
   SECONDARY_EXPLANATORY: 7
 metadata_conflicts: []
@@ -163,6 +163,36 @@ sources:
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
   canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
+  metadata_conflict_status: NONE
+- source_package: ce-01
+  bib_key: w3c-mediacapture-streams-20251009
+  entry_type: misc
+  title: Media Capture and Streams
+  year: '2025'
+  url: https://www.w3.org/TR/mediacapture-streams/
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.w3.org/TR/mediacapture-streams/|year:2025
+  metadata_conflict_status: NONE
+- source_package: ce-01
+  bib_key: git-scm-docs
+  entry_type: misc
+  title: Git - Reference
+  year: '2026'
+  url: https://git-scm.com/docs
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://git-scm.com/docs|year:2026
+  metadata_conflict_status: NONE
+- source_package: ce-01
+  bib_key: semver-2.0.0
+  entry_type: misc
+  title: Semantic Versioning 2.0.0
+  year: null
+  url: https://semver.org/spec/v2.0.0.html
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://semver.org/spec/v2.0.0.html
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: patterson-hennessy-riscv
@@ -504,6 +534,16 @@ sources:
   verification_status: PRIMARY_METADATA_VERIFIED
   canonical_identifier: title:waike research-ops accepted main audit for ce-4 crosswalk|author:|year:2026
   metadata_conflict_status: NONE
+- source_package: ce-04
+  bib_key: oci-runtime-spec
+  entry_type: misc
+  title: Open Container Initiative Runtime Specification
+  year: '2026'
+  url: https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md|year:2026
+  metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: nist_ai_rmf_100_1
   entry_type: techreport
@@ -564,6 +604,26 @@ sources:
   source_class: peer_reviewed
   verification_status: PRIMARY_METADATA_VERIFIED
   canonical_identifier: title:a taxonomy of privacy|author:solove, daniel j.|year:2006
+  metadata_conflict_status: NONE
+- source_package: ce-05
+  bib_key: uefi-secure-boot-2.10
+  entry_type: misc
+  title: Secure Boot and Driver Signing
+  year: null
+  url: https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html
+  metadata_conflict_status: NONE
+- source_package: ce-05
+  bib_key: tcg-pc-client-pfp-1.06
+  entry_type: misc
+  title: TCG PC Client Platform Firmware Profile Specification
+  year: '2023'
+  url: https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf|year:2023
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: itu-t-p10-g100
@@ -675,4 +735,25 @@ sources:
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
   canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026
+  metadata_conflict_status: NONE
+- source_package: ce-06
+  bib_key: iso-23247-1-2021
+  entry_type: misc
+  title: "Automation systems and integration \u2014 Digital twin framework for manufacturing\
+    \ \u2014 Part 1: Overview and general principles"
+  year: '2021'
+  url: https://www.iso.org/standard/75066.html
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.iso.org/standard/75066.html|year:2021
+  metadata_conflict_status: NONE
+- source_package: ce-06
+  bib_key: itu-facts-figures-2025
+  entry_type: misc
+  title: 'Measuring digital development: Facts and Figures 2025'
+  year: '2025'
+  url: https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx|year:2025
   metadata_conflict_status: NONE

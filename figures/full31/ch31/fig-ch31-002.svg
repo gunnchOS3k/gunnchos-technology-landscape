@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+     aria-labelledby="fig-ch31-002-title fig-ch31-002-desc"
+     data-figure-id="FIG-CH31-002">
+  <title id="fig-ch31-002-title">EMIT cycle with evidence gates</title>
+  <desc id="fig-ch31-002-desc">EMIT cycle with evidence gates. Truth class: conceptual. Nodes: Explain, Measure, Improve, Teach, Evidence gate. Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</desc>
+  <defs>
+    <marker id="arr-fig-ch31-002" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">EMIT cycle with evidence gates</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">FIG-CH31-002 · truth: conceptual · educational architecture (not a product measurement)</text>
+  <rect x="89" y="150" width="150" height="64" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="164.0" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Explain</text>
+  <line x1="239" y1="182.0" x2="257" y2="182.0" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch31-002)"/>
+  <rect x="257" y="150" width="150" height="64" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="332.0" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Measure</text>
+  <line x1="407" y1="182.0" x2="425" y2="182.0" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch31-002)"/>
+  <rect x="425" y="150" width="150" height="64" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="500.0" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Improve</text>
+  <line x1="575" y1="182.0" x2="593" y2="182.0" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch31-002)"/>
+  <rect x="593" y="150" width="150" height="64" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="668.0" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Teach</text>
+  <line x1="743" y1="182.0" x2="761" y2="182.0" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch31-002)"/>
+  <rect x="761" y="150" width="150" height="64" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="836.0" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Evidence gate</text>
+  <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</text>
+</svg>

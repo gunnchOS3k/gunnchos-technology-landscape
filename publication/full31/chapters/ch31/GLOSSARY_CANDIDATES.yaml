@@ -3,12 +3,14 @@ chapter_id: CH31
 glossary_candidates:
 - term_id: GL-CH31-EMIT
   preferred_term: EMIT spine
-  plain_language_definition: "Explain, Measure, Improve, Teach as required capstone cycle."
+  plain_language_definition: Explain, Measure, Improve, Teach as required capstone
+    cycle.
   introduced_in: CH31
   related_concepts:
   - CX-CH31-EMIT
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: emit-spine
 - term_id: GL-CH31-CONTRACT
   preferred_term: Stability Contract (capstone use)
   plain_language_definition: Concurrent conditions that must hold for experience success.
@@ -16,16 +18,19 @@ glossary_candidates:
   related_concepts:
   - CX-CH31-CONTRACT
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: stability-contract-capstone-use
 - term_id: GL-CH31-TEACHBACK
   preferred_term: Teach-back
-  plain_language_definition: Explaining the ecosystem so another person can use the model.
+  plain_language_definition: Explaining the ecosystem so another person can use the
+    model.
   introduced_in: CH31
   related_concepts:
   - CX-CH31-TEACHBACK
   - CX-CH31-EMIT
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: teach-back
 - term_id: GL-CH31-LIMITS
   preferred_term: Evidence limitations
   plain_language_definition: What the packet does not prove.
@@ -34,13 +39,15 @@ glossary_candidates:
   - CX-CH31-LIMITS
   - CX-CH31-EMIT
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: evidence-limitations
 - term_id: GL-CH31-FIXTURE
   preferred_term: Fixture-validated infrastructure
-  plain_language_definition: Deterministic lab validation ≠ human reader validation.
+  plain_language_definition: "Deterministic lab validation \u2260 human reader validation."
   introduced_in: CH31
   related_concepts:
   - CX-CH31-FIXTURE
   - CX-CH31-LIMITS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: fixture-validated-infrastructure

@@ -138,6 +138,25 @@ def test_wcag_dated_editions_remain_distinct():
     assert mod.canonical_identifier(a) != mod.canonical_identifier(b)
 
 
+def test_full31_working_bibliography_preserves_wcag_and_russell():
+    mod = _load(
+        "build_full31_working_bibliography",
+        "scripts/build_full31_working_bibliography.py",
+    )
+    _planned, meta = mod.build()
+    keys = {u["bib_key"] for u in meta["unique"]}
+    assert "wcag22-20231005" in keys
+    assert "wcag22-20241212" in keys
+    assert "wcag22" not in keys
+    a = next(u for u in meta["unique"] if u["bib_key"] == "wcag22-20231005")
+    b = next(u for u in meta["unique"] if u["bib_key"] == "wcag22-20241212")
+    assert a["canonical_identifier"] != b["canonical_identifier"]
+    russell = next(u for u in meta["unique"] if u["bib_key"] == "russell_norvig_aima")
+    assert russell["verification_status"] == "NEEDS_PRIMARY_VERIFICATION"
+    assert (ROOT / "publication/full31/WORKING_BIBLIOGRAPHY.bib").is_file()
+    assert (ROOT / "publication/full31/WORKING_BIBLIOGRAPHY_INDEX.yaml").is_file()
+
+
 def test_midword_title_cut_detected():
     mod = _load("validate_visual_text_integrity", "scripts/validate_visual_text_integrity.py")
     assert mod.midword_cut(

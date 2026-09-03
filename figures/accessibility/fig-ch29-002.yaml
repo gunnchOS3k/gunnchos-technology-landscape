@@ -1,0 +1,21 @@
+figure_id: FIG-CH29-002
+title: "Secure/include inside design gates"
+caption: "Secure/include inside design gates. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Secure/include inside design gates. Reading order: Need; Design gate; Secure/include; Ship candidate; Evidence."
+text_equivalent: |
+  Secure/include inside design gates. Nodes in reading order: Need; Design gate; Secure/include; Ship candidate; Evidence. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Need
+- Design gate
+- Secure/include
+- Ship candidate
+- Evidence
+source: figures/full31/ch29/fig-ch29-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

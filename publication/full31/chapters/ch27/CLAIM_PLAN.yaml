@@ -2,44 +2,64 @@ schema_version: 1.0.0
 chapter_id: CH27
 claims:
 - provisional_id: CLM-CH27-001
-  text: CE-6 evidence hierarchy (illustrative → commodity measurement → standards QoE methods) is the pedagogical ancestor for CH27; learner labs are not ITU G.1011 campaigns.
+  text: "CE-6 evidence hierarchy (illustrative \u2192 commodity measurement \u2192\
+    \ standards QoE methods) is the pedagogical ancestor for CH27; learner labs are\
+    \ not ITU G.1011 campaigns."
   claim_class: publication_internal
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - SRC-CE06-02
-  overclaim_risk: "prohibited: claim lab equals formal QoE study"
-  wording_boundary: "approved: hierarchy teaching | prohibited: claim lab equals formal QoE study"
+  overclaim_risk: 'prohibited: claim lab equals formal QoE study'
+  wording_boundary: 'approved: hierarchy teaching | prohibited: claim lab equals formal
+    QoE study'
 - provisional_id: CLM-CH27-002
-  text: WAIKE CLOUD_DEVOPS lab_slo_budget / lab_incident_runbook and DATA_DASHBOARDS debug labs are adjacent.
+  text: WAIKE CLOUD_DEVOPS lab_slo_budget / lab_incident_runbook and DATA_DASHBOARDS
+    debug labs are adjacent.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - SRC-WAIKE
-  overclaim_risk: "prohibited: invent observability WAIKE course for CH27"
-  wording_boundary: "approved: adjacent | prohibited: invent observability WAIKE course for CH27"
+  overclaim_risk: 'prohibited: invent observability WAIKE course for CH27'
+  wording_boundary: 'approved: adjacent | prohibited: invent observability WAIKE course
+    for CH27'
   project_evidence:
     repository: gunnchOS3k/waike-research-ops
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH27-003
-  text: OpenTelemetry or equivalent observability standards citations need primary verification before drafting claims.
+  text: OpenTelemetry or equivalent observability standards citations need primary
+    verification before drafting claims.
   claim_class: standards_based
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
-  status: SOURCE_NEEDED
-  citation_keys: []
-  overclaim_risk: "prohibited: fake OTel version pins"
-  wording_boundary: "approved: SOURCE_NEEDED | prohibited: fake OTel version pins"
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - otel-signals
+  overclaim_risk: 'prohibited: fake OTel version pins'
+  wording_boundary: 'approved: cite otel-signals without invented version pins | prohibited: fake OTel version pins'
 - provisional_id: CLM-CH27-004
-  text: LAB-CE06-001 FIXTURE_VALIDATED infrastructure supports evidence practice; fixtures are not Gate 3 human validation.
+  text: LAB-CE06-001 FIXTURE_VALIDATED infrastructure supports evidence practice;
+    fixtures are not Gate 3 human validation.
   claim_class: publication_internal
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
-  status: PROJECT_EVIDENCE_NEEDED
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
   citation_keys: []
-  overclaim_risk: "prohibited: human-validated from fixtures alone"
-  wording_boundary: "approved: FIXTURE_VALIDATED lab infra | prohibited: human-validated from fixtures alone"
+  overclaim_risk: 'prohibited: human-validated from fixtures alone'
+  wording_boundary: 'approved: FIXTURE_VALIDATED lab infra | prohibited: human-validated
+    from fixtures alone'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-CE06-001/lab.yaml
+    - labs/LAB-CE06-001/validate_portfolio.py
+    - labs/LAB-CE06-001/README.md

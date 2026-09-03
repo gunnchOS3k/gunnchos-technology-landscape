@@ -1,0 +1,20 @@
+figure_id: FIG-CH20-002
+title: "Latency vs reliability vs throughput"
+caption: "Latency vs reliability vs throughput. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Latency vs reliability vs throughput. Reading order: Latency symptom; Reliability symptom; Throughput symptom; One probe ≠ all."
+text_equivalent: |
+  Latency vs reliability vs throughput. Nodes in reading order: Latency symptom; Reliability symptom; Throughput symptom; One probe ≠ all. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Latency symptom
+- Reliability symptom
+- Throughput symptom
+- One probe ≠ all
+source: figures/full31/ch20/fig-ch20-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

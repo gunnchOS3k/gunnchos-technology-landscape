@@ -1,0 +1,21 @@
+figure_id: FIG-CH24-001
+title: "Privacy lifecycle wheel"
+caption: "Privacy lifecycle wheel. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Privacy lifecycle wheel. Reading order: Collect; Use; Retain; Share; Delete/redact."
+text_equivalent: |
+  Privacy lifecycle wheel. Nodes in reading order: Collect; Use; Retain; Share; Delete/redact. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Collect
+- Use
+- Retain
+- Share
+- Delete/redact
+source: figures/full31/ch24/fig-ch24-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

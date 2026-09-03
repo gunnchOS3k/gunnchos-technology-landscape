@@ -13,10 +13,10 @@
 
 | Key / need | Status | Class | Notes |
 |---|---|---|---|
-| `git_official_docs` | SOURCE_NEEDED | official docs | Verify git-scm.com documentation pages to cite |
+| `git_official_docs` (`git-scm-docs`) | SOURCE_IDENTIFIED | official docs | https://git-scm.com/docs (+ status/diff/commit/branch manpages); promoted into `book/references/references.bib` for CH26 draft |
 | `SRC-WAIKE` | SOURCE_IDENTIFIED | repository | SOFTWARE_BUILDER @ e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 |
 | `SRC-HARDWARE` | PHYSICAL_PENDING | repository | DS-XL Coder form factor docs |
-| `semver_or_conventional_commits` | SOURCE_NEEDED | optional standard | Only if chapter claims specific conventions |
+| `semver_or_conventional_commits` (`semver-2.0.0`) | SOURCE_IDENTIFIED | optional standard | Used when chapter claims public-API compatibility vocabulary |
 
 ## Inheritance
 
@@ -35,3 +35,10 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## EVIDENCE-A update
+
+| Need | Status |
+|---|---|
+| `git_official_docs` / `CLM-CH26-001` | `SOURCE_IDENTIFIED` via `git-scm-docs` (https://git-scm.com/docs) |
+| `semver_or_conventional_commits` | Optional; SemVer available as `semver-2.0.0` if chapter claims conventions |

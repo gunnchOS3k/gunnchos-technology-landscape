@@ -1,0 +1,20 @@
+---
+title: "WAIKE"
+---
+
+# WAIKE explanation
+
+**WAIKE** is the learning-system alignment layer used with this publication: courses, assessments, and portfolio-style evidence maps that connect chapter outcomes to practice.
+
+## What WAIKE is
+
+- A crosswalk between book concepts and existing learning objects where adjacency is honest.
+- A place to record **exact**, **adjacent**, **proposed**, or **no_map** relationships without inventing course IDs.
+
+## What WAIKE is not
+
+- Not a claim that every chapter already has a finished assessed module.
+- Not employment credentialing or a guaranteed certification.
+- Not Gate 3 reader evidence.
+
+Working maps live under `waike/` and per-chapter `WAIKE_CROSSWALK.md` packets in `publication/full31/chapters/`.

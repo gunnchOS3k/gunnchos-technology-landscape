@@ -1,645 +1,2612 @@
 entries:
-  - id: event
-    term: "Event"
-    acronym: null
-    plain_definition: >
-      A signal that something happened that software may need to handle.
-    technical_definition: >
-      In interactive systems, an event is a discrete notification—such as a touch, key press, timer, or network completion—queued and dispatched to interested handlers.
-    experience_benefit: >
-      Lets the app react when you do something.
-    analogy:
-      text: >
-        Like a doorbell ring that tells someone to answer the door.
-      explicitly_labeled: true
-    not_the_same_as:
-      - interrupt
-    failure_or_limit:
-      - "Missed, delayed, or duplicated reactions."
-    measure_it:
-      - "Log timestamps when an event is received and when handling finishes."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: touch-digitizer
-    term: "Touch digitizer"
-    acronym: null
-    plain_definition: >
-      The sensing layer that detects touch position and movement.
-    technical_definition: >
-      A touch digitizer converts physical contact into coordinates and related signals for the input controller and operating system.
-    experience_benefit: >
-      Turns a finger contact into usable input.
-    analogy:
-      text: >
-        Like a grid that notices where a pencil presses on paper.
-      explicitly_labeled: true
-    not_the_same_as:
-      - display-panel
-    failure_or_limit:
-      - "Missed, ghost, delayed, or inaccurate touches."
-    measure_it:
-      - "Compare reported coordinates with intended target positions in a test app."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: interrupt
-    term: "Interrupt"
-    acronym: null
-    plain_definition: >
-      A hardware or software signal that can request prompt attention from the processor or OS.
-    technical_definition: >
-      An interrupt notifies the system that a device or condition needs handling, often causing a temporary switch into an interrupt service routine. Not every application-visible touch is exposed as a raw hardware interrupt.
-    experience_benefit: >
-      Helps urgent input get attention quickly.
-    analogy:
-      text: >
-        Like a teacher tapping a student on the shoulder during silent work.
-      explicitly_labeled: true
-    not_the_same_as:
-      - polling
-    failure_or_limit:
-      - "Delayed response when interrupts are masked or mishandled."
-    measure_it:
-      - "Compare polled versus interrupt-driven toy examples on microcontroller labs where available."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: device-driver
-    term: "Device driver"
-    acronym: null
-    plain_definition: >
-      Software that lets the operating system talk with a specific hardware device.
-    technical_definition: >
-      A driver translates between OS input/output interfaces and device-specific registers, protocols, or firmware behaviors.
-    experience_benefit: >
-      Makes hardware usable to the rest of the stack.
-    analogy:
-      text: >
-        Like a translator between a visitor and a local specialist.
-      explicitly_labeled: true
-    not_the_same_as:
-      - application-plugin
-    failure_or_limit:
-      - "Device unavailable, unreliable, or misinterpreted."
-    measure_it:
-      - "Observe whether a device appears/disappears in OS device listings when drivers load."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: kernel
-    term: "Kernel"
-    acronym: null
-    plain_definition: >
-      The central part of an operating system that manages hardware access and core resources.
-    technical_definition: >
-      The kernel mediates privileged operations such as scheduling, memory management, and device access so applications do not each control hardware directly.
-    experience_benefit: >
-      Lets many programs share one device safely enough to be useful.
-    analogy:
-      text: >
-        Like building staff who control keys, elevators, and utilities for every tenant.
-      explicitly_labeled: true
-    not_the_same_as:
-      - user-interface
-    failure_or_limit:
-      - "Severe instability or unavailable resources."
-    measure_it:
-      - "Inspect process lists and resource monitors; kernel faults are rare and serious."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: process
-    term: "Process"
-    acronym: null
-    plain_definition: >
-      A running instance of a program with its own managed resources and execution state.
-    technical_definition: >
-      A process is an OS-managed unit that typically includes address space, credentials, and one or more threads.
-    experience_benefit: >
-      Keeps your app's work organized as a living program.
-    analogy:
-      text: >
-        Like a workshop room reserved for one project.
-      explicitly_labeled: true
-    not_the_same_as:
-      - thread
-    failure_or_limit:
-      - "App closes or freezes when the process is killed or stuck."
-    measure_it:
-      - "Use a system monitor to see process CPU and memory."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: thread
-    term: "Thread"
-    acronym: null
-    plain_definition: >
-      A single sequence of executing instructions inside a process.
-    technical_definition: >
-      Threads share a process's resources while maintaining separate execution context, enabling concurrent work.
-    experience_benefit: >
-      Allows an app to do more than one piece of work in overlapping time.
-    analogy:
-      text: >
-        Like multiple workers sharing one workshop.
-      explicitly_labeled: true
-    not_the_same_as:
-      - process
-    failure_or_limit:
-      - "UI freezes when a critical thread blocks."
-    measure_it:
-      - "Compare UI responsiveness when work runs on background threads."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: scheduler
-    term: "Scheduler"
-    acronym: null
-    plain_definition: >
-      The OS mechanism that decides when runnable software receives CPU time.
-    technical_definition: >
-      A scheduler orders and preempts runnable threads/processes according to policy, priority, and fairness constraints.
-    experience_benefit: >
-      Important work gets compute soon enough to feel responsive.
-    analogy:
-      text: >
-        Like a stage manager deciding who speaks next.
-      explicitly_labeled: true
-    not_the_same_as:
-      - event-loop
-    failure_or_limit:
-      - "Input lag, stutter, or sluggishness under load."
-    measure_it:
-      - "Create CPU load and observe latency changes."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: event-loop
-    term: "Event loop"
-    acronym: null
-    plain_definition: >
-      A program structure that waits for events and dispatches work in response.
-    technical_definition: >
-      An event loop repeatedly dequeues events and invokes handlers; blocking the loop delays all dependent UI work.
-    experience_benefit: >
-      Keeps the app responding to input and timers.
-    analogy:
-      text: >
-        Like a receptionist handling one visitor request at a time in order.
-      explicitly_labeled: true
-    not_the_same_as:
-      - thread
-    failure_or_limit:
-      - "Frozen interface when the loop is blocked."
-    measure_it:
-      - "Instrument handler start/end times around a button click."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: api
-    term: "API"
-    acronym: API
-    plain_definition: >
-      A defined way for one piece of software to request services from another.
-    technical_definition: >
-      An application programming interface specifies functions, messages, or endpoints and their expected behavior and constraints.
-    experience_benefit: >
-      Lets apps use system or network services without rewriting them.
-    analogy:
-      text: >
-        Like a restaurant menu: you order known items, not the kitchen itself.
-      explicitly_labeled: true
-    not_the_same_as:
-      - user-interface
-    failure_or_limit:
-      - "Broken features when contracts change or fail."
-    measure_it:
-      - "Inspect request/response pairs in developer tools."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: cpu
-    term: "CPU"
-    acronym: CPU
-    plain_definition: >
-      The general-purpose processor that executes program instructions.
-    technical_definition: >
-      A central processing unit fetches, decodes, and executes instructions, coordinating with memory and peripherals.
-    experience_benefit: >
-      Does the step-by-step thinking for most software.
-    analogy:
-      text: >
-        Like a versatile cook following recipes.
-      explicitly_labeled: true
-    not_the_same_as:
-      - gpu
-    failure_or_limit:
-      - "Slowdowns when the CPU is saturated."
-    measure_it:
-      - "Watch CPU utilization during an interaction."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: gpu
-    term: "GPU"
-    acronym: GPU
-    plain_definition: >
-      A processor specialized for highly parallel work such as graphics rendering.
-    technical_definition: >
-      Graphics processing units excel at parallel numeric workloads used in rendering and some compute tasks.
-    experience_benefit: >
-      Helps visuals appear smooth.
-    analogy:
-      text: >
-        Like many artists painting different parts of a mural at once.
-      explicitly_labeled: true
-    not_the_same_as:
-      - cpu
-    failure_or_limit:
-      - "Missed frames, stutter, delayed rendering."
-    measure_it:
-      - "Observe frame timing tools while animating UI."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: ram
-    term: "RAM"
-    acronym: RAM
-    plain_definition: >
-      Fast working memory used by running software.
-    technical_definition: >
-      Random-access memory holds active code and data; it is volatile under typical power-off conditions.
-    experience_benefit: >
-      Keeps active information quickly available.
-    analogy:
-      text: >
-        Like a desk surface holding papers you are using right now.
-      explicitly_labeled: true
-    not_the_same_as:
-      - storage
-    failure_or_limit:
-      - "Memory pressure, slowdowns, app termination."
-    measure_it:
-      - "Open many apps and watch memory pressure indicators."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: storage
-    term: "Storage"
-    acronym: null
-    plain_definition: >
-      Longer-term memory that keeps data when working memory is insufficient or power is removed.
-    technical_definition: >
-      Storage devices retain files and data across sessions, typically with higher latency than RAM.
-    experience_benefit: >
-      Remembers files and apps for later.
-    analogy:
-      text: >
-        Like a filing cabinet compared with a desk.
-      explicitly_labeled: true
-    not_the_same_as:
-      - ram
-    failure_or_limit:
-      - "Slow opens or stalls when storage is busy."
-    measure_it:
-      - "Time opening a large file from storage."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: packet
-    term: "Packet"
-    acronym: null
-    plain_definition: >
-      A formatted unit of data transmitted across a network.
-    technical_definition: >
-      Packets encapsulate payload and control information so networks can forward, route, and reassemble communication.
-    experience_benefit: >
-      Lets information move between systems.
-    analogy:
-      text: >
-        Like an addressed envelope carrying part of a message.
-      explicitly_labeled: true
-    not_the_same_as:
-      - frame
-    failure_or_limit:
-      - "Loss, retries, delay, incomplete responses."
-    measure_it:
-      - "Inspect request timing and failure states in network tools."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: protocol
-    term: "Protocol"
-    acronym: null
-    plain_definition: >
-      An agreed set of rules for exchanging information.
-    technical_definition: >
-      Protocols define formats, sequences, and error handling so different systems can interoperate.
-    experience_benefit: >
-      Makes remote cooperation possible.
-    analogy:
-      text: >
-        Like shared rules for a turn-taking conversation.
-      explicitly_labeled: true
-    not_the_same_as:
-      - api
-    failure_or_limit:
-      - "Communication fails when sides disagree on rules."
-    measure_it:
-      - "Identify protocol layers in a captured request path."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: radio
-    term: "Radio"
-    acronym: null
-    plain_definition: >
-      The wireless hardware and associated stack that send and receive signals over the air.
-    technical_definition: >
-      A radio subsystem converts digital information to/from electromagnetic signals under regulatory and link constraints.
-    experience_benefit: >
-      Lets a device communicate without a cable.
-    analogy:
-      text: >
-        Like a walkie-talkie built into the device.
-      explicitly_labeled: true
-    not_the_same_as:
-      - router
-    failure_or_limit:
-      - "Drops, weak signal, high latency."
-    measure_it:
-      - "Compare behavior on strong vs weak Wi-Fi without claiming field RF measurements you did not take."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: router
-    term: "Router"
-    acronym: null
-    plain_definition: >
-      A device or function that forwards packets between networks.
-    technical_definition: >
-      Routers use addressing and routing information to choose next hops for packets.
-    experience_benefit: >
-      Helps your data find a path beyond the local link.
-    analogy:
-      text: >
-        Like a mail sorting center choosing the next truck.
-      explicitly_labeled: true
-    not_the_same_as:
-      - packet
-    failure_or_limit:
-      - "Unreachable services despite local link connection."
-    measure_it:
-      - "Trace whether failure is local Wi-Fi, gateway, or remote service."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: latency
-    term: "Latency"
-    acronym: null
-    plain_definition: >
-      The delay between a cause and an observable effect.
-    technical_definition: >
-      Latency can be measured at many boundaries; application timestamps are not identical to physical touch-to-photon latency.
-    experience_benefit: >
-      Explains why something feels instant or late.
-    analogy:
-      text: >
-        Like the wait between knocking and hearing 'come in.'
-      explicitly_labeled: true
-    not_the_same_as:
-      - jitter
-    failure_or_limit:
-      - "Interactions feel sluggish."
-    measure_it:
-      - "Timestamp input and visible update; label what you truly measured."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: jitter
-    term: "Jitter"
-    acronym: null
-    plain_definition: >
-      Variation in delay over time.
-    technical_definition: >
-      Jitter describes instability in latency that can make motion or interaction feel uneven even when average delay is moderate.
-    experience_benefit: >
-      Helps explain uneven or 'hiccup' experiences.
-    analogy:
-      text: >
-        Like buses that are sometimes on time and sometimes late by different amounts.
-      explicitly_labeled: true
-    not_the_same_as:
-      - latency
-    failure_or_limit:
-      - "Stutter or unstable feel."
-    measure_it:
-      - "Collect multiple runs and report spread, not only the average."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: rendering
-    term: "Rendering"
-    acronym: null
-    plain_definition: >
-      The process of turning visual descriptions into pixels for display.
-    technical_definition: >
-      Rendering pipelines prepare frames from UI/scene state, often involving CPU and GPU stages before scanout.
-    experience_benefit: >
-      Turns app state into something you can see.
-    analogy:
-      text: >
-        Like developing a photo so the image becomes visible.
-      explicitly_labeled: true
-    not_the_same_as:
-      - frame
-    failure_or_limit:
-      - "Blank, delayed, or tearing visuals."
-    measure_it:
-      - "Use frame timing overlays where available."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: frame
-    term: "Frame"
-    acronym: null
-    plain_definition: >
-      One complete image update in a display sequence.
-    technical_definition: >
-      A frame is a discrete rendered output; missing deadlines can cause stutter.
-    experience_benefit: >
-      Smooth motion depends on frames arriving on time.
-    analogy:
-      text: >
-        Like one page in a flipbook.
-      explicitly_labeled: true
-    not_the_same_as:
-      - packet
-    failure_or_limit:
-      - "Stutter when frames are late."
-    measure_it:
-      - "Count missed frame deadlines in a profiling tool."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: cache
-    term: "Cache"
-    acronym: null
-    plain_definition: >
-      Small, fast storage that keeps likely-needed data close to where work happens.
-    technical_definition: >
-      Caches exploit locality to reduce average access latency across memory and content hierarchies.
-    experience_benefit: >
-      Avoids waiting when the answer is already nearby.
-    analogy:
-      text: >
-        Like keeping frequently used tools on a small workbench.
-      explicitly_labeled: true
-    not_the_same_as:
-      - storage
-    failure_or_limit:
-      - "Stalls when needed data is not cached."
-    measure_it:
-      - "Compare first load versus repeat load timing."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: service
-    term: "Service"
-    acronym: null
-    plain_definition: >
-      A program or component that performs work on request for other programs.
-    technical_definition: >
-      Services may run locally or remotely and expose APIs for clients.
-    experience_benefit: >
-      Does a job your app asks for.
-    analogy:
-      text: >
-        Like a specialist desk that handles one kind of request.
-      explicitly_labeled: true
-    not_the_same_as:
-      - process
-    failure_or_limit:
-      - "Feature fails when the service is down."
-    measure_it:
-      - "Distinguish local handler failure from remote service failure."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: edge-computing
-    term: "Edge computing"
-    acronym: null
-    plain_definition: >
-      Processing placed closer to users or devices than a distant central cloud.
-    technical_definition: >
-      Edge computing reduces some latency and can keep data nearer to its source, with deployment and consistency tradeoffs.
-    experience_benefit: >
-      Can make some responses feel nearer and faster.
-    analogy:
-      text: >
-        Like a neighborhood library versus a faraway archive.
-      explicitly_labeled: true
-    not_the_same_as:
-      - cloud-computing
-    failure_or_limit:
-      - "Still slow if the edge node is overloaded or far in network terms."
-    measure_it:
-      - "Compare response timing against a distant endpoint when ethically and safely possible."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: cloud-computing
-    term: "Cloud computing"
-    acronym: null
-    plain_definition: >
-      On-demand computing resources and services provided over a network, often in large shared facilities.
-    technical_definition: >
-      Cloud computing centralizes scalable compute/storage/services accessed remotely.
-    experience_benefit: >
-      Lets apps use powerful remote computers.
-    analogy:
-      text: >
-        Like renting workshop space instead of owning every tool.
-      explicitly_labeled: true
-    not_the_same_as:
-      - edge-computing
-    failure_or_limit:
-      - "Unavailable when connectivity or service fails."
-    measure_it:
-      - "Observe offline behavior of a network-dependent control."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: haptic-feedback
-    term: "Haptic feedback"
-    acronym: null
-    plain_definition: >
-      Touch-based feedback such as vibration or force cues.
-    technical_definition: >
-      Haptics provide non-visual confirmation channels that must be designed with accessibility and comfort in mind.
-    experience_benefit: >
-      Lets you feel that an action registered.
-    analogy:
-      text: >
-        Like a polite tap back on your fingertip.
-      explicitly_labeled: true
-    not_the_same_as:
-      - audio-feedback
-    failure_or_limit:
-      - "Missing confirmation for some users if haptics are the only cue."
-    measure_it:
-      - "Test interactions with haptics off and alternative cues on."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
-  - id: stability-contract
-    term: "Stability Contract"
-    acronym: null
-    plain_definition: >
-      The set of hidden technical conditions that must remain good enough for a human experience to succeed.
-    technical_definition: >
-      The Stability Contract teaches that connectivity, completion of local work, and display update are distinct conditions.
-    experience_benefit: >
-      Explains why 'connected' is not the same as 'usable.'
-    analogy:
-      text: >
-        Like a bridge that needs many bolts tight, not only one.
-      explicitly_labeled: true
-    not_the_same_as:
-      - latency
-    failure_or_limit:
-      - "Experience fails while some indicators still look fine."
-    measure_it:
-      - "List which conditions you observed versus inferred."
-    related: []
-    introduced_in: [CH02]
-    labs: [LAB-TAP-001]
-    careers: []
+- id: event
+  term: Event
+  acronym: null
+  plain_definition: 'A signal that something happened that software may need to handle.
+
+    '
+  technical_definition: "In interactive systems, an event is a discrete notification\u2014\
+    such as a touch, key press, timer, or network completion\u2014queued and dispatched\
+    \ to interested handlers.\n"
+  experience_benefit: 'Lets the app react when you do something.
+
+    '
+  analogy:
+    text: 'Like a doorbell ring that tells someone to answer the door.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - interrupt
+  failure_or_limit:
+  - Missed, delayed, or duplicated reactions.
+  measure_it:
+  - Log timestamps when an event is received and when handling finishes.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: touch-digitizer
+  term: Touch digitizer
+  acronym: null
+  plain_definition: 'The sensing layer that detects touch position and movement.
+
+    '
+  technical_definition: 'A touch digitizer converts physical contact into coordinates
+    and related signals for the input controller and operating system.
+
+    '
+  experience_benefit: 'Turns a finger contact into usable input.
+
+    '
+  analogy:
+    text: 'Like a grid that notices where a pencil presses on paper.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - display-panel
+  failure_or_limit:
+  - Missed, ghost, delayed, or inaccurate touches.
+  measure_it:
+  - Compare reported coordinates with intended target positions in a test app.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: interrupt
+  term: Interrupt
+  acronym: null
+  plain_definition: 'A hardware or software signal that can request prompt attention
+    from the processor or OS.
+
+    '
+  technical_definition: 'An interrupt notifies the system that a device or condition
+    needs handling, often causing a temporary switch into an interrupt service routine.
+    Not every application-visible touch is exposed as a raw hardware interrupt.
+
+    '
+  experience_benefit: 'Helps urgent input get attention quickly.
+
+    '
+  analogy:
+    text: 'Like a teacher tapping a student on the shoulder during silent work.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - polling
+  failure_or_limit:
+  - Delayed response when interrupts are masked or mishandled.
+  measure_it:
+  - Compare polled versus interrupt-driven toy examples on microcontroller labs where
+    available.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: device-driver
+  term: Device driver
+  acronym: null
+  plain_definition: 'Software that lets the operating system talk with a specific
+    hardware device.
+
+    '
+  technical_definition: 'A driver translates between OS input/output interfaces and
+    device-specific registers, protocols, or firmware behaviors.
+
+    '
+  experience_benefit: 'Makes hardware usable to the rest of the stack.
+
+    '
+  analogy:
+    text: 'Like a translator between a visitor and a local specialist.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - application-plugin
+  failure_or_limit:
+  - Device unavailable, unreliable, or misinterpreted.
+  measure_it:
+  - Observe whether a device appears/disappears in OS device listings when drivers
+    load.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: kernel
+  term: Kernel
+  acronym: null
+  plain_definition: 'The central part of an operating system that manages hardware
+    access and core resources.
+
+    '
+  technical_definition: 'The kernel mediates privileged operations such as scheduling,
+    memory management, and device access so applications do not each control hardware
+    directly.
+
+    '
+  experience_benefit: 'Lets many programs share one device safely enough to be useful.
+
+    '
+  analogy:
+    text: 'Like building staff who control keys, elevators, and utilities for every
+      tenant.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - user-interface
+  failure_or_limit:
+  - Severe instability or unavailable resources.
+  measure_it:
+  - Inspect process lists and resource monitors; kernel faults are rare and serious.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: process
+  term: Process
+  acronym: null
+  plain_definition: 'A running instance of a program with its own managed resources
+    and execution state.
+
+    '
+  technical_definition: 'A process is an OS-managed unit that typically includes address
+    space, credentials, and one or more threads.
+
+    '
+  experience_benefit: 'Keeps your app''s work organized as a living program.
+
+    '
+  analogy:
+    text: 'Like a workshop room reserved for one project.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - thread
+  failure_or_limit:
+  - App closes or freezes when the process is killed or stuck.
+  measure_it:
+  - Use a system monitor to see process CPU and memory.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: thread
+  term: Thread
+  acronym: null
+  plain_definition: 'A single sequence of executing instructions inside a process.
+
+    '
+  technical_definition: 'Threads share a process''s resources while maintaining separate
+    execution context, enabling concurrent work.
+
+    '
+  experience_benefit: 'Allows an app to do more than one piece of work in overlapping
+    time.
+
+    '
+  analogy:
+    text: 'Like multiple workers sharing one workshop.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - process
+  failure_or_limit:
+  - UI freezes when a critical thread blocks.
+  measure_it:
+  - Compare UI responsiveness when work runs on background threads.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: scheduler
+  term: Scheduler
+  acronym: null
+  plain_definition: 'The OS mechanism that decides when runnable software receives
+    CPU time.
+
+    '
+  technical_definition: 'A scheduler orders and preempts runnable threads/processes
+    according to policy, priority, and fairness constraints.
+
+    '
+  experience_benefit: 'Important work gets compute soon enough to feel responsive.
+
+    '
+  analogy:
+    text: 'Like a stage manager deciding who speaks next.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - event-loop
+  failure_or_limit:
+  - Input lag, stutter, or sluggishness under load.
+  measure_it:
+  - Create CPU load and observe latency changes.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: event-loop
+  term: Event loop
+  acronym: null
+  plain_definition: 'A program structure that waits for events and dispatches work
+    in response.
+
+    '
+  technical_definition: 'An event loop repeatedly dequeues events and invokes handlers;
+    blocking the loop delays all dependent UI work.
+
+    '
+  experience_benefit: 'Keeps the app responding to input and timers.
+
+    '
+  analogy:
+    text: 'Like a receptionist handling one visitor request at a time in order.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - thread
+  failure_or_limit:
+  - Frozen interface when the loop is blocked.
+  measure_it:
+  - Instrument handler start/end times around a button click.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: api
+  term: API
+  acronym: API
+  plain_definition: 'A defined way for one piece of software to request services from
+    another.
+
+    '
+  technical_definition: 'An application programming interface specifies functions,
+    messages, or endpoints and their expected behavior and constraints.
+
+    '
+  experience_benefit: 'Lets apps use system or network services without rewriting
+    them.
+
+    '
+  analogy:
+    text: 'Like a restaurant menu: you order known items, not the kitchen itself.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - user-interface
+  failure_or_limit:
+  - Broken features when contracts change or fail.
+  measure_it:
+  - Inspect request/response pairs in developer tools.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: cpu
+  term: CPU
+  acronym: CPU
+  plain_definition: 'The general-purpose processor that executes program instructions.
+
+    '
+  technical_definition: 'A central processing unit fetches, decodes, and executes
+    instructions, coordinating with memory and peripherals.
+
+    '
+  experience_benefit: 'Does the step-by-step thinking for most software.
+
+    '
+  analogy:
+    text: 'Like a versatile cook following recipes.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - gpu
+  failure_or_limit:
+  - Slowdowns when the CPU is saturated.
+  measure_it:
+  - Watch CPU utilization during an interaction.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: gpu
+  term: GPU
+  acronym: GPU
+  plain_definition: 'A processor specialized for highly parallel work such as graphics
+    rendering.
+
+    '
+  technical_definition: 'Graphics processing units excel at parallel numeric workloads
+    used in rendering and some compute tasks.
+
+    '
+  experience_benefit: 'Helps visuals appear smooth.
+
+    '
+  analogy:
+    text: 'Like many artists painting different parts of a mural at once.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - cpu
+  failure_or_limit:
+  - Missed frames, stutter, delayed rendering.
+  measure_it:
+  - Observe frame timing tools while animating UI.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: ram
+  term: RAM
+  acronym: RAM
+  plain_definition: 'Fast working memory used by running software.
+
+    '
+  technical_definition: 'Random-access memory holds active code and data; it is volatile
+    under typical power-off conditions.
+
+    '
+  experience_benefit: 'Keeps active information quickly available.
+
+    '
+  analogy:
+    text: 'Like a desk surface holding papers you are using right now.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - storage
+  failure_or_limit:
+  - Memory pressure, slowdowns, app termination.
+  measure_it:
+  - Open many apps and watch memory pressure indicators.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: storage
+  term: Storage
+  acronym: null
+  plain_definition: 'Longer-term memory that keeps data when working memory is insufficient
+    or power is removed.
+
+    '
+  technical_definition: 'Storage devices retain files and data across sessions, typically
+    with higher latency than RAM.
+
+    '
+  experience_benefit: 'Remembers files and apps for later.
+
+    '
+  analogy:
+    text: 'Like a filing cabinet compared with a desk.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - ram
+  failure_or_limit:
+  - Slow opens or stalls when storage is busy.
+  measure_it:
+  - Time opening a large file from storage.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: packet
+  term: Packet
+  acronym: null
+  plain_definition: 'A formatted unit of data transmitted across a network.
+
+    '
+  technical_definition: 'Packets encapsulate payload and control information so networks
+    can forward, route, and reassemble communication.
+
+    '
+  experience_benefit: 'Lets information move between systems.
+
+    '
+  analogy:
+    text: 'Like an addressed envelope carrying part of a message.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - frame
+  failure_or_limit:
+  - Loss, retries, delay, incomplete responses.
+  measure_it:
+  - Inspect request timing and failure states in network tools.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: protocol
+  term: Protocol
+  acronym: null
+  plain_definition: 'An agreed set of rules for exchanging information.
+
+    '
+  technical_definition: 'Protocols define formats, sequences, and error handling so
+    different systems can interoperate.
+
+    '
+  experience_benefit: 'Makes remote cooperation possible.
+
+    '
+  analogy:
+    text: 'Like shared rules for a turn-taking conversation.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - api
+  failure_or_limit:
+  - Communication fails when sides disagree on rules.
+  measure_it:
+  - Identify protocol layers in a captured request path.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: radio
+  term: Radio
+  acronym: null
+  plain_definition: 'The wireless hardware and associated stack that send and receive
+    signals over the air.
+
+    '
+  technical_definition: 'A radio subsystem converts digital information to/from electromagnetic
+    signals under regulatory and link constraints.
+
+    '
+  experience_benefit: 'Lets a device communicate without a cable.
+
+    '
+  analogy:
+    text: 'Like a walkie-talkie built into the device.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - router
+  failure_or_limit:
+  - Drops, weak signal, high latency.
+  measure_it:
+  - Compare behavior on strong vs weak Wi-Fi without claiming field RF measurements
+    you did not take.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: router
+  term: Router
+  acronym: null
+  plain_definition: 'A device or function that forwards packets between networks.
+
+    '
+  technical_definition: 'Routers use addressing and routing information to choose
+    next hops for packets.
+
+    '
+  experience_benefit: 'Helps your data find a path beyond the local link.
+
+    '
+  analogy:
+    text: 'Like a mail sorting center choosing the next truck.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - packet
+  failure_or_limit:
+  - Unreachable services despite local link connection.
+  measure_it:
+  - Trace whether failure is local Wi-Fi, gateway, or remote service.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: latency
+  term: Latency
+  acronym: null
+  plain_definition: 'The delay between a cause and an observable effect.
+
+    '
+  technical_definition: 'Latency can be measured at many boundaries; application timestamps
+    are not identical to physical touch-to-photon latency.
+
+    '
+  experience_benefit: 'Explains why something feels instant or late.
+
+    '
+  analogy:
+    text: 'Like the wait between knocking and hearing ''come in.''
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - jitter
+  failure_or_limit:
+  - Interactions feel sluggish.
+  measure_it:
+  - Timestamp input and visible update; label what you truly measured.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: jitter
+  term: Jitter
+  acronym: null
+  plain_definition: 'Variation in delay over time.
+
+    '
+  technical_definition: 'Jitter describes instability in latency that can make motion
+    or interaction feel uneven even when average delay is moderate.
+
+    '
+  experience_benefit: 'Helps explain uneven or ''hiccup'' experiences.
+
+    '
+  analogy:
+    text: 'Like buses that are sometimes on time and sometimes late by different amounts.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - latency
+  failure_or_limit:
+  - Stutter or unstable feel.
+  measure_it:
+  - Collect multiple runs and report spread, not only the average.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: rendering
+  term: Rendering
+  acronym: null
+  plain_definition: 'The process of turning visual descriptions into pixels for display.
+
+    '
+  technical_definition: 'Rendering pipelines prepare frames from UI/scene state, often
+    involving CPU and GPU stages before scanout.
+
+    '
+  experience_benefit: 'Turns app state into something you can see.
+
+    '
+  analogy:
+    text: 'Like developing a photo so the image becomes visible.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - frame
+  failure_or_limit:
+  - Blank, delayed, or tearing visuals.
+  measure_it:
+  - Use frame timing overlays where available.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: frame
+  term: Frame
+  acronym: null
+  plain_definition: 'One complete image update in a display sequence.
+
+    '
+  technical_definition: 'A frame is a discrete rendered output; missing deadlines
+    can cause stutter.
+
+    '
+  experience_benefit: 'Smooth motion depends on frames arriving on time.
+
+    '
+  analogy:
+    text: 'Like one page in a flipbook.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - packet
+  failure_or_limit:
+  - Stutter when frames are late.
+  measure_it:
+  - Count missed frame deadlines in a profiling tool.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: cache
+  term: Cache
+  acronym: null
+  plain_definition: 'Small, fast storage that keeps likely-needed data close to where
+    work happens.
+
+    '
+  technical_definition: 'Caches exploit locality to reduce average access latency
+    across memory and content hierarchies.
+
+    '
+  experience_benefit: 'Avoids waiting when the answer is already nearby.
+
+    '
+  analogy:
+    text: 'Like keeping frequently used tools on a small workbench.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - storage
+  failure_or_limit:
+  - Stalls when needed data is not cached.
+  measure_it:
+  - Compare first load versus repeat load timing.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: service
+  term: Service
+  acronym: null
+  plain_definition: 'A program or component that performs work on request for other
+    programs.
+
+    '
+  technical_definition: 'Services may run locally or remotely and expose APIs for
+    clients.
+
+    '
+  experience_benefit: 'Does a job your app asks for.
+
+    '
+  analogy:
+    text: 'Like a specialist desk that handles one kind of request.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - process
+  failure_or_limit:
+  - Feature fails when the service is down.
+  measure_it:
+  - Distinguish local handler failure from remote service failure.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: edge-computing
+  term: Edge computing
+  acronym: null
+  plain_definition: 'Processing placed closer to users or devices than a distant central
+    cloud.
+
+    '
+  technical_definition: 'Edge computing reduces some latency and can keep data nearer
+    to its source, with deployment and consistency tradeoffs.
+
+    '
+  experience_benefit: 'Can make some responses feel nearer and faster.
+
+    '
+  analogy:
+    text: 'Like a neighborhood library versus a faraway archive.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - cloud-computing
+  failure_or_limit:
+  - Still slow if the edge node is overloaded or far in network terms.
+  measure_it:
+  - Compare response timing against a distant endpoint when ethically and safely possible.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: cloud-computing
+  term: Cloud computing
+  acronym: null
+  plain_definition: 'On-demand computing resources and services provided over a network,
+    often in large shared facilities.
+
+    '
+  technical_definition: 'Cloud computing centralizes scalable compute/storage/services
+    accessed remotely.
+
+    '
+  experience_benefit: 'Lets apps use powerful remote computers.
+
+    '
+  analogy:
+    text: 'Like renting workshop space instead of owning every tool.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - edge-computing
+  failure_or_limit:
+  - Unavailable when connectivity or service fails.
+  measure_it:
+  - Observe offline behavior of a network-dependent control.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: haptic-feedback
+  term: Haptic feedback
+  acronym: null
+  plain_definition: 'Touch-based feedback such as vibration or force cues.
+
+    '
+  technical_definition: 'Haptics provide non-visual confirmation channels that must
+    be designed with accessibility and comfort in mind.
+
+    '
+  experience_benefit: 'Lets you feel that an action registered.
+
+    '
+  analogy:
+    text: 'Like a polite tap back on your fingertip.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - audio-feedback
+  failure_or_limit:
+  - Missing confirmation for some users if haptics are the only cue.
+  measure_it:
+  - Test interactions with haptics off and alternative cues on.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: stability-contract
+  term: Stability Contract
+  acronym: null
+  plain_definition: 'The set of hidden technical conditions that must remain good
+    enough for a human experience to succeed.
+
+    '
+  technical_definition: 'The Stability Contract teaches that connectivity, completion
+    of local work, and display update are distinct conditions.
+
+    '
+  experience_benefit: 'Explains why ''connected'' is not the same as ''usable.''
+
+    '
+  analogy:
+    text: 'Like a bridge that needs many bolts tight, not only one.
+
+      '
+    explicitly_labeled: true
+  not_the_same_as:
+  - latency
+  failure_or_limit:
+  - Experience fails while some indicators still look fine.
+  measure_it:
+  - List which conditions you observed versus inferred.
+  related: []
+  introduced_in:
+  - CH02
+  labs:
+  - LAB-TAP-001
+  careers: []
+- id: training-and-input-data
+  term: Training and input data
+  acronym: null
+  plain_definition: 'Examples/records used to fit a model or answer a question.
+
+    '
+  technical_definition: 'Examples/records used to fit a model or answer a question.
+
+    '
+  experience_benefit: 'Helps readers name Training and input data precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-DATA
+- id: model-parameters
+  term: Model parameters
+  acronym: null
+  plain_definition: "Stored numbers shaping inputs\u2192outputs; not a mind.\n"
+  technical_definition: "Stored numbers shaping inputs\u2192outputs; not a mind.\n"
+  experience_benefit: 'Helps readers name Model parameters precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-MODEL
+- id: inference-output
+  term: Inference / output
+  acronym: null
+  plain_definition: 'Running a model on new inputs to produce a prediction or generation.
+
+    '
+  technical_definition: 'Running a model on new inputs to produce a prediction or
+    generation.
+
+    '
+  experience_benefit: 'Helps readers name Inference / output precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-INFERENCE
+- id: generative-ai-systems-view
+  term: Generative AI (systems view)
+  acronym: null
+  plain_definition: 'Systems that produce new text/images/code by predicting likely
+    continuations.
+
+    '
+  technical_definition: 'Systems that produce new text/images/code by predicting likely
+    continuations.
+
+    '
+  experience_benefit: 'Helps readers name Generative AI (systems view) precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-GENAI
+- id: uncertainty-and-errors
+  term: Uncertainty and errors
+  acronym: null
+  plain_definition: 'Outputs can be wrong or incomplete even when fluent.
+
+    '
+  technical_definition: 'Outputs can be wrong or incomplete even when fluent.
+
+    '
+  experience_benefit: 'Helps readers name Uncertainty and errors precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-UNCERTAINTY
+- id: local-vs-cloud-ai
+  term: Local vs cloud AI
+  acronym: null
+  plain_definition: 'Whether inference runs on-device or on remote computers.
+
+    '
+  technical_definition: 'Whether inference runs on-device or on remote computers.
+
+    '
+  experience_benefit: 'Helps readers name Local vs cloud AI precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-LOCALCLOUD
+- id: evaluation-under-uncertainty
+  term: Evaluation under uncertainty
+  acronym: null
+  plain_definition: 'Checking usefulness with labeled observations and limits.
+
+    '
+  technical_definition: 'Checking usefulness with labeled observations and limits.
+
+    '
+  experience_benefit: 'Helps readers name Evaluation under uncertainty precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH21
+  labs: []
+  careers: []
+  full31_source: GL-CH21-EVAL
+- id: embodied-sensing
+  term: Embodied sensing
+  acronym: null
+  plain_definition: 'Capturing physical-world signals for interaction.
+
+    '
+  technical_definition: 'Capturing physical-world signals for interaction.
+
+    '
+  experience_benefit: 'Helps readers name Embodied sensing precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH22
+  labs: []
+  careers: []
+  full31_source: GL-CH22-SENSOR
+- id: edge-on-device-inference
+  term: Edge / on-device inference
+  acronym: null
+  plain_definition: 'Running models near the sensor/actuator.
+
+    '
+  technical_definition: 'Running models near the sensor/actuator.
+
+    '
+  experience_benefit: 'Helps readers name Edge / on-device inference precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH22
+  labs: []
+  careers: []
+  full31_source: GL-CH22-EDGE-AI
+- id: edge-resource-budget
+  term: Edge resource budget
+  acronym: null
+  plain_definition: 'Latency, energy, memory, thermal limits that bound experience.
+
+    '
+  technical_definition: 'Latency, energy, memory, thermal limits that bound experience.
+
+    '
+  experience_benefit: 'Helps readers name Edge resource budget precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH22
+  labs: []
+  careers: []
+  full31_source: GL-CH22-BUDGET
+- id: embodied-interaction-loop
+  term: Embodied interaction loop
+  acronym: null
+  plain_definition: "Sense \u2192 infer \u2192 actuate/feedback under human timing.\n"
+  technical_definition: "Sense \u2192 infer \u2192 actuate/feedback under human timing.\n"
+  experience_benefit: 'Helps readers name Embodied interaction loop precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH22
+  labs: []
+  careers: []
+  full31_source: GL-CH22-EMBODIED
+- id: sensing-privacy-boundary
+  term: Sensing privacy boundary
+  acronym: null
+  plain_definition: 'What continuous capture may expose beyond the visible UI.
+
+    '
+  technical_definition: 'What continuous capture may expose beyond the visible UI.
+
+    '
+  experience_benefit: 'Helps readers name Sensing privacy boundary precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH22
+  labs: []
+  careers: []
+  full31_source: GL-CH22-PRIVACY-SENSE
+- id: edge-cloud-fallback
+  term: Edge/cloud fallback
+  acronym: null
+  plain_definition: 'Degraded path when local inference cannot complete.
+
+    '
+  technical_definition: 'Degraded path when local inference cannot complete.
+
+    '
+  experience_benefit: 'Helps readers name Edge/cloud fallback precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH22
+  labs: []
+  careers: []
+  full31_source: GL-CH22-FALLBACK
+- id: attack-surface-ux-linked
+  term: Attack surface (UX-linked)
+  acronym: null
+  plain_definition: 'Places misuse can enter through the same flows people use.
+
+    '
+  technical_definition: 'Places misuse can enter through the same flows people use.
+
+    '
+  experience_benefit: 'Helps readers name Attack surface (UX-linked) precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-ATTACKSURFACE
+- id: identity
+  term: Identity
+  acronym: null
+  plain_definition: 'A claim about who/what an actor is.
+
+    '
+  technical_definition: 'A claim about who/what an actor is.
+
+    '
+  experience_benefit: 'Helps readers name Identity precisely in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-IDENTITY
+- id: authentication
+  term: Authentication
+  acronym: null
+  plain_definition: 'Checking an identity claim is believable enough for the risk.
+
+    '
+  technical_definition: 'Checking an identity claim is believable enough for the risk.
+
+    '
+  experience_benefit: 'Helps readers name Authentication precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-AUTHN
+- id: authorization
+  term: Authorization
+  acronym: null
+  plain_definition: 'Deciding what an authenticated actor may do.
+
+    '
+  technical_definition: 'Deciding what an authenticated actor may do.
+
+    '
+  experience_benefit: 'Helps readers name Authorization precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-AUTHZ
+- id: encryption-goals-and-limits
+  term: Encryption goals and limits
+  acronym: null
+  plain_definition: 'Unreadability without keys; endpoints still matter.
+
+    '
+  technical_definition: 'Unreadability without keys; endpoints still matter.
+
+    '
+  experience_benefit: 'Helps readers name Encryption goals and limits precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-CRYPTO
+- id: chip-to-cloud-trust-path
+  term: Chip-to-cloud trust path
+  acronym: null
+  plain_definition: 'Boot/firmware/OS/app/network/cloud controls as one chain of conditions.
+
+    '
+  technical_definition: 'Boot/firmware/OS/app/network/cloud controls as one chain
+    of conditions.
+
+    '
+  experience_benefit: 'Helps readers name Chip-to-cloud trust path precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-CHIPCLOUD
+- id: protection-design-principles
+  term: Protection design principles
+  acronym: null
+  plain_definition: 'Least privilege, fail-safe defaults, psychological acceptability,
+    etc.
+
+    '
+  technical_definition: 'Least privilege, fail-safe defaults, psychological acceptability,
+    etc.
+
+    '
+  experience_benefit: 'Helps readers name Protection design principles precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH23
+  labs: []
+  careers: []
+  full31_source: GL-CH23-PRINCIPLES
+- id: privacy-data-lifecycle
+  term: Privacy / data lifecycle
+  acronym: null
+  plain_definition: 'Rules and practices for collect, use, retain, share, delete/redact.
+
+    '
+  technical_definition: 'Rules and practices for collect, use, retain, share, delete/redact.
+
+    '
+  experience_benefit: 'Helps readers name Privacy / data lifecycle precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH24
+  labs: []
+  careers: []
+  full31_source: GL-CH24-PRIVACY
+- id: identity-in-human-systems
+  term: Identity in human systems
+  acronym: null
+  plain_definition: 'Claims about people/services that unlock experiences.
+
+    '
+  technical_definition: 'Claims about people/services that unlock experiences.
+
+    '
+  experience_benefit: 'Helps readers name Identity in human systems precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH24
+  labs: []
+  careers: []
+  full31_source: GL-CH24-IDENTITY
+- id: safety-constraints
+  term: Safety constraints
+  acronym: null
+  plain_definition: 'Limits that keep harmful outcomes from being easy to enact.
+
+    '
+  technical_definition: 'Limits that keep harmful outcomes from being easy to enact.
+
+    '
+  experience_benefit: 'Helps readers name Safety constraints precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH24
+  labs: []
+  careers: []
+  full31_source: GL-CH24-SAFETY
+- id: accessibility-path
+  term: Accessibility path
+  acronym: null
+  plain_definition: 'Alternate routes so experience succeeds for diverse bodies/tools.
+
+    '
+  technical_definition: 'Alternate routes so experience succeeds for diverse bodies/tools.
+
+    '
+  experience_benefit: 'Helps readers name Accessibility path precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH24
+  labs: []
+  careers: []
+  full31_source: GL-CH24-A11Y
+- id: ethics-ladder
+  term: Ethics ladder
+  acronym: null
+  plain_definition: 'Observation before inference; disclosure and responsible use.
+
+    '
+  technical_definition: 'Observation before inference; disclosure and responsible
+    use.
+
+    '
+  experience_benefit: 'Helps readers name Ethics ladder precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH24
+  labs: []
+  careers: []
+  full31_source: GL-CH24-ETHICS
+- id: wcag-as-guidance
+  term: WCAG as guidance
+  acronym: null
+  plain_definition: 'W3C accessibility guidelines; dated editions must not be silently
+    overwritten.
+
+    '
+  technical_definition: 'W3C accessibility guidelines; dated editions must not be
+    silently overwritten.
+
+    '
+  experience_benefit: 'Helps readers name WCAG as guidance precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH24
+  labs: []
+  careers: []
+  full31_source: GL-CH24-WCAG
+- id: digital-equity
+  term: Digital equity
+  acronym: null
+  plain_definition: 'Who can benefit from a technology experience and who is excluded.
+
+    '
+  technical_definition: 'Who can benefit from a technology experience and who is excluded.
+
+    '
+  experience_benefit: 'Helps readers name Digital equity precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH25
+  labs: []
+  careers: []
+  full31_source: GL-CH25-EQUITY
+- id: exclusion-mechanism
+  term: Exclusion mechanism
+  acronym: null
+  plain_definition: 'Device, cost, bandwidth, skill, language, disability, policy
+    barriers.
+
+    '
+  technical_definition: 'Device, cost, bandwidth, skill, language, disability, policy
+    barriers.
+
+    '
+  experience_benefit: 'Helps readers name Exclusion mechanism precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH25
+  labs: []
+  careers: []
+  full31_source: GL-CH25-EXCLUSION
+- id: measurable-inclusion-signals
+  term: Measurable inclusion signals
+  acronym: null
+  plain_definition: 'Observations that can be collected without inventing population
+    stats.
+
+    '
+  technical_definition: 'Observations that can be collected without inventing population
+    stats.
+
+    '
+  experience_benefit: 'Helps readers name Measurable inclusion signals precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH25
+  labs: []
+  careers: []
+  full31_source: GL-CH25-MEASURE
+- id: constrained-completion-route
+  term: Constrained completion route
+  acronym: null
+  plain_definition: 'A path that works without specialized hardware or paid APIs.
+
+    '
+  technical_definition: 'A path that works without specialized hardware or paid APIs.
+
+    '
+  experience_benefit: 'Helps readers name Constrained completion route precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH25
+  labs: []
+  careers: []
+  full31_source: GL-CH25-CONSTRAINED
+- id: honest-evidence-labeling
+  term: Honest evidence labeling
+  acronym: null
+  plain_definition: 'Observed / inferred / illustrative / population-claim distinctions.
+
+    '
+  technical_definition: 'Observed / inferred / illustrative / population-claim distinctions.
+
+    '
+  experience_benefit: 'Helps readers name Honest evidence labeling precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH25
+  labs: []
+  careers: []
+  full31_source: GL-CH25-LABELING
+- id: version-control
+  term: Version control
+  acronym: null
+  plain_definition: 'Recording changes so history can be inspected and recovered.
+
+    '
+  technical_definition: 'Recording changes so history can be inspected and recovered.
+
+    '
+  experience_benefit: 'Helps readers name Version control precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH26
+  labs: []
+  careers: []
+  full31_source: GL-CH26-VCS
+- id: commit
+  term: Commit
+  acronym: null
+  plain_definition: 'A snapshot of change with message and identity metadata.
+
+    '
+  technical_definition: 'A snapshot of change with message and identity metadata.
+
+    '
+  experience_benefit: 'Helps readers name Commit precisely in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH26
+  labs: []
+  careers: []
+  full31_source: GL-CH26-COMMIT
+- id: branch-integration
+  term: Branch / integration
+  acronym: null
+  plain_definition: 'Parallel lines of work later combined carefully.
+
+    '
+  technical_definition: 'Parallel lines of work later combined carefully.
+
+    '
+  experience_benefit: 'Helps readers name Branch / integration precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH26
+  labs: []
+  careers: []
+  full31_source: GL-CH26-BRANCH
+- id: code-review
+  term: Code review
+  acronym: null
+  plain_definition: 'Human inspection of diffs before integration.
+
+    '
+  technical_definition: 'Human inspection of diffs before integration.
+
+    '
+  experience_benefit: 'Helps readers name Code review precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH26
+  labs: []
+  careers: []
+  full31_source: GL-CH26-REVIEW
+- id: secrets-hygiene
+  term: Secrets hygiene
+  acronym: null
+  plain_definition: 'Credentials/tokens must not enter history.
+
+    '
+  technical_definition: 'Credentials/tokens must not enter history.
+
+    '
+  experience_benefit: 'Helps readers name Secrets hygiene precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH26
+  labs: []
+  careers: []
+  full31_source: GL-CH26-SECRETS
+- id: build-test-loop
+  term: Build-test loop
+  acronym: null
+  plain_definition: "Change \u2192 verify \u2192 evidence before claiming done.\n"
+  technical_definition: "Change \u2192 verify \u2192 evidence before claiming done.\n"
+  experience_benefit: 'Helps readers name Build-test loop precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH26
+  labs: []
+  careers: []
+  full31_source: GL-CH26-LOOP
+- id: testing
+  term: Testing
+  acronym: null
+  plain_definition: 'Checking claimed behavior with deliberate cases.
+
+    '
+  technical_definition: 'Checking claimed behavior with deliberate cases.
+
+    '
+  experience_benefit: 'Helps readers name Testing precisely in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH27
+  labs: []
+  careers: []
+  full31_source: GL-CH27-TEST
+- id: observability
+  term: Observability
+  acronym: null
+  plain_definition: 'Ability to ask new questions of a running system via signals.
+
+    '
+  technical_definition: 'Ability to ask new questions of a running system via signals.
+
+    '
+  experience_benefit: 'Helps readers name Observability precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH27
+  labs: []
+  careers: []
+  full31_source: GL-CH27-OBS
+- id: evidence-hierarchy
+  term: Evidence hierarchy
+  acronym: null
+  plain_definition: 'From illustrative aid to stronger measurement methods.
+
+    '
+  technical_definition: 'From illustrative aid to stronger measurement methods.
+
+    '
+  experience_benefit: 'Helps readers name Evidence hierarchy precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH27
+  labs: []
+  careers: []
+  full31_source: GL-CH27-EVIDENCE
+- id: observation-vs-inference
+  term: Observation vs inference
+  acronym: null
+  plain_definition: 'What happened vs what may explain it.
+
+    '
+  technical_definition: 'What happened vs what may explain it.
+
+    '
+  experience_benefit: 'Helps readers name Observation vs inference precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH27
+  labs: []
+  careers: []
+  full31_source: GL-CH27-OI
+- id: test-oracle
+  term: Test oracle
+  acronym: null
+  plain_definition: 'How we know a test outcome matches the experience claim.
+
+    '
+  technical_definition: 'How we know a test outcome matches the experience claim.
+
+    '
+  experience_benefit: 'Helps readers name Test oracle precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH27
+  labs: []
+  careers: []
+  full31_source: GL-CH27-ORACLE
+- id: evidence-redaction
+  term: Evidence redaction
+  acronym: null
+  plain_definition: 'Removing secrets/PII before sharing artifacts.
+
+    '
+  technical_definition: 'Removing secrets/PII before sharing artifacts.
+
+    '
+  experience_benefit: 'Helps readers name Evidence redaction precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH27
+  labs: []
+  careers: []
+  full31_source: GL-CH27-REDACT
+- id: simulation
+  term: Simulation
+  acronym: null
+  plain_definition: 'A computational stand-in for selected real behaviors.
+
+    '
+  technical_definition: 'A computational stand-in for selected real behaviors.
+
+    '
+  experience_benefit: 'Helps readers name Simulation precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH28
+  labs: []
+  careers: []
+  full31_source: GL-CH28-SIM
+- id: digital-twin-teaching-sense
+  term: Digital twin (teaching sense)
+  acronym: null
+  plain_definition: 'A maintained model paired to a real or planned system with update/validity
+    rules.
+
+    '
+  technical_definition: 'A maintained model paired to a real or planned system with
+    update/validity rules.
+
+    '
+  experience_benefit: 'Helps readers name Digital twin (teaching sense) precisely
+    in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH28
+  labs: []
+  careers: []
+  full31_source: GL-CH28-TWIN
+- id: reproducible-research
+  term: Reproducible research
+  acronym: null
+  plain_definition: 'Others can regenerate results from declared inputs and environment.
+
+    '
+  technical_definition: 'Others can regenerate results from declared inputs and environment.
+
+    '
+  experience_benefit: 'Helps readers name Reproducible research precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH28
+  labs: []
+  careers: []
+  full31_source: GL-CH28-REPRO
+- id: validity-bounds
+  term: Validity bounds
+  acronym: null
+  plain_definition: "Where the model is trusted\u2014and where it is not.\n"
+  technical_definition: "Where the model is trusted\u2014and where it is not.\n"
+  experience_benefit: 'Helps readers name Validity bounds precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH28
+  labs: []
+  careers: []
+  full31_source: GL-CH28-BOUNDS
+- id: fixture
+  term: Fixture
+  acronym: null
+  plain_definition: 'Deterministic teaching/measurement stand-in when live systems
+    vary.
+
+    '
+  technical_definition: 'Deterministic teaching/measurement stand-in when live systems
+    vary.
+
+    '
+  experience_benefit: 'Helps readers name Fixture precisely in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH28
+  labs: []
+  careers: []
+  full31_source: GL-CH28-FIXTURE
+- id: complete-technology-product
+  term: Complete technology product
+  acronym: null
+  plain_definition: 'Experience + stack + evidence + responsibility, not UI alone.
+
+    '
+  technical_definition: 'Experience + stack + evidence + responsibility, not UI alone.
+
+    '
+  experience_benefit: 'Helps readers name Complete technology product precisely in
+    lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH29
+  labs: []
+  careers: []
+  full31_source: GL-CH29-PRODUCT
+- id: design-gates
+  term: Design gates
+  acronym: null
+  plain_definition: 'Checks that must pass before claiming ship/usable.
+
+    '
+  technical_definition: 'Checks that must pass before claiming ship/usable.
+
+    '
+  experience_benefit: 'Helps readers name Design gates precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH29
+  labs: []
+  careers: []
+  full31_source: GL-CH29-GATES
+- id: evidence-plan
+  term: Evidence plan
+  acronym: null
+  plain_definition: 'What will be measured/tested before claims.
+
+    '
+  technical_definition: 'What will be measured/tested before claims.
+
+    '
+  experience_benefit: 'Helps readers name Evidence plan precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH29
+  labs: []
+  careers: []
+  full31_source: GL-CH29-EVIDENCE-PLAN
+- id: explicit-tradeoffs
+  term: Explicit tradeoffs
+  acronym: null
+  plain_definition: 'Latency, cost, privacy, power, inclusion named together.
+
+    '
+  technical_definition: 'Latency, cost, privacy, power, inclusion named together.
+
+    '
+  experience_benefit: 'Helps readers name Explicit tradeoffs precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH29
+  labs: []
+  careers: []
+  full31_source: GL-CH29-TRADEOFF
+- id: claim-boundary
+  term: Claim boundary
+  acronym: null
+  plain_definition: 'What the product may assert given evidence state.
+
+    '
+  technical_definition: 'What the product may assert given evidence state.
+
+    '
+  experience_benefit: 'Helps readers name Claim boundary precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH29
+  labs: []
+  careers: []
+  full31_source: GL-CH29-CLAIM-BOUNDARY
+- id: role-family
+  term: Role family
+  acronym: null
+  plain_definition: 'A cluster of related work, not a job promise.
+
+    '
+  technical_definition: 'A cluster of related work, not a job promise.
+
+    '
+  experience_benefit: 'Helps readers name Role family precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH30
+  labs: []
+  careers: []
+  full31_source: GL-CH30-ROLE
+- id: portfolio-proof
+  term: Portfolio proof
+  acronym: null
+  plain_definition: 'Artifacts that make skill inspectable.
+
+    '
+  technical_definition: 'Artifacts that make skill inspectable.
+
+    '
+  experience_benefit: 'Helps readers name Portfolio proof precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH30
+  labs: []
+  careers: []
+  full31_source: GL-CH30-PORTFOLIO
+- id: review-criteria
+  term: Review criteria
+  acronym: null
+  plain_definition: 'What makes an artifact convincing.
+
+    '
+  technical_definition: 'What makes an artifact convincing.
+
+    '
+  experience_benefit: 'Helps readers name Review criteria precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH30
+  labs: []
+  careers: []
+  full31_source: GL-CH30-CRITERIA
+- id: employment-non-guarantee
+  term: Employment non-guarantee
+  acronym: null
+  plain_definition: "Learning evidence \u2260 hired outcome.\n"
+  technical_definition: "Learning evidence \u2260 hired outcome.\n"
+  experience_benefit: 'Helps readers name Employment non-guarantee precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH30
+  labs: []
+  careers: []
+  full31_source: GL-CH30-BOUNDARY
+- id: portfolio-index
+  term: Portfolio index
+  acronym: null
+  plain_definition: "Map from artifact \u2192 claim \u2192 limitation.\n"
+  technical_definition: "Map from artifact \u2192 claim \u2192 limitation.\n"
+  experience_benefit: 'Helps readers name Portfolio index precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH30
+  labs: []
+  careers: []
+  full31_source: GL-CH30-INDEX
+- id: emit-spine
+  term: EMIT spine
+  acronym: null
+  plain_definition: 'Explain, Measure, Improve, Teach as required capstone cycle.
+
+    '
+  technical_definition: 'Explain, Measure, Improve, Teach as required capstone cycle.
+
+    '
+  experience_benefit: 'Helps readers name EMIT spine precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH31
+  labs: []
+  careers: []
+  full31_source: GL-CH31-EMIT
+- id: stability-contract-capstone-use
+  term: Stability Contract (capstone use)
+  acronym: null
+  plain_definition: 'Concurrent conditions that must hold for experience success.
+
+    '
+  technical_definition: 'Concurrent conditions that must hold for experience success.
+
+    '
+  experience_benefit: 'Helps readers name Stability Contract (capstone use) precisely
+    in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH31
+  labs: []
+  careers: []
+  full31_source: GL-CH31-CONTRACT
+- id: teach-back
+  term: Teach-back
+  acronym: null
+  plain_definition: 'Explaining the ecosystem so another person can use the model.
+
+    '
+  technical_definition: 'Explaining the ecosystem so another person can use the model.
+
+    '
+  experience_benefit: 'Helps readers name Teach-back precisely in lived technology
+    experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH31
+  labs: []
+  careers: []
+  full31_source: GL-CH31-TEACHBACK
+- id: evidence-limitations
+  term: Evidence limitations
+  acronym: null
+  plain_definition: 'What the packet does not prove.
+
+    '
+  technical_definition: 'What the packet does not prove.
+
+    '
+  experience_benefit: 'Helps readers name Evidence limitations precisely in lived
+    technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH31
+  labs: []
+  careers: []
+  full31_source: GL-CH31-LIMITS
+- id: fixture-validated-infrastructure
+  term: Fixture-validated infrastructure
+  acronym: null
+  plain_definition: "Deterministic lab validation \u2260 human reader validation.\n"
+  technical_definition: "Deterministic lab validation \u2260 human reader validation.\n"
+  experience_benefit: 'Helps readers name Fixture-validated infrastructure precisely
+    in lived technology experiences.
+
+    '
+  analogy:
+    text: "A named part of a larger cooperating system\u2014not the whole story by\
+      \ itself.\n"
+    explicitly_labeled: true
+  not_the_same_as: []
+  failure_or_limit:
+  - Misnaming this part as the entire product or experience.
+  measure_it:
+  - State an observable signal and what would falsify a claim about it.
+  related: []
+  introduced_in:
+  - CH31
+  labs: []
+  careers: []
+  full31_source: GL-CH31-FIXTURE

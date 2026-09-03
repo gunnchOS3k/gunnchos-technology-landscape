@@ -1,0 +1,21 @@
+figure_id: FIG-CH30-002
+title: "Portfolio checklist fields"
+caption: "Portfolio checklist fields. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Portfolio checklist fields. Reading order: Index entry; Claim type; Evidence link; Limitations; Teach-back."
+text_equivalent: |
+  Portfolio checklist fields. Nodes in reading order: Index entry; Claim type; Evidence link; Limitations; Teach-back. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Index entry
+- Claim type
+- Evidence link
+- Limitations
+- Teach-back
+source: figures/full31/ch30/fig-ch30-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

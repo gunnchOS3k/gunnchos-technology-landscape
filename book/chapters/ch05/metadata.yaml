@@ -2,5 +2,28 @@ chapter_id: CH05
 chapter_number: 5
 title: "Electricity, Signals, Clocks, and Logic"
 part: II
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+human_question:
+  - How does an everyday device turn a human action into an electrical story that logic can decide?
+experience:
+  - button press or touch that produces a perceptible device effect
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [electrical, signal, clock, logic, input]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-SIG-001]
+figures: [FIG-CH05-001, FIG-CH05-002, FIG-CH05-003, FIG-CH05-004]
+concepts:
+  introduced: [electricity-energy-control, signal, clock, logic-gate, analog-vs-digital, noise-integrity]
+  required: []
+  related: [stability-contract, interrupt, event]
+waike:
+  mapped: true
+  courses: [HARDWARE_ENGINEERING, EMBEDDED_PROTOTYPING]
+  note: "Adjacent digital_rc labs only (lab_logic_gate, lab_rc_transient, and neighbors); LAB-SIG-001 is publication-owned."
+claims:
+  registry: evidence/claim_registry.yaml
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_validation: DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT

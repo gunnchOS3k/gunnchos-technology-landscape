@@ -1,0 +1,20 @@
+---
+title: "Manuscript status"
+---
+
+# WORKING FULL-MANUSCRIPT DRAFT
+
+Human reader validation pending.
+
+Technical/editorial revision pending.
+
+Not publication-ready.
+
+---
+
+This build is a **working full-manuscript draft** of *The Technology Landscape*. It is intended for authoring, internal technical review preparation, and toolchain verification.
+
+- Gate posture remains: `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`.
+- Historical chapter-prototype review `CH02-REVIEW-R1` is **not** full-manuscript validation.
+- Full-book human validation is **deferred until** the entire 31-chapter working draft exists (see `publication/full31/VALIDATION_SEQUENCE_DECISION.md`).
+- Successful HTML/PDF/EPUB rendering does **not** mean publication-ready.

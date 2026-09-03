@@ -8,39 +8,47 @@ glossary_candidates:
   related_concepts:
   - CX-CH28-SIM
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: simulation
 - term_id: GL-CH28-TWIN
   preferred_term: Digital twin (teaching sense)
-  plain_language_definition: A maintained model paired to a real or planned system with update/validity rules.
+  plain_language_definition: A maintained model paired to a real or planned system
+    with update/validity rules.
   introduced_in: CH28
   related_concepts:
   - CX-CH28-TWIN
   - CX-CH28-SIM
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: digital-twin-teaching-sense
 - term_id: GL-CH28-REPRO
   preferred_term: Reproducible research
-  plain_language_definition: Others can regenerate results from declared inputs and environment.
+  plain_language_definition: Others can regenerate results from declared inputs and
+    environment.
   introduced_in: CH28
   related_concepts:
   - CX-CH28-REPRO
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: reproducible-research
 - term_id: GL-CH28-BOUNDS
   preferred_term: Validity bounds
-  plain_language_definition: Where the model is trusted—and where it is not.
+  plain_language_definition: "Where the model is trusted\u2014and where it is not."
   introduced_in: CH28
   related_concepts:
   - CX-CH28-BOUNDS
   - CX-CH28-SIM
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: validity-bounds
 - term_id: GL-CH28-FIXTURE
   preferred_term: Fixture
-  plain_language_definition: Deterministic teaching/measurement stand-in when live systems vary.
+  plain_language_definition: Deterministic teaching/measurement stand-in when live
+    systems vary.
   introduced_in: CH28
   related_concepts:
   - CX-CH28-FIXTURE
   - CX-CH28-REPRO
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: fixture

@@ -1,0 +1,19 @@
+figure_id: FIG-CH10-003
+title: "Electrical vs protocol layer"
+caption: "Electrical vs protocol layer. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Interconnect; Electrical; Protocol; Both needed."
+text_equivalent: |
+  1. Interconnect — one path
+  2. Electrical — contacts/energy
+  3. Protocol — rules/messages
+  4. Both needed — literacy
+  Truth: conceptual. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Interconnect"
+  - "2 Electrical"
+  - "3 Protocol"
+  - "4 Both needed"
+source: figures/architecture/fig-ch10-003-electrical-vs-protocol.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

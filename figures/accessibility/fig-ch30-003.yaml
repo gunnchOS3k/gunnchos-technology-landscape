@@ -1,0 +1,20 @@
+figure_id: FIG-CH30-003
+title: "Learning proof vs employment"
+caption: "Learning proof vs employment. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Learning proof vs employment. Reading order: Learning proof; Portfolio; Employer decision; No promise."
+text_equivalent: |
+  Learning proof vs employment. Nodes in reading order: Learning proof; Portfolio; Employer decision; No promise. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Learning proof
+- Portfolio
+- Employer decision
+- No promise
+source: figures/full31/ch30/fig-ch30-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -6,8 +6,10 @@ claims:
   text: "Radio links depend on spectrum use, antennas, and time-varying channel conditions\u2014\
     not only on having Wi-Fi on."
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - ieee80211-2020
+  - kurose-ross-8
   overclaim_risk: Wireless textbook + IEEE pointers.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -16,8 +18,9 @@ claims:
   text: MIMO and beamforming are spatial techniques; teaching survey depth must not
     invent device-specific dB gains.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - ieee80211-2020
   overclaim_risk: No fake link budgets as product truth.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -26,8 +29,10 @@ claims:
   text: Interference and blockage can degrade experience while connection icons remain
     lit.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - ieee80211-2020
+  - kurose-ross-8
   overclaim_risk: CE-4/CE-6 continuity.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.

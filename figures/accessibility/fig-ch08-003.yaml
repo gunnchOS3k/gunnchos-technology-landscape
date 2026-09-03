@@ -1,0 +1,15 @@
+figure_id: FIG-CH08-003
+title: "Sampling: continuous → discrete"
+caption: "Continuous phenomenon compared with discrete samples. Conceptual educational plate."
+alt_text: "Side-by-side conceptual plate comparing a continuous phenomenon with discrete sample stems."
+text_equivalent: |
+  Reading order: (1) Continuous phenomenon panel;
+  (2) Discrete samples panel (pixels, PCM, or IMU-style stems as teaching labels).
+  Truth: conceptual. Color is not the sole encoding.
+reading_order:
+  - "1 Continuous phenomenon"
+  - "2 Discrete samples"
+source: figures/architecture/fig-ch08-003-sampling.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

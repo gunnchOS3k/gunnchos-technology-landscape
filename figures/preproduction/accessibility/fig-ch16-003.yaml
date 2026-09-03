@@ -1,0 +1,18 @@
+figure_id: FIG-CH16-003
+title: "DNS on the critical path"
+caption: "DNS resolution before connecting to an application service. Truth: conceptual. DNS is not the application service."
+alt_text: "FIG-CH16-003: Request waits on DNS before connect and application response."
+text_equivalent: |
+  FIG-CH16-003 reading order: User action, DNS lookup, connect, application response.
+reading_order:
+  - "User action"
+  - "DNS lookup"
+  - "Connect"
+  - "Application response"
+source: "figures/architecture/fig-ch16-003-dns-critical-path.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

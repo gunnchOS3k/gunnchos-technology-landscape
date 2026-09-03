@@ -1,0 +1,21 @@
+figure_id: FIG-CH29-001
+title: "Complete product ecosystem map"
+caption: "Complete product ecosystem map. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Complete product ecosystem map. Reading order: Human experience; App/code; Local resources; Network; Society."
+text_equivalent: |
+  Complete product ecosystem map. Nodes in reading order: Human experience; App/code; Local resources; Network; Society. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Human experience
+- App/code
+- Local resources
+- Network
+- Society
+source: figures/full31/ch29/fig-ch29-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

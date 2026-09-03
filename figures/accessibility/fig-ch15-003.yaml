@@ -1,0 +1,17 @@
+figure_id: FIG-CH15-003
+title: "Same app three ways"
+caption: "Same human task as local install, container/image, or cloud URL. Truth: illustrative."
+alt_text: "FIG-CH15-003: Three parallel presentations of the same task."
+text_equivalent: |
+  FIG-CH15-003 reading order: (1) Local install, (2) Container/image, (3) Cloud URL. Not vendor performance data.
+reading_order:
+  - "Local"
+  - "Container"
+  - "Cloud URL"
+source: "figures/sequence/fig-ch15-003-same-app-three-ways.svg"
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

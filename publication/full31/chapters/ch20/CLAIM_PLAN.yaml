@@ -6,8 +6,10 @@ claims:
   text: Latency, reliability, and throughput are different failure/success families;
     collapsing them misleads diagnosis.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - iso-iec-25010-2023
+  - itu-t-p10-g100
   overclaim_risk: CE-4/CE-6.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -16,8 +18,11 @@ claims:
   text: "QoE is human-facing; QoS is service-characteristic language; ping is one\
     \ probe\u2014not a full contract."
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - itu-t-p10-g100
+  - itu-t-g1011
+  - mdn-performance
   overclaim_risk: ITU-T QoE pointers SOURCE_NEEDED exact.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -26,8 +31,10 @@ claims:
   text: A user experience exists only while multiple hidden technical conditions remain
     within acceptable bounds.
   claim_class: illustrative
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - itu-t-g1011
+  - iso-iec-25010-2023
   overclaim_risk: PEDAGOGICAL_CONTRACT / CE-6.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -36,8 +43,10 @@ claims:
   text: Connected indicators can remain green while the human experience has already
     failed.
   claim_class: illustrative
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - itu-t-p10-g100
+  - mdn-performance
   overclaim_risk: CE-6.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.

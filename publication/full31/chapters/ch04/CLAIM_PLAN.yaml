@@ -7,16 +7,27 @@ claims:
   text: Device Quartet documents define research form factors / educational learning
     benchmarks.
   claim_class: project_specific
-  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
-    project evidence for CH04.
+  evidence_required: Hardware Device Quartet research docs + publication devices/quartet.yaml at audited SHAs.
+
   preferred_source_type: repository_accepted_main
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys:
   - src-hardware-quartet
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
     measurements; shipping Quartet SKUs; Gate 3 PASS'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-hardware-industrial-design
+    commit: 9ee0ef2f688b2c18428bfabc316b23687a02988d
+    paths:
+    - docs/device-quartet/README.md
+    - DIGITAL_MANUFACTURING_READINESS.md
+    source_id: SRC-HARDWARE
+    also_publication:
+      repository: gunnchOS3k/gunnchos-technology-landscape
+      commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+      path: devices/quartet.yaml
 - provisional_id: CLM-CH04-002
   text: Physical Device Quartet units and EVT measurements remain PHYSICAL_PENDING.
   claim_class: project_specific
@@ -45,12 +56,20 @@ claims:
 - provisional_id: CLM-CH04-004
   text: Ch4 labs must not require purchase or possession of Quartet hardware.
   claim_class: publication_internal
-  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
-    project evidence for CH04.
+  evidence_required: Publication audit safe wording + research-form-factor device index; Wave-1 labs require no Quartet hardware.
+
   preferred_source_type: publication_policy
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys: []
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
     measurements; shipping Quartet SKUs; Gate 3 PASS'
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - evidence/ACCEPTED_MAIN_SOURCE_AUDIT.md
+    - devices/quartet.yaml
+    - labs/LAB-TAP-001/lab.yaml
+    - labs/LAB-SYS-001/lab.yaml

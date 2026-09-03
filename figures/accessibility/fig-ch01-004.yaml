@@ -1,0 +1,30 @@
+figure_id: FIG-CH01-004
+title: Local-only readiness vs network-dependent readiness branches for the same visible
+  chrome.
+caption: 'Local-only readiness vs network-dependent readiness branches for the same
+  visible chrome.. Same starting human moment; different dependency sets. Truth: illustrative.
+  Color is not the sole encoding.'
+alt_text: Describe both branches and the join at 'content usable or failed'.
+text_equivalent: 'Describe both branches and the join at ''content usable or failed''.
+  Reading order: App chrome visible; Local-only path; Optional remote path; Content
+  usable or failed.
+
+  Evidence: Illustrative contrast for LAB-SYS-001; not a benchmark.
+
+  Geometry intent: Fork after ''app chrome visible'' into Local path and Optional
+  remote path.'
+reading_order:
+- App chrome visible
+- Local-only path
+- Optional remote path
+- Content usable or failed
+source: figures/preproduction/ce-01/fig-ce1-004.svg
+evidence_note: Illustrative contrast for LAB-SYS-001; not a benchmark.
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Solid vs dashed branch labels.
+reviewer: pending-human-visual-review
+version: 0.1.0

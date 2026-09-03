@@ -1,0 +1,19 @@
+---
+title: "How to use this book"
+---
+
+# How to use this book
+
+This publication teaches technology as a lived system: **human experience → system → component → code → network → society**.
+
+## Suggested first pass
+
+1. Read the status page so expectations stay honest (working draft; validation pending).
+2. Skim reader pathways and pick the lane that matches your starting point.
+3. Read Chapter 2 (*Follow One Tap Through the Entire Stack*) as the method prototype.
+4. Use Device Quartet and WAIKE pages as orientation — not as purchase or credential claims.
+5. Follow labs only on devices and accounts you already control.
+
+## What “working draft” means here
+
+Prose, figures, and labs may still move. Claims that require physical Device Quartet measurements remain `PHYSICAL_PENDING`. Do not treat scaffolds or unfinished chapters as finished teaching units.

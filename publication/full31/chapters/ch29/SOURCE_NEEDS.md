@@ -35,3 +35,9 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| `CLM-CH29-003` / `product_design_refs` | Select non-marketing product-engineering / PM BoK refs only if used beyond pedagogy; no invented PMI/ISBN. |

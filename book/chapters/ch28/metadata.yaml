@@ -1,6 +1,92 @@
 chapter_id: CH28
 chapter_number: 28
 title: "Digital Twins, Simulation, and Reproducible Research"
+author: "Edmund Gunn, Jr."
 part: VI
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+inherits_from:
+  - CE-6
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING (no Gate 3 PASS claimed)"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When a simulation says a design is fine but the real path fails—or a peer cannot regenerate a result—what bounded stand-in were we using, and what must be pinned to reproduce it?
+experience:
+  - simulation-says-fine / real-path-fails
+  - peer cannot regenerate a table because environment was unpinned
+  - fixture or twin language used as if it were measured physical proof
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [simulation, digital-twin, validity-bounds, reproducible-research, fixture]
+devices: [commodity-computer, commodity-phone]
+device_quartet_policy: "Research form-factor twin pedagogy only; measured Quartet twin validation PHYSICAL_PENDING; never required for baseline labs."
+labs: [LAB-CE06-001]
+lab_proposed_only: [LAB-CH28-REPRO-001]
+figures:
+  - FIG-CH28-001
+  - FIG-CH28-002
+  - FIG-CH28-003
+concepts:
+  introduced:
+    - simulation
+    - digital-twin
+    - validity-bounds
+    - reproducible-research
+    - fixture
+  required:
+    - stability-contract
+    - observation-vs-inference
+  related:
+    - emit-capstone
+    - measurement-limitations
+    - device-quartet
+waike:
+  mapped: true
+  exact: []
+  adjacent:
+    - reproducible_research
+    - capstones
+    - EMBEDDED_PROTOTYPING
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; no exact DIGITAL_TWIN / CH28 WAIKE module; do not invent twin course IDs."
+claims:
+  taught:
+    - CLM-CH28-001
+    - CLM-CH28-002
+    - CLM-CH28-003
+    - CLM-CH28-004
+  packet: publication/full31/chapters/ch28/CLAIM_PLAN.yaml
+  evidence_notes:
+    - "CLM-CH28-001 SOURCE_IDENTIFIED via src-waike (reproducible_research adjacent track)"
+    - "CLM-CH28-002 SOURCE_IDENTIFIED via iso-23247-1-2021 (ISO 23247-1 manufacturing twin framework overview; no invented fidelity)"
+    - "CLM-CH28-003 PHYSICAL_PENDING Device Quartet twin validation"
+    - "CLM-CH28-004 ILLUSTRATIVE_ONLY fixtures unless labeled measured"
+    - "repro_research_guide remains SOURCE_NEEDED — no invented peer-reviewed guide citation"
+citation_keys:
+  - iso-23247-1-2021
+  - src-waike
+  - src-hardware-quartet
+  - iso-iec-25010-2023
+  - wcag22-20241212
+  - gunnchos-technology-landscape-ce06
+anatomy_anchors:
+  - ch28-moment
+  - ch28-notice
+  - ch28-ecosystem
+  - ch28-signal
+  - ch28-components
+  - ch28-stability
+  - ch28-try
+  - ch28-build
+  - ch28-secure-include
+  - ch28-career
+  - ch28-check
+  - ch28-glossary
+blockers:
+  - "Gate 3 reader evidence pending — no PASS claimed; do not alter gate-3 responses"
+  - "CLM-CH28-003 Device Quartet digital twins PHYSICAL_PENDING"
+  - "repro_research_guide SOURCE_NEEDED — do not invent peer-reviewed reproducibility guide metadata"
+  - "LAB-CH28-REPRO-001 remains proposed-only; not a live publication lab ID"
+  - "No invented twin fidelity scores, WAIKE DIGITAL_TWIN course IDs, or fixture-as-physical-proof claims"
+bibliography_note: "Cite iso-23247-1-2021 (promoted from CE-6 / EVIDENCE-A verified catalogue metadata) plus src-waike / src-hardware-quartet. Peer-reviewed reproducibility guide remains SOURCE_NEEDED."

@@ -41,3 +41,881 @@ figures:
     accessibility: figures/accessibility/fig-ch02-007.yaml
     status: conceptual
     chapter: CH02
+
+  - figure_id: FIG-CH01-001
+    id: FIG-CH01-001
+    title: "First-minute ecosystem map"
+    path: figures/ecosystem/fig-ch01-001-ecosystem-map.svg
+    accessibility: figures/accessibility/fig-ch01-001.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-001; not a duplicate artwork."
+  - figure_id: FIG-CH01-002
+    id: FIG-CH01-002
+    title: "Inputs to processing to state to outputs"
+    path: figures/sequence/fig-ch01-002-inputs-state-outputs.svg
+    accessibility: figures/accessibility/fig-ch01-002.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-002."
+  - figure_id: FIG-CH01-003
+    id: FIG-CH01-003
+    title: "Why the app is not one thing"
+    path: figures/architecture/fig-ch01-003-app-not-one-thing.svg
+    accessibility: figures/accessibility/fig-ch01-003.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-003."
+  - figure_id: FIG-CH01-004
+    id: FIG-CH01-004
+    title: "Local-only vs network-dependent readiness"
+    path: figures/ecosystem/fig-ch01-004-local-vs-network.svg
+    accessibility: figures/accessibility/fig-ch01-004.yaml
+    status: illustrative
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-004."
+  - figure_id: FIG-CH01-005
+    id: FIG-CH01-005
+    title: "Failure-domain map"
+    path: figures/architecture/fig-ch01-005-failure-domains.svg
+    accessibility: figures/accessibility/fig-ch01-005.yaml
+    status: illustrative
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-005."
+  - figure_id: FIG-CH01-006
+    id: FIG-CH01-006
+    title: "Exploded ecosystem preview"
+    path: figures/exploded-views/fig-ch01-006-ecosystem-preview.svg
+    accessibility: figures/accessibility/fig-ch01-006.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-006; PHYSICAL_PENDING Quartet callout."
+  - figure_id: FIG-CH01-007
+    id: FIG-CH01-007
+    title: "Stability Contract preview"
+    path: figures/architecture/fig-ch01-007-stability-preview.svg
+    accessibility: figures/accessibility/fig-ch01-007.yaml
+    status: conceptual
+    chapter: CH01
+    note: "Alias to CE-1 FIG-CE1-007."
+  - figure_id: FIG-CH04-001
+    title: "Device Quartet as a Learning Laboratory"
+    path: figures/ecosystem/fig-ch04-001-quartet-learning-lab.svg
+    accessibility: figures/accessibility/fig-ch04-001.yaml
+    status: conceptual
+    chapter: CH04
+  - figure_id: FIG-CH04-002
+    title: "Same Task Across Form Factors"
+    path: figures/ecosystem/fig-ch04-002-same-task-constraints.svg
+    accessibility: figures/accessibility/fig-ch04-002.yaml
+    status: illustrative
+    chapter: CH04
+  - figure_id: FIG-CH04-003
+    title: "Constraint Matrix (Conceptual)"
+    path: figures/ecosystem/fig-ch04-003-constraint-matrix.svg
+    accessibility: figures/accessibility/fig-ch04-003.yaml
+    status: conceptual
+    chapter: CH04
+  - figure_id: FIG-CH05-001
+    title: "Press to Logic Flow"
+    path: figures/ecosystem/fig-ch05-001-press-to-logic.svg
+    accessibility: figures/accessibility/fig-ch05-001.yaml
+    status: conceptual
+    chapter: CH05
+  - figure_id: FIG-CH05-002
+    title: "Analog versus Digital"
+    path: figures/architecture/fig-ch05-002-analog-vs-digital.svg
+    accessibility: figures/accessibility/fig-ch05-002.yaml
+    status: conceptual
+    chapter: CH05
+  - figure_id: FIG-CH05-003
+    title: "Clock Edges Sequencing Decisions"
+    path: figures/sequence/fig-ch05-003-clock-edges.svg
+    accessibility: figures/accessibility/fig-ch05-003.yaml
+    status: illustrative
+    chapter: CH05
+  - figure_id: FIG-CH05-004
+    title: "Logic Building Blocks"
+    path: figures/architecture/fig-ch05-004-logic-blocks.svg
+    accessibility: figures/accessibility/fig-ch05-004.yaml
+    status: conceptual
+    chapter: CH05
+  - figure_id: FIG-CH07-001
+    title: "Memory hierarchy — registers, cache, RAM, storage"
+    path: figures/architecture/fig-ch07-001-memory-hierarchy.svg
+    accessibility: figures/accessibility/fig-ch07-001.yaml
+    status: conceptual
+    chapter: CH07
+  - figure_id: FIG-CH07-002
+    title: "Open file path — storage to RAM to cache to CPU"
+    path: figures/sequence/fig-ch07-002-open-file-path.svg
+    accessibility: figures/accessibility/fig-ch07-002.yaml
+    status: conceptual
+    chapter: CH07
+  - figure_id: FIG-CH07-003
+    title: "Healthy network icon with memory-pressure hitch"
+    path: figures/architecture/fig-ch07-003-memory-pressure.svg
+    accessibility: figures/accessibility/fig-ch07-003.yaml
+    status: illustrative
+    chapter: CH07
+  - figure_id: FIG-CH08-001
+    title: "World ↔ sensing ↔ processing ↔ presentation"
+    path: figures/ecosystem/fig-ch08-001-media-sensorium.svg
+    accessibility: figures/accessibility/fig-ch08-001.yaml
+    status: conceptual
+    chapter: CH08
+  - figure_id: FIG-CH08-002
+    title: "Presentation timing and feel (illustrative)"
+    path: figures/sequence/fig-ch08-002-presentation-timing.svg
+    accessibility: figures/accessibility/fig-ch08-002.yaml
+    status: illustrative
+    chapter: CH08
+  - figure_id: FIG-CH08-003
+    title: "Sampling: continuous → discrete"
+    path: figures/architecture/fig-ch08-003-sampling.svg
+    accessibility: figures/accessibility/fig-ch08-003.yaml
+    status: conceptual
+    chapter: CH08
+
+  - figure_id: FIG-CH09-001
+    title: "Energy Path with Throttle Feedback"
+    path: figures/ecosystem/fig-ch09-001-energy-path.svg
+    accessibility: figures/accessibility/fig-ch09-001.yaml
+    status: conceptual
+    chapter: CH09
+  - figure_id: FIG-CH09-002
+    title: "On Charger vs On Battery"
+    path: figures/ecosystem/fig-ch09-002-charger-vs-battery.svg
+    accessibility: figures/accessibility/fig-ch09-002.yaml
+    status: illustrative
+    chapter: CH09
+  - figure_id: FIG-CH09-003
+    title: "Mechanical Enclosure Roles"
+    path: figures/exploded-views/fig-ch09-003-enclosure-roles.svg
+    accessibility: figures/accessibility/fig-ch09-003.yaml
+    status: conceptual
+    chapter: CH09
+
+  - figure_id: FIG-CH06-001
+    id: FIG-CH06-001
+    title: "App → process/threads → scheduler → cores/accelerator"
+    path: figures/architecture/fig-ch06-001-app-to-cores.svg
+    accessibility: figures/preproduction/accessibility/fig-ch06-001.yaml
+    status: conceptual
+    chapter: CH06
+  - figure_id: FIG-CH06-002
+    id: FIG-CH06-002
+    title: "Single-thread vs parallelizable work"
+    path: figures/architecture/fig-ch06-002-serial-vs-parallel.svg
+    accessibility: figures/preproduction/accessibility/fig-ch06-002.yaml
+    status: illustrative
+    chapter: CH06
+  - figure_id: FIG-CH06-003
+    id: FIG-CH06-003
+    title: "CPU-bound vs waiting-on-I/O symptoms"
+    path: figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg
+    accessibility: figures/preproduction/accessibility/fig-ch06-003.yaml
+    status: conceptual
+    chapter: CH06
+
+  - figure_id: FIG-CH03-001
+    id: FIG-CH03-001
+    title: "Feel words to diagnostic axes"
+    path: figures/ecosystem/fig-ch03-001-feel-axes.svg
+    accessibility: figures/accessibility/fig-ch03-001.yaml
+    status: conceptual
+    chapter: CH03
+
+  - figure_id: FIG-CH03-002
+    id: FIG-CH03-002
+    title: "Action to hitch causal flow"
+    path: figures/sequence/fig-ch03-002-action-to-hitch.svg
+    accessibility: figures/accessibility/fig-ch03-002.yaml
+    status: conceptual
+    chapter: CH03
+
+  - figure_id: FIG-CH03-003
+    id: FIG-CH03-003
+    title: "Same average, different jitter"
+    path: figures/sequence/fig-ch03-003-jitter-contrast.svg
+    accessibility: figures/accessibility/fig-ch03-003.yaml
+    status: illustrative
+    chapter: CH03
+
+  - figure_id: FIG-CH03-004
+    id: FIG-CH03-004
+    title: "Local vs network feel contributors"
+    path: figures/architecture/fig-ch03-004-local-vs-network.svg
+    accessibility: figures/accessibility/fig-ch03-004.yaml
+    status: conceptual
+    chapter: CH03
+
+  - figure_id: FIG-CH10-001
+    id: FIG-CH10-001
+    title: "Board buses ports world"
+    path: figures/architecture/fig-ch10-001-board-buses-ports.svg
+    accessibility: figures/accessibility/fig-ch10-001.yaml
+    status: conceptual
+    chapter: CH10
+
+  - figure_id: FIG-CH10-002
+    id: FIG-CH10-002
+    title: "Host request bus transaction response"
+    path: figures/sequence/fig-ch10-002-host-bus-device.svg
+    accessibility: figures/accessibility/fig-ch10-002.yaml
+    status: illustrative
+    chapter: CH10
+
+  - figure_id: FIG-CH10-003
+    id: FIG-CH10-003
+    title: "Electrical vs protocol layer"
+    path: figures/architecture/fig-ch10-003-electrical-vs-protocol.svg
+    accessibility: figures/accessibility/fig-ch10-003.yaml
+    status: conceptual
+    chapter: CH10
+
+  - figure_id: FIG-CH10-004
+    id: FIG-CH10-004
+    title: "Packaging manufacturing stages"
+    path: figures/exploded-views/fig-ch10-004-packaging-stages.svg
+    accessibility: figures/accessibility/fig-ch10-004.yaml
+    status: conceptual
+    chapter: CH10
+
+  - figure_id: FIG-CH12-001
+    id: FIG-CH12-001
+    title: "Apps to processes, threads, scheduler, and CPU cores"
+    path: figures/architecture/fig-ch12-001-apps-to-scheduler.svg
+    accessibility: figures/accessibility/fig-ch12-001.yaml
+    status: conceptual
+    chapter: CH12
+
+  - figure_id: FIG-CH12-002
+    id: FIG-CH12-002
+    title: "Context-switch swimlane"
+    path: figures/architecture/fig-ch12-002-context-switch.svg
+    accessibility: figures/accessibility/fig-ch12-002.yaml
+    status: conceptual
+    chapter: CH12
+
+  - figure_id: FIG-CH12-003
+    id: FIG-CH12-003
+    title: "Concurrency versus parallelism"
+    path: figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg
+    accessibility: figures/accessibility/fig-ch12-003.yaml
+    status: illustrative
+    chapter: CH12
+
+  - figure_id: FIG-CH12-004
+    id: FIG-CH12-004
+    title: "Monitor snapshots classroom n=1"
+    path: figures/architecture/fig-ch12-004-monitor-snapshots.svg
+    accessibility: figures/accessibility/fig-ch12-004.yaml
+    status: illustrative
+    chapter: CH12
+
+  - figure_id: FIG-CH15-001
+    id: FIG-CH15-001
+    title: "VM versus container stacks"
+    path: figures/architecture/fig-ch15-001-vm-vs-container.svg
+    accessibility: figures/accessibility/fig-ch15-001.yaml
+    status: conceptual
+    chapter: CH15
+
+  - figure_id: FIG-CH15-002
+    id: FIG-CH15-002
+    title: "Access versus placement"
+    path: figures/ecosystem/fig-ch15-002-access-vs-placement.svg
+    accessibility: figures/accessibility/fig-ch15-002.yaml
+    status: conceptual
+    chapter: CH15
+
+  - figure_id: FIG-CH15-003
+    id: FIG-CH15-003
+    title: "Same app three ways"
+    path: figures/sequence/fig-ch15-003-same-app-three-ways.svg
+    accessibility: figures/accessibility/fig-ch15-003.yaml
+    status: illustrative
+    chapter: CH15
+
+  - figure_id: FIG-CH16-001
+    id: FIG-CH16-001
+    title: "Network scopes"
+    path: figures/ecosystem/fig-ch16-001-scopes.svg
+    accessibility: figures/accessibility/fig-ch16-001.yaml
+    status: conceptual
+    chapter: CH16
+
+  - figure_id: FIG-CH16-002
+    id: FIG-CH16-002
+    title: "Encapsulation"
+    path: figures/sequence/fig-ch16-002-encapsulation.svg
+    accessibility: figures/accessibility/fig-ch16-002.yaml
+    status: conceptual
+    chapter: CH16
+
+  - figure_id: FIG-CH16-003
+    id: FIG-CH16-003
+    title: "DNS on the critical path"
+    path: figures/architecture/fig-ch16-003-dns-critical-path.svg
+    accessibility: figures/accessibility/fig-ch16-003.yaml
+    status: conceptual
+    chapter: CH16
+
+  - figure_id: FIG-CH16-004
+    id: FIG-CH16-004
+    title: "Lab timing classroom n=1"
+    path: figures/measured/fig-ch16-004-lab-timing.svg
+    accessibility: figures/accessibility/fig-ch16-004.yaml
+    status: illustrative
+    chapter: CH16
+
+  - figure_id: FIG-CH11-001
+    id: FIG-CH11-001
+    title: "Boot path sequence"
+    path: figures/full31/ch11/fig-ch11-001.svg
+    accessibility: figures/accessibility/fig-ch11-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH11-002
+    id: FIG-CH11-002
+    title: "Root-of-trust stages"
+    path: figures/full31/ch11/fig-ch11-002.svg
+    accessibility: figures/accessibility/fig-ch11-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH11-003
+    id: FIG-CH11-003
+    title: "AuthN vs AuthZ at boot"
+    path: figures/full31/ch11/fig-ch11-003.svg
+    accessibility: figures/accessibility/fig-ch11-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH11-004
+    id: FIG-CH11-004
+    title: "Update and recovery boundary"
+    path: figures/full31/ch11/fig-ch11-004.svg
+    accessibility: figures/accessibility/fig-ch11-004.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-001
+    id: FIG-CH13-001
+    title: "Data lifecycle arc"
+    path: figures/full31/ch13/fig-ch13-001.svg
+    accessibility: figures/accessibility/fig-ch13-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-002
+    id: FIG-CH13-002
+    title: "Durability stack"
+    path: figures/full31/ch13/fig-ch13-002.svg
+    accessibility: figures/accessibility/fig-ch13-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-003
+    id: FIG-CH13-003
+    title: "Save click vs durability"
+    path: figures/full31/ch13/fig-ch13-003.svg
+    accessibility: figures/accessibility/fig-ch13-003.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH13-004
+    id: FIG-CH13-004
+    title: "Files vs databases"
+    path: figures/full31/ch13/fig-ch13-004.svg
+    accessibility: figures/accessibility/fig-ch13-004.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH3-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH14-001
+    id: FIG-CH14-001
+    title: "App stack map"
+    path: figures/full31/ch14/fig-ch14-001.svg
+    accessibility: figures/accessibility/fig-ch14-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH14-002
+    id: FIG-CH14-002
+    title: "Feature after chrome path"
+    path: figures/full31/ch14/fig-ch14-002.svg
+    accessibility: figures/accessibility/fig-ch14-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH14-003
+    id: FIG-CH14-003
+    title: "Local vs remote API domains"
+    path: figures/full31/ch14/fig-ch14-003.svg
+    accessibility: figures/accessibility/fig-ch14-003.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH17-001
+    id: FIG-CH17-001
+    title: "Wi-Fi vs cellular on-ramps"
+    path: figures/full31/ch17/fig-ch17-001.svg
+    accessibility: figures/accessibility/fig-ch17-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH17-002
+    id: FIG-CH17-002
+    title: "Cellular generations timeline"
+    path: figures/full31/ch17/fig-ch17-002.svg
+    accessibility: figures/accessibility/fig-ch17-002.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH17-003
+    id: FIG-CH17-003
+    title: "Indoor Wi-Fi to outdoor handoff"
+    path: figures/full31/ch17/fig-ch17-003.svg
+    accessibility: figures/accessibility/fig-ch17-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-001
+    id: FIG-CH18-001
+    title: "Radio path conditions"
+    path: figures/full31/ch18/fig-ch18-001.svg
+    accessibility: figures/accessibility/fig-ch18-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-002
+    id: FIG-CH18-002
+    title: "Beam and path geometry"
+    path: figures/full31/ch18/fig-ch18-002.svg
+    accessibility: figures/accessibility/fig-ch18-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-003
+    id: FIG-CH18-003
+    title: "MIMO teaching metaphor"
+    path: figures/full31/ch18/fig-ch18-003.svg
+    accessibility: figures/accessibility/fig-ch18-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH18-004
+    id: FIG-CH18-004
+    title: "Quartet RF PHYSICAL_PENDING overlay"
+    path: figures/full31/ch18/fig-ch18-004.svg
+    accessibility: figures/accessibility/fig-ch18-004.yaml
+    status: project_specific
+    truth_classification: project_specific
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH19-001
+    id: FIG-CH19-001
+    title: "NTN continuity map"
+    path: figures/full31/ch19/fig-ch19-001.svg
+    accessibility: figures/accessibility/fig-ch19-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH19-002
+    id: FIG-CH19-002
+    title: "Continuity vs icon status"
+    path: figures/full31/ch19/fig-ch19-002.svg
+    accessibility: figures/accessibility/fig-ch19-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH19-003
+    id: FIG-CH19-003
+    title: "Illustrative delay families"
+    path: figures/full31/ch19/fig-ch19-003.svg
+    accessibility: figures/accessibility/fig-ch19-003.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-001
+    id: FIG-CH20-001
+    title: "Stability Contract concurrent conditions"
+    path: figures/full31/ch20/fig-ch20-001.svg
+    accessibility: figures/accessibility/fig-ch20-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-002
+    id: FIG-CH20-002
+    title: "Latency vs reliability vs throughput"
+    path: figures/full31/ch20/fig-ch20-002.svg
+    accessibility: figures/accessibility/fig-ch20-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-003
+    id: FIG-CH20-003
+    title: "Evidence ladder for QoE"
+    path: figures/full31/ch20/fig-ch20-003.svg
+    accessibility: figures/accessibility/fig-ch20-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH20-004
+    id: FIG-CH20-004
+    title: "Status vs usable experience"
+    path: figures/full31/ch20/fig-ch20-004.svg
+    accessibility: figures/accessibility/fig-ch20-004.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH21-001
+    id: FIG-CH21-001
+    title: "Data to model to inference"
+    path: figures/full31/ch21/fig-ch21-001.svg
+    accessibility: figures/accessibility/fig-ch21-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH21-002
+    id: FIG-CH21-002
+    title: "Local vs remote AI placement"
+    path: figures/full31/ch21/fig-ch21-002.svg
+    accessibility: figures/accessibility/fig-ch21-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH21-003
+    id: FIG-CH21-003
+    title: "Model vs product vs claim families"
+    path: figures/full31/ch21/fig-ch21-003.svg
+    accessibility: figures/accessibility/fig-ch21-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH22-001
+    id: FIG-CH22-001
+    title: "Sense to edge feedback"
+    path: figures/full31/ch22/fig-ch22-001.svg
+    accessibility: figures/accessibility/fig-ch22-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH2-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH22-002
+    id: FIG-CH22-002
+    title: "Illustrative latency budget bands"
+    path: figures/full31/ch22/fig-ch22-002.svg
+    accessibility: figures/accessibility/fig-ch22-002.yaml
+    status: illustrative
+    truth_classification: illustrative
+    chapter: CH2-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH22-003
+    id: FIG-CH22-003
+    title: "Wearables PHYSICAL_PENDING badge"
+    path: figures/full31/ch22/fig-ch22-003.svg
+    accessibility: figures/accessibility/fig-ch22-003.yaml
+    status: project_specific
+    truth_classification: project_specific
+    chapter: CH2-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH24-001
+    id: FIG-CH24-001
+    title: "Privacy lifecycle wheel"
+    path: figures/full31/ch24/fig-ch24-001.svg
+    accessibility: figures/accessibility/fig-ch24-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH24-002
+    id: FIG-CH24-002
+    title: "Accessible vs blocked recovery"
+    path: figures/full31/ch24/fig-ch24-002.svg
+    accessibility: figures/accessibility/fig-ch24-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH24-003
+    id: FIG-CH24-003
+    title: "Ethics and inclusion ladder"
+    path: figures/full31/ch24/fig-ch24-003.svg
+    accessibility: figures/accessibility/fig-ch24-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH4-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH25-001
+    id: FIG-CH25-001
+    title: "Same task divergent completion"
+    path: figures/full31/ch25/fig-ch25-001.svg
+    accessibility: figures/accessibility/fig-ch25-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH5-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH25-002
+    id: FIG-CH25-002
+    title: "Equity evidence hierarchy"
+    path: figures/full31/ch25/fig-ch25-002.svg
+    accessibility: figures/accessibility/fig-ch25-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH5-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH25-003
+    id: FIG-CH25-003
+    title: "Exclusion mechanism cards"
+    path: figures/full31/ch25/fig-ch25-003.svg
+    accessibility: figures/accessibility/fig-ch25-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH5-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH26-001
+    id: FIG-CH26-001
+    title: "Edit to review sequence"
+    path: figures/full31/ch26/fig-ch26-001.svg
+    accessibility: figures/accessibility/fig-ch26-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH6-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH26-002
+    id: FIG-CH26-002
+    title: "Working tree vs history"
+    path: figures/full31/ch26/fig-ch26-002.svg
+    accessibility: figures/accessibility/fig-ch26-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH6-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH26-003
+    id: FIG-CH26-003
+    title: "Employment non-guarantee boundary"
+    path: figures/full31/ch26/fig-ch26-003.svg
+    accessibility: figures/accessibility/fig-ch26-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH6-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH27-001
+    id: FIG-CH27-001
+    title: "Evidence hierarchy ladder"
+    path: figures/full31/ch27/fig-ch27-001.svg
+    accessibility: figures/accessibility/fig-ch27-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH27-002
+    id: FIG-CH27-002
+    title: "Test pass vs usable experience"
+    path: figures/full31/ch27/fig-ch27-002.svg
+    accessibility: figures/accessibility/fig-ch27-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH27-003
+    id: FIG-CH27-003
+    title: "Observation to inference gate"
+    path: figures/full31/ch27/fig-ch27-003.svg
+    accessibility: figures/accessibility/fig-ch27-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH7-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH28-001
+    id: FIG-CH28-001
+    title: "Twin story vs measured world"
+    path: figures/full31/ch28/fig-ch28-001.svg
+    accessibility: figures/accessibility/fig-ch28-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH28-002
+    id: FIG-CH28-002
+    title: "Reproducibility checklist path"
+    path: figures/full31/ch28/fig-ch28-002.svg
+    accessibility: figures/accessibility/fig-ch28-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH28-003
+    id: FIG-CH28-003
+    title: "Validity bounds annulus"
+    path: figures/full31/ch28/fig-ch28-003.svg
+    accessibility: figures/accessibility/fig-ch28-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH8-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH29-001
+    id: FIG-CH29-001
+    title: "Complete product ecosystem map"
+    path: figures/full31/ch29/fig-ch29-001.svg
+    accessibility: figures/accessibility/fig-ch29-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH29-002
+    id: FIG-CH29-002
+    title: "Secure/include inside design gates"
+    path: figures/full31/ch29/fig-ch29-002.svg
+    accessibility: figures/accessibility/fig-ch29-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH29-003
+    id: FIG-CH29-003
+    title: "One-pager evidence fields"
+    path: figures/full31/ch29/fig-ch29-003.svg
+    accessibility: figures/accessibility/fig-ch29-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH9-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH30-001
+    id: FIG-CH30-001
+    title: "Role to artifact to review"
+    path: figures/full31/ch30/fig-ch30-001.svg
+    accessibility: figures/accessibility/fig-ch30-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH30-002
+    id: FIG-CH30-002
+    title: "Portfolio checklist fields"
+    path: figures/full31/ch30/fig-ch30-002.svg
+    accessibility: figures/accessibility/fig-ch30-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH30-003
+    id: FIG-CH30-003
+    title: "Learning proof vs employment"
+    path: figures/full31/ch30/fig-ch30-003.svg
+    accessibility: figures/accessibility/fig-ch30-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH0-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH31-001
+    id: FIG-CH31-001
+    title: "Capstone concurrent-condition hub"
+    path: figures/full31/ch31/fig-ch31-001.svg
+    accessibility: figures/accessibility/fig-ch31-001.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH31-002
+    id: FIG-CH31-002
+    title: "EMIT cycle with evidence gates"
+    path: figures/full31/ch31/fig-ch31-002.svg
+    accessibility: figures/accessibility/fig-ch31-002.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+
+  - figure_id: FIG-CH31-003
+    id: FIG-CH31-003
+    title: "Fixture vs human-evidence firewall"
+    path: figures/full31/ch31/fig-ch31-003.svg
+    accessibility: figures/accessibility/fig-ch31-003.yaml
+    status: conceptual
+    truth_classification: conceptual
+    chapter: CH1-
+    evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."

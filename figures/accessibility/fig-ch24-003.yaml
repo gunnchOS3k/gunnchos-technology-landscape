@@ -1,0 +1,21 @@
+figure_id: FIG-CH24-003
+title: "Ethics and inclusion ladder"
+caption: "Ethics and inclusion ladder. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Ethics and inclusion ladder. Reading order: Notice; Choice; Access path; Accountability; Redress."
+text_equivalent: |
+  Ethics and inclusion ladder. Nodes in reading order: Notice; Choice; Access path; Accountability; Redress. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Notice
+- Choice
+- Access path
+- Accountability
+- Redress
+source: figures/full31/ch24/fig-ch24-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

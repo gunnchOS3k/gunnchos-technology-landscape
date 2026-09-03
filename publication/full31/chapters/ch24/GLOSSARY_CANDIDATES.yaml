@@ -3,12 +3,14 @@ chapter_id: CH24
 glossary_candidates:
 - term_id: GL-CH24-PRIVACY
   preferred_term: Privacy / data lifecycle
-  plain_language_definition: "Rules and practices for collect, use, retain, share, delete/redact."
+  plain_language_definition: Rules and practices for collect, use, retain, share,
+    delete/redact.
   introduced_in: CH24
   related_concepts:
   - CX-CH24-PRIVACY
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: privacy-data-lifecycle
 - term_id: GL-CH24-IDENTITY
   preferred_term: Identity in human systems
   plain_language_definition: Claims about people/services that unlock experiences.
@@ -16,15 +18,18 @@ glossary_candidates:
   related_concepts:
   - CX-CH24-IDENTITY
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: identity-in-human-systems
 - term_id: GL-CH24-SAFETY
   preferred_term: Safety constraints
-  plain_language_definition: Limits that keep harmful outcomes from being easy to enact.
+  plain_language_definition: Limits that keep harmful outcomes from being easy to
+    enact.
   introduced_in: CH24
   related_concepts:
   - CX-CH24-SAFETY
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: safety-constraints
 - term_id: GL-CH24-A11Y
   preferred_term: Accessibility path
   plain_language_definition: Alternate routes so experience succeeds for diverse bodies/tools.
@@ -32,21 +37,26 @@ glossary_candidates:
   related_concepts:
   - CX-CH24-A11Y
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: accessibility-path
 - term_id: GL-CH24-ETHICS
   preferred_term: Ethics ladder
-  plain_language_definition: Observation before inference; disclosure and responsible use.
+  plain_language_definition: Observation before inference; disclosure and responsible
+    use.
   introduced_in: CH24
   related_concepts:
   - CX-CH24-ETHICS
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: ethics-ladder
 - term_id: GL-CH24-WCAG
   preferred_term: WCAG as guidance
-  plain_language_definition: W3C accessibility guidelines; dated editions must not be silently overwritten.
+  plain_language_definition: W3C accessibility guidelines; dated editions must not
+    be silently overwritten.
   introduced_in: CH24
   related_concepts:
   - CX-CH24-WCAG
   - CX-CH24-A11Y
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: wcag-as-guidance

@@ -1,10 +1,10 @@
 schema_version: 1.0.0
 registry_id: full31-chapter-production-registry
-accepted_main_sha: 0e694176652d4729c7f2b71df08b871a863afb8c
+accepted_main_sha: 18ec58005529bd16d680ee7419e4dea13150e9c6
 waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
 gate_posture: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
 integrator_note: >
-  Merged from agent-h/i/j registry fragments with integrator truth repair. packet_state is file/semantic completeness only; current_state is honest maturity. PREPRODUCTION / DEVELOPMENT — not canonical final prose and not Gate 3 reader evidence. CH02-REVIEW-R1 and publication/gates/gate-3/ remain untouched.
+  Merged from agent-h/i/j registry fragments after Batch 3 full-manuscript draft. packet_state is file/semantic completeness only; current_state is honest maturity. WORKING_DRAFT_COMPLETE=31; HUMAN_VALIDATED=0; PUBLICATION_READY=0. PREPRODUCTION / DEVELOPMENT — not Gate 3 reader evidence. CH02-REVIEW-R1 and publication/gates/gate-3/ remain untouched.
 vocabulary:
   - SCAFFOLD
   - PREPRODUCTION_STARTED
@@ -28,16 +28,19 @@ counts:
   architecture_registered: 31
   minimum_packet_coverage: 31
   packet_complete: 31
-  substantive_preproduction_started: 30
-  substantive_preproduction_complete: 0
-  canonical_full_drafts: 1
+  substantive_preproduction_started: 31
+  substantive_preproduction_complete: 31
+  canonical_full_drafts: 31
+  working_draft: 31
+  working_draft_complete: 31
+  technical_review: 0
   human_validated: 0
   publication_ready: 0
 packet_state_counts:
   PACKET_COMPLETE: 31
 current_state_counts:
   HUMAN_VALIDATION_PENDING: 1
-  PREPRODUCTION_STARTED: 30
+  TECH_REVIEW_PENDING: 30
 waike_mapping_totals:
   exact: 0
   adjacent: 122
@@ -51,13 +54,13 @@ chapters:
   title: "Technology Is a System, Not a Screen"
   part: I
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -99,13 +102,13 @@ chapters:
   title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
   part: I
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -124,13 +127,13 @@ chapters:
   title: The Device Quartet as a Learning Laboratory
   part: I
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -150,13 +153,13 @@ chapters:
   title: "Electricity, Signals, Clocks, and Logic"
   part: II
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -175,13 +178,13 @@ chapters:
   title: "CPU, Instructions, and Parallel Work"
   part: II
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -202,13 +205,13 @@ chapters:
   title: "Memory, Cache, and Storage"
   part: II
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -230,13 +233,13 @@ chapters:
   title: "Graphics, Displays, Audio, Cameras, and Sensors"
   part: II
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -259,13 +262,13 @@ chapters:
   title: "Power, Batteries, Thermals, and Mechanical Design"
   part: II
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -288,13 +291,13 @@ chapters:
   title: "Ports, Buses, Boards, Packaging, and Manufacturing"
   part: II
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
   figure_state: PREPRODUCTION_COMPLETE
-  lab_state: PREPRODUCTION_STARTED
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
   dependencies:
@@ -317,13 +320,13 @@ chapters:
   title: "Firmware, Boot, and Trust"
   part: III
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -347,13 +350,13 @@ chapters:
   title: "Operating Systems, Processes, Threads, and Scheduling"
   part: III
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -375,13 +378,13 @@ chapters:
   title: "Files, Databases, and Data Lifecycles"
   part: III
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -400,13 +403,13 @@ chapters:
   title: "Applications, APIs, Runtimes, and User Interfaces"
   part: III
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -427,13 +430,13 @@ chapters:
   title: "Containers, Virtualization, Cloud, and Edge Computing"
   part: III
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -452,13 +455,13 @@ chapters:
   title: "Packets, Protocols, Routing, and the Internet"
   part: IV
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -479,13 +482,13 @@ chapters:
   title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
   part: IV
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -503,13 +506,13 @@ chapters:
   title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
   part: IV
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -529,13 +532,13 @@ chapters:
   title: "NTN and Service Continuity Across Ground, Air, and Space"
   part: IV
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -555,13 +558,13 @@ chapters:
   title: "Latency, Reliability, QoE, and the Stability Contract"
   part: IV
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
-  source_state: PREPRODUCTION_STARTED
-  claim_state: PREPRODUCTION_STARTED
-  figure_state: PREPRODUCTION_STARTED
-  lab_state: PREPRODUCTION_STARTED
+  source_state: DRAFT_COMPLETE
+  claim_state: DRAFT_COMPLETE
+  figure_state: DRAFT_COMPLETE
+  lab_state: DRAFT_COMPLETE
   glossary_state: PREPRODUCTION_STARTED
   waike_state: PREPRODUCTION_STARTED
   dependencies:
@@ -585,12 +588,12 @@ chapters:
   title: "Data, Machine Learning, and Generative AI"
   part: V
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -613,12 +616,12 @@ chapters:
   title: "Edge AI, Sensors, and Embodied Interaction"
   part: V
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -640,12 +643,12 @@ chapters:
   title: Cybersecurity from Chip to Cloud
   part: V
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -668,12 +671,12 @@ chapters:
   title: "Privacy, Identity, Safety, Accessibility, and Ethics"
   part: V
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -695,12 +698,12 @@ chapters:
   title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
   part: V
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -722,12 +725,12 @@ chapters:
   title: Software Development and Version Control
   part: VI
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -747,12 +750,12 @@ chapters:
   title: "Testing, Observability, and Evidence"
   part: VI
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -773,12 +776,12 @@ chapters:
   title: "Digital Twins, Simulation, and Reproducible Research"
   part: VI
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -798,12 +801,12 @@ chapters:
   title: Designing a Complete Technology Product
   part: VI
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -827,12 +830,12 @@ chapters:
   title: Career Maps and Portfolio Proof
   part: VI
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE
@@ -854,12 +857,12 @@ chapters:
   title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
   part: VI
   packet_state: PACKET_COMPLETE
-  current_state: PREPRODUCTION_STARTED
-  canonical_prose_state: SCAFFOLD
+  current_state: TECH_REVIEW_PENDING
+  canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
   claim_state: PREPRODUCTION_COMPLETE
-  figure_state: PREPRODUCTION_STARTED
+  figure_state: DRAFT_COMPLETE
   lab_state: PREPRODUCTION_COMPLETE
   glossary_state: PREPRODUCTION_COMPLETE
   waike_state: PREPRODUCTION_COMPLETE

@@ -1,0 +1,21 @@
+figure_id: FIG-CH13-001
+title: "Data lifecycle arc"
+caption: "Data lifecycle arc. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Data lifecycle arc. Reading order: Create; Store; Use; Share; Delete/GC."
+text_equivalent: |
+  Data lifecycle arc. Nodes in reading order: Create; Store; Use; Share; Delete/GC. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Create
+- Store
+- Use
+- Share
+- Delete/GC
+source: figures/full31/ch13/fig-ch13-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

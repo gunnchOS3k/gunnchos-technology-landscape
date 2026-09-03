@@ -1,0 +1,17 @@
+figure_id: FIG-CH12-002
+title: "Context-switch swimlane"
+caption: "Conceptual teaching sequence from Thread A through an OS save/restore step to Thread B. Truth: conceptual."
+alt_text: "FIG-CH12-002: Swimlane showing Thread A, OS context switch, then Thread B."
+text_equivalent: |
+  FIG-CH12-002 reading order: (1) Thread A running, (2) OS save/restore, (3) Thread B running. Not a measured ftrace capture.
+reading_order:
+  - "Thread A"
+  - "OS save/restore"
+  - "Thread B"
+source: "figures/architecture/fig-ch12-002-context-switch.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

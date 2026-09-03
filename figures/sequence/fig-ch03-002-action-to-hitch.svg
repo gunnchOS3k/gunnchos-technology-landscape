@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-labelledby="FIG-CH03-002-title FIG-CH03-002-desc" data-figure-id="FIG-CH03-002" data-truth-classification="conceptual">
+  <title id="FIG-CH03-002-title">FIG-CH03-002: Action to hitch causal flow</title>
+  <desc id="FIG-CH03-002-desc">Conceptual educational diagram. Reading order: 1 Action; 2 Work queued; 3 Resources; 4 Schedule; 5 Feel. Truth classification: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1040" height="360" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="358" fill="none" stroke="#222222" stroke-width="2"/>
+  <defs><marker id="arr-FIG-CH03-002" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#111111"/></marker></defs>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH03-002 — Action to hitch causal flow</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · Color is not the sole encoding · Not measured Device Quartet telemetry</text>
+  <rect x="40" y="140" width="170" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="125.0" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Action</text>
+  <text x="125.0" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">human</text>
+  <line x1="210" y1="185" x2="247" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr-FIG-CH03-002)"/>
+  <rect x="247" y="140" width="170" height="90" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="332.0" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">2 Work queued</text>
+  <text x="332.0" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">software</text>
+  <line x1="417" y1="185" x2="454" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr-FIG-CH03-002)"/>
+  <rect x="454" y="140" width="170" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="539.0" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 Resources</text>
+  <text x="539.0" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">CPU/mem/IO</text>
+  <line x1="624" y1="185" x2="661" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr-FIG-CH03-002)"/>
+  <rect x="661" y="140" width="170" height="90" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="746.0" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">4 Schedule</text>
+  <text x="746.0" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">OS</text>
+  <line x1="831" y1="185" x2="868" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr-FIG-CH03-002)"/>
+  <rect x="868" y="140" width="170" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="953.0" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">5 Feel</text>
+  <text x="953.0" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">hitch/smooth</text>
+  <text x="24" y="336" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Publication-owned conceptual teaching aid.</text>
+</svg>

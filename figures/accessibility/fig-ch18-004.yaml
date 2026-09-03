@@ -1,0 +1,20 @@
+figure_id: FIG-CH18-004
+title: "Quartet RF PHYSICAL_PENDING overlay"
+caption: "Quartet RF PHYSICAL_PENDING overlay. Truth classification: project_specific. Color is not the sole encoding."
+alt_text: "Quartet RF PHYSICAL_PENDING overlay. Reading order: Teaching RF map; Measured RF; PHYSICAL_PENDING; No invented gain."
+text_equivalent: |
+  Quartet RF PHYSICAL_PENDING overlay. Nodes in reading order: Teaching RF map; Measured RF; PHYSICAL_PENDING; No invented gain. Truth: project_specific. Educational architecture; no invented measurements.
+reading_order:
+- Teaching RF map
+- Measured RF
+- PHYSICAL_PENDING
+- No invented gain
+source: figures/full31/ch18/fig-ch18-004.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: project_specific
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

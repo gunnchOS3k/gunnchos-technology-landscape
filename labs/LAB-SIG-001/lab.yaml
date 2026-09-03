@@ -1,0 +1,64 @@
+lab_id: LAB-SIG-001
+title: From Press to Logic
+chapter: CH05
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "Can I label a press-to-effect path—human action → transducer → signal → logic → effect—using a simulation or offline fixture without unsafe electrical work?"
+experience: "A button or control leads to a perceptible effect; the path is electrical and timed, not magical glass."
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher]
+prerequisites:
+  concepts: [signal, clock, logic-gate, analog-vs-digital]
+  safety:
+    - Do not open mains-powered equipment or improvise high-voltage experiments.
+    - Do not crush, heat, short, or otherwise abuse batteries.
+    - Do not transmit on unauthorized radio frequencies.
+    - Prefer simulation and offline fixtures; supervised low-voltage kits are optional only.
+    - Do not capture secrets, passwords, tokens, or private identifiers.
+  time_minutes: 45
+  equipment: []
+  software: [modern web browser or Markdown viewer]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_trace: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Write a failure-domain prediction.
+    - Complete Route A fixture stage table.
+    - Introduce one fixture failure mode and record the human complaint it mimics.
+    - Separate observation from inference.
+  rollback:
+    - Close the fixture page.
+    - Discard any accidental sensitive captures.
+evidence:
+  required_artifacts:
+    - prediction sentence
+    - stage table (observed / inferred / not evidenced)
+    - failure-mode note
+    - teach-back paragraph
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - fixture cartoons are not oscilloscope captures
+    - optional kit results do not generalize to all devices
+  uncertainty:
+    - one run is not a characterization study
+    - Device Quartet electrical measurements remain PHYSICAL_PENDING
+portfolio:
+  outputs: [prediction, stage table, failure note, teach-back]
+teach_back:
+  required: true
+fixture_available: true
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+waike_adjacency:
+  note: "Neighbors only; do not mint as WAIKE IDs"
+  adjacent_labs:
+    - HARDWARE_ENGINEERING / lab_logic_gate
+    - HARDWARE_ENGINEERING / lab_rc_transient

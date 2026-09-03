@@ -1,0 +1,16 @@
+figure_id: FIG-CH12-003
+title: "Concurrency versus parallelism"
+caption: "Illustrative teaching comparison of concurrency interleaving versus parallel multi-core execution. Truth: illustrative."
+alt_text: "FIG-CH12-003: Two panels comparing concurrency over time versus parallelism across cores."
+text_equivalent: |
+  FIG-CH12-003 reading order: (1) Concurrency panel, (2) Parallelism panel. Not a measured speedup curve.
+reading_order:
+  - "Concurrency panel"
+  - "Parallelism panel"
+source: "figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg"
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

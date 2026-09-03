@@ -1,0 +1,20 @@
+figure_id: FIG-CH18-003
+title: "MIMO teaching metaphor"
+caption: "MIMO teaching metaphor. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "MIMO teaching metaphor. Reading order: Single stream; Multiple streams; Spatial paths; Combine at receiver."
+text_equivalent: |
+  MIMO teaching metaphor. Nodes in reading order: Single stream; Multiple streams; Spatial paths; Combine at receiver. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Single stream
+- Multiple streams
+- Spatial paths
+- Combine at receiver
+source: figures/full31/ch18/fig-ch18-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

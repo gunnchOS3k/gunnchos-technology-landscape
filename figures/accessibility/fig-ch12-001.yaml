@@ -1,0 +1,19 @@
+figure_id: FIG-CH12-001
+title: "Apps to processes, threads, scheduler, and CPU cores"
+caption: "Conceptual educational map from app icons through processes, threads, and OS scheduler to CPU cores. Truth: conceptual."
+alt_text: "FIG-CH12-001: Left-to-right conceptual map: Apps, Processes, Threads, Scheduler, CPU cores."
+text_equivalent: |
+  FIG-CH12-001 reading order: (1) Apps, (2) Processes, (3) Threads, (4) Scheduler, (5) CPU cores. OS mediates; apps still compute on hardware.
+reading_order:
+  - "Apps"
+  - "Processes"
+  - "Threads"
+  - "Scheduler"
+  - "CPU cores"
+source: "figures/architecture/fig-ch12-001-apps-to-scheduler.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

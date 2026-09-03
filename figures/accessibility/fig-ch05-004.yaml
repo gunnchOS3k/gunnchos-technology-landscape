@@ -1,0 +1,17 @@
+figure_id: FIG-CH05-004
+title: "Logic Building Blocks"
+caption: "Small Boolean gates composing a larger decision. Conceptual educational diagram."
+alt_text: "AND, OR, and NOT blocks feeding a labeled output decision."
+text_equivalent: |
+  Inputs A and B feed AND. Input C feeds NOT. AND and NOT outputs feed OR.
+  OR output is labeled Output decision with example (A AND B) OR (NOT C).
+reading_order:
+  - "Inputs A B C"
+  - "AND"
+  - "NOT"
+  - "OR"
+  - "Output decision"
+source: figures/architecture/fig-ch05-004-logic-blocks.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

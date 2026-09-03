@@ -1,0 +1,19 @@
+figure_id: FIG-CH16-001
+title: "Network scopes"
+caption: "Device, LAN, Internet, DNS, and application service as distinct scopes. Truth: conceptual."
+alt_text: "FIG-CH16-001: Device to LAN to Internet with DNS and application service labeled separately."
+text_equivalent: |
+  FIG-CH16-001 reading order: Device, LAN, Internet, DNS naming, application service. Not synonyms.
+reading_order:
+  - "Device"
+  - "LAN"
+  - "Internet"
+  - "DNS"
+  - "Application service"
+source: "figures/ecosystem/fig-ch16-001-scopes.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

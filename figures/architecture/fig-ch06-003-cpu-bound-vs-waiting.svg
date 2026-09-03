@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="FIG-CH06-003-title FIG-CH06-003-desc" data-figure-id="FIG-CH06-003" data-truth-classification="conceptual">
+  <title id="FIG-CH06-003-title">FIG-CH06-003: CPU-bound versus waiting symptoms</title>
+  <desc id="FIG-CH06-003-desc">Conceptual comparative diagram with two columns. Left column CPU-bound: busy executing instructions, monitor may show high CPU percent, next check whether work is useful progress. Right column waiting: blocked on memory, storage, locks, or scheduling, monitor may still show activity, next check other columns and wall-clock progress. High CPU percent alone is not proof of root cause. Truth classification: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH06-003  CPU-bound vs waiting-on-I/O (and similar waits)</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · Observation ` automatic root cause · Color is not the sole encoding</text>
+
+  <rect x="40" y="80" width="440" height="280" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="260" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">CPU-bound pattern</text>
+  <text x="60" y="145" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">1. Thread is runnable and executing</text>
+  <text x="60" y="175" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">2. Monitor may show high CPU %</text>
+  <text x="60" y="205" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">3. Progress continues if you wait</text>
+  <text x="60" y="235" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">4. More cores help only if parallelizable</text>
+  <rect x="60" y="260" width="400" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.25"/>
+  <text x="260" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Next check</text>
+  <text x="260" y="312" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Is useful work finishing? Which process?</text>
+
+  <rect x="520" y="80" width="440" height="280" fill="#ffffff" stroke="#111111" stroke-width="1.75" stroke-dasharray="6 4"/>
+  <text x="740" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Waiting pattern</text>
+  <text x="540" y="145" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">1. Thread blocked (I/O, lock, page, etc.)</text>
+  <text x="540" y="175" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">2. CPU % may be high, low, or mixed</text>
+  <text x="540" y="205" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">3. UI can stutter while busy</text>
+  <text x="540" y="235" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">4. Extra cores may not fix the wait</text>
+  <rect x="540" y="260" width="400" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.25"/>
+  <text x="740" y="290" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Next check</text>
+  <text x="740" y="312" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Disk/memory/locks? Thermal feel?</text>
+
+  <text x="24" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Caption: Conceptual symptom branches for LAB-CMS-001 diagnosis practice  dashed border marks the waiting column.</text>
+</svg>

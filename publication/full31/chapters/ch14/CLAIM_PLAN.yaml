@@ -18,8 +18,10 @@ claims:
   text: APIs are contracts; breaking changes and versioning affect Stability Contracts
     for users.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - semver-2.0.0
+  - saltzer-kaashoek
   overclaim_risk: Official API design docs / textbook.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
@@ -40,7 +42,8 @@ claims:
   claim_class: general_technical
   status: SOURCE_IDENTIFIED
   citation_keys:
-  - wcag22
+  - wcag22-20231005
+  - wcag22-20241212
   overclaim_risk: Integrate secure/include.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.

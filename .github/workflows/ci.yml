@@ -25,22 +25,41 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y librsvg2-bin
-          quarto install tinytex --no-prompt
+          # TinyTeX download can 500 transiently; retry a few times.
+          for i in 1 2 3 4 5; do
+            if quarto install tinytex --no-prompt; then
+              exit 0
+            fi
+            echo "TinyTeX install attempt $i failed; retrying..."
+            sleep $((i * 5))
+          done
+          echo "TinyTeX install failed after retries" >&2
+          exit 1
       - name: Validate
         run: make validate
       - name: Test
         run: make test
+      - name: Full31 draft check (strict)
+        run: make full31-draft-check FULL31_DRAFT_CHECK_MODE=strict
+      - name: Full31 assets/reference check (strict)
+        run: make full31-assets-check
       - name: Confirm NO_READER_EVIDENCE while responses empty
         run: |
           out="$(.venv/bin/python scripts/analyze_reader_feedback.py)"
           echo "$out"
           echo "$out" | grep -q 'NO_READER_EVIDENCE'
-      - name: HTML render
+      - name: HTML render (CH02 preview package)
         run: make preview
-      - name: EPUB render
+      - name: EPUB render (CH02 preview package)
         run: make epub
-      - name: PDF render
+      - name: PDF render (CH02 preview package)
         run: make pdf
+      - name: Full31 HTML book
+        run: make full31-html
+      - name: Full31 EPUB book
+        run: make full31-epub
+      - name: Full31 PDF book
+        run: make full31-pdf
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -49,4 +68,13 @@ jobs:
             preview/ch02.html
             preview/ch02.epub
             preview/ch02.pdf
+          if-no-files-found: error
+      - name: Upload full31 book artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: technology-landscape-full31
+          path: |
+            preview/full31/technology-landscape-full31-html
+            preview/full31/technology-landscape-full31-pdf.pdf
+            preview/full31/technology-landscape-full31-epub.epub
           if-no-files-found: error

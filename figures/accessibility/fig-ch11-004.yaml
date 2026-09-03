@@ -1,0 +1,20 @@
+figure_id: FIG-CH11-004
+title: "Update and recovery boundary"
+caption: "Update and recovery boundary. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Update and recovery boundary. Reading order: Trusted update; Interrupted update; Recovery path; Unsafe rollback."
+text_equivalent: |
+  Update and recovery boundary. Nodes in reading order: Trusted update; Interrupted update; Recovery path; Unsafe rollback. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Trusted update
+- Interrupted update
+- Recovery path
+- Unsafe rollback
+source: figures/full31/ch11/fig-ch11-004.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

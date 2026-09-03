@@ -2,5 +2,56 @@ chapter_id: CH22
 chapter_number: 22
 title: "Edge AI, Sensors, and Embodied Interaction"
 part: V
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When a gesture, glance, or haptic cue triggers a local assistive action, what must stay true for the embodied loop to feel alive—and what fails when sensors, budgets, or permissions break?
+experience:
+  - offline local assistive action from a gesture or camera glance
+  - haptic cue that arrives late or not at all
+  - occlusion, permission denial, or thermal throttle stalling embodiment
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [embodied-sensing, edge-inference, edge-resource-budget, embodied-interaction-loop, sensing-privacy-boundary, edge-cloud-fallback]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+device_quartet:
+  primary: Edge IO Wearables
+  status: PHYSICAL_PENDING
+labs: [LAB-TRUST-001]
+proposed_labs: [LAB-CH22-SENSE-001]
+figures:
+  - FIG-CH22-001
+  - FIG-CH22-002
+  - FIG-CH22-003
+concepts:
+  introduced: [embodied-sensing, edge-on-device-inference, edge-resource-budget, embodied-interaction-loop, sensing-privacy-boundary, edge-cloud-fallback]
+  required: [stability-contract, observation-vs-inference, permission-consent]
+  related: [local-vs-cloud, sensor-pipeline, haptic-feedback, privacy-boundary]
+waike:
+  mapped: true
+  courses: [AI_ML_EDGE, EMBEDDED_PROTOTYPING]
+  labs_adjacent: [lab_quantize_budget]
+  catalog_adjacent: [edge_ai_embedded]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0. No exact CH22 / Edge IO Wearables WAIKE module. Do not invent edge_ai_ch22 lab IDs."
+claims:
+  plan: publication/full31/chapters/ch22/CLAIM_PLAN.yaml
+  included: [CLM-CH22-001, CLM-CH22-002, CLM-CH22-003]
+  omitted:
+    - id: CLM-CH22-004
+      reason: SOURCE_NEEDED — sensing/IMU/camera privacy primary standards not selected; omit rather than invent citations
+ce_inheritance:
+  primary: publication/preproduction/ce-05/
+  adjacent: [publication/preproduction/ce-03/]
+  notes: "Inherit CE-5 local-vs-cloud / edge budget themes and LAB-TRUST-001 adjacency; link CE-3/CH08 sensor adjacency without re-teaching the sensor catalog."
+bibliography_note: "Cite keys present in book/references/references.bib (goodfellow_deep_learning, src-hardware-quartet, src-waike, w3c-mediacapture-streams-20251009, nist_ai_rmf_100_1, wcag22-20241212). CLM-CH22-004 omitted (SOURCE_NEEDED). edge_ml_sys_refs and sensing_privacy_std remain SOURCE_NEEDED for later promotion."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim"
+  - "Device Quartet Edge IO Wearables fabrication/measured AI-sensing benchmarks PHYSICAL_PENDING (CLM-CH22-002; FIG-CH22-003)"
+  - "CLM-CH22-004 omitted — sensing/IMU/camera privacy standards SOURCE_NEEDED"
+  - "edge_ml_sys_refs SOURCE_NEEDED — official MCU-NN / edge-ML docs not yet promoted"
+  - "FIG-CH22-001/002/003 draft-blocked until SVG + accessibility sidecars land"
+  - "Proposed LAB-CH22-SENSE-001 not yet a shipped publication lab ID"

@@ -1,0 +1,20 @@
+figure_id: FIG-CH26-002
+title: "Working tree vs history"
+caption: "Working tree vs history. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Working tree vs history. Reading order: Working tree; Committed history; Unsaved risk; Reviewable past."
+text_equivalent: |
+  Working tree vs history. Nodes in reading order: Working tree; Committed history; Unsaved risk; Reviewable past. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Working tree
+- Committed history
+- Unsaved risk
+- Reviewable past
+source: figures/full31/ch26/fig-ch26-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,21 @@
+figure_id: FIG-CH11-001
+title: "Boot path sequence"
+caption: "Boot path sequence. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Boot path sequence. Reading order: Power/reset; Firmware; Bootloader; Kernel; Userspace."
+text_equivalent: |
+  Boot path sequence. Nodes in reading order: Power/reset; Firmware; Bootloader; Kernel; Userspace. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- Power/reset
+- Firmware
+- Bootloader
+- Kernel
+- Userspace
+source: figures/full31/ch11/fig-ch11-001.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

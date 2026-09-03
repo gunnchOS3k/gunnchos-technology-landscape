@@ -89,8 +89,10 @@ def build() -> int:
     sources = load_yaml(ROOT / "publication/preproduction/CANDIDATE_SOURCE_INDEX.yaml")
     full31 = load_yaml(ROOT / "publication/full31/CHAPTER_PRODUCTION_REGISTRY.yaml")
 
+    counts = full31.get("counts") or {}
     overview = f"""
 <p class="muted">Maintainer development dashboard for the full31 continuation wave. This preview is intentionally separate from the CH02 Gate 3 reader package.</p>
+<p><strong>WORKING FULL-MANUSCRIPT DRAFT</strong> — Human reader validation pending. Technical/editorial revision pending. Not publication-ready.</p>
 <div class="grid">
   <div class="card"><strong>Labs</strong><div>{len(labs)} registered</div></div>
   <div class="card"><strong>CE figures</strong><div>{len(figs)} planned / tracked</div></div>
@@ -98,7 +100,17 @@ def build() -> int:
   <div class="card"><strong>Full31 chapters</strong><div>{len(full31.get('chapters') or [])}</div></div>
 </div>
 <p style="margin-top:1.2rem"><strong>Gate posture:</strong> <code>{esc(full31.get('gate_posture'))}</code></p>
+<p><strong>Human validation:</strong> <code>DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT</code></p>
 <p><strong>Accepted main:</strong> <code>{esc(full31.get('accepted_main_sha'))}</code></p>
+<h2>Normalized progress dimensions</h2>
+<pre>architecture:              {esc(counts.get('architecture_registered', 0))}/31
+packet:                    {esc(counts.get('minimum_packet_coverage', 0))}/31
+substantive_preproduction: {esc(counts.get('substantive_preproduction_complete', 0))}/31 complete ({esc(counts.get('substantive_preproduction_started', 0))}/31 started)
+working_draft:             {esc(counts.get('working_draft', counts.get('canonical_full_drafts', 0)))}/31
+technical_review:          {esc(counts.get('technical_review', 0))}/31
+human_validation:          {esc(counts.get('human_validated', 0))}/31
+publication_readiness:     {esc(counts.get('publication_ready', 0))}/31</pre>
+<p class="muted">See <code>publication/full31/PROGRESS_DIMENSIONS.md</code> and <code>make full31-draft-check</code>.</p>
 """
     write(OUT_DIR / "index.html", overview, "Continuation development preview")
 

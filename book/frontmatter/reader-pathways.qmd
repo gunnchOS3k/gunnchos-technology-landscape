@@ -1,0 +1,18 @@
+---
+title: "Reader pathways"
+---
+
+# Reader pathways
+
+Six pathways share the same chapter anatomy; they differ in starting evidence and depth.
+
+| Pathway | Starting point | Evidence expectation |
+|---|---|---|
+| Explorer | little/no technical background | experience map, major components, ordinary-language path, teach-back |
+| Operator | regular device/software user | guided test, status/logs/measurement, likely failure domain |
+| Builder | student/maker/career changer | modify code/config, construct small system, document tradeoffs |
+| Engineer | undergraduate/practitioner | measure, diagnose, architecture reasoning, alternatives |
+| Researcher | graduate/investigator | hypothesis, variables, experiment, uncertainty, limitations |
+| Educator | teacher/mentor/family guide | facilitation, lab adaptation, misconception detection |
+
+You may change pathways between chapters. The book does not rank pathways by prestige.

@@ -1,0 +1,20 @@
+figure_id: FIG-CH21-002
+title: "Local vs remote AI placement"
+caption: "Local vs remote AI placement. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Local vs remote AI placement. Reading order: On-device; Edge box; Remote service; Privacy/delay trade."
+text_equivalent: |
+  Local vs remote AI placement. Nodes in reading order: On-device; Edge box; Remote service; Privacy/delay trade. Truth: conceptual. Educational architecture; no invented measurements.
+reading_order:
+- On-device
+- Edge box
+- Remote service
+- Privacy/delay trade
+source: figures/full31/ch21/fig-ch21-002.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

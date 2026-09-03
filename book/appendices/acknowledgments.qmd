@@ -1,0 +1,9 @@
+---
+title: "Acknowledgments"
+---
+
+# Acknowledgments
+
+Acknowledgments for contributors, reviewers, and institutional partners will be completed before any publication-ready release.
+
+**Placeholder only — no endorsements.** Do not invent reviewer names, institutional seals, blurbs, or “featured in” claims in this working draft.

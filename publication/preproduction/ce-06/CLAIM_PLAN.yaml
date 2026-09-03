@@ -100,10 +100,20 @@ claims:
   evidence_required: waike-research-ops accepted main SHA tree + catalog/digital_rc
     listing
   preferred_source_type: accepted-main repository evidence
-  status: PROJECT_EVIDENCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - waike-research-ops-ce06
+
   overclaim_risk: Inventing a WAIKE course/module ID for CE-6.
   wording_boundary: Map adjacent competencies only; record SHA; mark exact/adjacent/proposed/no-map.
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    paths:
+    - curriculum/catalog.yaml
+    - curriculum/digital_rc/
+    note: No module ID literally named Stability Contract / EMIT / TECHNOLOGY_LANDSCAPE_CAPSTONE
+    source_id: SRC-WAIKE
 - provisional_id: CLM-CE06-010
   text: WAIKE documents phone-first, offline-friendly, and low-cost learning intent;
     accessibility checklist items in-repo are not fully completed and must not be
@@ -111,10 +121,18 @@ claims:
   claim_class: project_specific
   evidence_required: ACCESSIBILITY_AND_LOW_COST.md at audited SHA
   preferred_source_type: accepted-main repository evidence
-  status: PROJECT_EVIDENCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - waike-research-ops-ce06
+
   overclaim_risk: Overstating completed accessibility implementation.
   wording_boundary: Design principles / intent; incomplete checklist explicit.
+  project_evidence:
+    repository: gunnchOS3k/waike-research-ops
+    commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+    paths:
+    - ACCESSIBILITY_AND_LOW_COST.md
+    source_id: SRC-WAIKE
 - provisional_id: CLM-CE06-011
   text: Publication-owned LAB-CE06-001 is the Concept Edition capstone lab; it is
     not a renamed WAIKE lab ID.

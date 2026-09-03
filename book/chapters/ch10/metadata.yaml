@@ -2,5 +2,36 @@ chapter_id: CH10
 chapter_number: 10
 title: "Ports, Buses, Boards, Packaging, and Manufacturing"
 part: II
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - How do ports, buses, boards, and packaging turn a design into a device I can plug into?
+experience:
+  - plugging in a cable
+  - seating a card or accessory
+  - noticing seam lines and connector placement
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [interconnect, bus, pcb, packaging, manufacturing]
+devices: [commodity-computer, commodity-phone, commodity-accessory]
+labs: [LAB-BUS-001]
+figures:
+  - FIG-CH10-001
+  - FIG-CH10-002
+  - FIG-CH10-003
+  - FIG-CH10-004
+concepts:
+  introduced: [port, bus, pcb, packaging, dfm, protocol-on-a-wire]
+  required: [signal, stability-contract]
+  related: [power-domain, mechanical-design, firmware]
+waike:
+  mapped: true
+  courses: [HARDWARE_ENGINEERING, EMBEDDED_PROTOTYPING]
+  note: "Adjacent digital_rc labs only (lab_bus_protocol, lab_pcb_erc_drc, lab_ep_i2c_timing, lab_ep_spi_flash, lab_devicetree); LAB-BUS-001 is publication-owned."
+claims:
+  packet: publication/full31/chapters/ch10/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+bibliography_note: "Cite keys present in book/references/references.bib; project Quartet evidence via CLM-0003 / CLM-CH10-004 (PHYSICAL_PENDING)."

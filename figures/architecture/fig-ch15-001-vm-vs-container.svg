@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="460" viewBox="0 0 1040 460" role="img" aria-labelledby="FIG-CH15-001-title FIG-CH15-001-desc" data-figure-id="FIG-CH15-001" data-truth-classification="conceptual">
+  <title id="FIG-CH15-001-title">FIG-CH15-001: Hardware to hypervisor/VM versus shared kernel to containers</title>
+  <desc id="FIG-CH15-001-desc">Conceptual comparative diagram. Left stack reading order: Hardware, Hypervisor, Virtual machine A, Virtual machine B. Right stack reading order: Hardware, Shared host kernel, Container A, Container B. Both multiplex hardware; isolation layers differ. Truth classification: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1040" height="460" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="458" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH15-001  VM stack vs container stack</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · Both multiplex hardware · Color is not the sole encoding</text>
+
+  <text x="260" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">A. Virtual machines</text>
+  <rect x="80" y="110" width="360" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="260" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">4 VM A</text>
+  <text x="260" y="162" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">guest OS + apps</text>
+  <rect x="80" y="190" width="360" height="70" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="260" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">3 VM B</text>
+  <text x="260" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">guest OS + apps</text>
+  <rect x="80" y="270" width="360" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.75" stroke-dasharray="6 4"/>
+  <text x="260" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">2 Hypervisor</text>
+  <rect x="80" y="335" width="360" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="260" y="367" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">1 Hardware</text>
+
+  <text x="780" y="90" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">B. Containers</text>
+  <rect x="600" y="110" width="360" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="780" y="140" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">4 Container A</text>
+  <text x="780" y="162" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">process group + image</text>
+  <rect x="600" y="190" width="360" height="70" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="780" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">3 Container B</text>
+  <text x="780" y="242" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">process group + image</text>
+  <rect x="600" y="270" width="360" height="55" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75"/>
+  <text x="780" y="302" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">2 Shared host kernel</text>
+  <rect x="600" y="335" width="360" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="780" y="367" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">1 Hardware</text>
+
+  <text x="24" y="420" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Dashed border marks the hypervisor layer. Solid blue-tinted stroke marks the shared-kernel layer. Isolation hopes are not absolute safety claims.</text>
+  <text x="24" y="442" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Conceptual educational comparison  not a measured Device Quartet diagram.</text>
+</svg>

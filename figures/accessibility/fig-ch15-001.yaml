@@ -1,0 +1,17 @@
+figure_id: FIG-CH15-001
+title: "VM versus container stacks"
+caption: "Conceptual comparison of hypervisor/VM multiplexing versus shared-kernel containers. Truth: conceptual."
+alt_text: "FIG-CH15-001: Two stacks. Left Hardware Hypervisor VMs. Right Hardware shared kernel containers."
+text_equivalent: |
+  FIG-CH15-001 reading order: VM stack then container stack. Isolation layers differ; isolation is not absolute safety.
+reading_order:
+  - "Hardware"
+  - "Hypervisor or shared kernel"
+  - "VM or container instances"
+source: "figures/architecture/fig-ch15-001-vm-vs-container.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

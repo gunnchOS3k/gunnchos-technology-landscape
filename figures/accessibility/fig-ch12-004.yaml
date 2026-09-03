@@ -1,0 +1,17 @@
+figure_id: FIG-CH12-004
+title: "Monitor snapshots classroom n=1"
+caption: "Classroom n=1 before/during OS-monitor fixture snapshots. Truth: illustrative fixture; not a product SLO."
+alt_text: "FIG-CH12-004: Before and during monitor readings labeled classroom n=1 teaching fixture."
+text_equivalent: |
+  FIG-CH12-004 reading order: (1) Before snapshot, (2) During snapshot, (3) n=1 classroom label. Not Gate 3 evidence.
+reading_order:
+  - "Before"
+  - "During"
+  - "n=1 label"
+source: "figures/architecture/fig-ch12-004-monitor-snapshots.svg"
+truth_classification: illustrative
+status: illustrative
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

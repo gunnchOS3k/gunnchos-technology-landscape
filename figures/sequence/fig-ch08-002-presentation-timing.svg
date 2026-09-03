@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img"
+     aria-labelledby="title desc"
+     data-figure-id="FIG-CH08-002"
+     data-truth-classification="illustrative">
+  <title id="title">FIG-CH08-002 Presentation timing feel</title>
+  <desc id="desc">Illustrative timeline comparing steady frame presentation with uneven presentation feel. No numeric hitch thresholds. Truth classification: illustrative teaching aid.</desc>
+  <rect width="1100" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="1098" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CH08-002  Presentation timing and feel (illustrative)</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Teaching aid · not product benchmarks · no invented hitch thresholds</text>
+  <text x="24" y="100" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">A · Steady presentation (felt smooth)</text>
+  <line x1="40" y1="140" x2="1040" y2="140" stroke="#dddddd" stroke-width="2"/>
+  <rect x="60" y="120" width="70" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="95" y="145" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F1</text>
+  <rect x="220" y="120" width="70" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="255" y="145" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F2</text>
+  <rect x="380" y="120" width="70" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="415" y="145" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F3</text>
+  <rect x="540" y="120" width="70" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="575" y="145" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F4</text>
+  <rect x="700" y="120" width="70" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="735" y="145" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F5</text>
+  <rect x="860" y="120" width="70" height="40" fill="#f5f5f5" stroke="#111111" stroke-width="1.5"/>
+  <text x="895" y="145" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F6</text>
+  <text x="24" y="220" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">B · Uneven presentation (felt unstable)</text>
+  <line x1="40" y1="260" x2="1040" y2="260" stroke="#dddddd" stroke-width="2"/>
+  <rect x="60" y="240" width="70" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="95" y="265" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F1</text>
+  <rect x="280" y="240" width="70" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="315" y="265" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F2</text>
+  <text x="315" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">late</text>
+  <rect x="420" y="240" width="70" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="455" y="265" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F3</text>
+  <rect x="700" y="240" width="70" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="735" y="265" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F4</text>
+  <text x="735" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">gap</text>
+  <rect x="860" y="240" width="70" height="40" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="895" y="265" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">F5</text>
+  <text x="24" y="360" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Solid = on-rhythm frame · dashed = delayed or missing update. Causes may include CPU/GPU contention, buffering, or thermal limitsdiagnose before blaming one layer.</text>
+  <text x="24" y="390" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Illustrative only. Survey-depth frame-deadline citations remain SOURCE_NEEDED (CLM-CH08-001).</text>
+</svg>

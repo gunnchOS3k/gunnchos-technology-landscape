@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+     aria-labelledby="fig-ch19-001-title fig-ch19-001-desc"
+     data-figure-id="FIG-CH19-001">
+  <title id="fig-ch19-001-title">NTN continuity map</title>
+  <desc id="fig-ch19-001-desc">NTN continuity map. Truth class: conceptual. Nodes: Human task, Device, Terrestrial, NTN path, Usable result. Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</desc>
+  <defs>
+    <marker id="arr-fig-ch19-001" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">NTN continuity map</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">FIG-CH19-001 · truth: conceptual · educational architecture (not a product measurement)</text>
+  <rect x="80" y="160" width="130" height="60" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="145" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Human task</text>
+  <rect x="250" y="90" width="130" height="60" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="315" y="120" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Device</text>
+  <rect x="250" y="230" width="130" height="60" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="315" y="260" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Terrestrial</text>
+  <rect x="450" y="160" width="130" height="60" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="515" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">NTN path</text>
+  <rect x="650" y="160" width="130" height="60" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="715" y="190" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#111111">Usable result</text>
+  <path d="M210,190 L250,150 M210,190 L250,250 M380,190 L450,190 M580,190 L650,190 M780,190 L820,190" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</text>
+</svg>

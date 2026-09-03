@@ -2,5 +2,48 @@ chapter_id: CH30
 chapter_number: 30
 title: "Career Maps and Portfolio Proof"
 part: VI
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - How do I turn completed labs into a coherent, reviewable portfolio packet without promising a job?
+experience:
+  - labs finished but no coherent mentor-reviewable packet
+  - screenshots without claim boundaries
+  - role interest without mapped evidence
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [role-family, portfolio-proof, review-criteria, portfolio-index, employment-non-guarantee]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-CH30-PORTFOLIO-001]
+figures:
+  - FIG-CH30-001
+  - FIG-CH30-002
+  - FIG-CH30-003
+concepts:
+  introduced: [role-family, portfolio-proof, review-criteria, employment-non-guarantee, portfolio-index]
+  required: [observation-vs-inference, claim-boundary]
+  related: [career-map, ce-lab-portfolio, waike-portfolio-evidence, emit-capstone]
+waike:
+  mapped: true
+  courses: []
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (portfolio_evidence.md, capstones/, COMM_PD_ETHICS lab_pd_capstone / lab_feedback_rubric). No exact WAIKE career-placement course ID."
+claims:
+  plan: publication/full31/chapters/ch30/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-01/CAREER_MAP.yaml
+  adjacent:
+    - publication/preproduction/ce-03/CAREER_MAP.yaml
+    - publication/preproduction/ce-04/CAREER_MAP.yaml
+    - publication/preproduction/ce-05/CAREER_MAP.yaml
+    - publication/preproduction/ce-06/CAREER_MAP.yaml
+    - careers/role_registry.yaml
+bibliography_note: "Cite src-waike for adjacent portfolio patterns. Publication-internal careers/ and CE CAREER_MAP.yaml are project evidence (CLM-CH30-001/002). CLM-CH30-004 BLS OOH / labor-market statistics omitted — SOURCE_NEEDED; do not invent percentages."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; portfolio fixtures are not human validation"
+  - "CLM-CH30-004 BLS OOH (or equivalent) SOURCE_NEEDED — labor-market statistics omitted from this draft"
+  - "proposed LAB-CH30-PORTFOLIO-001 not yet authored as a full lab package (chapter references inherit CE portfolio outputs)"
+  - "No employment-guarantee, salary, or placement language"

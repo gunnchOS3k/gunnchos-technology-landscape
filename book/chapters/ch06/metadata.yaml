@@ -1,6 +1,80 @@
 chapter_id: CH06
 chapter_number: 6
 title: "CPU, Instructions, and Parallel Work"
+author: "Edmund Gunn, Jr."
 part: II
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+inherits_from:
+  - CE-3
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING (no Gate 3 PASS claimed)"
+human_question:
+  - When my device feels slow while the network icon looks fine, what is the CPU doing—and why doesn't more cores always help?
+experience:
+  - local lag with healthy connectivity
+  - competing instruction streams
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [cpu, scheduler, process-thread, accelerator]
+devices: [commodity-computer]
+device_quartet_policy: "Analogy/learning-lab only; PHYSICAL_PENDING for physical claims; never required for baseline labs."
+labs: [LAB-CMS-001]
+figures:
+  - FIG-CH06-001
+  - FIG-CH06-002
+  - FIG-CH06-003
+concepts:
+  introduced:
+    - instruction
+    - cpu
+    - process-thread
+    - scheduler
+    - parallel-work
+    - accelerator
+    - cpu-bound-vs-waiting
+  required:
+    - stability-contract
+  related:
+    - memory-hierarchy
+    - storage
+    - thermal-power
+waike:
+  mapped: true
+  exact: []
+  adjacent:
+    - EMBEDDED_PROTOTYPING/lab_ep_isr_vs_poll
+    - HARDWARE_ENGINEERING/lab_zephyr_qemu
+    - SOFTWARE_BUILDER/lab_observability
+  note: "Adjacent digital_rc labs only; no exact CH06 module; do not mint a CH06-only CPU lab as a WAIKE ID."
+claims:
+  taught:
+    - CLM-CH06-001
+    - CLM-CH06-002
+    - CLM-CH06-003
+    - CLM-CH06-004
+  evidence_notes:
+    - "CLM-CH06-002 taught via CE-3 / patterson-hennessy-riscv inheritance while packet row remains SOURCE_NEEDED"
+    - "CLM-CH06-003 illustrative only"
+    - "CLM-CH06-004 PHYSICAL_PENDING"
+citation_keys:
+  - tanenbaum-bos
+  - patterson-hennessy-riscv
+  - linux-scheduler
+  - linux-cpu-freq
+  - khronos-vulkan-overview
+  - src-hardware-quartet
+anatomy_anchors:
+  - ch06-moment
+  - ch06-notice
+  - ch06-ecosystem
+  - ch06-signal
+  - ch06-components
+  - ch06-stability
+  - ch06-try
+  - ch06-build
+  - ch06-secure-include
+  - ch06-career
+  - ch06-check
+  - ch06-glossary

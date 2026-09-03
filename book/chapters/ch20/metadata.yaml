@@ -2,5 +2,44 @@ chapter_id: CH20
 chapter_number: 20
 title: "Latency, Reliability, QoE, and the Stability Contract"
 part: IV
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - Why can everything look connected while send, submit, or sync still fails or feels awful?
+experience:
+  - connected-but-unusable send/submit/sync
+  - green status chrome with stalled human outcomes
+  - ping fine but app not
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [latency, reliability, throughput, qoe, qos, stability-contract, evidence-hierarchy]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-CE06-001, LAB-PKT-001]
+figures:
+  - FIG-CH20-001
+  - FIG-CH20-002
+  - FIG-CH20-003
+  - FIG-CH20-004
+concepts:
+  introduced: [latency, reliability, throughput, qoe, qos, connected-not-usable, evidence-hierarchy]
+  required: [stability-contract, observation-vs-inference]
+  related: [emit-capstone, failure-domain, network-path]
+waike:
+  mapped: true
+  courses: [COMPUTER_NETWORKING, SOFTWARE_BUILDER]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (lab_slo_budget, lab_observability, lab_ethics_ladder). LAB-CE06-001 is publication-owned; no exact EMIT / Stability Contract WAIKE module."
+claims:
+  plan: publication/full31/chapters/ch20/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-06/
+  adjacent: [publication/preproduction/ce-04/, publication/preproduction/ce-01/]
+bibliography_note: "Cite keys present in book/references/references.bib (including itu-t-g1011 promoted for CH20). Peer-reviewed empirical QoE MOS studies remain SOURCE_NEEDED—do not invent."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; EMIT fixtures are not human validation"
+  - "CLM-CH20-006 Device Quartet QoE benches PHYSICAL_PENDING"
+  - "Peer-reviewed empirical QoE web-browsing / MOS studies SOURCE_NEEDED for later depth"
+  - "No invented universal millisecond budgets, MOS scores, or product SLOs"

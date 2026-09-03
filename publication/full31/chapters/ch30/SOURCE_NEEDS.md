@@ -35,3 +35,9 @@ Link deeper CE registers rather than copying:
 ## Integrator note
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
+
+## Remaining SOURCE_NEEDED (EVIDENCE-A)
+
+| Claim / need | Next step |
+|---|---|
+| `CLM-CH30-004` / `bls_or_equivalent` | Human-verified BLS OOH (or equivalent) table cite — automated retrieval blocked; do not invent labor-market percentages. |

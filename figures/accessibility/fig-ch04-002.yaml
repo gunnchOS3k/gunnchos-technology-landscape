@@ -1,0 +1,19 @@
+figure_id: FIG-CH04-002
+title: "Same Task Across Form Factors"
+caption: "One human task fans out into different constraint callouts by form-factor lens."
+alt_text: "Same human task fans out into four form-factor constraint callouts."
+text_equivalent: |
+  Center: Same human task (write, measure, sense, carry). Four branches:
+  Student 14.5 desk posture; Handheld Hybrid mobility/dock transitions;
+  DS-XL Coder local build-test-deploy loop; Edge IO Wearables sensing proximity/consent.
+  Illustrative teaching diagram; not measured EVT.
+reading_order:
+  - "Center task node"
+  - "Student 14.5 branch"
+  - "Handheld Hybrid branch"
+  - "DS-XL Coder branch"
+  - "Edge IO Wearables branch"
+source: figures/ecosystem/fig-ch04-002-same-task-constraints.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

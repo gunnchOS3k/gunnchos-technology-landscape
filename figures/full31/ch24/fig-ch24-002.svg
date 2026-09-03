@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+     aria-labelledby="fig-ch24-002-title fig-ch24-002-desc"
+     data-figure-id="FIG-CH24-002">
+  <title id="fig-ch24-002-title">Accessible vs blocked recovery</title>
+  <desc id="fig-ch24-002-desc">Accessible vs blocked recovery. Truth class: conceptual. Nodes: Accessible recovery, Blocked recovery, Auth succeeded, Task finished. Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</desc>
+  <defs>
+    <marker id="arr-fig-ch24-002" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">Accessible vs blocked recovery</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">FIG-CH24-002 · truth: conceptual · educational architecture (not a product measurement)</text>
+  <rect x="40" y="100" width="430" height="220" fill="#f7f7f7" stroke="#111111" stroke-width="2"/><text x="255" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Side A</text>
+  <rect x="530" y="100" width="430" height="220" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="745" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Side B</text>
+  <text x="255" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#111111">Accessible recovery</text>
+  <text x="255" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#111111">Blocked recovery</text>
+  <text x="745" y="170" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#111111">Auth succeeded</text>
+  <text x="745" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#111111">Task finished</text>
+  <text x="500" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Labels encode meaning; color is not required</text>
+  <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</text>
+</svg>

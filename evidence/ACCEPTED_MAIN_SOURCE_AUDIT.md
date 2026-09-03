@@ -223,3 +223,18 @@ See `evidence/unresolved_claims.md`.
 ## Audit integrity statement
 
 This audit did not modify upstream repositories. Where the book needs a capability that is not implemented, the claim is registered as planned/future/illustrative rather than silently “fixed” in product source.
+
+---
+
+## Refresh note — Agent EVIDENCE-B (2026-09-03)
+
+Re-fetched current `origin/main` SHAs for project-evidence closure:
+
+| Repo | Branch | Commit SHA |
+|---|---|---|
+| gunnchos-technology-landscape | main | `18ec58005529bd16d680ee7419e4dea13150e9c6` |
+| waike-research-ops | main | `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0` |
+| gunnchos-device-os | main | `28562a8456207540c205a1c8a6434a491b0a4771` |
+| gunnchos-hardware-industrial-design | main | `9ee0ef2f688b2c18428bfabc316b23687a02988d` |
+
+See `evidence/PROJECT_EVIDENCE_CLOSURE_B.md` for claim-level citations. Prior table rows above may retain older audit-day SHAs for history; use this refresh block for current main.

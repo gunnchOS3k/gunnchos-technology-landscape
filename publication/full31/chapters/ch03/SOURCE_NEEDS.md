@@ -26,3 +26,7 @@
 - Marketing pages as sole authority for technical laws.
 - Invented DOIs/ISBNs/page numbers.
 - Fabricated Gate 3 reader quotes.
+
+## Project evidence closure (2026-09-03)
+
+- `CLM-CH03-005` resolved to `SOURCE_IDENTIFIED` via `labs/LAB-TAP-001/` @ `18ec58005529bd16d680ee7419e4dea13150e9c6` (prototype timings ≠ universal product SLOs).

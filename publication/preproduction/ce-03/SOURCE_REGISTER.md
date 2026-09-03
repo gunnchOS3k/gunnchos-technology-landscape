@@ -89,3 +89,7 @@ Note: WAIKE SHA advanced relative to the Chapter 2 publication audit (`8eb2827â€
 ## Integrator handoff
 
 Propose promoting to global bibliography after review: `patterson-hennessy-riscv` (if distinct from existing MIPS entry), `silberschatz-galvin-gagne`, `jedec-jesd79-4d`, `linux-cpu-freq`, `linux-memory`. Keep project SHAs in evidence registriesâ€”not as BibTeX pseudo-standards.
+
+## Project evidence closure (2026-09-03)
+
+See `evidence/PROJECT_EVIDENCE_CLOSURE_B.md` for accepted-main SHA citations resolving prior `PROJECT_EVIDENCE_NEEDED` claims in this package.

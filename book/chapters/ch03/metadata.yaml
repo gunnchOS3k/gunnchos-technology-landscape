@@ -2,5 +2,63 @@ chapter_id: CH03
 chapter_number: 3
 title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
 part: I
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+canonical_prose_state: DRAFT_COMPLETE
+manuscript_review: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_readiness: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_validation: DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT
 concept_edition: false
+author: "Edmund Gunn, Jr."
+human_question:
+  - Why does this experience feel fast, slow, smooth, or unstable?
+experience:
+  - perceived performance under ordinary interaction
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [perception, scheduling, memory, storage, networking, rendering, power-thermal]
+devices: [commodity-learner-device]
+labs: [LAB-PERF-001, LAB-CMS-001]
+figures: [FIG-CH03-001, FIG-CH03-002, FIG-CH03-003, FIG-CH03-004]
+blocked_figures:
+  - id: FIG-CE3-009
+    status: BLOCKED_EVIDENCE_REQUIRED
+    note: "Measured annotated monitor snapshot remains blocked; LAB-CMS-001 fixtures are synthetic teaching aids only."
+concepts:
+  introduced:
+    - perceived-performance
+    - latency
+    - jitter
+    - throughput
+    - stall
+    - hitch
+    - contention
+    - thermal-power-limit
+  required:
+    - scheduler
+    - event-loop
+    - ram
+    - storage
+    - stability-contract
+  related:
+    - availability
+    - quality-of-experience
+waike:
+  mapped: true
+  relationship: adjacent
+  courses: [SOFTWARE_BUILDER, GAME_DEV_INTERACTIVE, GENERAL_IT, EMBEDDED_PROTOTYPING]
+  labs_adjacent:
+    - GENERAL_IT/lab_storage
+    - SOFTWARE_BUILDER/lab_observability
+    - EMBEDDED_PROTOTYPING/lab_ep_isr_vs_poll
+    - GAME_DEV_INTERACTIVE/lab_playtest_metrics
+  note: "Evidence-backed adjacency only; no exact CH03 performance module ID; LAB-PERF-001 is publication-owned, not a minted WAIKE ID."
+claims:
+  plan: publication/full31/chapters/ch03/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+evidence_rules:
+  - Omit unresolved SOURCE_NEEDED material from reader prose.
+  - No invented numeric SLOs, fake benchmarks, or Device Quartet EVT timings (PHYSICAL_PENDING).
+  - LAB-TAP-001 timings are prototype evidence, not universal product SLOs.
+  - FIG-CE3-009 stays BLOCKED_EVIDENCE_REQUIRED.
+bibliography_working: publication/full31/WORKING_BIBLIOGRAPHY.bib

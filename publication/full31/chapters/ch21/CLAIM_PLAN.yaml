@@ -41,10 +41,16 @@ claims:
   claim_class: publication_internal
   evidence_required: Primary source citation or project evidence as status requires
   preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
-  status: PROJECT_EVIDENCE_NEEDED
+  status: SOURCE_IDENTIFIED
   citation_keys: []
   overclaim_risk: "prohibited: exact WAIKE ID LAB-TRUST-001"
   wording_boundary: "approved: publication-owned lab | prohibited: exact WAIKE ID LAB-TRUST-001"
+  project_evidence:
+    repository: gunnchOS3k/gunnchos-technology-landscape
+    commit: 18ec58005529bd16d680ee7419e4dea13150e9c6
+    paths:
+    - labs/LAB-TRUST-001/lab.yaml
+    - labs/LAB-TRUST-001/STATUS.md
 - provisional_id: CLM-CH21-005
   text: Illustrative local-vs-cloud comparison tables are teaching aids unless a measurement bundle is attached.
   claim_class: illustrative

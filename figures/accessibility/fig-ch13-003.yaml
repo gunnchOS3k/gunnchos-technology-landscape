@@ -1,0 +1,20 @@
+figure_id: FIG-CH13-003
+title: "Save click vs durability"
+caption: "Save click vs durability. Truth classification: illustrative. Color is not the sole encoding."
+alt_text: "Save click vs durability. Reading order: UI Save click; Flush/fsync later; Visible confirm; Durable point."
+text_equivalent: |
+  Save click vs durability. Nodes in reading order: UI Save click; Flush/fsync later; Visible confirm; Durable point. Truth: illustrative. Educational architecture; no invented measurements.
+reading_order:
+- UI Save click
+- Flush/fsync later
+- Visible confirm
+- Durable point
+source: figures/full31/ch13/fig-ch13-003.svg
+evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
+reviewer: pending-human-visual-review
+version: 0.1.0

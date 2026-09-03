@@ -1,0 +1,15 @@
+---
+title: "Career and role map"
+---
+
+# Career and role map
+
+Learner portfolio artifacts may **resemble** professional artifacts; they do **not** guarantee employment, salary, or licensure.
+
+Machine-readable maps:
+
+- `careers/role_registry.yaml`
+- `careers/skill_map.yaml`
+- `careers/chapter_role_map.md` (Chapter 2 prototype map)
+
+As later chapters leave scaffold state, role links should stay evidence-based and free of invented endorsements.

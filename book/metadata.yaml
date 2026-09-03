@@ -4,4 +4,15 @@ author: "Edmund Gunn, Jr."
 series: "A gunnchOS3k + WAIKE learning system"
 language: en
 rights: All-Rights-Reserved-development
-status: GATE_0_PASS — GATE_1_PASS — GATE_2_PASS — GATE_3_IN_PROGRESS
+status: WORKING FULL-MANUSCRIPT DRAFT
+publication_banner:
+  - "WORKING FULL-MANUSCRIPT DRAFT"
+  - "Human reader validation pending."
+  - "Technical/editorial revision pending."
+  - "Not publication-ready."
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_validation: DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT
+manuscript_kind: full31-working-draft
+note: >
+  Not publication-ready. CH02-REVIEW-R1 remains historical Gate 3 chapter-prototype
+  evidence and is not full-manuscript validation.

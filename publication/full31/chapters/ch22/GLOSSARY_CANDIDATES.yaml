@@ -8,7 +8,8 @@ glossary_candidates:
   related_concepts:
   - CX-CH22-SENSOR
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: embodied-sensing
 - term_id: GL-CH22-EDGE-AI
   preferred_term: Edge / on-device inference
   plain_language_definition: Running models near the sensor/actuator.
@@ -17,34 +18,40 @@ glossary_candidates:
   - CX-CH22-EDGE-AI
   - CX-CH22-SENSOR
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: edge-on-device-inference
 - term_id: GL-CH22-BUDGET
   preferred_term: Edge resource budget
-  plain_language_definition: "Latency, energy, memory, thermal limits that bound experience."
+  plain_language_definition: Latency, energy, memory, thermal limits that bound experience.
   introduced_in: CH22
   related_concepts:
   - CX-CH22-BUDGET
   - CX-CH22-EDGE-AI
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: edge-resource-budget
 - term_id: GL-CH22-EMBODIED
   preferred_term: Embodied interaction loop
-  plain_language_definition: Sense → infer → actuate/feedback under human timing.
+  plain_language_definition: "Sense \u2192 infer \u2192 actuate/feedback under human\
+    \ timing."
   introduced_in: CH22
   related_concepts:
   - CX-CH22-EMBODIED
   - CX-CH22-EDGE-AI
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: embodied-interaction-loop
 - term_id: GL-CH22-PRIVACY-SENSE
   preferred_term: Sensing privacy boundary
-  plain_language_definition: What continuous capture may expose beyond the visible UI.
+  plain_language_definition: What continuous capture may expose beyond the visible
+    UI.
   introduced_in: CH22
   related_concepts:
   - CX-CH22-PRIVACY-SENSE
   - CX-CH22-SENSOR
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: sensing-privacy-boundary
 - term_id: GL-CH22-FALLBACK
   preferred_term: Edge/cloud fallback
   plain_language_definition: Degraded path when local inference cannot complete.
@@ -53,4 +60,5 @@ glossary_candidates:
   - CX-CH22-FALLBACK
   - CX-CH22-EDGE-AI
   status: candidate
-  promotion: pending_integrator
+  promotion: promoted
+  promoted_glossary_id: edge-cloud-fallback

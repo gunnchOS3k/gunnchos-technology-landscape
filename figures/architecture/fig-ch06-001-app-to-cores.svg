@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="FIG-CH06-001-title FIG-CH06-001-desc" data-figure-id="FIG-CH06-001" data-truth-classification="conceptual">
+  <title id="FIG-CH06-001-title">FIG-CH06-001: App to process, scheduler, cores, and accelerator</title>
+  <desc id="FIG-CH06-001-desc">Conceptual left-to-right map. Reading order: 1 App experience, 2 Process and threads, 3 OS scheduler, 4 CPU cores, 5 Optional accelerator or GPU. OS schedules and mediates; application instructions still execute on hardware. Truth classification: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1040" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <defs>
+    <marker id="arr06a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH06-001  App  process/threads  scheduler  cores/accelerator</text>
+  <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · Representative educational architecture · Color is not the sole encoding</text>
+
+  <rect x="40" y="140" width="150" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <text x="115" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">1 App</text>
+  <text x="115" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">felt experience</text>
+
+  <line x1="190" y1="185" x2="220" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr06a)"/>
+
+  <rect x="220" y="140" width="160" height="90" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="300" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">2 Process / threads</text>
+  <text x="300" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">OS work units</text>
+
+  <line x1="380" y1="185" x2="410" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr06a)"/>
+
+  <rect x="410" y="140" width="160" height="90" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="490" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">3 Scheduler</text>
+  <text x="490" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">who runs when</text>
+
+  <line x1="570" y1="185" x2="600" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr06a)"/>
+
+  <rect x="600" y="120" width="170" height="130" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="685" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">4 CPU cores</text>
+  <rect x="620" y="170" width="50" height="36" fill="#f5f5f5" stroke="#111111" stroke-width="1.25"/>
+  <text x="645" y="193" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">C0</text>
+  <rect x="680" y="170" width="50" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.25" stroke-dasharray="4 3"/>
+  <text x="705" y="193" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">C1</text>
+  <rect x="740" y="170" width="14" height="36" fill="#ffffff" stroke="#111111" stroke-width="1.25" stroke-dasharray="2 2"/>
+  <text x="685" y="230" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">execute instructions</text>
+
+  <line x1="770" y1="185" x2="800" y2="185" stroke="#111111" stroke-width="1.75" marker-end="url(#arr06a)"/>
+
+  <rect x="800" y="140" width="190" height="90" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+  <text x="895" y="175" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">5 Accelerator / GPU</text>
+  <text x="895" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">OPTIONAL · some workloads</text>
+
+  <text x="24" y="320" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">OS mediates and schedules. Application instruction streams still run on CPU or accelerator hardware.</text>
+  <text x="24" y="350" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Dashed border = optional path. Stroke pattern distinguishes optional accelerator from required CPU path.</text>
+  <text x="24" y="390" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Conceptual educational map  not a measured Device Quartet EVT diagram.</text>
+</svg>
