@@ -73,6 +73,45 @@ def main() -> int:
             ]:
                 if not (path.parent / rel).exists():
                     errors.append(f"{lab_id}: missing {rel}")
+        if lab_id == "LAB-SYS-001":
+            for rel in [
+                "browser/index.html",
+                "fixtures/readiness_demo.html",
+                "portfolio/README.md",
+            ]:
+                if not (path.parent / rel).exists():
+                    errors.append(f"{lab_id}: missing {rel}")
+        if lab_id == "LAB-CMS-001":
+            for rel in [
+                "local_app/safe_snapshot.py",
+                "fixtures/FIG-CE3-009-monitor-transcript.md",
+                "fixtures/sample_observation_table.csv",
+                "portfolio/README.md",
+                "routes/commodity_computer.md",
+            ]:
+                if not (path.parent / rel).exists():
+                    errors.append(f"{lab_id}: missing {rel}")
+        if lab_id == "LAB-TRUST-001":
+            for rel in [
+                "browser/index.html",
+                "local_app/trust_sim.py",
+                "fixtures/route_c_transcript.md",
+                "fixtures/route_l_transcript.md",
+                "portfolio/README.md",
+                "A11Y_PRIVACY_SAFETY.md",
+            ]:
+                if not (path.parent / rel).exists():
+                    errors.append(f"{lab_id}: missing {rel}")
+        if lab_id == "LAB-CE06-001":
+            for rel in [
+                "browser/index.html",
+                "fixtures/sample_result_table.csv",
+                "fixtures/illustrative_example/README.md",
+                "portfolio/README.md",
+                "export_portfolio.py",
+            ]:
+                if not (path.parent / rel).exists():
+                    errors.append(f"{lab_id}: missing {rel}")
     if errors:
         print("validate_labs: FAIL")
         for e in errors:

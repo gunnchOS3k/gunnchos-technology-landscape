@@ -18,7 +18,7 @@ TEX_BIN_DIR ?= $(shell \
 
 export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report continuation-check continuation-preview ce-source-integrity
 
 setup:
 	python3 -m venv .venv
@@ -44,6 +44,7 @@ validate:
 	$(PYTHON) scripts/validate_citations.py
 	$(PYTHON) scripts/validate_gate3_review.py
 	$(PYTHON) scripts/validate_ce_preproduction.py
+	$(MAKE) continuation-check
 
 test:
 	$(PYTHON) -m pytest -q
@@ -51,6 +52,7 @@ test:
 preview:
 	@chmod +x scripts/render_formats.sh
 	@./scripts/render_formats.sh html
+	@$(MAKE) continuation-preview
 
 pdf:
 	@chmod +x scripts/render_formats.sh
@@ -84,6 +86,32 @@ ce-source-integrity:
 	$(PYTHON) scripts/validate_ce_sources.py
 	$(PYTHON) scripts/regenerate_ce_candidate_indexes.py
 	$(PYTHON) scripts/validate_ce_sources.py --check
+
+ce-labs-test:
+	$(PYTHON) scripts/validate_labs.py
+	$(PYTHON) -m pytest -q tests/test_lab_sys_001.py tests/test_lab_pkt_001.py tests/test_lab_trust_001.py tests/test_lab_ce06_001.py labs/LAB-CMS-001/tests/test_lab_cms_001.py
+
+ce-figures-check:
+	$(PYTHON) scripts/validate_ce_figures.py
+
+ce-sources-check:
+	$(PYTHON) scripts/validate_ce_sources.py --check
+
+full31-report:
+	$(PYTHON) scripts/merge_full31_registry.py
+
+full31-check:
+	$(PYTHON) scripts/merge_full31_registry.py --check
+	$(PYTHON) scripts/validate_full31.py
+
+continuation-preview:
+	$(PYTHON) scripts/build_continuation_preview.py
+
+continuation-check:
+	$(MAKE) ce-figures-check
+	$(MAKE) ce-sources-check
+	$(MAKE) full31-check
+	@echo "continuation-check: PASS"
 
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).
 all: validate test preview pdf epub
