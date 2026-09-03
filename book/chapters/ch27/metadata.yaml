@@ -2,5 +2,43 @@ chapter_id: CH27
 chapter_number: 27
 title: "Testing, Observability, and Evidence"
 part: VI
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - When tests and dashboards look fine while people still suffer, what was tested, what was observed, and what was only simulated or inferred?
+experience:
+  - local green tests with production stalls
+  - green dashboards beside failed human outcomes
+  - fixture or simulation mistaken for measurement
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [testing, observability, evidence-hierarchy, observation-vs-inference, test-oracle, redaction]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-CE06-001]
+figures:
+  - FIG-CH27-001
+  - FIG-CH27-002
+  - FIG-CH27-003
+concepts:
+  introduced: [testing, observability, test-oracle, evidence-redaction, simulation-ne-measurement]
+  required: [evidence-hierarchy, observation-vs-inference, stability-contract]
+  related: [otel-signals, emit-capstone, failure-domain]
+waike:
+  mapped: true
+  courses: [CLOUD_DEVOPS, DATA_DASHBOARDS]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (lab_slo_budget, lab_incident_runbook, lab_debug_pipeline, lab_freshness_sla). No exact CH27 observability module. LAB-CE06-001 is publication-owned."
+claims:
+  plan: publication/full31/chapters/ch27/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-06/
+  adjacent: [publication/full31/chapters/ch20/]
+bibliography_note: "Cite keys present in book/references/references.bib: otel-signals, itu-t-g1011, waike-research-ops-ce06, wcag22-20241212. No fake OTel version pins. No invented benchmarks as human evidence."
+blockers:
+  - "GATE_3 reader evidence pending — no Gate 3 PASS claim; fixtures are not human validation"
+  - "FIG-CH27-001..003 draft-blocked until SVG + accessibility sidecars land"
+  - "proposed LAB-CH27-SIGNAL-001 not yet a published lab package — use LAB-CE06-001 fields"
+  - "No invented universal benchmarks, product SLOs, or OTel version pins"
