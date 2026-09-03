@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img"
-     aria-labelledby="FIG-CE3-006-title FIG-CE3-006-desc"
-     data-figure-id="FIG-CE3-006"
-     data-truth-classification="conceptual"
-     data-template="tmpl-layered-comparison"
-     data-qualification="">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="FIG-CE3-006-title FIG-CE3-006-desc" data-figure-id="FIG-CE3-006" data-truth-classification="conceptual" data-template="tmpl-layered-comparison" data-qualification="">
   <title id="FIG-CE3-006-title">FIG-CE3-006: Save buffer vs durable file</title>
-  <desc id="FIG-CE3-006-desc">FIG-CE3-006: Save buffer vs durable file. Educational diagram. Reading order: RAM working set (volatile); Storage file object (durable).</desc>
-  <rect width="900" height="360" fill="#ffffff"/>
-  <rect x="1" y="1" width="898" height="358" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE3-006 — Save buffer vs durable file</text>
-  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
-  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: illustrative_lab</text>
-<rect x="60" y="120" width="360" height="140" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <desc id="FIG-CE3-006-desc">FIG-CE3-006: Save buffer vs durable file. Educational diagram. Reading order: RAM working set (volatile); Storage file object (durable). Save buffer vs durable file. Quit+reopen outcome differs if durability incomplete Truth: conceptual. Color is not the sole encoding.</desc>
+  <rect width="900" height="360" fill="#ffffff" />
+  <rect x="1" y="1" width="898" height="358" fill="none" stroke="#222222" stroke-width="2" />
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE3-006 — Save buffer vs durable file</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: illustrative_lab</text><text x="24" y="340" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Save buffer vs durable file.</text><text x="24" y="340" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Truth: conceptual. Color is not the sole encoding.</text><rect x="60" y="120" width="360" height="140" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="240.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">On-screen / RAM buffer</text>
 <text x="240.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">VOLATILE — quit may lose</text>
-<rect x="480" y="120" width="360" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="480" y="120" width="360" height="140" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="660.0" y="184.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Persisted file object</text>
 <text x="660.0" y="204.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">DURABLE — reopen retains</text>
 <text x="40" y="320" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Experience B: quit+reopen differs if durability incomplete. Status words encode volatility.</text>
-  <text x="24" y="344" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Save buffer vs durable file. Quit+reopen outcome differs if durability incomplete Truth: conceptual. Color is not the sole encoding.</text>
-</svg>
+  </svg>

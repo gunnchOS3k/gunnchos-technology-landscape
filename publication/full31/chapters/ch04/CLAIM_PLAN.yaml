@@ -1,43 +1,56 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH04
 chapter_number: 4
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH04-001
-  text: "Device Quartet documents define research form factors / educational learning benchmarks."
+  text: Device Quartet documents define research form factors / educational learning
+    benchmarks.
   claim_class: project_specific
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
+    project evidence for CH04.
   preferred_source_type: repository_accepted_main
   status: PROJECT_EVIDENCE_NEEDED
   citation_keys:
   - src-hardware-quartet
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH04-002
-  text: "Physical Device Quartet units and EVT measurements remain PHYSICAL_PENDING."
+  text: Physical Device Quartet units and EVT measurements remain PHYSICAL_PENDING.
   claim_class: project_specific
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: repository_accepted_main
   status: PHYSICAL_PENDING
   citation_keys:
   - src-hardware-quartet
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH04-003
-  text: "Different form factors expose different ecosystem constraints for the same human task."
+  text: Different form factors expose different ecosystem constraints for the same
+    human task.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: explanatory
   status: ILLUSTRATIVE_ONLY
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS | illustrative teaching model
+    only; not measured/general product fact'
 - provisional_id: CLM-CH04-004
-  text: "Ch4 labs must not require purchase or possession of Quartet hardware."
+  text: Ch4 labs must not require purchase or possession of Quartet hardware.
   claim_class: publication_internal
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
+    project evidence for CH04.
   preferred_source_type: publication_policy
   status: PROJECT_EVIDENCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'

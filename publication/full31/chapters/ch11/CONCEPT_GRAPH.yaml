@@ -3,8 +3,9 @@ chapter_id: CH11
 edition_scope: full_edition
 concepts:
 - concept_id: firmware
-  canonical_term: "Firmware"
-  plain_language_definition: "Software that runs early to initialize and mediate hardware before a full OS is ready."
+  canonical_term: Firmware
+  plain_language_definition: Software that runs early to initialize and mediate hardware
+    before a full OS is ready.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,9 +20,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Firmware as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: boot-sequence
-  canonical_term: "Boot sequence"
-  plain_language_definition: "Ordered handoff from power/reset to firmware to bootloader to OS kernel to userspace."
+  canonical_term: Boot sequence
+  plain_language_definition: Ordered handoff from power/reset to firmware to bootloader
+    to OS kernel to userspace.
   depends_on:
   - firmware
   introduced_here: true
@@ -37,9 +41,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Boot sequence as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: bootloader
-  canonical_term: "Bootloader"
-  plain_language_definition: "Program that loads and starts an operating system image."
+  canonical_term: Bootloader
+  plain_language_definition: Program that loads and starts an operating system image.
   depends_on:
   - boot-sequence
   introduced_here: true
@@ -55,9 +61,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Bootloader as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: root-of-trust
-  canonical_term: "Root of trust"
-  plain_language_definition: "Hardware/firmware foundation that later verification steps depend on."
+  canonical_term: Root of trust
+  plain_language_definition: Hardware/firmware foundation that later verification
+    steps depend on.
   depends_on:
   - firmware
   introduced_here: true
@@ -73,9 +82,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Root of trust as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: secure-boot
-  canonical_term: "Secure boot (intent)"
-  plain_language_definition: "Policy that tries to run only signed/expected software during boot."
+  canonical_term: Secure boot (intent)
+  plain_language_definition: Policy that tries to run only signed/expected software
+    during boot.
   depends_on:
   - root-of-trust
   - boot-sequence
@@ -92,9 +104,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Secure boot (intent) as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: measured-boot
-  canonical_term: "Measured boot (concept)"
-  plain_language_definition: "Recording measurements of boot components for later attestation—distinct from merely locking a boot policy."
+  canonical_term: Measured boot (concept)
+  plain_language_definition: "Recording measurements of boot components for later\
+    \ attestation\u2014distinct from merely locking a boot policy."
   depends_on:
   - secure-boot
   introduced_here: true
@@ -110,9 +125,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Measured boot (concept) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: attestation
-  canonical_term: "Attestation (concept)"
-  plain_language_definition: "Evidence that a device booted expected software; claims require project/standards evidence, not slogans."
+  canonical_term: Attestation (concept)
+  plain_language_definition: Evidence that a device booted expected software; claims
+    require project/standards evidence, not slogans.
   depends_on:
   - measured-boot
   introduced_here: true
@@ -128,9 +146,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Attestation (concept) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: update-trust
-  canonical_term: "Firmware/OS update trust"
-  plain_language_definition: "Updates can restore or break trust; failed updates are a Stability Contract failure mode."
+  canonical_term: Firmware/OS update trust
+  plain_language_definition: Updates can restore or break trust; failed updates are
+    a Stability Contract failure mode.
   depends_on:
   - firmware
   - boot-sequence
@@ -147,9 +168,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Firmware/OS update trust as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: recovery-mode
-  canonical_term: "Recovery / fail-safe path"
-  plain_language_definition: "Alternate boot path when primary images fail verification or update."
+  canonical_term: Recovery / fail-safe path
+  plain_language_definition: Alternate boot path when primary images fail verification
+    or update.
   depends_on:
   - boot-sequence
   introduced_here: true
@@ -165,3 +189,5 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Recovery / fail-safe path as the whole story instead
+    of one cooperating part of the experience.

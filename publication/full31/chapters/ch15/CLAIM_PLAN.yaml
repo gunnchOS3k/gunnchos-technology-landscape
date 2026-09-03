@@ -1,39 +1,53 @@
 schema_version: 1.0.0
 chapter_id: CH15
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH15-001
-  text: "VMs and containers both multiplex hardware but typically isolate at different layers (machine vs process/namespace)."
+  text: VMs and containers both multiplex hardware but typically isolate at different
+    layers (machine vs process/namespace).
   claim_class: general_technical
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Textbook + OCI/runtime docs."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Textbook + OCI/runtime docs.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH15-002
-  text: "Edge vs cloud is about placement relative to users/constraints—not synonyms for Wi-Fi or cellular."
-  claim_class: general_technical
-  status: SOURCE_IDENTIFIED
-  citation_keys: []
-  overclaim_risk: "Inherit CE-4; NIST cloud definition pointer."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
-- provisional_id: CLM-CH15-003
-  text: "Isolation reduces—but does not magically eliminate—shared-hardware risk; wording must avoid absolute safety claims."
+  text: "Edge vs cloud is about placement relative to users/constraints\u2014not synonyms\
+    \ for Wi-Fi or cellular."
   claim_class: general_technical
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "No exploit details."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
-- provisional_id: CLM-CH15-004
-  text: "A service can be in the cloud while the user's access network is Wi-Fi or cellular—these are different layers."
+  overclaim_risk: Inherit CE-4; NIST cloud definition pointer.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH15-003
+  text: "Isolation reduces\u2014but does not magically eliminate\u2014shared-hardware\
+    \ risk; wording must avoid absolute safety claims."
   claim_class: general_technical
-  status: SOURCE_IDENTIFIED
+  status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "CE-4 misconception correction."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: No exploit details.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH15-004
+  text: "A service can be in the cloud while the user's access network is Wi-Fi or\
+    \ cellular\u2014these are different layers."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: CE-4 misconception correction.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH15-005
-  text: "gunnchOS/Quartet edge placement benchmarks PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED."
+  text: gunnchOS/Quartet edge placement benchmarks PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED.
   claim_class: project_specific
   status: PHYSICAL_PENDING
   citation_keys: []
-  overclaim_risk: "Over-precise product claims without evidence."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Over-precise product claims without evidence.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.

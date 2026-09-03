@@ -2,44 +2,59 @@ schema_version: 1.0.0
 chapter_id: CH25
 claims:
 - provisional_id: CLM-CH25-001
-  text: CE-6 / LAB-CE06-001 already plant equity and accessibility as Stability Contract conditions; CH25 deepens measurement without fabricating population studies.
+  text: CE-6 / LAB-CE06-001 already plant equity and accessibility as Stability Contract
+    conditions; CH25 deepens measurement without fabricating population studies.
   claim_class: publication_internal
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys: []
-  overclaim_risk: "prohibited: treat illustrative EMIT example as human equity evidence"
-  wording_boundary: "approved: inherit CE-6 framing | prohibited: treat illustrative EMIT example as human equity evidence"
+  overclaim_risk: 'prohibited: treat illustrative EMIT example as human equity evidence'
+  wording_boundary: 'approved: inherit CE-6 framing | prohibited: treat illustrative
+    EMIT example as human equity evidence'
+  project_evidence:
+    repo: gunnchOS3k/gunnchos-technology-landscape
+    commit: 0e694176652d4729c7f2b71df08b871a863afb8c
+    path: publication/preproduction/ce-06/
+    role: publication_internal_structure
 - provisional_id: CLM-CH25-002
-  text: WAIKE ACCESSIBILITY_AND_LOW_COST.md documents phone-first / low-cost intent (adjacency); checklist completeness must not be overclaimed.
+  text: WAIKE ACCESSIBILITY_AND_LOW_COST.md documents phone-first / low-cost intent
+    (adjacency); checklist completeness must not be overclaimed.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - SRC-WAIKE
-  overclaim_risk: "prohibited: claim full a11y certification"
-  wording_boundary: "approved: adjacent principles doc | prohibited: claim full a11y certification"
+  overclaim_risk: 'prohibited: claim full a11y certification'
+  wording_boundary: 'approved: adjacent principles doc | prohibited: claim full a11y
+    certification'
   project_evidence:
     repository: gunnchOS3k/waike-research-ops
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH25-003
-  text: Primary digital-divide / ICT access statistics for national or global claims remain SOURCE_NEEDED (select official statistical sources later).
+  text: Primary digital-divide / ICT access statistics for national or global claims
+    remain SOURCE_NEEDED (select official statistical sources later).
   claim_class: standards_based
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "prohibited: invent census percentages"
-  wording_boundary: "approved: mark needed | prohibited: invent census percentages"
+  overclaim_risk: 'prohibited: invent census percentages'
+  wording_boundary: 'approved: mark needed | prohibited: invent census percentages'
 - provisional_id: CLM-CH25-004
   text: Device Quartet multi-form-factor equity measurements are PHYSICAL_PENDING.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: PHYSICAL_PENDING
   citation_keys:
   - SRC-HARDWARE
-  overclaim_risk: "prohibited: shipping inclusivity marketing"
-  wording_boundary: "approved: learning lenses | prohibited: shipping inclusivity marketing"
+  overclaim_risk: 'prohibited: shipping inclusivity marketing'
+  wording_boundary: 'approved: learning lenses | prohibited: shipping inclusivity
+    marketing'

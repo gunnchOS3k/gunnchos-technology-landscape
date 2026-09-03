@@ -1,12 +1,14 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH03
 chapter_number: 3
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
-inheritance_note: "Agent prompt CE-3↔Ch3 shorthand conflicts with concept-edition/registry.yaml (CE-3 maps to CH06/CH07/CH12). This packet follows the registry: Ch3 is performance/perception; inherit CE-3 only for adjac"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+inheritance_note: "Agent prompt CE-3\u2194Ch3 shorthand conflicts with concept-edition/registry.yaml\
+  \ (CE-3 maps to CH06/CH07/CH12). This packet follows the registry: Ch3 is performance/perception;\
+  \ inherit CE-3 only for adjac"
 concepts:
 - concept_id: CX-CH03-001
-  canonical_term: "perceived performance"
-  plain_language_definition: "How fast/smooth/stable the experience feels to a person."
+  canonical_term: perceived performance
+  plain_language_definition: How fast/smooth/stable the experience feels to a person.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -20,9 +22,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating perceived performance as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH03-002
-  canonical_term: "latency"
-  plain_language_definition: "Time from action to perceptible response."
+  canonical_term: latency
+  plain_language_definition: Time from action to perceptible response.
   depends_on:
   - CX-CH03-001
   introduced_here: true
@@ -37,9 +41,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating latency as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH03-003
-  canonical_term: "jitter"
-  plain_language_definition: "Variability in timing that can feel unstable even if average latency is OK."
+  canonical_term: jitter
+  plain_language_definition: Variability in timing that can feel unstable even if
+    average latency is OK.
   depends_on:
   - CX-CH03-002
   introduced_here: true
@@ -54,9 +61,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating jitter as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH03-004
-  canonical_term: "throughput"
-  plain_language_definition: "How much work completes per time; not the same as responsiveness."
+  canonical_term: throughput
+  plain_language_definition: How much work completes per time; not the same as responsiveness.
   depends_on:
   - CX-CH03-001
   introduced_here: true
@@ -71,9 +80,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating throughput as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH03-005
-  canonical_term: "stall / hitch"
-  plain_language_definition: "Visible interruption of expected continuous motion or progress."
+  canonical_term: stall / hitch
+  plain_language_definition: Visible interruption of expected continuous motion or
+    progress.
   depends_on:
   - CX-CH03-001
   introduced_here: true
@@ -88,9 +100,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating stall / hitch as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH03-006
-  canonical_term: "contention"
-  plain_language_definition: "Competing work for CPU, memory, storage, GPU, or radio budget."
+  canonical_term: contention
+  plain_language_definition: Competing work for CPU, memory, storage, GPU, or radio
+    budget.
   depends_on:
   - CX-CH03-002
   introduced_here: true
@@ -105,9 +120,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating contention as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH03-007
-  canonical_term: "thermal/power limit (qualitative)"
-  plain_language_definition: "Energy/heat constraints that can reduce available performance."
+  canonical_term: thermal/power limit (qualitative)
+  plain_language_definition: Energy/heat constraints that can reduce available performance.
   depends_on:
   - CX-CH03-006
   introduced_here: true
@@ -122,9 +139,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating thermal/power limit (qualitative) as the whole story
+    instead of one cooperating part of the experience.
 - concept_id: CX-CH03-008
-  canonical_term: "Stability Contract (performance lens)"
-  plain_language_definition: "Concurrent conditions for smooth usable feel."
+  canonical_term: Stability Contract (performance lens)
+  plain_language_definition: Concurrent conditions for smooth usable feel.
   depends_on:
   - CX-CH03-001
   - CX-CH03-002
@@ -141,3 +160,5 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating Stability Contract (performance lens) as the whole
+    story instead of one cooperating part of the experience.

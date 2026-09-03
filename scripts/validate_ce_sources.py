@@ -127,10 +127,17 @@ def classify_bib(entry: dict[str, str]) -> str:
     note = (entry.get("note") or "").lower()
     key = entry.get("key", "").lower()
     url = entry.get("url") or ""
+    title = (entry.get("title") or "").lower()
     if et == "book":
         return "textbooks"
+    # IEEE/ISO/IETF/3GPP standards before any "ieee" peer-reviewed heuristic.
     if (
-        "rfc" in how
+        key.startswith("ieee802")
+        or "ieee std" in how
+        or "ieee std" in title
+        or "802.11" in key
+        or "802.11" in title
+        or "rfc" in how
         or how.startswith("ietf")
         or "3gpp" in how
         or "nist" in how
@@ -141,11 +148,12 @@ def classify_bib(entry: dict[str, str]) -> str:
         or "nist" in key
         or "iso" in key
         or key.startswith("wcag")
+        or "standards.ieee.org" in url
     ):
         return "standards_specifications"
     if et == "techreport" or "nist" in how:
         return "standards_specifications"
-    if et == "article" or "ieee" in how or "journal" in note:
+    if et == "article" or "journal" in note or ("ieee" in how and "std" not in how):
         return "peer_reviewed"
     if "github.com" in url or "accepted main" in note or "repository" in how:
         if "github.com" in url or "accepted main" in note:
@@ -198,14 +206,41 @@ def assign_verification(entry: dict[str, str], source_class: str) -> str:
 
 
 def canonical_identifier(entry: dict[str, str]) -> str:
+    """Group aliases into canonical works.
+
+    Priority: DOI → ISBN+edition → dated standards/RFC → URL+dated edition →
+    repo+commit+role → title/author/year uncertain fallback.
+    """
     if entry.get("doi"):
-        return f"doi:{entry['doi']}"
+        return f"doi:{entry['doi'].lower()}"
     isbn = normalize_isbn(entry.get("isbn"))
     if isbn:
-        return f"isbn:{isbn}"
-    if entry.get("url"):
-        return f"url:{entry['url']}"
-    how = entry.get("howpublished")
+        edition = (entry.get("edition") or entry.get("year") or "").strip().lower()
+        return f"isbn:{isbn}|edition:{edition}" if edition else f"isbn:{isbn}"
+    key = entry.get("key", "").lower()
+    how = (entry.get("howpublished") or "").strip()
+    url = (entry.get("url") or "").strip()
+    year = (entry.get("year") or "").strip()
+    title = normalize_title(entry.get("title"))
+    # Dated standards / RFC / WCAG recommendations stay distinct by dated edition.
+    if key.startswith("wcag") or key.startswith("rfc") or "std" in how.lower() or "3gpp" in how.lower():
+        dated = year or how or url or key
+        return f"standard:{key}|dated:{dated}"
+    if url and year:
+        return f"url:{url}|year:{year}"
+    if url:
+        return f"url:{url}"
+    note = (entry.get("note") or "").lower()
+    if "github.com" in url or "accepted main" in note or "repository" in how.lower():
+        commit = ""
+        m = re.search(r"\b([0-9a-f]{7,40})\b", note)
+        if m:
+            commit = m.group(1)
+        role = "project"
+        return f"repo:{url or key}|commit:{commit or 'unspecified'}|role:{role}"
+    author = normalize_title(entry.get("author"))
+    if title and (author or year):
+        return f"title:{title}|author:{author}|year:{year or 'unknown'}"
     if how:
         return f"howpublished:{how}"
     return f"key:{entry['key']}"
@@ -342,9 +377,20 @@ def audit(rows: list[dict[str, Any]]) -> dict[str, Any]:
 
     ver_counts: dict[str, int] = defaultdict(int)
     class_counts: dict[str, int] = defaultdict(int)
+    by_canonical: dict[str, set[str]] = defaultdict(set)
     for u in unique:
         ver_counts[u["verification_status"]] += 1
         class_counts[u["source_class"]] += 1
+        by_canonical[u["canonical_identifier"]].add(u["bib_key"])
+    same_work_aliases = [
+        f"{cid} -> {sorted(keys)}"
+        for cid, keys in sorted(by_canonical.items())
+        if len(keys) > 1
+    ]
+    # Prefer canonical-identifier aliases; keep title/year aliases as supplemental.
+    for a in alias_groups:
+        if a not in same_work_aliases:
+            same_work_aliases.append(a)
 
     hard_conflicts = key_conflicts + dup_doi + dup_isbn + url_conflicts + [
         f"missing verification: {k}" for k in missing_ver
@@ -353,6 +399,7 @@ def audit(rows: list[dict[str, Any]]) -> dict[str, Any]:
     return {
         "occurrences": len(rows),
         "unique": len(unique),
+        "unique_canonical_works": len(by_canonical),
         "unique_records": unique,
         "key_conflicts": key_conflicts,
         "dup_doi": dup_doi,
@@ -360,7 +407,7 @@ def audit(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "url_conflicts": url_conflicts,
         "url_title_aliases": url_title_aliases,
         "missing_verification": missing_ver,
-        "alias_groups": alias_groups,
+        "alias_groups": same_work_aliases,
         "ver_counts": dict(sorted(ver_counts.items())),
         "class_counts": dict(sorted(class_counts.items())),
         "hard_conflicts": hard_conflicts,
@@ -449,7 +496,19 @@ def render_report(result: dict[str, Any], prior_unique: int = 58) -> str:
     lines.append("| Metric | Prior (PR #3 index) | Current |")
     lines.append("|---|---:|---:|")
     lines.append(f"| Chapter source occurrences | 64 | {result['occurrences']} |")
-    lines.append(f"| Unique source records (bib keys) | {prior_unique} | {result['unique']} |")
+    lines.append(f"| Unique bib keys | {prior_unique} | {result['unique']} |")
+    lines.append(
+        f"| Unique canonical works | — | {result.get('unique_canonical_works', result['unique'])} |"
+    )
+    lines.append(
+        f"| Same-work aliases (canonical grouping) | — | {len(result.get('alias_groups') or [])} |"
+    )
+    lines.append("")
+    lines.append(
+        "Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC → "
+        "URL+dated edition → repo+commit+role → title/author/year uncertain fallback. "
+        "The two WCAG dated Recommendations remain distinct works."
+    )
     lines.append("")
     lines.append("### Verification status (unique keys)")
     lines.append("")
@@ -610,6 +669,7 @@ def write_source_index(rows: list[dict[str, Any]], result: dict[str, Any]) -> st
         "rights": "Candidate only. Does not modify live CH02 / Gate 3 evidence registries.",
         "chapter_source_occurrences": result["occurrences"],
         "unique_source_records": result["unique"],
+        "unique_canonical_works": result.get("unique_canonical_works", result["unique"]),
         "unique_by_class": result["class_counts"],
         "verification_counts": result["ver_counts"],
         "metadata_conflicts": result["key_conflicts"],

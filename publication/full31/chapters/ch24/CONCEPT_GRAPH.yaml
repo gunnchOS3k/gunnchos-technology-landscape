@@ -1,10 +1,13 @@
 schema_version: 1.0.0
 chapter_id: CH24
-teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
 concepts:
 - concept_id: CX-CH24-PRIVACY
   canonical_term: Privacy / data lifecycle
-  plain_language_definition: "Rules and practices for collect, use, retain, share, delete/redact."
+  plain_language_definition: Rules and practices for collect, use, retain, share,
+    delete/redact.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,6 +22,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Privacy / data lifecycle as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH24-IDENTITY
   canonical_term: Identity in human systems
   plain_language_definition: Claims about people/services that unlock experiences.
@@ -36,9 +41,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Identity in human systems as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH24-SAFETY
   canonical_term: Safety constraints
-  plain_language_definition: Limits that keep harmful outcomes from being easy to enact.
+  plain_language_definition: Limits that keep harmful outcomes from being easy to
+    enact.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -53,6 +61,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Safety constraints as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: CX-CH24-A11Y
   canonical_term: Accessibility path
   plain_language_definition: Alternate routes so experience succeeds for diverse bodies/tools.
@@ -70,9 +80,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Accessibility path as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: CX-CH24-ETHICS
   canonical_term: Ethics ladder
-  plain_language_definition: Observation before inference; disclosure and responsible use.
+  plain_language_definition: Observation before inference; disclosure and responsible
+    use.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -87,9 +100,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Ethics ladder as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH24-WCAG
   canonical_term: WCAG as guidance
-  plain_language_definition: W3C accessibility guidelines; dated editions must not be silently overwritten.
+  plain_language_definition: W3C accessibility guidelines; dated editions must not
+    be silently overwritten.
   depends_on:
   - CX-CH24-A11Y
   introduced_here: true
@@ -105,6 +121,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating WCAG as guidance as the whole story instead of one
+    cooperating part of the experience.
 edges:
 - from: CX-CH24-PRIVACY
   to: CX-CH24-IDENTITY

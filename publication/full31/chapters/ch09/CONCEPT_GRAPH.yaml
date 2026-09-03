@@ -1,12 +1,13 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH09
 chapter_number: 9
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
-inheritance_note: "Part II: energy, heat, and mechanics as first-class constraints on experience—not a battery SKU catalog."
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+inheritance_note: "Part II: energy, heat, and mechanics as first-class constraints\
+  \ on experience\u2014not a battery SKU catalog."
 concepts:
 - concept_id: CX-CH09-001
-  canonical_term: "power budget"
-  plain_language_definition: "Limited energy delivery rate a design can sustain."
+  canonical_term: power budget
+  plain_language_definition: Limited energy delivery rate a design can sustain.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -20,9 +21,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating power budget as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH09-002
-  canonical_term: "battery"
-  plain_language_definition: "Stored chemical energy with capacity, rate, and aging constraints."
+  canonical_term: battery
+  plain_language_definition: Stored chemical energy with capacity, rate, and aging
+    constraints.
   depends_on:
   - CX-CH09-001
   introduced_here: true
@@ -37,9 +41,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating battery as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH09-003
-  canonical_term: "thermal limit"
-  plain_language_definition: "Heat must leave the system; excess heat forces reduced performance or shutdown."
+  canonical_term: thermal limit
+  plain_language_definition: Heat must leave the system; excess heat forces reduced
+    performance or shutdown.
   depends_on:
   - CX-CH09-001
   introduced_here: true
@@ -54,9 +61,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating thermal limit as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH09-004
-  canonical_term: "throttle"
-  plain_language_definition: "Deliberate reduction of performance to protect power/thermal/safety limits."
+  canonical_term: throttle
+  plain_language_definition: Deliberate reduction of performance to protect power/thermal/safety
+    limits.
   depends_on:
   - CX-CH09-003
   introduced_here: true
@@ -71,9 +81,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating throttle as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH09-005
-  canonical_term: "mechanical design"
-  plain_language_definition: "Enclosure, materials, buttons, hinges, seals affecting durability, heat, and UX."
+  canonical_term: mechanical design
+  plain_language_definition: Enclosure, materials, buttons, hinges, seals affecting
+    durability, heat, and UX.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -87,9 +100,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating mechanical design as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH09-006
-  canonical_term: "energy vs peak performance"
-  plain_language_definition: "Bursts possible; sustained feel constrained by energy/heat."
+  canonical_term: energy vs peak performance
+  plain_language_definition: Bursts possible; sustained feel constrained by energy/heat.
   depends_on:
   - CX-CH09-001
   - CX-CH09-003
@@ -105,3 +120,5 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating energy vs peak performance as the whole story instead
+    of one cooperating part of the experience.

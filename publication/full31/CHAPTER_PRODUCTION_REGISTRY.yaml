@@ -4,7 +4,7 @@ accepted_main_sha: 0e694176652d4729c7f2b71df08b871a863afb8c
 waike_accepted_main_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
 gate_posture: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
 integrator_note: >
-  Merged from agent-h/i/j registry fragments. PREPRODUCTION / DEVELOPMENT — not canonical final prose and not Gate 3 reader evidence. CH02-REVIEW-R1 and publication/gates/gate-3/ remain untouched.
+  Merged from agent-h/i/j registry fragments with integrator truth repair. packet_state is file/semantic completeness only; current_state is honest maturity. PREPRODUCTION / DEVELOPMENT — not canonical final prose and not Gate 3 reader evidence. CH02-REVIEW-R1 and publication/gates/gate-3/ remain untouched.
 vocabulary:
   - SCAFFOLD
   - PREPRODUCTION_STARTED
@@ -25,21 +25,33 @@ counts:
   unique_chapter_numbers: 31
   unique_titles: 31
   with_next_automatable_action: 31
+  architecture_registered: 31
+  minimum_packet_coverage: 31
+  packet_complete: 31
+  substantive_preproduction_started: 30
+  substantive_preproduction_complete: 0
+  canonical_full_drafts: 1
+  human_validated: 0
+  publication_ready: 0
+packet_state_counts:
+  PACKET_COMPLETE: 31
 current_state_counts:
   HUMAN_VALIDATION_PENDING: 1
-  PREPRODUCTION_COMPLETE: 30
+  PREPRODUCTION_STARTED: 30
 waike_mapping_totals:
   exact: 0
-  adjacent: 46
-  proposed: 11
-  no_map: 14
-waike_mapping_note: Totals include fragment-reported row counts (Part V–VI). Parts I–IV publish per-chapter crosswalks; III–IV progress notes report exact=0 adjacent=37 proposed=4 no-map=17.
+  adjacent: 122
+  proposed: 24
+  no_map: 43
+waike_unique_upstream_objects: 85
+waike_mapping_note: Authoritative totals from deterministic parse of all chapter WAIKE_CROSSWALK.md files (scripts/aggregate_full31_waike.py). Fragment row totals are not authoritative.
 chapters:
 - chapter_number: 1
   chapter_id: CH01
   title: "Technology Is a System, Not a Screen"
   part: I
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -62,6 +74,7 @@ chapters:
   chapter_id: CH02
   title: Follow One Tap Through the Entire Stack
   part: I
+  packet_state: PACKET_COMPLETE
   current_state: HUMAN_VALIDATION_PENDING
   canonical_prose_state: DRAFT_COMPLETE
   concept_preproduction_state: DRAFT_COMPLETE
@@ -85,7 +98,8 @@ chapters:
   chapter_id: CH03
   title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
   part: I
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -109,7 +123,8 @@ chapters:
   chapter_id: CH04
   title: The Device Quartet as a Learning Laboratory
   part: I
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -134,7 +149,8 @@ chapters:
   chapter_id: CH05
   title: "Electricity, Signals, Clocks, and Logic"
   part: II
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -158,7 +174,8 @@ chapters:
   chapter_id: CH06
   title: "CPU, Instructions, and Parallel Work"
   part: II
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -184,7 +201,8 @@ chapters:
   chapter_id: CH07
   title: "Memory, Cache, and Storage"
   part: II
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -211,7 +229,8 @@ chapters:
   chapter_id: CH08
   title: "Graphics, Displays, Audio, Cameras, and Sensors"
   part: II
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -239,7 +258,8 @@ chapters:
   chapter_id: CH09
   title: "Power, Batteries, Thermals, and Mechanical Design"
   part: II
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -267,7 +287,8 @@ chapters:
   chapter_id: CH10
   title: "Ports, Buses, Boards, Packaging, and Manufacturing"
   part: II
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -295,7 +316,8 @@ chapters:
   chapter_id: CH11
   title: "Firmware, Boot, and Trust"
   part: III
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -324,7 +346,8 @@ chapters:
   chapter_id: CH12
   title: "Operating Systems, Processes, Threads, and Scheduling"
   part: III
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -351,7 +374,8 @@ chapters:
   chapter_id: CH13
   title: "Files, Databases, and Data Lifecycles"
   part: III
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -375,7 +399,8 @@ chapters:
   chapter_id: CH14
   title: "Applications, APIs, Runtimes, and User Interfaces"
   part: III
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -401,7 +426,8 @@ chapters:
   chapter_id: CH15
   title: "Containers, Virtualization, Cloud, and Edge Computing"
   part: III
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -425,7 +451,8 @@ chapters:
   chapter_id: CH16
   title: "Packets, Protocols, Routing, and the Internet"
   part: IV
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -451,7 +478,8 @@ chapters:
   chapter_id: CH17
   title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
   part: IV
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -474,7 +502,8 @@ chapters:
   chapter_id: CH18
   title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
   part: IV
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -499,7 +528,8 @@ chapters:
   chapter_id: CH19
   title: "NTN and Service Continuity Across Ground, Air, and Space"
   part: IV
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -524,7 +554,8 @@ chapters:
   chapter_id: CH20
   title: "Latency, Reliability, QoE, and the Stability Contract"
   part: IV
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_STARTED
@@ -553,7 +584,8 @@ chapters:
   chapter_id: CH21
   title: "Data, Machine Learning, and Generative AI"
   part: V
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -580,7 +612,8 @@ chapters:
   chapter_id: CH22
   title: "Edge AI, Sensors, and Embodied Interaction"
   part: V
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -606,7 +639,8 @@ chapters:
   chapter_id: CH23
   title: Cybersecurity from Chip to Cloud
   part: V
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -633,7 +667,8 @@ chapters:
   chapter_id: CH24
   title: "Privacy, Identity, Safety, Accessibility, and Ethics"
   part: V
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -659,7 +694,8 @@ chapters:
   chapter_id: CH25
   title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
   part: V
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -685,7 +721,8 @@ chapters:
   chapter_id: CH26
   title: Software Development and Version Control
   part: VI
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -709,7 +746,8 @@ chapters:
   chapter_id: CH27
   title: "Testing, Observability, and Evidence"
   part: VI
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -734,7 +772,8 @@ chapters:
   chapter_id: CH28
   title: "Digital Twins, Simulation, and Reproducible Research"
   part: VI
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -758,7 +797,8 @@ chapters:
   chapter_id: CH29
   title: Designing a Complete Technology Product
   part: VI
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -786,7 +826,8 @@ chapters:
   chapter_id: CH30
   title: Career Maps and Portfolio Proof
   part: VI
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE
@@ -812,7 +853,8 @@ chapters:
   chapter_id: CH31
   title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
   part: VI
-  current_state: PREPRODUCTION_COMPLETE
+  packet_state: PACKET_COMPLETE
+  current_state: PREPRODUCTION_STARTED
   canonical_prose_state: SCAFFOLD
   concept_preproduction_state: PREPRODUCTION_COMPLETE
   source_state: PREPRODUCTION_COMPLETE

@@ -4,12 +4,13 @@ gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 rights: Candidate only. Does not modify live CH02 / Gate 3 evidence registries.
 chapter_source_occurrences: 64
 unique_source_records: 59
+unique_canonical_works: 52
 unique_by_class:
-  official_technical_documentation: 14
+  official_technical_documentation: 13
   other_explanatory: 5
-  peer_reviewed: 3
+  peer_reviewed: 2
   project_accepted_main: 7
-  standards_specifications: 21
+  standards_specifications: 23
   textbooks: 9
 verification_counts:
   NEEDS_PRIMARY_VERIFICATION: 1
@@ -39,7 +40,7 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: isbn:9780123749574
+  canonical_identifier: isbn:9780123749574|edition:2009
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: tanenbaum-bos
@@ -49,7 +50,8 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: key:tanenbaum-bos
+  canonical_identifier: title:modern operating systems|author:tanenbaum, andrew s.
+    and bos, herbert|year:2022
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: patterson-hennessy
@@ -59,7 +61,8 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: key:patterson-hennessy
+  canonical_identifier: 'title:computer organization and design: the hardware/software
+    interface|author:patterson, david a. and hennessy, john l.|year:2020'
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: iso-iec-25010-2023
@@ -69,7 +72,7 @@ sources:
   url: https://www.iso.org/standard/78176.html
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.iso.org/standard/78176.html
+  canonical_identifier: url:https://www.iso.org/standard/78176.html|year:2023
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: rfc791
@@ -79,7 +82,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc791
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc791
+  canonical_identifier: standard:rfc791|dated:1981
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: rfc9293
@@ -89,7 +92,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc9293
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc9293
+  canonical_identifier: standard:rfc9293|dated:2022
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: whatwg-html
@@ -99,7 +102,7 @@ sources:
   url: https://html.spec.whatwg.org/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://html.spec.whatwg.org/
+  canonical_identifier: url:https://html.spec.whatwg.org/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: whatwg-dom
@@ -109,7 +112,7 @@ sources:
   url: https://dom.spec.whatwg.org/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://dom.spec.whatwg.org/
+  canonical_identifier: url:https://dom.spec.whatwg.org/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: wcag22-20231005
@@ -119,7 +122,7 @@ sources:
   url: https://www.w3.org/TR/2023/REC-WCAG22-20231005/
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.w3.org/TR/2023/REC-WCAG22-20231005/
+  canonical_identifier: standard:wcag22-20231005|dated:2023
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: linux-scheduler
@@ -129,7 +132,7 @@ sources:
   url: https://docs.kernel.org/scheduler/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://docs.kernel.org/scheduler/
+  canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: mdn-performance
@@ -139,7 +142,7 @@ sources:
   url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
   source_class: other_explanatory
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: src-waike
@@ -149,7 +152,7 @@ sources:
   url: https://github.com/gunnchOS3k/waike-research-ops
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops
+  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-01
   bib_key: src-hardware-quartet
@@ -159,7 +162,7 @@ sources:
   url: https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: patterson-hennessy-riscv
@@ -169,7 +172,7 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: isbn:9780128203316
+  canonical_identifier: isbn:9780128203316|edition:2
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: tanenbaum-bos
@@ -179,7 +182,7 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: isbn:9780137618880
+  canonical_identifier: isbn:9780137618880|edition:5
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: silberschatz-galvin-gagne
@@ -189,7 +192,7 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: isbn:9781119320913
+  canonical_identifier: isbn:9781119320913|edition:10
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: jedec-jesd79-4d
@@ -199,7 +202,7 @@ sources:
   url: https://www.jedec.org/standards-documents/docs/jesd79-4a
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.jedec.org/standards-documents/docs/jesd79-4a
+  canonical_identifier: url:https://www.jedec.org/standards-documents/docs/jesd79-4a|year:2021
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: nvme-base-spec
@@ -209,7 +212,7 @@ sources:
   url: https://nvmexpress.org/specifications/
   source_class: official_technical_documentation
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://nvmexpress.org/specifications/
+  canonical_identifier: url:https://nvmexpress.org/specifications/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: khronos-vulkan-overview
@@ -219,7 +222,7 @@ sources:
   url: https://www.khronos.org/vulkan/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.khronos.org/vulkan/
+  canonical_identifier: url:https://www.khronos.org/vulkan/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: linux-scheduler
@@ -229,7 +232,7 @@ sources:
   url: https://docs.kernel.org/scheduler/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://docs.kernel.org/scheduler/
+  canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: linux-cpu-freq
@@ -239,7 +242,7 @@ sources:
   url: https://docs.kernel.org/admin-guide/pm/cpufreq.html
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://docs.kernel.org/admin-guide/pm/cpufreq.html
+  canonical_identifier: url:https://docs.kernel.org/admin-guide/pm/cpufreq.html|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: linux-memory
@@ -249,7 +252,7 @@ sources:
   url: https://docs.kernel.org/admin-guide/mm/index.html
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://docs.kernel.org/admin-guide/mm/index.html
+  canonical_identifier: url:https://docs.kernel.org/admin-guide/mm/index.html|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: mdn-performance
@@ -259,7 +262,7 @@ sources:
   url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
   source_class: official_technical_documentation
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: src-waike-ce3
@@ -269,7 +272,7 @@ sources:
   url: https://github.com/gunnchOS3k/waike-research-ops
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops
+  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: src-device-os-ce3
@@ -279,7 +282,7 @@ sources:
   url: https://github.com/gunnchOS3k/gunnchos-device-os
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-device-os
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-device-os|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-03
   bib_key: src-hardware-ce3
@@ -289,7 +292,7 @@ sources:
   url: https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc791
@@ -299,7 +302,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc791
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc791
+  canonical_identifier: standard:rfc791|dated:1981
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc768
@@ -309,7 +312,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc768
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc768
+  canonical_identifier: standard:rfc768|dated:1980
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc9293
@@ -319,7 +322,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc9293
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc9293
+  canonical_identifier: standard:rfc9293|dated:2022
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc8200
@@ -329,7 +332,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc8200
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc8200
+  canonical_identifier: standard:rfc8200|dated:2017
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc1034
@@ -339,7 +342,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc1034
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc1034
+  canonical_identifier: standard:rfc1034|dated:1987
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc1035
@@ -349,7 +352,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc1035
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc1035
+  canonical_identifier: standard:rfc1035|dated:1987
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc1918
@@ -359,7 +362,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc1918
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc1918
+  canonical_identifier: standard:rfc1918|dated:1996
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc1122
@@ -369,7 +372,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc1122
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc1122
+  canonical_identifier: standard:rfc1122|dated:1989
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc3022
@@ -379,7 +382,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc3022
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc3022
+  canonical_identifier: standard:rfc3022|dated:2001
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc9000
@@ -389,7 +392,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc9000
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc9000
+  canonical_identifier: standard:rfc9000|dated:2021
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: rfc8446
@@ -399,7 +402,7 @@ sources:
   url: https://www.rfc-editor.org/rfc/rfc8446
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.rfc-editor.org/rfc/rfc8446
+  canonical_identifier: standard:rfc8446|dated:2018
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: nist-sp800-145
@@ -409,7 +412,7 @@ sources:
   url: https://csrc.nist.gov/pubs/sp/800/145/final
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/800/145/final
+  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/800/145/final|year:2011
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: nist-sp500-325
@@ -419,7 +422,7 @@ sources:
   url: https://csrc.nist.gov/pubs/sp/500/325/final
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/500/325/final
+  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/500/325/final|year:2018
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: ieee80211-wg
@@ -427,9 +430,9 @@ sources:
   title: null
   year: '2026'
   url: https://www.ieee802.org/11/
-  source_class: official_technical_documentation
+  source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.ieee802.org/11/
+  canonical_identifier: url:https://www.ieee802.org/11/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: ieee80211-2020
@@ -437,9 +440,9 @@ sources:
   title: null
   year: '2020'
   url: https://standards.ieee.org/standard/802_11-2020.html
-  source_class: peer_reviewed
+  source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://standards.ieee.org/standard/802_11-2020.html
+  canonical_identifier: standard:ieee80211-2020|dated:2020
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: threegpp-ts23501
@@ -449,7 +452,7 @@ sources:
   url: https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144
+  canonical_identifier: standard:threegpp-ts23501|dated:2026
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: mdn-network-monitor
@@ -459,7 +462,7 @@ sources:
   url: https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor
   source_class: official_technical_documentation
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: mdn-resource-timing
@@ -469,7 +472,7 @@ sources:
   url: https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing
   source_class: official_technical_documentation
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: wifi-alliance-discover
@@ -479,7 +482,7 @@ sources:
   url: https://www.wi-fi.org/discover-wi-fi
   source_class: other_explanatory
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://www.wi-fi.org/discover-wi-fi
+  canonical_identifier: url:https://www.wi-fi.org/discover-wi-fi|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: kurose-ross-8
@@ -489,7 +492,7 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: isbn:9780136681557
+  canonical_identifier: isbn:9780136681557|edition:8
   metadata_conflict_status: NONE
 - source_package: ce-04
   bib_key: waike-main-ce4-audit
@@ -499,7 +502,7 @@ sources:
   url: null
   source_class: other_explanatory
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: howpublished:Git commit
+  canonical_identifier: title:waike research-ops accepted main audit for ce-4 crosswalk|author:|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: nist_ai_rmf_100_1
@@ -509,7 +512,7 @@ sources:
   url: https://doi.org/10.6028/NIST.AI.100-1
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: doi:10.6028/NIST.AI.100-1
+  canonical_identifier: doi:10.6028/nist.ai.100-1
   metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: nist_sp_800_63_4
@@ -519,7 +522,7 @@ sources:
   url: https://doi.org/10.6028/NIST.SP.800-63-4
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: doi:10.6028/NIST.SP.800-63-4
+  canonical_identifier: doi:10.6028/nist.sp.800-63-4
   metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: saltzer_schroeder_1975
@@ -529,7 +532,7 @@ sources:
   url: https://doi.org/10.1109/PROC.1975.9939
   source_class: peer_reviewed
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: doi:10.1109/PROC.1975.9939
+  canonical_identifier: doi:10.1109/proc.1975.9939
   metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: russell_norvig_aima
@@ -539,7 +542,8 @@ sources:
   url: null
   source_class: textbooks
   verification_status: NEEDS_PRIMARY_VERIFICATION
-  canonical_identifier: key:russell_norvig_aima
+  canonical_identifier: 'title:artificial intelligence: a modern approach|author:russell,
+    stuart and norvig, peter|year:unknown'
   metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: goodfellow_deep_learning
@@ -549,7 +553,7 @@ sources:
   url: https://www.deeplearningbook.org/
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.deeplearningbook.org/
+  canonical_identifier: url:https://www.deeplearningbook.org/|year:2016
   metadata_conflict_status: NONE
 - source_package: ce-05
   bib_key: solove_taxonomy_2006
@@ -559,7 +563,7 @@ sources:
   url: null
   source_class: peer_reviewed
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: key:solove_taxonomy_2006
+  canonical_identifier: title:a taxonomy of privacy|author:solove, daniel j.|year:2006
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: itu-t-p10-g100
@@ -579,7 +583,7 @@ sources:
   url: https://www.itu.int/rec/T-REC-G.1011
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.itu.int/rec/T-REC-G.1011
+  canonical_identifier: url:https://www.itu.int/rec/T-REC-G.1011|year:2016
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: wcag22-20241212
@@ -589,7 +593,7 @@ sources:
   url: https://www.w3.org/TR/2024/REC-WCAG22-20241212/
   source_class: standards_specifications
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://www.w3.org/TR/2024/REC-WCAG22-20241212/
+  canonical_identifier: standard:wcag22-20241212|dated:2024
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: whatwg-html-ce06
@@ -599,7 +603,7 @@ sources:
   url: https://html.spec.whatwg.org/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://html.spec.whatwg.org/
+  canonical_identifier: url:https://html.spec.whatwg.org/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: mdn-performance-ce06
@@ -609,7 +613,7 @@ sources:
   url: https://developer.mozilla.org/en-US/docs/Web/API/Performance
   source_class: other_explanatory
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: otel-signals
@@ -619,7 +623,7 @@ sources:
   url: https://opentelemetry.io/docs/concepts/signals/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://opentelemetry.io/docs/concepts/signals/
+  canonical_identifier: url:https://opentelemetry.io/docs/concepts/signals/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: linux-scheduler-ce06
@@ -629,7 +633,7 @@ sources:
   url: https://docs.kernel.org/scheduler/
   source_class: official_technical_documentation
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: url:https://docs.kernel.org/scheduler/
+  canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: patterson-hennessy-ce06
@@ -639,7 +643,8 @@ sources:
   url: null
   source_class: textbooks
   verification_status: PRIMARY_METADATA_VERIFIED
-  canonical_identifier: key:patterson-hennessy-ce06
+  canonical_identifier: 'title:computer organization and design: the hardware/software
+    interface|author:patterson, david a. and hennessy, john l.|year:2020'
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: digitalregulation-qos-qoe
@@ -649,7 +654,7 @@ sources:
   url: https://digitalregulation.org/technical-regulation-quality-of-service/
   source_class: other_explanatory
   verification_status: SECONDARY_EXPLANATORY
-  canonical_identifier: url:https://digitalregulation.org/technical-regulation-quality-of-service/
+  canonical_identifier: url:https://digitalregulation.org/technical-regulation-quality-of-service/|year:2024
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: waike-research-ops-ce06
@@ -659,7 +664,7 @@ sources:
   url: https://github.com/gunnchOS3k/waike-research-ops
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops
+  canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
   metadata_conflict_status: NONE
 - source_package: ce-06
   bib_key: gunnchos-technology-landscape-ce06
@@ -669,5 +674,5 @@ sources:
   url: https://github.com/gunnchOS3k/gunnchos-technology-landscape
   source_class: project_accepted_main
   verification_status: REPOSITORY_EVIDENCE_VERIFIED
-  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape
+  canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026
   metadata_conflict_status: NONE

@@ -18,7 +18,7 @@ TEX_BIN_DIR ?= $(shell \
 
 export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report continuation-check continuation-preview ce-source-integrity
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report continuation-check continuation-preview ce-source-integrity ce-visual-text-check
 
 setup:
 	python3 -m venv .venv
@@ -93,15 +93,21 @@ ce-labs-test:
 
 ce-figures-check:
 	$(PYTHON) scripts/validate_ce_figures.py
+	$(PYTHON) scripts/validate_visual_text_integrity.py
+
+ce-visual-text-check:
+	$(PYTHON) scripts/validate_visual_text_integrity.py
 
 ce-sources-check:
 	$(PYTHON) scripts/validate_ce_sources.py --check
 
 full31-report:
 	$(PYTHON) scripts/merge_full31_registry.py
+	$(PYTHON) scripts/aggregate_full31_waike.py
 
 full31-check:
 	$(PYTHON) scripts/merge_full31_registry.py --check
+	$(PYTHON) scripts/aggregate_full31_waike.py --check
 	$(PYTHON) scripts/validate_full31.py
 
 continuation-preview:

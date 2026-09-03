@@ -1,10 +1,13 @@
 schema_version: 1.0.0
 chapter_id: CH23
-teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
 concepts:
 - concept_id: CX-CH23-ATTACKSURFACE
   canonical_term: Attack surface (UX-linked)
-  plain_language_definition: Places misuse can enter through the same flows people use.
+  plain_language_definition: Places misuse can enter through the same flows people
+    use.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,6 +22,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Attack surface (UX-linked) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH23-IDENTITY
   canonical_term: Identity
   plain_language_definition: A claim about who/what an actor is.
@@ -36,9 +41,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Identity as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH23-AUTHN
   canonical_term: Authentication
-  plain_language_definition: Checking an identity claim is believable enough for the risk.
+  plain_language_definition: Checking an identity claim is believable enough for the
+    risk.
   depends_on:
   - CX-CH23-IDENTITY
   introduced_here: true
@@ -54,6 +62,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Authentication as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH23-AUTHZ
   canonical_term: Authorization
   plain_language_definition: Deciding what an authenticated actor may do.
@@ -72,6 +82,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Authorization as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH23-CRYPTO
   canonical_term: Encryption goals and limits
   plain_language_definition: Unreadability without keys; endpoints still matter.
@@ -89,9 +101,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Encryption goals and limits as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH23-CHIPCLOUD
   canonical_term: Chip-to-cloud trust path
-  plain_language_definition: Boot/firmware/OS/app/network/cloud controls as one chain of conditions.
+  plain_language_definition: Boot/firmware/OS/app/network/cloud controls as one chain
+    of conditions.
   depends_on:
   - CX-CH23-ATTACKSURFACE
   introduced_here: true
@@ -107,9 +122,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Chip-to-cloud trust path as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH23-PRINCIPLES
   canonical_term: Protection design principles
-  plain_language_definition: "Least privilege, fail-safe defaults, psychological acceptability, etc."
+  plain_language_definition: Least privilege, fail-safe defaults, psychological acceptability,
+    etc.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -124,6 +142,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Protection design principles as the whole story instead
+    of one cooperating part of the experience.
 edges:
 - from: CX-CH23-IDENTITY
   to: CX-CH23-AUTHN

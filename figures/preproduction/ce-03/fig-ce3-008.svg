@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
-     aria-labelledby="FIG-CE3-008-title FIG-CE3-008-desc"
-     data-figure-id="FIG-CE3-008"
-     data-truth-classification="project_specific"
-     data-template="tmpl-ecosystem-system-map"
-     data-qualification="PHYSICAL_PENDING">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="FIG-CE3-008-title FIG-CE3-008-desc" data-figure-id="FIG-CE3-008" data-truth-classification="project_specific" data-template="tmpl-ecosystem-system-map" data-qualification="PHYSICAL_PENDING">
   <title id="FIG-CE3-008-title">FIG-CE3-008: Device Quartet compute/storage roles (optional callout)</title>
-  <desc id="FIG-CE3-008-desc">FIG-CE3-008: Device Quartet compute/storage roles (optional callout). Educational diagram. Reading order: Form factor A; Form factor B; Form factor C; Form factor D; PHYSICAL_PENDING.</desc>
-  <rect width="1000" height="420" fill="#ffffff"/>
-  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE3-008 — Device Quartet compute/storage roles (optional callout)</text>
-  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: project_specific · qualification: PHYSICAL_PENDING · Color is not the sole encoding</text>
-  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: SRC-HARDWARE device-quartet docs + comparison matrix (targets, not measurements)</text>
-<text x="500" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#1F4B7A">PHYSICAL_PENDING · Representative educational architecture · not shipping products</text>
-<rect x="40" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+  <desc id="FIG-CE3-008-desc">FIG-CE3-008: Device Quartet compute/storage roles (optional callout). Educational diagram. Reading order: Form factor A; Form factor B; Form factor C; Form factor D; PHYSICAL_PENDING. Device Quartet compute/storage roles (optional callout). PHYSICAL_PENDING / not shipping products', 'Different form factors stress different bottlenecks Truth: project_specific. Qualification: PHYSICAL_PENDING. Color is not the sole encoding.</desc>
+  <rect width="1000" height="420" fill="#ffffff" />
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2" />
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE3-008 — Device Quartet compute/storage roles (optional callout)</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: SRC-HARDWARE device-quartet docs + comparison matrix (targets, not measurements)</text><text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Device Quartet compute/storage roles (optional callout).</text><text x="500" y="110" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#1F4B7A">PHYSICAL_PENDING · Representative educational architecture · not shipping products</text>
+<rect x="40" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="150.0" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Phone-class</text>
 <text x="150.0" y="244.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">radio+thermal stress</text>
-<rect x="280" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<rect x="280" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="390.0" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Tablet-class</text>
 <text x="390.0" y="244.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">display+mem stress</text>
-<rect x="520" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<rect x="520" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="630.0" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Laptop-class</text>
 <text x="630.0" y="244.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">compute+IO stress</text>
-<rect x="760" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<rect x="760" y="150" width="220" height="160" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="870.0" y="224.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Edge/SBC-class</text>
 <text x="870.0" y="244.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">always-on/power stress</text>
 <text x="40" y="370" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Targets/roles only — not measurements. Different form factors stress different bottlenecks.</text>
-  <text x="24" y="404" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Device Quartet compute/storage roles (optional callout). PHYSICAL_PENDING / not shipping products&#x27;, &#x27;Different form factors stress different bottlenecks Truth: </text>
-</svg>
+  </svg>

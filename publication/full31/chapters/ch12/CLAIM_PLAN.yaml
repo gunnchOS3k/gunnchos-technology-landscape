@@ -1,45 +1,59 @@
 schema_version: 1.0.0
 chapter_id: CH12
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH12-001
-  text: "Processes and threads are OS abstractions for concurrent execution; the scheduler allocates processor time among runnable entities."
+  text: Processes and threads are OS abstractions for concurrent execution; the scheduler
+    allocates processor time among runnable entities.
   claim_class: general_technical
   status: SOURCE_IDENTIFIED
   citation_keys:
   - tanenbaum-bos
   - silberschatz-galvin-gagne
   - linux-scheduler
-  overclaim_risk: "Do not universalize one vendor algorithm."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Do not universalize one vendor algorithm.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH12-002
-  text: "Application logic still executes as instructions on processors under OS mediation—the OS does not replace user computation."
+  text: "Application logic still executes as instructions on processors under OS mediation\u2014\
+    the OS does not replace user computation."
   claim_class: general_technical
   status: SOURCE_IDENTIFIED
   citation_keys:
   - tanenbaum-bos
-  overclaim_risk: "Wording boundary from CE-3."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Wording boundary from CE-3.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH12-003
-  text: "More cores can improve throughput for parallelizable work but do not guarantee lower latency for every interaction."
+  text: More cores can improve throughput for parallelizable work but do not guarantee
+    lower latency for every interaction.
   claim_class: general_technical
   status: SOURCE_IDENTIFIED
   citation_keys:
   - patterson-hennessy
-  overclaim_risk: "No invented speedup curves."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: No invented speedup curves.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH12-004
-  text: "A frozen UI can be scheduling/priority/lock contention as well as CPU busy—diagnosis needs evidence."
+  text: "A frozen UI can be scheduling/priority/lock contention as well as CPU busy\u2014\
+    diagnosis needs evidence."
   claim_class: general_technical
   status: SOURCE_NEEDED
   citation_keys:
   - linux-scheduler
-  overclaim_risk: "Living docs + textbook concurrency chapters."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Living docs + textbook concurrency chapters.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH12-005
-  text: "Device Quartet scheduler behavior under load is PHYSICAL_PENDING."
+  text: Device Quartet scheduler behavior under load is PHYSICAL_PENDING.
   claim_class: project_specific
   status: PHYSICAL_PENDING
   citation_keys: []
-  overclaim_risk: "No fabricated thermal/scheduler traces."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: No fabricated thermal/scheduler traces.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.

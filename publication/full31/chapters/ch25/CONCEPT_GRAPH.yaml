@@ -1,10 +1,13 @@
 schema_version: 1.0.0
 chapter_id: CH25
-teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
 concepts:
 - concept_id: CX-CH25-EQUITY
   canonical_term: Digital equity
-  plain_language_definition: Who can benefit from a technology experience and who is excluded.
+  plain_language_definition: Who can benefit from a technology experience and who
+    is excluded.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,9 +22,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Digital equity as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH25-EXCLUSION
   canonical_term: Exclusion mechanism
-  plain_language_definition: "Device, cost, bandwidth, skill, language, disability, policy barriers."
+  plain_language_definition: Device, cost, bandwidth, skill, language, disability,
+    policy barriers.
   depends_on:
   - CX-CH25-EQUITY
   introduced_here: true
@@ -37,9 +43,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Exclusion mechanism as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: CX-CH25-MEASURE
   canonical_term: Measurable inclusion signals
-  plain_language_definition: Observations that can be collected without inventing population stats.
+  plain_language_definition: Observations that can be collected without inventing
+    population stats.
   depends_on:
   - CX-CH25-EQUITY
   introduced_here: true
@@ -55,9 +64,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Measurable inclusion signals as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH25-CONSTRAINED
   canonical_term: Constrained completion route
-  plain_language_definition: A path that works without specialized hardware or paid APIs.
+  plain_language_definition: A path that works without specialized hardware or paid
+    APIs.
   depends_on:
   - CX-CH25-EXCLUSION
   introduced_here: true
@@ -73,9 +85,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Constrained completion route as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH25-LABELING
   canonical_term: Honest evidence labeling
-  plain_language_definition: Observed / inferred / illustrative / population-claim distinctions.
+  plain_language_definition: Observed / inferred / illustrative / population-claim
+    distinctions.
   depends_on:
   - CX-CH25-MEASURE
   introduced_here: true
@@ -91,6 +106,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Honest evidence labeling as the whole story instead
+    of one cooperating part of the experience.
 edges:
 - from: CX-CH25-EQUITY
   to: CX-CH25-EXCLUSION

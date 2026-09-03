@@ -2,35 +2,44 @@ schema_version: 1.0.0
 chapter_id: CH29
 claims:
 - provisional_id: CLM-CH29-001
-  text: "Device Quartet form factors are research/learning benchmarks, not commercial product SKUs on accepted evidence."
+  text: Device Quartet form factors are research/learning benchmarks, not commercial
+    product SKUs on accepted evidence.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+    Physical Device Quartet / hardware validation remains PHYSICAL_PENDING.
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: PHYSICAL_PENDING
   citation_keys:
   - SRC-HARDWARE
-  overclaim_risk: "prohibited: shipping product marketing"
-  wording_boundary: "approved: learning laboratory | prohibited: shipping product marketing"
+  overclaim_risk: 'prohibited: shipping product marketing'
+  wording_boundary: 'approved: learning laboratory | prohibited: shipping product
+    marketing'
 - provisional_id: CLM-CH29-002
-  text: gunnchOS device OS documents claim boundaries and is not a finished shipping OS (beta_ready false per CE-5 audit language).
+  text: gunnchOS device OS documents claim boundaries and is not a finished shipping
+    OS (beta_ready false per CE-5 audit language).
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - SRC-DEVICE-OS
-  overclaim_risk: "prohibited: production OS certification"
-  wording_boundary: "approved: claim-boundary teaching | prohibited: production OS certification"
+  overclaim_risk: 'prohibited: production OS certification'
+  wording_boundary: 'approved: claim-boundary teaching | prohibited: production OS
+    certification'
   project_evidence:
     repository: gunnchOS3k/waike-research-ops
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH29-003
-  text: Product-management body-of-knowledge citations need selection/verification if used beyond pedagogy.
+  text: Product-management body-of-knowledge citations need selection/verification
+    if used beyond pedagogy.
   claim_class: general_technical
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "prohibited: fake PMI/ISBN cites"
-  wording_boundary: "approved: SOURCE_NEEDED | prohibited: fake PMI/ISBN cites"
+  overclaim_risk: 'prohibited: fake PMI/ISBN cites'
+  wording_boundary: 'approved: SOURCE_NEEDED | prohibited: fake PMI/ISBN cites'

@@ -1,0 +1,50 @@
+schema_id: full31-chapter-production-registry
+schema_version: "1.0.0"
+required_top_level:
+  - schema_version
+  - registry_id
+  - accepted_main_sha
+  - waike_accepted_main_sha
+  - gate_posture
+  - vocabulary
+  - counts
+  - current_state_counts
+  - packet_state_counts
+  - waike_mapping_totals
+  - chapters
+required_chapter_fields:
+  - chapter_number
+  - chapter_id
+  - title
+  - part
+  - packet_state
+  - current_state
+  - canonical_prose_state
+  - concept_preproduction_state
+  - source_state
+  - claim_state
+  - figure_state
+  - lab_state
+  - glossary_state
+  - waike_state
+  - next_automatable_action
+  - packet_path
+allowed_packet_state:
+  - PACKET_MISSING
+  - PACKET_STARTED
+  - PACKET_COMPLETE
+allowed_current_state:
+  - SCAFFOLD
+  - PREPRODUCTION_STARTED
+  - PREPRODUCTION_COMPLETE
+  - DRAFT_STARTED
+  - DRAFT_COMPLETE
+  - TECH_REVIEW_PENDING
+  - HUMAN_VALIDATION_PENDING
+  - REVISION_REQUIRED
+  - READY_FOR_EDITORIAL
+  - PUBLICATION_READY
+gate_posture_required: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+notes: >
+  packet_state is independent of current_state.
+  current_state must be derived from substates (see README.md), not assigned blindly.

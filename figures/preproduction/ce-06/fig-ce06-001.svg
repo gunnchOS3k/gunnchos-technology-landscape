@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img"
-     aria-labelledby="FIG-CE06-001-title FIG-CE06-001-desc"
-     data-figure-id="FIG-CE06-001"
-     data-truth-classification="conceptual"
-     data-template="tmpl-stability-contract-condition-map"
-     data-qualification="">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="FIG-CE06-001-title FIG-CE06-001-desc" data-figure-id="FIG-CE06-001" data-truth-classification="conceptual" data-template="tmpl-stability-contract-condition-map" data-qualification="">
   <title id="FIG-CE06-001-title">FIG-CE06-001: Formal Stability Contract teaching model: human experience succeeds only while concurre…</title>
-  <desc id="FIG-CE06-001-desc">Alt text naming center + each spoke; reading order clockwise from input; long text equivalent list. Reading order: Human experience succeeds; input delivery; schedule/handler; memory/storage; network path; service availability; render/display; power/thermal; trust/permissions; accessibility path; total delay acceptability.</desc>
-  <rect width="1000" height="640" fill="#ffffff"/>
-  <rect x="1" y="1" width="998" height="638" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE06-001 — Formal Stability Contract teaching model: human experience succeeds on</text>
-  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
-  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Publication pedagogy (PEDAGOGICAL_CONTRACT); conceptual</text>
-<line x1="160" y1="140" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="500" y1="100" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="840" y1="140" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="100" y1="330" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="900" y1="330" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="160" y1="520" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="350" y1="560" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="650" y1="560" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<line x1="840" y1="520" x2="500" y2="330" stroke="#888888" stroke-width="1.5"/>
-<ellipse cx="500" cy="330" rx="150" ry="70" fill="#f5f5f5" stroke="#111111" stroke-width="2.5"/>
+  <desc id="FIG-CE06-001-desc">Alt text naming center + each spoke; reading order clockwise from input; long text equivalent list. Reading order: Human experience succeeds; input delivery; schedule/handler; memory/storage; network path; service availability; render/display; power/thermal; trust/permissions; accessibility path; total delay acceptability. Formal Stability Contract teaching model: human experience succeeds only while concurre…. Multiple conditions are concurrent, not a single ordered blame chain; any one can break the experience. Truth: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1000" height="640" fill="#ffffff" />
+  <rect x="1" y="1" width="998" height="638" fill="none" stroke="#222222" stroke-width="2" />
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE06-001 — Formal Stability Contract teaching model: human experience succeeds</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Publication pedagogy (PEDAGOGICAL_CONTRACT); conceptual</text><text x="24" y="620" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Formal Stability Contract teaching model: human experience succeeds only while concurre….</text><text x="24" y="620" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">concurre….</text><line x1="160" y1="140" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="500" y1="100" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="840" y1="140" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="100" y1="330" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="900" y1="330" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="160" y1="520" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="350" y1="560" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="650" y1="560" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<line x1="840" y1="520" x2="500" y2="330" stroke="#888888" stroke-width="1.5" />
+<ellipse cx="500" cy="330" rx="150" ry="70" fill="#f5f5f5" stroke="#111111" stroke-width="2.5" />
 <text x="500" y="320" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Human experience</text>
 <text x="500" y="340" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">succeeds</text>
 <text x="500" y="362" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1F4B7A">concurrent conditions</text>
-<rect x="80" y="110" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="80" y="110" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="160.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Input delivery</text>
-<rect x="420" y="70" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="420" y="70" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="500.0" y="94.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Schedule/handler</text>
-<rect x="760" y="110" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="760" y="110" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="840.0" y="134.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Memory/storage</text>
-<rect x="20" y="306" width="160" height="48" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<rect x="20" y="306" width="160" height="48" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="100.0" y="330.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Network path</text>
-<rect x="820" y="306" width="160" height="48" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<rect x="820" y="306" width="160" height="48" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="900.0" y="330.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Service avail.</text>
-<rect x="80" y="490" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="80" y="490" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="160.0" y="514.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Render/display</text>
-<rect x="270" y="530" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="270" y="530" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="350.0" y="554.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Power/thermal</text>
-<rect x="470" y="530" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="470" y="530" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="550.0" y="554.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Trust/permissions</text>
-<rect x="670" y="530" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="670" y="530" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="750.0" y="554.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Accessibility</text>
-<rect x="820" y="490" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<rect x="820" y="490" width="160" height="48" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="900.0" y="514.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Delay OK</text>
 <text x="200" y="610" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333" transform="translate(300,0)">Any one FAIL can break the experience · synthesize CE-2 pattern, do not clone</text>
-  <text x="24" y="624" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Formal Stability Contract teaching model: human experience succeeds only while concurre…. Multiple conditions are concurrent, not a single ordered blame chain; </text>
-</svg>
+  </svg>

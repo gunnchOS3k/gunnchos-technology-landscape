@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img"
-     aria-labelledby="FIG-CE1-006-title FIG-CE1-006-desc"
-     data-figure-id="FIG-CE1-006"
-     data-truth-classification="conceptual"
-     data-template="tmpl-ecosystem-system-map"
-     data-qualification="PHYSICAL_PENDING">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="FIG-CE1-006-title FIG-CE1-006-desc" data-figure-id="FIG-CE1-006" data-truth-classification="conceptual" data-template="tmpl-ecosystem-system-map" data-qualification="PHYSICAL_PENDING">
   <title id="FIG-CE1-006-title">FIG-CE1-006: Representative educational architecture preview of device layers supporting readiness (…</title>
-  <desc id="FIG-CE1-006-desc">Must state conceptual status and that Quartet physical fabrication is pending; not a teardown photo. Reading order: Display; Compute; Memory/storage; Radio; Power; Quartet foreshadow PHYSICAL_PENDING.</desc>
-  <rect width="1000" height="460" fill="#ffffff"/>
-  <rect x="1" y="1" width="998" height="458" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE1-006 — Representative educational architecture preview of device layers suppo</text>
-  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · qualification: PHYSICAL_PENDING · Color is not the sole encoding</text>
-  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: SRC-HARDWARE research form factor docs for naming only; geometry is conceptual.</text>
-<rect x="80" y="90" width="280" height="56" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <desc id="FIG-CE1-006-desc">Must state conceptual status and that Quartet physical fabrication is pending; not a teardown photo. Reading order: Display; Compute; Memory/storage; Radio; Power; Quartet foreshadow PHYSICAL_PENDING. Representative educational architecture preview of device layers supporting readiness (…. Labeled Representative educational architecture / PHYSICAL_PENDING for Quartet foreshadow callout. Truth: conceptual. Qualification: PHYSICAL_PENDING. Color is not the sole encoding.</desc>
+  <rect width="1000" height="460" fill="#ffffff" />
+  <rect x="1" y="1" width="998" height="458" fill="none" stroke="#222222" stroke-width="2" />
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE1-006 — Representative educational architecture preview of device layers</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: SRC-HARDWARE research form factor docs for naming only; geometry is conceptual.</text><text x="24" y="440" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Representative educational architecture preview of device layers supporting readiness (….</text><text x="24" y="440" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">(….</text><rect x="80" y="90" width="280" height="56" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="220.0" y="118.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Display</text>
-<line x1="360" y1="120" x2="420" y2="120" stroke="#111111" stroke-width="1.5"/>
-<rect x="80" y="160" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<line x1="360" y1="120" x2="420" y2="120" stroke="#111111" stroke-width="1.5" />
+<rect x="80" y="160" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="220.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">2 Compute</text>
-<line x1="360" y1="190" x2="420" y2="190" stroke="#111111" stroke-width="1.5"/>
-<rect x="80" y="230" width="280" height="56" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<line x1="360" y1="190" x2="420" y2="190" stroke="#111111" stroke-width="1.5" />
+<rect x="80" y="230" width="280" height="56" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="220.0" y="258.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 Memory / storage</text>
-<line x1="360" y1="260" x2="420" y2="260" stroke="#111111" stroke-width="1.5"/>
-<rect x="80" y="300" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<line x1="360" y1="260" x2="420" y2="260" stroke="#111111" stroke-width="1.5" />
+<rect x="80" y="300" width="280" height="56" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="220.0" y="328.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">4 Radio</text>
-<line x1="360" y1="330" x2="420" y2="330" stroke="#111111" stroke-width="1.5"/>
-<rect x="80" y="370" width="280" height="56" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<line x1="360" y1="330" x2="420" y2="330" stroke="#111111" stroke-width="1.5" />
+<rect x="80" y="370" width="280" height="56" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="220.0" y="398.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">5 Power</text>
-<line x1="360" y1="400" x2="420" y2="400" stroke="#111111" stroke-width="1.5"/>
-<rect x="440" y="140" width="500" height="220" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
+<line x1="360" y1="400" x2="420" y2="400" stroke="#111111" stroke-width="1.5" />
+<rect x="440" y="140" width="500" height="220" fill="#fafafa" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4" />
 <text x="690.0" y="244.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Device Quartet foreshadow</text>
 <text x="690.0" y="264.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Representative educational architecture</text>
 <text x="690" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Four form-factor names (lab spine)</text>
 <text x="690" y="245" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1F4B7A">PHYSICAL_PENDING — not a teardown</text>
 <text x="690" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">Conceptual geometry · naming from research docs</text>
 <text x="40" y="440" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Qualification: PHYSICAL_PENDING. Not photoreal product art.</text>
-  <text x="24" y="444" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Representative educational architecture preview of device layers supporting readiness (…. Labeled Representative educational architecture / PHYSICAL_PENDING for</text>
-</svg>
+  </svg>

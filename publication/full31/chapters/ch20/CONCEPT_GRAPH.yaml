@@ -3,8 +3,8 @@ chapter_id: CH20
 edition_scope: full_edition
 concepts:
 - concept_id: latency
-  canonical_term: "Latency"
-  plain_language_definition: "Delay until a useful response; many segments possible."
+  canonical_term: Latency
+  plain_language_definition: Delay until a useful response; many segments possible.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,9 +19,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Latency as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: reliability
-  canonical_term: "Reliability"
-  plain_language_definition: "Ability to complete correctly often enough over time."
+  canonical_term: Reliability
+  plain_language_definition: Ability to complete correctly often enough over time.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -36,9 +38,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Reliability as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: throughput
-  canonical_term: "Throughput"
-  plain_language_definition: "Amount of useful data transferred per time."
+  canonical_term: Throughput
+  plain_language_definition: Amount of useful data transferred per time.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -53,9 +57,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Throughput as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: qoe
-  canonical_term: "Quality of Experience (QoE)"
-  plain_language_definition: "Human-facing acceptability of the experience."
+  canonical_term: Quality of Experience (QoE)
+  plain_language_definition: Human-facing acceptability of the experience.
   depends_on:
   - latency
   - reliability
@@ -72,9 +78,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Quality of Experience (QoE) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: qos
-  canonical_term: "Quality of Service (QoS)"
-  plain_language_definition: "Service characteristic language—related but not identical to QoE."
+  canonical_term: Quality of Service (QoS)
+  plain_language_definition: "Service characteristic language\u2014related but not\
+    \ identical to QoE."
   depends_on:
   - qoe
   introduced_here: true
@@ -90,9 +99,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Quality of Service (QoS) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: stability-contract
-  canonical_term: "Stability Contract"
-  plain_language_definition: "Experience exists only while concurrent hidden conditions stay good enough."
+  canonical_term: Stability Contract
+  plain_language_definition: Experience exists only while concurrent hidden conditions
+    stay good enough.
   depends_on:
   - qoe
   introduced_here: true
@@ -108,9 +120,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Stability Contract as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: connected-not-usable
-  canonical_term: "Connected ≠ usable"
-  plain_language_definition: "Link indicators can succeed while experience fails."
+  canonical_term: "Connected \u2260 usable"
+  plain_language_definition: Link indicators can succeed while experience fails.
   depends_on:
   - stability-contract
   introduced_here: true
@@ -126,9 +140,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: "Treating Connected \u2260 usable as the whole story instead\
+    \ of one cooperating part of the experience."
 - concept_id: evidence-hierarchy
-  canonical_term: "Evidence hierarchy"
-  plain_language_definition: "Observation to instrumentation to correlation to controlled comparison to standards methods."
+  canonical_term: Evidence hierarchy
+  plain_language_definition: Observation to instrumentation to correlation to controlled
+    comparison to standards methods.
   depends_on:
   - stability-contract
   introduced_here: true
@@ -144,3 +161,5 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Evidence hierarchy as the whole story instead of
+    one cooperating part of the experience.

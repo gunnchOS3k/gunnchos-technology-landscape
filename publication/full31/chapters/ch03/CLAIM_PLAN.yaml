@@ -1,53 +1,69 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH03
 chapter_number: 3
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH03-001
-  text: "Human-perceived responsiveness depends on latency and its variability, not only on peak throughput."
+  text: Human-perceived responsiveness depends on latency and its variability, not
+    only on peak throughput.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_or_hci
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH03-002
-  text: "Latency, reliability/availability, and throughput are distinct reasons an experience can fail or feel bad."
+  text: Latency, reliability/availability, and throughput are distinct reasons an
+    experience can fail or feel bad.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_plus_standards
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH03-003
-  text: "Local resource contention can produce ‘slowness’ even when a connectivity icon looks healthy."
+  text: "Local resource contention can produce \u2018slowness\u2019 even when a connectivity\
+    \ icon looks healthy."
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook
   status: SOURCE_IDENTIFIED
   citation_keys:
   - tanenbaum-bos
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH03-004
-  text: "Numeric Device Quartet performance budgets remain PHYSICAL_PENDING and must not be invented."
+  text: Numeric Device Quartet performance budgets remain PHYSICAL_PENDING and must
+    not be invented.
   claim_class: project_specific
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: repository_accepted_main
   status: PHYSICAL_PENDING
   citation_keys:
   - src-hardware-quartet
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH03-005
-  text: "CH02 Wave-1 lab timings are prototype evidence, not universal product SLOs for all chapters."
+  text: CH02 Wave-1 lab timings are prototype evidence, not universal product SLOs
+    for all chapters.
   claim_class: publication_internal
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class. Missing accepted-main
+    project evidence for CH03.
   preferred_source_type: repository_accepted_main
   status: PROJECT_EVIDENCE_NEEDED
   citation_keys:
   - lab-tap-001
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'

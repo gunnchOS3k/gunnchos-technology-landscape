@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img"
-     aria-labelledby="FIG-CE1-002-title FIG-CE1-002-desc"
-     data-figure-id="FIG-CE1-002"
-     data-truth-classification="conceptual"
-     data-template="tmpl-sequence-path"
-     data-qualification="">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-labelledby="FIG-CE1-002-title FIG-CE1-002-desc" data-figure-id="FIG-CE1-002" data-truth-classification="conceptual" data-template="tmpl-sequence-path" data-qualification="">
   <title id="FIG-CE1-002-title">FIG-CE1-002: Teach inputs → processing → state → outputs for the chrome-before-content moment.</title>
-  <desc id="FIG-CE1-002-desc">Numbered step list in reading order; announce that steps may overlap in real systems. Reading order: 1 Inputs; 2 Processing; 3 State; 4 Outputs; Human judgment feedback.</desc>
-  <rect width="1000" height="320" fill="#ffffff"/>
-  <rect x="1" y="1" width="998" height="318" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE1-002 — Teach inputs → processing → state → outputs for the chrome-before-cont</text>
-  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
-  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Pedagogical; aligned to WHATWG event/state language at high level without claiming one implementation.</text>
+  <desc id="FIG-CE1-002-desc">Numbered step list in reading order; announce that steps may overlap in real systems. Reading order: 1 Inputs; 2 Processing; 3 State; 4 Outputs; Human judgment feedback. Teach inputs → processing → state → outputs for the chrome-before-content moment. State update can happen before content is usable; processing may continue after chrome appears. Truth: conceptual. Color is not the sole encoding.</desc>
+  <rect width="1000" height="320" fill="#ffffff" />
+  <rect x="1" y="1" width="998" height="318" fill="none" stroke="#222222" stroke-width="2" />
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
+      <path d="M0,0 L8,4 L0,8 Z" fill="#111111" />
     </marker>
   </defs>
 
-<rect x="40" y="120" width="160" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE1-002 — Teach inputs → processing → state → outputs for the</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Pedagogical; aligned to WHATWG event/state language at high level without claiming one</text><text x="24" y="76" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">implementation.</text><text x="24" y="300" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Teach inputs → processing → state → outputs for the chrome-before-content moment.</text><rect x="40" y="120" width="160" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="120.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Inputs</text>
 <text x="120.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">events</text>
-<line x1="200" y1="155" x2="240" y2="155" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)"/>
-<rect x="240" y="120" width="160" height="70" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<line x1="200" y1="155" x2="240" y2="155" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)" />
+<rect x="240" y="120" width="160" height="70" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="320.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">2 Processing</text>
 <text x="320.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">handlers</text>
-<line x1="400" y1="155" x2="440" y2="155" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)"/>
-<rect x="440" y="120" width="160" height="70" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+<line x1="400" y1="155" x2="440" y2="155" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)" />
+<rect x="440" y="120" width="160" height="70" fill="#ffffff" stroke="#111111" stroke-width="1.75" />
 <text x="520.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 State</text>
 <text x="520.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">may update early</text>
-<line x1="600" y1="155" x2="640" y2="155" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)"/>
-<rect x="640" y="120" width="160" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<line x1="600" y1="155" x2="640" y2="155" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)" />
+<rect x="640" y="120" width="160" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="720.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">4 Outputs</text>
 <text x="720.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">chrome / content</text>
-<path d="M720,190 C720,250 200,250 200,190" fill="none" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)"/>
+<path d="M720,190 C720,250 200,250 200,190" fill="none" stroke="#111111" stroke-width="1.75" marker-end="url(#arr)" />
 <text x="460" y="272" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">feedback: human judgment (steps may overlap)</text>
-  <text x="24" y="304" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Teach inputs → processing → state → outputs for the chrome-before-content moment.. State update can happen before content is usable; processing may continue aft</text>
-</svg>
+  </svg>

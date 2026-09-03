@@ -2,47 +2,60 @@ schema_version: 1.0.0
 chapter_id: CH23
 claims:
 - provisional_id: CLM-CH23-001
-  text: "Saltzer & Schroeder protection principles remain useful for connecting controls to usable experience."
+  text: Saltzer & Schroeder protection principles remain useful for connecting controls
+    to usable experience.
   claim_class: peer_reviewed
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - saltzer_schroeder_1975
-  overclaim_risk: "prohibited: vulnerability trivia dump / exploit steps"
-  wording_boundary: "approved: principles as design constraints | prohibited: vulnerability trivia dump / exploit steps"
+  overclaim_risk: 'prohibited: vulnerability trivia dump / exploit steps'
+  wording_boundary: 'approved: principles as design constraints | prohibited: vulnerability
+    trivia dump / exploit steps'
 - provisional_id: CLM-CH23-002
-  text: NIST SP 800-63-4 separates identity proofing/authentication assurance concepts from authorization decisions.
+  text: NIST SP 800-63-4 separates identity proofing/authentication assurance concepts
+    from authorization decisions.
   claim_class: standards_based
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - nist_sp_800_63_4
-  overclaim_risk: "prohibited: login proves all entitlements"
-  wording_boundary: "approved: separate identity/authn/authz | prohibited: login proves all entitlements"
+  overclaim_risk: 'prohibited: login proves all entitlements'
+  wording_boundary: 'approved: separate identity/authn/authz | prohibited: login proves
+    all entitlements'
 - provisional_id: CLM-CH23-003
-  text: "WAIKE CYBERSECURITY labs (e.g., lab_iam_rbac, lab_incident_playbook) are adjacent competency neighbors."
+  text: WAIKE CYBERSECURITY labs (e.g., lab_iam_rbac, lab_incident_playbook) are adjacent
+    competency neighbors.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - SRC-WAIKE
-  overclaim_risk: "prohibited: offensive lab content in book; invent CH23 WAIKE ID"
-  wording_boundary: "approved: adjacent | prohibited: offensive lab content in book; invent CH23 WAIKE ID"
+  overclaim_risk: 'prohibited: offensive lab content in book; invent CH23 WAIKE ID'
+  wording_boundary: 'approved: adjacent | prohibited: offensive lab content in book;
+    invent CH23 WAIKE ID'
   project_evidence:
     repository: gunnchOS3k/waike-research-ops
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH23-004
-  text: Chip/firmware measured secure-boot validation for Device Quartet / gunnchOS remains pending where claimed as product fact.
+  text: Chip/firmware measured secure-boot validation for Device Quartet / gunnchOS
+    remains pending where claimed as product fact.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+    Physical Device Quartet / hardware validation remains PHYSICAL_PENDING.
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: PHYSICAL_PENDING
   citation_keys:
   - SRC-DEVICE-OS
   - SRC-HARDWARE
-  overclaim_risk: "prohibited: certified shipping secure boot proven"
-  wording_boundary: "approved: documented claim boundaries / research form factors | prohibited: certified shipping secure boot proven"
+  overclaim_risk: 'prohibited: certified shipping secure boot proven'
+  wording_boundary: 'approved: documented claim boundaries / research form factors
+    | prohibited: certified shipping secure boot proven'

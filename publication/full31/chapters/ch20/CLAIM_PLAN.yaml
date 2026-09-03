@@ -1,46 +1,68 @@
 schema_version: 1.0.0
 chapter_id: CH20
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH20-001
-  text: "Latency, reliability, and throughput are different failure/success families; collapsing them misleads diagnosis."
-  claim_class: general_technical
-  status: SOURCE_IDENTIFIED
-  citation_keys: []
-  overclaim_risk: "CE-4/CE-6."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
-- provisional_id: CLM-CH20-002
-  text: "QoE is human-facing; QoS is service-characteristic language; ping is one probe—not a full contract."
+  text: Latency, reliability, and throughput are different failure/success families;
+    collapsing them misleads diagnosis.
   claim_class: general_technical
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "ITU-T QoE pointers SOURCE_NEEDED exact."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: CE-4/CE-6.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+- provisional_id: CLM-CH20-002
+  text: "QoE is human-facing; QoS is service-characteristic language; ping is one\
+    \ probe\u2014not a full contract."
+  claim_class: general_technical
+  status: SOURCE_NEEDED
+  citation_keys: []
+  overclaim_risk: ITU-T QoE pointers SOURCE_NEEDED exact.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH20-003
-  text: "A user experience exists only while multiple hidden technical conditions remain within acceptable bounds."
-  claim_class: teaching_model
-  status: SOURCE_IDENTIFIED
+  text: A user experience exists only while multiple hidden technical conditions remain
+    within acceptable bounds.
+  claim_class: illustrative
+  status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "PEDAGOGICAL_CONTRACT / CE-6."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: PEDAGOGICAL_CONTRACT / CE-6.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH20-004
-  text: "Connected indicators can remain green while the human experience has already failed."
-  claim_class: teaching_model
-  status: SOURCE_IDENTIFIED
+  text: Connected indicators can remain green while the human experience has already
+    failed.
+  claim_class: illustrative
+  status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "CE-6."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: CE-6.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH20-005
-  text: "Do not invent universal millisecond budgets or MOS scores as gunnchOS product truth."
-  claim_class: policy
+  text: Do not invent universal millisecond budgets or MOS scores as gunnchOS product
+    truth.
+  claim_class: publication_internal
   status: SOURCE_IDENTIFIED
   citation_keys: []
-  overclaim_risk: "Numeric humility."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Numeric humility.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
+  project_evidence:
+    repo: gunnchOS3k/gunnchos-technology-landscape
+    commit: 0e694176652d4729c7f2b71df08b871a863afb8c
+    path: publication/preproduction/
+    role: publication_internal_structure
 - provisional_id: CLM-CH20-006
-  text: "Quartet QoE benches PHYSICAL_PENDING; learner timings are n=1 classroom evidence."
+  text: Quartet QoE benches PHYSICAL_PENDING; learner timings are n=1 classroom evidence.
   claim_class: project_specific
   status: PHYSICAL_PENDING
   citation_keys: []
-  overclaim_risk: "Over-precise product claims without evidence."
-  wording_boundary: "Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED honestly."
+  overclaim_risk: Over-precise product claims without evidence.
+  wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
+    honestly.
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.

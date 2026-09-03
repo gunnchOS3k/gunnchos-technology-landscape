@@ -1,0 +1,23 @@
+schema_id: full31-concept-graph
+schema_version: "1.0.0"
+inherits_semantics_from: publication/preproduction/schema/concept_graph.schema.yaml
+top_level_collection: concepts
+required_concept_fields:
+  - concept_id
+  - canonical_term
+  - plain_language_definition
+  - depends_on
+  - introduced_here
+  - reinforced_here
+  - reader_pathways
+  - likely_misconception
+  - glossary_candidate
+  - requires_citation
+  - requires_figure
+  - requires_lab
+forbidden_top_level_keys:
+  - nodes
+minimum_concepts: 1
+notes: >
+  depends_on is a list of concept_id strings (may be empty).
+  likely_misconception is required for Full31 semantic completeness.

@@ -1,0 +1,45 @@
+schema_id: full31-claim-plan
+schema_version: "1.0.0"
+inherits_semantics_from: publication/preproduction/schema/claim_plan.schema.yaml
+top_level_collection: claims
+required_claim_fields:
+  - provisional_id
+  - text
+  - claim_class
+  - evidence_required
+  - status
+  - citation_keys
+  - overclaim_risk
+  - wording_boundary
+allowed_status:
+  - SOURCE_IDENTIFIED
+  - SOURCE_NEEDED
+  - PROJECT_EVIDENCE_NEEDED
+  - ILLUSTRATIVE_ONLY
+  - PHYSICAL_PENDING
+forbidden_status:
+  - verified
+  - planned
+allowed_claim_class:
+  - general_technical
+  - standards_based
+  - peer_reviewed
+  - project_specific
+  - illustrative
+  - measured_later
+  - publication_internal
+claim_class_aliases_migrated:
+  policy: publication_internal
+  teaching_model: illustrative
+  "general technical": general_technical
+  "standards-based": standards_based
+  "peer-reviewed": peer_reviewed
+  "project-specific": project_specific
+  "measured later": measured_later
+  "publication-internal": publication_internal
+source_identified_rule: >
+  status SOURCE_IDENTIFIED requires non-empty citation_keys OR explicit project_evidence
+  with accepted-main repo, commit, and path.
+notes: >
+  preferred_source_type remains optional but recommended.
+  Do not present ILLUSTRATIVE_ONLY as measured/general fact.

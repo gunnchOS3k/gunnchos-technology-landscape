@@ -1,6 +1,8 @@
 schema_version: 1.0.0
 chapter_id: CH22
-teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
 concepts:
 - concept_id: CX-CH22-SENSOR
   canonical_term: Embodied sensing
@@ -19,6 +21,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Embodied sensing as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH22-EDGE-AI
   canonical_term: Edge / on-device inference
   plain_language_definition: Running models near the sensor/actuator.
@@ -37,9 +41,11 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Edge / on-device inference as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH22-BUDGET
   canonical_term: Edge resource budget
-  plain_language_definition: "Latency, energy, memory, thermal limits that bound experience."
+  plain_language_definition: Latency, energy, memory, thermal limits that bound experience.
   depends_on:
   - CX-CH22-EDGE-AI
   introduced_here: true
@@ -55,9 +61,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Edge resource budget as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: CX-CH22-EMBODIED
   canonical_term: Embodied interaction loop
-  plain_language_definition: Sense → infer → actuate/feedback under human timing.
+  plain_language_definition: "Sense \u2192 infer \u2192 actuate/feedback under human\
+    \ timing."
   depends_on:
   - CX-CH22-EDGE-AI
   introduced_here: true
@@ -73,9 +82,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Embodied interaction loop as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH22-PRIVACY-SENSE
   canonical_term: Sensing privacy boundary
-  plain_language_definition: What continuous capture may expose beyond the visible UI.
+  plain_language_definition: What continuous capture may expose beyond the visible
+    UI.
   depends_on:
   - CX-CH22-SENSOR
   introduced_here: true
@@ -91,6 +103,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Sensing privacy boundary as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH22-FALLBACK
   canonical_term: Edge/cloud fallback
   plain_language_definition: Degraded path when local inference cannot complete.
@@ -109,6 +123,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Edge/cloud fallback as the whole story instead of
+    one cooperating part of the experience.
 edges:
 - from: CX-CH22-SENSOR
   to: CX-CH22-EDGE-AI
@@ -127,4 +143,4 @@ edges:
   relation: requires
 inherits_from:
 - CE-5 local-vs-cloud / edge budget themes
-- "CE-3/CH08 sensor adjacency (link, do not re-teach catalog)"
+- CE-3/CH08 sensor adjacency (link, do not re-teach catalog)

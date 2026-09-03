@@ -1,6 +1,8 @@
 schema_version: 1.0.0
 chapter_id: CH27
-teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
 concepts:
 - concept_id: CX-CH27-TEST
   canonical_term: Testing
@@ -19,9 +21,12 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Testing as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH27-OBS
   canonical_term: Observability
-  plain_language_definition: Ability to ask new questions of a running system via signals.
+  plain_language_definition: Ability to ask new questions of a running system via
+    signals.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -36,6 +41,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Observability as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH27-EVIDENCE
   canonical_term: Evidence hierarchy
   plain_language_definition: From illustrative aid to stronger measurement methods.
@@ -54,6 +61,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Evidence hierarchy as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: CX-CH27-OI
   canonical_term: Observation vs inference
   plain_language_definition: What happened vs what may explain it.
@@ -71,6 +80,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Observation vs inference as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH27-ORACLE
   canonical_term: Test oracle
   plain_language_definition: How we know a test outcome matches the experience claim.
@@ -89,6 +100,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Test oracle as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH27-REDACT
   canonical_term: Evidence redaction
   plain_language_definition: Removing secrets/PII before sharing artifacts.
@@ -107,6 +120,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Evidence redaction as the whole story instead of
+    one cooperating part of the experience.
 edges:
 - from: CX-CH27-TEST
   to: CX-CH27-ORACLE

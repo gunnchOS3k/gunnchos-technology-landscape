@@ -3,8 +3,8 @@ chapter_id: CH14
 edition_scope: full_edition
 concepts:
 - concept_id: application
-  canonical_term: "Application"
-  plain_language_definition: "User-facing program assembling UI + logic + dependencies."
+  canonical_term: Application
+  plain_language_definition: User-facing program assembling UI + logic + dependencies.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,9 +19,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Application as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: user-interface
-  canonical_term: "User interface"
-  plain_language_definition: "Presentation and interaction surface (visual, voice, AT)."
+  canonical_term: User interface
+  plain_language_definition: Presentation and interaction surface (visual, voice,
+    AT).
   depends_on:
   - application
   introduced_here: true
@@ -37,9 +40,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating User interface as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: runtime
-  canonical_term: "Runtime"
-  plain_language_definition: "Language/platform environment executing app code (GC, event loop, etc.)."
+  canonical_term: Runtime
+  plain_language_definition: Language/platform environment executing app code (GC,
+    event loop, etc.).
   depends_on:
   - application
   introduced_here: true
@@ -55,9 +61,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Runtime as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: api
-  canonical_term: "API"
-  plain_language_definition: "Contract for calling into a library, OS service, or remote service."
+  canonical_term: API
+  plain_language_definition: Contract for calling into a library, OS service, or remote
+    service.
   depends_on:
   - application
   introduced_here: true
@@ -73,9 +82,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating API as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: library-framework
-  canonical_term: "Library / framework"
-  plain_language_definition: "Reusable code that shapes how apps are built."
+  canonical_term: Library / framework
+  plain_language_definition: Reusable code that shapes how apps are built.
   depends_on:
   - api
   - runtime
@@ -92,9 +103,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Library / framework as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: event-loop
-  canonical_term: "Event loop (intro)"
-  plain_language_definition: "Loop that dispatches UI/input/timer events to handlers."
+  canonical_term: Event loop (intro)
+  plain_language_definition: Loop that dispatches UI/input/timer events to handlers.
   depends_on:
   - runtime
   - user-interface
@@ -111,9 +124,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Event loop (intro) as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: local-vs-remote-api
-  canonical_term: "Local vs remote API"
-  plain_language_definition: "Same call metaphor; different failure domains and latency."
+  canonical_term: Local vs remote API
+  plain_language_definition: Same call metaphor; different failure domains and latency.
   depends_on:
   - api
   introduced_here: true
@@ -129,3 +144,5 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Local vs remote API as the whole story instead of
+    one cooperating part of the experience.

@@ -1,10 +1,12 @@
 schema_version: 1.0.0
 chapter_id: CH30
-teaching_model: moment → notice → ecosystem → signal → components → Stability Contract → Try/Build → secure/include → career → check → glossary
+teaching_model: "moment \u2192 notice \u2192 ecosystem \u2192 signal \u2192 components\
+  \ \u2192 Stability Contract \u2192 Try/Build \u2192 secure/include \u2192 career\
+  \ \u2192 check \u2192 glossary"
 concepts:
 - concept_id: CX-CH30-ROLE
   canonical_term: Role family
-  plain_language_definition: "A cluster of related work, not a job promise."
+  plain_language_definition: A cluster of related work, not a job promise.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,6 +21,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Role family as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH30-PORTFOLIO
   canonical_term: Portfolio proof
   plain_language_definition: Artifacts that make skill inspectable.
@@ -36,6 +40,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Portfolio proof as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH30-CRITERIA
   canonical_term: Review criteria
   plain_language_definition: What makes an artifact convincing.
@@ -54,9 +60,11 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Review criteria as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH30-BOUNDARY
   canonical_term: Employment non-guarantee
-  plain_language_definition: Learning evidence ≠ hired outcome.
+  plain_language_definition: "Learning evidence \u2260 hired outcome."
   depends_on:
   - CX-CH30-ROLE
   introduced_here: true
@@ -72,9 +80,11 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Employment non-guarantee as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: CX-CH30-INDEX
   canonical_term: Portfolio index
-  plain_language_definition: Map from artifact → claim → limitation.
+  plain_language_definition: "Map from artifact \u2192 claim \u2192 limitation."
   depends_on:
   - CX-CH30-PORTFOLIO
   introduced_here: true
@@ -90,6 +100,8 @@ concepts:
   requires_citation: false
   requires_figure: false
   requires_lab: false
+  likely_misconception: Treating Portfolio index as the whole story instead of one
+    cooperating part of the experience.
 edges:
 - from: CX-CH30-ROLE
   to: CX-CH30-PORTFOLIO

@@ -3,8 +3,9 @@ chapter_id: CH15
 edition_scope: full_edition
 concepts:
 - concept_id: virtual-machine
-  canonical_term: "Virtual machine"
-  plain_language_definition: "Abstraction presenting a full machine interface via hypervisor isolation."
+  canonical_term: Virtual machine
+  plain_language_definition: Abstraction presenting a full machine interface via hypervisor
+    isolation.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,9 +20,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Virtual machine as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: container
-  canonical_term: "Container"
-  plain_language_definition: "Packaged process group sharing a kernel with namespace/cgroup isolation (typical)."
+  canonical_term: Container
+  plain_language_definition: Packaged process group sharing a kernel with namespace/cgroup
+    isolation (typical).
   depends_on:
   - virtual-machine
   introduced_here: true
@@ -37,9 +41,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Container as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: hypervisor
-  canonical_term: "Hypervisor"
-  plain_language_definition: "Software that hosts virtual machines."
+  canonical_term: Hypervisor
+  plain_language_definition: Software that hosts virtual machines.
   depends_on:
   - virtual-machine
   introduced_here: true
@@ -55,9 +61,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Hypervisor as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: image
-  canonical_term: "Image / packaging"
-  plain_language_definition: "Immutable-ish filesystem+metadata used to start containers/VMs."
+  canonical_term: Image / packaging
+  plain_language_definition: Immutable-ish filesystem+metadata used to start containers/VMs.
   depends_on:
   - container
   introduced_here: true
@@ -73,9 +81,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Image / packaging as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: cloud
-  canonical_term: "Cloud (placement)"
-  plain_language_definition: "Remote shared datacenter resources accessed over a network—placement, not radio."
+  canonical_term: Cloud (placement)
+  plain_language_definition: "Remote shared datacenter resources accessed over a network\u2014\
+    placement, not radio."
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -90,9 +101,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Cloud (placement) as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: edge
-  canonical_term: "Edge (placement)"
-  plain_language_definition: "Compute/state closer to users/devices than a distant region—still not Wi-Fi itself."
+  canonical_term: Edge (placement)
+  plain_language_definition: "Compute/state closer to users/devices than a distant\
+    \ region\u2014still not Wi-Fi itself."
   depends_on:
   - cloud
   introduced_here: true
@@ -108,9 +122,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Edge (placement) as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: multitenancy
-  canonical_term: "Multitenancy"
-  plain_language_definition: "Multiple customers sharing underlying hardware with isolation hopes."
+  canonical_term: Multitenancy
+  plain_language_definition: Multiple customers sharing underlying hardware with isolation
+    hopes.
   depends_on:
   - virtual-machine
   - container
@@ -127,9 +144,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Multitenancy as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: orchestration
-  canonical_term: "Orchestration (intro)"
-  plain_language_definition: "Automation placing/healing many containerized services."
+  canonical_term: Orchestration (intro)
+  plain_language_definition: Automation placing/healing many containerized services.
   depends_on:
   - container
   introduced_here: true
@@ -145,3 +164,5 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Orchestration (intro) as the whole story instead
+    of one cooperating part of the experience.

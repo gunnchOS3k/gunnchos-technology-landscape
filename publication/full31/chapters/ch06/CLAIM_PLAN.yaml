@@ -1,43 +1,54 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH06
 chapter_number: 6
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
 claims:
 - provisional_id: CLM-CH06-001
-  text: "Application work is performed by executing instructions on CPUs/accelerators; the OS mediates and schedules."
+  text: Application work is performed by executing instructions on CPUs/accelerators;
+    the OS mediates and schedules.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook
   status: SOURCE_IDENTIFIED
   citation_keys:
   - tanenbaum-bos
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH06-002
-  text: "Additional cores improve performance only when work can be parallelized usefully."
+  text: Additional cores improve performance only when work can be parallelized usefully.
   claim_class: general_technical
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook
   status: SOURCE_NEEDED
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH06-003
-  text: "High CPU % in a monitor is not always proof the CPU is the root cause of poor feel."
+  text: High CPU % in a monitor is not always proof the CPU is the root cause of poor
+    feel.
   claim_class: illustrative
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: explanatory_plus_lab
   status: ILLUSTRATIVE_ONLY
   citation_keys: []
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS | illustrative teaching model
+    only; not measured/general product fact'
 - provisional_id: CLM-CH06-004
-  text: "Device Quartet CPU/core claims requiring EVT remain PHYSICAL_PENDING."
+  text: Device Quartet CPU/core claims requiring EVT remain PHYSICAL_PENDING.
   claim_class: project_specific
-  evidence_required: "See SOURCE_NEEDS.md for preferred evidence class."
+  evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: repository_accepted_main
   status: PHYSICAL_PENDING
   citation_keys:
   - src-hardware-quartet
-  overclaim_risk: "Over-specific product numbers, invented EVT results, or Gate 3 PASS claims."
-  wording_boundary: "approved: evidence-scoped teaching claim | prohibited: fabricated measurements; shipping Quartet SKUs; Gate 3 PASS" 
+  overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
+    claims.
+  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
+    measurements; shipping Quartet SKUs; Gate 3 PASS'

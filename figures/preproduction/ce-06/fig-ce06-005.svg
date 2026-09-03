@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img"
-     aria-labelledby="FIG-CE06-005-title FIG-CE06-005-desc"
-     data-figure-id="FIG-CE06-005"
-     data-truth-classification="conceptual"
-     data-template="tmpl-hierarchy-resource-ladder"
-     data-qualification="">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-labelledby="FIG-CE06-005-title FIG-CE06-005-desc" data-figure-id="FIG-CE06-005" data-truth-classification="conceptual" data-template="tmpl-hierarchy-resource-ladder" data-qualification="">
   <title id="FIG-CE06-005-title">FIG-CE06-005: Evidence hierarchy from illustrative aid to standards-aligned QoE methods.</title>
-  <desc id="FIG-CE06-005-desc">List rungs in ascending strength order. Reading order: 1 Illustrative aid; 2 Lab observation; 3 Commodity measurement; 4 Controlled study; 5 Standards-aligned QoE.</desc>
-  <rect width="720" height="520" fill="#ffffff"/>
-  <rect x="1" y="1" width="718" height="518" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE06-005 — Evidence hierarchy from illustrative aid to standards-aligned QoE meth</text>
-  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
-  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: CLAIM_PLAN + ITU G.1011 as context</text>
-<rect x="260.0" y="90" width="200" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+  <desc id="FIG-CE06-005-desc">List rungs in ascending strength order. Reading order: 1 Illustrative aid; 2 Lab observation; 3 Commodity measurement; 4 Controlled study; 5 Standards-aligned QoE. Evidence hierarchy from illustrative aid to standards-aligned QoE methods. Learner commodity labs sit mid-ladder; G.1011-style subjective studies are higher and not required for CE completion. Truth: conceptual. Color is not the sole encoding.</desc>
+  <rect width="720" height="520" fill="#ffffff" />
+  <rect x="1" y="1" width="718" height="518" fill="none" stroke="#222222" stroke-width="2" />
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#111111" font-weight="bold">FIG-CE06-005 — Evidence hierarchy from illustrative aid to standards-aligned QoE</text><text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: see metadata · Color is not the sole encoding</text><text x="24" y="62" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: CLAIM_PLAN + ITU G.1011 as context</text><text x="24" y="500" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Evidence hierarchy from illustrative aid to standards-aligned QoE methods.</text><rect x="260.0" y="90" width="200" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="360.0" y="111.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Illustrative aid</text>
 <text x="360.0" y="131.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">ascending strength</text>
-<rect x="220.0" y="160" width="280" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<rect x="220.0" y="160" width="280" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="360.0" y="181.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">2 Lab observation</text>
 <text x="360.0" y="201.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">ascending strength</text>
-<rect x="180.0" y="230" width="360" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<rect x="180.0" y="230" width="360" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="360.0" y="251.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">3 Commodity measurement</text>
 <text x="360.0" y="271.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">ascending strength</text>
-<rect x="140.0" y="300" width="440" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<rect x="140.0" y="300" width="440" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="360.0" y="321.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">4 Controlled study</text>
 <text x="360.0" y="341.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">ascending strength</text>
-<rect x="100.0" y="370" width="520" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
+<rect x="100.0" y="370" width="520" height="55" fill="#f5f5f5" stroke="#111111" stroke-width="1.75" />
 <text x="360.0" y="391.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">5 Standards-aligned QoE</text>
 <text x="360.0" y="411.5" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">ascending strength</text>
 <text x="40" y="480" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Learner labs mid-ladder; G.1011-style studies higher — not required for CE completion.</text>
-  <text x="24" y="504" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Evidence hierarchy from illustrative aid to standards-aligned QoE methods.. Learner commodity labs sit mid-ladder; G.1011-style subjective studies are higher an</text>
-</svg>
+  </svg>

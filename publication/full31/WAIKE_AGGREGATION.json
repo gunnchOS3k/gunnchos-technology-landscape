@@ -1,0 +1,708 @@
+{
+  "per_chapter": {
+    "CH01": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch01/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 10,
+      "unique_waike_ids": [
+        "COMM_PD_ETHICS",
+        "COMPUTER_NETWORKING",
+        "GENERAL_IT",
+        "SOFTWARE_BUILDER",
+        "adjacent",
+        "lab_accessibility_comm",
+        "lab_datapath",
+        "lab_observability",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH02": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch02/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 8,
+      "unique_waike_ids": [
+        "COMPUTER_NETWORKING",
+        "EMBEDDED_PROTOTYPING",
+        "GAME_DEV_INTERACTIVE",
+        "SOFTWARE_BUILDER",
+        "adjacent",
+        "lab_ep_isr_vs_poll",
+        "lab_input_actions",
+        "no-map"
+      ]
+    },
+    "CH03": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch03/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 11,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "GAME_DEV_INTERACTIVE",
+        "GENERAL_IT",
+        "SOFTWARE_BUILDER",
+        "adjacent",
+        "lab_ep_isr_vs_poll",
+        "lab_observability",
+        "lab_playtest_metrics",
+        "lab_storage",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH04": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch04/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 8,
+      "unique_waike_ids": [
+        "GUNNCHOS_PRODUCT_LAB",
+        "HARDWARE_ENGINEERING",
+        "adjacent",
+        "lab_failure_diagnosis",
+        "lab_gpl_compat_matrix",
+        "lab_gpl_product_charter",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH05": {
+      "counts": {
+        "adjacent": 5,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch05/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 10,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "HARDWARE_ENGINEERING",
+        "adjacent",
+        "lab_ep_gpio_contract",
+        "lab_logic_gate",
+        "lab_rc_transient",
+        "lab_spice_network",
+        "lab_thevenin",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH06": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch06/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 11,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "HARDWARE_ENGINEERING",
+        "SOFTWARE_BUILDER",
+        "adjacent",
+        "hardware_engineering",
+        "lab_ep_isr_vs_poll",
+        "lab_observability",
+        "lab_zephyr_qemu",
+        "no-map",
+        "proposed",
+        "software_engineering"
+      ]
+    },
+    "CH07": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch07/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 9,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "GENERAL_IT",
+        "adjacent",
+        "lab_backup",
+        "lab_ep_memory_map",
+        "lab_ep_spi_flash",
+        "lab_storage",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH08": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch08/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 10,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "GAME_DEV_INTERACTIVE",
+        "ROBOTICS_CONTROL",
+        "adjacent",
+        "lab_ep_adc_scale",
+        "lab_game_a11y",
+        "lab_game_loop",
+        "lab_sensor_noise",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH09": {
+      "counts": {
+        "adjacent": 2,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch09/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 7,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "HARDWARE_ENGINEERING",
+        "adjacent",
+        "lab_ep_sleep_mode",
+        "lab_power_budget",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH10": {
+      "counts": {
+        "adjacent": 5,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch10/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 10,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "HARDWARE_ENGINEERING",
+        "adjacent",
+        "lab_bus_protocol",
+        "lab_devicetree",
+        "lab_ep_i2c_timing",
+        "lab_ep_spi_flash",
+        "lab_pcb_erc_drc",
+        "no-map",
+        "proposed"
+      ]
+    },
+    "CH11": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch11/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 7,
+      "unique_waike_ids": [
+        "CYBERSECURITY",
+        "EMBEDDED_PROTOTYPING",
+        "HARDWARE_ENGINEERING",
+        "cybersecurity",
+        "edge_ai_embedded",
+        "hardware_engineering",
+        "lab_zephyr_qemu"
+      ]
+    },
+    "CH12": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch12/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 8,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "GENERAL_IT",
+        "SOFTWARE_BUILDER",
+        "general_it",
+        "lab_ep_isr_vs_poll",
+        "lab_observability",
+        "lab_os_users",
+        "software_engineering"
+      ]
+    },
+    "CH13": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch13/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 7,
+      "unique_waike_ids": [
+        "CLOUD_DEVOPS",
+        "COMM_PD_ETHICS",
+        "GENERAL_IT",
+        "lab_backup",
+        "lab_cloud_cost",
+        "lab_consent_disclosure",
+        "lab_storage"
+      ]
+    },
+    "CH14": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch14/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 4,
+      "unique_waike_ids": [
+        "GAME_DEV_INTERACTIVE",
+        "SOFTWARE_BUILDER",
+        "lab_input_actions",
+        "software_engineering"
+      ]
+    },
+    "CH15": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch15/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 4,
+      "unique_waike_ids": [
+        "CLOUD_DEVOPS",
+        "cloud_devops",
+        "lab_cloud_cost",
+        "lab_slo_budget"
+      ]
+    },
+    "CH16": {
+      "counts": {
+        "adjacent": 7,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch16/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 7,
+      "unique_waike_ids": [
+        "COMPUTER_NETWORKING",
+        "lab_cidr_math",
+        "lab_datapath",
+        "lab_dns_hosts",
+        "lab_dns_resolution",
+        "lab_spf_routing",
+        "networking"
+      ]
+    },
+    "CH17": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch17/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 3,
+      "unique_waike_ids": [
+        "WIRELESS_6G",
+        "lab_fspl_budget",
+        "wireless_dsp_6g"
+      ]
+    },
+    "CH18": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 0
+      },
+      "path": "publication/full31/chapters/ch18/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 3,
+      "unique_waike_ids": [
+        "WIRELESS_6G",
+        "lab_delay_spread",
+        "lab_fspl_budget"
+      ]
+    },
+    "CH19": {
+      "counts": {
+        "adjacent": 1,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch19/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 1,
+      "unique_waike_ids": [
+        "WIRELESS_6G"
+      ]
+    },
+    "CH20": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch20/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 6,
+      "unique_waike_ids": [
+        "COMM_PD_ETHICS",
+        "COMPUTER_NETWORKING",
+        "SOFTWARE_BUILDER",
+        "lab_ethics_ladder",
+        "lab_observability",
+        "lab_slo_budget"
+      ]
+    },
+    "CH21": {
+      "counts": {
+        "adjacent": 5,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch21/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 5,
+      "unique_waike_ids": [
+        "AI_ML_EDGE",
+        "ai_ml_data",
+        "lab_quantize_budget",
+        "lab_rag_redact",
+        "lab_score_model"
+      ]
+    },
+    "CH22": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch22/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 4,
+      "unique_waike_ids": [
+        "AI_ML_EDGE",
+        "EMBEDDED_PROTOTYPING",
+        "edge_ai_embedded",
+        "lab_quantize_budget"
+      ]
+    },
+    "CH23": {
+      "counts": {
+        "adjacent": 6,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch23/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 6,
+      "unique_waike_ids": [
+        "CYBERSECURITY",
+        "cybersecurity",
+        "lab_authz",
+        "lab_iam_rbac",
+        "lab_iam_secrets",
+        "lab_incident_playbook"
+      ]
+    },
+    "CH24": {
+      "counts": {
+        "adjacent": 6,
+        "exact": 0,
+        "no_map": 2,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch24/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 6,
+      "unique_waike_ids": [
+        "COMM_PD_ETHICS",
+        "communication_ethics_professional_dev",
+        "lab_accessibility_comm",
+        "lab_ai_disclosure_modes",
+        "lab_consent_disclosure",
+        "lab_ethics_ladder"
+      ]
+    },
+    "CH25": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch25/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 4,
+      "unique_waike_ids": [
+        "ACCESSIBILITY_AND_LOW_COST.md",
+        "COMM_PD_ETHICS",
+        "capstones",
+        "lab_accessibility_comm"
+      ]
+    },
+    "CH26": {
+      "counts": {
+        "adjacent": 2,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch26/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 2,
+      "unique_waike_ids": [
+        "SOFTWARE_BUILDER",
+        "software_engineering"
+      ]
+    },
+    "CH27": {
+      "counts": {
+        "adjacent": 5,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch27/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 8,
+      "unique_waike_ids": [
+        "CLOUD_DEVOPS",
+        "CYBERSECURITY",
+        "DATA_DASHBOARDS",
+        "lab_debug_pipeline",
+        "lab_forensics_timeline",
+        "lab_freshness_sla",
+        "lab_incident_runbook",
+        "lab_slo_budget"
+      ]
+    },
+    "CH28": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch28/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 3,
+      "unique_waike_ids": [
+        "EMBEDDED_PROTOTYPING",
+        "capstones",
+        "reproducible_research"
+      ]
+    },
+    "CH29": {
+      "counts": {
+        "adjacent": 3,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch29/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 4,
+      "unique_waike_ids": [
+        "CLOUD_DEVOPS",
+        "COMM_PD_ETHICS",
+        "capstones",
+        "lab_pd_capstone"
+      ]
+    },
+    "CH30": {
+      "counts": {
+        "adjacent": 4,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch30/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 5,
+      "unique_waike_ids": [
+        "COMM_PD_ETHICS",
+        "capstones",
+        "lab_feedback_rubric",
+        "lab_pd_capstone",
+        "portfolio_evidence.md"
+      ]
+    },
+    "CH31": {
+      "counts": {
+        "adjacent": 5,
+        "exact": 0,
+        "no_map": 1,
+        "proposed": 1
+      },
+      "path": "publication/full31/chapters/ch31/WAIKE_CROSSWALK.md",
+      "unique_waike_id_count": 8,
+      "unique_waike_ids": [
+        "CLOUD_DEVOPS",
+        "COMM_PD_ETHICS",
+        "COMPUTER_NETWORKING",
+        "capstones",
+        "lab_datapath",
+        "lab_pd_capstone",
+        "lab_slo_budget",
+        "reproducible_research"
+      ]
+    }
+  },
+  "per_part": {
+    "I": {
+      "adjacent": 15,
+      "exact": 0,
+      "no_map": 5,
+      "proposed": 3
+    },
+    "II": {
+      "adjacent": 24,
+      "exact": 0,
+      "no_map": 7,
+      "proposed": 6
+    },
+    "III": {
+      "adjacent": 19,
+      "exact": 0,
+      "no_map": 9,
+      "proposed": 2
+    },
+    "IV": {
+      "adjacent": 18,
+      "exact": 0,
+      "no_map": 8,
+      "proposed": 2
+    },
+    "V": {
+      "adjacent": 24,
+      "exact": 0,
+      "no_map": 8,
+      "proposed": 5
+    },
+    "VI": {
+      "adjacent": 22,
+      "exact": 0,
+      "no_map": 6,
+      "proposed": 6
+    }
+  },
+  "totals": {
+    "adjacent": 122,
+    "exact": 0,
+    "no_map": 43,
+    "proposed": 24
+  },
+  "unique_upstream_waike_ids": [
+    "ACCESSIBILITY_AND_LOW_COST.md",
+    "AI_ML_EDGE",
+    "CLOUD_DEVOPS",
+    "COMM_PD_ETHICS",
+    "COMPUTER_NETWORKING",
+    "CYBERSECURITY",
+    "DATA_DASHBOARDS",
+    "EMBEDDED_PROTOTYPING",
+    "GAME_DEV_INTERACTIVE",
+    "GENERAL_IT",
+    "GUNNCHOS_PRODUCT_LAB",
+    "HARDWARE_ENGINEERING",
+    "ROBOTICS_CONTROL",
+    "SOFTWARE_BUILDER",
+    "WIRELESS_6G",
+    "adjacent",
+    "ai_ml_data",
+    "capstones",
+    "cloud_devops",
+    "communication_ethics_professional_dev",
+    "cybersecurity",
+    "edge_ai_embedded",
+    "general_it",
+    "hardware_engineering",
+    "lab_accessibility_comm",
+    "lab_ai_disclosure_modes",
+    "lab_authz",
+    "lab_backup",
+    "lab_bus_protocol",
+    "lab_cidr_math",
+    "lab_cloud_cost",
+    "lab_consent_disclosure",
+    "lab_datapath",
+    "lab_debug_pipeline",
+    "lab_delay_spread",
+    "lab_devicetree",
+    "lab_dns_hosts",
+    "lab_dns_resolution",
+    "lab_ep_adc_scale",
+    "lab_ep_gpio_contract",
+    "lab_ep_i2c_timing",
+    "lab_ep_isr_vs_poll",
+    "lab_ep_memory_map",
+    "lab_ep_sleep_mode",
+    "lab_ep_spi_flash",
+    "lab_ethics_ladder",
+    "lab_failure_diagnosis",
+    "lab_feedback_rubric",
+    "lab_forensics_timeline",
+    "lab_freshness_sla",
+    "lab_fspl_budget",
+    "lab_game_a11y",
+    "lab_game_loop",
+    "lab_gpl_compat_matrix",
+    "lab_gpl_product_charter",
+    "lab_iam_rbac",
+    "lab_iam_secrets",
+    "lab_incident_playbook",
+    "lab_incident_runbook",
+    "lab_input_actions",
+    "lab_logic_gate",
+    "lab_observability",
+    "lab_os_users",
+    "lab_pcb_erc_drc",
+    "lab_pd_capstone",
+    "lab_playtest_metrics",
+    "lab_power_budget",
+    "lab_quantize_budget",
+    "lab_rag_redact",
+    "lab_rc_transient",
+    "lab_score_model",
+    "lab_sensor_noise",
+    "lab_slo_budget",
+    "lab_spf_routing",
+    "lab_spice_network",
+    "lab_storage",
+    "lab_thevenin",
+    "lab_zephyr_qemu",
+    "networking",
+    "no-map",
+    "portfolio_evidence.md",
+    "proposed",
+    "reproducible_research",
+    "software_engineering",
+    "wireless_dsp_6g"
+  ],
+  "unique_upstream_waike_objects": 85,
+  "waike_accepted_main_sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+}

@@ -3,8 +3,8 @@ chapter_id: CH17
 edition_scope: full_edition
 concepts:
 - concept_id: wifi
-  canonical_term: "Wi-Fi (IEEE 802.11 family)"
-  plain_language_definition: "Local wireless LAN access technology."
+  canonical_term: Wi-Fi (IEEE 802.11 family)
+  plain_language_definition: Local wireless LAN access technology.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -19,9 +19,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Wi-Fi (IEEE 802.11 family) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: cellular
-  canonical_term: "Cellular access"
-  plain_language_definition: "Mobile operator radio access (generations 2G to 5G survey)."
+  canonical_term: Cellular access
+  plain_language_definition: Mobile operator radio access (generations 2G to 5G survey).
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -36,9 +38,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Cellular access as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: rat
-  canonical_term: "Radio access technology"
-  plain_language_definition: "Family of radio methods attaching devices to networks."
+  canonical_term: Radio access technology
+  plain_language_definition: Family of radio methods attaching devices to networks.
   depends_on:
   - wifi
   - cellular
@@ -55,9 +59,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Radio access technology as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: 5g-system
-  canonical_term: "5G system (survey)"
-  plain_language_definition: "3GPP-defined 5G access+core architecture at teaching survey depth."
+  canonical_term: 5G system (survey)
+  plain_language_definition: 3GPP-defined 5G access+core architecture at teaching
+    survey depth.
   depends_on:
   - cellular
   introduced_here: true
@@ -73,9 +80,12 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating 5G system (survey) as the whole story instead of
+    one cooperating part of the experience.
 - concept_id: 6g-roadmap
-  canonical_term: "6G roadmap"
-  plain_language_definition: "Research/standards direction—not a guarantee of present consumer features."
+  canonical_term: 6G roadmap
+  plain_language_definition: "Research/standards direction\u2014not a guarantee of\
+    \ present consumer features."
   depends_on:
   - 5g-system
   introduced_here: true
@@ -91,9 +101,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating 6G roadmap as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: handover
-  canonical_term: "Handover / mobility (intro)"
-  plain_language_definition: "Changing cells/APs while trying to keep service."
+  canonical_term: Handover / mobility (intro)
+  plain_language_definition: Changing cells/APs while trying to keep service.
   depends_on:
   - cellular
   - wifi
@@ -110,9 +122,11 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Handover / mobility (intro) as the whole story instead
+    of one cooperating part of the experience.
 - concept_id: bars-vs-experience
-  canonical_term: "Bars vs experience"
-  plain_language_definition: "Signal icons are not QoE."
+  canonical_term: Bars vs experience
+  plain_language_definition: Signal icons are not QoE.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -127,3 +141,5 @@ concepts:
   requires_citation: true
   requires_figure: true
   requires_lab: false
+  likely_misconception: Treating Bars vs experience as the whole story instead of
+    one cooperating part of the experience.

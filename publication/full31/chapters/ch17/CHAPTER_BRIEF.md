@@ -96,3 +96,7 @@ No employment guarantees.
 
 Allowed now: `preproduction` / `scaffold`.  
 Not allowed: Gate 3 PASS, `PUBLICATION_READY` prose claims.
+
+## Next automatable action / integrator handoff
+
+Keep packet truthful; promote selected candidates only after Gate 3 evidence exists.

@@ -1,12 +1,14 @@
-schema_version: "1.0.0"
+schema_version: 1.0.0
 chapter_id: CH08
 chapter_number: 8
-gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
-inheritance_note: "Part II: human I/O modalities as system interfaces—not a gadget catalog."
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+inheritance_note: "Part II: human I/O modalities as system interfaces\u2014not a gadget\
+  \ catalog."
 concepts:
 - concept_id: CX-CH08-001
-  canonical_term: "display pipeline"
-  plain_language_definition: "Path that turns framebuffer/compositor work into visible light patterns."
+  canonical_term: display pipeline
+  plain_language_definition: Path that turns framebuffer/compositor work into visible
+    light patterns.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -20,9 +22,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating display pipeline as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH08-002
-  canonical_term: "frame"
-  plain_language_definition: "One image update in a timed presentation sequence."
+  canonical_term: frame
+  plain_language_definition: One image update in a timed presentation sequence.
   depends_on:
   - CX-CH08-001
   introduced_here: true
@@ -37,9 +41,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating frame as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH08-003
-  canonical_term: "audio pipeline"
-  plain_language_definition: "Capture/render path for sound."
+  canonical_term: audio pipeline
+  plain_language_definition: Capture/render path for sound.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -53,9 +59,12 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating audio pipeline as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH08-004
-  canonical_term: "camera pipeline"
-  plain_language_definition: "Optics → sensor → ISP/processing → image/video buffers."
+  canonical_term: camera pipeline
+  plain_language_definition: "Optics \u2192 sensor \u2192 ISP/processing \u2192 image/video\
+    \ buffers."
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -69,9 +78,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating camera pipeline as the whole story instead of one
+    cooperating part of the experience.
 - concept_id: CX-CH08-005
-  canonical_term: "sensor"
-  plain_language_definition: "Transducer turning a physical quantity into a signal/data."
+  canonical_term: sensor
+  plain_language_definition: Transducer turning a physical quantity into a signal/data.
   depends_on: []
   introduced_here: true
   reinforced_here: false
@@ -85,9 +96,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating sensor as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH08-006
-  canonical_term: "sampling"
-  plain_language_definition: "Measuring a continuous phenomenon at discrete times/levels."
+  canonical_term: sampling
+  plain_language_definition: Measuring a continuous phenomenon at discrete times/levels.
   depends_on:
   - CX-CH08-005
   introduced_here: true
@@ -102,9 +115,11 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating sampling as the whole story instead of one cooperating
+    part of the experience.
 - concept_id: CX-CH08-007
-  canonical_term: "compositor / GPU role (survey)"
-  plain_language_definition: "Combining layers and accelerating presentation work."
+  canonical_term: compositor / GPU role (survey)
+  plain_language_definition: Combining layers and accelerating presentation work.
   depends_on:
   - CX-CH08-001
   introduced_here: true
@@ -119,3 +134,5 @@ concepts:
   requires_citation: false
   requires_figure: true
   requires_lab: true
+  likely_misconception: Treating compositor / GPU role (survey) as the whole story
+    instead of one cooperating part of the experience.
