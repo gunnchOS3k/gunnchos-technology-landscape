@@ -1,0 +1,29 @@
+figure_id: FIG-CE5-003
+title: Separate who you claim to be, proof of that claim, and allowed actions.
+caption: 'Separate who you claim to be, proof of that claim, and allowed actions..
+  Identity, authentication, authorization decision ladder Truth: illustrative. Color
+  is not the sole encoding.'
+alt_text: Three-step ladder labeled identity, authentication, and authorization leading
+  to allow or deny.
+text_equivalent: 'Three-step ladder labeled identity, authentication, and authorization
+  leading to allow or deny. Reading order: Identity; Authentication; Authorization;
+  Allow/Deny.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Identity
+- Authentication
+- Authorization
+- Allow/Deny
+source: figures/preproduction/ce-05/fig-ce5-003.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

@@ -1,0 +1,29 @@
+figure_id: FIG-CE5-005
+title: "Collect \u2192 use \u2192 retain \u2192 share \u2192 delete/redact with decision\
+  \ owners."
+caption: "Collect \u2192 use \u2192 retain \u2192 share \u2192 delete/redact with\
+  \ decision owners.. Privacy / data lifecycle wheel Truth: illustrative. Color is\
+  \ not the sole encoding."
+alt_text: Circular lifecycle of personal data stages with owner labels on each stage.
+text_equivalent: 'Circular lifecycle of personal data stages with owner labels on
+  each stage. Reading order: Collect; Use; Retain; Share; Delete/redact.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Collect
+- Use
+- Retain
+- Share
+- Delete/redact
+source: figures/preproduction/ce-05/fig-ce5-005.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

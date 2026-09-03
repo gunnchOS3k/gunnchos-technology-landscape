@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img"
+     aria-labelledby="tmpl-title tmpl-desc"
+     data-template-id="tmpl-stability-contract-condition-map"
+     data-figure-family="stability_contract_condition_map">
+  <title id="tmpl-title">TEMPLATE - Stability Contract condition map</title>
+  <desc id="tmpl-desc">Central human-experience node with concurrent condition spokes. Failure state uses dashed outline plus FAIL text, not color alone. Optional conditions use dashed stroke.</desc>
+  <rect width="1000" height="640" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="638" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">TEMPLATE - Stability Contract condition map</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Concurrent conditions; any one FAIL can break usable experience; no invented budgets</text>
+  <g stroke="#888888" stroke-width="1.5">
+    <line x1="200" y1="160" x2="420" y2="290"/>
+    <line x1="500" y1="140" x2="500" y2="250"/>
+    <line x1="800" y1="160" x2="580" y2="290"/>
+    <line x1="160" y1="330" x2="360" y2="330"/>
+    <line x1="840" y1="330" x2="640" y2="330"/>
+    <line x1="200" y1="500" x2="420" y2="370"/>
+    <line x1="500" y1="520" x2="500" y2="410"/>
+    <line x1="800" y1="500" x2="580" y2="370"/>
+  </g>
+  <ellipse cx="500" cy="330" rx="150" ry="70" fill="#f5f5f5" stroke="#111111" stroke-width="2.5"/>
+  <text x="500" y="320" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Human experience</text>
+  <text x="500" y="340" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">succeeds</text>
+  <text x="500" y="362" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1F4B7A">ALL conditions must hold</text>
+  <rect x="80" y="120" width="160" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="160" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition A</text>
+  <rect x="420" y="90" width="160" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="500" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition B</text>
+  <rect x="760" y="120" width="160" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="840" y="148" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition C</text>
+  <rect x="40" y="306" width="160" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="120" y="334" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition D</text>
+  <rect x="800" y="306" width="160" height="48" rx="6" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="5 3"/>
+  <text x="880" y="326" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1F4B7A">Optional E</text>
+  <text x="880" y="342" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">if needed</text>
+  <rect x="80" y="480" width="160" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="160" y="508" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition F</text>
+  <rect x="420" y="510" width="160" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75"/>
+  <text x="500" y="538" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition G</text>
+  <rect x="740" y="480" width="180" height="48" rx="6" fill="#ffffff" stroke="#111111" stroke-width="1.75" stroke-dasharray="4 3"/>
+  <text x="830" y="500" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Condition H [FAIL]</text>
+  <text x="830" y="516" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">dashed + FAIL word</text>
+  <rect x="220" y="580" width="560" height="36" fill="#f5f5f5" stroke="#111111" stroke-width="1"/>
+  <text x="500" y="602" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#111111">Concurrency: conditions hold together; PASS/FAIL words + stroke style</text>
+</svg>

@@ -1,0 +1,30 @@
+figure_id: FIG-CE4-006
+title: Component cards overview for packet path objects.
+caption: 'Component cards overview for packet path objects.. Each card has plain definition,
+  function, constraint, failure symptom. Truth: conceptual. Color is not the sole
+  encoding.'
+alt_text: Each card available as structured text
+text_equivalent: "Each card available as structured text Reading order: packet; address;\
+  \ gateway; DNS; Wi-Fi link; cellular attachment; edge; cloud.\nEvidence: Chapter\
+  \ component-card pedagogy; standards-backed terms\nGeometry intent: Card strip or\
+  \ 2\xD74 grid: packet, address, gateway, DNS, Wi-Fi link, cellular attachment, edge,\
+  \ cloud"
+reading_order:
+- packet
+- address
+- gateway
+- DNS
+- Wi-Fi link
+- cellular attachment
+- edge
+- cloud
+source: figures/preproduction/ce-04/fig-ce4-006.svg
+evidence_note: Chapter component-card pedagogy; standards-backed terms
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Consistent card template; icons optional and labeled
+reviewer: pending-human-visual-review
+version: 0.1.0

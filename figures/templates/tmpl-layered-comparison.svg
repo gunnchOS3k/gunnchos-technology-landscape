@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img"
+     aria-labelledby="tmpl-title tmpl-desc"
+     data-template-id="tmpl-layered-comparison"
+     data-figure-family="layered_comparison">
+  <title id="tmpl-title">TEMPLATE - Layered comparison</title>
+  <desc id="tmpl-desc">Reusable vertical stack of labeled layers with optional brace grouping. Position and text carry meaning; hatching optional.</desc>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <rect x="1" y="1" width="898" height="518" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">TEMPLATE - Layered comparison</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Stack top-to-bottom or bottom-up consistently; brace groups everyday language</text>
+  <rect x="180" y="80" width="420" height="56" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+  <text x="390" y="114" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Layer A - closest to person</text>
+  <rect x="180" y="146" width="420" height="56" fill="#f0f0f0" stroke="#111111" stroke-width="1.75"/>
+  <text x="390" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Layer B</text>
+  <rect x="180" y="212" width="420" height="56" fill="#e4e4e4" stroke="#111111" stroke-width="1.75"/>
+  <text x="390" y="246" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Layer C</text>
+  <rect x="180" y="278" width="420" height="56" fill="#d8d8d8" stroke="#111111" stroke-width="1.75"/>
+  <text x="390" y="312" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Layer D - farther / larger</text>
+  <path d="M620,90 L650,90 L650,320 L620,320" fill="none" stroke="#1F4B7A" stroke-width="2"/>
+  <line x1="650" y1="205" x2="680" y2="205" stroke="#1F4B7A" stroke-width="2"/>
+  <text x="690" y="200" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1F4B7A">Everyday</text>
+  <text x="690" y="218" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1F4B7A">label group</text>
+  <rect x="180" y="370" width="200" height="80" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="280" y="404" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Compare A</text>
+  <text x="280" y="424" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">property labels</text>
+  <rect x="400" y="370" width="200" height="80" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="500" y="404" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Compare B</text>
+  <text x="500" y="424" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">property labels</text>
+  <text x="24" y="490" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence note placeholder; caption draft; qualitative adjectives only unless measured</text>
+</svg>

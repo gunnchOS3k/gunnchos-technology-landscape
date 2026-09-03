@@ -1,0 +1,30 @@
+figure_id: FIG-CE06-007
+title: Tradeoffs among latency, reliability, privacy, cost, power, and inclusion.
+caption: 'Tradeoffs among latency, reliability, privacy, cost, power, and inclusion..
+  Improving one axis can degrade another; equity is a first-class axis. Truth: conceptual.
+  Color is not the sole encoding.'
+alt_text: Table equivalent mandatory if radar used.
+text_equivalent: 'Table equivalent mandatory if radar used. Reading order: latency;
+  reliability; privacy; cost; power; inclusion.
+
+  Evidence: Conceptual
+
+  Geometry intent: Prefer labeled matrix over decorative radar; pairs of design choices
+  with +/- effects.'
+reading_order:
+- latency
+- reliability
+- privacy
+- cost
+- power
+- inclusion
+source: figures/preproduction/ce-06/fig-ce06-007.svg
+evidence_note: Conceptual
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: "+/\u2212 text markers."
+reviewer: pending-human-visual-review
+version: 0.1.0

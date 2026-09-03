@@ -1,0 +1,30 @@
+figure_id: FIG-CE5-007
+title: "Attach threats to visible flows (prompt, permission, session, update)\u2014\
+  not a scare collage."
+caption: "Attach threats to visible flows (prompt, permission, session, update)\u2014\
+  not a scare collage.. UX-linked attack surfaces on one assistant session Truth:\
+  \ illustrative. Color is not the sole encoding."
+alt_text: Annotated assistant session highlighting permission dialog, session cookie/token,
+  prompt box, and update badge as related risk points.
+text_equivalent: 'Annotated assistant session highlighting permission dialog, session
+  cookie/token, prompt box, and update badge as related risk points. Reading order:
+  Prompt box; Permission dialog; Session token; Update badge.
+
+  Evidence: educational original
+
+  Geometry intent: TBD layout'
+reading_order:
+- Prompt box
+- Permission dialog
+- Session token
+- Update badge
+source: figures/preproduction/ce-05/fig-ce5-007.svg
+evidence_note: educational original
+truth_classification: illustrative
+qualification: null
+status: illustrative
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0

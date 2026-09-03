@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img"
+     aria-labelledby="FIG-CE06-010-title FIG-CE06-010-desc"
+     data-figure-id="FIG-CE06-010"
+     data-truth-classification="conceptual"
+     data-template="tmpl-ecosystem-system-map"
+     data-qualification="">
+  <title id="FIG-CE06-010-title">FIG-CE06-010: Career/ownership map for contract conditions (who debugs what).</title>
+  <desc id="FIG-CE06-010-desc">List condition→role pairs. Reading order: Condition chips; Role families.</desc>
+  <rect width="960" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="958" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE06-010 — Career/ownership map for contract conditions (who debugs what).</text>
+  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
+  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: CAREER_MAP.yaml</text>
+<rect x="40" y="110" width="280" height="90" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="180.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Input/render</text>
+<text x="180.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">→ Client eng</text>
+<rect x="340" y="110" width="280" height="90" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="480.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Schedule/mem</text>
+<text x="480.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">→ OS/perf</text>
+<rect x="640" y="110" width="280" height="90" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="780.0" y="149.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Network/service</text>
+<text x="780.0" y="169.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">→ SRE/net</text>
+<rect x="40" y="230" width="280" height="90" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="180.0" y="269.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Trust/privacy</text>
+<text x="180.0" y="289.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">→ Security</text>
+<rect x="340" y="230" width="280" height="90" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="480.0" y="269.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Accessibility</text>
+<text x="480.0" y="289.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">→ A11y</text>
+<rect x="640" y="230" width="280" height="90" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="780.0" y="269.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Cross-cutting</text>
+<text x="780.0" y="289.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">→ TPM</text>
+<text x="40" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Cross-team nature of Stability Contract — who debugs what.</text>
+  <text x="24" y="404" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Career/ownership map for contract conditions (who debugs what).. Cross-team nature of Stability Contract; TPM/SRE/a11y roles visible. Truth: conceptual. Color i</text>
+</svg>

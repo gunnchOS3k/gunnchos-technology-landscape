@@ -1,0 +1,43 @@
+figure_id: FIG-CE06-001
+title: "Formal Stability Contract teaching model: human experience succeeds only while\
+  \ concurre\u2026"
+caption: "Formal Stability Contract teaching model: human experience succeeds only\
+  \ while concurre\u2026. Multiple conditions are concurrent, not a single ordered\
+  \ blame chain; any one can break the experience. Truth: conceptual. Color is not\
+  \ the sole encoding."
+alt_text: Alt text naming center + each spoke; reading order clockwise from input;
+  long text equivalent list.
+text_equivalent: 'Alt text naming center + each spoke; reading order clockwise from
+  input; long text equivalent list. Reading order: Human experience succeeds; input
+  delivery; schedule/handler; memory/storage; network path; service availability;
+  render/display; power/thermal; trust/permissions; accessibility path; total delay
+  acceptability.
+
+  Evidence: Publication pedagogy (PEDAGOGICAL_CONTRACT); conceptual
+
+  Geometry intent: Center: Human experience succeeds. Spokes: input delivery, schedule/handler,
+  memory/storage, network path, service availability, render/display, power/thermal,
+  trust/permissions, accessibility path, total delay acceptability.'
+reading_order:
+- Human experience succeeds
+- input delivery
+- schedule/handler
+- memory/storage
+- network path
+- service availability
+- render/display
+- power/thermal
+- trust/permissions
+- accessibility path
+- total delay acceptability
+source: figures/preproduction/ce-06/fig-ce06-001.svg
+evidence_note: Publication pedagogy (PEDAGOGICAL_CONTRACT); conceptual
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-stability-contract-condition-map
+color_independent_encoding: Spoke icons + labels; failure state uses dashed outline
+  + text FAIL, not red-only.
+reviewer: pending-human-visual-review
+version: 0.1.0

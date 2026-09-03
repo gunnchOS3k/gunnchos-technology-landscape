@@ -1,0 +1,34 @@
+figure_id: FIG-CE3-008
+title: Device Quartet compute/storage roles (optional callout)
+caption: 'Device Quartet compute/storage roles (optional callout). PHYSICAL_PENDING
+  / not shipping products'', ''Different form factors stress different bottlenecks
+  Truth: project_specific. Qualification: PHYSICAL_PENDING. Color is not the sole
+  encoding.'
+alt_text: 'FIG-CE3-008: Device Quartet compute/storage roles (optional callout). Educational
+  diagram.'
+text_equivalent: 'FIG-CE3-008: Device Quartet compute/storage roles (optional callout).
+  Educational diagram. Reading order: Form factor A; Form factor B; Form factor C;
+  Form factor D; PHYSICAL_PENDING.
+
+  Evidence: SRC-HARDWARE device-quartet docs + comparison matrix (targets, not measurements)
+
+  Geometry intent: Four labeled silhouettes with role tags; watermark Representative
+  educational architecture.'
+reading_order:
+- Form factor A
+- Form factor B
+- Form factor C
+- Form factor D
+- PHYSICAL_PENDING
+source: figures/preproduction/ce-03/fig-ce3-008.svg
+evidence_note: SRC-HARDWARE device-quartet docs + comparison matrix (targets, not
+  measurements)
+truth_classification: project_specific
+qualification: PHYSICAL_PENDING
+status: conceptual
+production_status: implemented
+template: tmpl-ecosystem-system-map
+color_independent_encoding: Shape + label; color never sole cue.
+reviewer: pending-human-visual-review
+version: 0.1.0
+project_truth: project_specific

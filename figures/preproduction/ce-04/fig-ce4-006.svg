@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+     aria-labelledby="FIG-CE4-006-title FIG-CE4-006-desc"
+     data-figure-id="FIG-CE4-006"
+     data-truth-classification="conceptual"
+     data-template="tmpl-ecosystem-system-map"
+     data-qualification="">
+  <title id="FIG-CE4-006-title">FIG-CE4-006: Component cards overview for packet path objects.</title>
+  <desc id="FIG-CE4-006-desc">Each card available as structured text Reading order: packet; address; gateway; DNS; Wi-Fi link; cellular attachment; edge; cloud.</desc>
+  <rect width="1000" height="420" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="30" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CE4-006 — Component cards overview for packet path objects.</text>
+  <text x="24" y="50" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
+  <text x="24" y="68" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#666666">Evidence: Chapter component-card pedagogy; standards-backed terms</text>
+<rect x="40" y="110" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="150.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">packet</text>
+<text x="150.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">unit on the wire</text>
+<rect x="280" y="110" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="390.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">address</text>
+<text x="390.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">who/where</text>
+<rect x="520" y="110" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="630.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">gateway</text>
+<text x="630.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">hop out</text>
+<rect x="760" y="110" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="870.0" y="154.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">DNS</text>
+<text x="870.0" y="174.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">name→address</text>
+<rect x="40" y="240" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="150.0" y="284.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Wi-Fi link</text>
+<text x="150.0" y="304.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">LAN on-ramp</text>
+<rect x="280" y="240" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="390.0" y="284.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">cellular</text>
+<text x="390.0" y="304.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">wide-area on-ramp</text>
+<rect x="520" y="240" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="630.0" y="284.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">edge</text>
+<text x="630.0" y="304.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">nearby service</text>
+<rect x="760" y="240" width="220" height="100" fill="#fafafa" stroke="#111111" stroke-width="1.75"/>
+<text x="870.0" y="284.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">cloud</text>
+<text x="870.0" y="304.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">region service</text>
+  <text x="24" y="404" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption draft: Component cards overview for packet path objects.. Each card has plain definition, function, constraint, failure symptom. Truth: conceptual. Color is not the so</text>
+</svg>

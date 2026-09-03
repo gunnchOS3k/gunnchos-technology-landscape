@@ -1,0 +1,538 @@
+schema_version: 1.0.0
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+templates:
+- figures/templates/tmpl-ecosystem-system-map.svg
+- figures/templates/tmpl-sequence-path.svg
+- figures/templates/tmpl-layered-comparison.svg
+- figures/templates/tmpl-hierarchy-resource-ladder.svg
+- figures/templates/tmpl-status-vs-usable-experience.svg
+- figures/templates/tmpl-failure-domain-trust-boundary.svg
+- figures/templates/tmpl-stability-contract-condition-map.svg
+figures:
+- figure_id: FIG-CE1-001
+  chapter_id: CE-1
+  title: "First-minute map: person \u2192 visible interface \u2192 hidden local system\
+    \ \u2192 optional network/s\u2026"
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: system_map
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-001
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-001.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-001.yaml
+- figure_id: FIG-CE1-002
+  chapter_id: CE-1
+  title: "Teach inputs \u2192 processing \u2192 state \u2192 outputs for the chrome-before-content\
+    \ moment."
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: causal_flow
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-002
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-002.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-002.yaml
+- figure_id: FIG-CE1-003
+  chapter_id: CE-1
+  title: "Why 'the app' is not one thing \u2014 stacked cards for UI, runtime, OS\
+    \ services, storage, n\u2026"
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: comparative_layers
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-003
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-003.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-003.yaml
+- figure_id: FIG-CE1-004
+  chapter_id: CE-1
+  title: Local-only readiness vs network-dependent readiness branches for the same
+    visible chrome.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: path_branch_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-004
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-004.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-004.yaml
+- figure_id: FIG-CE1-005
+  chapter_id: CE-1
+  title: Map everyday symptoms to failure-domain buckets without claiming root cause.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-failure-domain-trust-boundary
+  figure_type: failure_domain_map
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-005
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-005.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-005.yaml
+- figure_id: FIG-CE1-006
+  chapter_id: CE-1
+  title: "Representative educational architecture preview of device layers supporting\
+    \ readiness (\u2026"
+  truth_classification: conceptual
+  qualification: PHYSICAL_PENDING
+  template: tmpl-ecosystem-system-map
+  figure_type: exploded_ecosystem_preview
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-006
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-006.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-006.yaml
+- figure_id: FIG-CE1-007
+  chapter_id: CE-1
+  title: Show concurrent hidden conditions that must remain acceptable for 'usable'
+    experience.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-stability-contract-condition-map
+  figure_type: stability_contract_preview
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE1-007
+  production_status: implemented
+  path: figures/preproduction/ce-01/fig-ce1-007.svg
+  accessibility: figures/preproduction/accessibility/fig-ce1-007.yaml
+- figure_id: FIG-CE3-001
+  chapter_id: CE-3
+  title: Inside-the-device map for local lag
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: system_map
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-001
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-001.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-001.yaml
+- figure_id: FIG-CE3-002
+  chapter_id: CE-3
+  title: "Memory hierarchy: registers \u2192 cache \u2192 RAM \u2192 storage"
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: comparative_layers
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-002
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-002.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-002.yaml
+- figure_id: FIG-CE3-003
+  chapter_id: CE-3
+  title: "Instruction \u2192 schedule \u2192 execute \u2192 result path (accessible)"
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: sequence_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-003
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-003.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-003.yaml
+- figure_id: FIG-CE3-004
+  chapter_id: CE-3
+  title: Bottleneck symptom branches
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: causal_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-004
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-004.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-004.yaml
+- figure_id: FIG-CE3-005
+  chapter_id: CE-3
+  title: CPU vs accelerator/GPU role cards
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: component_cards
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-005
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-005.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-005.yaml
+- figure_id: FIG-CE3-006
+  chapter_id: CE-3
+  title: Save buffer vs durable file
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: before_after_compare
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-006
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-006.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-006.yaml
+- figure_id: FIG-CE3-007
+  chapter_id: CE-3
+  title: Qualitative power/thermal ceiling
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: budget_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-007
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-007.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-007.yaml
+- figure_id: FIG-CE3-008
+  chapter_id: CE-3
+  title: Device Quartet compute/storage roles (optional callout)
+  truth_classification: project_specific
+  qualification: PHYSICAL_PENDING
+  template: tmpl-ecosystem-system-map
+  figure_type: representative_architecture
+  edition_scope: concept_edition_optional
+  plan_provisional_id: FIG-CE3-008
+  production_status: implemented
+  path: figures/preproduction/ce-03/fig-ce3-008.svg
+  accessibility: figures/preproduction/accessibility/fig-ce3-008.yaml
+- figure_id: FIG-CE3-009
+  chapter_id: CE-3
+  title: Annotated commodity monitor snapshot
+  truth_classification: measured
+  qualification: later_fixture
+  template: tmpl-status-vs-usable-experience
+  figure_type: lab_fixture
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE3-009
+  production_status: blocked
+  path: null
+  accessibility: figures/preproduction/accessibility/fig-ce3-009.yaml
+  blocked_manifest: figures/preproduction/manifests/fig-ce3-009.blocked.yaml
+  block_reason: BLOCKED_EVIDENCE_REQUIRED
+- figure_id: FIG-CE4-001
+  chapter_id: CE-4
+  title: Show local vs LAN vs Internet reachability as nested scopes, not synonyms.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: comparative_layers
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-001
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-001.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-001.yaml
+- figure_id: FIG-CE4-002
+  chapter_id: CE-4
+  title: Follow one sync request as encapsulation and hops (sticky-note headers).
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: sequence_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-002
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-002.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-002.yaml
+- figure_id: FIG-CE4-003
+  chapter_id: CE-4
+  title: Separate Wi-Fi access, cellular access, and Internet backbone as different
+    boxes.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: system_map
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-003
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-003.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-003.yaml
+- figure_id: FIG-CE4-004
+  chapter_id: CE-4
+  title: Latency vs reliability vs throughput as three different failure stories.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: comparative_layers
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-004
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-004.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-004.yaml
+- figure_id: FIG-CE4-005
+  chapter_id: CE-4
+  title: "Service continuity across Wi-Fi\u2194cellular change while app session continues\
+    \ or fails."
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: path_branch_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-005
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-005.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-005.yaml
+- figure_id: FIG-CE4-006
+  chapter_id: CE-4
+  title: Component cards overview for packet path objects.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: exploded_view
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-006
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-006.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-006.yaml
+- figure_id: FIG-CE4-007
+  chapter_id: CE-4
+  title: 'Lab evidence map: observation vs inference for Route A/B.'
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: causal_diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE4-007
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-007.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-007.yaml
+- figure_id: FIG-CE4-008
+  chapter_id: CE-4
+  title: Full-book preview of radio link budget / delay-spread intuition.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: budget_diagram
+  edition_scope: full_edition_only
+  plan_provisional_id: FIG-CE4-008
+  production_status: implemented
+  path: figures/preproduction/ce-04/fig-ce4-008.svg
+  accessibility: figures/preproduction/accessibility/fig-ce4-008.yaml
+- figure_id: FIG-CE5-001
+  chapter_id: CE-5
+  title: Show accessible systems path without anthropomorphizing the model.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-001
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-001.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-001.yaml
+- figure_id: FIG-CE5-002
+  chapter_id: CE-5
+  title: Compare on-device inference vs remote API for privacy, latency, dependency.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-002
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-002.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-002.yaml
+- figure_id: FIG-CE5-003
+  chapter_id: CE-5
+  title: Separate who you claim to be, proof of that claim, and allowed actions.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-003
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-003.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-003.yaml
+- figure_id: FIG-CE5-004
+  chapter_id: CE-5
+  title: Show what encryption can and cannot guarantee for user experience.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-004
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-004.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-004.yaml
+- figure_id: FIG-CE5-005
+  chapter_id: CE-5
+  title: "Collect \u2192 use \u2192 retain \u2192 share \u2192 delete/redact with\
+    \ decision owners."
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-005
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-005.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-005.yaml
+- figure_id: FIG-CE5-006
+  chapter_id: CE-5
+  title: Contrast felt reliability with controls and evidence.
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-006
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-006.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-006.yaml
+- figure_id: FIG-CE5-007
+  chapter_id: CE-5
+  title: "Attach threats to visible flows (prompt, permission, session, update)\u2014\
+    not a scare collage."
+  truth_classification: illustrative
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: diagram
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE5-007
+  production_status: implemented
+  path: figures/preproduction/ce-05/fig-ce5-007.svg
+  accessibility: figures/preproduction/accessibility/fig-ce5-007.yaml
+- figure_id: FIG-CE06-001
+  chapter_id: CE-6
+  title: "Formal Stability Contract teaching model: human experience succeeds only\
+    \ while concurre\u2026"
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-stability-contract-condition-map
+  figure_type: causal / hub-and-spoke system map
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-001
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-001.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-001.yaml
+- figure_id: FIG-CE06-002
+  chapter_id: CE-6
+  title: Show connected status chrome vs usable experience divergence.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-status-vs-usable-experience
+  figure_type: comparative layers / status vs experience
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-002
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-002.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-002.yaml
+- figure_id: FIG-CE06-003
+  chapter_id: CE-6
+  title: Cross-layer failure diagnosis walkthrough for the anchor experience.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: sequence / diagnosis path
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-003
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-003.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-003.yaml
+- figure_id: FIG-CE06-004
+  chapter_id: CE-6
+  title: Where time and failure can accumulate; teach labeling discipline.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: budget / stacked comparative
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-004
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-004.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-004.yaml
+- figure_id: FIG-CE06-005
+  chapter_id: CE-6
+  title: Evidence hierarchy from illustrative aid to standards-aligned QoE methods.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-hierarchy-resource-ladder
+  figure_type: hierarchy / ladder
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-005
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-005.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-005.yaml
+- figure_id: FIG-CE06-006
+  chapter_id: CE-6
+  title: Map logs, metrics, and traces (conceptually) onto Stability Contract conditions.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: system map / observability
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-006
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-006.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-006.yaml
+- figure_id: FIG-CE06-007
+  chapter_id: CE-6
+  title: Tradeoffs among latency, reliability, privacy, cost, power, and inclusion.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: tradeoff / radar-or-matrix
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-007
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-007.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-007.yaml
+- figure_id: FIG-CE06-008
+  chapter_id: CE-6
+  title: "Explain \u2192 Measure \u2192 Improve \u2192 Teach portfolio loop."
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-sequence-path
+  figure_type: paths / capstone spine
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-008
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-008.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-008.yaml
+- figure_id: FIG-CE06-009
+  chapter_id: CE-6
+  title: Works-for-me vs excluded path under the same nominal feature.
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-layered-comparison
+  figure_type: comparative inclusion
+  edition_scope: concept_edition
+  plan_provisional_id: FIG-CE06-009
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-009.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-009.yaml
+- figure_id: FIG-CE06-010
+  chapter_id: CE-6
+  title: Career/ownership map for contract conditions (who debugs what).
+  truth_classification: conceptual
+  qualification: null
+  template: tmpl-ecosystem-system-map
+  figure_type: ownership map
+  edition_scope: both
+  plan_provisional_id: FIG-CE06-010
+  production_status: implemented
+  path: figures/preproduction/ce-06/fig-ce06-010.svg
+  accessibility: figures/preproduction/accessibility/fig-ce06-010.yaml
+counts:
+  planned: 41
+  implemented: 40
+  blocked: 1
+  by_truth_classification:
+    conceptual:
+      planned: 30
+      implemented: 30
+      blocked: 0
+    illustrative:
+      planned: 9
+      implemented: 9
+      blocked: 0
+    project_specific:
+      planned: 1
+      implemented: 1
+      blocked: 0
+    measured:
+      planned: 1
+      implemented: 0
+      blocked: 1
+  physical_pending: 2

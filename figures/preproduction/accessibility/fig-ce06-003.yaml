@@ -1,0 +1,30 @@
+figure_id: FIG-CE06-003
+title: Cross-layer failure diagnosis walkthrough for the anchor experience.
+caption: 'Cross-layer failure diagnosis walkthrough for the anchor experience.. Questions
+  escalate by domain; open questions remain labeled undetermined. Truth: conceptual.
+  Color is not the sole encoding.'
+alt_text: Reading order by swimlane then time; text equivalent of decision gates.
+text_equivalent: 'Reading order by swimlane then time; text equivalent of decision
+  gates. Reading order: Human; App/Code; OS/Device; Network; Service; Society/Equity.
+
+  Evidence: Conceptual procedure aligned to LAB-CE06-001
+
+  Geometry intent: Horizontal swimlanes: Human, App/Code, OS/Device, Network, Service,
+  Society/Equity; decision diamonds for evidence gates.'
+reading_order:
+- Human
+- App/Code
+- OS/Device
+- Network
+- Service
+- Society/Equity
+source: figures/preproduction/ce-06/fig-ce06-003.svg
+evidence_note: Conceptual procedure aligned to LAB-CE06-001
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-sequence-path
+color_independent_encoding: Lane labels + numbered steps.
+reviewer: pending-human-visual-review
+version: 0.1.0

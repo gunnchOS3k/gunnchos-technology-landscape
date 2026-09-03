@@ -1,0 +1,29 @@
+figure_id: FIG-CE06-005
+title: Evidence hierarchy from illustrative aid to standards-aligned QoE methods.
+caption: 'Evidence hierarchy from illustrative aid to standards-aligned QoE methods..
+  Learner commodity labs sit mid-ladder; G.1011-style subjective studies are higher
+  and not required for CE completion. Truth: conceptual. Color is not the sole encoding.'
+alt_text: List rungs in ascending strength order.
+text_equivalent: 'List rungs in ascending strength order. Reading order: 1 Illustrative
+  aid; 2 Lab observation; 3 Commodity measurement; 4 Controlled study; 5 Standards-aligned
+  QoE.
+
+  Evidence: CLAIM_PLAN + ITU G.1011 as context
+
+  Geometry intent: Vertical ladder with five rungs and example artifacts per rung.'
+reading_order:
+- 1 Illustrative aid
+- 2 Lab observation
+- 3 Commodity measurement
+- 4 Controlled study
+- 5 Standards-aligned QoE
+source: figures/preproduction/ce-06/fig-ce06-005.svg
+evidence_note: CLAIM_PLAN + ITU G.1011 as context
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-hierarchy-resource-ladder
+color_independent_encoding: Rung numbers + labels.
+reviewer: pending-human-visual-review
+version: 0.1.0

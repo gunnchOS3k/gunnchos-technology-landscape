@@ -1,0 +1,28 @@
+figure_id: FIG-CE06-004
+title: Where time and failure can accumulate; teach labeling discipline.
+caption: "Where time and failure can accumulate; teach labeling discipline.. Segments\
+  \ are placeholders until learner measures; connected\u2260done. Truth: conceptual.\
+  \ Color is not the sole encoding."
+alt_text: State that numbers are illustrative unless labeled measured; provide table
+  equivalent.
+text_equivalent: "State that numbers are illustrative unless labeled measured; provide\
+  \ table equivalent. Reading order: input; local work; optional network/service;\
+  \ render; display.\nEvidence: Illustrative bands only unless replaced by learner\
+  \ LAB data\nGeometry intent: Stacked bar: input \u2192 local work \u2192 optional\
+  \ network/service \u2192 render \u2192 display; legend for illustrative/measured/inferred."
+reading_order:
+- input
+- local work
+- optional network/service
+- render
+- display
+source: figures/preproduction/ce-06/fig-ce06-004.svg
+evidence_note: Illustrative bands only unless replaced by learner LAB data
+truth_classification: conceptual
+qualification: null
+status: conceptual
+production_status: implemented
+template: tmpl-layered-comparison
+color_independent_encoding: Pattern fills (hatch/solid/dot) per label class.
+reviewer: pending-human-visual-review
+version: 0.1.0
