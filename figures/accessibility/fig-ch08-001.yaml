@@ -1,0 +1,10 @@
+figure_id: FIG-CH08-001
+alt_text: "Left-to-right conceptual map from physical world through capture and processing to display/speakers and human perception."
+text_equivalent_reading_order:
+  - Physical world
+  - Capture (cameras, mics, sensors)
+  - Process (ISP/codecs/apps/compositor/GPU)
+  - Present (frames, speakers)
+  - Human perception
+truth_classification: conceptual
+color_independent: true
