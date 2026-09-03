@@ -1,0 +1,70 @@
+lab_id: LAB-PWR-001
+title: Budget Collapse Observation
+chapter: CH09
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "What visible battery-mode and thermal cues appear when I compare a light local workload with a heavier local workload on a device I already own—without unsafe heating or battery abuse?"
+experience: "Smoothness, warmth, battery drop, or OS cues may change under heavier local load; none of those alone prove a single root cause."
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+prerequisites:
+  concepts: [power-budget, battery, thermal-limit, throttle, observation]
+  safety:
+    - Do not open, puncture, crush, overcharge, freeze, microwave, or externally heat batteries or packs.
+    - Do not block vents to force throttle, bake devices, or defeat thermal protections.
+    - Stop on warnings, unusual odor, swelling, or painful heat.
+  time_minutes: 60
+  equipment: []
+  software: [device you already own or offline fixture card]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: false
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict which cue (smoothness, warmth, battery drop, OS status) changes first under heavier load.
+    - Complete Route A commodity observation or Route C offline fixture.
+    - Optionally note qualitative OS energy fields (Route B).
+    - Separate observation from inference; no invented watts or °C product curves.
+  rollback:
+    - Stop the heavier workload.
+    - Unplug any experimental accessories.
+    - Delete accidental sensitive captures.
+evidence:
+  required_artifacts:
+    - scrubbed screenshot or written status list
+    - light vs heavier observation table
+    - observation vs inference paragraph
+    - safety confirmation in README
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - ambient room comfort band
+    - plugged vs battery power path
+    - opaque vendor thermal policy
+  uncertainty:
+    - warmth is not junction temperature
+    - one session is not product thermal qualification
+    - Device Quartet watt/°C curves remain PHYSICAL_PENDING
+portfolio:
+  outputs:
+    - README.md
+    - observation table
+    - evidence artifact
+    - reflection
+    - teach-back paragraph
+teach_back:
+  required: true
+fixture_available: true
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+safety_note: "No battery teardown, puncture, crush, external heating, or defeat of thermal protections."
+waike_adjacency_note: >
+  Adjacent to WAIKE lab_power_budget and lab_ep_sleep_mode at SHA
+  e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; LAB-PWR-001 is publication-owned.

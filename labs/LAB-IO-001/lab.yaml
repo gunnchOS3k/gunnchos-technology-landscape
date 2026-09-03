@@ -33,3 +33,53 @@ portfolio_output:
   - portfolio/teach_back.md
 waike_note: "Publication-owned commodity lab. Adjacent WAIKE competencies exist (game loop, sensor noise, ADC scale); do not mint a WAIKE lab ID for LAB-IO-001."
 gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+
+prerequisites:
+  concepts: [media-pipeline, sampling, permission, observation]
+  safety:
+    - Do not capture other people without permission.
+    - Prefer fixtures or synthetic media.
+  time_minutes: 45
+  equipment: []
+  software: [text editor; optional local media player]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict capture → process → present stages for one familiar media experience.
+    - Complete fixture/worksheet map without capturing other people.
+    - Note permission outcomes as policy, not broken hardware.
+    - Separate observation from inference; no hitch-threshold inventions.
+  rollback:
+    - Deny or revoke camera/mic permissions used only for the lab.
+    - Delete accidental sensitive media.
+evidence:
+  required_artifacts:
+    - pipeline_map
+    - permission_notes
+    - observation_vs_inference
+    - teach_back
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - permission prompts
+    - shared CPU/GPU/memory/power budgets
+    - opaque vendor media pipelines
+  uncertainty:
+    - fixture paths are illustrative
+    - learner observations are device-local, not product SLOs
+portfolio:
+  outputs:
+    - README.md
+    - pipeline_map.md
+    - observation_vs_inference.md
+    - teach_back.md
+teach_back:
+  required: true

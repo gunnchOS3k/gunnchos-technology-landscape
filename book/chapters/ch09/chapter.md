@@ -361,7 +361,7 @@ Selected authoritative sources for this chapter’s general technical explanatio
 
 Inline citations used in this chapter include @linux-cpu-freq, @patterson-hennessy, @iec-62133-2, @ul-2054, and @src-hardware-quartet.
 
-**Omitted as cited technical claims (SOURCE_NEEDED remaining in the chapter claim plan):** detailed battery electrochemistry textbook pinning for “non-ideal voltage source” formalization, and a pinned mechanical/industrial-design textbook edition for mechanical theory. Prose above treats those topics qualitatively or via verified safety standards only—no invented ISBNs.
+**Omitted as cited technical claims (evidence gaps remaining in the chapter claim plan):** detailed battery electrochemistry textbook pinning for “non-ideal voltage source” formalization, and a pinned mechanical/industrial-design textbook edition for mechanical theory. Prose above treats those topics qualitatively or via verified safety standards only—no invented ISBNs.
 
 ## 12. Glossary links
 
@@ -417,8 +417,8 @@ All figures below are **conceptual** or **illustrative** unless a future revisio
 | Claim ID | Approved gist | Classification |
 |---|---|---|
 | CLM-CH09-001 | Interactive devices operate under finite power/thermal budgets that can reduce available performance | general_technical · SOURCE_IDENTIFIED via @linux-cpu-freq |
-| CLM-CH09-002 | Batteries as non-ideal finite sources | SOURCE_NEEDED — **omitted as cited claim**; safety standards cited separately |
-| CLM-CH09-003 | Mechanical design affects thermals/durability/a11y/repairability | SOURCE_NEEDED — **qualitative only** in this draft |
+| CLM-CH09-002 | Batteries as non-ideal finite sources | **OMITTED as cited claim**; safety standards cited separately |
+| CLM-CH09-003 | Mechanical design affects thermals/durability/a11y/repairability | **QUALITATIVE ONLY** in this draft (no unsupported textbook pin) |
 | CLM-CH09-004 | Device Quartet thermal/battery EVT curves | PHYSICAL_PENDING via @src-hardware-quartet |
 
 General statements about heat needing a path out of a closed system are treated as ordinary physical reasoning and are not rewritten as repository claims. Any future numeric watt/°C figures must carry **illustrative**, **measured**, or **inferred** labels—and Quartet measured figures stay blocked until PHYSICAL_PENDING clears.

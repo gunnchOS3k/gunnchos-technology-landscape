@@ -239,7 +239,7 @@ Commodity observations you collect in **LAB-CMS-001** are *your* evidence for *y
 
 **Observable question.** When a familiar local app feels slow but the connectivity icon looks fine, what evidence can I gather—using only commodity tools—to separate **CPU**, **memory**, **storage**, and **scheduling/thermal** hypotheses?
 
-This chapter’s Try It **inherits and links** the publication-owned CE-3 lab rather than inventing a duplicate `LAB-CPU-001` package. Follow the full lab packet at `labs/LAB-CMS-001/` (README, routes, fixtures, portfolio templates). Focus your write-up on the **CPU / scheduler / parallel-work** columns of the diagnosis; neighboring chapters reuse the same lab for memory and storage emphasis.
+This chapter’s Try It **inherits and links** the publication-owned CE-3 lab rather than inventing a duplicate CPU-focused lab package. Follow the full lab packet at `labs/LAB-CMS-001/` (README, routes, fixtures, portfolio templates). Focus your write-up on the **CPU / scheduler / parallel-work** columns of the diagnosis; neighboring chapters reuse the same lab for memory and storage emphasis.
 
 **WAIKE alignment note.** WAIKE accepted `main` (audit SHA recorded in the CH06 packet) hosts adjacent labs on observability and “who runs when,” but there is **no** exact WAIKE module ID for this publication lab. Do not mint one.
 
@@ -459,8 +459,8 @@ Related CE-3 maps (optional cross-read, not required embeds): `figures/preproduc
 | Claim | Status handling in prose |
 |---|---|
 | CLM-CH06-001 — apps execute as instructions under OS mediation | Taught with @tanenbaum-bos (and CE-3 CLM-CE3-001 inheritance) |
-| CLM-CH06-002 — more cores help only when work parallelizes usefully | Taught via CE-3 CLM-CE3-005 inheritance with @patterson-hennessy-riscv (CH06 packet still listed SOURCE_NEEDED; no invented sources) |
+| CLM-CH06-002 — more cores help only when work parallelizes usefully | Taught via CE-3 CLM-CE3-005 inheritance with @patterson-hennessy-riscv (no invented sources) |
 | CLM-CH06-003 — high CPU % ≠ automatic root cause | Framed **illustrative** + LAB-CMS-001 observation/inference practice |
 | CLM-CH06-004 — Quartet CPU/core EVT claims | **PHYSICAL_PENDING** with @src-hardware-quartet |
 
-**Explicit non-claims:** Gate 3 PASS; measured Device Quartet CPU EVT; invented IPC/GHz product numbers; WAIKE lab ID `LAB-CPU-001` as if published.
+**Explicit non-claims:** Gate 3 PASS; measured Device Quartet CPU EVT; invented IPC/GHz product numbers; a minted WAIKE CPU lab ID as if published.

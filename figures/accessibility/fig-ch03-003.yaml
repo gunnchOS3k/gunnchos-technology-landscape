@@ -1,0 +1,19 @@
+figure_id: FIG-CH03-003
+title: "Same average, different jitter"
+caption: "Same average, different jitter. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Trace A; Average; Trace B; Feel."
+text_equivalent: |
+  1. Trace A — calm gaps
+  2. Average — similar
+  3. Trace B — clustered gaps
+  4. Feel — A calmer
+  Truth: illustrative. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Trace A"
+  - "2 Average"
+  - "3 Trace B"
+  - "4 Feel"
+source: figures/sequence/fig-ch03-003-jitter-contrast.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

@@ -80,3 +80,32 @@ waike_alignment:
     - GUNNCHOS_PRODUCT_LAB / lab_gpl_compat_matrix
   note: "Publication-owned lab; do not mint WAIKE Quartet physical module IDs."
 gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+evidence:
+  required_artifacts:
+    - constraint_contrast_matrix
+    - observation_vs_inference_paragraph
+    - physical_pending_measurement_plan
+    - scrubbed_notes
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - commodity device differences unrelated to form-factor role
+    - learner familiarity with each device
+    - analogy mapping from published roles to owned devices
+  uncertainty:
+    - analogy is not Quartet EVT evidence
+    - one informal trial is not a product claim
+    - PHYSICAL_PENDING for all quantitative Quartet measurements
+portfolio:
+  outputs:
+    - README.md
+    - constraint contrast matrix
+    - observation vs inference
+    - physical pending plan
+    - teach-back paragraph
+    - evidence note
+teach_back:
+  required: true

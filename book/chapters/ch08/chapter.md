@@ -127,7 +127,7 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 
 ### What this chapter does not invent
 
-Survey-depth claims that missed display deadlines necessarily appear as hitching or tearing remain **SOURCE_NEEDED** until a pinned multimedia textbook or platform display-timing document is selected (CLM-CH08-001). This chapter therefore teaches frames, feel, and concurrent conditions without fabricating hitch thresholds or fake citations. Learner-measured notes from LAB-IO-001 stay labeled as *your* observations on *your* device.
+Survey-depth claims that missed display deadlines necessarily appear as hitching or tearing are **omitted** until a pinned multimedia textbook or platform display-timing document is selected (CLM-CH08-001). This chapter therefore teaches frames, feel, and concurrent conditions without fabricating hitch thresholds or fake citations. Learner-measured notes from LAB-IO-001 stay labeled as *your* observations on *your* device.
 
 ---
 
@@ -408,7 +408,7 @@ All figures below are **conceptual** or **illustrative** as labeled. Source pref
 
 - **Caption.** Illustrative steady versus uneven presentation feel.
 - **Alt text.** Two timelines of frames; dashed boxes mark delayed or missing updates without numeric thresholds.
-- **Status.** Illustrative teaching aid; not product benchmarks; frame-deadline survey cite remains SOURCE_NEEDED (CLM-CH08-001).
+- **Status.** Illustrative teaching aid; not product benchmarks; frame-deadline survey cite omitted pending pinned source (CLM-CH08-001).
 - **Source.** Publication-owned original.
 
 ### FIG-CH08-003 — Sampling continuous to discrete
@@ -427,7 +427,7 @@ All figures below are **conceptual** or **illustrative** as labeled. Source pref
 | CLM-CH08-002 | Cameras/mics sample the world; digital media are representations | SOURCE_IDENTIFIED (`w3c-mediacapture-streams-20251009`) |
 | CLM-CH08-003 | Multiple media pipelines contend for CPU/GPU/memory/power | SOURCE_IDENTIFIED (`tanenbaum-bos`) |
 | CLM-CH08-004 | Wearable/camera Quartet sensing EVT remains PHYSICAL_PENDING | PHYSICAL_PENDING (`src-hardware-quartet`) |
-| CLM-CH08-001 | Frame-deadline hitch/tear survey claim | **SOURCE_NEEDED — omitted/reframed in prose** |
+| CLM-CH08-001 | Frame-deadline hitch/tear survey claim | **OMITTED in reader prose** (no unsupported hitch/tear citation) |
 
 General statements about pipelines and sampling as teaching vocabulary are not rewritten as repository claims. Numbers in figures are illustrative unless a learner labels them measured.
 

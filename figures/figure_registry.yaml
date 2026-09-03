@@ -195,3 +195,89 @@ figures:
     accessibility: figures/accessibility/fig-ch09-003.yaml
     status: conceptual
     chapter: CH09
+
+  - figure_id: FIG-CH06-001
+    id: FIG-CH06-001
+    title: "App → process/threads → scheduler → cores/accelerator"
+    path: figures/architecture/fig-ch06-001-app-to-cores.svg
+    accessibility: figures/preproduction/accessibility/fig-ch06-001.yaml
+    status: conceptual
+    chapter: CH06
+  - figure_id: FIG-CH06-002
+    id: FIG-CH06-002
+    title: "Single-thread vs parallelizable work"
+    path: figures/architecture/fig-ch06-002-serial-vs-parallel.svg
+    accessibility: figures/preproduction/accessibility/fig-ch06-002.yaml
+    status: illustrative
+    chapter: CH06
+  - figure_id: FIG-CH06-003
+    id: FIG-CH06-003
+    title: "CPU-bound vs waiting-on-I/O symptoms"
+    path: figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg
+    accessibility: figures/preproduction/accessibility/fig-ch06-003.yaml
+    status: conceptual
+    chapter: CH06
+
+  - figure_id: FIG-CH03-001
+    id: FIG-CH03-001
+    title: "Feel words to diagnostic axes"
+    path: figures/ecosystem/fig-ch03-001-feel-axes.svg
+    accessibility: figures/accessibility/fig-ch03-001.yaml
+    status: conceptual
+    chapter: CH03
+
+  - figure_id: FIG-CH03-002
+    id: FIG-CH03-002
+    title: "Action to hitch causal flow"
+    path: figures/sequence/fig-ch03-002-action-to-hitch.svg
+    accessibility: figures/accessibility/fig-ch03-002.yaml
+    status: conceptual
+    chapter: CH03
+
+  - figure_id: FIG-CH03-003
+    id: FIG-CH03-003
+    title: "Same average, different jitter"
+    path: figures/sequence/fig-ch03-003-jitter-contrast.svg
+    accessibility: figures/accessibility/fig-ch03-003.yaml
+    status: illustrative
+    chapter: CH03
+
+  - figure_id: FIG-CH03-004
+    id: FIG-CH03-004
+    title: "Local vs network feel contributors"
+    path: figures/architecture/fig-ch03-004-local-vs-network.svg
+    accessibility: figures/accessibility/fig-ch03-004.yaml
+    status: conceptual
+    chapter: CH03
+
+  - figure_id: FIG-CH10-001
+    id: FIG-CH10-001
+    title: "Board buses ports world"
+    path: figures/architecture/fig-ch10-001-board-buses-ports.svg
+    accessibility: figures/accessibility/fig-ch10-001.yaml
+    status: conceptual
+    chapter: CH10
+
+  - figure_id: FIG-CH10-002
+    id: FIG-CH10-002
+    title: "Host request bus transaction response"
+    path: figures/sequence/fig-ch10-002-host-bus-device.svg
+    accessibility: figures/accessibility/fig-ch10-002.yaml
+    status: illustrative
+    chapter: CH10
+
+  - figure_id: FIG-CH10-003
+    id: FIG-CH10-003
+    title: "Electrical vs protocol layer"
+    path: figures/architecture/fig-ch10-003-electrical-vs-protocol.svg
+    accessibility: figures/accessibility/fig-ch10-003.yaml
+    status: conceptual
+    chapter: CH10
+
+  - figure_id: FIG-CH10-004
+    id: FIG-CH10-004
+    title: "Packaging manufacturing stages"
+    path: figures/exploded-views/fig-ch10-004-packaging-stages.svg
+    accessibility: figures/accessibility/fig-ch10-004.yaml
+    status: conceptual
+    chapter: CH10

@@ -1,0 +1,19 @@
+figure_id: FIG-CH03-004
+title: "Local vs network feel contributors"
+caption: "Local vs network feel contributors. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Local; Feel path; Network; Evidence."
+text_equivalent: |
+  1. Local — CPU/mem/disk
+  2. Feel path — shared
+  3. Network — optional
+  4. Evidence — which branch?
+  Truth: conceptual. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Local"
+  - "2 Feel path"
+  - "3 Network"
+  - "4 Evidence"
+source: figures/architecture/fig-ch03-004-local-vs-network.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

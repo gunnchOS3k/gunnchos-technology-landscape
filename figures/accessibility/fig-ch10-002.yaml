@@ -1,0 +1,19 @@
+figure_id: FIG-CH10-002
+title: "Host request bus transaction response"
+caption: "Host request bus transaction response. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Host request; Bus txn; Device response; Fail branch."
+text_equivalent: |
+  1. Host request — start
+  2. Bus txn — middle
+  3. Device response — or timeout
+  4. Fail branch — diagnose
+  Truth: illustrative. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Host request"
+  - "2 Bus txn"
+  - "3 Device response"
+  - "4 Fail branch"
+source: figures/sequence/fig-ch10-002-host-bus-device.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

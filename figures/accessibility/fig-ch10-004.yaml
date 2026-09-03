@@ -1,0 +1,19 @@
+figure_id: FIG-CH10-004
+title: "Packaging manufacturing stages"
+caption: "Packaging manufacturing stages. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Design; Assemble; Package; Test/ship."
+text_equivalent: |
+  1. Design — intent
+  2. Assemble — board ideas
+  3. Package — protect
+  4. Test/ship — literacy
+  Truth: conceptual. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Design"
+  - "2 Assemble"
+  - "3 Package"
+  - "4 Test/ship"
+source: figures/exploded-views/fig-ch10-004-packaging-stages.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

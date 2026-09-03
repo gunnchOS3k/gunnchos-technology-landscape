@@ -1,6 +1,6 @@
 figure_id: FIG-CH06-003
-title: CPU-bound vs waiting-on-I/O symptoms
-caption: Conceptual comparison of CPU-bound execution patterns versus waiting patterns (memory, storage, locks, scheduling). High CPU percent alone is not proof of root cause.
+title: "CPU-bound vs waiting-on-I/O symptoms"
+caption: "Conceptual comparison of CPU-bound execution patterns versus waiting patterns (memory, storage, locks, scheduling). High CPU percent alone is not proof of root cause."
 alt_text: "FIG-CH06-003: Two-column conceptual chart of CPU-bound versus waiting symptom checks."
 text_equivalent: |
   FIG-CH06-003 reading order: Left column CPU-bound pattern (runnable/executing,
@@ -12,10 +12,10 @@ reading_order:
   - CPU-bound next check
   - Waiting pattern steps
   - Waiting next check
-source: figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg
+source: "figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg"
 truth_classification: conceptual
 status: conceptual
 production_status: working_draft
-color_independent_encoding: Solid vs dashed column border plus numbered text steps.
+color_independent_encoding: "Solid vs dashed column border plus numbered text steps."
 reviewer: pending-human-visual-review
 version: 0.1.0

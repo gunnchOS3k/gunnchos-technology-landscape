@@ -1,0 +1,21 @@
+figure_id: FIG-CH03-002
+title: "Action to hitch causal flow"
+caption: "Action to hitch causal flow. Conceptual educational diagram."
+alt_text: "Left-to-right conceptual diagram: Action; Work queued; Resources; Schedule; Feel."
+text_equivalent: |
+  1. Action — human
+  2. Work queued — software
+  3. Resources — CPU/mem/IO
+  4. Schedule — OS
+  5. Feel — hitch/smooth
+  Truth: conceptual. Not Device Quartet EVT evidence.
+reading_order:
+  - "1 Action"
+  - "2 Work queued"
+  - "3 Resources"
+  - "4 Schedule"
+  - "5 Feel"
+source: figures/sequence/fig-ch03-002-action-to-hitch.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

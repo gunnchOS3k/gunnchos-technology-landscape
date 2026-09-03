@@ -3,6 +3,9 @@ chapter_number: 7
 title: "Memory, Cache, and Storage"
 part: II
 status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
 human_question:
   - Why is RAM not the same as storage, and how do hierarchy misses change how technology feels?

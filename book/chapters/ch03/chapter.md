@@ -396,7 +396,7 @@ Selected authoritative sources for this chapter’s general technical explanatio
 
 Inline citations used in this chapter include @saltzer-kaashoek, @iso-iec-25010-2023, @itu-t-p10-g100, @tanenbaum-bos, @patterson-hennessy, @linux-scheduler, @linux-cpu-freq, @mdn-performance, @mdn-resource-timing, @src-hardware-quartet, and @wcag22-20241212.
 
-Unresolved SOURCE_NEEDED items from the chapter packet (including classic HCI response-time category thresholds pending exact edition binding) are **omitted** from reader prose rather than filled with invented numbers.
+Unresolved evidence gaps from the chapter packet (including classic HCI response-time category thresholds pending exact edition binding) are **omitted** from reader prose rather than filled with invented numbers.
 
 ## 12. Glossary links
 

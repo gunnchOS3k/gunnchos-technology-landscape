@@ -2,7 +2,9 @@ chapter_id: CH05
 chapter_number: 5
 title: "Electricity, Signals, Clocks, and Logic"
 part: II
-status: WORKING_DRAFT_COMPLETE
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
 human_question:
   - How does an everyday device turn a human action into an electrical story that logic can decide?

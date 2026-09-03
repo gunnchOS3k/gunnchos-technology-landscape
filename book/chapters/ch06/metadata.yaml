@@ -3,7 +3,7 @@ chapter_number: 6
 title: "CPU, Instructions, and Parallel Work"
 author: "Edmund Gunn, Jr."
 part: II
-status: working_draft
+status: draft
 manuscript_status: WORKING_DRAFT_COMPLETE
 human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
 publication_status: NOT_PUBLICATION_READY
@@ -47,7 +47,7 @@ waike:
     - EMBEDDED_PROTOTYPING/lab_ep_isr_vs_poll
     - HARDWARE_ENGINEERING/lab_zephyr_qemu
     - SOFTWARE_BUILDER/lab_observability
-  note: "Adjacent digital_rc labs only; no exact CH06 module; do not mint LAB-CPU-001 as a WAIKE ID."
+  note: "Adjacent digital_rc labs only; no exact CH06 module; do not mint a CH06-only CPU lab as a WAIKE ID."
 claims:
   taught:
     - CLM-CH06-001
