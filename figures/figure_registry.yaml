@@ -177,3 +177,21 @@ figures:
     status: conceptual
     chapter: CH08
 
+  - figure_id: FIG-CH09-001
+    title: "Energy Path with Throttle Feedback"
+    path: figures/ecosystem/fig-ch09-001-energy-path.svg
+    accessibility: figures/accessibility/fig-ch09-001.yaml
+    status: conceptual
+    chapter: CH09
+  - figure_id: FIG-CH09-002
+    title: "On Charger vs On Battery"
+    path: figures/ecosystem/fig-ch09-002-charger-vs-battery.svg
+    accessibility: figures/accessibility/fig-ch09-002.yaml
+    status: illustrative
+    chapter: CH09
+  - figure_id: FIG-CH09-003
+    title: "Mechanical Enclosure Roles"
+    path: figures/exploded-views/fig-ch09-003-enclosure-roles.svg
+    accessibility: figures/accessibility/fig-ch09-003.yaml
+    status: conceptual
+    chapter: CH09
