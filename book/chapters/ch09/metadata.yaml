@@ -2,5 +2,32 @@ chapter_id: CH09
 chapter_number: 9
 title: "Power, Batteries, Thermals, and Mechanical Design"
 part: II
-status: outline
+status: WORKING_DRAFT_COMPLETE
 concept_edition: false
+human_question:
+  - Why does the same app feel worse on battery in a warm room?
+experience:
+  - battery-mode feel change
+  - thermal throttle cues
+  - mechanical integrity and heat path
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [power, battery, thermal, mechanical, performance-policy]
+devices: [student-14-5, handheld-hybrid, ds-xl-coder, edge-io-wearables]
+labs: [LAB-PWR-001]
+figures: [FIG-CH09-001, FIG-CH09-002, FIG-CH09-003]
+concepts:
+  introduced: [power-budget, battery, thermal-limit, throttle, mechanical-design, energy-vs-peak-performance]
+  required: [stability-contract]
+  related: [cpu, scheduler, display]
+waike:
+  mapped: true
+  courses: [HARDWARE_ENGINEERING, EMBEDDED_PROTOTYPING]
+  note: "Adjacent to lab_power_budget and lab_ep_sleep_mode at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; LAB-PWR-001 is publication-owned."
+claims:
+  plan: publication/full31/chapters/ch09/CLAIM_PLAN.yaml
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+blockers:
+  - "CLM-CH09-002 battery physics SOURCE_NEEDED — omitted as cited claim; safety standards cited separately"
+  - "CLM-CH09-003 mechanical textbook SOURCE_NEEDED — mechanical discussion kept qualitative"
+  - "CLM-CH09-004 Device Quartet watt/°C curves PHYSICAL_PENDING"
+  - "Human reader validation deferred until full manuscript draft"

@@ -1,0 +1,18 @@
+figure_id: FIG-CH09-003
+title: "Mechanical Enclosure Roles"
+caption: "Mechanical enclosure roles: protection, heat path, and human interface. Conceptual; not a validated EVT."
+alt_text: "Exploded conceptual enclosure with protection shell, electronics block, dashed heat path, and human-interface controls."
+text_equivalent: |
+  Outer solid rectangle labeled Protection surrounds an Electronics block (SoC, battery, boards).
+  Dashed arrows lead to Heat path / vents-surface labels.
+  Human interface block and button circle indicate reachable controls.
+  Status: Conceptual; not a validated Device Quartet EVT.
+reading_order:
+  - "1 Protection shell"
+  - "Electronics (SoC · battery · boards)"
+  - "2 Heat path / vents / surface"
+  - "3 Human interface / buttons / ports / grips"
+source: figures/exploded-views/fig-ch09-003-enclosure-roles.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"

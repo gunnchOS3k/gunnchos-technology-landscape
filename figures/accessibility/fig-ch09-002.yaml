@@ -1,0 +1,17 @@
+figure_id: FIG-CH09-002
+title: "On Charger vs On Battery"
+caption: "On charger vs on battery feel. Illustrative compare plate; no fabricated watt or °C product curves."
+alt_text: "Two columns sharing the same app; left plugged-in/cool with smooth scroll; right battery/warm with hitch and dim cues."
+text_equivalent: |
+  Column A: On charger, cool room, wall power — familiar app scroll feels smooth; plugged-in indicator.
+  Column B: On battery, warm room, finite pack — same app with hitch, dim, warmer case; battery/warmth cues.
+  Center message: Same software · different energy/thermal budget.
+  Status: Illustrative teaching aid. No fabricated numbers.
+reading_order:
+  - "A On charger — cool room — smooth scroll"
+  - "B On battery — warm room — hitch / dim"
+  - "Shared caption — same software, different budget"
+source: figures/ecosystem/fig-ch09-002-charger-vs-battery.svg
+status: illustrative
+reviewer: pending-human-visual-review
+version: "0.1.0"

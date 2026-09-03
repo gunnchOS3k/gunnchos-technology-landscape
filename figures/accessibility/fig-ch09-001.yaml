@@ -1,0 +1,18 @@
+figure_id: FIG-CH09-001
+title: "Energy Path with Throttle Feedback"
+caption: "Energy in → conversion → loads → heat out, with throttle feedback. Conceptual educational diagram; not measured Device Quartet telemetry."
+alt_text: "Flow diagram from energy source through conversion and loads to heat, plus a dashed feedback arrow labeled throttle."
+text_equivalent: |
+  Five stages: (1) Energy in (wall/battery), (2) Conversion (rails/PMIC), (3) Loads (CPU, display, radio),
+  (4) Heat out (case to room), (5) Throttle feedback (dashed) from heat/policy back toward loads.
+  Status: Conceptual educational diagram. Color is not the sole encoding.
+reading_order:
+  - "1 Energy in — wall / battery"
+  - "2 Conversion — rails / PMIC"
+  - "3 Loads — CPU · display · radio"
+  - "4 Heat out — case → room"
+  - "5 Throttle feedback (dashed)"
+source: figures/ecosystem/fig-ch09-001-energy-path.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"
