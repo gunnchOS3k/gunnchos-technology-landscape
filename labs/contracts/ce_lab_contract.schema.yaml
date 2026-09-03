@@ -1,0 +1,55 @@
+# Shared Concept Edition lab contract schema (Agent A / LAB-SYS-001 wave).
+# Status values describe implementation readiness for human learning labs.
+# PASS is never allowed — learning labs do not "pass" as a status.
+schema_version: "1.0.0"
+description: >
+  Contract fields every CE lab.yaml should expose so integrators can
+  discover routes, fixtures, boundaries, and portfolio outputs without
+  reading prose alone.
+
+required_fields:
+  - lab_id
+  - chapter
+  - version
+  - status
+  - reader_levels
+  - routes
+  - fixture_available
+  - evidence_artifacts
+  - privacy_boundary
+  - safety_boundary
+  - accessibility_notes
+  - observation_inference_boundary
+  - portfolio_output
+
+field_types:
+  lab_id: string
+  chapter: string
+  version: string
+  status: enum
+  reader_levels: list
+  routes: mapping
+  fixture_available: boolean
+  evidence_artifacts: list
+  privacy_boundary: list
+  safety_boundary: list
+  accessibility_notes: list
+  observation_inference_boundary: mapping
+  portfolio_output: list
+
+allowed_status:
+  - IMPLEMENTED_DIGITAL
+  - FIXTURE_VALIDATED
+  - PHYSICAL_PENDING
+  - EXTERNAL_DEPENDENCY
+
+forbidden_status:
+  - PASS
+  - PASSED
+  - COMPLETE
+  - VERIFIED
+
+notes:
+  - status never means the learner "passed"; it describes lab packaging state
+  - reader_levels should cover Explorer through Researcher at minimum when depth ladder applies
+  - fixture_available true requires an offline/illustrative route labeled as fixture
