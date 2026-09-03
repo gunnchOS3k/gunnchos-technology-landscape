@@ -2,5 +2,36 @@ chapter_id: CH18
 chapter_number: 18
 title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
 part: IV
-status: outline
+status: draft
 concept_edition: false
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - Why do radio conditions change what wireless feels like—even when the connection icon stays lit?
+experience:
+  - standing by a window makes video suddenly smooth
+  - microwave-adjacent kitchen Wi-Fi stall
+  - turning the phone changes bars without a settings change
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [spectrum, antenna, radio-channel, wifi-access, cellular-access]
+devices: [commodity-phone, commodity-laptop, commodity-access-point]
+labs: [LAB-RADIO-OBS-001, LAB-PKT-001]
+figures:
+  - FIG-CH18-001
+  - FIG-CH18-002
+  - FIG-CH18-003
+  - FIG-CH18-004
+concepts:
+  introduced: [spectrum, antenna, path-loss, interference, mimo, beamforming, radio-condition]
+  required: [stability-contract, observation-vs-inference]
+  related: [wifi, cellular, packet-path, qos-qoe]
+waike:
+  mapped: true
+  courses: [WIRELESS_6G]
+  note: "Adjacent digital_rc labs only (lab_fspl_budget, lab_delay_spread); LAB-RADIO-OBS-001 and LAB-PKT-001 are publication-owned."
+claims:
+  packet: publication/full31/chapters/ch18/CLAIM_PLAN.yaml
+  registry: evidence/claim_registry.yaml
+bibliography_note: "Cite keys present in book/references/references.bib (ieee80211-2020, kurose-ross-8); RF/Quartet measured claims PHYSICAL_PENDING (CLM-CH18-005)."

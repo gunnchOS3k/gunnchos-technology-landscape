@@ -42,7 +42,8 @@ claims:
     that violates law/policy.
   claim_class: publication_internal
   status: SOURCE_IDENTIFIED
-  citation_keys: []
+  citation_keys:
+  - gunnchosTechnologyLandscape2026
   overclaim_risk: Safety boundary.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.
