@@ -1,0 +1,138 @@
+lab_id: LAB-TRUST-001
+title: Compare local vs remote AI paths and write a consent/trust card
+chapter: CE-5
+version: "0.1.0"
+publication_side: true
+waike_map_class: adjacent
+waike_note: "Not a WAIKE module ID. Adjacent themes only (AI_ML_EDGE, CYBERSECURITY, COMM_PD_ETHICS)."
+question: "When the same practical question is answered by a local path vs a remote path, what can I observe about privacy, identity, and trust—without treating the model as a person who knows?"
+experience: "An answer appears; it is an inference output under identity and privacy constraints, not proof that a system 'understands.'"
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+status_tags:
+  - IMPLEMENTED_DIGITAL
+  - FIXTURE_VALIDATED
+  - PHYSICAL_PENDING
+  - EXTERNAL_DEPENDENCY
+status_notes:
+  IMPLEMENTED_DIGITAL: Browser worksheet + local CLI simulator ship in-repo.
+  FIXTURE_VALIDATED: Synthetic Route L / Route C transcripts and consent card validated by tests.
+  PHYSICAL_PENDING: No Device Quartet / on-device model measurements claimed.
+  EXTERNAL_DEPENDENCY: Live cloud assistants are optional; fixtures required for equity of completion.
+prerequisites:
+  concepts:
+    - data-model-inference
+    - local-vs-remote-ai
+    - authentication
+    - authorization
+    - data-lifecycle
+    - privacy-boundary
+    - least-privilege
+    - uncertainty
+  safety:
+    - Use only non-sensitive prompts; never paste real SSNs, health records, passwords, tokens, or private messages.
+    - Do not capture precise personal location or confidential employer data in screenshots.
+    - Redact account identifiers before sharing portfolio evidence.
+    - Security stays at concepts + UX symptoms; no exploit steps, scanning, or credential harvesting.
+  time_minutes: 50
+  equipment: []
+  software:
+    - modern web browser (optional interactive worksheet)
+    - Python 3 (optional local route)
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_trace: true
+  simulation: true
+  no_gpu_required: true
+  no_network_required: true
+  keyboard_only: true
+  color_not_sole_encoding: true
+prediction:
+  required: true
+  prompt: "Before comparing routes, predict which path will expose more data leaving the device, and which Stability Contract bound (locality, privacy lifecycle, uncertainty honesty) is most likely to break first."
+procedure:
+  checkpoints:
+    - Predict locality / privacy exposure for Route L vs Route C.
+    - Complete Route L (local simulator or fixture) and Route C (live optional or fixture).
+    - Fill comparison table with observations only.
+    - Complete one consent/trust card for a chosen route.
+    - Write dual-ledger note (human-trust feeling + technical-trust control).
+    - Record one uncertainty note (fluent-but-wrong / unverifiable / none observed with checks).
+  rollback:
+    - Close the worksheet/CLI.
+    - Delete accidental sensitive captures.
+    - Prefer fixture transcripts over live accounts with personal history.
+evidence:
+  required_artifacts:
+    - comparison table
+    - consent/trust card
+    - dual-ledger note
+    - uncertainty note
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - fixture transcripts are illustrative, not live product measurements
+    - wall-clock times captured by learners are n=1
+    - UI copy may claim locality without proving it
+  uncertainty:
+    - one comparison is not a benchmark
+    - '"network required = N" does not prove zero telemetry'
+    - fluent answers can still be wrong
+routes:
+  - id: route_l
+    name: Local / offline-capable path
+    kind: digital_local
+    entry: local_app/trust_sim.py
+    alt_entry: browser/index.html#route-l
+    fixture_fallback: fixtures/route_l_transcript.md
+    network_required: false
+    status: IMPLEMENTED_DIGITAL
+  - id: route_c
+    name: Cloud / remote assistant path
+    kind: remote_or_fixture
+    entry: browser/index.html#route-c
+    fixture_fallback: fixtures/route_c_transcript.md
+    network_required: optional
+    live_dependency: EXTERNAL_DEPENDENCY
+    status: FIXTURE_VALIDATED
+  - id: route_paper
+    name: No-device / print fixture path
+    kind: accessible_fallback
+    entry: fixtures/
+    network_required: false
+    status: FIXTURE_VALIDATED
+concepts_taught:
+  - data → model → inference
+  - local vs remote AI
+  - authentication vs authorization
+  - data lifecycle (collect / use / retain / share / delete-redact)
+  - privacy boundary
+  - security design principle (least privilege + psychological acceptability)
+  - human trust vs technical trust / uncertainty
+stability_bounds_to_mark:
+  - SC-CE5-L
+  - SC-CE5-P
+  - SC-CE5-U
+  - SC-CE5-I
+  - SC-CE5-Z
+  - SC-CE5-A
+  - SC-CE5-E
+portfolio:
+  outputs:
+    - README.md
+    - comparison_table.csv
+    - consent_trust_card.md
+    - dual_ledger.md
+    - uncertainty_note.md
+    - diagram.md
+    - reflection.md
+    - teach_back.md
+    - evidence/NOTE.md
+teach_back:
+  required: true
+a11y_privacy_safety: A11Y_PRIVACY_SAFETY.md
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
