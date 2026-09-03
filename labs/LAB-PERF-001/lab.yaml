@@ -1,0 +1,139 @@
+lab_id: LAB-PERF-001
+title: Make Feel Visible
+chapter: CH03
+version: "0.1.0"
+status:
+  - IMPLEMENTED_DIGITAL
+  - FIXTURE_FALLBACK_VIA_LAB_CMS_001
+  - PHYSICAL_PENDING
+question: >
+  Under two load conditions on a device I already own, what wall-clock and
+  commodity observations can I record so that felt slow / felt smooth becomes
+  evidence instead of vibes?
+experience: >
+  Continuous interaction (scroll, scrub, or app switch) under idle/light load
+  versus mild additional load; optional local-slowness neighbor via LAB-CMS-001.
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  - id: browser_feel_timeline
+    label: Browser feel timeline
+    path: routes/browser_feel.md
+    specialized_hardware: false
+  - id: os_monitor_neighbor
+    label: LAB-CMS-001 local diagnosis neighbor
+    path: ../LAB-CMS-001/routes/commodity_computer.md
+    specialized_hardware: false
+  - id: fixture_fallback
+    label: Offline fixtures via LAB-CMS-001
+    path: ../LAB-CMS-001/fixtures/
+    specialized_hardware: false
+fixture_available: true
+related_labs: [LAB-CMS-001, LAB-TAP-001]
+privacy_boundary:
+  - Do not capture passwords, tokens, private messages, or personal document contents.
+  - Redact filenames, account names, and thumbnails before sharing screenshots.
+  - Prefer synthetic pages; do not require cloud sync of lab evidence.
+safety_boundary:
+  - Mild intentional load only (extra tabs/documents).
+  - Stop if the device warns about heat or becomes uncomfortably hot.
+  - Do not install untrusted optimizer tools, disable security software, root, or jailbreak.
+  - No Device Quartet units or invented hardware timing budgets required.
+accessibility_notes:
+  - Keyboard-operable browser and OS monitor paths preferred where available.
+  - Text equivalents for screenshots/transcripts required in shared portfolios.
+  - Fixture fallback supports learners without admin rights or high-end hardware.
+  - Feel logs may be dictated; motion is not the only allowed evidence channel.
+observation_inference_boundary:
+  observation_allowed:
+    - Wall-clock for a fixed action rose from A to B under mild load
+    - Browser tool reported long tasks or resource waiting phases
+    - OS monitor CPU/memory/disk readings changed during the action
+    - Device felt warmer (qualitative)
+  inference_must_label:
+    - Claiming a specific root cause from one percentage
+    - Claiming thermal throttle at a numeric temperature without sensors
+    - Claiming universal product SLOs from classroom N
+    - Treating LAB-CMS-001 fixture numbers as measurements of the learner device
+portfolio_output:
+  directory: labs/LAB-PERF-001/portfolio/
+  outputs:
+    - README.md
+    - feel_log.md
+    - observation_table.csv
+    - feel_cause_map.md
+    - evidence/NOTE.md
+    - teach_back.md
+prerequisites:
+  concepts:
+    - perceived-performance
+    - latency
+    - jitter
+    - throughput
+    - contention
+  safety:
+    - Do not capture secrets or personal document contents.
+    - Mild load only; stop on thermal warnings.
+  time_minutes: 45
+  equipment: []
+  software:
+    - modern browser with developer tools and/or built-in OS monitor
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_trace: true
+  simulation: false
+  fixture_fallback: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict which axis (latency, jitter/stalls, throughput, availability) will dominate under load.
+    - Complete Route A baseline or Route B/C neighbor/fallback.
+    - Capture two-condition observations with observation vs inference labels.
+    - Produce feel→candidate-cause map without claiming unearned root cause.
+  rollback:
+    - Close extra tabs/documents opened for mild load.
+    - Delete or redact accidental personal captures.
+    - Stop immediately on thermal warnings.
+evidence:
+  required_artifacts:
+    - feel log
+    - two-condition observation table
+    - one scrubbed screenshot, log excerpt, or fixture ID
+    - teach-back
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - background processes
+    - battery vs plugged power
+    - thermal state and ambient conditions
+    - browser vs kernel instrumentation mismatch
+  uncertainty:
+    - one run is not a benchmark
+    - CH02 / LAB-TAP-001 timings are not universal product SLOs
+    - FIG-CE3-009 remains BLOCKED_EVIDENCE_REQUIRED; fixtures do not unblock it
+    - no invented Device Quartet performance budgets
+portfolio:
+  outputs:
+    - README.md
+    - feel log
+    - observation table
+    - feel→cause map
+    - evidence note
+    - teach-back
+teach_back:
+  required: true
+  prompts:
+    - Explain why “fast chip” and “feels fast” are not the same without jargon first.
+    - Separate latency from throughput in everyday language.
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+no_waike_module_id: true
+waike_adjacency_note: >
+  Adjacent only to SOFTWARE_BUILDER/lab_observability,
+  GENERAL_IT/lab_storage, GAME_DEV_INTERACTIVE/lab_playtest_metrics,
+  and EMBEDDED_PROTOTYPING/lab_ep_isr_vs_poll — not a minted WAIKE lab ID.

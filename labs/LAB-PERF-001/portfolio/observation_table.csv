@@ -1,0 +1,3 @@
+condition,action,wall_clock_seconds,feel_words,tool_notes,observation_or_inference
+idle_or_light,FIXED_ACTION,,,,"observation"
+mild_load,FIXED_ACTION,,,,"observation"
