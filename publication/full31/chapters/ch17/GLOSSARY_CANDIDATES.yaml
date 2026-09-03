@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH17
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: wifi
+  proposed_term: "wifi"
+  plain_language_definition: "Wireless LAN access based on IEEE 802.11 technologies."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: cellular
+  proposed_term: "cellular"
+  plain_language_definition: "Mobile wide-area radio access operated as a service."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: 5g
+  proposed_term: "5g"
+  plain_language_definition: "Fifth-generation 3GPP mobile system (survey sense)."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: 6g
+  proposed_term: "6g"
+  plain_language_definition: "Next-generation mobile research/standards roadmap after 5G."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: handover
+  proposed_term: "handover"
+  plain_language_definition: "Transfer of a connection between cells or access points."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: radio-access-network
+  proposed_term: "radio access network"
+  plain_language_definition: "Radio portion of a mobile network between device and core."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

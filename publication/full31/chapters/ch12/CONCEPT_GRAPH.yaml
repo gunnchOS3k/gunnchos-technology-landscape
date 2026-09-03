@@ -1,0 +1,149 @@
+schema_version: 1.0.0
+chapter_id: CH12
+edition_scope: full_edition
+concepts:
+- concept_id: operating-system
+  canonical_term: "Operating system"
+  plain_language_definition: "Software that mediates hardware resources and provides abstractions to programs."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: process
+  canonical_term: "Process"
+  plain_language_definition: "OS abstraction for a running program with its own address space and resources."
+  depends_on:
+  - operating-system
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: thread
+  canonical_term: "Thread"
+  plain_language_definition: "Unit of concurrent execution within a process sharing address space."
+  depends_on:
+  - process
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: scheduler
+  canonical_term: "Scheduler"
+  plain_language_definition: "OS component that decides which runnable entity gets CPU time when."
+  depends_on:
+  - process
+  - thread
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: context-switch
+  canonical_term: "Context switch"
+  plain_language_definition: "Saving/restoring CPU state when switching among runnable entities."
+  depends_on:
+  - scheduler
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: isolation
+  canonical_term: "Process isolation"
+  plain_language_definition: "Protection so one process cannot freely read/write another's memory."
+  depends_on:
+  - process
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: syscall
+  canonical_term: "System call"
+  plain_language_definition: "Controlled entry from user programs into kernel services."
+  depends_on:
+  - operating-system
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: concurrency-vs-parallelism
+  canonical_term: "Concurrency vs parallelism"
+  plain_language_definition: "Concurrency structures overlapping work; parallelism executes simultaneously on multiple cores."
+  depends_on:
+  - thread
+  - scheduler
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false

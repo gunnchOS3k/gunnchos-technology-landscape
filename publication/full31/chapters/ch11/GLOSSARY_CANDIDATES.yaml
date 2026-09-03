@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH11
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: firmware
+  proposed_term: "firmware"
+  plain_language_definition: "Early software that initializes hardware and often participates in boot trust."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: bootloader
+  proposed_term: "bootloader"
+  plain_language_definition: "Program that loads an OS image into memory and transfers control."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: secure-boot
+  proposed_term: "secure boot"
+  plain_language_definition: "Boot-time policy intending to run only authorized software images."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: root-of-trust
+  proposed_term: "root of trust"
+  plain_language_definition: "Foundation component whose integrity later trust depends on."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: attestation
+  proposed_term: "attestation"
+  plain_language_definition: "Process of producing evidence about a device's software state."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: recovery-mode
+  proposed_term: "recovery mode"
+  plain_language_definition: "Alternate boot environment used when primary boot fails."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

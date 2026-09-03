@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH13
+title: "Files, Databases, and Data Lifecycles"
+part: III
+prior_chapter_dependencies:
+- CH07
+- CH12
+ce_inheritance:
+- path: publication/preproduction/ce-03/
+  note: "Files/persistence themes; Experience B save/reopen"
+- path: publication/preproduction/ce-05/
+  note: "Data lifecycle / privacy boundary adjacency"
+- path: publication/preproduction/ce-01/
+  note: "State as ecosystem part"
+lab_inheritance:
+- lab_id: LAB-CMS-001
+  note: "Experience B persistence check adjacency."
+- lab_id: LAB-TRUST-001
+  note: "Consent/lifecycle card adjacency for retain/share/delete—do not reassign."
+later_chapter_dependencies:
+- CH14
+- CH15
+- CH21
+- CH24
+gate_dependencies:
+- "GATE_3 tone"
+human_dependencies:
+- "Privacy counsel-friendly deletion wording review"
+physical_dependencies:
+- "Quartet storage benches PHYSICAL_PENDING"
+device_quartet:
+  relevant: false
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH18
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: spectrum
+  proposed_term: "spectrum"
+  plain_language_definition: "Range of radio frequencies allocated and used for communication."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: antenna
+  proposed_term: "antenna"
+  plain_language_definition: "Device that radiates or receives radio waves."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: mimo
+  proposed_term: "mimo"
+  plain_language_definition: "Multiple-input multiple-output antenna technique."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: beamforming
+  proposed_term: "beamforming"
+  plain_language_definition: "Spatial focusing of transmit/receive energy."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: path-loss
+  proposed_term: "path loss"
+  plain_language_definition: "Reduction of signal strength along a propagation path."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: interference
+  proposed_term: "interference"
+  plain_language_definition: "Disturbance from unwanted signals or energy."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

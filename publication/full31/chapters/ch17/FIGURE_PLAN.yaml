@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+chapter_id: CH17
+figures:
+- provisional_id: FIG-CH17-001
+  figure_type: comparative_layers
+  pedagogical_purpose: "Wi-Fi AP path vs cellular RAN path vs Internet"
+  reader_should_notice: "Key teaching distinction for CH17."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH17-002
+  figure_type: timeline
+  pedagogical_purpose: "Cellular generations survey to 5G to 6G roadmap (clearly labeled roadmap)"
+  reader_should_notice: "Key teaching distinction for CH17."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH17-003
+  figure_type: sequence_diagram
+  pedagogical_purpose: "Wi-Fi to cellular transition during a walk"
+  reader_should_notice: "Key teaching distinction for CH17."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

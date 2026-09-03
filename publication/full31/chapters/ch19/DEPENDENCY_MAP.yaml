@@ -1,0 +1,31 @@
+schema_version: 1.0.0
+chapter_id: CH19
+title: "NTN and Service Continuity Across Ground, Air, and Space"
+part: IV
+prior_chapter_dependencies:
+- CH16
+- CH17
+- CH18
+ce_inheritance:
+- path: publication/preproduction/ce-04/
+  note: "Service continuity named; full NTN deferred to CH19"
+- path: publication/preproduction/ce-06/
+  note: "Connected ≠ usable under path changes"
+lab_inheritance:
+- lab_id: LAB-PKT-001
+  note: "Continuity framing adjacency only."
+- lab_id: LAB-CE06-001
+  note: "Cross-layer continuity diagnosis adjacency."
+later_chapter_dependencies:
+- CH20
+- CH25
+gate_dependencies:
+- "GATE_3"
+human_dependencies:
+- "Capability-class fact checking vs marketing"
+physical_dependencies:
+- "NTN demos PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED"
+device_quartet:
+  relevant: false
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

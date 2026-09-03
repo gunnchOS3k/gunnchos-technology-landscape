@@ -1,0 +1,37 @@
+schema_version: 1.0.0
+chapter_id: CH14
+title: "Applications, APIs, Runtimes, and User Interfaces"
+part: III
+prior_chapter_dependencies:
+- CH01
+- CH02
+- CH12
+- CH13
+ce_inheritance:
+- path: publication/preproduction/ce-01/
+  note: "App as cooperating parts; chrome vs content"
+- path: book/chapters/ch02/
+  note: "CH02 canonical method — link, do not duplicate"
+- path: publication/preproduction/ce-04/
+  note: "Remote API/path when network involved"
+lab_inheritance:
+- lab_id: LAB-TAP-001
+  note: "Method inheritance for tracing one interaction."
+- lab_id: LAB-SYS-001
+  note: "Ecosystem map adjacency from CE-1 candidate index."
+- lab_id: LAB-PKT-001
+  note: "When the API path leaves the device."
+later_chapter_dependencies:
+- CH15
+- CH16
+- CH26
+gate_dependencies:
+- "GATE_3 / CH02 prototype method"
+human_dependencies:
+- "A11y review of UI examples"
+physical_dependencies:
+- "Quartet UI metrics PHYSICAL_PENDING"
+device_quartet:
+  relevant: false
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

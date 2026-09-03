@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH20
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: latency
+  proposed_term: "latency"
+  plain_language_definition: "Time delay before a useful result is available."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: reliability
+  proposed_term: "reliability"
+  plain_language_definition: "Likelihood of correct completion over time."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: throughput
+  proposed_term: "throughput"
+  plain_language_definition: "Useful data volume per unit time."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: qoe
+  proposed_term: "qoe"
+  plain_language_definition: "Human-perceived quality of a technology experience."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: qos
+  proposed_term: "qos"
+  plain_language_definition: "Technical service quality characteristics."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: stability-contract
+  proposed_term: "stability contract"
+  plain_language_definition: "Set of concurrent conditions required for a usable experience."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

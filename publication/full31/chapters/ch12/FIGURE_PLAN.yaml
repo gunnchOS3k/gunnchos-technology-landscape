@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+chapter_id: CH12
+figures:
+- provisional_id: FIG-CH12-001
+  figure_type: system_map
+  pedagogical_purpose: "Apps to processes/threads to scheduler to CPU cores"
+  reader_should_notice: "Key teaching distinction for CH12."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH12-002
+  figure_type: sequence_diagram
+  pedagogical_purpose: "Context switch swimlane"
+  reader_should_notice: "Key teaching distinction for CH12."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH12-003
+  figure_type: comparative_layers
+  pedagogical_purpose: "Concurrency vs parallelism"
+  reader_should_notice: "Key teaching distinction for CH12."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: illustrative
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH12-004
+  figure_type: measured
+  pedagogical_purpose: "Optional learner OS-monitor snapshots — classroom n=1, not product SLO"
+  reader_should_notice: "Key teaching distinction for CH12."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: measured
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

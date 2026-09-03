@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH15
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: virtual-machine
+  proposed_term: "virtual machine"
+  plain_language_definition: "Emulated computer instance hosted by a hypervisor."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: container
+  proposed_term: "container"
+  plain_language_definition: "Isolated process packaging sharing a host kernel (typical)."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: hypervisor
+  proposed_term: "hypervisor"
+  plain_language_definition: "Software layer hosting virtual machines."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: cloud
+  proposed_term: "cloud"
+  plain_language_definition: "Network-accessible shared datacenter computing resources."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: edge-computing
+  proposed_term: "edge computing"
+  plain_language_definition: "Placement of compute/state closer to users or devices."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: orchestration
+  proposed_term: "orchestration"
+  plain_language_definition: "Automated deployment and management of many services."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."

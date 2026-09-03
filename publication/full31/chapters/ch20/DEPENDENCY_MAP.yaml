@@ -1,0 +1,41 @@
+schema_version: 1.0.0
+chapter_id: CH20
+title: "Latency, Reliability, QoE, and the Stability Contract"
+part: IV
+prior_chapter_dependencies:
+- CH03
+- CH12
+- CH16
+- CH17
+- CH18
+- CH19
+ce_inheritance:
+- path: publication/preproduction/ce-06/
+  note: "Primary inheritance — Stability Contract + capstone method"
+- path: publication/preproduction/ce-04/
+  note: "Latency ≠ reliability ≠ throughput"
+- path: publication/preproduction/ce-01/
+  note: "Ecosystem lens"
+lab_inheritance:
+- lab_id: LAB-CE06-001
+  note: "Primary synthesis lab adjacency (CE-6 / agent-e)."
+- lab_id: LAB-PKT-001
+  note: "Metric family prediction adjacency."
+- lab_id: LAB-TAP-001
+  note: "Observation vs inference craft."
+- lab_id: LAB-CMS-001
+  note: "Local conditions inside the contract."
+later_chapter_dependencies:
+- CH25
+- CH27
+- CH31
+gate_dependencies:
+- "GATE_3 — READER_EVIDENCE_PENDING strongly affects final CH20 prose tone"
+human_dependencies:
+- "CH02-REVIEW-R1 reader evidence before canonical draft depth"
+physical_dependencies:
+- "Quartet QoE PHYSICAL_PENDING"
+device_quartet:
+  relevant: true
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

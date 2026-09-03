@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+chapter_id: CH16
+figures:
+- provisional_id: FIG-CH16-001
+  figure_type: comparative_layers
+  pedagogical_purpose: "Local/LAN/Internet scopes — inherit FIG-CE4-001 intent"
+  reader_should_notice: "Key teaching distinction for CH16."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH16-002
+  figure_type: sequence_diagram
+  pedagogical_purpose: "Encapsulation sticky notes — inherit FIG-CE4-002"
+  reader_should_notice: "Key teaching distinction for CH16."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH16-003
+  figure_type: system_map
+  pedagogical_purpose: "DNS on critical path"
+  reader_should_notice: "Key teaching distinction for CH16."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: conceptual
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned
+- provisional_id: FIG-CH16-004
+  figure_type: measured
+  pedagogical_purpose: "Learner timing table from LAB-PKT-001 — n=1 classroom"
+  reader_should_notice: "Key teaching distinction for CH16."
+  data_or_evidence_source: "Conceptual/illustrative unless truth_classification is measured; no fabricated datasets."
+  truth_classification: measured
+  expected_geometry: "See pedagogical_purpose; prefer labeled layers over decorative charts."
+  accessibility_description_requirement: "Long description naming all labels and flows; color not sole encoding."
+  color_independent_encoding: true
+  dependencies: []
+  edition_scope: full_edition
+  production_status: planned

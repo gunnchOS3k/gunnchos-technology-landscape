@@ -1,0 +1,111 @@
+schema_version: 1.0.0
+chapter_id: CH19
+edition_scope: full_edition
+concepts:
+- concept_id: ntn
+  canonical_term: "Non-terrestrial network (NTN)"
+  plain_language_definition: "Network components using space/air platforms (satellites, HAPS, etc.)."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: terrestrial-network
+  canonical_term: "Terrestrial network"
+  plain_language_definition: "Ground-based access/core infrastructure."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: service-continuity
+  canonical_term: "Service continuity"
+  plain_language_definition: "Keeping the human experience working across path/access changes."
+  depends_on:
+  - ntn
+  - terrestrial-network
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: coverage-gap
+  canonical_term: "Coverage gap"
+  plain_language_definition: "Regions/times without usable terrestrial service."
+  depends_on:
+  - terrestrial-network
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: delay-regime
+  canonical_term: "Delay regime"
+  plain_language_definition: "Propagation and system delays that differ sharply for GEO vs LEO vs terrestrial."
+  depends_on:
+  - ntn
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: multi-path-continuity
+  canonical_term: "Multi-path continuity"
+  plain_language_definition: "Using multiple access paths to sustain experience."
+  depends_on:
+  - service-continuity
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false

@@ -1,0 +1,147 @@
+schema_version: 1.0.0
+chapter_id: CH15
+edition_scope: full_edition
+concepts:
+- concept_id: virtual-machine
+  canonical_term: "Virtual machine"
+  plain_language_definition: "Abstraction presenting a full machine interface via hypervisor isolation."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: container
+  canonical_term: "Container"
+  plain_language_definition: "Packaged process group sharing a kernel with namespace/cgroup isolation (typical)."
+  depends_on:
+  - virtual-machine
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: hypervisor
+  canonical_term: "Hypervisor"
+  plain_language_definition: "Software that hosts virtual machines."
+  depends_on:
+  - virtual-machine
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: image
+  canonical_term: "Image / packaging"
+  plain_language_definition: "Immutable-ish filesystem+metadata used to start containers/VMs."
+  depends_on:
+  - container
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: cloud
+  canonical_term: "Cloud (placement)"
+  plain_language_definition: "Remote shared datacenter resources accessed over a network—placement, not radio."
+  depends_on: []
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: edge
+  canonical_term: "Edge (placement)"
+  plain_language_definition: "Compute/state closer to users/devices than a distant region—still not Wi-Fi itself."
+  depends_on:
+  - cloud
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: multitenancy
+  canonical_term: "Multitenancy"
+  plain_language_definition: "Multiple customers sharing underlying hardware with isolation hopes."
+  depends_on:
+  - virtual-machine
+  - container
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false
+- concept_id: orchestration
+  canonical_term: "Orchestration (intro)"
+  plain_language_definition: "Automation placing/healing many containerized services."
+  depends_on:
+  - container
+  introduced_here: true
+  reinforced_here: false
+  reader_pathways:
+  - explorer
+  - operator
+  - builder
+  - engineer
+  - researcher
+  - educator
+  glossary_candidate: true
+  requires_citation: true
+  requires_figure: true
+  requires_lab: false

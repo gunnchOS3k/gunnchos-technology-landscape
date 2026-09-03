@@ -1,0 +1,36 @@
+schema_version: 1.0.0
+chapter_id: CH16
+title: "Packets, Protocols, Routing, and the Internet"
+part: IV
+prior_chapter_dependencies:
+- CH01
+- CH02
+- CH14
+- CH15
+ce_inheritance:
+- path: publication/preproduction/ce-04/
+  note: "Primary inheritance — packets, path, scopes"
+- path: publication/preproduction/ce-06/
+  note: "Connected ≠ usable"
+lab_inheritance:
+- lab_id: LAB-PKT-001
+  note: "Primary lab adjacency — Trace One Connected Action Across Path and Access (CE-4 / agent-c worktree)."
+- lab_id: LAB-TAP-001
+  note: "Method craft inheritance."
+- lab_id: LAB-CE06-001
+  note: "Forward synthesis adjacency."
+later_chapter_dependencies:
+- CH17
+- CH18
+- CH19
+- CH20
+gate_dependencies:
+- "GATE_3"
+human_dependencies:
+- "Editorial: never synonymize Wi-Fi/Internet/cloud"
+physical_dependencies:
+- "Drive-test / Quartet RF PHYSICAL_PENDING"
+device_quartet:
+  relevant: false
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

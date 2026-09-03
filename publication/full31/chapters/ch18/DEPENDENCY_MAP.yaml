@@ -1,0 +1,27 @@
+schema_version: 1.0.0
+chapter_id: CH18
+title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
+part: IV
+prior_chapter_dependencies:
+- CH05
+- CH16
+- CH17
+ce_inheritance:
+- path: publication/preproduction/ce-04/
+  note: "Qualitative radio conditions survey"
+lab_inheritance:
+- lab_id: LAB-PKT-001
+  note: "Experience symptoms only—no RF instruments required."
+later_chapter_dependencies:
+- CH19
+- CH20
+gate_dependencies:
+- "GATE_3"
+human_dependencies:
+- "Safety review: no TX labs"
+physical_dependencies:
+- "All measured RF PHYSICAL_PENDING"
+device_quartet:
+  relevant: true
+  truth: PHYSICAL_PENDING
+  note: "Research form factors only; see devices/quartet.yaml."

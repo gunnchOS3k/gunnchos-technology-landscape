@@ -1,0 +1,34 @@
+schema_version: 1.0.0
+chapter_id: CH16
+status: CANDIDATE_PREPRODUCTION
+terms:
+- term_id: packet
+  proposed_term: "packet"
+  plain_language_definition: "Bounded network data unit with headers for forwarding and delivery."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: routing
+  proposed_term: "routing"
+  plain_language_definition: "Process of selecting paths/next hops for packets."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: protocol
+  proposed_term: "protocol"
+  plain_language_definition: "Shared rules enabling communication."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: dns
+  proposed_term: "dns"
+  plain_language_definition: "System mapping human-readable names to addresses."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: encapsulation
+  proposed_term: "encapsulation"
+  plain_language_definition: "Adding layer-specific headers around payload."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
+- term_id: transport-layer
+  proposed_term: "transport layer"
+  plain_language_definition: "End-to-end communication layer above internetworking."
+  chapter_local: true
+  merge_risk: "Integrator must check glossary/glossary.yaml for collisions."
