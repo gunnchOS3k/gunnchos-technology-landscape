@@ -1,0 +1,82 @@
+lab_id: LAB-QUARTET-001
+title: Constraint Contrast Without Quartet Hardware
+chapter: CH04
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "For one familiar task, which constraint domains change across desk, mobile/docked, learn-to-build, and embodied form-factor lenses—without inventing physical Device Quartet measurements?"
+experience: "The same human goal can feel different when mobility, input surface, sensing proximity, or build workflow changes—even on commodity devices you already own."
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  paper_matrix: labs/LAB-QUARTET-001/fixtures/constraint_matrix_template.md
+  commodity_analogy: labs/LAB-QUARTET-001/fixtures/commodity_analogy_card.md
+  local_sheet: labs/LAB-QUARTET-001/local/matrix_sheet.py
+fixture_available: true
+evidence_artifacts:
+  - constraint_contrast_matrix
+  - observation_vs_inference_paragraph
+  - physical_pending_measurement_plan
+  - scrubbed_notes
+privacy_boundary:
+  - Do not capture passwords, tokens, private chats, biometric logs, or classmate PII.
+  - Prefer synthetic or public tasks; scrub identifiers before saving portfolio evidence.
+  - Do not record wearable/body-proximate sensor streams from other people.
+safety_boundary:
+  - No Device Quartet hardware required or assumed.
+  - No unsafe electrical, battery, RF, or thermal abuse testing.
+  - No root, jailbreak, or unauthorized device modification.
+  - Stop if any trial would put the learner or others at risk.
+accessibility_notes:
+  - Accept keyboard, switch, voice, and large-print matrix routes.
+  - Do not require color vision; encode form factors with labels and shapes, not color alone.
+  - Allow audio description of device posture instead of photos.
+observation_inference_boundary:
+  observation_examples:
+    - Task completed or stalled on a named commodity device
+    - Input method used (keyboard, touch, voice, switch)
+    - Whether the device was desk-stationary, handheld, or body-proximate
+    - Which published research-form-factor role was used as an analogy lens
+  inference_until_more_evidence:
+    - Quartet SKU battery life, wattage, thermals, FPS, RF, or latency scores
+    - Shipping product superiority of any Quartet form factor
+    - Causal claims from a single informal trial
+portfolio_output:
+  - portfolio/README.md
+  - portfolio/constraint_contrast_matrix.md
+  - portfolio/observation_vs_inference.md
+  - portfolio/physical_pending_plan.md
+  - portfolio/teach_back.md
+  - portfolio/evidence/NOTE.md
+prerequisites:
+  concepts: [learning-laboratory, research-form-factor, constraint-contrast, physical-pending, observation]
+  safety:
+    - Do not invent Device Quartet physical measurements.
+    - Do not pressure purchase of specialized hardware.
+  time_minutes: 45
+  equipment: []
+  software: [text editor or spreadsheet, optional Python 3 for local sheet helper]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Choose one familiar task and predict which form-factor lens will stress mobility most.
+    - Complete the Explorer matrix using published roles only (no fake specs).
+    - Map two commodity devices you already own onto two Quartet lenses by analogy.
+    - Separate observation from inference; mark all quantitative Quartet claims PHYSICAL_PENDING.
+  rollback:
+    - Close demos and discard accidental sensitive captures.
+    - Delete any invented numeric “SKU” fields from your matrix.
+waike_alignment:
+  exact: []
+  adjacent:
+    - GUNNCHOS_PRODUCT_LAB / lab_gpl_product_charter
+    - HARDWARE_ENGINEERING / lab_failure_diagnosis
+    - GUNNCHOS_PRODUCT_LAB / lab_gpl_compat_matrix
+  note: "Publication-owned lab; do not mint WAIKE Quartet physical module IDs."
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

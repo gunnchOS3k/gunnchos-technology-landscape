@@ -1,0 +1,20 @@
+figure_id: FIG-CH04-003
+title: "Constraint Matrix (Conceptual)"
+caption: "Conceptual matrix of power class, thermals class, I/O, mobility, and accessibility across four Quartet lenses; numeric EVT cells remain PHYSICAL_PENDING."
+alt_text: "Conceptual constraint matrix across four form factors and five constraint domains."
+text_equivalent: |
+  Table rows: Power class, Thermals class, I/O, Mobility, Accessibility.
+  Columns: Student 14.5, Handheld Hybrid, DS-XL Coder, Edge IO Wearables.
+  Cells contain qualitative role labels only; footer states PHYSICAL_PENDING for Quartet numeric claims.
+reading_order:
+  - "Header row of form factors"
+  - "Power class row"
+  - "Thermals class row"
+  - "I/O row"
+  - "Mobility row"
+  - "Accessibility row"
+  - "Footer PHYSICAL_PENDING honesty line"
+source: figures/ecosystem/fig-ch04-003-constraint-matrix.svg
+status: conceptual
+reviewer: pending-human-visual-review
+version: "0.1.0"
