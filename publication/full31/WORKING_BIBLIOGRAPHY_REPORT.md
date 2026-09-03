@@ -11,7 +11,7 @@
 | Metric | Value |
 |---|---:|
 | CE chapter-local source occurrences | 64 |
-| Full31 citation-token occurrences (CLAIM_PLAN + SOURCE_NEEDS) | 159 |
+| Full31 citation-token occurrences (CLAIM_PLAN + SOURCE_NEEDS) | 116 |
 | Unique bib keys (working set) | 63 |
 | Unique canonical works | 55 |
 | Same-work alias groups | 7 |
@@ -63,50 +63,7 @@ Blocked undated key `wcag22` occurrences in Full31 packets: **1** (must remap to
 ## Unresolved / non-bib tokens
 
 - Non-bib project/gate tokens: **4** (not promoted as bibliography entries)
-- Unresolved citation tokens (no working bib key): **59**
-  - `ch01` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch01` `SRC-CH01-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch01` `SRC-CH01-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch01` `SRC-CH01-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch01` `SRC-CH01-04` (bib_key_not_in_working_set; source_needs.table)
-  - `ch02` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch02` `SRC-CH02-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch02` `SRC-CH02-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch02` `SRC-CH02-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch03` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch03` `SRC-CH03-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch03` `SRC-CH03-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch03` `SRC-CH03-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch03` `SRC-CH03-04` (bib_key_not_in_working_set; source_needs.table)
-  - `ch04` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch04` `SRC-CH04-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch04` `SRC-CH04-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch04` `SRC-CH04-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch05` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch05` `SRC-CH05-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch05` `SRC-CH05-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch05` `SRC-CH05-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch06` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch06` `SRC-CH06-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch06` `SRC-CH06-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch06` `SRC-CH06-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch07` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch07` `SRC-CH07-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch07` `SRC-CH07-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch07` `SRC-CH07-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch08` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch08` `SRC-CH08-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch08` `SRC-CH08-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch08` `SRC-CH08-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch09` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch09` `SRC-CH09-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch09` `SRC-CH09-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch09` `SRC-CH09-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch10` `ID` (bib_key_not_in_working_set; source_needs.table)
-  - `ch10` `SRC-CH10-01` (bib_key_not_in_working_set; source_needs.table)
-  - `ch10` `SRC-CH10-02` (bib_key_not_in_working_set; source_needs.table)
-  - `ch10` `SRC-CH10-03` (bib_key_not_in_working_set; source_needs.table)
-  - `ch10` `SRC-CH10-04` (bib_key_not_in_working_set; source_needs.table)
+- Unresolved citation tokens (no working bib key): **16**
   - `ch21` `peer_eval_methods` (bib_key_not_in_working_set; source_needs.table)
   - `ch22` `edge_ml_sys_refs` (bib_key_not_in_working_set; source_needs.table)
   - `ch22` `sensing_privacy_std` (bib_key_not_in_working_set; source_needs.table)

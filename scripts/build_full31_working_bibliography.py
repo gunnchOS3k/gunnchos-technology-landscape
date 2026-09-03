@@ -73,6 +73,22 @@ NON_BIB_TOKENS = frozenset(
     }
 )
 
+# SOURCE_NEEDS table chrome / chapter-local need IDs (not bib keys).
+SOURCE_NEEDS_SKIP = frozenset(
+    {
+        "ID",
+        "Need",
+        "Key",
+        "Status",
+        "Class",
+        "Notes",
+        "Preferred",
+        "type",
+        "Status class",
+    }
+)
+SOURCE_NEED_ID_RE = re.compile(r"^SRC-CH\d{2}-\d+$", re.I)
+
 # Undated WCAG shortcut must never enter the working bib as a key.
 BLOCKED_KEYS = frozenset({"wcag22"})
 
@@ -125,7 +141,8 @@ def collect_full31_citation_tokens() -> list[dict[str, str]]:
         needs = ch_dir / "SOURCE_NEEDS.md"
         if needs.exists():
             text = needs.read_text(encoding="utf-8")
-            # Only harvest backtick tokens from Planned sources / Needs tables.
+            # Harvest citation-like first-column tokens from Planned sources tables.
+            # Skip Part I/II need-ID rows (SRC-CH##-##) and markdown table chrome.
             in_table = False
             for line in text.splitlines():
                 if re.search(r"planned sources|needs table", line, re.I):
@@ -141,20 +158,20 @@ def collect_full31_citation_tokens() -> list[dict[str, str]]:
                 if not cells:
                     continue
                 first = cells[0]
+                candidates: list[str] = []
                 for m in CITE_TOKEN_RE.finditer(first):
-                    rows.append(
-                        {
-                            "chapter": ch,
-                            "token": m.group(1),
-                            "origin": "source_needs.table",
-                        }
-                    )
-                # Also accept bare first-cell keys without backticks when simple.
+                    candidates.append(m.group(1))
                 if re.fullmatch(r"[A-Za-z][\w:-]*", first):
+                    candidates.append(first)
+                for token in candidates:
+                    if token in SOURCE_NEEDS_SKIP or SOURCE_NEED_ID_RE.match(token):
+                        continue
+                    if token.startswith("---"):
+                        continue
                     rows.append(
                         {
                             "chapter": ch,
-                            "token": first,
+                            "token": token,
                             "origin": "source_needs.table",
                         }
                     )
