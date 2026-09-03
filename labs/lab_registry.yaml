@@ -7,3 +7,12 @@ labs:
     extension_routes: [android]
     no_specialized_hardware: true
     status: draft
+  - lab_id: LAB-CE06-001
+    title: Explain, Measure, Improve, and Teach One Real Technology Experience
+    chapter: CE-6
+    path: labs/LAB-CE06-001
+    baseline_routes: [notebook_status_ui, fixture_offline]
+    extension_routes: [browser_stall_demo]
+    no_specialized_hardware: true
+    status: FIXTURE_VALIDATED
+    emit_spine: [Explain, Measure, Improve, Teach]
