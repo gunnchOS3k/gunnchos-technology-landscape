@@ -2,5 +2,66 @@ chapter_id: CH31
 chapter_number: 31
 title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
 part: VI
-status: outline
+status: draft
+manuscript_status: WORKING_DRAFT_COMPLETE
+human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
+publication_status: NOT_PUBLICATION_READY
 concept_edition: false
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+human_question:
+  - Using the book’s full model, what evidence can I gather to explain a real experience, measure what is observable, propose one improvement, and teach the ecosystem to someone else—without promoting fixtures to human validation?
+experience:
+  - connected-but-unusable send/submit/sync
+  - usable-for-some divergence across devices, links, or assistive paths
+  - green status chrome with stalled human outcomes
+reader_paths: [explorer, operator, builder, engineer, researcher, educator]
+systems: [emit-capstone, stability-contract, evidence-hierarchy, observation-vs-inference, teach-back]
+devices: [commodity-phone, commodity-computer, commodity-tablet]
+labs: [LAB-CE06-001]
+figures:
+  - FIG-CH31-001
+  - FIG-CH31-002
+  - FIG-CH31-003
+concepts:
+  introduced: [emit-spine, teach-back, evidence-limitations, fixture-validated-infrastructure, capstone-portfolio]
+  required: [stability-contract, observation-vs-inference, connected-not-usable, evidence-hierarchy]
+  related: [failure-domain, qoe, qos, equity, accessibility-path]
+waike:
+  mapped: true
+  courses: [reproducible_research]
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (capstones/, reproducible_research, COMM_PD_ETHICS/lab_pd_capstone, CLOUD_DEVOPS/lab_slo_budget, COMPUTER_NETWORKING/lab_datapath). No exact EMIT / Stability Contract / LAB-CE06-001 / TECHNOLOGY_LANDSCAPE_CAPSTONE WAIKE module."
+claims:
+  plan: publication/full31/chapters/ch31/CLAIM_PLAN.yaml
+ce_inheritance:
+  primary: publication/preproduction/ce-06/
+  synthesis: [publication/preproduction/ce-01/, publication/preproduction/ce-02/, publication/preproduction/ce-03/, publication/preproduction/ce-04/, publication/preproduction/ce-05/]
+capstone_artifact_fields:
+  - human_experience
+  - system_boundary
+  - components
+  - software_code_role
+  - network_role
+  - stability_contract
+  - observations
+  - inferences
+  - measurements
+  - evidence_limitations
+  - security_privacy_accessibility
+  - equity_societal_impact
+  - proposed_improvement
+  - teach_back
+  - portfolio_summary
+emit_spine: [Explain, Measure, Improve, Teach]
+lab_status:
+  LAB-CE06-001: FIXTURE_VALIDATED
+evidence_firewall:
+  illustrative_fixtures_are_human_evidence: false
+  fixture_validated_means_gate_3_human_validation: false
+  gate_3_claim: none
+bibliography_note: "Cite keys present in book/references/references.bib. Inherit CE-6 QoE/QoS vocabulary and WCAG intent citations; do not invent MOS studies or WAIKE EMIT module IDs."
+blockers:
+  - "GATE_3 reader evidence pending — never claim Gate 3 human validation from fixtures or illustrative EMIT examples"
+  - "Illustrative EMIT example under labs/LAB-CE06-001/fixtures/illustrative_example/ is teaching-only"
+  - "Optional Device Quartet form-factor claims remain PHYSICAL_PENDING"
+  - "No exact WAIKE EMIT module — publication-owned LAB-CE06-001 only"
