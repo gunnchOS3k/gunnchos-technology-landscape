@@ -1,0 +1,112 @@
+# LAB-BUS-001 — Name the Interconnect (CH10)
+# Commodity observation + diagram lab. No Quartet fabrication. No electrical abuse.
+lab_id: LAB-BUS-001
+title: Name the Interconnect
+chapter: CH10
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "When I plug in a familiar cable or accessory, what host, port, bus/protocol, board, and packaging layers am I depending on—and what can I observe without opening the device?"
+experience: "A cable seats, a device enumerates or fails politely, charging or data begins—or does not—without proving a single root cause from the outside alone."
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  observation_sheet: labs/LAB-BUS-001/fixtures/interconnect_worksheet.md
+  fixture_offline: labs/LAB-BUS-001/fixtures/commodity_path_card.md
+  scenario_card: labs/LAB-BUS-001/fixtures/scenario_card.md
+fixture_available: true
+evidence_artifacts:
+  - interconnect_path_diagram
+  - observation_vs_inference_table
+  - failure_domain_guess
+  - scrubbed_notes
+privacy_boundary:
+  - Do not capture serial numbers tied to personal identity, account tokens, or photos of classmates' devices without consent.
+  - Prefer a personally owned commodity cable/accessory or the supplied offline fixture.
+  - Scrub device names that reveal private accounts before portfolio save.
+safety_boundary:
+  - Do not open sealed devices, cut cables, or probe live conductors.
+  - Do not force connectors, bend pins, or use damaged/wet cables.
+  - No soldering, no bench power supplies, no battery puncture/heating, no Device Quartet fabrication.
+  - Stop if any step requires tools beyond visual inspection and ordinary plug/unplug of undamaged commodity gear.
+accessibility_notes:
+  - Accept verbal/audio description of connectors and seating feel instead of photos.
+  - Worksheet is structured text; do not require color-only labels.
+  - Keyboard-friendly markdown artifacts; large-print friendly.
+observation_inference_boundary:
+  observation_examples:
+    - Cable seated fully or not
+    - Host UI reported connected, charging, or error text
+    - Accessory LED or screen state changed or did not
+    - Time from seat to first visible host reaction (wall clock, coarse)
+  inference_until_more_evidence:
+    - The connector is dirty
+    - The cable is bad
+    - The bus protocol failed
+    - The board has a manufacturing defect
+    - Yield or factory test failed
+portfolio_output:
+  - portfolio/README.md
+  - portfolio/interconnect_path.md
+  - portfolio/observation_vs_inference.md
+  - portfolio/teach_back.md
+  - portfolio/evidence/NOTE.md
+prerequisites:
+  concepts: [port, bus, pcb, packaging, observation]
+  safety:
+    - Visual inspection and ordinary undamaged plug/unplug only.
+    - Prefer offline fixture if no safe commodity accessory is available.
+  time_minutes: 40
+  equipment: []
+  software: [text editor or notebook for diagram; optional host OS device list with no elevated privileges required]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict host ↔ port ↔ bus/protocol ↔ device path before plugging.
+    - Complete Explorer baseline with worksheet or offline fixture.
+    - Optionally compare two commodity paths (Operator) without disassembly.
+    - Separate observation from inference; no invented yield or EVT claims.
+  rollback:
+    - Unplug accessory gently.
+    - Delete accidental sensitive captures.
+evidence:
+  required_artifacts:
+    - labeled interconnect path diagram
+    - observation vs inference table
+    - scrubbed notes
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - wall-clock granularity
+    - opaque commodity firmware
+    - host UI messages that hide lower-layer causes
+  uncertainty:
+    - outside observation does not prove PCB layout or factory yield
+    - fixture path is illustrative teaching aid, not a measured EVT
+portfolio:
+  outputs:
+    - README.md
+    - interconnect path diagram
+    - observation vs inference
+    - teach-back paragraph
+    - evidence note
+teach_back:
+  required: true
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+waike_adjacency_note: >
+  Adjacent WAIKE digital_rc labs include HARDWARE_ENGINEERING/lab_bus_protocol
+  and lab_pcb_erc_drc, plus EMBEDDED_PROTOTYPING timing/flash neighbors. Those
+  are competency neighbors—not renamed LAB-BUS-001 IDs.
+not_a_duplicate_of: LAB-TAP-001
+distinction_from_other_labs: >
+  LAB-BUS-001 maps physical interconnect layers for a commodity plug-in path.
+  It does not time a UI tap (LAB-TAP-001) and does not require Quartet boards.
