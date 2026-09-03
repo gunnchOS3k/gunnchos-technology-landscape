@@ -72,3 +72,13 @@ labs:
     emit_spine: [Explain, Measure, Improve, Teach]
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  - lab_id: LAB-SIG-001
+    title: From Press to Logic
+    chapter: CH05
+    path: labs/LAB-SIG-001
+    baseline_routes: [simulation_fixture]
+    extension_routes: [supervised_commodity_kit]
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"

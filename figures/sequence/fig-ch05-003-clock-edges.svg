@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-labelledby="title003 desc003">
+  <title id="title003">FIG-CH05-003: Clock Edges Sequencing Decisions</title>
+  <desc id="desc003">Illustrative timing diagram. Top trace: clock with rising edges marked Sample. Bottom trace: data signal. Vertical dashed lines at selected rising edges. Status: Illustrative teaching sketch; no frequency claim.</desc>
+  <defs>
+    <marker id="arr503" markerWidth="7" markerHeight="7" refX="3" refY="6" orient="auto">
+      <path d="M0,0 L3,7 L6,0" fill="none" stroke="#111111" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="360" fill="#ffffff"/>
+  <rect x="1" y="1" width="1038" height="358" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="28" y="34" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#111111">FIG-CH05-003  Clock edges sequence sampling</text>
+  <text x="28" y="54" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#444444">Status: Illustrative · No invented GHz / period claims</text>
+
+  <text x="40" y="110" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Clock</text>
+  <path d="M120,130 L200,130 L200,90 L320,90 L320,130 L440,130 L440,90 L560,90 L560,130 L680,130 L680,90 L800,90 L800,130 L920,130" fill="none" stroke="#111111" stroke-width="2.5"/>
+
+  <line x1="200" y1="80" x2="200" y2="280" stroke="#555555" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="440" y1="80" x2="440" y2="280" stroke="#555555" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="680" y1="80" x2="680" y2="280" stroke="#555555" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <text x="200" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">sample</text>
+  <text x="440" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">sample</text>
+  <text x="680" y="74" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#111111">sample</text>
+
+  <text x="40" y="220" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Data</text>
+  <path d="M120,250 L260,250 L260,190 L500,190 L500,250 L740,250 L740,190 L920,190" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <text x="190" y="270" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">low</text>
+  <text x="370" y="178" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">high</text>
+  <text x="610" y="270" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">low</text>
+  <text x="820" y="178" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">high</text>
+
+  <text x="28" y="320" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: clock trace left’right; dashed markers; then data trace. Teaching sketch only.</text>
+  <text x="28" y="342" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Legend: solid = waveform · dashed vertical = rising-edge sample time</text>
+</svg>
