@@ -91,3 +91,25 @@ waike_adjacency:
   - lab_fspl_budget
   - lab_delay_spread
   - WIRELESS_6G
+
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - wall-clock granularity
+    - opaque vendor radio stacks
+    - multipath and congestion without instrumentation
+  uncertainty:
+    - fixture rows are illustrative
+    - learner observations are device-local, not product RF specs
+    - Quartet / project RF remains PHYSICAL_PENDING
+portfolio:
+  outputs:
+    - README.md
+    - observation_vs_inference.md
+    - radio_condition_diagram.md
+    - teach_back.md
+teach_back:
+  required: true

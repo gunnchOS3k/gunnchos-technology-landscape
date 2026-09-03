@@ -321,12 +321,13 @@ Related earlier chapters: packets/Internet path literacy (CH16), Wi-Fi/cellular/
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All three figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated satellite telemetry.
 
 ### FIG-CH19-001 — Ground / air / space path classes to a device
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** System map.
 - **Reader should notice.** Distinct terrestrial vs NTN path classes feeding one human task.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -334,6 +335,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH19-002 — Continuity vs icon-lit
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Comparative layers.
 - **Reader should notice.** Icon can remain lit while human-visible task fails (or narrow messaging succeeds).
 - **Truth class.** Conceptual.
@@ -341,6 +343,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH19-003 — Delay regime comparison (illustrative)
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Illustrative comparative bars.
 - **Reader should notice.** Regime classes differ; bars are not product measurements.
 - **Truth class.** Illustrative.

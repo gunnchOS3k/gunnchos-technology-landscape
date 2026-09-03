@@ -367,12 +367,13 @@ Related earlier chapters: packets/path (CH16), Wi-Fi/cellular access (CH17), sig
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated RF telemetry. No invented gain plots.
 
 ### FIG-CH18-001 — Device—obstacle—AP path loss cartoon
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Conceptual system map.
 - **Reader should notice.** Experience-first path from person/device through obstacles to AP/cell, with spectrum sharedness visible.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -380,6 +381,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH18-002 — Omni vs beam pattern intuition
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Conceptual comparison.
 - **Reader should notice.** Broad coverage vs preferential direction—qualitative only.
 - **Truth class.** Conceptual.
@@ -387,6 +389,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH18-003 — MIMO spatial streams metaphor
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Illustrative metaphor.
 - **Reader should notice.** Multiple spatial lanes as teaching image—not a chipset claim.
 - **Truth class.** Illustrative.
@@ -394,6 +397,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH18-004 — Quartet antenna placement with PHYSICAL_PENDING overlay
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Project-specific teaching overlay.
 - **Reader should notice.** Research form-factor discussion without measured RF evidence.
 - **Truth class.** Project-specific; **PHYSICAL_PENDING**.

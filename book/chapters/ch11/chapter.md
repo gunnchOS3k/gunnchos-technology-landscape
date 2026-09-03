@@ -388,12 +388,13 @@ Related earlier chapters: system lens (CH01), signals/power adjacency (CH05, CH0
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry or attestation quotes.
 
 ### FIG-CH11-001 — Power → firmware → bootloader → kernel → lock screen
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Sequence diagram.
 - **Reader should notice.** Ordered handoff plus optional recovery branch; lock screen is late.
 - **Truth class.** Conceptual.
@@ -401,6 +402,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-002 — Root of trust → verified stages
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** System map.
 - **Reader should notice.** Policy intent layers—not a product badge for the reader’s device.
 - **Truth class.** Conceptual.
@@ -408,6 +410,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-003 — Lock screen vs secure boot
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Comparative layers.
 - **Reader should notice.** User authentication vs software authenticity policy; authorization as a third idea.
 - **Truth class.** Illustrative.
@@ -415,6 +418,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-004 — Update failure → recovery → outcomes
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Failure map.
 - **Reader should notice.** Readable recovery vs unusable outcomes as Stability Contract teaching—not vendor brick statistics.
 - **Truth class.** Conceptual.

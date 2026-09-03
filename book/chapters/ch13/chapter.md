@@ -424,12 +424,13 @@ Related earlier chapters: memory and storage adjacency (CH07), OS abstractions (
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry. Device Quartet storage curves remain PHYSICAL_PENDING.
 
 ### FIG-CH13-001 — Data lifecycle (create → use → retain → share → delete/redact)
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Lifecycle diagram.
 - **Reader should notice.** Ordered stages with human stakes at delete/redact; policy vs mechanism note.
 - **Truth class.** Conceptual.
@@ -437,6 +438,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-002 — App buffer → filesystem → device media → optional cloud replica
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Comparative layers.
 - **Reader should notice.** Left-to-right durability stack; RAM/buffer distinct from durable media.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -444,6 +446,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-003 — Save click vs durability point
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Sequence diagram.
 - **Reader should notice.** Save UI precedes possible flush/fsync durability; failure branch for incomplete write.
 - **Truth class.** Illustrative.
@@ -451,6 +454,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-004 — File vs database responsibilities
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** System map / comparative.
 - **Reader should notice.** Named bytes vs structured store responsibilities; both can fail.
 - **Truth class.** Conceptual.

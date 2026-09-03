@@ -140,3 +140,16 @@ labs:
     contract: labs/contracts/ce_lab_contract.schema.yaml
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
     safety_note: "Observation-only; no unauthorized transmission, sniffing, jamming, or invented antenna gain/sensitivity."
+
+  - lab_id: LAB-BOOT-OBS-001
+    title: Observe Boot and Wake
+    chapter: CH11
+    path: labs/LAB-BOOT-OBS-001
+    baseline_routes: [commodity_observation, fixture_offline]
+    extension_routes: []
+    no_specialized_hardware: true
+    status: IMPLEMENTED_DIGITAL
+    fixture_available: true
+    contract: labs/contracts/ce_lab_contract.schema.yaml
+    gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+    safety_note: "Observation-only; no flashing, unlock/bypass, sealed teardown, or invented attestation/Quartet boot timings."

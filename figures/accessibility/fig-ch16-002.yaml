@@ -1,0 +1,18 @@
+figure_id: FIG-CH16-002
+title: "Encapsulation"
+caption: "Packet encapsulation layers as a teaching sequence. Truth: conceptual."
+alt_text: "FIG-CH16-002: App data through transport and network headers to link frame."
+text_equivalent: |
+  FIG-CH16-002 reading order: Application data, transport, network, link.
+reading_order:
+  - "Application data"
+  - "Transport"
+  - "Network"
+  - "Link"
+source: "figures/sequence/fig-ch16-002-encapsulation.svg"
+truth_classification: conceptual
+status: conceptual
+production_status: working_draft
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

@@ -373,7 +373,7 @@ Deeper entries, analogies labeled as analogies, and “not the same as” warnin
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All figures below are **conceptual** or **illustrative** unless a future revision cites a specific validated hardware release. Source preference: editable SVG in the publication repository. Production status: **planned** (prose references IDs until art lands).
 

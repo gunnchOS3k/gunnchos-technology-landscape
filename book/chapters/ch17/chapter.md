@@ -368,12 +368,13 @@ Related earlier chapters: packets/Internet (CH16), cloud/edge placement (CH15), 
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All three figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry or drive-test plots.
 
 ### FIG-CH17-001 — Wi-Fi AP path vs cellular RAN path vs Internet
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Comparative layers.
 - **Reader should notice.** Access technologies are on-ramps; Internet path and cloud/edge placement sit beyond; Wi-Fi ≠ cellular ≠ Internet.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -381,6 +382,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH17-002 — Generations survey to 5G to 6G roadmap
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Timeline.
 - **Reader should notice.** 5G as deployed-generation survey language vs **6G clearly labeled roadmap** (not consumer deployment fact).
 - **Truth class.** Illustrative.
@@ -388,6 +390,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH17-003 — Wi-Fi to cellular transition during a walk
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Sequence.
 - **Reader should notice.** Numbered mobility/offload steps plus a failure branch where icons stay lit.
 - **Truth class.** Conceptual.

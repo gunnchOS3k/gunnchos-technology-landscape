@@ -14,7 +14,7 @@ human_question:
 experience:
   - message shows sent then stalls
   - refresh fails DNS or hangs on connect
-  - "Internet broken" from the seat while icons stay green
+  - '"Internet broken" from the seat while icons stay green'
 reader_paths: [explorer, operator, builder, engineer, researcher, educator]
 systems: [packet, protocol, routing, dns, transport, lan, internet, access-network]
 devices: [commodity-computer, commodity-phone]

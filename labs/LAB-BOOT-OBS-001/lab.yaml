@@ -1,0 +1,111 @@
+# LAB-BOOT-OBS-001 — Observe Boot and Wake (CH11)
+# Observation-only boot/wake literacy. No flashing, unlocking, or bypass.
+lab_id: LAB-BOOT-OBS-001
+title: Observe Boot and Wake
+chapter: CH11
+version: "0.1.0"
+status: IMPLEMENTED_DIGITAL
+question: "When I power on or wake a commodity device I own—or study the offline fixture—what ordered stages can I observe, and what trust claims must stay inference or PHYSICAL_PENDING?"
+experience: "A logo spins, a lock screen appears, or recovery text shows—without proving secure-boot policy, attestation, or Quartet EVT timings from the outside alone."
+reader_levels: [explorer, operator, builder, engineer, researcher, educator]
+reader_paths:
+  baseline: explorer
+  extensions: [operator, builder, engineer, researcher, educator]
+routes:
+  observation_sheet: labs/LAB-BOOT-OBS-001/fixtures/observation_worksheet.md
+  fixture_offline: labs/LAB-BOOT-OBS-001/fixtures/boot_symptom_card.md
+  scenario_card: labs/LAB-BOOT-OBS-001/fixtures/scenario_card.md
+fixture_available: true
+evidence_artifacts:
+  - boot_chain_diagram
+  - observation_vs_inference_table
+  - scrubbed_notes
+  - teach_back
+privacy_boundary:
+  - Do not capture account tokens, recovery codes, or photos of classmates' devices without consent.
+  - Scrub serials and account identifiers before portfolio save.
+  - Prefer the offline fixture when a safe power-cycle is unavailable.
+safety_boundary:
+  - Do not open sealed devices.
+  - Do not flash, unlock, jailbreak, or bypass secure boot / recovery protections.
+  - Do not enter recovery modes you do not already know how to exit safely.
+  - No Device Quartet fabrication or invented attestation quotes.
+  - Stop if any step requires tools beyond ordinary power/wake on a device you own.
+accessibility_notes:
+  - Accept verbal/audio description of logos and banners instead of photos.
+  - Worksheet is structured text; do not require color-only status.
+  - Fixture route mandatory when live power-cycle is inequitable or unsafe.
+observation_inference_boundary:
+  observation_examples:
+    - Logo or spinner visible
+    - Lock screen appeared
+    - Update or recovery banner text already visible
+    - Coarse wall-clock band from power to usable UI
+  inference_until_more_evidence:
+    - Secure boot failed
+    - Attestation proved known-good firmware
+    - Quartet EVT boot timings
+    - Interrupted-update root cause without vendor docs
+portfolio_output:
+  - portfolio/README.md
+  - portfolio/boot_chain_diagram.md
+  - portfolio/observation_vs_inference.md
+  - portfolio/teach_back.md
+  - portfolio/evidence/NOTE.md
+prerequisites:
+  concepts: [firmware, bootloader, lock-screen, observation]
+  safety:
+    - Ordinary power/wake on owned commodity device, or offline fixture only.
+  time_minutes: 45
+  equipment: []
+  software: [text editor or notebook]
+accessible_routes:
+  no_specialized_hardware: true
+  supplied_fixture: true
+  simulation: true
+prediction:
+  required: true
+procedure:
+  checkpoints:
+    - Predict firmware → bootloader → OS → lock screen before power.
+    - Complete Explorer baseline with worksheet or offline fixture.
+    - Separate observation from inference; no flashing or invented PCR values.
+    - Mark Quartet boot claims PHYSICAL_PENDING; omit CLM-CH11-006 as sourced claim.
+  rollback:
+    - Return device to ordinary use.
+    - Delete accidental sensitive captures.
+evidence:
+  required_artifacts:
+    - labeled boot-chain diagram
+    - observation vs inference table
+    - teach-back paragraph
+interpretation:
+  observation_required: true
+  inference_required: true
+  causation_warning: true
+limits:
+  confounders:
+    - wall-clock granularity
+    - opaque vendor boot UI
+    - update banners without root-cause evidence
+  uncertainty:
+    - fixture cards are illustrative
+    - learner observations are device-local, not product secure-boot scores
+    - Quartet boot/firmware remains PHYSICAL_PENDING
+portfolio:
+  outputs:
+    - README.md
+    - boot_chain_diagram.md
+    - observation_vs_inference.md
+    - teach_back.md
+teach_back:
+  required: true
+truth_classification:
+  commodity_observation: learner_local_evidence
+  fixture_rows: ILLUSTRATIVE_FIXTURE
+  quartet_boot: PHYSICAL_PENDING
+gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+inherits:
+  - LAB-CMS-001
+waike_adjacency:
+  - lab_ep_zephyr_qemu

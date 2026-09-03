@@ -436,12 +436,13 @@ Related earlier chapters: experience-first path and observation craft (CH02/CH03
 
 ---
 
-## Figure references (planned embeds; accessibility metadata)
+## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured learner or lab evidence. No fabricated telemetry. No product SLO curves.
 
 ### FIG-CH20-001 — Stability Contract concurrent conditions
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Conceptual / hub-and-spoke (inherit CE-6 FIG-CE06-001 intent).
 - **Reader should notice.** Multiple concurrent conditions; any one can break the experience.
 - **Truth class.** Conceptual.
@@ -449,6 +450,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-002 — Latency vs reliability vs throughput
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Comparative layers.
 - **Reader should notice.** Three symptom families that must not collapse into one green probe.
 - **Truth class.** Conceptual.
@@ -456,6 +458,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-003 — QoE vs QoS vs ping
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Conceptual comparative.
 - **Reader should notice.** Human-facing QoE ≠ service QoS language ≠ one probe.
 - **Truth class.** Conceptual.
@@ -463,6 +466,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-004 — Learner portfolio timings labeled n=1
 
+- **Production status.** `draft-blocked` (no SVG embed in this draft).
 - **Type.** Measured-only when filled with learner data; otherwise illustrative placeholder.
 - **Reader should notice.** n=1 classroom evidence; fixture rows labeled `fixture`; not Gate 3 human validation.
 - **Truth class.** Measured *only* for learner-owned labeled timings; illustrative otherwise.

@@ -281,3 +281,91 @@ figures:
     accessibility: figures/accessibility/fig-ch10-004.yaml
     status: conceptual
     chapter: CH10
+
+  - figure_id: FIG-CH12-001
+    id: FIG-CH12-001
+    title: "Apps to processes, threads, scheduler, and CPU cores"
+    path: figures/architecture/fig-ch12-001-apps-to-scheduler.svg
+    accessibility: figures/accessibility/fig-ch12-001.yaml
+    status: conceptual
+    chapter: CH12
+
+  - figure_id: FIG-CH12-002
+    id: FIG-CH12-002
+    title: "Context-switch swimlane"
+    path: figures/architecture/fig-ch12-002-context-switch.svg
+    accessibility: figures/accessibility/fig-ch12-002.yaml
+    status: conceptual
+    chapter: CH12
+
+  - figure_id: FIG-CH12-003
+    id: FIG-CH12-003
+    title: "Concurrency versus parallelism"
+    path: figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg
+    accessibility: figures/accessibility/fig-ch12-003.yaml
+    status: illustrative
+    chapter: CH12
+
+  - figure_id: FIG-CH12-004
+    id: FIG-CH12-004
+    title: "Monitor snapshots classroom n=1"
+    path: figures/architecture/fig-ch12-004-monitor-snapshots.svg
+    accessibility: figures/accessibility/fig-ch12-004.yaml
+    status: illustrative
+    chapter: CH12
+
+  - figure_id: FIG-CH15-001
+    id: FIG-CH15-001
+    title: "VM versus container stacks"
+    path: figures/architecture/fig-ch15-001-vm-vs-container.svg
+    accessibility: figures/accessibility/fig-ch15-001.yaml
+    status: conceptual
+    chapter: CH15
+
+  - figure_id: FIG-CH15-002
+    id: FIG-CH15-002
+    title: "Access versus placement"
+    path: figures/ecosystem/fig-ch15-002-access-vs-placement.svg
+    accessibility: figures/accessibility/fig-ch15-002.yaml
+    status: conceptual
+    chapter: CH15
+
+  - figure_id: FIG-CH15-003
+    id: FIG-CH15-003
+    title: "Same app three ways"
+    path: figures/sequence/fig-ch15-003-same-app-three-ways.svg
+    accessibility: figures/accessibility/fig-ch15-003.yaml
+    status: illustrative
+    chapter: CH15
+
+  - figure_id: FIG-CH16-001
+    id: FIG-CH16-001
+    title: "Network scopes"
+    path: figures/ecosystem/fig-ch16-001-scopes.svg
+    accessibility: figures/accessibility/fig-ch16-001.yaml
+    status: conceptual
+    chapter: CH16
+
+  - figure_id: FIG-CH16-002
+    id: FIG-CH16-002
+    title: "Encapsulation"
+    path: figures/sequence/fig-ch16-002-encapsulation.svg
+    accessibility: figures/accessibility/fig-ch16-002.yaml
+    status: conceptual
+    chapter: CH16
+
+  - figure_id: FIG-CH16-003
+    id: FIG-CH16-003
+    title: "DNS on the critical path"
+    path: figures/architecture/fig-ch16-003-dns-critical-path.svg
+    accessibility: figures/accessibility/fig-ch16-003.yaml
+    status: conceptual
+    chapter: CH16
+
+  - figure_id: FIG-CH16-004
+    id: FIG-CH16-004
+    title: "Lab timing classroom n=1"
+    path: figures/measured/fig-ch16-004-lab-timing.svg
+    accessibility: figures/accessibility/fig-ch16-004.yaml
+    status: illustrative
+    chapter: CH16
