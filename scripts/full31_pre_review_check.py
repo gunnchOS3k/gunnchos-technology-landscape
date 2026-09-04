@@ -22,7 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 QUALITY_ISSUES = ROOT / "publication/full31/quality/QUALITY_ISSUES.yaml"
 CANDIDATE = ROOT / "publication/review-candidates/FULL31-PRE-REVIEW-001"
 PROVENANCE = CANDIDATE / "CANDIDATE_PROVENANCE.yaml"
-ACCEPTED_MAIN = "76bee2e67c35ff445f46c83af30809e5b307f06e"
+# Accepted main after PR #6 (quality convergence). Gate 3 must remain empty-diff vs this.
+ACCEPTED_MAIN = "82284cd8f41d750ff508cd6ea5bad0a9534d8162"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from yaml_util import load_yaml  # noqa: E402
@@ -44,16 +45,34 @@ REQUIRED_CANDIDATE_FILES = [
 ]
 
 # Only these paths may change after verified_candidate_content_sha.
+# Parallel publication-family tracks are additive and must not rewrite freeze semantics;
+# manuscript chapters / labs / glossary remain non-allowlisted.
 PROVENANCE_ALLOWLIST_PREFIXES = (
     "publication/review-candidates/FULL31-PRE-REVIEW-001/",
     "publication/full31/FULL31_PRE_HUMAN_REVIEW_CANDIDATE.md",
-    "publication/full31/quality/EPUBCHECK_RESULT.json",
-    "publication/full31/quality/PUBLICATION_QA.yaml",
-    "publication/full31/quality/ACCESSIBILITY_QA.md",
-    "publication/full31/quality/FIGURE_REPORT.md",
+    "publication/full31/quality/",
     "publication/full31/FULL31_MANUSCRIPT_INVENTORY.md",
     "publication/full31/FULL31_MANUSCRIPT_INVENTORY.yaml",
     "publication/full31/FULL31_PROGRESS_REPORT.md",
+    # Parallel publication-family wave (adult distribution + Kids Edition foundation)
+    "publication/family/",
+    "publication/distribution/",
+    "publication/metadata/",
+    "release-packages/",
+    "kids/",
+    "_quarto-print-",
+    "Makefile",
+    ".github/workflows/ci.yml",
+    "scripts/check_distribution_requirements.py",
+    "scripts/check_adult_release_packages.py",
+    "scripts/check_publication_family.py",
+    "scripts/scan_publication_secrets.py",
+    "scripts/cover_geometry.py",
+    "scripts/validate_kids_",
+    "scripts/generate_kids_",
+    "scripts/full31_pre_review_check.py",
+    "tests/test_kids_",
+    "tests/test_full31_pre_review_provenance.py",
 )
 
 

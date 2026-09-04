@@ -64,3 +64,10 @@ release-packages/adult/libraries/
 8. Final cover art (technical proof is not marketing art).
 9. Actual render + copy of FULL31 EPUB/PDF into package `artifacts/` before any upload.
 10. Human Gate 3 evidence remains pending and blocks publication claims.
+
+## Integrator refresh (2026-09-03)
+
+- Shared family registries landed under `publication/family/`.
+- Ceiling remains `ADULT_SUBMISSION_PACKAGE_PREPARED` — **not** `PUBLICATION_READY`.
+- `HUMAN_VALIDATED 0/31` · `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`.
+- No retailer submission; ISBN placeholders unchanged; secrets scan required in CI.

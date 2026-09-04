@@ -1,1318 +1,1579 @@
 # Kids scope and sequence — strands × age bands
-# Status: SCOPE_SEQUENCE draft for integrator; standards mostly NOT_YET_MAPPED
 # NOT CHILD-VALIDATED · NOT PUBLICATION-READY · NOT GLOBALLY_ALIGNED
+# Standards: integrator-wired ADJACENT/PROPOSED where honest
 
 meta:
   document_id: KIDS_SCOPE_AND_SEQUENCE
-  version: "0.1.0-prototype"
-  adult_main_sha: "82284cd8f41d750ff508cd6ea5bad0a9534d8162"
-  integration_base_sha: "ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
+  version: 0.1.0-prototype
+  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  integration_base_sha: ce9cc419841fa0588e30d8d917b048c72f8cc2c0
   spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
-  standards_atlas_status: NOT_YET_LANDED_USE_WIRE_IDS
+  standards_atlas_status: LANDED_WIRED_PARTIAL
   child_validation: NONE
   publication_ready: false
   alignment_claim: CROSSWALKED_AGAINST
-  unit_count_target_note: "One coherent unit per strand per age band (42). Not optimized for count."
-
+  unit_count_target_note: One coherent unit per strand per age band (42). Not optimized for count.
 units:
-  - unit_id: UNIT-BABY-ME-TECH-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Tap-Look Wait"
-    kids_strand: STRAND-ME-TECH
-    strand_name: "Me & Technology"
-    technology_concepts:
-      - KCON-CH02-ONE-TAP
-    developmental_precursors: "Notice change after contact"
-    learning_goal: "Notice change after contact"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-ME-TECH-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-ME-TECH-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH02-ONE-TAP
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH02-ONE-TAP
-
-  - unit_id: UNIT-TODDLER-ME-TECH-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "Touch Then Change"
-    kids_strand: STRAND-ME-TECH
-    strand_name: "Me & Technology"
-    technology_concepts:
-      - KCON-CH02-ONE-TAP
-    developmental_precursors: "Input then response"
-    learning_goal: "Input then response"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-ME-TECH-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-ME-TECH-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH02-ONE-TAP
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH02-ONE-TAP
-
-  - unit_id: UNIT-PRESCHOOL-ME-TECH-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Screen Is One Part"
-    kids_strand: STRAND-ME-TECH
-    strand_name: "Me & Technology"
-    technology_concepts:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-    developmental_precursors: "Outside vs inside"
-    learning_goal: "Outside vs inside"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-ME-TECH-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-ME-TECH-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-
-  - unit_id: UNIT-PREK-ME-TECH-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Systems Have Parts"
-    kids_strand: STRAND-ME-TECH
-    strand_name: "Me & Technology"
-    technology_concepts:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-    developmental_precursors: "Parts work together"
-    learning_goal: "Parts work together"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-ME-TECH-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-ME-TECH-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-
-  - unit_id: UNIT-ELEM1-ME-TECH-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Systems Not Screens"
-    kids_strand: STRAND-ME-TECH
-    strand_name: "Me & Technology"
-    technology_concepts:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-    developmental_precursors: "People+parts+rules"
-    learning_goal: "People+parts+rules"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-ME-TECH-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-ME-TECH-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-
-  - unit_id: UNIT-ELEM2-ME-TECH-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Experience Maps Systems"
-    kids_strand: STRAND-ME-TECH
-    strand_name: "Me & Technology"
-    technology_concepts:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-    developmental_precursors: "Visible to hidden path"
-    learning_goal: "Visible to hidden path"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-ME-TECH-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-ME-TECH-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-
-  - unit_id: UNIT-BABY-INSIDE-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Awake Device"
-    kids_strand: STRAND-INSIDE
-    strand_name: "Inside the Machine"
-    technology_concepts:
-      - KCON-CH11-BOOT-TRUST
-    developmental_precursors: "Dark to awake with adult"
-    learning_goal: "Dark to awake with adult"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-INSIDE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-INSIDE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH11-BOOT-TRUST
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH11-BOOT-TRUST
-
-  - unit_id: UNIT-TODDLER-INSIDE-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "Busy Then Ready"
-    kids_strand: STRAND-INSIDE
-    strand_name: "Inside the Machine"
-    technology_concepts:
-      - KCON-CH06-CPU-WORK
-    developmental_precursors: "Machine doing a job"
-    learning_goal: "Machine doing a job"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-INSIDE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-INSIDE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH06-CPU-WORK
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH06-CPU-WORK
-
-  - unit_id: UNIT-PRESCHOOL-INSIDE-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Parts We Can Name"
-    kids_strand: STRAND-INSIDE
-    strand_name: "Inside the Machine"
-    technology_concepts:
-      - KCON-CH04-DEVICE-FORMS
-    developmental_precursors: "Button, light, speaker"
-    learning_goal: "Button, light, speaker"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-INSIDE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-INSIDE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH04-DEVICE-FORMS
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH04-DEVICE-FORMS
-
-  - unit_id: UNIT-PREK-INSIDE-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Working Space vs Keep-Box"
-    kids_strand: STRAND-INSIDE
-    strand_name: "Inside the Machine"
-    technology_concepts:
-      - KCON-CH07-MEMORY-STORAGE
-    developmental_precursors: "Now vs later memory"
-    learning_goal: "Now vs later memory"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-INSIDE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-INSIDE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH07-MEMORY-STORAGE
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH07-MEMORY-STORAGE
-
-  - unit_id: UNIT-ELEM1-INSIDE-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Inside the Box"
-    kids_strand: STRAND-INSIDE
-    strand_name: "Inside the Machine"
-    technology_concepts:
-      - KCON-CH06-CPU-WORK
-    developmental_precursors: "CPU, memory, storage roles"
-    learning_goal: "CPU, memory, storage roles"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-INSIDE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-INSIDE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH06-CPU-WORK
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH06-CPU-WORK
-
-  - unit_id: UNIT-ELEM2-INSIDE-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Hardware Constraints"
-    kids_strand: STRAND-INSIDE
-    strand_name: "Inside the Machine"
-    technology_concepts:
-      - KCON-CH09-POWER-HEAT
-    developmental_precursors: "Power, heat, interconnect"
-    learning_goal: "Power, heat, interconnect"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-INSIDE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-INSIDE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH09-POWER-HEAT
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH09-POWER-HEAT
-
-  - unit_id: UNIT-BABY-INSTRUCTIONS-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Same Action Again"
-    kids_strand: STRAND-INSTRUCTIONS
-    strand_name: "Instructions & Code"
-    technology_concepts:
-      - KCON-CH02-ONE-TAP
-    developmental_precursors: "Repeat a known cause"
-    learning_goal: "Repeat a known cause"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-INSTRUCTIONS-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-INSTRUCTIONS-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH02-ONE-TAP
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH02-ONE-TAP
-
-  - unit_id: UNIT-TODDLER-INSTRUCTIONS-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "First Next"
-    kids_strand: STRAND-INSTRUCTIONS
-    strand_name: "Instructions & Code"
-    technology_concepts:
-      - KCON-CH02-ONE-TAP
-    developmental_precursors: "Order of two steps"
-    learning_goal: "Order of two steps"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-INSTRUCTIONS-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-INSTRUCTIONS-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH02-ONE-TAP
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH02-ONE-TAP
-
-  - unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Steps for a Helper"
-    kids_strand: STRAND-INSTRUCTIONS
-    strand_name: "Instructions & Code"
-    technology_concepts:
-      - KCON-CH14-APPS-UI
-    developmental_precursors: "First/next/last"
-    learning_goal: "First/next/last"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-INSTRUCTIONS-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH14-APPS-UI
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH14-APPS-UI
-
-  - unit_id: UNIT-PREK-INSTRUCTIONS-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Simple Algorithm"
-    kids_strand: STRAND-INSTRUCTIONS
-    strand_name: "Instructions & Code"
-    technology_concepts:
-      - KCON-CH14-APPS-UI
-    developmental_precursors: "Ordered instructions"
-    learning_goal: "Ordered instructions"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-INSTRUCTIONS-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-INSTRUCTIONS-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH14-APPS-UI
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH14-APPS-UI
-
-  - unit_id: UNIT-ELEM1-INSTRUCTIONS-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Hardware and Software"
-    kids_strand: STRAND-INSTRUCTIONS
-    strand_name: "Instructions & Code"
-    technology_concepts:
-      - KCON-CH12-OS-SCHEDULE
-    developmental_precursors: "Senses vs instructions"
-    learning_goal: "Senses vs instructions"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-INSTRUCTIONS-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-INSTRUCTIONS-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH12-OS-SCHEDULE
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH12-OS-SCHEDULE
-
-  - unit_id: UNIT-ELEM2-INSTRUCTIONS-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Events and Handlers"
-    kids_strand: STRAND-INSTRUCTIONS
-    strand_name: "Instructions & Code"
-    technology_concepts:
-      - KCON-CH14-APPS-UI
-    developmental_precursors: "Event loop idea"
-    learning_goal: "Event loop idea"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-INSTRUCTIONS-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-INSTRUCTIONS-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH14-APPS-UI
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH14-APPS-UI
-
-  - unit_id: UNIT-BABY-MESSAGES-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Here to There"
-    kids_strand: STRAND-MESSAGES
-    strand_name: "Messages & Connections"
-    technology_concepts:
-      - KCON-CH16-PACKETS-INTERNET
-    developmental_precursors: "Gesture across space"
-    learning_goal: "Gesture across space"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-MESSAGES-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-MESSAGES-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH16-PACKETS-INTERNET
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH16-PACKETS-INTERNET
-
-  - unit_id: UNIT-TODDLER-MESSAGES-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "Messages Move"
-    kids_strand: STRAND-MESSAGES
-    strand_name: "Messages & Connections"
-    technology_concepts:
-      - KCON-CH16-PACKETS-INTERNET
-    developmental_precursors: "Send a sound/look afar"
-    learning_goal: "Send a sound/look afar"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-MESSAGES-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-MESSAGES-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH16-PACKETS-INTERNET
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH16-PACKETS-INTERNET
-
-  - unit_id: UNIT-PRESCHOOL-MESSAGES-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Devices Send Messages"
-    kids_strand: STRAND-MESSAGES
-    strand_name: "Messages & Connections"
-    technology_concepts:
-      - KCON-CH16-PACKETS-INTERNET
-    developmental_precursors: "Local story of sending"
-    learning_goal: "Local story of sending"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-MESSAGES-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-MESSAGES-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH16-PACKETS-INTERNET
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH16-PACKETS-INTERNET
-
-  - unit_id: UNIT-PREK-MESSAGES-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Paths and Rules"
-    kids_strand: STRAND-MESSAGES
-    strand_name: "Messages & Connections"
-    technology_concepts:
-      - KCON-CH16-PACKETS-INTERNET
-    developmental_precursors: "Message follows a path"
-    learning_goal: "Message follows a path"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-MESSAGES-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-MESSAGES-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH16-PACKETS-INTERNET
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH16-PACKETS-INTERNET
-
-  - unit_id: UNIT-ELEM1-MESSAGES-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Networks Connect"
-    kids_strand: STRAND-MESSAGES
-    strand_name: "Messages & Connections"
-    technology_concepts:
-      - KCON-CH16-PACKETS-INTERNET
-    developmental_precursors: "Local vs network action"
-    learning_goal: "Local vs network action"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-MESSAGES-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-MESSAGES-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH16-PACKETS-INTERNET
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH16-PACKETS-INTERNET
-
-  - unit_id: UNIT-ELEM2-MESSAGES-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Packets and Routes"
-    kids_strand: STRAND-MESSAGES
-    strand_name: "Messages & Connections"
-    technology_concepts:
-      - KCON-CH16-PACKETS-INTERNET
-    developmental_precursors: "Represent/transmit/interpret"
-    learning_goal: "Represent/transmit/interpret"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-MESSAGES-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-MESSAGES-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH16-PACKETS-INTERNET
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH16-PACKETS-INTERNET
-
-  - unit_id: UNIT-BABY-DATA-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Familiar Pattern"
-    kids_strand: STRAND-DATA
-    strand_name: "Data & Intelligence"
-    technology_concepts:
-      - KCON-CH21-DATA-AI
-    developmental_precursors: "Known face/sound comfort"
-    learning_goal: "Known face/sound comfort"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-DATA-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-DATA-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH21-DATA-AI
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH21-DATA-AI
-
-  - unit_id: UNIT-TODDLER-DATA-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "Guess Can Be Wrong"
-    kids_strand: STRAND-DATA
-    strand_name: "Data & Intelligence"
-    technology_concepts:
-      - KCON-CH21-DATA-AI
-    developmental_precursors: "Pattern guess play"
-    learning_goal: "Pattern guess play"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-DATA-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-DATA-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH21-DATA-AI
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH21-DATA-AI
-
-  - unit_id: UNIT-PRESCHOOL-DATA-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Keep-Boxes Have Names"
-    kids_strand: STRAND-DATA
-    strand_name: "Data & Intelligence"
-    technology_concepts:
-      - KCON-CH13-FILES-DATA-LIFE
-    developmental_precursors: "Named keepsakes/files"
-    learning_goal: "Named keepsakes/files"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-DATA-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-DATA-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH13-FILES-DATA-LIFE
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH13-FILES-DATA-LIFE
-
-  - unit_id: UNIT-PREK-DATA-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Saved for Later"
-    kids_strand: STRAND-DATA
-    strand_name: "Data & Intelligence"
-    technology_concepts:
-      - KCON-CH13-FILES-DATA-LIFE
-    developmental_precursors: "Create/save/find"
-    learning_goal: "Create/save/find"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-DATA-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-DATA-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH13-FILES-DATA-LIFE
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH13-FILES-DATA-LIFE
-
-  - unit_id: UNIT-ELEM1-DATA-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Data Helps Predictions"
-    kids_strand: STRAND-DATA
-    strand_name: "Data & Intelligence"
-    technology_concepts:
-      - KCON-CH21-DATA-AI
-    developmental_precursors: "Examples then guess"
-    learning_goal: "Examples then guess"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-DATA-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-DATA-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH21-DATA-AI
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH21-DATA-AI
-
-  - unit_id: UNIT-ELEM2-DATA-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Models Need Checks"
-    kids_strand: STRAND-DATA
-    strand_name: "Data & Intelligence"
-    technology_concepts:
-      - KCON-CH21-DATA-AI
-    developmental_precursors: "AI can err; humans check"
-    learning_goal: "AI can err; humans check"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-DATA-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-DATA-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH21-DATA-AI
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH21-DATA-AI
-
-  - unit_id: UNIT-BABY-SAFE-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Grown-Up Only"
-    kids_strand: STRAND-SAFE
-    strand_name: "Safe, Private & Fair"
-    technology_concepts:
-      - KCON-CH23-CYBERSECURITY
-    developmental_precursors: "Some controls are adult"
-    learning_goal: "Some controls are adult"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-SAFE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-SAFE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH23-CYBERSECURITY
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH23-CYBERSECURITY
-
-  - unit_id: UNIT-TODDLER-SAFE-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "Ask Before New"
-    kids_strand: STRAND-SAFE
-    strand_name: "Safe, Private & Fair"
-    technology_concepts:
-      - KCON-CH23-CYBERSECURITY
-    developmental_precursors: "Stop and ask"
-    learning_goal: "Stop and ask"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-SAFE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-SAFE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH23-CYBERSECURITY
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH23-CYBERSECURITY
-
-  - unit_id: UNIT-PRESCHOOL-SAFE-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Private Means Not Everyone"
-    kids_strand: STRAND-SAFE
-    strand_name: "Safe, Private & Fair"
-    technology_concepts:
-      - KCON-CH24-PRIVACY-ETHICS
-    developmental_precursors: "Share with caregiver"
-    learning_goal: "Share with caregiver"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-SAFE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-SAFE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH24-PRIVACY-ETHICS
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH24-PRIVACY-ETHICS
-
-  - unit_id: UNIT-PREK-SAFE-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Safe or Private Choice"
-    kids_strand: STRAND-SAFE
-    strand_name: "Safe, Private & Fair"
-    technology_concepts:
-      - KCON-CH24-PRIVACY-ETHICS
-    developmental_precursors: "Choose the safer path"
-    learning_goal: "Choose the safer path"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-SAFE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-SAFE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH24-PRIVACY-ETHICS
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH24-PRIVACY-ETHICS
-
-  - unit_id: UNIT-ELEM1-SAFE-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Locks and Fair Access"
-    kids_strand: STRAND-SAFE
-    strand_name: "Safe, Private & Fair"
-    technology_concepts:
-      - KCON-CH24-PRIVACY-ETHICS
-    developmental_precursors: "Security + inclusion"
-    learning_goal: "Security + inclusion"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-SAFE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-SAFE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH24-PRIVACY-ETHICS
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH24-PRIVACY-ETHICS
-
-  - unit_id: UNIT-ELEM2-SAFE-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Privacy Security Equity"
-    kids_strand: STRAND-SAFE
-    strand_name: "Safe, Private & Fair"
-    technology_concepts:
-      - KCON-CH25-DIGITAL-EQUITY
-    developmental_precursors: "Chip-to-cloud duties"
-    learning_goal: "Chip-to-cloud duties"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-SAFE-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-SAFE-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH25-DIGITAL-EQUITY
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH25-DIGITAL-EQUITY
-
-  - unit_id: UNIT-BABY-BUILD-01
-    age_band: KIDS-BABY
-    age_guide: "0–18 months"
-    title: "Show What Happened"
-    kids_strand: STRAND-BUILD
-    strand_name: "Build, Test & Share"
-    technology_concepts:
-      - KCON-CH31-CAPSTONE-TEACH
-    developmental_precursors: "Gesture teach-back"
-    learning_goal: "Gesture teach-back"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-BABY-BUILD-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-BABY-BUILD-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH31-CAPSTONE-TEACH
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH31-CAPSTONE-TEACH
-
-  - unit_id: UNIT-TODDLER-BUILD-01
-    age_band: KIDS-TODDLER
-    age_guide: "18–36 months"
-    title: "Make and Try Again"
-    kids_strand: STRAND-BUILD
-    strand_name: "Build, Test & Share"
-    technology_concepts:
-      - KCON-CH26-SOFTWARE-VCS
-    developmental_precursors: "Build a tiny try"
-    learning_goal: "Build a tiny try"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-TODDLER-BUILD-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-TODDLER-BUILD-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH26-SOFTWARE-VCS
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH26-SOFTWARE-VCS
-
-  - unit_id: UNIT-PRESCHOOL-BUILD-01
-    age_band: KIDS-PRESCHOOL
-    age_guide: "3–4 years"
-    title: "Test Means Try and See"
-    kids_strand: STRAND-BUILD
-    strand_name: "Build, Test & Share"
-    technology_concepts:
-      - KCON-CH27-TEST-EVIDENCE
-    developmental_precursors: "Check the change"
-    learning_goal: "Check the change"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PRESCHOOL-BUILD-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PRESCHOOL-BUILD-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH27-TEST-EVIDENCE
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH27-TEST-EVIDENCE
-
-  - unit_id: UNIT-PREK-BUILD-01
-    age_band: KIDS-PREK
-    age_guide: "4–6 years"
-    title: "Build a Sequence"
-    kids_strand: STRAND-BUILD
-    strand_name: "Build, Test & Share"
-    technology_concepts:
-      - KCON-CH26-SOFTWARE-VCS
-    developmental_precursors: "Plan → try → fix"
-    learning_goal: "Plan → try → fix"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-PREK-BUILD-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-PREK-BUILD-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH26-SOFTWARE-VCS
-    caregiver_or_teacher_role: "Follow attention; name; wait; never force performance."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Observation/play notes only."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH26-SOFTWARE-VCS
-
-  - unit_id: UNIT-ELEM1-BUILD-01
-    age_band: KIDS-ELEM1
-    age_guide: "Kindergarten–Grade 2"
-    title: "Evidence Folder"
-    kids_strand: STRAND-BUILD
-    strand_name: "Build, Test & Share"
-    technology_concepts:
-      - KCON-CH30-CAREER-PORTFOLIO
-    developmental_precursors: "Keep process proof"
-    learning_goal: "Keep process proof"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM1-BUILD-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM1-BUILD-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH30-CAREER-PORTFOLIO
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH30-CAREER-PORTFOLIO
-
-  - unit_id: UNIT-ELEM2-BUILD-01
-    age_band: KIDS-ELEM2
-    age_guide: "Grades 3–5/6"
-    title: "Explain Measure Improve Teach"
-    kids_strand: STRAND-BUILD
-    strand_name: "Build, Test & Share"
-    technology_concepts:
-      - KCON-CH31-CAPSTONE-TEACH
-    developmental_precursors: "EMIT mini-capstone"
-    learning_goal: "EMIT mini-capstone"
-    global_standard_mappings:
-      - mapping_id: MAP-UNIT-ELEM2-BUILD-01
-        status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-UNIT-ELEM2-BUILD-01
-        note: "Sister standards atlas not landed; integrator maps official records later."
-    story_hook: "Open from a familiar household cause→effect moment."
-    vocabulary: []
-    visuals:
-      - production_style: style_neutral_prototype
-        concept_id: KCON-CH31-CAPSTONE-TEACH
-    caregiver_or_teacher_role: "Coach observe/predict/test; privacy first; portfolio not ranking."
-    try_it: "Short, safe, stoppable try matched to the band."
-    make_it: "Draw, build, or sequence a tiny artifact."
-    safety_and_fairness: "Adult mediation; no child data collection; inclusive routes."
-    misconceptions:
-      - see_spiral_entry
-    assessment_or_observation: "Low-stakes portfolio artifact; no ranking/diagnosis."
-    extension: "Optional household connection if interest continues."
-    adult_book_connections:
-      - KCON-CH31-CAPSTONE-TEACH
+- unit_id: UNIT-BABY-ME-TECH-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Tap-Look Wait
+  kids_strand: STRAND-ME-TECH
+  strand_name: Me & Technology
+  technology_concepts:
+  - KCON-CH02-ONE-TAP
+  developmental_precursors: Notice change after contact
+  learning_goal: Notice change after contact
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-ME-TECH-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-BABY-ME-TECH-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+      alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: &id001
+    - KE-TARGET-PLAY-INQUIRY
+    - KE-TARGET-ALGO-FOUNDATIONS
+    - KE-TARGET-SYSTEMS-STABILITY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH02-ONE-TAP
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH02-ONE-TAP
+- unit_id: UNIT-TODDLER-ME-TECH-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: Touch Then Change
+  kids_strand: STRAND-ME-TECH
+  strand_name: Me & Technology
+  technology_concepts:
+  - KCON-CH02-ONE-TAP
+  developmental_precursors: Input then response
+  learning_goal: Input then response
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-ME-TECH-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-TODDLER-ME-TECH-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+      alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH02-ONE-TAP
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH02-ONE-TAP
+- unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Screen Is One Part
+  kids_strand: STRAND-ME-TECH
+  strand_name: Me & Technology
+  technology_concepts:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  developmental_precursors: Outside vs inside
+  learning_goal: Outside vs inside
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-ME-TECH-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-ME-TECH-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: &id002
+    - KE-TARGET-PLAY-INQUIRY
+    - KE-TARGET-SYSTEMS-STABILITY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+- unit_id: UNIT-PREK-ME-TECH-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Systems Have Parts
+  kids_strand: STRAND-ME-TECH
+  strand_name: Me & Technology
+  technology_concepts:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  developmental_precursors: Parts work together
+  learning_goal: Parts work together
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-ME-TECH-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PREK-ME-TECH-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id002
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+- unit_id: UNIT-ELEM1-ME-TECH-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Systems Not Screens
+  kids_strand: STRAND-ME-TECH
+  strand_name: Me & Technology
+  technology_concepts:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  developmental_precursors: People+parts+rules
+  learning_goal: People+parts+rules
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-ME-TECH-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM1-ME-TECH-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id002
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+- unit_id: UNIT-ELEM2-ME-TECH-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Experience Maps Systems
+  kids_strand: STRAND-ME-TECH
+  strand_name: Me & Technology
+  technology_concepts:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  developmental_precursors: Visible to hidden path
+  learning_goal: Visible to hidden path
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-ME-TECH-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM2-ME-TECH-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id002
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+- unit_id: UNIT-BABY-INSIDE-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Awake Device
+  kids_strand: STRAND-INSIDE
+  strand_name: Inside the Machine
+  technology_concepts:
+  - KCON-CH11-BOOT-TRUST
+  developmental_precursors: Dark to awake with adult
+  learning_goal: Dark to awake with adult
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-INSIDE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-BABY-INSIDE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: &id003
+    - KE-TARGET-SCIENCE-PRACTICES
+    - KE-TARGET-SYSTEMS-STABILITY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH11-BOOT-TRUST
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH11-BOOT-TRUST
+- unit_id: UNIT-TODDLER-INSIDE-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: Busy Then Ready
+  kids_strand: STRAND-INSIDE
+  strand_name: Inside the Machine
+  technology_concepts:
+  - KCON-CH06-CPU-WORK
+  developmental_precursors: Machine doing a job
+  learning_goal: Machine doing a job
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-INSIDE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-TODDLER-INSIDE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id003
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH06-CPU-WORK
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH06-CPU-WORK
+- unit_id: UNIT-PRESCHOOL-INSIDE-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Parts We Can Name
+  kids_strand: STRAND-INSIDE
+  strand_name: Inside the Machine
+  technology_concepts:
+  - KCON-CH04-DEVICE-FORMS
+  developmental_precursors: Button, light, speaker
+  learning_goal: Button, light, speaker
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-INSIDE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-INSIDE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id003
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH04-DEVICE-FORMS
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH04-DEVICE-FORMS
+- unit_id: UNIT-PREK-INSIDE-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Working Space vs Keep-Box
+  kids_strand: STRAND-INSIDE
+  strand_name: Inside the Machine
+  technology_concepts:
+  - KCON-CH07-MEMORY-STORAGE
+  developmental_precursors: Now vs later memory
+  learning_goal: Now vs later memory
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-INSIDE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PREK-INSIDE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id003
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH07-MEMORY-STORAGE
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH07-MEMORY-STORAGE
+- unit_id: UNIT-ELEM1-INSIDE-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Inside the Box
+  kids_strand: STRAND-INSIDE
+  strand_name: Inside the Machine
+  technology_concepts:
+  - KCON-CH06-CPU-WORK
+  developmental_precursors: CPU, memory, storage roles
+  learning_goal: CPU, memory, storage roles
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-INSIDE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM1-INSIDE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id003
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH06-CPU-WORK
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH06-CPU-WORK
+- unit_id: UNIT-ELEM2-INSIDE-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Hardware Constraints
+  kids_strand: STRAND-INSIDE
+  strand_name: Inside the Machine
+  technology_concepts:
+  - KCON-CH09-POWER-HEAT
+  developmental_precursors: Power, heat, interconnect
+  learning_goal: Power, heat, interconnect
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-INSIDE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM2-INSIDE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id003
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH09-POWER-HEAT
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH09-POWER-HEAT
+- unit_id: UNIT-BABY-INSTRUCTIONS-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Same Action Again
+  kids_strand: STRAND-INSTRUCTIONS
+  strand_name: Instructions & Code
+  technology_concepts:
+  - KCON-CH02-ONE-TAP
+  developmental_precursors: Repeat a known cause
+  learning_goal: Repeat a known cause
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-INSTRUCTIONS-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-BABY-INSTRUCTIONS-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+      alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH02-ONE-TAP
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH02-ONE-TAP
+- unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: First Next
+  kids_strand: STRAND-INSTRUCTIONS
+  strand_name: Instructions & Code
+  technology_concepts:
+  - KCON-CH02-ONE-TAP
+  developmental_precursors: Order of two steps
+  learning_goal: Order of two steps
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-INSTRUCTIONS-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-TODDLER-INSTRUCTIONS-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+      'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+      'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+      alignment.
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH02-ONE-TAP
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH02-ONE-TAP
+- unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Steps for a Helper
+  kids_strand: STRAND-INSTRUCTIONS
+  strand_name: Instructions & Code
+  technology_concepts:
+  - KCON-CH14-APPS-UI
+  developmental_precursors: First/next/last
+  learning_goal: First/next/last
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-INSTRUCTIONS-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: &id004
+    - KE-TARGET-ALGO-FOUNDATIONS
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH14-APPS-UI
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH14-APPS-UI
+- unit_id: UNIT-PREK-INSTRUCTIONS-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Simple Algorithm
+  kids_strand: STRAND-INSTRUCTIONS
+  strand_name: Instructions & Code
+  technology_concepts:
+  - KCON-CH14-APPS-UI
+  developmental_precursors: Ordered instructions
+  learning_goal: Ordered instructions
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-INSTRUCTIONS-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PREK-INSTRUCTIONS-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id004
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH14-APPS-UI
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH14-APPS-UI
+- unit_id: UNIT-ELEM1-INSTRUCTIONS-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Hardware and Software
+  kids_strand: STRAND-INSTRUCTIONS
+  strand_name: Instructions & Code
+  technology_concepts:
+  - KCON-CH12-OS-SCHEDULE
+  developmental_precursors: Senses vs instructions
+  learning_goal: Senses vs instructions
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-INSTRUCTIONS-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM1-INSTRUCTIONS-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id004
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH12-OS-SCHEDULE
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH12-OS-SCHEDULE
+- unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Events and Handlers
+  kids_strand: STRAND-INSTRUCTIONS
+  strand_name: Instructions & Code
+  technology_concepts:
+  - KCON-CH14-APPS-UI
+  developmental_precursors: Event loop idea
+  learning_goal: Event loop idea
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-INSTRUCTIONS-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM2-INSTRUCTIONS-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id004
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH14-APPS-UI
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH14-APPS-UI
+- unit_id: UNIT-BABY-MESSAGES-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Here to There
+  kids_strand: STRAND-MESSAGES
+  strand_name: Messages & Connections
+  technology_concepts:
+  - KCON-CH16-PACKETS-INTERNET
+  developmental_precursors: Gesture across space
+  learning_goal: Gesture across space
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-MESSAGES-01
+    status: NOT_YET_MAPPED
+    wire_id: STD-WIRE-UNIT-BABY-MESSAGES-01
+    note: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+      with rationale.
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH16-PACKETS-INTERNET
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH16-PACKETS-INTERNET
+- unit_id: UNIT-TODDLER-MESSAGES-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: Messages Move
+  kids_strand: STRAND-MESSAGES
+  strand_name: Messages & Connections
+  technology_concepts:
+  - KCON-CH16-PACKETS-INTERNET
+  developmental_precursors: Send a sound/look afar
+  learning_goal: Send a sound/look afar
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-MESSAGES-01
+    status: NOT_YET_MAPPED
+    wire_id: STD-WIRE-UNIT-TODDLER-MESSAGES-01
+    note: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+      with rationale.
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH16-PACKETS-INTERNET
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH16-PACKETS-INTERNET
+- unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Devices Send Messages
+  kids_strand: STRAND-MESSAGES
+  strand_name: Messages & Connections
+  technology_concepts:
+  - KCON-CH16-PACKETS-INTERNET
+  developmental_precursors: Local story of sending
+  learning_goal: Local story of sending
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-MESSAGES-01
+    status: NOT_YET_MAPPED
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-MESSAGES-01
+    note: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+      with rationale.
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH16-PACKETS-INTERNET
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH16-PACKETS-INTERNET
+- unit_id: UNIT-PREK-MESSAGES-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Paths and Rules
+  kids_strand: STRAND-MESSAGES
+  strand_name: Messages & Connections
+  technology_concepts:
+  - KCON-CH16-PACKETS-INTERNET
+  developmental_precursors: Message follows a path
+  learning_goal: Message follows a path
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-MESSAGES-01
+    status: NOT_YET_MAPPED
+    wire_id: STD-WIRE-UNIT-PREK-MESSAGES-01
+    note: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+      with rationale.
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH16-PACKETS-INTERNET
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH16-PACKETS-INTERNET
+- unit_id: UNIT-ELEM1-MESSAGES-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Networks Connect
+  kids_strand: STRAND-MESSAGES
+  strand_name: Messages & Connections
+  technology_concepts:
+  - KCON-CH16-PACKETS-INTERNET
+  developmental_precursors: Local vs network action
+  learning_goal: Local vs network action
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-MESSAGES-01
+    status: NOT_YET_MAPPED
+    wire_id: STD-WIRE-UNIT-ELEM1-MESSAGES-01
+    note: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+      with rationale.
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH16-PACKETS-INTERNET
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH16-PACKETS-INTERNET
+- unit_id: UNIT-ELEM2-MESSAGES-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Packets and Routes
+  kids_strand: STRAND-MESSAGES
+  strand_name: Messages & Connections
+  technology_concepts:
+  - KCON-CH16-PACKETS-INTERNET
+  developmental_precursors: Represent/transmit/interpret
+  learning_goal: Represent/transmit/interpret
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-MESSAGES-01
+    status: NOT_YET_MAPPED
+    wire_id: STD-WIRE-UNIT-ELEM2-MESSAGES-01
+    note: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+      with rationale.
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH16-PACKETS-INTERNET
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH16-PACKETS-INTERNET
+- unit_id: UNIT-BABY-DATA-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Familiar Pattern
+  kids_strand: STRAND-DATA
+  strand_name: Data & Intelligence
+  technology_concepts:
+  - KCON-CH21-DATA-AI
+  developmental_precursors: Known face/sound comfort
+  learning_goal: Known face/sound comfort
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-DATA-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-BABY-DATA-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets: &id005
+    - KE-TARGET-DATA-PATTERNS
+    - KE-TARGET-AI-LITERACY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH21-DATA-AI
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH21-DATA-AI
+- unit_id: UNIT-TODDLER-DATA-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: Guess Can Be Wrong
+  kids_strand: STRAND-DATA
+  strand_name: Data & Intelligence
+  technology_concepts:
+  - KCON-CH21-DATA-AI
+  developmental_precursors: Pattern guess play
+  learning_goal: Pattern guess play
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-DATA-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-TODDLER-DATA-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets: *id005
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH21-DATA-AI
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH21-DATA-AI
+- unit_id: UNIT-PRESCHOOL-DATA-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Keep-Boxes Have Names
+  kids_strand: STRAND-DATA
+  strand_name: Data & Intelligence
+  technology_concepts:
+  - KCON-CH13-FILES-DATA-LIFE
+  developmental_precursors: Named keepsakes/files
+  learning_goal: Named keepsakes/files
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-DATA-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-DATA-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets: &id006
+    - KE-TARGET-DATA-PATTERNS
+    - KE-TARGET-AI-LITERACY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH13-FILES-DATA-LIFE
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH13-FILES-DATA-LIFE
+- unit_id: UNIT-PREK-DATA-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Saved for Later
+  kids_strand: STRAND-DATA
+  strand_name: Data & Intelligence
+  technology_concepts:
+  - KCON-CH13-FILES-DATA-LIFE
+  developmental_precursors: Create/save/find
+  learning_goal: Create/save/find
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-DATA-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PREK-DATA-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets: *id006
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH13-FILES-DATA-LIFE
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH13-FILES-DATA-LIFE
+- unit_id: UNIT-ELEM1-DATA-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Data Helps Predictions
+  kids_strand: STRAND-DATA
+  strand_name: Data & Intelligence
+  technology_concepts:
+  - KCON-CH21-DATA-AI
+  developmental_precursors: Examples then guess
+  learning_goal: Examples then guess
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-DATA-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM1-DATA-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets: *id005
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH21-DATA-AI
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH21-DATA-AI
+- unit_id: UNIT-ELEM2-DATA-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Models Need Checks
+  kids_strand: STRAND-DATA
+  strand_name: Data & Intelligence
+  technology_concepts:
+  - KCON-CH21-DATA-AI
+  developmental_precursors: AI can err; humans check
+  learning_goal: AI can err; humans check
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-DATA-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM2-DATA-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+      crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets: *id005
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH21-DATA-AI
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH21-DATA-AI
+- unit_id: UNIT-BABY-SAFE-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Grown-Up Only
+  kids_strand: STRAND-SAFE
+  strand_name: Safe, Private & Fair
+  technology_concepts:
+  - KCON-CH23-CYBERSECURITY
+  developmental_precursors: Some controls are adult
+  learning_goal: Some controls are adult
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-SAFE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-BABY-SAFE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE',
+      'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: &id007
+    - KE-TARGET-DIGITAL-CITIZENSHIP
+    - KE-TARGET-COMPUTING-SOCIETY
+    - KE-TARGET-SYSTEMS-STABILITY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH23-CYBERSECURITY
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH23-CYBERSECURITY
+- unit_id: UNIT-TODDLER-SAFE-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: Ask Before New
+  kids_strand: STRAND-SAFE
+  strand_name: Safe, Private & Fair
+  technology_concepts:
+  - KCON-CH23-CYBERSECURITY
+  developmental_precursors: Stop and ask
+  learning_goal: Stop and ask
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-SAFE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-TODDLER-SAFE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE',
+      'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id007
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH23-CYBERSECURITY
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH23-CYBERSECURITY
+- unit_id: UNIT-PRESCHOOL-SAFE-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Private Means Not Everyone
+  kids_strand: STRAND-SAFE
+  strand_name: Safe, Private & Fair
+  technology_concepts:
+  - KCON-CH24-PRIVACY-ETHICS
+  developmental_precursors: Share with caregiver
+  learning_goal: Share with caregiver
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-SAFE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-SAFE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    atlas_kids_targets: &id008
+    - KE-TARGET-DIGITAL-CITIZENSHIP
+    - KE-TARGET-COMPUTING-SOCIETY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH24-PRIVACY-ETHICS
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH24-PRIVACY-ETHICS
+- unit_id: UNIT-PREK-SAFE-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Safe or Private Choice
+  kids_strand: STRAND-SAFE
+  strand_name: Safe, Private & Fair
+  technology_concepts:
+  - KCON-CH24-PRIVACY-ETHICS
+  developmental_precursors: Choose the safer path
+  learning_goal: Choose the safer path
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-SAFE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PREK-SAFE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    atlas_kids_targets: *id008
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH24-PRIVACY-ETHICS
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH24-PRIVACY-ETHICS
+- unit_id: UNIT-ELEM1-SAFE-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Locks and Fair Access
+  kids_strand: STRAND-SAFE
+  strand_name: Safe, Private & Fair
+  technology_concepts:
+  - KCON-CH24-PRIVACY-ETHICS
+  developmental_precursors: Security + inclusion
+  learning_goal: Security + inclusion
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-SAFE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM1-SAFE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    atlas_kids_targets: *id008
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH24-PRIVACY-ETHICS
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH24-PRIVACY-ETHICS
+- unit_id: UNIT-ELEM2-SAFE-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Privacy Security Equity
+  kids_strand: STRAND-SAFE
+  strand_name: Safe, Private & Fair
+  technology_concepts:
+  - KCON-CH25-DIGITAL-EQUITY
+  developmental_precursors: Chip-to-cloud duties
+  learning_goal: Chip-to-cloud duties
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-SAFE-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM2-SAFE-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    atlas_kids_targets:
+    - KE-TARGET-DIGITAL-CITIZENSHIP
+    - KE-TARGET-COMPUTING-SOCIETY
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH25-DIGITAL-EQUITY
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH25-DIGITAL-EQUITY
+- unit_id: UNIT-BABY-BUILD-01
+  age_band: KIDS-BABY
+  age_guide: 0–18 months
+  title: Show What Happened
+  kids_strand: STRAND-BUILD
+  strand_name: Build, Test & Share
+  technology_concepts:
+  - KCON-CH31-CAPSTONE-TEACH
+  developmental_precursors: Gesture teach-back
+  learning_goal: Gesture teach-back
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-BABY-BUILD-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-BABY-BUILD-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: &id009
+    - KE-TARGET-SCIENCE-PRACTICES
+    - KE-TARGET-ALGO-FOUNDATIONS
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH31-CAPSTONE-TEACH
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH31-CAPSTONE-TEACH
+- unit_id: UNIT-TODDLER-BUILD-01
+  age_band: KIDS-TODDLER
+  age_guide: 18–36 months
+  title: Make and Try Again
+  kids_strand: STRAND-BUILD
+  strand_name: Build, Test & Share
+  technology_concepts:
+  - KCON-CH26-SOFTWARE-VCS
+  developmental_precursors: Build a tiny try
+  learning_goal: Build a tiny try
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-TODDLER-BUILD-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-TODDLER-BUILD-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id009
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH26-SOFTWARE-VCS
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH26-SOFTWARE-VCS
+- unit_id: UNIT-PRESCHOOL-BUILD-01
+  age_band: KIDS-PRESCHOOL
+  age_guide: 3–4 years
+  title: Test Means Try and See
+  kids_strand: STRAND-BUILD
+  strand_name: Build, Test & Share
+  technology_concepts:
+  - KCON-CH27-TEST-EVIDENCE
+  developmental_precursors: Check the change
+  learning_goal: Check the change
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PRESCHOOL-BUILD-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PRESCHOOL-BUILD-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id009
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH27-TEST-EVIDENCE
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH27-TEST-EVIDENCE
+- unit_id: UNIT-PREK-BUILD-01
+  age_band: KIDS-PREK
+  age_guide: 4–6 years
+  title: Build a Sequence
+  kids_strand: STRAND-BUILD
+  strand_name: Build, Test & Share
+  technology_concepts:
+  - KCON-CH26-SOFTWARE-VCS
+  developmental_precursors: Plan → try → fix
+  learning_goal: Plan → try → fix
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-PREK-BUILD-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-PREK-BUILD-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id009
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH26-SOFTWARE-VCS
+  caregiver_or_teacher_role: Follow attention; name; wait; never force performance.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Observation/play notes only.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH26-SOFTWARE-VCS
+- unit_id: UNIT-ELEM1-BUILD-01
+  age_band: KIDS-ELEM1
+  age_guide: Kindergarten–Grade 2
+  title: Evidence Folder
+  kids_strand: STRAND-BUILD
+  strand_name: Build, Test & Share
+  technology_concepts:
+  - KCON-CH30-CAREER-PORTFOLIO
+  developmental_precursors: Keep process proof
+  learning_goal: Keep process proof
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM1-BUILD-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM1-BUILD-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id009
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH30-CAREER-PORTFOLIO
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH30-CAREER-PORTFOLIO
+- unit_id: UNIT-ELEM2-BUILD-01
+  age_band: KIDS-ELEM2
+  age_guide: Grades 3–5/6
+  title: Explain Measure Improve Teach
+  kids_strand: STRAND-BUILD
+  strand_name: Build, Test & Share
+  technology_concepts:
+  - KCON-CH31-CAPSTONE-TEACH
+  developmental_precursors: EMIT mini-capstone
+  learning_goal: EMIT mini-capstone
+  global_standard_mappings:
+  - mapping_id: MAP-UNIT-ELEM2-BUILD-01
+    status: ADJACENT
+    wire_id: STD-WIRE-UNIT-ELEM2-BUILD-01
+    note: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+      editorial crosswalk only — not official alignment.
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id009
+  story_hook: Open from a familiar household cause→effect moment.
+  vocabulary: []
+  visuals:
+  - production_style: style_neutral_prototype
+    concept_id: KCON-CH31-CAPSTONE-TEACH
+  caregiver_or_teacher_role: Coach observe/predict/test; privacy first; portfolio not ranking.
+  try_it: Short, safe, stoppable try matched to the band.
+  make_it: Draw, build, or sequence a tiny artifact.
+  safety_and_fairness: Adult mediation; no child data collection; inclusive routes.
+  misconceptions:
+  - see_spiral_entry
+  assessment_or_observation: Low-stakes portfolio artifact; no ranking/diagnosis.
+  extension: Optional household connection if interest continues.
+  adult_book_connections:
+  - KCON-CH31-CAPSTONE-TEACH

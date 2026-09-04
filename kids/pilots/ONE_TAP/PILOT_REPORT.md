@@ -43,3 +43,9 @@ Sister standards atlas had not landed on integration at authoring time.
 - NOT PUBLICATION-READY
 - NOT GLOBALLY_ALIGNED
 - No EPUB in this wave (justified deferral)
+
+## Integrator standards wire (2026-09-03)
+
+- All six band `TRACEABILITY.yaml` files now carry editorial `ADJACENT`/`PROPOSED` atlas mapping IDs where honest.
+- Still **NOT CHILD-VALIDATED** · **NOT PUBLICATION-READY** · **NOT GLOBALLY_ALIGNED**.
+- `NO_CHILD_VALIDATION_EVIDENCE` remains in force.

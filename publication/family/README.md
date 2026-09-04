@@ -64,3 +64,14 @@ track-local **`READY_FOR_TRACK_REVIEW`** / ceiling
 - FULL31 pre-human-review candidate: `publication/full31/FULL31_PRE_HUMAN_REVIEW_CANDIDATE.md`
 - Review package: `publication/review-candidates/FULL31-PRE-REVIEW-001/`
 - Gate 3: `publication/gates/gate-3/`
+
+## Integrator status vocabulary (enforced)
+
+| Edition | Ceiling this wave | Explicitly not claimed |
+| --- | --- | --- |
+| Adult | `ADULT_SUBMISSION_PACKAGE_PREPARED` | `PUBLICATION_READY`, retailer-approved, Gate 3 PASS |
+| Kids | `KIDS_DEVELOPMENTAL_PROTOTYPE` / ready-for-human-review if justified | `PUBLICATION_READY`, child-validated, officially aligned |
+
+Rights: ARR manuscript; MIT scoped to tooling/labs; **no blanket CC**. Free price ≠ open license.
+
+See also: `PUBLICATION_FAMILY_REGISTRY.yaml`, `EXTERNAL_GATES.yaml`, `OWNER_DECISIONS_NEEDED.md`, `PARALLEL_PRODUCTION_STATUS.md`.

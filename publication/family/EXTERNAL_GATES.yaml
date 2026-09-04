@@ -1,0 +1,130 @@
+schema: publication.family.external_gates/v1
+generated_on: '2026-09-03'
+policy: Do not mark complete. All gates remain incomplete until human/owner action.
+gates:
+- gate_id: ADULT_READER_REVIEW
+  audience: adult_readers
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Explorer/Builder/Engineer/Educator cohorts
+- gate_id: ADULT_SME_REVIEW
+  audience: sme_editorial
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Subject-matter + editorial review
+- gate_id: ADULT_ACCESSIBILITY_REVIEW
+  audience: a11y_reviewer
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Human accessibility audit beyond EPUBCheck
+- gate_id: ADULT_PRINT_PROOF
+  audience: print_reviewer
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Physical proof copies for chosen trim/ink
+- gate_id: ADULT_VISUAL_REVIEW
+  audience: visual_reviewer
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Cover art + figure print legibility
+- gate_id: OWNER_IMPRINT_DECISION
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Legal publisher/imprint name
+- gate_id: OWNER_ISBN_PURCHASE
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Purchase format-level ISBNs; no fabricated numbers
+- gate_id: OWNER_RETAILER_ACCOUNTS
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Create retailer accounts — out of automation scope
+- gate_id: OWNER_TAX_PAYMENT_SETUP
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Tax/payment setup — never store secrets in repo
+- gate_id: OWNER_PRICE_APPROVAL
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Confirm free-access + print price strategy
+- gate_id: OWNER_PUBLICATION_APPROVAL
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Explicit go-live approval
+- gate_id: KIDS_CHILD_REVIEW
+  audience: child_readers
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Age-appropriate child review when ethically cleared
+- gate_id: KIDS_CAREGIVER_REVIEW
+  audience: caregivers
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Caregiver co-use review
+- gate_id: KIDS_EDUCATOR_REVIEW
+  audience: educators
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Early-years / primary educator review
+- gate_id: KIDS_CHILD_DEVELOPMENT_SME_REVIEW
+  audience: child_dev_sme
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Developmental appropriateness SME
+- gate_id: KIDS_ACCESSIBILITY_REVIEW
+  audience: a11y_reviewer
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Kids a11y including sensory/cognitive
+- gate_id: KIDS_CULTURAL_REVIEW
+  audience: cultural_reviewer
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Cultural/language sensitivity
+- gate_id: KIDS_TRANSLATION_REVIEW
+  audience: translators
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Non-English editions when commissioned
+- gate_id: KIDS_ILLUSTRATION_ART_DIRECTION
+  audience: art_director
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Final illustration direction beyond prototype SVG
+- gate_id: KIDS_PRINT_PROOF
+  audience: board_book_vendor
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Board-book / print vendor proofs
+- gate_id: KIDS_PUBLICATION_APPROVAL
+  audience: owner
+  status: INCOMPLETE
+  completed_on: null
+  evidence: null
+  notes: Kids edition go-live approval

@@ -1,26 +1,30 @@
-# Kids production status (curriculum / spiral / ONE TAP)
+# Kids production status
 
 ```
 KIDS DEVELOPMENTAL PROTOTYPE
 NOT CHILD-VALIDATED
 NOT PUBLICATION-READY
+NO_CHILD_VALIDATION_EVIDENCE
 ```
 
 ## Allowed state ceiling this wave
 
-`KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW` (candidate for integrator review)
+`KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW` (justified for human review only)
 
-**Not** `PUBLICATION_READY` · **Not** `GLOBALLY_ALIGNED` · **Not** child-validated
+**Not** `PUBLICATION_READY` · **Not** `GLOBALLY_ALIGNED` · **Not** child-validated · **Not** officially aligned
 
-## Track progress (K10 / B3–B4, B17–B18, B23–B30)
+## Track progress
 
 | Deliverable | Path | State |
 | --- | --- | --- |
-| Concept spiral 31→7 | `kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml` | DRAFT_INTERNAL |
-| Scope & sequence (42 units) | `kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml` | DRAFT_INTERNAL |
+| Concept spiral 31→7 | `kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml` | DEVELOPMENTAL_PROTOTYPE + partial standards wire |
+| Scope & sequence (42 units) | `kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml` | SCOPE_SEQUENCE_COMPLETE (draft) |
 | Story/learning cadence | `kids/cadence/STORY_LEARNING_CADENCE.md` | DRAFT_INTERNAL |
-| Caregiver co-learning | `kids/caregivers/CAREGIVER_GUIDE_SYSTEM.md` | DRAFT_INTERNAL |
+| Caregiver co-learning | `kids/caregivers/CAREGIVER_GUIDE_SYSTEM.md` | DRAFT_INTERNAL (single canonical file) |
 | Assessment philosophy | `kids/assessment/KIDS_ASSESSMENT_PHILOSOPHY.md` | DRAFT_INTERNAL |
+| Media/design systems | `kids/design/`, `kids/research/` | RESEARCH_FOUNDATION |
+| Standards atlas | `kids/standards/` | DRAFT_INTERNAL (atlas landed) |
+| Wire-hook registry | `kids/standards/WIRE_HOOK_REGISTRY.yaml` | 133 hooks (ADJACENT=120, PROPOSED=2, NOT_YET_MAPPED=11) |
 | ONE TAP pilot (6 bands) | `kids/pilots/ONE_TAP/` | DEVELOPMENTAL_PROTOTYPE |
 | WAIKE crosswalk | `kids/waike/KIDS_WAIKE_CROSSWALK.yaml` | DRAFT_INTERNAL |
 | Pilot report | `kids/pilots/ONE_TAP/PILOT_REPORT.md` | DRAFT_INTERNAL |
@@ -30,19 +34,13 @@ NOT PUBLICATION-READY
 | Ref | SHA |
 | --- | --- |
 | Accepted adult main | `82284cd8f41d750ff508cd6ea5bad0a9534d8162` |
-| Integration base | `ce9cc419841fa0588e30d8d917b048c72f8cc2c0` |
-| WAIKE main (reconfirmed) | `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0` |
+| Integration base (curriculum authoring) | `ce9cc419841fa0588e30d8d917b048c72f8cc2c0` |
+| WAIKE main (reconfirmed at curriculum land) | `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0` |
 
-## Gaps for integrator
+## Integrator adjudications
 
-1. Wire `STD-WIRE-*` / `NOT_YET_MAPPED` entries when standards atlas lands.
-2. Merge media/design visual system rules into figure metadata when K8/K9 land.
-3. Decide EPUB/fixed-layout per `KIDS_FORMAT_MATRIX` (not authored on this branch).
+1. Wired `STD-WIRE-*` to atlas `ADJACENT`/`PROPOSED` maps where honest; messaging/network grain remains `NOT_YET_MAPPED` with rationale.
+2. Official alignment claims = **none**.
+3. Caregiver guide: single file retained (no duplicate).
 4. Do not mark child validation complete.
-5. Preserve adult Gate 3 / FULL31 candidate provenance untouched.
-
-## Sister-agent dependency note
-
-- Authoring base was integration tip `ce9cc419841fa0588e30d8d917b048c72f8cc2c0`.
-- Media/design artifacts landed on integration before curriculum cherry-pick (`75a07f0`); caregiver guide merged with evidence cross-links.
-- Standards atlas still pending → spiral/scope/pilot standards remain `NOT_YET_MAPPED` with `STD-WIRE-*` IDs.
+5. Gate 3 / FULL31-PRE-REVIEW-001 provenance untouched (empty diff vs accepted main).

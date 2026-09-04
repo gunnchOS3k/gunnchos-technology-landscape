@@ -1,4 +1,6 @@
-# Page/spread traceability — ONE TAP / KIDS-BABY
+# ONE TAP pilot traceability — DEVELOPMENTAL_PROTOTYPE
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · editorial standards wire only
+
 meta:
   pilot: ONE_TAP
   age_band: KIDS-BABY
@@ -6,133 +8,332 @@ meta:
   rewrite_method: developmental_precursor_rewrite
   child_validation: NONE
 spreads:
-  - page_or_spread_id: ONE-TAP-BABY-S01
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Look together at a single lit control."
-    developmental_domain: "LOOK"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S01
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S01
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S02
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Notice hand near the surface."
-    developmental_domain: "POINT"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S02
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S02
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S03
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Finger meets surface."
-    developmental_domain: "NAME"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S03
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S03
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S04
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "A short wait before change."
-    developmental_domain: "WAIT"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S04
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S04
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S05
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Light or sound changes."
-    developmental_domain: "RESPOND"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S05
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S05
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S06
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Optional second touch."
-    developmental_domain: "REPEAT"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S06
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S06
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S07
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Repeat at same control."
-    developmental_domain: "NAME"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S07
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S07
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S08
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Move attention to another control."
-    developmental_domain: "LOOK"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S08
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S08
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S09
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Point to what changed."
-    developmental_domain: "POINT"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S09
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S09
-    word_count_estimate: 1
-  - page_or_spread_id: ONE-TAP-BABY-S10
-    concept_ids: [KCON-CH02-ONE-TAP]
-    learning_goal: "Session ends positively."
-    developmental_domain: "RESPOND"
-    standards:
-      - status: NOT_YET_MAPPED
-        wire_id: STD-WIRE-ONE-TAP-BABY-S10
-    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
-    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
-    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
-    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
-    figure_id: FIG-ONE-TAP-BABY-S10
-    word_count_estimate: 2
+- page_or_spread_id: ONE-TAP-BABY-S01
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Look together at a single lit control.
+  developmental_domain: LOOK
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S01
+    atlas_mapping_ids: &id001
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    atlas_kids_targets: &id002
+    - KE-TARGET-PLAY-INQUIRY
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S01
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S02
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Notice hand near the surface.
+  developmental_domain: POINT
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S02
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S02
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S03
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Finger meets surface.
+  developmental_domain: NAME
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S03
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S03
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S04
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: A short wait before change.
+  developmental_domain: WAIT
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S04
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S04
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S05
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Light or sound changes.
+  developmental_domain: RESPOND
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S05
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S05
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S06
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Optional second touch.
+  developmental_domain: REPEAT
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S06
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S06
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S07
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Repeat at same control.
+  developmental_domain: NAME
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S07
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S07
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S08
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Move attention to another control.
+  developmental_domain: LOOK
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S08
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S08
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S09
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Point to what changed.
+  developmental_domain: POINT
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S09
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S09
+  word_count_estimate: 1
+- page_or_spread_id: ONE-TAP-BABY-S10
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  learning_goal: Session ends positively.
+  developmental_domain: RESPOND
+  standards:
+  - status: ADJACENT
+    wire_id: STD-WIRE-ONE-TAP-BABY-S10
+    atlas_mapping_ids: *id001
+    atlas_kids_targets: *id002
+    note: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+      ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+  evidence_rules:
+  - no_fabricated_child_validation
+  - observation_over_diagnosis
+  visual_rules:
+  - one_focal_action
+  - low_clutter
+  - color_not_sole_encoding
+  - style_neutral_prototype
+  audio_rules:
+  - caregiver_read_aloud_optional
+  - no_mandatory_audio
+  - no_artificial_squeak_claims
+  safety_rules:
+  - easy_stop
+  - caregiver_mediation
+  - no_child_data_collection
+  - no_dark_patterns
+  figure_id: FIG-ONE-TAP-BABY-S10
+  word_count_estimate: 2

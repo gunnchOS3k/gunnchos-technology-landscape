@@ -72,3 +72,18 @@
 - Crosswalks are `CROSSWALKED_AGAINST` / `MAPPED_TO` / `INFORMED_BY` — **not** official alignment or certification.
 - Presence of a jurisdiction row ≠ completed research.
 - This track does not advance Gate 3 or PUBLICATION_READY counts.
+
+## Integrator wire-hook adjudication (2026-09-03)
+
+Curriculum/spiral/pilot `STD-WIRE-*` hooks were adjudicated against atlas records:
+
+| Status | Hooks |
+| --- | ---: |
+| ADJACENT | 120 |
+| PROPOSED | 2 |
+| NOT_YET_MAPPED | 11 |
+| **Total** | 133 |
+
+Official alignment claims: **0**.
+
+Registry: `kids/standards/WIRE_HOOK_REGISTRY.yaml`. Remaining `NOT_YET_MAPPED` primarily covers messaging/network grain (no honest kids_target yet) and version-unclear / translation-blocked frameworks.

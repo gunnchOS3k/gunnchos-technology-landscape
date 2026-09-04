@@ -70,8 +70,33 @@ jobs:
       - name: Full31 quality / continuity / terminology / pre-review
         run: |
           make full31-quality-audit
+          make full31-continuity-check
           make full31-terminology-check
           make full31-pre-review-check
+      - name: Publication-family checks
+        run: |
+          make publication-family-check
+          make distribution-requirements-check
+          make adult-release-package-check
+          make kids-standards-check
+          make kids-media-evidence-check
+          make kids-concept-spiral-check
+          make kids-pilot-check
+          make kids-epubcheck
+      - name: Confirm NO_CHILD_VALIDATION_EVIDENCE / NO_RETAILER_SUBMISSION
+        run: |
+          out="$(.venv/bin/python scripts/check_publication_family.py)"
+          echo "$out"
+          # Explicit honesty banners must remain in kids + adult package docs
+          grep -R -l "NOT CHILD-VALIDATED\|NO_CHILD_VALIDATION" kids/ >/dev/null
+          grep -R -l "NOT_SUBMITTED\|not submitted\|Do not actually upload\|HUMAN_CHECKLIST" release-packages/adult/ >/dev/null
+          # Fail if a child-validation evidence artifact name appears
+          if find kids \( -iname '*child*validat*' -o -iname '*reader*evidence*kids*' \) 2>/dev/null | grep -qi .; then
+            echo "Forbidden child-validation evidence artifact found" >&2
+            find kids \( -iname '*child*validat*' -o -iname '*reader*evidence*kids*' \)
+            exit 1
+          fi
+          echo "NO_CHILD_VALIDATION_EVIDENCE / package non-submission posture: OK"
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4
         with:

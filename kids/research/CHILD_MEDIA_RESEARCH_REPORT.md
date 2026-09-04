@@ -71,3 +71,9 @@ See `adopted_production_rules` and `rejected_unsupported_claims` in the evidence
 **Adopted:** high salience + low clutter; natural prosody; repetition with variation; participatory wait; caregiver co-use + print-first for youngest; moderate pacing; no compulsion patterns; stable original cast; color not sole encoding.
 
 **Rejected:** exact-color brain activation; 432 Hz intelligence; high-pitch-makes-learning; secret-frequency IQ songs; infant screen-attention-equals-learning; infinite personalized autoplay as education.
+
+## Integrator refresh (2026-09-03)
+
+- Evidence/source registers remain the authority for design adoption.
+- `make kids-media-evidence-check` is wired into family CI.
+- No child validation was fabricated; media findings inform prototype rules only.
