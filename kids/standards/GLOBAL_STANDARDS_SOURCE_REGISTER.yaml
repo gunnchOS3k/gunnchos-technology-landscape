@@ -2,7 +2,7 @@ schema: kids.standards.source_register/v1
 generated_on: '2026-09-03'
 track_status: DRAFT_INTERNAL
 retrieved_on_default: '2026-09-03'
-framework_count: 25
+framework_count: 37
 mandatory_baseline_count: 23
 frameworks:
 - framework_id: FW-UNESCO-AI-STUDENTS-2024
@@ -309,9 +309,9 @@ frameworks:
   title: 'Belonging, Being and Becoming: The Early Years Learning Framework for Australia (EYLF) V2.0'
   authority: Australian Government Department of Education (approved under NQF; ACECQA)
   framework_class: EARLY_YEARS
-  version: V2.0 (2022)
+  version: V2.0 (2022); AGDE for Ministerial Council; ACECQA approved under NQF
   effective_from: '2023'
-  url: https://www.acecqa.gov.au/nqf/national-law-regulations/approved-learning-frameworks
+  url: https://www.acecqa.gov.au/sites/default/files/2023-01/EYLF-2022-V2.0.pdf
   license_note: Australian Government copyright; summarize only
   retrieved_on: '2026-09-03'
   verification: OFFICIAL_VERIFIED
@@ -325,16 +325,18 @@ frameworks:
   - K4
   - K5
   summary_domains:
+  - Belonging Being Becoming
   - principles
   - practices
-  - learning outcomes
+  - five learning outcomes
+  - transition to school
   gaps: []
   mandatory_baseline: true
 - framework_id: FW-AU-AC-V9
   title: Australian Curriculum Version 9
   authority: Australian Curriculum, Assessment and Reporting Authority (ACARA)
   framework_class: PRIMARY
-  version: Version 9
+  version: Version 9.0 (endorsed 2022; state/territory implementation timelines vary)
   effective_from: '2022'
   url: https://v9.australiancurriculum.edu.au/
   license_note: ACARA copyright; summarize only
@@ -355,18 +357,21 @@ frameworks:
   - B9
   - B10
   summary_domains:
-  - Digital Technologies
+  - Digital Technologies (incl. privacy/security)
   - Science
   - general capabilities
+  - F–10 learning areas
   gaps: []
   mandatory_baseline: true
+  notes: 'States/territories determine take-up: NSW NESA adapt; VIC Victorian Curriculum F–10 v2; QLD/SA/TAS/ACT/NT
+    largely teach AC v9; WA Curriculum closely based.'
 - framework_id: FW-NZ-TE-WHARIKI
   title: 'Te Whāriki: Early childhood curriculum'
   authority: Ministry of Education (New Zealand)
   framework_class: EARLY_YEARS
-  version: 2017 refresh (commonly cited); confirm PDF edition on MoE portal when deep-mapping
+  version: 2017 (He whāriki mātauranga mō ngā mokopuna o Aotearoa); ISBN 978-0-478-16927-0 (online)
   effective_from: '2017'
-  url: https://www.education.govt.nz/early-childhood/teaching-and-learning/te-whariki
+  url: https://tewhariki.tahurangi.education.govt.nz/early-childhood-curriculum-home
   license_note: Crown copyright NZ; summarize only
   retrieved_on: '2026-09-03'
   verification: OFFICIAL_VERIFIED
@@ -385,19 +390,20 @@ frameworks:
   - strands
   - goals
   - learning outcomes
-  gaps:
-  - 'SOURCE_VERSION_UNCLEAR: pin exact PDF edition before clause-level work'
+  - bicultural curriculum
+  gaps: []
   mandatory_baseline: true
 - framework_id: FW-NZ-NZC
-  title: The New Zealand Curriculum (NZC)
+  title: The New Zealand Curriculum (NZC 2007 required) / Te Mātaiaho draft refresh
   authority: Ministry of Education (New Zealand)
   framework_class: PRIMARY
-  version: SOURCE_VERSION_UNCLEAR (refresh programme ongoing — pin before deep map)
+  version: NZC 2007 still the required framework; Te Mātaiaho draft Oct 2025 (consultation to 2026-04-24;
+    Gazette mid-2026 planned)
   effective_from: null
-  url: https://nzcurriculum.tki.org.nz/
+  url: https://newzealandcurriculum.tahurangi.education.govt.nz/
   license_note: Crown copyright NZ
   retrieved_on: '2026-09-03'
-  verification: IDENTIFIED
+  verification: OFFICIAL_VERIFIED
   jurisdiction_ids:
   - JUR-NZ
   language:
@@ -415,10 +421,10 @@ frameworks:
   - B10
   summary_domains:
   - key competencies
-  - learning areas including technology
+  - learning areas including technology / hāngarau
+  - Te Mātaiaho knowledge-rich sequencing (draft)
   gaps:
-  - SOURCE_VERSION_UNCLEAR
-  - NOT_YET_MAPPED
+  - Te Mātaiaho still draft at retrieval — do not treat draft learning-area text as gazetted
   mandatory_baseline: true
 - framework_id: FW-FI-ECEC
   title: National core curriculum for early childhood education and care (Finland)
@@ -516,9 +522,9 @@ frameworks:
   title: National Curriculum Framework for the Foundational Stage
   authority: NCERT / Ministry of Education (India)
   framework_class: EARLY_YEARS
-  version: NCF-FS (NEP 2020 foundational stage)
+  version: NCF-FS 2022 (20 October 2022 PDF)
   effective_from: '2022'
-  url: https://ncert.nic.in/
+  url: https://ncert.nic.in/pdf/NCF_for_Foundational_Stage_20_October_2022.pdf
   license_note: Government of India / NCERT copyright; summarize only
   retrieved_on: '2026-09-03'
   verification: OFFICIAL_VERIFIED
@@ -537,9 +543,9 @@ frameworks:
   summary_domains:
   - foundational literacy and numeracy
   - play-based learning
+  - ages 3–8 Foundational Stage
   - holistic development
-  gaps:
-  - 'SOURCE_VERSION_UNCLEAR: pin exact PDF edition hash before clause-level work'
+  gaps: []
   mandatory_baseline: true
 - framework_id: FW-SG-NEL-2022
   title: Nurturing Early Learners (NEL) Framework 2022
@@ -566,15 +572,15 @@ frameworks:
   gaps: []
   mandatory_baseline: true
 - framework_id: FW-JP-MEXT-COS
-  title: Courses of Study (kindergarten / elementary) — MEXT
+  title: Courses of Study — Kindergarten guidelines + Elementary (MEXT Heisei 29 revision)
   authority: Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan
   framework_class: PRIMARY
-  version: SOURCE_VERSION_UNCLEAR
-  effective_from: null
-  url: https://www.mext.go.jp/en/
+  version: 平成29年改訂 (2017 notification); elementary fully in force from 2020 (令和2)
+  effective_from: '2018-04-01'
+  url: https://www.mext.go.jp/a_menu/shotou/new-cs/1384661.htm
   license_note: MEXT copyright; Japanese primary texts
   retrieved_on: '2026-09-03'
-  verification: IDENTIFIED
+  verification: OFFICIAL_VERIFIED
   jurisdiction_ids:
   - JUR-JP
   language:
@@ -593,11 +599,12 @@ frameworks:
   - B9
   - B10
   summary_domains:
-  - kindergarten guidelines
-  - elementary Courses of Study
+  - 幼稚園教育要領 five areas
+  - 小学校学習指導要領 subjects + ICT
+  - three pillars of qualities/abilities
+  - proactive interactive deep learning
   gaps:
   - TRANSLATION_REQUIRED
-  - SOURCE_VERSION_UNCLEAR
   mandatory_baseline: true
 - framework_id: FW-CA-ON-KINDERGARTEN-2016
   title: The Kindergarten Program (Ontario)
@@ -628,9 +635,10 @@ frameworks:
   title: Curriculum and Assessment Policy Statement (CAPS)
   authority: Department of Basic Education (South Africa)
   framework_class: PRIMARY
-  version: CAPS (subject statements; pin per subject when mapping)
+  version: National Curriculum Statement Grades R–12 / CAPS subject statements (Foundation + Intermediate
+    portals)
   effective_from: null
-  url: https://www.education.gov.za/
+  url: https://www.education.gov.za/Curriculum/CurriculumAssessmentPolicyStatements(CAPS).aspx
   license_note: DBE copyright; summarize only
   retrieved_on: '2026-09-03'
   verification: OFFICIAL_VERIFIED
@@ -650,20 +658,23 @@ frameworks:
   - B10
   summary_domains:
   - Foundation Phase
-  - Intermediate Phase subject policies
+  - Intermediate Phase
+  - subject CAPS policies
+  - assessment policy
   gaps:
-  - 'SOURCE_VERSION_UNCLEAR: pin per-subject CAPS PDF editions'
+  - pin individual subject PDF editions when mapping clause-level
   mandatory_baseline: true
 - framework_id: FW-ZA-CODING-ROBOTICS
-  title: Coding and Robotics curriculum (South Africa)
+  title: CAPS Coding and Robotics (Grades R–9)
   authority: Department of Basic Education (South Africa)
   framework_class: K12_CS
-  version: SOURCE_VERSION_UNCLEAR
+  version: CAPS Coding & Robotics Grades R–9 (Umalusi-approved path Feb 2024 per DBE reporting; Foundation
+    Phase rollout programme; draft PDFs on education.gov.za)
   effective_from: null
-  url: https://www.education.gov.za/
+  url: https://www.education.gov.za/DraftCapsCodingRobotics.aspx
   license_note: DBE copyright
   retrieved_on: '2026-09-03'
-  verification: IDENTIFIED
+  verification: OFFICIAL_VERIFIED
   jurisdiction_ids:
   - JUR-ZA
   language:
@@ -679,12 +690,14 @@ frameworks:
   - B9
   - B10
   summary_domains:
-  - coding
-  - robotics
+  - Pattern Recognition
+  - Algorithms and Coding
+  - Robotics Skills
+  - Internet and e-communication
+  - Application Skills
+  - computational thinking
   gaps:
-  - SOURCE_VERSION_UNCLEAR
-  - NOT_YET_MAPPED
-  - pin official CAPS Coding and Robotics PDFs by phase
+  - prefer final gazetted phase PDFs over draft call-for-comments files when available
   mandatory_baseline: true
 - framework_id: FW-EU-DIGCOMP
   title: DigComp — European Digital Competence Framework for Citizens
@@ -738,4 +751,399 @@ frameworks:
   gaps:
   - SOURCE_VERSION_UNCLEAR
   - NOT_YET_MAPPED
+  mandatory_baseline: false
+- framework_id: FW-UNESCO-SDG4-ED2030
+  title: SDG 4 — Education 2030 (global education goal / cooperation framework)
+  authority: UNESCO (custodian) / UN Member States
+  framework_class: TRANSVERSAL
+  version: Education 2030 Agenda (ongoing; HLSC stewardship)
+  effective_from: '2015'
+  url: https://www.unesco.org/sdg4education2030/en
+  license_note: UNESCO / UN copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-UNESCO
+  language:
+  - en
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - inclusive equitable quality education
+  - lifelong learning
+  - global education cooperation
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-UNESCO-MIL-2021
+  title: 'Media and Information Literate Citizens: Think Critically, Click Wisely (MIL Curriculum 2nd
+    ed.)'
+  authority: UNESCO
+  framework_class: DIGITAL_COMPETENCE
+  version: Second Edition (2021); ISBN 978-92-3-100448-3
+  effective_from: '2021'
+  url: https://www.unesco.org/mil4teachers/en/curriculum
+  license_note: UNESCO copyright; summarize only — do not paste wholesale
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-UNESCO
+  language:
+  - en
+  age_relevance:
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - media and information literacy
+  - disinformation resilience
+  - digital citizenship
+  - AI-aware MIL
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-IN-NCF-SE-2023
+  title: National Curriculum Framework for School Education (NCF-SE)
+  authority: NCERT / Ministry of Education (India)
+  framework_class: PRIMARY
+  version: NCF-SE 2023 (August 2023 PDF; NCERT print Oct 2024 Kartika 1946)
+  effective_from: '2023'
+  url: https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf
+  license_note: NCERT / Government of India copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-IN
+  language:
+  - en
+  - hi
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - 5+3+3+4 structure
+  - integrates NCF-FS
+  - holistic development
+  - subject learning standards
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-SG-NDLP-DLTS
+  title: National Digital Literacy Programme / Digital Literacy and Technological Skills (EdTech Masterplan
+    2030)
+  authority: Ministry of Education (Singapore)
+  framework_class: DIGITAL_COMPETENCE
+  version: NDLP (2020 launch); EdTech Masterplan 2030 9 digital competencies (portal updated 2025-12-05)
+  effective_from: '2020'
+  url: https://www.moe.gov.sg/education-in-sg/educational-technology-journey/edtech-masterplan/digital-literacy-and-technological-skills
+  license_note: MOE Singapore copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-SG
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - Find-Think-Apply-Create
+  - computational thinking
+  - coding and programming
+  - digital safety
+  - AI literacy (technological skills)
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-KE-BECF-2019
+  title: Basic Education Curriculum Framework (Kenya CBC)
+  authority: Kenya Institute of Curriculum Development (KICD)
+  framework_class: PRIMARY
+  version: BECF 2019 (CBC materials live on kicd.ac.ke)
+  effective_from: '2019'
+  url: https://kicd.ac.ke/cbc-materials/
+  license_note: KICD copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-KE
+  language:
+  - en
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - core competencies
+  - learning areas
+  - values-based education
+  gaps: []
+  mandatory_baseline: false
+- framework_id: FW-ET-CURRICULUM-FRAMEWORK
+  title: Curriculum Framework for Ethiopian Education (KG – Grade 12)
+  authority: Ministry of Education (Ethiopia)
+  framework_class: PRIMARY
+  version: May 2009 framework (portal-hosted); confirm successor editions before clause maps
+  effective_from: '2009'
+  url: https://moe.gov.et/storage/Books/Curriculum%20Framework%20for%20Ethiopian%20Education%20(KG%20%E2%80%93%20Grade%2012).pdf
+  license_note: MoE Ethiopia copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-ET
+  language:
+  - en
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - competency-based approach
+  - active learning
+  - KG–12 structure
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - confirm post-2009 successor frameworks
+  mandatory_baseline: false
+- framework_id: FW-RW-CBC
+  title: Competence-Based Curriculum Framework (Rwanda)
+  authority: Ministry of Education / Rwanda Education Board (REB)
+  framework_class: PRIMARY
+  version: CBC Framework (competence-based; confirm exact REB PDF edition)
+  effective_from: null
+  url: https://www.reb.rw/
+  license_note: REB / MoE copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-RW
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - competences
+  - subject syllabi
+  - assessment
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: false
+- framework_id: FW-GH-SBC
+  title: Standards-Based Curriculum (Ghana)
+  authority: National Council for Curriculum and Assessment (NaCCA) / GES
+  framework_class: PRIMARY
+  version: Standards-Based Curriculum (confirm current NaCCA PDF edition)
+  effective_from: null
+  url: https://nacca.gov.gh/
+  license_note: NaCCA copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-GH
+  language:
+  - en
+  age_relevance:
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - standards-based learning
+  - core competencies
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: false
+- framework_id: FW-BH-NCF
+  title: National Curriculum Framework (Bahrain) + Early Childhood Education NCF
+  authority: Ministry of Education (Bahrain)
+  framework_class: PRIMARY
+  version: NCF (+ ECE NCF listed on moe.gov.bh; Arabic primary)
+  effective_from: null
+  url: https://moe.gov.bh/en/the-national-curriculum-framework
+  license_note: MoE Bahrain copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-BH
+  language:
+  - ar
+  - en
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - national curriculum framework
+  - early childhood education
+  gaps:
+  - TRANSLATION_REQUIRED
+  - SOURCE_VERSION_UNCLEAR
+  mandatory_baseline: false
+- framework_id: FW-ID-KURIKULUM-MERDEKA
+  title: Kurikulum Merdeka (Emancipated Curriculum)
+  authority: Kemendikbudristek (Indonesia)
+  framework_class: PRIMARY
+  version: National mandate via MoECRT Regulation No. 12/2024 (from July 2024)
+  effective_from: '2024'
+  url: https://kurikulum.kemdikbud.go.id/
+  license_note: Kemendikbudristek copyright; Indonesian primary
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-ID
+  language:
+  - id
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - differentiated learning
+  - Pancasila learner profile (P5)
+  - flexibility
+  gaps:
+  - TRANSLATION_REQUIRED
+  - NOT_YET_MAPPED
+  mandatory_baseline: false
+- framework_id: FW-MY-KSSR
+  title: Kurikulum Standard Sekolah Rendah (KSSR) + Kurikulum Standard Prasekolah Kebangsaan
+  authority: Ministry of Education (Malaysia)
+  framework_class: PRIMARY
+  version: KSSR / national preschool standards (confirm current DSPK PDF edition)
+  effective_from: null
+  url: https://www.moe.gov.my/
+  license_note: MoE Malaysia copyright; Malay primary
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-MY
+  language:
+  - ms
+  - en
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - standard-based primary
+  - preschool standards
+  - STEM integration
+  gaps:
+  - TRANSLATION_REQUIRED
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: false
+- framework_id: FW-PH-MATATAG
+  title: MATATAG Curriculum (Philippines)
+  authority: Department of Education (DepEd)
+  framework_class: PRIMARY
+  version: DepEd Order No. 10, s. 2024 (phased K/1/4/7 from SY 2024–25)
+  effective_from: '2024'
+  url: https://www.deped.gov.ph/wp-content/uploads/DO_s2024_010.pdf
+  license_note: DepEd copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-PH
+  language:
+  - en
+  age_relevance:
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - MATATAG learning areas
+  - instructional planning standards
+  gaps: []
   mandatory_baseline: false

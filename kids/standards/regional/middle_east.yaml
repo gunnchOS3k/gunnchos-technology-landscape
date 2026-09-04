@@ -4,59 +4,62 @@ generated_on: '2026-09-03'
 track_status: DRAFT_INTERNAL
 jurisdiction_count: 14
 status_counts:
-  NOT_YET_RESEARCHED: 12
-  IDENTIFIED: 2
-priority_notes: High-level IDENTIFIED for UAE/Saudi/Egypt; deep pins pending.
+  TRANSLATION_REQUIRED: 9
+  IDENTIFIED: 3
+  ACCESS_BLOCKED: 2
+priority_notes: 'Track 2C: Bahrain NCF portal pinned; Gulf/Levant rows IDENTIFIED or TRANSLATION_REQUIRED;
+  Syria/Yemen ACCESS_BLOCKED (conflict-era access).'
 jurisdictions:
 - jurisdiction_id: JUR-BH
   name: Bahrain
   level: national
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
+  research_status: TRANSLATION_REQUIRED
+  framework_ids:
+  - FW-BH-NCF
 - jurisdiction_id: JUR-IR
   name: Iran
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-IQ
   name: Iraq
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-IL
   name: Israel
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-JO
   name: Jordan
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-KW
   name: Kuwait
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-LB
   name: Lebanon
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-OM
   name: Oman
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-PS
   name: State of Palestine
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-QA
   name: Qatar
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-SA
   name: Saudi Arabia
@@ -66,7 +69,7 @@ jurisdictions:
 - jurisdiction_id: JUR-SY
   name: Syrian Arab Republic
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: ACCESS_BLOCKED
   framework_ids: []
 - jurisdiction_id: JUR-AE
   name: United Arab Emirates
@@ -76,5 +79,5 @@ jurisdictions:
 - jurisdiction_id: JUR-YE
   name: Yemen
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: ACCESS_BLOCKED
   framework_ids: []

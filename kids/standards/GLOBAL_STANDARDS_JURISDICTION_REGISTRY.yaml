@@ -15,10 +15,11 @@ policy:
 counts:
   total: 275
   by_status:
-    OFFICIAL_VERIFIED: 13
-    IDENTIFIED: 29
-    NOT_YET_RESEARCHED: 232
-    TRANSLATION_REQUIRED: 1
+    OFFICIAL_VERIFIED: 14
+    IDENTIFIED: 65
+    TRANSLATION_REQUIRED: 54
+    ACCESS_BLOCKED: 7
+    NOT_YET_RESEARCHED: 135
   by_level:
     transnational: 3
     national: 196
@@ -44,7 +45,10 @@ jurisdictions:
   - FW-UNESCO-AI-STUDENTS-2024
   - FW-UNESCO-AI-TEACHERS-2024
   - FW-UNESCO-ICT-CFT
-  notes: Global reference frameworks under SDG 4 — not a national curriculum.
+  - FW-UNESCO-SDG4-ED2030
+  - FW-UNESCO-MIL-2021
+  notes: Global reference frameworks under SDG 4 (Education 2030) — not a national curriculum. Includes
+    AI students/teachers, MIL 2nd ed., ICT-CFT.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GLOBAL-OECD
   iso3166_1: null
@@ -79,11 +83,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Algeria) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Algeria)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National education programmes via MEN portal; Arabic/French primary — TRANSLATION_REQUIRED for
+    depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AO
   iso3166_1: AO
   iso3166_2: null
@@ -91,11 +96,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Angola) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministério da Educação (Angola)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National basic education curriculum instruments via MED; Portuguese primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BJ
   iso3166_1: BJ
   iso3166_2: null
@@ -103,11 +108,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Benin) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère des Enseignements Maternel et Primaire (Benin)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes scolaires identified at ministry level; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BW
   iso3166_1: BW
   iso3166_2: null
@@ -115,11 +120,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Botswana) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Skills Development (Botswana)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / outcomes-based instruments identified via MoE; deeper PDF pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BF
   iso3166_1: BF
   iso3166_2: null
@@ -127,11 +132,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Burkina Faso) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Burkina Faso)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone curricula; TRANSLATION_REQUIRED for clause work.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BI
   iso3166_1: BI
   iso3166_2: null
@@ -139,11 +144,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Burundi) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale et de la Recherche scientifique (Burundi)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National programmes; French/Kirundi primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CV
   iso3166_1: CV
   iso3166_2: null
@@ -151,11 +156,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Cabo Verde) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministério da Educação (Cabo Verde)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Portuguese-language national curriculum; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CM
   iso3166_1: CM
   iso3166_2: null
@@ -163,11 +168,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Cameroon) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère des Enseignements Secondaires / Basic Education (Cameroon)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Bilingual (EN/FR) system; deep mapping needs language-specific pins — TRANSLATION_REQUIRED for
+    FR streams.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CF
   iso3166_1: CF
   iso3166_2: null
@@ -175,11 +181,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Central African Republic) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Central African Republic)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes; public portal depth limited — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TD
   iso3166_1: TD
   iso3166_2: null
@@ -187,11 +193,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Chad) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Chad)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone/Arabic system; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KM
   iso3166_1: KM
   iso3166_2: null
@@ -199,11 +205,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Comoros) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Comoros)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone/Arabic curricula; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CG
   iso3166_1: CG
   iso3166_2: null
@@ -211,11 +217,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Congo) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Enseignement primaire, secondaire et de l'Alphabétisation (Congo)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CD
   iso3166_1: CD
   iso3166_2: null
@@ -223,11 +229,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Democratic Republic of the Congo) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Enseignement primaire, secondaire et technique (DRC)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National programmes scolaires; French primary — TRANSLATION_REQUIRED; portal stability variable.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CI
   iso3166_1: CI
   iso3166_2: null
@@ -235,11 +241,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Côte d'Ivoire) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale et de l'Alphabétisation (Côte d'Ivoire)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone curricula / SOE; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-DJ
   iso3166_1: DJ
   iso3166_2: null
@@ -247,11 +253,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Djibouti) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale et de la Formation professionnelle (Djibouti)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone/Arabic system; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-EG
   iso3166_1: EG
   iso3166_2: null
@@ -260,9 +266,9 @@ jurisdictions:
   parent_jurisdiction_id: null
   region: africa
   education_authority: Ministry of Education and Technical Education (Egypt)
-  research_status: IDENTIFIED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: National curriculum identified; Arabic primary — TRANSLATION_REQUIRED.
+  notes: National curriculum / Education 2.0 reform materials identified; Arabic primary — TRANSLATION_REQUIRED.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GQ
   iso3166_1: GQ
@@ -271,11 +277,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Equatorial Guinea) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministerio de Educación (Equatorial Guinea)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Spanish/French system; TRANSLATION_REQUIRED; limited public English sources.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ER
   iso3166_1: ER
   iso3166_2: null
@@ -283,11 +289,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Eritrea) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Eritrea)
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Official curriculum documents not reliably available via open public portals at research time.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SZ
   iso3166_1: SZ
   iso3166_2: null
@@ -295,11 +301,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Eswatini) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Training (Eswatini)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified via MoET; deeper PDF edition pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ET
   iso3166_1: ET
   iso3166_2: null
@@ -307,11 +313,13 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Ethiopia) — pin pending
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  education_authority: Ministry of Education (Ethiopia)
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-ET-CURRICULUM-FRAMEWORK
+  notes: Curriculum Framework for Ethiopian Education (KG–Grade 12) retrieved via moe.gov.et; Amharic
+    depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GA
   iso3166_1: GA
   iso3166_2: null
@@ -319,11 +327,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Gabon) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Gabon)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GM
   iso3166_1: GM
   iso3166_2: null
@@ -331,11 +339,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Gambia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Basic and Secondary Education (The Gambia)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / syllabus instruments identified; deeper mapping pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GH
   iso3166_1: GH
   iso3166_2: null
@@ -345,8 +353,9 @@ jurisdictions:
   region: africa
   education_authority: Ghana Education Service / NaCCA
   research_status: IDENTIFIED
-  framework_ids: []
-  notes: Standards-based curriculum identified; deeper mapping NOT_YET_RESEARCHED.
+  framework_ids:
+  - FW-GH-SBC
+  notes: Standards-Based Curriculum (NaCCA) identified via official channels; deep domain maps pending.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GN
   iso3166_1: GN
@@ -355,11 +364,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Guinea) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale et de l'Alphabétisation (Guinea)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone curricula; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GW
   iso3166_1: GW
   iso3166_2: null
@@ -367,11 +376,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Guinea-Bissau) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministério da Educação Nacional (Guinea-Bissau)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Portuguese-language system; TRANSLATION_REQUIRED; limited portal depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KE
   iso3166_1: KE
   iso3166_2: null
@@ -380,9 +389,10 @@ jurisdictions:
   parent_jurisdiction_id: null
   region: africa
   education_authority: Ministry of Education (Kenya) / KICD
-  research_status: IDENTIFIED
-  framework_ids: []
-  notes: CBC (Competency Based Curriculum) identified; deeper mapping NOT_YET_RESEARCHED.
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-KE-BECF-2019
+  notes: Basic Education Curriculum Framework (CBC) verified via KICD portal (kicd.ac.ke).
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-LS
   iso3166_1: LS
@@ -391,11 +401,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Lesotho) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Training (Lesotho)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified; deeper PDF pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-LR
   iso3166_1: LR
   iso3166_2: null
@@ -403,11 +413,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Liberia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Liberia)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / early grade instruments identified at ministry level.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-LY
   iso3166_1: LY
   iso3166_2: null
@@ -415,11 +425,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Libya) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Libya)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Arabic national programmes; TRANSLATION_REQUIRED; portal access variable.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MG
   iso3166_1: MG
   iso3166_2: null
@@ -427,11 +437,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Madagascar) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Madagascar)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone/Malagasy curricula; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MW
   iso3166_1: MW
   iso3166_2: null
@@ -439,11 +449,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Malawi) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Malawi)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Primary curriculum / syllabus instruments identified via MoE; deeper mapping pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ML
   iso3166_1: ML
   iso3166_2: null
@@ -451,11 +461,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Mali) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Mali)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone curricula; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MR
   iso3166_1: MR
   iso3166_2: null
@@ -463,11 +473,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Mauritania) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Mauritania)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Arabic/French system; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MU
   iso3166_1: MU
   iso3166_2: null
@@ -475,11 +485,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Mauritius) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education, Tertiary Education, Science and Technology (Mauritius)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National Curriculum Framework / primary instruments identified via MoE portal.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MA
   iso3166_1: MA
   iso3166_2: null
@@ -487,11 +497,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Morocco) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale, du Préscolaire et des Sports (Morocco)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Framework Law 51.17 reform / programmes; Arabic/French primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MZ
   iso3166_1: MZ
   iso3166_2: null
@@ -499,11 +509,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Mozambique) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministério da Educação e Desenvolvimento Humano (Mozambique)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Portuguese national curriculum; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-NA
   iso3166_1: NA
   iso3166_2: null
@@ -511,11 +521,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Namibia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education, Arts and Culture (Namibia)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National Curriculum for Basic Education identified; deeper subject pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-NE
   iso3166_1: NE
   iso3166_2: null
@@ -523,11 +533,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Niger) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Niger)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-NG
   iso3166_1: NG
   iso3166_2: null
@@ -535,10 +545,10 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: Federal Ministry of Education (Nigeria)
+  education_authority: Federal Ministry of Education / NERDC (Nigeria)
   research_status: IDENTIFIED
   framework_ids: []
-  notes: National education policy / curriculum instruments identified at high level.
+  notes: National Curriculum / NERDC instruments identified at high level; deeper subject pins pending.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-RW
   iso3166_1: RW
@@ -547,11 +557,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Rwanda) — pin pending
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  education_authority: Ministry of Education / Rwanda Education Board (REB)
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-RW-CBC
+  notes: Competence-based Curriculum Framework identified via REB/MoE; deep mapping pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ST
   iso3166_1: ST
   iso3166_2: null
@@ -559,11 +570,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Sao Tome and Principe) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministério da Educação e Ensino Superior (Sao Tome and Principe)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Portuguese-language curricula; TRANSLATION_REQUIRED; limited portal depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SN
   iso3166_1: SN
   iso3166_2: null
@@ -571,11 +582,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Senegal) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation nationale (Senegal)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes / curricula; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SC
   iso3166_1: SC
   iso3166_2: null
@@ -583,11 +594,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Seychelles) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Seychelles)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National Curriculum Framework identified; deeper PDF pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SL
   iso3166_1: SL
   iso3166_2: null
@@ -595,11 +606,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Sierra Leone) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Basic and Senior Secondary Education (Sierra Leone)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / early grade instruments identified; deeper mapping pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SO
   iso3166_1: SO
   iso3166_2: null
@@ -607,11 +618,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Somalia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Federal Ministry of Education (Somalia) / member-state authorities
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Fragmented federal/member-state systems; stable national early-years/primary PDF corpus not reliably
+    open-access.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ZA
   iso3166_1: ZA
   iso3166_2: null
@@ -624,8 +636,8 @@ jurisdictions:
   framework_ids:
   - FW-ZA-CAPS
   - FW-ZA-CODING-ROBOTICS
-  notes: CAPS verified as national curriculum baseline; Coding and Robotics curriculum status recorded
-    separately.
+  notes: CAPS Foundation/Intermediate portals verified on education.gov.za; Coding & Robotics CAPS Grades
+    R–9 (Umalusi-endorsed path; Foundation Phase rollout programme) pinned via DBE draft/portal docs.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SS
   iso3166_1: SS
@@ -634,11 +646,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (South Sudan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of General Education and Instruction (South Sudan)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level; deeper PDF edition pins pending; access
+    can be intermittent.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SD
   iso3166_1: SD
   iso3166_2: null
@@ -646,11 +659,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Sudan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Sudan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Arabic national programmes; TRANSLATION_REQUIRED; portal access variable amid conflict.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TZ
   iso3166_1: TZ
   iso3166_2: null
@@ -658,11 +671,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Tanzania) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education, Science and Technology / TIE (Tanzania)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Competence-based curriculum reform instruments identified; Swahili depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TG
   iso3166_1: TG
   iso3166_2: null
@@ -670,11 +683,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Togo) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère des Enseignements primaire, secondaire, technique et de l'Artisanat (Togo)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Francophone programmes; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TN
   iso3166_1: TN
   iso3166_2: null
@@ -682,11 +695,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Tunisia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministère de l'Éducation (Tunisia)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National programmes scolaires; Arabic/French — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-UG
   iso3166_1: UG
   iso3166_2: null
@@ -694,11 +707,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Uganda) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Sports / NCDC (Uganda)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Lower Secondary Curriculum / primary instruments via NCDC; deeper early-years pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ZM
   iso3166_1: ZM
   iso3166_2: null
@@ -706,11 +719,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Zambia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Zambia)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Zambia Education Curriculum Framework identified; deeper subject PDF pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ZW
   iso3166_1: ZW
   iso3166_2: null
@@ -718,11 +731,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: africa
-  education_authority: National education ministry / agency (Zimbabwe) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Primary and Secondary Education (Zimbabwe)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Competence-based curriculum instruments identified; deeper PDF edition pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AG
   iso3166_1: AG
   iso3166_2: null
@@ -1759,11 +1772,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Bahrain) — pin pending
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  education_authority: Ministry of Education (Bahrain)
+  research_status: TRANSLATION_REQUIRED
+  framework_ids:
+  - FW-BH-NCF
+  notes: National Curriculum Framework (+ ECE NCF) on moe.gov.bh; Arabic primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-IR
   iso3166_1: IR
   iso3166_2: null
@@ -1771,11 +1785,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Iran) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Iran)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / formal school programmes; Persian primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-IQ
   iso3166_1: IQ
   iso3166_2: null
@@ -1783,11 +1797,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Iraq) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Iraq)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments; Arabic primary — TRANSLATION_REQUIRED; portal access variable.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-IL
   iso3166_1: IL
   iso3166_2: null
@@ -1795,11 +1809,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Israel) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Israel)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / pedagogical portal instruments identified; Hebrew/Arabic depth may need
+    TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-JO
   iso3166_1: JO
   iso3166_2: null
@@ -1807,11 +1822,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Jordan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Jordan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: General Curriculum Framework (الإطار العام للمناهج الأردنية) identified; Arabic primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KW
   iso3166_1: KW
   iso3166_2: null
@@ -1819,11 +1834,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Kuwait) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Kuwait)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Kuwait National Curriculum Framework (competence-/standards-based) identified; Arabic primary
+    — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-LB
   iso3166_1: LB
   iso3166_2: null
@@ -1831,11 +1847,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Lebanon) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Higher Education (Lebanon) / CERD
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / CERD instruments; Arabic/French — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-OM
   iso3166_1: OM
   iso3166_2: null
@@ -1843,11 +1859,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Oman) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Oman)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National study plan / curriculum instruments on home.moe.gov.om; Arabic primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-PS
   iso3166_1: PS
   iso3166_2: null
@@ -1855,11 +1871,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (State of Palestine) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Higher Education (State of Palestine)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments; Arabic primary — TRANSLATION_REQUIRED; access conditions vary.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-QA
   iso3166_1: QA
   iso3166_2: null
@@ -1867,11 +1883,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Qatar) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Higher Education (Qatar)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Qatar National Curriculum Framework identified; Arabic primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SA
   iso3166_1: SA
   iso3166_2: null
@@ -1882,7 +1898,8 @@ jurisdictions:
   education_authority: Ministry of Education (Saudi Arabia)
   research_status: IDENTIFIED
   framework_ids: []
-  notes: National curriculum modernization underway; version pins pending.
+  notes: National curriculum modernization / Vision 2030 education instruments identified; Arabic depth
+    TRANSLATION_REQUIRED for clause work.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SY
   iso3166_1: SY
@@ -1891,11 +1908,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Syrian Arab Republic) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Syrian Arab Republic)
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: 'Conflict-era access: stable official curriculum corpus not reliably open-access for verification.'
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AE
   iso3166_1: AE
   iso3166_2: null
@@ -1903,10 +1920,10 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: Ministry of Education (UAE) + emirate authorities
+  education_authority: Ministry of Education (UAE) + emirate authorities (e.g. ADEK, KHDA)
   research_status: IDENTIFIED
   framework_ids: []
-  notes: Federal + emirate variation; deeper census NOT_YET_RESEARCHED.
+  notes: Federal MoE framework + emirate variation (Abu Dhabi/Dubai); deeper emirate census still open.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-YE
   iso3166_1: YE
@@ -1915,11 +1932,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: middle_east
-  education_authority: National education ministry / agency (Yemen) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Yemen)
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: 'Conflict-era access: stable official curriculum corpus not reliably open-access for verification.'
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AF
   iso3166_1: AF
   iso3166_2: null
@@ -1927,11 +1944,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Afghanistan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Afghanistan)
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: 'Post-2021 access: stable official early-years/primary curriculum corpus not reliably open-access.'
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU
   iso3166_1: AU
   iso3166_2: null
@@ -1944,7 +1961,9 @@ jurisdictions:
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: EYLF V2.0 (2022) and Australian Curriculum Version 9 verified at national level.
+  notes: EYLF V2.0 (2022) PDF pinned via ACECQA; Australian Curriculum v9 portal verified. States/territories
+    adopt or adapt v9 on their own timelines (NESA NSW; Victorian Curriculum F–10 v2; QCAA/ACT/SA/TAS/NT
+    largely teach AC v9; WA Curriculum closely based).
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BD
   iso3166_1: BD
@@ -1953,11 +1972,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Bangladesh) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education / NCTB (Bangladesh)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National Curriculum Framework / NCTB instruments identified; Bangla depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BT
   iso3166_1: BT
   iso3166_2: null
@@ -1965,11 +1984,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Bhutan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Skills Development (Bhutan)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National school curriculum / early learning instruments identified via MoESD.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-BN
   iso3166_1: BN
   iso3166_2: null
@@ -1977,11 +1996,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Brunei Darussalam) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Brunei Darussalam)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / SPN21 instruments identified; Malay depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KH
   iso3166_1: KH
   iso3166_2: null
@@ -1989,11 +2008,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Cambodia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education, Youth and Sport (Cambodia)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments; Khmer primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-CN
   iso3166_1: CN
   iso3166_2: null
@@ -2002,9 +2021,9 @@ jurisdictions:
   parent_jurisdiction_id: null
   region: asia_pacific
   education_authority: Ministry of Education (China)
-  research_status: IDENTIFIED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: National curriculum standards; TRANSLATION_REQUIRED / ACCESS may vary by document.
+  notes: National curriculum standards / kindergarten guidelines; Chinese primary — TRANSLATION_REQUIRED.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-FJ
   iso3166_1: FJ
@@ -2013,11 +2032,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Fiji) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Fiji)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum framework / syllabus instruments identified.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-IN
   iso3166_1: IN
   iso3166_2: null
@@ -2025,11 +2044,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National Council of Educational Research and Training (NCERT) / Ministry of Education
+  education_authority: NCERT / Ministry of Education (India)
   research_status: OFFICIAL_VERIFIED
   framework_ids:
   - FW-IN-NCF-FOUNDATIONAL
-  notes: NCF for the Foundational Stage verified as priority baseline.
+  - FW-IN-NCF-SE-2023
+  notes: NCF-FS 2022 + NCF-SE 2023 (broader national framework ages 3–18) verified via NCERT/MoE PDFs.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-ID
   iso3166_1: ID
@@ -2038,11 +2058,13 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Indonesia) — pin pending
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  education_authority: Ministry of Education, Culture, Research and Technology / Kemendikbudristek (Indonesia)
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-ID-KURIKULUM-MERDEKA
+  notes: Kurikulum Merdeka mandated as national curriculum (MoECRT Reg. 12/2024); Indonesian primary —
+    TRANSLATION_REQUIRED for depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-JP
   iso3166_1: JP
   iso3166_2: null
@@ -2050,11 +2072,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: Ministry of Education, Culture, Sports, Science and Technology (MEXT)
+  education_authority: MEXT (Japan)
   research_status: OFFICIAL_VERIFIED
   framework_ids:
   - FW-JP-MEXT-COS
-  notes: Courses of Study (kindergarten / elementary) identified via MEXT; deep clause mapping TRANSLATION_REQUIRED.
+  notes: Heisei 29 (2017) kindergarten guidelines + elementary Courses of Study pinned on mext.go.jp (平成29・30・31年改訂);
+    Japanese primary texts — deep clause maps TRANSLATION_REQUIRED.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KZ
   iso3166_1: KZ
@@ -2063,11 +2086,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Kazakhstan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Kazakhstan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: State compulsory education standards; Kazakh/Russian — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KI
   iso3166_1: KI
   iso3166_2: null
@@ -2075,11 +2098,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Kiribati) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Kiribati)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level; limited public PDF depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KG
   iso3166_1: KG
   iso3166_2: null
@@ -2087,11 +2110,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Kyrgyzstan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Science (Kyrgyzstan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: State education standards; Kyrgyz/Russian — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-LA
   iso3166_1: LA
   iso3166_2: null
@@ -2099,11 +2122,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Lao People's Democratic Republic) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Sports (Lao PDR)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum; Lao primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MY
   iso3166_1: MY
   iso3166_2: null
@@ -2111,11 +2134,13 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Malaysia) — pin pending
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  education_authority: Ministry of Education (Malaysia)
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-MY-KSSR
+  notes: KSSR (Kurikulum Standard Sekolah Rendah) + preschool standards identified via MoE; Malay depth
+    TRANSLATION_REQUIRED for clause work.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MV
   iso3166_1: MV
   iso3166_2: null
@@ -2123,11 +2148,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Maldives) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Maldives)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National Curriculum Framework identified; Dhivehi depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MH
   iso3166_1: MH
   iso3166_2: null
@@ -2135,11 +2160,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Marshall Islands) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education, Sports and Training (Marshall Islands)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level; limited public PDF depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-FM
   iso3166_1: FM
   iso3166_2: null
@@ -2147,11 +2172,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Micronesia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: National Department of Education (Federated States of Micronesia)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National / state education standards identified at high level; limited public PDF depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MN
   iso3166_1: MN
   iso3166_2: null
@@ -2159,11 +2184,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Mongolia) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Science (Mongolia)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National core curriculum; Mongolian primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-MM
   iso3166_1: MM
   iso3166_2: null
@@ -2171,11 +2196,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Myanmar) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Myanmar)
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: 'Conflict/transition-era access: stable official curriculum corpus not reliably open-access for
+    verification.'
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-NR
   iso3166_1: NR
   iso3166_2: null
@@ -2183,11 +2209,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Nauru) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Department of Education and Training (Nauru)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level; limited public PDF depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-NP
   iso3166_1: NP
   iso3166_2: null
@@ -2195,11 +2221,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Nepal) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education, Science and Technology / CDC (Nepal)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National Curriculum Framework / CDC instruments identified; Nepali depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-NZ
   iso3166_1: NZ
   iso3166_2: null
@@ -2212,7 +2238,8 @@ jurisdictions:
   framework_ids:
   - FW-NZ-TE-WHARIKI
   - FW-NZ-NZC
-  notes: Te Whāriki early learning curriculum + New Zealand Curriculum identified/verified via MoE portals.
+  notes: Te Whāriki (2017) on Tāhūrangi; NZC 2007 still required framework while Te Mātaiaho draft (Oct
+    2025, consultation to Apr 2026; Gazette mid-2026 planned) is familiarisation-only.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KP
   iso3166_1: KP
@@ -2221,12 +2248,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Democratic People's Republic of Korea) —
-    pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Education Commission / MoE (DPRK)
+  research_status: ACCESS_BLOCKED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Official curriculum corpus not publicly accessible for independent verification.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-KR
   iso3166_1: KR
   iso3166_2: null
@@ -2235,9 +2261,9 @@ jurisdictions:
   parent_jurisdiction_id: null
   region: asia_pacific
   education_authority: Ministry of Education (Republic of Korea)
-  research_status: IDENTIFIED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: Nuri curriculum / national curriculum identified; TRANSLATION_REQUIRED for depth.
+  notes: Nuri curriculum / national curriculum revisions; Korean primary — TRANSLATION_REQUIRED.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-PK
   iso3166_1: PK
@@ -2246,11 +2272,12 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Pakistan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Federal Education and Professional Training / NCC (Pakistan)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Single National Curriculum / National Curriculum of Pakistan instruments identified; Urdu depth
+    may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-PW
   iso3166_1: PW
   iso3166_2: null
@@ -2258,11 +2285,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Palau) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Palau)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level; limited public PDF depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-PG
   iso3166_1: PG
   iso3166_2: null
@@ -2270,11 +2297,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Papua New Guinea) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Department of Education (Papua New Guinea)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / standards instruments identified; deeper PDF pins pending.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-PH
   iso3166_1: PH
   iso3166_2: null
@@ -2282,11 +2309,13 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Philippines) — pin pending
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  education_authority: Department of Education (DepEd), Philippines
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-PH-MATATAG
+  notes: MATATAG Curriculum policy guidelines (DepEd Order No. 10, s. 2024) identified; phased K/1/4/7
+    start SY 2024–25.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-WS
   iso3166_1: WS
   iso3166_2: null
@@ -2294,11 +2323,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Samoa) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Culture (Samoa)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified; Samoan depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SG
   iso3166_1: SG
   iso3166_2: null
@@ -2310,7 +2339,9 @@ jurisdictions:
   research_status: OFFICIAL_VERIFIED
   framework_ids:
   - FW-SG-NEL-2022
-  notes: Nurturing Early Learners (NEL) Framework 2022 verified.
+  - FW-SG-NDLP-DLTS
+  notes: NEL Framework 2022 + National Digital Literacy Programme / EdTech Masterplan 2030 DLTS verified
+    on moe.gov.sg.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-SB
   iso3166_1: SB
@@ -2319,11 +2350,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Solomon Islands) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Human Resources Development (Solomon Islands)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-LK
   iso3166_1: LK
   iso3166_2: null
@@ -2331,11 +2362,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Sri Lanka) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education / NIE (Sri Lanka)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / NIE instruments identified; Sinhala/Tamil depth may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TJ
   iso3166_1: TJ
   iso3166_2: null
@@ -2343,11 +2374,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Tajikistan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Science (Tajikistan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: State education standards; Tajik/Russian — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TH
   iso3166_1: TH
   iso3166_2: null
@@ -2355,11 +2386,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Thailand) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education / OBEC (Thailand)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: Basic Education Core Curriculum B.E. 2551 (+ updates); Thai primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TL
   iso3166_1: TL
   iso3166_2: null
@@ -2367,11 +2398,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Timor-Leste) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministério da Educação, Juventude e Desporto (Timor-Leste)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum; Portuguese/Tetum — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TO
   iso3166_1: TO
   iso3166_2: null
@@ -2379,11 +2410,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Tonga) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Training (Tonga)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TM
   iso3166_1: TM
   iso3166_2: null
@@ -2391,11 +2422,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Turkmenistan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education (Turkmenistan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: State education programmes; Turkmen/Russian — TRANSLATION_REQUIRED; limited English portal depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-TV
   iso3166_1: TV
   iso3166_2: null
@@ -2403,11 +2434,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Tuvalu) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Sports (Tuvalu)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified at high level; limited public PDF depth.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-UZ
   iso3166_1: UZ
   iso3166_2: null
@@ -2415,11 +2446,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Uzbekistan) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Preschool and School Education (Uzbekistan)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum / preschool standards; Uzbek/Russian — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-VU
   iso3166_1: VU
   iso3166_2: null
@@ -2427,11 +2458,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Vanuatu) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Training (Vanuatu)
+  research_status: IDENTIFIED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: National curriculum instruments identified; French/Bislama streams may need TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-VN
   iso3166_1: VN
   iso3166_2: null
@@ -2439,11 +2470,11 @@ jurisdictions:
   level: national
   parent_jurisdiction_id: null
   region: asia_pacific
-  education_authority: National education ministry / agency (Viet Nam) — pin pending
-  research_status: NOT_YET_RESEARCHED
+  education_authority: Ministry of Education and Training (Viet Nam)
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
-  notes: ''
-  last_reviewed_on: null
+  notes: 2018 General Education Curriculum; Vietnamese primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-GB-ENG
   iso3166_1: GB
   iso3166_2: GB-ENG
@@ -2661,13 +2692,13 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: NSW Education
+  education_authority: NSW Education Standards Authority (NESA)
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: NESA syllabuses adopt/adapt Australian Curriculum v9 into NSW Stages; EYLF V2.0 under NQF for
+    ECEC.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-VIC
   iso3166_1: AU
@@ -2676,13 +2707,13 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: Victorian Department of Education
+  education_authority: Victorian Curriculum and Assessment Authority (VCAA)
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Victorian Curriculum F–10 Version 2.0 informed by AC v9 (restructured levels/codes); EYLF V2.0
+    under NQF.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-QLD
   iso3166_1: AU
@@ -2691,13 +2722,13 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: Queensland Department of Education
+  education_authority: Queensland Curriculum and Assessment Authority (QCAA) / DoE
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Teaches Australian Curriculum v9 directly; QCAA phased implementation with full learning-area
+    expectation by end-2027.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-WA
   iso3166_1: AU
@@ -2706,13 +2737,13 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: WA Department of Education
+  education_authority: School Curriculum and Standards Authority (SCSA), Western Australia
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Western Australian Curriculum closely based on / adapting AC v9; phased subject rollout toward
+    mid-decade.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-SA
   iso3166_1: AU
@@ -2721,13 +2752,12 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: SA Department for Education
+  education_authority: Department for Education (South Australia)
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Teaches Australian Curriculum v9 essentially as published; EYLF V2.0 under NQF.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-TAS
   iso3166_1: AU
@@ -2736,13 +2766,12 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: Tasmanian Department for Education, Children and Young People
+  education_authority: Department for Education, Children and Young People (Tasmania)
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Teaches Australian Curriculum v9 essentially as published; EYLF V2.0 under NQF.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-ACT
   iso3166_1: AU
@@ -2751,13 +2780,12 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: ACT Education Directorate
+  education_authority: Education Directorate (ACT)
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Teaches Australian Curriculum v9 essentially as published; EYLF V2.0 under NQF.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-AU-NT
   iso3166_1: AU
@@ -2766,13 +2794,13 @@ jurisdictions:
   level: subnational
   parent_jurisdiction_id: JUR-AU
   region: asia_pacific
-  education_authority: NT Department of Education and Training
+  education_authority: Department of Education and Training (Northern Territory)
   research_status: IDENTIFIED
   framework_ids:
   - FW-AU-EYLF-V2
   - FW-AU-AC-V9
-  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
-    in depth.
+  notes: Staged AC v9 rollout (English/Maths/HPE by 2025; Technologies etc. by 2026 per NT guidance);
+    EYLF V2.0 under NQF.
   last_reviewed_on: '2026-09-03'
 - jurisdiction_id: JUR-US-AL
   iso3166_1: US

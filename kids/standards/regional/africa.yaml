@@ -4,201 +4,205 @@ generated_on: '2026-09-03'
 track_status: DRAFT_INTERNAL
 jurisdiction_count: 54
 status_counts:
-  NOT_YET_RESEARCHED: 49
-  IDENTIFIED: 4
-  OFFICIAL_VERIFIED: 1
-priority_notes: South Africa CAPS (+ Coding/Robotics) priority; Francophone/Lusophone TRANSLATION_REQUIRED
-  queue.
+  TRANSLATION_REQUIRED: 31
+  IDENTIFIED: 19
+  ACCESS_BLOCKED: 2
+  OFFICIAL_VERIFIED: 2
+priority_notes: 'Track 2C: South Africa CAPS + Coding/Robotics deepened; Kenya BECF verified; Francophone/Lusophone/Arabic
+  rows set TRANSLATION_REQUIRED where portals exist; ACCESS_BLOCKED only where public corpus unavailable.'
 jurisdictions:
 - jurisdiction_id: JUR-DZ
   name: Algeria
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-AO
   name: Angola
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-BJ
   name: Benin
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-BW
   name: Botswana
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-BF
   name: Burkina Faso
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-BI
   name: Burundi
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-CV
   name: Cabo Verde
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-CM
   name: Cameroon
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-CF
   name: Central African Republic
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-TD
   name: Chad
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-KM
   name: Comoros
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-CG
   name: Congo
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-CD
   name: Democratic Republic of the Congo
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-CI
   name: Côte d'Ivoire
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-DJ
   name: Djibouti
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-EG
   name: Egypt
   level: national
-  research_status: IDENTIFIED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-GQ
   name: Equatorial Guinea
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-ER
   name: Eritrea
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: ACCESS_BLOCKED
   framework_ids: []
 - jurisdiction_id: JUR-SZ
   name: Eswatini
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-ET
   name: Ethiopia
   level: national
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-ET-CURRICULUM-FRAMEWORK
 - jurisdiction_id: JUR-GA
   name: Gabon
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-GM
   name: Gambia
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-GH
   name: Ghana
   level: national
   research_status: IDENTIFIED
-  framework_ids: []
+  framework_ids:
+  - FW-GH-SBC
 - jurisdiction_id: JUR-GN
   name: Guinea
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-GW
   name: Guinea-Bissau
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-KE
   name: Kenya
   level: national
-  research_status: IDENTIFIED
-  framework_ids: []
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-KE-BECF-2019
 - jurisdiction_id: JUR-LS
   name: Lesotho
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-LR
   name: Liberia
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-LY
   name: Libya
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-MG
   name: Madagascar
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-MW
   name: Malawi
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-ML
   name: Mali
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-MR
   name: Mauritania
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-MU
   name: Mauritius
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-MA
   name: Morocco
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-MZ
   name: Mozambique
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-NA
   name: Namibia
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-NE
   name: Niger
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-NG
   name: Nigeria
@@ -208,32 +212,33 @@ jurisdictions:
 - jurisdiction_id: JUR-RW
   name: Rwanda
   level: national
-  research_status: NOT_YET_RESEARCHED
-  framework_ids: []
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-RW-CBC
 - jurisdiction_id: JUR-ST
   name: Sao Tome and Principe
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-SN
   name: Senegal
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-SC
   name: Seychelles
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-SL
   name: Sierra Leone
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-SO
   name: Somalia
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: ACCESS_BLOCKED
   framework_ids: []
 - jurisdiction_id: JUR-ZA
   name: South Africa
@@ -245,40 +250,40 @@ jurisdictions:
 - jurisdiction_id: JUR-SS
   name: South Sudan
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-SD
   name: Sudan
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-TZ
   name: Tanzania
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-TG
   name: Togo
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-TN
   name: Tunisia
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: TRANSLATION_REQUIRED
   framework_ids: []
 - jurisdiction_id: JUR-UG
   name: Uganda
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-ZM
   name: Zambia
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
 - jurisdiction_id: JUR-ZW
   name: Zimbabwe
   level: national
-  research_status: NOT_YET_RESEARCHED
+  research_status: IDENTIFIED
   framework_ids: []
