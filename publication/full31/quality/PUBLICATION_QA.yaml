@@ -110,8 +110,8 @@ issues:
     \ chapters; likely LaTeX chapter-counter inflation \u2014 needs human print QA."
   evidence: ''
   fix_status: NEEDS_HUMAN
-branch_head_at_report: null
+branch_head_at_report: 4e7bdfb203a7b9ba67e5f7370f42d88a18f4d211
 commits:
   base_tip: 2e440e43f89b61c112f088939f73440024283bbf
   substantive_fix: 51e36228a7152e3423bc867a74ca0f9825aa023b
-  report_refresh: see branch HEAD
+  report_refresh: 4e7bdfb203a7b9ba67e5f7370f42d88a18f4d211
