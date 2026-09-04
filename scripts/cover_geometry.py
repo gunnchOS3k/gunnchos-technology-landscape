@@ -37,10 +37,10 @@ def print_wrap_inches(
         "page_count": page_count,
         "paper": paper,
         "spine_in_ESTIMATE_ONLY": approx_spine,
-        "spine_status": "REQUIRES_LIVE_COVER_CALCULATOR",
+        "spine_status": "LIVE_COVER_CALCULATOR_REQUIRED",
         "wrap_width_in_ESTIMATE_ONLY": round(wrap_w, 4),
         "wrap_height_in": round(wrap_h, 4),
-        "warning": "Do not use ESTIMATE spine for final upload; use KDP Cover Calculator.",
+        "warning": "Do not use ESTIMATE spine for final upload; use KDP Cover Calculator (LIVE_COVER_CALCULATOR_REQUIRED).",
     }
 
 

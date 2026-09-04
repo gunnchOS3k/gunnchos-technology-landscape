@@ -19,7 +19,7 @@ GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
 | Track | State | Ceiling | Notes |
 | --- | --- | --- | --- |
 | Bootstrap scaffold | COMPLETE | — | `publication/family/README.md` |
-| Adult distribution | READY_FOR_TRACK_REVIEW | `ADULT_SUBMISSION_PACKAGE_PREPARED` | Packages + research; NOT submitted |
+| Adult distribution | READY_FOR_TRACK_REVIEW | `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE` | Real artifacts + print profiles; owner cover/ISBN/review still blocked; NOT submitted |
 | Kids media/design | DRAFT_INTERNAL | research foundation | Evidence registers + design systems |
 | Kids curriculum + ONE TAP | DEVELOPMENTAL_PROTOTYPE | spiral + 6-band pilot | NO_CHILD_VALIDATION_EVIDENCE |
 | Kids standards atlas | DRAFT_INTERNAL | atlas landed | Editorial crosswalks only |
@@ -36,6 +36,7 @@ GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
 ## Non-claims
 
 - Scaffold / packages / pilots ≠ published product.
-- `ADULT_SUBMISSION_PACKAGE_PREPARED` ≠ `PUBLICATION_READY`.
+- `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE` ≠ `PUBLICATION_READY` ≠ `READY_FOR_OWNER_UPLOAD`.
+- `ADULT_SUBMISSION_PACKAGE_PREPARED` is a legacy rung; do not treat stubs as prepared.
 - `KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW` ≠ child-validated or publication-ready.
 - No retailer submission evidence; no ISBN fabrication.

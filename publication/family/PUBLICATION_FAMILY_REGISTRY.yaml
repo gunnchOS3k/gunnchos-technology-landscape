@@ -28,25 +28,35 @@ status_vocabulary:
   - PUBLICATION_READY
   - PUBLISHED
   ceiling_this_wave:
-    adult: ADULT_SUBMISSION_PACKAGE_PREPARED
+    adult: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
     kids: KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW
   forbidden_claims_this_wave:
   - PUBLICATION_READY
   - PUBLISHED
+  - READY_FOR_OWNER_UPLOAD
   - GLOBALLY_ALIGNED
   - officially aligned
   - child-validated
 editions:
 - edition_id: ADULT-FULL31
   title: The Technology Landscape
-  status: SUBMISSION_PACKAGE_PREPARED
+  status: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
   human_validation: 0/31
   publication_state: NOT_PUBLICATION_READY
   isbn_state: PLACEHOLDERS_ONLY
   retailer_state: NOT_SUBMITTED
   standards_state: N/A_ADULT_MANUSCRIPT
   accessibility_state: EPUBCHECK_PASS_HUMAN_A11Y_PENDING
-  artifact_state: FULL31_PRE_HUMAN_REVIEW_CANDIDATE_READY
+  artifact_state: ADULT_ARTIFACTS_BUILT_OWNER_BLOCKS_REMAIN
+  package_readiness_vocab:
+  - SCAFFOLD_ONLY
+  - ARTIFACTS_BUILT
+  - VALIDATED_LOCALLY
+  - BLOCKED_OWNER_COVER
+  - BLOCKED_OWNER_METADATA
+  - BLOCKED_OWNER_ISBN
+  - BLOCKED_HUMAN_REVIEW
+  - READY_FOR_OWNER_UPLOAD
   gate_3: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
   source_commit_ref: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
 - edition_id: KIDS-BABY

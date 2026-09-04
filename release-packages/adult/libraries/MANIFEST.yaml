@@ -1,16 +1,32 @@
 package_id: adult-libraries
 platform_id: library_distributor
-status: ADULT_SUBMISSION_PACKAGE_PREPARED
+package_readiness: BLOCKED_OWNER_ISBN
+status: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
 not_status: PUBLICATION_READY
-created_on: "2026-09-03"
-integration_base: "ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
-full31_pre_review_content_sha: "dd7f0003beae5c56d5ee8b5050aff151ef67d803"
+created_on: '2026-09-03'
+integration_base: cursor/publication-family-parallel-production-001
+full31_pre_review_content_sha: dd7f0003beae5c56d5ee8b5050aff151ef67d803
 credentials_included: false
+human_validated: 0/31
+publication_ready: 0/31
+artifacts:
+- path: artifacts/book.epub
+  artifact_type: EPUB
+  role: MANUSCRIPT
+  sha256: ae7f3bf2f4deb3a8e0b21a645f8bef1ed0a82c8551491b68b54d43ef3c7eedb3
+- path: artifacts/metadata.yaml
+  artifact_type: YAML
+  role: LIBRARY_METADATA_DRAFT
+  isbn_state: PENDING_OWNER_PURCHASE
 files:
-  - path: HUMAN_CHECKLIST.md
-  - path: MANIFEST.yaml
-  - path: README.md
-  - path: artifacts/book.epub.STUB
-  - path: artifacts/metadata.yaml.STUB
-  - path: validation-stub.md
-  - path: CHECKSUMS.sha256
+- path: artifacts/book.epub
+- path: artifacts/metadata.yaml
+- path: HUMAN_CHECKLIST.md
+- path: MANIFEST.yaml
+- path: README.md
+- path: validation-stub.md
+- path: CHECKSUMS.sha256
+blocks:
+- BLOCKED_OWNER_ISBN
+- BLOCKED_OWNER_COVER
+- BLOCKED_HUMAN_REVIEW

@@ -6,6 +6,12 @@ project:
 
 lang: en
 
+# Adult print geometry profiles (overlays via _quarto-print-*.yml). Review PDF path unchanged.
+profile:
+  group:
+    - [print-6x9, print-7x10, print-85x11]
+
+
 book:
   title: "The Technology Landscape"
   subtitle: "How Computers, Networks, AI, and Devices Create the Experiences We Depend On"

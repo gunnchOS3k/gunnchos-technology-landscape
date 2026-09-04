@@ -10,7 +10,7 @@ non_claims:
   - "Not Gate 3 PASS"
   - "Not PUBLICATION_READY"
   - "No retailer accounts created; no ISBNs purchased; no uploads performed"
-ceiling_state_allowed: ADULT_SUBMISSION_PACKAGE_PREPARED
+ceiling_state_allowed: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
 
 platforms:
   - id: amazon_kdp_kindle

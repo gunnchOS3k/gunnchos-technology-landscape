@@ -1,18 +1,21 @@
-# State: ADULT_SUBMISSION_PACKAGE_PREPARED
+# State: ADULT_SUBMISSION_PACKAGE_PREPARED (legacy rung)
 
 **Declared:** 2026-09-03  
+**Superseded aggregate (when automatable packaging complete):** `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE`  
 **Track:** Adult Publication + Distribution  
 **Integration base:** `ce9cc419841fa0588e30d8d917b048c72f8cc2c0`
 
-## Meaning (allowed ceiling)
+## Meaning
 
-Internal packaging research, metadata drafts, platform requirements, free-access policy,
-ISBN placeholders, print/cover engineering notes, and release-package **stubs** are prepared
-so a human owner can later assemble real retailer uploads.
+This document remains as the historical submission-package research ceiling.
+Real typed EPUB/PDF artifacts and print interiors are now required for any claim that
+packaging is prepared beyond scaffold stubs. See
+`ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE.md` for the current aggregate state.
 
 ## Explicitly NOT claimed
 
 - `PUBLICATION_READY`
+- `READY_FOR_OWNER_UPLOAD`
 - Retailer-approved / live listing
 - WCAG certified
 - Gate 3 PASS

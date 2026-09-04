@@ -1,16 +1,59 @@
 package_id: adult-amazon-hardcover
 platform_id: amazon_kdp_hardcover
-status: ADULT_SUBMISSION_PACKAGE_PREPARED
+package_readiness: BLOCKED_OWNER_COVER
+status: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
 not_status: PUBLICATION_READY
-created_on: "2026-09-03"
-integration_base: "ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
-full31_pre_review_content_sha: "dd7f0003beae5c56d5ee8b5050aff151ef67d803"
+created_on: '2026-09-03'
+integration_base: cursor/publication-family-parallel-production-001
+full31_pre_review_content_sha: dd7f0003beae5c56d5ee8b5050aff151ef67d803
 credentials_included: false
+human_validated: 0/31
+publication_ready: 0/31
+artifacts:
+- path: artifacts/interior.pdf
+  artifact_type: PDF
+  pdf_role: PRINT_INTERIOR_PDF
+  role: PRINT_INTERIOR
+  trim: 7x10
+  page_count: 524
+  dimensions_in:
+  - 7.0
+  - 10.0
+  sha256: 7629fb22776093c05558a6ec8de0fdc765cd03d18c1cdc8ea00431b3ae7c633c
+  hardcover_eligibility:
+    trim: 7x10
+    binding: hardcover
+    page_count: 524
+    eligible: true
+    verified_band: 75-550
+    reason: WITHIN_VERIFIED_KDP_BAND
+  note: Primary 6x9 print interior is 628 pages — OUTSIDE_VERIFIED_KDP_BAND vs hardcover
+    band 75-550. Packaged eligible 7x10 interior instead.
+  source: preview/print/technology-landscape-print-7x10-interior.pdf
+- path: artifacts/cover-wrap.pdf.STUB
+  artifact_type: STUB
+  role: COVER_WRAP
+  final: false
+  spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+  block: BLOCKED_OWNER_COVER
 files:
-  - path: HUMAN_CHECKLIST.md
-  - path: MANIFEST.yaml
-  - path: README.md
-  - path: artifacts/cover-wrap.pdf.STUB
-  - path: artifacts/interior.pdf.STUB
-  - path: validation-stub.md
-  - path: CHECKSUMS.sha256
+- path: artifacts/interior.pdf
+- path: artifacts/cover-wrap.pdf.STUB
+- path: HUMAN_CHECKLIST.md
+- path: MANIFEST.yaml
+- path: README.md
+- path: validation-stub.md
+- path: CHECKSUMS.sha256
+blocks:
+- BLOCKED_OWNER_COVER
+- BLOCKED_OWNER_ISBN
+- BLOCKED_HUMAN_REVIEW
+spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+hardcover_primary_6x9_eligibility:
+  trim: 6x9
+  binding: hardcover
+  page_count: 628
+  eligible: false
+  verified_band: 75-550
+  reason: OUTSIDE_VERIFIED_KDP_BAND
+hardcover_packaged_trim: 7x10

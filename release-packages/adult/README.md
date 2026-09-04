@@ -1,9 +1,10 @@
 # Adult release packages
 
-**Ceiling state:** `ADULT_SUBMISSION_PACKAGE_PREPARED`  
-**Not:** `PUBLICATION_READY`
+**Aggregate state:** `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE`  
+**Package readiness vocabulary:** `SCAFFOLD_ONLY` | `ARTIFACTS_BUILT` | `VALIDATED_LOCALLY` | `BLOCKED_OWNER_COVER` | `BLOCKED_OWNER_METADATA` | `BLOCKED_OWNER_ISBN` | `BLOCKED_HUMAN_REVIEW` | `READY_FOR_OWNER_UPLOAD`  
+**Not:** `PUBLICATION_READY` · `READY_FOR_OWNER_UPLOAD` (owner cover/ISBN/human review still blocked)
 
-Packages (stubs + checklists only; no credentials):
+Channels:
 
 - `amazon-kindle/`
 - `amazon-paperback/`
@@ -14,4 +15,7 @@ Packages (stubs + checklists only; no credentials):
 - `direct-free/`
 - `libraries/`
 
-See `publication/distribution/ADULT_DISTRIBUTION_READINESS_REPORT.md`.
+See `publication/distribution/ADULT_DISTRIBUTION_READINESS_REPORT.md` and
+`publication/distribution/print/PRINT_PROFILE_RESULTS.md`.
+
+HUMAN_VALIDATED = 0/31 · PUBLICATION_READY = 0/31 · Gate 3 pending.

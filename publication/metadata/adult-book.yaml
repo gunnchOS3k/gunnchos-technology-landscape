@@ -9,8 +9,8 @@ contributors:
   - name: "Edmund Gunn, Jr."
     role: author
 language: en
-publication_status: ADULT_SUBMISSION_PACKAGE_PREPARED
-# Ceiling only: package prepared for future human submission — NOT live publication.
+publication_status: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
+# Aggregate only: automatable packaging/render complete — NOT live publication / NOT READY_FOR_OWNER_UPLOAD.
 rights_statement: >
   All Rights Reserved (development-stage manuscript and original artwork).
   Software tooling and explicitly marked lab samples: MIT.

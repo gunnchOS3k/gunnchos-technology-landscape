@@ -1,12 +1,9 @@
 # Adult release package — `amazon-hardcover`
 
-**Status:** `ADULT_SUBMISSION_PACKAGE_PREPARED` (ceiling)  
-**Not:** `PUBLICATION_READY` · not uploaded · no credentials · not Gate 3 PASS
-
-## Target platform
-
-- Platform id: `amazon_kdp_hardcover`
-- Expected assets: PDF interior + case-laminate wrap PDF
+**Package readiness:** `BLOCKED_OWNER_COVER`  
+**Aggregate track state (when packaging complete):** `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE`  
+**Not:** `PUBLICATION_READY` · `READY_FOR_OWNER_UPLOAD` · not uploaded · no credentials · not Gate 3 PASS  
+**HUMAN_VALIDATED:** 0/31
 
 ## Provenance (frozen; do not rewrite)
 
@@ -18,14 +15,22 @@
 
 | Path | Role |
 | --- | --- |
-| `MANIFEST.yaml` | Declared package files |
-| `CHECKSUMS.sha256` | Hashes for present files (stubs included) |
+| `MANIFEST.yaml` | Declared package files + readiness |
+| `CHECKSUMS.sha256` | Hashes for present files |
 | `validation-stub.md` | Automated checks that *could* run later |
 | `HUMAN_CHECKLIST.md` | Human-only upload checklist — no secrets |
-| `artifacts/` | Placeholder stubs only |
+| `artifacts/` | Typed artifacts and/or owner-blocked stubs |
 
-## Build inputs (when owner renders)
+## Channel notes
 
-Prefer reproducible FULL31 artifacts from `make full31-epub` / `make full31-pdf` under
-`preview/full31/` — copy into `artifacts/` only after intentional owner action.
-This package currently ships **stubs**, not rendered binaries.
+- 6×9 hardcover ineligible at 628 pages (verified band 75-550).
+- Packaged 7×10 PRINT_INTERIOR_PDF (524 pages) — WITHIN_VERIFIED_KDP_BAND.
+- Spine/cover wrap: LIVE_COVER_CALCULATOR_REQUIRED.
+- Owner must confirm whether hardcover ships in v1.
+
+## Non-claims
+
+- Do not actually upload from this package without owner approval.
+- Cover technical proofs are **not** final marketing art.
+- ISBN placeholders remain `PENDING_OWNER_PURCHASE`.
+- Kindle Previewer is not automated here (`KINDLE_PREVIEWER_HUMAN_OR_EXTERNAL_PENDING` when applicable).

@@ -52,12 +52,17 @@ Use these labels only; do not invent softer synonyms that imply gate progress.
 | `READY_FOR_TRACK_REVIEW` | Track-local review only — **not** PUBLICATION_READY |
 | `PUBLICATION_READY` | Reserved; requires explicit gate/evidence criteria (currently 0/31) |
 
+Adult **package readiness** (channel-local): `SCAFFOLD_ONLY` | `ARTIFACTS_BUILT` |
+`VALIDATED_LOCALLY` | `BLOCKED_OWNER_COVER` | `BLOCKED_OWNER_METADATA` |
+`BLOCKED_OWNER_ISBN` | `BLOCKED_HUMAN_REVIEW` | `READY_FOR_OWNER_UPLOAD`.
+
 Wave bootstrap status (initial): **`SCAFFOLD_ONLY`**.
 
 Adult distribution track update: see
 `publication/distribution/ADULT_DISTRIBUTION_READINESS_REPORT.md` —
-track-local **`READY_FOR_TRACK_REVIEW`** / ceiling
-`ADULT_SUBMISSION_PACKAGE_PREPARED` (still **not** `PUBLICATION_READY`).
+track-local **`READY_FOR_TRACK_REVIEW`** / aggregate
+`ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE` (still **not** `PUBLICATION_READY` /
+`READY_FOR_OWNER_UPLOAD`).
 
 ## Frozen references (read-only for this wave)
 
@@ -69,7 +74,7 @@ track-local **`READY_FOR_TRACK_REVIEW`** / ceiling
 
 | Edition | Ceiling this wave | Explicitly not claimed |
 | --- | --- | --- |
-| Adult | `ADULT_SUBMISSION_PACKAGE_PREPARED` | `PUBLICATION_READY`, retailer-approved, Gate 3 PASS |
+| Adult | `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE` | `PUBLICATION_READY`, `READY_FOR_OWNER_UPLOAD`, retailer-approved, Gate 3 PASS |
 | Kids | `KIDS_DEVELOPMENTAL_PROTOTYPE` / ready-for-human-review if justified | `PUBLICATION_READY`, child-validated, officially aligned |
 
 Rights: ARR manuscript; MIT scoped to tooling/labs; **no blanket CC**. Free price ≠ open license.

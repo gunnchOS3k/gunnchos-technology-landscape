@@ -21,11 +21,14 @@ REQUIRED = [
     "publication/metadata/adult-book.yaml",
     "publication/metadata/ONIX_MAPPING.md",
     "publication/distribution/print/PRINT_ENGINEERING_RESEARCH.md",
+    "publication/distribution/print/PRINT_PROFILE_RESULTS.yaml",
+    "publication/distribution/print/PRINT_PROFILE_RESULTS.md",
     "publication/distribution/covers/ADULT_COVER_REQUIREMENTS.md",
     "publication/distribution/libraries/LIBRARY_DISTRIBUTION_OPTIONS.md",
     "publication/distribution/PUBLISHING_SOURCE_REGISTER.yaml",
     "publication/distribution/ADULT_DISTRIBUTION_READINESS_REPORT.md",
     "publication/distribution/ADULT_SUBMISSION_PACKAGE_PREPARED.md",
+    "publication/distribution/ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE.md",
     "_quarto-print-6x9.yml",
     "_quarto-print-7x10.yml",
     "_quarto-print-85x11.yml",
@@ -68,16 +71,21 @@ def main() -> int:
     adult = (ROOT / "publication/metadata/adult-book.yaml").read_text(encoding="utf-8")
     if "wcag_certified: false" not in adult:
         errors.append("adult-book.yaml must set wcag_certified: false")
-    if "PUBLICATION_READY" in adult and "ADULT_SUBMISSION_PACKAGE_PREPARED" not in adult:
+    if "PUBLICATION_READY" in adult and "ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE" not in adult and "ADULT_SUBMISSION_PACKAGE_PREPARED" not in adult:
         errors.append("adult-book.yaml overclaim risk")
 
-    ceiling = (ROOT / "publication/distribution/ADULT_SUBMISSION_PACKAGE_PREPARED.md").read_text(
+    ceiling = (ROOT / "publication/distribution/ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE.md").read_text(
         encoding="utf-8"
     )
-    if "PUBLICATION_READY" not in ceiling or "NOT claimed" not in ceiling and "not claimed" not in ceiling.lower():
-        # require explicit non-claim language
-        if "Explicitly NOT claimed" not in ceiling:
-            errors.append("ceiling doc missing Explicitly NOT claimed section")
+    if "Explicitly NOT claimed" not in ceiling:
+        errors.append("aggregate state doc missing Explicitly NOT claimed section")
+    if "READY_FOR_OWNER_UPLOAD" in ceiling and "NOT" not in ceiling:
+        errors.append("aggregate state doc must not claim READY_FOR_OWNER_UPLOAD")
+    legacy = (ROOT / "publication/distribution/ADULT_SUBMISSION_PACKAGE_PREPARED.md").read_text(
+        encoding="utf-8"
+    )
+    if "Explicitly NOT claimed" not in legacy:
+        errors.append("legacy ceiling doc missing Explicitly NOT claimed section")
 
     policy = (ROOT / "publication/distribution/FREE_ACCESS_POLICY.md").read_text(encoding="utf-8")
     if "KDP Select" not in policy:

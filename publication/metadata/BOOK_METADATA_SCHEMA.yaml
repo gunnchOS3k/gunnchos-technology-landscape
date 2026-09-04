@@ -41,6 +41,7 @@ properties:
     enum:
       - DRAFT_INTERNAL
       - ADULT_SUBMISSION_PACKAGE_PREPARED
+      - ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
       - PUBLICATION_READY
     description: PUBLICATION_READY reserved; currently unused for adult FULL31
   rights_statement:
