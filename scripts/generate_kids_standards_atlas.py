@@ -9,6 +9,17 @@ from pathlib import Path
 
 import yaml
 
+from kids_standards_europe_research import (
+    EUROPE_COVERAGE_GAPS,
+    EUROPE_NATIONAL_OVERRIDES,
+    EUROPE_REGIONAL_PRIORITY_NOTE,
+    apply_framework_patches,
+    europe_transnational_rows,
+    germany_lander_rows,
+    merge_mappings,
+    uk_nation_row_updates,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "kids" / "standards"
 RETRIEVED = "2026-09-03"
@@ -531,9 +542,12 @@ NATIONAL_OVERRIDES: dict[str, dict] = {
 }
 
 
+NATIONAL_OVERRIDES.update(EUROPE_NATIONAL_OVERRIDES)
+
+
 def frameworks() -> list[dict]:
     """Mandatory + priority official framework baseline."""
-    return [
+    baseline = [
         {
             "framework_id": "FW-UNESCO-AI-STUDENTS-2024",
             "title": "AI competency framework for students",
@@ -1037,6 +1051,7 @@ def frameworks() -> list[dict]:
             "mandatory_baseline": False,
         },
     ]
+    return apply_framework_patches(baseline)
 
 
 def kids_targets() -> list[dict]:
@@ -1095,7 +1110,7 @@ def kids_targets() -> list[dict]:
 def mappings() -> list[dict]:
     """Editorial crosswalks — never certification claims."""
     disclaimer = "Editorial crosswalk only; not a certification or authority endorsement claim."
-    return [
+    baseline = [
         {
             "mapping_id": "MAP-CSTA2026-ALGO-KE",
             "relationship": "CROSSWALKED_AGAINST",
@@ -1339,6 +1354,7 @@ def mappings() -> list[dict]:
             "reviewed_on": RETRIEVED,
         },
     ]
+    return merge_mappings(baseline)
 
 
 def build_jurisdictions() -> list[dict]:
@@ -1375,21 +1391,9 @@ def build_jurisdictions() -> list[dict]:
             "notes": "Learning Compass is aspirational / evolving — not a curriculum mandate.",
             "last_reviewed_on": RETRIEVED,
         },
-        {
-            "jurisdiction_id": "JUR-GLOBAL-EU",
-            "iso3166_1": None,
-            "iso3166_2": None,
-            "name": "European Union (transnational competence frameworks)",
-            "level": "transnational",
-            "parent_jurisdiction_id": None,
-            "region": "europe",
-            "education_authority": "European Commission",
-            "research_status": "IDENTIFIED",
-            "framework_ids": ["FW-EU-DIGCOMP"],
-            "notes": "DigComp informs member-state digital competence work; not a kids curriculum.",
-            "last_reviewed_on": RETRIEVED,
-        },
     ]
+    # Europe Track 2B transnational rows (EU DigComp + IB PYP public)
+    rows.extend(europe_transnational_rows())
 
     for iso, name, region in COUNTRIES:
         ov = NATIONAL_OVERRIDES.get(iso, {})
@@ -1412,10 +1416,19 @@ def build_jurisdictions() -> list[dict]:
             }
         )
 
+    uk_updates = uk_nation_row_updates()
     for sn in SUBNATIONAL:
         row = dict(sn)
-        row.setdefault("last_reviewed_on", RETRIEVED if sn["research_status"] != "NOT_YET_RESEARCHED" else None)
+        if row["jurisdiction_id"] in uk_updates:
+            row = dict(uk_updates[row["jurisdiction_id"]])
+        row.setdefault("last_reviewed_on", RETRIEVED if row["research_status"] != "NOT_YET_RESEARCHED" else None)
         rows.append(row)
+
+    # Germany Länder census (Track 2B)
+    existing_ids = {r["jurisdiction_id"] for r in rows}
+    for land in germany_lander_rows():
+        if land["jurisdiction_id"] not in existing_ids:
+            rows.append(land)
 
     return rows
 
@@ -1436,7 +1449,7 @@ def dump_yaml(path: Path, data: object) -> None:
 def regional_slices(jurisdictions: list[dict]) -> None:
     by_region: dict[str, list] = {}
     for j in jurisdictions:
-        if j["level"] == "transnational":
+        if j["level"] in {"transnational", "institutional"}:
             continue
         by_region.setdefault(j["region"], []).append(
             {
@@ -1460,7 +1473,7 @@ def regional_slices(jurisdictions: list[dict]) -> None:
                 "status_counts": dict(counts),
                 "priority_notes": {
                     "americas": "Ontario verified; US states census scaffolded; LatAm mostly NOT_YET_RESEARCHED.",
-                    "europe": "England EYFS verified; other UK nations IDENTIFIED; Nordics/central Europe census open.",
+                    "europe": EUROPE_REGIONAL_PRIORITY_NOTE,
                     "africa": "South Africa CAPS (+ Coding/Robotics) priority; Francophone/Lusophone TRANSLATION_REQUIRED queue.",
                     "middle_east": "High-level IDENTIFIED for UAE/Saudi/Egypt; deep pins pending.",
                     "asia_pacific": "AU/NZ/SG/IN/JP baseline present; ASEAN/Pacific mostly NOT_YET_RESEARCHED.",
@@ -1481,7 +1494,7 @@ def coverage_report(jurisdictions: list[dict], sources: list[dict], maps: list[d
         f"**Generated:** {RETRIEVED}  ",
         f"**Track status:** `{TRACK_STATUS}` (not PUBLICATION_READY)  ",
         f"**Schema:** `kids/standards/STANDARD_MAPPING_SCHEMA.md`  ",
-        f"**Base SHA (integration tip):** `ce9cc419841fa0588e30d8d917b048c72f8cc2c0`  ",
+        f"**Base SHA (integration tip):** `c0ff99bcaaa620ca5274d1f8fbf1018c80e85fb4`  ",
         f"**Accepted main:** `82284cd8f41d750ff508cd6ea5bad0a9534d8162`",
         "",
         "## Jurisdiction metrics",
@@ -1522,20 +1535,17 @@ def coverage_report(jurisdictions: list[dict], sources: list[dict], maps: list[d
             "",
             "## Honest gaps (priority)",
             "",
-            "1. **UK nations:** England EYFS `OFFICIAL_VERIFIED`; Scotland / Wales / NI remain `IDENTIFIED` + `NOT_YET_MAPPED`.",
-            "2. **Finland / Japan:** Official portals identified; deep clause work `TRANSLATION_REQUIRED` + version pins unclear.",
-            "3. **South Africa Coding & Robotics:** Instrument identified; phase PDF editions not pinned → `NOT_YET_MAPPED`.",
-            "4. **Canada:** Ontario kindergarten verified; remaining provinces/territories mostly `NOT_YET_RESEARCHED` (Quebec `TRANSLATION_REQUIRED`).",
-            "5. **US states:** Full 50+DC census rows exist as architecture; CS/early-learning adoption research not started (`NOT_YET_RESEARCHED`).",
-            "6. **World majority:** Most national rows are intentional `NOT_YET_RESEARCHED` placeholders for exhaustive coverage architecture.",
-            "7. **No EXACT maps yet:** Early editorial grain prefers `ADJACENT`/`PROPOSED` over false precision.",
-            "8. **Copyright:** No wholesale standards text included; domain-family summaries only.",
+            *EUROPE_COVERAGE_GAPS,
             "",
             "## Non-claims",
             "",
             "- Crosswalks are `CROSSWALKED_AGAINST` / `MAPPED_TO` / `INFORMED_BY` — **not** official alignment or certification.",
             "- Presence of a jurisdiction row ≠ completed research.",
             "- This track does not advance Gate 3 or PUBLICATION_READY counts.",
+            "",
+            "## Track note (Europe 2B)",
+            "",
+            "- Europe exhaustive portal research landed on this generator pass; sister tracks own non-Europe depth.",
             "",
         ]
     )
