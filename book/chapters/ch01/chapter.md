@@ -39,7 +39,7 @@ This chapter’s promise is simple:
 
 > After this chapter, you can look at an ordinary device experience and name the hidden cooperating parts—not just the colorful surface—and explain why “the app” is usually not one thing.
 
-Chapter 2 will later prove a method by following one tap through the stack. Chapter 1 teaches the **system lens** first: visible interface versus hidden work, local readiness versus network-dependent readiness, and the honesty of naming a **failure domain** before blaming a vague villain.
+Chapter 2 will later prove a method by following one tap through the stack. Chapter 1 teaches the **system lens** first: visible interface versus hidden work, local readiness versus network-dependent readiness, and the honesty of naming a **failure domain** before blaming a vague villain. When one domain limits the whole path, later chapters will call that limiting resource a **bottleneck**—here it is enough to name the domain before inventing a cause.
 
 ---
 

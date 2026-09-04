@@ -102,7 +102,7 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 4. **Present.** The display pipeline shows a frame; the audio pipeline emits samples.
 5. **Perceive.** You judge smoothness, lip-sync, loudness, and meaning.
 
-@fig-ch08-002 sketches steady versus uneven presentation *feel* as an **illustrative** teaching aid. It does not assert product hitch thresholds or a surveyed law of missed deadlines; those survey-depth citations remain open (see blockers). Read it as “rhythm you can notice,” not as a measured scoreboard.
+@fig-ch08-002 sketches steady versus uneven presentation *feel* as an **illustrative** teaching aid. It does not assert product hitch thresholds or a surveyed law of missed deadlines; that survey-depth evidence gap remains open as **CLM-CH08-001** (claim footnotes below). Read it as “rhythm you can notice,” not as a measured scoreboard.
 
 ![Illustrative timeline of steady versus uneven frame presentation feel.](../../../figures/sequence/fig-ch08-002-presentation-timing.svg){#fig-ch08-002 fig-cap="Illustrative presentation timing and feel. Teaching aid only; not product benchmarks."}
 
@@ -185,11 +185,13 @@ Each card answers: What is it? What does it do for the person? What fails when i
 
 ### Compositor / GPU role (survey)
 
-**Plain definition.** Combining layers and accelerating presentation (and related parallel) work; software talks to GPUs through mediated APIs [@khronos-vulkan-overview; @patterson-hennessy].
+**Plain definition.** Two cooperating jobs, not one synonym: the **compositor** combines layers into a presentable frame; a **GPU** (or similar accelerator) may speed rendering and related parallel work when software submits it through mediated APIs [@khronos-vulkan-overview; @patterson-hennessy].
 
 **Experience benefit.** Smooth composition of video + UI + banners when budgets hold.
 
 **Failure symptom.** Janky animations, dropped UI responsiveness, or heat while “nothing important” seemed to run.
+
+**Not the same as.** The display panel itself—the pipeline that turns a composed frame into light can fail even when GPU work looked busy.
 
 These cards are a failure-domain toolkit—not a shopping list.
 

@@ -1,0 +1,348 @@
+schema_version: 1.0.0
+ledger_id: TECHNICAL_PART_I_II
+agent: agent/quality-a-part12
+category: TECHNICAL
+parts: [I, II]
+chapters: [CH01, CH02, CH03, CH04, CH05, CH06, CH07, CH08, CH09, CH10]
+accepted_base_sha: 76bee2e67c35ff445f46c83af30809e5b307f06e
+preferred_base_branch: cursor/full31-quality-convergence-001
+preferred_base_status: ABSENT_FALLBACK_TO_ACCEPTED_MAIN
+branch: agent/quality-a-part12
+audit_phase: scoped_fixes_applied
+gate_3_policy: DO_NOT_TOUCH
+gate_3_unchanged: true
+gate_3_sha_samples:
+  REVIEW_PROTOCOL.md: 300715a70012d8a2c92e1e4558960fa02d27e7d5
+  checklist.md: 1227547edb62ec0f128fe362b4778df20c6dbca9
+  evidence.yaml: ffcc8c020747f551f1399d751b6e7f95512f93d0
+ch02_policy: MECHANICAL_ONLY_IF_NEEDED
+audit_date: 2026-09-03
+reviewer_type: TECHNICAL
+
+severity_counts_before:
+  BLOCKER: 0
+  MAJOR: 4
+  MODERATE: 6
+  MINOR: 4
+  EDITORIAL: 2
+
+severity_counts_after:
+  BLOCKER: 0
+  MAJOR: 0
+  MODERATE: 1
+  MINOR: 2
+  EDITORIAL: 2
+
+issues:
+  - issue_id: TECH-P12-001
+    chapter: CH05
+    part: II
+    category: TECHNICAL
+    severity: MAJOR
+    location: "book/chapters/ch05/chapter.md §3 Electrical medium; §5 Electricity card; glossary"
+    finding: >
+      Part II requires an explicit voltage / current / power separation. The chapter named
+      charge, voltage, and current together and defined the electricity card as “charge in
+      motion and potential differences,” conflating current with voltage and never stating
+      power as the rate of energy delivery.
+    evidence: >
+      Pre-fix §3 and §5 card wording; glossary lacked Voltage/Current/Power rows.
+    proposed_fix: >
+      Add qualitative V/I/P separation paragraph; revise electricity card + glossary rows.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+    fix_note: "Scoped prose in CH05 §3, electricity card, glossary (2026-09-03)."
+
+  - issue_id: TECH-P12-002
+    chapter: CH06
+    part: II
+    category: TECHNICAL
+    severity: MAJOR
+    location: "book/chapters/ch06/chapter.md §3 CPU cores"
+    finding: >
+      Cores were defined as “hardware contexts,” inviting core≡hardware-thread confusion.
+    evidence: >
+      Pre-fix cores sentence used “hardware contexts.”
+    proposed_fix: >
+      Redefine cores as independent execution engines; note hardware threads survey-only.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: true
+    reviewer_type_needed: TECHNICAL
+    fix_note: "Rewrote CPU cores paragraph; retained @patterson-hennessy-riscv."
+
+  - issue_id: TECH-P12-003
+    chapter: CH06
+    part: II
+    category: TECHNICAL
+    severity: MAJOR
+    location: "book/chapters/ch06/chapter.md §5 Process / thread card"
+    finding: >
+      Component card collapsed process vs thread despite correct earlier prose.
+    evidence: >
+      Pre-fix card plain definition lumped both abstractions.
+    proposed_fix: >
+      Expand card with process address-space vs thread scheduling distinction and Not-the-same-as core.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: true
+    reviewer_type_needed: TECHNICAL
+    fix_note: "Expanded Process/thread card; retained @tanenbaum-bos."
+
+  - issue_id: TECH-P12-004
+    chapter: CH03
+    part: I
+    category: TECHNICAL
+    severity: MAJOR
+    location: "book/chapters/ch03/chapter.md §7 Route C"
+    finding: >
+      Garbled CMS measured-plate sentence undermined lab evidence rules.
+    evidence: >
+      Pre-fix duplicated parentheticals around BLOCKED_EVIDENCE_REQUIRED.
+    proposed_fix: >
+      One clear sentence: measured plate stays blocked; fixtures do not unblock.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-005
+    chapter: CH03
+    part: I
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch03/chapter.md §2"
+    finding: >
+      Responsiveness not named as seat judgment distinct from latency metric.
+    evidence: >
+      Colloquial “unresponsive” only; perceived performance sentence existed.
+    proposed_fix: >
+      Name responsiveness vs latency explicitly; retarget ISO 25010 to quality judgment.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-006
+    chapter: CH08
+    part: II
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch08/chapter.md §4 Path P"
+    finding: >
+      Dangling “see blockers” pointer.
+    evidence: >
+      Pre-fix “(see blockers)” with no in-chapter blockers list.
+    proposed_fix: >
+      Point to CLM-CH08-001 claim footnotes.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-007
+    chapter: CH08
+    part: II
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch08/chapter.md §5 Compositor / GPU role card"
+    finding: >
+      Card blended compositor with GPU without Not-the-same-as.
+    evidence: >
+      Pre-fix single blended plain definition.
+    proposed_fix: >
+      Separate compositor vs GPU jobs in card; note display panel is not the GPU.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-008
+    chapter: CH03
+    part: I
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch03/chapter.md §2 cite placement"
+    finding: >
+      ISO/IEC 25010 over-paired on latency/jitter/throughput trichotomy.
+    evidence: >
+      Dual cite on trichotomy sentence.
+    proposed_fix: >
+      Keep Saltzer on trichotomy; move ISO 25010 to perceived-performance judgment sentence.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-009
+    chapter: CH01
+    part: I
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch01/chapter.md §1"
+    finding: >
+      Bottleneck vocabulary deferred entirely to later chapters.
+    evidence: >
+      Failure domains without limiting-resource foreshadow.
+    proposed_fix: >
+      One-sentence foreshadow naming bottleneck as limiting resource later chapters deepen.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-010
+    chapter: CH08
+    part: II
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch08/chapter.md CLM-CH08-001"
+    finding: >
+      Display-deadline→hitch survey claim correctly omitted pending pinned source.
+    evidence: >
+      Explicit omission pending multimedia/display-timing document.
+    proposed_fix: >
+      Evidence agent pins source later; do not invent hitch thresholds here.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: true
+    reviewer_type_needed: EVIDENCE
+
+  - issue_id: TECH-P12-011
+    chapter: CH09
+    part: II
+    category: TECHNICAL
+    severity: MINOR
+    location: "book/chapters/ch09/chapter.md References"
+    finding: >
+      Battery electrochemistry and mechanical textbook pins remain SOURCE_NEEDED; prose honest via IEC/UL.
+    evidence: >
+      Explicit omitted-claims note in References.
+    proposed_fix: Defer textbook pinning to evidence wave.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: true
+    reviewer_type_needed: EVIDENCE
+
+  - issue_id: TECH-P12-012
+    chapter: CH07
+    part: II
+    category: TECHNICAL
+    severity: MINOR
+    location: "book/chapters/ch07/chapter.md §5 Registers card"
+    finding: >
+      Registers called “Tiny storage,” softening RAM≠storage discipline for skimmers.
+    evidence: >
+      Pre-fix Role line used storage metaphor.
+    proposed_fix: >
+      Retitle as holding places; Not-the-same-as durable storage.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-013
+    chapter: CH05
+    part: II
+    category: TECHNICAL
+    severity: MINOR
+    location: "publication/full31/chapters/ch05/SOURCE_NEEDS.md"
+    finding: >
+      SOURCE_NEEDS still marks Harris as SOURCE_NEEDED while harris-harris-riscv is keyed and cited.
+    evidence: >
+      SRC-CH05-01 vs WORKING_BIBLIOGRAPHY / chapter cites.
+    proposed_fix: Metadata sync in later packet pass.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: EVIDENCE
+
+  - issue_id: TECH-P12-014
+    chapter: CH02
+    part: I
+    category: TECHNICAL
+    severity: MINOR
+    location: "book/chapters/ch02/chapter.md"
+    finding: >
+      Spot-check clean; no MAJOR/BLOCKER; no broad CH02 rewrite per policy.
+    evidence: >
+      Illustrative latency budget; PHYSICAL_PENDING; RAM/GPU/packet cards.
+    proposed_fix: No change.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-015
+    chapter: CH04
+    part: I
+    category: TECHNICAL
+    severity: EDITORIAL
+    location: "book/chapters/ch04/chapter.md PHYSICAL_PENDING"
+    finding: >
+      Strong PHYSICAL_PENDING discipline; no overclaim found.
+    evidence: >
+      Banner; CLM-CH04-002; LAB-QUARTET-001 commodity routes.
+    proposed_fix: Confirm-and-preserve.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P12-016
+    chapter: CH10
+    part: II
+    category: TECHNICAL
+    severity: EDITORIAL
+    location: "book/chapters/ch10/chapter.md"
+    finding: >
+      Port/bus/protocol separation clear; no invented yields or schematic overclaim.
+    evidence: >
+      Component cards; CLM-CH10-004; yield refusals.
+    proposed_fix: Confirm-and-preserve.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+boundary_checklist_after_fixes:
+  part_i:
+    system_vs_component: PASS
+    latency_vs_responsiveness: PASS
+    throughput_vs_latency: PASS
+    average_vs_jitter: PASS
+    local_vs_remote: PASS
+    bottlenecks: PASS
+    device_quartet_physical_pending: PASS
+  part_ii:
+    voltage_current_power: PASS
+    analog_digital: PASS
+    clocks: PASS
+    cpu_core_thread: PASS
+    cache_ram_storage: PASS
+    gpu_display: PASS
+    sensors: PASS
+    battery_thermal: PASS
+    connector_bus_protocol: PASS
+    no_manufacturing_schematic_overclaim: PASS
+
+files_touched:
+  - publication/full31/quality/ledgers/TECHNICAL_PART_I_II.yaml
+  - publication/full31/quality/ledgers/TECHNICAL_PART_I_II.md
+  - book/chapters/ch01/chapter.md
+  - book/chapters/ch03/chapter.md
+  - book/chapters/ch05/chapter.md
+  - book/chapters/ch06/chapter.md
+  - book/chapters/ch07/chapter.md
+  - book/chapters/ch08/chapter.md
+
+constraints_honored:
+  - no_invented_citations
+  - no_wholesale_chapter_replacement
+  - no_word_count_padding
+  - preserve_distinctive_explanations
+  - publication_gates_gate_3_untouched
+  - ch02_no_broad_rewrite
+  - no_pr_opened

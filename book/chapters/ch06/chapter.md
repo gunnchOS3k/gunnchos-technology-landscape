@@ -91,7 +91,7 @@ A **scheduler** decides which runnable thread obtains CPU time next [@tanenbaum-
 
 ### CPU cores
 
-A **CPU** fetches, decodes, and executes instructions. Modern packages often expose multiple **cores**—hardware contexts that can progress different instruction streams when work is available [@patterson-hennessy-riscv]. “The CPU is at 90%” in a monitor is a coarse summary, not a biography of every instruction.
+A **CPU** fetches, decodes, and executes instructions. Modern packages often expose multiple **cores**—independent execution engines on a chip that can progress different instruction streams when work is available [@patterson-hennessy-riscv]. Some cores also expose multiple hardware threads (survey depth only); that is not the same claim as “more software threads always feel faster.” “The CPU is at 90%” in a monitor is a coarse summary, not a biography of every instruction.
 
 ### Accelerators (survey depth)
 
@@ -162,11 +162,13 @@ These cards are a first toolkit—not a bill of materials for every SoC.
 
 ### Process / thread
 
-**Plain definition.** OS abstractions for concurrent work units [@tanenbaum-bos].
+**Plain definition.** OS abstractions for concurrent work: a **process** typically owns an address-space boundary; a **thread** is a schedulable execution path inside a process (often what the scheduler actually picks next) [@tanenbaum-bos].
 
 **Experience benefit.** Multiple activities can progress without being one single frozen program counter from the person’s point of view.
 
 **Failure symptom.** Too many competing units; a stuck UI thread; unclear which process owns the lag.
+
+**Not the same as.** A hardware **core** (execution engine). Extra cores help only when useful work is ready to overlap.
 
 ### Scheduler
 

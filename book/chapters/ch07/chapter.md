@@ -123,10 +123,10 @@ These cards are a toolkit for naming layers—not a complete bill of materials.
 
 ### Registers
 
-**Role.** Tiny storage inside the CPU for values in active use.  
+**Role.** Tiny holding places inside the CPU for values in active use.  
 **Human feel.** Invisible; you notice only the aggregate responsiveness of computation.  
 **Failure symptom (rare as a named user complaint).** Extreme compute load, not “I ran out of registers” in everyday speech.  
-**Not the same as.** App “memory use” percentages in a monitor.
+**Not the same as.** App “memory use” percentages in a monitor, RAM sticks, or durable storage.
 
 ### Cache
 

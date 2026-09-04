@@ -72,7 +72,7 @@ Something converts the action into an electrical change. A mechanical switch ope
 
 ### Electrical medium
 
-Charge, voltage, and current are the ordinary medium for doing work and carrying control information inside devices. You do not need a full circuits course to hold the idea: energy and control arrive as electrical quantities that must be present, limited, and safe enough for the intended parts. Later sections stay qualitative; this book will not invent precision meter readings for research hardware that has not been measured.
+Three ordinary electrical quantities stay distinct in this chapter. **Voltage** is a potential difference—the “pressure” that can drive charge when a path exists. **Current** is charge in motion along that path. **Power** is how fast energy is delivered or converted (qualitatively: when both voltage and current are present in a useful path, work can be done and heat can appear). You do not need a full circuits course to hold the separation: energy and control arrive as electrical quantities that must be present, limited, and safe enough for the intended parts. Later sections stay qualitative; this book will not invent precision meter readings for research hardware that has not been measured.
 
 ### Signal
 
@@ -135,10 +135,11 @@ These cards are teaching tools, not a catalog of SKUs. If removing a name still 
 
 ### Electricity as useful energy and control
 
-- **What it is.** Charge in motion and potential differences that can do work or convey control.
+- **What it is.** Voltage (potential difference), current (charge flow), and power (energy delivery rate) used together to do work or convey control—three related quantities, not three names for one thing.
 - **What it does.** Powers sensors, logic, radios, and actuators; carries many of the signals this chapter cares about.
 - **When it works.** Enough energy arrives where it is needed, within limits the parts can tolerate.
 - **When it fails.** Brownout, open path, short, or wrong domain powered—often experienced as “dead” behavior without a helpful error message.
+- **Misconception to drop.** Seeing a glowing screen (some power domain alive) does not prove the input path has voltage, current, and power where the decision needs them.
 
 ### Signal
 
@@ -370,6 +371,9 @@ Inline citations used in this chapter include @harris-harris-riscv, @patterson-h
 | Term | Role in this chapter |
 |---|---|
 | Electricity (energy/control) | Medium for power and many control signals |
+| Voltage | Potential difference that can drive charge when a path exists |
+| Current | Charge in motion along a path |
+| Power | Rate of energy delivery or conversion (not a synonym for voltage) |
 | Signal | Time-varying physical quantity carrying information |
 | Analog | Continuous physical representation |
 | Digital | Discrete symbolic levels interpreted from physical media |
