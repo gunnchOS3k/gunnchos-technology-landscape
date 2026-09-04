@@ -15,9 +15,17 @@
 | Primary INLINE_ACTIVITY chapters | **4** (CH26, CH29, CH30; CH19 NTN doc route) |
 | PROPOSED_LAB IDs audited | **17** |
 | Proposed → full lab implemented this wave | **0** (no new low-value `labs/` dirs) |
-| Proposed → inline | **10** |
-| Proposed kept pending | **7** |
+| Proposed → inline | **10** (CPU, MEM, SCHED, AUTH→TRUST, PLACE, CONT, CH26, CH29, CH30, ACCESS→RADIO/PKT) |
+| Proposed kept pending | **7** (DATA-LIFE, API-OBS, CH21-EVAL, CH22-SENSE, CH25-PAIR, CH27-SIGNAL, CH28-REPRO) |
 | Physical-pending surfaces | **6** |
+
+## Scoped fixes applied after ledger
+
+- Corrected CH11 “proposed” mislabel; refreshed CH11/CH18 opportunities to FULL_LAB status for BOOT/RADIO.
+- Added portfolio stubs + `A11Y_PRIVACY_SAFETY.md` for thin FULL labs.
+- Promoted `LAB-IO-001` to `IMPLEMENTED_DIGITAL`.
+- Converted worth-it proposed worksheets to INLINE_ACTIVITY dispositions without new lab directories.
+- Clarified CH29/CH30 metadata so proposed IDs are not listed as if `labs/` packages exist.
 
 ## FULL_LAB packets
 

@@ -114,7 +114,7 @@ labs:
     baseline_routes: [fixture, local_media, permission_deny]
     extension_routes: []
     no_specialized_hardware: true
-    status: DRAFT_DIGITAL
+    status: IMPLEMENTED_DIGITAL
     fixture_available: true
     gate_note: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
   - lab_id: LAB-BUS-001

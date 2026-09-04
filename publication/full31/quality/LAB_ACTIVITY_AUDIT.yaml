@@ -375,8 +375,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "lab.yaml claims portfolio_output paths that were missing; PHYSICAL_PENDING for Quartet EVT"
+    packet_grade: adequate
+    note: "lab.yaml claims portfolio_output paths that were missing; PHYSICAL_PENDING for Quartet EVT — stubs/labels fixed this wave"
   - lab_id: LAB-SIG-001
     chapter: "CH05"
     classification: FULL_LAB
@@ -386,8 +386,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "Fixture HTML/MD present; portfolio dir missing pre-fix; kit route PHYSICAL_PENDING"
+    packet_grade: adequate
+    note: "Fixture HTML/MD present; portfolio dir missing pre-fix; kit route PHYSICAL_PENDING — stubs/labels fixed this wave"
   - lab_id: LAB-CMS-001
     chapter: "CE-3/CH06-07-12"
     classification: FULL_LAB
@@ -408,8 +408,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "Privacy-strong fixtures; portfolio stubs missing; promote after stub fill"
+    packet_grade: adequate
+    note: "Privacy-strong fixtures; portfolio stubs + A11Y added; status IMPLEMENTED_DIGITAL"
   - lab_id: LAB-PWR-001
     chapter: "CH09"
     classification: FULL_LAB
@@ -419,8 +419,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "Safety-strong README; portfolio dir missing pre-fix"
+    packet_grade: adequate
+    note: "Safety-strong README; portfolio dir missing pre-fix — stubs/labels fixed this wave"
   - lab_id: LAB-BUS-001
     chapter: "CH10"
     classification: FULL_LAB
@@ -430,8 +430,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "Fixtures present; portfolio stubs missing pre-fix"
+    packet_grade: adequate
+    note: "Fixtures present; portfolio stubs missing pre-fix — stubs/labels fixed this wave"
   - lab_id: LAB-BOOT-OBS-001
     chapter: "CH11"
     classification: FULL_LAB
@@ -441,8 +441,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "Implemented packet; chapter heading incorrectly said proposed"
+    packet_grade: adequate
+    note: "Implemented packet; chapter heading incorrectly said proposed — stubs/labels fixed this wave"
   - lab_id: LAB-PKT-001
     chapter: "CE-4/CH14-17"
     classification: FULL_LAB
@@ -463,8 +463,8 @@ full_labs:
       fixture_fallback: true
       portfolio_templates_complete: false
       tests_or_validator: false
-    packet_grade: gap_pre_fix
-    note: "Observation-only; opportunities file stale; portfolio stubs missing"
+    packet_grade: adequate
+    note: "Observation-only; opportunities file stale; portfolio stubs missing — stubs/labels fixed this wave"
   - lab_id: LAB-TRUST-001
     chapter: "CE-5/CH21-24"
     classification: FULL_LAB
@@ -660,6 +660,13 @@ try_build_quality_findings:
     - "Update LAB_OPPORTUNITIES dispositions for proposed→inline / keep_proposed / superseded"
     - "Clarify CH29/CH30 metadata and chapter headings as INLINE_ACTIVITY (not FULL_LAB)"
     - "Do not create new low-value labs/ directories this wave"
+  scoped_fixes_applied:
+    - "CH11 Try It status corrected to IMPLEMENTED_DIGITAL; CH11/CH18 opportunities updated"
+    - "Portfolio stubs + A11Y_PRIVACY_SAFETY.md for thin FULL labs (BOOT/BUS/RADIO/IO/QUARTET/PWR/SIG/PERF/TAP)"
+    - "LAB-IO-001 promoted DRAFT_DIGITAL → IMPLEMENTED_DIGITAL"
+    - "Proposed→inline dispositions written for CPU/MEM/SCHED/PLACE/CONT/CH26/CH29/CH30; ACCESS superseded"
+    - "CH29/CH30 metadata labs arrays no longer pretend proposed IDs are FULL_LAB packages"
+    - "Zero new labs/ directories created"
 
 gate_constraints:
   gate_3_changes: forbidden

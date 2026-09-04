@@ -180,7 +180,7 @@ A system can remain *icon-connected* while the human experience has already fail
 
 **Goal.** Practice continuity literacy on path and usability changes you can ethically observe—then extend the same worksheet logic toward public NTN/satellite *feature classification* using official documents only.
 
-**WAIKE alignment note.** WAIKE accepted `main` maps advanced wireless coursework adjacently (`WIRELESS_6G`); it does **not** provide an exact NTN lab ID. Do not invent one. Publication continuity work inherits **LAB-PKT-001** (path/access framing) and **LAB-CE06-001** (connected-but-unusable diagnosis). A future continuity worksheet across CE-4/CE-6/CH19 remains **proposed**, not shipped as a new WAIKE course ID.
+**WAIKE alignment note.** WAIKE accepted `main` maps advanced wireless coursework adjacently (`WIRELESS_6G`); it does **not** provide an exact NTN lab ID. Do not invent one. Publication continuity work inherits **LAB-PKT-001** (path/access framing) and **LAB-CE06-001** (connected-but-unusable diagnosis). The NTN document-only capability-class route below is an **INLINE_ACTIVITY** (namespaced idea `LAB-CONT-001` is **not** a shipped `labs/` package and must not be minted as a WAIKE course ID).
 
 **Safety (hard stops).**
 

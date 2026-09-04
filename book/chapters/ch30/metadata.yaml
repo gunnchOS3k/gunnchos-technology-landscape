@@ -18,7 +18,12 @@ experience:
 reader_paths: [explorer, operator, builder, engineer, researcher, educator]
 systems: [role-family, portfolio-proof, review-criteria, portfolio-index, employment-non-guarantee]
 devices: [commodity-phone, commodity-computer, commodity-tablet]
-labs: [LAB-CH30-PORTFOLIO-001]
+labs: [LAB-CE06-001]
+inline_activities:
+  - id: LAB-CH30-PORTFOLIO-001
+    status: INLINE_ACTIVITY
+    note: "Chapter-native portfolio index; not a labs/ FULL_LAB package."
+
 figures:
   - FIG-CH30-001
   - FIG-CH30-002
@@ -45,5 +50,6 @@ bibliography_note: "Cite src-waike for adjacent portfolio patterns. Publication-
 blockers:
   - "GATE_3 reader evidence pending — no Gate 3 PASS claim; portfolio fixtures are not human validation"
   - "CLM-CH30-004 BLS OOH (or equivalent) SOURCE_NEEDED — labor-market statistics omitted from this draft"
-  - "proposed LAB-CH30-PORTFOLIO-001 not yet authored as a full lab package (chapter references inherit CE portfolio outputs)"
+  - "LAB-CH30-PORTFOLIO-001 is INLINE_ACTIVITY (not a labs/ package); inherits CE portfolio outputs"
+
   - "No employment-guarantee, salary, or placement language"

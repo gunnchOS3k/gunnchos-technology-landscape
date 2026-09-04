@@ -4,13 +4,13 @@
 
 Prefer inheriting existing CE labs. Do not invent CE/WAIKE IDs. Proposed publication labs are namespaced ideas only.
 
-## INHERIT: `LAB-PKT-001`
+## INHERIT: `LAB-PKT-001` (FULL_LAB)
 
 Label access network Wi-Fi/cellular/unknown/fixture.
 
-## OPPORTUNITY: `LAB-ACCESS-OBS-001 (proposed)`
+## SUPERSEDED PROPOSAL: `LAB-ACCESS-OBS-001`
 
-Walk-test observation log on learner phone: icon vs usable send; no RF transmitters; fixture alternative.
+**Disposition (Agent G quality wave):** superseded by `LAB-RADIO-OBS-001` (CH18) + PKT access labeling. Keep CH17 Try It on PKT inherit; do not mint a duplicate lab dir.
 
 ## Safety / equity defaults
 

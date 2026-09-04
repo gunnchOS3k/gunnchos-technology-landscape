@@ -7,7 +7,8 @@
 
 | Lab / proposal | Relationship | Notes |
 |---|---|---|
-| `proposed: LAB-CH29-ONEPAGER-001` | proposed | Product one-pager + evidence/inclusion gates from prior lab artifacts |
+| `INLINE_ACTIVITY` (was `LAB-CH29-ONEPAGER-001`) | inline | Product one-pager + evidence/inclusion gates from prior lab artifacts; chapter-native |
+| `LAB-CE06-001` / `LAB-TRUST-001` | inherit | Source artifacts for the one-pager |
 | `Device Quartet docs` | adjacent context | Form-factor lenses only |
 
 ## Inheritance notes
@@ -19,9 +20,9 @@
 
 - No exploit steps, credential harvesting, or capture of others' private data  
 - Redact identifiers before portfolio share  
-- Provide fixture / no-specialized-hardware completion routes where labs are proposed  
+- Provide fixture / no-specialized-hardware completion routes  
 - For Ch31: illustrative EMIT example must remain labeled teaching-only
 
 ## Status honesty
 
-LAB-TRUST-001 and LAB-CE06-001 are `FIXTURE_VALIDATED` on their agent branches (pending integrator merge into continuation). That is **not** Gate 3 human validation.
+Fixtures are not Gate 3 human validation.

@@ -4,13 +4,13 @@
 
 Prefer inheriting existing CE labs. Do not invent CE/WAIKE IDs. Proposed publication labs are namespaced ideas only.
 
-## OPPORTUNITY: `LAB-PLACE-001 (proposed)`
+## INHERIT: `LAB-PKT-001` (FULL_LAB)
 
-Classify 3 familiar services as likely edge/cloud/local and justify with observation vs inference; no cloud account required.
+Primary — path diagram with explicit **placement** hypothesis (local / edge / cloud / unknown) kept separate from access mode.
 
-## INHERIT: `LAB-PKT-001`
+## INLINE_ACTIVITY (was `LAB-PLACE-001`)
 
-Placement hypothesis on path diagram.
+**Disposition (Agent G quality wave):** `proposed→inline`. Classify familiar services using observation vs inference inside the CH15 Try It / LAB-PKT-001 write-up. No `labs/LAB-PLACE-001` directory.
 
 ## Safety / equity defaults
 

@@ -217,7 +217,7 @@ CE-5’s stability sketch (answer usability, identity continuity, authorization 
 
 ## 7. Try it {#sec-try}
 
-### LAB-BOOT-OBS-001 — Observe Boot and Wake (publication-owned, proposed)
+### LAB-BOOT-OBS-001 — Observe Boot and Wake (publication-owned, `IMPLEMENTED_DIGITAL`)
 
 **Goal.** Observe cold boot vs wake (and any already-visible update/recovery banners) on a commodity device you own—or complete the offline fixture route—without flashing, unlocking, or bypassing anything.
 
