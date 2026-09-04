@@ -1,5 +1,5 @@
 registry_path: figures/figure_registry.yaml
-registry_sha256: 7ed5f033bd0c5ac1f9a538737619b7141631cac530c5415bb9fdf8ceffc968c1
+registry_sha256: e97dc1f36b923ed50c1cf4124ea136ea6ec6fffbcc8c0283a65c39a8f4489b7b
 figure_count: 110
 audit_issue_states:
   BLOCKED_EVIDENCE_REQUIRED: 1
@@ -231,7 +231,7 @@ figures:
   chapter: CH12
   path: figures/architecture/fig-ch12-004-monitor-snapshots.svg
   status: illustrative
-  sha256: 0c3c80a9e3de2db9caf63f13cd8137ab66afd62f58691d1993462d75bc9678ab
+  sha256: 28467677200062014ce197c3b5e6e68cd97bba8899a4e3fd67a6d4d016691605
 - figure_id: FIG-CH15-001
   chapter: CH15
   path: figures/architecture/fig-ch15-001-vm-vs-container.svg

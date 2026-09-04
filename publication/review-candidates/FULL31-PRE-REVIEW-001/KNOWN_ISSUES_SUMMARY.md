@@ -3,10 +3,10 @@
 > PRE-HUMAN-REVIEW CANDIDATE
 > NO HUMAN VALIDATION HAS OCCURRED
 
-- Registry SHA context: `6da419826c70c4f19657b68bf6ffe55dd7675029`
+- Registry SHA context: `a03d9c03dcc665b5f5ade53d0016afe9e15f1f20`
 - Total issues: **506**
 - By severity: `{'MAJOR': 25, 'MODERATE': 71, 'MINOR': 108, 'EDITORIAL': 302}`
-- By status: `{'DEFERRED_PHYSICAL_EVIDENCE': 8, 'FIXED': 28, 'DEFERRED_HUMAN_REVIEW': 193, 'NOT_AN_ISSUE': 271, 'OPEN': 6}`
+- By status: `{'DEFERRED_PHYSICAL_EVIDENCE': 8, 'FIXED': 35, 'DEFERRED_HUMAN_REVIEW': 192, 'NOT_AN_ISSUE': 271}`
 - Open BLOCKER: **0**
 - Open MAJOR: **0**
 
@@ -14,12 +14,12 @@
 
 - `EVID-PHYSICAL-PENDING-BOOK` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] 25 PHYSICAL_PENDING claim markers remain after evidence wave.
 - `FIG-FIG-CE3-009-BLOCKED_EVIDENCE_REQUIRED` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] Measured annotated monitor snapshot remains blocked pending real fixture evidence.; LAB-CMS-001 synthetic fixtures do not unblock this figure.; Must not appear 
-- `LAB-PHYS-0035114` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Device Quartet EVT / measured SKU attributes
-- `LAB-PHYS-2247288` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Secure-boot attestation / PCR / measured boot evidence
-- `LAB-PHYS-7244491` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: On-device Quartet AI / wearable sensing campaigns
-- `LAB-PHYS-8278114` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Power/thermal watt-and-°C product curves
-- `LAB-PHYS-8286629` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: NTN/satellite field twin / flight measurements
-- `LAB-PHYS-8472390` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Calibrated RF / drive-test / antenna gain-sensitivity claims
+- `LAB-PHYS-0014423` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Device Quartet EVT / measured SKU attributes
+- `LAB-PHYS-5668333` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Calibrated RF / drive-test / antenna gain-sensitivity claims
+- `LAB-PHYS-6751839` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: On-device Quartet AI / wearable sensing campaigns
+- `LAB-PHYS-6851657` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Power/thermal watt-and-°C product curves
+- `LAB-PHYS-8005390` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: Secure-boot attestation / PCR / measured boot evidence
+- `LAB-PHYS-9850649` [MAJOR/DEFERRED_PHYSICAL_EVIDENCE] PHYSICAL_PENDING surface: NTN/satellite field twin / flight measurements
 - `CONT-NEAR_DUPLICA-220` [MODERATE/DEFERRED_HUMAN_REVIEW] Unusually similar paragraphs across chapters.
 - `CONT-NEAR_DUPLICA-221` [MODERATE/DEFERRED_HUMAN_REVIEW] Unusually similar paragraphs across chapters.
 - `CONT-NEAR_DUPLICA-224` [MODERATE/DEFERRED_HUMAN_REVIEW] Unusually similar paragraphs across chapters.
@@ -72,11 +72,8 @@
 - `FIG-FIG-CH11-004-REDESIGN` [MODERATE/DEFERRED_HUMAN_REVIEW] Concentric stamp template does not match the claimed concept; needs concept-appropriate structure.
 - `FIG-FIG-CH26-003-REDESIGN` [MODERATE/DEFERRED_HUMAN_REVIEW] Concentric stamp template does not match the claimed concept; needs concept-appropriate structure.
 - `FIG-FIG-CH30-003-REDESIGN` [MODERATE/DEFERRED_HUMAN_REVIEW] Concentric stamp template does not match the claimed concept; needs concept-appropriate structure.
-- `PDF-FRONTMATTER-NUMBERING` [MODERATE/DEFERRED_HUMAN_REVIEW] Front/back matter may still appear as arabic-numbered chapters in the PDF TOC despite number: false; body LaTeX headers max=40. Human print QA should confirm un
 - `TECH-B-CH11-001` [MODERATE/DEFERRED_HUMAN_REVIEW] Interrupted firmware-update failure modes correctly omitted as SOURCE_NEEDED.
 - `TECH-B-CH13-001` [MODERATE/DEFERRED_HUMAN_REVIEW] Filesystem vs database responsibility split is taught qualitatively, but formal DB systems sourcing (recovery/concurrency) remains SOURCE_NEEDED / omitted.
-- `TECH-B-CH15-001` [MODERATE/OPEN] Orchestration kept survey-deep without naming control-plane vs data-plane failure modes beyond a symptom line.
-- `TECH-B-CH16-002` [MODERATE/OPEN] Survey prose uses “routing” for next-hop choice without naming forwarding vs routing (data plane vs control plane)—acceptable survey depth but slightly imprecis
 - `TECH-B-CH17-001` [MODERATE/DEFERRED_HUMAN_REVIEW] 6G correctly kept as roadmap (not deployed consumer fact), but dated IMT-2030 / 3GPP study-item primary remains SOURCE_NEEDED.
 - `TECH-B-CH19-002` [MODERATE/DEFERRED_HUMAN_REVIEW] Orbit-delay product numbers and operator capability-class docs remain SOURCE_NEEDED.
 - `TECH-P12-010` [MODERATE/DEFERRED_HUMAN_REVIEW] Display-deadline→hitch survey claim correctly omitted pending pinned source.
@@ -92,7 +89,10 @@
 - `CONT-TERM_BEFORE_-010` [MINOR/DEFERRED_HUMAN_REVIEW] Term “Wi-Fi” appears early; fuller explanation arrives later in-chapter.
 - `CONT-TERM_BEFORE_-011` [MINOR/DEFERRED_HUMAN_REVIEW] Term “LAB-CE06-001” appears early; fuller explanation arrives later in-chapter.
 - `CONT-TERM_BEFORE_-012` [MINOR/DEFERRED_HUMAN_REVIEW] Term “FIG-CH21-002” appears early; fuller explanation arrives later in-chapter.
-- … 127 more deferred/open rows in QUALITY_ISSUES.yaml
+- `CONT-TERM_BEFORE_-013` [MINOR/DEFERRED_HUMAN_REVIEW] Term “LAB-TRUST-001” appears early; fuller explanation arrives later in-chapter.
+- `CONT-TERM_BEFORE_-014` [MINOR/DEFERRED_HUMAN_REVIEW] Term “CE-5” appears early; fuller explanation arrives later in-chapter.
+- `CONT-TERM_BEFORE_-015` [MINOR/DEFERRED_HUMAN_REVIEW] Term “LAB-TRUST-001” appears early; fuller explanation arrives later in-chapter.
+- … 120 more deferred/open rows in QUALITY_ISSUES.yaml
 
 ## Integrity reminders
 

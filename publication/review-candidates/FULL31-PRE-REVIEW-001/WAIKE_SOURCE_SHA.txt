@@ -1,4 +1,5 @@
 repo: gunnchOS3k/waike-research-ops
 ref: main
-sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
-note: fallback recorded SHA (live fetch failed: <urlopen error Tunnel connection failed: 403 Forbidden>)
+WAIKE source SHA verified by integration:
+e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+mode: live GitHub API main tip

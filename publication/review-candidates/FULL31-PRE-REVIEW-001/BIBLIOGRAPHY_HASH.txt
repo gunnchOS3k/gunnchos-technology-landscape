@@ -1,1 +1,1 @@
-publication/full31/WORKING_BIBLIOGRAPHY.bib  sha256:b3d509657f4264107563aef9c556dfe5dd2cc4fc44c63b4d05895da9ab24480f
+book/references/references.bib  sha256:75119ef678e3746d46878b3f6f7bdc0c95b90cd36bef36cfa6cca2736e338ffc

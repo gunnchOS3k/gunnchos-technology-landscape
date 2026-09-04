@@ -82,10 +82,10 @@ chapters:
 - chapter_id: CH12
   path: book/chapters/ch12/chapter.md
   exists: true
-  sha256: 9a69fe0e10f13fe621113c1daf839965ab38388647c86315ca522bb8bfc9518f
-  metadata_sha256: 827b98c71e4dec4879420fe124ada31e8b3daf95844faf7e9049ed29a6199f11
+  sha256: 887aacfeeadd7698c6be0040aae87a96491192ce653e13d170d3812110e3dc87
+  metadata_sha256: 023f8f76e00ee54a199339eb43b87c04c3141056f5641e679d99dbcc36294b3d
   title: Operating Systems, Processes, Threads, and Scheduling
-  status: working_draft
+  status: draft
 - chapter_id: CH13
   path: book/chapters/ch13/chapter.md
   exists: true
@@ -103,14 +103,14 @@ chapters:
 - chapter_id: CH15
   path: book/chapters/ch15/chapter.md
   exists: true
-  sha256: 46bbcfe53a8ad2c521f51451b2c525860652a08bcf18751a034ba1528ab6511d
+  sha256: 465e320ac3e8b638ee4ff173cd5995d10a1d0574f11d50f22c28d9e37abdb5b4
   metadata_sha256: 0ee40d44f9e9ed3d0426ea4aa10e2cb192614b7d27fa498393ac183a65f7d9a7
   title: Containers, Virtualization, Cloud, and Edge Computing
   status: draft
 - chapter_id: CH16
   path: book/chapters/ch16/chapter.md
   exists: true
-  sha256: af6376ae4cb2dbaa348ff3987e9cf4dd1c486a4a7e4af839bd4e933286972608
+  sha256: e65c72acc9e015fa63ad9f4ed8dd92de31a10fbfde07572be859623e9da56f8c
   metadata_sha256: 96fa9c499afc866305e99a5201a06667229b5b7f3352f7e415deed947275b987
   title: Packets, Protocols, Routing, and the Internet
   status: draft

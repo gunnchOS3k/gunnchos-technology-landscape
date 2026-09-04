@@ -6,8 +6,8 @@ artifacts:
     present: true
   pdf:
     path: preview/full31/technology-landscape-full31-pdf.pdf
-    sha256: c81027021e6e569b91c6bd9bca19681b83f17e9356bedbf3ce1ead9e5fb77aba
-    bytes: 4347371
+    sha256: 2b38b229bc7779176a625579ffe06d67f44cbad6189db7abcc69b4487ea1a651
+    bytes: 4346763
   epub:
     path: preview/full31/technology-landscape-full31-epub.epub
     sha256: ae7f3bf2f4deb3a8e0b21a645f8bef1ed0a82c8551491b68b54d43ef3c7eedb3
