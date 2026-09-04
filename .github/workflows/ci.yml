@@ -78,12 +78,17 @@ jobs:
           make publication-family-check
           make distribution-requirements-check
           make adult-release-package-check
+          make adult-artifact-package-check
+          make print-profile-check
           make kids-standards-check
+          make kids-standards-research-complete-check
+          make kids-pilot-mapped-check
           make kids-media-evidence-check
           make kids-concept-spiral-check
           make kids-pilot-check
+          make kids-review-prototype-check
           make kids-epubcheck
-      - name: Confirm NO_CHILD_VALIDATION_EVIDENCE / NO_RETAILER_SUBMISSION
+      - name: Confirm evidence sentinels
         run: |
           out="$(.venv/bin/python scripts/check_publication_family.py)"
           echo "$out"
@@ -96,7 +101,19 @@ jobs:
             find kids \( -iname '*child*validat*' -o -iname '*reader*evidence*kids*' \)
             exit 1
           fi
-          echo "NO_CHILD_VALIDATION_EVIDENCE / package non-submission posture: OK"
+          # Standards certification / official-alignment evidence must remain absent
+          if grep -R -n -E --include='*.md' --include='*.yaml' \
+            -e 'officially aligned' -e 'standards[- ]certified' -e 'STANDARDS_CERTIFICATION_EVIDENCE' \
+            kids/standards publication/family 2>/dev/null \
+            | grep -viE 'not |never |no_|forbidden|non-claim|reject|do not'; then
+            echo "Forbidden standards-certification claim language found" >&2
+            exit 1
+          fi
+          echo "NO_READER_EVIDENCE"
+          echo "NO_CHILD_VALIDATION_EVIDENCE"
+          echo "NO_RETAILER_SUBMISSION_EVIDENCE"
+          echo "NO_STANDARDS_CERTIFICATION_EVIDENCE"
+          echo "evidence sentinels: OK"
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4
         with:

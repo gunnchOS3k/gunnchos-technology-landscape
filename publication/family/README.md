@@ -74,8 +74,8 @@ track-local **`READY_FOR_TRACK_REVIEW`** / aggregate
 
 | Edition | Ceiling this wave | Explicitly not claimed |
 | --- | --- | --- |
-| Adult | `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE` | `PUBLICATION_READY`, `READY_FOR_OWNER_UPLOAD`, retailer-approved, Gate 3 PASS |
-| Kids | `KIDS_DEVELOPMENTAL_PROTOTYPE` / ready-for-human-review if justified | `PUBLICATION_READY`, child-validated, officially aligned |
+| Adult | `ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE` | not `PUBLICATION_READY`; not `READY_FOR_OWNER_UPLOAD`; not retailer-approved; not Gate 3 PASS |
+| Kids | `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` (NYR=0 + review prototypes) | not `PUBLICATION_READY`; not child-validated; not officially aligned; not EXACT worldwide deep maps |
 
 Rights: ARR manuscript; MIT scoped to tooling/labs; **no blanket CC**. Free price ≠ open license.
 

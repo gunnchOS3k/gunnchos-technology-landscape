@@ -2,6 +2,7 @@ schema: publication.family.registry/v1
 generated_on: '2026-09-03'
 wave: publication-family-parallel-production-001
 accepted_main: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+integration_tip_at_adjudication: b7b62f22ae5e2426bb23422ce42cec27771e0d36
 rights_policy:
   manuscript_and_original_artwork: All Rights Reserved © 2026 Edmund Gunn Jr.
   scripts_build_tooling_lab_code: MIT only where explicitly scoped
@@ -11,32 +12,44 @@ rights_policy:
   free_price_equals_open_license: false
   confirmation: CONFIRMED_ARR_MANUSCRIPT_MIT_SCOPED_NO_BLANKET_CC
 status_vocabulary:
-  adult:
+  adult_aggregate:
   - WORKING_DRAFT_COMPLETE
   - PRE_HUMAN_REVIEW_CANDIDATE
   - HUMAN_REVIEW_PENDING
-  - SUBMISSION_PACKAGE_PREPARED
+  - ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
+  - ADULT_SUBMISSION_PACKAGE_PREPARED
   - PUBLICATION_READY
   - PUBLISHED
+  adult_package_readiness:
+  - SCAFFOLD_ONLY
+  - ARTIFACTS_BUILT
+  - VALIDATED_LOCALLY
+  - BLOCKED_OWNER_COVER
+  - BLOCKED_OWNER_METADATA
+  - BLOCKED_OWNER_ISBN
+  - BLOCKED_HUMAN_REVIEW
+  - READY_FOR_OWNER_UPLOAD
   kids:
-  - RESEARCH_FOUNDATION
-  - STANDARDS_ATLAS_IN_PROGRESS
-  - SCOPE_SEQUENCE_COMPLETE
+  - KIDS_ARCHITECTURE_COMPLETE
+  - KIDS_GLOBAL_STANDARDS_RESEARCH_IN_PROGRESS
+  - KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE
+  - KIDS_REVIEW_PROTOTYPE_COMPLETE
+  - KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
+  - KIDS_CHILD_VALIDATION_PENDING
   - DEVELOPMENTAL_PROTOTYPE
-  - CHILD_VALIDATION_PENDING
-  - MANUSCRIPT_DRAFT
   - PUBLICATION_READY
   - PUBLISHED
   ceiling_this_wave:
     adult: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
-    kids: KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW
+    kids: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   forbidden_claims_this_wave:
   - PUBLICATION_READY
   - PUBLISHED
   - READY_FOR_OWNER_UPLOAD
   - GLOBALLY_ALIGNED
-  - officially aligned
-  - child-validated
+  - "not: officially aligned"
+  - "not: child-validated"
+  - ADULT_SUBMISSION_PACKAGE_PREPARED  # legacy rung only; not current aggregate
 editions:
 - edition_id: ADULT-FULL31
   title: The Technology Landscape
@@ -62,78 +75,84 @@ editions:
 - edition_id: KIDS-BABY
   title: Technology Landscape Kids Edition — KIDS-BABY
   age_guide: 0–18 months
-  status: DEVELOPMENTAL_PROTOTYPE
+  status: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   human_validation: NONE
   child_validation: NO_CHILD_VALIDATION_EVIDENCE
   publication_state: NOT_PUBLICATION_READY
   isbn_state: NOT_ASSIGNED
   retailer_state: NOT_SUBMITTED
-  standards_state: WIRED_PARTIAL_NOT_OFFICIALLY_ALIGNED
+  standards_state: KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE_EDITORIAL_CROSSWALKS_ONLY
   accessibility_state: PROTOTYPE_A11Y_METADATA_PRESENT
-  artifact_state: ONE_TAP_PILOT_PRESENT
+  artifact_state: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  next_state: KIDS_CHILD_VALIDATION_PENDING
   source_commit_ref: integration_branch_tip
 - edition_id: KIDS-TODDLER
   title: Technology Landscape Kids Edition — KIDS-TODDLER
   age_guide: 18–36 months
-  status: DEVELOPMENTAL_PROTOTYPE
+  status: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   human_validation: NONE
   child_validation: NO_CHILD_VALIDATION_EVIDENCE
   publication_state: NOT_PUBLICATION_READY
   isbn_state: NOT_ASSIGNED
   retailer_state: NOT_SUBMITTED
-  standards_state: WIRED_PARTIAL_NOT_OFFICIALLY_ALIGNED
+  standards_state: KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE_EDITORIAL_CROSSWALKS_ONLY
   accessibility_state: PROTOTYPE_A11Y_METADATA_PRESENT
-  artifact_state: ONE_TAP_PILOT_PRESENT
+  artifact_state: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  next_state: KIDS_CHILD_VALIDATION_PENDING
   source_commit_ref: integration_branch_tip
 - edition_id: KIDS-PRESCHOOL
   title: Technology Landscape Kids Edition — KIDS-PRESCHOOL
   age_guide: 3–4 years
-  status: DEVELOPMENTAL_PROTOTYPE
+  status: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   human_validation: NONE
   child_validation: NO_CHILD_VALIDATION_EVIDENCE
   publication_state: NOT_PUBLICATION_READY
   isbn_state: NOT_ASSIGNED
   retailer_state: NOT_SUBMITTED
-  standards_state: WIRED_PARTIAL_NOT_OFFICIALLY_ALIGNED
+  standards_state: KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE_EDITORIAL_CROSSWALKS_ONLY
   accessibility_state: PROTOTYPE_A11Y_METADATA_PRESENT
-  artifact_state: ONE_TAP_PILOT_PRESENT
+  artifact_state: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  next_state: KIDS_CHILD_VALIDATION_PENDING
   source_commit_ref: integration_branch_tip
 - edition_id: KIDS-PREK
   title: Technology Landscape Kids Edition — KIDS-PREK
   age_guide: 4–5 years
-  status: DEVELOPMENTAL_PROTOTYPE
+  status: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   human_validation: NONE
   child_validation: NO_CHILD_VALIDATION_EVIDENCE
   publication_state: NOT_PUBLICATION_READY
   isbn_state: NOT_ASSIGNED
   retailer_state: NOT_SUBMITTED
-  standards_state: WIRED_PARTIAL_NOT_OFFICIALLY_ALIGNED
+  standards_state: KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE_EDITORIAL_CROSSWALKS_ONLY
   accessibility_state: PROTOTYPE_A11Y_METADATA_PRESENT
-  artifact_state: ONE_TAP_PILOT_PRESENT
+  artifact_state: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  next_state: KIDS_CHILD_VALIDATION_PENDING
   source_commit_ref: integration_branch_tip
 - edition_id: KIDS-ELEM1
   title: Technology Landscape Kids Edition — KIDS-ELEM1
   age_guide: 5–7 years
-  status: DEVELOPMENTAL_PROTOTYPE
+  status: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   human_validation: NONE
   child_validation: NO_CHILD_VALIDATION_EVIDENCE
   publication_state: NOT_PUBLICATION_READY
   isbn_state: NOT_ASSIGNED
   retailer_state: NOT_SUBMITTED
-  standards_state: WIRED_PARTIAL_NOT_OFFICIALLY_ALIGNED
+  standards_state: KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE_EDITORIAL_CROSSWALKS_ONLY
   accessibility_state: PROTOTYPE_A11Y_METADATA_PRESENT
-  artifact_state: ONE_TAP_PILOT_PRESENT
+  artifact_state: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  next_state: KIDS_CHILD_VALIDATION_PENDING
   source_commit_ref: integration_branch_tip
 - edition_id: KIDS-ELEM2
   title: Technology Landscape Kids Edition — KIDS-ELEM2
   age_guide: 7–10 years
-  status: DEVELOPMENTAL_PROTOTYPE
+  status: KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE
   human_validation: NONE
   child_validation: NO_CHILD_VALIDATION_EVIDENCE
   publication_state: NOT_PUBLICATION_READY
   isbn_state: NOT_ASSIGNED
   retailer_state: NOT_SUBMITTED
-  standards_state: WIRED_PARTIAL_NOT_OFFICIALLY_ALIGNED
+  standards_state: KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE_EDITORIAL_CROSSWALKS_ONLY
   accessibility_state: PROTOTYPE_A11Y_METADATA_PRESENT
-  artifact_state: ONE_TAP_PILOT_PRESENT
+  artifact_state: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  next_state: KIDS_CHILD_VALIDATION_PENDING
   source_commit_ref: integration_branch_tip

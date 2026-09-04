@@ -1,26 +1,32 @@
 # Global Standards Coverage Report
 
 **Generated:** 2026-09-03  
-**Track status:** `DRAFT_INTERNAL` (not PUBLICATION_READY)  
+**Track status:** `KIDS_GLOBAL_STANDARDS_RESEARCH_COMPLETE` (not PUBLICATION_READY; not certified)  
 **Schema:** `kids/standards/STANDARD_MAPPING_SCHEMA.md`  
-**Track 2B:** Europe exhaustive research (PR #7) — preserves Tracks 2A/2C artifacts  
+**PR #7 Tracks 2A/2B/2C:** Americas + Europe + AFR/ME/APAC research closed (`NOT_YET_RESEARCHED=0`)  
 **Integration tip at apply:** `origin/cursor/publication-family-parallel-production-001`  
 **Accepted main:** `82284cd8f41d750ff508cd6ea5bad0a9534d8162`
 
 ## Jurisdiction metrics
 
-| Metric | Count |
-| --- | ---: |
-| Jurisdictions total | 292 |
-| OFFICIAL_VERIFIED | 16 |
-| OFFICIAL_SOURCE_VERIFIED | 3 |
-| OFFICIAL_PORTAL_IDENTIFIED | 72 |
-| IDENTIFIED | 117 |
-| TRANSLATION_REQUIRED | 73 |
-| ACCESS_BLOCKED | 7 |
-| NOT_YET_RESEARCHED | 0 |
-| SOURCE_VERSION_UNCLEAR | 3 |
-| NO_CENTRAL_NATIONAL_CURRICULUM | 1 |
+Separate counts — do **not** collapse these into a vanity phrase like “N standards researched.”
+
+| Metric | Count | Meaning |
+| --- | ---: | --- |
+| Jurisdictions total (census) | 292 | World architecture rows |
+| Researched (non-`NOT_YET_RESEARCHED`) | 292 | Census rows advanced past NYR |
+| OFFICIAL_VERIFIED | 16 | Version-pinned official source |
+| OFFICIAL_SOURCE_VERIFIED | 3 | Official source confirmed; edition caveats remain |
+| OFFICIAL_PORTAL_IDENTIFIED | 72 | Ministry/portal identified (not clause-mapped) |
+| IDENTIFIED | 117 | Framework/authority identified |
+| TRANSLATION_REQUIRED | 73 | Source known; normative language work pending |
+| ACCESS_BLOCKED | 7 | Paywall / geo / login barrier |
+| NOT_YET_RESEARCHED | 0 | Research-complete gate (must stay 0) |
+| SOURCE_VERSION_UNCLEAR | 3 | Authority known; edition ambiguous |
+| NO_CENTRAL_NATIONAL_CURRICULUM | 1 | Federal Canada — subnational owns curricula |
+| Frameworks pinned (source register) | 102 | Distinct framework records (≠ jurisdiction census) |
+| Deep-mapped (EXACT+ADJACENT+PROPOSED) | 58 | Atlas mapping rows with real fidelity |
+| Pilot wire hooks | 133 | `WIRE_HOOK_REGISTRY` (122 mapped + 11 justified NYM) |
 
 ## Track 2B Europe before → after
 
@@ -82,13 +88,14 @@
 3. **Germany:** KMK federal coordination `OFFICIAL_VERIFIED`; all 16 Länder `IDENTIFIED` with ministry pins — Land Lehrplan deep maps still pending (`TRANSLATION_REQUIRED`).
 4. **EU / OECD / IB:** DigComp 2.2 version-pinned (`OFFICIAL_VERIFIED`); DigComp 3.0 (Nov 2025) remapping pending; OECD Learning Compass retained; IB PYP public elements `IDENTIFIED` (licensed corpus not reproduced).
 5. **Wider Europe:** Remaining national rows advanced from `NOT_YET_RESEARCHED` to `IDENTIFIED` with ministry/portal frameworks; most deep clause maps still `NOT_YET_MAPPED` / `TRANSLATION_REQUIRED`.
-6. **Canada / US / world majority outside Europe:** Sister tracks own non-Europe census depth; Europe track does not claim completion elsewhere.
-7. **No EXACT maps yet:** Europe deep maps use `ADJACENT`/`PROPOSED` at outcome-family grain — not certification.
+6. **Canada / US / world majority:** Americas + AFR/ME/APAC closed regional NYR; US 50+DC and Canada P/T rows present; most deep clause maps still pending.
+7. **No EXACT maps yet:** Deep maps use `ADJACENT`/`PROPOSED` at outcome-family grain — not certification (`EXACT=0`).
 8. **Copyright:** No wholesale standards text; domain / strand / outcome-family summaries only.
 
 ## Non-claims
 
-- Crosswalks are `CROSSWALKED_AGAINST` / `MAPPED_TO` / `INFORMED_BY` — **not** official alignment or certification.
+- Crosswalks are `CROSSWALKED_AGAINST` / `MAPPED_TO` / `INFORMED_BY` — **not** official alignment or certification (`NO_STANDARDS_CERTIFICATION_EVIDENCE`).
 - Presence of a jurisdiction row ≠ completed clause-level mapping.
+- Frameworks pinned (102) ≠ “102 standards researched” vanity collapse; keep census / researched / portal / pinned / deep-mapped separate.
 - This track does not advance Gate 3 or PUBLICATION_READY counts.
 

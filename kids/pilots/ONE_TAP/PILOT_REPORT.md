@@ -10,7 +10,7 @@ NOT PUBLICATION-READY
 
 **`KIDS_REVIEW_PROTOTYPE_COMPLETE`** for Track 3 (review-quality developmental prototypes).
 
-Not claimed: `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` (standards research / global foundation remains a sister-track concern).
+Not claimed at pilot-report ceiling: `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` — that family aggregate (if declared) is earned only when research-complete + review-prototype validators both pass elsewhere; this report still ceilings at review-prototype only.
 
 ## Provenance
 
