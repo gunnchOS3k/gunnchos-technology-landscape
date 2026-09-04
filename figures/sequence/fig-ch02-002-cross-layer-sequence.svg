@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Sequence diagram: Human, Input HW, OS, Application, Network, Service, Renderer with message arrows and failure branch.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Sequence diagram: Human, Input HW, OS, Application, Network, Service, Renderer with message arrows and failure branch." data-figure-id="FIG-CH02-002">
   <title>FIG-CH02-002: Cross-Layer Tap Sequence</title>
   <desc>Real sequence diagram with seven actor columns and vertical lifelines: Human, Input HW, OS, Application, Network, Service, Renderer. Solid message arrows show the happy path. A dashed optional path reaches Network and Service. A dashed failure return marked with an X shows network/service failure while a solid local path still reaches Renderer. Not a vertical list of rows.</desc>
   <defs>
@@ -83,7 +83,7 @@
 
   <!-- Success optional return (above failure, lighter) -->
   <line x1="780" y1="370" x2="508" y2="370" stroke="#1F4B7A" stroke-width="1.25" stroke-dasharray="6 4" marker-end="url(#arr002d)"/>
-  <text x="644" y="364" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#1F4B7A">or response OK</text>
+  <text x="644" y="364" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#1F4B7A">or response OK</text>
 
   <!-- 6. App → Renderer (local always) -->
   <line x1="500" y1="430" x2="912" y2="430" stroke="#111111" stroke-width="1.75" marker-end="url(#arr002)"/>

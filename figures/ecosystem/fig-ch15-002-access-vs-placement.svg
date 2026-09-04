@@ -4,7 +4,7 @@
   <desc id="FIG-CH15-002-desc">Conceptual system map. Reading order: 1 User and device, 2 Access network labeled Wi-Fi or cellular, 3 Path toward service, then fork to 4a Edge placement or 4b Regional cloud placement. Access is not placement. Truth classification: conceptual. Color is not the sole encoding.</desc>
   <rect width="1100" height="420" fill="#ffffff"/>
   <rect x="1" y="1" width="1098" height="418" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH15-002  Access network ` edge/cloud placement</text>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH15-002  Access network ≠ edge/cloud placement</text>
   <text x="24" y="48" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · Placement ` access radio · Color is not the sole encoding</text>
 
   <defs>

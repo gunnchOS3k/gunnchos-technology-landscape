@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-label="Software stack layers Application through Hardware with upward event arrows and downward output arrows.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-label="Software stack layers Application through Hardware with upward event arrows and downward output arrows." data-figure-id="FIG-CH02-004">
   <title>FIG-CH02-004: Software Stack</title>
   <desc>Vertical stack of layered rectangles from top to bottom: Application, Runtime, Libraries, Kernel, Drivers, Firmware, Hardware. Solid arrows on the left point upward labeled events rising. Solid arrows on the right point downward labeled output descending. Accent used sparingly on directional labels only.</desc>
   <defs>

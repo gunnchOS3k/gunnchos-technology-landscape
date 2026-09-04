@@ -1,0 +1,23 @@
+figure_id: FIG-CH23-002
+title: "Chip-to-cloud trust path with UX symptoms"
+caption: "Conceptual educational map from chip/boot through firmware/OS, app/session, network, and cloud/policy, with human UX symptoms attached. Not a scare collage."
+alt_text: "FIG-CH23-002: Left-to-right chip-to-cloud path with a dashed UX-symptoms band for login, MFA, deny, and lockout."
+text_equivalent: |
+  FIG-CH23-002 reading order: (1) Chip/boot, (2) Firmware/OS, (3) App/session, (4) Network,
+  (5) Cloud/policy, then UX symptoms: login succeeds, MFA/verify, permission denied, lockout, connected but unusable recovery.
+  Principles and symptoms only; Device Quartet measured secure-boot remains PHYSICAL_PENDING.
+reading_order:
+  - "Chip / boot"
+  - "Firmware / OS"
+  - "App / session"
+  - "Network"
+  - "Cloud / policy"
+  - "Human UX symptoms"
+source: "figures/ecosystem/fig-ch23-002-chip-to-cloud-trust.svg"
+inherits: FIG-CE5-007
+truth_classification: conceptual
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"
