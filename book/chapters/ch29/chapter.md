@@ -105,7 +105,7 @@ Here the “signal” is the product claim’s fate across design gates—not a 
 4. **Assign failure domains.** For each fragile step, who owns diagnosis when it breaks?
 5. **Write design gates.** Checks that must pass before “ship/usable” language (**FIG-CH29-002**).
 6. **Attach an evidence plan.** What will be observed, measured, or fixture-labeled—and what remains unknown?
-7. **Draw the claim boundary.** What may the product assert given current evidence (**FIG-CH29-003**)?
+7. **Draw the claim boundary.** What may the product assert given current evidence? Use the one-pager evidence fields (**FIG-CH29-003**) and write allowed/forbidden wording—including **PHYSICAL_PENDING** badges—in the packet text, not as inventing measurements on the diagram.
 8. **Name tradeoffs.** Latency, cost, privacy, power, inclusion—together, not one hero metric.
 9. **Secure and include.** Threat, privacy, a11y, equity routes integrated—not bolted on last.
 10. **Portfolio handoff.** One-pager + evidence + inclusion routes someone else can review.
@@ -413,12 +413,12 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 - **Truth class.** Conceptual.
 - **Alt text requirement.** List gate families in reading order; state that gates are teaching tools, not legal certification.
 
-### FIG-CH29-003 — Claim boundary board with PHYSICAL_PENDING badges
+### FIG-CH29-003 — One-pager evidence fields (claim-boundary support)
 
-- **Type.** Conceptual boundary board.
-- **Reader should notice.** Allowed vs forbidden wording; PHYSICAL_PENDING for Device Quartet / unfinished OS claims.
-- **Truth class.** Conceptual; qualification **PHYSICAL_PENDING** where hardware/OS shipping would be implied.
-- **Alt text requirement.** State allowed/forbidden columns and badge meaning; forbid reading the board as a shipping certificate.
+- **Type.** Conceptual field stack (Experience → System boundary → Risks → Evidence → Limitations).
+- **Reader should notice.** Evidence and limitations fields must be filled before “ready/ship” language; claim-boundary / PHYSICAL_PENDING badges belong in the written one-pager, not as invented SVG measurements.
+- **Truth class.** Conceptual; qualification **PHYSICAL_PENDING** where hardware/OS shipping would be implied in accompanying text.
+- **Alt text requirement.** Name the five fields in reading order; state that the figure is a teaching template, not a shipping certificate.
 
 ---
 

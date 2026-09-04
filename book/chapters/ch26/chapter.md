@@ -35,7 +35,7 @@ Maybe you fix a typo in a README, rename a confusing label, tighten a checklist,
 
 From the seat: either confidence or fog.
 
-Underneath: **version control**—recording changes so history can be inspected and recovered [@git-scm-docs] (CLM-CH26-001). A **commit** is a snapshot with a message and identity metadata. A **diff** is the readable difference. A **branch** is a parallel line of work that must later integrate carefully. None of those words are slogans about “being a developer.” They are tools for making a change *reviewable*.
+Underneath: **version control**—recording changes so history can be inspected and recovered [@git-scm-docs] (CLM-CH26-001). **Version control ≠ backup:** a commit history helps you inspect and carefully recover *tracked* states, but it is not a backup policy—untracked files, whole-machine loss, and off-site copies remain separate concerns. A **commit** is a snapshot with a message and identity metadata. A **diff** is the readable difference. A **branch** is a parallel line of work that must later integrate carefully. None of those words are slogans about “being a developer.” They are tools for making a change *reviewable*.
 
 The governing question for this chapter:
 
@@ -136,11 +136,11 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ### Version control
 
-- **Plain language.** Recording changes so history can be inspected and recovered.
-- **Analogy (labeled).** Like keeping dated drafts of an essay instead of one overwritten file—so you can see what changed between versions.
-- **Technical function.** Stores snapshots and relationships so diffs and recovery are possible [@git-scm-docs].
-- **Constraints.** Tool literacy required; policies differ by team; history that includes secrets is hard to truly un-share.
-- **Symptoms.** “I thought I saved it,” “I can’t show what changed,” “we lost the good version.”
+- **Plain language.** Recording changes so history can be inspected and recovered—**not** a synonym for backup.
+- **Analogy (labeled).** Like keeping dated drafts of an essay instead of one overwritten file—so you can see what changed between versions. That is not the same as storing a full off-site copy of the machine.
+- **Technical function.** Stores snapshots and relationships so diffs and recovery of tracked history are possible [@git-scm-docs].
+- **Constraints.** Tool literacy required; policies differ by team; untracked files and disk failure are outside VCS alone; history that includes secrets is hard to truly un-share.
+- **Symptoms.** “I thought I saved it,” “I can’t show what changed,” “we lost the good version,” “Git is my only backup.”
 
 ### Commit
 
@@ -346,7 +346,7 @@ Candidate terms introduced or reinforced here (see also `GLOSSARY_CANDIDATES.yam
 
 | Term | Plain link |
 |---|---|
-| Version control | Recording changes so history can be inspected and recovered |
+| Version control | Recording changes so history can be inspected and recovered; **≠ backup** |
 | Commit | Snapshot of change with message and identity metadata |
 | Diff | Readable difference between states |
 | Branch / integration | Parallel lines of work later combined carefully |

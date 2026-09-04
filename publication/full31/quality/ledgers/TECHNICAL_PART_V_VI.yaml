@@ -1,0 +1,332 @@
+schema_version: 1.0.0
+ledger_id: TECHNICAL_PART_V_VI
+agent: agent/quality-c-part56
+category: TECHNICAL
+parts: [V, VI]
+chapters: [CH21, CH22, CH23, CH24, CH25, CH26, CH27, CH28, CH29, CH30, CH31]
+accepted_base_sha: 76bee2e67c35ff445f46c83af30809e5b307f06e
+preferred_base_branch: cursor/full31-quality-convergence-001
+preferred_base_status: PRESENT
+branch_base_sha: 2e440e43f89b61c112f088939f73440024283bbf
+branch: agent/quality-c-part56
+audit_phase: scoped_fixes_applied
+gate_3_policy: DO_NOT_TOUCH
+gate_3_unchanged: true
+gate_3_sha_samples:
+  REVIEW_PROTOCOL.md: 300715a70012d8a2c92e1e4558960fa02d27e7d5
+  checklist.md: 1227547edb62ec0f128fe362b4778df20c6dbca9
+  evidence.yaml: ffcc8c020747f551f1399d751b6e7f95512f93d0
+audit_date: 2026-09-03
+reviewer_type: TECHNICAL
+
+severity_counts_before:
+  BLOCKER: 0
+  MAJOR: 4
+  MODERATE: 4
+  MINOR: 3
+  EDITORIAL: 2
+
+severity_counts_after:
+  BLOCKER: 0
+  MAJOR: 0
+  MODERATE: 0
+  MINOR: 3
+  EDITORIAL: 2
+  # MINOR/EDITORIAL remain DEFERRED (visual meta, evidence pin, confirm-and-preserve)
+issues:
+  - issue_id: TECH-P56-001
+    chapter: CH26
+    part: VI
+    category: TECHNICAL
+    severity: MAJOR
+    location: "book/chapters/ch26/chapter.md §1 / §5 Version control card"
+    finding: >
+      Part VI requires an explicit version-control ≠ backup distinction. CH26 defines VCS
+      as recording changes so history can be inspected and recovered, and the essay-draft
+      analogy reinforces “recoverable copies,” but never states that Git/history is not a
+      substitute for backup, disaster recovery, or off-box copies.
+    evidence: >
+      §1: “recording changes so history can be inspected and recovered”; §5 analogy “dated
+      drafts… recovered.” No “VCS ≠ backup” sentence; recovery language can be misread as
+      backup literacy.
+    proposed_fix: >
+      Add one short VCS ≠ backup clause in the opening/definition and on the version-control
+      card: history enables inspectable change and careful recovery of *tracked* states; it
+      is not a backup policy (untracked files, machine loss, and off-site copies remain
+      separate). Cite existing @git-scm-docs only.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-002
+    chapter: CH26
+    part: VI
+    category: TECHNICAL
+    severity: MAJOR
+    location: "figures/full31/ch26/fig-ch26-003.svg + chapter FIG-CH26-003 refs"
+    finding: >
+      FIG-CH26-003 prose/plan teach “Secrets must not enter the repository,” but the live
+      SVG and accessibility sidecar render an Employment non-guarantee boundary (CH30 theme).
+      Readers who open the asset learn the wrong Part VI boundary for this chapter.
+    evidence: >
+      chapter.md §3/§12: secrets refuse-line. FIGURE_PLAN pedagogical_purpose: secrets.
+      SVG title/nodes: Portfolio evidence / Hiring decision / No guarantee.
+      figures/accessibility/fig-ch26-003.yaml title: Employment non-guarantee boundary.
+    proposed_fix: >
+      Replace FIG-CH26-003 SVG labels + a11y sidecar to match secrets hygiene pedagogy
+      (working tree / commit boundary with credentials refused). Keep figure_id stable.
+      Leave CH30 employment figure untouched.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-003
+    chapter: CH21
+    part: V
+    category: TECHNICAL
+    severity: MAJOR
+    location: "figures/full31/ch21/fig-ch21-003.svg + chapter FIG-CH21-003 refs"
+    finding: >
+      CH21 §4 and figure plan separate fluency vs correctness vs evaluation evidence, but
+      the live SVG/a11y asset shows “Model vs product vs claim families,” contradicting the
+      uncertainty-family teaching the chapter asks readers to retain.
+    evidence: >
+      §4 table + ### FIG-CH21-003 heading name three uncertainty families.
+      SVG/a11y: Model capability / Product behavior / Human claim.
+    proposed_fix: >
+      Relabel FIG-CH21-003 SVG + a11y to Fluency / Correctness / Evaluation evidence with
+      one everyday question each; keep conceptual truth class; no invented metrics.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-004
+    chapter: CH27
+    part: VI
+    category: TECHNICAL
+    severity: MAJOR
+    location: "book/chapters/ch27/chapter.md opening Part VI paragraph"
+    finding: >
+      Stale forward reference claims “Chapter 26 (when drafted) will cover change history”
+      although CH26 is already WORKING_DRAFT_COMPLETE on accepted main. Contradicts
+      manuscript state and mis-sequences Part VI for readers.
+    evidence: >
+      “Chapter 26 (when drafted) will cover change history.”
+    proposed_fix: >
+      Retense to past/present: Chapter 26 already covered reviewable change history; this
+      chapter names testing/observability/evidence honesty.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-005
+    chapter: CH21
+    part: V
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch21/chapter.md §4 Generative systems / glossary"
+    finding: >
+      Data/model/inference and anti-anthropomorphism are strong; generative AI is defined,
+      but the chapter title promises Machine Learning and Generative AI without an explicit
+      “generative ⊂ ML / not all ML is generative” sentence (classifiers/rankers appear only
+      as output kinds).
+    evidence: >
+      Generative definition present; classifications/rankings mentioned in signal step 6;
+      no explicit ML-vs-generative contrast sentence.
+    proposed_fix: >
+      Add one short sentence: machine learning is the broader practice of fitting models
+      from data; generative systems are one family of applications, not a synonym for all ML.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-006
+    chapter: CH23
+    part: V
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch23/chapter.md §5 Encryption / Stability"
+    finding: >
+      AuthN ≠ AuthZ and padlock ≠ private forever are excellent; confidentiality /
+      integrity / availability (CIA) goals are not named as a trio even though Part V
+      asks for that vocabulary beside encryption limits.
+    evidence: >
+      Encryption card covers unreadability; no confidentiality/integrity/availability naming.
+    proposed_fix: >
+      Add one qualitative CIA sentence near encryption/stability: encryption often supports
+      confidentiality; integrity and availability are separate goals (tamper detection /
+      usable recovery) not solved by a padlock icon alone. No new citations required.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-007
+    chapter: CH24
+    part: V
+    category: TECHNICAL
+    severity: MODERATE
+    location: "book/chapters/ch24/chapter.md §5 Safety constraints"
+    finding: >
+      Safety vs censorship language is only lightly touched (“filters can over-refuse”).
+      Part V asks safety ≠ censorship to stay distinct.
+    evidence: >
+      Safety card constraints mention over-refuse; no explicit “safety ≠ censorship” line
+      beside privacy ≠ security / a11y ≠ convenience.
+    proposed_fix: >
+      Add one clause: safety limits aim to reduce harm; they are not the same as viewpoint
+      censorship claims, and over-refusal is a distinct failure mode to name honestly.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-008
+    chapter: CH29
+    part: VI
+    category: TECHNICAL
+    severity: MODERATE
+    location: "FIG-CH29-003 prose vs figures/full31/ch29/fig-ch29-003.svg"
+    finding: >
+      Prose/plan call FIG-CH29-003 a claim-boundary board with PHYSICAL_PENDING badges;
+      live SVG shows generic one-pager evidence fields without PHYSICAL_PENDING badges.
+    evidence: >
+      ### FIG-CH29-003 — Claim boundary board…; SVG title One-pager evidence fields.
+    proposed_fix: >
+      Align prose figure caption/reader-should-notice to the live one-pager fields asset,
+      and state that claim-boundary / PHYSICAL_PENDING badges are filled in the written
+      one-pager (not implied by the SVG alone). Defer full visual redesign to Agent F.
+    fix_status: FIXED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-009
+    chapter: CH22
+    part: V
+    category: TECHNICAL
+    severity: MINOR
+    location: "book/chapters/ch22/chapter.md figure production status + FIG-CH22-003 title"
+    finding: >
+      Figure sections still say draft-blocked / no SVG embed though full31 SVG + a11y exist;
+      FIG-CH22-003 a11y title is narrower (Wearables badge) than prose learning-context
+      heading—related, not contradictory.
+    evidence: >
+      Production status draft-blocked lines; assets present under figures/full31/ch22/.
+    proposed_fix: >
+      Defer bulk production-status refresh to Agent F visuals pass; optional one-line status
+      fix if touching CH22 otherwise.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: VISUAL
+
+  - issue_id: TECH-P56-010
+    chapter: MULTI
+    part: V_VI
+    category: TECHNICAL
+    severity: MINOR
+    location: "CH22/CH24/CH25/CH26/CH27/CH28 figure reference sections"
+    finding: >
+      Multiple chapters retain “draft-blocked until SVG + a11y land” while PR #5 already
+      shipped figures/full31 assets. Meta honesty debt; not a concept falsehood in body prose.
+    evidence: >
+      Repeated Production status draft-blocked lines; assets on disk with a11y sidecars.
+    proposed_fix: >
+      Agent F / integrator: flip production status to implemented/conceptual asset present;
+      out of scoped technical concept fixes unless a chapter is already open.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: VISUAL
+
+  - issue_id: TECH-P56-011
+    chapter: CH28
+    part: VI
+    category: TECHNICAL
+    severity: MINOR
+    location: "book/chapters/ch28/chapter.md References / CLM-CH28-001"
+    finding: >
+      Peer-reviewed reproducibility guide remains SOURCE_NEEDED; twin≠model and
+      sim≠measurement discipline are already strong and honest about the gap.
+    evidence: >
+      “A peer-reviewed reproducibility guide remains SOURCE_NEEDED.”
+    proposed_fix: >
+      Defer pin to evidence agent; no prose invention.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: true
+    reviewer_type_needed: EVIDENCE
+
+  - issue_id: TECH-P56-012
+    chapter: CH23
+    part: V
+    category: TECHNICAL
+    severity: EDITORIAL
+    location: "book/chapters/ch23/chapter.md AuthN≠AuthZ spine"
+    finding: >
+      Identity / AuthN / AuthZ separation, least privilege, and non-offensive lab bounds
+      are strong; confirm-and-preserve.
+    evidence: >
+      Opening sentence AuthN ≠ AuthZ; component cards; LAB-TRUST-001 inheritance; no Gate 3 PASS.
+    proposed_fix: None — confirm-and-preserve.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+  - issue_id: TECH-P56-013
+    chapter: CH25_CH30_CH31
+    part: V_VI
+    category: TECHNICAL
+    severity: EDITORIAL
+    location: "equity measured; portfolio≠employment; EMIT honesty"
+    finding: >
+      Equity-vs-measured, portfolio≠employment, and EMIT/fixture≠Gate 3 PASS firewalls are
+      explicit and consistent. No fabricated reader evidence found. Confirm-and-preserve.
+    evidence: >
+      CH25/CH31 Gate notes; CH30 employment_guarantee: false; CH31 evidence firewall section.
+    proposed_fix: None — confirm-and-preserve.
+    fix_status: DEFERRED
+    meaning_change: false
+    citation_required: false
+    reviewer_type_needed: TECHNICAL
+
+boundary_checklist:
+  part_v:
+    data_model_inference: PASS
+    ml_vs_generative: PASS
+    local_vs_remote_inference: PASS
+    sensors_vs_embodied: PASS
+    identity_authn_authz: PASS
+    cia_triad: PASS
+    privacy_vs_security: PASS
+    a11y_vs_convenience: PASS
+    safety_vs_censorship: PASS
+    equity_vs_measured: PASS
+    no_anthropomorphism: PASS
+  part_vi:
+    vcs_vs_backup: PASS
+    test_vs_observation: PASS
+    logging_metrics_tracing: PASS
+    correlation_vs_causation: PASS
+    sim_vs_measurement: PASS
+    twin_vs_model: PASS
+    reproducibility: PASS
+    product_requirements_vs_implementation: PASS
+    portfolio_vs_employment: PASS
+    emit_honesty_no_gate3_pass: PASS
+
+constraints_honored:
+  - no_invented_citations
+  - no_wholesale_chapter_replacement
+  - no_word_count_padding
+  - preserve_distinctive_explanations
+  - publication_gates_gate_3_untouched
+  - no_fabricated_reader_evidence
+  - no_gate3_pass_claim
