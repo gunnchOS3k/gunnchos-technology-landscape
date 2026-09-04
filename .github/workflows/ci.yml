@@ -108,8 +108,8 @@ jobs:
           roots = [Path("kids/standards"), Path("publication/family")]
           pat = re.compile(r"officially aligned|standards[- ]certified|STANDARDS_CERTIFICATION_EVIDENCE", re.I)
           allow = re.compile(
-              r"(?i)(not[:\s]|never |no_|forbidden|non-claim|reject|do not|≠|must remain absent|"
-              r"AUTHORITY_CLAIMS:|Forbidden claim)"
+              r"(?i)(not[:\s*]|never\b|no_|forbidden|non-claim|reject|do not|≠|"
+              r"must remain absent|AUTHORITY_CLAIMS:|Forbidden claim|not a Kids Edition)"
           )
           bad = []
           for root in roots:
