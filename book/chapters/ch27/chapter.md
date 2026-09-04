@@ -23,7 +23,7 @@ figures:
 **Manuscript:** working draft complete · human validation pending · not publication-ready  
 **Gate note:** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING` (this chapter does **not** claim Gate 3 PASS; fixtures, simulations, and illustrative portfolios are teaching infrastructure, not human reader evidence).
 
-Part VI asks builders to prove what they claim. Chapter 20 already taught concurrent conditions and an evidence hierarchy. Chapter 26 (when drafted) will cover change history. This chapter names the remaining honesty problem: **a green test, a green dashboard, and a green simulation can all be true while the human experience is still false—or unmeasured.** Simulation is not measurement. A fixture is not a reader study. An OpenTelemetry signal vocabulary is not a fake product SLO.
+Part VI asks builders to prove what they claim. Chapter 20 already taught concurrent conditions and an evidence hierarchy. Chapter 26 already covered reviewable change history. This chapter names the remaining honesty problem: **a green test, a green dashboard, and a green simulation can all be true while the human experience is still false—or unmeasured.** Simulation is not measurement. A fixture is not a reader study. An OpenTelemetry signal vocabulary is not a fake product SLO.
 
 The signature distinction for this chapter:
 

@@ -172,9 +172,9 @@ Each card is plain language + constraints + failure symptoms. None of these card
 
 **What it is.** Goals for unreadability without keys in transit and/or at rest—plus honest endpoint limits (@fig-ch23-003; CE-5 FIG-CE5-004 inheritance).
 
-**Constraints.** Encryption does not alone guarantee correct UX, honest UI, safe endpoint, or human trust.
+**Constraints.** Encryption often supports **confidentiality**, but **integrity** (detecting unwanted change) and **availability** (keeping usable access/recovery paths alive) are separate goals—the CIA trio is not a padlock icon. Encryption does not alone guarantee correct UX, honest UI, safe endpoint, or human trust.
 
-**Failure symptoms.** “We use encryption” used as a conversation-stopper while unlocked endpoints still expose content.
+**Failure symptoms.** “We use encryption” used as a conversation-stopper while unlocked endpoints still expose content; integrity or recovery failures blamed on “the network” alone.
 
 ![Encryption transit / at-rest goals with unlocked-endpoint limits.](../../../figures/architecture/fig-ch23-003-encryption-boundaries.svg){#fig-ch23-003 fig-cap="Transit and at-rest encryption with honest endpoint limits. Conceptual; inherits CE-5 FIG-CE5-004."}
 
@@ -208,7 +208,7 @@ A system can remain **powered on and connected** while the **human experience of
 Three separations matter here:
 
 1. **Authentication** versus **authorization** — AuthN ≠ AuthZ [@nist_sp_800_63_4].
-2. **Encryption in transit/at rest** versus **endpoint exposure** — padlock ≠ private forever (@fig-ch23-003).
+2. **Encryption in transit/at rest** versus **endpoint exposure** — padlock ≠ private forever; confidentiality ≠ integrity ≠ availability (@fig-ch23-003).
 3. **Felt safety** versus **technical trust evidence** — feelings matter; they are not the same as controls and artifacts (CE-5 dual-ledger adjacency).
 
 Commodity observations you collect with **LAB-TRUST-001** are *your* evidence for *your* routes and fixtures—not universal product certifications, and not Gate 3 reader validation. Device Quartet measured secure-boot claims remain **PHYSICAL_PENDING** [@src-hardware-quartet].

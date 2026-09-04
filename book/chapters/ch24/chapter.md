@@ -29,6 +29,7 @@ Two non-collapse rules govern the prose:
 
 1. **Privacy ≠ security.** Encryption, authentication, and least privilege can hold while collection, retention, sharing, or deletion still fail the person.
 2. **Accessibility ≠ convenience.** A path that is faster for one body/tool is not automatically usable for another; alternate routes are success conditions, not polish.
+3. **Safety ≠ censorship.** Safety limits aim to reduce harm from fluent or actionable outputs; they are not the same as viewpoint-censorship claims, and over-refusal is a distinct failure mode to name honestly.
 
 ---
 
@@ -177,7 +178,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 - **Plain language.** Limits that keep harmful outcomes from being easy to enact—especially fluent outputs that look actionable.
 - **Analogy (labeled).** Like a power tool’s guard: it does not make the tool “moral”; it changes what is easy.
 - **Technical function.** Bounds deployment and reliance practices; NIST AI RMF vocabulary is useful without declaring AI itself good or bad [@nist_ai_rmf_100_1].
-- **Constraints.** Filters can over-refuse; fluency can still mislead; humans remain accountable for reliance.
+- **Constraints.** Safety ≠ censorship: filters can over-refuse without becoming a free-speech slogan; fluency can still mislead; humans remain accountable for reliance.
 - **Symptoms.** Confident wrong answer treated as fact; unexplained refusal storms; tool actions without disclosure.
 
 ### Accessibility path
@@ -410,6 +411,7 @@ Candidate terms introduced or reinforced here (see also `publication/full31/chap
 | Consent / trust card | Audience, purpose, classes, retention, opt-out, AI disclosure |
 | Privacy ≠ security | Controls can hold while lifecycle still fails the person |
 | Accessibility ≠ convenience | Faster for one path is not usable for all paths |
+| Safety ≠ censorship | Harm-reduction limits ≠ viewpoint-censorship claims; over-refusal is a named failure |
 | Stability Contract | Concurrent hidden conditions that keep an experience alive (book teaching model) |
 
 Related earlier chapters: CE-5 / CH21 inference and disclosure adjacency; CH23 security boundaries without replacing privacy. Related later chapters: equity deepening (CH25), evidence practice (CH27), responsibility synthesis (CH30/CH31).

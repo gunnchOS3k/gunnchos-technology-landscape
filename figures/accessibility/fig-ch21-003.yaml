@@ -1,14 +1,13 @@
 figure_id: FIG-CH21-003
-title: "Model vs product vs claim families"
-caption: "Model vs product vs claim families. Truth classification: conceptual. Color is not the sole encoding."
-alt_text: "Model vs product vs claim families. Reading order: Model capability; Product behavior; Human claim; Do not collapse."
+title: "Fluency vs correctness vs evaluation evidence"
+caption: "Fluency vs correctness vs evaluation evidence. Truth classification: conceptual. Color is not the sole encoding."
+alt_text: "Fluency vs correctness vs evaluation evidence. Reading order: Fluency (does it sound coherent?); Correctness (is the claim accurate for this task?); Evaluation evidence (what labeled checks support usefulness?). Do not collapse the three families."
 text_equivalent: |
-  Model vs product vs claim families. Nodes in reading order: Model capability; Product behavior; Human claim; Do not collapse. Truth: conceptual. Educational architecture; no invented measurements.
+  Fluency vs correctness vs evaluation evidence. Panels in reading order: Fluency — does it sound coherent? (not proof of truth); Correctness — is the claim accurate for this task? (not one lucky answer); Evaluation evidence — what labeled checks support usefulness? (fixtures are not human validation). Truth: conceptual. Educational architecture; no invented measurements.
 reading_order:
-- Model capability
-- Product behavior
-- Human claim
-- Do not collapse
+- Fluency
+- Correctness
+- Evaluation evidence
 source: figures/full31/ch21/fig-ch21-003.svg
 evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
 truth_classification: conceptual
@@ -17,4 +16,4 @@ status: conceptual
 production_status: implemented
 color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
 reviewer: pending-human-visual-review
-version: 0.1.0
+version: 0.1.1

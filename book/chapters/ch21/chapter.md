@@ -117,7 +117,7 @@ Here the “signal” is the fate of one practical question—from input to huma
 
 ### Generative systems without mythology
 
-**Generative AI**, in this book’s systems view, means systems that produce new text, images, code, or similar media by predicting likely continuations under a model and decoding procedure. Prediction of likely tokens is not comprehension. The pedagogical firewall is deliberate: speak of inputs, parameters, inference, and outputs—not beliefs or intentions (CLM-CH21-001 wording boundary).
+**Machine learning** is the broader practice of fitting model parameters from data and applying them at inference—classification, ranking, detection, and generation all sit under that umbrella when they learn from examples [@goodfellow_deep_learning]. **Generative AI**, in this book’s systems view, means systems that produce new text, images, code, or similar media by predicting likely continuations under a model and decoding procedure. Generative systems are one family of ML applications, not a synonym for all machine learning. Prediction of likely tokens is not comprehension. The pedagogical firewall is deliberate: speak of inputs, parameters, inference, and outputs—not beliefs or intentions (CLM-CH21-001 wording boundary).
 
 ### Local versus cloud as a path fork
 
@@ -373,9 +373,10 @@ Candidate terms introduced or reinforced here (see also chapter glossary candida
 | Term | Plain link |
 |---|---|
 | Training and input data | Examples/records used to fit a model or answer a question |
+| Machine learning | Broader practice of fitting models from data and applying them at inference (not only generative systems) |
 | Model parameters | Stored numbers shaping inputs→outputs; not a mind |
 | Inference / output | Running a model on new inputs to produce a prediction or generation |
-| Generative AI (systems view) | Systems that produce new text/images/code by predicting likely continuations |
+| Generative AI (systems view) | One ML family: systems that produce new text/images/code by predicting likely continuations (not all ML) |
 | Uncertainty and errors | Outputs can be wrong or incomplete even when fluent |
 | Local vs cloud AI | Whether inference runs on-device or on remote computers |
 | Evaluation under uncertainty | Checking usefulness with labeled observations and limits |
