@@ -62,6 +62,8 @@ Optional comparison on a device you already own: cold boot once (power fully off
 
 Boot is not a single object. It is a path through an ecosystem. **FIG-CH11-001** is the first-minute map: power/reset → firmware → bootloader → kernel → userspace → lock screen or recovery. Treat it as **Representative educational architecture**, not a claim that every phone or laptop implements identical stages with identical names.
 
+![Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings.](../../../figures/full31/ch11/fig-ch11-001.svg){#fig-ch11-001 fig-cap="Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings."}
+
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
 ### Human
@@ -93,6 +95,8 @@ The kernel takes control of privileged hardware mediation; userspace eventually 
 Platforms often provide alternate paths when primary images fail verification or when an update leaves the device needing an honest recovery UI. Naming the path is literacy. Inventing vendor-specific brick rates or Quartet EVT recovery timings is not. Device Quartet boot and firmware behavior remains **PHYSICAL_PENDING** research form-factor context only (CLM-CH11-005).
 
 **FIG-CH11-002** later sketches root-of-trust → verified stages as policy intent—not a product badge for any reader’s unit.
+
+![Root of trust → verified stages as policy intent—not a product badge.](../../../figures/full31/ch11/fig-ch11-002.svg){#fig-ch11-002 fig-cap="Root of trust → verified stages as policy intent—not a product badge."}
 
 ---
 
@@ -388,13 +392,13 @@ Related earlier chapters: system lens (CH01), signals/power adjacency (CH05, CH0
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry or attestation quotes.
 
 ### FIG-CH11-001 — Power → firmware → bootloader → kernel → lock screen
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Sequence diagram.
 - **Reader should notice.** Ordered handoff plus optional recovery branch; lock screen is late.
 - **Truth class.** Conceptual.
@@ -402,7 +406,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-002 — Root of trust → verified stages
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** System map.
 - **Reader should notice.** Policy intent layers—not a product badge for the reader’s device.
 - **Truth class.** Conceptual.
@@ -410,7 +414,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-003 — Lock screen vs secure boot
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+![Lock screen authentication vs secure-boot authenticity policy (authorization callout).](../../../figures/full31/ch11/fig-ch11-003.svg){#fig-ch11-003 fig-cap="Lock screen authentication vs secure-boot authenticity policy (authorization callout)."}
+
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** User authentication vs software authenticity policy; authorization as a third idea.
 - **Truth class.** Illustrative.
@@ -418,7 +424,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-004 — Update failure → recovery → outcomes
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+![Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates.](../../../figures/full31/ch11/fig-ch11-004.svg){#fig-ch11-004 fig-cap="Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates."}
+
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Failure map.
 - **Reader should notice.** Readable recovery vs unusable outcomes as Stability Contract teaching—not vendor brick statistics.
 - **Truth class.** Conceptual.

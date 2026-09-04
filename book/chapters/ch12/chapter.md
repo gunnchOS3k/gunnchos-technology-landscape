@@ -287,7 +287,7 @@ Read-only sampling where the OS exposes coarse stats. If a metric is unavailable
 
 #### Route C — Fixture fallback
 
-Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible or you must avoid personal screenshots. Fixtures teach concepts; they are not claims about your personal device. @fig-ch12-004 reproduces fixture `the blocked CMS measured plate` for classroom reading.
+Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible or you must avoid personal screenshots. Fixtures teach concepts; they are not claims about your personal device. @fig-ch12-004 reproduces the LAB-CMS-001 before/during monitor teaching fixture for classroom reading. A separate CE measured-plate figure remains blocked pending qualifying evidence—do not treat this classroom plate as that blocked asset.
 
 #### Evidence (minimum)
 
@@ -464,7 +464,7 @@ See also Chapter 2 (process/thread/scheduler naming), Chapter 6 (CPU / parallel 
 ### FIG-CH12-004 — OS-monitor before/during (fixture)
 
 - **File:** `figures/architecture/fig-ch12-004-monitor-snapshots.svg`
-- **Truth:** measured teaching fixture (LAB-CMS-001 / the blocked CMS measured plate); classroom n=1
+- **Truth:** illustrative classroom fixture from LAB-CMS-001 before/during monitor readings; classroom n=1 (not a product SLO; separate CE measured-plate asset remains blocked)
 - **A11y:** `figures/preproduction/accessibility/fig-ch12-004.yaml`
 
 Related CE-3 maps (optional cross-read, not required embeds): `figures/preproduction/ce-03/fig-ce3-001.svg`, `fig-ce3-003.svg`.

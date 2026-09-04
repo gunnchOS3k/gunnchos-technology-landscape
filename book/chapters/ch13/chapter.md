@@ -64,6 +64,8 @@ A second optional notice: if you already use a cloud document, open the same not
 
 Persistence is not one object. It is a path through an ecosystem. **FIG-CH13-002** is the first-minute durability stack: app buffer → filesystem → device media → optional cloud replica. Treat it as **Representative educational architecture**, not a claim that every phone or laptop wires exactly like the diagram.
 
+![Durability stack: app buffer → filesystem → device media → optional cloud replica. Conceptual.](../../../figures/full31/ch13/fig-ch13-002.svg){#fig-ch13-002 fig-cap="Durability stack: app buffer → filesystem → device media → optional cloud replica. Conceptual."}
+
 Walk the layers in ordinary language.
 
 ### Human
@@ -90,6 +92,8 @@ Flash, disk, and related controllers hold durable bytes—until wear, full volum
 
 Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—without citing a pinned database-systems textbook edition. Formal recovery and consistency slogans stay out of the cited-claim set until SOURCE_NEEDED closes (CLM-CH13-003 omitted as a sourced claim). **FIG-CH13-004** sketches file versus database responsibilities as a teaching plate, not as product endorsement.
 
+![File vs database responsibilities. Teaching split; not product endorsement.](../../../figures/full31/ch13/fig-ch13-004.svg){#fig-ch13-004 fig-cap="File vs database responsibilities. Teaching split; not product endorsement."}
+
 ### Sync and replicas (qualitative)
 
 Optional cloud sync adds copies that update over time. From the seat, a conflict can feel like “storage broke.” A more careful reading: multiple durable states can exist at once, and disagreement is a distributed-state symptom to observe—not automatic proof that the local filesystem failed. Specific sync theorems and vendor conflict algorithms remain SOURCE_NEEDED (CLM-CH13-004 omitted as a sourced claim); this chapter keeps the honesty rule: label conflict UI as observation.
@@ -97,6 +101,8 @@ Optional cloud sync adds copies that update over time. From the seat, a conflict
 ### Lifecycle policy
 
 Beyond mechanism sits **lifecycle**: create/collect → use → retain → share → delete/redact. **FIG-CH13-001** is the lifecycle arc. Policy language (“we delete after…”) and mechanism (what the UI removes) can diverge; later sections stay qualitative and refuse recoverability cookbooks.
+
+![Data lifecycle: create/collect → use → retain → share → delete/redact. Conceptual.](../../../figures/full31/ch13/fig-ch13-001.svg){#fig-ch13-001 fig-cap="Data lifecycle: create/collect → use → retain → share → delete/redact. Conceptual."}
 
 ### System software
 
@@ -107,6 +113,8 @@ The OS mediates process lifetime, file APIs, permissions, and often sync agents.
 ## 4. Follow the signal
 
 Here the “signal” is durable state moving through time—not a tap packet. **FIG-CH13-003** contrasts a Save click with a later durability point such as flush/fsync conceptually. Read it as a logical story, not as a claim that every app executes identical steps.
+
+![Save click vs later durability point (flush/fsync conceptually). Illustrative; no invented latencies.](../../../figures/full31/ch13/fig-ch13-003.svg){#fig-ch13-003 fig-cap="Save click vs later durability point (flush/fsync conceptually). Illustrative; no invented latencies."}
 
 1. **Intent.** You decide content should survive quit, crash, or tomorrow’s reopen.
 2. **Edit in working memory.** Keystrokes update an in-memory buffer; the screen looks complete.
@@ -424,13 +432,13 @@ Related earlier chapters: memory and storage adjacency (CH07), OS abstractions (
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry. Device Quartet storage curves remain PHYSICAL_PENDING.
 
 ### FIG-CH13-001 — Data lifecycle (create → use → retain → share → delete/redact)
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Lifecycle diagram.
 - **Reader should notice.** Ordered stages with human stakes at delete/redact; policy vs mechanism note.
 - **Truth class.** Conceptual.
@@ -438,7 +446,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-002 — App buffer → filesystem → device media → optional cloud replica
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** Left-to-right durability stack; RAM/buffer distinct from durable media.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -446,7 +454,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-003 — Save click vs durability point
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Sequence diagram.
 - **Reader should notice.** Save UI precedes possible flush/fsync durability; failure branch for incomplete write.
 - **Truth class.** Illustrative.
@@ -454,7 +462,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-004 — File vs database responsibilities
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** System map / comparative.
 - **Reader should notice.** Named bytes vs structured store responsibilities; both can fail.
 - **Truth class.** Conceptual.
