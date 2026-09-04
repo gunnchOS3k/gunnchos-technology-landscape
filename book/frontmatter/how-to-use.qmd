@@ -6,12 +6,26 @@ title: "How to use this book"
 
 This publication teaches technology as a lived system: **human experience → system → component → code → network → society**.
 
+## Navigation hub
+
+| Question | Destination |
+|---|---|
+| Where am I? | [Parts and chapters](../appendices/parts-chapters.qmd) |
+| What should I know first? | [Know first](know-first.qmd) |
+| Which pathway fits me? | [Reader pathways](reader-pathways.qmd) |
+| Glossary | [Glossary](../appendices/glossary.qmd) |
+| Labs | [Lab index](../appendices/lab-index.qmd) |
+| Figures | [Figure index](../appendices/figure-index.qmd) |
+| References / standards | [References](../appendices/references.qmd) · [Key standards](../appendices/key-standards.qmd) |
+| Career / role map | [Career and role map](../appendices/career-role-map.qmd) |
+| Errata | [Errata](../appendices/errata.qmd) |
+
 ## Suggested first pass
 
-1. Read the status page so expectations stay honest (working draft; validation pending).
-2. Skim reader pathways and pick the lane that matches your starting point.
+1. Read [Know first](know-first.qmd) and [Manuscript status](status.qmd) so expectations stay honest.
+2. Skim [Reader pathways](reader-pathways.qmd) and pick the lane that matches your starting point.
 3. Read Chapter 2 (*Follow One Tap Through the Entire Stack*) as the method prototype.
-4. Use Device Quartet and WAIKE pages as orientation — not as purchase or credential claims.
+4. Use [Device Quartet](device-quartet.qmd) and [WAIKE](waike.qmd) as orientation — not as purchase or credential claims.
 5. Follow labs only on devices and accounts you already control.
 
 ## What “working draft” means here

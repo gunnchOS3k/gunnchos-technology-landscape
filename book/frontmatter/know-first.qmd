@@ -1,0 +1,24 @@
+---
+title: "Know first"
+---
+
+# Know first
+
+Before deep reading, lock these navigation truths:
+
+| Need | Go here |
+|---|---|
+| Where am I in the book? | [Parts and chapters](../appendices/parts-chapters.qmd) |
+| What is this draft’s status? | [Manuscript status](status.qmd) |
+| How should I read? | [How to use this book](how-to-use.qmd) · [Reader pathways](reader-pathways.qmd) |
+| What do evidence labels mean? | [Evidence and status legend](evidence-legend.qmd) |
+| Device Quartet / WAIKE boundaries | [Device Quartet](device-quartet.qmd) · [WAIKE](waike.qmd) |
+| Glossary / labs / figures / roles / standards | Back-matter indexes below |
+| Report an error | [Errata](../appendices/errata.qmd) |
+
+## Non-claims (keep visible)
+
+- **Not publication-ready.** Gate posture: `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`.
+- Historical `CH02-REVIEW-R1` is chapter-prototype evidence only — not full-manuscript validation.
+- Acknowledgments remain a **placeholder**; no invented reviewers, endorsements, or testimonials.
+- Rights: manuscript/artwork/instructor materials are **All Rights Reserved © 2026 Edmund Gunn Jr.**; code/tooling is **MIT only where explicitly scoped**; upstream keeps upstream. **No blanket CC.**

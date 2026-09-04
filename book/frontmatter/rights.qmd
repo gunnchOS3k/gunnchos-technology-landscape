@@ -1,0 +1,18 @@
+---
+title: "Rights notice"
+---
+
+# Rights notice
+
+| Domain | Right | Notes |
+|---|---|---|
+| Manuscript prose | All Rights Reserved © 2026 Edmund Gunn Jr. | Development-stage; not Creative Commons |
+| Original artwork / figures | All Rights Reserved © 2026 Edmund Gunn Jr. | Educational diagrams remain rights-reserved |
+| Instructor-only assets | All Rights Reserved © 2026 Edmund Gunn Jr. | Closed unless later opened by explicit decision |
+| Publication scripts / CI / Makefile | MIT (software) | Infrastructure only |
+| Runnable lab / code samples | MIT where files explicitly identify as code samples | Does not license surrounding prose |
+| Upstream WAIKE / gunnchOS / third-party works | Upstream retains upstream | Cite SHAs; fair citation only |
+
+Machine-readable decision records: `publication/BOOK_LICENSE_DECISION.md`, `publication/RIGHTS_AND_PERMISSIONS.md`.
+
+**No blanket Creative Commons license** for this working draft. Successful HTML/PDF/EPUB rendering does not change rights or publication readiness.

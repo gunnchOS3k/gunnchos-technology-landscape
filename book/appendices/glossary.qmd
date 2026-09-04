@@ -4,6 +4,100 @@ title: "Glossary"
 
 # Glossary
 
-Working glossary entries are maintained in `glossary/glossary.yaml` (with aliases and acronyms in sibling registries). Chapter “Glossary links” sections should point to defined terms rather than inventing conflicting definitions.
+Working definitions live in `glossary/glossary.yaml` (aliases/acronyms in sibling registries). Chapter “Glossary links” should point to defined term IDs rather than inventing conflicting definitions.
 
-This appendix is a **navigation stub** for the full-book build. As chapters leave scaffold state, term lists here may expand; do not treat an incomplete glossary as publication-ready terminology.
+The table below is a **navigation index** of term IDs — not a substitute for the full YAML definitions, and not a publication-ready terminology freeze.
+
+| Term ID | Term | Introduced in |
+|---|---|---|
+| `accessibility-path` | Accessibility path | CH24 |
+| `api` | API | CH02 |
+| `attack-surface-ux-linked` | Attack surface (UX-linked) | CH23 |
+| `authentication` | Authentication | CH23 |
+| `authorization` | Authorization | CH23 |
+| `branch-integration` | Branch / integration | CH26 |
+| `build-test-loop` | Build-test loop | CH26 |
+| `cache` | Cache | CH02 |
+| `chip-to-cloud-trust-path` | Chip-to-cloud trust path | CH23 |
+| `claim-boundary` | Claim boundary | CH29 |
+| `cloud-computing` | Cloud computing | CH02 |
+| `code-review` | Code review | CH26 |
+| `commit` | Commit | CH26 |
+| `complete-technology-product` | Complete technology product | CH29 |
+| `constrained-completion-route` | Constrained completion route | CH25 |
+| `cpu` | CPU | CH02 |
+| `design-gates` | Design gates | CH29 |
+| `device-driver` | Device driver | CH02 |
+| `digital-equity` | Digital equity | CH25 |
+| `digital-twin-teaching-sense` | Digital twin (teaching sense) | CH28 |
+| `edge-on-device-inference` | Edge / on-device inference | CH22 |
+| `edge-computing` | Edge computing | CH02 |
+| `edge-resource-budget` | Edge resource budget | CH22 |
+| `edge-cloud-fallback` | Edge/cloud fallback | CH22 |
+| `embodied-interaction-loop` | Embodied interaction loop | CH22 |
+| `embodied-sensing` | Embodied sensing | CH22 |
+| `emit-spine` | EMIT spine | CH31 |
+| `employment-non-guarantee` | Employment non-guarantee | CH30 |
+| `encryption-goals-and-limits` | Encryption goals and limits | CH23 |
+| `ethics-ladder` | Ethics ladder | CH24 |
+| `evaluation-under-uncertainty` | Evaluation under uncertainty | CH21 |
+| `event` | Event | CH02 |
+| `event-loop` | Event loop | CH02 |
+| `evidence-hierarchy` | Evidence hierarchy | CH27 |
+| `evidence-limitations` | Evidence limitations | CH31 |
+| `evidence-plan` | Evidence plan | CH29 |
+| `evidence-redaction` | Evidence redaction | CH27 |
+| `exclusion-mechanism` | Exclusion mechanism | CH25 |
+| `explicit-tradeoffs` | Explicit tradeoffs | CH29 |
+| `fixture` | Fixture | CH28 |
+| `fixture-validated-infrastructure` | Fixture-validated infrastructure | CH31 |
+| `frame` | Frame | CH02 |
+| `generative-ai-systems-view` | Generative AI (systems view) | CH21 |
+| `gpu` | GPU | CH02 |
+| `haptic-feedback` | Haptic feedback | CH02 |
+| `honest-evidence-labeling` | Honest evidence labeling | CH25 |
+| `identity` | Identity | CH23 |
+| `identity-in-human-systems` | Identity in human systems | CH24 |
+| `inference-output` | Inference / output | CH21 |
+| `interrupt` | Interrupt | CH02 |
+| `jitter` | Jitter | CH02 |
+| `kernel` | Kernel | CH02 |
+| `latency` | Latency | CH02 |
+| `local-vs-cloud-ai` | Local vs cloud AI | CH21 |
+| `measurable-inclusion-signals` | Measurable inclusion signals | CH25 |
+| `model-parameters` | Model parameters | CH21 |
+| `observability` | Observability | CH27 |
+| `observation-vs-inference` | Observation vs inference | CH27 |
+| `packet` | Packet | CH02 |
+| `portfolio-index` | Portfolio index | CH30 |
+| `portfolio-proof` | Portfolio proof | CH30 |
+| `privacy-data-lifecycle` | Privacy / data lifecycle | CH24 |
+| `process` | Process | CH02 |
+| `protection-design-principles` | Protection design principles | CH23 |
+| `protocol` | Protocol | CH02 |
+| `radio` | Radio | CH02 |
+| `ram` | RAM | CH02 |
+| `rendering` | Rendering | CH02 |
+| `reproducible-research` | Reproducible research | CH28 |
+| `review-criteria` | Review criteria | CH30 |
+| `role-family` | Role family | CH30 |
+| `router` | Router | CH02 |
+| `safety-constraints` | Safety constraints | CH24 |
+| `scheduler` | Scheduler | CH02 |
+| `secrets-hygiene` | Secrets hygiene | CH26 |
+| `sensing-privacy-boundary` | Sensing privacy boundary | CH22 |
+| `service` | Service | CH02 |
+| `simulation` | Simulation | CH28 |
+| `stability-contract` | Stability Contract | CH02 |
+| `stability-contract-capstone-use` | Stability Contract (capstone use) | CH31 |
+| `storage` | Storage | CH02 |
+| `teach-back` | Teach-back | CH31 |
+| `test-oracle` | Test oracle | CH27 |
+| `testing` | Testing | CH27 |
+| `thread` | Thread | CH02 |
+| `touch-digitizer` | Touch digitizer | CH02 |
+| `training-and-input-data` | Training and input data | CH21 |
+| `uncertainty-and-errors` | Uncertainty and errors | CH21 |
+| `validity-bounds` | Validity bounds | CH28 |
+| `version-control` | Version control | CH26 |
+| `wcag-as-guidance` | WCAG as guidance | CH24 |

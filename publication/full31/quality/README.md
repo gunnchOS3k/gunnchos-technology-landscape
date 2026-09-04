@@ -13,3 +13,9 @@ Working area for manuscript quality convergence on branch
 ## Base
 
 Agents A–J may base work from the tip of this branch after bootstrap.
+
+## Agent I (front/back + nav + indexes)
+
+- Audit: `FRONTMATTER_NAV_AUDIT.yaml`
+- Report: `FRONTMATTER_NAV_REPORT.md`
+- Errata stub: `ERRATA_WORKFLOW.md`

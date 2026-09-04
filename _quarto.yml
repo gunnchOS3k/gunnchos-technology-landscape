@@ -9,6 +9,8 @@ book:
   chapters:
     - index.qmd
     - book/frontmatter/status.qmd
+    - book/frontmatter/rights.qmd
+    - book/frontmatter/know-first.qmd
     - book/frontmatter/how-to-use.qmd
     - book/frontmatter/reader-pathways.qmd
     - book/frontmatter/device-quartet.qmd
@@ -46,11 +48,14 @@ book:
     - book/chapters/ch29/chapter.md
     - book/chapters/ch30/chapter.md
     - book/chapters/ch31/chapter.md
+    - book/appendices/parts-chapters.qmd
     - book/appendices/glossary.qmd
     - book/appendices/references.qmd
+    - book/appendices/key-standards.qmd
     - book/appendices/lab-index.qmd
     - book/appendices/figure-index.qmd
     - book/appendices/career-role-map.qmd
+    - book/appendices/errata.qmd
     - book/appendices/acknowledgments.qmd
 
 bibliography: book/references/references.bib
