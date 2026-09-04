@@ -1,9 +1,7 @@
 ---
 title: "Glossary"
+number: false
 ---
-
-# Glossary
-
 Working definitions live in `glossary/glossary.yaml` (aliases in `glossary/aliases.yaml`, acronyms in `glossary/acronym_registry.yaml`). Book-wide canonical meanings for high-risk terms live in `book/terminology.yaml` (contradiction fence; chapter prose may vary). Misconception map: `publication/full31/quality/MISCONCEPTION_MATRIX.md`. Chapter “Glossary links” should point to defined term IDs rather than inventing conflicting definitions.
 
 The table below is a **navigation index** of term IDs — not a substitute for the full YAML definitions, and not a publication-ready terminology freeze.

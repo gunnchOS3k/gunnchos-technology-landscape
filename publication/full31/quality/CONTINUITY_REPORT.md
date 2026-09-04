@@ -1,7 +1,7 @@
 # Full31 Continuity Report
 
 **Generated:** 2026-09-03  
-**Base SHA:** `2e440e43f89b61c112f088939f73440024283bbf`  
+**Base SHA:** `3264321e0f878e16fb4d6b0f84cd189ac4538532`  
 **Tool:** `scripts/audit_full31_continuity.py` (audit aid; not auto-rewrite)
 
 ## Scope
@@ -16,10 +16,10 @@
 
 | Metric | Count |
 |---|---:|
-| Total findings | 362 |
+| Total findings | 360 |
 | FIX_CANDIDATE | 0 |
-| INTENTIONAL_RETAIN | 269 |
-| OPEN | 93 |
+| INTENTIONAL_RETAIN | 268 |
+| OPEN | 92 |
 | FIXED (post Phase 2) | 0 |
 
 ### By kind
@@ -28,7 +28,7 @@
 |---|---:|
 | `bad_transition` | 28 |
 | `contradiction` | 1 |
-| `near_duplicate` | 284 |
+| `near_duplicate` | 282 |
 | `repeated_block` | 30 |
 | `templated_filler` | 1 |
 | `term_before_explain` | 18 |
@@ -37,9 +37,9 @@
 
 | Severity | Count |
 |---|---:|
-| MODERATE | 49 |
+| MODERATE | 48 |
 | MINOR | 18 |
-| EDITORIAL | 295 |
+| EDITORIAL | 294 |
 
 ## Chapter identity matrix
 
@@ -69,7 +69,7 @@ _No FIX_CANDIDATE items._
 - **CONT-REPEATED_BLO-011** CH06, CH12 — Exact normalized paragraph repeated across chapters.
 - **CONT-REPEATED_BLO-012** CH06, CH12 — Exact normalized paragraph repeated across chapters.
 - **CONT-REPEATED_BLO-013** CH06, CH12 — Whitelisted deliberate repeated construct.
-- … 257 more retained (see ledger)
+- … 256 more retained (see ledger)
 
 ## Phase 2 resolutions (this wave)
 

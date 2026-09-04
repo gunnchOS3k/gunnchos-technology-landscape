@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH28
 chapter_number: 28
-title: "Digital Twins, Simulation, and Reproducible Research"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false

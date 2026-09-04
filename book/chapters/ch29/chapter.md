@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH29
 chapter_number: 29
-title: "Designing a Complete Technology Product"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false

@@ -2,7 +2,6 @@
 status: working_draft
 chapter_id: CH06
 chapter_number: 6
-title: "CPU, Instructions, and Parallel Work"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false

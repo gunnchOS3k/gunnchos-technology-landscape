@@ -1,9 +1,7 @@
 ---
 title: "Evidence and status legend"
+number: false
 ---
-
-# Evidence and status legend
-
 | Label | Meaning |
 |---|---|
 | `WORKING FULL-MANUSCRIPT DRAFT` | Full-book prose in progress; not publication-ready |

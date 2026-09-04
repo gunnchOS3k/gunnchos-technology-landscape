@@ -1,8 +1,8 @@
 schema_version: 1.0.0
 report_id: FULL31_PUBLICATION_QA
 agent: agent-h-publication-qa
-generated_at: '2026-09-04T00:18:31Z'
-git_sha: c8400b2b840b3f76a55d78771f05260564c9b53a
+generated_at: '2026-09-04T00:42:01Z'
+git_sha: 6da419826c70c4f19657b68bf6ffe55dd7675029
 preferred_base_branch: cursor/full31-quality-convergence-001
 gate_3_policy: DO_NOT_TOUCH
 certification_claims:
@@ -10,7 +10,7 @@ certification_claims:
   epub_accessibility: false
   human_print_quality: false
 toolchain:
-  quarto: /Users/gunnchos/Downloads/gunnchos-technology-landscape/.worktrees/agent-h-publication-qa-001/tools/quarto/bin/quarto
+  quarto: /Users/gunnchos/Downloads/gunnchos-technology-landscape/.worktrees/full31-quality-convergence-001/tools/quarto/bin/quarto
   LOCAL_RENDER_TOOLCHAIN_UNAVAILABLE: false
 artifacts:
   html: preview/full31/technology-landscape-full31-html
@@ -19,14 +19,14 @@ artifacts:
   print_checklist: publication/full31/quality/HUMAN_PRINT_VISUAL_CHECKLIST.md
 severity_counts:
   BLOCKER: 0
-  MAJOR: 1
+  MAJOR: 0
   MODERATE: 1
   MINOR: 0
   EDITORIAL: 0
 checks:
   source_semantics:
     chapters_scanned: 31
-    figures_embedded: 47
+    figures_embedded: 72
     fig_cap_without_fig_alt: 0
     empty_markdown_alts: 0
     generic_section_id_collisions: {}
@@ -35,7 +35,7 @@ checks:
     reader_facing_localhost_or_filesystem: 0
     tables_missing_header_sep: 0
   figures:
-    registry_count: 107
+    registry_count: 110
     missing_sidecar: 0
     missing_asset: 0
     missing_fields: 0
@@ -45,16 +45,16 @@ checks:
     missing_accessible_routes: 0
     browser_missing_lang: 0
     browser_missing_live_region: 0
-    a11y_doc_present: 2
+    a11y_doc_present: 11
   acronyms:
-    registry_entries: 4
-    identity_expansions: 4
+    registry_entries: 12
+    identity_expansions: 0
     first_use_heuristic: source_scan_limited
   html:
     artifact_present: true
-    pages: 52
+    pages: 65
     missing_lang: 0
-    imgs_total: 47
+    imgs_total: 72
     imgs_missing_alt: 0
     broken_internal_anchors: 0
     reader_facing_localhost_href: 0
@@ -74,12 +74,12 @@ checks:
     dc_language: en
     dc_title: The Technology Landscape
     dc_creator: Edmund Gunn, Jr.
-    imgs_total: 47
+    imgs_total: 72
     imgs_missing_alt: 0
     xhtml_missing_lang: 0
   pdf:
     artifact_present: true
-    page_count: 666
+    page_count: 614
     render_success: true
     overfull_hbox: 0
     overfull_vbox: 0
@@ -91,29 +91,39 @@ checks:
     tiny_text_heuristic: not_automated
     clipping_heuristic: not_automated
     wide_table_heuristic: log_overfull_proxy
-    pdf_max_chapter_number_seen: 441
-    pdf_chapter_number_mentions: 573
+    pdf_max_chapter_number_seen: 379
+    pdf_chapter_number_mentions: 534
+    pdf_latex_chapter_headers:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 23
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    pdf_max_latex_chapter_header: 40
+    pdf_body_title_hits: 61
 issues:
-- issue_id: A11Y-ACRO-IDENTITY
+- issue_id: PDF-FRONTMATTER-NUMBERING
   severity: MODERATE
-  category: acronyms
-  location: glossary/acronym_registry.yaml
-  finding: 'Acronym registry entries expand to themselves (4): first-use expansion
-    not machine-checkable.'
-  evidence: API, CPU, GPU, RAM
-  fix_status: HANDOFF_AGENT_J
-- issue_id: PDF-CHAPTER-COUNTER
-  severity: MAJOR
   category: pdf_structure
   location: preview/full31/technology-landscape-full31-pdf.pdf
-  finding: "PDF text shows chapter numbers up to 441 (666 pages). Expected ~31 body\
-    \ chapters; likely LaTeX chapter-counter inflation \u2014 needs human print QA."
+  finding: 'Front/back matter may still appear as arabic-numbered chapters in the
+    PDF TOC despite number: false; body LaTeX headers max=40. Human print QA should
+    confirm unnumbered frontmatter styling.'
   evidence: ''
   fix_status: NEEDS_HUMAN
-commits:
-  quality_tip_before_land: ddfde3ba27e8dc00042f0fe219081f12d9aca03a
-  agent_h_substantive: 51e36228a7152e3423bc867a74ca0f9825aa023b
-  agent_h_branch_head: d1a8152157bbb735f7d9ab300b709f6145dc426d
-  landed_on_quality: c8400b2b840b3f76a55d78771f05260564c9b53a
-integrator_notes: PDF-CHAPTER-COUNTER remains MAJOR/NEEDS_HUMAN for integrator adjudication.
-  No WCAG/EPUB/print certification claimed.

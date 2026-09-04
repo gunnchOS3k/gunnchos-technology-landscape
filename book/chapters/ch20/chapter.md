@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH20
 chapter_number: 20
-title: "Latency, Reliability, QoE, and the Stability Contract"
 author: "Edmund Gunn, Jr."
 part: IV
 concept_edition: false
@@ -62,7 +61,7 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH20-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **Representative educational architecture**, not a claim that every app fails the same way.
 
-![Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke.](../../../figures/full31/ch20/fig-ch20-001.svg){#fig-ch20-001 fig-cap="Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke."}
+![Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke.](../../../figures/full31/ch20/fig-ch20-001.svg){fig-alt="Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke." #fig-ch20-001 fig-cap="Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke."}
 
 Walk the layers in ordinary language.
 
@@ -112,7 +111,7 @@ SC-11: delay and variability remain acceptable *to this person in this context*.
 
 **FIG-CH20-002** separates latency vs reliability vs throughput symptom families so readers stop treating one green probe as all three.
 
-![Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe.](../../../figures/full31/ch20/fig-ch20-002.svg){#fig-ch20-002 fig-cap="Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe."}
+![Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe.](../../../figures/full31/ch20/fig-ch20-002.svg){fig-alt="Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe." #fig-ch20-002 fig-cap="Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe."}
 
 ---
 
@@ -146,7 +145,7 @@ Latency, reliability, and throughput are different failure/success families; col
 
 **FIG-CH20-003** and CE-6’s evidence ladder teach the same honesty:
 
-![QoE vs QoS vs ping. Conceptual non-entailment teaching.](../../../figures/full31/ch20/fig-ch20-003.svg){#fig-ch20-003 fig-cap="QoE vs QoS vs ping. Conceptual non-entailment teaching."}
+![QoE vs QoS vs ping. Conceptual non-entailment teaching.](../../../figures/full31/ch20/fig-ch20-003.svg){fig-alt="QoE vs QoS vs ping. Conceptual non-entailment teaching." #fig-ch20-003 fig-cap="QoE vs QoS vs ping. Conceptual non-entailment teaching."}
 
 1. Illustrative teaching aid (labeled)
 2. Commodity observation (status UI, wall-clock, visible stalls)
@@ -472,7 +471,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-004 — Learner portfolio timings labeled n=1
 
-![Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data.](../../../figures/full31/ch20/fig-ch20-004.svg){#fig-ch20-004 fig-cap="Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data."}
+![Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data.](../../../figures/full31/ch20/fig-ch20-004.svg){fig-alt="Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data." #fig-ch20-004 fig-cap="Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data."}
 
 - **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Measured-only when filled with learner data; otherwise illustrative placeholder.

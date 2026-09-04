@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH25
 chapter_number: 25
-title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false

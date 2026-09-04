@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH30
 chapter_number: 30
-title: "Career Maps and Portfolio Proof"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false

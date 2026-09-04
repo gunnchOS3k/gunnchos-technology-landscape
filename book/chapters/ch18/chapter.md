@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH18
 chapter_number: 18
-title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
 author: "Edmund Gunn, Jr."
 part: IV
 concept_edition: false
@@ -61,7 +60,7 @@ Optional comparison, available on almost any device you already own: pick one fa
 
 A wireless moment is not a single object. It is a path through an ecosystem. **FIG-CH18-001** is the first-minute map: device ↔ obstacles/body ↔ antennas ↔ shared spectrum ↔ access point or cell site ↔ beyond. Treat it as **Representative educational architecture**, not a claim that your sealed phone’s antenna layout matches the cartoon (CLM-CH18-005).
 
-![Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map.](../../../figures/full31/ch18/fig-ch18-001.svg){#fig-ch18-001 fig-cap="Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map."}
+![Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map.](../../../figures/full31/ch18/fig-ch18-001.svg){fig-alt="Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map." #fig-ch18-001 fig-cap="Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -93,7 +92,7 @@ Packets, DNS, transport retries, and edge/cloud placement still apply (CH16–CH
 
 **FIG-CH18-004** marks Device Quartet / research RF measurements as **PHYSICAL_PENDING**. WAIKE `lab_fspl_budget` and `lab_delay_spread` are competency adjacencies—math toys or lab neighbors—not publication proof of your device’s dB path (CLM-CH18-005).
 
-![Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid.](../../../figures/full31/ch18/fig-ch18-004.svg){#fig-ch18-004 fig-cap="Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid."}
+![Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid.](../../../figures/full31/ch18/fig-ch18-004.svg){fig-alt="Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid." #fig-ch18-004 fig-cap="Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid."}
 
 ---
 
@@ -101,9 +100,9 @@ Packets, DNS, transport retries, and edge/cloud placement still apply (CH16–CH
 
 **FIG-CH18-002** and the MIMO metaphor in **FIG-CH18-003** support this sequence. Read the steps as a logical story, not as a claim that every commodity chipset exposes every step to the UI.
 
-![MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim.](../../../figures/full31/ch18/fig-ch18-003.svg){#fig-ch18-003 fig-cap="MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim."}
+![MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim.](../../../figures/full31/ch18/fig-ch18-003.svg){fig-alt="MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim." #fig-ch18-003 fig-cap="MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim."}
 
-![Omni vs beam pattern intuition. Conceptual; no invented dBi product scales.](../../../figures/full31/ch18/fig-ch18-002.svg){#fig-ch18-002 fig-cap="Omni vs beam pattern intuition. Conceptual; no invented dBi product scales."}
+![Omni vs beam pattern intuition. Conceptual; no invented dBi product scales.](../../../figures/full31/ch18/fig-ch18-002.svg){fig-alt="Omni vs beam pattern intuition. Conceptual; no invented dBi product scales." #fig-ch18-002 fig-cap="Omni vs beam pattern intuition. Conceptual; no invented dBi product scales."}
 
 1. **Intent.** A person starts an experience that needs bits across a radio hop.
 2. **Spectrum / channel selection.** The device and network use allowed frequencies and channel-access rules appropriate to the technology family [@ieee80211-2020; @kurose-ross-8].

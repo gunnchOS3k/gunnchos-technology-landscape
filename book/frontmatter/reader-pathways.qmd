@@ -1,9 +1,7 @@
 ---
 title: "Reader pathways"
+number: false
 ---
-
-# Reader pathways
-
 Six pathways share the same chapter anatomy; they differ in starting evidence and depth.
 
 | Pathway | Starting point | Evidence expectation |

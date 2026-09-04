@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH10
 chapter_number: 10
-title: "Ports, Buses, Boards, Packaging, and Manufacturing"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false

@@ -1,0 +1,2 @@
+glossary/glossary.yaml  sha256:065eef1b678178b7524d6ebc0001c1527c5f1a0e00f4643e462b9b66edb27c34
+book/terminology.yaml  sha256:0d42e0a8582e44bcdbf07fc44c5981b7535a5050adf200903a524ea7da9d4dea

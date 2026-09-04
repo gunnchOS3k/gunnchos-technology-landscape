@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH19
 chapter_number: 19
-title: "NTN and Service Continuity Across Ground, Air, and Space"
 author: "Edmund Gunn, Jr."
 part: IV
 concept_edition: false
@@ -58,7 +57,7 @@ Notice the split timelines. A radio indicator can remain green while an applicat
 
 A continuity moment is not a single radio. It is a path through cooperating layers. **FIG-CH19-001** is the first-minute map: human task → device → terrestrial and/or NTN path classes → core/service → human-visible outcome. Treat it as **Representative educational architecture**, not a claim that any one operator’s sky looks exactly like the diagram.
 
-![Ground / air / space path classes to a device. Conceptual educational architecture.](../../../figures/full31/ch19/fig-ch19-001.svg){#fig-ch19-001 fig-cap="Ground / air / space path classes to a device. Conceptual educational architecture."}
+![Ground / air / space path classes to a device. Conceptual educational architecture.](../../../figures/full31/ch19/fig-ch19-001.svg){fig-alt="Ground / air / space path classes to a device. Conceptual educational architecture." #fig-ch19-001 fig-cap="Ground / air / space path classes to a device. Conceptual educational architecture."}
 
 ### Human
 
@@ -101,7 +100,7 @@ Follow one human-visible action across a path change—without inventing sky tel
 5. **Handover / multi-path behavior.** The stack may stay on one path, fail over, or use more than one path (**multi-path continuity** / multi-connectivity ideas at survey depth).
 6. **Human-visible state.** Progress, errors, and drafts either survive or silently break—**FIG-CH19-002** contrasts continuity of experience vs icon-lit status.
 
-![Service continuity vs icon-lit status. Conceptual; color not sole encoding.](../../../figures/full31/ch19/fig-ch19-002.svg){#fig-ch19-002 fig-cap="Service continuity vs icon-lit status. Conceptual; color not sole encoding."}
+![Service continuity vs icon-lit status. Conceptual; color not sole encoding.](../../../figures/full31/ch19/fig-ch19-002.svg){fig-alt="Service continuity vs icon-lit status. Conceptual; color not sole encoding." #fig-ch19-002 fig-cap="Service continuity vs icon-lit status. Conceptual; color not sole encoding."}
 
 ### Alternate paths (the honesty rule)
 
@@ -147,7 +146,7 @@ Common honest failures: no usable path for the required capability; path exists 
 - **Misread.** One “satellite latency” number fits all orbits and operators.
 - **Figure.** **FIG-CH19-003** may show comparative bars only when labeled illustrative—never as measured product data.
 
-![Delay-regime comparison. Illustrative bars only—not operator measurements.](../../../figures/full31/ch19/fig-ch19-003.svg){#fig-ch19-003 fig-cap="Delay-regime comparison. Illustrative bars only—not operator measurements."}
+![Delay-regime comparison. Illustrative bars only—not operator measurements.](../../../figures/full31/ch19/fig-ch19-003.svg){fig-alt="Delay-regime comparison. Illustrative bars only—not operator measurements." #fig-ch19-003 fig-cap="Delay-regime comparison. Illustrative bars only—not operator measurements."}
 
 ### Multi-path continuity
 

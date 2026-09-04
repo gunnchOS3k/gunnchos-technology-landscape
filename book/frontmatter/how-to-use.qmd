@@ -1,9 +1,7 @@
 ---
 title: "How to use this book"
+number: false
 ---
-
-# How to use this book
-
 This publication teaches technology as a lived system: **human experience → system → component → code → network → society**.
 
 ## Navigation hub

@@ -1,9 +1,9 @@
 ---
 title: "Manuscript status"
+number: false
 ---
 
-# WORKING FULL-MANUSCRIPT DRAFT
-
+## WORKING FULL-MANUSCRIPT DRAFT
 Human reader validation pending.
 
 Technical/editorial revision pending.

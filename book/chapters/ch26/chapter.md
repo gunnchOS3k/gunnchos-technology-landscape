@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH26
 chapter_number: 26
-title: "Software Development and Version Control"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false

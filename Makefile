@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check
 
 setup:
 	python3 -m venv .venv
@@ -49,6 +49,10 @@ validate:
 	$(PYTHON) scripts/validate_gate3_review.py
 	$(PYTHON) scripts/validate_ce_preproduction.py
 	$(MAKE) continuation-check
+	# Quality-convergence invariants (registry must exist after integrator land).
+	@if [ -f publication/full31/quality/QUALITY_ISSUES.yaml ]; then \
+	  $(PYTHON) scripts/build_quality_issues_registry.py --check; \
+	fi
 
 test:
 	$(PYTHON) -m pytest -q
@@ -156,6 +160,18 @@ full31-inventory:
 
 full31-terminology-check:
 	$(PYTHON) scripts/validate_terminology.py
+
+# Rebuild/check central QUALITY_ISSUES.yaml from wave ledgers.
+full31-quality-audit:
+	$(PYTHON) scripts/full31_quality_audit.py
+
+# Continuity / duplication audit aid (writes ledger + identity matrix).
+full31-continuity-check:
+	$(PYTHON) scripts/audit_full31_continuity.py
+
+# Pre-human-review candidate gates (BLOCKER/MAJOR open=0 + package labels).
+full31-pre-review-check:
+	$(PYTHON) scripts/full31_pre_review_check.py
 
 continuation-preview:
 	$(PYTHON) scripts/build_continuation_preview.py

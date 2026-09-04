@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH07
 chapter_number: 7
-title: "Memory, Cache, and Storage"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false

@@ -1,7 +1,7 @@
 # Accessibility + publication QA (full31)
 
-- **Generated:** 2026-09-04T00:18:31Z
-- **Git SHA:** `c8400b2b840b3f76a55d78771f05260564c9b53a`
+- **Generated:** 2026-09-04T00:42:01Z
+- **Git SHA:** `6da419826c70c4f19657b68bf6ffe55dd7675029`
 - **Agent:** agent-h-publication-qa
 
 ## Certification posture
@@ -12,13 +12,13 @@ or human print quality.
 
 ## Toolchain
 
-- Quarto: `/Users/gunnchos/Downloads/gunnchos-technology-landscape/.worktrees/agent-h-publication-qa-001/tools/quarto/bin/quarto`
+- Quarto: `/Users/gunnchos/Downloads/gunnchos-technology-landscape/.worktrees/full31-quality-convergence-001/tools/quarto/bin/quarto`
 - LOCAL_RENDER_TOOLCHAIN_UNAVAILABLE: **False**
 
 ## Severity counts
 
 - BLOCKER: 0
-- MAJOR: 1
+- MAJOR: 0
 - MODERATE: 1
 - MINOR: 0
 - EDITORIAL: 0
@@ -32,18 +32,11 @@ or human print quality.
 
 ## Findings
 
-### A11Y-ACRO-IDENTITY (MODERATE / acronyms)
-
-- Location: `glossary/acronym_registry.yaml`
-- Status: `HANDOFF_AGENT_J`
-- Finding: Acronym registry entries expand to themselves (4): first-use expansion not machine-checkable.
-- Evidence: API, CPU, GPU, RAM
-
-### PDF-CHAPTER-COUNTER (MAJOR / pdf_structure)
+### PDF-FRONTMATTER-NUMBERING (MODERATE / pdf_structure)
 
 - Location: `preview/full31/technology-landscape-full31-pdf.pdf`
 - Status: `NEEDS_HUMAN`
-- Finding: PDF text shows chapter numbers up to 441 (666 pages). Expected ~31 body chapters; likely LaTeX chapter-counter inflation — needs human print QA.
+- Finding: Front/back matter may still appear as arabic-numbered chapters in the PDF TOC despite number: false; body LaTeX headers max=40. Human print QA should confirm unnumbered frontmatter styling.
 
 ## Human follow-ups
 

@@ -6,7 +6,6 @@ gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
 human_validation: DEFERRED_UNTIL_FULL_MANUSCRIPT_DRAFT
 chapter_id: CH03
 chapter_number: 3
-title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: false

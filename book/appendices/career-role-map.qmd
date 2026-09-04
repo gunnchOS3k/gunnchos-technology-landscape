@@ -1,9 +1,7 @@
 ---
 title: "Career and role map"
+number: false
 ---
-
-# Career and role map
-
 Learner portfolio artifacts may **resemble** professional artifacts; they do **not** guarantee employment, salary, or licensure.
 
 Machine-readable maps:

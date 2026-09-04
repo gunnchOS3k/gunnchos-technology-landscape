@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH22
 chapter_number: 22
-title: "Edge AI, Sensors, and Embodied Interaction"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false

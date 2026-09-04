@@ -2,7 +2,6 @@
 status: WORKING_DRAFT_COMPLETE
 chapter_id: CH09
 chapter_number: 9
-title: "Power, Batteries, Thermals, and Mechanical Design"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false

@@ -1,9 +1,7 @@
 ---
 title: "References"
+number: false
 ---
-
-# References
-
 Citations resolve through the shared BibTeX file:
 
 `book/references/references.bib`

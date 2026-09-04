@@ -1,9 +1,7 @@
 ---
 title: "Key standards"
+number: false
 ---
-
-# Key standards
-
 Working navigational list of bibliography entries classified `standards_specifications` in `publication/full31/WORKING_BIBLIOGRAPHY_INDEX.yaml` (25 keys). Cite with Quarto/Pandoc keys (for example `@rfc791`). This is **not** a complete standards corpus and **not** a claim of normative compliance (including WCAG).
 
 | Bib key | Title (when known) | Year |

@@ -21,6 +21,7 @@ book:
     - book/frontmatter/waike.qmd
     - book/frontmatter/evidence-legend.qmd
     - book/frontmatter/preface.md
+    - book/frontmatter/_mainmatter.qmd
     - book/chapters/ch01/chapter.md
     - book/chapters/ch02/chapter.md
     - book/chapters/ch03/chapter.md
@@ -71,5 +72,7 @@ format:
     theme: cosmo
   pdf:
     documentclass: book
+    # Front/back matter uses number: false. Body chapters keep a single H1
+    # chapter title (YAML title removed from chapter.md to avoid double \chapter).
   epub:
     toc: true

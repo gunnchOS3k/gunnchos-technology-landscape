@@ -775,18 +775,32 @@ def check_pdf(issues: list[dict[str, Any]], log_path: Path | None) -> dict[str, 
             from pypdf import PdfReader  # type: ignore
 
             reader = PdfReader(str(FULL31_PDF))
-            max_ch = 0
-            chapter_hits = 0
+            max_loose = 0
+            loose_hits = 0
+            latex_headers: set[int] = set()
+            body_title_hits = 0
             for page in reader.pages:
                 text = page.extract_text() or ""
                 for m in re.finditer(r"(?i)\bchapter\s+(\d+)\b", text):
-                    chapter_hits += 1
-                    max_ch = max(max_ch, int(m.group(1)))
-            summary["pdf_max_chapter_number_seen"] = max_ch
-            summary["pdf_chapter_number_mentions"] = chapter_hits
-            # Expect ~31 body chapters (+ limited front/appendix). >50 strongly suggests
-            # counter inflation or duplicated structure.
-            if max_ch > 50:
+                    loose_hits += 1
+                    max_loose = max(max_loose, int(m.group(1)))
+                # Prefer LaTeX running-header / chapter-open style: "CHAPTER 12."
+                for m in re.finditer(r"(?i)\bCHAPTER\s+(\d+)\.\s+", text):
+                    latex_headers.add(int(m.group(1)))
+                if re.search(
+                    r"(?i)Chapter\s+\d+\s+[—\-].{0,80}(System|Stack|Performance|Quartet)",
+                    text,
+                ):
+                    body_title_hits += 1
+            max_latex = max(latex_headers) if latex_headers else 0
+            summary["pdf_max_chapter_number_seen"] = max_loose
+            summary["pdf_chapter_number_mentions"] = loose_hits
+            summary["pdf_latex_chapter_headers"] = sorted(latex_headers)
+            summary["pdf_max_latex_chapter_header"] = max_latex
+            summary["pdf_body_title_hits"] = body_title_hits
+            # True inflation: LaTeX chapter headers climb far past ~31 body + appendices.
+            # Loose "chapter N" text matches are noisy (page merges / cross refs).
+            if max_latex > 45:
                 issue(
                     issues,
                     issue_id="PDF-CHAPTER-COUNTER",
@@ -794,12 +808,37 @@ def check_pdf(issues: list[dict[str, Any]], log_path: Path | None) -> dict[str, 
                     category="pdf_structure",
                     location=str(FULL31_PDF.relative_to(ROOT)),
                     finding=(
-                        f"PDF text shows chapter numbers up to {max_ch} "
-                        f"({summary['page_count']} pages). Expected ~31 body chapters; "
-                        "likely LaTeX chapter-counter inflation — needs human print QA."
+                        f"PDF LaTeX-style CHAPTER N. headers reach {max_latex} "
+                        f"({summary['page_count']} pages; loose text max={max_loose}). "
+                        "Expected ~31 body chapters; likely counter inflation."
                     ),
-                    fix_status="NEEDS_HUMAN",
+                    fix_status="OPEN",
                 )
+            elif max_latex and max_latex <= 45:
+                # Record residual frontmatter arabic numbering for human print QA when
+                # body chapters look healthy but TOC still numbers preface material.
+                toc_sample = ""
+                if reader.pages:
+                    toc_sample = (reader.pages[min(2, len(reader.pages) - 1)].extract_text() or "")[
+                        :1200
+                    ]
+                if re.search(r"(?i)Manuscript status|Know first|Device Quartet", toc_sample):
+                    # If TOC lists frontmatter as arabic chapters 1..N before body,
+                    # keep a moderate print-polish deferral (not MAJOR if body <=45).
+                    issue(
+                        issues,
+                        issue_id="PDF-FRONTMATTER-NUMBERING",
+                        severity="MODERATE",
+                        category="pdf_structure",
+                        location=str(FULL31_PDF.relative_to(ROOT)),
+                        finding=(
+                            "Front/back matter may still appear as arabic-numbered "
+                            "chapters in the PDF TOC despite number: false; body "
+                            f"LaTeX headers max={max_latex}. Human print QA should "
+                            "confirm unnumbered frontmatter styling."
+                        ),
+                        fix_status="NEEDS_HUMAN",
+                    )
         except Exception as exc:  # noqa: BLE001
             summary["pdf_text_scan_error"] = str(exc)
     else:

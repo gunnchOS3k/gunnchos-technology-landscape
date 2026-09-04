@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH21
 chapter_number: 21
-title: "Data, Machine Learning, and Generative AI"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false

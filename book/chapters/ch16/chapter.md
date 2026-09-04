@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH16
 chapter_number: 16
-title: "Packets, Protocols, Routing, and the Internet"
 author: "Edmund Gunn, Jr."
 part: IV
 concept_edition: false

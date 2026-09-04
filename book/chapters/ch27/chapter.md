@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH27
 chapter_number: 27
-title: "Testing, Observability, and Evidence"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false

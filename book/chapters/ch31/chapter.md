@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH31
 chapter_number: 31
-title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false

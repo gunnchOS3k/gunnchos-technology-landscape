@@ -1,9 +1,7 @@
 ---
 title: "Rights notice"
+number: false
 ---
-
-# Rights notice
-
 | Domain | Right | Notes |
 |---|---|---|
 | Manuscript prose | All Rights Reserved © 2026 Edmund Gunn Jr. | Development-stage; not Creative Commons |

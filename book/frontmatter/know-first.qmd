@@ -1,9 +1,7 @@
 ---
 title: "Know first"
+number: false
 ---
-
-# Know first
-
 Before deep reading, lock these navigation truths:
 
 | Need | Go here |

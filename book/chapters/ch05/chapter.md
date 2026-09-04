@@ -2,7 +2,6 @@
 status: WORKING_DRAFT_COMPLETE
 chapter_id: CH05
 chapter_number: 5
-title: "Electricity, Signals, Clocks, and Logic"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false

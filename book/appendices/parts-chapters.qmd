@@ -1,9 +1,7 @@
 ---
 title: "Parts and chapters"
+number: false
 ---
-
-# Parts and chapters
-
 Canonical full-book architecture: **31 chapters in six parts** (`book/chapter_registry.yaml`; architecture: `specs/02_BOOK_ARCHITECTURE_AND_CHAPTER_REGISTRY.md`).
 
 Registry `status` values below are **structural** markers from the chapter registry (often still `outline` even when working prose exists). They are not Gate 3 outcomes and not publication-ready claims.

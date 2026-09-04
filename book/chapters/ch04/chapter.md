@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH04
 chapter_number: 4
-title: "The Device Quartet as a Learning Laboratory"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: false

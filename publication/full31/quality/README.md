@@ -46,3 +46,14 @@ make full31-publication-qa
 
 Coordinates with `make validate` (source validators) but focuses on rendered
 full31 HTML/EPUB/PDF artifacts plus manuscript semantics.
+
+## Integrator (central registry + pre-review)
+
+- Central registry: `QUALITY_ISSUES.yaml` (`make full31-quality-audit`)
+- Continuity check: `make full31-continuity-check`
+- Terminology check: `make full31-terminology-check`
+- Publication QA: `make full31-publication-qa`
+- Pre-review gates: `make full31-pre-review-check`
+- Candidate package: `publication/review-candidates/FULL31-PRE-REVIEW-001/`
+
+Pre-review requires open BLOCKER=0 and open MAJOR=0. Gate 3 remains unchanged.

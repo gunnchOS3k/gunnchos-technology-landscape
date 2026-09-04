@@ -1,9 +1,7 @@
 ---
 title: "Errata"
+number: false
 ---
-
-# Errata
-
 Working-draft corrections are tracked as versioned errata — not silent rewrites of reader-facing truth without a record.
 
 ## How to report

@@ -1,6 +1,6 @@
 schema: full31.continuity_ledger.v1
 generated: '2026-09-03'
-base_sha: 2e440e43f89b61c112f088939f73440024283bbf
+base_sha: 3264321e0f878e16fb4d6b0f84cd189ac4538532
 tool: scripts/audit_full31_continuity.py
 policy:
   audit_aid_only: true
@@ -15,21 +15,21 @@ policy:
   - "pedagogical scaffolds (moment\u2192notice\u2192\u2026)"
   - Device Quartet / representative-architecture caveats
 counts:
-  findings_total: 362
+  findings_total: 360
   by_kind:
     bad_transition: 28
     contradiction: 1
-    near_duplicate: 284
+    near_duplicate: 282
     repeated_block: 30
     templated_filler: 1
     term_before_explain: 18
   by_severity:
-    EDITORIAL: 295
+    EDITORIAL: 294
     MINOR: 18
-    MODERATE: 49
+    MODERATE: 48
   by_disposition:
-    INTENTIONAL_RETAIN: 269
-    OPEN: 93
+    INTENTIONAL_RETAIN: 268
+    OPEN: 92
   identity_clear: 31
   identity_unclear: 0
 hot_pairs:
@@ -62,10 +62,6 @@ hot_pairs:
   - CH13
   open_or_fix_findings: 1
 - chapters:
-  - CH01
-  - CH14
-  open_or_fix_findings: 1
-- chapters:
   - CH10
   - CH15
   open_or_fix_findings: 1
@@ -74,12 +70,16 @@ hot_pairs:
   - CH18
   open_or_fix_findings: 1
 - chapters:
-  - CH11
-  - CH17
+  - CH26
+  - CH30
   open_or_fix_findings: 1
 - chapters:
-  - CH10
   - CH11
+  - CH18
+  open_or_fix_findings: 1
+- chapters:
+  - CH11
+  - CH19
   open_or_fix_findings: 1
 identity_matrix_path: publication/full31/quality/CHAPTER_IDENTITY_MATRIX.yaml
 phase2_resolutions:
@@ -935,7 +935,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH25
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -948,7 +948,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH25
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1001,6 +1001,123 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
+  - CH06
+  - CH27
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model, inherited):** a user experience
+    exists only while multiple hidden technical conditions remain with'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.625
+- id: CONT-NEAR_DUPLICA-038
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH29
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-039
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH15
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (book-wide):** a user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.769
+- id: CONT-NEAR_DUPLICA-040
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH22
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition retained from the book: a user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-041
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH24
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-042
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH19
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition retained from the book: a user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-043
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH28
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (book-wide):** a user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.769
+- id: CONT-NEAR_DUPLICA-044
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH21
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-045
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH06
+  - CH11
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition used throughout this book: a user experience exists only
+    while multiple hidden technical conditions remain within acceptable boun'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-046
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
   - CH20
   - CH27
   summary: Whitelisted near-duplicate.
@@ -1011,7 +1128,7 @@ findings:
     conditions remain with'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.55
-- id: CONT-NEAR_DUPLICA-038
+- id: CONT-NEAR_DUPLICA-047
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1024,7 +1141,7 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-039
+- id: CONT-NEAR_DUPLICA-048
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1038,7 +1155,7 @@ findings:
     within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.647
-- id: CONT-NEAR_DUPLICA-040
+- id: CONT-NEAR_DUPLICA-049
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1051,7 +1168,7 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-041
+- id: CONT-NEAR_DUPLICA-050
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1064,7 +1181,7 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-042
+- id: CONT-NEAR_DUPLICA-051
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1077,7 +1194,7 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-043
+- id: CONT-NEAR_DUPLICA-052
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1090,20 +1207,7 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-044
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH14
-  - CH20
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-045
+- id: CONT-NEAR_DUPLICA-053
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1116,7 +1220,20 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-046
+- id: CONT-NEAR_DUPLICA-054
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH14
+  - CH20
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-055
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1130,7 +1247,7 @@ findings:
     acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.647
-- id: CONT-NEAR_DUPLICA-047
+- id: CONT-NEAR_DUPLICA-056
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1143,11 +1260,11 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-048
+- id: CONT-NEAR_DUPLICA-057
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH06
+  - CH08
   - CH27
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1156,111 +1273,7 @@ findings:
     exists only while multiple hidden technical conditions remain with'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.625
-- id: CONT-NEAR_DUPLICA-049
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH29
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-050
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH15
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (book-wide):** a user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.769
-- id: CONT-NEAR_DUPLICA-051
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH22
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition retained from the book: a user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-052
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH24
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-053
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH19
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition retained from the book: a user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-054
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH28
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (book-wide):** a user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.769
-- id: CONT-NEAR_DUPLICA-055
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH21
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-056
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH11
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition used throughout this book: a user experience exists only
-    while multiple hidden technical conditions remain within acceptable boun'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-057
+- id: CONT-NEAR_DUPLICA-058
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1274,19 +1287,6 @@ findings:
     within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.55
-- id: CONT-NEAR_DUPLICA-058
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH08
-  - CH27
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model, inherited):** a user experience
-    exists only while multiple hidden technical conditions remain with'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.625
 - id: CONT-NEAR_DUPLICA-059
   kind: near_duplicate
   severity: EDITORIAL
@@ -1371,7 +1371,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH27
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1384,7 +1384,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH27
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1451,35 +1451,34 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
+  - CH08
   - CH15
-  - CH29
   summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: **Definition (book-wide):** a user experience
-    exists only while multiple hidden technical conditions remain within acceptable
-    bounds. || B[6. Stability contract]: **Definition (publication teaching model):**
-    a user experience exists only while multiple hidden technical conditions remain
-    within acceptab'
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (book-wide):** a user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.647
+  similarity: 0.769
 - id: CONT-NEAR_DUPLICA-072
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH03
-  - CH29
+  - CH08
+  - CH22
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
+    contract]: Definition retained from the book: a user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-073
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH12
-  - CH29
+  - CH08
+  - CH24
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
@@ -1491,34 +1490,34 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH05
-  - CH29
+  - CH08
+  - CH19
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
+    contract]: Definition retained from the book: a user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-075
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH07
-  - CH29
+  - CH08
+  - CH28
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
+    contract]: **Definition (book-wide):** a user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
+  similarity: 0.769
 - id: CONT-NEAR_DUPLICA-076
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
-  - CH29
+  - CH08
+  - CH21
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
@@ -1530,20 +1529,20 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
-  - CH29
+  - CH08
+  - CH11
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
+    contract]: Definition used throughout this book: a user experience exists only
+    while multiple hidden technical conditions remain within acceptable boun'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-078
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH28
+  - CH15
   - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: **Definition (book-wide):** a user experience
@@ -1557,7 +1556,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH16
+  - CH03
   - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1570,34 +1569,34 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH08
-  - CH15
+  - CH12
+  - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (book-wide):** a user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds.'
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.769
+  similarity: 0.667
 - id: CONT-NEAR_DUPLICA-081
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH08
-  - CH22
+  - CH05
+  - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition retained from the book: a user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-082
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH08
-  - CH24
+  - CH07
+  - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
@@ -1609,34 +1608,8 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH08
-  - CH19
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition retained from the book: a user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-084
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH08
-  - CH28
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (book-wide):** a user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.769
-- id: CONT-NEAR_DUPLICA-085
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH08
-  - CH21
+  - CH02
+  - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
@@ -1644,20 +1617,60 @@ findings:
     only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
+- id: CONT-NEAR_DUPLICA-084
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH14
+  - CH29
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-085
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH28
+  - CH29
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: **Definition (book-wide):** a user experience
+    exists only while multiple hidden technical conditions remain within acceptable
+    bounds. || B[6. Stability contract]: **Definition (publication teaching model):**
+    a user experience exists only while multiple hidden technical conditions remain
+    within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.647
 - id: CONT-NEAR_DUPLICA-086
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH08
-  - CH11
+  - CH16
+  - CH29
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition used throughout this book: a user experience exists only
-    while multiple hidden technical conditions remain within acceptable boun'
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-087
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH03
+  - CH15
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (book-wide):** a user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.769
+- id: CONT-NEAR_DUPLICA-088
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1671,19 +1684,6 @@ findings:
     acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.556
-- id: CONT-NEAR_DUPLICA-088
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH03
-  - CH15
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (book-wide):** a user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.769
 - id: CONT-NEAR_DUPLICA-089
   kind: near_duplicate
   severity: EDITORIAL
@@ -1755,7 +1755,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH15
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1768,7 +1768,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH15
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -1835,6 +1835,71 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
+  - CH03
+  - CH24
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-101
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH03
+  - CH19
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition retained from the book: a user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-102
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH03
+  - CH28
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (book-wide):** a user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.769
+- id: CONT-NEAR_DUPLICA-103
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH03
+  - CH21
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: **Definition (publication teaching model):** a user experience exists
+    only while multiple hidden technical conditions remain within acceptab'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-104
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH03
+  - CH11
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition used throughout this book: a user experience exists only
+    while multiple hidden technical conditions remain within acceptable boun'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-105
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
   - CH12
   - CH22
   summary: Whitelisted near-duplicate.
@@ -1844,7 +1909,7 @@ findings:
     multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-101
+- id: CONT-NEAR_DUPLICA-106
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1857,7 +1922,7 @@ findings:
     multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-102
+- id: CONT-NEAR_DUPLICA-107
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1870,20 +1935,7 @@ findings:
     multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-103
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH14
-  - CH22
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition retained from the book: a user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-104
+- id: CONT-NEAR_DUPLICA-108
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1896,7 +1948,20 @@ findings:
     multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
-- id: CONT-NEAR_DUPLICA-105
+- id: CONT-NEAR_DUPLICA-109
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH14
+  - CH22
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition retained from the book: a user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-110
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1910,7 +1975,7 @@ findings:
     bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.556
-- id: CONT-NEAR_DUPLICA-106
+- id: CONT-NEAR_DUPLICA-111
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1924,7 +1989,7 @@ findings:
     within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.579
-- id: CONT-NEAR_DUPLICA-107
+- id: CONT-NEAR_DUPLICA-112
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -1935,71 +2000,6 @@ findings:
     hidden technical conditions remain within acceptable bounds. || B[6. Stability
     contract]: Definition retained from the book: a user experience exists only while
     multiple hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-108
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH03
-  - CH24
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-109
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH03
-  - CH19
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition retained from the book: a user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-110
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH03
-  - CH28
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (book-wide):** a user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds.'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.769
-- id: CONT-NEAR_DUPLICA-111
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH03
-  - CH21
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: **Definition (publication teaching model):** a user experience exists
-    only while multiple hidden technical conditions remain within acceptab'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-112
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH03
-  - CH11
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition used throughout this book: a user experience exists only
-    while multiple hidden technical conditions remain within acceptable boun'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-113
@@ -2097,7 +2097,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH24
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2110,7 +2110,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH24
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2215,7 +2215,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH19
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2228,7 +2228,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH19
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2321,7 +2321,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH28
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2334,7 +2334,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH14
+  - CH02
   - CH21
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2347,20 +2347,20 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
+  - CH02
   - CH11
-  - CH14
   summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: Definition used throughout this book: a user
-    experience exists only while multiple hidden technical conditions remain within
-    acceptable boun || B[6. Stability contract]: > A user experience exists only while
-    multiple hidden technical conditions remain within acceptable bounds.'
+  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
+    hidden technical conditions remain within acceptable bounds. || B[6. Stability
+    contract]: Definition used throughout this book: a user experience exists only
+    while multiple hidden technical conditions remain within acceptable boun'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-140
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH28
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2373,7 +2373,7 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
+  - CH14
   - CH21
   summary: Whitelisted near-duplicate.
   evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
@@ -2386,13 +2386,13 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
   - CH11
+  - CH14
   summary: Whitelisted near-duplicate.
-  evidence: 'A[6. Stability contract]: > A user experience exists only while multiple
-    hidden technical conditions remain within acceptable bounds. || B[6. Stability
-    contract]: Definition used throughout this book: a user experience exists only
-    while multiple hidden technical conditions remain within acceptable boun'
+  evidence: 'A[6. Stability contract]: Definition used throughout this book: a user
+    experience exists only while multiple hidden technical conditions remain within
+    acceptable boun || B[6. Stability contract]: > A user experience exists only while
+    multiple hidden technical conditions remain within acceptable bounds.'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.667
 - id: CONT-NEAR_DUPLICA-143
@@ -2515,76 +2515,6 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH27
-  - CH29
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.745
-- id: CONT-NEAR_DUPLICA-152
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH24
-  - CH27
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.761
-- id: CONT-NEAR_DUPLICA-153
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH26
-  - CH27
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.653
-- id: CONT-NEAR_DUPLICA-154
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH27
-  - CH30
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.604
-- id: CONT-NEAR_DUPLICA-155
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH25
-  - CH27
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.745
-- id: CONT-NEAR_DUPLICA-156
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
   - CH20
   - CH27
   summary: Whitelisted near-duplicate.
@@ -2595,63 +2525,49 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.745
-- id: CONT-NEAR_DUPLICA-157
+- id: CONT-NEAR_DUPLICA-152
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH24
-  - CH29
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.8
-- id: CONT-NEAR_DUPLICA-158
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
+  - CH20
   - CH26
-  - CH29
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH20`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.653
-- id: CONT-NEAR_DUPLICA-159
+- id: CONT-NEAR_DUPLICA-153
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH29
+  - CH20
+  - CH24
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH20`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.8
+- id: CONT-NEAR_DUPLICA-154
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH20
   - CH30
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH20`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.604
-- id: CONT-NEAR_DUPLICA-160
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH22
-  - CH24
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH22`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working full-manuscript draft \xB7 human\
-    \ validati || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24` \
-    \ \n**Author:** Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7\
-    \ human validation pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.569
-- id: CONT-NEAR_DUPLICA-161
+- id: CONT-NEAR_DUPLICA-155
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -2665,7 +2581,21 @@ findings:
     \ human validation pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.569
-- id: CONT-NEAR_DUPLICA-162
+- id: CONT-NEAR_DUPLICA-156
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH22
+  - CH24
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH22`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working full-manuscript draft \xB7 human\
+    \ validati || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24` \
+    \ \n**Author:** Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7\
+    \ human validation pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.569
+- id: CONT-NEAR_DUPLICA-157
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -2679,6 +2609,76 @@ findings:
     \ \xB7 human validati"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.643
+- id: CONT-NEAR_DUPLICA-158
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH26
+  - CH27
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.653
+- id: CONT-NEAR_DUPLICA-159
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH24
+  - CH27
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.761
+- id: CONT-NEAR_DUPLICA-160
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH27
+  - CH29
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.745
+- id: CONT-NEAR_DUPLICA-161
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH27
+  - CH30
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.604
+- id: CONT-NEAR_DUPLICA-162
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH25
+  - CH27
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH27`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.745
 - id: CONT-NEAR_DUPLICA-163
   kind: near_duplicate
   severity: EDITORIAL
@@ -2697,45 +2697,17 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH24
-  - CH30
+  - CH26
+  - CH29
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend"
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.615
+  similarity: 0.653
 - id: CONT-NEAR_DUPLICA-165
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH24
-  - CH25
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.8
-- id: CONT-NEAR_DUPLICA-166
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH20
-  - CH24
-  summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH20`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
-    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.8
-- id: CONT-NEAR_DUPLICA-167
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -2749,42 +2721,70 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.615
+- id: CONT-NEAR_DUPLICA-166
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH25
+  - CH26
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.653
+- id: CONT-NEAR_DUPLICA-167
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH24
+  - CH29
+  summary: Whitelisted near-duplicate.
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
+    \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
+    \ pend"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.8
 - id: CONT-NEAR_DUPLICA-168
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH25
-  - CH26
+  - CH24
+  - CH30
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend"
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.653
+  similarity: 0.615
 - id: CONT-NEAR_DUPLICA-169
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH20
-  - CH26
+  - CH24
+  - CH25
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH20`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH24`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
-    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH26`  \n**Author:**\
+    \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend"
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.653
+  similarity: 0.8
 - id: CONT-NEAR_DUPLICA-170
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH25
+  - CH29
   - CH30
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH29`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
@@ -2795,10 +2795,10 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH20
+  - CH25
   - CH30
   summary: Whitelisted near-duplicate.
-  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH20`  \n**Author:**\
+  evidence: "A[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH25`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
     \ pend || B[(preamble)]: **Status:** `draft` \xB7 **Chapter ID:** `CH30`  \n**Author:**\
     \ Edmund Gunn, Jr.  \n**Manuscript:** working draft complete \xB7 human validation\
@@ -2810,7 +2810,7 @@ findings:
   severity: EDITORIAL
   chapters:
   - CH07
-  - CH09
+  - CH13
   summary: Whitelisted near-duplicate.
   evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
     in this chapter should resolve in the living glossary registry. This section lists
@@ -2824,20 +2824,20 @@ findings:
   severity: EDITORIAL
   chapters:
   - CH07
-  - CH13
+  - CH08
   summary: Whitelisted near-duplicate.
   evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
     in this chapter should resolve in the living glossary registry. This section lists
     them f || B[12. Glossary links]: Terms introduced or relied on as formal vocabulary
-    in this chapter should resolve in the living glossary registry as candidates mature.
-    This'
+    in this chapter should resolve in the living glossary registry. This section lists
+    them f'
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.629
+  similarity: 0.893
 - id: CONT-NEAR_DUPLICA-174
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH03
+  - CH07
   - CH09
   summary: Whitelisted near-duplicate.
   evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
@@ -2851,34 +2851,6 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH03
-  - CH13
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
-    in this chapter should resolve in the living glossary registry. This section lists
-    them f || B[12. Glossary links]: Terms introduced or relied on as formal vocabulary
-    in this chapter should resolve in the living glossary registry as candidates mature.
-    This'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.629
-- id: CONT-NEAR_DUPLICA-176
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH07
-  - CH08
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
-    in this chapter should resolve in the living glossary registry. This section lists
-    them f || B[12. Glossary links]: Terms introduced or relied on as formal vocabulary
-    in this chapter should resolve in the living glossary registry. This section lists
-    them f'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.893
-- id: CONT-NEAR_DUPLICA-177
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
   - CH02
   - CH07
   summary: Whitelisted near-duplicate.
@@ -2889,6 +2861,34 @@ findings:
     them f'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.8
+- id: CONT-NEAR_DUPLICA-176
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH08
+  - CH13
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
+    in this chapter should resolve in the living glossary registry. This section lists
+    them f || B[12. Glossary links]: Terms introduced or relied on as formal vocabulary
+    in this chapter should resolve in the living glossary registry as candidates mature.
+    This'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.556
+- id: CONT-NEAR_DUPLICA-177
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH03
+  - CH13
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
+    in this chapter should resolve in the living glossary registry. This section lists
+    them f || B[12. Glossary links]: Terms introduced or relied on as formal vocabulary
+    in this chapter should resolve in the living glossary registry as candidates mature.
+    This'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.629
 - id: CONT-NEAR_DUPLICA-178
   kind: near_duplicate
   severity: EDITORIAL
@@ -2935,8 +2935,8 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH08
-  - CH13
+  - CH03
+  - CH09
   summary: Whitelisted near-duplicate.
   evidence: 'A[12. Glossary links]: Terms introduced or relied on as formal vocabulary
     in this chapter should resolve in the living glossary registry. This section lists
@@ -2944,7 +2944,7 @@ findings:
     in this chapter should resolve in the living glossary registry as candidates mature.
     This'
   disposition: INTENTIONAL_RETAIN
-  similarity: 0.556
+  similarity: 0.629
 - id: CONT-NEAR_DUPLICA-182
   kind: near_duplicate
   severity: EDITORIAL
@@ -3033,6 +3033,20 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
+  - CH07
+  - CH09
+  summary: Whitelisted near-duplicate.
+  evidence: "A[12. Glossary links]: Deeper entries, analogies labeled as analogies,\
+    \ and \u201Cnot the same as\u201D warnings live in the glossary network. Prefer\
+    \ following a link when st || B[12. Glossary links]: Deeper entries and \u201C\
+    not the same as\u201D warnings live in the glossary network. Prefer following\
+    \ a link when stuck over inventing a private defi"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.692
+- id: CONT-NEAR_DUPLICA-189
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
   - CH01
   - CH13
   summary: Whitelisted near-duplicate.
@@ -3043,7 +3057,21 @@ findings:
     \ a link when stuck over inventing a private defi"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.692
-- id: CONT-NEAR_DUPLICA-189
+- id: CONT-NEAR_DUPLICA-190
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH01
+  - CH09
+  summary: Whitelisted near-duplicate.
+  evidence: "A[12. Glossary links]: Deeper entries, analogies labeled as analogies,\
+    \ and \u201Cnot the same as\u201D warnings live in the glossary network. Prefer\
+    \ following a link when st || B[12. Glossary links]: Deeper entries and \u201C\
+    not the same as\u201D warnings live in the glossary network. Prefer following\
+    \ a link when stuck over inventing a private defi"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.692
+- id: CONT-NEAR_DUPLICA-191
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3057,40 +3085,12 @@ findings:
     \ network. Prefer following a link when st"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.692
-- id: CONT-NEAR_DUPLICA-190
+- id: CONT-NEAR_DUPLICA-192
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
   - CH02
   - CH13
-  summary: Whitelisted near-duplicate.
-  evidence: "A[12. Glossary links]: Deeper entries, analogies labeled as analogies,\
-    \ and \u201Cnot the same as\u201D warnings live in the glossary network. Prefer\
-    \ following a link when st || B[12. Glossary links]: Deeper entries and \u201C\
-    not the same as\u201D warnings live in the glossary network. Prefer following\
-    \ a link when stuck over inventing a private defi"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.692
-- id: CONT-NEAR_DUPLICA-191
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH07
-  - CH09
-  summary: Whitelisted near-duplicate.
-  evidence: "A[12. Glossary links]: Deeper entries, analogies labeled as analogies,\
-    \ and \u201Cnot the same as\u201D warnings live in the glossary network. Prefer\
-    \ following a link when st || B[12. Glossary links]: Deeper entries and \u201C\
-    not the same as\u201D warnings live in the glossary network. Prefer following\
-    \ a link when stuck over inventing a private defi"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.692
-- id: CONT-NEAR_DUPLICA-192
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH01
-  - CH09
   summary: Whitelisted near-duplicate.
   evidence: "A[12. Glossary links]: Deeper entries, analogies labeled as analogies,\
     \ and \u201Cnot the same as\u201D warnings live in the glossary network. Prefer\
@@ -3129,21 +3129,6 @@ findings:
   similarity: 0.692
 - id: CONT-NEAR_DUPLICA-195
   kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH01
-  - CH14
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (embedded above; accessibility metadata)]: All figures
-    below are **conceptual** or **illustrative** unless a future revision cites a
-    specific validated hardware release. Source prefer || B[Figure references (planned
-    embeds; **draft-blocked** until SVG + a11y land)]: All figures below are **conceptual**
-    or **illustrative** unless a future revision cites a specific validated hardware
-    release. Source prefer'
-  disposition: OPEN
-  similarity: 0.553
-- id: CONT-NEAR_DUPLICA-196
-  kind: near_duplicate
   severity: EDITORIAL
   chapters:
   - CH09
@@ -3155,7 +3140,7 @@ findings:
     \ while multiple hidden technical conditions remain within acceptable bounds."
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-197
+- id: CONT-NEAR_DUPLICA-196
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3168,7 +3153,7 @@ findings:
     \ remain within acceptable bounds\u2014including power delivery and ther"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-198
+- id: CONT-NEAR_DUPLICA-197
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3181,7 +3166,7 @@ findings:
     \ remain within acceptable bounds\u2014including power delivery and ther"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-199
+- id: CONT-NEAR_DUPLICA-198
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3194,7 +3179,7 @@ findings:
     \ remain within acceptable bounds\u2014including power delivery and ther"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-200
+- id: CONT-NEAR_DUPLICA-199
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3207,7 +3192,7 @@ findings:
     \ remain within acceptable bounds\u2014including power delivery and ther"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-201
+- id: CONT-NEAR_DUPLICA-200
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3220,7 +3205,7 @@ findings:
     \ while multiple hidden technical conditions remain within acceptable bounds."
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-202
+- id: CONT-NEAR_DUPLICA-201
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3233,11 +3218,24 @@ findings:
     \ remain within acceptable bounds\u2014including power delivery and ther"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-203
+- id: CONT-NEAR_DUPLICA-202
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
   - CH07
+  - CH09
+  summary: Whitelisted near-duplicate.
+  evidence: "A[6. Stability contract]: > A user experience exists only while multiple\
+    \ hidden technical conditions remain within acceptable bounds. || B[6. Stability\
+    \ contract]: > A user experience exists only while multiple hidden technical conditions\
+    \ remain within acceptable bounds\u2014including power delivery and ther"
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.562
+- id: CONT-NEAR_DUPLICA-203
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH02
   - CH09
   summary: Whitelisted near-duplicate.
   evidence: "A[6. Stability contract]: > A user experience exists only while multiple\
@@ -3263,19 +3261,6 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH02
-  - CH09
-  summary: Whitelisted near-duplicate.
-  evidence: "A[6. Stability contract]: > A user experience exists only while multiple\
-    \ hidden technical conditions remain within acceptable bounds. || B[6. Stability\
-    \ contract]: > A user experience exists only while multiple hidden technical conditions\
-    \ remain within acceptable bounds\u2014including power delivery and ther"
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.562
-- id: CONT-NEAR_DUPLICA-206
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
   - CH09
   - CH16
   summary: Whitelisted near-duplicate.
@@ -3285,7 +3270,7 @@ findings:
     \ while multiple hidden technical conditions remain within acceptable bounds."
   disposition: INTENTIONAL_RETAIN
   similarity: 0.562
-- id: CONT-NEAR_DUPLICA-207
+- id: CONT-NEAR_DUPLICA-206
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3299,7 +3284,7 @@ findings:
     \ security software,"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.922
-- id: CONT-NEAR_DUPLICA-208
+- id: CONT-NEAR_DUPLICA-207
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3313,7 +3298,7 @@ findings:
     \ \xB7 human validati"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.586
-- id: CONT-NEAR_DUPLICA-209
+- id: CONT-NEAR_DUPLICA-208
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3327,7 +3312,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.608
-- id: CONT-NEAR_DUPLICA-210
+- id: CONT-NEAR_DUPLICA-209
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3341,7 +3326,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.588
-- id: CONT-NEAR_DUPLICA-211
+- id: CONT-NEAR_DUPLICA-210
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3355,7 +3340,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.608
-- id: CONT-NEAR_DUPLICA-212
+- id: CONT-NEAR_DUPLICA-211
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3369,7 +3354,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.608
-- id: CONT-NEAR_DUPLICA-213
+- id: CONT-NEAR_DUPLICA-212
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3383,7 +3368,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.68
-- id: CONT-NEAR_DUPLICA-214
+- id: CONT-NEAR_DUPLICA-213
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3397,7 +3382,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.708
-- id: CONT-NEAR_DUPLICA-215
+- id: CONT-NEAR_DUPLICA-214
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3411,7 +3396,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.68
-- id: CONT-NEAR_DUPLICA-216
+- id: CONT-NEAR_DUPLICA-215
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3425,7 +3410,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.708
-- id: CONT-NEAR_DUPLICA-217
+- id: CONT-NEAR_DUPLICA-216
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3439,7 +3424,7 @@ findings:
     \ \xB7 human validati"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.586
-- id: CONT-NEAR_DUPLICA-218
+- id: CONT-NEAR_DUPLICA-217
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3453,7 +3438,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.581
-- id: CONT-NEAR_DUPLICA-219
+- id: CONT-NEAR_DUPLICA-218
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3467,7 +3452,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.68
-- id: CONT-NEAR_DUPLICA-220
+- id: CONT-NEAR_DUPLICA-219
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3481,34 +3466,7 @@ findings:
     \ pend"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.708
-- id: CONT-NEAR_DUPLICA-221
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH06
-  - CH12
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[7. Try it]: Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible
-    or you must avoid personal screenshots. Fixtures teach concepts; they are no ||
-    B[7. Try it]: Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible
-    or you must avoid personal screenshots. Fixtures teach concepts; they are no'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.76
-- id: CONT-NEAR_DUPLICA-222
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH06
-  - CH12
-  summary: Unusually similar paragraphs across chapters.
-  evidence: "A[7. Try it]: - observation table,\n- two snapshots or fixture IDs with\
-    \ timestamps,\n- teach-back: \u201COS schedules; apps still compute,\u201D plus\
-    \ one sentence on  || B[7. Try it]: - observation table,\n- two snapshots or fixture\
-    \ IDs with timestamps,\n- teach-back: \u201COS schedules; apps still compute,\u201D\
-    \ plus one sentence on "
-  disposition: OPEN
-  similarity: 0.643
-- id: CONT-NEAR_DUPLICA-223
+- id: CONT-NEAR_DUPLICA-220
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3522,7 +3480,21 @@ findings:
     or malicious program'
   disposition: OPEN
   similarity: 0.694
-- id: CONT-NEAR_DUPLICA-224
+- id: CONT-NEAR_DUPLICA-221
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH06
+  - CH12
+  summary: Unusually similar paragraphs across chapters.
+  evidence: "A[7. Try it]: - observation table,\n- two snapshots or fixture IDs with\
+    \ timestamps,\n- teach-back: \u201COS schedules; apps still compute,\u201D plus\
+    \ one sentence on  || B[7. Try it]: - observation table,\n- two snapshots or fixture\
+    \ IDs with timestamps,\n- teach-back: \u201COS schedules; apps still compute,\u201D\
+    \ plus one sentence on "
+  disposition: OPEN
+  similarity: 0.643
+- id: CONT-NEAR_DUPLICA-222
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3536,7 +3508,7 @@ findings:
     \ may require permissions a learner does not hol"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.554
-- id: CONT-NEAR_DUPLICA-225
+- id: CONT-NEAR_DUPLICA-223
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3550,7 +3522,7 @@ findings:
     \ may require permissions a learner does not hol"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.554
-- id: CONT-NEAR_DUPLICA-226
+- id: CONT-NEAR_DUPLICA-224
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3563,7 +3535,7 @@ findings:
     supply the inherited claim, lab, and stability wording this chapter adapts. '
   disposition: OPEN
   similarity: 0.621
-- id: CONT-NEAR_DUPLICA-227
+- id: CONT-NEAR_DUPLICA-225
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3576,7 +3548,7 @@ findings:
     constraints, common symptoms. Analogies are labeled as analogies. No invented '
   disposition: INTENTIONAL_RETAIN
   similarity: 0.6
-- id: CONT-NEAR_DUPLICA-228
+- id: CONT-NEAR_DUPLICA-226
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3589,20 +3561,7 @@ findings:
     constraints, common symptoms. Analogies are labeled as analogies. No invented '
   disposition: INTENTIONAL_RETAIN
   similarity: 0.6
-- id: CONT-NEAR_DUPLICA-229
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
-  - CH11
-  - CH18
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[5. Component cards]: For each object: plain language, analogy, technical
-    function, constraints, common symptoms. Analogies are labeled as analogies. ||
-    B[5. Component cards]: For each object: plain language, analogy, technical function,
-    constraints, common symptoms. Analogies are labeled as analogies. No invented '
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.6
-- id: CONT-NEAR_DUPLICA-230
+- id: CONT-NEAR_DUPLICA-227
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3615,7 +3574,20 @@ findings:
     constraints, common symptoms. Analogies are labeled as analogies. No invented '
   disposition: INTENTIONAL_RETAIN
   similarity: 0.6
-- id: CONT-NEAR_DUPLICA-231
+- id: CONT-NEAR_DUPLICA-228
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH11
+  - CH18
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[5. Component cards]: For each object: plain language, analogy, technical
+    function, constraints, common symptoms. Analogies are labeled as analogies. ||
+    B[5. Component cards]: For each object: plain language, analogy, technical function,
+    constraints, common symptoms. Analogies are labeled as analogies. No invented '
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.6
+- id: CONT-NEAR_DUPLICA-229
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3628,7 +3600,7 @@ findings:
     constraints, common symptoms. Analogies are labeled as analogies. No invented '
   disposition: INTENTIONAL_RETAIN
   similarity: 0.6
-- id: CONT-NEAR_DUPLICA-232
+- id: CONT-NEAR_DUPLICA-230
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3642,7 +3614,7 @@ findings:
     \ what subjective/"
   disposition: OPEN
   similarity: 0.559
-- id: CONT-NEAR_DUPLICA-233
+- id: CONT-NEAR_DUPLICA-231
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3656,7 +3628,7 @@ findings:
     documented physical claim? What re'
   disposition: OPEN
   similarity: 0.586
-- id: CONT-NEAR_DUPLICA-234
+- id: CONT-NEAR_DUPLICA-232
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3670,7 +3642,7 @@ findings:
     claim? What remains out of'
   disposition: OPEN
   similarity: 0.643
-- id: CONT-NEAR_DUPLICA-235
+- id: CONT-NEAR_DUPLICA-233
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3684,22 +3656,37 @@ findings:
     What remains out of'
   disposition: OPEN
   similarity: 0.586
-- id: CONT-NEAR_DUPLICA-236
+- id: CONT-NEAR_DUPLICA-234
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH26
+  - CH30
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
+    land)]: All three figures are **conceptual / illustrative teaching aids** unless
+    a future revision replaces them with measured learner evidence. No  || B[Figure
+    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    learner evidence. No '
+  disposition: OPEN
+  similarity: 0.607
+- id: CONT-NEAR_DUPLICA-235
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
   - CH20
   - CH25
   summary: Whitelisted near-duplicate.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab evidenc || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured learner or lab evidenc || B[Figure references (planned embeds;
+    **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    learner or lab eviden'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.559
-- id: CONT-NEAR_DUPLICA-237
+- id: CONT-NEAR_DUPLICA-236
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -3714,6 +3701,21 @@ findings:
     replaces them with measured learner or lab eviden'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.553
+- id: CONT-NEAR_DUPLICA-237
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH24
+  - CH25
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
+    land)]: All three figures are **conceptual / illustrative teaching aids** unless
+    a future revision replaces them with measured learner or lab eviden || B[Figure
+    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
+    figures are **conceptual / illustrative teaching aids** unless a future revision
+    replaces them with measured learner or lab eviden'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.656
 - id: CONT-NEAR_DUPLICA-238
   kind: near_duplicate
   severity: EDITORIAL
@@ -3733,21 +3735,6 @@ findings:
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH24
-  - CH25
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All three figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab eviden || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.656
-- id: CONT-NEAR_DUPLICA-240
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
   - CH21
   - CH25
   summary: Whitelisted near-duplicate.
@@ -3759,202 +3746,193 @@ findings:
     learner or lab eviden'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.656
+- id: CONT-NEAR_DUPLICA-240
+  kind: near_duplicate
+  severity: EDITORIAL
+  chapters:
+  - CH11
+  - CH13
+  summary: Whitelisted near-duplicate.
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricate || B[Figure references (embedded; registered
+    SVG + a11y)]: All four figures are **conceptual / illustrative teaching aids**
+    unless a future revision replaces them with measured evidence. No fabricate'
+  disposition: INTENTIONAL_RETAIN
+  similarity: 0.571
 - id: CONT-NEAR_DUPLICA-241
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
-  - CH11
-  - CH13
-  summary: Whitelisted near-duplicate.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricate || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All four
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate'
-  disposition: INTENTIONAL_RETAIN
-  similarity: 0.571
-- id: CONT-NEAR_DUPLICA-242
-  kind: near_duplicate
-  severity: EDITORIAL
-  chapters:
   - CH10
   - CH13
   summary: Whitelisted near-duplicate.
   evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
     figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate || B[Figure references (planned
-    embeds; **draft-blocked** until SVG + a11y land)]: All four figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    evidence. No fabricate'
+    replaces them with measured evidence. No fabricate || B[Figure references (embedded;
+    registered SVG + a11y)]: All four figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured evidence. No fabricate'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.708
-- id: CONT-NEAR_DUPLICA-243
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH11
-  - CH17
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricate || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricat'
-  disposition: OPEN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-244
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH10
-  - CH11
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate || B[Figure references (planned
-    embeds; **draft-blocked** until SVG + a11y land)]: All four figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    evidence. No fabricate'
-  disposition: OPEN
-  similarity: 0.762
-- id: CONT-NEAR_DUPLICA-245
+- id: CONT-NEAR_DUPLICA-242
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH11
   - CH18
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricate || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All four
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricate || B[Figure references (embedded; registered
+    SVG + a11y)]: All four figures are **conceptual / illustrative teaching aids**
+    unless a future revision replaces them with measured evidence. No fabricate'
   disposition: OPEN
   similarity: 0.615
-- id: CONT-NEAR_DUPLICA-246
+- id: CONT-NEAR_DUPLICA-243
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH11
   - CH19
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricate || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricat'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricate || B[Figure references (embedded; registered
+    SVG + a11y)]: All three figures are **conceptual / illustrative teaching aids**
+    unless a future revision replaces them with measured evidence. No fabricat'
   disposition: OPEN
   similarity: 0.583
-- id: CONT-NEAR_DUPLICA-247
+- id: CONT-NEAR_DUPLICA-244
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH11
+  - CH17
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricate || B[Figure references (embedded; registered
+    SVG + a11y)]: All three figures are **conceptual / illustrative teaching aids**
+    unless a future revision replaces them with measured evidence. No fabricat'
+  disposition: OPEN
+  similarity: 0.667
+- id: CONT-NEAR_DUPLICA-245
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH10
+  - CH11
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
+    figures are **conceptual / illustrative teaching aids** unless a future revision
+    replaces them with measured evidence. No fabricate || B[Figure references (embedded;
+    registered SVG + a11y)]: All four figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured evidence. No fabricate'
+  disposition: OPEN
+  similarity: 0.762
+- id: CONT-NEAR_DUPLICA-246
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH11
   - CH22
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricate || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricat'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricate || B[Figure references (planned embeds;
+    **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    evidence. No fabricat'
   disposition: OPEN
   similarity: 0.583
-- id: CONT-NEAR_DUPLICA-248
+- id: CONT-NEAR_DUPLICA-247
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH20
   - CH27
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab evidenc || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured learner or lab evidenc || B[Figure references (planned embeds;
+    **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    learner or lab eviden'
   disposition: OPEN
   similarity: 0.688
-- id: CONT-NEAR_DUPLICA-249
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH20
-  - CH31
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab evidenc || B[Figure
-    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    learner or lab eviden'
-  disposition: OPEN
-  similarity: 0.71
-- id: CONT-NEAR_DUPLICA-250
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH20
-  - CH29
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab evidenc || B[Figure
-    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    learner or lab eviden'
-  disposition: OPEN
-  similarity: 0.564
-- id: CONT-NEAR_DUPLICA-251
+- id: CONT-NEAR_DUPLICA-248
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH20
   - CH24
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab evidenc || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured learner or lab evidenc || B[Figure references (planned embeds;
+    **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    learner or lab eviden'
   disposition: OPEN
   similarity: 0.714
-- id: CONT-NEAR_DUPLICA-252
+- id: CONT-NEAR_DUPLICA-249
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH20
+  - CH29
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured learner or lab evidenc || B[Figure references (planned embeds;
+    accessibility metadata)]: All three figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured learner or lab eviden'
+  disposition: OPEN
+  similarity: 0.564
+- id: CONT-NEAR_DUPLICA-250
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH20
+  - CH31
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured learner or lab evidenc || B[Figure references (planned embeds;
+    accessibility metadata)]: All three figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured learner or lab eviden'
+  disposition: OPEN
+  similarity: 0.71
+- id: CONT-NEAR_DUPLICA-251
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH20
   - CH21
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All four figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab evidenc || B[Figure
-    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    learner or lab eviden'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All four figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured learner or lab evidenc || B[Figure references (planned embeds;
+    accessibility metadata)]: All three figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured learner or lab eviden'
   disposition: OPEN
   similarity: 0.714
-- id: CONT-NEAR_DUPLICA-253
+- id: CONT-NEAR_DUPLICA-252
   kind: near_duplicate
   severity: MODERATE
   chapters:
+  - CH24
   - CH27
-  - CH31
   summary: Unusually similar paragraphs across chapters.
   evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
     land)]: All three figures are **conceptual / illustrative teaching aids** unless
     a future revision replaces them with measured learner or lab eviden || B[Figure
-    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    learner or lab eviden'
+    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
+    figures are **conceptual / illustrative teaching aids** unless a future revision
+    replaces them with measured learner or lab eviden'
   disposition: OPEN
-  similarity: 0.735
-- id: CONT-NEAR_DUPLICA-254
+  similarity: 0.688
+- id: CONT-NEAR_DUPLICA-253
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3969,22 +3947,22 @@ findings:
     learner or lab eviden'
   disposition: OPEN
   similarity: 0.558
-- id: CONT-NEAR_DUPLICA-255
+- id: CONT-NEAR_DUPLICA-254
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH24
   - CH27
+  - CH31
   summary: Unusually similar paragraphs across chapters.
   evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
     land)]: All three figures are **conceptual / illustrative teaching aids** unless
     a future revision replaces them with measured learner or lab eviden || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden'
+    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    learner or lab eviden'
   disposition: OPEN
-  similarity: 0.688
-- id: CONT-NEAR_DUPLICA-256
+  similarity: 0.735
+- id: CONT-NEAR_DUPLICA-255
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -3999,6 +3977,20 @@ findings:
     learner or lab eviden'
   disposition: OPEN
   similarity: 0.688
+- id: CONT-NEAR_DUPLICA-256
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH10
+  - CH18
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
+    figures are **conceptual / illustrative teaching aids** unless a future revision
+    replaces them with measured evidence. No fabricate || B[Figure references (embedded;
+    registered SVG + a11y)]: All four figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured evidence. No fabricate'
+  disposition: OPEN
+  similarity: 0.696
 - id: CONT-NEAR_DUPLICA-257
   kind: near_duplicate
   severity: MODERATE
@@ -4033,63 +4025,46 @@ findings:
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH26
-  - CH30
+  - CH17
+  - CH19
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All three figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner evidence. No  || B[Figure
-    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    learner evidence. No '
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All three figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricat || B[Figure references (embedded; registered
+    SVG + a11y)]: All three figures are **conceptual / illustrative teaching aids**
+    unless a future revision replaces them with measured evidence. No fabricat'
   disposition: OPEN
-  similarity: 0.607
+  similarity: 0.727
 - id: CONT-NEAR_DUPLICA-260
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH29
-  - CH31
+  - CH10
+  - CH19
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All three
+  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
     figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden || B[Figure references (planned
-    embeds; accessibility metadata)]: All three figures are **conceptual / illustrative
-    teaching aids** unless a future revision replaces them with measured learner or
-    lab eviden'
+    replaces them with measured evidence. No fabricate || B[Figure references (embedded;
+    registered SVG + a11y)]: All three figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured evidence. No fabricat'
   disposition: OPEN
-  similarity: 0.571
+  similarity: 0.667
 - id: CONT-NEAR_DUPLICA-261
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH24
-  - CH31
+  - CH19
+  - CH22
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All three figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured learner or lab eviden || B[Figure
-    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All three figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricat || B[Figure references (planned embeds;
+    **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
     / illustrative teaching aids** unless a future revision replaces them with measured
-    learner or lab eviden'
+    evidence. No fabricat'
   disposition: OPEN
-  similarity: 0.71
+  similarity: 0.8
 - id: CONT-NEAR_DUPLICA-262
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH21
-  - CH31
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden || B[Figure references (planned
-    embeds; accessibility metadata)]: All three figures are **conceptual / illustrative
-    teaching aids** unless a future revision replaces them with measured learner or
-    lab eviden'
-  disposition: OPEN
-  similarity: 0.71
-- id: CONT-NEAR_DUPLICA-263
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4098,43 +4073,27 @@ findings:
   summary: Unusually similar paragraphs across chapters.
   evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
     figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate || B[Figure references (planned
-    embeds; **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    evidence. No fabricat'
+    replaces them with measured evidence. No fabricate || B[Figure references (embedded;
+    registered SVG + a11y)]: All three figures are **conceptual / illustrative teaching
+    aids** unless a future revision replaces them with measured evidence. No fabricat'
   disposition: OPEN
   similarity: 0.609
-- id: CONT-NEAR_DUPLICA-264
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH17
-  - CH19
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All three figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricat || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricat'
-  disposition: OPEN
-  similarity: 0.727
-- id: CONT-NEAR_DUPLICA-265
+- id: CONT-NEAR_DUPLICA-263
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH17
   - CH22
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All three figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricat || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricat'
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: All three figures
+    are **conceptual / illustrative teaching aids** unless a future revision replaces
+    them with measured evidence. No fabricat || B[Figure references (planned embeds;
+    **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    evidence. No fabricat'
   disposition: OPEN
   similarity: 0.727
-- id: CONT-NEAR_DUPLICA-266
+- id: CONT-NEAR_DUPLICA-264
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4149,22 +4108,22 @@ findings:
     learner or lab eviden'
   disposition: OPEN
   similarity: 0.564
-- id: CONT-NEAR_DUPLICA-267
+- id: CONT-NEAR_DUPLICA-265
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH21
-  - CH29
+  - CH24
+  - CH31
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured learner or lab eviden || B[Figure references (planned
-    embeds; accessibility metadata)]: All three figures are **conceptual / illustrative
-    teaching aids** unless a future revision replaces them with measured learner or
-    lab eviden'
+  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
+    land)]: All three figures are **conceptual / illustrative teaching aids** unless
+    a future revision replaces them with measured learner or lab eviden || B[Figure
+    references (planned embeds; accessibility metadata)]: All three figures are **conceptual
+    / illustrative teaching aids** unless a future revision replaces them with measured
+    learner or lab eviden'
   disposition: OPEN
-  similarity: 0.564
-- id: CONT-NEAR_DUPLICA-268
+  similarity: 0.71
+- id: CONT-NEAR_DUPLICA-266
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4179,27 +4138,57 @@ findings:
     learner or lab eviden'
   disposition: OPEN
   similarity: 0.846
+- id: CONT-NEAR_DUPLICA-267
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH29
+  - CH31
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All three
+    figures are **conceptual / illustrative teaching aids** unless a future revision
+    replaces them with measured learner or lab eviden || B[Figure references (planned
+    embeds; accessibility metadata)]: All three figures are **conceptual / illustrative
+    teaching aids** unless a future revision replaces them with measured learner or
+    lab eviden'
+  disposition: OPEN
+  similarity: 0.571
+- id: CONT-NEAR_DUPLICA-268
+  kind: near_duplicate
+  severity: MODERATE
+  chapters:
+  - CH21
+  - CH29
+  summary: Unusually similar paragraphs across chapters.
+  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All three
+    figures are **conceptual / illustrative teaching aids** unless a future revision
+    replaces them with measured learner or lab eviden || B[Figure references (planned
+    embeds; accessibility metadata)]: All three figures are **conceptual / illustrative
+    teaching aids** unless a future revision replaces them with measured learner or
+    lab eviden'
+  disposition: OPEN
+  similarity: 0.564
 - id: CONT-NEAR_DUPLICA-269
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH10
-  - CH18
+  - CH21
+  - CH31
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
+  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All three
     figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate || B[Figure references (planned
-    embeds; **draft-blocked** until SVG + a11y land)]: All four figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    evidence. No fabricate'
+    replaces them with measured learner or lab eviden || B[Figure references (planned
+    embeds; accessibility metadata)]: All three figures are **conceptual / illustrative
+    teaching aids** unless a future revision replaces them with measured learner or
+    lab eviden'
   disposition: OPEN
-  similarity: 0.696
+  similarity: 0.71
 - id: CONT-NEAR_DUPLICA-270
   kind: near_duplicate
   severity: MODERATE
   chapters:
   - CH10
-  - CH19
+  - CH22
   summary: Unusually similar paragraphs across chapters.
   evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
     figures are **conceptual / illustrative teaching aids** unless a future revision
@@ -4213,50 +4202,20 @@ findings:
   kind: near_duplicate
   severity: MODERATE
   chapters:
-  - CH10
-  - CH22
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; accessibility metadata)]: All four
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricate || B[Figure references (planned
-    embeds; **draft-blocked** until SVG + a11y land)]: All three figures are **conceptual
-    / illustrative teaching aids** unless a future revision replaces them with measured
-    evidence. No fabricat'
-  disposition: OPEN
-  similarity: 0.667
-- id: CONT-NEAR_DUPLICA-272
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
-  - CH19
-  - CH22
-  summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: All three figures are **conceptual / illustrative teaching aids** unless
-    a future revision replaces them with measured evidence. No fabricat || B[Figure
-    references (planned embeds; **draft-blocked** until SVG + a11y land)]: All three
-    figures are **conceptual / illustrative teaching aids** unless a future revision
-    replaces them with measured evidence. No fabricat'
-  disposition: OPEN
-  similarity: 0.8
-- id: CONT-NEAR_DUPLICA-273
-  kind: near_duplicate
-  severity: MODERATE
-  chapters:
   - CH20
   - CH31
   summary: Unusually similar paragraphs across chapters.
-  evidence: 'A[Figure references (planned embeds; **draft-blocked** until SVG + a11y
-    land)]: - **Production status.** `draft-blocked` (no SVG embed in this draft).
+  evidence: 'A[Figure references (embedded; registered SVG + a11y)]: - **Production
+    status.** `embedded` (registered SVG + accessibility sidecar).
 
-    - **Type.** Conceptual / hub-and-spoke (inherit CE-6 FIG-CE06-001 int || B[Figure
-    references (planned embeds; accessibility metadata)]: - **Type.** Conceptual /
-    hub-and-spoke (inherit CE-6 FIG-CE06-001 intent).
+    - **Type.** Conceptual / hub-and-spoke (inherit CE-6 FIG-CE06- || B[Figure references
+    (planned embeds; accessibility metadata)]: - **Type.** Conceptual / hub-and-spoke
+    (inherit CE-6 FIG-CE06-001 intent).
 
     - **Reader should notice.** Multiple concurrent conditions; any o'
   disposition: OPEN
-  similarity: 0.792
-- id: CONT-NEAR_DUPLICA-274
+  similarity: 0.808
+- id: CONT-NEAR_DUPLICA-272
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4270,7 +4229,7 @@ findings:
   disposition: INTENTIONAL_RETAIN
   similarity: 0.75
   notes: Shared lab safety / pathway scaffolding retained deliberately.
-- id: CONT-NEAR_DUPLICA-275
+- id: CONT-NEAR_DUPLICA-273
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4284,7 +4243,7 @@ findings:
   disposition: INTENTIONAL_RETAIN
   similarity: 0.75
   notes: Shared lab safety / pathway scaffolding retained deliberately.
-- id: CONT-NEAR_DUPLICA-276
+- id: CONT-NEAR_DUPLICA-274
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4298,7 +4257,7 @@ findings:
     \ Contract. Weaker devices, metered cellular, shared computers, offline contex"
   disposition: INTENTIONAL_RETAIN
   similarity: 0.787
-- id: CONT-NEAR_DUPLICA-277
+- id: CONT-NEAR_DUPLICA-275
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4312,7 +4271,7 @@ findings:
     \ now*. A classroom quiz submit and a casual chat s"
   disposition: OPEN
   similarity: 0.634
-- id: CONT-NEAR_DUPLICA-278
+- id: CONT-NEAR_DUPLICA-276
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4326,7 +4285,7 @@ findings:
     fail the experience'
   disposition: OPEN
   similarity: 0.622
-- id: CONT-NEAR_DUPLICA-279
+- id: CONT-NEAR_DUPLICA-277
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4340,7 +4299,7 @@ findings:
     evidence "
   disposition: OPEN
   similarity: 0.63
-- id: CONT-NEAR_DUPLICA-280
+- id: CONT-NEAR_DUPLICA-278
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4355,7 +4314,7 @@ findings:
   disposition: INTENTIONAL_RETAIN
   similarity: 0.897
   notes: Shared lab safety / pathway scaffolding retained deliberately.
-- id: CONT-NEAR_DUPLICA-281
+- id: CONT-NEAR_DUPLICA-279
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4370,7 +4329,7 @@ findings:
   disposition: INTENTIONAL_RETAIN
   similarity: 0.576
   notes: Shared lab safety / pathway scaffolding retained deliberately.
-- id: CONT-NEAR_DUPLICA-282
+- id: CONT-NEAR_DUPLICA-280
   kind: near_duplicate
   severity: MODERATE
   chapters:
@@ -4384,7 +4343,7 @@ findings:
     not be forced ont'
   disposition: OPEN
   similarity: 0.613
-- id: CONT-NEAR_DUPLICA-283
+- id: CONT-NEAR_DUPLICA-281
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4398,7 +4357,7 @@ findings:
     on color-only status. WCAG 2.2'
   disposition: INTENTIONAL_RETAIN
   similarity: 0.872
-- id: CONT-NEAR_DUPLICA-284
+- id: CONT-NEAR_DUPLICA-282
   kind: near_duplicate
   severity: EDITORIAL
   chapters:
@@ -4447,7 +4406,7 @@ findings:
   - CH03
   summary: "Term \u201CFIG-CH03-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=3465; later_def_offset\u224824645"
+  evidence: "first_pos=3619; later_def_offset\u224824762"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-002
@@ -4457,7 +4416,7 @@ findings:
   - CH04
   summary: "Term \u201CEmbodied sensing\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=1783; later_def_offset\u22485542"
+  evidence: "first_pos=1783; later_def_offset\u22485628"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-003
@@ -4467,7 +4426,7 @@ findings:
   - CH04
   summary: "Term \u201CLAB-QUARTET-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=2355; later_def_offset\u224813820"
+  evidence: "first_pos=2355; later_def_offset\u224814045"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-004
@@ -4477,7 +4436,7 @@ findings:
   - CH07
   summary: "Term \u201CLAB-CMS-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=1381; later_def_offset\u224812138"
+  evidence: "first_pos=1381; later_def_offset\u224812450"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-005
@@ -4487,7 +4446,7 @@ findings:
   - CH10
   summary: "Term \u201CManufacturing\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=1332; later_def_offset\u22486189"
+  evidence: "first_pos=1337; later_def_offset\u22486204"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-006
@@ -4497,7 +4456,7 @@ findings:
   - CH12
   summary: "Term \u201CLAB-CMS-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=233; later_def_offset\u224814968"
+  evidence: "first_pos=233; later_def_offset\u224815355"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-007
@@ -4507,7 +4466,7 @@ findings:
   - CH14
   summary: "Term \u201CLAB-TAP-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=1413; later_def_offset\u224814291"
+  evidence: "first_pos=1413; later_def_offset\u224815326"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-008
@@ -4517,7 +4476,7 @@ findings:
   - CH15
   summary: "Term \u201CFIG-CH15-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=3490; later_def_offset\u224825817"
+  evidence: "first_pos=3490; later_def_offset\u224826193"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-009
@@ -4527,7 +4486,7 @@ findings:
   - CH15
   summary: "Term \u201CFIG-CH15-002\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=3625; later_def_offset\u224826173"
+  evidence: "first_pos=3625; later_def_offset\u224826549"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-010
@@ -4537,7 +4496,7 @@ findings:
   - CH17
   summary: "Term \u201CWi-Fi\u201D appears early; fuller explanation arrives later\
     \ in-chapter."
-  evidence: "first_pos=4083; later_def_offset\u22488123"
+  evidence: "first_pos=4502; later_def_offset\u22489257"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-011
@@ -4547,7 +4506,7 @@ findings:
   - CH20
   summary: "Term \u201CLAB-CE06-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=695; later_def_offset\u224816077"
+  evidence: "first_pos=695; later_def_offset\u224817106"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-012
@@ -4557,7 +4516,7 @@ findings:
   - CH21
   summary: "Term \u201CFIG-CH21-002\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=5483; later_def_offset\u224827333"
+  evidence: "first_pos=5498; later_def_offset\u224827896"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-013
@@ -4567,7 +4526,7 @@ findings:
   - CH23
   summary: "Term \u201CLAB-TRUST-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=306; later_def_offset\u224813852"
+  evidence: "first_pos=306; later_def_offset\u224814396"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-014
@@ -4577,7 +4536,7 @@ findings:
   - CH24
   summary: "Term \u201CCE-5\u201D appears early; fuller explanation arrives later\
     \ in-chapter."
-  evidence: "first_pos=705; later_def_offset\u224815013"
+  evidence: "first_pos=705; later_def_offset\u224815314"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-015
@@ -4587,7 +4546,7 @@ findings:
   - CH24
   summary: "Term \u201CLAB-TRUST-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=770; later_def_offset\u224815222"
+  evidence: "first_pos=770; later_def_offset\u224815523"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-016
@@ -4597,7 +4556,7 @@ findings:
   - CH26
   summary: "Term \u201CFIG-CH26-002\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=3893; later_def_offset\u224820760"
+  evidence: "first_pos=4126; later_def_offset\u224821199"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-TERM_BEFORE_-017
@@ -4617,7 +4576,7 @@ findings:
   - CH31
   summary: "Term \u201CLAB-CE06-001\u201D appears early; fuller explanation arrives\
     \ later in-chapter."
-  evidence: "first_pos=800; later_def_offset\u224812338"
+  evidence: "first_pos=800; later_def_offset\u224812363"
   disposition: OPEN
   notes: Often acceptable foreshadowing; escalate only if reader-blocking.
 - id: CONT-BAD_TRANSITI-001
@@ -4703,9 +4662,9 @@ findings:
   chapters:
   - CH10
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
+  evidence: '## 11. Check understanding {#sec-ch10-check} **Concept.** In one sentence
     each, define *port*, *bus*, and *PCB* so that none of them swallows the other
-    two. **Syst'
+    two. *'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-009
@@ -4714,9 +4673,9 @@ findings:
   chapters:
   - CH11
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
+  evidence: '## 11. Check understanding {#sec-ch11-check} **Concept.** In one sentence
     each, define *firmware*, *bootloader*, and *secure boot (intent)* so that none
-    of them swa'
+    of the'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-010
@@ -4758,9 +4717,9 @@ findings:
   chapters:
   - CH16
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
+  evidence: '## 11. Check understanding {#sec-ch16-check} **Concept.** In one sentence
     each, define *packet*, *routing*, and *DNS* so that none of them swallows the
-    other two. '
+    other t'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-014
@@ -4769,9 +4728,9 @@ findings:
   chapters:
   - CH17
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
+  evidence: '## 11. Check understanding {#sec-ch17-check} **Concept.** In one sentence
     each, define *Wi-Fi*, *cellular*, and *Internet* so that none of them swallows
-    the other t'
+    the ot'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-015
@@ -4780,9 +4739,9 @@ findings:
   chapters:
   - CH18
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
-    each, define *spectrum*, *antenna*, and *radio condition* so that none of them
-    swallows th'
+  evidence: '## 11. Check understanding {#sec-ch18-check} **Concept.** In one sentence
+    each, define *spectrum*, *channel*, and *antenna* so that none of them swallows
+    the o'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-016
@@ -4802,9 +4761,9 @@ findings:
   chapters:
   - CH20
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
+  evidence: '## 11. Check understanding {#sec-ch20-check} **Concept.** In one sentence
     each, distinguish *latency*, *reliability*, and *throughput* so that none swallows
-    the oth'
+    th'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-018
@@ -4813,9 +4772,9 @@ findings:
   chapters:
   - CH21
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence,
+  evidence: '## 11. Check understanding {#sec-ch21-check} **Concept.** In one sentence,
     frame a familiar AI feature as data conditioning a model applied at inference
-    to produce '
+    to pro'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-019
@@ -4846,9 +4805,9 @@ findings:
   chapters:
   - CH24
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence,
+  evidence: '## 11. Check understanding {#sec-ch24-check} **Concept.** In one sentence,
     distinguish *privacy* from *security* so neither swallows the other. **Concept.**
-    In one'
+    I'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-022
@@ -4857,9 +4816,9 @@ findings:
   chapters:
   - CH25
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: "## 11. Check understanding {#sec-check} **Concept.** In one sentence,\
+  evidence: "## 11. Check understanding {#sec-ch25-check} **Concept.** In one sentence,\
     \ define *digital equity* so that it requires asking who is excluded\u2014not\
-    \ only who is deligh"
+    \ only who is d"
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-023
@@ -4868,8 +4827,8 @@ findings:
   chapters:
   - CH26
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
-    each, explain *commit*, *branch*, and *diff* so none swallows the other two. **Concept.**'
+  evidence: '## 11. Check understanding {#sec-ch26-check} **Concept.** In one sentence
+    each, explain *commit*, *branch*, and *diff* so none swallows the other two. **Conce'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-024
@@ -4878,9 +4837,8 @@ findings:
   chapters:
   - CH27
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
-    each, distinguish *testing*, *observability*, and *evidence hierarchy*. **Concept.**
-    In o'
+  evidence: '## 11. Check understanding {#sec-ch27-check} **Concept.** In one sentence
+    each, distinguish *testing*, *observability*, and *evidence hierarchy*. **Concept.**'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-025
@@ -4900,9 +4858,8 @@ findings:
   chapters:
   - CH29
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence,
-    define a *complete technology product* so that UI alone cannot satisfy the definition.
-    *'
+  evidence: '## 11. Check understanding {#sec-ch29-check} **Concept.** In one sentence,
+    define a *complete technology product* so that UI alone cannot satisfy the definitio'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-027
@@ -4911,9 +4868,9 @@ findings:
   chapters:
   - CH30
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: '## 11. Check understanding {#sec-check} **Concept.** In one sentence
+  evidence: '## 11. Check understanding {#sec-ch30-check} **Concept.** In one sentence
     each, define *role family*, *portfolio proof*, and *portfolio index* so that none
-    swallows'
+    swa'
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.
 - id: CONT-BAD_TRANSITI-028
@@ -4922,8 +4879,8 @@ findings:
   chapters:
   - CH31
   summary: Check-understanding / close block lacks an explicit forward chapter bridge.
-  evidence: "## 11. Check understanding {#sec-check} **Concept.** In one sentence,\
+  evidence: "## 11. Check understanding {#sec-ch31-check} **Concept.** In one sentence,\
     \ state the EMIT spine and why Teach is required portfolio proof\u2014not optional\
-    \ fluff. **Con"
+    \ fluff. "
   disposition: OPEN
   notes: Not always harmful; prefer explicit next-step when Part boundary is near.

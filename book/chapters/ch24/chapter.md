@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH24
 chapter_number: 24
-title: "Privacy, Identity, Safety, Accessibility, and Ethics"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false

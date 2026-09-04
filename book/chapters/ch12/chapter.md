@@ -2,7 +2,6 @@
 status: working_draft
 chapter_id: CH12
 chapter_number: 12
-title: "Operating Systems, Processes, Threads, and Scheduling"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false

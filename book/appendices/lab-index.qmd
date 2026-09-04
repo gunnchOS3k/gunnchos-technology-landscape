@@ -1,9 +1,7 @@
 ---
 title: "Lab index"
+number: false
 ---
-
-# Lab index
-
 Machine-readable registry: `labs/lab_registry.yaml`. Packages live under `labs/`.
 
 | Lab ID | Title | Chapter / module | Registry status |

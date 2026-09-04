@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH02
 chapter_number: 2
-title: "Follow One Tap Through the Entire Stack"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: true

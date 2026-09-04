@@ -1,9 +1,9 @@
 ---
 title: "Device Quartet"
+number: false
 ---
 
-# Device Quartet (learning laboratory)
-
+## Device Quartet (learning laboratory)
 The Device Quartet is a set of **research form factors** used as a recurring learning laboratory across the book:
 
 | ID | Name | Learning role |

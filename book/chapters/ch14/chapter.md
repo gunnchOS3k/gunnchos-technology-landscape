@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH14
 chapter_number: 14
-title: "Applications, APIs, Runtimes, and User Interfaces"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false
@@ -63,7 +62,7 @@ Accessibility belongs in this noticing, not later as a disclaimer. If the only �
 
 An ordinary app experience is not a single binary floating alone. It is a path through cooperating parts: people, UI, application logic, runtime, libraries, OS services, and optional remote APIs (CLM-CH14-001) [@saltzer-kaashoek; @whatwg-html]. **FIG-CH14-001** is the first-minute stack map: UI → app logic → runtime → libraries → OS services → optional remote API. Treat it as **Representative educational architecture**—not a measured teardown of any brand’s process list.
 
-![UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack.](../../../figures/full31/ch14/fig-ch14-001.svg){#fig-ch14-001 fig-cap="UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack."}
+![UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack.](../../../figures/full31/ch14/fig-ch14-001.svg){fig-alt="UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack." #fig-ch14-001 fig-cap="UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack."}
 
 Walk the layers in ordinary language. Keep the same layers when vocabulary deepens.
 
@@ -107,7 +106,7 @@ Equity belongs in the map: always-online assumptions exclude learners on metered
 
 Everyday interactive software commonly waits for inputs, dispatches handlers, updates remembered **state**, and presents outputs [@whatwg-html; @whatwg-dom]. **FIG-CH14-002** shows one teaching path for a feature after chrome is already visible: event → handler → API call → state update → render / AT feedback. Read it as a logical story, not as a claim that every platform uses one identical event-loop implementation or that steps never overlap.
 
-![Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap.](../../../figures/full31/ch14/fig-ch14-002.svg){#fig-ch14-002 fig-cap="Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap."}
+![Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap.](../../../figures/full31/ch14/fig-ch14-002.svg){fig-alt="Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap." #fig-ch14-002 fig-cap="Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap."}
 
 A useful reading of the chrome-before-content moment inside an already-running app:
 
@@ -121,7 +120,7 @@ A useful reading of the chrome-before-content moment inside an already-running a
 
 **FIG-CH14-003** separates **local API** failure domains from **remote API** failure domains. Same call metaphor (“ask for data”); different latency, authorization, and blame stories. Association ≠ DNS ≠ route ≠ auth ≠ this API version.
 
-![Local API vs remote API failure domains. Illustrative teaching comparison.](../../../figures/full31/ch14/fig-ch14-003.svg){#fig-ch14-003 fig-cap="Local API vs remote API failure domains. Illustrative teaching comparison."}
+![Local API vs remote API failure domains. Illustrative teaching comparison.](../../../figures/full31/ch14/fig-ch14-003.svg){fig-alt="Local API vs remote API failure domains. Illustrative teaching comparison." #fig-ch14-003 fig-cap="Local API vs remote API failure domains. Illustrative teaching comparison."}
 
 ### Alternate paths (the honesty rule)
 

@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH08
 chapter_number: 8
-title: "Graphics, Displays, Audio, Cameras, and Sensors"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false

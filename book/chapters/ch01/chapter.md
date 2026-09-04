@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH01
 chapter_number: 1
-title: "Technology Is a System, Not a Screen"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: true

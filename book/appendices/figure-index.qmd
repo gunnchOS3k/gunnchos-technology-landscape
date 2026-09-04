@@ -1,12 +1,10 @@
 ---
 title: "Figure index"
+number: false
 ---
-
-# Figure index
-
 Canonical assets: `figures/` + `figures/figure_registry.yaml` (accessibility metadata enforced by validation scripts).
 
-**Chapter column** is derived from `figure_id` (`FIG-CHnn-…`). Some registry `chapter:` fields are truncated (for example `CH1-` instead of `CH11`); treat ID-derived chapters as the navigational truth until the registry is repaired.
+**Chapter column** is derived from `figure_id` (`FIG-CHnn-…`). Registry `chapter:` fields were repaired during quality convergence to match ID-derived chapters.
 
 Chapter 2 prototype figures (`FIG-CH02-001` … `FIG-CH02-007`) are the historical Gate 3 reader-package set. Keep `PHYSICAL_PENDING` / illustrative / conceptual labels honest.
 

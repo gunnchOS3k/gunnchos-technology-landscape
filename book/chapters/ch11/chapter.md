@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH11
 chapter_number: 11
-title: "Firmware, Boot, and Trust"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false
@@ -62,7 +61,7 @@ Optional comparison on a device you already own: cold boot once (power fully off
 
 Boot is not a single object. It is a path through an ecosystem. **FIG-CH11-001** is the first-minute map: power/reset → firmware → bootloader → kernel → userspace → lock screen or recovery. Treat it as **Representative educational architecture**, not a claim that every phone or laptop implements identical stages with identical names.
 
-![Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings.](../../../figures/full31/ch11/fig-ch11-001.svg){#fig-ch11-001 fig-cap="Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings."}
+![Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings.](../../../figures/full31/ch11/fig-ch11-001.svg){fig-alt="Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings." #fig-ch11-001 fig-cap="Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -96,7 +95,7 @@ Platforms often provide alternate paths when primary images fail verification or
 
 **FIG-CH11-002** later sketches root-of-trust → verified stages as policy intent—not a product badge for any reader’s unit.
 
-![Root of trust → verified stages as policy intent—not a product badge.](../../../figures/full31/ch11/fig-ch11-002.svg){#fig-ch11-002 fig-cap="Root of trust → verified stages as policy intent—not a product badge."}
+![Root of trust → verified stages as policy intent—not a product badge.](../../../figures/full31/ch11/fig-ch11-002.svg){fig-alt="Root of trust → verified stages as policy intent—not a product badge." #fig-ch11-002 fig-cap="Root of trust → verified stages as policy intent—not a product badge."}
 
 ---
 
@@ -414,7 +413,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-003 — Lock screen vs secure boot
 
-![Lock screen authentication vs secure-boot authenticity policy (authorization callout).](../../../figures/full31/ch11/fig-ch11-003.svg){#fig-ch11-003 fig-cap="Lock screen authentication vs secure-boot authenticity policy (authorization callout)."}
+![Lock screen authentication vs secure-boot authenticity policy (authorization callout).](../../../figures/full31/ch11/fig-ch11-003.svg){fig-alt="Lock screen authentication vs secure-boot authenticity policy (authorization callout)." #fig-ch11-003 fig-cap="Lock screen authentication vs secure-boot authenticity policy (authorization callout)."}
 
 - **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
@@ -424,7 +423,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-004 — Update failure → recovery → outcomes
 
-![Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates.](../../../figures/full31/ch11/fig-ch11-004.svg){#fig-ch11-004 fig-cap="Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates."}
+![Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates.](../../../figures/full31/ch11/fig-ch11-004.svg){fig-alt="Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates." #fig-ch11-004 fig-cap="Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates."}
 
 - **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Failure map.

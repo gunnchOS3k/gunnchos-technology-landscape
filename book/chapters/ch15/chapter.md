@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH15
 chapter_number: 15
-title: "Containers, Virtualization, Cloud, and Edge Computing"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false

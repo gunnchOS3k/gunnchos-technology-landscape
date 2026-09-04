@@ -2,7 +2,6 @@
 status: working_draft
 chapter_id: CH23
 chapter_number: 23
-title: "Cybersecurity from Chip to Cloud"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false

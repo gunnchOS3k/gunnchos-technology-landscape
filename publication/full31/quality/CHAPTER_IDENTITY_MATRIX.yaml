@@ -1,6 +1,6 @@
 schema: full31.chapter_identity_matrix.v1
 generated: '2026-09-03'
-base_sha: 2e440e43f89b61c112f088939f73440024283bbf
+base_sha: 3264321e0f878e16fb4d6b0f84cd189ac4538532
 chapters:
 - chapter_id: CH01
   number: 1
