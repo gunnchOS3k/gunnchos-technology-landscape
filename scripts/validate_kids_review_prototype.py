@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Validate ONE TAP kids review-prototype quality gates (Track 3)."""
+"""Validate ONE TAP kids review-prototype quality gates (Track 3).
+
+Semantic rule: project-development / publication-workflow language may appear in
+artifact banners, AUTHOR_NOTES, TRACEABILITY, and facilitator metadata — but must
+not appear inside `**Child-facing text:**` blocks the child is asked to read or recite.
+"""
 from __future__ import annotations
 
 import re
@@ -21,12 +26,47 @@ BANNER_LINES = [
     "NOT CHILD-VALIDATED",
     "NOT PUBLICATION-READY",
 ]
+# Legacy editor directives still forbidden anywhere in caregiver-facing body
+# (above Facilitator pointer), including non-child blocks.
 FORBIDDEN_BODY = re.compile(
     r"Use pilot figure|No false GHz|Link to adult CH02|Honesty label required|"
     r"NOT_YET_MAPPED|sentence simplification|82284cd8f41d750ff508cd6ea5bad0a9534d8162",
     re.I,
 )
 PLACEHOLDER_RE = re.compile(r"image here|TODO_IMAGE|lorem ipsum|IMAGE HERE", re.I)
+CHILD_FACING_BLOCK_RE = re.compile(
+    r"\*\*Child-facing text:\*\*\s*(.+?)(?=\n\n|\n\*\*|$)",
+    re.S,
+)
+# Project-state / author-workflow phrases that must not appear in child-facing text.
+# Context-sensitive: do not forbid lone words like "review" or "author" globally.
+CHILD_FACING_PROJECT_META_RE = re.compile(
+    r"(?:"
+    r"not\s+child[- ]validated"
+    r"|publication[- ]ready"
+    r"|developmental\s+prototype"
+    r"|kids\s+developmental\s+prototype"
+    r"|review\s+candidate"
+    r"|owner[- ]locked"
+    r"|source\s+SHA"
+    r"|commit\s+SHA"
+    r"|adult\s+chapter\s+prose"
+    r"|do\s+not\s+copy\s+adult"
+    r"|\bCursor\b"
+    r"|\bintegrator\b"
+    r"|\bagent\b"
+    r"|frequency-to-intelligence"
+    r"|magic\s+megahertz"
+    r"|honor\s+earlier\s+bands"
+    r"|junior-reference\s+prose"
+    r"|portfolio\s+artifact\s*="
+    r"|no\s+exploit\s+steps"
+    r"|core\s+systems\s+skill"
+    r"|this\s+prototype\s+is\s+for"
+    r"|what\s+we\s+have\s+not\s+tested\s+with\s+children"
+    r")",
+    re.I,
+)
 MIN_WORDS = {
     "BABY": 8,
     "TODDLER": 20,
@@ -46,12 +86,24 @@ def load_atlas_ids() -> set[str]:
     return set(re.findall(r"mapping_id:\s*(MAP-[A-Z0-9-]+)", text))
 
 
+def extract_child_facing_blocks(text: str) -> list[str]:
+    return [m.group(1).strip() for m in CHILD_FACING_BLOCK_RE.finditer(text)]
+
+
 def child_facing_words(ms: Path) -> int:
     text = ms.read_text(encoding="utf-8")
     words: list[str] = []
-    for m in re.finditer(r"\*\*Child-facing text:\*\*\s*(.+?)(?=\n\n|\n\*\*|$)", text, re.S):
-        words.extend(m.group(1).split())
+    for block in extract_child_facing_blocks(text):
+        words.extend(block.split())
     return len(words)
+
+
+def find_child_facing_project_meta(text: str) -> list[str]:
+    hits: list[str] = []
+    for i, block in enumerate(extract_child_facing_blocks(text), start=1):
+        for m in CHILD_FACING_PROJECT_META_RE.finditer(block):
+            hits.append(f"child-facing block #{i}: {m.group(0)!r}")
+    return hits
 
 
 def main() -> int:
@@ -103,6 +155,9 @@ def main() -> int:
             body = text.split("## Facilitator pointer")[0]
             if FORBIDDEN_BODY.search(body):
                 errors.append(f"{short}: editor/integrator meta still in caregiver-facing body")
+            # Semantic: project-state language must stay outside child-facing blocks
+            for hit in find_child_facing_project_meta(text):
+                errors.append(f"{short}: project-meta in {hit}")
             wc = child_facing_words(ms)
             if wc < MIN_WORDS[short]:
                 errors.append(f"{short}: child-facing words {wc} < min {MIN_WORDS[short]}")
@@ -133,7 +188,7 @@ def main() -> int:
                     errors.append(f"{short}: HTML missing {line}")
             if "Easy exit" not in ht and "easy exit" not in ht.lower():
                 errors.append(f"{short}: HTML missing easy exit")
-            if 'lang=' not in ht:
+            if "lang=" not in ht:
                 errors.append(f"{short}: HTML missing lang")
         if not pdf.is_file() or pdf.stat().st_size < 800:
             errors.append(f"{short}: missing/empty PDF")

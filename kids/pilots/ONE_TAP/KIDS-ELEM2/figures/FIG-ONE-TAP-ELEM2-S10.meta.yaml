@@ -1,8 +1,8 @@
 asset_id: FIG-ONE-TAP-ELEM2-S10
 truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
 age_band: KIDS-ELEM2
-alt: "Style-neutral illustration for 'EMIT mini-capstone': Complete EMIT loop with honesty labels spoken."
-description: "Complete EMIT loop with honesty labels spoken."
+alt: "Style-neutral illustration for 'EMIT mini-capstone': Complete EMIT loop; name observed, inferred, and still-unknown."
+description: "Complete EMIT loop; name observed, inferred, and still-unknown."
 purpose: "ONE TAP review prototype spread S10 (TEACH)"
 text_safe_zones:
   title_band: [40, 40, 720, 90]

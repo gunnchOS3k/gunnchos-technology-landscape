@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-ONE-TAP-ELEM2-S08-title FIG-ONE-TAP-ELEM2-S08-desc" data-asset-id="FIG-ONE-TAP-ELEM2-S08">
   <title id="FIG-ONE-TAP-ELEM2-S08-title">FIG-ONE-TAP-ELEM2-S08: Build, test, teach</title>
-  <desc id="FIG-ONE-TAP-ELEM2-S08-desc">Style-neutral ONE TAP prototype for ELEM2. Action: Paper protocol + younger-band teach script + one repair.. Child text excerpt: Build a paper protocol for tracing one tap: numbered steps, a failure branch (“if no change, check power / ask a trusted adult”), and a teach-back script wri…</desc>
+  <desc id="FIG-ONE-TAP-ELEM2-S08-desc">Style-neutral ONE TAP prototype for ELEM2. Action: Paper protocol + younger teach script + one repair.. Child text excerpt: Build a paper protocol for tracing one tap: numbered steps, a failure branch (“if no change, check power / ask a trusted adult”), and a teach-back script for…</desc>
   <rect width="800" height="500" fill="#fffef8"/>
   <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
   <text x="40" y="52" font-family="Georgia, serif" font-size="20" fill="#111">FIG-ONE-TAP-ELEM2-S08</text>
@@ -15,7 +15,7 @@
   </g>
   
   <foreignObject x="40" y="320" width="720" height="120">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 16px; color:#111; line-height:1.35;">Build a paper protocol for tracing one tap: numbered steps, a failure branch (“if no change, check power / ask a trusted adult”), and a teach-back script wri…</div>
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 16px; color:#111; line-height:1.35;">Build a paper protocol for tracing one tap: numbered steps, a failure branch (“if no change, check power / ask a trusted adult”), and a teach-back script for…</div>
   </foreignObject>
   <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
 </svg>

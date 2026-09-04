@@ -480,7 +480,7 @@ spreads:
       easy_stop: [CME-022, CME-023, CME-024]
       no_dark_patterns: [CME-025, CME-026, CME-027]
     figure_id: FIG-ONE-TAP-ELEM1-S10
-    word_count_estimate: 47
+    word_count_estimate: 45
 gaps:
   - status: TRANSLATION_REQUIRED
     note: "Some atlas-adjacent jurisdictions remain TRANSLATION_REQUIRED at atlas level; ONE TAP does not invent EXACT maps for those rows."
