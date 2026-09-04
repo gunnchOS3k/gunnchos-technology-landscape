@@ -26,7 +26,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch11-moment}
 
 You press the power button—or wake a phone that was only sleeping. A logo appears. Lights blink. A spinner turns. Then, if you are lucky, a lock screen or desktop. If you are unlucky: an endless logo, a recovery menu you did not ask for, or a warning that software could not be verified.
 
@@ -42,7 +42,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch11-notice}
 
 Before words like *root of trust* or *measured boot* enter, notice the human contract you already expect.
 
@@ -58,7 +58,7 @@ Optional comparison on a device you already own: cold boot once (power fully off
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch11-ecosystem}
 
 Boot is not a single object. It is a path through an ecosystem. **FIG-CH11-001** is the first-minute map: power/reset → firmware → bootloader → kernel → userspace → lock screen or recovery. Treat it as **Representative educational architecture**, not a claim that every phone or laptop implements identical stages with identical names.
 
@@ -96,7 +96,7 @@ Platforms often provide alternate paths when primary images fail verification or
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch11-signal}
 
 **FIG-CH11-001** shows a numbered path. Read it as a logical story, not as a universal SoC bring-up with invented millisecond budgets.
 
@@ -127,7 +127,7 @@ Outside observation rarely distinguishes those cleanly. That limitation is liter
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch11-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies.
 
@@ -189,7 +189,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch11-stability}
 
 A boot experience continues only while multiple hidden conditions stay within acceptable bounds.
 
@@ -211,7 +211,7 @@ CE-5’s stability sketch (answer usability, identity continuity, authorization 
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch11-try}
 
 ### LAB-BOOT-OBS-001 — Observe Boot and Wake (publication-owned, proposed)
 
@@ -256,7 +256,7 @@ Optional Operator post-boot health path: **LAB-CMS-001** (CE-3 adjacency) after 
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch11-build}
 
 Extend LAB-BOOT-OBS-001 without turning Part III into a firmware flashing course.
 
@@ -284,7 +284,7 @@ Educators can facilitate Section 11 teach-backs and keep classrooms on the offli
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch11-secure-include}
 
 ### Security — authentication vs authorization vs boot authenticity
 
@@ -323,7 +323,7 @@ Do not claim measured attestation results you did not obtain. Do not treat a fea
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch11-career}
 
 One power press crosses many ownership domains. No table promises employment; roles vary by organization. LAB-BOOT-OBS-001 artifacts resemble early professional evidence in miniature: labeled diagrams, observation discipline, and explicit uncertainty.
 
@@ -340,7 +340,7 @@ Portfolio hint: a scrubbed boot-chain diagram plus “lock screen ≠ secure boo
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch11-check}
 
 **Concept.** In one sentence each, define *firmware*, *bootloader*, and *secure boot (intent)* so that none of them swallows the other two.
 
@@ -366,7 +366,7 @@ CE-5 preproduction (`publication/preproduction/ce-05/`) is trust/identity/privac
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch11-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

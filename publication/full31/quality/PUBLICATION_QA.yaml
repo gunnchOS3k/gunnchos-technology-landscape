@@ -1,0 +1,112 @@
+schema_version: 1.0.0
+report_id: FULL31_PUBLICATION_QA
+agent: agent-h-publication-qa
+generated_at: '2026-09-04T00:18:31Z'
+git_sha: 2e440e43f89b61c112f088939f73440024283bbf
+preferred_base_branch: cursor/full31-quality-convergence-001
+gate_3_policy: DO_NOT_TOUCH
+certification_claims:
+  wcag: false
+  epub_accessibility: false
+  human_print_quality: false
+toolchain:
+  quarto: /Users/gunnchos/Downloads/gunnchos-technology-landscape/.worktrees/agent-h-publication-qa-001/tools/quarto/bin/quarto
+  LOCAL_RENDER_TOOLCHAIN_UNAVAILABLE: false
+artifacts:
+  html: preview/full31/technology-landscape-full31-html
+  epub: preview/full31/technology-landscape-full31-epub.epub
+  pdf: preview/full31/technology-landscape-full31-pdf.pdf
+  print_checklist: publication/full31/quality/HUMAN_PRINT_VISUAL_CHECKLIST.md
+severity_counts:
+  BLOCKER: 0
+  MAJOR: 1
+  MODERATE: 1
+  MINOR: 0
+  EDITORIAL: 0
+checks:
+  source_semantics:
+    chapters_scanned: 31
+    figures_embedded: 47
+    fig_cap_without_fig_alt: 0
+    empty_markdown_alts: 0
+    generic_section_id_collisions: {}
+    heading_hierarchy_failures: []
+    nondescriptive_links: 0
+    reader_facing_localhost_or_filesystem: 0
+    tables_missing_header_sep: 0
+  figures:
+    registry_count: 107
+    missing_sidecar: 0
+    missing_asset: 0
+    missing_fields: 0
+    color_only_risk_notes: 0
+  labs:
+    labs: 14
+    missing_accessible_routes: 0
+    browser_missing_lang: 0
+    browser_missing_live_region: 0
+    a11y_doc_present: 2
+  acronyms:
+    registry_entries: 4
+    identity_expansions: 4
+    first_use_heuristic: source_scan_limited
+  html:
+    artifact_present: true
+    pages: 52
+    missing_lang: 0
+    imgs_total: 47
+    imgs_missing_alt: 0
+    broken_internal_anchors: 0
+    reader_facing_localhost_href: 0
+    nav_sidebar_detected: true
+  epub:
+    artifact_present: true
+    validator: deterministic_structural_checks
+    epubcheck: NOT_RUN
+    epubcheck_limitation: W3C EPUBCheck JAR was not executed in this environment (no
+      vendored validator; network install not assumed). Deterministic ZIP/OPF/nav/spine/image
+      checks only.
+    mimetype_ok: true
+    container_ok: true
+    opf_ok: true
+    nav_ok: true
+    spine_ok: true
+    dc_language: en
+    dc_title: The Technology Landscape
+    dc_creator: Edmund Gunn, Jr.
+    imgs_total: 47
+    imgs_missing_alt: 0
+    xhtml_missing_lang: 0
+  pdf:
+    artifact_present: true
+    page_count: 666
+    render_success: true
+    overfull_hbox: 0
+    overfull_vbox: 0
+    underfull_hbox: 0
+    missing_image_log_hits: 0
+    duplicate_identifier_warnings: 0
+    blank_page_heuristic: not_automated
+    orphan_heading_heuristic: not_automated
+    tiny_text_heuristic: not_automated
+    clipping_heuristic: not_automated
+    wide_table_heuristic: log_overfull_proxy
+    pdf_max_chapter_number_seen: 441
+    pdf_chapter_number_mentions: 573
+issues:
+- issue_id: A11Y-ACRO-IDENTITY
+  severity: MODERATE
+  category: acronyms
+  location: glossary/acronym_registry.yaml
+  finding: 'Acronym registry entries expand to themselves (4): first-use expansion
+    not machine-checkable.'
+  evidence: API, CPU, GPU, RAM
+  fix_status: HANDOFF_AGENT_J
+- issue_id: PDF-CHAPTER-COUNTER
+  severity: MAJOR
+  category: pdf_structure
+  location: preview/full31/technology-landscape-full31-pdf.pdf
+  finding: "PDF text shows chapter numbers up to 441 (666 pages). Expected ~31 body\
+    \ chapters; likely LaTeX chapter-counter inflation \u2014 needs human print QA."
+  evidence: ''
+  fix_status: NEEDS_HUMAN

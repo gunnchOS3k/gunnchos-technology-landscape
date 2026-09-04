@@ -27,7 +27,7 @@ Part VI asks you to build, prove, and contribute. This chapter is the book’s c
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch31-moment}
 
 Everything looks connected. The icon says online. The Wi‑Fi name is familiar. Cellular bars are present. You tap send, submit, refresh, or sync—and the experience stalls, flickers, retries, or never finishes. Sometimes a toast claims success while the remote effect never arrives. Sometimes a classmate on a different device or assistive path cannot complete the same task that felt easy on yours.
 
@@ -43,7 +43,7 @@ This is the CE-6 capstone spine expanded for the full book. It is not a Device Q
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch31-notice}
 
 Before naming layers or filling portfolio fields, notice the human contract that broke—or that held for you and failed for someone else.
 
@@ -57,7 +57,7 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch31-ecosystem}
 
 A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH31-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **representative educational architecture**, not a claim that every app fails the same way [@saltzer-kaashoek].
 
@@ -103,7 +103,7 @@ Who can complete this experience under real constraints—metered data, shared d
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch31-signal}
 
 Here the “signal” is the human action’s fate across layers—and the portfolio’s climb from notice to teach-back. Read the sequence as a logical diagnosis and evidence story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -122,7 +122,7 @@ Here the “signal” is the human action’s fate across layers—and the portf
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch31-components}
 
 For the capstone, “components” are failure-domain cards plus portfolio field cards. Each card needs plain language, a constraint, and a failure symptom.
 
@@ -199,7 +199,7 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch31-try}
 
 ### LAB-CE06-001 — Explain, Measure, Improve, and Teach
 
@@ -242,7 +242,7 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch31-build}
 
 Extend LAB-CE06-001 without turning the capstone into a fake SLO catalog or a copied illustrative packet.
 
@@ -270,7 +270,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F as a first-clas
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch31-secure-include}
 
 ### Security
 
@@ -298,7 +298,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch31-career}
 
 One stalled submit crosses many ownership domains. No table promises employment; roles vary by organization. LAB-CE06-001 artifacts resemble early professional evidence in miniature: labeled observations, failure-domain shortlists, teach-backs, and explicit uncertainty.
 
@@ -317,7 +317,7 @@ Portfolio hint: a scrubbed result table with observation / inference / `fixture`
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch31-check}
 
 **Concept.** In one sentence, state the EMIT spine and why Teach is required portfolio proof—not optional fluff.
 
@@ -347,7 +347,7 @@ Inline citations used in this chapter include @gunnchos-technology-landscape-ce0
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch31-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

@@ -27,7 +27,7 @@ Part VI opens the build-prove-contribute arc. Earlier chapters taught you to not
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch26-moment}
 
 You change one behavior.
 
@@ -45,7 +45,7 @@ This is Part VI’s software-pathway opener (CH01→CH02→…→CH26→CH27). I
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch26-notice}
 
 Before naming remotes or rebase strategies, notice the human contracts you already expect.
 
@@ -59,7 +59,7 @@ Optional commodity notice (no paid IDE required): open any small text project yo
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch26-ecosystem}
 
 A single commit is not a lone object. It is a path through an ecosystem. **FIG-CH26-001** is the first-minute map: edit → status → diff → commit → review. Treat it as **Representative educational architecture**, not a claim that every team uses identical tools or hosting vendors.
 
@@ -105,7 +105,7 @@ WAIKE’s `SOFTWARE_BUILDER` package is an **adjacent** builder competency neigh
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch26-signal}
 
 Here the “signal” is one reviewable change traveling from intent into inspectable history.
 
@@ -130,7 +130,7 @@ When a change crosses a public API boundary, **Semantic Versioning** offers MAJO
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch26-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -192,7 +192,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch26-stability}
 
 A reviewable change experience exists only while several conditions remain within acceptable bounds.
 
@@ -210,7 +210,7 @@ A repository can be “technically present” while the human experience has alr
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch26-try}
 
 **Inherited adjacency.** Builder pathway habits from Concept Edition packages and WAIKE `SOFTWARE_BUILDER` remain **adjacent**—link, do not invent a CH26 WAIKE lab ID [@src-waike] (CLM-CH26-002).
 
@@ -252,7 +252,7 @@ Document reproducibility of the change environment at a SHA (tool versions you a
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch26-build}
 
 Extend the Try-it loop by one honest notch—not by boiling the ocean.
 
@@ -293,7 +293,7 @@ Fixtures and illustrative worksheets are not human Gate 3 validation. Do not pre
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch26-career}
 
 Version control literacy shows up across software roles. **Completing this chapter’s artifacts does not guarantee employment, promotion, or a job offer.** Portfolio evidence demonstrates that you can produce reviewable change; hiring decisions belong to organizations and remain outside this book’s promises.
 
@@ -308,7 +308,7 @@ Prefer a scrubbed diff + clear message over a slogan résumé line about “pass
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch26-check}
 
 **Concept.** In one sentence each, explain *commit*, *branch*, and *diff* so none swallows the other two.
 
@@ -340,7 +340,7 @@ Primary packet (link, prefer over duplication): `publication/full31/chapters/ch2
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch26-glossary}
 
 Candidate terms introduced or reinforced here (see also `GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 

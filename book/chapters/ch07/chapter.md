@@ -54,7 +54,7 @@ Optional comparison on a device you already own: open a small text note that is 
 
 A reopen or open-file moment is not a single object. It is a path through cooperating layers. @fig-ch07-001 is the first-minute map of those layers as a **memory hierarchy**: registers, cache, RAM (main memory), and storage. It is **conceptual**—a teaching architecture, not a claim that your particular laptop silicon matches the diagram’s geometry.
 
-![Conceptual pyramid from registers through cache and RAM to durable storage.](../../../figures/architecture/fig-ch07-001-memory-hierarchy.svg){#fig-ch07-001 fig-cap="Memory hierarchy: registers → cache → RAM → storage. Conceptual educational diagram; qualitative tradeoffs only. RAM ≠ storage."}
+![Conceptual pyramid from registers through cache and RAM to durable storage.](../../../figures/architecture/fig-ch07-001-memory-hierarchy.svg){#fig-ch07-001 fig-cap="Memory hierarchy: registers → cache → RAM → storage. Conceptual educational diagram; qualitative tradeoffs only. RAM ≠ storage." fig-alt="Conceptual pyramid from registers through cache and RAM to durable storage."}
 
 Walk the ecosystem in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -105,7 +105,7 @@ Follow one open. Imagine a medium-sized local file on durable storage.
 
 @fig-ch07-002 shows that left-to-right teaching path. Segments are conceptual—not a stopwatch claim about your device.
 
-![Conceptual open-file path from storage through RAM and cache to CPU and UI.](../../../figures/sequence/fig-ch07-002-open-file-path.svg){#fig-ch07-002 fig-cap="Opening a file: storage → RAM → cache → CPU → UI. Conceptual educational sequence; hits and misses change wait."}
+![Conceptual open-file path from storage through RAM and cache to CPU and UI.](../../../figures/sequence/fig-ch07-002-open-file-path.svg){#fig-ch07-002 fig-cap="Opening a file: storage → RAM → cache → CPU → UI. Conceptual educational sequence; hits and misses change wait." fig-alt="Conceptual open-file path from storage through RAM and cache to CPU and UI."}
 
 Three separations matter while you follow the signal:
 
@@ -113,7 +113,7 @@ Three separations matter while you follow the signal:
 2. **On screen vs on disk.** Visible text can live in a volatile working set while the durable file is older—or missing—until a save completes.
 3. **Connected icon vs local wait.** Memory pressure and disk backlog can hitch the UI while the network glyph stays polite [@tanenbaum-bos]. @fig-ch07-003 sketches that contrast as an **illustrative** teaching aid.
 
-![Illustrative two-panel contrast of a healthy network icon beside memory-pressure symptoms.](../../../figures/architecture/fig-ch07-003-memory-pressure.svg){#fig-ch07-003 fig-cap="Illustrative: healthy connectivity icon with possible memory-pressure hitch. Not fleet telemetry."}
+![Illustrative two-panel contrast of a healthy network icon beside memory-pressure symptoms.](../../../figures/architecture/fig-ch07-003-memory-pressure.svg){#fig-ch07-003 fig-cap="Illustrative: healthy connectivity icon with possible memory-pressure hitch. Not fleet telemetry." fig-alt="Illustrative two-panel contrast of a healthy network icon beside memory-pressure symptoms."}
 
 ---
 

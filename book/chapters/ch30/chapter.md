@@ -27,7 +27,7 @@ Part VI has already asked you to build, test, and design. This chapter refuses a
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch30-moment}
 
 You finished the labs. Folders exist. Screenshots exist. Maybe a README you wrote at 1 a.m. Still, when someone asks “show me what you can do,” the packet falls apart. You open five unrelated capture files. Claims live in your head, not next to the artifacts. Limitations are missing. A mentor cannot tell which rows were live observation and which were fixtures. A hiring-adjacent reviewer cannot tell which skill you are claiming.
 
@@ -43,7 +43,7 @@ This is Part VI’s career and evidence-organization chapter. It is not a placem
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch30-notice}
 
 Before naming role families or index schemas, notice the human symptoms of an unreviewable packet.
 
@@ -57,7 +57,7 @@ Optional commodity notice (no specialized gear): open one completed CE or full-b
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch30-ecosystem}
 
 A reviewable portfolio is not a single PDF. It is a path through an ecosystem of people, artifacts, and constraints. **FIG-CH30-001** is the first-minute geometry: **role family → artifact → review criteria**, with the employment non-guarantee as a hard outer boundary. Treat it as **Representative educational architecture**, not a claim that every organization hires the same way.
 
@@ -103,7 +103,7 @@ Learning evidence is not a hired outcome. Every CE career map in this repository
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch30-signal}
 
 Here the “signal” is the fate of one skill claim as it becomes reviewable—not a packet on the wire. Read the sequence as an assembly story. Alternate pathway depths exist; open questions stay labeled undetermined.
 
@@ -146,7 +146,7 @@ Classroom portfolios live mid-ladder. Invented recommendation letters, fabricate
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch30-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -192,7 +192,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch30-stability}
 
 A reviewable portfolio experience exists only while several conditions hold together. Break any one and the packet stops being trustworthy—even if the zip file still downloads.
 
@@ -213,7 +213,7 @@ Device Quartet hardware is **not required** for this chapter.
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch30-try}
 
 **Lab posture:** Prefer inherit and assemble. Do not invent WAIKE course IDs. Proposed publication lab: **LAB-CH30-PORTFOLIO-001** (assemble an index from existing CE lab artifacts). Until that package is fully authored, complete the Try route using any CE lab `portfolio/` outputs you already have plus the careers scaffolds.
 
@@ -241,7 +241,7 @@ Time box: 45–90 minutes for a first honest index. Deeper polish belongs in Bui
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch30-build}
 
 Builder outcome: produce **one** polished artifact with an explicit limitations section, then link it from the index.
 
@@ -263,7 +263,7 @@ Stop conditions: do not fabricate mentor quotes, recommendation letters, or labo
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch30-secure-include}
 
 Security, privacy, accessibility, and equity are portfolio conditions—not an appendix.
 
@@ -285,7 +285,7 @@ Do not present illustrative fixture portfolios as human Gate 3 evidence. Do not 
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch30-career}
 
 Career maps in this book are scaffolds for aiming practice. They are not offers. The publication careers registry and CE CAREER_MAP files encode that boundary explicitly (`employment_guarantee: false` on roles and maps).
 
@@ -306,7 +306,7 @@ WAIKE adjacency for portfolio and capstone culture remains useful context, not a
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch30-check}
 
 **Concept.** In one sentence each, define *role family*, *portfolio proof*, and *portfolio index* so that none swallows the other two.
 
@@ -342,7 +342,7 @@ Gate 3 reader evidence remains pending; this working draft is not publication-re
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch30-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch30/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 

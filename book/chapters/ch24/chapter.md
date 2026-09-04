@@ -32,7 +32,7 @@ Two non-collapse rules govern the prose:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch24-moment}
 
 You need to finish something ordinary: reset access after a lockout, accept a permission or privacy notice, recover an account, or complete a verify step so a familiar feature will run. The app looks modern. A classmate finishes in seconds. Your path stalls—CAPTCHA that never announces, SMS you cannot receive, a privacy wall of text you cannot act on, or a recovery flow that exists only as a vision-only selfie.
 
@@ -48,7 +48,7 @@ This is CE-5’s responsible-use spine expanded for full-book depth. It is not a
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch24-notice}
 
 Before naming Solove harms or assurance levels, notice the human contract that broke.
 
@@ -62,7 +62,7 @@ Optional commodity notice (no specialized gear): open one familiar app’s priva
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch24-ecosystem}
 
 A stuck recovery or opaque consent is not a single object. It is a path through an ecosystem. **FIG-CH24-001** is the first-minute map: human experience at the center, with concurrent spokes for collect → use → retain → share → delete/redact. Treat it as **Representative educational architecture**, not a claim that every app shares one vendor topology.
 
@@ -104,7 +104,7 @@ Vendors, reviewers, regulators, and equity of private compute shape who can comp
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch24-signal}
 
 Here the “signal” is a person trying to keep usable control of access and data—not a single TLS handshake. Read the sequence as a logical journey. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -144,7 +144,7 @@ Prefer failure *domains* over confident blame: disclosure/consent, identity proo
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch24-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -206,7 +206,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch24-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -238,7 +238,7 @@ WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) hosts adj
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch24-try}
 
 ### LAB-TRUST-001 — Compare local vs remote AI paths and write a consent/trust card
 
@@ -282,7 +282,7 @@ WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) hosts adj
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch24-build}
 
 Extend LAB-TRUST-001 without turning Part V into a fake compliance certificate.
 
@@ -310,7 +310,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F first-class.
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch24-secure-include}
 
 This section is the chapter’s core—not an appendix. Keep threats attached to user experience.
 
@@ -344,7 +344,7 @@ Observation before inference (**FIG-CH24-003** ethics ladder). Disclose AI assis
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch24-career}
 
 One blocked recovery crosses many ownership domains. No table promises employment; roles vary by organization. LAB-TRUST-001 artifacts resemble early professional evidence in miniature: labeled observations, consent cards, and explicit uncertainty.
 
@@ -361,7 +361,7 @@ Portfolio hint: a scrubbed consent card with `fixture` labels beats a vibes-base
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch24-check}
 
 **Concept.** In one sentence, distinguish *privacy* from *security* so neither swallows the other.
 
@@ -393,7 +393,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch24-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch24/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 

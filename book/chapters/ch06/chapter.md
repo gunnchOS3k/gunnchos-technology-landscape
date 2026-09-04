@@ -67,7 +67,7 @@ Optional comparison on almost any computer you already own: open a light text no
 
 Local lag is not a single object. It is a path through an inside-the-device ecosystem. @fig-ch06-001 is the first-minute map for this chapter: app experience → process/threads → scheduler → CPU cores → optional accelerator. Treat it as **conceptual / Representative educational architecture**—not a claim that any specific manufactured revision looks exactly like the diagram.
 
-![Conceptual map from app experience through process/threads and scheduler to CPU cores and optional accelerator.](../../../figures/architecture/fig-ch06-001-app-to-cores.svg){#fig-ch06-001 fig-cap="App → process/threads → scheduler → cores/accelerator. Conceptual educational map; OS mediates while instructions still execute on hardware."}
+![Conceptual map from app experience through process/threads and scheduler to CPU cores and optional accelerator.](../../../figures/architecture/fig-ch06-001-app-to-cores.svg){#fig-ch06-001 fig-cap="App → process/threads → scheduler → cores/accelerator. Conceptual educational map; OS mediates while instructions still execute on hardware." fig-alt="Conceptual map from app experience through process/threads and scheduler to CPU cores and optional accelerator."}
 
 The Device Quartet used elsewhere in this series—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—are research form factors and learning benchmarks. Physical fabrication and EVT CPU measurements remain **PHYSICAL_PENDING**; do not treat comparison-matrix core counts or clock stories as shipping product facts [@src-hardware-quartet].
 
@@ -117,7 +117,7 @@ Follow one ordinary local action—say, scrolling a document while another expor
 
 @fig-ch06-002 contrasts a mostly serial dependency chain with work that splits into independent chunks. Extra cores help the second pattern more than the first. The bar lengths are **illustrative** teaching aids—not measured speedups, IPC claims, or Device Quartet EVT results.
 
-![Illustrative timelines comparing a serial dependency chain with parallelizable chunks across cores.](../../../figures/architecture/fig-ch06-002-serial-vs-parallel.svg){#fig-ch06-002 fig-cap="Single-thread vs parallelizable work. Illustrative teaching timelines; not measured benchmarks."}
+![Illustrative timelines comparing a serial dependency chain with parallelizable chunks across cores.](../../../figures/architecture/fig-ch06-002-serial-vs-parallel.svg){#fig-ch06-002 fig-cap="Single-thread vs parallelizable work. Illustrative teaching timelines; not measured benchmarks." fig-alt="Illustrative timelines comparing a serial dependency chain with parallelizable chunks across cores."}
 
 ### Parallelism without fairy tales
 
@@ -221,7 +221,7 @@ A device can remain **powered on and connected** while the **human experience ha
 
 @fig-ch06-003 separates **CPU-bound** patterns from **waiting** patterns as conceptual diagnosis branches. High CPU percent in a monitor is not always proof the CPU is the root cause of poor feel—that caution is an **illustrative teaching claim** for lab practice, not a fleet-wide measured distribution.
 
-![Conceptual comparison of CPU-bound versus waiting symptom checks.](../../../figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg){#fig-ch06-003 fig-cap="CPU-bound vs waiting-on-I/O symptoms. Conceptual diagnosis aid for observation vs inference."}
+![Conceptual comparison of CPU-bound versus waiting symptom checks.](../../../figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg){#fig-ch06-003 fig-cap="CPU-bound vs waiting-on-I/O symptoms. Conceptual diagnosis aid for observation vs inference." fig-alt="Conceptual comparison of CPU-bound versus waiting symptom checks."}
 
 Three separations matter here:
 

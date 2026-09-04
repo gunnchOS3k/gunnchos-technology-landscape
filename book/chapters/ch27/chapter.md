@@ -31,7 +31,7 @@ The signature distinction for this chapter:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch27-moment}
 
 A feature “passes” locally. Unit tests are green. The staging checklist is checked. Status dashboards look calm—until a classmate, a customer, or you on a slower link see stalls, silent failures, or a success toast that never finished the remote work.
 
@@ -47,7 +47,7 @@ This chapter expands CE-6’s evidence hierarchy and observation-vs-inference cr
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch27-notice}
 
 Before naming traces or assertion libraries, notice the human contract that broke.
 
@@ -63,7 +63,7 @@ Optional commodity notice (no specialized gear): pick one recent change you made
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch27-ecosystem}
 
 Evidence about an experience is not a single object. It is a path through layers that produce tests, signals, and claims. **FIG-CH27-001** is the evidence hierarchy ladder: illustrative aid → commodity observation → instrumentation → correlated multi-signal inspection → controlled comparison → standards-aligned QoE methods. Treat the ladder as **Representative educational architecture**. Learner labs sit mid-ladder; they are not ITU-T G.1011 assessment campaigns (CLM-CH27-001) [@itu-t-g1011].
 
@@ -105,7 +105,7 @@ Secrets and PII in traces/logs/screenshots. Portfolio literacy includes what you
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch27-signal}
 
 Here the “signal” is the chain from human claim → test or observation → labeled inference. Read it as a diagnosis story. Alternate paths exist; open questions stay undetermined.
 
@@ -150,7 +150,7 @@ WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) includes 
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch27-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -204,7 +204,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch27-stability}
 
 **Definition (publication teaching model, inherited):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -243,7 +243,7 @@ For this chapter, add evidence conditions to that contract:
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch27-try}
 
 ### LAB-CE06-001 — evidence practice (inherit)
 
@@ -281,7 +281,7 @@ For this chapter, add evidence conditions to that contract:
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch27-build}
 
 Extend evidence discipline without shipping a fake benchmark catalog.
 
@@ -309,7 +309,7 @@ Educators can facilitate Section 11 teach-backs and treat Route F as equitable c
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch27-secure-include}
 
 ### Security
 
@@ -337,7 +337,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch27-career}
 
 Testing and observability cross ownership domains. No table promises employment; roles vary by organization. LAB-CE06-001 artifacts resemble early professional evidence in miniature: labeled observations, oracle notes, and explicit uncertainty.
 
@@ -354,7 +354,7 @@ Portfolio hint: a scrubbed result table with observation / inference / `fixture`
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch27-check}
 
 **Concept.** In one sentence each, distinguish *testing*, *observability*, and *evidence hierarchy*.
 
@@ -386,7 +386,7 @@ Project-specific honesty: Gate 3 reader evidence remains pending; this working d
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch27-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch27/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 

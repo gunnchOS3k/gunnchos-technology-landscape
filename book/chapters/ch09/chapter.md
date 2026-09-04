@@ -49,7 +49,7 @@ Optional commodity comparison (no specialized hardware): run a light local task 
 
 Energy does not appear inside the SoC by magic. It enters, converts, feeds loads, becomes heat, and leaves—or it accumulates until policy intervenes. @fig-ch09-001 is the first-minute map: energy in → conversion → loads → heat out, with a throttle feedback path. It is **conceptual**, not a measured board layout.
 
-![Energy path from source through conversion and loads to heat, with throttle feedback.](../../../figures/ecosystem/fig-ch09-001-energy-path.svg){#fig-ch09-001 fig-cap="Energy in → conversion → loads → heat out, with throttle feedback. Conceptual educational diagram; not measured Device Quartet telemetry."}
+![Energy path from source through conversion and loads to heat, with throttle feedback.](../../../figures/ecosystem/fig-ch09-001-energy-path.svg){#fig-ch09-001 fig-cap="Energy in → conversion → loads → heat out, with throttle feedback. Conceptual educational diagram; not measured Device Quartet telemetry." fig-alt="Energy path from source through conversion and loads to heat, with throttle feedback."}
 
 Walk the layers in ordinary language.
 
@@ -79,7 +79,7 @@ The case, hinges, seals, vents, materials, and button placement are **mechanical
 
 @fig-ch09-003 opens the enclosure roles conceptually: protection, heat path, and human interface.
 
-![Exploded conceptual enclosure showing protection, heat path, and human-interface roles.](../../../figures/exploded-views/fig-ch09-003-enclosure-roles.svg){#fig-ch09-003 fig-cap="Mechanical enclosure roles: protection, heat path, and human interface. Conceptual; not a validated EVT."}
+![Exploded conceptual enclosure showing protection, heat path, and human-interface roles.](../../../figures/exploded-views/fig-ch09-003-enclosure-roles.svg){#fig-ch09-003 fig-cap="Mechanical enclosure roles: protection, heat path, and human interface. Conceptual; not a validated EVT." fig-alt="Exploded conceptual enclosure showing protection, heat path, and human-interface roles."}
 
 ---
 
@@ -112,7 +112,7 @@ Here the “signal” is energy and control, not a tap packet. Read the sequence
 
 @fig-ch09-002 contrasts on-charger vs on-battery feel as an **illustrative** teaching plate—no invented watts.
 
-![Side-by-side on-charger versus on-battery experience with shared app and different budgets.](../../../figures/ecosystem/fig-ch09-002-charger-vs-battery.svg){#fig-ch09-002 fig-cap="On charger vs on battery feel. Illustrative compare plate; no fabricated watt or °C product curves."}
+![Side-by-side on-charger versus on-battery experience with shared app and different budgets.](../../../figures/ecosystem/fig-ch09-002-charger-vs-battery.svg){#fig-ch09-002 fig-cap="On charger vs on battery feel. Illustrative compare plate; no fabricated watt or °C product curves." fig-alt="Side-by-side on-charger versus on-battery experience with shared app and different budgets."}
 
 ---
 
