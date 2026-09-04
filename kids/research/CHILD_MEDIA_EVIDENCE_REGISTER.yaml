@@ -4,11 +4,16 @@
 
 register_meta:
   register_id: CHILD_MEDIA_EVIDENCE_REGISTER
-  version: "0.1.0"
+  version: "0.1.1"
   status: DRAFT_INTERNAL
   retrieved_on: "2026-09-03"
+  audited_on: "2026-09-03"
   companion_source_register: kids/research/CHILD_MEDIA_SOURCE_REGISTER.yaml
   mandatory_topic_coverage_policy: every_listed_topic_has_ge_1_entry
+  qa_policy: >
+    Retain strong peer-reviewed / clinical / regulatory entries. Downgrade
+    confidence when claim outruns source scope. Soften production rules that
+    smuggle editorial preferences. Do not inflate source counts.
 
 evidence:
   - evidence_id: CME-001
@@ -40,7 +45,7 @@ evidence:
     age_range: "0–18 months"
     source_type: peer_reviewed
     source: SRC-TELLER-INFANT-VISION
-    year: 1979
+    year: 1986
     sample_or_scope: "Infant acuity / contrast assessment literature"
     finding: "Early vision is contrast-limited; strong luminance contrast supports detection more reliably than subtle hue differences alone."
     implementation_implication: "Prefer high luminance contrast for infant art; do not rely on hue alone to encode meaning; color never sole encoding."
@@ -54,10 +59,10 @@ evidence:
     source: SRC-AAP-MEDIA-YOUNG-MINDS
     year: 2016
     sample_or_scope: "Clinical policy context (not a color vision study)"
-    finding: "No clinical basis in AAP policy for claiming that a specific brand color 'activates the child's brain.'"
-    implementation_implication: "PROHIBIT unsupported color-neuroscience marketing claims; use color for salience and accessibility, with labels/shape redundancy."
-    limitations: "Policy silence is not a color-vision experiment."
-    confidence: high
+    finding: "AAP Media and Young Minds does not provide clinical support for brand-color neural-activation marketing claims; absence of such claims in policy is treated as a prohibition cue for product copy, not as positive color-vision evidence."
+    implementation_implication: "PROHIBIT unsupported color-neuroscience marketing claims; use color for salience and accessibility, with labels/shape redundancy (pair with CME-003)."
+    limitations: "Policy silence is not a color-vision experiment; confidence downgraded in QA because this is absence-based production policy, not empirical color research."
+    confidence: medium
 
   - evidence_id: CME-005
     topic: visual_clutter
@@ -89,10 +94,10 @@ evidence:
     source_type: peer_reviewed_handbook
     source: SRC-BANKS-SALAPATEK
     year: 1983
-    sample_or_scope: "Infant pattern preference synthesis"
-    finding: "Infants engage with patterns of intermediate complexity; overly sparse or overly dense arrays reduce sustained looking."
-    implementation_implication: "Simple, bold silhouettes for baby/toddler characters; increase shape detail gradually by age band."
-    limitations: "Optimal complexity is stimulus- and age-dependent; no single shape formula."
+    sample_or_scope: "Infant pattern preference synthesis (handbook)"
+    finding: "Infant looking preferences often favor patterns of intermediate complexity relative to extremely sparse or extremely dense arrays in lab stimuli."
+    implementation_implication: "Simple, bold silhouettes for baby/toddler characters; increase shape detail gradually by age band — heuristic only."
+    limitations: "Handbook synthesis over historical lab stimuli; optimal complexity is stimulus- and age-dependent; no single production shape formula. Confidence retained medium (scope caution already)."
     confidence: medium
 
   - evidence_id: CME-008
@@ -198,9 +203,9 @@ evidence:
     source: SRC-CALVERT-PARASOCIAL
     year: 2017
     sample_or_scope: "Parasocial relationships with media characters"
-    finding: "Stable, emotionally available characters can support engagement and, in some studies, learning transfer when children form parasocial bonds."
-    implementation_implication: "Small recurring cast with distinct silhouettes and consistent roles; teach-back dynamics; no omniscient 'AI knows everything' character."
-    limitations: "Character familiarity is not magic; educational design still required. Do not copy third-party IP."
+    finding: "Stable, emotionally available characters can support engagement; some studies associate parasocial bonds with greater willingness to attend to character-delivered content (learning transfer is not guaranteed)."
+    implementation_implication: "Small recurring original cast with distinct silhouettes and consistent roles; teach-back dynamics. Character continuity is not a substitute for instructional design."
+    limitations: "Synthesis chapter; familiarity ≠ guaranteed learning. Do not copy third-party IP. 'Omniscient AI' ban is editorial ethics, not a Calvert finding — removed from evidence-backed rule text in QA."
     confidence: medium
 
   - evidence_id: CME-017
@@ -210,10 +215,10 @@ evidence:
     source: SRC-CALVERT-PARASOCIAL
     year: 2017
     sample_or_scope: "Character–learning literature synthesis"
-    finding: "Parasocial relationships may mediate attention and willingness to learn from characters, especially when characters behave contingently and warmly."
-    implementation_implication: "Characters ask, wait, and celebrate attempts; model curiosity and repair, not perfection."
-    limitations: "Effects moderated by age, prior exposure, and content; not a substitute for caregiver interaction for youngest."
-    confidence: medium
+    finding: "Parasocial relationships may mediate attention and willingness to engage with character-delivered prompts; contingent, warm character behavior is associated with stronger bonds in the literature synthesis."
+    implementation_implication: "Characters ask, wait, and celebrate attempts; model curiosity and repair, not perfection. Treat as engagement design, not proven learning causal mechanism."
+    limitations: "Effects moderated by age, prior exposure, and content; not a substitute for caregiver interaction for youngest. Confidence downgraded in QA: synthesis suggests mediation of attention/willingness, not robust causal learning proof."
+    confidence: low
 
   - evidence_id: CME-018
     topic: participatory_prompts
@@ -258,9 +263,9 @@ evidence:
     source: SRC-CDC-SERVE-RETURN
     year: 2011
     sample_or_scope: "Early relational interaction science synthesis"
-    finding: "Contingent caregiver responses to child cues build foundational communication circuits and secure learning contexts."
+    finding: "Contingent caregiver responses to child cues are described in the serve-and-return framework as foundational for early communication and secure learning contexts."
     implementation_implication: "Caregiver scripts: follow child's attention → name → wait → respond → repeat; never turn prompts into screening instruments."
-    limitations: "Not a media efficacy trial."
+    limitations: "Developmental framework / science communication synthesis — not a media efficacy trial; avoid product claims that a digital feature 'wires the brain.'"
     confidence: high
 
   - evidence_id: CME-022
@@ -281,10 +286,10 @@ evidence:
     source_type: peer_reviewed
     source: SRC-LILLARD-PETERSON-2011
     year: 2011
-    sample_or_scope: "Same as CME-022"
-    finding: "Fast pacing combined with fantastical events may tax executive resources more than calmer educational narratives in the short term."
+    sample_or_scope: "Same as CME-022 (immediate post-viewing EF)"
+    finding: "In this study, fast pacing combined with fantastical events was associated with lower immediate EF scores than calmer educational narratives / drawing."
     implementation_implication: "Fantasy OK if paced and purposeful; technology concepts should stay causally clear; magic must not substitute for system explanation in older bands."
-    limitations: "One study design; replicate caution, not moral panic."
+    limitations: "One short-term lab design; does not establish permanent EF damage. Replicate caution, not moral panic."
     confidence: medium
 
   - evidence_id: CME-024
@@ -330,10 +335,10 @@ evidence:
     source: SRC-5RIGHTS
     year: 2021
     sample_or_scope: "Child-centred digital design principles"
-    finding: "Designs that maximize time-on-device conflict with children's rights and wellbeing goals."
-    implementation_implication: "Captivating ≠ compulsive; offline activity encouraged after each unit."
-    limitations: "Advocacy source; pair with AAP/ICO."
-    confidence: medium
+    finding: "Advocacy design principles argue that maximizing time-on-device conflicts with children's rights and wellbeing goals."
+    implementation_implication: "Captivating ≠ compulsive; offline activity encouraged after each unit. Prefer ICO AADC / AAP as primary authority (CME-025/026/019)."
+    limitations: "Advocacy source — secondary to pediatric/regulatory authorities. Confidence downgraded in QA."
+    confidence: low
 
   - evidence_id: CME-028
     topic: privacy_and_agency
@@ -394,11 +399,13 @@ adopted_production_rules:
     statement: "No autoplay-by-default, infinite scroll, variable rewards, dark patterns, or unnecessary child data collection."
     evidence_ids: [CME-025, CME-026, CME-027, CME-028, CME-029]
   - rule_id: RULE-STABLE-CAST
-    statement: "Small original recurring cast; distinct silhouettes; teach-back; no omniscient AI trope."
+    statement: "Small original recurring cast with distinct silhouettes and teach-back dynamics; character familiarity supports engagement, not guaranteed learning."
     evidence_ids: [CME-016, CME-017]
+    qa_note: "Downgraded in QA — removed editorial 'omniscient AI' clause (not supported by cited parasocial literature)."
   - rule_id: RULE-COLOR-NOT-SOLE
     statement: "Color never sole encoding of meaning; no unsupported color/Hz neuroscience claims."
     evidence_ids: [CME-003, CME-004]
+    qa_note: "Primary empirical support is CME-003 (contrast); CME-004 is medium absence-based marketing prohibition."
 
 rejected_unsupported_claims:
   - claim: "This exact color activates the child's brain"
@@ -419,3 +426,12 @@ rejected_unsupported_claims:
   - claim: "Infinite personalized autoplay maximizes education"
     status: REJECTED
     reason: "Conflicts with child-centered design, AAP wellbeing goals, and age-appropriate design codes."
+  - claim: "Stable character familiarity alone guarantees learning"
+    status: REJECTED
+    reason: "Parasocial literature supports engagement/attention pathways at best; instructional design and caregiver context still required (CME-016/017 downgraded accordingly)."
+  - claim: "Fast fantastical cartoons permanently damage executive function"
+    status: REJECTED
+    reason: "Lillard & Peterson (2011) shows short-term lab EF decrements only; permanent-harm product claims are causal overreach (CME-022/023)."
+  - claim: "This digital prompt wires the child's brain via serve-and-return"
+    status: REJECTED
+    reason: "Serve-and-return is a caregiver interaction framework, not a validated media feature efficacy claim (CME-012/021)."

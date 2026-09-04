@@ -6,13 +6,13 @@ NOT CHILD-VALIDATED
 NOT PUBLICATION-READY
 ```
 
-**Pilot concept:** Input → Response (adult CH02 developmental rewrite, not sentence simplification).
+**Pilot concept:** Input → Response across devices and (sometimes) networks.
 **Concept ID:** `KCON-CH02-ONE-TAP`
 **Child validation:** none
 
 ## Caregiver / educator note
 
-One focal object.
+One focal object. Short phrases. Stop anytime.
 
 ## Spread S01 — We look (LOOK)
 
@@ -20,9 +20,9 @@ One focal object.
 
 **Child-facing text:** We look.
 
-**Action:** Find the button together.
+**Try it:** Find the button together.
 
-**Caregiver prompt:** One focal object.
+**Talk together:** One focal object.
 
 ## Spread S02 — Input (NAME)
 
@@ -30,9 +30,9 @@ One focal object.
 
 **Child-facing text:** Touch is input.
 
-**Action:** Name input.
+**Try it:** Name input with a gesture.
 
-**Caregiver prompt:** Short phrase; gesture touch.
+**Talk together:** Short phrase; gesture touch.
 
 ## Spread S03 — Output (NAME)
 
@@ -40,9 +40,9 @@ One focal object.
 
 **Child-facing text:** Change is output.
 
-**Action:** Name output.
+**Try it:** Point to the change.
 
-**Caregiver prompt:** Point to the change.
+**Talk together:** Point to the change.
 
 ## Spread S04 — First (WAIT)
 
@@ -50,9 +50,9 @@ One focal object.
 
 **Child-facing text:** First: touch.
 
-**Action:** Sequence start.
+**Try it:** Sequence start.
 
-**Caregiver prompt:** Hold up one finger.
+**Talk together:** Hold up one finger.
 
 ## Spread S05 — Next (RESPOND)
 
@@ -60,9 +60,9 @@ One focal object.
 
 **Child-facing text:** Next: change.
 
-**Action:** Sequence continue.
+**Try it:** Sequence continue.
 
-**Caregiver prompt:** Hold up two fingers.
+**Talk together:** Hold up two fingers.
 
 ## Spread S06 — Find (POINT)
 
@@ -70,9 +70,9 @@ One focal object.
 
 **Child-facing text:** Find the button.
 
-**Action:** Match control.
+**Try it:** Child points or finds.
 
-**Caregiver prompt:** Child points/finds.
+**Talk together:** Child leads the find.
 
 ## Spread S07 — Match (TRY)
 
@@ -80,9 +80,9 @@ One focal object.
 
 **Child-facing text:** Match touch to change.
 
-**Action:** Do one supervised tap.
+**Try it:** One supervised tap.
 
-**Caregiver prompt:** One physical try.
+**Talk together:** One physical try.
 
 ## Spread S08 — Again same (REPEAT)
 
@@ -90,9 +90,9 @@ One focal object.
 
 **Child-facing text:** Again — same.
 
-**Action:** Repeat once.
+**Try it:** Repeat once.
 
-**Caregiver prompt:** Repetition with joy.
+**Talk together:** Repetition with joy.
 
 ## Spread S09 — Ask adult (SAFE + FAIR)
 
@@ -100,9 +100,9 @@ One focal object.
 
 **Child-facing text:** New button? Ask.
 
-**Action:** Practice ask-before-new.
+**Try it:** Practice ask-before-new.
 
-**Caregiver prompt:** Safety rule, calm tone.
+**Talk together:** Calm safety rule.
 
 ## Spread S10 — Show me (TEACH)
 
@@ -110,16 +110,10 @@ One focal object.
 
 **Child-facing text:** Show me touch → change.
 
-**Action:** Child shows caregiver.
+**Try it:** Child shows caregiver.
 
-**Caregiver prompt:** Invite teach-back gesture.
+**Talk together:** Invite teach-back gesture.
 
-## Standards appendix (adult-facing)
+## Facilitator pointer
 
-All mappings `NOT_YET_MAPPED` pending sister standards atlas land. Wire IDs in `TRACEABILITY.yaml`.
-
-## Source / evidence appendix (adult-facing)
-
-- Adult CH02 on main `82284cd8f41d750ff508cd6ea5bad0a9534d8162`
-- Spiral: `kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml`
-- No child testing was conducted for this prototype.
+Editor, standards, and provenance notes live in `AUTHOR_NOTES.yaml` and `TRACEABILITY.yaml` — not in child-facing spreads.

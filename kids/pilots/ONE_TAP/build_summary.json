@@ -1,5 +1,5 @@
 {
-  "unit_count": 42,
+  "claim_ceiling": "KIDS_REVIEW_PROTOTYPE_COMPLETE",
   "bands": {
     "BABY": {
       "spreads": 10,
@@ -13,24 +13,35 @@
     },
     "PRESCHOOL": {
       "spreads": 10,
-      "words": 75,
+      "words": 120,
       "figures": 10
     },
     "PREK": {
       "spreads": 10,
-      "words": 101,
+      "words": 146,
       "figures": 10
     },
     "ELEM1": {
       "spreads": 10,
-      "words": 113,
+      "words": 408,
       "figures": 10
     },
     "ELEM2": {
       "spreads": 10,
-      "words": 149,
+      "words": 806,
       "figures": 10
     }
   },
+  "meta_removed": [
+    "Use pilot figure",
+    "No false GHz claims",
+    "Link to adult CH02 honestly",
+    "Honesty label required",
+    "Adult CH02 developmental rewrite (from child-facing concept line)",
+    "Standards appendix NOT_YET_MAPPED / dangling STD-WIRE body text",
+    "Git SHA provenance in child/caregiver manuscript body",
+    "sentence simplification disclaimer in child-facing header"
+  ],
+  "adult_main": "82284cd8f41d750ff508cd6ea5bad0a9534d8162",
   "waike_sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
 }

@@ -294,43 +294,6 @@ mappings:
   - K5
   notes: Editorial crosswalk only; not a certification or authority endorsement claim.
   reviewed_on: '2026-09-03'
-- mapping_id: MAP-CAPS-NYM
-  relationship: MAPPED_TO
-  fidelity: NOT_YET_MAPPED
-  from_framework_id: FW-ZA-CAPS
-  from_node: Foundation Phase (subject grain TBD)
-  to_kids_target_id: KE-TARGET-SCIENCE-PRACTICES
-  kids_bands:
-  - K5
-  - K6
-  - K7
-  notes: Placeholder edge — subject PDFs not yet pinned.
-  reviewed_on: '2026-09-03'
-- mapping_id: MAP-ZA-CODING-NYM
-  relationship: MAPPED_TO
-  fidelity: NOT_YET_MAPPED
-  from_framework_id: FW-ZA-CODING-ROBOTICS
-  from_node: Coding and Robotics (phase TBD)
-  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
-  kids_bands:
-  - B5
-  - B6
-  - B7
-  - B8
-  notes: Awaiting official phase PDF pins.
-  reviewed_on: '2026-09-03'
-- mapping_id: MAP-JP-COS-NYM
-  relationship: MAPPED_TO
-  fidelity: NOT_YET_MAPPED
-  from_framework_id: FW-JP-MEXT-COS
-  from_node: Elementary Courses of Study (ICT-related)
-  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
-  kids_bands:
-  - K6
-  - K7
-  - B5
-  notes: TRANSLATION_REQUIRED before fidelity upgrade.
-  reviewed_on: '2026-09-03'
 - mapping_id: MAP-FI-ECEC-NYM
   relationship: MAPPED_TO
   fidelity: NOT_YET_MAPPED
@@ -368,7 +331,306 @@ mappings:
   - B10
   notes: Adult/citizen framework — kid-grain adaptation not yet designed.
   reviewed_on: '2026-09-03'
+- mapping_id: MAP-AU-AC-DT-ADJ
+  relationship: CROSSWALKED_AGAINST
+  fidelity: ADJACENT
+  from_framework_id: FW-AU-AC-V9
+  from_node: Digital Technologies F–2 (sequences, data, digital systems grain)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. State delivery
+    via AC v9 or state adaptions (NESA/VCAA/SCSA).
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-NZC-TECH-ADJ
+  relationship: MAPPED_TO
+  fidelity: ADJACENT
+  from_framework_id: FW-NZ-NZC
+  from_node: Technology / hāngarau learning area (NZC 2007; Te Mātaiaho draft sequencing TBD)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K6
+  - K7
+  - B5
+  - B6
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. Do not treat Te
+    Mātaiaho draft as gazetted.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-NCFSE-SCI-ADJ
+  relationship: MAPPED_TO
+  fidelity: ADJACENT
+  from_framework_id: FW-IN-NCF-SE-2023
+  from_node: Preparatory/Middle stage science & inquiry practices (domain-family grain)
+  to_kids_target_id: KE-TARGET-SCIENCE-PRACTICES
+  kids_bands:
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-SG-DLTS-ADJ
+  relationship: CROSSWALKED_AGAINST
+  fidelity: ADJACENT
+  from_framework_id: FW-SG-NDLP-DLTS
+  from_node: Computational thinking / coding & programming competencies (primary grain)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-SG-DLTS-CITIZEN-ADJ
+  relationship: MAPPED_TO
+  fidelity: ADJACENT
+  from_framework_id: FW-SG-NDLP-DLTS
+  from_node: Digital safety, responsibility, information management
+  to_kids_target_id: KE-TARGET-DIGITAL-CITIZENSHIP
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-JP-COS-PLAY-ADJ
+  relationship: MAPPED_TO
+  fidelity: ADJACENT
+  from_framework_id: FW-JP-MEXT-COS
+  from_node: Kindergarten five areas / play-centred environment (domain-family; JP primary text)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K3
+  - K4
+  - K5
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. TRANSLATION_REQUIRED
+    before fidelity upgrade.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-JP-COS-ICT-ADJ
+  relationship: MAPPED_TO
+  fidelity: PROPOSED
+  from_framework_id: FW-JP-MEXT-COS
+  from_node: Elementary ICT / programming education elements (Heisei 29)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K6
+  - K7
+  - B5
+  - B6
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. TRANSLATION_REQUIRED;
+    proposed editorial grain only.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CAPS-SCI-ADJ
+  relationship: CROSSWALKED_AGAINST
+  fidelity: ADJACENT
+  from_framework_id: FW-ZA-CAPS
+  from_node: Foundation/Intermediate Natural Sciences and Technology (domain-family)
+  to_kids_target_id: KE-TARGET-SCIENCE-PRACTICES
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. Subject PDF editions
+    still pin-per-subject for clause work.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-ZA-CODING-ADJ
+  relationship: CROSSWALKED_AGAINST
+  fidelity: ADJACENT
+  from_framework_id: FW-ZA-CODING-ROBOTICS
+  from_node: Foundation Phase Algorithms and Coding / Pattern Recognition strands
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. Prefer final gazetted
+    PDFs when available over draft call-for-comments.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-UNESCO-MIL-CITIZEN-ADJ
+  relationship: MAPPED_TO
+  fidelity: ADJACENT
+  from_framework_id: FW-UNESCO-MIL-2021
+  from_node: MIL competencies for critical engagement with media/information
+  to_kids_target_id: KE-TARGET-DIGITAL-CITIZENSHIP
+  kids_bands:
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. Educator/learner
+    curriculum — age-band downshift is editorial.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-UNESCO-SDG4-INFORM
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-UNESCO-SDG4-ED2030
+  from_node: SDG 4 quality education / lifelong learning aspiration
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K2
+  - K3
+  - K4
+  - K5
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. Transnational aspiration
+    — not a curriculum standard.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-OECD-COMPASS-INFORM
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-OECD-LEARNING-COMPASS-2030
+  from_node: Transformative competencies / learner agency (high-level)
+  to_kids_target_id: KE-TARGET-SYSTEMS-STABILITY
+  kids_bands:
+  - B5
+  - B6
+  - B7
+  - B8
+  notes: Editorial crosswalk only; not a certification or authority endorsement claim. Evolving concept-note
+    set; not a fixed edition PDF.
+  reviewed_on: '2026-09-03'
 mapping_counts_by_fidelity:
   ADJACENT: 12
   PROPOSED: 4
   NOT_YET_MAPPED: 6
+mapping_count: 41
+- mapping_id: MAP-AR-NAP-DIGITAL-KE
+  relationship: INFORMED_BY
+  fidelity: PROPOSED
+  from_framework_id: FW-AR-NAP
+  from_node: NAP Educación digital, programación y robótica (domain family)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - B5
+  - B6
+  - B7
+  - B8
+  notes: Proposed editorial bridge only; TRANSLATION_REQUIRED; not CFE endorsement.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-BC-ELF-PLAY-KE
+  relationship: CROSSWALKED_AGAINST
+  fidelity: ADJACENT
+  from_framework_id: FW-CA-BC-ELF-2019
+  from_node: Living inquiries / play and inquiry (birth–8)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K2
+  - K3
+  - K4
+  - K5
+  notes: Editorial crosswalk only; not a Ministry endorsement claim.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-BNCC-COMP-KE
+  relationship: INFORMED_BY
+  fidelity: PROPOSED
+  from_framework_id: FW-BR-BNCC
+  from_node: Competências gerais / pensamento científico-criativo (early grain paraphrase)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Proposed editorial bridge only; TRANSLATION_REQUIRED for clause work; not official alignment.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CAPS-NYM
+  relationship: MAPPED_TO
+  fidelity: NOT_YET_MAPPED
+  from_framework_id: FW-ZA-CAPS
+  from_node: Foundation Phase (subject grain TBD)
+  to_kids_target_id: KE-TARGET-SCIENCE-PRACTICES
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Placeholder edge — subject PDFs not yet pinned.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CCSS-LIT-KE
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-US-CCSS-2010
+  from_node: ELA / literacy anchor skills (K–early primary grain)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Editorial INFORMED_BY only; not a Common Core adoption or certification claim. Prefer ADJACENT over EXACT.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CCSS-MATH-KE
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-US-CCSS-2010
+  from_node: Mathematics practices / early number-pattern sense
+  to_kids_target_id: KE-TARGET-DATA-PATTERNS
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  - B5
+  notes: Editorial INFORMED_BY only; not certification. State adoption varies.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CL-PARV-PLAY-KE
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-CL-PARVULARIA-2019
+  from_node: Educación parvularia núcleos (paraphrase)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K2
+  - K3
+  - K4
+  - K5
+  notes: Editorial INFORMED_BY only; TRANSLATION_REQUIRED for clause work.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-JP-COS-NYM
+  relationship: MAPPED_TO
+  fidelity: NOT_YET_MAPPED
+  from_framework_id: FW-JP-MEXT-COS
+  from_node: Elementary Courses of Study (ICT-related)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K6
+  - K7
+  - B5
+  notes: TRANSLATION_REQUIRED before fidelity upgrade.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-MX-NEM-INQUIRY-KE
+  relationship: INFORMED_BY
+  fidelity: PROPOSED
+  from_framework_id: FW-MX-NEM-2022
+  from_node: Campos formativos / inquiry in community (paraphrase)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K3
+  - K4
+  - K5
+  - K6
+  notes: Proposed editorial bridge only; TRANSLATION_REQUIRED; not SEP endorsement.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-ZA-CODING-NYM
+  relationship: MAPPED_TO
+  fidelity: NOT_YET_MAPPED
+  from_framework_id: FW-ZA-CODING-ROBOTICS
+  from_node: Coding and Robotics (phase TBD)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - B5
+  - B6
+  - B7
+  - B8
+  notes: Awaiting official phase PDF pins.
+  reviewed_on: '2026-09-03'

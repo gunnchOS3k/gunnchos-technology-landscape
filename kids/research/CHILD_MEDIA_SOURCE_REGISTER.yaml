@@ -5,8 +5,13 @@
 
 register_meta:
   register_id: CHILD_MEDIA_SOURCE_REGISTER
-  version: "0.1.0"
+  version: "0.1.1"
   status: DRAFT_INTERNAL
+  audited_on: "2026-09-03"
+  audit_note: >
+    QA pass removed unused vanity sources; fixed non-resolving DOIs/URLs;
+    no source-count inflation. DOI redirects count as resolvable even when
+    publisher bot-walls return 403.
   policy: >
     Primary evidence = peer-reviewed research and professional developmental /
     pediatric bodies. Methodology of children's media may be studied; copyrighted
@@ -18,26 +23,14 @@ sources:
     authority: American Academy of Pediatrics (AAP) Council on Communications and Media
     title: "Media and Young Minds"
     year: 2016
-    citation: "AAP Council on Communications and Media. Media and Young Minds. Pediatrics. 2016;138(5):e20162591."
-    url: "https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
+    citation: "AAP Council on Communications and Media. Media and Young Minds. Pediatrics. 2016;138(5):e20162591. doi:10.1542/peds.2016-2591."
+    url: "https://pubmed.ncbi.nlm.nih.gov/27940791/"
     retrieved_on: "2026-09-03"
     source_type: professional_clinical_policy
     age_relevance: "0–5+; caregiver co-use; limits for infants/toddlers"
     topics: [caregiver_co_use, pacing, attention_vs_learning, child_centered_digital_design, privacy_and_agency]
     allowed_use: paraphrase_and_cite
-    notes: "Print/interaction preferred for very young children; avoid unsupported screen-as-teacher claims."
-
-  - source_id: SRC-AAP-MEDIA-SCHOOL-AGE
-    authority: American Academy of Pediatrics
-    title: "Media Use in School-Aged Children and Adolescents"
-    year: 2016
-    citation: "AAP Council on Communications and Media. Media Use in School-Aged Children and Adolescents. Pediatrics. 2016;138(5):e20162592."
-    url: "https://publications.aap.org/pediatrics/article/138/5/e20162592/60321/Media-Use-in-School-Aged-Children-and-Adolescents"
-    retrieved_on: "2026-09-03"
-    source_type: professional_clinical_policy
-    age_relevance: "5–18"
-    topics: [pacing, autoplay_infinite_engagement, privacy_and_agency, caregiver_co_use]
-    allowed_use: paraphrase_and_cite
+    notes: "Print/interaction preferred for very young children; avoid unsupported screen-as-teacher claims. QA uses PubMed landing (publisher page bot-walls); DOI 10.1542/peds.2016-2591 resolves."
 
   - source_id: SRC-WHO-U5-SEDENTARY
     authority: World Health Organization
@@ -53,7 +46,7 @@ sources:
     notes: "Sedentary screen time recommendations; not a media-design cookbook."
 
   - source_id: SRC-CDC-SERVE-RETURN
-    authority: Harvard Center on the Developing Child (serve-and-return framing widely used by pediatric/early-childhood bodies)
+    authority: Center on the Developing Child at Harvard University (not U.S. CDC; serve-and-return framing widely used by pediatric/early-childhood bodies)
     title: "Serve & Return Interaction Shapes Brain Circuitry"
     year: 2011
     citation: "Center on the Developing Child at Harvard University. Serve & Return Interaction Shapes Brain Circuitry (InBrief)."
@@ -63,30 +56,7 @@ sources:
     age_relevance: "0–5"
     topics: [serve_and_return, caregiver_co_use, pause_response_cadence, participatory_prompts]
     allowed_use: paraphrase_and_cite
-
-  - source_id: SRC-NAEYC-DAP
-    authority: National Association for the Education of Young Children
-    title: "Developmentally Appropriate Practice (DAP) Position Statement"
-    year: 2020
-    citation: "NAEYC. Developmentally Appropriate Practice Position Statement. 2020."
-    url: "https://www.naeyc.org/resources/position-statements/dap"
-    retrieved_on: "2026-09-03"
-    source_type: professional_position
-    age_relevance: "0–8"
-    topics: [child_centered_digital_design, caregiver_co_use, attention_vs_learning]
-    allowed_use: paraphrase_and_cite
-
-  - source_id: SRC-ZERO-TO-THREE-MEDIA
-    authority: ZERO TO THREE
-    title: "Screen Sense resources / early media guidance"
-    year: 2022
-    citation: "ZERO TO THREE. Screen Sense (resource suite). Retrieved 2026-09-03."
-    url: "https://www.zerotothree.org/resource/screen-sense/"
-    retrieved_on: "2026-09-03"
-    source_type: professional_practice_guidance
-    age_relevance: "0–3"
-    topics: [caregiver_co_use, infant_visual_attention, pacing]
-    allowed_use: paraphrase_and_cite
+    notes: "Canonical InBrief page; host intermittently bot-walls automated fetchers (human-resolvable 200 with standard browser UA). Source_id prefix CDC historically means Center on the Developing Child, not U.S. CDC."
 
   - source_id: SRC-FERNALD-CDS
     authority: Peer-reviewed developmental psychology
@@ -117,14 +87,14 @@ sources:
     authority: Peer-reviewed
     title: "The Immediate Impact of Different Types of Television on Young Children's Executive Function"
     year: 2011
-    citation: "Lillard AS, Peterson J. The Immediate Impact of Different Types of Television on Young Children's Executive Function. Pediatrics. 2011;128(4):644-649."
-    url: "https://doi.org/10.1542/peds.2010-1919"
+    citation: "Lillard AS, Peterson J. The Immediate Impact of Different Types of Television on Young Children's Executive Function. Pediatrics. 2011;128(4):644-649. doi:10.1542/peds.2010-1919."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3392065/"
     retrieved_on: "2026-09-03"
     source_type: peer_reviewed
     age_relevance: "preschool"
     topics: [pacing, fast_fantastical_media, attention_vs_learning]
     allowed_use: cite_findings_paraphrase
-    notes: "Single-session EF measures; do not overgeneralize to all educational media."
+    notes: "Single-session EF measures; do not overgeneralize to permanent EF harm or all educational media. QA uses PMC full text for resolvable open access."
 
   - source_id: SRC-ANDERSON-PEMPEK-VIDEO-DEFICIT
     authority: Peer-reviewed review
@@ -167,8 +137,8 @@ sources:
     authority: Peer-reviewed
     title: "The effects of television repertory on children's attention and comprehension (participatory prompt tradition)"
     year: 1999
-    citation: "Crawley AM, Anderson DR, Wilder A, Williams M, Santomero A. Effects of repeated exposures to a single episode of Blue's Clues. Journal of Educational Psychology. 1999;91(4):745-759. (methodology of repetition/participation; do not imitate IP)"
-    url: "https://doi.org/10.1037/0022-0663.91.4.745"
+    citation: "Crawley AM, Anderson DR, Wilder A, Williams M, Santomero A. Effects of repeated exposures to a single episode of Blue's Clues. Journal of Educational Psychology. 1999;91(4):630-643. (methodology of repetition/participation; do not imitate IP)"
+    url: "https://doi.org/10.1037/0022-0663.91.4.630"
     retrieved_on: "2026-09-03"
     source_type: peer_reviewed
     age_relevance: "preschool"
@@ -178,15 +148,16 @@ sources:
 
   - source_id: SRC-HORST-REPETITION
     authority: Peer-reviewed
-    title: "Goodnight book: sleep consolidation improves word learning"
-    year: 2011
-    citation: "Horst JS, Samuelson LK. Fast mapping but poor retention. (and related Horst work on repetition in storybooks). See also: Horst JS. Context and repetition in word learning. Frontiers in Psychology."
-    url: "https://doi.org/10.3388/fpsyg.2013.00715"
+    title: "Context and repetition in word learning"
+    year: 2013
+    citation: "Horst JS. Context and repetition in word learning. Frontiers in Psychology. 2013;4:715."
+    url: "https://doi.org/10.3389/fpsyg.2013.00715"
     retrieved_on: "2026-09-03"
     source_type: peer_reviewed
     age_relevance: "toddler–preschool"
     topics: [repetition, repeated_exposure, memory_word_learning]
     allowed_use: cite_findings_paraphrase
+    notes: "DOI corrected in QA (10.3388→10.3389). Supports repetition/context; not a license for infinite autoplay loops."
 
   - source_id: SRC-BRYANT-RHYME
     authority: Peer-reviewed
@@ -203,15 +174,16 @@ sources:
 
   - source_id: SRC-TELLER-INFANT-VISION
     authority: Peer-reviewed / vision science
-    title: "Infant visual acuity / contrast sensitivity tradition"
-    year: 1979
-    citation: "Teller DY, McDonald MA, Preston K, Sebris SL, Dobson V. Assessment of visual acuity in infants and children. Developmental Medicine & Child Neurology / related Teller acuity literature."
-    url: "https://doi.org/10.1111/j.1469-8749.1986.tb14255.x"
+    title: "Assessment of visual acuity in infants and children: the acuity card procedure"
+    year: 1986
+    citation: "Teller DY, McDonald MA, Preston K, Sebris SL, Dobson V. Assessment of visual acuity in infants and children: the acuity card procedure. Developmental Medicine & Child Neurology. 1986;28(6):779-789."
+    url: "https://pubmed.ncbi.nlm.nih.gov/3721071/"
     retrieved_on: "2026-09-03"
     source_type: peer_reviewed
     age_relevance: "infancy"
     topics: [infant_visual_attention, color_contrast]
     allowed_use: cite_findings_paraphrase
+    notes: "QA fixed non-resolving DOI (tb14255→tb03932 lineage) and year (1979→1986). PubMed landing used for resolvability; supports contrast-limited early acuity, not brand-color neuroscience."
 
   - source_id: SRC-BANKS-SALAPATEK
     authority: Peer-reviewed synthesis
@@ -224,6 +196,7 @@ sources:
     age_relevance: "infancy"
     topics: [infant_visual_attention, color_contrast, shape_complexity]
     allowed_use: cite_findings_paraphrase
+    notes: "Book-level Wiley DOI redirects (resolvable); chapter is synthesis, not a single RCT. Prefer contrast/pattern implications over precise complexity formulas."
 
   - source_id: SRC-MAYER-CLUTTER
     authority: Peer-reviewed educational psychology
@@ -274,11 +247,11 @@ sources:
     allowed_use: paraphrase_and_cite
 
   - source_id: SRC-UNICEF-DIGITAL
-    authority: UNICEF
-    title: "Children's rights in the digital environment guidance"
+    authority: UN Committee on the Rights of the Child (CRC) / UNICEF dissemination context
+    title: "General Comment No. 25 (2021) — children's rights in relation to the digital environment"
     year: 2021
-    citation: "UNICEF. Policy guidance / General Comment No. 25 related resources on children's rights in relation to the digital environment."
-    url: "https://www.unicef.org/child-rights-convention/general-comment-no-25-childrens-rights-digital-environment"
+    citation: "UN Committee on the Rights of the Child. General Comment No. 25 (2021) on children's rights in relation to the digital environment. UN Doc CRC/C/GC/25."
+    url: "https://digitallibrary.un.org/record/3897072"
     retrieved_on: "2026-09-03"
     source_type: international_rights_guidance
     age_relevance: "0–18"

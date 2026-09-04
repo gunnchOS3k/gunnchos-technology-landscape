@@ -1,5 +1,5 @@
-# ONE TAP pilot traceability — DEVELOPMENTAL_PROTOTYPE
-# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · editorial standards wire only
+# ONE TAP review-prototype traceability
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · editorial ADJACENT crosswalk only
 
 meta:
   pilot: ONE_TAP
@@ -7,336 +7,484 @@ meta:
   adult_source_chapter: CH02
   rewrite_method: developmental_precursor_rewrite
   child_validation: NONE
+  claim_ceiling: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  standards_relationship: CROSSWALKED_AGAINST
+  character_cast_option: A_Signal_Crew_provisional
 spreads:
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S01
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Meet the problem.
-  developmental_domain: STORY
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S01
-    atlas_mapping_ids: &id001
-    - MAP-ELOF-PLAY-KE
-    - MAP-EYFS-PLAY-KE
-    - MAP-EYLF-PLAY-KE
-    - MAP-TEWHARIKI-PLAY-KE
-    - MAP-NEL-PLAY-KE
-    - MAP-ON-KG-PLAY-KE
-    - MAP-OECD-AGENCY-KE
-    - MAP-NCF-PLAY-KE
-    - MAP-CSTA2026-ALGO-KE
-    - MAP-AC-DT-KE
-    atlas_kids_targets: &id002
-    - KE-TARGET-PLAY-INQUIRY
-    - KE-TARGET-ALGO-FOUNDATIONS
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S01
-  word_count_estimate: 7
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S02
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: List noticed events.
-  developmental_domain: NOTICE
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S02
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S02
-  word_count_estimate: 7
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S03
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Name parts.
-  developmental_domain: NAME
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S03
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S03
-  word_count_estimate: 6
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S04
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Connect outside→inside.
-  developmental_domain: CONNECT
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S04
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S04
-  word_count_estimate: 8
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S05
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Predict order.
-  developmental_domain: PREDICT
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S05
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S05
-  word_count_estimate: 8
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S06
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Sequence practice.
-  developmental_domain: TRY
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S06
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S06
-  word_count_estimate: 6
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S07
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Explain sensing.
-  developmental_domain: EXPLAIN
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S07
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S07
-  word_count_estimate: 9
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S08
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Sorting/sequencing.
-  developmental_domain: MAKE
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S08
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S08
-  word_count_estimate: 6
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S09
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Agency to stop.
-  developmental_domain: SAFE + FAIR
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S09
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S09
-  word_count_estimate: 10
-- page_or_spread_id: ONE-TAP-PRESCHOOL-S10
-  concept_ids:
-  - KCON-CH02-ONE-TAP
-  learning_goal: Teach-back.
-  developmental_domain: TEACH
-  standards:
-  - status: ADJACENT
-    wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S10
-    atlas_mapping_ids: *id001
-    atlas_kids_targets: *id002
-    note: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
-      ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
-      ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
-  evidence_rules:
-  - no_fabricated_child_validation
-  - observation_over_diagnosis
-  visual_rules:
-  - one_focal_action
-  - low_clutter
-  - color_not_sole_encoding
-  - style_neutral_prototype
-  audio_rules:
-  - caregiver_read_aloud_optional
-  - no_mandatory_audio
-  - no_artificial_squeak_claims
-  safety_rules:
-  - easy_stop
-  - caregiver_mediation
-  - no_child_data_collection
-  - no_dark_patterns
-  figure_id: FIG-ONE-TAP-PRESCHOOL-S10
-  word_count_estimate: 8
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S01
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Meet Mira and Bolt; set the tiny problem."
+    developmental_domain: "STORY"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S01
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S01
+    word_count_estimate: 15
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S02
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "List noticed events in order with gestures."
+    developmental_domain: "NOTICE"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S02
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S02
+    word_count_estimate: 12
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S03
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Count three parts on fingers."
+    developmental_domain: "NAME"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S03
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S03
+    word_count_estimate: 9
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S04
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Connect outside parts to an “inside helpers” idea."
+    developmental_domain: "CONNECT"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S04
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S04
+    word_count_estimate: 15
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S05
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Predict order before trying."
+    developmental_domain: "PREDICT"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S05
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S05
+    word_count_estimate: 8
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S06
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Act the sequence with body gestures."
+    developmental_domain: "TRY"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S06
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S06
+    word_count_estimate: 10
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S07
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Explain sensing in plain words."
+    developmental_domain: "EXPLAIN"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S07
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S07
+    word_count_estimate: 13
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S08
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Sorting and sequencing with cards or drawings."
+    developmental_domain: "MAKE"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S08
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S08
+    word_count_estimate: 14
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S09
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Model agency to stop."
+    developmental_domain: "SAFE + FAIR"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S09
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S09
+    word_count_estimate: 12
+  - page_or_spread_id: ONE-TAP-PRESCHOOL-S10
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Optional teach-back."
+    developmental_domain: "TEACH"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-ELOF-PLAY-KE
+          - MAP-EYFS-PLAY-KE
+          - MAP-EYLF-PLAY-KE
+          - MAP-TEWHARIKI-PLAY-KE
+          - MAP-NEL-PLAY-KE
+          - MAP-ON-KG-PLAY-KE
+          - MAP-OECD-AGENCY-KE
+          - MAP-NCF-PLAY-KE
+        atlas_kids_targets:
+          - KE-TARGET-PLAY-INQUIRY
+        wire_registry_key: STD-WIRE-ONE-TAP-PRESCHOOL-S10
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-PRESCHOOL; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-PRESCHOOL-S10
+    word_count_estimate: 12
+gaps:
+  - status: TRANSLATION_REQUIRED
+    note: "Some atlas-adjacent jurisdictions remain TRANSLATION_REQUIRED at atlas level; ONE TAP does not invent EXACT maps for those rows."
+  - status: VERSION_UNCLEAR
+    note: "Where atlas sources mark SOURCE_VERSION_UNCLEAR, pilot keeps ADJACENT only."
+  - status: NO_MAP
+    note: "No EXACT official kids ONE TAP competency exists; do not fabricate EXACT status."
