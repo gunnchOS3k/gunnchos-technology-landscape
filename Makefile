@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check
 
 setup:
 	python3 -m venv .venv
@@ -200,6 +200,10 @@ all: validate test preview pdf epub
 # TeX-free subset: validation, tests, and HTML only.
 # Hosted GitHub Actions provisions TeX/librsvg and additionally runs EPUB + PDF.
 ci: validate test preview
+
+# Kids Edition: child-media evidence/source registers + design artifact presence.
+kids-media-evidence-check:
+	$(PYTHON) scripts/validate_kids_media_evidence.py
 
 clean:
 	rm -rf preview _book .pytest_cache __pycache__

@@ -1,0 +1,142 @@
+# Kids edition format matrix by age band.
+# Board books: do not assume KDP can produce true infant board books.
+
+matrix_meta:
+  version: "0.1.0"
+  status: DRAFT_INTERNAL
+  retrieved_on: "2026-09-03"
+  notes:
+    - "KDP paperback/hardcover ≠ infant board book stock/binding."
+    - "EXTERNAL_PRINT_VENDOR_REQUIRED where true board book needed."
+
+bands:
+  - age_band: KIDS-BABY
+    print_format: board_book
+    trim: "6x6_to_8x8_in_square_typical"
+    binding: board_book_binding
+    color: full_color
+    bleed: required
+    digital_format: caregiver_PDF
+    reflowable_or_fixed: fixed_if_any_picture_epub_else_pdf
+    audio_role: optional_caregiver_readaloud
+    caregiver_guide: required_micro_prompts_plus_PDF
+    educator_guide: not_primary
+    activity_pack: none_or_household_cause_effect
+    safety_constraints:
+      - print_first
+      - no_solo_digital
+      - choke_safe_vendor_spec
+      - no_child_data_collection
+    retailer_feasibility:
+      kdp_true_board_book: EXTERNAL_PRINT_VENDOR_REQUIRED
+      kdp_paperback_substitute: "possible but NOT true board; label honestly"
+      apple_books_google: optional_caregiver_pdf_epub_later
+    library_feasibility: high_if_board_vendor_quality
+
+  - age_band: KIDS-TODDLER
+    print_format: board_or_picture_book
+    trim: "8x8_to_9x9_in"
+    binding: board_preferred_or_heavy_picture
+    color: full_color
+    bleed: required
+    digital_format: caregiver_PDF_optional_fixed_epub
+    reflowable_or_fixed: fixed_layout_if_spatial
+    audio_role: optional_co_use
+    caregiver_guide: required
+    educator_guide: optional
+    activity_pack: household_try_its
+    safety_constraints:
+      - print_first
+      - co_use_if_digital
+      - autoplay_off
+    retailer_feasibility:
+      kdp_true_board_book: EXTERNAL_PRINT_VENDOR_REQUIRED
+      kdp_picture_paperback: feasible_with_honest_format_label
+    library_feasibility: high
+
+  - age_band: KIDS-PRESCHOOL
+    print_format: picture_activity_book
+    trim: "8.5x11_or_8x8"
+    binding: paperback_or_sewn_picture
+    color: full_color
+    bleed: required
+    digital_format: PDF_and_optional_fixed_EPUB
+    reflowable_or_fixed: fixed_layout_preferred_for_picture
+    audio_role: optional
+    caregiver_guide: required
+    educator_guide: optional
+    activity_pack: in_book_activities
+    safety_constraints:
+      - no_dark_patterns
+      - easy_exit_if_digital
+    retailer_feasibility:
+      kdp_paperback: feasible
+      kdp_hardcover: feasible
+      true_board: EXTERNAL_PRINT_VENDOR_REQUIRED_if_selected
+    library_feasibility: high
+
+  - age_band: KIDS-PREK
+    print_format: picture_activity_plus_guides
+    trim: "8.5x11_or_8x10"
+    binding: paperback
+    color: full_color
+    bleed: required
+    digital_format: PDF_EPUB_caregiver_educator
+    reflowable_or_fixed: fixed_for_picture_reflowable_for_guide_text
+    audio_role: optional
+    caregiver_guide: required
+    educator_guide: required_or_strongly_recommended
+    activity_pack: yes
+    safety_constraints:
+      - co_use_default
+      - no_child_accounts_with_pii
+    retailer_feasibility:
+      kdp_paperback: feasible
+      educator_pdf_channel: direct_or_school
+    library_feasibility: high
+
+  - age_band: KIDS-ELEM1
+    print_format: illustrated_reader_plus_activity_pack
+    trim: "6x9_to_8.5x11"
+    binding: paperback
+    color: full_color_or_spot_plus_bw_activities
+    bleed: as_needed
+    digital_format: reflowable_EPUB_plus_PDF
+    reflowable_or_fixed: reflowable_preferred
+    audio_role: optional_not_required_for_access
+    caregiver_guide: recommended
+    educator_guide: recommended
+    activity_pack: required
+    safety_constraints:
+      - privacy_lessons_age_appropriate
+      - captions_if_av
+    retailer_feasibility:
+      kdp_paperback: feasible
+      ebook_stores: feasible_with_a11y_pass
+    library_feasibility: high
+
+  - age_band: KIDS-ELEM2
+    print_format: junior_reference_plus_labs_portfolio
+    trim: "6x9_to_7x10"
+    binding: paperback
+    color: color_figures_bw_body_ok
+    bleed: figures_as_needed
+    digital_format: reflowable_EPUB_PDF_HTML_preview
+    reflowable_or_fixed: reflowable
+    audio_role: optional
+    caregiver_guide: optional_short
+    educator_guide: recommended
+    activity_pack: labs_plus_portfolio_templates
+    safety_constraints:
+      - no_unnecessary_telemetry
+      - agency_and_fairness_content
+    retailer_feasibility:
+      kdp_paperback: feasible
+      ebook_stores: feasible
+    library_feasibility: high
+
+external_vendor_gates:
+  - gate_id: BOARD_BOOK_VENDOR
+    applies_to: [KIDS-BABY, KIDS-TODDLER]
+    status: EXTERNAL_PRINT_VENDOR_REQUIRED
+    reason: "True board-book substrates/bindings are outside typical KDP paperback/hardcover capabilities."
