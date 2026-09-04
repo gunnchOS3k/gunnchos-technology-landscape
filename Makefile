@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck
 
 setup:
 	python3 -m venv .venv
@@ -134,6 +134,10 @@ full31-claim-sources-check:
 full31-publication-qa:
 	$(PYTHON) scripts/publication_qa_full31.py --pdf-log /tmp/full31-pdf-render.log
 
+# Official W3C EPUBCheck (pinned; cached under tools/cache/). Not an a11y certification.
+full31-epubcheck:
+	$(PYTHON) scripts/run_epubcheck.py
+
 full31-report:
 	$(PYTHON) scripts/merge_full31_registry.py
 	$(PYTHON) scripts/aggregate_full31_waike.py
@@ -149,9 +153,11 @@ full31-draft-check:
 
 full31-assets-check:
 	$(PYTHON) scripts/validate_full31_assets.py --check
+	$(PYTHON) scripts/validate_figure_truth_drift.py --check
 
 full31-reference-check:
 	$(PYTHON) scripts/validate_full31_assets.py --check
+	$(PYTHON) scripts/validate_figure_truth_drift.py --check
 	FULL31_DRAFT_CHECK_MODE=strict $(MAKE) full31-draft-check
 
 full31-inventory:
@@ -162,7 +168,11 @@ full31-terminology-check:
 	$(PYTHON) scripts/validate_terminology.py
 
 # Rebuild/check central QUALITY_ISSUES.yaml from wave ledgers.
+# Default is --check-only so CI does not dirty provenance hashes.
 full31-quality-audit:
+	$(PYTHON) scripts/full31_quality_audit.py --check-only
+
+full31-quality-audit-write:
 	$(PYTHON) scripts/full31_quality_audit.py
 
 # Continuity / duplication audit aid (writes ledger + identity matrix).

@@ -1,5 +1,5 @@
 ---
-status: working_draft
+status: draft
 chapter_id: CH12
 chapter_number: 12
 author: "Edmund Gunn, Jr."
@@ -463,8 +463,8 @@ See also Chapter 2 (process/thread/scheduler naming), Chapter 6 (CPU / parallel 
 ### FIG-CH12-004 — OS-monitor before/during (fixture)
 
 - **File:** `figures/architecture/fig-ch12-004-monitor-snapshots.svg`
-- **Truth:** illustrative classroom fixture from LAB-CMS-001 before/during monitor readings; classroom n=1 (not a product SLO; separate CE measured-plate asset remains blocked)
-- **A11y:** `figures/preproduction/accessibility/fig-ch12-004.yaml`
+- **Truth:** illustrative classroom fixture (n=1) from LAB-CMS-001 before/during monitor readings (not product evidence; separate CE measured-plate asset remains blocked)
+- **A11y:** `figures/accessibility/fig-ch12-004.yaml`
 
 Related CE-3 maps (optional cross-read, not required embeds): `figures/preproduction/ce-03/fig-ce3-001.svg`, `fig-ce3-003.svg`.
 

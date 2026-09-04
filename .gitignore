@@ -18,6 +18,7 @@ dist/
 htmlcov/
 tools/quarto/
 tools/quarto.tgz
+tools/cache/
 
 /.quarto/
 

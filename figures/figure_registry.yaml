@@ -297,6 +297,7 @@ figures:
   path: figures/architecture/fig-ch12-004-monitor-snapshots.svg
   accessibility: figures/accessibility/fig-ch12-004.yaml
   status: illustrative
+  truth_classification: illustrative-classroom-fixture
   chapter: CH12
 - figure_id: FIG-CH15-001
   id: FIG-CH15-001

@@ -341,37 +341,49 @@ def write_form_stubs(forms_dir: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--write", action="store_true", default=True)
+    parser.add_argument(
+        "--content-sha",
+        default="",
+        help=(
+            "verified_candidate_content_sha: commit containing converged manuscript/"
+            "assets/QA before this provenance pin. Required for non-self-referential freeze."
+        ),
+    )
     args = parser.parse_args()
     if not args.write:
         return 0
 
     qi_path = QUALITY / "QUALITY_ISSUES.yaml"
     if not qi_path.exists():
-        subprocess.check_call([sys.executable, "scripts/build_quality_issues_registry.py", "--write"], cwd=ROOT)
+        subprocess.check_call(
+            [sys.executable, "scripts/build_quality_issues_registry.py", "--write"],
+            cwd=ROOT,
+        )
     qi = load_yaml(qi_path) or {}
 
+    content_sha = (args.content_sha or "").strip() or git_sha()
+    # SOURCE_COMMIT.txt is explicitly the verified candidate content SHA (not metadata HEAD).
     OUT.mkdir(parents=True, exist_ok=True)
-    sha = git_sha()
-    (OUT / "SOURCE_COMMIT.txt").write_text(sha + "\n", encoding="utf-8")
+    (OUT / "SOURCE_COMMIT.txt").write_text(content_sha + "\n", encoding="utf-8")
 
     ch_man = chapter_manifest()
-    (OUT / "CHAPTER_MANIFEST.yaml").write_text(dump_yaml(ch_man), encoding="utf-8")
+    ch_man_text = dump_yaml(ch_man)
+    (OUT / "CHAPTER_MANIFEST.yaml").write_text(ch_man_text, encoding="utf-8")
 
-    bib_candidates = [
-        ROOT / "publication/full31/WORKING_BIBLIOGRAPHY.bib",
-        ROOT / "book/references/references.bib",
-    ]
-    bib = next((p for p in bib_candidates if p.exists()), bib_candidates[-1])
+    bib = ROOT / "book/references/references.bib"
+    bib_hash = sha256_file(bib) if bib.exists() else "MISSING"
     (OUT / "BIBLIOGRAPHY_HASH.txt").write_text(
-        f"{bib.relative_to(ROOT)}  sha256:{sha256_file(bib)}\n", encoding="utf-8"
+        f"{bib.relative_to(ROOT)}  sha256:{bib_hash}\n", encoding="utf-8"
     )
 
     fig_man = figure_manifest()
-    (OUT / "FIGURE_MANIFEST.yaml").write_text(dump_yaml(fig_man), encoding="utf-8")
+    fig_man_text = dump_yaml(fig_man)
+    (OUT / "FIGURE_MANIFEST.yaml").write_text(fig_man_text, encoding="utf-8")
 
     lab_reg = ROOT / "labs/lab_registry.yaml"
+    lab_hash = sha256_file(lab_reg) if lab_reg.exists() else "MISSING"
     (OUT / "LAB_REGISTRY_HASH.txt").write_text(
-        f"{lab_reg.relative_to(ROOT)}  sha256:{sha256_file(lab_reg) if lab_reg.exists() else 'MISSING'}\n",
+        f"{lab_reg.relative_to(ROOT)}  sha256:{lab_hash}\n",
         encoding="utf-8",
     )
 
@@ -379,28 +391,86 @@ def main() -> int:
     term = ROOT / "book/terminology.yaml"
     ghash = sha256_file(gloss) if gloss.exists() else "MISSING"
     thash = sha256_file(term) if term.exists() else "MISSING"
+    combined = hashlib.sha256()
+    if gloss.exists():
+        combined.update(gloss.read_bytes())
+    combined.update(b"\n")
+    if term.exists():
+        combined.update(term.read_bytes())
+    gloss_term_hash = combined.hexdigest()
     (OUT / "GLOSSARY_TERMINOLOGY_HASH.txt").write_text(
-        f"glossary/glossary.yaml  sha256:{ghash}\nbook/terminology.yaml  sha256:{thash}\n",
+        f"glossary/glossary.yaml  sha256:{ghash}\n"
+        f"book/terminology.yaml  sha256:{thash}\n"
+        f"combined_sha256:{gloss_term_hash}\n",
         encoding="utf-8",
     )
 
     waike_sha, waike_note = live_waike_sha()
+    if "live" in waike_note.lower() and "fail" not in waike_note.lower():
+        waike_line = (
+            "WAIKE source SHA verified by integration:\n"
+            f"{waike_sha}\n"
+            f"mode: {waike_note}\n"
+        )
+    else:
+        waike_line = (
+            "recorded accepted-main WAIKE SHA:\n"
+            f"{waike_sha}\n"
+            "external live verification unavailable in this runtime\n"
+            f"detail: {waike_note}\n"
+        )
     (OUT / "WAIKE_SOURCE_SHA.txt").write_text(
-        f"repo: gunnchOS3k/waike-research-ops\nref: main\nsha: {waike_sha}\nnote: {waike_note}\n",
+        f"repo: gunnchOS3k/waike-research-ops\nref: main\n{waike_line}",
         encoding="utf-8",
     )
 
-    (OUT / "DEVICE_QUARTET_PHYSICAL_PENDING.md").write_text(physical_pending_doc(), encoding="utf-8")
+    (OUT / "DEVICE_QUARTET_PHYSICAL_PENDING.md").write_text(
+        physical_pending_doc(), encoding="utf-8"
+    )
     (OUT / "KNOWN_ISSUES_SUMMARY.md").write_text(known_issues_summary(qi), encoding="utf-8")
-    (OUT / "ARTIFACT_MANIFEST.yaml").write_text(dump_yaml(artifact_manifest()), encoding="utf-8")
+    art_text = dump_yaml(artifact_manifest())
+    (OUT / "ARTIFACT_MANIFEST.yaml").write_text(art_text, encoding="utf-8")
     (OUT / "REVIEW_ROLE_PLAN.md").write_text(review_role_plan(), encoding="utf-8")
     write_form_stubs(OUT / "forms")
 
-    # optional production state doc only if criteria met
+    qi_hash = sha256_file(qi_path) if qi_path.exists() else "MISSING"
+    provenance = {
+        "schema_version": 1,
+        "candidate_id": "FULL31-PRE-REVIEW-001",
+        "verified_candidate_content_sha": content_sha,
+        "accepted_main_base_sha": ACCEPTED_MAIN,
+        "generated_at": date.today().isoformat(),
+        "human_validation_status": "NOT_RUN",
+        "gate_3_status": "READER_EVIDENCE_PENDING",
+        "publication_status": "NOT_PUBLICATION_READY",
+        "waike_source_sha": waike_sha,
+        "waike_verification_mode": waike_note,
+        "chapter_manifest_sha256": sha256_text(ch_man_text),
+        "bibliography_sha256": bib_hash,
+        "figure_manifest_sha256": sha256_text(fig_man_text),
+        "lab_registry_sha256": lab_hash,
+        "glossary_terminology_sha256": gloss_term_hash,
+        "quality_issues_sha256": qi_hash,
+        "artifact_manifest_sha256": sha256_text(art_text),
+        "source_commit_policy": (
+            "SOURCE_COMMIT.txt and README verified_candidate_content_sha both mean "
+            "the commit containing converged manuscript/assets/QA before the final "
+            "provenance/report-only pin commit. They intentionally differ from final HEAD "
+            "when only provenance metadata is pinned afterward."
+        ),
+    }
+    (OUT / "CANDIDATE_PROVENANCE.yaml").write_text(
+        dump_yaml(provenance), encoding="utf-8"
+    )
+
     summary = qi.get("summary") or {}
+    open_auto = sum(
+        1 for i in (qi.get("issues") or []) if i.get("fix_status") == "OPEN"
+    )
     ready = (
         summary.get("open_blocker", 1) == 0
         and summary.get("open_major", 1) == 0
+        and open_auto == 0
         and ch_man.get("count") == 31
         and all(c.get("exists") for c in ch_man.get("chapters") or [])
     )
@@ -416,11 +486,12 @@ def main() -> int:
                     "",
                     "Non-gate production state only. **Does not change Gate 3.**",
                     "",
-                    f"- Source commit: `{sha}`",
+                    f"- verified_candidate_content_sha: `{content_sha}`",
                     f"- Accepted main base: `{ACCEPTED_MAIN}`",
                     f"- Candidate package: `publication/review-candidates/FULL31-PRE-REVIEW-001/`",
                     f"- Open BLOCKER: {summary.get('open_blocker')}",
                     f"- Open MAJOR: {summary.get('open_major')}",
+                    f"- Open automatable: {open_auto}",
                     "- HUMAN_VALIDATED: 0/31",
                     "- PUBLICATION_READY: 0/31",
                     "- GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING",
@@ -432,8 +503,17 @@ def main() -> int:
             encoding="utf-8",
         )
     elif state_path.exists():
-        # do not claim readiness if gate fails
         state_path.unlink()
+
+    if "live" in waike_note.lower() and "fail" not in waike_note.lower():
+        waike_readme = (
+            f"- WAIKE source SHA verified by integration: `{waike_sha}`"
+        )
+    else:
+        waike_readme = (
+            f"- recorded accepted-main WAIKE SHA: `{waike_sha}` "
+            "(external live verification unavailable in this runtime)"
+        )
 
     readme = "\n".join(
         [
@@ -447,15 +527,18 @@ def main() -> int:
             "This package freezes **automated** convergence inputs for later human review recruitment.",
             "It is **not** `FULL31-REVIEW-R1`, **not** Gate 3 evidence, and **not** publication-ready proof.",
             "",
-            f"- Source commit: `{sha}`",
+            f"- verified_candidate_content_sha: `{content_sha}`",
+            f"- SOURCE_COMMIT.txt: same verified candidate content SHA (not the metadata-only pin HEAD)",
             f"- Generated on: {date.today().isoformat()}",
             f"- QUALITY_ISSUES open BLOCKER: {summary.get('open_blocker')}",
             f"- QUALITY_ISSUES open MAJOR: {summary.get('open_major')}",
-            f"- WAIKE main SHA: `{waike_sha}` ({waike_note})",
+            f"- QUALITY_ISSUES open automatable: {open_auto}",
+            waike_readme,
             "",
             "## Contents",
             "",
-            "- `SOURCE_COMMIT.txt`",
+            "- `CANDIDATE_PROVENANCE.yaml`",
+            "- `SOURCE_COMMIT.txt` (= verified_candidate_content_sha)",
             "- `CHAPTER_MANIFEST.yaml`",
             "- `BIBLIOGRAPHY_HASH.txt`",
             "- `FIGURE_MANIFEST.yaml`",
@@ -479,7 +562,7 @@ def main() -> int:
 
     print("build_full31_pre_review_candidate:")
     print(f"  wrote: {OUT.relative_to(ROOT)}")
-    print(f"  source_commit: {sha}")
+    print(f"  verified_candidate_content_sha: {content_sha}")
     print(f"  waike_sha: {waike_sha}")
     print(f"  pre_review_state_doc: {ready}")
     return 0

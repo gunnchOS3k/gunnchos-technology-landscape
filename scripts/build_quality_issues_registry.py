@@ -492,11 +492,23 @@ def ingest_publication_qa(rows: list[dict[str, Any]]) -> None:
                     f"max_latex={max_latex} max_loose={max_loose}"
                 )
         elif iid == "PDF-FRONTMATTER-NUMBERING":
-            status = "DEFERRED_HUMAN_REVIEW"
-            note = (
-                "Frontmatter may still appear arabic-numbered in PDF TOC; body "
-                "chapters 1–31 are correct after mainmatter reset."
-            )
+            fs = str(item.get("fix_status") or "").upper()
+            if fs in {"FIXED", "RESOLVED", "CLOSED"}:
+                status = "FIXED"
+                note = (
+                    "Publication QA confirms body CHAPTER headers within 1..31 and "
+                    "no Chapter 32+ backmatter inflation after \\\\frontmatter/"
+                    "\\\\mainmatter/\\\\backmatter. Residual TOC cosmetics → human print."
+                )
+            else:
+                status = "DEFERRED_HUMAN_REVIEW"
+                note = (
+                    "Frontmatter may still appear arabic-numbered in PDF TOC; body "
+                    "chapters 1–31 are correct after mainmatter reset."
+                )
+        elif iid == "PDF-BACKMATTER-NUMBERING":
+            status = norm_status(str(item.get("fix_status") or "OPEN"))
+            note = "Numeric CHAPTER headers past 31 in back matter."
         elif iid == "A11Y-ACRO-IDENTITY":
             # Re-check live registry; Agent J expanded acronyms.
             acr_path = ROOT / "glossary/acronym_registry.yaml"

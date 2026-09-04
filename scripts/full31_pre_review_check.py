@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Validate Full31 pre-human-review candidate readiness.
+"""Validate Full31 pre-human-review candidate readiness + provenance freeze.
 
 Requires:
-  - QUALITY_ISSUES.yaml present with open BLOCKER=0 and open MAJOR=0
-  - review-candidate package present with required manifests
+  - QUALITY_ISSUES.yaml with open BLOCKER=0, open MAJOR=0, OPEN automatable=0
+  - review-candidate package with consistent verified_candidate_content_sha
   - Gate 3 tree unchanged vs accepted main
-  - No fabricated human validation claims in candidate package
+  - No fabricated human validation claims
+  - Manifest hashes match live sources
+  - Files changed after verified content SHA limited to provenance allowlist
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
 import subprocess
 import sys
@@ -18,6 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 QUALITY_ISSUES = ROOT / "publication/full31/quality/QUALITY_ISSUES.yaml"
 CANDIDATE = ROOT / "publication/review-candidates/FULL31-PRE-REVIEW-001"
+PROVENANCE = CANDIDATE / "CANDIDATE_PROVENANCE.yaml"
 ACCEPTED_MAIN = "76bee2e67c35ff445f46c83af30809e5b307f06e"
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -26,6 +30,7 @@ from yaml_util import load_yaml  # noqa: E402
 REQUIRED_CANDIDATE_FILES = [
     "README.md",
     "SOURCE_COMMIT.txt",
+    "CANDIDATE_PROVENANCE.yaml",
     "CHAPTER_MANIFEST.yaml",
     "BIBLIOGRAPHY_HASH.txt",
     "FIGURE_MANIFEST.yaml",
@@ -37,6 +42,27 @@ REQUIRED_CANDIDATE_FILES = [
     "ARTIFACT_MANIFEST.yaml",
     "REVIEW_ROLE_PLAN.md",
 ]
+
+# Only these paths may change after verified_candidate_content_sha.
+PROVENANCE_ALLOWLIST_PREFIXES = (
+    "publication/review-candidates/FULL31-PRE-REVIEW-001/",
+    "publication/full31/FULL31_PRE_HUMAN_REVIEW_CANDIDATE.md",
+    "publication/full31/quality/EPUBCHECK_RESULT.json",
+    "publication/full31/quality/PUBLICATION_QA.yaml",
+    "publication/full31/quality/ACCESSIBILITY_QA.md",
+    "publication/full31/quality/FIGURE_REPORT.md",
+    "publication/full31/FULL31_MANUSCRIPT_INVENTORY.md",
+    "publication/full31/FULL31_MANUSCRIPT_INVENTORY.yaml",
+    "publication/full31/FULL31_PROGRESS_REPORT.md",
+)
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def gate3_unchanged() -> tuple[bool, str]:
@@ -53,22 +79,59 @@ def gate3_unchanged() -> tuple[bool, str]:
     return True, "empty diff vs accepted main"
 
 
+def git_ok(sha: str) -> bool:
+    try:
+        subprocess.check_output(
+            ["git", "cat-file", "-e", f"{sha}^{{commit}}"], cwd=ROOT, stderr=subprocess.DEVNULL
+        )
+        return True
+    except subprocess.CalledProcessError:
+        return False
+
+
+def is_ancestor(anc: str, tip: str) -> bool:
+    try:
+        subprocess.check_output(
+            ["git", "merge-base", "--is-ancestor", anc, tip],
+            cwd=ROOT,
+            stderr=subprocess.DEVNULL,
+        )
+        return True
+    except subprocess.CalledProcessError:
+        return False
+
+
+def files_changed_after(content_sha: str, tip: str = "HEAD") -> list[str]:
+    out = subprocess.check_output(
+        ["git", "diff", "--name-only", f"{content_sha}..{tip}"],
+        cwd=ROOT,
+        text=True,
+    )
+    return [ln.strip() for ln in out.splitlines() if ln.strip()]
+
+
+def extract_sha_from_readme(text: str) -> str | None:
+    patterns = [
+        r"verified_candidate_content_sha:\s*`?([0-9a-f]{40})`?",
+        r"Verified candidate content SHA:\s*`?([0-9a-f]{40})`?",
+        r"Source commit:\s*`?([0-9a-f]{40})`?",
+    ]
+    for pat in patterns:
+        m = re.search(pat, text, flags=re.I)
+        if m:
+            return m.group(1)
+    return None
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--require-candidate",
-        action="store_true",
-        default=True,
-        help="Require FULL31-PRE-REVIEW-001 package (default)",
-    )
-    parser.add_argument(
-        "--allow-missing-candidate",
-        action="store_true",
-        help="Only enforce QUALITY_ISSUES open BLOCKER/MAJOR gates",
-    )
+    parser.add_argument("--allow-missing-candidate", action="store_true")
     args = parser.parse_args()
     errors: list[str] = []
 
+    print("full31_pre_review_check:")
+
+    open_automatable = 0
     if not QUALITY_ISSUES.exists():
         errors.append(f"missing {QUALITY_ISSUES.relative_to(ROOT)}")
     else:
@@ -85,39 +148,154 @@ def main() -> int:
             for i in issues
             if i.get("severity") == "MAJOR" and i.get("fix_status") == "OPEN"
         )
-        # prefer live recount over stale summary
-        print("full31_pre_review_check:")
+        open_automatable = sum(1 for i in issues if i.get("fix_status") == "OPEN")
         print(f"  open_blocker: {open_blocker} (summary={summary.get('open_blocker')})")
         print(f"  open_major: {open_major} (summary={summary.get('open_major')})")
+        print(f"  open_automatable: {open_automatable}")
         if open_blocker:
             errors.append(f"open BLOCKER count is {open_blocker}, require 0")
-            for i in issues:
-                if i.get("severity") == "BLOCKER" and i.get("fix_status") == "OPEN":
-                    errors.append(f"  BLOCKER {i.get('issue_id')}: {i.get('finding')}")
         if open_major:
             errors.append(f"open MAJOR count is {open_major}, require 0")
+        if open_automatable:
             for i in issues:
-                if i.get("severity") == "MAJOR" and i.get("fix_status") == "OPEN":
-                    errors.append(f"  MAJOR {i.get('issue_id')}: {str(i.get('finding'))[:160]}")
+                if i.get("fix_status") == "OPEN":
+                    errors.append(
+                        f"OPEN issue remains: {i.get('issue_id')} "
+                        f"({i.get('severity')}) — close or defer explicitly"
+                    )
 
     ok, msg = gate3_unchanged()
     print(f"  gate3_diff: {msg}")
     if not ok:
         errors.append(msg)
 
-    require_cand = args.require_candidate and not args.allow_missing_candidate
-    if require_cand:
+    if not args.allow_missing_candidate:
         if not CANDIDATE.is_dir():
             errors.append(f"missing candidate dir {CANDIDATE.relative_to(ROOT)}")
         else:
             for name in REQUIRED_CANDIDATE_FILES:
                 if not (CANDIDATE / name).exists():
                     errors.append(f"missing candidate file {name}")
-            readme = (CANDIDATE / "README.md").read_text(encoding="utf-8") if (CANDIDATE / "README.md").exists() else ""
+
+            readme = (
+                (CANDIDATE / "README.md").read_text(encoding="utf-8")
+                if (CANDIDATE / "README.md").exists()
+                else ""
+            )
+            source_txt = (
+                (CANDIDATE / "SOURCE_COMMIT.txt").read_text(encoding="utf-8").strip()
+                if (CANDIDATE / "SOURCE_COMMIT.txt").exists()
+                else ""
+            )
+            prov = load_yaml(PROVENANCE) if PROVENANCE.exists() else {}
+            content_sha = str(prov.get("verified_candidate_content_sha") or "").strip()
+            readme_sha = extract_sha_from_readme(readme) or ""
+
+            print(f"  verified_candidate_content_sha: {content_sha or 'MISSING'}")
+            print(f"  SOURCE_COMMIT.txt: {source_txt or 'MISSING'}")
+            print(f"  README source SHA: {readme_sha or 'MISSING'}")
+
+            if not content_sha:
+                errors.append("CANDIDATE_PROVENANCE.yaml missing verified_candidate_content_sha")
+            if source_txt != content_sha:
+                errors.append(
+                    f"SOURCE_COMMIT.txt ({source_txt}) != verified_candidate_content_sha ({content_sha})"
+                )
+            if readme_sha and readme_sha != content_sha:
+                errors.append(
+                    f"README source SHA ({readme_sha}) != verified_candidate_content_sha ({content_sha})"
+                )
             if "PRE-HUMAN-REVIEW CANDIDATE" not in readme:
                 errors.append("candidate README missing PRE-HUMAN-REVIEW CANDIDATE label")
             if "NO HUMAN VALIDATION HAS OCCURRED" not in readme:
                 errors.append("candidate README missing NO HUMAN VALIDATION HAS OCCURRED label")
+            if prov.get("human_validation_status") not in {None, "NOT_RUN"}:
+                if prov.get("human_validation_status") != "NOT_RUN":
+                    errors.append(
+                        f"provenance human_validation_status must be NOT_RUN, got {prov.get('human_validation_status')}"
+                    )
+            if prov.get("gate_3_status") not in {
+                None,
+                "READER_EVIDENCE_PENDING",
+                "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING",
+            }:
+                # allow either short or long form
+                g3 = str(prov.get("gate_3_status") or "")
+                if "READER_EVIDENCE_PENDING" not in g3:
+                    errors.append(f"provenance gate_3_status unexpected: {g3}")
+            if prov.get("publication_status") not in {None, "NOT_PUBLICATION_READY"}:
+                errors.append(
+                    f"provenance publication_status must be NOT_PUBLICATION_READY, got {prov.get('publication_status')}"
+                )
+
+            head = subprocess.check_output(
+                ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+            ).strip()
+            if content_sha:
+                if not git_ok(content_sha):
+                    errors.append(f"verified_candidate_content_sha not in git history: {content_sha}")
+                elif not is_ancestor(content_sha, head):
+                    errors.append(
+                        f"verified_candidate_content_sha {content_sha} is not an ancestor of HEAD {head}"
+                    )
+                else:
+                    changed = files_changed_after(content_sha, head)
+                    bad = [
+                        p
+                        for p in changed
+                        if not any(p.startswith(pref) for pref in PROVENANCE_ALLOWLIST_PREFIXES)
+                    ]
+                    print(f"  files_changed_after_content_sha: {len(changed)}")
+                    if bad:
+                        errors.append(
+                            "substantive paths changed after verified_candidate_content_sha: "
+                            + ", ".join(bad[:20])
+                        )
+
+            # Hash agreement vs live sources
+            def check_hash_field(field: str, path: Path) -> None:
+                expected = str(prov.get(field) or "").strip()
+                if not expected:
+                    errors.append(f"provenance missing {field}")
+                    return
+                if not path.exists():
+                    errors.append(f"cannot hash missing {path}")
+                    return
+                actual = sha256_file(path)
+                if actual != expected:
+                    errors.append(f"{field} mismatch: provenance={expected} live={actual}")
+
+            check_hash_field("bibliography_sha256", ROOT / "book/references/references.bib")
+            check_hash_field("lab_registry_sha256", ROOT / "labs/lab_registry.yaml")
+            check_hash_field("quality_issues_sha256", QUALITY_ISSUES)
+            # glossary+terminology combined hash stored by builder
+            gloss = ROOT / "glossary/glossary.yaml"
+            term = ROOT / "book/terminology.yaml"
+            if gloss.exists() and term.exists() and prov.get("glossary_terminology_sha256"):
+                combined = hashlib.sha256()
+                combined.update(gloss.read_bytes())
+                combined.update(b"\n")
+                combined.update(term.read_bytes())
+                actual = combined.hexdigest()
+                if actual != prov.get("glossary_terminology_sha256"):
+                    errors.append(
+                        "glossary_terminology_sha256 mismatch against live glossary+terminology"
+                    )
+
+            # Chapter manifest hash field may be sha of CHAPTER_MANIFEST.yaml itself
+            ch_man = CANDIDATE / "CHAPTER_MANIFEST.yaml"
+            if prov.get("chapter_manifest_sha256") and ch_man.exists():
+                if sha256_file(ch_man) != prov.get("chapter_manifest_sha256"):
+                    errors.append("chapter_manifest_sha256 mismatch vs CHAPTER_MANIFEST.yaml")
+            fig_man = CANDIDATE / "FIGURE_MANIFEST.yaml"
+            if prov.get("figure_manifest_sha256") and fig_man.exists():
+                if sha256_file(fig_man) != prov.get("figure_manifest_sha256"):
+                    errors.append("figure_manifest_sha256 mismatch vs FIGURE_MANIFEST.yaml")
+            art = CANDIDATE / "ARTIFACT_MANIFEST.yaml"
+            if prov.get("artifact_manifest_sha256") and art.exists():
+                if sha256_file(art) != prov.get("artifact_manifest_sha256"):
+                    errors.append("artifact_manifest_sha256 mismatch vs ARTIFACT_MANIFEST.yaml")
+
             forbidden_claims = [
                 "GATE_3_PASS",
                 "HUMAN_VALIDATED = 31/31",
@@ -131,7 +309,6 @@ def main() -> int:
             for token in forbidden_claims:
                 if token in blob:
                     errors.append(f"candidate package contains forbidden claim/token: {token}")
-            # Do not allow this package to present itself as the human review freeze.
             if re.search(
                 r"(?i)this package is\s+FULL31-REVIEW-R1|named\s+FULL31-REVIEW-R1",
                 blob,

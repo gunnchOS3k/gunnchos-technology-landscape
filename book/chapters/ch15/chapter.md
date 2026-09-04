@@ -94,6 +94,8 @@ Packets still travel paths CE-4 and Chapter 16 deepen. Here, keep only the liter
 
 **Orchestration** names automation that places and heals many containerized services. Survey depth only: enough to recognize the word; not a Kubernetes certification chapter.
 
+**Engineer depth (one distinction):** the **control plane** decides and coordinates desired placement/state (schedulers, desired-state controllers, heal policies), while the **data plane** carries and executes the actual workload/data path (running containers, packet forwarding to a service, storage I/O). Failures in the two domains can present differently—for example, a healthy data-plane container with a broken control-plane reconcile loop, or a healthy control-plane “desired state” while the data path is unreachable.
+
 ### Multitenancy
 
 Many customers may share underlying hardware with isolation hopes. That hope is a design goal and a risk surface—not a promise of absolute safety.
@@ -201,6 +203,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 - **Plain language.** Automation that places and heals many services.
 - **Analogy (labeled).** Like a dispatcher assigning trucks—not the cargo inside one crate.
 - **Technical function.** Declares desired state for many containerized workloads (survey depth only).
+- **Control plane vs data plane.** Control plane = decide/coordinate desired placement/state; data plane = carry/execute the workload/data path. Their failure modes can diverge.
 - **Constraints.** Control-plane dependency; mis-scheduled capacity still fails the human experience.
 - **Symptoms.** “Service restarted” loops; region failover that still feels down until DNS/path catch up.
 

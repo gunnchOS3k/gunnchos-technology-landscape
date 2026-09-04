@@ -12,6 +12,7 @@ book:
   author: "Edmund Gunn, Jr."
   chapters:
     - index.qmd
+    - book/frontmatter/_frontmatter.qmd
     - book/frontmatter/status.qmd
     - book/frontmatter/rights.qmd
     - book/frontmatter/know-first.qmd
@@ -53,6 +54,7 @@ book:
     - book/chapters/ch29/chapter.md
     - book/chapters/ch30/chapter.md
     - book/chapters/ch31/chapter.md
+    - book/appendices/_backmatter.qmd
     - book/appendices/parts-chapters.qmd
     - book/appendices/glossary.qmd
     - book/appendices/references.qmd

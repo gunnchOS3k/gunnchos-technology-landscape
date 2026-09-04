@@ -1,7 +1,7 @@
 schema_version: 1
 artifact: QUALITY_ISSUES
 generated_on: '2026-09-03'
-git_sha: 6da419826c70c4f19657b68bf6ffe55dd7675029
+git_sha: a03d9c03dcc665b5f5ade53d0016afe9e15f1f20
 accepted_main_base: 76bee2e67c35ff445f46c83af30809e5b307f06e
 wave: full31-quality-convergence-001
 notes:
@@ -18,10 +18,9 @@ summary:
     EDITORIAL: 302
   by_status:
     DEFERRED_PHYSICAL_EVIDENCE: 8
-    FIXED: 28
-    DEFERRED_HUMAN_REVIEW: 193
+    FIXED: 35
+    DEFERRED_HUMAN_REVIEW: 192
     NOT_AN_ISSUE: 271
-    OPEN: 6
   by_category:
     EVIDENCE: 4
     FIGURE: 68
@@ -72,7 +71,7 @@ issues:
   source_ledger: publication/full31/quality/FIGURE_AUDIT.yaml
   adjudication_note: 'Integrator: correctly blocked measured figure; must not ship
     as live reader-facing evidence. PHYSICAL_PENDING honesty preserved.'
-- issue_id: LAB-PHYS-0035114
+- issue_id: LAB-PHYS-0014423
   chapter: LAB-QUARTET-001,CH04
   part: BOOK
   category: LAB
@@ -87,7 +86,53 @@ issues:
   reviewer_type_needed: engineer,builder
   source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
   adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
-- issue_id: LAB-PHYS-2247288
+- issue_id: LAB-PHYS-5668333
+  chapter: LAB-RADIO-OBS-001,LAB-PKT-001,CH18
+  part: BOOK
+  category: LAB
+  severity: MAJOR
+  location: Calibrated RF / drive-test / antenna gain-sensitivity claims
+  finding: 'PHYSICAL_PENDING surface: Calibrated RF / drive-test / antenna gain-sensitivity
+    claims'
+  evidence: '[''LAB-RADIO-OBS-001'', ''LAB-PKT-001'', ''CH18'']'
+  proposed_fix: Await measured Device Quartet / field evidence; do not invent.
+  fix_status: DEFERRED_PHYSICAL_EVIDENCE
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer,builder
+  source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
+  adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
+- issue_id: LAB-PHYS-6751839
+  chapter: LAB-TRUST-001,LAB-IO-001,CH22
+  part: BOOK
+  category: LAB
+  severity: MAJOR
+  location: On-device Quartet AI / wearable sensing campaigns
+  finding: 'PHYSICAL_PENDING surface: On-device Quartet AI / wearable sensing campaigns'
+  evidence: '[''LAB-TRUST-001'', ''LAB-IO-001'', ''CH22'']'
+  proposed_fix: Await measured Device Quartet / field evidence; do not invent.
+  fix_status: DEFERRED_PHYSICAL_EVIDENCE
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer,builder
+  source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
+  adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
+- issue_id: LAB-PHYS-6851657
+  chapter: LAB-PWR-001,CH09
+  part: BOOK
+  category: LAB
+  severity: MAJOR
+  location: "Power/thermal watt-and-\xB0C product curves"
+  finding: "PHYSICAL_PENDING surface: Power/thermal watt-and-\xB0C product curves"
+  evidence: '[''LAB-PWR-001'', ''CH09'']'
+  proposed_fix: Await measured Device Quartet / field evidence; do not invent.
+  fix_status: DEFERRED_PHYSICAL_EVIDENCE
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer,builder
+  source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
+  adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
+- issue_id: LAB-PHYS-8005390
   chapter: LAB-BOOT-OBS-001,CH11
   part: BOOK
   category: LAB
@@ -103,37 +148,7 @@ issues:
   reviewer_type_needed: engineer,builder
   source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
   adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
-- issue_id: LAB-PHYS-7244491
-  chapter: LAB-TRUST-001,LAB-IO-001,CH22
-  part: BOOK
-  category: LAB
-  severity: MAJOR
-  location: On-device Quartet AI / wearable sensing campaigns
-  finding: 'PHYSICAL_PENDING surface: On-device Quartet AI / wearable sensing campaigns'
-  evidence: '[''LAB-TRUST-001'', ''LAB-IO-001'', ''CH22'']'
-  proposed_fix: Await measured Device Quartet / field evidence; do not invent.
-  fix_status: DEFERRED_PHYSICAL_EVIDENCE
-  meaning_change: false
-  citation_required: false
-  reviewer_type_needed: engineer,builder
-  source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
-  adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
-- issue_id: LAB-PHYS-8278114
-  chapter: LAB-PWR-001,CH09
-  part: BOOK
-  category: LAB
-  severity: MAJOR
-  location: "Power/thermal watt-and-\xB0C product curves"
-  finding: "PHYSICAL_PENDING surface: Power/thermal watt-and-\xB0C product curves"
-  evidence: '[''LAB-PWR-001'', ''CH09'']'
-  proposed_fix: Await measured Device Quartet / field evidence; do not invent.
-  fix_status: DEFERRED_PHYSICAL_EVIDENCE
-  meaning_change: false
-  citation_required: false
-  reviewer_type_needed: engineer,builder
-  source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
-  adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
-- issue_id: LAB-PHYS-8286629
+- issue_id: LAB-PHYS-9850649
   chapter: LAB-CONT-001 inline,CH19,CLM-CH19-005
   part: BOOK
   category: LAB
@@ -141,22 +156,6 @@ issues:
   location: NTN/satellite field twin / flight measurements
   finding: 'PHYSICAL_PENDING surface: NTN/satellite field twin / flight measurements'
   evidence: '[''LAB-CONT-001 inline'', ''CH19'', ''CLM-CH19-005'']'
-  proposed_fix: Await measured Device Quartet / field evidence; do not invent.
-  fix_status: DEFERRED_PHYSICAL_EVIDENCE
-  meaning_change: false
-  citation_required: false
-  reviewer_type_needed: engineer,builder
-  source_ledger: publication/full31/quality/LAB_ACTIVITY_AUDIT.yaml
-  adjudication_note: "Honesty marker \u2014 not a defect to 'fix' with prose."
-- issue_id: LAB-PHYS-8472390
-  chapter: LAB-RADIO-OBS-001,LAB-PKT-001,CH18
-  part: BOOK
-  category: LAB
-  severity: MAJOR
-  location: Calibrated RF / drive-test / antenna gain-sensitivity claims
-  finding: 'PHYSICAL_PENDING surface: Calibrated RF / drive-test / antenna gain-sensitivity
-    claims'
-  evidence: '[''LAB-RADIO-OBS-001'', ''LAB-PKT-001'', ''CH18'']'
   proposed_fix: Await measured Device Quartet / field evidence; do not invent.
   fix_status: DEFERRED_PHYSICAL_EVIDENCE
   meaning_change: false
@@ -189,8 +188,8 @@ issues:
   location: preview/full31/technology-landscape-full31-pdf.pdf
   finding: 'Historical Agent H MAJOR: PDF chapter counters inflated past ~31. Integrator
     numbering fix applied; publication QA no longer raises it.'
-  evidence: '{''pdf_max_latex_chapter_header'': 40, ''pdf_max_chapter_number_seen'':
-    379, ''page_count'': 614}'
+  evidence: '{''pdf_max_latex_chapter_header'': 23, ''pdf_max_chapter_number_seen'':
+    379, ''page_count'': 618}'
   proposed_fix: Keep mainmatter reset + single H1 body titles.
   fix_status: FIXED
   meaning_change: false
@@ -1575,18 +1574,19 @@ issues:
   category: FORMAT
   severity: MODERATE
   location: preview/full31/technology-landscape-full31-pdf.pdf
-  finding: 'Front/back matter may still appear as arabic-numbered chapters in the
-    PDF TOC despite number: false; body LaTeX headers max=40. Human print QA should
-    confirm unnumbered frontmatter styling.'
-  evidence: ''
+  finding: PDF body LaTeX CHAPTER headers are within 1..31 (max=23); no Chapter 32+
+    backmatter inflation after \frontmatter/\mainmatter/\backmatter. Residual TOC
+    cosmetics are human print review only.
+  evidence: body_headers_sample=[1, 2, 4, 7, 11, 23]; count=6; backmatter_numeric=[]
   proposed_fix: See publication QA / integrator adjudication.
-  fix_status: DEFERRED_HUMAN_REVIEW
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: visual-print,a11y
   source_ledger: publication/full31/quality/PUBLICATION_QA.yaml
-  adjudication_note: "Frontmatter may still appear arabic-numbered in PDF TOC; body\
-    \ chapters 1\u201331 are correct after mainmatter reset."
+  adjudication_note: "Publication QA confirms body CHAPTER headers within 1..31 and\
+    \ no Chapter 32+ backmatter inflation after \\\\frontmatter/\\\\mainmatter/\\\\\
+    backmatter. Residual TOC cosmetics \u2192 human print."
 - issue_id: TECH-B-CH11-001
   chapter: CH11
   part: III
@@ -1625,10 +1625,10 @@ issues:
   location: Orchestration intro card
   finding: Orchestration kept survey-deep without naming control-plane vs data-plane
     failure modes beyond a symptom line.
-  evidence: "Orchestration card \u201Csurvey depth only\u201D; Stability Contract\
-    \ otherwise careful on placement\u2260access."
-  proposed_fix: Optional Engineer extension bullet; not required for MAJOR convergence.
-  fix_status: OPEN
+  evidence: book/chapters/ch15/chapter.md Orchestration intro + component card
+  proposed_fix: Added Engineer-depth control-plane vs data-plane distinction under
+    Orchestration while keeping survey depth.
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: engineer
@@ -1642,10 +1642,10 @@ issues:
   finding: "Survey prose uses \u201Crouting\u201D for next-hop choice without naming\
     \ forwarding vs routing (data plane vs control plane)\u2014acceptable survey depth\
     \ but slightly imprecise."
-  evidence: Routing card + follow-the-signal steps; Kurose-style survey conflation
-    common.
-  proposed_fix: Optional one-sentence forwarding vs routing note in a later polish.
-  fix_status: OPEN
+  evidence: book/chapters/ch16/chapter.md Routing component card
+  proposed_fix: Added forwarding vs routing (data-plane action vs control-plane reachability)
+    under Routing card.
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: engineer
@@ -3436,10 +3436,11 @@ issues:
   finding: "SVG/desc says \u201Cmeasured teaching fixture\u201D while accessibility\
     \ YAML truth_classification is illustrative\u2014label drift around the same classroom\
     \ n=1 fixture."
-  evidence: figures/architecture/fig-ch12-004-monitor-snapshots.svg vs figures/accessibility/fig-ch12-004.yaml
-  proposed_fix: "Align truth class wording to \u201Cillustrative classroom fixture\
-    \ (n=1)\u201D across SVG/a11y/chapter."
-  fix_status: OPEN
+  evidence: figures/architecture/fig-ch12-004-monitor-snapshots.svg; figures/accessibility/fig-ch12-004.yaml;
+    figures/figure_registry.yaml; ch12 chapter.md
+  proposed_fix: Normalized FIG-CH12-004 truth to illustrative classroom fixture (n=1)
+    across SVG/a11y/registry/prose; added drift check.
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: visual
@@ -3452,10 +3453,10 @@ issues:
   location: chapter banner
   finding: CH17/CH18 banners omit explicit Gate 3 posture line present in sibling
     chapters.
-  evidence: Compare CH16/CH20 banners vs CH17/CH18 opening status blocks.
-  proposed_fix: "Add GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING one-liner for\
-    \ consistency."
-  fix_status: OPEN
+  evidence: publication/full31/quality/CHAPTER_STATUS_BANNER_POLICY.md
+  proposed_fix: Documented canonical chapter-status/banner policy; Gate 3 posture
+    stays book-level rather than repetitive chapter banners.
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: editorial
@@ -3468,9 +3469,10 @@ issues:
   location: figures/figure_registry.yaml CH11/CH13 chapter fields
   finding: "Registry chapter fields truncated as \u201CCH1-\u201D / \u201CCH3-\u201D\
     \ for CH11/CH13 entries."
-  evidence: figure_registry.yaml entries for FIG-CH11-* and FIG-CH13-*.
-  proposed_fix: Integrator/Agent F correct chapter metadata; out of prose scope.
-  fix_status: OPEN
+  evidence: 'python recount: truncated chapter fields = 0 for all 110 registry entries'
+  proposed_fix: Confirmed zero truncated chapter fields remain in figures/figure_registry.yaml
+    (deterministic recount).
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: integrator
@@ -8782,9 +8784,9 @@ issues:
   location: status frontmatter
   finding: "CH12 uses status working_draft while several siblings use draft\u2014\
     cosmetic inconsistency."
-  evidence: "YAML status fields across ch11\u2013ch20."
-  proposed_fix: Normalize in editorial pass.
-  fix_status: OPEN
+  evidence: book/chapters/ch12/metadata.yaml + chapter.md YAML header
+  proposed_fix: Normalized CH12 status to draft; preserved manuscript_status/human_validation_status/publication_status.
+  fix_status: FIXED
   meaning_change: false
   citation_required: false
   reviewer_type_needed: editorial

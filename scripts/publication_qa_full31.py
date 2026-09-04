@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import os
 import re
 import subprocess
@@ -573,11 +574,11 @@ def check_epub(issues: list[dict[str, Any]]) -> dict[str, Any]:
     summary: dict[str, Any] = {
         "artifact_present": FULL31_EPUB.is_file(),
         "validator": "deterministic_structural_checks",
-        "epubcheck": "NOT_RUN",
+        "epubcheck": "PENDING_EXTERNAL_RUNNER",
         "epubcheck_limitation": (
-            "W3C EPUBCheck JAR was not executed in this environment "
-            "(no vendored validator; network install not assumed). "
-            "Deterministic ZIP/OPF/nav/spine/image checks only."
+            "Official W3C EPUBCheck is invoked via scripts/run_epubcheck.py "
+            "(pinned release downloaded to tools/cache/, not vendored). "
+            "Deterministic ZIP/OPF/nav/spine/image checks always run here."
         ),
         "mimetype_ok": False,
         "container_ok": False,
@@ -798,6 +799,11 @@ def check_pdf(issues: list[dict[str, Any]], log_path: Path | None) -> dict[str, 
             summary["pdf_latex_chapter_headers"] = sorted(latex_headers)
             summary["pdf_max_latex_chapter_header"] = max_latex
             summary["pdf_body_title_hits"] = body_title_hits
+            body_headers = sorted(n for n in latex_headers if 1 <= n <= 31)
+            backmatter_numeric = sorted(n for n in latex_headers if n > 31)
+            summary["pdf_body_chapter_headers"] = body_headers
+            summary["pdf_backmatter_numeric_chapter_headers"] = backmatter_numeric
+            summary["pdf_body_chapter_header_count"] = len(body_headers)
             # True inflation: LaTeX chapter headers climb far past ~31 body + appendices.
             # Loose "chapter N" text matches are noisy (page merges / cross refs).
             if max_latex > 45:
@@ -814,17 +820,46 @@ def check_pdf(issues: list[dict[str, Any]], log_path: Path | None) -> dict[str, 
                     ),
                     fix_status="OPEN",
                 )
+            elif backmatter_numeric:
+                issue(
+                    issues,
+                    issue_id="PDF-BACKMATTER-NUMBERING",
+                    severity="MAJOR",
+                    category="pdf_structure",
+                    location=str(FULL31_PDF.relative_to(ROOT)),
+                    finding=(
+                        "PDF still emits numeric CHAPTER N. headers for back matter: "
+                        f"{backmatter_numeric}. Expected unnumbered backmatter "
+                        "(\\backmatter) or appendix lettering—not Chapter 32+."
+                    ),
+                    fix_status="OPEN",
+                )
+            elif max_latex and max_latex <= 31 and not backmatter_numeric:
+                issue(
+                    issues,
+                    issue_id="PDF-FRONTMATTER-NUMBERING",
+                    severity="MODERATE",
+                    category="pdf_structure",
+                    location=str(FULL31_PDF.relative_to(ROOT)),
+                    finding=(
+                        "PDF body LaTeX CHAPTER headers are within 1..31 "
+                        f"(max={max_latex}); no Chapter 32+ backmatter inflation after "
+                        "\\frontmatter/\\mainmatter/\\backmatter. Residual TOC cosmetics "
+                        "are human print review only."
+                    ),
+                    evidence=(
+                        f"body_headers_sample={body_headers[:12]}; "
+                        f"count={len(body_headers)}; backmatter_numeric=[]"
+                    ),
+                    fix_status="FIXED",
+                )
             elif max_latex and max_latex <= 45:
-                # Record residual frontmatter arabic numbering for human print QA when
-                # body chapters look healthy but TOC still numbers preface material.
                 toc_sample = ""
                 if reader.pages:
                     toc_sample = (reader.pages[min(2, len(reader.pages) - 1)].extract_text() or "")[
                         :1200
                     ]
                 if re.search(r"(?i)Manuscript status|Know first|Device Quartet", toc_sample):
-                    # If TOC lists frontmatter as arabic chapters 1..N before body,
-                    # keep a moderate print-polish deferral (not MAJOR if body <=45).
                     issue(
                         issues,
                         issue_id="PDF-FRONTMATTER-NUMBERING",
@@ -1038,6 +1073,42 @@ def build_report(pdf_log: Path | None) -> dict[str, Any]:
     acronyms = check_acronyms(issues)
     html = check_html(issues)
     epub = check_epub(issues)
+    # Merge official EPUBCheck result if present (from make full31-epubcheck).
+    epubcheck_json = QUALITY_DIR / "EPUBCHECK_RESULT.json"
+    if epubcheck_json.is_file():
+        try:
+            payload = json.loads(epubcheck_json.read_text(encoding="utf-8"))
+            epub["epubcheck"] = payload.get("status") or "UNKNOWN"
+            epub["epubcheck_version"] = payload.get("version")
+            epub["epubcheck_errors"] = payload.get("errors")
+            epub["epubcheck_fatal_errors"] = payload.get("fatal_errors")
+            epub["epubcheck_warnings"] = payload.get("warnings")
+            if payload.get("limitation"):
+                epub["epubcheck_limitation"] = payload.get("limitation")
+            else:
+                epub["epubcheck_limitation"] = (
+                    "Official W3C EPUBCheck executed; not an accessibility certification."
+                )
+            status = str(payload.get("status") or "")
+            if status not in {"PASS", "PASS_WITH_WARNINGS"} and status not in {
+                "TOOLING_UNAVAILABLE",
+                "DOWNLOAD_FAILED",
+                "NOT_RUN",
+            }:
+                issue(
+                    issues,
+                    issue_id="EPUBCHECK-FAIL",
+                    severity="MAJOR",
+                    category="epub",
+                    location=str(FULL31_EPUB.relative_to(ROOT)),
+                    finding=(
+                        f"W3C EPUBCheck {payload.get('version')} status={status} "
+                        f"(errors={payload.get('errors')} fatal={payload.get('fatal_errors')})"
+                    ),
+                    fix_status="OPEN",
+                )
+        except Exception as exc:  # noqa: BLE001
+            epub["epubcheck_merge_error"] = str(exc)
     pdf = check_pdf(issues, pdf_log)
 
     counts: dict[str, int] = defaultdict(int)

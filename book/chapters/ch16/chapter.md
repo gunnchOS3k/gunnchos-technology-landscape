@@ -168,7 +168,8 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 - **Plain language.** Choosing next hops toward a destination across networks.
 - **Analogy (labeled).** Intersection decisions—not the conversation once you arrive.
-- **Technical function.** Forwarding based on destination information toward the intended scope [@rfc791; @kurose-ross-8].
+- **Technical function.** Control-plane processes and protocols compute and distribute reachability/path information so forwarding tables stay useful [@rfc791; @kurose-ross-8].
+- **Forwarding vs routing.** **Forwarding** is the per-packet/data-plane action that uses an existing forwarding table; **routing** is the control-plane work that builds and updates that reachability information. Everyday speech often says “routing” for both—keep the split when diagnosing.
 - **Constraints.** Misconfiguration, filtering, missing default route, policy blocks.
 - **Symptoms.** DNS succeeds; connect hangs; LAN peers work; Internet peers do not.
 
