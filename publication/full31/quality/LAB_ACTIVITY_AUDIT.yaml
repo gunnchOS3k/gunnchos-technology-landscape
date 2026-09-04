@@ -1,0 +1,667 @@
+# Agent G — Labs / Try It / Build It quality audit
+# Branch: cursor/full31-quality-convergence-001
+# Base tip: 2e440e43f89b61c112f088939f73440024283bbf
+# Gate posture: GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
+# Rule: Do not pretend proposed IDs are implemented. No Gate 3 changes. No fabricated evidence.
+schema_version: "1.0.0"
+agent: G
+wave: full31-quality-convergence
+audited_at: "2026-09-03"
+base_sha: 2e440e43f89b61c112f088939f73440024283bbf
+
+summary_counts:
+  chapters_try_it: 31
+  chapters_build_it: 31
+  try_it_build_it_preserved: "31/31"
+  FULL_LAB: 14
+  INLINE_ACTIVITY_primary: 4   # CH26, CH29, CH30, CH19-NTN-doc route (plus inherit labs)
+  PROPOSED_LAB_ids: 17
+  proposed_to_implemented_this_wave: 0
+  proposed_to_inline_this_wave: 10
+  proposed_kept_pending: 7
+  physical_pending_surfaces: 6
+  new_lab_dirs_created_this_wave: 0
+
+definitions:
+  FULL_LAB: >
+    Publication-owned package under labs/LAB-*/ with lab.yaml, README, fixture/fallback,
+    and portfolio path. May still have packet-quality gaps (missing stub files, DRAFT status).
+  INLINE_ACTIVITY: >
+    Try It / Build It worksheet that lives in the chapter (and/or inherits a FULL_LAB)
+    without a separate labs/LAB-* directory for a proposed ID.
+  PROPOSED_LAB: >
+    Namespaced opportunity ID in LAB_OPPORTUNITIES or chapter prose that is NOT shipped
+    under labs/. Must not be treated as implemented.
+
+quality_rubric_full_lab:
+  fields:
+    - goal_question
+    - level_reader_paths
+    - prerequisites
+    - safe_setup
+    - route
+    - fixture_fallback
+    - observation_vs_inference
+    - evidence_artifact
+    - portfolio
+    - cleanup_rollback
+    - a11y
+    - privacy_safety
+    - tests_or_validator_coverage
+  try_build_must_answer:
+    - what_to_observe_or_build
+    - evidence_retained
+    - mistaken_inference_guard
+    - fallback_route
+    - explorer_vs_builder_engineer_usefulness
+  avoid: "search the web unless research literacy is the explicit goal"
+
+try_it_build_it_chapter_scan:
+  note: "All 31 chapters contain ## Try it and ## Build it sections with fixture/fallback language and pathway depth. No chapter relies on naked 'search the web' as the primary activity."
+  chapters:
+    - chapter: CH01
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-SYS-001"
+      primary_full_lab: LAB-SYS-001
+      try_build_quality: strong
+      notes: []
+    - chapter: CH02
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-TAP-001"
+      primary_full_lab: LAB-TAP-001
+      try_build_quality: strong
+      notes: []
+    - chapter: CH03
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-PERF-001 (+ LAB-CMS-001 inherit)"
+      primary_full_lab: LAB-PERF-001
+      try_build_quality: strong
+      notes: []
+    - chapter: CH04
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-QUARTET-001"
+      primary_full_lab: LAB-QUARTET-001
+      try_build_quality: strong
+      notes:
+        - "portfolio stubs missing pre-fix"
+    - chapter: CH05
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-SIG-001"
+      primary_full_lab: LAB-SIG-001
+      try_build_quality: strong
+      notes:
+        - "portfolio dir missing pre-fix"
+    - chapter: CH06
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CMS-001 inherit (CPU emphasis)"
+      primary_full_lab: LAB-CMS-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CPU-001 proposed→inline"
+    - chapter: CH07
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CMS-001 inherit (memory/storage emphasis)"
+      primary_full_lab: LAB-CMS-001
+      try_build_quality: strong
+      notes:
+        - "LAB-MEM-001 proposed→inline"
+    - chapter: CH08
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-IO-001"
+      primary_full_lab: LAB-IO-001
+      try_build_quality: adequate
+      notes:
+        - "was DRAFT_DIGITAL; portfolio stubs missing pre-fix"
+    - chapter: CH09
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-PWR-001"
+      primary_full_lab: LAB-PWR-001
+      try_build_quality: adequate
+      notes:
+        - "portfolio dir missing pre-fix"
+    - chapter: CH10
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-BUS-001"
+      primary_full_lab: LAB-BUS-001
+      try_build_quality: adequate
+      notes:
+        - "portfolio stubs missing pre-fix"
+    - chapter: CH11
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-BOOT-OBS-001"
+      primary_full_lab: LAB-BOOT-OBS-001
+      try_build_quality: strong
+      notes:
+        - "chapter falsely labeled 'proposed' pre-fix"
+    - chapter: CH12
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CMS-001 inherit (scheduler emphasis)"
+      primary_full_lab: LAB-CMS-001
+      try_build_quality: strong
+      notes:
+        - "LAB-SCHED-001 proposed→inline"
+    - chapter: CH13
+      try_it: present
+      build_it: present
+      activity_kind: INLINE_ACTIVITY+FULL_LAB
+      primary_activity: "LAB-CMS-001 + LAB-TRUST-001 inherit + data lifecycle postcard"
+      primary_full_lab: LAB-CMS-001
+      try_build_quality: strong
+      notes:
+        - "LAB-DATA-LIFE-001 kept proposed/pending"
+    - chapter: CH14
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-TAP-001 / LAB-SYS-001 / LAB-PKT-001 inherit"
+      primary_full_lab: LAB-TAP-001
+      try_build_quality: strong
+      notes:
+        - "LAB-API-OBS-001 kept proposed/pending"
+    - chapter: CH15
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB+INLINE_ACTIVITY
+      primary_activity: "LAB-PKT-001 + placement hypothesis inline"
+      primary_full_lab: LAB-PKT-001
+      try_build_quality: strong
+      notes:
+        - "LAB-PLACE-001 proposed→inline"
+    - chapter: CH16
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-PKT-001 inherit"
+      primary_full_lab: LAB-PKT-001
+      try_build_quality: strong
+      notes: []
+    - chapter: CH17
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-PKT-001 inherit (access labeling)"
+      primary_full_lab: LAB-PKT-001
+      try_build_quality: strong
+      notes:
+        - "LAB-ACCESS-OBS-001 superseded by LAB-RADIO-OBS-001 / inline"
+    - chapter: CH18
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-RADIO-OBS-001"
+      primary_full_lab: LAB-RADIO-OBS-001
+      try_build_quality: strong
+      notes:
+        - "opportunities file stale 'proposed' pre-fix"
+    - chapter: CH19
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB+INLINE_ACTIVITY
+      primary_activity: "LAB-PKT-001 + LAB-CE06-001 + NTN doc-class inline"
+      primary_full_lab: LAB-PKT-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CONT-001 proposed→inline"
+    - chapter: CH20
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CE06-001 + LAB-PKT-001 inherit"
+      primary_full_lab: LAB-CE06-001
+      try_build_quality: strong
+      notes: []
+    - chapter: CH21
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-TRUST-001 inherit"
+      primary_full_lab: LAB-TRUST-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CH21-EVAL-001 kept proposed/pending"
+    - chapter: CH22
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-TRUST-001 inherit"
+      primary_full_lab: LAB-TRUST-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CH22-SENSE-001 kept proposed/pending (privacy/hardware)"
+    - chapter: CH23
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-TRUST-001 inherit (AuthN/AuthZ focus)"
+      primary_full_lab: LAB-TRUST-001
+      try_build_quality: strong
+      notes:
+        - "LAB-AUTH-001 must-not-mint; inline via TRUST"
+    - chapter: CH24
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-TRUST-001 inherit"
+      primary_full_lab: LAB-TRUST-001
+      try_build_quality: strong
+      notes: []
+    - chapter: CH25
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CE06-001 inherit (equity fields)"
+      primary_full_lab: LAB-CE06-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CH25-PAIR-001 kept proposed/pending"
+    - chapter: CH26
+      try_it: present
+      build_it: present
+      activity_kind: INLINE_ACTIVITY
+      primary_activity: "Git status/diff/commit worksheet (chapter-native)"
+      primary_full_lab: null
+      try_build_quality: strong
+      notes:
+        - "LAB-CH26-GIT-001 proposed→inline; no labs/ dir"
+    - chapter: CH27
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CE06-001 inherit (evidence fields)"
+      primary_full_lab: LAB-CE06-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CH27-SIGNAL-001 kept proposed/pending"
+    - chapter: CH28
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB+INLINE_ACTIVITY
+      primary_activity: "LAB-CE06-001 inherit + repro literacy inline"
+      primary_full_lab: LAB-CE06-001
+      try_build_quality: strong
+      notes:
+        - "LAB-CH28-REPRO-001 kept proposed/pending"
+    - chapter: CH29
+      try_it: present
+      build_it: present
+      activity_kind: INLINE_ACTIVITY
+      primary_activity: "Product one-pager worksheet (chapter-native)"
+      primary_full_lab: null
+      try_build_quality: strong
+      notes:
+        - "LAB-CH29-ONEPAGER-001 proposed→inline; inherits CE06/TRUST artifacts"
+    - chapter: CH30
+      try_it: present
+      build_it: present
+      activity_kind: INLINE_ACTIVITY
+      primary_activity: "Portfolio index assemble (chapter-native)"
+      primary_full_lab: null
+      try_build_quality: strong
+      notes:
+        - "LAB-CH30-PORTFOLIO-001 proposed→inline; inherits CE portfolio outputs"
+    - chapter: CH31
+      try_it: present
+      build_it: present
+      activity_kind: FULL_LAB
+      primary_activity: "LAB-CE06-001 inherit (EMIT capstone)"
+      primary_full_lab: LAB-CE06-001
+      try_build_quality: strong
+      notes: []
+
+full_labs:
+  - lab_id: LAB-SYS-001
+    chapter: "CH01"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: true
+    packet_grade: good
+    note: "Has browser/local/fixture; portfolio complete; tests/test_lab_sys_001.py"
+  - lab_id: LAB-TAP-001
+    chapter: "CH02"
+    classification: FULL_LAB
+    status: "draft/legacy keys"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: false
+    packet_grade: good
+    note: "Browser + local_app + fixtures; validator special-cased; status field incomplete in lab.yaml"
+  - lab_id: LAB-PERF-001
+    chapter: "CH03"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: false
+    packet_grade: adequate
+    note: "Routes + portfolio; no dedicated unit test"
+  - lab_id: LAB-QUARTET-001
+    chapter: "CH04"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "lab.yaml claims portfolio_output paths that were missing; PHYSICAL_PENDING for Quartet EVT"
+  - lab_id: LAB-SIG-001
+    chapter: "CH05"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "Fixture HTML/MD present; portfolio dir missing pre-fix; kit route PHYSICAL_PENDING"
+  - lab_id: LAB-CMS-001
+    chapter: "CE-3/CH06-07-12"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: true
+    packet_grade: good
+    note: "Shared inherit target; tests present"
+  - lab_id: LAB-IO-001
+    chapter: "CH08"
+    classification: FULL_LAB
+    status: "DRAFT_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "Privacy-strong fixtures; portfolio stubs missing; promote after stub fill"
+  - lab_id: LAB-PWR-001
+    chapter: "CH09"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "Safety-strong README; portfolio dir missing pre-fix"
+  - lab_id: LAB-BUS-001
+    chapter: "CH10"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "Fixtures present; portfolio stubs missing pre-fix"
+  - lab_id: LAB-BOOT-OBS-001
+    chapter: "CH11"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "Implemented packet; chapter heading incorrectly said proposed"
+  - lab_id: LAB-PKT-001
+    chapter: "CE-4/CH14-17"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL+FIXTURE_VALIDATED"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: true
+    packet_grade: good
+    note: "ACCESSIBILITY + PRIVACY_AND_SAFETY; PHYSICAL_PENDING/EXTERNAL labels for live nets"
+  - lab_id: LAB-RADIO-OBS-001
+    chapter: "CH18"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: false
+      tests_or_validator: false
+    packet_grade: gap_pre_fix
+    note: "Observation-only; opportunities file stale; portfolio stubs missing"
+  - lab_id: LAB-TRUST-001
+    chapter: "CE-5/CH21-24"
+    classification: FULL_LAB
+    status: "IMPLEMENTED_DIGITAL+FIXTURE_VALIDATED"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: true
+    packet_grade: good
+    note: "A11Y_PRIVACY_SAFETY.md; PHYSICAL_PENDING for on-device Quartet AI"
+  - lab_id: LAB-CE06-001
+    chapter: "CE-6/CH19-20/25/27/31"
+    classification: FULL_LAB
+    status: "FIXTURE_VALIDATED"
+    rubric:
+      goal_question: true
+      fixture_fallback: true
+      portfolio_templates_complete: true
+      tests_or_validator: true
+    packet_grade: good
+    note: "Capstone EMIT; illustrative fixtures ≠ human Gate 3 evidence"
+
+proposed_labs:
+  # disposition: implement_full | convert_inline | keep_proposed | superseded | must_not_mint
+  - lab_id: LAB-CPU-001
+    chapter: CH06
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Duplicate of LAB-CMS-001 CPU column focus; chapter already inherits CMS. Not worth a separate lab dir."
+  - lab_id: LAB-MEM-001
+    chapter: CH07
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Duplicate of LAB-CMS-001 memory/storage emphasis; chapter already inherits CMS."
+  - lab_id: LAB-SCHED-001
+    chapter: CH12
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Duplicate of LAB-CMS-001 scheduler emphasis; chapter explicitly refuses to mint."
+  - lab_id: LAB-AUTH-001
+    chapter: CH23
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: false
+    disposition: must_not_mint
+    wave_action: proposed→inline_via_TRUST
+    rationale: "Chapter text uses ID only as negative example; inherit LAB-TRUST-001."
+  - lab_id: LAB-PLACE-001
+    chapter: CH15
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Worth it as placement literacy; already embedded in CH15 Try It via LAB-PKT-001 placement hypothesis. Do not create labs/LAB-PLACE-001."
+  - lab_id: LAB-CONT-001
+    chapter: CH19
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Worth it as NTN capability-class literacy; CH19 Try It already ships document-only route. No new lab dir."
+  - lab_id: LAB-DATA-LIFE-001
+    chapter: CH13
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Worth later; CH13 already has inline data-lifecycle postcard. Full packet optional, not this wave."
+  - lab_id: LAB-API-OBS-001
+    chapter: CH14
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Automatable later with fixture HAR; CH14 inherits TAP/SYS/PKT for now. Avoid low-value dir."
+  - lab_id: LAB-ACCESS-OBS-001
+    chapter: CH17
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: false
+    disposition: superseded
+    wave_action: superseded→RADIO/PKT
+    rationale: "Overlaps LAB-RADIO-OBS-001 observation walk + PKT access labeling."
+  - lab_id: LAB-CH21-EVAL-001
+    chapter: CH21
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Toy eval worksheet could be inline later; TRUST covers uncertainty now."
+  - lab_id: LAB-CH22-SENSE-001
+    chapter: CH22
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Privacy/sensing worksheet; risks duplicate LAB-IO-001; hardware/consent sensitive → pending."
+  - lab_id: LAB-CH25-PAIR-001
+    chapter: CH25
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Paired constrained-route worksheet; CE06 equity fields cover baseline."
+  - lab_id: LAB-CH26-GIT-001
+    chapter: CH26
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Chapter Try It/Build It already is the git worksheet; living repo as example. No labs/ dir this wave."
+  - lab_id: LAB-CH27-SIGNAL-001
+    chapter: CH27
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Redacted fixture-trace labeling; CE06 evidence fields cover baseline."
+  - lab_id: LAB-CH28-REPRO-001
+    chapter: CH28
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: keep_proposed
+    wave_action: keep_proposed
+    rationale: "Pin SHA + regenerate needs curated fixture tooling; keep proposed/pending."
+  - lab_id: LAB-CH29-ONEPAGER-001
+    chapter: CH29
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Strong chapter-native one-pager already present; classify INLINE_ACTIVITY not FULL_LAB."
+  - lab_id: LAB-CH30-PORTFOLIO-001
+    chapter: CH30
+    classification: PROPOSED_LAB
+    implemented_under_labs: false
+    worth_it: true
+    disposition: convert_inline
+    wave_action: proposed→inline
+    rationale: "Strong chapter-native portfolio index already present; classify INLINE_ACTIVITY not FULL_LAB."
+
+physical_pending:
+  - surface: Device Quartet EVT / measured SKU attributes
+    related: [LAB-QUARTET-001, CH04]
+  - surface: Calibrated RF / drive-test / antenna gain-sensitivity claims
+    related: [LAB-RADIO-OBS-001, LAB-PKT-001, CH18]
+  - surface: Secure-boot attestation / PCR / measured boot evidence
+    related: [LAB-BOOT-OBS-001, CH11]
+  - surface: On-device Quartet AI / wearable sensing campaigns
+    related: [LAB-TRUST-001, LAB-IO-001, CH22]
+  - surface: NTN/satellite field twin / flight measurements
+    related: [LAB-CONT-001 inline, CH19, CLM-CH19-005]
+  - surface: Power/thermal watt-and-°C product curves
+    related: [LAB-PWR-001, CH09]
+
+try_build_quality_findings:
+  strengths:
+    - "31/31 Try It and 31/31 Build It present"
+    - "Nearly all sections include fixture/fallback, observation vs inference, pathway depth"
+    - "No primary activity is naked web search"
+    - "Inherit-don't-duplicate pattern used for CMS/TRUST/PKT/CE06"
+  gaps_pre_fix:
+    - "CH11 Try It heading labeled LAB-BOOT-OBS-001 as proposed despite IMPLEMENTED_DIGITAL packet"
+    - "CH11/CH18 LAB_OPPORTUNITIES still listed BOOT/RADIO as proposed"
+    - "Several FULL_LAB packets claimed portfolio_output paths without stub files (QUARTET, BOOT, BUS, RADIO, IO, PWR, SIG)"
+    - "Metadata labs: arrays for CH29/CH30 list proposed IDs alongside real labs without status qualifier"
+    - "LAB-IO-001 status DRAFT_DIGITAL while chapter treats it as primary Try It"
+  scoped_fixes_planned:
+    - "Write this ledger first"
+    - "Correct stale proposed labels for implemented BOOT/RADIO"
+    - "Add missing portfolio stubs + compact A11Y/privacy notes for thin FULL labs"
+    - "Update LAB_OPPORTUNITIES dispositions for proposed→inline / keep_proposed / superseded"
+    - "Clarify CH29/CH30 metadata and chapter headings as INLINE_ACTIVITY (not FULL_LAB)"
+    - "Do not create new low-value labs/ directories this wave"
+
+gate_constraints:
+  gate_3_changes: forbidden
+  fabricated_evidence: forbidden
+  claim_gate_pass: forbidden
