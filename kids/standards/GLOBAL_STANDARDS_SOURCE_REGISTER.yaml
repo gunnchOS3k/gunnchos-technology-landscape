@@ -1,0 +1,741 @@
+schema: kids.standards.source_register/v1
+generated_on: '2026-09-03'
+track_status: DRAFT_INTERNAL
+retrieved_on_default: '2026-09-03'
+framework_count: 25
+mandatory_baseline_count: 23
+frameworks:
+- framework_id: FW-UNESCO-AI-STUDENTS-2024
+  title: AI competency framework for students
+  authority: UNESCO
+  framework_class: AI_COMPETENCE
+  version: '2024'
+  effective_from: '2024-08-08'
+  url: https://www.unesco.org/en/articles/ai-competency-framework-students
+  license_note: UNESCO copyright; summarize only — do not paste wholesale
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-UNESCO
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - human-centred mindset
+  - ethics of AI
+  - AI techniques and applications
+  - AI system design
+  progression_levels:
+  - Understand
+  - Apply
+  - Create
+  sdg_link: SDG 4
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-UNESCO-AI-TEACHERS-2024
+  title: AI competency framework for teachers
+  authority: UNESCO
+  framework_class: AI_COMPETENCE
+  version: '2024'
+  effective_from: '2024-08-08'
+  url: https://www.unesco.org/en/articles/ai-competency-framework-teachers
+  license_note: UNESCO copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-UNESCO
+  language:
+  - en
+  age_relevance:
+  - educator
+  summary_domains:
+  - human-centred mindset
+  - ethics of AI
+  - AI foundations and applications
+  - AI pedagogy
+  - AI for professional learning
+  progression_levels:
+  - Acquire
+  - Deepen
+  - Create
+  sdg_link: SDG 4
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-OECD-LEARNING-COMPASS-2030
+  title: OECD Learning Compass 2030
+  authority: OECD
+  framework_class: TRANSVERSAL
+  version: 2030 framework (evolving; launched 2019)
+  effective_from: '2019'
+  url: https://www.oecd.org/en/data/tools/oecd-learning-compass-2030.html
+  license_note: OECD materials; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-OECD
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - core foundations
+  - knowledge / skills / attitudes and values
+  - transformative competencies
+  - anticipation-action-reflection cycle
+  - student agency
+  gaps:
+  - 'SOURCE_VERSION_UNCLEAR: evolving concept-note set rather than a single fixed edition PDF'
+  mandatory_baseline: true
+- framework_id: FW-US-HS-ELOF
+  title: 'Head Start Early Learning Outcomes Framework: Ages Birth to Five (ELOF)'
+  authority: U.S. Department of Health & Human Services, Administration for Children and Families
+  framework_class: EARLY_YEARS
+  version: ELOF (birth to five; replaces 2010 framework)
+  effective_from: '2015'
+  url: https://www.headstart.gov/school-readiness/article/head-start-early-learning-outcomes-framework
+  license_note: U.S. government work; still do not paste wholesale developmental indicators
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-US
+  language:
+  - en
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  summary_domains:
+  - approaches to learning
+  - social and emotional development
+  - language and literacy
+  - cognition
+  - perceptual, motor, and physical development
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-CSTA-PK12-2026
+  title: 2026 CSTA PK–12 Computer Science Standards
+  authority: Computer Science Teachers Association (CSTA)
+  framework_class: K12_CS
+  version: '2026'
+  effective_from: '2026'
+  url: https://csteachers.org/pk12standards/
+  doi: https://doi.org/10.1145/3820482
+  isbn: 979-8-4007-2780-1
+  license_note: CSTA license terms apply (attribution, non-commercial share-alike per CSTA site); do not
+    paste wholesale
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-US
+  language:
+  - en
+  age_relevance:
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - Algorithms & Design
+  - Programming
+  - Data & Analysis
+  - Systems & Security
+  - Computing & Society
+  practice_categories:
+  - Ethics & Social Responsibility
+  - Inclusive Collaboration
+  - Computational Thinking
+  - Human-Centered Design
+  notes: AI content distributed across concepts (not a separate concept). Specialty standards exist for
+    HS; Kids Edition uses foundational PK–early primary grain only.
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-US-NGSS
+  title: Next Generation Science Standards (NGSS)
+  authority: NGSS Lead States / nextgenscience.org
+  framework_class: K12_SCIENCE
+  version: NGSS (K–12; state-adopted where applicable)
+  effective_from: '2013'
+  url: https://www.nextgenscience.org/
+  license_note: NGSS copyright; summarize three-dimensional structure only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-US
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - science and engineering practices
+  - crosscutting concepts
+  - disciplinary core ideas
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-GB-ENG-EYFS-2026
+  title: Early years foundation stage (EYFS) statutory framework (England)
+  authority: Department for Education (England)
+  framework_class: EARLY_YEARS
+  version: Statutory frameworks effective 1 September 2026 (childminders; group and school-based providers)
+  effective_from: '2026-09-01'
+  url: https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2
+  license_note: Crown copyright / Open Government Licence where applicable; do not paste wholesale
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-GB-ENG
+  language:
+  - en
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  summary_domains:
+  - learning and development requirements
+  - safeguarding and welfare requirements
+  - screen-use regard (2026 update noted on GOV.UK)
+  notes: Applies to England only. Scotland / Wales / Northern Ireland use distinct frameworks.
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-GB-SCT-CFE
+  title: Curriculum for Excellence (Scotland) — early level
+  authority: Education Scotland / Scottish Government
+  framework_class: EARLY_YEARS
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://education.gov.scot/
+  license_note: Crown copyright / Education Scotland terms
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-GB-SCT
+  language:
+  - en
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  summary_domains:
+  - early level experiences and outcomes
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: true
+- framework_id: FW-GB-WLS-CFW
+  title: Curriculum for Wales
+  authority: Welsh Government
+  framework_class: PRIMARY
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://hwb.gov.wales/curriculum-for-wales
+  license_note: Welsh Government copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-GB-WLS
+  language:
+  - en
+  - cy
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  summary_domains:
+  - six areas of learning and experience
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: true
+- framework_id: FW-GB-NIR-CURRICULUM
+  title: Northern Ireland Curriculum — Foundation Stage
+  authority: Department of Education (Northern Ireland) / CCEA
+  framework_class: EARLY_YEARS
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://ccea.org.uk/
+  license_note: CCEA / DENI copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-GB-NIR
+  language:
+  - en
+  age_relevance:
+  - K4
+  - K5
+  - K6
+  summary_domains:
+  - Foundation Stage
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: true
+- framework_id: FW-AU-EYLF-V2
+  title: 'Belonging, Being and Becoming: The Early Years Learning Framework for Australia (EYLF) V2.0'
+  authority: Australian Government Department of Education (approved under NQF; ACECQA)
+  framework_class: EARLY_YEARS
+  version: V2.0 (2022)
+  effective_from: '2023'
+  url: https://www.acecqa.gov.au/nqf/national-law-regulations/approved-learning-frameworks
+  license_note: Australian Government copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-AU
+  language:
+  - en
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  summary_domains:
+  - principles
+  - practices
+  - learning outcomes
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-AU-AC-V9
+  title: Australian Curriculum Version 9
+  authority: Australian Curriculum, Assessment and Reporting Authority (ACARA)
+  framework_class: PRIMARY
+  version: Version 9
+  effective_from: '2022'
+  url: https://v9.australiancurriculum.edu.au/
+  license_note: ACARA copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-AU
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - Digital Technologies
+  - Science
+  - general capabilities
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-NZ-TE-WHARIKI
+  title: 'Te Whāriki: Early childhood curriculum'
+  authority: Ministry of Education (New Zealand)
+  framework_class: EARLY_YEARS
+  version: 2017 refresh (commonly cited); confirm PDF edition on MoE portal when deep-mapping
+  effective_from: '2017'
+  url: https://www.education.govt.nz/early-childhood/teaching-and-learning/te-whariki
+  license_note: Crown copyright NZ; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-NZ
+  language:
+  - en
+  - mi
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  summary_domains:
+  - principles
+  - strands
+  - goals
+  - learning outcomes
+  gaps:
+  - 'SOURCE_VERSION_UNCLEAR: pin exact PDF edition before clause-level work'
+  mandatory_baseline: true
+- framework_id: FW-NZ-NZC
+  title: The New Zealand Curriculum (NZC)
+  authority: Ministry of Education (New Zealand)
+  framework_class: PRIMARY
+  version: SOURCE_VERSION_UNCLEAR (refresh programme ongoing — pin before deep map)
+  effective_from: null
+  url: https://nzcurriculum.tki.org.nz/
+  license_note: Crown copyright NZ
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-NZ
+  language:
+  - en
+  - mi
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - key competencies
+  - learning areas including technology
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: true
+- framework_id: FW-FI-ECEC
+  title: National core curriculum for early childhood education and care (Finland)
+  authority: Finnish National Agency for Education (OPH)
+  framework_class: EARLY_YEARS
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://www.oph.fi/en
+  license_note: OPH copyright; Finnish/Swedish originals primary
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-FI
+  language:
+  - fi
+  - sv
+  - en
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  summary_domains:
+  - ECEC pedagogical activities
+  gaps:
+  - TRANSLATION_REQUIRED
+  - SOURCE_VERSION_UNCLEAR
+  mandatory_baseline: true
+- framework_id: FW-FI-BASIC
+  title: National core curriculum for basic education (Finland)
+  authority: Finnish National Agency for Education (OPH)
+  framework_class: PRIMARY
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://www.oph.fi/en
+  license_note: OPH copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-FI
+  language:
+  - fi
+  - sv
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - transversal competences
+  - subjects including ICT
+  gaps:
+  - TRANSLATION_REQUIRED
+  - SOURCE_VERSION_UNCLEAR
+  mandatory_baseline: true
+- framework_id: FW-FI-DIGITAL
+  title: Finland digital competence / ICT in education materials (OPH)
+  authority: Finnish National Agency for Education (OPH)
+  framework_class: DIGITAL_COMPETENCE
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://www.oph.fi/en
+  license_note: OPH copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-FI
+  language:
+  - fi
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - digital competence
+  gaps:
+  - TRANSLATION_REQUIRED
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: true
+- framework_id: FW-IN-NCF-FOUNDATIONAL
+  title: National Curriculum Framework for the Foundational Stage
+  authority: NCERT / Ministry of Education (India)
+  framework_class: EARLY_YEARS
+  version: NCF-FS (NEP 2020 foundational stage)
+  effective_from: '2022'
+  url: https://ncert.nic.in/
+  license_note: Government of India / NCERT copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-IN
+  language:
+  - en
+  - hi
+  age_relevance:
+  - K2
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  summary_domains:
+  - foundational literacy and numeracy
+  - play-based learning
+  - holistic development
+  gaps:
+  - 'SOURCE_VERSION_UNCLEAR: pin exact PDF edition hash before clause-level work'
+  mandatory_baseline: true
+- framework_id: FW-SG-NEL-2022
+  title: Nurturing Early Learners (NEL) Framework 2022
+  authority: Ministry of Education (Singapore)
+  framework_class: EARLY_YEARS
+  version: '2022'
+  effective_from: '2022'
+  url: https://nel.moe.edu.sg/tl/all-resources/nel-framework-2022-/
+  license_note: MOE Singapore copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-SG
+  language:
+  - en
+  age_relevance:
+  - K4
+  - K5
+  - K6
+  summary_domains:
+  - learning areas
+  - iTeach principles
+  - learning dispositions
+  gaps: []
+  mandatory_baseline: true
+- framework_id: FW-JP-MEXT-COS
+  title: Courses of Study (kindergarten / elementary) — MEXT
+  authority: Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan
+  framework_class: PRIMARY
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://www.mext.go.jp/en/
+  license_note: MEXT copyright; Japanese primary texts
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-JP
+  language:
+  - ja
+  - en
+  age_relevance:
+  - K3
+  - K4
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - kindergarten guidelines
+  - elementary Courses of Study
+  gaps:
+  - TRANSLATION_REQUIRED
+  - SOURCE_VERSION_UNCLEAR
+  mandatory_baseline: true
+- framework_id: FW-CA-ON-KINDERGARTEN-2016
+  title: The Kindergarten Program (Ontario)
+  authority: Ontario Ministry of Education
+  framework_class: EARLY_YEARS
+  version: '2016'
+  effective_from: '2016'
+  url: https://www.ontario.ca/page/ministry-education
+  license_note: Queen's Printer for Ontario; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-CA-ON
+  language:
+  - en
+  - fr
+  age_relevance:
+  - K4
+  - K5
+  summary_domains:
+  - four frames
+  - play- and inquiry-based learning
+  gaps:
+  - 'SOURCE_VERSION_UNCLEAR: 2026 kindergarten refresh announced in secondary reporting — confirm official
+    PDF before remapping'
+  mandatory_baseline: true
+- framework_id: FW-ZA-CAPS
+  title: Curriculum and Assessment Policy Statement (CAPS)
+  authority: Department of Basic Education (South Africa)
+  framework_class: PRIMARY
+  version: CAPS (subject statements; pin per subject when mapping)
+  effective_from: null
+  url: https://www.education.gov.za/
+  license_note: DBE copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: OFFICIAL_VERIFIED
+  jurisdiction_ids:
+  - JUR-ZA
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - Foundation Phase
+  - Intermediate Phase subject policies
+  gaps:
+  - 'SOURCE_VERSION_UNCLEAR: pin per-subject CAPS PDF editions'
+  mandatory_baseline: true
+- framework_id: FW-ZA-CODING-ROBOTICS
+  title: Coding and Robotics curriculum (South Africa)
+  authority: Department of Basic Education (South Africa)
+  framework_class: K12_CS
+  version: SOURCE_VERSION_UNCLEAR
+  effective_from: null
+  url: https://www.education.gov.za/
+  license_note: DBE copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-ZA
+  language:
+  - en
+  age_relevance:
+  - K5
+  - K6
+  - K7
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - coding
+  - robotics
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  - pin official CAPS Coding and Robotics PDFs by phase
+  mandatory_baseline: true
+- framework_id: FW-EU-DIGCOMP
+  title: DigComp — European Digital Competence Framework for Citizens
+  authority: European Commission / Joint Research Centre
+  framework_class: DIGITAL_COMPETENCE
+  version: DigComp 2.2 (commonly cited); confirm portal edition
+  effective_from: null
+  url: https://joint-research-centre.ec.europa.eu/digcomp_en
+  license_note: EU copyright; summarize only
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-EU
+  language:
+  - en
+  age_relevance:
+  - B5
+  - B6
+  - B7
+  - B8
+  - B9
+  - B10
+  summary_domains:
+  - information literacy
+  - communication
+  - content creation
+  - safety
+  - problem solving
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: false
+- framework_id: FW-UNESCO-ICT-CFT
+  title: UNESCO ICT Competency Framework for Teachers
+  authority: UNESCO
+  framework_class: DIGITAL_COMPETENCE
+  version: Version 3 (commonly cited)
+  effective_from: null
+  url: https://www.unesco.org/en/digital-education/ict-competency-framework
+  license_note: UNESCO copyright
+  retrieved_on: '2026-09-03'
+  verification: IDENTIFIED
+  jurisdiction_ids:
+  - JUR-GLOBAL-UNESCO
+  language:
+  - en
+  age_relevance:
+  - educator
+  summary_domains:
+  - ICT teacher competencies
+  gaps:
+  - SOURCE_VERSION_UNCLEAR
+  - NOT_YET_MAPPED
+  mandatory_baseline: false

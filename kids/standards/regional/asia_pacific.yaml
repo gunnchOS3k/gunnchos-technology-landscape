@@ -1,0 +1,289 @@
+schema: kids.standards.regional/v1
+region: asia_pacific
+generated_on: '2026-09-03'
+track_status: DRAFT_INTERNAL
+jurisdiction_count: 51
+status_counts:
+  NOT_YET_RESEARCHED: 36
+  OFFICIAL_VERIFIED: 5
+  IDENTIFIED: 10
+priority_notes: AU/NZ/SG/IN/JP baseline present; ASEAN/Pacific mostly NOT_YET_RESEARCHED.
+jurisdictions:
+- jurisdiction_id: JUR-AF
+  name: Afghanistan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-AU
+  name: Australia
+  level: national
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-BD
+  name: Bangladesh
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-BT
+  name: Bhutan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-BN
+  name: Brunei Darussalam
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-KH
+  name: Cambodia
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-CN
+  name: China
+  level: national
+  research_status: IDENTIFIED
+  framework_ids: []
+- jurisdiction_id: JUR-FJ
+  name: Fiji
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-IN
+  name: India
+  level: national
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-IN-NCF-FOUNDATIONAL
+- jurisdiction_id: JUR-ID
+  name: Indonesia
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-JP
+  name: Japan
+  level: national
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-JP-MEXT-COS
+- jurisdiction_id: JUR-KZ
+  name: Kazakhstan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-KI
+  name: Kiribati
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-KG
+  name: Kyrgyzstan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-LA
+  name: Lao People's Democratic Republic
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-MY
+  name: Malaysia
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-MV
+  name: Maldives
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-MH
+  name: Marshall Islands
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-FM
+  name: Micronesia
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-MN
+  name: Mongolia
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-MM
+  name: Myanmar
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-NR
+  name: Nauru
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-NP
+  name: Nepal
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-NZ
+  name: New Zealand
+  level: national
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-NZ-TE-WHARIKI
+  - FW-NZ-NZC
+- jurisdiction_id: JUR-KP
+  name: Democratic People's Republic of Korea
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-KR
+  name: Republic of Korea
+  level: national
+  research_status: IDENTIFIED
+  framework_ids: []
+- jurisdiction_id: JUR-PK
+  name: Pakistan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-PW
+  name: Palau
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-PG
+  name: Papua New Guinea
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-PH
+  name: Philippines
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-WS
+  name: Samoa
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-SG
+  name: Singapore
+  level: national
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-SG-NEL-2022
+- jurisdiction_id: JUR-SB
+  name: Solomon Islands
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-LK
+  name: Sri Lanka
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-TJ
+  name: Tajikistan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-TH
+  name: Thailand
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-TL
+  name: Timor-Leste
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-TO
+  name: Tonga
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-TM
+  name: Turkmenistan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-TV
+  name: Tuvalu
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-UZ
+  name: Uzbekistan
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-VU
+  name: Vanuatu
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-VN
+  name: Viet Nam
+  level: national
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+- jurisdiction_id: JUR-AU-NSW
+  name: New South Wales
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-VIC
+  name: Victoria
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-QLD
+  name: Queensland
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-WA
+  name: Western Australia
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-SA
+  name: South Australia
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-TAS
+  name: Tasmania
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-ACT
+  name: Australian Capital Territory
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+- jurisdiction_id: JUR-AU-NT
+  name: Northern Territory
+  level: subnational
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9

@@ -1,0 +1,3388 @@
+schema: kids.standards.jurisdiction_registry/v1
+generated_on: '2026-09-03'
+track_status: DRAFT_INTERNAL
+policy:
+  official_sources_only: true
+  forbidden_claims:
+  - officially aligned
+  - certified against
+  - accredited to
+  honest_gap_codes:
+  - TRANSLATION_REQUIRED
+  - ACCESS_BLOCKED
+  - NOT_YET_RESEARCHED
+  - SOURCE_VERSION_UNCLEAR
+counts:
+  total: 275
+  by_status:
+    OFFICIAL_VERIFIED: 13
+    IDENTIFIED: 29
+    NOT_YET_RESEARCHED: 232
+    TRANSLATION_REQUIRED: 1
+  by_level:
+    transnational: 3
+    national: 196
+    subnational: 76
+  by_region:
+    global: 2
+    europe: 55
+    africa: 54
+    americas: 99
+    middle_east: 14
+    asia_pacific: 51
+jurisdictions:
+- jurisdiction_id: JUR-GLOBAL-UNESCO
+  iso3166_1: null
+  iso3166_2: null
+  name: UNESCO (transnational)
+  level: transnational
+  parent_jurisdiction_id: null
+  region: global
+  education_authority: UNESCO
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-UNESCO-AI-STUDENTS-2024
+  - FW-UNESCO-AI-TEACHERS-2024
+  - FW-UNESCO-ICT-CFT
+  notes: Global reference frameworks under SDG 4 — not a national curriculum.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GLOBAL-OECD
+  iso3166_1: null
+  iso3166_2: null
+  name: OECD (transnational)
+  level: transnational
+  parent_jurisdiction_id: null
+  region: global
+  education_authority: OECD
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-OECD-LEARNING-COMPASS-2030
+  notes: Learning Compass is aspirational / evolving — not a curriculum mandate.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GLOBAL-EU
+  iso3166_1: null
+  iso3166_2: null
+  name: European Union (transnational competence frameworks)
+  level: transnational
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: European Commission
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-EU-DIGCOMP
+  notes: DigComp informs member-state digital competence work; not a kids curriculum.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-DZ
+  iso3166_1: DZ
+  iso3166_2: null
+  name: Algeria
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Algeria) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AO
+  iso3166_1: AO
+  iso3166_2: null
+  name: Angola
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Angola) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BJ
+  iso3166_1: BJ
+  iso3166_2: null
+  name: Benin
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Benin) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BW
+  iso3166_1: BW
+  iso3166_2: null
+  name: Botswana
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Botswana) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BF
+  iso3166_1: BF
+  iso3166_2: null
+  name: Burkina Faso
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Burkina Faso) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BI
+  iso3166_1: BI
+  iso3166_2: null
+  name: Burundi
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Burundi) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CV
+  iso3166_1: CV
+  iso3166_2: null
+  name: Cabo Verde
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Cabo Verde) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CM
+  iso3166_1: CM
+  iso3166_2: null
+  name: Cameroon
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Cameroon) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CF
+  iso3166_1: CF
+  iso3166_2: null
+  name: Central African Republic
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Central African Republic) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TD
+  iso3166_1: TD
+  iso3166_2: null
+  name: Chad
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Chad) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KM
+  iso3166_1: KM
+  iso3166_2: null
+  name: Comoros
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Comoros) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CG
+  iso3166_1: CG
+  iso3166_2: null
+  name: Congo
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Congo) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CD
+  iso3166_1: CD
+  iso3166_2: null
+  name: Democratic Republic of the Congo
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Democratic Republic of the Congo) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CI
+  iso3166_1: CI
+  iso3166_2: null
+  name: Côte d'Ivoire
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Côte d'Ivoire) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-DJ
+  iso3166_1: DJ
+  iso3166_2: null
+  name: Djibouti
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Djibouti) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-EG
+  iso3166_1: EG
+  iso3166_2: null
+  name: Egypt
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: Ministry of Education and Technical Education (Egypt)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: National curriculum identified; Arabic primary — TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GQ
+  iso3166_1: GQ
+  iso3166_2: null
+  name: Equatorial Guinea
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Equatorial Guinea) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ER
+  iso3166_1: ER
+  iso3166_2: null
+  name: Eritrea
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Eritrea) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SZ
+  iso3166_1: SZ
+  iso3166_2: null
+  name: Eswatini
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Eswatini) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ET
+  iso3166_1: ET
+  iso3166_2: null
+  name: Ethiopia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Ethiopia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GA
+  iso3166_1: GA
+  iso3166_2: null
+  name: Gabon
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Gabon) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GM
+  iso3166_1: GM
+  iso3166_2: null
+  name: Gambia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Gambia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GH
+  iso3166_1: GH
+  iso3166_2: null
+  name: Ghana
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: Ghana Education Service / NaCCA
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Standards-based curriculum identified; deeper mapping NOT_YET_RESEARCHED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GN
+  iso3166_1: GN
+  iso3166_2: null
+  name: Guinea
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Guinea) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GW
+  iso3166_1: GW
+  iso3166_2: null
+  name: Guinea-Bissau
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Guinea-Bissau) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KE
+  iso3166_1: KE
+  iso3166_2: null
+  name: Kenya
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: Ministry of Education (Kenya) / KICD
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: CBC (Competency Based Curriculum) identified; deeper mapping NOT_YET_RESEARCHED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-LS
+  iso3166_1: LS
+  iso3166_2: null
+  name: Lesotho
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Lesotho) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LR
+  iso3166_1: LR
+  iso3166_2: null
+  name: Liberia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Liberia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LY
+  iso3166_1: LY
+  iso3166_2: null
+  name: Libya
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Libya) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MG
+  iso3166_1: MG
+  iso3166_2: null
+  name: Madagascar
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Madagascar) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MW
+  iso3166_1: MW
+  iso3166_2: null
+  name: Malawi
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Malawi) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ML
+  iso3166_1: ML
+  iso3166_2: null
+  name: Mali
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Mali) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MR
+  iso3166_1: MR
+  iso3166_2: null
+  name: Mauritania
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Mauritania) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MU
+  iso3166_1: MU
+  iso3166_2: null
+  name: Mauritius
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Mauritius) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MA
+  iso3166_1: MA
+  iso3166_2: null
+  name: Morocco
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Morocco) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MZ
+  iso3166_1: MZ
+  iso3166_2: null
+  name: Mozambique
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Mozambique) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NA
+  iso3166_1: NA
+  iso3166_2: null
+  name: Namibia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Namibia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NE
+  iso3166_1: NE
+  iso3166_2: null
+  name: Niger
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Niger) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NG
+  iso3166_1: NG
+  iso3166_2: null
+  name: Nigeria
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: Federal Ministry of Education (Nigeria)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: National education policy / curriculum instruments identified at high level.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-RW
+  iso3166_1: RW
+  iso3166_2: null
+  name: Rwanda
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Rwanda) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ST
+  iso3166_1: ST
+  iso3166_2: null
+  name: Sao Tome and Principe
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Sao Tome and Principe) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SN
+  iso3166_1: SN
+  iso3166_2: null
+  name: Senegal
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Senegal) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SC
+  iso3166_1: SC
+  iso3166_2: null
+  name: Seychelles
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Seychelles) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SL
+  iso3166_1: SL
+  iso3166_2: null
+  name: Sierra Leone
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Sierra Leone) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SO
+  iso3166_1: SO
+  iso3166_2: null
+  name: Somalia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Somalia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ZA
+  iso3166_1: ZA
+  iso3166_2: null
+  name: South Africa
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: Department of Basic Education (South Africa)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-ZA-CAPS
+  - FW-ZA-CODING-ROBOTICS
+  notes: CAPS verified as national curriculum baseline; Coding and Robotics curriculum status recorded
+    separately.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-SS
+  iso3166_1: SS
+  iso3166_2: null
+  name: South Sudan
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (South Sudan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SD
+  iso3166_1: SD
+  iso3166_2: null
+  name: Sudan
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Sudan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TZ
+  iso3166_1: TZ
+  iso3166_2: null
+  name: Tanzania
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Tanzania) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TG
+  iso3166_1: TG
+  iso3166_2: null
+  name: Togo
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Togo) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TN
+  iso3166_1: TN
+  iso3166_2: null
+  name: Tunisia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Tunisia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-UG
+  iso3166_1: UG
+  iso3166_2: null
+  name: Uganda
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Uganda) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ZM
+  iso3166_1: ZM
+  iso3166_2: null
+  name: Zambia
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Zambia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ZW
+  iso3166_1: ZW
+  iso3166_2: null
+  name: Zimbabwe
+  level: national
+  parent_jurisdiction_id: null
+  region: africa
+  education_authority: National education ministry / agency (Zimbabwe) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AG
+  iso3166_1: AG
+  iso3166_2: null
+  name: Antigua and Barbuda
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Antigua and Barbuda) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AR
+  iso3166_1: AR
+  iso3166_2: null
+  name: Argentina
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Argentina) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BS
+  iso3166_1: BS
+  iso3166_2: null
+  name: Bahamas
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Bahamas) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BB
+  iso3166_1: BB
+  iso3166_2: null
+  name: Barbados
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Barbados) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BZ
+  iso3166_1: BZ
+  iso3166_2: null
+  name: Belize
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Belize) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BO
+  iso3166_1: BO
+  iso3166_2: null
+  name: Bolivia
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Bolivia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BR
+  iso3166_1: BR
+  iso3166_2: null
+  name: Brazil
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: Ministério da Educação (MEC)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: BNCC identified; Portuguese primary — TRANSLATION_REQUIRED for depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-CA
+  iso3166_1: CA
+  iso3166_2: null
+  name: Canada
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: Provincial/territorial ministries (no single national K–12 curriculum)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Canada education is provincial/territorial. Ontario verified; other provinces mostly NOT_YET_RESEARCHED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-CL
+  iso3166_1: CL
+  iso3166_2: null
+  name: Chile
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Chile) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CO
+  iso3166_1: CO
+  iso3166_2: null
+  name: Colombia
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Colombia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CR
+  iso3166_1: CR
+  iso3166_2: null
+  name: Costa Rica
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Costa Rica) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CU
+  iso3166_1: CU
+  iso3166_2: null
+  name: Cuba
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Cuba) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-DM
+  iso3166_1: DM
+  iso3166_2: null
+  name: Dominica
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Dominica) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-DO
+  iso3166_1: DO
+  iso3166_2: null
+  name: Dominican Republic
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Dominican Republic) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-EC
+  iso3166_1: EC
+  iso3166_2: null
+  name: Ecuador
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Ecuador) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SV
+  iso3166_1: SV
+  iso3166_2: null
+  name: El Salvador
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (El Salvador) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GD
+  iso3166_1: GD
+  iso3166_2: null
+  name: Grenada
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Grenada) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GT
+  iso3166_1: GT
+  iso3166_2: null
+  name: Guatemala
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Guatemala) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GY
+  iso3166_1: GY
+  iso3166_2: null
+  name: Guyana
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Guyana) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-HT
+  iso3166_1: HT
+  iso3166_2: null
+  name: Haiti
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Haiti) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-HN
+  iso3166_1: HN
+  iso3166_2: null
+  name: Honduras
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Honduras) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-JM
+  iso3166_1: JM
+  iso3166_2: null
+  name: Jamaica
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Jamaica) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MX
+  iso3166_1: MX
+  iso3166_2: null
+  name: Mexico
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: Secretaría de Educación Pública (SEP)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Nueva Escuela Mexicana / early education frameworks identified; TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-NI
+  iso3166_1: NI
+  iso3166_2: null
+  name: Nicaragua
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Nicaragua) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PA
+  iso3166_1: PA
+  iso3166_2: null
+  name: Panama
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Panama) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PY
+  iso3166_1: PY
+  iso3166_2: null
+  name: Paraguay
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Paraguay) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PE
+  iso3166_1: PE
+  iso3166_2: null
+  name: Peru
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Peru) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KN
+  iso3166_1: KN
+  iso3166_2: null
+  name: Saint Kitts and Nevis
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Saint Kitts and Nevis) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LC
+  iso3166_1: LC
+  iso3166_2: null
+  name: Saint Lucia
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Saint Lucia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-VC
+  iso3166_1: VC
+  iso3166_2: null
+  name: Saint Vincent and the Grenadines
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Saint Vincent and the Grenadines) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SR
+  iso3166_1: SR
+  iso3166_2: null
+  name: Suriname
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Suriname) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TT
+  iso3166_1: TT
+  iso3166_2: null
+  name: Trinidad and Tobago
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Trinidad and Tobago) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US
+  iso3166_1: US
+  iso3166_2: null
+  name: United States of America
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: U.S. Department of Health & Human Services / ACF (Head Start); state education
+    agencies for K–12
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-US-HS-ELOF
+  - FW-CSTA-PK12-2026
+  - FW-US-NGSS
+  notes: Federal Head Start ELOF verified. CSTA 2026 and NGSS are multi-state / voluntary adoption frameworks
+    — not a single national K–12 curriculum.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-UY
+  iso3166_1: UY
+  iso3166_2: null
+  name: Uruguay
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Uruguay) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-VE
+  iso3166_1: VE
+  iso3166_2: null
+  name: Venezuela
+  level: national
+  parent_jurisdiction_id: null
+  region: americas
+  education_authority: National education ministry / agency (Venezuela) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AL
+  iso3166_1: AL
+  iso3166_2: null
+  name: Albania
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Albania) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AD
+  iso3166_1: AD
+  iso3166_2: null
+  name: Andorra
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Andorra) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AM
+  iso3166_1: AM
+  iso3166_2: null
+  name: Armenia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Armenia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AT
+  iso3166_1: AT
+  iso3166_2: null
+  name: Austria
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Austria) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AZ
+  iso3166_1: AZ
+  iso3166_2: null
+  name: Azerbaijan
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Azerbaijan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BY
+  iso3166_1: BY
+  iso3166_2: null
+  name: Belarus
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Belarus) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BE
+  iso3166_1: BE
+  iso3166_2: null
+  name: Belgium
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: Communities (Flemish / French / German-speaking)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Community-based education systems; not a single national curriculum.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-BA
+  iso3166_1: BA
+  iso3166_2: null
+  name: Bosnia and Herzegovina
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Bosnia and Herzegovina) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BG
+  iso3166_1: BG
+  iso3166_2: null
+  name: Bulgaria
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Bulgaria) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-HR
+  iso3166_1: HR
+  iso3166_2: null
+  name: Croatia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Croatia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CY
+  iso3166_1: CY
+  iso3166_2: null
+  name: Cyprus
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Cyprus) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CZ
+  iso3166_1: CZ
+  iso3166_2: null
+  name: Czechia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Czechia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-DK
+  iso3166_1: DK
+  iso3166_2: null
+  name: Denmark
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Denmark) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-EE
+  iso3166_1: EE
+  iso3166_2: null
+  name: Estonia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Estonia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-FI
+  iso3166_1: FI
+  iso3166_2: null
+  name: Finland
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: Finnish National Agency for Education (OPH)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-FI-ECEC
+  - FW-FI-BASIC
+  - FW-FI-DIGITAL
+  notes: ECEC + basic education national core curricula + digital competence materials; Finnish/Swedish
+    primary texts may need TRANSLATION_REQUIRED for deep clause work.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-FR
+  iso3166_1: FR
+  iso3166_2: null
+  name: France
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: Ministère de l'Éducation nationale
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Programmes officiels; TRANSLATION_REQUIRED for deep mapping.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GE
+  iso3166_1: GE
+  iso3166_2: null
+  name: Georgia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Georgia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-DE
+  iso3166_1: DE
+  iso3166_2: null
+  name: Germany
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: Standing Conference (KMK) + Länder ministries
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Federal system; Länder curricula. Deep census NOT_YET_RESEARCHED per Land.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GR
+  iso3166_1: GR
+  iso3166_2: null
+  name: Greece
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Greece) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-HU
+  iso3166_1: HU
+  iso3166_2: null
+  name: Hungary
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Hungary) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IS
+  iso3166_1: IS
+  iso3166_2: null
+  name: Iceland
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Iceland) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IE
+  iso3166_1: IE
+  iso3166_2: null
+  name: Ireland
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Ireland) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IT
+  iso3166_1: IT
+  iso3166_2: null
+  name: Italy
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Italy) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-XK
+  iso3166_1: XK
+  iso3166_2: null
+  name: Kosovo
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Kosovo) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LV
+  iso3166_1: LV
+  iso3166_2: null
+  name: Latvia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Latvia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LI
+  iso3166_1: LI
+  iso3166_2: null
+  name: Liechtenstein
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Liechtenstein) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LT
+  iso3166_1: LT
+  iso3166_2: null
+  name: Lithuania
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Lithuania) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LU
+  iso3166_1: LU
+  iso3166_2: null
+  name: Luxembourg
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Luxembourg) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MT
+  iso3166_1: MT
+  iso3166_2: null
+  name: Malta
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Malta) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MD
+  iso3166_1: MD
+  iso3166_2: null
+  name: Moldova
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Moldova) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MC
+  iso3166_1: MC
+  iso3166_2: null
+  name: Monaco
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Monaco) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ME
+  iso3166_1: ME
+  iso3166_2: null
+  name: Montenegro
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Montenegro) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NL
+  iso3166_1: NL
+  iso3166_2: null
+  name: Netherlands
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Netherlands) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MK
+  iso3166_1: MK
+  iso3166_2: null
+  name: North Macedonia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (North Macedonia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NO
+  iso3166_1: 'NO'
+  iso3166_2: null
+  name: Norway
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Norway) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PL
+  iso3166_1: PL
+  iso3166_2: null
+  name: Poland
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Poland) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PT
+  iso3166_1: PT
+  iso3166_2: null
+  name: Portugal
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Portugal) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-RO
+  iso3166_1: RO
+  iso3166_2: null
+  name: Romania
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Romania) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-RU
+  iso3166_1: RU
+  iso3166_2: null
+  name: Russian Federation
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Russian Federation) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SM
+  iso3166_1: SM
+  iso3166_2: null
+  name: San Marino
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (San Marino) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-RS
+  iso3166_1: RS
+  iso3166_2: null
+  name: Serbia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Serbia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SK
+  iso3166_1: SK
+  iso3166_2: null
+  name: Slovakia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Slovakia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SI
+  iso3166_1: SI
+  iso3166_2: null
+  name: Slovenia
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Slovenia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-ES
+  iso3166_1: ES
+  iso3166_2: null
+  name: Spain
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: Ministry of Education + autonomous communities
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: National framework + autonomous community curricula.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-SE
+  iso3166_1: SE
+  iso3166_2: null
+  name: Sweden
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Sweden) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CH
+  iso3166_1: CH
+  iso3166_2: null
+  name: Switzerland
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: Cantonal education authorities / EDK
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Cantonal system; Lehrplan 21 in many German-speaking cantons — TRANSLATION_REQUIRED for depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-TR
+  iso3166_1: TR
+  iso3166_2: null
+  name: Türkiye
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Türkiye) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-UA
+  iso3166_1: UA
+  iso3166_2: null
+  name: Ukraine
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Ukraine) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GB
+  iso3166_1: GB
+  iso3166_2: null
+  name: United Kingdom
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: UK nations have distinct education authorities (see subnational rows)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids: []
+  notes: Do not collapse UK nations. England EYFS verified under JUR-GB-ENG.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-VA
+  iso3166_1: VA
+  iso3166_2: null
+  name: Holy See
+  level: national
+  parent_jurisdiction_id: null
+  region: europe
+  education_authority: National education ministry / agency (Holy See) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BH
+  iso3166_1: BH
+  iso3166_2: null
+  name: Bahrain
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Bahrain) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IR
+  iso3166_1: IR
+  iso3166_2: null
+  name: Iran
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Iran) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IQ
+  iso3166_1: IQ
+  iso3166_2: null
+  name: Iraq
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Iraq) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IL
+  iso3166_1: IL
+  iso3166_2: null
+  name: Israel
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Israel) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-JO
+  iso3166_1: JO
+  iso3166_2: null
+  name: Jordan
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Jordan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KW
+  iso3166_1: KW
+  iso3166_2: null
+  name: Kuwait
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Kuwait) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LB
+  iso3166_1: LB
+  iso3166_2: null
+  name: Lebanon
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Lebanon) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-OM
+  iso3166_1: OM
+  iso3166_2: null
+  name: Oman
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Oman) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PS
+  iso3166_1: PS
+  iso3166_2: null
+  name: State of Palestine
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (State of Palestine) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-QA
+  iso3166_1: QA
+  iso3166_2: null
+  name: Qatar
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Qatar) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SA
+  iso3166_1: SA
+  iso3166_2: null
+  name: Saudi Arabia
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: Ministry of Education (Saudi Arabia)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: National curriculum modernization underway; version pins pending.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-SY
+  iso3166_1: SY
+  iso3166_2: null
+  name: Syrian Arab Republic
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Syrian Arab Republic) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AE
+  iso3166_1: AE
+  iso3166_2: null
+  name: United Arab Emirates
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: Ministry of Education (UAE) + emirate authorities
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Federal + emirate variation; deeper census NOT_YET_RESEARCHED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-YE
+  iso3166_1: YE
+  iso3166_2: null
+  name: Yemen
+  level: national
+  parent_jurisdiction_id: null
+  region: middle_east
+  education_authority: National education ministry / agency (Yemen) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AF
+  iso3166_1: AF
+  iso3166_2: null
+  name: Afghanistan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Afghanistan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AU
+  iso3166_1: AU
+  iso3166_2: null
+  name: Australia
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: Australian Government Department of Education / ACECQA / ACARA
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: EYLF V2.0 (2022) and Australian Curriculum Version 9 verified at national level.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-BD
+  iso3166_1: BD
+  iso3166_2: null
+  name: Bangladesh
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Bangladesh) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BT
+  iso3166_1: BT
+  iso3166_2: null
+  name: Bhutan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Bhutan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-BN
+  iso3166_1: BN
+  iso3166_2: null
+  name: Brunei Darussalam
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Brunei Darussalam) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KH
+  iso3166_1: KH
+  iso3166_2: null
+  name: Cambodia
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Cambodia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CN
+  iso3166_1: CN
+  iso3166_2: null
+  name: China
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: Ministry of Education (China)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: National curriculum standards; TRANSLATION_REQUIRED / ACCESS may vary by document.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-FJ
+  iso3166_1: FJ
+  iso3166_2: null
+  name: Fiji
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Fiji) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-IN
+  iso3166_1: IN
+  iso3166_2: null
+  name: India
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National Council of Educational Research and Training (NCERT) / Ministry of Education
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-IN-NCF-FOUNDATIONAL
+  notes: NCF for the Foundational Stage verified as priority baseline.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-ID
+  iso3166_1: ID
+  iso3166_2: null
+  name: Indonesia
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Indonesia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-JP
+  iso3166_1: JP
+  iso3166_2: null
+  name: Japan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: Ministry of Education, Culture, Sports, Science and Technology (MEXT)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-JP-MEXT-COS
+  notes: Courses of Study (kindergarten / elementary) identified via MEXT; deep clause mapping TRANSLATION_REQUIRED.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-KZ
+  iso3166_1: KZ
+  iso3166_2: null
+  name: Kazakhstan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Kazakhstan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KI
+  iso3166_1: KI
+  iso3166_2: null
+  name: Kiribati
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Kiribati) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KG
+  iso3166_1: KG
+  iso3166_2: null
+  name: Kyrgyzstan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Kyrgyzstan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LA
+  iso3166_1: LA
+  iso3166_2: null
+  name: Lao People's Democratic Republic
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Lao People's Democratic Republic) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MY
+  iso3166_1: MY
+  iso3166_2: null
+  name: Malaysia
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Malaysia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MV
+  iso3166_1: MV
+  iso3166_2: null
+  name: Maldives
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Maldives) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MH
+  iso3166_1: MH
+  iso3166_2: null
+  name: Marshall Islands
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Marshall Islands) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-FM
+  iso3166_1: FM
+  iso3166_2: null
+  name: Micronesia
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Micronesia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MN
+  iso3166_1: MN
+  iso3166_2: null
+  name: Mongolia
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Mongolia) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-MM
+  iso3166_1: MM
+  iso3166_2: null
+  name: Myanmar
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Myanmar) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NR
+  iso3166_1: NR
+  iso3166_2: null
+  name: Nauru
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Nauru) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NP
+  iso3166_1: NP
+  iso3166_2: null
+  name: Nepal
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Nepal) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-NZ
+  iso3166_1: NZ
+  iso3166_2: null
+  name: New Zealand
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: Ministry of Education (New Zealand)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-NZ-TE-WHARIKI
+  - FW-NZ-NZC
+  notes: Te Whāriki early learning curriculum + New Zealand Curriculum identified/verified via MoE portals.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-KP
+  iso3166_1: KP
+  iso3166_2: null
+  name: Democratic People's Republic of Korea
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Democratic People's Republic of Korea) —
+    pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-KR
+  iso3166_1: KR
+  iso3166_2: null
+  name: Republic of Korea
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: Ministry of Education (Republic of Korea)
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: Nuri curriculum / national curriculum identified; TRANSLATION_REQUIRED for depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-PK
+  iso3166_1: PK
+  iso3166_2: null
+  name: Pakistan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Pakistan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PW
+  iso3166_1: PW
+  iso3166_2: null
+  name: Palau
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Palau) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PG
+  iso3166_1: PG
+  iso3166_2: null
+  name: Papua New Guinea
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Papua New Guinea) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-PH
+  iso3166_1: PH
+  iso3166_2: null
+  name: Philippines
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Philippines) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-WS
+  iso3166_1: WS
+  iso3166_2: null
+  name: Samoa
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Samoa) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-SG
+  iso3166_1: SG
+  iso3166_2: null
+  name: Singapore
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: Ministry of Education (Singapore)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-SG-NEL-2022
+  notes: Nurturing Early Learners (NEL) Framework 2022 verified.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-SB
+  iso3166_1: SB
+  iso3166_2: null
+  name: Solomon Islands
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Solomon Islands) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-LK
+  iso3166_1: LK
+  iso3166_2: null
+  name: Sri Lanka
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Sri Lanka) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TJ
+  iso3166_1: TJ
+  iso3166_2: null
+  name: Tajikistan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Tajikistan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TH
+  iso3166_1: TH
+  iso3166_2: null
+  name: Thailand
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Thailand) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TL
+  iso3166_1: TL
+  iso3166_2: null
+  name: Timor-Leste
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Timor-Leste) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TO
+  iso3166_1: TO
+  iso3166_2: null
+  name: Tonga
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Tonga) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TM
+  iso3166_1: TM
+  iso3166_2: null
+  name: Turkmenistan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Turkmenistan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-TV
+  iso3166_1: TV
+  iso3166_2: null
+  name: Tuvalu
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Tuvalu) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-UZ
+  iso3166_1: UZ
+  iso3166_2: null
+  name: Uzbekistan
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Uzbekistan) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-VU
+  iso3166_1: VU
+  iso3166_2: null
+  name: Vanuatu
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Vanuatu) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-VN
+  iso3166_1: VN
+  iso3166_2: null
+  name: Viet Nam
+  level: national
+  parent_jurisdiction_id: null
+  region: asia_pacific
+  education_authority: National education ministry / agency (Viet Nam) — pin pending
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-GB-ENG
+  iso3166_1: GB
+  iso3166_2: GB-ENG
+  name: England
+  level: subnational
+  parent_jurisdiction_id: JUR-GB
+  region: europe
+  education_authority: Department for Education (England)
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-GB-ENG-EYFS-2026
+  notes: EYFS statutory frameworks apply to England only; do not treat as UK-wide.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GB-SCT
+  iso3166_1: GB
+  iso3166_2: GB-SCT
+  name: Scotland
+  level: subnational
+  parent_jurisdiction_id: JUR-GB
+  region: europe
+  education_authority: Education Scotland / Scottish Government
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-GB-SCT-CFE
+  notes: Curriculum for Excellence + early level; distinct from England EYFS.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GB-WLS
+  iso3166_1: GB
+  iso3166_2: GB-WLS
+  name: Wales
+  level: subnational
+  parent_jurisdiction_id: JUR-GB
+  region: europe
+  education_authority: Welsh Government / Curriculum for Wales
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-GB-WLS-CFW
+  notes: Curriculum for Wales; not EYFS.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-GB-NIR
+  iso3166_1: GB
+  iso3166_2: GB-NIR
+  name: Northern Ireland
+  level: subnational
+  parent_jurisdiction_id: JUR-GB
+  region: europe
+  education_authority: Department of Education (Northern Ireland)
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-GB-NIR-CURRICULUM
+  notes: NI curriculum / Foundation Stage; not England EYFS.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-CA-ON
+  iso3166_1: CA
+  iso3166_2: CA-ON
+  name: Ontario
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Ontario Ministry of Education
+  research_status: OFFICIAL_VERIFIED
+  framework_ids:
+  - FW-CA-ON-KINDERGARTEN-2016
+  notes: Kindergarten Program 2016 verified; coding expectations evolving toward 2026 updates — track
+    separately.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-CA-QC
+  iso3166_1: CA
+  iso3166_2: CA-QC
+  name: Quebec
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Ministère de l'Éducation (Québec)
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+  notes: French-primary official texts; translation review needed.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-CA-BC
+  iso3166_1: CA
+  iso3166_2: CA-BC
+  name: British Columbia
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: BC Ministry of Education and Child Care
+  research_status: IDENTIFIED
+  framework_ids: []
+  notes: BC Early Learning Framework + curriculum identified; version pin pending.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-CA-AB
+  iso3166_1: CA
+  iso3166_2: CA-AB
+  name: Alberta
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Alberta Education
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-MB
+  iso3166_1: CA
+  iso3166_2: CA-MB
+  name: Manitoba
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Manitoba Education and Early Childhood Learning
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-SK
+  iso3166_1: CA
+  iso3166_2: CA-SK
+  name: Saskatchewan
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Saskatchewan Ministry of Education
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-NS
+  iso3166_1: CA
+  iso3166_2: CA-NS
+  name: Nova Scotia
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Nova Scotia Education and Early Childhood Development
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-NB
+  iso3166_1: CA
+  iso3166_2: CA-NB
+  name: New Brunswick
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: New Brunswick Department of Education and Early Childhood Development
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-NL
+  iso3166_1: CA
+  iso3166_2: CA-NL
+  name: Newfoundland and Labrador
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: NL Department of Education
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-PE
+  iso3166_1: CA
+  iso3166_2: CA-PE
+  name: Prince Edward Island
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: PEI Department of Education and Early Years
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-NT
+  iso3166_1: CA
+  iso3166_2: CA-NT
+  name: Northwest Territories
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: NWT Education, Culture and Employment
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-YT
+  iso3166_1: CA
+  iso3166_2: CA-YT
+  name: Yukon
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Yukon Department of Education
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-CA-NU
+  iso3166_1: CA
+  iso3166_2: CA-NU
+  name: Nunavut
+  level: subnational
+  parent_jurisdiction_id: JUR-CA
+  region: americas
+  education_authority: Nunavut Department of Education
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: ''
+  last_reviewed_on: null
+- jurisdiction_id: JUR-AU-NSW
+  iso3166_1: AU
+  iso3166_2: AU-NSW
+  name: New South Wales
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: NSW Education
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-VIC
+  iso3166_1: AU
+  iso3166_2: AU-VIC
+  name: Victoria
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: Victorian Department of Education
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-QLD
+  iso3166_1: AU
+  iso3166_2: AU-QLD
+  name: Queensland
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: Queensland Department of Education
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-WA
+  iso3166_1: AU
+  iso3166_2: AU-WA
+  name: Western Australia
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: WA Department of Education
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-SA
+  iso3166_1: AU
+  iso3166_2: AU-SA
+  name: South Australia
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: SA Department for Education
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-TAS
+  iso3166_1: AU
+  iso3166_2: AU-TAS
+  name: Tasmania
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: Tasmanian Department for Education, Children and Young People
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-ACT
+  iso3166_1: AU
+  iso3166_2: AU-ACT
+  name: Australian Capital Territory
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: ACT Education Directorate
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-AU-NT
+  iso3166_1: AU
+  iso3166_2: AU-NT
+  name: Northern Territory
+  level: subnational
+  parent_jurisdiction_id: JUR-AU
+  region: asia_pacific
+  education_authority: NT Department of Education and Training
+  research_status: IDENTIFIED
+  framework_ids:
+  - FW-AU-EYLF-V2
+  - FW-AU-AC-V9
+  notes: National EYLF V2.0 + Australian Curriculum v9 apply; state delivery notes NOT_YET_RESEARCHED
+    in depth.
+  last_reviewed_on: '2026-09-03'
+- jurisdiction_id: JUR-US-AL
+  iso3166_1: US
+  iso3166_2: US-AL
+  name: Alabama
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Alabama education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-AK
+  iso3166_1: US
+  iso3166_2: US-AK
+  name: Alaska
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Alaska education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-AZ
+  iso3166_1: US
+  iso3166_2: US-AZ
+  name: Arizona
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Arizona education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-AR
+  iso3166_1: US
+  iso3166_2: US-AR
+  name: Arkansas
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Arkansas education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-CA
+  iso3166_1: US
+  iso3166_2: US-CA
+  name: California
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: California education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-CO
+  iso3166_1: US
+  iso3166_2: US-CO
+  name: Colorado
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Colorado education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-CT
+  iso3166_1: US
+  iso3166_2: US-CT
+  name: Connecticut
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Connecticut education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-DE
+  iso3166_1: US
+  iso3166_2: US-DE
+  name: Delaware
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Delaware education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-DC
+  iso3166_1: US
+  iso3166_2: US-DC
+  name: District of Columbia
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: District of Columbia education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-FL
+  iso3166_1: US
+  iso3166_2: US-FL
+  name: Florida
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Florida education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-GA
+  iso3166_1: US
+  iso3166_2: US-GA
+  name: Georgia
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Georgia education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-HI
+  iso3166_1: US
+  iso3166_2: US-HI
+  name: Hawaii
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Hawaii education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-ID
+  iso3166_1: US
+  iso3166_2: US-ID
+  name: Idaho
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Idaho education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-IL
+  iso3166_1: US
+  iso3166_2: US-IL
+  name: Illinois
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Illinois education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-IN
+  iso3166_1: US
+  iso3166_2: US-IN
+  name: Indiana
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Indiana education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-IA
+  iso3166_1: US
+  iso3166_2: US-IA
+  name: Iowa
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Iowa education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-KS
+  iso3166_1: US
+  iso3166_2: US-KS
+  name: Kansas
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Kansas education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-KY
+  iso3166_1: US
+  iso3166_2: US-KY
+  name: Kentucky
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Kentucky education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-LA
+  iso3166_1: US
+  iso3166_2: US-LA
+  name: Louisiana
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Louisiana education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-ME
+  iso3166_1: US
+  iso3166_2: US-ME
+  name: Maine
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Maine education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MD
+  iso3166_1: US
+  iso3166_2: US-MD
+  name: Maryland
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Maryland education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MA
+  iso3166_1: US
+  iso3166_2: US-MA
+  name: Massachusetts
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Massachusetts education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MI
+  iso3166_1: US
+  iso3166_2: US-MI
+  name: Michigan
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Michigan education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MN
+  iso3166_1: US
+  iso3166_2: US-MN
+  name: Minnesota
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Minnesota education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MS
+  iso3166_1: US
+  iso3166_2: US-MS
+  name: Mississippi
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Mississippi education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MO
+  iso3166_1: US
+  iso3166_2: US-MO
+  name: Missouri
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Missouri education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-MT
+  iso3166_1: US
+  iso3166_2: US-MT
+  name: Montana
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Montana education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NE
+  iso3166_1: US
+  iso3166_2: US-NE
+  name: Nebraska
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Nebraska education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NV
+  iso3166_1: US
+  iso3166_2: US-NV
+  name: Nevada
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Nevada education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NH
+  iso3166_1: US
+  iso3166_2: US-NH
+  name: New Hampshire
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: New Hampshire education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NJ
+  iso3166_1: US
+  iso3166_2: US-NJ
+  name: New Jersey
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: New Jersey education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NM
+  iso3166_1: US
+  iso3166_2: US-NM
+  name: New Mexico
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: New Mexico education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NY
+  iso3166_1: US
+  iso3166_2: US-NY
+  name: New York
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: New York education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-NC
+  iso3166_1: US
+  iso3166_2: US-NC
+  name: North Carolina
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: North Carolina education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-ND
+  iso3166_1: US
+  iso3166_2: US-ND
+  name: North Dakota
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: North Dakota education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-OH
+  iso3166_1: US
+  iso3166_2: US-OH
+  name: Ohio
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Ohio education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-OK
+  iso3166_1: US
+  iso3166_2: US-OK
+  name: Oklahoma
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Oklahoma education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-OR
+  iso3166_1: US
+  iso3166_2: US-OR
+  name: Oregon
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Oregon education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-PA
+  iso3166_1: US
+  iso3166_2: US-PA
+  name: Pennsylvania
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Pennsylvania education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-RI
+  iso3166_1: US
+  iso3166_2: US-RI
+  name: Rhode Island
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Rhode Island education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-SC
+  iso3166_1: US
+  iso3166_2: US-SC
+  name: South Carolina
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: South Carolina education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-SD
+  iso3166_1: US
+  iso3166_2: US-SD
+  name: South Dakota
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: South Dakota education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-TN
+  iso3166_1: US
+  iso3166_2: US-TN
+  name: Tennessee
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Tennessee education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-TX
+  iso3166_1: US
+  iso3166_2: US-TX
+  name: Texas
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Texas education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-UT
+  iso3166_1: US
+  iso3166_2: US-UT
+  name: Utah
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Utah education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-VT
+  iso3166_1: US
+  iso3166_2: US-VT
+  name: Vermont
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Vermont education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-VA
+  iso3166_1: US
+  iso3166_2: US-VA
+  name: Virginia
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Virginia education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-WA
+  iso3166_1: US
+  iso3166_2: US-WA
+  name: Washington
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Washington education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-WV
+  iso3166_1: US
+  iso3166_2: US-WV
+  name: West Virginia
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: West Virginia education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-WI
+  iso3166_1: US
+  iso3166_2: US-WI
+  name: Wisconsin
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Wisconsin education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
+- jurisdiction_id: JUR-US-WY
+  iso3166_1: US
+  iso3166_2: US-WY
+  name: Wyoming
+  level: subnational
+  parent_jurisdiction_id: JUR-US
+  region: americas
+  education_authority: Wyoming education agency (name pin pending)
+  research_status: NOT_YET_RESEARCHED
+  framework_ids: []
+  notes: State CS / early learning standards census row; CSTA/NGSS adoption varies — do not assume.
+  last_reviewed_on: null
