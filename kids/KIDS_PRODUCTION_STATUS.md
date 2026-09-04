@@ -9,9 +9,9 @@ NO_CHILD_VALIDATION_EVIDENCE
 
 ## Allowed state ceiling this wave
 
-`KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW` (justified for human review only)
+`KIDS_REVIEW_PROTOTYPE_COMPLETE` for ONE TAP Track 3 review prototypes (human review only).
 
-**Not** `PUBLICATION_READY` · **Not** `GLOBALLY_ALIGNED` · **Not** child-validated · **Not** officially aligned
+**Not** `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` · **Not** `PUBLICATION_READY` · **Not** `GLOBALLY_ALIGNED` · **Not** child-validated · **Not** officially aligned
 
 ## Track progress
 
@@ -25,9 +25,10 @@ NO_CHILD_VALIDATION_EVIDENCE
 | Media/design systems | `kids/design/`, `kids/research/` | RESEARCH_FOUNDATION |
 | Standards atlas | `kids/standards/` | DRAFT_INTERNAL (atlas landed) |
 | Wire-hook registry | `kids/standards/WIRE_HOOK_REGISTRY.yaml` | 133 hooks (ADJACENT=120, PROPOSED=2, NOT_YET_MAPPED=11) |
-| ONE TAP pilot (6 bands) | `kids/pilots/ONE_TAP/` | DEVELOPMENTAL_PROTOTYPE |
+| ONE TAP pilot (6 bands) | `kids/pilots/ONE_TAP/` | KIDS_REVIEW_PROTOTYPE_COMPLETE |
+| Format truth vocabulary | `kids/pilots/ONE_TAP/FORMAT_TRUTH_VOCABULARY.yaml` | DRAFT_INTERNAL |
 | WAIKE crosswalk | `kids/waike/KIDS_WAIKE_CROSSWALK.yaml` | DRAFT_INTERNAL |
-| Pilot report | `kids/pilots/ONE_TAP/PILOT_REPORT.md` | DRAFT_INTERNAL |
+| Pilot report | `kids/pilots/ONE_TAP/PILOT_REPORT.md` | KIDS_REVIEW_PROTOTYPE_COMPLETE |
 
 ## SHAs
 

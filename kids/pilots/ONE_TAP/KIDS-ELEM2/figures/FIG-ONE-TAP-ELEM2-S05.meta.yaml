@@ -1,14 +1,20 @@
 asset_id: FIG-ONE-TAP-ELEM2-S05
 truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
 age_band: KIDS-ELEM2
-alt: "Style-neutral illustration for 'Latency feel vs measure': Rough measure."
-description: "Rough measure."
-purpose: "ONE TAP pilot spread S05 (MEASURE)"
+alt: "Style-neutral illustration for 'Latency: feel vs measure': Rough stopwatch measure of a remote refresh."
+description: "Rough stopwatch measure of a remote refresh."
+purpose: "ONE TAP review prototype spread S05 (MEASURE)"
 text_safe_zones:
   title_band: [40, 40, 720, 90]
-  body_band: [40, 340, 720, 100]
+  body_band: [40, 320, 720, 120]
 print_dimensions_px: {width: 800, height: 500}
 digital_dimensions_px: {width: 800, height: 500}
 path: "kids/pilots/ONE_TAP/KIDS-ELEM2/figures/FIG-ONE-TAP-ELEM2-S05.svg"
 owner_aesthetic_approval: PENDING
 copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body

@@ -78,8 +78,19 @@ def main() -> int:
                     errors.append(f"{short}: spread missing standards block")
                 else:
                     st = stds[0].get("status")
-                    if st not in {"NOT_YET_MAPPED", "PROPOSED", "EXACT", "ADJACENT", "NO_MAP"}:
+                    if st not in {
+                        "NOT_YET_MAPPED",
+                        "PROPOSED",
+                        "EXACT",
+                        "ADJACENT",
+                        "NO_MAP",
+                        "TRANSLATION_REQUIRED",
+                        "VERSION_UNCLEAR",
+                    }:
                         errors.append(f"{short}: bad standards status {st}")
+        if not (band_dir / "AUTHOR_NOTES.yaml").is_file():
+            # Soft requirement for review-prototype wave; warn via review check.
+            pass
 
     report = PILOT / "PILOT_REPORT.md"
     if not report.is_file():

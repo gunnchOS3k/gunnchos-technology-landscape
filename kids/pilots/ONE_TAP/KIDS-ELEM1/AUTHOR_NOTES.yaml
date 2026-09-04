@@ -1,0 +1,89 @@
+# AUTHOR / INTEGRATOR NOTES — KIDS-ELEM1 (not child-facing)
+
+meta:
+  age_band: KIDS-ELEM1
+  age_guide: "Kindergarten–Grade 2"
+  claim_ceiling: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  child_validation: NONE
+  publication_ready: false
+  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  adult_source: CH02 developmental rewrite (not sentence simplification)
+  character_cast: A_Signal_Crew_provisional
+  spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+
+editor_constraints_moved_out_of_body:
+  - "Use pilot figure"
+  - "No false GHz claims"
+  - "Link to adult CH02 honestly"
+  - "Honesty label required"
+  - "Adult CH02 developmental rewrite (from child-facing concept line)"
+  - "Standards appendix NOT_YET_MAPPED / dangling STD-WIRE body text"
+  - "Git SHA provenance in child/caregiver manuscript body"
+  - "sentence simplification disclaimer in child-facing header"
+
+design_rule_evidence_index:
+  one_focal_action: [CME-001, CME-005, CME-007]
+  low_clutter: [CME-005, CME-006]
+  color_not_sole_encoding: [CME-003, CME-004]
+  high_contrast_infant: [CME-001, CME-003]
+  print_first_infant_toddler: [CME-002, CME-019, CME-020]
+  serve_and_return: [CME-008, CME-009, CME-010]
+  contingent_cause_effect: [CME-011, CME-013]
+  stable_cast_continuity: [CME-016, CME-017, CME-018]
+  participatory_prompts: [CME-018, CME-021]
+  easy_stop_agency: [CME-022, CME-023, CME-024]
+  no_dark_patterns: [CME-025, CME-026, CME-027]
+  observation_over_diagnosis: [CME-028, CME-029]
+  style_neutral_prototype: [CME-006, CME-016]
+
+spreads:
+  - id: S01
+    facilitator_note: "Two observations before any vocabulary lecture."
+    author_meta: "Supervise; no accounts. Prefer school-safe demo devices."
+    talk_together_child_safe: "Supervise. No accounts. Separate “I saw” from “I think.”"
+  - id: S02
+    facilitator_note: "HW senses; SW instructs."
+    author_meta: "No GHz / IQ marketing claims."
+    talk_together_child_safe: "Keep definitions short and pointed at the device."
+  - id: S03
+    facilitator_note: "One concrete tap only."
+    author_meta: "none"
+    talk_together_child_safe: "IPO diagram on paper or whiteboard."
+  - id: S04
+    facilitator_note: "Clarity > jargon."
+    author_meta: "none"
+    talk_together_child_safe: "Any clear order is OK; fix together if stuck."
+  - id: S05
+    facilitator_note: "Core systems habit."
+    author_meta: "none"
+    talk_together_child_safe: "Observation vs guess — label both."
+  - id: S06
+    facilitator_note: "Felt speed ≠ full completion."
+    author_meta: "none"
+    talk_together_child_safe: "Two timelines on one page."
+  - id: S07
+    facilitator_note: "Consent + ask-a-trusted-adult."
+    author_meta: "No exploit content; no stranger-danger sensationalism."
+    talk_together_child_safe: "Safety without fear."
+  - id: S08
+    facilitator_note: "Celebrate unknowns."
+    author_meta: "observation_over_diagnosis"
+    talk_together_child_safe: "Portfolio piece — process, not ranking."
+  - id: S09
+    facilitator_note: "Evidence > slogans."
+    author_meta: "none"
+    talk_together_child_safe: "Discuss kindly; no shame."
+  - id: S10
+    facilitator_note: "Teach-back is evidence of process."
+    author_meta: "stable_cast_continuity; participatory_prompts"
+    talk_together_child_safe: "Optional peer; easy stop."
+
+standards:
+  see: TRACEABILITY.yaml
+  relationship: CROSSWALKED_AGAINST
+  fidelity_ceiling: ADJACENT
+
+non_claims:
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - NOT GLOBALLY_ALIGNED / not KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE

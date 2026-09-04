@@ -1,14 +1,20 @@
 asset_id: FIG-ONE-TAP-PRESCHOOL-S04
 truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
 age_band: KIDS-PRESCHOOL
-alt: "Style-neutral illustration for 'Inside helps': Connect outside→inside."
-description: "Connect outside→inside."
-purpose: "ONE TAP pilot spread S04 (CONNECT)"
+alt: "Style-neutral illustration for 'Inside helps': Connect outside parts to an “inside helpers” idea."
+description: "Connect outside parts to an “inside helpers” idea."
+purpose: "ONE TAP review prototype spread S04 (CONNECT)"
 text_safe_zones:
   title_band: [40, 40, 720, 90]
-  body_band: [40, 340, 720, 100]
+  body_band: [40, 320, 720, 120]
 print_dimensions_px: {width: 800, height: 500}
 digital_dimensions_px: {width: 800, height: 500}
 path: "kids/pilots/ONE_TAP/KIDS-PRESCHOOL/figures/FIG-ONE-TAP-PRESCHOOL-S04.svg"
 owner_aesthetic_approval: PENDING
 copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body

@@ -21,7 +21,7 @@ GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
 | Bootstrap scaffold | COMPLETE | — | `publication/family/README.md` |
 | Adult distribution | READY_FOR_TRACK_REVIEW | `ADULT_SUBMISSION_PACKAGE_PREPARED` | Packages + research; NOT submitted |
 | Kids media/design | DRAFT_INTERNAL | research foundation | Evidence registers + design systems |
-| Kids curriculum + ONE TAP | DEVELOPMENTAL_PROTOTYPE | spiral + 6-band pilot | NO_CHILD_VALIDATION_EVIDENCE |
+| Kids curriculum + ONE TAP | KIDS_REVIEW_PROTOTYPE_COMPLETE | spiral + 6-band review prototypes | NO_CHILD_VALIDATION_EVIDENCE; not global-foundation-complete |
 | Kids standards atlas | DRAFT_INTERNAL | atlas landed | Editorial crosswalks only |
 | Shared family infra | IN_PROGRESS→COMPLETE | registries + gates | Integrator wave |
 | Gate 3 / FULL31 freeze | UNCHANGED | empty diff vs accepted main | Do not rewrite provenance |
@@ -37,5 +37,6 @@ GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING
 
 - Scaffold / packages / pilots ≠ published product.
 - `ADULT_SUBMISSION_PACKAGE_PREPARED` ≠ `PUBLICATION_READY`.
-- `KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW` ≠ child-validated or publication-ready.
+- `KIDS_REVIEW_PROTOTYPE_COMPLETE` is not child-validated, not publication-ready, and not `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE`.
+- `KIDS_DEVELOPMENTAL_PROTOTYPE_READY_FOR_HUMAN_REVIEW` is not child-validated or publication-ready.
 - No retailer submission evidence; no ISBN fabrication.

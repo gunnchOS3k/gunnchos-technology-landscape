@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-curriculum-generate distribution-requirements-check adult-release-package-check kids-standards-generate kids-standards-check publication-family-check publication-secrets-scan kids-epubcheck
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-review-prototype-check kids-curriculum-generate kids-one-tap-review-generate distribution-requirements-check adult-release-package-check kids-standards-generate kids-standards-check publication-family-check publication-secrets-scan kids-epubcheck
 
 setup:
 	python3 -m venv .venv
@@ -222,11 +222,19 @@ continuation-check:
 # Kids Edition — concept spiral + ONE TAP pilot (developmental prototypes only).
 kids-curriculum-generate:
 	$(PYTHON) scripts/generate_kids_curriculum_pilot.py
+	$(PYTHON) scripts/build_kids_one_tap_review_prototype.py
+
+kids-one-tap-review-generate:
+	$(PYTHON) scripts/build_kids_one_tap_review_prototype.py
 
 kids-concept-spiral-check:
 	$(PYTHON) scripts/validate_kids_concept_spiral.py
 
 kids-pilot-check:
+	$(PYTHON) scripts/validate_kids_pilot.py
+
+kids-review-prototype-check:
+	$(PYTHON) scripts/validate_kids_review_prototype.py
 	$(PYTHON) scripts/validate_kids_pilot.py
 
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).

@@ -6,120 +6,119 @@ NOT CHILD-VALIDATED
 NOT PUBLICATION-READY
 ```
 
-**Pilot concept:** Input → Response (adult CH02 developmental rewrite, not sentence simplification).
+**Pilot concept:** Input → Response across devices and (sometimes) networks.
 **Concept ID:** `KCON-CH02-ONE-TAP`
 **Child validation:** none
 
 ## Caregiver / educator note
 
-Use observation, not ranking. Stop anytime.
+Prediction before certainty. Stop anytime.
+
+## Cast (provisional — Character Bible Option A)
+
+- Explorer: **Mira** · Builder: **Bolt** · Instructions: **Step** · Signals: **Ping** · Safety: **Shield**
+- _Provisional Character Bible Option A — not owner-locked IP._
 
 ## Spread S01 — Message or local? (STORY)
 
 ![FIG-ONE-TAP-PREK-S01](figures/FIG-ONE-TAP-PREK-S01.svg)
 
-**Child-facing text:** Jordan taps Refresh. Sometimes the phone already has the page. Sometimes it asks far away.
+**Child-facing text:** Jordan taps Refresh with Mira. Sometimes the phone already has the page. Sometimes Ping says it must ask far away.
 
-**Action:** Story hook.
+**Try it:** Story hook: local copy vs far ask.
 
-**Caregiver prompt:** Plant optional network idea.
+**Talk together:** Plant the optional network idea gently.
 
 ## Spread S02 — Two timelines (NOTICE)
 
 ![FIG-ONE-TAP-PREK-S02](figures/FIG-ONE-TAP-PREK-S02.svg)
 
-**Child-facing text:** A quick highlight can happen before new words arrive.
+**Child-facing text:** A quick highlight can happen before new words arrive. Fast light now. New words maybe later.
 
-**Action:** Notice two timings.
+**Try it:** Notice immediate vs later feedback.
 
-**Caregiver prompt:** Immediate vs later.
+**Talk together:** Point to “now” and “later.”
 
 ## Spread S03 — System and component (NAME)
 
 ![FIG-ONE-TAP-PREK-S03](figures/FIG-ONE-TAP-PREK-S03.svg)
 
-**Child-facing text:** The phone is a system. The button is a component.
+**Child-facing text:** The phone is a system. The button is a component — one part of the system.
 
-**Action:** Name system/component.
+**Try it:** Name system and component once, concretely.
 
-**Caregiver prompt:** Use both words once, concretely.
+**Talk together:** Use both words once with pointing.
 
 ## Spread S04 — Simple algorithm (CONNECT)
 
 ![FIG-ONE-TAP-PREK-S04](figures/FIG-ONE-TAP-PREK-S04.svg)
 
-**Child-facing text:** 1 sense press 2 choose action 3 show result.
+**Child-facing text:** Step shows three ordered steps: 1 sense press  2 choose action  3 show result.
 
-**Action:** Write/draw 3 steps.
+**Try it:** Draw or line up three steps.
 
-**Caregiver prompt:** Algorithm = ordered steps.
+**Talk together:** Algorithm means ordered steps.
 
 ## Spread S05 — Local prediction (PREDICT)
 
 ![FIG-ONE-TAP-PREK-S05](figures/FIG-ONE-TAP-PREK-S05.svg)
 
-**Child-facing text:** If the page is already here, maybe no far message.
+**Child-facing text:** If the page is already here, maybe no far message. What do you predict?
 
-**Action:** Predict local path.
+**Try it:** Predict local path.
 
-**Caregiver prompt:** Prediction, not certainty.
+**Talk together:** Prediction, not certainty.
 
 ## Spread S06 — Message path (TRY)
 
 ![FIG-ONE-TAP-PREK-S06](figures/FIG-ONE-TAP-PREK-S06.svg)
 
-**Child-facing text:** If it needs new info, a message can travel out and back.
+**Child-facing text:** If it needs new info, a message can travel out and back. Draw Ping’s path.
 
-**Action:** Draw message path.
+**Try it:** Draw a simple out-and-back path.
 
-**Caregiver prompt:** Path drawing.
+**Talk together:** Path drawing on paper.
 
 ## Spread S07 — Private choice (SAFE + FAIR)
 
 ![FIG-ONE-TAP-PREK-S07](figures/FIG-ONE-TAP-PREK-S07.svg)
 
-**Child-facing text:** Do we share the screen with a stranger? No — ask a trusted adult.
+**Child-facing text:** Do we share the screen with a stranger? Shield says no — ask a trusted adult.
 
-**Action:** Choose safe option.
+**Try it:** Choose the safer option.
 
-**Caregiver prompt:** Safe/private choice.
+**Talk together:** Safe and private choice.
 
 ## Spread S08 — Build-a-sequence (MAKE)
 
 ![FIG-ONE-TAP-PREK-S08](figures/FIG-ONE-TAP-PREK-S08.svg)
 
-**Child-facing text:** Build cards: Input → Steps → Output (optional Message).
+**Child-facing text:** Build cards: Input → Steps → Output. Add optional Message if needed.
 
-**Action:** Build sequence.
+**Try it:** Hands-on sequence build.
 
-**Caregiver prompt:** Hands-on sequence.
+**Talk together:** Hands-on sequence.
 
 ## Spread S09 — Explain the path (EXPLAIN)
 
 ![FIG-ONE-TAP-PREK-S09](figures/FIG-ONE-TAP-PREK-S09.svg)
 
-**Child-facing text:** Explain which path you built and why.
+**Child-facing text:** Explain which path you built and why. Mira listens. Mistakes are OK.
 
-**Action:** Explain.
+**Try it:** Explain without perfection pressure.
 
-**Caregiver prompt:** Listen without correcting every word.
+**Talk together:** Listen without correcting every word.
 
 ## Spread S10 — Teach caregiver (TEACH)
 
 ![FIG-ONE-TAP-PREK-S10](figures/FIG-ONE-TAP-PREK-S10.svg)
 
-**Child-facing text:** Teach your caregiver the three steps.
+**Child-facing text:** Teach your caregiver the three steps. You are the teacher now.
 
-**Action:** Teach-back.
+**Try it:** Teach-back to caregiver.
 
-**Caregiver prompt:** Be the learner.
+**Talk together:** Adult becomes the learner.
 
-## Standards appendix (adult-facing)
+## Facilitator pointer
 
-All mappings `NOT_YET_MAPPED` pending sister standards atlas land. Wire IDs in `TRACEABILITY.yaml`.
-
-## Source / evidence appendix (adult-facing)
-
-- Adult CH02 on main `82284cd8f41d750ff508cd6ea5bad0a9534d8162`
-- Spiral: `kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml`
-- No child testing was conducted for this prototype.
+Editor, standards, and provenance notes live in `AUTHOR_NOTES.yaml` and `TRACEABILITY.yaml` — not in child-facing spreads.
