@@ -19,3 +19,10 @@ Agents A–J may base work from the tip of this branch after bootstrap.
 - Audit: `FRONTMATTER_NAV_AUDIT.yaml`
 - Report: `FRONTMATTER_NAV_REPORT.md`
 - Errata stub: `ERRATA_WORKFLOW.md`
+
+## Continuity / duplication (Agent D)
+
+- Tool: `scripts/audit_full31_continuity.py` (audit aid; not auto-rewrite)
+- Ledger: `CONTINUITY_LEDGER.yaml`
+- Report: `CONTINUITY_REPORT.md`
+- Identity matrix: `CHAPTER_IDENTITY_MATRIX.yaml` (+ `.md`)

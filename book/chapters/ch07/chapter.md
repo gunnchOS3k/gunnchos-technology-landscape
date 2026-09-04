@@ -197,7 +197,7 @@ This chapter does not invent universal millisecond budgets or Device Quartet cap
 
 ### LAB-CMS-001 — Make Local Slowness Visible
 
-**Observable question.** When a familiar local app feels slow but the connectivity icon looks fine, what evidence can I gather—using only commodity tools—to separate **CPU**, **memory**, **storage**, and **scheduling/thermal** hypotheses?
+**Observable question.** When a familiar local app feels slow but the connectivity icon looks fine, what evidence can I gather—using only commodity tools—to separate **memory pressure**, **storage I/O**, and **cache/hierarchy misses** from a CPU-only story?
 
 **Inheritance note.** LAB-CMS-001 is the publication-owned Concept Edition lab for CE-3; Chapter 7 reuses it as the hierarchy/persistence practice lab rather than inventing a duplicate WAIKE module ID. WAIKE accepted `main` hosts adjacent competencies (for example MCU memory-map and storage-triage labs) but no exact “CH07 memory hierarchy” course module ID—adjacency only, no invented titles.
 

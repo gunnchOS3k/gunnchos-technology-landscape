@@ -374,8 +374,8 @@ Career growth here means better questions: “Is this runnable work, waiting, or
 1. **“More CPU cores always make everything faster.”**  
    Counter: useful overlap and non-CPU bottlenecks decide; serial and waiting paths remain [@patterson-hennessy-riscv].
 
-2. **“The operating system runs my app’s logic for me.”**  
-   Counter: the OS schedules and mediates; instructions still execute on processors [@tanenbaum-bos].
+2. **“The operating system is doing my app’s compute for me.”**  
+   Counter: at CPU depth, keep instruction streams and parallel work visible; Chapter 12 deepens what the OS actually schedules versus what the app still computes [@tanenbaum-bos].
 
 3. **“If Wi-Fi is connected, lag must be the network.”**  
    Counter: local contention can fail the Stability Contract while the icon stays polite (LAB-CMS-001 hypothesis set; illustrative until *you* measure).

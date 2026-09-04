@@ -221,7 +221,7 @@ Prefer inheriting existing CE labs. Do not invent CE/WAIKE lab IDs. The chapter�
 
 ### LAB-SYS-001 — Name the system behind a familiar “open” (CE-1 adjacency)
 
-**Observable question.** When I open something I already use, what becomes visible first, what becomes usable later, and which hidden parts might still be working?
+**Observable question.** When chrome appears before a feature finishes, which cooperating parts—**UI**, **runtime**, **libraries**, and **APIs**—might still be working, and how do I avoid collapsing them into one vague “the app”?
 
 **Why this lab here.** CE-1 / Chapter 1 adjacency: explode “the app” into cooperating parts and teach chrome versus content without claiming Quartet timings. Full procedure lives under `labs/LAB-SYS-001/`; do not duplicate the entire write-up in this chapter.
 
