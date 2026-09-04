@@ -1,0 +1,1585 @@
+schema: kids.standards.wire_hooks/v1
+generated_on: '2026-09-03'
+disclaimer: Editorial integrator wiring only. Prefer CROSSWALKED_AGAINST / MAPPED_TO / INFORMED_BY via
+  atlas mapping_ids. Never claim official alignment or certification.
+atlas_ref: kids/standards/GLOBAL_STANDARDS_ATLAS.yaml
+hooks:
+- wire_id: STD-WIRE-ME-TECH-SYSTEM
+  scope: concept
+  concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: &id005
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-PLAY-INQUIRY', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-ONE-TAP-CORE
+  scope: concept
+  concept_id: KCON-CH02-ONE-TAP
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: &id004
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-ALGO-FOUNDATIONS
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-PLAY-INQUIRY', 'KE-TARGET-ALGO-FOUNDATIONS',
+    'KE-TARGET-SYSTEMS-STABILITY']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-PERF-FEEL
+  scope: concept
+  concept_id: KCON-CH03-PERFORMANCE-FEEL
+  kids_strand: STRAND-ME-TECH
+  status: PROPOSED
+  atlas_mapping_ids:
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest PROPOSED bridge via kids_targets ['KE-TARGET-SYSTEMS-STABILITY']; editorial crosswalk
+    only — not official alignment.
+- wire_id: STD-WIRE-DEVICE-FORMS
+  scope: concept
+  concept_id: KCON-CH04-DEVICE-FORMS
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: &id001
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-SIGNALS
+  scope: concept
+  concept_id: KCON-CH05-SIGNALS-LOGIC
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-CPU
+  scope: concept
+  concept_id: KCON-CH06-CPU-WORK
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-MEMORY
+  scope: concept
+  concept_id: KCON-CH07-MEMORY-STORAGE
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-SENSES
+  scope: concept
+  concept_id: KCON-CH08-SENSES-OUTPUT
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-PLAY-INQUIRY', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-POWER
+  scope: concept
+  concept_id: KCON-CH09-POWER-HEAT
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-PORTS
+  scope: concept
+  concept_id: KCON-CH10-PORTS-BUSES
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-BOOT
+  scope: concept
+  concept_id: KCON-CH11-BOOT-TRUST
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: &id002
+  - KE-TARGET-ALGO-FOUNDATIONS
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-ALGO-FOUNDATIONS']; editorial crosswalk
+    only — not official alignment.
+- wire_id: STD-WIRE-OS
+  scope: concept
+  concept_id: KCON-CH12-OS-SCHEDULE
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-ALGO-FOUNDATIONS']; editorial crosswalk
+    only — not official alignment.
+- wire_id: STD-WIRE-FILES
+  scope: concept
+  concept_id: KCON-CH13-FILES-DATA-LIFE
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: &id007
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DATA-PATTERNS', 'KE-TARGET-AI-LITERACY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-APPS
+  scope: concept
+  concept_id: KCON-CH14-APPS-UI
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-ALGO-FOUNDATIONS']; editorial crosswalk
+    only — not official alignment.
+- wire_id: STD-WIRE-CLOUD
+  scope: concept
+  concept_id: KCON-CH15-CLOUD-EDGE
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED until a network/connectivity
+    target is authored.
+- wire_id: STD-WIRE-PACKETS
+  scope: concept
+  concept_id: KCON-CH16-PACKETS-INTERNET
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED until a network/connectivity
+    target is authored.
+- wire_id: STD-WIRE-RADIO
+  scope: concept
+  concept_id: KCON-CH17-RADIO-ACCESS
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED until a network/connectivity
+    target is authored.
+- wire_id: STD-WIRE-SPECTRUM
+  scope: concept
+  concept_id: KCON-CH18-SPECTRUM-RADIO
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED until a network/connectivity
+    target is authored.
+- wire_id: STD-WIRE-NTN
+  scope: concept
+  concept_id: KCON-CH19-NTN-CONTINUITY
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED until a network/connectivity
+    target is authored.
+- wire_id: STD-WIRE-STABILITY
+  scope: concept
+  concept_id: KCON-CH20-STABILITY-QOE
+  kids_strand: STRAND-ME-TECH
+  status: PROPOSED
+  atlas_mapping_ids:
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest PROPOSED bridge via kids_targets ['KE-TARGET-SYSTEMS-STABILITY']; editorial crosswalk
+    only — not official alignment.
+- wire_id: STD-WIRE-AI
+  scope: concept
+  concept_id: KCON-CH21-DATA-AI
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: &id006
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DATA-PATTERNS', 'KE-TARGET-AI-LITERACY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-EDGE-AI
+  scope: concept
+  concept_id: KCON-CH22-EDGE-AI-SENSE
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  - MAP-NGSS-SCI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  - KE-TARGET-SCIENCE-PRACTICES
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DATA-PATTERNS', 'KE-TARGET-AI-LITERACY',
+    'KE-TARGET-SCIENCE-PRACTICES']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-SECURITY
+  scope: concept
+  concept_id: KCON-CH23-CYBERSECURITY
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: &id008
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DIGITAL-CITIZENSHIP', 'KE-TARGET-COMPUTING-SOCIETY',
+    'KE-TARGET-SYSTEMS-STABILITY']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-PRIVACY
+  scope: concept
+  concept_id: KCON-CH24-PRIVACY-ETHICS
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets: &id009
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DIGITAL-CITIZENSHIP', 'KE-TARGET-COMPUTING-SOCIETY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-EQUITY
+  scope: concept
+  concept_id: KCON-CH25-DIGITAL-EQUITY
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets: &id010
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DIGITAL-CITIZENSHIP', 'KE-TARGET-COMPUTING-SOCIETY'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-DEV
+  scope: concept
+  concept_id: KCON-CH26-SOFTWARE-VCS
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: &id003
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-TEST
+  scope: concept
+  concept_id: KCON-CH27-TEST-EVIDENCE
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-SIM
+  scope: concept
+  concept_id: KCON-CH28-TWINS-SIM
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-PRODUCT
+  scope: concept
+  concept_id: KCON-CH29-PRODUCT-DESIGN
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-PORTFOLIO
+  scope: concept
+  concept_id: KCON-CH30-CAREER-PORTFOLIO
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-CAPSTONE
+  scope: concept
+  concept_id: KCON-CH31-CAPSTONE-TEACH
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-BABY-ME-TECH-01
+  scope: unit
+  unit_id: UNIT-BABY-ME-TECH-01
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id004
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+    alignment.
+- wire_id: STD-WIRE-UNIT-TODDLER-ME-TECH-01
+  scope: unit
+  unit_id: UNIT-TODDLER-ME-TECH-01
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id004
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+    alignment.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-ME-TECH-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id005
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PREK-ME-TECH-01
+  scope: unit
+  unit_id: UNIT-PREK-ME-TECH-01
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id005
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM1-ME-TECH-01
+  scope: unit
+  unit_id: UNIT-ELEM1-ME-TECH-01
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id005
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM2-ME-TECH-01
+  scope: unit
+  unit_id: UNIT-ELEM2-ME-TECH-01
+  kids_strand: STRAND-ME-TECH
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id005
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-BABY-INSIDE-01
+  scope: unit
+  unit_id: UNIT-BABY-INSIDE-01
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-TODDLER-INSIDE-01
+  scope: unit
+  unit_id: UNIT-TODDLER-INSIDE-01
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-INSIDE-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-INSIDE-01
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PREK-INSIDE-01
+  scope: unit
+  unit_id: UNIT-PREK-INSIDE-01
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM1-INSIDE-01
+  scope: unit
+  unit_id: UNIT-ELEM1-INSIDE-01
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM2-INSIDE-01
+  scope: unit
+  unit_id: UNIT-ELEM2-INSIDE-01
+  kids_strand: STRAND-INSIDE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-BABY-INSTRUCTIONS-01
+  scope: unit
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id004
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+    alignment.
+- wire_id: STD-WIRE-UNIT-TODDLER-INSTRUCTIONS-01
+  scope: unit
+  unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id004
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE',
+    'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE',
+    'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official
+    alignment.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-INSTRUCTIONS-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PREK-INSTRUCTIONS-01
+  scope: unit
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM1-INSTRUCTIONS-01
+  scope: unit
+  unit_id: UNIT-ELEM1-INSTRUCTIONS-01
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM2-INSTRUCTIONS-01
+  scope: unit
+  unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+  kids_strand: STRAND-INSTRUCTIONS
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-BABY-MESSAGES-01
+  scope: unit
+  unit_id: UNIT-BABY-MESSAGES-01
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+    with rationale.
+- wire_id: STD-WIRE-UNIT-TODDLER-MESSAGES-01
+  scope: unit
+  unit_id: UNIT-TODDLER-MESSAGES-01
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+    with rationale.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-MESSAGES-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+    with rationale.
+- wire_id: STD-WIRE-UNIT-PREK-MESSAGES-01
+  scope: unit
+  unit_id: UNIT-PREK-MESSAGES-01
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+    with rationale.
+- wire_id: STD-WIRE-UNIT-ELEM1-MESSAGES-01
+  scope: unit
+  unit_id: UNIT-ELEM1-MESSAGES-01
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+    with rationale.
+- wire_id: STD-WIRE-UNIT-ELEM2-MESSAGES-01
+  scope: unit
+  unit_id: UNIT-ELEM2-MESSAGES-01
+  kids_strand: STRAND-MESSAGES
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  rationale: Atlas lacks honest grain for this unit strand (often messaging/network); kept NOT_YET_MAPPED
+    with rationale.
+- wire_id: STD-WIRE-UNIT-BABY-DATA-01
+  scope: unit
+  unit_id: UNIT-BABY-DATA-01
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: *id006
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-TODDLER-DATA-01
+  scope: unit
+  unit_id: UNIT-TODDLER-DATA-01
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: *id006
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-DATA-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-DATA-01
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: *id007
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PREK-DATA-01
+  scope: unit
+  unit_id: UNIT-PREK-DATA-01
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: *id007
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM1-DATA-01
+  scope: unit
+  unit_id: UNIT-ELEM1-DATA-01
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: *id006
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM2-DATA-01
+  scope: unit
+  unit_id: UNIT-ELEM2-DATA-01
+  kids_strand: STRAND-DATA
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets: *id006
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial
+    crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-BABY-SAFE-01
+  scope: unit
+  unit_id: UNIT-BABY-SAFE-01
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id008
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE',
+    'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-TODDLER-SAFE-01
+  scope: unit
+  unit_id: UNIT-TODDLER-SAFE-01
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id008
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE',
+    'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-SAFE-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-SAFE-01
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets: *id009
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PREK-SAFE-01
+  scope: unit
+  unit_id: UNIT-PREK-SAFE-01
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets: *id009
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM1-SAFE-01
+  scope: unit
+  unit_id: UNIT-ELEM1-SAFE-01
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets: *id009
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM2-SAFE-01
+  scope: unit
+  unit_id: UNIT-ELEM2-SAFE-01
+  kids_strand: STRAND-SAFE
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets: *id010
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-BABY-BUILD-01
+  scope: unit
+  unit_id: UNIT-BABY-BUILD-01
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-TODDLER-BUILD-01
+  scope: unit
+  unit_id: UNIT-TODDLER-BUILD-01
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PRESCHOOL-BUILD-01
+  scope: unit
+  unit_id: UNIT-PRESCHOOL-BUILD-01
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-PREK-BUILD-01
+  scope: unit
+  unit_id: UNIT-PREK-BUILD-01
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM1-BUILD-01
+  scope: unit
+  unit_id: UNIT-ELEM1-BUILD-01
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-UNIT-ELEM2-BUILD-01
+  scope: unit
+  unit_id: UNIT-ELEM2-BUILD-01
+  kids_strand: STRAND-BUILD
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  rationale: Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE'];
+    editorial crosswalk only — not official alignment.
+- wire_id: STD-WIRE-ONE-TAP-BABY-S01
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: &id011
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  atlas_kids_targets: &id012
+  - KE-TARGET-PLAY-INQUIRY
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S02
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S03
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S04
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S05
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S06
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S07
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S08
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S09
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-BABY-S10
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-BABY
+  status: ADJACENT
+  atlas_mapping_ids: *id011
+  atlas_kids_targets: *id012
+  rationale: 'ONE TAP pilot KIDS-BABY: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S01
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: &id013
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-NGSS-SCI-KE
+  atlas_kids_targets: &id014
+  - KE-TARGET-ALGO-FOUNDATIONS
+  - KE-TARGET-SYSTEMS-STABILITY
+  - KE-TARGET-SCIENCE-PRACTICES
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S02
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S03
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S04
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S05
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S06
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S07
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S08
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S09
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM1-S10
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  status: ADJACENT
+  atlas_mapping_ids: *id013
+  atlas_kids_targets: *id014
+  rationale: 'ONE TAP pilot KIDS-ELEM1: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S01
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: &id015
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-DATA-KE
+  atlas_kids_targets: &id016
+  - KE-TARGET-ALGO-FOUNDATIONS
+  - KE-TARGET-SYSTEMS-STABILITY
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-DATA-PATTERNS
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S02
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S03
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S04
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S05
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S06
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S07
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S08
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S09
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-ELEM2-S10
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  status: ADJACENT
+  atlas_mapping_ids: *id015
+  atlas_kids_targets: *id016
+  rationale: 'ONE TAP pilot KIDS-ELEM2: ADJACENT editorial wire to [''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'',
+    ''MAP-CSTA2026-SYS-KE'', ''MAP-NGSS-SCI-KE'', ''MAP-CSTA2026-DATA-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S01
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: &id017
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: &id018
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-ALGO-FOUNDATIONS
+  - KE-TARGET-SYSTEMS-STABILITY
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S02
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S03
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S04
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S05
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S06
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S07
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S08
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S09
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PREK-S10
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PREK
+  status: ADJACENT
+  atlas_mapping_ids: *id017
+  atlas_kids_targets: *id018
+  rationale: 'ONE TAP pilot KIDS-PREK: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'', ''MAP-CSTA2026-SYS-KE'']; not official
+    alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S01
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: &id019
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: &id020
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-ALGO-FOUNDATIONS
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S02
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S03
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S04
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S05
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S06
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S07
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S08
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S09
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-PRESCHOOL-S10
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-PRESCHOOL
+  status: ADJACENT
+  atlas_mapping_ids: *id019
+  atlas_kids_targets: *id020
+  rationale: 'ONE TAP pilot KIDS-PRESCHOOL: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'', ''MAP-CSTA2026-ALGO-KE'', ''MAP-AC-DT-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S01
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: &id021
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  atlas_kids_targets: &id022
+  - KE-TARGET-PLAY-INQUIRY
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S02
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S03
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S04
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S05
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S06
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S07
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S08
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S09
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+- wire_id: STD-WIRE-ONE-TAP-TODDLER-S10
+  scope: pilot_spread
+  pilot: ONE_TAP
+  age_band: KIDS-TODDLER
+  status: ADJACENT
+  atlas_mapping_ids: *id021
+  atlas_kids_targets: *id022
+  rationale: 'ONE TAP pilot KIDS-TODDLER: ADJACENT editorial wire to [''MAP-ELOF-PLAY-KE'', ''MAP-EYFS-PLAY-KE'',
+    ''MAP-EYLF-PLAY-KE'', ''MAP-TEWHARIKI-PLAY-KE'', ''MAP-NEL-PLAY-KE'', ''MAP-ON-KG-PLAY-KE'', ''MAP-OECD-AGENCY-KE'',
+    ''MAP-NCF-PLAY-KE'']; not official alignment; NO_CHILD_VALIDATION_EVIDENCE.'
+summary:
+  hooks_total: 133
+  by_status:
+    ADJACENT: 120
+    PROPOSED: 2
+    NOT_YET_MAPPED: 11
+  official_alignment_claims: 0

@@ -33,6 +33,10 @@ def test_provenance_allowlist_rejects_chapter_change(tmp_path, monkeypatch):
         "publication/review-candidates/FULL31-PRE-REVIEW-001/README.md".startswith(p)
         for p in prefixes
     )
+    # Parallel family tracks are allowlisted; freeze semantics stay intact.
+    assert any("kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml".startswith(p) for p in prefixes)
+    assert any("publication/family/PUBLICATION_FAMILY_REGISTRY.yaml".startswith(p) for p in prefixes)
+    assert mod.ACCEPTED_MAIN == "82284cd8f41d750ff508cd6ea5bad0a9534d8162"
 
 
 def test_source_commit_policy_mentions_verified_sha():

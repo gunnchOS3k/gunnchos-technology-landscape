@@ -1,0 +1,775 @@
+schema: publication.family.concept_registry/v1
+generated_on: '2026-09-03'
+disclaimer: Shared IDs across Adult ↔ Kids; not publication-ready; no child validation.
+concepts:
+- canonical_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  adult_chapters:
+  - CH01
+  adult_title: Technology Is a System, Not a Screen
+  kids_strand: STRAND-ME-TECH
+  glossary_term_ids: []
+  misconceptions:
+  - The screen is the computer.
+  - If it looks simple, the system is simple.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-ME-TECH-SYSTEM
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets:
+    - KE-TARGET-PLAY-INQUIRY
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH02-ONE-TAP
+  adult_chapters:
+  - CH02
+  adult_title: Follow One Tap Through the Entire Stack
+  kids_strand: STRAND-ME-TECH
+  glossary_term_ids:
+  - event
+  - touch-digitizer
+  - interrupt
+  - device-driver
+  - kernel
+  misconceptions:
+  - Every tap goes to the internet.
+  - Instant feedback means the whole job is done.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-ONE-TAP-CORE
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets:
+    - KE-TARGET-PLAY-INQUIRY
+    - KE-TARGET-ALGO-FOUNDATIONS
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids:
+  - FIG-ONE-TAP-BABY-S01
+  - FIG-ONE-TAP-BABY-S02
+  - FIG-ONE-TAP-BABY-S03
+  - FIG-ONE-TAP-BABY-S04
+  - FIG-ONE-TAP-BABY-S05
+  - FIG-ONE-TAP-BABY-S06
+  - FIG-ONE-TAP-BABY-S07
+  - FIG-ONE-TAP-BABY-S08
+  - FIG-ONE-TAP-BABY-S09
+  - FIG-ONE-TAP-BABY-S10
+  - FIG-ONE-TAP-TODDLER-S01
+  - FIG-ONE-TAP-TODDLER-S02
+  - FIG-ONE-TAP-TODDLER-S03
+  - FIG-ONE-TAP-TODDLER-S04
+  - FIG-ONE-TAP-TODDLER-S05
+  - FIG-ONE-TAP-TODDLER-S06
+  - FIG-ONE-TAP-TODDLER-S07
+  - FIG-ONE-TAP-TODDLER-S08
+  - FIG-ONE-TAP-TODDLER-S09
+  - FIG-ONE-TAP-TODDLER-S10
+  - FIG-ONE-TAP-PRESCHOOL-S01
+  - FIG-ONE-TAP-PRESCHOOL-S02
+  - FIG-ONE-TAP-PRESCHOOL-S03
+  - FIG-ONE-TAP-PRESCHOOL-S04
+  - FIG-ONE-TAP-PRESCHOOL-S05
+  - FIG-ONE-TAP-PRESCHOOL-S06
+  - FIG-ONE-TAP-PRESCHOOL-S07
+  - FIG-ONE-TAP-PRESCHOOL-S08
+  - FIG-ONE-TAP-PRESCHOOL-S09
+  - FIG-ONE-TAP-PRESCHOOL-S10
+  - FIG-ONE-TAP-PREK-S01
+  - FIG-ONE-TAP-PREK-S02
+  - FIG-ONE-TAP-PREK-S03
+  - FIG-ONE-TAP-PREK-S04
+  - FIG-ONE-TAP-PREK-S05
+  - FIG-ONE-TAP-PREK-S06
+  - FIG-ONE-TAP-PREK-S07
+  - FIG-ONE-TAP-PREK-S08
+  - FIG-ONE-TAP-PREK-S09
+  - FIG-ONE-TAP-PREK-S10
+  - FIG-ONE-TAP-ELEM1-S01
+  - FIG-ONE-TAP-ELEM1-S02
+  - FIG-ONE-TAP-ELEM1-S03
+  - FIG-ONE-TAP-ELEM1-S04
+  - FIG-ONE-TAP-ELEM1-S05
+  - FIG-ONE-TAP-ELEM1-S06
+  - FIG-ONE-TAP-ELEM1-S07
+  - FIG-ONE-TAP-ELEM1-S08
+  - FIG-ONE-TAP-ELEM1-S09
+  - FIG-ONE-TAP-ELEM1-S10
+  - FIG-ONE-TAP-ELEM2-S01
+  - FIG-ONE-TAP-ELEM2-S02
+  - FIG-ONE-TAP-ELEM2-S03
+  - FIG-ONE-TAP-ELEM2-S04
+  - FIG-ONE-TAP-ELEM2-S05
+  - FIG-ONE-TAP-ELEM2-S06
+  - FIG-ONE-TAP-ELEM2-S07
+  - FIG-ONE-TAP-ELEM2-S08
+  - FIG-ONE-TAP-ELEM2-S09
+  - FIG-ONE-TAP-ELEM2-S10
+  lab_or_activity_ids:
+  - ONE_TAP
+  - LAB-TAP-001
+  pilot: ONE_TAP
+- canonical_id: KCON-CH03-PERFORMANCE-FEEL
+  adult_chapters:
+  - CH03
+  adult_title: 'Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable'
+  kids_strand: STRAND-ME-TECH
+  glossary_term_ids: []
+  misconceptions:
+  - Slow always means broken.
+  - Fast always means correct.
+  standards_tags:
+    status: PROPOSED
+    wire_ids:
+    - STD-WIRE-PERF-FEEL
+    atlas_mapping_ids:
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets:
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH04-DEVICE-FORMS
+  adult_chapters:
+  - CH04
+  adult_title: The Device Quartet as a Learning Laboratory
+  kids_strand: STRAND-INSIDE
+  glossary_term_ids: []
+  misconceptions:
+  - One device type is 'the real computer'.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-DEVICE-FORMS
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: &id001
+    - KE-TARGET-SCIENCE-PRACTICES
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH05-SIGNALS-LOGIC
+  adult_chapters:
+  - CH05
+  adult_title: Electricity, Signals, Clocks, and Logic
+  kids_strand: STRAND-INSIDE
+  glossary_term_ids: []
+  misconceptions:
+  - Electricity in devices is safe to touch anytime.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-SIGNALS
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH06-CPU-WORK
+  adult_chapters:
+  - CH06
+  adult_title: CPU, Instructions, and Parallel Work
+  kids_strand: STRAND-INSIDE
+  glossary_term_ids: []
+  misconceptions:
+  - The CPU is a person inside.
+  - More cores always mean better for every task.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-CPU
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH07-MEMORY-STORAGE
+  adult_chapters:
+  - CH07
+  adult_title: Memory, Cache, and Storage
+  kids_strand: STRAND-INSIDE
+  glossary_term_ids: []
+  misconceptions:
+  - Deleting from screen always erases forever.
+  - Memory and storage are identical.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-MEMORY
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH08-SENSES-OUTPUT
+  adult_chapters:
+  - CH08
+  adult_title: Graphics, Displays, Audio, Cameras, and Sensors
+  kids_strand: STRAND-ME-TECH
+  glossary_term_ids: []
+  misconceptions:
+  - Camera always watches.
+  - What we see is unprocessed truth.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-SENSES
+    atlas_mapping_ids:
+    - MAP-ELOF-PLAY-KE
+    - MAP-EYFS-PLAY-KE
+    - MAP-EYLF-PLAY-KE
+    - MAP-TEWHARIKI-PLAY-KE
+    - MAP-NEL-PLAY-KE
+    - MAP-ON-KG-PLAY-KE
+    - MAP-OECD-AGENCY-KE
+    - MAP-NCF-PLAY-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets:
+    - KE-TARGET-PLAY-INQUIRY
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH09-POWER-HEAT
+  adult_chapters:
+  - CH09
+  adult_title: Power, Batteries, Thermals, and Mechanical Design
+  kids_strand: STRAND-INSIDE
+  glossary_term_ids: []
+  misconceptions:
+  - Warm always means dangerous fire.
+  - Charging is magic.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-POWER
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH10-PORTS-BUSES
+  adult_chapters:
+  - CH10
+  adult_title: Ports, Buses, Boards, Packaging, and Manufacturing
+  kids_strand: STRAND-INSIDE
+  glossary_term_ids: []
+  misconceptions:
+  - Any plug fits any hole.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-PORTS
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets: *id001
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH11-BOOT-TRUST
+  adult_chapters:
+  - CH11
+  adult_title: Firmware, Boot, and Trust
+  kids_strand: STRAND-INSTRUCTIONS
+  glossary_term_ids: []
+  misconceptions:
+  - Restart fixes everything forever.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-BOOT
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: &id002
+    - KE-TARGET-ALGO-FOUNDATIONS
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH12-OS-SCHEDULE
+  adult_chapters:
+  - CH12
+  adult_title: Operating Systems, Processes, Threads, and Scheduling
+  kids_strand: STRAND-INSTRUCTIONS
+  glossary_term_ids: []
+  misconceptions:
+  - Closing an app always stops all background work.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-OS
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id002
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH13-FILES-DATA-LIFE
+  adult_chapters:
+  - CH13
+  adult_title: Files, Databases, and Data Lifecycles
+  kids_strand: STRAND-DATA
+  glossary_term_ids: []
+  misconceptions:
+  - Trash empties instantly everywhere.
+  - Cloud means gone from device forever.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-FILES
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets:
+    - KE-TARGET-DATA-PATTERNS
+    - KE-TARGET-AI-LITERACY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH14-APPS-UI
+  adult_chapters:
+  - CH14
+  adult_title: Applications, APIs, Runtimes, and User Interfaces
+  kids_strand: STRAND-INSTRUCTIONS
+  glossary_term_ids: []
+  misconceptions:
+  - The icon is the whole program.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-APPS
+    atlas_mapping_ids:
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id002
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH15-CLOUD-EDGE
+  adult_chapters:
+  - CH15
+  adult_title: Containers, Virtualization, Cloud, and Edge Computing
+  kids_strand: STRAND-MESSAGES
+  glossary_term_ids: []
+  misconceptions:
+  - Cloud means no computer is involved.
+  standards_tags:
+    status: NOT_YET_MAPPED
+    wire_ids:
+    - STD-WIRE-CLOUD
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH16-PACKETS-INTERNET
+  adult_chapters:
+  - CH16
+  adult_title: Packets, Protocols, Routing, and the Internet
+  kids_strand: STRAND-MESSAGES
+  glossary_term_ids: []
+  misconceptions:
+  - The internet is one wire in the wall.
+  - Messages always arrive.
+  standards_tags:
+    status: NOT_YET_MAPPED
+    wire_ids:
+    - STD-WIRE-PACKETS
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH17-RADIO-ACCESS
+  adult_chapters:
+  - CH17
+  adult_title: Wi-Fi, Cellular, 5G, and the Road to 6G
+  kids_strand: STRAND-MESSAGES
+  glossary_term_ids: []
+  misconceptions:
+  - More G always means safer.
+  - Wi-Fi and cellular are identical.
+  standards_tags:
+    status: NOT_YET_MAPPED
+    wire_ids:
+    - STD-WIRE-RADIO
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH18-SPECTRUM-RADIO
+  adult_chapters:
+  - CH18
+  adult_title: Spectrum, Antennas, Beams, MIMO, and Radio Conditions
+  kids_strand: STRAND-MESSAGES
+  glossary_term_ids: []
+  misconceptions:
+  - One bar icon tells the whole truth.
+  standards_tags:
+    status: NOT_YET_MAPPED
+    wire_ids:
+    - STD-WIRE-SPECTRUM
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH19-NTN-CONTINUITY
+  adult_chapters:
+  - CH19
+  adult_title: NTN and Service Continuity Across Ground, Air, and Space
+  kids_strand: STRAND-MESSAGES
+  glossary_term_ids: []
+  misconceptions:
+  - Satellites power every phone tap.
+  standards_tags:
+    status: NOT_YET_MAPPED
+    wire_ids:
+    - STD-WIRE-NTN
+    atlas_mapping_ids: []
+    atlas_kids_targets: []
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH20-STABILITY-QOE
+  adult_chapters:
+  - CH20
+  adult_title: Latency, Reliability, QoE, and the Stability Contract
+  kids_strand: STRAND-ME-TECH
+  glossary_term_ids: []
+  misconceptions:
+  - Perfect uptime is normal for all systems.
+  standards_tags:
+    status: PROPOSED
+    wire_ids:
+    - STD-WIRE-STABILITY
+    atlas_mapping_ids:
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets:
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH21-DATA-AI
+  adult_chapters:
+  - CH21
+  adult_title: Data, Machine Learning, and Generative AI
+  kids_strand: STRAND-DATA
+  glossary_term_ids:
+  - training-and-input-data
+  - model-parameters
+  - inference-output
+  - generative-ai-systems-view
+  - uncertainty-and-errors
+  misconceptions:
+  - AI knows everything.
+  - AI is a person.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-AI
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    atlas_kids_targets:
+    - KE-TARGET-DATA-PATTERNS
+    - KE-TARGET-AI-LITERACY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH22-EDGE-AI-SENSE
+  adult_chapters:
+  - CH22
+  adult_title: Edge AI, Sensors, and Embodied Interaction
+  kids_strand: STRAND-DATA
+  glossary_term_ids:
+  - embodied-sensing
+  - edge-on-device-inference
+  - edge-resource-budget
+  - embodied-interaction-loop
+  - sensing-privacy-boundary
+  misconceptions:
+  - Wearables always share everything.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-EDGE-AI
+    atlas_mapping_ids:
+    - MAP-CSTA2026-DATA-KE
+    - MAP-UNESCO-AI-KE
+    - MAP-NGSS-SCI-KE
+    atlas_kids_targets:
+    - KE-TARGET-DATA-PATTERNS
+    - KE-TARGET-AI-LITERACY
+    - KE-TARGET-SCIENCE-PRACTICES
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH23-CYBERSECURITY
+  adult_chapters:
+  - CH23
+  adult_title: Cybersecurity from Chip to Cloud
+  kids_strand: STRAND-SAFE
+  glossary_term_ids:
+  - attack-surface-ux-linked
+  - identity
+  - authentication
+  - authorization
+  - encryption-goals-and-limits
+  misconceptions:
+  - Security is only antivirus.
+  - Kids should learn hacking tricks.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-SECURITY
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    - MAP-CSTA2026-SYS-KE
+    atlas_kids_targets:
+    - KE-TARGET-DIGITAL-CITIZENSHIP
+    - KE-TARGET-COMPUTING-SOCIETY
+    - KE-TARGET-SYSTEMS-STABILITY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH24-PRIVACY-ETHICS
+  adult_chapters:
+  - CH24
+  adult_title: Privacy, Identity, Safety, Accessibility, and Ethics
+  kids_strand: STRAND-SAFE
+  glossary_term_ids:
+  - privacy-data-lifecycle
+  - identity-in-human-systems
+  - safety-constraints
+  - accessibility-path
+  - ethics-ladder
+  misconceptions:
+  - Privacy means hiding forever.
+  - Accessibility is optional extras.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-PRIVACY
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    atlas_kids_targets:
+    - KE-TARGET-DIGITAL-CITIZENSHIP
+    - KE-TARGET-COMPUTING-SOCIETY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH25-DIGITAL-EQUITY
+  adult_chapters:
+  - CH25
+  adult_title: 'Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure'
+  kids_strand: STRAND-SAFE
+  glossary_term_ids:
+  - digital-equity
+  - exclusion-mechanism
+  - measurable-inclusion-signals
+  - constrained-completion-route
+  - honest-evidence-labeling
+  misconceptions:
+  - Having a phone means equity is solved.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-EQUITY
+    atlas_mapping_ids:
+    - MAP-UNESCO-AI-CITIZEN-KE
+    - MAP-CSTA2026-SOC-KE
+    atlas_kids_targets:
+    - KE-TARGET-DIGITAL-CITIZENSHIP
+    - KE-TARGET-COMPUTING-SOCIETY
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH26-SOFTWARE-VCS
+  adult_chapters:
+  - CH26
+  adult_title: Software Development and Version Control
+  kids_strand: STRAND-BUILD
+  glossary_term_ids:
+  - version-control
+  - commit
+  - branch-integration
+  - code-review
+  - secrets-hygiene
+  misconceptions:
+  - First try must be perfect.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-DEV
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: &id003
+    - KE-TARGET-SCIENCE-PRACTICES
+    - KE-TARGET-ALGO-FOUNDATIONS
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH27-TEST-EVIDENCE
+  adult_chapters:
+  - CH27
+  adult_title: Testing, Observability, and Evidence
+  kids_strand: STRAND-BUILD
+  glossary_term_ids:
+  - testing
+  - observability
+  - evidence-hierarchy
+  - observation-vs-inference
+  - test-oracle
+  misconceptions:
+  - One success proves always works.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-TEST
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id003
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH28-TWINS-SIM
+  adult_chapters:
+  - CH28
+  adult_title: Digital Twins, Simulation, and Reproducible Research
+  kids_strand: STRAND-BUILD
+  glossary_term_ids:
+  - simulation
+  - digital-twin-teaching-sense
+  - reproducible-research
+  - validity-bounds
+  - fixture
+  misconceptions:
+  - A simulation proves the physical system.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-SIM
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id003
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH29-PRODUCT-DESIGN
+  adult_chapters:
+  - CH29
+  adult_title: Designing a Complete Technology Product
+  kids_strand: STRAND-BUILD
+  glossary_term_ids:
+  - complete-technology-product
+  - design-gates
+  - evidence-plan
+  - explicit-tradeoffs
+  - claim-boundary
+  misconceptions:
+  - Pretty UI is a complete product.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-PRODUCT
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id003
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH30-CAREER-PORTFOLIO
+  adult_chapters:
+  - CH30
+  adult_title: Career Maps and Portfolio Proof
+  kids_strand: STRAND-BUILD
+  glossary_term_ids:
+  - role-family
+  - portfolio-proof
+  - review-criteria
+  - employment-non-guarantee
+  - portfolio-index
+  misconceptions:
+  - Portfolio is a contest.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-PORTFOLIO
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id003
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null
+- canonical_id: KCON-CH31-CAPSTONE-TEACH
+  adult_chapters:
+  - CH31
+  adult_title: 'Capstone: Explain, Measure, Improve, and Teach the Ecosystem'
+  kids_strand: STRAND-BUILD
+  glossary_term_ids:
+  - emit-spine
+  - stability-contract-capstone-use
+  - teach-back
+  - evidence-limitations
+  - fixture-validated-infrastructure
+  misconceptions:
+  - Teaching means lecturing adults' words.
+  standards_tags:
+    status: ADJACENT
+    wire_ids:
+    - STD-WIRE-CAPSTONE
+    atlas_mapping_ids:
+    - MAP-NGSS-SCI-KE
+    - MAP-CSTA2026-ALGO-KE
+    - MAP-AC-DT-KE
+    atlas_kids_targets: *id003
+  figure_ids: []
+  lab_or_activity_ids: []
+  pilot: null

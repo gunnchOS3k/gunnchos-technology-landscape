@@ -1,0 +1,89 @@
+# AUTHOR / INTEGRATOR NOTES — KIDS-ELEM2 (not child-facing)
+
+meta:
+  age_band: KIDS-ELEM2
+  age_guide: "Grades 3–5/6"
+  claim_ceiling: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  child_validation: NONE
+  publication_ready: false
+  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  adult_source: CH02 developmental rewrite (not sentence simplification)
+  character_cast: A_Signal_Crew_provisional
+  spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+
+editor_constraints_moved_out_of_body:
+  - "Use pilot figure"
+  - "No false GHz claims"
+  - "Link to adult CH02 honestly"
+  - "Honesty label required"
+  - "Adult CH02 developmental rewrite (from child-facing concept line)"
+  - "Standards appendix NOT_YET_MAPPED / dangling STD-WIRE body text"
+  - "Git SHA provenance in child/caregiver manuscript body"
+  - "sentence simplification disclaimer in child-facing header"
+
+design_rule_evidence_index:
+  one_focal_action: [CME-001, CME-005, CME-007]
+  low_clutter: [CME-005, CME-006]
+  color_not_sole_encoding: [CME-003, CME-004]
+  high_contrast_infant: [CME-001, CME-003]
+  print_first_infant_toddler: [CME-002, CME-019, CME-020]
+  serve_and_return: [CME-008, CME-009, CME-010]
+  contingent_cause_effect: [CME-011, CME-013]
+  stable_cast_continuity: [CME-016, CME-017, CME-018]
+  participatory_prompts: [CME-018, CME-021]
+  easy_stop_agency: [CME-022, CME-023, CME-024]
+  no_dark_patterns: [CME-025, CME-026, CME-027]
+  observation_over_diagnosis: [CME-028, CME-029]
+  style_neutral_prototype: [CME-006, CME-016]
+
+spreads:
+  - id: S01
+    facilitator_note: "Model ≠ full machine. Mark uncertainty."
+    author_meta: "EDITOR: use pilot figure as shared artifact; not child-facing instruction text."
+    talk_together_child_safe: "Keep discussion concrete; shared figure is a tool, not a quiz key."
+  - id: S02
+    facilitator_note: "Plain roles beat specs theater."
+    author_meta: "EDITOR: no false GHz / IQ claims (author constraint)."
+    talk_together_child_safe: "Roles, not marketing numbers."
+  - id: S03
+    facilitator_note: "Event → handler → state → output."
+    author_meta: "EDITOR: honest adjacency to adult CH02; no paste."
+    talk_together_child_safe: "Keep the chain on one page; avoid jargon dumps."
+  - id: S04
+    facilitator_note: "Hypothesis discipline."
+    author_meta: "none"
+    talk_together_child_safe: "Prediction before trial."
+  - id: S05
+    facilitator_note: "Feel ≠ cause."
+    author_meta: "none"
+    talk_together_child_safe: "Classroom timer OK; rough is honest."
+  - id: S06
+    facilitator_note: "Uncertainty is a feature."
+    author_meta: "none"
+    talk_together_child_safe: "Core systems skill — model it first."
+  - id: S07
+    facilitator_note: "Security ≠ privacy; both matter."
+    author_meta: "EDITOR: no exploit / offensive content."
+    talk_together_child_safe: "No exploit content."
+  - id: S08
+    facilitator_note: "Repair is celebrated."
+    author_meta: "none"
+    talk_together_child_safe: "Portfolio artifact; process evidence."
+  - id: S09
+    facilitator_note: "Continuity without densifying babies."
+    author_meta: "Spiral reflection — not adult dump."
+    talk_together_child_safe: "Honor earlier bands’ restraint."
+  - id: S10
+    facilitator_note: "EMIT + honesty; no fabricated validation."
+    author_meta: "EDITOR: honesty label required in facilitator practice — keep prototype banner on artifacts."
+    talk_together_child_safe: "Honesty labels are part of the learning, spoken calmly."
+
+standards:
+  see: TRACEABILITY.yaml
+  relationship: CROSSWALKED_AGAINST
+  fidelity_ceiling: ADJACENT
+
+non_claims:
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - NOT GLOBALLY_ALIGNED / not KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE

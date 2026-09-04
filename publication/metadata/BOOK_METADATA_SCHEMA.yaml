@@ -1,0 +1,88 @@
+# Canonical book metadata schema (adult / future editions)
+# Inspired by ONIX concepts; NOT EDItEUR-certified compliance.
+schema_version: "1.0"
+status: DRAFT_INTERNAL
+retrieved_on: "2026-09-03"
+non_claims:
+  - "Not ONIX certified"
+  - "Not retailer-approved metadata"
+
+required_fields:
+  - work_id
+  - title
+  - contributors
+  - language
+  - publication_status
+  - rights_statement
+  - audience
+  - products
+
+properties:
+  work_id:
+    type: string
+    description: Stable internal work identifier
+  title:
+    type: object
+    properties:
+      main: {type: string}
+      subtitle: {type: string, optional: true}
+  contributors:
+    type: array
+    items:
+      type: object
+      properties:
+        name: {type: string}
+        role: {type: string, enum: [author, editor, illustrator, other]}
+  language:
+    type: string
+    description: BCP-47 / ISO 639-1 primary language code
+  publication_status:
+    type: string
+    enum:
+      - DRAFT_INTERNAL
+      - ADULT_SUBMISSION_PACKAGE_PREPARED
+      - ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
+      - PUBLICATION_READY
+    description: PUBLICATION_READY reserved; currently unused for adult FULL31
+  rights_statement:
+    type: string
+  audience:
+    type: object
+    properties:
+      primary: {type: string}
+      reading_age_min: {type: ["integer", "null"]}
+  subjects:
+    type: array
+    items:
+      type: object
+      properties:
+        scheme: {type: string}
+        code: {type: string}
+        heading: {type: string}
+  identifiers:
+    type: object
+    properties:
+      isbn13_ebook: {type: ["string", "null"]}
+      isbn13_paperback: {type: ["string", "null"]}
+      isbn13_hardcover: {type: ["string", "null"]}
+  products:
+    type: array
+    items:
+      type: object
+      properties:
+        product_id: {type: string}
+        form: {type: string}
+        file_role: {type: string}
+        platform_targets: {type: array, items: {type: string}}
+        price_policy_ref: {type: string}
+  accessibility_claims:
+    type: object
+    description: Automated checks only; never claim WCAG certification from tooling alone
+    properties:
+      automated_epubcheck: {type: string}
+      wcag_certified: {type: boolean, const: false}
+  provenance:
+    type: object
+    properties:
+      full31_pre_review_content_sha: {type: string}
+      gate3_status: {type: string}

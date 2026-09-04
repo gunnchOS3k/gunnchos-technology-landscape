@@ -1,0 +1,490 @@
+# ONE TAP review-prototype traceability
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · editorial ADJACENT crosswalk only
+
+meta:
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM1
+  adult_source_chapter: CH02
+  rewrite_method: developmental_precursor_rewrite
+  child_validation: NONE
+  claim_ceiling: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  standards_relationship: CROSSWALKED_AGAINST
+  character_cast_option: A_Signal_Crew_provisional
+spreads:
+  - page_or_spread_id: ONE-TAP-ELEM1-S01
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Observe one local tap and one network-ish tap; record what was seen."
+    developmental_domain: "OBSERVE"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S01
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S01
+    word_count_estimate: 57
+  - page_or_spread_id: ONE-TAP-ELEM1-S02
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Name hardware vs software with one example each."
+    developmental_domain: "NAME"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S02
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S02
+    word_count_estimate: 48
+  - page_or_spread_id: ONE-TAP-ELEM1-S03
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Complete an IPO diagram for one local tap."
+    developmental_domain: "NAME"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S03
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S03
+    word_count_estimate: 38
+  - page_or_spread_id: ONE-TAP-ELEM1-S04
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Write a 4-step algorithm for a local tap."
+    developmental_domain: "PREDICT"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S04
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S04
+    word_count_estimate: 38
+  - page_or_spread_id: ONE-TAP-ELEM1-S05
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Classify taps as local vs network; mark uncertain inferences."
+    developmental_domain: "TEST"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S05
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S05
+    word_count_estimate: 51
+  - page_or_spread_id: ONE-TAP-ELEM1-S06
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Explain two timelines for one networked-feeling tap."
+    developmental_domain: "EXPLAIN"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S06
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S06
+    word_count_estimate: 32
+  - page_or_spread_id: ONE-TAP-ELEM1-S07
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Complete a short safety checklist aloud or on paper."
+    developmental_domain: "SECURE"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S07
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S07
+    word_count_estimate: 33
+  - page_or_spread_id: ONE-TAP-ELEM1-S08
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Complete observation worksheet for portfolio."
+    developmental_domain: "BUILD"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S08
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S08
+    word_count_estimate: 36
+  - page_or_spread_id: ONE-TAP-ELEM1-S09
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Revisit the misconception with evidence."
+    developmental_domain: "REFLECT"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S09
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S09
+    word_count_estimate: 28
+  - page_or_spread_id: ONE-TAP-ELEM1-S10
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    learning_goal: "Teach-back IPO path."
+    developmental_domain: "TEACH"
+    standards:
+      - status: ADJACENT
+        atlas_mapping_ids:
+          - MAP-CSTA2026-ALGO-KE
+          - MAP-AC-DT-KE
+          - MAP-CSTA2026-SYS-KE
+          - MAP-NGSS-SCI-KE
+          - MAP-CSTA2026-DATA-KE
+        atlas_kids_targets:
+          - KE-TARGET-ALGO-FOUNDATIONS
+          - KE-TARGET-SYSTEMS-STABILITY
+          - KE-TARGET-SCIENCE-PRACTICES
+          - KE-TARGET-DATA-PATTERNS
+        wire_registry_key: STD-WIRE-ONE-TAP-ELEM1-S10
+        note: "Editorial ADJACENT crosswalk to atlas maps for KIDS-ELEM1; not official alignment; NO_CHILD_VALIDATION_EVIDENCE. wire_registry_key indexes WIRE_HOOK_REGISTRY only — not a dangling map substitute."
+    evidence_rules:
+      - no_fabricated_child_validation
+      - observation_over_diagnosis
+    visual_rules:
+      - one_focal_action
+      - low_clutter
+      - color_not_sole_encoding
+      - style_neutral_prototype
+    visual_rule_evidence:
+      one_focal_action: [CME-001, CME-005, CME-007]
+      low_clutter: [CME-005, CME-006]
+      color_not_sole_encoding: [CME-003, CME-004]
+      style_neutral_prototype: [CME-006, CME-016]
+    audio_rules:
+      - caregiver_read_aloud_optional
+      - no_mandatory_audio
+      - no_artificial_squeak_claims
+    safety_rules:
+      - easy_stop
+      - caregiver_mediation
+      - no_child_data_collection
+      - no_dark_patterns
+    safety_rule_evidence:
+      easy_stop: [CME-022, CME-023, CME-024]
+      no_dark_patterns: [CME-025, CME-026, CME-027]
+    figure_id: FIG-ONE-TAP-ELEM1-S10
+    word_count_estimate: 47
+gaps:
+  - status: TRANSLATION_REQUIRED
+    note: "Some atlas-adjacent jurisdictions remain TRANSLATION_REQUIRED at atlas level; ONE TAP does not invent EXACT maps for those rows."
+  - status: VERSION_UNCLEAR
+    note: "Where atlas sources mark SOURCE_VERSION_UNCLEAR, pilot keeps ADJACENT only."
+  - status: NO_MAP
+    note: "No EXACT official kids ONE TAP competency exists; do not fabricate EXACT status."

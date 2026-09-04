@@ -1,0 +1,32 @@
+schema: adult.library.metadata.stub_replacement/v1
+source: publication/metadata/adult-book.yaml
+work_id: TTL-ADULT-FULL31
+title:
+  main: The Technology Landscape
+  subtitle: How Computers, Networks, AI, and Devices Create the Experiences We Depend
+    On
+contributors:
+- name: Edmund Gunn, Jr.
+  role: author
+language: en
+identifiers:
+  isbn13_ebook: null
+  isbn13_paperback: null
+  isbn13_hardcover: null
+subjects:
+- scheme: BISAC
+  code: UNKNOWN_NEEDS_OWNER_REVIEW
+  heading: Computers / General (candidate — owner confirm)
+- scheme: Thema
+  code: UNKNOWN_NEEDS_OWNER_REVIEW
+  heading: Computing and information technology (candidate)
+rights_statement: 'All Rights Reserved (development-stage manuscript and original
+  artwork). Software tooling and explicitly marked lab samples: MIT. Free storefront/$0
+  access does not change license to Creative Commons. See publication/BOOK_LICENSE_DECISION.md
+  and publication/distribution/FREE_ACCESS_POLICY.md.
+
+  '
+isbn_state: PENDING_OWNER_PURCHASE
+cover_state: BLOCKED_OWNER_COVER
+not_status: PUBLICATION_READY
+generated_on: '2026-09-03'

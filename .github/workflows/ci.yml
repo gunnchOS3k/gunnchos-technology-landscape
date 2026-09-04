@@ -70,8 +70,67 @@ jobs:
       - name: Full31 quality / continuity / terminology / pre-review
         run: |
           make full31-quality-audit
+          make full31-continuity-check
           make full31-terminology-check
           make full31-pre-review-check
+      - name: Publication-family checks
+        run: |
+          make publication-family-check
+          make distribution-requirements-check
+          make adult-release-package-check
+          make adult-artifact-package-check
+          make print-profile-check
+          make kids-standards-check
+          make kids-standards-research-complete-check
+          make kids-pilot-mapped-check
+          make kids-media-evidence-check
+          make kids-concept-spiral-check
+          make kids-pilot-check
+          make kids-review-prototype-check
+          make kids-epubcheck
+      - name: Confirm evidence sentinels
+        run: |
+          out="$(.venv/bin/python scripts/check_publication_family.py)"
+          echo "$out"
+          # Explicit honesty banners must remain in kids + adult package docs
+          grep -R -l "NOT CHILD-VALIDATED\|NO_CHILD_VALIDATION" kids/ >/dev/null
+          grep -R -l "NOT_SUBMITTED\|not submitted\|Do not actually upload\|HUMAN_CHECKLIST" release-packages/adult/ >/dev/null
+          # Fail if a child-validation evidence artifact name appears
+          if find kids \( -iname '*child*validat*' -o -iname '*reader*evidence*kids*' \) 2>/dev/null | grep -qi .; then
+            echo "Forbidden child-validation evidence artifact found" >&2
+            find kids \( -iname '*child*validat*' -o -iname '*reader*evidence*kids*' \)
+            exit 1
+          fi
+          # Standards certification claims must remain absent (allow explicit forbid/non-claim lists)
+          .venv/bin/python - <<'PY'
+          import re
+          from pathlib import Path
+          roots = [Path("kids/standards"), Path("publication/family")]
+          pat = re.compile(r"officially aligned|standards[- ]certified|STANDARDS_CERTIFICATION_EVIDENCE", re.I)
+          allow = re.compile(
+              r"(?i)(not[:\s*]|never\b|no_|forbidden|non-claim|reject|do not|≠|"
+              r"must remain absent|AUTHORITY_CLAIMS:|Forbidden claim|not a Kids Edition)"
+          )
+          bad = []
+          for root in roots:
+              for path in list(root.rglob("*.md")) + list(root.rglob("*.yaml")):
+                  text = path.read_text(encoding="utf-8", errors="ignore")
+                  for m in pat.finditer(text):
+                      window = text[max(0, m.start() - 120) : m.end() + 80]
+                      if allow.search(window):
+                          continue
+                      bad.append(f"{path}:{text.count(chr(10), 0, m.start())+1}: {m.group(0)}")
+          if bad:
+              print("Forbidden standards-certification claim language found", flush=True)
+              print("\n".join(bad), flush=True)
+              raise SystemExit(1)
+          print("standards-certification sentinel: OK")
+          PY
+          echo "NO_READER_EVIDENCE"
+          echo "NO_CHILD_VALIDATION_EVIDENCE"
+          echo "NO_RETAILER_SUBMISSION_EVIDENCE"
+          echo "NO_STANDARDS_CERTIFICATION_EVIDENCE"
+          echo "evidence sentinels: OK"
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4
         with:

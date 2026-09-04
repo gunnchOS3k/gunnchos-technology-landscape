@@ -1,0 +1,17 @@
+# Quarto print geometry overlay — profile print-7x10
+# Does NOT replace review PDF workflow (make full31-pdf → preview/full31/).
+# Not printer-certified. Status: DRAFT_INTERNAL — ADULT print engineering aid only.
+
+format:
+  pdf:
+    documentclass: book
+    papersize: letter
+    geometry:
+      - paperwidth=7in
+      - paperheight=10in
+      - inner=0.75in
+      - outer=0.5in
+      - top=0.75in
+      - bottom=0.75in
+    keep-tex: false
+

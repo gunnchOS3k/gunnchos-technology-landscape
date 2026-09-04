@@ -1,0 +1,954 @@
+# Adult 31 → Kids 7-strand concept spiral
+# Status: DEVELOPMENTAL_PROTOTYPE — NOT CHILD-VALIDATED, NOT PUBLICATION-READY
+# Standards: integrator-wired to atlas ADJACENT/PROPOSED where honest; else NOT_YET_MAPPED
+# alignment_claim: CROSSWALKED_AGAINST only — never officially aligned
+
+meta:
+  document_id: ADULT31_TO_KIDS_SPIRAL
+  version: 0.1.0-prototype
+  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  integration_base_sha: ce9cc419841fa0588e30d8d917b048c72f8cc2c0
+  alignment_claim: CROSSWALKED_AGAINST
+  child_validation: NONE
+  publication_ready: false
+  strands:
+  - id: STRAND-ME-TECH
+    name: Me & Technology
+  - id: STRAND-INSIDE
+    name: Inside the Machine
+  - id: STRAND-INSTRUCTIONS
+    name: Instructions & Code
+  - id: STRAND-MESSAGES
+    name: Messages & Connections
+  - id: STRAND-DATA
+    name: Data & Intelligence
+  - id: STRAND-SAFE
+    name: Safe, Private & Fair
+  - id: STRAND-BUILD
+    name: Build, Test & Share
+  age_bands:
+  - KIDS-BABY
+  - KIDS-TODDLER
+  - KIDS-PRESCHOOL
+  - KIDS-PREK
+  - KIDS-ELEM1
+  - KIDS-ELEM2
+  principle: 'Age-band fields are genuine conceptual precursors, not forced advanced content. Infant/toddler
+    rows describe action→response and naming, never adult stack vocabulary as child outcomes.
+
+    '
+  standards_atlas_status: LANDED_WIRED_PARTIAL
+  standards_wiring_note: Integrator wired ADJACENT/PROPOSED atlas maps where honest; STRAND-MESSAGES and
+    sparse targets remain NOT_YET_MAPPED.
+concepts:
+- concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
+  adult_chapters:
+  - CH01
+  adult_title: Technology Is a System, Not a Screen
+  kids_strand: STRAND-ME-TECH
+  baby_representation: Something I can see or hear is part of a bigger thing I cannot see all of.
+  toddler_representation: The light/sound is only one part of the thing.
+  preschool_representation: Devices have insides and outsides; the screen is not the whole story.
+  prek_representation: A system has parts that work together to make something happen.
+  elem1_representation: Technology is a system of people, parts, and rules—not only a screen.
+  elem2_representation: Map visible experience to hidden components, software, and optional remote services.
+  misconceptions:
+  - The screen is the computer.
+  - If it looks simple, the system is simple.
+  safety_notes:
+  - No child device disassembly.
+  - Caregiver mediates exploration.
+  prerequisites: []
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-ME-TECH-SYSTEM
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-PLAY-INQUIRY', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH02-ONE-TAP
+  adult_chapters:
+  - CH02
+  adult_title: Follow One Tap Through the Entire Stack
+  kids_strand: STRAND-ME-TECH
+  secondary_strands:
+  - STRAND-INSIDE
+  - STRAND-INSTRUCTIONS
+  - STRAND-MESSAGES
+  baby_representation: I touch → something changes (look / wait / again).
+  toddler_representation: Touch is input; change is response; first then next.
+  preschool_representation: A button is a part; press → something happens inside → we see/hear a result.
+  prek_representation: Input → steps inside → output; some paths stay local, some send a message.
+  elem1_representation: Hardware senses input; software follows instructions; output may be local or networked.
+  elem2_representation: 'Trace cross-layer path: digitizer → OS → app event → optional packet → render;
+    separate observation from inference.'
+  misconceptions:
+  - Every tap goes to the internet.
+  - Instant feedback means the whole job is done.
+  safety_notes:
+  - Supervised device use.
+  - No child accounts / no data collection in pilot.
+  prerequisites:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  pilot: ONE_TAP
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-ONE-TAP-CORE
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-ALGO-FOUNDATIONS
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-PLAY-INQUIRY', 'KE-TARGET-ALGO-FOUNDATIONS',
+    'KE-TARGET-SYSTEMS-STABILITY']; editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH03-PERFORMANCE-FEEL
+  adult_chapters:
+  - CH03
+  adult_title: 'Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable'
+  kids_strand: STRAND-ME-TECH
+  baby_representation: Sometimes change comes right away; sometimes we wait.
+  toddler_representation: Fast wait / slow wait; still / wobbly.
+  preschool_representation: Devices can feel quick or slow; waiting is part of the story.
+  prek_representation: Smooth vs jumpy; name what we notice before guessing why.
+  elem1_representation: Responsiveness is what people feel; many timers can be involved.
+  elem2_representation: Relate perceived delay to measurable latency/jitter without overclaiming causes.
+  misconceptions:
+  - Slow always means broken.
+  - Fast always means correct.
+  safety_notes:
+  - Avoid frustration loops; offer stop anytime.
+  prerequisites:
+  - KCON-CH02-ONE-TAP
+  standards_mapping_status: PROPOSED
+  standards_wire_ids:
+  - STD-WIRE-PERF-FEEL
+  atlas_mapping_ids:
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest PROPOSED bridge via kids_targets ['KE-TARGET-SYSTEMS-STABILITY']; editorial
+    crosswalk only — not official alignment.
+- concept_id: KCON-CH04-DEVICE-FORMS
+  adult_chapters:
+  - CH04
+  adult_title: The Device Quartet as a Learning Laboratory
+  kids_strand: STRAND-INSIDE
+  baby_representation: Different shapes of things that light up or make sounds.
+  toddler_representation: Big / small / hold-in-hand devices do different jobs.
+  preschool_representation: Different devices have different parts we can name.
+  prek_representation: Form factor changes what is easy to see, touch, and carry.
+  elem1_representation: Learning devices expose different parts of the same technology story.
+  elem2_representation: Compare form factors as educational benchmarks—not product endorsements; PHYSICAL_PENDING
+    where claimed.
+  misconceptions:
+  - One device type is 'the real computer'.
+  safety_notes:
+  - No unsupervised hardware labs for young children.
+  prerequisites:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-DEVICE-FORMS
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: &id001
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH05-SIGNALS-LOGIC
+  adult_chapters:
+  - CH05
+  adult_title: Electricity, Signals, Clocks, and Logic
+  kids_strand: STRAND-INSIDE
+  baby_representation: On / off; quiet / buzz; dark / bright (caregiver-led).
+  toddler_representation: Switch makes a change; signals are how parts 'talk' simply.
+  preschool_representation: Yes/no paths; a light can mean a simple message.
+  prek_representation: Clocks help parts take turns; logic chooses paths.
+  elem1_representation: Electric signals and simple logic gates enable decisions inside machines.
+  elem2_representation: Digital signaling, timing, and boolean logic as foundations for compute.
+  misconceptions:
+  - Electricity in devices is safe to touch anytime.
+  safety_notes:
+  - No child contact with mains power; wall outlets are adult-only.
+  prerequisites:
+  - KCON-CH04-DEVICE-FORMS
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-SIGNALS
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH06-CPU-WORK
+  adult_chapters:
+  - CH06
+  adult_title: CPU, Instructions, and Parallel Work
+  kids_strand: STRAND-INSIDE
+  secondary_strands:
+  - STRAND-INSTRUCTIONS
+  baby_representation: The thing is 'busy' then 'ready' (caregiver narrates).
+  toddler_representation: The helper inside does one job, then the next.
+  preschool_representation: A brain-of-the-machine follows steps.
+  prek_representation: Instructions tell the machine what to do next; sometimes many jobs wait.
+  elem1_representation: CPU runs instructions; some work can happen side-by-side.
+  elem2_representation: Instruction execution, concurrency vs parallelism at a conceptual level.
+  misconceptions:
+  - The CPU is a person inside.
+  - More cores always mean better for every task.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH05-SIGNALS-LOGIC
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-CPU
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH07-MEMORY-STORAGE
+  adult_chapters:
+  - CH07
+  adult_title: Memory, Cache, and Storage
+  kids_strand: STRAND-INSIDE
+  baby_representation: Gone when we stop / still there later (caregiver contrasts toys vs photos).
+  toddler_representation: Remember for now vs keep for later.
+  preschool_representation: Working space vs keep-box.
+  prek_representation: Fast temporary memory vs longer-term storage.
+  elem1_representation: RAM vs storage; why saving matters.
+  elem2_representation: Memory hierarchy (working memory, cache idea, durable storage) without false precision.
+  misconceptions:
+  - Deleting from screen always erases forever.
+  - Memory and storage are identical.
+  safety_notes:
+  - No pressure to memorize adult jargon.
+  prerequisites:
+  - KCON-CH06-CPU-WORK
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-MEMORY
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH08-SENSES-OUTPUT
+  adult_chapters:
+  - CH08
+  adult_title: Graphics, Displays, Audio, Cameras, and Sensors
+  kids_strand: STRAND-ME-TECH
+  secondary_strands:
+  - STRAND-INSIDE
+  baby_representation: See / hear / feel vibration when something happens.
+  toddler_representation: Eyes, ears, and hands get messages from devices.
+  preschool_representation: Screens show; speakers sound; sensors notice.
+  prek_representation: Devices sense the world and show/play results.
+  elem1_representation: Input sensors and output displays/audio are different jobs.
+  elem2_representation: Sensing → representation → rendering pipeline; consent for cameras/mics.
+  misconceptions:
+  - Camera always watches.
+  - What we see is unprocessed truth.
+  safety_notes:
+  - Camera/mic off unless caregiver chooses a local activity.
+  - No stranger video chat.
+  prerequisites:
+  - KCON-CH02-ONE-TAP
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-SENSES
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-PLAY-INQUIRY', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH09-POWER-HEAT
+  adult_chapters:
+  - CH09
+  adult_title: Power, Batteries, Thermals, and Mechanical Design
+  kids_strand: STRAND-INSIDE
+  baby_representation: Tired device needs rest/charge (caregiver).
+  toddler_representation: Battery empty / full; warm is a clue to stop and ask adult.
+  preschool_representation: Power makes devices work; heat means work is happening.
+  prek_representation: Energy, charging, and safe handling of warm devices.
+  elem1_representation: Batteries store energy; heat and mechanics constrain design.
+  elem2_representation: Power budgets and thermal limits as system constraints.
+  misconceptions:
+  - Warm always means dangerous fire.
+  - Charging is magic.
+  safety_notes:
+  - Adults handle chargers/cables.
+  - Stop if device is hot.
+  prerequisites:
+  - KCON-CH04-DEVICE-FORMS
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-POWER
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH10-PORTS-BUSES
+  adult_chapters:
+  - CH10
+  adult_title: Ports, Buses, Boards, Packaging, and Manufacturing
+  kids_strand: STRAND-INSIDE
+  baby_representation: Plug-in places exist; caregiver only.
+  toddler_representation: Wires and holes connect parts (look, don't poke).
+  preschool_representation: Parts connect through paths and plugs.
+  prek_representation: Boards and connectors carry signals between parts.
+  elem1_representation: Ports and buses move information and power between components.
+  elem2_representation: Interconnect, packaging, and manufacturing as part of the system story.
+  misconceptions:
+  - Any plug fits any hole.
+  safety_notes:
+  - No inserting objects into ports.
+  - Adults manage cables.
+  prerequisites:
+  - KCON-CH05-SIGNALS-LOGIC
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-PORTS
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets: *id001
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-SYSTEMS-STABILITY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH11-BOOT-TRUST
+  adult_chapters:
+  - CH11
+  adult_title: Firmware, Boot, and Trust
+  kids_strand: STRAND-INSTRUCTIONS
+  secondary_strands:
+  - STRAND-SAFE
+  baby_representation: 'Start-up: dark → awake (caregiver waits with child).'
+  toddler_representation: First the device wakes; then we can use it.
+  preschool_representation: Startup is a special first sequence.
+  prek_representation: Trust means we check the start is the real start.
+  elem1_representation: Boot is a first program; trust anchors matter.
+  elem2_representation: Firmware/boot chain and trust boundaries at conceptual level.
+  misconceptions:
+  - Restart fixes everything forever.
+  safety_notes:
+  - No firmware flashing by children.
+  prerequisites:
+  - KCON-CH06-CPU-WORK
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-BOOT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: &id002
+  - KE-TARGET-ALGO-FOUNDATIONS
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-ALGO-FOUNDATIONS']; editorial
+    crosswalk only — not official alignment.
+- concept_id: KCON-CH12-OS-SCHEDULE
+  adult_chapters:
+  - CH12
+  adult_title: Operating Systems, Processes, Threads, and Scheduling
+  kids_strand: STRAND-INSTRUCTIONS
+  baby_representation: One helper takes turns with jobs (caregiver metaphor).
+  toddler_representation: Many apps wait their turn.
+  preschool_representation: A manager program shares the machine.
+  prek_representation: OS decides who runs when.
+  elem1_representation: Processes share CPU time; the OS schedules work.
+  elem2_representation: Processes/threads/scheduling as concurrency control.
+  misconceptions:
+  - Closing an app always stops all background work.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH06-CPU-WORK
+  - KCON-CH11-BOOT-TRUST
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-OS
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-ALGO-FOUNDATIONS']; editorial
+    crosswalk only — not official alignment.
+- concept_id: KCON-CH13-FILES-DATA-LIFE
+  adult_chapters:
+  - CH13
+  adult_title: Files, Databases, and Data Lifecycles
+  kids_strand: STRAND-DATA
+  secondary_strands:
+  - STRAND-INSTRUCTIONS
+  baby_representation: Keep / all-done (photo stays or song ends).
+  toddler_representation: Put away / find again.
+  preschool_representation: Files are keep-boxes with names.
+  prek_representation: Data can be created, saved, changed, or removed.
+  elem1_representation: Files and simple databases store lasting information.
+  elem2_representation: 'Data lifecycle: create, store, query, update, delete; retention honesty.'
+  misconceptions:
+  - Trash empties instantly everywhere.
+  - Cloud means gone from device forever.
+  safety_notes:
+  - Caregiver controls what is saved about a child.
+  prerequisites:
+  - KCON-CH07-MEMORY-STORAGE
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-FILES
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DATA-PATTERNS', 'KE-TARGET-AI-LITERACY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH14-APPS-UI
+  adult_chapters:
+  - CH14
+  adult_title: Applications, APIs, Runtimes, and User Interfaces
+  kids_strand: STRAND-INSTRUCTIONS
+  secondary_strands:
+  - STRAND-ME-TECH
+  baby_representation: Familiar picture → familiar response.
+  toddler_representation: App is a place with its own buttons.
+  preschool_representation: UI is how we talk to a program.
+  prek_representation: Apps follow rules and ask other helpers (APIs) for jobs.
+  elem1_representation: Applications + UI + APIs + runtimes form the software we use.
+  elem2_representation: Event-driven apps, API contracts, and runtime boundaries.
+  misconceptions:
+  - The icon is the whole program.
+  safety_notes:
+  - Age-appropriate apps only; caregiver gatekeeping.
+  prerequisites:
+  - KCON-CH12-OS-SCHEDULE
+  - KCON-CH02-ONE-TAP
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-APPS
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id002
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-ALGO-FOUNDATIONS']; editorial
+    crosswalk only — not official alignment.
+- concept_id: KCON-CH15-CLOUD-EDGE
+  adult_chapters:
+  - CH15
+  adult_title: Containers, Virtualization, Cloud, and Edge Computing
+  kids_strand: STRAND-MESSAGES
+  secondary_strands:
+  - STRAND-INSIDE
+  baby_representation: Sometimes help is here; sometimes help is far (caregiver).
+  toddler_representation: Near helper / far helper.
+  preschool_representation: Some work happens on this device; some elsewhere.
+  prek_representation: Cloud/edge are places work can run—not magic fog.
+  elem1_representation: Local vs remote compute; sharing machines carefully.
+  elem2_representation: Virtualization/containers/cloud/edge as placement choices with tradeoffs.
+  misconceptions:
+  - Cloud means no computer is involved.
+  safety_notes:
+  - No child cloud account creation.
+  prerequisites:
+  - KCON-CH14-APPS-UI
+  standards_mapping_status: NOT_YET_MAPPED
+  standards_wire_ids:
+  - STD-WIRE-CLOUD
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  standards_wire_rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED
+    until a network/connectivity target is authored.
+- concept_id: KCON-CH16-PACKETS-INTERNET
+  adult_chapters:
+  - CH16
+  adult_title: Packets, Protocols, Routing, and the Internet
+  kids_strand: STRAND-MESSAGES
+  baby_representation: Here → there (caregiver gesture with two toys).
+  toddler_representation: Messages move.
+  preschool_representation: Devices can send messages.
+  prek_representation: Messages follow paths and rules.
+  elem1_representation: Computers connect in networks; messages can be split into packets.
+  elem2_representation: Data is represented, transmitted, routed/forwarded, received, and interpreted.
+  misconceptions:
+  - The internet is one wire in the wall.
+  - Messages always arrive.
+  safety_notes:
+  - No unsupervised messaging.
+  prerequisites:
+  - KCON-CH02-ONE-TAP
+  standards_mapping_status: NOT_YET_MAPPED
+  standards_wire_ids:
+  - STD-WIRE-PACKETS
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  standards_wire_rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED
+    until a network/connectivity target is authored.
+- concept_id: KCON-CH17-RADIO-ACCESS
+  adult_chapters:
+  - CH17
+  adult_title: Wi-Fi, Cellular, 5G, and the Road to 6G
+  kids_strand: STRAND-MESSAGES
+  baby_representation: 'Invisible path can still connect (caregiver: ''air path'').'
+  toddler_representation: No wire, still talking (when adult says OK).
+  preschool_representation: Wi-Fi/phone paths are kinds of message roads.
+  prek_representation: Different radios = different roads for messages.
+  elem1_representation: Wireless access networks carry packets over radio.
+  elem2_representation: Generational radio systems change capacity/latency—not magic speed always.
+  misconceptions:
+  - More G always means safer.
+  - Wi-Fi and cellular are identical.
+  safety_notes:
+  - Adults configure networks.
+  - No fear-mongering RF claims.
+  prerequisites:
+  - KCON-CH16-PACKETS-INTERNET
+  standards_mapping_status: NOT_YET_MAPPED
+  standards_wire_ids:
+  - STD-WIRE-RADIO
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  standards_wire_rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED
+    until a network/connectivity target is authored.
+- concept_id: KCON-CH18-SPECTRUM-RADIO
+  adult_chapters:
+  - CH18
+  adult_title: Spectrum, Antennas, Beams, MIMO, and Radio Conditions
+  kids_strand: STRAND-MESSAGES
+  baby_representation: Closer/farther changes how well we hear a sound (analogy).
+  toddler_representation: Walls and distance change messages.
+  preschool_representation: Radio conditions can be good or messy.
+  prek_representation: Antennas and space affect wireless messages.
+  elem1_representation: Spectrum and antennas shape wireless reliability.
+  elem2_representation: Radio conditions, beams, and multi-antenna ideas as constraints—not product claims.
+  misconceptions:
+  - One bar icon tells the whole truth.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH17-RADIO-ACCESS
+  standards_mapping_status: NOT_YET_MAPPED
+  standards_wire_ids:
+  - STD-WIRE-SPECTRUM
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  standards_wire_rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED
+    until a network/connectivity target is authored.
+- concept_id: KCON-CH19-NTN-CONTINUITY
+  adult_chapters:
+  - CH19
+  adult_title: NTN and Service Continuity Across Ground, Air, and Space
+  kids_strand: STRAND-MESSAGES
+  baby_representation: Sometimes we wait longer for far help.
+  toddler_representation: Far-away path can still try.
+  preschool_representation: Some paths are ground; some are much farther.
+  prek_representation: Service can try to continue when paths change.
+  elem1_representation: Non-terrestrial paths are optional and special—not everyday default.
+  elem2_representation: NTN/continuity as capability classes; PHYSICAL_PENDING / teaching-fixture honesty.
+  misconceptions:
+  - Satellites power every phone tap.
+  safety_notes:
+  - No fabricated field-validated twin claims.
+  prerequisites:
+  - KCON-CH17-RADIO-ACCESS
+  standards_mapping_status: NOT_YET_MAPPED
+  standards_wire_ids:
+  - STD-WIRE-NTN
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  standards_wire_rationale: Atlas kids_targets lack an honest messaging/network grain; leave NOT_YET_MAPPED
+    until a network/connectivity target is authored.
+- concept_id: KCON-CH20-STABILITY-QOE
+  adult_chapters:
+  - CH20
+  adult_title: Latency, Reliability, QoE, and the Stability Contract
+  kids_strand: STRAND-ME-TECH
+  secondary_strands:
+  - STRAND-MESSAGES
+  baby_representation: We notice when it keeps working or stops.
+  toddler_representation: Keep going / stop / try again.
+  preschool_representation: A good experience stays steady enough to use.
+  prek_representation: Stability means important things stay OK while we use it.
+  elem1_representation: Latency and reliability shape quality of experience.
+  elem2_representation: 'Stability Contract: name bounds, observe, improve—without fake SLOs.'
+  misconceptions:
+  - Perfect uptime is normal for all systems.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH03-PERFORMANCE-FEEL
+  - KCON-CH16-PACKETS-INTERNET
+  standards_mapping_status: PROPOSED
+  standards_wire_ids:
+  - STD-WIRE-STABILITY
+  atlas_mapping_ids:
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest PROPOSED bridge via kids_targets ['KE-TARGET-SYSTEMS-STABILITY']; editorial
+    crosswalk only — not official alignment.
+- concept_id: KCON-CH21-DATA-AI
+  adult_chapters:
+  - CH21
+  adult_title: Data, Machine Learning, and Generative AI
+  kids_strand: STRAND-DATA
+  baby_representation: Patterns of familiar faces/sounds (caregiver; no AI chat).
+  toddler_representation: Computer can guess from examples—sometimes wrong.
+  preschool_representation: Machines learn patterns from data; people check.
+  prek_representation: AI suggestions are not always true; ask a person.
+  elem1_representation: ML uses data to predict; generative tools can invent text/images.
+  elem2_representation: Data→model→prediction; hallucination/error; human responsibility.
+  misconceptions:
+  - AI knows everything.
+  - AI is a person.
+  safety_notes:
+  - No open-ended child–AI chat in early bands.
+  - Caregiver mediation required.
+  prerequisites:
+  - KCON-CH13-FILES-DATA-LIFE
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-AI
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DATA-PATTERNS', 'KE-TARGET-AI-LITERACY'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH22-EDGE-AI-SENSE
+  adult_chapters:
+  - CH22
+  adult_title: Edge AI, Sensors, and Embodied Interaction
+  kids_strand: STRAND-DATA
+  secondary_strands:
+  - STRAND-ME-TECH
+  baby_representation: Body movement can make a local change (caregiver toy).
+  toddler_representation: Sensors notice movement/sound nearby.
+  preschool_representation: Some smart helpers live on the device.
+  prek_representation: On-device sensing vs sending data away.
+  elem1_representation: Edge AI runs near sensors; permissions matter.
+  elem2_representation: Embodied sensing, on-device inference, consent, and budget constraints.
+  misconceptions:
+  - Wearables always share everything.
+  safety_notes:
+  - No aiming cameras at others.
+  - Permission dialogs are adult-led for young kids.
+  prerequisites:
+  - KCON-CH08-SENSES-OUTPUT
+  - KCON-CH21-DATA-AI
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-EDGE-AI
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  - MAP-NGSS-SCI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  - KE-TARGET-SCIENCE-PRACTICES
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DATA-PATTERNS', 'KE-TARGET-AI-LITERACY',
+    'KE-TARGET-SCIENCE-PRACTICES']; editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH23-CYBERSECURITY
+  adult_chapters:
+  - CH23
+  adult_title: Cybersecurity from Chip to Cloud
+  kids_strand: STRAND-SAFE
+  baby_representation: Some things are only for grown-ups.
+  toddler_representation: Stop / ask adult before new buttons.
+  preschool_representation: Locks and rules keep tools safer.
+  prek_representation: Passwords/locks are for privacy and safety—not fear.
+  elem1_representation: Security protects systems from harm and misuse across layers.
+  elem2_representation: Threats, controls, and defense-in-depth conceptually; no exploit practice.
+  misconceptions:
+  - Security is only antivirus.
+  - Kids should learn hacking tricks.
+  safety_notes:
+  - No offensive security content.
+  - No credential sharing games.
+  prerequisites:
+  - KCON-CH11-BOOT-TRUST
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-SECURITY
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  - KE-TARGET-SYSTEMS-STABILITY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DIGITAL-CITIZENSHIP',
+    'KE-TARGET-COMPUTING-SOCIETY', 'KE-TARGET-SYSTEMS-STABILITY']; editorial crosswalk only — not official
+    alignment.
+- concept_id: KCON-CH24-PRIVACY-ETHICS
+  adult_chapters:
+  - CH24
+  adult_title: Privacy, Identity, Safety, Accessibility, and Ethics
+  kids_strand: STRAND-SAFE
+  baby_representation: My body / my calm; adults protect my info.
+  toddler_representation: Mine / share with caregiver only.
+  preschool_representation: Private means not for everyone.
+  prek_representation: Choose safe/private; include friends who need different tools.
+  elem1_representation: Privacy, identity, accessibility, and ethics are design duties.
+  elem2_representation: Consent, identity, a11y, and ethical tradeoffs with honest limits.
+  misconceptions:
+  - Privacy means hiding forever.
+  - Accessibility is optional extras.
+  safety_notes:
+  - No collection of child personal data in prototypes.
+  prerequisites:
+  - KCON-CH23-CYBERSECURITY
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-PRIVACY
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DIGITAL-CITIZENSHIP',
+    'KE-TARGET-COMPUTING-SOCIETY']; editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH25-DIGITAL-EQUITY
+  adult_chapters:
+  - CH25
+  adult_title: 'Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure'
+  kids_strand: STRAND-SAFE
+  baby_representation: Everyone deserves calm help from caregivers.
+  toddler_representation: Different families have different tools.
+  preschool_representation: Fair means people get what they need to join.
+  prek_representation: Access is not the same for everyone; we notice and care.
+  elem1_representation: 'Digital equity: who can use, learn, and benefit.'
+  elem2_representation: Measure access gaps carefully; avoid deficit framing of children.
+  misconceptions:
+  - Having a phone means equity is solved.
+  safety_notes:
+  - No ranking families by device wealth in class.
+  prerequisites:
+  - KCON-CH24-PRIVACY-ETHICS
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-EQUITY
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-DIGITAL-CITIZENSHIP',
+    'KE-TARGET-COMPUTING-SOCIETY']; editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH26-SOFTWARE-VCS
+  adult_chapters:
+  - CH26
+  adult_title: Software Development and Version Control
+  kids_strand: STRAND-BUILD
+  baby_representation: Try again with caregiver.
+  toddler_representation: Make / change / try again.
+  preschool_representation: We can build a sequence and fix it.
+  prek_representation: Save versions of our plan so we can go back.
+  elem1_representation: Software is built in steps; version control remembers history.
+  elem2_representation: Development workflow and VCS as collaboration/evidence tools.
+  misconceptions:
+  - First try must be perfect.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH14-APPS-UI
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-DEV
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: &id003
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH27-TEST-EVIDENCE
+  adult_chapters:
+  - CH27
+  adult_title: Testing, Observability, and Evidence
+  kids_strand: STRAND-BUILD
+  baby_representation: Look again to see if it still works.
+  toddler_representation: 'Check: did it change?'
+  preschool_representation: Test means try and see.
+  prek_representation: Observe vs guess; write/draw what happened.
+  elem1_representation: Tests and observations produce evidence.
+  elem2_representation: Testing/observability; observation≠inference; portfolio evidence honesty.
+  misconceptions:
+  - One success proves always works.
+  safety_notes:
+  - No fabricated child-test evidence.
+  prerequisites:
+  - KCON-CH26-SOFTWARE-VCS
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-TEST
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH28-TWINS-SIM
+  adult_chapters:
+  - CH28
+  adult_title: Digital Twins, Simulation, and Reproducible Research
+  kids_strand: STRAND-BUILD
+  secondary_strands:
+  - STRAND-DATA
+  baby_representation: Pretend version of a real thing (caregiver play).
+  toddler_representation: Toy model vs real object.
+  preschool_representation: A model helps us practice safely.
+  prek_representation: Simulation is practice—not the same as the real field.
+  elem1_representation: Models/simulations help us learn; they need clear limits.
+  elem2_representation: Digital twins/simulation require evidence labels; fixtures≠field proof.
+  misconceptions:
+  - A simulation proves the physical system.
+  safety_notes:
+  - Preserve PHYSICAL_PENDING honesty from adult book.
+  prerequisites:
+  - KCON-CH27-TEST-EVIDENCE
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-SIM
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH29-PRODUCT-DESIGN
+  adult_chapters:
+  - CH29
+  adult_title: Designing a Complete Technology Product
+  kids_strand: STRAND-BUILD
+  baby_representation: Choose a toy that fits the job (caregiver).
+  toddler_representation: Plan → make → try.
+  preschool_representation: Design for a person who will use it.
+  prek_representation: Products need parts, instructions, safety, and fairness.
+  elem1_representation: Product design joins tech, people, and constraints.
+  elem2_representation: End-to-end product thinking across strands.
+  misconceptions:
+  - Pretty UI is a complete product.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH26-SOFTWARE-VCS
+  - KCON-CH24-PRIVACY-ETHICS
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-PRODUCT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH30-CAREER-PORTFOLIO
+  adult_chapters:
+  - CH30
+  adult_title: Career Maps and Portfolio Proof
+  kids_strand: STRAND-BUILD
+  baby_representation: Show caregiver what we noticed (gesture).
+  toddler_representation: Show what we made.
+  preschool_representation: Keep a picture of our try.
+  prek_representation: Portfolio = evidence of learning, not ranking.
+  elem1_representation: Portfolios show process and proof—not grades as identity.
+  elem2_representation: Career maps + portfolio evidence culture (WAIKE-adjacent); no child ranking.
+  misconceptions:
+  - Portfolio is a contest.
+  safety_notes:
+  - No diagnostic/ranking assessment.
+  prerequisites:
+  - KCON-CH27-TEST-EVIDENCE
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-PORTFOLIO
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+- concept_id: KCON-CH31-CAPSTONE-TEACH
+  adult_chapters:
+  - CH31
+  adult_title: 'Capstone: Explain, Measure, Improve, and Teach the Ecosystem'
+  kids_strand: STRAND-BUILD
+  secondary_strands:
+  - STRAND-ME-TECH
+  baby_representation: 'Teach-back: caregiver and child share a look/point ritual.'
+  toddler_representation: Show someone else the touch→change.
+  preschool_representation: Explain what happened in your own words.
+  prek_representation: Explain, try again, and teach a friend/caregiver.
+  elem1_representation: Explain → measure → improve → teach a system story.
+  elem2_representation: Capstone EMIT loop across the spiral; adult CH31 peer.
+  misconceptions:
+  - Teaching means lecturing adults' words.
+  safety_notes: []
+  prerequisites:
+  - KCON-CH02-ONE-TAP
+  - KCON-CH27-TEST-EVIDENCE
+  - KCON-CH20-STABILITY-QOE
+  standards_mapping_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-CAPSTONE
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets: *id003
+  standards_wire_rationale: Honest ADJACENT bridge via kids_targets ['KE-TARGET-SCIENCE-PRACTICES', 'KE-TARGET-ALGO-FOUNDATIONS'];
+    editorial crosswalk only — not official alignment.
+coverage:
+  adult_chapters_expected: 31
+  adult_chapters_mapped: 31
+  strands_used: 7
+  unresolved_concepts: []
+  notes:
+  - Sister standards atlas not landed at authoring time; all standards_mapping_status=NOT_YET_MAPPED with
+    STD-WIRE-* IDs for integrator.
+  - ONE_TAP pilot anchors KCON-CH02-ONE-TAP across all six age bands.

@@ -1,0 +1,437 @@
+# Child-media evidence claims → implementation implications.
+# confidence: high | medium | low | provisional
+# No child testing collected in this wave.
+
+register_meta:
+  register_id: CHILD_MEDIA_EVIDENCE_REGISTER
+  version: "0.1.1"
+  status: DRAFT_INTERNAL
+  retrieved_on: "2026-09-03"
+  audited_on: "2026-09-03"
+  companion_source_register: kids/research/CHILD_MEDIA_SOURCE_REGISTER.yaml
+  mandatory_topic_coverage_policy: every_listed_topic_has_ge_1_entry
+  qa_policy: >
+    Retain strong peer-reviewed / clinical / regulatory entries. Downgrade
+    confidence when claim outruns source scope. Soften production rules that
+    smuggle editorial preferences. Do not inflate source counts.
+
+evidence:
+  - evidence_id: CME-001
+    topic: infant_visual_attention
+    age_range: "0–18 months"
+    source_type: peer_reviewed_handbook
+    source: SRC-BANKS-SALAPATEK
+    year: 1983
+    sample_or_scope: "Infant vision synthesis (acuity, contrast, preference paradigms)"
+    finding: "Infants preferentially attend to high-contrast, face-like, and moderately complex patterned stimuli; acuity and contrast sensitivity improve rapidly in the first year."
+    implementation_implication: "Infant spreads: one large focal object, high figure–ground contrast, minimal competing detail; faces/eyes may support attention but are not required for every page."
+    limitations: "Preference ≠ learning. Historical lab stimuli differ from modern print/digital layouts."
+    confidence: high
+
+  - evidence_id: CME-002
+    topic: infant_visual_attention
+    age_range: "0–30 months"
+    source_type: peer_reviewed_review
+    source: SRC-ANDERSON-PEMPEK-VIDEO-DEFICIT
+    year: 2005
+    sample_or_scope: "Review of TV/video effects in very young children"
+    finding: "Very young children often learn less from video than from equivalent live/social demonstration (video deficit); attention to screens does not equal comprehension."
+    implementation_implication: "Print-first + caregiver mediation for infants/toddlers; digital is optional companion, never sole path to core learning."
+    limitations: "Transfer gaps shrink with age and contingent interaction; product still must not claim infant screen learning as default."
+    confidence: high
+
+  - evidence_id: CME-003
+    topic: color_contrast
+    age_range: "0–18 months"
+    source_type: peer_reviewed
+    source: SRC-TELLER-INFANT-VISION
+    year: 1986
+    sample_or_scope: "Infant acuity / contrast assessment literature"
+    finding: "Early vision is contrast-limited; strong luminance contrast supports detection more reliably than subtle hue differences alone."
+    implementation_implication: "Prefer high luminance contrast for infant art; do not rely on hue alone to encode meaning; color never sole encoding."
+    limitations: "Does not identify a magic 'learning color.' Adult color naming systems are not infant-validated."
+    confidence: high
+
+  - evidence_id: CME-004
+    topic: color_contrast
+    age_range: "all"
+    source_type: production_policy
+    source: SRC-AAP-MEDIA-YOUNG-MINDS
+    year: 2016
+    sample_or_scope: "Clinical policy context (not a color vision study)"
+    finding: "AAP Media and Young Minds does not provide clinical support for brand-color neural-activation marketing claims; absence of such claims in policy is treated as a prohibition cue for product copy, not as positive color-vision evidence."
+    implementation_implication: "PROHIBIT unsupported color-neuroscience marketing claims; use color for salience and accessibility, with labels/shape redundancy (pair with CME-003)."
+    limitations: "Policy silence is not a color-vision experiment; confidence downgraded in QA because this is absence-based production policy, not empirical color research."
+    confidence: medium
+
+  - evidence_id: CME-005
+    topic: visual_clutter
+    age_range: "18–36 months"
+    source_type: peer_reviewed
+    source: SRC-PEREIRA-SMITH-CLUTTER
+    year: 2009
+    sample_or_scope: "Toddler object/word learning under visual competition"
+    finding: "Cluttered visual fields make it harder for toddlers to isolate referents for word learning."
+    implementation_implication: "Limit concurrent focal objects; clear whitespace; one teachable object per infant/toddler spread."
+    limitations: "Lab object arrays ≠ book illustration; still a strong design caution."
+    confidence: high
+
+  - evidence_id: CME-006
+    topic: visual_clutter
+    age_range: "school-age (extrapolate cautiously to older preschool)"
+    source_type: peer_reviewed_book
+    source: SRC-MAYER-CLUTTER
+    year: 2009
+    sample_or_scope: "Multimedia learning coherence principle"
+    finding: "Extraneous decorative detail can impair learning by competing for limited processing resources."
+    implementation_implication: "Decorative extras that do not serve story/concept should be cut; diagrams stay sparse and labeled."
+    limitations: "Most Mayer samples are older learners; use as coherence caution, not infant doctrine."
+    confidence: medium
+
+  - evidence_id: CME-007
+    topic: shape_complexity
+    age_range: "0–36 months"
+    source_type: peer_reviewed_handbook
+    source: SRC-BANKS-SALAPATEK
+    year: 1983
+    sample_or_scope: "Infant pattern preference synthesis (handbook)"
+    finding: "Infant looking preferences often favor patterns of intermediate complexity relative to extremely sparse or extremely dense arrays in lab stimuli."
+    implementation_implication: "Simple, bold silhouettes for baby/toddler characters; increase shape detail gradually by age band — heuristic only."
+    limitations: "Handbook synthesis over historical lab stimuli; optimal complexity is stimulus- and age-dependent; no single production shape formula. Confidence retained medium (scope caution already)."
+    confidence: medium
+
+  - evidence_id: CME-008
+    topic: child_directed_speech
+    age_range: "0–3 years"
+    source_type: peer_reviewed_review
+    source: SRC-GOLINKOFF-CDS-REVIEW
+    year: 2015
+    sample_or_scope: "Review of infant-directed speech and early language"
+    finding: "Child-directed speech (CDS) with exaggerated contour, clarity, and social contingency supports attention and language learning relative to flat adult-directed speech in many contexts."
+    implementation_implication: "Optional read-aloud: natural expressive CDS-style prosody; short utterances; social pauses. Not mandatory audio for access."
+    limitations: "Cultural variation in CDS; quantity/quality of live interaction matters more than any recorded track."
+    confidence: high
+
+  - evidence_id: CME-009
+    topic: pitch_contour
+    age_range: "infancy"
+    source_type: peer_reviewed
+    source: SRC-FERNALD-CDS
+    year: 1993
+    sample_or_scope: "Infant responsiveness to vocal affect / IDS contours"
+    finding: "Infants respond to affective pitch contours in infant-directed speech; contour and affect matter, not mere height of pitch."
+    implementation_implication: "Use natural pitch variation and warm affect; REJECT constant artificial squeakiness and 'high pitch causes learning' slogans."
+    limitations: "Does not prescribe a target F0 in Hz for products."
+    confidence: high
+
+  - evidence_id: CME-010
+    topic: speaking_rate
+    age_range: "0–5 years"
+    source_type: peer_reviewed_review
+    source: SRC-GOLINKOFF-CDS-REVIEW
+    year: 2015
+    sample_or_scope: "IDS features including slower rate and clearer enunciation"
+    finding: "Slower, clearer speech in IDS is associated with better segmentation and learning opportunities for very young listeners."
+    implementation_implication: "Age-band rate guidance: slower for baby/toddler read-aloud; gradually approach natural adult clarity for older elementary. Ranges, not rigid WPM mandates without measurement."
+    limitations: "Over-slow speech can sound unnatural; caregiver judgment matters."
+    confidence: medium
+
+  - evidence_id: CME-011
+    topic: repetition
+    age_range: "toddler–preschool"
+    source_type: peer_reviewed
+    source: SRC-HORST-REPETITION
+    year: 2013
+    sample_or_scope: "Word learning / storybook repetition literature"
+    finding: "Repeated exposure to the same words/stories in supportive contexts improves retention beyond one-shot exposure."
+    implementation_implication: "Recurring refrains, revisit key labels across spreads/units, encourage re-reading; vary context slightly to avoid boredom without abandoning targets."
+    limitations: "Repetition without engagement or meaning is weak; not a license for infinite loops."
+    confidence: high
+
+  - evidence_id: CME-012
+    topic: pause_response_cadence
+    age_range: "0–5"
+    source_type: professional_synthesis
+    source: SRC-CDC-SERVE-RETURN
+    year: 2011
+    sample_or_scope: "Serve-and-return interaction framework"
+    finding: "Back-and-forth contingent exchanges (serve → wait → return) scaffold early communication and relationship-based learning."
+    implementation_implication: "Build explicit WAIT beats after questions/prompts; caregiver scripts emphasize pause; digital must not fill every silence with auto-advance."
+    limitations: "Framework is developmental, not a media A/B test."
+    confidence: high
+
+  - evidence_id: CME-013
+    topic: repeated_exposure
+    age_range: "preschool"
+    source_type: peer_reviewed
+    source: SRC-CRAWLEY-PARTICIPATORY
+    year: 1999
+    sample_or_scope: "Repeated exposures to a single episode; comprehension/attention measures"
+    finding: "Repeated viewing of the same educational episode can increase comprehension and participation over time for preschoolers."
+    implementation_implication: "Design units for re-use; same concept across formats; encourage multiple shared readings rather than one-pass novelty."
+    limitations: "METHODOLOGY ONLY — do not imitate the studied show's IP. Effects vary by content quality."
+    confidence: medium
+
+  - evidence_id: CME-014
+    topic: songs_rhyme
+    age_range: "preschool–early elementary"
+    source_type: peer_reviewed
+    source: SRC-BRYANT-RHYME
+    year: 1989
+    sample_or_scope: "Nursery rhyme experience linked with phonological skills"
+    finding: "Early rhyme/song experience correlates with later phonological awareness/reading-related skills."
+    implementation_implication: "Optional original rhymes/chants that reinforce target vocabulary; keep short; never require song for core concept access; create original lyrics (no copyrighted songs)."
+    limitations: "Correlational; rhyme alone does not cause literacy. Avoid pseudo-Mozart / frequency myths."
+    confidence: medium
+
+  - evidence_id: CME-015
+    topic: memory_word_learning
+    age_range: "toddler–preschool"
+    source_type: peer_reviewed
+    source: SRC-HORST-REPETITION
+    year: 2013
+    sample_or_scope: "Context and repetition in word learning"
+    finding: "Word learning benefits from clear referent isolation plus repeated, meaningful encounters."
+    implementation_implication: "One new label at a time for youngest bands; pair word with clear visual referent; recycle vocabulary across strands."
+    limitations: "Individual differences large; bilingual homes need home-language support."
+    confidence: high
+
+  - evidence_id: CME-016
+    topic: stable_characters
+    age_range: "preschool–elementary"
+    source_type: peer_reviewed_synthesis
+    source: SRC-CALVERT-PARASOCIAL
+    year: 2017
+    sample_or_scope: "Parasocial relationships with media characters"
+    finding: "Stable, emotionally available characters can support engagement; some studies associate parasocial bonds with greater willingness to attend to character-delivered content (learning transfer is not guaranteed)."
+    implementation_implication: "Small recurring original cast with distinct silhouettes and consistent roles; teach-back dynamics. Character continuity is not a substitute for instructional design."
+    limitations: "Synthesis chapter; familiarity ≠ guaranteed learning. Do not copy third-party IP. 'Omniscient AI' ban is editorial ethics, not a Calvert finding — removed from evidence-backed rule text in QA."
+    confidence: medium
+
+  - evidence_id: CME-017
+    topic: parasocial_character_learning
+    age_range: "preschool–elementary"
+    source_type: peer_reviewed_synthesis
+    source: SRC-CALVERT-PARASOCIAL
+    year: 2017
+    sample_or_scope: "Character–learning literature synthesis"
+    finding: "Parasocial relationships may mediate attention and willingness to engage with character-delivered prompts; contingent, warm character behavior is associated with stronger bonds in the literature synthesis."
+    implementation_implication: "Characters ask, wait, and celebrate attempts; model curiosity and repair, not perfection. Treat as engagement design, not proven learning causal mechanism."
+    limitations: "Effects moderated by age, prior exposure, and content; not a substitute for caregiver interaction for youngest. Confidence downgraded in QA: synthesis suggests mediation of attention/willingness, not robust causal learning proof."
+    confidence: low
+
+  - evidence_id: CME-018
+    topic: participatory_prompts
+    age_range: "preschool"
+    source_type: peer_reviewed
+    source: SRC-CRAWLEY-PARTICIPATORY
+    year: 1999
+    sample_or_scope: "Participatory educational TV methodology"
+    finding: "Inviting children to respond (questions + pause) can increase active participation relative to continuous narration."
+    implementation_implication: "Include LOOK/POINT/NAME or NOTICE/PREDICT prompts with silence for response; print books use caregiver-led pauses."
+    limitations: "Do not imitate show IP. Participation ≠ guaranteed deep learning."
+    confidence: medium
+
+  - evidence_id: CME-019
+    topic: caregiver_co_use
+    age_range: "0–8"
+    source_type: professional_clinical_policy
+    source: SRC-AAP-MEDIA-YOUNG-MINDS
+    year: 2016
+    sample_or_scope: "AAP clinical recommendations"
+    finding: "For young children, high-quality content plus caregiver co-viewing/co-use and talk is preferred over solitary screen use; avoid screens for entertainment under 18 months except video-chat contexts as discussed in policy."
+    implementation_implication: "Caregiver guide is first-class; print-first for infants/toddlers; digital features default to co-use prompts, not solo autoplay."
+    limitations: "Household constraints vary; guidance is aspirational, not shaming."
+    confidence: high
+
+  - evidence_id: CME-020
+    topic: caregiver_co_use
+    age_range: "0–8"
+    source_type: research_center_report
+    source: SRC-JME-COONEY
+    year: 2011
+    sample_or_scope: "Joint Media Engagement design synthesis"
+    finding: "Joint media engagement (shared use, talk, and play around media) can extend learning beyond solo viewing."
+    implementation_implication: "Design prompts that invite adult–child talk, gesture, and transfer to household objects."
+    limitations: "Report is design-oriented; not a single RCT."
+    confidence: medium
+
+  - evidence_id: CME-021
+    topic: serve_and_return
+    age_range: "0–5"
+    source_type: professional_synthesis
+    source: SRC-CDC-SERVE-RETURN
+    year: 2011
+    sample_or_scope: "Early relational interaction science synthesis"
+    finding: "Contingent caregiver responses to child cues are described in the serve-and-return framework as foundational for early communication and secure learning contexts."
+    implementation_implication: "Caregiver scripts: follow child's attention → name → wait → respond → repeat; never turn prompts into screening instruments."
+    limitations: "Developmental framework / science communication synthesis — not a media efficacy trial; avoid product claims that a digital feature 'wires the brain.'"
+    confidence: high
+
+  - evidence_id: CME-022
+    topic: pacing
+    age_range: "preschool"
+    source_type: peer_reviewed
+    source: SRC-LILLARD-PETERSON-2011
+    year: 2011
+    sample_or_scope: "Immediate EF after fast fantastical TV vs drawing/control"
+    finding: "Brief exposure to fast-paced fantastical television was associated with immediate decrements on EF tasks relative to educational slower content / drawing in this study."
+    implementation_implication: "Prefer moderate scene changes, clear causal continuity, and time to process; avoid seizure-inducing flash and frantic cuts in digital companions."
+    limitations: "Short-term lab effects; do not claim all cartoons harm EF permanently."
+    confidence: medium
+
+  - evidence_id: CME-023
+    topic: fast_fantastical_media
+    age_range: "preschool"
+    source_type: peer_reviewed
+    source: SRC-LILLARD-PETERSON-2011
+    year: 2011
+    sample_or_scope: "Same as CME-022 (immediate post-viewing EF)"
+    finding: "In this study, fast pacing combined with fantastical events was associated with lower immediate EF scores than calmer educational narratives / drawing."
+    implementation_implication: "Fantasy OK if paced and purposeful; technology concepts should stay causally clear; magic must not substitute for system explanation in older bands."
+    limitations: "One short-term lab design; does not establish permanent EF damage. Replicate caution, not moral panic."
+    confidence: medium
+
+  - evidence_id: CME-024
+    topic: attention_vs_learning
+    age_range: "0–5"
+    source_type: peer_reviewed_review
+    source: SRC-KIRKORIAN-TRANSFER
+    year: 2008
+    sample_or_scope: "Media and young children's learning review"
+    finding: "Attention-grabbing features can attract looking without guaranteeing comprehension or transfer; learning depends on content structure, age, and social context."
+    implementation_implication: "Optimize for comprehension and transfer, not watch-time; salience serves the concept, not dopamine loops."
+    limitations: "Heterogeneous literature."
+    confidence: high
+
+  - evidence_id: CME-025
+    topic: child_centered_digital_design
+    age_range: "0–18 digital"
+    source_type: regulatory_code
+    source: SRC-ICO-AADC
+    year: 2020
+    sample_or_scope: "UK Age Appropriate Design Code standards"
+    finding: "Child-serving digital services should prioritize best interests: high privacy by default, no detrimental nudge features, age-appropriate design."
+    implementation_implication: "Default: privacy-preserving, no dark patterns, easy exit, no pressure loops; learning/wellbeing over engagement metrics."
+    limitations: "UK code; map principles globally with local counsel before launch."
+    confidence: high
+
+  - evidence_id: CME-026
+    topic: autoplay_infinite_engagement
+    age_range: "digital products for children"
+    source_type: regulatory_code
+    source: SRC-ICO-AADC
+    year: 2020
+    sample_or_scope: "Standards on detrimental use / nudge techniques"
+    finding: "Features that exploit children's vulnerabilities (including certain nudge/engagement techniques) are inconsistent with age-appropriate design expectations."
+    implementation_implication: "Autoplay OFF by default; no infinite scroll/auto-queue; session ends with clear stop; no variable-reward manipulators."
+    limitations: "Legal interpretation needs counsel; principles adopted as product ethics here."
+    confidence: high
+
+  - evidence_id: CME-027
+    topic: autoplay_infinite_engagement
+    age_range: "all kids digital"
+    source_type: advocacy_design_guidance
+    source: SRC-5RIGHTS
+    year: 2021
+    sample_or_scope: "Child-centred digital design principles"
+    finding: "Advocacy design principles argue that maximizing time-on-device conflicts with children's rights and wellbeing goals."
+    implementation_implication: "Captivating ≠ compulsive; offline activity encouraged after each unit. Prefer ICO AADC / AAP as primary authority (CME-025/026/019)."
+    limitations: "Advocacy source — secondary to pediatric/regulatory authorities. Confidence downgraded in QA."
+    confidence: low
+
+  - evidence_id: CME-028
+    topic: privacy_and_agency
+    age_range: "under 13 US digital; children generally"
+    source_type: regulation
+    source: SRC-FTC-COPPA
+    year: 2013
+    sample_or_scope: "US COPPA rule"
+    finding: "Operators of child-directed online services face parental consent and data minimization obligations for personal information from children under 13."
+    implementation_implication: "No unnecessary data collection; no child accounts that harvest PII by default; no chat with strangers; offline-first learning paths."
+    limitations: "Jurisdiction-specific; other regions have additional rules."
+    confidence: high
+
+  - evidence_id: CME-029
+    topic: privacy_and_agency
+    age_range: "0–18"
+    source_type: international_rights_guidance
+    source: SRC-UNICEF-DIGITAL
+    year: 2021
+    sample_or_scope: "Children's rights in digital environment"
+    finding: "Children have rights to privacy, agency, play, and protection online; products should respect evolving capacities."
+    implementation_implication: "Agency: easy stop/exit; understandable choices for caregivers; no manipulative consent flows."
+    limitations: "High-level rights framework."
+    confidence: high
+
+  - evidence_id: CME-030
+    topic: child_centered_digital_design
+    age_range: "0–5"
+    source_type: international_guideline
+    source: SRC-WHO-U5-SEDENTARY
+    year: 2019
+    sample_or_scope: "WHO under-5 sedentary behaviour guidelines"
+    finding: "For under-5s, sedentary screen time should be minimized (with age-specific thresholds in the guideline); interactive play and sleep prioritized."
+    implementation_implication: "Print-first for infants/toddlers; digital companions short, purposeful, co-used; no binge design."
+    limitations: "Public-health guideline, not instructional-design RCT."
+    confidence: high
+
+adopted_production_rules:
+  - rule_id: RULE-CONTRAST-LOW-CLUTTER
+    statement: "High visual salience with low clutter; simple figure–ground for infants."
+    evidence_ids: [CME-001, CME-003, CME-005, CME-006]
+  - rule_id: RULE-NATURAL-PROSODY
+    statement: "Natural expressive prosody with pitch variation; slower/clearer for youngest; short utterances + pauses."
+    evidence_ids: [CME-008, CME-009, CME-010, CME-012]
+  - rule_id: RULE-REPETITION-WITH-VARIATION
+    statement: "Repetition with meaningful variation; units designed for re-reading."
+    evidence_ids: [CME-011, CME-013, CME-015]
+  - rule_id: RULE-PARTICIPATORY-WAIT
+    statement: "Participatory prompts include wait time; digital does not auto-fill silence."
+    evidence_ids: [CME-012, CME-018, CME-021]
+  - rule_id: RULE-CAREGIVER-COUSE
+    statement: "Caregiver co-use encouraged for younger ages; print-first for infants/toddlers."
+    evidence_ids: [CME-002, CME-019, CME-020, CME-030]
+  - rule_id: RULE-MODERATE-PACING
+    statement: "Moderate pacing; avoid frantic cuts and unsupported fantastical overload."
+    evidence_ids: [CME-022, CME-023, CME-024]
+  - rule_id: RULE-NO-COMPULSION
+    statement: "No autoplay-by-default, infinite scroll, variable rewards, dark patterns, or unnecessary child data collection."
+    evidence_ids: [CME-025, CME-026, CME-027, CME-028, CME-029]
+  - rule_id: RULE-STABLE-CAST
+    statement: "Small original recurring cast with distinct silhouettes and teach-back dynamics; character familiarity supports engagement, not guaranteed learning."
+    evidence_ids: [CME-016, CME-017]
+    qa_note: "Downgraded in QA — removed editorial 'omniscient AI' clause (not supported by cited parasocial literature)."
+  - rule_id: RULE-COLOR-NOT-SOLE
+    statement: "Color never sole encoding of meaning; no unsupported color/Hz neuroscience claims."
+    evidence_ids: [CME-003, CME-004]
+    qa_note: "Primary empirical support is CME-003 (contrast); CME-004 is medium absence-based marketing prohibition."
+
+rejected_unsupported_claims:
+  - claim: "This exact color activates the child's brain"
+    status: REJECTED
+    reason: "No peer-reviewed basis for brand-color neural activation claims in production marketing."
+  - claim: "432 Hz improves intelligence"
+    status: REJECTED
+    reason: "Pseudoscience; no credible developmental evidence for frequency→intelligence product claims."
+  - claim: "High pitch makes children learn"
+    status: REJECTED
+    reason: "IDS uses contour/affect/clarity/social contingency; pitch height alone is not a validated production rule."
+  - claim: "Any song at a secret frequency boosts IQ"
+    status: REJECTED
+    reason: "Unsupported; optional rhyme may support engagement/phonological play only."
+  - claim: "Screen attention equals learning for infants"
+    status: REJECTED
+    reason: "Video-deficit and AAP/WHO guidance contradict attention=learning assumptions."
+  - claim: "Infinite personalized autoplay maximizes education"
+    status: REJECTED
+    reason: "Conflicts with child-centered design, AAP wellbeing goals, and age-appropriate design codes."
+  - claim: "Stable character familiarity alone guarantees learning"
+    status: REJECTED
+    reason: "Parasocial literature supports engagement/attention pathways at best; instructional design and caregiver context still required (CME-016/017 downgraded accordingly)."
+  - claim: "Fast fantastical cartoons permanently damage executive function"
+    status: REJECTED
+    reason: "Lillard & Peterson (2011) shows short-term lab EF decrements only; permanent-harm product claims are causal overreach (CME-022/023)."
+  - claim: "This digital prompt wires the child's brain via serve-and-return"
+    status: REJECTED
+    reason: "Serve-and-return is a caregiver interaction framework, not a validated media feature efficacy claim (CME-012/021)."

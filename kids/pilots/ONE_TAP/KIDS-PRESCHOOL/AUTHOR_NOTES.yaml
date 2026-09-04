@@ -1,0 +1,89 @@
+# AUTHOR / INTEGRATOR NOTES — KIDS-PRESCHOOL (not child-facing)
+
+meta:
+  age_band: KIDS-PRESCHOOL
+  age_guide: "3–4 years"
+  claim_ceiling: KIDS_REVIEW_PROTOTYPE_COMPLETE
+  child_validation: NONE
+  publication_ready: false
+  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  adult_source: CH02 developmental rewrite (not sentence simplification)
+  character_cast: A_Signal_Crew_provisional
+  spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+
+editor_constraints_moved_out_of_body:
+  - "Use pilot figure"
+  - "No false GHz claims"
+  - "Link to adult CH02 honestly"
+  - "Honesty label required"
+  - "Adult CH02 developmental rewrite (from child-facing concept line)"
+  - "Standards appendix NOT_YET_MAPPED / dangling STD-WIRE body text"
+  - "Git SHA provenance in child/caregiver manuscript body"
+  - "sentence simplification disclaimer in child-facing header"
+
+design_rule_evidence_index:
+  one_focal_action: [CME-001, CME-005, CME-007]
+  low_clutter: [CME-005, CME-006]
+  color_not_sole_encoding: [CME-003, CME-004]
+  high_contrast_infant: [CME-001, CME-003]
+  print_first_infant_toddler: [CME-002, CME-019, CME-020]
+  serve_and_return: [CME-008, CME-009, CME-010]
+  contingent_cause_effect: [CME-011, CME-013]
+  stable_cast_continuity: [CME-016, CME-017, CME-018]
+  participatory_prompts: [CME-018, CME-021]
+  easy_stop_agency: [CME-022, CME-023, CME-024]
+  no_dark_patterns: [CME-025, CME-026, CME-027]
+  observation_over_diagnosis: [CME-028, CME-029]
+  style_neutral_prototype: [CME-006, CME-016]
+
+spreads:
+  - id: S01
+    facilitator_note: "Story hook only; do not lecture about stacks."
+    author_meta: "Cast Option A provisional: Mira + Bolt"
+    talk_together_child_safe: "Tell the tiny story once. Pause for looking."
+  - id: S02
+    facilitator_note: "Accept pointing/vocalizing as answers."
+    author_meta: "none"
+    talk_together_child_safe: "Notice before naming tech words."
+  - id: S03
+    facilitator_note: "Concrete nouns only."
+    author_meta: "none"
+    talk_together_child_safe: "Count parts on fingers."
+  - id: S04
+    facilitator_note: "Keep mystery honest: we do not open sealed devices."
+    author_meta: "Do not invent magical frequencies."
+    talk_together_child_safe: "Gesture from outside to inside."
+  - id: S05
+    facilitator_note: "Prediction before correction."
+    author_meta: "none"
+    talk_together_child_safe: "Accept any sincere guess."
+  - id: S06
+    facilitator_note: "Movement helps memory."
+    author_meta: "none"
+    talk_together_child_safe: "Act the sequence together."
+  - id: S07
+    facilitator_note: "Sensor = notices a press."
+    author_meta: "none"
+    talk_together_child_safe: "Keep language concrete."
+  - id: S08
+    facilitator_note: "Hands-on sequence evidence."
+    author_meta: "none"
+    talk_together_child_safe: "Use three cards or drawings."
+  - id: S09
+    facilitator_note: "Stopping is success, not failure."
+    author_meta: "easy_stop_agency"
+    talk_together_child_safe: "Model stop without shame."
+  - id: S10
+    facilitator_note: "No forced performance."
+    author_meta: "participatory_prompts"
+    talk_together_child_safe: "Optional peer or caregiver share."
+
+standards:
+  see: TRACEABILITY.yaml
+  relationship: CROSSWALKED_AGAINST
+  fidelity_ceiling: ADJACENT
+
+non_claims:
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - NOT GLOBALLY_ALIGNED / not KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE

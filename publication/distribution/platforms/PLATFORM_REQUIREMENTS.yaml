@@ -1,0 +1,322 @@
+# Adult distribution platform requirements — research register (not submission)
+# Status: DRAFT_INTERNAL — does NOT claim PUBLICATION_READY / retailer-approved / Gate 3 PASS
+schema_version: "1.0"
+track: adult_publication_distribution
+integration_base: "ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
+retrieved_on_default: "2026-09-03"
+non_claims:
+  - "Not retailer-approved"
+  - "Not WCAG certified"
+  - "Not Gate 3 PASS"
+  - "Not PUBLICATION_READY"
+  - "No retailer accounts created; no ISBNs purchased; no uploads performed"
+ceiling_state_allowed: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
+
+platforms:
+  - id: amazon_kdp_kindle
+    display_name: "Amazon KDP — Kindle eBook"
+    channel_class: ebook_retailer
+    free_list_price_supported: false
+    free_list_price_notes: >
+      Permanent $0 list price is not available on standard KDP eBook pricing.
+      Temporary Free Book Promotion (up to 5 days) requires KDP Select enrollment,
+      which conflicts with wide digital distribution. Prefer minimum list price under
+      35% royalty and/or Amazon price-match pathway when free elsewhere.
+      See FREE_ACCESS_POLICY.md.
+    kdp_select_compatible_with_wide_access: false
+    manuscript_formats:
+      recommended: ["EPUB", "DOC/DOCX", "KPF (Kindle Create)"]
+      accepted_also: ["HTML ZIP/HTM/HTML", "RTF", "TXT", "PDF (language-limited)"]
+      notes: >
+        MOBI for fixed-layout eBooks no longer accepted effective March 2025
+        (per KDP help on supported formats). Prefer EPUB validated with Kindle Previewer.
+    cover_requirements:
+      format: ["TIFF", "JPEG"]
+      ideal_px: "2560h x 1600w"
+      recommended_min_height_px: 2500
+      absolute_min_px: "1000h x 625w"
+      max_px: "10000 x 10000"
+      colorspace: RGB
+      min_resolution_ppi: 300
+      ratio_note: "Ideal height/width ratio at least 1.6:1"
+    pricing:
+      royalty_35_percent_min_usd:
+        lt_3mb: 0.99
+        ge_3mb_lt_10mb: 1.99
+        ge_10mb: 2.99
+      royalty_70_percent_band_usd:
+        min: 2.99
+        max: 12.99
+        effective_note: "70% band max expanded to $12.99 effective 2026-07-07 (Amazon.com)"
+      max_list_usd: 200.00
+    isbn:
+      required: false
+      free_kdp_isbn: true
+      free_isbn_imprint_note: "KDP-assigned ISBN is Amazon-channel associated; not portable for wide imprint branding"
+      own_isbn_recommended_for_wide: true
+    exclusivity:
+      kdp_select: >
+        Enrolling in KDP Select commits the digital format exclusively through KDP
+        for the exclusivity period; digital distribution elsewhere (including own site)
+        is not allowed while enrolled. Physical formats may continue.
+    sources:
+      - id: kdp_ebook_formats
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/G200634390"
+        source_version_or_effective_date: "retrieved 2026-09-03; page live help (MOBI fixed-layout change effective March 2025 noted on page)"
+        retrieved_on: "2026-09-03"
+        facts_used: ["DOC/DOCX", "KPF", "EPUB", "MOBI fixed-layout sunset March 2025", "PDF language-limited"]
+      - id: kdp_ebook_cover
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/G200645690"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["TIFF/JPEG", "ideal 2560x1600", "min 1000x625", "RGB", "300 PPI"]
+      - id: kdp_ebook_list_price
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/G200634560"
+        source_version_or_effective_date: "70% band change effective 2026-07-07; retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["35% size-tier minima", "70% $2.99-$12.99"]
+      - id: kdp_select_overview
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/G200798990"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["90-day program", "KU inclusion", "Free Book Promotions", "Countdown Deals"]
+      - id: kdp_select_exclusivity
+        source_authority: Amazon KDP Select landing / help
+        source_url: "https://kdp.amazon.com/en_US/select"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["digital exclusivity during Select; physical OK"]
+
+  - id: amazon_kdp_paperback
+    display_name: "Amazon KDP — Paperback"
+    channel_class: print_on_demand
+    free_list_price_supported: false
+    free_list_price_notes: "Print has manufacturing cost floors; lowest sustainable list requires live Printing Cost & Royalty Calculator."
+    manuscript_formats: ["print-ready PDF interior"]
+    cover_formats: ["PDF wrap (front+spine+back); Cover Creator or Cover Calculator template"]
+    bleed:
+      cover_required: true
+      interior_optional: true
+      bleed_inches: 0.125
+      bleed_mm: 3.2
+      page_size_with_bleed_rule: "Add 0.125 in to width and 0.25 in to height vs trim (e.g. 6x9 -> 6.125 x 9.25)"
+    margins_min_inches:
+      outside_no_bleed: 0.25
+      outside_with_bleed: 0.375
+      inside_by_page_count:
+        "24-150": 0.375
+        "151-300": 0.5
+        "301-500": 0.625
+        "501-700": 0.75
+        "701-828": 0.875
+    trim_candidates_evaluated:
+      - {trim: "6x9", class: regular, paperback_bw_white_pages: "24-828", hardcover_bw_white_pages: "75-550", recommendation: "PRIMARY_CANDIDATE"}
+      - {trim: "7x10", class: large, paperback_bw_white_pages: "24-828", hardcover_bw_white_pages: "75-550", recommendation: "ALT_FOR_FIGURE_HEAVY"}
+      - {trim: "8.5x11", class: large, paperback_bw_white_pages: "24-590", hardcover: "NOT_IN_HARDCOVER_TABLE_AS_8.5x11", recommendation: "LAB_HANDOUT_ALT_ONLY"}
+    ink_paper:
+      black_white_or_cream: true
+      standard_color_white: true
+      premium_color_white: true
+      groundwood: true
+    pricing_note: "REQUIRES_LIVE_PRICE_CALCULATOR — https://kdp.amazon.com/help (Printing Cost & Royalty Calculator)"
+    isbn:
+      required_for_expanded_distribution: "UNKNOWN_NEEDS_OWNER_REVIEW"
+      free_kdp_isbn: true
+      own_isbn_recommended_for_wide: true
+    sources:
+      - id: kdp_trim_bleed_margins
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/GVBQ3CMEQW3W2VL6"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["6x9 common", "7x10 large", "bleed 0.125", "gutter table", "hardcover page ranges", "hardcover unsupported JP"]
+      - id: kdp_format_paperback
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/G201834190"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["interior + cover PDF", "Cover Creator / templates / own cover"]
+      - id: kdp_word_margins
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/G202145400"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["bleed page size example 6.125x9.25", "mirror margins"]
+
+  - id: amazon_kdp_hardcover
+    display_name: "Amazon KDP — Hardcover"
+    channel_class: print_on_demand
+    free_list_price_supported: false
+    notes:
+      - "Case laminate only (no dust jacket); art printed on cover"
+      - "Hardcover currently unsupported in JP"
+      - "Trim set more limited than paperback; 6x9 and 7x10 both listed"
+    manuscript_formats: ["print-ready PDF interior"]
+    cover_formats: ["PDF wrap / Cover Creator / cover calculator template"]
+    page_count_bw_white_6x9: "75-550"
+    pricing_note: "REQUIRES_LIVE_PRICE_CALCULATOR"
+    sources:
+      - id: kdp_format_hardcover
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/GKYZRXFBZH2LDXAK"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["case laminate", "unsupported JP", "interior+cover"]
+      - id: kdp_trim_bleed_margins
+        source_authority: Amazon KDP Help
+        source_url: "https://kdp.amazon.com/help/topic/GVBQ3CMEQW3W2VL6"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["hardcover trim table including 6x9 and 7x10"]
+
+  - id: apple_books
+    display_name: "Apple Books"
+    channel_class: ebook_retailer
+    free_list_price_supported: true
+    free_list_price_notes: "Free Books Agreement path; Paid Books Agreement required to sell"
+    manuscript_formats: ["EPUB"]
+    validation: "Must pass latest EPUBCheck (zero errors for submission readiness)"
+    cover_requirements:
+      format: ["PNG", "JPEG"]
+      colorspace: RGB
+      min_shortest_side_px: 1400
+    file_size:
+      ideal_under_gb: 1
+      max_gb: 2
+      pages_created_max_gb: 1
+    sources:
+      - id: apple_prepare_book
+        source_authority: Apple Books Partner Support
+        source_url: "https://itunespartner.apple.com/books/support/9-prepare-book"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["EPUB only", "EPUBCheck", "cover >=1400 shortest", "PNG/JPEG RGB", "2GB max"]
+      - id: apple_publish_web
+        source_authority: Apple Books for Authors
+        source_url: "https://authors.apple.com/support/4574-publish-book-from-web"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["publishing portal", "EPUBCheck required", "iTunes Connect pricing"]
+      - id: apple_authors_home
+        source_authority: Apple Books for Authors
+        source_url: "https://authors.apple.com/"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["no limitations on offering free books (marketing claim on authors.apple.com)"]
+
+  - id: google_play_books
+    display_name: "Google Play Books"
+    channel_class: ebook_retailer
+    free_list_price_supported: true
+    free_list_price_notes: "Set list price to zero in Pricing tab; book must be available for preview on Google Books"
+    manuscript_formats: ["EPUB", "PDF"]
+    preferred_format: EPUB
+    validation: "EPUB must be validated by EpubCheck"
+    cover_requirements:
+      formats: ["jpeg", "png", "tiff", "pdf"]
+      min_resolution_px: 640
+      max_edge_px: 7200
+    file_size_max_gb: 2
+    min_pages: 4
+    sources:
+      - id: google_book_file_guidelines
+        source_authority: Google Play Books Partner Center Help
+        source_url: "https://support.google.com/books/partner/answer/3424254?hl=en"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["EPUB/PDF", "EpubCheck", "cover 640-7200", "2GB", "filename conventions"]
+      - id: google_free_books
+        source_authority: Google Play Books Partner Center Help
+        source_url: "https://support.google.com/books/partner/answer/6009574?hl=en"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["zero list price", "preview requirement"]
+
+  - id: kobo_writing_life
+    display_name: "Kobo Writing Life"
+    channel_class: ebook_retailer
+    free_list_price_supported: true
+    free_list_price_notes: "Set currency price to 0 for permanent free; pre-orders cannot be free"
+    manuscript_formats: ["EPUB", "DOC/DOCX", "ODT", "MOBI (converted)"]
+    isbn:
+      required: false
+      kobo_assigns_identifier_if_missing: true
+      partner_sites_may_require_isbn: true
+    library_pathway_note: >
+      KWL documents OverDrive library marketplace opt-in on eBook setup help;
+      detailed OverDrive commercial terms require owner re-check (Cloudflare-blocked
+      retrieval of dedicated OverDrive article on 2026-09-03).
+    sources:
+      - id: kwl_free
+        source_authority: Kobo Writing Life Help Centre
+        source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360059386011-How-to-make-your-book-available-for-free"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["price 0 permanent/temporary", "pre-order not free"]
+      - id: kwl_isbn
+        source_authority: Kobo Writing Life Help Centre
+        source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360059386031-ISBNs-and-Kobo-Writing-Life"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["ISBN optional", "Kobo identifier", "partner sites may need ISBN"]
+      - id: kwl_new_ebook
+        source_authority: Kobo Writing Life Help Centre
+        source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360058975732-Setting-up-a-New-eBook"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["DOC/DOCX/ODT/EPUB/MOBI", "OverDrive opt-in mentioned"]
+
+  - id: direct_web
+    display_name: "Direct web (gunnchOS / project site)"
+    channel_class: direct
+    free_list_price_supported: true
+    free_list_price_notes: >
+      Direct free download/hosting is under publisher control. ARR (All Rights Reserved)
+      development model does NOT equal a free public license — see FREE_ACCESS_POLICY.md
+      and publication/BOOK_LICENSE_DECISION.md.
+    manuscript_formats: ["HTML", "PDF", "EPUB"]
+    hosting: "UNKNOWN_NEEDS_OWNER_REVIEW (site/CDN/repo release choice)"
+    sources:
+      - id: book_license_decision
+        source_authority: Project rights record
+        source_url: "publication/BOOK_LICENSE_DECISION.md"
+        source_version_or_effective_date: "2026-09-02"
+        retrieved_on: "2026-09-03"
+        facts_used: ["ARR development prose", "MIT tooling/labs only"]
+      - id: publication_toolchain
+        source_authority: Project toolchain
+        source_url: "PUBLICATION_TOOLCHAIN.md"
+        source_version_or_effective_date: "repo tip ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
+        retrieved_on: "2026-09-03"
+        facts_used: ["Quarto HTML/PDF/EPUB builds"]
+
+  - id: library_distributor
+    display_name: "Library / distributor pathway"
+    channel_class: library_wholesale
+    options_summary:
+      - "Kobo Writing Life → OverDrive opt-in (first-party KWL help; terms TBD owner review)"
+      - "IngramSpark / Ingram Content wholesale+POD (common library/bookstore path; account not created)"
+      - "Direct library licensing (UNKNOWN_NEEDS_OWNER_REVIEW)"
+    free_list_price_supported: "UNKNOWN_NEEDS_OWNER_REVIEW (library pricing models differ from retail $0)"
+    sources:
+      - id: kwl_new_ebook
+        source_authority: Kobo Writing Life Help Centre
+        source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360058975732-Setting-up-a-New-eBook"
+        source_version_or_effective_date: "retrieved 2026-09-03"
+        retrieved_on: "2026-09-03"
+        facts_used: ["OverDrive distribution mentioned on new eBook setup"]
+      - id: ingramspark_home
+        source_authority: IngramSpark
+        source_url: "https://www.ingramspark.com/"
+        source_version_or_effective_date: "HTTP 200 retrieved 2026-09-03; detailed specs not extracted this pass"
+        retrieved_on: "2026-09-03"
+        facts_used: ["POD/distribution vendor exists; account NOT created"]
+
+source_count_summary:
+  unique_source_urls: 18
+  platforms_covered: 8
+  notes: "Counts first-party help URLs + project rights/toolchain entries listed under platforms[].sources"

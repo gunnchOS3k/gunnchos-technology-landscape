@@ -1,0 +1,288 @@
+# Child-media source register for Kids Edition foundation.
+# Official / peer-reviewed / professional developmental bodies preferred.
+# Do not paste copyrighted full texts. Concise citation + allowed-use only.
+# retrieved_on: 2026-09-03 (wave foundation); re-verify before publication submission.
+
+register_meta:
+  register_id: CHILD_MEDIA_SOURCE_REGISTER
+  version: "0.1.1"
+  status: DRAFT_INTERNAL
+  audited_on: "2026-09-03"
+  audit_note: >
+    QA pass removed unused vanity sources; fixed non-resolving DOIs/URLs;
+    no source-count inflation. DOI redirects count as resolvable even when
+    publisher bot-walls return 403.
+  policy: >
+    Primary evidence = peer-reviewed research and professional developmental /
+    pediatric bodies. Methodology of children's media may be studied; copyrighted
+    characters, scripts, songs, and plots must not be imitated.
+  no_child_testing_in_this_wave: true
+
+sources:
+  - source_id: SRC-AAP-MEDIA-YOUNG-MINDS
+    authority: American Academy of Pediatrics (AAP) Council on Communications and Media
+    title: "Media and Young Minds"
+    year: 2016
+    citation: "AAP Council on Communications and Media. Media and Young Minds. Pediatrics. 2016;138(5):e20162591. doi:10.1542/peds.2016-2591."
+    url: "https://pubmed.ncbi.nlm.nih.gov/27940791/"
+    retrieved_on: "2026-09-03"
+    source_type: professional_clinical_policy
+    age_relevance: "0–5+; caregiver co-use; limits for infants/toddlers"
+    topics: [caregiver_co_use, pacing, attention_vs_learning, child_centered_digital_design, privacy_and_agency]
+    allowed_use: paraphrase_and_cite
+    notes: "Print/interaction preferred for very young children; avoid unsupported screen-as-teacher claims. QA uses PubMed landing (publisher page bot-walls); DOI 10.1542/peds.2016-2591 resolves."
+
+  - source_id: SRC-WHO-U5-SEDENTARY
+    authority: World Health Organization
+    title: "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age"
+    year: 2019
+    citation: "WHO. Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age. Geneva: WHO; 2019."
+    url: "https://www.who.int/publications/i/item/9789241550536"
+    retrieved_on: "2026-09-03"
+    source_type: international_guideline
+    age_relevance: "0–5"
+    topics: [pacing, attention_vs_learning, child_centered_digital_design]
+    allowed_use: paraphrase_and_cite
+    notes: "Sedentary screen time recommendations; not a media-design cookbook."
+
+  - source_id: SRC-CDC-SERVE-RETURN
+    authority: Center on the Developing Child at Harvard University (not U.S. CDC; serve-and-return framing widely used by pediatric/early-childhood bodies)
+    title: "Serve & Return Interaction Shapes Brain Circuitry"
+    year: 2011
+    citation: "Center on the Developing Child at Harvard University. Serve & Return Interaction Shapes Brain Circuitry (InBrief)."
+    url: "https://developingchild.harvard.edu/resources/serve-return-interaction-shapes-brain-circuitry/"
+    retrieved_on: "2026-09-03"
+    source_type: professional_synthesis
+    age_relevance: "0–5"
+    topics: [serve_and_return, caregiver_co_use, pause_response_cadence, participatory_prompts]
+    allowed_use: paraphrase_and_cite
+    notes: "Canonical InBrief page; host intermittently bot-walls automated fetchers (human-resolvable 200 with standard browser UA). Source_id prefix CDC historically means Center on the Developing Child, not U.S. CDC."
+
+  - source_id: SRC-FERNALD-CDS
+    authority: Peer-reviewed developmental psychology
+    title: "Approval and disapproval: Infant responsiveness to vocal affect in familiar and unfamiliar languages (CDS tradition)"
+    year: 1993
+    citation: "Fernald A. Approval and disapproval: Infant responsiveness to vocal affect in familiar and unfamiliar languages. Child Development. 1993;64(3):657-674."
+    url: "https://doi.org/10.2307/1131209"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "infancy"
+    topics: [child_directed_speech, pitch_contour, speaking_rate]
+    allowed_use: cite_findings_paraphrase
+    notes: "Supports expressive prosody interest; does NOT license 'high pitch makes children learn' as a production slogan."
+
+  - source_id: SRC-GOLINKOFF-CDS-REVIEW
+    authority: Peer-reviewed
+    title: "(Baby)Talk to Me: The Social Context of Infant-Directed Speech and Its Effects on Early Language Acquisition"
+    year: 2015
+    citation: "Golinkoff RM, Can DD, Soderstrom M, Hirsh-Pasek K. (Baby)Talk to Me. Current Directions in Psychological Science. 2015;24(5):339-344."
+    url: "https://doi.org/10.1177/0963721415595345"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed_review
+    age_relevance: "0–3"
+    topics: [child_directed_speech, pitch_contour, speaking_rate, repetition]
+    allowed_use: cite_findings_paraphrase
+
+  - source_id: SRC-LILLARD-PETERSON-2011
+    authority: Peer-reviewed
+    title: "The Immediate Impact of Different Types of Television on Young Children's Executive Function"
+    year: 2011
+    citation: "Lillard AS, Peterson J. The Immediate Impact of Different Types of Television on Young Children's Executive Function. Pediatrics. 2011;128(4):644-649. doi:10.1542/peds.2010-1919."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3392065/"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "preschool"
+    topics: [pacing, fast_fantastical_media, attention_vs_learning]
+    allowed_use: cite_findings_paraphrase
+    notes: "Single-session EF measures; do not overgeneralize to permanent EF harm or all educational media. QA uses PMC full text for resolvable open access."
+
+  - source_id: SRC-ANDERSON-PEMPEK-VIDEO-DEFICIT
+    authority: Peer-reviewed review
+    title: "Television and Very Young Children"
+    year: 2005
+    citation: "Anderson DR, Pempek TA. Television and Very Young Children. American Behavioral Scientist. 2005;48(5):505-522."
+    url: "https://doi.org/10.1177/0002764204271506"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed_review
+    age_relevance: "under ~30 months"
+    topics: [attention_vs_learning, infant_visual_attention, caregiver_co_use]
+    allowed_use: cite_findings_paraphrase
+
+  - source_id: SRC-KIRKORIAN-TRANSFER
+    authority: Peer-reviewed
+    title: "Media and young children's learning (transfer / video deficit literature)"
+    year: 2008
+    citation: "Kirkorian HL, Wartella EA, Anderson DR. Media and Young Children's Learning. Future of Children. 2008;18(1):39-61."
+    url: "https://doi.org/10.1353/foc.0.0002"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed_review
+    age_relevance: "0–5"
+    topics: [attention_vs_learning, pacing, caregiver_co_use]
+    allowed_use: cite_findings_paraphrase
+
+  - source_id: SRC-CALVERT-PARASOCIAL
+    authority: Peer-reviewed / chapter literature
+    title: "Parasocial relationships with media characters"
+    year: 2017
+    citation: "Calvert SL. Parasocial Relationships with Media Characters: Imaginary Companions for Young Children's Learning and Social Development. In: The Routledge International Handbook of Children, Adolescents and Media. 2017."
+    url: "https://doi.org/10.4324/9781315776774"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed_synthesis
+    age_relevance: "preschool–elementary"
+    topics: [stable_characters, parasocial_character_learning]
+    allowed_use: cite_findings_paraphrase
+    notes: "Study character continuity methodology; do not copy third-party character IP."
+
+  - source_id: SRC-CRAWLEY-PARTICIPATORY
+    authority: Peer-reviewed
+    title: "The effects of television repertory on children's attention and comprehension (participatory prompt tradition)"
+    year: 1999
+    citation: "Crawley AM, Anderson DR, Wilder A, Williams M, Santomero A. Effects of repeated exposures to a single episode of Blue's Clues. Journal of Educational Psychology. 1999;91(4):630-643. (methodology of repetition/participation; do not imitate IP)"
+    url: "https://doi.org/10.1037/0022-0663.91.4.630"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "preschool"
+    topics: [repetition, repeated_exposure, participatory_prompts, pause_response_cadence]
+    allowed_use: methodology_paraphrase_only
+    notes: "Extract pacing/repetition/participation methodology only. PROHIBITED: character imitation, scripts, songs, episode plots."
+
+  - source_id: SRC-HORST-REPETITION
+    authority: Peer-reviewed
+    title: "Context and repetition in word learning"
+    year: 2013
+    citation: "Horst JS. Context and repetition in word learning. Frontiers in Psychology. 2013;4:715."
+    url: "https://doi.org/10.3389/fpsyg.2013.00715"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "toddler–preschool"
+    topics: [repetition, repeated_exposure, memory_word_learning]
+    allowed_use: cite_findings_paraphrase
+    notes: "DOI corrected in QA (10.3388→10.3389). Supports repetition/context; not a license for infinite autoplay loops."
+
+  - source_id: SRC-BRYANT-RHYME
+    authority: Peer-reviewed
+    title: "Nursery rhymes, phonological skills and reading"
+    year: 1989
+    citation: "Bryant PE, Bradley L, Maclean M, Crossland J. Nursery rhymes, phonological skills and reading. Journal of Child Language. 1989;16(2):407-428."
+    url: "https://doi.org/10.1017/S0305000900010485"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "preschool–early elementary"
+    topics: [songs_rhyme, memory_word_learning]
+    allowed_use: cite_findings_paraphrase
+    notes: "Association evidence; rhyme ≠ guaranteed literacy outcome."
+
+  - source_id: SRC-TELLER-INFANT-VISION
+    authority: Peer-reviewed / vision science
+    title: "Assessment of visual acuity in infants and children: the acuity card procedure"
+    year: 1986
+    citation: "Teller DY, McDonald MA, Preston K, Sebris SL, Dobson V. Assessment of visual acuity in infants and children: the acuity card procedure. Developmental Medicine & Child Neurology. 1986;28(6):779-789."
+    url: "https://pubmed.ncbi.nlm.nih.gov/3721071/"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "infancy"
+    topics: [infant_visual_attention, color_contrast]
+    allowed_use: cite_findings_paraphrase
+    notes: "QA fixed non-resolving DOI (tb14255→tb03932 lineage) and year (1979→1986). PubMed landing used for resolvability; supports contrast-limited early acuity, not brand-color neuroscience."
+
+  - source_id: SRC-BANKS-SALAPATEK
+    authority: Peer-reviewed synthesis
+    title: "Infant visual perception"
+    year: 1983
+    citation: "Banks MS, Salapatek P. Infant visual perception. In: Handbook of Child Psychology. 1983."
+    url: "https://doi.org/10.1002/9780470147658"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed_handbook
+    age_relevance: "infancy"
+    topics: [infant_visual_attention, color_contrast, shape_complexity]
+    allowed_use: cite_findings_paraphrase
+    notes: "Book-level Wiley DOI redirects (resolvable); chapter is synthesis, not a single RCT. Prefer contrast/pattern implications over precise complexity formulas."
+
+  - source_id: SRC-MAYER-CLUTTER
+    authority: Peer-reviewed educational psychology
+    title: "Cognitive Theory of Multimedia Learning / coherence principle"
+    year: 2009
+    citation: "Mayer RE. Multimedia Learning (2nd ed.). Cambridge University Press. 2009. Coherence principle: extraneous material can hurt learning."
+    url: "https://doi.org/10.1017/CBO9780511811678"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed_book
+    age_relevance: "school-age primarily; caution when extrapolating to infants"
+    topics: [visual_clutter, attention_vs_learning]
+    allowed_use: cite_findings_paraphrase
+
+  - source_id: SRC-PEREIRA-SMITH-CLUTTER
+    authority: Peer-reviewed
+    title: "A bottom-up view of toddler word learning (object clutter)"
+    year: 2009
+    citation: "Pereira AF, Smith LB. A bottom-up view of toddler word learning. Psychonomic Bulletin & Review / related Smith lab object clutter work."
+    url: "https://doi.org/10.3758/PBR.16.1.176"
+    retrieved_on: "2026-09-03"
+    source_type: peer_reviewed
+    age_relevance: "toddler"
+    topics: [visual_clutter, shape_complexity, memory_word_learning]
+    allowed_use: cite_findings_paraphrase
+
+  - source_id: SRC-JME-COONEY
+    authority: Joan Ganz Cooney Center / research synthesis
+    title: "The New Coviewing: Designing for Learning through Joint Media Engagement"
+    year: 2011
+    citation: "Takeuchi L, Stevens R. The New Coviewing. Joan Ganz Cooney Center. 2011."
+    url: "https://joanganzcooneycenter.org/publication/the-new-coviewing-designing-for-learning-through-joint-media-engagement/"
+    retrieved_on: "2026-09-03"
+    source_type: research_center_report
+    age_relevance: "0–8"
+    topics: [caregiver_co_use, participatory_prompts, child_centered_digital_design]
+    allowed_use: paraphrase_and_cite
+
+  - source_id: SRC-ICO-AADC
+    authority: UK Information Commissioner's Office
+    title: "Age Appropriate Design Code (Children's Code)"
+    year: 2020
+    citation: "ICO. Age Appropriate Design Code. 2020 (in force 2021)."
+    url: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/"
+    retrieved_on: "2026-09-03"
+    source_type: regulatory_code
+    age_relevance: "under 18 (digital)"
+    topics: [autoplay_infinite_engagement, privacy_and_agency, child_centered_digital_design]
+    allowed_use: paraphrase_and_cite
+
+  - source_id: SRC-UNICEF-DIGITAL
+    authority: UN Committee on the Rights of the Child (CRC) / UNICEF dissemination context
+    title: "General Comment No. 25 (2021) — children's rights in relation to the digital environment"
+    year: 2021
+    citation: "UN Committee on the Rights of the Child. General Comment No. 25 (2021) on children's rights in relation to the digital environment. UN Doc CRC/C/GC/25."
+    url: "https://digitallibrary.un.org/record/3897072"
+    retrieved_on: "2026-09-03"
+    source_type: international_rights_guidance
+    age_relevance: "0–18"
+    topics: [privacy_and_agency, child_centered_digital_design]
+    allowed_use: paraphrase_and_cite
+
+  - source_id: SRC-FTC-COPPA
+    authority: U.S. Federal Trade Commission
+    title: "Children's Online Privacy Protection Rule (COPPA)"
+    year: 2013
+    citation: "FTC. Children's Online Privacy Protection Rule (16 CFR Part 312), as amended."
+    url: "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa"
+    retrieved_on: "2026-09-03"
+    source_type: regulation
+    age_relevance: "under 13 (US digital)"
+    topics: [privacy_and_agency]
+    allowed_use: paraphrase_and_cite
+
+  - source_id: SRC-5RIGHTS
+    authority: 5Rights Foundation
+    title: "Child-centered design / digital childhood principles"
+    year: 2021
+    citation: "5Rights Foundation. Child-centred design resources and digital childhood principles. Retrieved 2026-09-03."
+    url: "https://5rightsfoundation.com/"
+    retrieved_on: "2026-09-03"
+    source_type: advocacy_design_guidance
+    age_relevance: "0–18 digital"
+    topics: [autoplay_infinite_engagement, privacy_and_agency, child_centered_digital_design]
+    allowed_use: paraphrase_and_cite
+    notes: "Secondary to pediatric/regulatory sources for clinical claims."
+
+rejected_claim_sources_note: >
+  Pseudoscience claims (exact-color brain activation, 432 Hz intelligence,
+  mandatory squeaky pitch) have no supporting entries in this register by design.

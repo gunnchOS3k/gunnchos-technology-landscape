@@ -1,0 +1,83 @@
+schema: kids.standards.regional/v1
+region: middle_east
+generated_on: '2026-09-03'
+track_status: DRAFT_INTERNAL
+jurisdiction_count: 14
+status_counts:
+  TRANSLATION_REQUIRED: 9
+  IDENTIFIED: 3
+  ACCESS_BLOCKED: 2
+priority_notes: 'Track 2C: Bahrain NCF portal pinned; Gulf/Levant rows IDENTIFIED or TRANSLATION_REQUIRED;
+  Syria/Yemen ACCESS_BLOCKED (conflict-era access).'
+jurisdictions:
+- jurisdiction_id: JUR-BH
+  name: Bahrain
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids:
+  - FW-BH-NCF
+- jurisdiction_id: JUR-IR
+  name: Iran
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-IQ
+  name: Iraq
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-IL
+  name: Israel
+  level: national
+  research_status: IDENTIFIED
+  framework_ids: []
+- jurisdiction_id: JUR-JO
+  name: Jordan
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-KW
+  name: Kuwait
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-LB
+  name: Lebanon
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-OM
+  name: Oman
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-PS
+  name: State of Palestine
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-QA
+  name: Qatar
+  level: national
+  research_status: TRANSLATION_REQUIRED
+  framework_ids: []
+- jurisdiction_id: JUR-SA
+  name: Saudi Arabia
+  level: national
+  research_status: IDENTIFIED
+  framework_ids: []
+- jurisdiction_id: JUR-SY
+  name: Syrian Arab Republic
+  level: national
+  research_status: ACCESS_BLOCKED
+  framework_ids: []
+- jurisdiction_id: JUR-AE
+  name: United Arab Emirates
+  level: national
+  research_status: IDENTIFIED
+  framework_ids: []
+- jurisdiction_id: JUR-YE
+  name: Yemen
+  level: national
+  research_status: ACCESS_BLOCKED
+  framework_ids: []

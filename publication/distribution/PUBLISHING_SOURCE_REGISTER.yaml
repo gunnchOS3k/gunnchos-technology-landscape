@@ -1,0 +1,145 @@
+schema_version: "1.0"
+track: adult_publication_distribution
+retrieved_on: "2026-09-03"
+integration_base: "ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
+status: DRAFT_INTERNAL
+sources:
+  - id: kdp_ebook_formats
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/G200634390"
+    source_version_or_effective_date: "retrieved 2026-09-03; MOBI fixed-layout change effective March 2025"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS]
+  - id: kdp_ebook_cover
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/G200645690"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, ADULT_COVER_REQUIREMENTS]
+  - id: kdp_ebook_list_price
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/G200634560"
+    source_version_or_effective_date: "70% band change effective 2026-07-07; retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, FREE_ACCESS_POLICY]
+  - id: kdp_select_overview
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/G200798990"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, FREE_ACCESS_POLICY]
+  - id: kdp_select_exclusivity
+    source_authority: Amazon KDP Select
+    source_url: "https://kdp.amazon.com/en_US/select"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [FREE_ACCESS_POLICY]
+  - id: kdp_trim_bleed_margins
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/GVBQ3CMEQW3W2VL6"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, PRINT_ENGINEERING]
+  - id: kdp_format_paperback
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/G201834190"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS]
+  - id: kdp_format_hardcover
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/GKYZRXFBZH2LDXAK"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, ADULT_COVER_REQUIREMENTS]
+  - id: kdp_word_margins
+    source_authority: Amazon KDP Help
+    source_url: "https://kdp.amazon.com/help/topic/G202145400"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PRINT_ENGINEERING]
+  - id: apple_prepare_book
+    source_authority: Apple Books Partner Support
+    source_url: "https://itunespartner.apple.com/books/support/9-prepare-book"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, ADULT_COVER_REQUIREMENTS]
+  - id: apple_publish_web
+    source_authority: Apple Books for Authors
+    source_url: "https://authors.apple.com/support/4574-publish-book-from-web"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS]
+  - id: apple_authors_home
+    source_authority: Apple Books for Authors
+    source_url: "https://authors.apple.com/"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, FREE_ACCESS_POLICY]
+  - id: google_book_file_guidelines
+    source_authority: Google Play Books Partner Center Help
+    source_url: "https://support.google.com/books/partner/answer/3424254?hl=en"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS]
+  - id: google_free_books
+    source_authority: Google Play Books Partner Center Help
+    source_url: "https://support.google.com/books/partner/answer/6009574?hl=en"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [FREE_ACCESS_POLICY]
+  - id: kwl_free
+    source_authority: Kobo Writing Life Help Centre
+    source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360059386011-How-to-make-your-book-available-for-free"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [FREE_ACCESS_POLICY, PLATFORM_REQUIREMENTS]
+  - id: kwl_isbn
+    source_authority: Kobo Writing Life Help Centre
+    source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360059386031-ISBNs-and-Kobo-Writing-Life"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [ISBN_IMPRINT_DECISION, PLATFORM_REQUIREMENTS]
+  - id: kwl_new_ebook
+    source_authority: Kobo Writing Life Help Centre
+    source_url: "https://kobowritinglife.zendesk.com/hc/en-us/articles/360058975732-Setting-up-a-New-eBook"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS, LIBRARY_DISTRIBUTION]
+  - id: editeur_onix_overview
+    source_authority: EDItEUR
+    source_url: "https://www.editeur.org/83/Overview/"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [ONIX_MAPPING]
+  - id: editeur_onix
+    source_authority: EDItEUR
+    source_url: "https://www.editeur.org/8/ONIX/"
+    source_version_or_effective_date: "retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [ONIX_MAPPING]
+  - id: ingramspark_home
+    source_authority: IngramSpark
+    source_url: "https://www.ingramspark.com/"
+    source_version_or_effective_date: "HTTP 200 retrieved 2026-09-03"
+    retrieved_on: "2026-09-03"
+    used_by: [LIBRARY_DISTRIBUTION]
+  - id: book_license_decision
+    source_authority: Project rights record
+    source_url: "publication/BOOK_LICENSE_DECISION.md"
+    source_version_or_effective_date: "2026-09-02"
+    retrieved_on: "2026-09-03"
+    used_by: [FREE_ACCESS_POLICY, adult-book.yaml]
+  - id: publication_toolchain
+    source_authority: Project toolchain
+    source_url: "PUBLICATION_TOOLCHAIN.md"
+    source_version_or_effective_date: "repo tip ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
+    retrieved_on: "2026-09-03"
+    used_by: [PLATFORM_REQUIREMENTS]
+  - id: full31_pre_review_candidate
+    source_authority: Project freeze record
+    source_url: "publication/full31/FULL31_PRE_HUMAN_REVIEW_CANDIDATE.md"
+    source_version_or_effective_date: "verified_candidate_content_sha dd7f0003beae5c56d5ee8b5050aff151ef67d803"
+    retrieved_on: "2026-09-03"
+    used_by: [ADULT_DISTRIBUTION_READINESS_REPORT]
+source_count: 23

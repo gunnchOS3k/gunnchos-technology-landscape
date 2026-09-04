@@ -1,0 +1,41 @@
+package_id: adult-direct-free
+platform_id: direct_web
+package_readiness: BLOCKED_OWNER_METADATA
+status: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
+not_status: PUBLICATION_READY
+created_on: '2026-09-03'
+integration_base: cursor/publication-family-parallel-production-001
+full31_pre_review_content_sha: dd7f0003beae5c56d5ee8b5050aff151ef67d803
+credentials_included: false
+human_validated: 0/31
+publication_ready: 0/31
+artifacts:
+- path: artifacts/book.epub
+  artifact_type: EPUB
+  role: MANUSCRIPT
+  sha256: ae7f3bf2f4deb3a8e0b21a645f8bef1ed0a82c8551491b68b54d43ef3c7eedb3
+- path: artifacts/book.pdf
+  artifact_type: PDF
+  pdf_role: DIGITAL_ACCESS_PDF
+  role: DIGITAL_ACCESS
+  sha256: 2b38b229bc7779176a625579ffe06d67f44cbad6189db7abcc69b4487ea1a651
+  page_count: 618
+  dimensions_in:
+  - 8.5
+  - 11.0
+  source: preview/full31/technology-landscape-full31-pdf.pdf
+- path: artifacts/README-HOSTING.md
+  artifact_type: TEXT
+  role: HOSTING_NOTES
+files:
+- path: artifacts/book.epub
+- path: artifacts/book.pdf
+- path: artifacts/README-HOSTING.md
+- path: HUMAN_CHECKLIST.md
+- path: MANIFEST.yaml
+- path: README.md
+- path: validation-stub.md
+- path: CHECKSUMS.sha256
+blocks:
+- BLOCKED_OWNER_METADATA
+- BLOCKED_HUMAN_REVIEW

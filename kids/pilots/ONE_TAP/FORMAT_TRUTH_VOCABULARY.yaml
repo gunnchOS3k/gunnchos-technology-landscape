@@ -1,0 +1,92 @@
+# ONE TAP format truth vocabulary (by age band)
+# Status: KIDS_REVIEW_PROTOTYPE — NOT CHILD-VALIDATED · NOT PUBLICATION-READY
+
+meta:
+  document_id: ONE_TAP_FORMAT_TRUTH_VOCABULARY
+  version: "0.2.0-review-prototype"
+  companion_format_matrix: kids/publication/KIDS_FORMAT_MATRIX.yaml
+  companion_visual_system: kids/design/KIDS_VISUAL_SYSTEM.md
+
+global_allowed_truth_classes:
+  - CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  - CAREGIVER_FACILITATOR_GUIDANCE
+  - EDITORIAL_STANDARDS_CROSSWALK  # adult/integrator facing only
+
+global_forbidden_claims:
+  - CHILD_VALIDATED
+  - PUBLICATION_READY
+  - OFFICIALLY_STANDARDS_ALIGNED
+  - GHz_OR_FREQUENCY_TO_INTELLIGENCE_CLAIMS
+  - FABRICATED_READER_EVIDENCE
+
+bands:
+  - age_band: KIDS-BABY
+    age_guide: "0–18 months"
+    print_truth_label: board_book_intent_prototype_PDF_not_vendor_board
+    digital_truth_label: caregiver_preview_only_print_first
+    child_text_truth_label: micro_labels_0_to_8_words
+    figure_truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+
+  - age_band: KIDS-TODDLER
+    age_guide: "18–36 months"
+    print_truth_label: board_or_picture_prototype_PDF
+    digital_truth_label: co_use_preview_autoplay_off
+    child_text_truth_label: short_phrases_input_output
+    figure_truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+    media_evidence_ids:
+      - CME-002
+      - CME-005
+      - CME-008
+      - CME-011
+
+  - age_band: KIDS-PRESCHOOL
+    age_guide: "3–4 years"
+    print_truth_label: picture_activity_prototype
+    digital_truth_label: fixed_layout_preferred_when_spatial
+    child_text_truth_label: story_plus_sequence_15_to_40_words
+    figure_truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+    media_evidence_ids:
+      - CME-006
+      - CME-016
+      - CME-018
+
+  - age_band: KIDS-PREK
+    age_guide: "4–6 years"
+    print_truth_label: picture_activity_plus_guides_prototype
+    digital_truth_label: PDF_plus_optional_fixed_epub_later
+    child_text_truth_label: system_component_algorithm_plain_language
+    figure_truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+    media_evidence_ids:
+      - CME-006
+      - CME-016
+      - CME-021
+      - CME-024
+
+  - age_band: KIDS-ELEM1
+    age_guide: "Kindergarten–Grade 2"
+    print_truth_label: illustrated_reader_activity_pack_prototype
+    digital_truth_label: reflowable_preferred_for_text_heavy
+    child_text_truth_label: ipo_local_vs_network_portfolio_40_to_120_words
+    figure_truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+    media_evidence_ids:
+      - CME-006
+      - CME-016
+      - CME-018
+      - CME-028
+
+  - age_band: KIDS-ELEM2
+    age_guide: "Grades 3–5/6"
+    print_truth_label: junior_reference_labs_portfolio_prototype
+    digital_truth_label: HTML_PDF_educator_notes_ok
+    child_text_truth_label: cross_layer_measure_secure_chunked_prose
+    figure_truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+    media_evidence_ids:
+      - CME-006
+      - CME-016
+      - CME-028
+      - CME-029

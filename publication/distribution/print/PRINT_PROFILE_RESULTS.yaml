@@ -1,0 +1,117 @@
+schema: adult.print.profile_results/v1
+generated_on: '2026-09-03'
+status: RENDERED_INTERNAL
+not_status:
+- PUBLICATION_READY
+- PRINTER_CERTIFIED
+kdp_limits_source: publication/distribution/platforms/PLATFORM_REQUIREMENTS.yaml
+digital_access_reference:
+  path: preview/full31/technology-landscape-full31-pdf.pdf
+  pdf_role: DIGITAL_ACCESS_PDF
+  page_count: 618
+  dimensions_in:
+  - 8.5
+  - 11.0
+  sha256: 2b38b229bc7779176a625579ffe06d67f44cbad6189db7abcc69b4487ea1a651
+  note: Review/letter PDF from make full31-pdf — not a print interior.
+profiles:
+- profile_id: print-6x9
+  config_file: _quarto-print-6x9.yml
+  intent: PRIMARY_TRADE
+  trim: 6x9
+  intended_trim_in:
+  - 6.0
+  - 9.0
+  output_pdf: preview/print/technology-landscape-print-6x9-interior.pdf
+  pdf_role: PRINT_INTERIOR_PDF
+  page_count: 628
+  measured_dimensions_in:
+  - 6.0
+  - 9.0
+  sha256: 5e234bfa3283f95723f3e486b45f528522cfdc0d53fe0bde9fe172f38b94ca93
+  paperback_eligibility:
+    trim: 6x9
+    binding: paperback
+    page_count: 628
+    eligible: true
+    verified_band: 24-828
+    reason: WITHIN_VERIFIED_KDP_BAND
+  hardcover_eligibility:
+    trim: 6x9
+    binding: hardcover
+    page_count: 628
+    eligible: false
+    verified_band: 75-550
+    reason: OUTSIDE_VERIFIED_KDP_BAND
+  spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+  warnings:
+  - 'Hardcover eligibility: OUTSIDE_VERIFIED_KDP_BAND'
+  - 'Spine/cover wrap geometry: LIVE_COVER_CALCULATOR_REQUIRED (not invented).'
+  - Not printer-certified; not PUBLICATION_READY.
+- profile_id: print-7x10
+  config_file: _quarto-print-7x10.yml
+  intent: ALT_FIGURE_HEAVY
+  trim: 7x10
+  intended_trim_in:
+  - 7.0
+  - 10.0
+  output_pdf: preview/print/technology-landscape-print-7x10-interior.pdf
+  pdf_role: PRINT_INTERIOR_PDF
+  page_count: 524
+  measured_dimensions_in:
+  - 7.0
+  - 10.0
+  sha256: 7629fb22776093c05558a6ec8de0fdc765cd03d18c1cdc8ea00431b3ae7c633c
+  paperback_eligibility:
+    trim: 7x10
+    binding: paperback
+    page_count: 524
+    eligible: true
+    verified_band: 24-828
+    reason: WITHIN_VERIFIED_KDP_BAND
+  hardcover_eligibility:
+    trim: 7x10
+    binding: hardcover
+    page_count: 524
+    eligible: true
+    verified_band: 75-550
+    reason: WITHIN_VERIFIED_KDP_BAND
+  spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+  warnings:
+  - 'Spine/cover wrap geometry: LIVE_COVER_CALCULATOR_REQUIRED (not invented).'
+  - Not printer-certified; not PUBLICATION_READY.
+- profile_id: print-85x11
+  config_file: _quarto-print-85x11.yml
+  intent: HANDOUT_ALT_ONLY
+  trim: 8.5x11
+  intended_trim_in:
+  - 8.5
+  - 11.0
+  output_pdf: preview/print/technology-landscape-print-85x11-interior.pdf
+  pdf_role: PRINT_INTERIOR_PDF
+  page_count: 436
+  measured_dimensions_in:
+  - 8.5
+  - 11.0
+  sha256: 42b256e2393223dc5252b02f9c30a4fc8bbcf7d1687c9fef0231f377cd7737aa
+  paperback_eligibility:
+    trim: 8.5x11
+    binding: paperback
+    page_count: 436
+    eligible: true
+    verified_band: 24-590
+    reason: WITHIN_VERIFIED_KDP_BAND
+  hardcover_eligibility:
+    trim: 8.5x11
+    binding: hardcover
+    page_count: 436
+    eligible: false
+    reason: HARDCOVER_NOT_IN_KDP_TABLE_FOR_TRIM
+    verified_band: null
+  spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+  warnings:
+  - 'Hardcover eligibility: HARDCOVER_NOT_IN_KDP_TABLE_FOR_TRIM'
+  - 'Spine/cover wrap geometry: LIVE_COVER_CALCULATOR_REQUIRED (not invented).'
+  - Not printer-certified; not PUBLICATION_READY.
+hardcover_decision_note: Primary 6x9 print interior exceeds verified hardcover B&W
+  white max (550). Hardcover package uses eligible 7x10 interior pending owner decision.

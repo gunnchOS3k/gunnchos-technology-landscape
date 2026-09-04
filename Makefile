@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-review-prototype-check kids-curriculum-generate kids-one-tap-review-generate distribution-requirements-check adult-release-package-check adult-artifact-package-check adult-print-profiles adult-artifact-packages print-profile-check kids-standards-generate kids-standards-check kids-standards-research-complete-check kids-pilot-mapped-check publication-family-check publication-secrets-scan kids-epubcheck
 
 setup:
 	python3 -m venv .venv
@@ -183,6 +183,47 @@ full31-continuity-check:
 full31-pre-review-check:
 	$(PYTHON) scripts/full31_pre_review_check.py
 
+# Adult distribution research packages (not retailer upload; not PUBLICATION_READY).
+distribution-requirements-check:
+	$(PYTHON) scripts/check_distribution_requirements.py --check
+
+adult-release-package-check:
+	$(PYTHON) scripts/check_adult_release_packages.py
+
+adult-artifact-package-check:
+	$(PYTHON) scripts/check_adult_artifact_packages.py --negative-tests
+
+print-profile-check:
+	$(PYTHON) scripts/check_print_profiles.py
+
+adult-print-profiles:
+	@chmod +x scripts/render_print_profiles.sh
+	@./scripts/render_print_profiles.sh
+	$(PYTHON) scripts/write_print_profile_results.py
+	$(PYTHON) scripts/check_print_profiles.py
+
+adult-artifact-packages:
+	$(PYTHON) scripts/build_adult_artifact_packages.py
+	$(PYTHON) scripts/check_adult_artifact_packages.py --negative-tests
+
+# Publication-family shared infrastructure + secrets scan (S1–S11).
+publication-family-check:
+	$(PYTHON) scripts/check_publication_family.py
+	$(PYTHON) scripts/scan_publication_secrets.py
+
+publication-secrets-scan:
+	$(PYTHON) scripts/scan_publication_secrets.py
+
+# Kids EPUBCheck only when kids EPUB artifacts exist (none in this wave → skip PASS).
+kids-epubcheck:
+	@set -e; \
+	eps=$$(find kids -name '*.epub' 2>/dev/null | wc -l | tr -d ' '); \
+	if [ "$$eps" = "0" ]; then \
+	  echo "kids-epubcheck: SKIP (no kids EPUB artifacts)"; \
+	else \
+	  echo "kids-epubcheck: found $$eps EPUB(s) — run official EPUBCheck per artifact in CI when authored"; \
+	  exit 1; \
+	fi
 continuation-preview:
 	$(PYTHON) scripts/build_continuation_preview.py
 
@@ -194,6 +235,24 @@ continuation-check:
 	$(MAKE) full31-assets-check
 	@echo "continuation-check: PASS"
 
+# Kids Edition — concept spiral + ONE TAP pilot (developmental prototypes only).
+kids-curriculum-generate:
+	$(PYTHON) scripts/generate_kids_curriculum_pilot.py
+	$(PYTHON) scripts/build_kids_one_tap_review_prototype.py
+
+kids-one-tap-review-generate:
+	$(PYTHON) scripts/build_kids_one_tap_review_prototype.py
+
+kids-concept-spiral-check:
+	$(PYTHON) scripts/validate_kids_concept_spiral.py
+
+kids-pilot-check:
+	$(PYTHON) scripts/validate_kids_pilot.py
+
+kids-review-prototype-check:
+	$(PYTHON) scripts/validate_kids_review_prototype.py
+	$(PYTHON) scripts/validate_kids_pilot.py
+
 # Authoritative full automated build (requires Quarto + TeX + SVG converter for PDF).
 all: validate test preview pdf epub
 
@@ -201,5 +260,23 @@ all: validate test preview pdf epub
 # Hosted GitHub Actions provisions TeX/librsvg and additionally runs EPUB + PDF.
 ci: validate test preview
 
+# Kids Edition: child-media evidence/source registers + design artifact presence.
+kids-media-evidence-check:
+	$(PYTHON) scripts/validate_kids_media_evidence.py
+
 clean:
 	rm -rf preview _book .pytest_cache __pycache__
+
+# Kids Global Standards Atlas (publication-family track)
+kids-standards-generate:
+	$(PYTHON) scripts/generate_kids_standards_atlas.py
+
+kids-standards-check:
+	$(PYTHON) scripts/validate_kids_standards.py --architecture --metrics
+	$(PYTHON) -m pytest -q tests/test_kids_standards.py
+
+kids-standards-research-complete-check:
+	$(PYTHON) scripts/validate_kids_standards.py --research-complete --metrics
+
+kids-pilot-mapped-check:
+	$(PYTHON) scripts/validate_kids_standards.py --pilot-mapped

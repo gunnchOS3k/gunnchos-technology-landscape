@@ -1,0 +1,50 @@
+package_id: adult-amazon-paperback
+platform_id: amazon_kdp_paperback
+package_readiness: BLOCKED_OWNER_COVER
+status: ADULT_AUTOMATED_DISTRIBUTION_PREP_COMPLETE
+not_status: PUBLICATION_READY
+created_on: '2026-09-03'
+integration_base: cursor/publication-family-parallel-production-001
+full31_pre_review_content_sha: dd7f0003beae5c56d5ee8b5050aff151ef67d803
+credentials_included: false
+human_validated: 0/31
+publication_ready: 0/31
+artifacts:
+- path: artifacts/interior.pdf
+  artifact_type: PDF
+  pdf_role: PRINT_INTERIOR_PDF
+  role: PRINT_INTERIOR
+  trim: 6x9
+  page_count: 628
+  dimensions_in:
+  - 6.0
+  - 9.0
+  sha256: 5e234bfa3283f95723f3e486b45f528522cfdc0d53fe0bde9fe172f38b94ca93
+  paperback_eligibility:
+    trim: 6x9
+    binding: paperback
+    page_count: 628
+    eligible: true
+    verified_band: 24-828
+    reason: WITHIN_VERIFIED_KDP_BAND
+  source: preview/print/technology-landscape-print-6x9-interior.pdf
+- path: artifacts/cover-wrap.pdf.STUB
+  artifact_type: STUB
+  role: COVER_WRAP
+  final: false
+  spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+  block: BLOCKED_OWNER_COVER
+files:
+- path: artifacts/interior.pdf
+- path: artifacts/cover-wrap.pdf.STUB
+- path: HUMAN_CHECKLIST.md
+- path: MANIFEST.yaml
+- path: README.md
+- path: validation-stub.md
+- path: CHECKSUMS.sha256
+blocks:
+- BLOCKED_OWNER_COVER
+- BLOCKED_OWNER_ISBN
+- BLOCKED_HUMAN_REVIEW
+spine_status: LIVE_COVER_CALCULATOR_REQUIRED
+primary_trim: 6x9

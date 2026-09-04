@@ -1,0 +1,1515 @@
+{
+  "JUR-US": {
+    "education_authority": "U.S. Department of Health & Human Services / ACF (Head Start); U.S. Department of Education (federal role); state education agencies for K–12",
+    "research_status": "OFFICIAL_SOURCE_VERIFIED",
+    "framework_ids": [
+      "FW-US-HS-ELOF",
+      "FW-US-CCSS-2010",
+      "FW-CSTA-PK12-2026",
+      "FW-US-NGSS"
+    ],
+    "portals": [
+      "https://www.headstart.gov/school-readiness/article/head-start-early-learning-outcomes-framework",
+      "https://corestandards.org/",
+      "https://csteachers.org/pk12standards/",
+      "https://www.nextgenscience.org/",
+      "https://www.ed.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": "50 states + District of Columbia education agencies (no single national K–12 curriculum)",
+    "license_notes": "Federal works (ELOF) vs copyrighted multi-state frameworks (CCSS/NGSS/CSTA) — summarize domains only; no wholesale paste.",
+    "notes": "Federal Head Start ELOF verified. Common Core (ELA/Math) hosted at corestandards.org (2010 initiative; state adoption varies). CSTA 2026 and NGSS are voluntary multi-state frameworks — not a national mandate. K–12 literacy/math/science/CS expectations are primarily SUBNATIONAL.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA": {
+    "education_authority": "Provincial and territorial ministries of education (no single national K–12 curriculum)",
+    "research_status": "NO_CENTRAL_NATIONAL_CURRICULUM",
+    "framework_ids": [],
+    "portals": [],
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "subnational_structure": "10 provinces + 3 territories",
+    "license_notes": "Provincial copyright; summarize only.",
+    "notes": "Education is a provincial/territorial responsibility. See JUR-CA-* rows for ministry portals and early learning instruments.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-AL": {
+    "education_authority": "Alabama State Department of Education (Alabama Achieves)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.alabamaachieves.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Standards / Courses of Study published via ALSDE portal; do not assume CCSS/NGSS/CSTA adoption without state instrument.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-AK": {
+    "education_authority": "Alaska Department of Education & Early Development",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.alaska.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Content standards and early learning guidelines via DEED portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-AZ": {
+    "education_authority": "Arizona Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.azed.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Official ADE portal; automated fetch may WAF-block — authority domain confirmed. Automated HTTP retrieval returned 403 (likely WAF); official SEA domain retained.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-AR": {
+    "education_authority": "Arkansas Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://ade.arkansas.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Academic standards and early childhood materials via ADE.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-CA": {
+    "education_authority": "California Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.cde.ca.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "CCSS resources and frameworks published by CDE; CS / digital literacy frameworks exist — pin editions before mapping.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-CO": {
+    "education_authority": "Colorado Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.cde.state.co.us/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Colorado Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-CT": {
+    "education_authority": "Connecticut State Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://portal.ct.gov/SDE"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "CSDE standards and early learning frameworks.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-DE": {
+    "education_authority": "Delaware Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.doe.k12.de.us/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Official DDOE portal; automated fetch may WAF-block. Automated HTTP retrieval returned 403 (likely WAF); official SEA domain retained.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-DC": {
+    "education_authority": "Office of the State Superintendent of Education (OSSE)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://osse.dc.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "DC early learning and K–12 standards via OSSE.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-FL": {
+    "education_authority": "Florida Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.fldoe.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "B.E.S.T. Standards and early learning via FDOE; automated fetch may WAF-block. Automated HTTP retrieval returned 403 (likely WAF); official SEA domain retained.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-GA": {
+    "education_authority": "Georgia Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.gadoe.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Georgia Standards of Excellence portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-HI": {
+    "education_authority": "Hawaii State Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.hawaiipublicschools.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "HIDOE learning design / standards pages.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-ID": {
+    "education_authority": "Idaho State Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.sde.idaho.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Idaho Content Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-IL": {
+    "education_authority": "Illinois State Board of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.isbe.net/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "ISBE learning standards including early learning.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-IN": {
+    "education_authority": "Indiana Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.in.gov/doe/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Indiana Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-IA": {
+    "education_authority": "Iowa Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://educate.iowa.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Iowa Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-KS": {
+    "education_authority": "Kansas State Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.ksde.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Kansas Curricular Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-KY": {
+    "education_authority": "Kentucky Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.ky.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Kentucky Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-LA": {
+    "education_authority": "Louisiana Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.louisianabelieves.com/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Louisiana Student Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-ME": {
+    "education_authority": "Maine Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.maine.gov/doe/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Maine Learning Results / early learning standards.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MD": {
+    "education_authority": "Maryland State Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://marylandpublicschools.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "MSDE Maryland College and Career Ready Standards.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MA": {
+    "education_authority": "Massachusetts Department of Elementary and Secondary Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.doe.mass.edu/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "DESE curriculum frameworks portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MI": {
+    "education_authority": "Michigan Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.michigan.gov/mde"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Michigan Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MN": {
+    "education_authority": "Minnesota Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.mn.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Minnesota Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MS": {
+    "education_authority": "Mississippi Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mdek12.org/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "MDE College- and Career-Readiness Standards; automated fetch may WAF-block. Automated HTTP retrieval returned 403 (likely WAF); official SEA domain retained.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MO": {
+    "education_authority": "Missouri Department of Elementary and Secondary Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://dese.mo.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Missouri Learning Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-MT": {
+    "education_authority": "Montana Office of Public Instruction",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://opi.mt.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Montana Content Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NE": {
+    "education_authority": "Nebraska Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.education.ne.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Nebraska Content Area Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NV": {
+    "education_authority": "Nevada Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://doe.nv.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Nevada Academic Content Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NH": {
+    "education_authority": "New Hampshire Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.education.nh.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "NH DOE academic standards; automated fetch may WAF-block. Automated HTTP retrieval returned 403 (likely WAF); official SEA domain retained.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NJ": {
+    "education_authority": "New Jersey Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.nj.gov/education/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "NJSLS / student learning standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NM": {
+    "education_authority": "New Mexico Public Education Department",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://ped.nm.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "NMPED standards portal (alternate ped.nm.gov; older webnew host unstable). Confirm portal reachability periodically.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NY": {
+    "education_authority": "New York State Education Department",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.nysed.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "NYSED Next Generation Learning Standards / early learning.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-NC": {
+    "education_authority": "North Carolina Department of Public Instruction",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.dpi.nc.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "NCDPI Standard Course of Study portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-ND": {
+    "education_authority": "North Dakota Department of Public Instruction",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.nd.gov/dpi/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "ND DPI content standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-OH": {
+    "education_authority": "Ohio Department of Education and Workforce",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.ohio.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Ohio Learning Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-OK": {
+    "education_authority": "Oklahoma State Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://sde.ok.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Oklahoma Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-OR": {
+    "education_authority": "Oregon Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.oregon.gov/ode/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Oregon standards and early learning portals.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-PA": {
+    "education_authority": "Pennsylvania Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.education.pa.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "PA Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-RI": {
+    "education_authority": "Rhode Island Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.ride.ri.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "RIDE standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-SC": {
+    "education_authority": "South Carolina Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://ed.sc.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "SC College- and Career-Ready Standards.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-SD": {
+    "education_authority": "South Dakota Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://doe.sd.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "SD Content Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-TN": {
+    "education_authority": "Tennessee Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.tn.gov/education"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Tennessee Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-TX": {
+    "education_authority": "Texas Education Agency",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://tea.texas.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "TEKS (Texas Essential Knowledge and Skills) — state-authored, not CCSS.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-UT": {
+    "education_authority": "Utah State Board of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.schools.utah.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Utah Core Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-VT": {
+    "education_authority": "Vermont Agency of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.vermont.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Vermont education quality / standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-VA": {
+    "education_authority": "Virginia Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.doe.virginia.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Standards of Learning (SOL); automated fetch may WAF-block. Automated HTTP retrieval returned 403 (likely WAF); official SEA domain retained.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-WA": {
+    "education_authority": "Washington Office of Superintendent of Public Instruction",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.k12.wa.us/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "OSPI learning standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-WV": {
+    "education_authority": "West Virginia Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://wvde.us/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "WV College- and Career-Readiness Standards.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-WI": {
+    "education_authority": "Wisconsin Department of Public Instruction",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://dpi.wi.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "WI Academic Standards portal.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-US-WY": {
+    "education_authority": "Wyoming Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://edu.wyoming.gov/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "State education agency copyright / terms; summarize domain families only; do not claim CCSS/NGSS/CSTA adoption without state instrument.",
+    "notes": "Wyoming Content & Performance Standards.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-ON": {
+    "education_authority": "Ontario Ministry of Education",
+    "research_status": "OFFICIAL_SOURCE_VERIFIED",
+    "framework_ids": [
+      "FW-CA-ON-KINDERGARTEN-2016"
+    ],
+    "portals": [
+      "https://www.ontario.ca/page/ministry-education"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Kindergarten Program 2016 verified on ministry portal; coding/kindergarten refresh announcements require remapping only after official PDF pin.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-QC": {
+    "education_authority": "Ministère de l'Éducation (Québec)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.quebec.ca/en/education"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Programme de formation de l'école québécoise / preschool–primary instruments are French-primary; English summaries insufficient for clause work.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-BC": {
+    "education_authority": "BC Ministry of Education and Child Care",
+    "research_status": "OFFICIAL_SOURCE_VERIFIED",
+    "framework_ids": [
+      "FW-CA-BC-ELF-2019",
+      "FW-CA-BC-CURRICULUM"
+    ],
+    "portals": [
+      "https://www2.gov.bc.ca/gov/content/education-training",
+      "https://curriculum.gov.bc.ca/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Early Learning Framework (2019 revision) on gov.bc.ca; K–12 curriculum at curriculum.gov.bc.ca.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-AB": {
+    "education_authority": "Alberta Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [
+      "FW-CA-AB-FLIGHT"
+    ],
+    "portals": [
+      "https://education.alberta.ca/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Provincial curriculum portal verified; Flight early learning/care framework identified (flightframework.ca) — confirm ministry endorsement grain before EXACT maps.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-MB": {
+    "education_authority": "Manitoba Education and Early Childhood Learning",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.edu.gov.mb.ca/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Curriculum / framework documents via edu.gov.mb.ca; pin subject PDFs before deep map.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-SK": {
+    "education_authority": "Saskatchewan Ministry of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.saskatchewan.ca/government/government-structure/ministries/education"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Ministry education portal verified; curriculum documents pin pending per subject.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-NS": {
+    "education_authority": "Nova Scotia Department of Education and Early Childhood Development",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.ednet.ns.ca/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "ednet.ns.ca curriculum / learning outcomes portal verified.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-NB": {
+    "education_authority": "New Brunswick Department of Education and Early Childhood Development",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www2.gnb.ca/content/gnb/en/departments/education.html"
+    ],
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Anglophone/Francophone curricula; bilingual deep work may need TRANSLATION_REQUIRED for FR instruments.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-NL": {
+    "education_authority": "Newfoundland and Labrador Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.gov.nl.ca/education/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "gov.nl.ca/education curriculum resources portal verified.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-PE": {
+    "education_authority": "PEI Department of Education and Early Years",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.princeedwardisland.ca/en/topic/education-and-early-years"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Education and Early Years topic portal verified.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-NT": {
+    "education_authority": "NWT Education, Culture and Employment",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.ece.gov.nt.ca/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Territorial education authority portal; curriculum often adapted from partner jurisdictions — pin local instruments.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-YT": {
+    "education_authority": "Yukon Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://yukon.ca/en/education-and-schools"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Yukon education portal identified; automated fetch may WAF-block.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CA-NU": {
+    "education_authority": "Nunavut Department of Education",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.gov.nu.ca/education"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Provincial/territorial Crown copyright; summarize only.",
+    "notes": "Nunavut education portal identified; Inuktut/English materials — bilingual review may apply; automated fetch may WAF-block.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-AG": {
+    "education_authority": "Ministry of Education, Sports and Creative Industries (Antigua and Barbuda)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.gov.ag/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "National education ministry portal candidate identified; confirm live curriculum PDFs and CXC/OECS interfaces before mapping.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-AR": {
+    "education_authority": "Secretaría / Ministerio de Educación (Argentina) — Consejo Federal de Educación",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [
+      "FW-AR-NAP"
+    ],
+    "portals": [
+      "https://www.argentina.gob.ar/educacion"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": "federal provinces + CABA",
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Núcleos de Aprendizajes Prioritarios (NAP) published via argentina.gob.ar / educ.ar; Spanish primary. Includes NAP Educación digital, programación y robótica. Provinces implement NAP — SUBNATIONAL grain remains for deep maps.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-BS": {
+    "education_authority": "Ministry of Education and Technical and Vocational Training (Bahamas)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.bahamas.gov.bs/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Government portal identified; pin MoE curriculum / early learning instruments from education ministry pages.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-BB": {
+    "education_authority": "Ministry of Educational Transformation (Barbados)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://mes.gov.bb/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry education portal candidate; pin nursery–primary curriculum documents and CXC interfaces.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-BZ": {
+    "education_authority": "Ministry of Education, Culture, Science and Technology (Belize)",
+    "research_status": "SOURCE_VERSION_UNCLEAR",
+    "framework_ids": [],
+    "portals": [
+      "https://www.moes.gov.bz/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry domain identified but automated retrieval unstable; confirm official curriculum PDFs on live MoE host.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-BO": {
+    "education_authority": "Ministerio de Educación (Bolivia)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.minedu.gob.bo/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "National curriculum / modelo educativo sociocomunitario productivo instruments are Spanish/Indigenous-language primary; pin current edition PDFs.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-BR": {
+    "education_authority": "Ministério da Educação (MEC)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [
+      "FW-BR-BNCC"
+    ],
+    "portals": [
+      "https://www.gov.br/mec"
+    ],
+    "languages": [
+      "pt"
+    ],
+    "subnational_structure": "federal states/municipal networks implement BNCC",
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "BNCC official portal basenacionalcomum.mec.gov.br (CNE/CP Res. 2/2017 EI+EF; Res. 4/2018 EM). Portuguese primary. Automated HEAD sometimes 403 — portal identity confirmed via MEC/gov.br.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CL": {
+    "education_authority": "Ministerio de Educación (MINEDUC) / Unidad de Currículum y Evaluación",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [
+      "FW-CL-BASES-1-6",
+      "FW-CL-PARVULARIA-2019"
+    ],
+    "portals": [
+      "https://www.curriculumnacional.cl/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Bases Curriculares on curriculumnacional.cl (1°–6° básico; Educación Parvularia vigentes desde 2019). Spanish primary.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CO": {
+    "education_authority": "Ministerio de Educación Nacional (MEN)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [
+      "FW-CO-DBA"
+    ],
+    "portals": [
+      "https://www.mineducacion.gov.co/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Derechos Básicos de Aprendizaje (DBA) collection on colombiaaprende.edu.co; Spanish primary. Version grain varies by subject (e.g., language/math v2).",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CR": {
+    "education_authority": "Ministerio de Educación Pública (MEP)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mep.go.cr/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MEP portal verified; pin programas de estudio / educación preescolar PDFs before deep map.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-CU": {
+    "education_authority": "Ministerio de Educación (MINED)",
+    "research_status": "SOURCE_VERSION_UNCLEAR",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mined.gob.cu/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry identity known; public machine-retrievable curriculum editions unclear — confirm current planes de estudio.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-DM": {
+    "education_authority": "Ministry of Education, Human Resource Planning, Vocational Training and National Excellence",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.gov.dm/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "National education portal candidate; pin early childhood / primary curriculum and OECS interfaces.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-DO": {
+    "education_authority": "Ministerio de Educación (MINERD)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.ministeriodeeducacion.gob.do/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MINERD curriculum / diseño curricular instruments Spanish-primary; confirm live host (mineducacion.gob.do variants unstable).",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-EC": {
+    "education_authority": "Ministerio de Educación (Ecuador)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://educacion.gob.ec/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Currículo nacional / educación inicial documents via educacion.gob.ec; Spanish primary.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-SV": {
+    "education_authority": "Ministerio de Educación (MINED)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mined.gob.sv/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MINED portal / currículo nacional Spanish-primary; pin early grades editions.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-GD": {
+    "education_authority": "Ministry of Education (Grenada)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.gov.gd/ministry-education"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Government ministry page identified; pin curriculum documents and CXC/OECS interfaces.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-GT": {
+    "education_authority": "Ministerio de Educación (MINEDUC)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mineduc.gob.gt/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "CNB / currículo nacional base Spanish-primary; multilingual Indigenous contexts — translation/review required.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-GY": {
+    "education_authority": "Ministry of Education (Guyana)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://education.gov.gy/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "education.gov.gy portal verified; pin nursery–primary curriculum guides.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-HT": {
+    "education_authority": "Ministère de l'Éducation Nationale et de la Formation Professionnelle (MENFP)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.menfp.gouv.ht/"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MENFP instruments French/Haitian Creole primary; confirm current curricula availability.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-HN": {
+    "education_authority": "Secretaría de Educación (Honduras)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.se.gob.hn/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Diseño curricular nacional Spanish-primary; pin early grades PDFs.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-JM": {
+    "education_authority": "Ministry of Education and Youth (Jamaica)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://moey.gov.jm/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MoEY portal candidate; pin National Standards Curriculum / early childhood instruments; confirm live host.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-MX": {
+    "education_authority": "Secretaría de Educación Pública (SEP)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [
+      "FW-MX-NEM-2022"
+    ],
+    "portals": [
+      "https://educacionbasica.sep.gob.mx/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": "federal entities implement national plan",
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Plan de Estudio para la Educación Preescolar, Primaria y Secundaria 2022 (Nueva Escuela Mexicana; Acuerdo 14/08/22). Spanish primary. 2025 web edition is 2nd edition of 2022 plan — not a distinct 2025 curriculum.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-NI": {
+    "education_authority": "Ministerio de Educación (MINED)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mined.gob.ni/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MINED currículo Spanish-primary; pin current editions.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-PA": {
+    "education_authority": "Ministerio de Educación (MEDUCA)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.meduca.gob.pa/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MEDUCA programas de estudio Spanish-primary; pin initial/primary editions.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-PY": {
+    "education_authority": "Ministerio de Educación y Ciencias (MEC)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mec.gov.py/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MEC currículo Spanish/Guaraní bilingual context; translation/review required.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-PE": {
+    "education_authority": "Ministerio de Educación (MINEDU)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.minedu.gob.pe/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Currículo Nacional de la Educación Básica (CNEB) via minedu.gob.pe; Spanish primary — pin PDF edition hash before clause maps.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-KN": {
+    "education_authority": "Ministry of Education (Saint Kitts and Nevis)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.education.gov.kn/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry portal candidate; pin curriculum and OECS/CXC interfaces.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-LC": {
+    "education_authority": "Ministry of Education (Saint Lucia)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.education.gov.lc/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry portal candidate; pin early childhood / primary curriculum documents.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-VC": {
+    "education_authority": "Ministry of Education (SVG)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.education.gov.vc/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry portal candidate; pin curriculum documents.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-SR": {
+    "education_authority": "Ministerie van Onderwijs, Wetenschap en Cultuur (Suriname)",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.gov.sr/"
+    ],
+    "languages": [
+      "nl"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Dutch-primary education ministry materials; confirm curriculum portal path on gov.sr.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-TT": {
+    "education_authority": "Ministry of Education (Trinidad and Tobago)",
+    "research_status": "OFFICIAL_PORTAL_IDENTIFIED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.moe.gov.tt/"
+    ],
+    "languages": [
+      "en"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "moe.gov.tt portal verified; pin early childhood care and education / primary curriculum documents.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-UY": {
+    "education_authority": "Ministerio de Educación y Cultura (MEC) / ANEP",
+    "research_status": "TRANSLATION_REQUIRED",
+    "framework_ids": [],
+    "portals": [
+      "https://www.gub.uy/ministerio-educacion-cultura/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "MEC/ANEP curriculum instruments Spanish-primary; pin Marco Curricular / educación inicial editions.",
+    "last_reviewed_on": "2026-09-03"
+  },
+  "JUR-VE": {
+    "education_authority": "Ministerio del Poder Popular para la Educación",
+    "research_status": "SOURCE_VERSION_UNCLEAR",
+    "framework_ids": [],
+    "portals": [
+      "https://www.mppe.gob.ve/"
+    ],
+    "languages": [
+      "es"
+    ],
+    "subnational_structure": null,
+    "license_notes": "Ministry/authority copyright; Spanish/Portuguese/French/Dutch texts — paraphrase domains only; no wholesale reproduction.",
+    "notes": "Ministry identity known; confirm currently published currículo / educación inicial documents on live hosts.",
+    "last_reviewed_on": "2026-09-03"
+  }
+}
