@@ -1,0 +1,138 @@
+# Page/spread traceability — ONE TAP / KIDS-ELEM2
+meta:
+  pilot: ONE_TAP
+  age_band: KIDS-ELEM2
+  adult_source_chapter: CH02
+  rewrite_method: developmental_precursor_rewrite
+  child_validation: NONE
+spreads:
+  - page_or_spread_id: ONE-TAP-ELEM2-S01
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Annotate map."
+    developmental_domain: "OBSERVE"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S01
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S01
+    word_count_estimate: 19
+  - page_or_spread_id: ONE-TAP-ELEM2-S02
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Role cards."
+    developmental_domain: "NAME"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S02
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S02
+    word_count_estimate: 13
+  - page_or_spread_id: ONE-TAP-ELEM2-S03
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Event diagram."
+    developmental_domain: "NAME"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S03
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S03
+    word_count_estimate: 15
+  - page_or_spread_id: ONE-TAP-ELEM2-S04
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Predict network need."
+    developmental_domain: "PREDICT"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S04
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S04
+    word_count_estimate: 15
+  - page_or_spread_id: ONE-TAP-ELEM2-S05
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Rough measure."
+    developmental_domain: "MEASURE"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S05
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S05
+    word_count_estimate: 17
+  - page_or_spread_id: ONE-TAP-ELEM2-S06
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Two-column notes."
+    developmental_domain: "EXPLAIN"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S06
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S06
+    word_count_estimate: 10
+  - page_or_spread_id: ONE-TAP-ELEM2-S07
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Secure+private."
+    developmental_domain: "SECURE"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S07
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S07
+    word_count_estimate: 18
+  - page_or_spread_id: ONE-TAP-ELEM2-S08
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Protocol + teach script."
+    developmental_domain: "BUILD"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S08
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S08
+    word_count_estimate: 15
+  - page_or_spread_id: ONE-TAP-ELEM2-S09
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "Spiral note."
+    developmental_domain: "REFLECT"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S09
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S09
+    word_count_estimate: 16
+  - page_or_spread_id: ONE-TAP-ELEM2-S10
+    concept_ids: [KCON-CH02-ONE-TAP]
+    learning_goal: "EMIT loop."
+    developmental_domain: "TEACH"
+    standards:
+      - status: NOT_YET_MAPPED
+        wire_id: STD-WIRE-ONE-TAP-ELEM2-S10
+    evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+    visual_rules: [one_focal_action, low_clutter, color_not_sole_encoding, style_neutral_prototype]
+    audio_rules: [caregiver_read_aloud_optional, no_mandatory_audio, no_artificial_squeak_claims]
+    safety_rules: [easy_stop, caregiver_mediation, no_child_data_collection, no_dark_patterns]
+    figure_id: FIG-ONE-TAP-ELEM2-S10
+    word_count_estimate: 11

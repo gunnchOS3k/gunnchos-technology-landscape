@@ -1,0 +1,36 @@
+{
+  "unit_count": 42,
+  "bands": {
+    "BABY": {
+      "spreads": 10,
+      "words": 11,
+      "figures": 10
+    },
+    "TODDLER": {
+      "spreads": 10,
+      "words": 30,
+      "figures": 10
+    },
+    "PRESCHOOL": {
+      "spreads": 10,
+      "words": 75,
+      "figures": 10
+    },
+    "PREK": {
+      "spreads": 10,
+      "words": 101,
+      "figures": 10
+    },
+    "ELEM1": {
+      "spreads": 10,
+      "words": 113,
+      "figures": 10
+    },
+    "ELEM2": {
+      "spreads": 10,
+      "words": 149,
+      "figures": 10
+    }
+  },
+  "waike_sha": "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+}

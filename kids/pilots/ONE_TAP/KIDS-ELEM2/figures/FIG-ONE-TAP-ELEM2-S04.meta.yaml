@@ -1,0 +1,14 @@
+asset_id: FIG-ONE-TAP-ELEM2-S04
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-ELEM2
+alt: "Style-neutral illustration for 'Packet possibility': Predict network need."
+description: "Predict network need."
+purpose: "ONE TAP pilot spread S04 (PREDICT)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 100]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/pilots/ONE_TAP/KIDS-ELEM2/figures/FIG-ONE-TAP-ELEM2-S04.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false

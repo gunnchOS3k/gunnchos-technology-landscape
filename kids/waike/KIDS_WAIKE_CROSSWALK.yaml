@@ -1,0 +1,65 @@
+# Kids Edition ↔ WAIKE crosswalk
+# Invent nothing. Statuses: exact | adjacent | proposed | no-map
+
+meta:
+  document_id: KIDS_WAIKE_CROSSWALK
+  waike_repo: gunnchOS3k/waike-research-ops
+  waike_ref: main
+  waike_sha_reconfirmed: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+  reconfirmed_on: "2026-09-04"
+  reconfirm_method: github_api_commits_main
+  adult_main_sha: "82284cd8f41d750ff508cd6ea5bad0a9534d8162"
+  kids_as_waike_precursor_layer: DESIGN_STATE_NOT_IMPLEMENTED_UPSTREAM
+  child_validation: NONE
+
+mappings:
+  - kids_object: KCON-CH02-ONE-TAP
+    waike_id: SOFTWARE_BUILDER
+    id_system: digital_rc
+    status: adjacent
+    notes: "Adult CH02 already maps competency adjacency; kids pilot is precursor, not a WAIKE module."
+  - kids_object: KCON-CH02-ONE-TAP
+    waike_id: GAME_DEV_INTERACTIVE
+    id_system: digital_rc
+    status: adjacent
+    notes: "Interactive event/input adjacency only."
+  - kids_object: KCON-CH02-ONE-TAP
+    waike_id: COMPUTER_NETWORKING
+    id_system: digital_rc
+    status: adjacent
+    notes: "Optional network branch of ONE TAP; not exact kids module."
+  - kids_object: KCON-CH02-ONE-TAP
+    waike_id: EMBEDDED_PROTOTYPING
+    id_system: digital_rc
+    status: adjacent
+    notes: "Input/sensing adjacency for older bands only."
+  - kids_object: ONE_TAP_PILOT_AS_WAIKE_MODULE
+    waike_id: null
+    id_system: null
+    status: no-map
+    notes: "Do not invent ONE_TAP / KIDS-* WAIKE course IDs."
+  - kids_object: EARLY_LEARNING_PRECURSOR_LAYER
+    waike_id: null
+    id_system: null
+    status: proposed
+    notes: "Future upstream design discussion only; not present on audited SHA."
+  - kids_object: KCON-CH21-DATA-AI
+    waike_id: AI_ML_EDGE
+    id_system: digital_rc
+    status: adjacent
+    notes: "Adult materials reference AI_ML_EDGE labs; kids content is precursor only."
+  - kids_object: KCON-CH23-CYBERSECURITY
+    waike_id: CYBERSECURITY
+    id_system: digital_rc
+    status: adjacent
+    notes: "Adjacent package name used in adult audits; no kids cyber module ID invented."
+  - kids_object: KCON-CH30-CAREER-PORTFOLIO
+    waike_id: portfolio_evidence
+    id_system: docs_culture
+    status: adjacent
+    notes: "Portfolio culture adjacency; not an exact early-learning assessment module."
+
+non_claims:
+  - No exact WAIKE course titled Kids ONE TAP on audited main.
+  - No invented lab IDs.
+  - Kids Edition is not a certified WAIKE track.
