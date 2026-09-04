@@ -26,11 +26,12 @@ claims:
     honestly.
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
 - provisional_id: CLM-CH17-003
-  text: 6G is a future/roadmap topic; do not claim deployed 6G consumer networks as
-    present fact without dated evidence.
+  text: 6G / IMT-2030 remains a roadmap framework topic (ITU-R M.2160); do not claim
+    deployed consumer 6G networks as present fact.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - itu-r-m2160-2023
   overclaim_risk: Standards body roadmaps only.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.

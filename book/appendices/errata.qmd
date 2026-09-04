@@ -1,0 +1,17 @@
+---
+title: "Errata"
+number: false
+---
+Working-draft corrections are tracked as versioned errata — not silent rewrites of reader-facing truth without a record.
+
+## How to report
+
+1. Prefer the GitHub issue form: `.github/ISSUE_TEMPLATE/errata.yml` (label `errata`).
+2. Include edition/version (for example `WORKING FULL-MANUSCRIPT DRAFT`), chapter ID, severity, and a precise description.
+3. Do not include passwords, tokens, private messages, device serials, or precise location.
+
+## Maintainer workflow
+
+See `publication/full31/quality/ERRATA_WORKFLOW.md` (stub). Accepted fixes should land with a dated note; do not invent “validated by reviewers” language from errata alone.
+
+Gate posture remains `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`. Errata intake is **not** Gate 3 PASS.

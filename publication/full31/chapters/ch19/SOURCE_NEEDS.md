@@ -20,12 +20,12 @@ Prefer standards/specs, official docs, peer-reviewed, and textbooks. Do not inve
 - `PROJECT_EVIDENCE_NEEDED` / `PHYSICAL_PENDING` for Quartet/project measurements.
 - Do not treat synthetic NTN case studies as field-validated twin evidence.
 
-## Evidence updates (Batch 0)
+## Remaining SOURCE_NEEDED (QUALITY-E)
 
 | Claim / need | Status / next step |
 |---|---|
-| `CLM-CH19-001` NTN ≠ terrestrial 5G | `SOURCE_IDENTIFIED` via `threegpp-ts23501` (pin dated PDF before clause quotes) |
+| `CLM-CH19-001` NTN ≠ terrestrial 5G | `SOURCE_IDENTIFIED` via `threegpp-ts23501` |
 | `CLM-CH19-002` service continuity | `SOURCE_IDENTIFIED` via ITU-T QoE keys + TS 23.501 |
-| `CLM-CH19-003` orbit delay regimes | `SOURCE_NEEDED` — qualitative physics/standards cite without inventing product latency numbers |
-| `CLM-CH19-004` marketing capability class | `SOURCE_NEEDED` — operator capability docs distinguishing messaging-only vs broadband modes |
+| `CLM-CH19-003` orbit delay regimes | `SOURCE_IDENTIFIED` via `threegpp-tr38821` + `kurose-ross-8` (qualitative; no product latency numbers) |
+| `CLM-CH19-004` marketing capability class | Still `SOURCE_NEEDED` — operator capability docs distinguishing messaging-only vs broadband modes |
 | `CLM-CH19-005` | `PHYSICAL_PENDING` — synthetic NTN case study is teaching fixture only |

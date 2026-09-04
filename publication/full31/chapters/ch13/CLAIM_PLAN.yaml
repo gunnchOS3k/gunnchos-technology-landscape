@@ -29,8 +29,9 @@ claims:
   text: "Databases add structure, concurrency control, and often richer consistency/recovery\
     \ than raw files\u2014but introduce their own failure modes."
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - postgresql-mvcc
   overclaim_risk: Textbook DB systems + official docs; avoid invented ACID slogans
     without definition.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
@@ -50,8 +51,9 @@ claims:
   text: Deletion is often policy plus garbage collection plus replicas; deleted in
     UI may not mean globally unrecoverable.
   claim_class: general_technical
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - nist-sp800-88r1
   overclaim_risk: Privacy/standards docs; no data-recovery exploit steps.
   wording_boundary: Prefer qualitative teaching claims; label PHYSICAL_PENDING / PROJECT_EVIDENCE_NEEDED
     honestly.

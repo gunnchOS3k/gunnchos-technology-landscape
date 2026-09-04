@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH01
 chapter_number: 1
-title: "Technology Is a System, Not a Screen"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: true
@@ -39,7 +38,7 @@ This chapter’s promise is simple:
 
 > After this chapter, you can look at an ordinary device experience and name the hidden cooperating parts—not just the colorful surface—and explain why “the app” is usually not one thing.
 
-Chapter 2 will later prove a method by following one tap through the stack. Chapter 1 teaches the **system lens** first: visible interface versus hidden work, local readiness versus network-dependent readiness, and the honesty of naming a **failure domain** before blaming a vague villain.
+Chapter 2 will later prove a method by following one tap through the stack. Chapter 1 teaches the **system lens** first: visible interface versus hidden work, local readiness versus network-dependent readiness, and the honesty of naming a **failure domain** before blaming a vague villain. When one domain limits the whole path, later chapters will call that limiting resource a **bottleneck**—here it is enough to name the domain before inventing a cause.
 
 ---
 
@@ -65,9 +64,9 @@ Accessibility belongs in this noticing, not later as a disclaimer. If the only �
 
 An ordinary open is not a single object. It is a path through a **technology ecosystem**: people, device, software, optional network, and a usable (or failed) result. @fig-ch01-001 is the first-minute map. @fig-ch01-003 opens the everyday word *app* into cooperating cards. Both are **conceptual / Representative educational architecture**—not measured teardowns of a specific manufactured revision.
 
-![Person to visible interface to hidden local system to optional network/service to human-usable result.](../../../figures/ecosystem/fig-ch01-001-ecosystem-map.svg){#fig-ch01-001 fig-cap="First-minute ecosystem map. Conceptual educational architecture; dashed optional remote branch; not measured telemetry."}
+![Person to visible interface to hidden local system to optional network/service to human-usable result.](../../../figures/ecosystem/fig-ch01-001-ecosystem-map.svg){#fig-ch01-001 fig-cap="First-minute ecosystem map. Conceptual educational architecture; dashed optional remote branch; not measured telemetry." fig-alt="Person to visible interface to hidden local system to optional network/service to human-usable result."}
 
-![Stacked cards for UI, runtime, OS services, storage, network interface, and remote service grouped as everyday 'the app'.](../../../figures/architecture/fig-ch01-003-app-not-one-thing.svg){#fig-ch01-003 fig-cap="Why 'the app' is not one thing. Conceptual layer stack; everyday language collapses several cards into one word."}
+![Stacked cards for UI, runtime, OS services, storage, network interface, and remote service grouped as everyday 'the app'.](../../../figures/architecture/fig-ch01-003-app-not-one-thing.svg){#fig-ch01-003 fig-cap="Why 'the app' is not one thing. Conceptual layer stack; everyday language collapses several cards into one word." fig-alt="Stacked cards for UI, runtime, OS services, storage, network interface, and remote service grouped as everyday 'the app'."}
 
 Walk the layers in ordinary language. Keep the same layers when vocabulary deepens later.
 
@@ -93,7 +92,7 @@ Content you can act on—or a clear failure. The ecosystem succeeds only when th
 
 @fig-ch01-006 foreshadows device subsystems that support readiness (display, compute, memory/storage, radio, power) as **Representative educational architecture**. The Device Quartet—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—appears here only as a future shared learning-laboratory spine of research form factors. Physical fabrication remains pending (**PHYSICAL_PENDING**); Chapter 1 labs run on commodity devices you already own [@src-hardware-quartet].
 
-![Representative educational device blocks with Device Quartet form-factor names as future lab spine.](../../../figures/exploded-views/fig-ch01-006-ecosystem-preview.svg){#fig-ch01-006 fig-cap="Exploded ecosystem preview. Conceptual architecture; Device Quartet names are research form factors (PHYSICAL_PENDING), not shipping products."}
+![Representative educational device blocks with Device Quartet form-factor names as future lab spine.](../../../figures/exploded-views/fig-ch01-006-ecosystem-preview.svg){#fig-ch01-006 fig-cap="Exploded ecosystem preview. Conceptual architecture; Device Quartet names are research form factors (PHYSICAL_PENDING), not shipping products." fig-alt="Representative educational device blocks with Device Quartet form-factor names as future lab spine."}
 
 Equity belongs in the map: always-online assumptions exclude learners on metered plans, shared devices, captive portals, or intermittent links. Low-cost devices remain first-class learning instruments, not lesser technology.
 
@@ -103,7 +102,7 @@ Equity belongs in the map: always-online assumptions exclude learners on metered
 
 Everyday interactive software commonly waits for inputs, processes them, updates remembered **state**, and presents outputs [@whatwg-html; @whatwg-dom]. @fig-ch01-002 shows that teaching path for the chrome-before-content moment. Read it as a logical story, not as a claim that every platform uses one identical event-loop implementation or that steps never overlap.
 
-![Inputs to processing to state to outputs with feedback to human judgment.](../../../figures/sequence/fig-ch01-002-inputs-state-outputs.svg){#fig-ch01-002 fig-cap="Inputs → processing → state → outputs for a familiar open. Conceptual pipeline; real systems may overlap steps."}
+![Inputs to processing to state to outputs with feedback to human judgment.](../../../figures/sequence/fig-ch01-002-inputs-state-outputs.svg){#fig-ch01-002 fig-cap="Inputs → processing → state → outputs for a familiar open. Conceptual pipeline; real systems may overlap steps." fig-alt="Inputs to processing to state to outputs with feedback to human judgment."}
 
 A useful reading of the open moment:
 
@@ -116,7 +115,7 @@ A useful reading of the open moment:
 
 @fig-ch01-004 forks after chrome appears into a **local-only** path and an **optional remote** path that rejoin at “content usable or failed.” Same starting human moment; different dependency sets. The fork is **illustrative** teaching geometry for observation—not a benchmark of any brand’s launch times.
 
-![Fork after app chrome visible into local-only and optional remote readiness paths.](../../../figures/ecosystem/fig-ch01-004-local-vs-network.svg){#fig-ch01-004 fig-cap="Local-only versus network-dependent readiness. Illustrative path branch; not a measured product law."}
+![Fork after app chrome visible into local-only and optional remote readiness paths.](../../../figures/ecosystem/fig-ch01-004-local-vs-network.svg){#fig-ch01-004 fig-cap="Local-only versus network-dependent readiness. Illustrative path branch; not a measured product law." fig-alt="Fork after app chrome visible into local-only and optional remote readiness paths."}
 
 ### Alternate paths (the honesty rule)
 
@@ -178,7 +177,7 @@ These cards are orientation tools—not a complete bill of materials. Use them t
 
 @fig-ch01-005 maps everyday symptoms to failure-domain buckets without claiming root cause. Use it as an operator triage aid: symptom → guessed domain → evidence still needed.
 
-![Symptom to failure-domain to evidence-still-needed columns.](../../../figures/architecture/fig-ch01-005-failure-domains.svg){#fig-ch01-005 fig-cap="Failure-domain map for readiness symptoms. Illustrative triage aid; guesses are inference until more evidence."}
+![Symptom to failure-domain to evidence-still-needed columns.](../../../figures/architecture/fig-ch01-005-failure-domains.svg){#fig-ch01-005 fig-cap="Failure-domain map for readiness symptoms. Illustrative triage aid; guesses are inference until more evidence." fig-alt="Symptom to failure-domain to evidence-still-needed columns."}
 
 ---
 
@@ -200,7 +199,7 @@ Chapter 1 needs the preview, not invented numeric budgets. For the chrome-before
 
 @fig-ch01-007 shows concurrent conditions feeding a single “human usable?” gate. Multiple conditions can look acceptable while one critical dependency still fails the experience.
 
-![Parallel hidden conditions feeding a human-usable gate.](../../../figures/architecture/fig-ch01-007-stability-preview.svg){#fig-ch01-007 fig-cap="Stability Contract preview. Conceptual concurrent conditions; no invented numeric budgets."}
+![Parallel hidden conditions feeding a human-usable gate.](../../../figures/architecture/fig-ch01-007-stability-preview.svg){#fig-ch01-007 fig-cap="Stability Contract preview. Conceptual concurrent conditions; no invented numeric budgets." fig-alt="Parallel hidden conditions feeding a human-usable gate."}
 
 Three separations matter:
 

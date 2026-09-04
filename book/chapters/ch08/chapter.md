@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH08
 chapter_number: 8
-title: "Graphics, Displays, Audio, Cameras, and Sensors"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false
@@ -60,7 +59,7 @@ A second optional notice: open a camera or microphone permission dialog in a con
 
 @fig-ch08-001 is the first-minute map for this chapter: physical world ↔ sensors/cameras/mics ↔ processing ↔ display/speakers ↔ human perception. It is **conceptual**—Representative educational architecture, not a claim that any specific manufactured revision wires exactly like the diagram.
 
-![Conceptual map from physical world through capture and processing to presentation and perception.](../../../figures/ecosystem/fig-ch08-001-media-sensorium.svg){#fig-ch08-001 fig-cap="World ↔ sensing ↔ processing ↔ presentation. Conceptual educational map; not measured telemetry."}
+![Conceptual map from physical world through capture and processing to presentation and perception.](../../../figures/ecosystem/fig-ch08-001-media-sensorium.svg){#fig-ch08-001 fig-cap="World ↔ sensing ↔ processing ↔ presentation. Conceptual educational map; not measured telemetry." fig-alt="Conceptual map from physical world through capture and processing to presentation and perception."}
 
 Walk the layers in ordinary language.
 
@@ -102,9 +101,9 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 4. **Present.** The display pipeline shows a frame; the audio pipeline emits samples.
 5. **Perceive.** You judge smoothness, lip-sync, loudness, and meaning.
 
-@fig-ch08-002 sketches steady versus uneven presentation *feel* as an **illustrative** teaching aid. It does not assert product hitch thresholds or a surveyed law of missed deadlines; those survey-depth citations remain open (see blockers). Read it as “rhythm you can notice,” not as a measured scoreboard.
+@fig-ch08-002 sketches steady versus uneven presentation *feel* as an **illustrative** teaching aid. It does not assert product hitch thresholds or a surveyed law of missed deadlines; that survey-depth evidence gap remains open as **CLM-CH08-001** (claim footnotes below). Read it as “rhythm you can notice,” not as a measured scoreboard.
 
-![Illustrative timeline of steady versus uneven frame presentation feel.](../../../figures/sequence/fig-ch08-002-presentation-timing.svg){#fig-ch08-002 fig-cap="Illustrative presentation timing and feel. Teaching aid only; not product benchmarks."}
+![Illustrative timeline of steady versus uneven frame presentation feel.](../../../figures/sequence/fig-ch08-002-presentation-timing.svg){#fig-ch08-002 fig-cap="Illustrative presentation timing and feel. Teaching aid only; not product benchmarks." fig-alt="Illustrative timeline of steady versus uneven frame presentation feel."}
 
 ### Path C — Capture (world → representation)
 
@@ -115,7 +114,7 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 5. **Buffer / store / send.** Representations land in memory, files, or network messages.
 6. **Optional preview.** A presentation path may show what is being captured—still a representation.
 
-![Conceptual comparison of a continuous phenomenon and discrete samples.](../../../figures/architecture/fig-ch08-003-sampling.svg){#fig-ch08-003 fig-cap="Sampling: continuous phenomenon to discrete samples. Conceptual; media are representations."}
+![Conceptual comparison of a continuous phenomenon and discrete samples.](../../../figures/architecture/fig-ch08-003-sampling.svg){#fig-ch08-003 fig-cap="Sampling: continuous phenomenon to discrete samples. Conceptual; media are representations." fig-alt="Conceptual comparison of a continuous phenomenon and discrete samples."}
 
 ### Honesty rule
 
@@ -127,7 +126,7 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 
 ### What this chapter does not invent
 
-Survey-depth claims that missed display deadlines necessarily appear as hitching or tearing are **omitted** until a pinned multimedia textbook or platform display-timing document is selected (CLM-CH08-001). This chapter therefore teaches frames, feel, and concurrent conditions without fabricating hitch thresholds or fake citations. Learner-measured notes from LAB-IO-001 stay labeled as *your* observations on *your* device.
+Frame-timing pedagogy is anchored to platform display-refresh docs (CLM-CH08-001 · `SOURCE_IDENTIFIED` via [@mdn-requestanimationframe; @whatwg-html]). This chapter still refuses invented hitch/tearing thresholds or product frame budgets. Learner-measured notes from LAB-IO-001 stay labeled as *your* observations on *your* device.
 
 ---
 
@@ -185,11 +184,13 @@ Each card answers: What is it? What does it do for the person? What fails when i
 
 ### Compositor / GPU role (survey)
 
-**Plain definition.** Combining layers and accelerating presentation (and related parallel) work; software talks to GPUs through mediated APIs [@khronos-vulkan-overview; @patterson-hennessy].
+**Plain definition.** Two cooperating jobs, not one synonym: the **compositor** combines layers into a presentable frame; a **GPU** (or similar accelerator) may speed rendering and related parallel work when software submits it through mediated APIs [@khronos-vulkan-overview; @patterson-hennessy].
 
 **Experience benefit.** Smooth composition of video + UI + banners when budgets hold.
 
 **Failure symptom.** Janky animations, dropped UI responsiveness, or heat while “nothing important” seemed to run.
+
+**Not the same as.** The display panel itself—the pipeline that turns a composed frame into light can fail even when GPU work looked busy.
 
 These cards are a failure-domain toolkit—not a shopping list.
 
@@ -408,7 +409,7 @@ All figures below are **conceptual** or **illustrative** as labeled. Source pref
 
 - **Caption.** Illustrative steady versus uneven presentation feel.
 - **Alt text.** Two timelines of frames; dashed boxes mark delayed or missing updates without numeric thresholds.
-- **Status.** Illustrative teaching aid; not product benchmarks; frame-deadline survey cite omitted pending pinned source (CLM-CH08-001).
+- **Status.** Illustrative teaching aid; not product benchmarks; frame-timing cite present without hitch thresholds (CLM-CH08-001 · SOURCE_IDENTIFIED).
 - **Source.** Publication-owned original.
 
 ### FIG-CH08-003 — Sampling continuous to discrete
@@ -427,7 +428,7 @@ All figures below are **conceptual** or **illustrative** as labeled. Source pref
 | CLM-CH08-002 | Cameras/mics sample the world; digital media are representations | SOURCE_IDENTIFIED (`w3c-mediacapture-streams-20251009`) |
 | CLM-CH08-003 | Multiple media pipelines contend for CPU/GPU/memory/power | SOURCE_IDENTIFIED (`tanenbaum-bos`) |
 | CLM-CH08-004 | Wearable/camera Quartet sensing EVT remains PHYSICAL_PENDING | PHYSICAL_PENDING (`src-hardware-quartet`) |
-| CLM-CH08-001 | Frame-deadline hitch/tear survey claim | **OMITTED in reader prose** (no unsupported hitch/tear citation) |
+| CLM-CH08-001 | Displays present timed frames; missed deadlines can appear as hitching/tearing (qualitative) | **SOURCE_IDENTIFIED** (`mdn-requestanimationframe`, `whatwg-html`); no invented hitch thresholds |
 
 General statements about pipelines and sampling as teaching vocabulary are not rewritten as repository claims. Numbers in figures are illustrative unless a learner labels them measured.
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" role="img" aria-label="End-to-end experience map: Human to input to software to optional network to output to perception.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" role="img" aria-label="End-to-end experience map: Human to input to software to optional network to output to perception." data-figure-id="FIG-CH02-001">
   <title>FIG-CH02-001: One Tap: Human-to-System Overview</title>
   <desc>Six stages left to right: (1) Human, (2) Input hardware, (3) System software and Application, (4) Optional Network/Service on a dashed OPTIONAL branch, (5) Output/renderer, (6) Human perception. Solid line arrows connect the main path; dashed stroke-dasharray lines mark the optional network branch that can be skipped. Status label: Conceptual educational diagram.</desc>
   <defs>

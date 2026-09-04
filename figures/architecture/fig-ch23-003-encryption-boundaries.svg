@@ -28,7 +28,7 @@
 
   <rect x="40" y="240" width="840" height="70" fill="#ffffff" stroke="#1F4B7A" stroke-width="1.75" stroke-dasharray="6 4"/>
   <text x="460" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">Cannot alone guarantee: correct UX, honest UI, safe endpoint, or human trust</text>
-  <text x="460" y="292" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">A padlock icon ` private forever · endpoint still matters</text>
+  <text x="460" y="292" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">A padlock icon ≠ private forever · endpoint still matters</text>
 
   <text x="24" y="360" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Transit / at-rest encryption goals with honest endpoint limits. Conceptual; not a crypto course.</text>
 </svg>

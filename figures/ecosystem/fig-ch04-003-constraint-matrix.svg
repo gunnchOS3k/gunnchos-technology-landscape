@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img" aria-label="Conceptual constraint matrix across four form factors and five constraint domains.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img" aria-label="Conceptual constraint matrix across four form factors and five constraint domains." data-figure-id="FIG-CH04-003">
   <title>FIG-CH04-003: Constraint Matrix</title>
   <desc>Table with rows Power class, Thermals class, I/O, Mobility, Accessibility and columns for four Quartet form factors. All numeric cells show PHYSICAL_PENDING. Conceptual educational table diagram.</desc>
   <rect width="1100" height="480" fill="#ffffff"/>
@@ -52,7 +52,7 @@
     <rect x="820" y="240" width="240" height="55" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
     <text x="130" y="272" text-anchor="middle" font-weight="bold">I/O</text>
     <text x="320" y="272" text-anchor="middle">keyboard + pointer</text>
-    <text x="520" y="272" text-anchor="middle">touch  dock I/O</text>
+    <text x="520" y="272" text-anchor="middle">touch → dock I/O</text>
     <text x="720" y="272" text-anchor="middle">wide edit surface</text>
     <text x="940" y="272" text-anchor="middle">sensors / haptics</text>
 

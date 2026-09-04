@@ -1,11 +1,13 @@
 ---
 title: "References"
+number: false
 ---
-
-# References
-
 Citations resolve through the shared BibTeX file:
 
 `book/references/references.bib`
 
+Full31 working bibliography (additive; Gate 3 untouched): `publication/full31/WORKING_BIBLIOGRAPHY.bib` + `WORKING_BIBLIOGRAPHY_INDEX.yaml`.
+
 Chapter prose should use Quarto/Pandoc citation syntax (for example `@rfc791`). Do not paste unverifiable citation keys. Project-specific claims belong in the claim registry with explicit evidence status — not as invented endorsements.
+
+For a compact standards-oriented navigation list, see [Key standards](key-standards.qmd).

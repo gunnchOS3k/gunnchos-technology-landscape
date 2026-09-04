@@ -1,11 +1,121 @@
 ---
 title: "Figure index"
+number: false
 ---
+Canonical assets: `figures/` + `figures/figure_registry.yaml` (accessibility metadata enforced by validation scripts).
 
-# Figure index
+**Chapter column** is derived from `figure_id` (`FIG-CHnn-…`). Registry `chapter:` fields were repaired during quality convergence to match ID-derived chapters.
 
-Canonical figure assets live under `figures/` with registries and accessibility metadata enforced by validation scripts.
+Chapter 2 prototype figures (`FIG-CH02-001` … `FIG-CH02-007`) are the historical Gate 3 reader-package set. Keep `PHYSICAL_PENDING` / illustrative / conceptual labels honest.
 
-Chapter 2 prototype figures (`FIG-CH02-001` … `FIG-CH02-007`) are the historical Gate 3 reader-package set. Additional Concept Edition and Full31 figure plans are tracked in preproduction / chapter packets and must keep `PHYSICAL_PENDING` / illustrative labels honest.
+This index is a **working navigational inventory**, not a publication-final figure freeze.
 
-This appendix is an index stub for the full-book build; it does not freeze figure inventories as publication-final.
+| Figure ID | Title | Chapter (from ID) | Status |
+|---|---|---|---|
+| `FIG-CH01-001` | First-minute ecosystem map | CH01 | `conceptual` |
+| `FIG-CH01-002` | Inputs to processing to state to outputs | CH01 | `conceptual` |
+| `FIG-CH01-003` | Why the app is not one thing | CH01 | `conceptual` |
+| `FIG-CH01-004` | Local-only vs network-dependent readiness | CH01 | `illustrative` |
+| `FIG-CH01-005` | Failure-domain map | CH01 | `illustrative` |
+| `FIG-CH01-006` | Exploded ecosystem preview | CH01 | `conceptual` |
+| `FIG-CH01-007` | Stability Contract preview | CH01 | `conceptual` |
+| `FIG-CH02-001` | One Tap: Human-to-System Overview | CH02 | `conceptual` |
+| `FIG-CH02-002` | Cross-Layer Tap Sequence | CH02 | `conceptual` |
+| `FIG-CH02-003` | Representative Device Exploded View | CH02 | `conceptual` |
+| `FIG-CH02-004` | Software Stack | CH02 | `conceptual` |
+| `FIG-CH02-005` | Local vs Network-Dependent Tap | CH02 | `conceptual` |
+| `FIG-CH02-006` | Tap Latency Budget | CH02 | `illustrative` |
+| `FIG-CH02-007` | Stability Contract | CH02 | `conceptual` |
+| `FIG-CH03-001` | Feel words to diagnostic axes | CH03 | `conceptual` |
+| `FIG-CH03-002` | Action to hitch causal flow | CH03 | `conceptual` |
+| `FIG-CH03-003` | Same average, different jitter | CH03 | `illustrative` |
+| `FIG-CH03-004` | Local vs network feel contributors | CH03 | `conceptual` |
+| `FIG-CH04-001` | Device Quartet as a Learning Laboratory | CH04 | `conceptual` |
+| `FIG-CH04-002` | Same Task Across Form Factors | CH04 | `illustrative` |
+| `FIG-CH04-003` | Constraint Matrix (Conceptual) | CH04 | `conceptual` |
+| `FIG-CH05-001` | Press to Logic Flow | CH05 | `conceptual` |
+| `FIG-CH05-002` | Analog versus Digital | CH05 | `conceptual` |
+| `FIG-CH05-003` | Clock Edges Sequencing Decisions | CH05 | `illustrative` |
+| `FIG-CH05-004` | Logic Building Blocks | CH05 | `conceptual` |
+| `FIG-CH06-001` | App → process/threads → scheduler → cores/accelerator | CH06 | `conceptual` |
+| `FIG-CH06-002` | Single-thread vs parallelizable work | CH06 | `illustrative` |
+| `FIG-CH06-003` | CPU-bound vs waiting-on-I/O symptoms | CH06 | `conceptual` |
+| `FIG-CH07-001` | Memory hierarchy — registers, cache, RAM, storage | CH07 | `conceptual` |
+| `FIG-CH07-002` | Open file path — storage to RAM to cache to CPU | CH07 | `conceptual` |
+| `FIG-CH07-003` | Healthy network icon with memory-pressure hitch | CH07 | `illustrative` |
+| `FIG-CH08-001` | World ↔ sensing ↔ processing ↔ presentation | CH08 | `conceptual` |
+| `FIG-CH08-002` | Presentation timing and feel (illustrative) | CH08 | `illustrative` |
+| `FIG-CH08-003` | Sampling: continuous → discrete | CH08 | `conceptual` |
+| `FIG-CH09-001` | Energy Path with Throttle Feedback | CH09 | `conceptual` |
+| `FIG-CH09-002` | On Charger vs On Battery | CH09 | `illustrative` |
+| `FIG-CH09-003` | Mechanical Enclosure Roles | CH09 | `conceptual` |
+| `FIG-CH10-001` | Board buses ports world | CH10 | `conceptual` |
+| `FIG-CH10-002` | Host request bus transaction response | CH10 | `illustrative` |
+| `FIG-CH10-003` | Electrical vs protocol layer | CH10 | `conceptual` |
+| `FIG-CH10-004` | Packaging manufacturing stages | CH10 | `conceptual` |
+| `FIG-CH11-001` | Boot path sequence | CH11 | `conceptual` |
+| `FIG-CH11-002` | Root-of-trust stages | CH11 | `conceptual` |
+| `FIG-CH11-003` | AuthN vs AuthZ at boot | CH11 | `conceptual` |
+| `FIG-CH11-004` | Update and recovery boundary | CH11 | `conceptual` |
+| `FIG-CH12-001` | Apps to processes, threads, scheduler, and CPU cores | CH12 | `conceptual` |
+| `FIG-CH12-002` | Context-switch swimlane | CH12 | `conceptual` |
+| `FIG-CH12-003` | Concurrency versus parallelism | CH12 | `illustrative` |
+| `FIG-CH12-004` | Monitor snapshots classroom n=1 | CH12 | `illustrative` |
+| `FIG-CH13-001` | Data lifecycle arc | CH13 | `conceptual` |
+| `FIG-CH13-002` | Durability stack | CH13 | `conceptual` |
+| `FIG-CH13-003` | Save click vs durability | CH13 | `illustrative` |
+| `FIG-CH13-004` | Files vs databases | CH13 | `conceptual` |
+| `FIG-CH14-001` | App stack map | CH14 | `conceptual` |
+| `FIG-CH14-002` | Feature after chrome path | CH14 | `conceptual` |
+| `FIG-CH14-003` | Local vs remote API domains | CH14 | `illustrative` |
+| `FIG-CH15-001` | VM versus container stacks | CH15 | `conceptual` |
+| `FIG-CH15-002` | Access versus placement | CH15 | `conceptual` |
+| `FIG-CH15-003` | Same app three ways | CH15 | `illustrative` |
+| `FIG-CH16-001` | Network scopes | CH16 | `conceptual` |
+| `FIG-CH16-002` | Encapsulation | CH16 | `conceptual` |
+| `FIG-CH16-003` | DNS on the critical path | CH16 | `conceptual` |
+| `FIG-CH16-004` | Lab timing classroom n=1 | CH16 | `illustrative` |
+| `FIG-CH17-001` | Wi-Fi vs cellular on-ramps | CH17 | `conceptual` |
+| `FIG-CH17-002` | Cellular generations timeline | CH17 | `illustrative` |
+| `FIG-CH17-003` | Indoor Wi-Fi to outdoor handoff | CH17 | `conceptual` |
+| `FIG-CH18-001` | Radio path conditions | CH18 | `conceptual` |
+| `FIG-CH18-002` | Beam and path geometry | CH18 | `conceptual` |
+| `FIG-CH18-003` | MIMO teaching metaphor | CH18 | `conceptual` |
+| `FIG-CH18-004` | Quartet RF PHYSICAL_PENDING overlay | CH18 | `project_specific` |
+| `FIG-CH19-001` | NTN continuity map | CH19 | `conceptual` |
+| `FIG-CH19-002` | Continuity vs icon status | CH19 | `conceptual` |
+| `FIG-CH19-003` | Illustrative delay families | CH19 | `illustrative` |
+| `FIG-CH20-001` | Stability Contract concurrent conditions | CH20 | `conceptual` |
+| `FIG-CH20-002` | Latency vs reliability vs throughput | CH20 | `conceptual` |
+| `FIG-CH20-003` | Evidence ladder for QoE | CH20 | `conceptual` |
+| `FIG-CH20-004` | Status vs usable experience | CH20 | `conceptual` |
+| `FIG-CH21-001` | Data to model to inference | CH21 | `conceptual` |
+| `FIG-CH21-002` | Local vs remote AI placement | CH21 | `conceptual` |
+| `FIG-CH21-003` | Model vs product vs claim families | CH21 | `conceptual` |
+| `FIG-CH22-001` | Sense to edge feedback | CH22 | `conceptual` |
+| `FIG-CH22-002` | Illustrative latency budget bands | CH22 | `illustrative` |
+| `FIG-CH22-003` | Wearables PHYSICAL_PENDING badge | CH22 | `project_specific` |
+| `FIG-CH24-001` | Privacy lifecycle wheel | CH24 | `conceptual` |
+| `FIG-CH24-002` | Accessible vs blocked recovery | CH24 | `conceptual` |
+| `FIG-CH24-003` | Ethics and inclusion ladder | CH24 | `conceptual` |
+| `FIG-CH25-001` | Same task divergent completion | CH25 | `conceptual` |
+| `FIG-CH25-002` | Equity evidence hierarchy | CH25 | `conceptual` |
+| `FIG-CH25-003` | Exclusion mechanism cards | CH25 | `conceptual` |
+| `FIG-CH26-001` | Edit to review sequence | CH26 | `conceptual` |
+| `FIG-CH26-002` | Working tree vs history | CH26 | `conceptual` |
+| `FIG-CH26-003` | Employment non-guarantee boundary | CH26 | `conceptual` |
+| `FIG-CH27-001` | Evidence hierarchy ladder | CH27 | `conceptual` |
+| `FIG-CH27-002` | Test pass vs usable experience | CH27 | `conceptual` |
+| `FIG-CH27-003` | Observation to inference gate | CH27 | `conceptual` |
+| `FIG-CH28-001` | Twin story vs measured world | CH28 | `conceptual` |
+| `FIG-CH28-002` | Reproducibility checklist path | CH28 | `conceptual` |
+| `FIG-CH28-003` | Validity bounds annulus | CH28 | `conceptual` |
+| `FIG-CH29-001` | Complete product ecosystem map | CH29 | `conceptual` |
+| `FIG-CH29-002` | Secure/include inside design gates | CH29 | `conceptual` |
+| `FIG-CH29-003` | One-pager evidence fields | CH29 | `conceptual` |
+| `FIG-CH30-001` | Role to artifact to review | CH30 | `conceptual` |
+| `FIG-CH30-002` | Portfolio checklist fields | CH30 | `conceptual` |
+| `FIG-CH30-003` | Learning proof vs employment | CH30 | `conceptual` |
+| `FIG-CH31-001` | Capstone concurrent-condition hub | CH31 | `conceptual` |
+| `FIG-CH31-002` | EMIT cycle with evidence gates | CH31 | `conceptual` |
+| `FIG-CH31-003` | Fixture vs human-evidence firewall | CH31 | `conceptual` |

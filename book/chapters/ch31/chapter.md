@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH31
 chapter_number: 31
-title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false
@@ -27,39 +26,39 @@ Part VI asks you to build, prove, and contribute. This chapter is the book’s c
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch31-moment}
 
-Everything looks connected. The icon says online. The Wi‑Fi name is familiar. Cellular bars are present. You tap send, submit, refresh, or sync—and the experience stalls, flickers, retries, or never finishes. Sometimes a toast claims success while the remote effect never arrives. Sometimes a classmate on a different device or assistive path cannot complete the same task that felt easy on yours.
+You sit down to *prove* what this book taught—not to re-diagnose connectivity from scratch. In front of you: one real accessible experience you already lived (or a LAB-CE06-001 fixture stand-in), a blank EMIT portfolio, and a peer who needs a teach-back they can actually use. Chapter 20 already named the connected≠usable contradiction and the formal Stability Contract vocabulary. This chapter’s job is different: finish **Explain → Measure → Improve → Teach** with honest evidence labels, without turning fixtures into Gate 3 human validation [@gunnchos-technology-landscape-ce06].
 
-From the seat: contradiction.
+From the seat: pressure to sound finished.
 
-Underneath: an ecosystem under a **Stability Contract**—concurrent hidden conditions that must hold together for *this person’s* intended action to succeed with acceptable delay, correctness, and feedback. A connectivity indicator answers a narrow question. It does not answer whether the human outcome completed [@itu-t-p10-g100].
+Underneath: a portfolio integrity problem. Can you name concurrent **Stability Contract** conditions, separate observation from inference, propose one bounded improvement, and teach the ecosystem—while admitting what you did not measure [@itu-t-p10-g100]?
 
 The governing question for this chapter:
 
 > Using the book’s full model, what evidence can I gather—on devices and tools I already have—to explain a real experience, measure what is actually observable, propose one improvement, and teach the ecosystem to someone else?
 
-This is the CE-6 capstone spine expanded for the full book. It is not a Device Quartet EVT campaign, not a carrier MOS study, and not permission to promote illustrative fixtures into human validation.
+This is the CE-6 capstone spine expanded for the full book. It is not a second latency lecture, not a Device Quartet EVT campaign, not a carrier MOS study, and not permission to promote illustrative fixtures into human validation.
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch31-notice}
 
-Before naming layers or filling portfolio fields, notice the human contract that broke—or that held for you and failed for someone else.
+Before filling fifteen portfolio fields, notice what “done” usually fakes.
 
-You expected a familiar action to finish. Instead you notice a persistent spinner, a partial local update without remote confirmation, a reconnect banner that never resolves, choppy media while “connected” stays green, or an assistive path that never announces completion. A peer on a weaker link, older device, metered plan, or keyboard-only path may live a different experience of the “same” product.
+You may notice a temptation to paste a green connectivity screenshot and call it root cause; to reuse CH20’s connected≠usable story without adding Measure/Improve/Teach artifacts; to treat a validator exit code as learning; or to write a teach-back only you understand. A peer on a weaker link, older device, metered plan, or keyboard-only path may need different evidence than the path that worked for you.
 
-**Connected indicators can remain green while the human experience has already failed.**
+**A completed EMIT packet is not the same event as a vibes-based postmortem.**
 
-That distinction is the capstone’s first systems skill. Status chrome is an observation about status chrome. Usable completion is a different observation. Collapsing them produces confident wrong blame: “the Wi‑Fi,” “the cloud,” “the phone,” as if those were synonyms for one failure.
+That distinction is the capstone’s first systems skill. Status chrome vs usable completion remains true—and Chapter 20 / CE-6 already planted it. Here you practice *showing your work*: labeled observations, failure-domain shortlists, one bounded Improve plan, and a teach-back another person can run.
 
-Optional commodity notice (no specialized gear): attempt one familiar send/submit/sync on a device you already own. Write two columns—*status shown* and *action outcome for a human*—before you invent a cause. If live reproduction is unsafe, offline, or metered, use the LAB-CE06-001 fixture route and mark rows `fixture`. Fixture timings are illustrative teaching data, not your measured evidence and not Gate validation.
+Inheritance, not duplication: if you already recorded a connected≠usable send/submit/sync in CH20 or LAB-CE06-001, reuse that observation set and advance it through Improve + Teach. If you need a fresh or offline start, follow `labs/LAB-CE06-001/` Route F fixtures and mark rows `fixture`. Fixture timings are illustrative teaching data, not your measured evidence and not Gate validation.
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch31-ecosystem}
 
-A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH31-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **representative educational architecture**, not a claim that every app fails the same way [@saltzer-kaashoek].
+A stalled send is not a single object—and this capstone does not re-teach Part IV from zero. It is a path through an ecosystem you must *document*. **FIG-CH31-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **representative educational architecture**, not a claim that every app fails the same way [@saltzer-kaashoek].
 
 Walk the layers in ordinary language—the book’s central chain: **human experience → system → component → code → network → society**.
 
@@ -103,7 +102,7 @@ Who can complete this experience under real constraints—metered data, shared d
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch31-signal}
 
 Here the “signal” is the human action’s fate across layers—and the portfolio’s climb from notice to teach-back. Read the sequence as a logical diagnosis and evidence story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -122,7 +121,7 @@ Here the “signal” is the human action’s fate across layers—and the portf
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch31-components}
 
 For the capstone, “components” are failure-domain cards plus portfolio field cards. Each card needs plain language, a constraint, and a failure symptom.
 
@@ -199,7 +198,7 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch31-try}
 
 ### LAB-CE06-001 — Explain, Measure, Improve, and Teach
 
@@ -214,15 +213,15 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 - Prefer local demos, benign public endpoints, or supplied fixtures; heed metered-data warnings.
 - No Device Quartet / specialized RF / EVT hardware required or requested.
 
-**Routes.**
+**Routes (inherit the lab packet; do not re-author CH20’s latency drill here).**
 
-- **Route A — Notebook + status UI.** Reproduce a connected-but-unusable send/submit/sync (or allowed substitute) once on a commodity device. Record OS connectivity status *separately* from whether the action finished for a human.
+- **Route A — Capstone notebook.** Bring one prior connected≠usable observation (from CH20, CE-6, or a single new commodity attempt) into the fifteen-field portfolio. Keep OS connectivity status *separate* from whether the human action finished—then spend most of the time on Improve + Teach, not on re-discovering Part IV.
 - **Route B — Local stall demo (optional).** Open `labs/LAB-CE06-001/browser/index.html`; compare local UI updates vs stalled remote path; label timings observed vs inferred.
 - **Route F — Fixture fallback (mandatory offline path).** Use `fixtures/sample_observation.md`, `fixtures/sample_result_table.csv`, and optionally study `fixtures/illustrative_example/` (**ILLUSTRATIVE ONLY — not human evidence**). Mark fixture-derived rows as `fixture`.
 
 **Explorer baseline.**
 
-1. Predict which failure domain will dominate before measuring.
+1. State which prior observation set you are inheriting (live, CH20, or fixture).
 2. Complete EMIT: Explain → Measure → Improve → Teach.
 3. List ≥4 Stability Contract conditions; mark observed vs guessed.
 4. Fill all fifteen capstone artifact fields; keep observation vs inference separate.
@@ -230,19 +229,13 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 
 **Operator extension.** Add ≥3 inspection artifacts and one comparison (local-only vs remote, or two network classes you already have). Commodity Performance timing is software timing—not touch-to-photon or RF truth [@mdn-performance].
 
-**Builder extension.** One reusable checklist or helper plus a tradeoff note (who might be excluded if you “optimize” only for your device).
+**Pathway extensions (inherit, do not re-author).** Builder / Engineer / Researcher / Educator pathway bullets live in the LAB-CE06-001 packet and were taught with CH20’s latency/QoE framing. For this capstone, grade the *Teach* artifact and fifteen-field integrity hardest—reuse those pathway prompts only as stretch depth, not as a second Part IV drill.
 
-**Engineer extension.** Diagnosis tree across domains; two claims placed on an evidence hierarchy; explicit instrumentation limits. Observability signal families (logs, metrics, traces) are useful analogies—not a claim that your notebook is an OpenTelemetry production deployment [@otel-signals].
-
-**Researcher extension.** Falsifiable hypothesis; ≥3 confounders; **no invented statistics or MOS**. State what a G.1011-aligned study would require that this lab does not provide [@itu-t-g1011].
-
-**Educator facilitation.** Use `rubric.yaml`; keep classrooms on Route F when live capture is inequitable or unsafe. Fixture completion is first-class, not a lesser path.
-
-**Evidence to keep.** Portfolio field set under `labs/LAB-CE06-001/portfolio/`; result table; scrubbed notes; teach-back. Validator: `validate_portfolio.py`. Completion means artifact-backed claims—not a bare exit code and not the string PASS.
+**Evidence to keep (capstone bar).** Complete fifteen-field packet under `labs/LAB-CE06-001/portfolio/` plus result table, scrubbed notes, and a teach-back someone else can use. Run `validate_portfolio.py` as an integrity check. Completion means artifact-backed EMIT claims—not a bare exit code, not the string PASS, and not a copied CH20 diagnosis without Improve/Teach.
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch31-build}
 
 Extend LAB-CE06-001 without turning the capstone into a fake SLO catalog or a copied illustrative packet.
 
@@ -270,7 +263,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F as a first-clas
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch31-secure-include}
 
 ### Security
 
@@ -298,44 +291,42 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch31-career}
 
-One stalled submit crosses many ownership domains. No table promises employment; roles vary by organization. LAB-CE06-001 artifacts resemble early professional evidence in miniature: labeled observations, failure-domain shortlists, teach-backs, and explicit uncertainty.
+A finished EMIT packet is closer to professional evidence than a single stalled-submit anecdote. No table promises employment; roles vary by organization. What travels is labeled observation, an Improve proposal with tradeoffs, a teach-back another person can run, and explicit uncertainty—skills mentors and hiring panels can inspect without trusting vibes.
 
 | Role lens | Typical artifacts | Review questions |
 |---|---|---|
-| SRE / reliability | Service reliability notes; connected≠usable | Did we confuse reachability with completion? |
-| Performance | Trace/profile; segmented delay hypotheses | Which segments are observed vs inferred? |
-| Network | Path/latency analysis with labeled probes | Is ping being over-promoted? |
-| Accessibility | AT pathway writeup | Was equivalent feedback present? |
-| Security / privacy | Redaction checklist; least-data note | Would this packet leak secrets? |
 | TPM / educator synthesis | Full EMIT portfolio + rubric | Are fixture rows labeled? Is teach-back transferable? |
-| Researcher | Limitations + next measurement plan | What would escalate the claim honestly? |
 | Mentor | Rubric-based feedback | Did feedback avoid PASS-as-learning theater? |
+| Accessibility | AT pathway writeup inside the packet | Was equivalent completion feedback present? |
+| Security / privacy | Redaction checklist; least-data note | Would this packet leak secrets? |
+| SRE / reliability (inherited) | Connected≠usable notes from CH20/CE-6 | Did Improve change a real failure domain? |
+| Researcher | Limitations + next measurement plan | What would escalate the claim honestly? |
 
-Portfolio hint: a scrubbed result table with observation / inference / `fixture` labels plus a complete fifteen-field packet is more honest than a vibes-based “the network is bad” claim. Completing artifacts does **not** guarantee employment.
+Portfolio hint: a scrubbed fifteen-field packet with observation / inference / `fixture` labels beats a vibes-based “the network is bad” claim. Completing artifacts does **not** guarantee employment.
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch31-check}
 
 **Concept.** In one sentence, state the EMIT spine and why Teach is required portfolio proof—not optional fluff.
 
 **Concept.** Name the fifteen capstone artifact fields without looking; then check yourself against Section 5.
 
-**System tracing.** Trace a familiar send/submit/sync from intent to human feedback in numbered steps. Mark observed vs inferred. Name ≥4 Stability Contract conditions that had to hold together.
+**System tracing.** Take one experience already explained in your packet and show how Measure → Improve → Teach changes what you are allowed to claim. Mark observed vs inferred. Name ≥4 Stability Contract conditions that had to hold together.
 
-**Misconception check.** Why can a system show connected while the human experience has already failed?
+**Misconception check.** Why is completing CH20’s connected≠usable diagnosis not the same as completing this capstone?
 
 **Misconception check.** Why is latency not the only Stability Contract dimension?
 
 **Misconception check.** Why must a screenshot alone never count as root-cause proof?
 
-**Evidence ethics.** What is the difference between LAB-CE06-001 `FIXTURE_VALIDATED` infrastructure and Gate 3 human reader validation? Why are `fixtures/illustrative_example/` portfolios not human evidence?
+**Evidence ethics.** In a *capstone* packet, what is the difference between LAB-CE06-001 `FIXTURE_VALIDATED` infrastructure, a validator exit code, and Gate 3 human reader validation? Why can an illustrative portfolio never close human validation?
 
-**Teach-it-back.** Explain to a newcomer—using only LAB-CE06-001 vocabulary—why a green connected icon is not a Stability Contract, and what evidence labels belong on fixture rows.
+**Teach-it-back.** Explain to a newcomer—using only LAB-CE06-001 vocabulary—how to run EMIT on one experience, and which evidence labels belong on fixture rows.
 
-**Researcher prompt.** What additional evidence would be required to move a claim from commodity observation toward ITU-T G.1011-aligned assessment—and what remains out of scope for this classroom lab [@itu-t-g1011]?
+**Researcher prompt.** For your Improve claim specifically, what additional evidence would be required to move from commodity observation toward ITU-T G.1011-aligned assessment—and what remains out of scope for this classroom capstone [@itu-t-g1011]?
 
 ---
 
@@ -347,7 +338,7 @@ Inline citations used in this chapter include @gunnchos-technology-landscape-ce0
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch31-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-label="Horizontal stacked bar of latency budget segments: Sensing, Scheduling, Handler, Optional network, Render.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-label="Horizontal stacked bar of latency budget segments: Sensing, Scheduling, Handler, Optional network, Render." data-figure-id="FIG-CH02-006">
   <title>FIG-CH02-006: Tap Latency Budget</title>
   <desc>A single horizontal stacked bar made of five adjacent rectangle segments with proportional widths: Sensing (narrow), Scheduling (narrow), Handler (medium), Optional network (longest), Render (medium). Each segment is labeled. Caption states Illustrative — not measured benchmarks. Accessibility: stacked bar segments exist as adjacent rects.</desc>
 

@@ -2,7 +2,7 @@ lab_id: LAB-IO-001
 title: Map One Media Pipeline (Capture → Process → Present)
 chapter: CH08
 version: "0.1.0"
-status: DRAFT_DIGITAL
+status: IMPLEMENTED_DIGITAL
 question: "For one familiar media experience, what is the capture → process → present path—and which parts can I observe without capturing other people?"
 experience: "Video, audio, notifications, and sensors share one device’s budgets; permissions and fixtures keep labs ethical."
 reader_levels: [explorer, operator, builder, engineer, researcher, educator]

@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH13
 chapter_number: 13
-title: "Files, Databases, and Data Lifecycles"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false
@@ -64,6 +63,8 @@ A second optional notice: if you already use a cloud document, open the same not
 
 Persistence is not one object. It is a path through an ecosystem. **FIG-CH13-002** is the first-minute durability stack: app buffer → filesystem → device media → optional cloud replica. Treat it as **Representative educational architecture**, not a claim that every phone or laptop wires exactly like the diagram.
 
+![Durability stack: app buffer → filesystem → device media → optional cloud replica. Conceptual.](../../../figures/full31/ch13/fig-ch13-002.svg){fig-alt="Durability stack: app buffer → filesystem → device media → optional cloud replica. Conceptual." #fig-ch13-002 fig-cap="Durability stack: app buffer → filesystem → device media → optional cloud replica. Conceptual."}
+
 Walk the layers in ordinary language.
 
 ### Human
@@ -88,7 +89,9 @@ Flash, disk, and related controllers hold durable bytes—until wear, full volum
 
 ### Structured stores (qualitative)
 
-Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—without citing a pinned database-systems textbook edition. Formal recovery and consistency slogans stay out of the cited-claim set until SOURCE_NEEDED closes (CLM-CH13-003 omitted as a sourced claim). **FIG-CH13-004** sketches file versus database responsibilities as a teaching plate, not as product endorsement.
+Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—anchored to official concurrency docs (CLM-CH13-003 · `SOURCE_IDENTIFIED` via [@postgresql-mvcc]) without inventing textbook ACID slogans. **FIG-CH13-004** sketches file versus database responsibilities as a teaching plate, not as product endorsement.
+
+![File vs database responsibilities. Teaching split; not product endorsement.](../../../figures/full31/ch13/fig-ch13-004.svg){fig-alt="File vs database responsibilities. Teaching split; not product endorsement." #fig-ch13-004 fig-cap="File vs database responsibilities. Teaching split; not product endorsement."}
 
 ### Sync and replicas (qualitative)
 
@@ -97,6 +100,8 @@ Optional cloud sync adds copies that update over time. From the seat, a conflict
 ### Lifecycle policy
 
 Beyond mechanism sits **lifecycle**: create/collect → use → retain → share → delete/redact. **FIG-CH13-001** is the lifecycle arc. Policy language (“we delete after…”) and mechanism (what the UI removes) can diverge; later sections stay qualitative and refuse recoverability cookbooks.
+
+![Data lifecycle: create/collect → use → retain → share → delete/redact. Conceptual.](../../../figures/full31/ch13/fig-ch13-001.svg){fig-alt="Data lifecycle: create/collect → use → retain → share → delete/redact. Conceptual." #fig-ch13-001 fig-cap="Data lifecycle: create/collect → use → retain → share → delete/redact. Conceptual."}
 
 ### System software
 
@@ -107,6 +112,8 @@ The OS mediates process lifetime, file APIs, permissions, and often sync agents.
 ## 4. Follow the signal
 
 Here the “signal” is durable state moving through time—not a tap packet. **FIG-CH13-003** contrasts a Save click with a later durability point such as flush/fsync conceptually. Read it as a logical story, not as a claim that every app executes identical steps.
+
+![Save click vs later durability point (flush/fsync conceptually). Illustrative; no invented latencies.](../../../figures/full31/ch13/fig-ch13-003.svg){fig-alt="Save click vs later durability point (flush/fsync conceptually). Illustrative; no invented latencies." #fig-ch13-003 fig-cap="Save click vs later durability point (flush/fsync conceptually). Illustrative; no invented latencies."}
 
 1. **Intent.** You decide content should survive quit, crash, or tomorrow’s reopen.
 2. **Edit in working memory.** Keystrokes update an in-memory buffer; the screen looks complete.
@@ -315,7 +322,7 @@ Design a one-page **durability checklist** for a tiny app: when is content only 
 
 ### Engineer
 
-Compare **file vs database responsibilities** for one use case (for example, a homework tracker): what belongs in a named file, what needs structured records and concurrent updates. Keep the comparison qualitative; do not invent ACID slogans as if a pinned textbook were already cited (CLM-CH13-003 still SOURCE_NEEDED). Sketch against **FIG-CH13-004**’s teaching split.
+Compare **file vs database responsibilities** for one use case (for example, a homework tracker): what belongs in a named file, what needs structured records and concurrent updates. Keep the comparison qualitative; cite concurrency docs without inventing ACID slogans beyond published definitions (CLM-CH13-003 · SOURCE_IDENTIFIED). Sketch against **FIG-CH13-004**’s teaching split.
 
 ### Researcher
 
@@ -333,7 +340,7 @@ Files and databases are access-control surfaces. Ordinary posture: least privile
 
 ### Privacy
 
-Lifecycle honesty matters: collect, use, retain, share, and delete/redact are human stakes, not only storage jargon. Discuss deletion as **policy plus mechanism**—qualitatively. Because replica and garbage-collection recoverability claims remain SOURCE_NEEDED (CLM-CH13-005), do not assert global erasure from a trash click. Portfolio artifacts must scrub identifiers; do not sync lab evidence to cloud accounts as a requirement.
+Lifecycle honesty matters: collect, use, retain, share, and delete/redact are human stakes, not only storage jargon. Discuss deletion as **policy plus mechanism**—qualitatively. Media-sanitization guidance (CLM-CH13-005 · `SOURCE_IDENTIFIED` via [@nist-sp800-88r1]) supports “UI delete ≠ globally unrecoverable” without giving recovery exploit steps. Portfolio artifacts must scrub identifiers; do not sync lab evidence to cloud accounts as a requirement.
 
 ### Accessibility
 
@@ -393,9 +400,9 @@ Inline citations used in this chapter include @tanenbaum-bos and @saltzer-kaasho
 
 **Omitted as cited technical claims (SOURCE_NEEDED remaining in the chapter claim plan):**
 
-- **CLM-CH13-003** — databases add structure/concurrency/recovery relative to raw files (needs a pinned database-systems textbook edition; no invented ISBN in this draft).
+- **CLM-CH13-003** — databases add structure/concurrency/recovery relative to raw files (`SOURCE_IDENTIFIED` via `postgresql-mvcc`; no invented textbook ISBN).
 - **CLM-CH13-004** — cloud sync conflicts as distributed-state problems (needs distributed-systems chapter and/or official sync docs).
-- **CLM-CH13-005** — deletion as policy plus garbage collection plus replicas (needs privacy/retention and storage GC primary docs; no recovery exploit steps).
+- **CLM-CH13-005** — deletion as policy plus garbage collection plus replicas (`SOURCE_IDENTIFIED` via `nist-sp800-88r1`; no recovery exploit steps).
 
 Prose above treats those topics **qualitatively** or omits them as sourced claims.
 
@@ -424,13 +431,13 @@ Related earlier chapters: memory and storage adjacency (CH07), OS abstractions (
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry. Device Quartet storage curves remain PHYSICAL_PENDING.
 
 ### FIG-CH13-001 — Data lifecycle (create → use → retain → share → delete/redact)
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Lifecycle diagram.
 - **Reader should notice.** Ordered stages with human stakes at delete/redact; policy vs mechanism note.
 - **Truth class.** Conceptual.
@@ -438,7 +445,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-002 — App buffer → filesystem → device media → optional cloud replica
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** Left-to-right durability stack; RAM/buffer distinct from durable media.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -446,7 +453,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-003 — Save click vs durability point
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Sequence diagram.
 - **Reader should notice.** Save UI precedes possible flush/fsync durability; failure branch for incomplete write.
 - **Truth class.** Illustrative.
@@ -454,7 +461,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH13-004 — File vs database responsibilities
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** System map / comparative.
 - **Reader should notice.** Named bytes vs structured store responsibilities; both can fail.
 - **Truth class.** Conceptual.
@@ -468,9 +475,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 |---|---|---|
 | CLM-CH13-001 | Files are ordinary persistence on personal devices; RAM is not a durable substitute | general_technical · SOURCE_IDENTIFIED via @tanenbaum-bos |
 | CLM-CH13-002 | Write-back caches/buffers can delay durability; Save UI ≠ proof on stable media | general_technical · SOURCE_IDENTIFIED via @tanenbaum-bos, @saltzer-kaashoek |
-| CLM-CH13-003 | Databases add structure/concurrency/recovery vs raw files | SOURCE_NEEDED — **omitted as cited claim**; qualitative responsibility split only |
+| CLM-CH13-003 | Databases add structure/concurrency/recovery vs raw files | **SOURCE_IDENTIFIED** (`postgresql-mvcc`); qualitative responsibility split |
 | CLM-CH13-004 | Cloud sync conflicts are distributed-state symptoms, not proof FS broke | SOURCE_NEEDED — **reframed qualitatively**; observation vs inference only |
-| CLM-CH13-005 | Deletion is often policy + GC + replicas; UI delete ≠ global unrecoverable | SOURCE_NEEDED — **qualitative uncertainty only**; no recovery steps |
+| CLM-CH13-005 | Deletion is often policy + GC + replicas; UI delete ≠ global unrecoverable | **SOURCE_IDENTIFIED** (`nist-sp800-88r1`); no recovery steps |
 | CLM-CH13-006 | Quartet storage endurance/performance | PHYSICAL_PENDING |
 
 General teaching statements that working memory is volatile relative to durable files are tied to CLM-CH13-001 and the cited OS/systems texts. Any future numeric durability or endurance figures must carry **illustrative**, **measured**, or **inferred** labels—and Quartet measured figures stay blocked until PHYSICAL_PENDING clears.

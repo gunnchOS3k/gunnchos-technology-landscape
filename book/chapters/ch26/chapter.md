@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH26
 chapter_number: 26
-title: "Software Development and Version Control"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false
@@ -27,7 +26,7 @@ Part VI opens the build-prove-contribute arc. Earlier chapters taught you to not
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch26-moment}
 
 You change one behavior.
 
@@ -35,7 +34,7 @@ Maybe you fix a typo in a README, rename a confusing label, tighten a checklist,
 
 From the seat: either confidence or fog.
 
-Underneath: **version control**—recording changes so history can be inspected and recovered [@git-scm-docs] (CLM-CH26-001). A **commit** is a snapshot with a message and identity metadata. A **diff** is the readable difference. A **branch** is a parallel line of work that must later integrate carefully. None of those words are slogans about “being a developer.” They are tools for making a change *reviewable*.
+Underneath: **version control**—recording changes so history can be inspected and recovered [@git-scm-docs] (CLM-CH26-001). **Version control ≠ backup:** a commit history helps you inspect and carefully recover *tracked* states, but it is not a backup policy—untracked files, whole-machine loss, and off-site copies remain separate concerns. A **commit** is a snapshot with a message and identity metadata. A **diff** is the readable difference. A **branch** is a parallel line of work that must later integrate carefully. None of those words are slogans about “being a developer.” They are tools for making a change *reviewable*.
 
 The governing question for this chapter:
 
@@ -45,7 +44,7 @@ This is Part VI’s software-pathway opener (CH01→CH02→…→CH26→CH27). I
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch26-notice}
 
 Before naming remotes or rebase strategies, notice the human contracts you already expect.
 
@@ -59,7 +58,7 @@ Optional commodity notice (no paid IDE required): open any small text project yo
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch26-ecosystem}
 
 A single commit is not a lone object. It is a path through an ecosystem. **FIG-CH26-001** is the first-minute map: edit → status → diff → commit → review. Treat it as **Representative educational architecture**, not a claim that every team uses identical tools or hosting vendors.
 
@@ -105,7 +104,7 @@ WAIKE’s `SOFTWARE_BUILDER` package is an **adjacent** builder competency neigh
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch26-signal}
 
 Here the “signal” is one reviewable change traveling from intent into inspectable history.
 
@@ -130,17 +129,17 @@ When a change crosses a public API boundary, **Semantic Versioning** offers MAJO
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch26-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
 ### Version control
 
-- **Plain language.** Recording changes so history can be inspected and recovered.
-- **Analogy (labeled).** Like keeping dated drafts of an essay instead of one overwritten file—so you can see what changed between versions.
-- **Technical function.** Stores snapshots and relationships so diffs and recovery are possible [@git-scm-docs].
-- **Constraints.** Tool literacy required; policies differ by team; history that includes secrets is hard to truly un-share.
-- **Symptoms.** “I thought I saved it,” “I can’t show what changed,” “we lost the good version.”
+- **Plain language.** Recording changes so history can be inspected and recovered—**not** a synonym for backup.
+- **Analogy (labeled).** Like keeping dated drafts of an essay instead of one overwritten file—so you can see what changed between versions. That is not the same as storing a full off-site copy of the machine.
+- **Technical function.** Stores snapshots and relationships so diffs and recovery of tracked history are possible [@git-scm-docs].
+- **Constraints.** Tool literacy required; policies differ by team; untracked files and disk failure are outside VCS alone; history that includes secrets is hard to truly un-share.
+- **Symptoms.** “I thought I saved it,” “I can’t show what changed,” “we lost the good version,” “Git is my only backup.”
 
 ### Commit
 
@@ -192,7 +191,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch26-stability}
 
 A reviewable change experience exists only while several conditions remain within acceptable bounds.
 
@@ -210,11 +209,11 @@ A repository can be “technically present” while the human experience has alr
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch26-try}
 
 **Inherited adjacency.** Builder pathway habits from Concept Edition packages and WAIKE `SOFTWARE_BUILDER` remain **adjacent**—link, do not invent a CH26 WAIKE lab ID [@src-waike] (CLM-CH26-002).
 
-**Proposed publication worksheet (not shipped this wave).** A publication-owned git fixture lab remains **proposed** in the CH26 packet (safe commit/review worksheet with offline fixture route). Until it ships under `labs/`, do not treat the proposal as an implemented lab ID and do not mint it as a WAIKE course code.
+**INLINE_ACTIVITY (chapter-native).** The safe commit/review worksheet below *is* the learning activity. The namespaced idea `LAB-CH26-GIT-001` is **not** a shipped `labs/` package and must not be minted as a WAIKE course code. Fixture / offline routes remain first-class.
 
 **Living example without marketing.** This publication repository itself is a real Git history you can read as a learner: status, diff, commit messages, and SHAs are ordinary evidence surfaces. Reading history is not permission to invent product claims.
 
@@ -252,7 +251,7 @@ Document reproducibility of the change environment at a SHA (tool versions you a
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch26-build}
 
 Extend the Try-it loop by one honest notch—not by boiling the ocean.
 
@@ -293,7 +292,7 @@ Fixtures and illustrative worksheets are not human Gate 3 validation. Do not pre
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch26-career}
 
 Version control literacy shows up across software roles. **Completing this chapter’s artifacts does not guarantee employment, promotion, or a job offer.** Portfolio evidence demonstrates that you can produce reviewable change; hiring decisions belong to organizations and remain outside this book’s promises.
 
@@ -308,7 +307,7 @@ Prefer a scrubbed diff + clear message over a slogan résumé line about “pass
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch26-check}
 
 **Concept.** In one sentence each, explain *commit*, *branch*, and *diff* so none swallows the other two.
 
@@ -340,13 +339,13 @@ Primary packet (link, prefer over duplication): `publication/full31/chapters/ch2
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch26-glossary}
 
 Candidate terms introduced or reinforced here (see also `GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 
 | Term | Plain link |
 |---|---|
-| Version control | Recording changes so history can be inspected and recovered |
+| Version control | Recording changes so history can be inspected and recovered; **≠ backup** |
 | Commit | Snapshot of change with message and identity metadata |
 | Diff | Readable difference between states |
 | Branch / integration | Parallel lines of work later combined carefully |

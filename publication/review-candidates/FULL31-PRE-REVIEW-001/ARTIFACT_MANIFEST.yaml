@@ -1,0 +1,14 @@
+generated_on: '2026-09-03'
+artifacts:
+  html_dir:
+    path: preview/full31/technology-landscape-full31-html
+    index_sha256: c0ea86d5d3ca364003b387e188693d05a76a9a89325a5c83ba49c3e7d0f5d9e5
+    present: true
+  pdf:
+    path: preview/full31/technology-landscape-full31-pdf.pdf
+    sha256: 2b38b229bc7779176a625579ffe06d67f44cbad6189db7abcc69b4487ea1a651
+    bytes: 4346763
+  epub:
+    path: preview/full31/technology-landscape-full31-epub.epub
+    sha256: ae7f3bf2f4deb3a8e0b21a645f8bef1ed0a82c8551491b68b54d43ef3c7eedb3
+    bytes: 962641

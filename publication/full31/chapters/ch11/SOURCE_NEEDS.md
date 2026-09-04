@@ -19,10 +19,10 @@ Prefer standards/specs, official docs, peer-reviewed, and textbooks. Do not inve
 - `SOURCE_NEEDED` for gaps above.
 - `PROJECT_EVIDENCE_NEEDED` / `PHYSICAL_PENDING` for Quartet/project measurements.
 
-## Remaining SOURCE_NEEDED (EVIDENCE-A)
+## Remaining SOURCE_NEEDED (QUALITY-E)
 
-| Claim / need | Next step |
+| Claim / need | Status / next step |
 |---|---|
 | Secure Boot | `SOURCE_IDENTIFIED` via `uefi-secure-boot-2.10` |
 | Attestation / measured boot | `SOURCE_IDENTIFIED` via `tcg-pc-client-pfp-1.06` |
-| `CLM-CH11-006` interrupted firmware updates | Pin vendor/OS capsule or A/B update recovery docs (living) before flipping status. |
+| `CLM-CH11-006` interrupted firmware updates | `SOURCE_IDENTIFIED` via `android-ab-ota` (AOSP A/B seamless updates; living docs; representative example) |

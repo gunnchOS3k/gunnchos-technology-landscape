@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH18
 chapter_number: 18
-title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
 author: "Edmund Gunn, Jr."
 part: IV
 concept_edition: false
@@ -25,7 +24,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch18-moment}
 
 You stand by a window and a stuttering video suddenly smooths out. In a kitchen, a call freezes when someone starts the microwave. You rotate the phone in your hand and the bars rearrange themselves—without opening Settings, without changing the app, without “fixing the Internet.”
 
@@ -41,7 +40,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch18-notice}
 
 Before names like *MIMO* or *delay spread* enter, notice the human contract you already expect.
 
@@ -57,9 +56,11 @@ Optional comparison, available on almost any device you already own: pick one fa
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch18-ecosystem}
 
 A wireless moment is not a single object. It is a path through an ecosystem. **FIG-CH18-001** is the first-minute map: device ↔ obstacles/body ↔ antennas ↔ shared spectrum ↔ access point or cell site ↔ beyond. Treat it as **Representative educational architecture**, not a claim that your sealed phone’s antenna layout matches the cartoon (CLM-CH18-005).
+
+![Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map.](../../../figures/full31/ch18/fig-ch18-001.svg){fig-alt="Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map." #fig-ch18-001 fig-cap="Device ↔ obstacles ↔ antennas ↔ shared spectrum ↔ AP/cell. Conceptual educational map."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -75,9 +76,9 @@ Inside the sealed host, radios tune to allowed channels and antennas couple ener
 
 Walls, glass, people, appliances, and distance shape how much useful energy arrives. Teaching language here is qualitative **path loss** and blockage—not a fabricated link budget for your apartment.
 
-### Shared spectrum / channel
+### Spectrum vs channel
 
-**Spectrum** is the regulated frequency resource wireless systems use. Channels are shared; coexistence rules and contention matter. Wi-Fi local access and cellular operator access remain distinct on-ramps from earlier Part IV chapters—neither is “the Internet” [@kurose-ross-8; @ieee80211-2020].
+**Spectrum** is the regulated frequency resource wireless systems are allowed to use. A **channel** is a specific slice of that resource (plus the access rules for sharing it)—not a synonym for “all spectrum,” and not a synonym for “the Internet.” Coexistence and contention happen *on channels* inside allocated spectrum. Wi-Fi local access and cellular operator access remain distinct on-ramps from earlier Part IV chapters [@kurose-ross-8; @ieee80211-2020].
 
 ### Access network edge
 
@@ -91,11 +92,17 @@ Packets, DNS, transport retries, and edge/cloud placement still apply (CH16–CH
 
 **FIG-CH18-004** marks Device Quartet / research RF measurements as **PHYSICAL_PENDING**. WAIKE `lab_fspl_budget` and `lab_delay_spread` are competency adjacencies—math toys or lab neighbors—not publication proof of your device’s dB path (CLM-CH18-005).
 
+![Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid.](../../../figures/full31/ch18/fig-ch18-004.svg){fig-alt="Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid." #fig-ch18-004 fig-cap="Quartet / research antenna placement with PHYSICAL_PENDING overlay. Project teaching aid."}
+
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch18-signal}
 
 **FIG-CH18-002** and the MIMO metaphor in **FIG-CH18-003** support this sequence. Read the steps as a logical story, not as a claim that every commodity chipset exposes every step to the UI.
+
+![MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim.](../../../figures/full31/ch18/fig-ch18-003.svg){fig-alt="MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim." #fig-ch18-003 fig-cap="MIMO spatial streams metaphor. Illustrative teaching image—not a chipset claim."}
+
+![Omni vs beam pattern intuition. Conceptual; no invented dBi product scales.](../../../figures/full31/ch18/fig-ch18-002.svg){fig-alt="Omni vs beam pattern intuition. Conceptual; no invented dBi product scales." #fig-ch18-002 fig-cap="Omni vs beam pattern intuition. Conceptual; no invented dBi product scales."}
 
 1. **Intent.** A person starts an experience that needs bits across a radio hop.
 2. **Spectrum / channel selection.** The device and network use allowed frequencies and channel-access rules appropriate to the technology family [@ieee80211-2020; @kurose-ross-8].
@@ -125,17 +132,25 @@ Outside observation rarely yields calibrated dBm root cause. That limitation is 
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch18-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies. No invented antenna gain or receiver sensitivity figures.
 
 ### Spectrum
 
 - **Plain language.** The range of radio frequencies allocated and used for communication.
-- **Analogy (labeled).** Like lanes on a road that many drivers must share under rules—not an infinite private highway.
-- **Technical function.** Provides the frequency resource and channelization wireless systems are allowed to use [@ieee80211-2020; @kurose-ross-8].
+- **Analogy (labeled).** Like the whole road network that regulators open under rules—not an infinite private highway.
+- **Technical function.** Provides the frequency resource wireless systems are allowed to use [@ieee80211-2020; @kurose-ross-8].
 - **Constraints.** Regulation, band plans, power limits, coexistence, and policy—not “use any frequency you can tune.”
-- **Symptoms.** Crowded channels, DFS/weather-radar adjacency (awareness only), café density that feels “busy” without proving a spectrogram.
+- **Symptoms.** Crowded bands, DFS/weather-radar adjacency (awareness only), café density that feels “busy” without proving a spectrogram.
+
+### Channel
+
+- **Plain language.** A specific frequency slice (and its sharing rules) inside allocated spectrum.
+- **Analogy (labeled).** Like one lane with a speed limit and merge rules—not the entire road network.
+- **Technical function.** Channelization and channel-access procedures let stations share spectrum without treating “spectrum” and “this channel” as the same word [@ieee80211-2020; @kurose-ross-8].
+- **Constraints.** Width, numbering, DFS/availability, and contention; UI “channel” labels are compressed.
+- **Symptoms.** Works on one AP channel setting and stalls on another; dense SSIDs fighting the same slice.
 
 ### Antenna
 
@@ -165,7 +180,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 - **Plain language.** Using multiple antennas to send and/or receive spatial streams.
 - **Analogy (labeled).** Like several coordinated conversation lanes in space—not merely “more bars.”
-- **Technical function.** Spatial multiplexing / diversity ideas at survey depth inside modern WLANs and cellular systems [@ieee80211-2020].
+- **Technical function.** Spatial multiplexing / diversity ideas at survey depth inside modern WLANs and cellular systems [@ieee80211-2020]. **SISO** (single-input single-output) is the single-antenna baseline; MIMO adds multiple antennas—without guaranteeing better experience from a marketing “NxN” label alone.
 - **Constraints.** Channel conditions, device antenna count, and implementation limits; **no fake stream-gain tables.**
 - **Symptoms.** Marketing “NxN” labels that do not explain a frozen call by themselves.
 
@@ -187,7 +202,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch18-stability}
 
 A wireless experience continues only while multiple hidden conditions stay within acceptable bounds.
 
@@ -207,7 +222,7 @@ A system can remain *technically* associated while the human experience has alre
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch18-try}
 
 ### LAB-RADIO-OBS-001 — Observe Radio Conditions Without Transmitting
 
@@ -251,13 +266,13 @@ A system can remain *technically* associated while the human experience has alre
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch18-build}
 
 Extend LAB-RADIO-OBS-001 without turning Part IV into an illegal RF hobby kit.
 
 ### Explorer
 
-Build a pocket card: spectrum, antenna, path loss, interference, MIMO/beams (survey)—one plain sentence each, plus “icon ≠ usable.”
+Build a pocket card: spectrum, channel, antenna, path loss, interference, SISO/MIMO/beams (survey)—one plain sentence each, plus “icon ≠ usable.”
 
 ### Operator
 
@@ -279,7 +294,7 @@ Educators can facilitate teach-backs from Section 11 and keep classrooms on the 
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch18-secure-include}
 
 ### Security
 
@@ -307,7 +322,7 @@ Do not invent antenna gains, sensitivity floors, drive-test plots, or Quartet RF
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch18-career}
 
 One stuttering call crosses many ownership domains. No table promises employment; roles vary by organization. LAB-RADIO-OBS-001 artifacts resemble early professional evidence in miniature: observation discipline, labeled diagrams, and explicit uncertainty.
 
@@ -324,9 +339,9 @@ Portfolio hint: a scrubbed observation-vs-inference table plus a teach-back that
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch18-check}
 
-**Concept.** In one sentence each, define *spectrum*, *antenna*, and *radio condition* so that none of them swallows the other two.
+**Concept.** In one sentence each, define *spectrum*, *channel*, and *antenna* so that none of them swallows the other two.
 
 **System tracing.** Trace a familiar stall from hand/orientation to human feedback in numbered steps. Mark which steps you observed and which you inferred.
 
@@ -348,17 +363,18 @@ Inline citations used in this chapter include @ieee80211-2020, @kurose-ross-8, @
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch18-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 
 | Term | Plain link |
 |---|---|
 | Spectrum | Frequency resources allocated and used for radio communication |
+| Channel | Specific frequency slice and sharing rules inside allocated spectrum |
 | Antenna | Transducer between circuits and radiated waves; patterns matter |
 | Path loss | Tendency for link usefulness to drop with distance/obstacles |
 | Interference | Unwanted energy degrading a desired link |
-| MIMO | Multiple-antenna spatial send/receive techniques (survey) |
+| SISO / MIMO | Single-antenna baseline vs multiple-antenna spatial techniques (survey) |
 | Beamforming | Preferential spatial focusing of energy or sensitivity (survey) |
 | Radio condition | Time-varying wireless channel state affecting experience |
 | Stability contract | Concurrent conditions that keep the wireless experience alive |
@@ -367,13 +383,13 @@ Related earlier chapters: packets/path (CH16), Wi-Fi/cellular access (CH17), sig
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated RF telemetry. No invented gain plots.
 
 ### FIG-CH18-001 — Device—obstacle—AP path loss cartoon
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Conceptual system map.
 - **Reader should notice.** Experience-first path from person/device through obstacles to AP/cell, with spectrum sharedness visible.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -381,7 +397,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH18-002 — Omni vs beam pattern intuition
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Conceptual comparison.
 - **Reader should notice.** Broad coverage vs preferential direction—qualitative only.
 - **Truth class.** Conceptual.
@@ -389,7 +405,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH18-003 — MIMO spatial streams metaphor
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Illustrative metaphor.
 - **Reader should notice.** Multiple spatial lanes as teaching image—not a chipset claim.
 - **Truth class.** Illustrative.
@@ -397,7 +413,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH18-004 — Quartet antenna placement with PHYSICAL_PENDING overlay
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Project-specific teaching overlay.
 - **Reader should notice.** Research form-factor discussion without measured RF evidence.
 - **Truth class.** Project-specific; **PHYSICAL_PENDING**.

@@ -7,8 +7,8 @@
 
 | Lab / proposal | Relationship | Notes |
 |---|---|---|
-| `proposed: LAB-CH30-PORTFOLIO-001` | proposed | Assemble index from CE lab artifacts |
-| `All CE labs portfolio/` | inherit | Existing portfolio outputs |
+| `INLINE_ACTIVITY` (was `LAB-CH30-PORTFOLIO-001`) | inline | Assemble index from CE lab artifacts; chapter-native |
+| `LAB-CE06-001` + CE `portfolio/` | inherit | Existing portfolio outputs |
 
 ## Inheritance notes
 
@@ -19,9 +19,9 @@
 
 - No exploit steps, credential harvesting, or capture of others' private data  
 - Redact identifiers before portfolio share  
-- Provide fixture / no-specialized-hardware completion routes where labs are proposed  
+- Provide fixture / no-specialized-hardware completion routes  
 - For Ch31: illustrative EMIT example must remain labeled teaching-only
 
 ## Status honesty
 
-LAB-TRUST-001 and LAB-CE06-001 are `FIXTURE_VALIDATED` on their agent branches (pending integrator merge into continuation). That is **not** Gate 3 human validation.
+Fixtures are not Gate 3 human validation. Employment is never guaranteed.

@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH15
 chapter_number: 15
-title: "Containers, Virtualization, Cloud, and Edge Computing"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false
@@ -57,9 +56,9 @@ Optional commodity comparison (no paid cloud account required): open one familia
 
 A packaged or remote experience is not a single object. It is a path through an ecosystem. **FIG-CH15-001** compares two common multiplexing stories: hardware → hypervisor → virtual machines versus shared kernel → containers. **FIG-CH15-002** separates the **access network** from **edge vs cloud placement**. Treat both as **Representative educational architecture**, not a claim that any sealed phone or school Chromebook looks exactly like the diagram inside.
 
-![Comparative stacks: hardware to hypervisor and VMs versus hardware to shared kernel and containers.](../../../figures/architecture/fig-ch15-001-vm-vs-container.svg){#fig-ch15-001 fig-cap="Hardware → hypervisor/VM vs shared kernel → containers. Conceptual educational comparison; not measured Device Quartet telemetry."}
+![Comparative stacks: hardware to hypervisor and VMs versus hardware to shared kernel and containers.](../../../figures/architecture/fig-ch15-001-vm-vs-container.svg){#fig-ch15-001 fig-cap="Hardware → hypervisor/VM vs shared kernel → containers. Conceptual educational comparison; not measured Device Quartet telemetry." fig-alt="Comparative stacks: hardware to hypervisor and VMs versus hardware to shared kernel and containers."}
 
-![User and device to access network (Wi-Fi or cellular) to path, then edge or regional cloud placement.](../../../figures/ecosystem/fig-ch15-002-access-vs-placement.svg){#fig-ch15-002 fig-cap="Access network ≠ edge/cloud placement. Conceptual educational map; placement ≠ access radio."}
+![User and device to access network (Wi-Fi or cellular) to path, then edge or regional cloud placement.](../../../figures/ecosystem/fig-ch15-002-access-vs-placement.svg){#fig-ch15-002 fig-cap="Access network ≠ edge/cloud placement. Conceptual educational map; placement ≠ access radio." fig-alt="User and device to access network (Wi-Fi or cellular) to path, then edge or regional cloud placement."}
 
 Walk the layers in ordinary language.
 
@@ -95,6 +94,8 @@ Packets still travel paths CE-4 and Chapter 16 deepen. Here, keep only the liter
 
 **Orchestration** names automation that places and heals many containerized services. Survey depth only: enough to recognize the word; not a Kubernetes certification chapter.
 
+**Engineer depth (one distinction):** the **control plane** decides and coordinates desired placement/state (schedulers, desired-state controllers, heal policies), while the **data plane** carries and executes the actual workload/data path (running containers, packet forwarding to a service, storage I/O). Failures in the two domains can present differently—for example, a healthy data-plane container with a broken control-plane reconcile loop, or a healthy control-plane “desired state” while the data path is unreachable.
+
 ### Multitenancy
 
 Many customers may share underlying hardware with isolation hopes. That hope is a design goal and a risk surface—not a promise of absolute safety.
@@ -107,7 +108,7 @@ Device Quartet / Edge IO placement benches remain **PHYSICAL_PENDING** (CLM-CH15
 
 **FIG-CH15-003** shows the same human task packaged three ways: local install, container/image, and cloud URL. Read it as a logical story, not as proof that every vendor product uses identical steps.
 
-![Same human task as local install, container/image, or cloud URL.](../../../figures/sequence/fig-ch15-003-same-app-three-ways.svg){#fig-ch15-003 fig-cap="Same task, three presentations. Illustrative teaching parallel; not vendor performance data."}
+![Same human task as local install, container/image, or cloud URL.](../../../figures/sequence/fig-ch15-003-same-app-three-ways.svg){#fig-ch15-003 fig-cap="Same task, three presentations. Illustrative teaching parallel; not vendor performance data." fig-alt="Same human task as local install, container/image, or cloud URL."}
 
 1. **Intent.** A person asks to run, open, or sync something.
 2. **Local packaging decision.** Is the work a native install, a container/image start, a VM, or a browser client talking to a remote service?
@@ -202,6 +203,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 - **Plain language.** Automation that places and heals many services.
 - **Analogy (labeled).** Like a dispatcher assigning trucks—not the cargo inside one crate.
 - **Technical function.** Declares desired state for many containerized workloads (survey depth only).
+- **Control plane vs data plane.** Control plane = decide/coordinate desired placement/state; data plane = carry/execute the workload/data path. Their failure modes can diverge.
 - **Constraints.** Control-plane dependency; mis-scheduled capacity still fails the human experience.
 - **Symptoms.** “Service restarted” loops; region failover that still feels down until DNS/path catch up.
 
@@ -276,7 +278,7 @@ Primary lab: **LAB-PKT-001** — Trace one connected action across path and acce
 
 Optional stretch only: **LAB-CMS-001** if many local containers/VMs make the host feel slow—keep that as *local resource pressure*, not as proof the cloud failed.
 
-Proposed-only (not live): `LAB-PLACE-001` remains a packet opportunity name—do **not** treat it as an implemented publication lab ID.
+Placement literacy is an **INLINE_ACTIVITY** folded into LAB-PKT-001 above (access vs placement columns). The namespaced idea `LAB-PLACE-001` is **not** a shipped `labs/` package—do not treat it as a FULL_LAB ID.
 
 ---
 

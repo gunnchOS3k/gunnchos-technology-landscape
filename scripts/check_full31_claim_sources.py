@@ -52,6 +52,10 @@ def load_bib_keys() -> set[str]:
     cand = PREPROD / "CANDIDATE_BIBLIOGRAPHY.bib"
     if cand.exists():
         keys.update(BIBKEY_RE.findall(cand.read_text(encoding="utf-8")))
+    # Accepted-main book bibliography (already catalogue-verified keys).
+    book_bib = ROOT / "book" / "references" / "references.bib"
+    if book_bib.exists():
+        keys.update(BIBKEY_RE.findall(book_bib.read_text(encoding="utf-8")))
     return keys
 
 

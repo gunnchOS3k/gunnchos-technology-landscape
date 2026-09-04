@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH07
 chapter_number: 7
-title: "Memory, Cache, and Storage"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false
@@ -54,7 +53,7 @@ Optional comparison on a device you already own: open a small text note that is 
 
 A reopen or open-file moment is not a single object. It is a path through cooperating layers. @fig-ch07-001 is the first-minute map of those layers as a **memory hierarchy**: registers, cache, RAM (main memory), and storage. It is **conceptual**—a teaching architecture, not a claim that your particular laptop silicon matches the diagram’s geometry.
 
-![Conceptual pyramid from registers through cache and RAM to durable storage.](../../../figures/architecture/fig-ch07-001-memory-hierarchy.svg){#fig-ch07-001 fig-cap="Memory hierarchy: registers → cache → RAM → storage. Conceptual educational diagram; qualitative tradeoffs only. RAM ≠ storage."}
+![Conceptual pyramid from registers through cache and RAM to durable storage.](../../../figures/architecture/fig-ch07-001-memory-hierarchy.svg){#fig-ch07-001 fig-cap="Memory hierarchy: registers → cache → RAM → storage. Conceptual educational diagram; qualitative tradeoffs only. RAM ≠ storage." fig-alt="Conceptual pyramid from registers through cache and RAM to durable storage."}
 
 Walk the ecosystem in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -105,7 +104,7 @@ Follow one open. Imagine a medium-sized local file on durable storage.
 
 @fig-ch07-002 shows that left-to-right teaching path. Segments are conceptual—not a stopwatch claim about your device.
 
-![Conceptual open-file path from storage through RAM and cache to CPU and UI.](../../../figures/sequence/fig-ch07-002-open-file-path.svg){#fig-ch07-002 fig-cap="Opening a file: storage → RAM → cache → CPU → UI. Conceptual educational sequence; hits and misses change wait."}
+![Conceptual open-file path from storage through RAM and cache to CPU and UI.](../../../figures/sequence/fig-ch07-002-open-file-path.svg){#fig-ch07-002 fig-cap="Opening a file: storage → RAM → cache → CPU → UI. Conceptual educational sequence; hits and misses change wait." fig-alt="Conceptual open-file path from storage through RAM and cache to CPU and UI."}
 
 Three separations matter while you follow the signal:
 
@@ -113,7 +112,7 @@ Three separations matter while you follow the signal:
 2. **On screen vs on disk.** Visible text can live in a volatile working set while the durable file is older—or missing—until a save completes.
 3. **Connected icon vs local wait.** Memory pressure and disk backlog can hitch the UI while the network glyph stays polite [@tanenbaum-bos]. @fig-ch07-003 sketches that contrast as an **illustrative** teaching aid.
 
-![Illustrative two-panel contrast of a healthy network icon beside memory-pressure symptoms.](../../../figures/architecture/fig-ch07-003-memory-pressure.svg){#fig-ch07-003 fig-cap="Illustrative: healthy connectivity icon with possible memory-pressure hitch. Not fleet telemetry."}
+![Illustrative two-panel contrast of a healthy network icon beside memory-pressure symptoms.](../../../figures/architecture/fig-ch07-003-memory-pressure.svg){#fig-ch07-003 fig-cap="Illustrative: healthy connectivity icon with possible memory-pressure hitch. Not fleet telemetry." fig-alt="Illustrative two-panel contrast of a healthy network icon beside memory-pressure symptoms."}
 
 ---
 
@@ -123,10 +122,10 @@ These cards are a toolkit for naming layers—not a complete bill of materials.
 
 ### Registers
 
-**Role.** Tiny storage inside the CPU for values in active use.  
+**Role.** Tiny holding places inside the CPU for values in active use.  
 **Human feel.** Invisible; you notice only the aggregate responsiveness of computation.  
 **Failure symptom (rare as a named user complaint).** Extreme compute load, not “I ran out of registers” in everyday speech.  
-**Not the same as.** App “memory use” percentages in a monitor.
+**Not the same as.** App “memory use” percentages in a monitor, RAM sticks, or durable storage.
 
 ### Cache
 
@@ -197,7 +196,7 @@ This chapter does not invent universal millisecond budgets or Device Quartet cap
 
 ### LAB-CMS-001 — Make Local Slowness Visible
 
-**Observable question.** When a familiar local app feels slow but the connectivity icon looks fine, what evidence can I gather—using only commodity tools—to separate **CPU**, **memory**, **storage**, and **scheduling/thermal** hypotheses?
+**Observable question.** When a familiar local app feels slow but the connectivity icon looks fine, what evidence can I gather—using only commodity tools—to separate **memory pressure**, **storage I/O**, and **cache/hierarchy misses** from a CPU-only story?
 
 **Inheritance note.** LAB-CMS-001 is the publication-owned Concept Edition lab for CE-3; Chapter 7 reuses it as the hierarchy/persistence practice lab rather than inventing a duplicate WAIKE module ID. WAIKE accepted `main` hosts adjacent competencies (for example MCU memory-map and storage-triage labs) but no exact “CH07 memory hierarchy” course module ID—adjacency only, no invented titles.
 

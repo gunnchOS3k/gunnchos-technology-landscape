@@ -26,10 +26,10 @@
 - Invented DOIs/ISBNs/page numbers.
 - Fabricated Gate 3 reader quotes.
 
-## Remaining SOURCE_NEEDED (EVIDENCE-A)
+## Remaining SOURCE_NEEDED (QUALITY-E)
 
-| Claim / need | Next step |
+| Claim / need | Status / next step |
 |---|---|
 | `CLM-CH09-001` power/thermal budgets | `SOURCE_IDENTIFIED` via `linux-cpu-freq` |
-| `CLM-CH09-002` batteries | Select specific IEC/UL battery-safety designation from catalogue; no DIY abuse labs. |
-| `CLM-CH09-003` mechanical design | Select non-marketing mechanical/industrial-design textbook or standards survey. |
+| `CLM-CH09-002` batteries | `SOURCE_IDENTIFIED` via `iec-62133-2` + `ul-2054` (safety posture only; no DIY abuse labs) |
+| `CLM-CH09-003` mechanical design | Reframed `ILLUSTRATIVE_ONLY` — qualitative teaching model; no pinned industrial-design textbook this wave |

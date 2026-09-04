@@ -82,3 +82,32 @@
   url          = {https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf},
   note         = {PDF title/header verified 2026-09-03. Defines measurement log / attestation uses of PCRs as evidence mechanisms distinct from UI authentication.}
 }
+
+% --- Agent QUALITY-E additions (verified 2026-09-03) ---
+
+@misc{android-ab-ota,
+  title        = {A/B (seamless) system updates},
+  author       = {{Android Open Source Project}},
+  year         = {2026},
+  howpublished = {AOSP documentation (living)},
+  url          = {https://source.android.com/docs/core/ota/ab},
+  note         = {Verified HTTP 200 on 2026-09-03. Documents dual-slot / seamless update and recovery posture for interrupted updates. Living docs; representative vendor/OS example — not universal firmware law.}
+}
+
+@misc{postgresql-mvcc,
+  title        = {Concurrency Control},
+  author       = {{PostgreSQL Global Development Group}},
+  year         = {2026},
+  howpublished = {PostgreSQL 18 documentation (living current docs)},
+  url          = {https://www.postgresql.org/docs/current/mvcc.html},
+  note         = {Verified HTTP 200 on 2026-09-03. Official concurrency/isolation docs for database-vs-files pedagogy; do not invent ACID slogans beyond published definitions. Living versioned docs.}
+}
+
+@misc{nist-sp800-88r1,
+  title        = {Guidelines for Media Sanitization},
+  author       = {{National Institute of Standards and Technology}},
+  year         = {2014},
+  howpublished = {NIST Special Publication 800-88 Revision 1 (Final)},
+  url          = {https://csrc.nist.gov/pubs/sp/800/88/r1/final},
+  note         = {CSRC final publication page verified HTTP 200 on 2026-09-03. Supports deletion/sanitization vs recoverability pedagogy; no data-recovery exploit steps.}
+}

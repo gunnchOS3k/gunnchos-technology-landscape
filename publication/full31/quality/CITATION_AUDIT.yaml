@@ -1,0 +1,184 @@
+schema_version: 1.0.0
+artifact: CITATION_AUDIT
+agent: quality-e-evidence
+branch: agent/quality-e-evidence
+base: cursor/full31-quality-convergence-001 @ 2e440e43f89b61c112f088939f73440024283bbf
+gate_note: "GATE_3_IN_PROGRESS \u2014 READER_EVIDENCE_PENDING"
+gate3:
+  tree_sha256: 0ff877e930f16d632b658fe413e273a0db68093184e6b34412b3b761178c2122
+  status: UNCHANGED
+  path: publication/gates/gate-3/
+  note: This agent does not modify Gate 3 evidence or claim PASS
+before_counts:
+  SOURCE_NEEDED: 13
+  PROJECT_EVIDENCE_NEEDED: 0
+  PHYSICAL_PENDING: 25
+  SOURCE_IDENTIFIED: 94
+  ILLUSTRATIVE_ONLY: 6
+after_counts:
+  SOURCE_NEEDED: 3
+  PROJECT_EVIDENCE_NEEDED: 0
+  PHYSICAL_PENDING: 25
+  SOURCE_IDENTIFIED: 102
+  ILLUSTRATIVE_ONLY: 8
+delta:
+  SOURCE_NEEDED_resolved: 8
+  SOURCE_NEEDED_reframed_illustrative: 2
+  SOURCE_NEEDED_remaining: 3
+  PROJECT_EVIDENCE_NEEDED_delta: 0
+  PHYSICAL_PENDING_delta: 0
+resolutions:
+- claim_id: CLM-CH08-001
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - mdn-requestanimationframe
+  - whatwg-html
+- claim_id: CLM-CH09-002
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - iec-62133-2
+  - ul-2054
+- claim_id: CLM-CH11-006
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - android-ab-ota
+- claim_id: CLM-CH13-003
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - postgresql-mvcc
+- claim_id: CLM-CH13-005
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - nist-sp800-88r1
+- claim_id: CLM-CH17-003
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - itu-r-m2160-2023
+- claim_id: CLM-CH19-003
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - threegpp-tr38821
+  - kurose-ross-8
+- claim_id: CLM-CH22-004
+  action: SOURCE_IDENTIFIED
+  citation_keys:
+  - w3c-mediacapture-streams-20251009
+  - w3c-permissions-20251006
+reframes:
+- claim_id: CLM-CH09-003
+  action: ILLUSTRATIVE_ONLY
+  reason: qualitative mechanical-design teaching; no pinned industrial-design textbook
+- claim_id: CLM-CH29-003
+  action: ILLUSTRATIVE_ONLY
+  reason: PM BoK not selected; pedagogy/synthesis only; no invented PMI/ISBN
+remaining_source_needed:
+- claim_id: CLM-CH13-004
+  chapter: ch13
+  disposition: keep_source_needed
+  reason: Cloud sync conflicts are distributed-state problems, not proof that the
+    filesystem is broken.
+- claim_id: CLM-CH19-004
+  chapter: ch19
+  disposition: keep_source_needed
+  reason: "Marketing satellite connectivity may mean messaging-only or limited modes\u2014\
+    verify capability class before claims."
+- claim_id: CLM-CH30-004
+  chapter: ch30
+  disposition: keep_source_needed
+  reason: Labor-market statistics for role demand require official sources if cited.
+bibliography_cleanup:
+  working_unique_bib_keys: 81
+  working_unique_canonical_works: 73
+  same_work_alias_groups: 7
+  wcag_dual_dated_keys_preserved: true
+  wcag_keys:
+  - wcag22-20231005
+  - wcag22-20241212
+  undated_wcag22_blocked: true
+  undated_wcag22_in_claim_plans: []
+  new_verified_keys_this_wave:
+  - mdn-requestanimationframe
+  - w3c-permissions-20251006
+  - iec-62133-2
+  - ul-2054
+  - itu-r-m2160-2023
+  - threegpp-tr38821
+  - android-ab-ota
+  - postgresql-mvcc
+  - nist-sp800-88r1
+  new_keys_present_in_candidate:
+    mdn-requestanimationframe: true
+    w3c-permissions-20251006: true
+    iec-62133-2: true
+    ul-2054: true
+    itu-r-m2160-2023: true
+    threegpp-tr38821: true
+    android-ab-ota: true
+    postgresql-mvcc: true
+    nist-sp800-88r1: true
+  new_keys_present_in_working:
+    mdn-requestanimationframe: true
+    w3c-permissions-20251006: true
+    iec-62133-2: true
+    ul-2054: true
+    itu-r-m2160-2023: true
+    threegpp-tr38821: true
+    android-ab-ota: true
+    postgresql-mvcc: true
+    nist-sp800-88r1: true
+  placement_quality_rules:
+  - Prefer unique bib keys mapped to canonical works via DOI/ISBN/dated-standard/URL
+    identity
+  - Preserve WCAG dual dated Recommendation keys (wcag22-20231005 and wcag22-20241212)
+    as distinct works
+  - Never invent DOI/ISBN/page/year
+  - CE local bib + CANDIDATE are citation truth; WORKING_BIBLIOGRAPHY is manuscript-wave
+    overlay
+  - Accepted-main book/references keys may be mirrored into CE locals for claim-source
+    checks
+  same_work_aliases_sample:
+  - canonical_identifier: 'title:computer organization and design: the hardware/software
+      interface|author:patterson, david a. and hennessy, john l.|year:2020'
+    bib_keys:
+    - patterson-hennessy
+    - patterson-hennessy-ce06
+  - canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026
+    bib_keys:
+    - mdn-performance
+    - mdn-performance-ce06
+  - canonical_identifier: url:https://docs.kernel.org/scheduler/|year:2026
+    bib_keys:
+    - linux-scheduler
+    - linux-scheduler-ce06
+  - canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026
+    bib_keys:
+    - src-hardware-ce3
+    - src-hardware-quartet
+  - canonical_identifier: url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026
+    bib_keys:
+    - gunnchos-technology-landscape-ce06
+    - gunnchosTechnologyLandscape2026
+  - canonical_identifier: url:https://github.com/gunnchOS3k/waike-research-ops|year:2026
+    bib_keys:
+    - src-waike
+    - src-waike-ce3
+    - waike-research-ops-ce06
+  - canonical_identifier: url:https://html.spec.whatwg.org/|year:2026
+    bib_keys:
+    - whatwg-html
+    - whatwg-html-ce06
+placement_findings:
+- severity: info
+  issue: undated_wcag22_absent_from_claim_plans
+  note: CLM-CH14-004 already uses dual dated keys
+checks:
+  full31_claim_sources: PASS
+  ce_sources_regenerated: true
+  working_bibliography_regenerated: true
+  invented_doi_isbn_pages: false
+intentionally_not_done:
+- No Gate 3 PASS / no fabricated reader evidence
+- "No BLS OOH cite (CLM-CH30-004) \u2014 automated retrieval blocked"
+- No operator satellite capability-class docs (CLM-CH19-004)
+- No distributed sync-conflict primary selected (CLM-CH13-004)
+- No PR opened / no merge

@@ -2,7 +2,6 @@
 status: working_draft
 chapter_id: CH23
 chapter_number: 23
-title: "Cybersecurity from Chip to Cloud"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false
@@ -72,7 +71,7 @@ Optional seat comparison (safe): open a familiar account on a device you may use
 
 Usable trust is not a single object. It is a path of cooperating conditions. @fig-ch23-002 is the first-minute map for this chapter: chip/boot → firmware/OS → app/session → network → cloud/policy, with human UX symptoms attached to the same flows people actually use. Treat it as **conceptual**—not a claim that any manufactured revision wires trust the same way, and not a measured Device Quartet secure-boot capture. Chip/firmware measured secure-boot validation for research form factors remains **PHYSICAL_PENDING** [@src-hardware-quartet; @src-device-os-ce3].
 
-![Conceptual chip-to-cloud trust path with human UX symptoms attached.](../../../figures/ecosystem/fig-ch23-002-chip-to-cloud-trust.svg){#fig-ch23-002 fig-cap="Chip/boot → firmware/OS → app/session → network → cloud/policy, with UX symptoms. Conceptual educational map; not measured secure-boot telemetry."}
+![Conceptual chip-to-cloud trust path with human UX symptoms attached.](../../../figures/ecosystem/fig-ch23-002-chip-to-cloud-trust.svg){#fig-ch23-002 fig-cap="Chip/boot → firmware/OS → app/session → network → cloud/policy, with UX symptoms. Conceptual educational map; not measured secure-boot telemetry." fig-alt="Conceptual chip-to-cloud trust path with human UX symptoms attached."}
 
 Walk the layers in ordinary language. Keep the same layers when vocabulary deepens. Do **not** treat this as a vulnerability encyclopedia.
 
@@ -119,7 +118,7 @@ Read the following as a logical story for one ordinary protected action—not as
 7. **Logging / retention (often invisible).** Systems may record the attempt for audit or support—privacy lifecycle territory deepened in CH24.
 8. **Recovery path.** Lockout, lost-factor, or incident restore must return *usable* trust without theater alone.
 
-![Identity → authentication → authorization decision ladder.](../../../figures/architecture/fig-ch23-001-identity-authn-authz.svg){#fig-ch23-001 fig-cap="Identity claim → authentication assurance → authorization decision (Allow/Deny). Conceptual; inherits CE-5 FIG-CE5-003. AuthN ≠ AuthZ."}
+![Identity → authentication → authorization decision ladder.](../../../figures/architecture/fig-ch23-001-identity-authn-authz.svg){#fig-ch23-001 fig-cap="Identity claim → authentication assurance → authorization decision (Allow/Deny). Conceptual; inherits CE-5 FIG-CE5-003. AuthN ≠ AuthZ." fig-alt="Identity → authentication → authorization decision ladder."}
 
 Failure branches are part of honesty:
 
@@ -172,11 +171,11 @@ Each card is plain language + constraints + failure symptoms. None of these card
 
 **What it is.** Goals for unreadability without keys in transit and/or at rest—plus honest endpoint limits (@fig-ch23-003; CE-5 FIG-CE5-004 inheritance).
 
-**Constraints.** Encryption does not alone guarantee correct UX, honest UI, safe endpoint, or human trust.
+**Constraints.** Encryption often supports **confidentiality**, but **integrity** (detecting unwanted change) and **availability** (keeping usable access/recovery paths alive) are separate goals—the CIA trio is not a padlock icon. Encryption does not alone guarantee correct UX, honest UI, safe endpoint, or human trust.
 
-**Failure symptoms.** “We use encryption” used as a conversation-stopper while unlocked endpoints still expose content.
+**Failure symptoms.** “We use encryption” used as a conversation-stopper while unlocked endpoints still expose content; integrity or recovery failures blamed on “the network” alone.
 
-![Encryption transit / at-rest goals with unlocked-endpoint limits.](../../../figures/architecture/fig-ch23-003-encryption-boundaries.svg){#fig-ch23-003 fig-cap="Transit and at-rest encryption with honest endpoint limits. Conceptual; inherits CE-5 FIG-CE5-004."}
+![Encryption transit / at-rest goals with unlocked-endpoint limits.](../../../figures/architecture/fig-ch23-003-encryption-boundaries.svg){#fig-ch23-003 fig-cap="Transit and at-rest encryption with honest endpoint limits. Conceptual; inherits CE-5 FIG-CE5-004." fig-alt="Encryption transit / at-rest goals with unlocked-endpoint limits."}
 
 ### Chip-to-cloud trust path
 
@@ -208,7 +207,7 @@ A system can remain **powered on and connected** while the **human experience of
 Three separations matter here:
 
 1. **Authentication** versus **authorization** — AuthN ≠ AuthZ [@nist_sp_800_63_4].
-2. **Encryption in transit/at rest** versus **endpoint exposure** — padlock ≠ private forever (@fig-ch23-003).
+2. **Encryption in transit/at rest** versus **endpoint exposure** — padlock ≠ private forever; confidentiality ≠ integrity ≠ availability (@fig-ch23-003).
 3. **Felt safety** versus **technical trust evidence** — feelings matter; they are not the same as controls and artifacts (CE-5 dual-ledger adjacency).
 
 Commodity observations you collect with **LAB-TRUST-001** are *your* evidence for *your* routes and fixtures—not universal product certifications, and not Gate 3 reader validation. Device Quartet measured secure-boot claims remain **PHYSICAL_PENDING** [@src-hardware-quartet].

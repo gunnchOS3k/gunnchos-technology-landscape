@@ -1,0 +1,72 @@
+---
+title: "Parts and chapters"
+number: false
+---
+Canonical full-book architecture: **31 chapters in six parts** (`book/chapter_registry.yaml`; architecture: `specs/02_BOOK_ARCHITECTURE_AND_CHAPTER_REGISTRY.md`).
+
+Registry `status` values below are **structural** markers from the chapter registry (often still `outline` even when working prose exists). They are not Gate 3 outcomes and not publication-ready claims.
+
+### Part I — Read the experience
+
+| Chapter | Title | Registry status |
+|---|---|---|
+| `CH01` | Technology Is a System, Not a Screen | `outline` |
+| `CH02` | Follow One Tap Through the Entire Stack | `draft` |
+| `CH03` | Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable | `outline` |
+| `CH04` | The Device Quartet as a Learning Laboratory | `outline` |
+
+### Part II — Open the device
+
+| Chapter | Title | Registry status |
+|---|---|---|
+| `CH05` | Electricity, Signals, Clocks, and Logic | `outline` |
+| `CH06` | CPU, Instructions, and Parallel Work | `outline` |
+| `CH07` | Memory, Cache, and Storage | `outline` |
+| `CH08` | Graphics, Displays, Audio, Cameras, and Sensors | `outline` |
+| `CH09` | Power, Batteries, Thermals, and Mechanical Design | `outline` |
+| `CH10` | Ports, Buses, Boards, Packaging, and Manufacturing | `outline` |
+
+### Part III — Make hardware useful
+
+| Chapter | Title | Registry status |
+|---|---|---|
+| `CH11` | Firmware, Boot, and Trust | `outline` |
+| `CH12` | Operating Systems, Processes, Threads, and Scheduling | `outline` |
+| `CH13` | Files, Databases, and Data Lifecycles | `outline` |
+| `CH14` | Applications, APIs, Runtimes, and User Interfaces | `outline` |
+| `CH15` | Containers, Virtualization, Cloud, and Edge Computing | `outline` |
+
+### Part IV — Connect everything
+
+| Chapter | Title | Registry status |
+|---|---|---|
+| `CH16` | Packets, Protocols, Routing, and the Internet | `outline` |
+| `CH17` | Wi-Fi, Cellular, 5G, and the Road to 6G | `outline` |
+| `CH18` | Spectrum, Antennas, Beams, MIMO, and Radio Conditions | `outline` |
+| `CH19` | NTN and Service Continuity Across Ground, Air, and Space | `outline` |
+| `CH20` | Latency, Reliability, QoE, and the Stability Contract | `outline` |
+
+### Part V — Intelligence, security, and responsibility
+
+| Chapter | Title | Registry status |
+|---|---|---|
+| `CH21` | Data, Machine Learning, and Generative AI | `outline` |
+| `CH22` | Edge AI, Sensors, and Embodied Interaction | `outline` |
+| `CH23` | Cybersecurity from Chip to Cloud | `outline` |
+| `CH24` | Privacy, Identity, Safety, Accessibility, and Ethics | `outline` |
+| `CH25` | Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure | `outline` |
+
+### Part VI — Build, prove, and contribute
+
+| Chapter | Title | Registry status |
+|---|---|---|
+| `CH26` | Software Development and Version Control | `outline` |
+| `CH27` | Testing, Observability, and Evidence | `outline` |
+| `CH28` | Digital Twins, Simulation, and Reproducible Research | `outline` |
+| `CH29` | Designing a Complete Technology Product | `outline` |
+| `CH30` | Career Maps and Portfolio Proof | `outline` |
+| `CH31` | Capstone: Explain, Measure, Improve, and Teach the Ecosystem | `outline` |
+
+## Subject index (editorial)
+
+A traditional back-of-book **subject index** remains a human/editorial deliverable. Automated keyword dumps are **not** claimed as a publication-grade subject index.

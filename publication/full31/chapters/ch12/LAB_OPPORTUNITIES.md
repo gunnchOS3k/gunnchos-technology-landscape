@@ -4,13 +4,13 @@
 
 Prefer inheriting existing CE labs. Do not invent CE/WAIKE IDs. Proposed publication labs are namespaced ideas only.
 
-## INHERIT: `LAB-CMS-001`
+## INHERIT: `LAB-CMS-001` (FULL_LAB)
 
-Primary — Make Local Slowness Visible; link CE-3 LAB_PLAN.md and labs worktree.
+Primary — Make Local Slowness Visible; process / thread / scheduler column emphasis. Link CE-3 LAB_PLAN.md and `labs/LAB-CMS-001/`.
 
-## OPPORTUNITY: `LAB-SCHED-001 (proposed)`
+## SUPERSEDED PROPOSAL: `LAB-SCHED-001`
 
-Builder stretch: controlled mild concurrency + observation table; fixture fallback. Do not mint as WAIKE ID.
+**Disposition (Agent G quality wave):** `proposed→inline` via LAB-CMS-001. Builder stretch stays inside the shared CMS packet; do not mint as a WAIKE ID or new `labs/` dir.
 
 ## Safety / equity defaults
 

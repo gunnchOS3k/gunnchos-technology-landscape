@@ -2,7 +2,6 @@
 status: working_draft
 chapter_id: CH06
 chapter_number: 6
-title: "CPU, Instructions, and Parallel Work"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false
@@ -67,7 +66,7 @@ Optional comparison on almost any computer you already own: open a light text no
 
 Local lag is not a single object. It is a path through an inside-the-device ecosystem. @fig-ch06-001 is the first-minute map for this chapter: app experience → process/threads → scheduler → CPU cores → optional accelerator. Treat it as **conceptual / Representative educational architecture**—not a claim that any specific manufactured revision looks exactly like the diagram.
 
-![Conceptual map from app experience through process/threads and scheduler to CPU cores and optional accelerator.](../../../figures/architecture/fig-ch06-001-app-to-cores.svg){#fig-ch06-001 fig-cap="App → process/threads → scheduler → cores/accelerator. Conceptual educational map; OS mediates while instructions still execute on hardware."}
+![Conceptual map from app experience through process/threads and scheduler to CPU cores and optional accelerator.](../../../figures/architecture/fig-ch06-001-app-to-cores.svg){#fig-ch06-001 fig-cap="App → process/threads → scheduler → cores/accelerator. Conceptual educational map; OS mediates while instructions still execute on hardware." fig-alt="Conceptual map from app experience through process/threads and scheduler to CPU cores and optional accelerator."}
 
 The Device Quartet used elsewhere in this series—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—are research form factors and learning benchmarks. Physical fabrication and EVT CPU measurements remain **PHYSICAL_PENDING**; do not treat comparison-matrix core counts or clock stories as shipping product facts [@src-hardware-quartet].
 
@@ -91,7 +90,7 @@ A **scheduler** decides which runnable thread obtains CPU time next [@tanenbaum-
 
 ### CPU cores
 
-A **CPU** fetches, decodes, and executes instructions. Modern packages often expose multiple **cores**—hardware contexts that can progress different instruction streams when work is available [@patterson-hennessy-riscv]. “The CPU is at 90%” in a monitor is a coarse summary, not a biography of every instruction.
+A **CPU** fetches, decodes, and executes instructions. Modern packages often expose multiple **cores**—independent execution engines on a chip that can progress different instruction streams when work is available [@patterson-hennessy-riscv]. Some cores also expose multiple hardware threads (survey depth only); that is not the same claim as “more software threads always feel faster.” “The CPU is at 90%” in a monitor is a coarse summary, not a biography of every instruction.
 
 ### Accelerators (survey depth)
 
@@ -117,7 +116,7 @@ Follow one ordinary local action—say, scrolling a document while another expor
 
 @fig-ch06-002 contrasts a mostly serial dependency chain with work that splits into independent chunks. Extra cores help the second pattern more than the first. The bar lengths are **illustrative** teaching aids—not measured speedups, IPC claims, or Device Quartet EVT results.
 
-![Illustrative timelines comparing a serial dependency chain with parallelizable chunks across cores.](../../../figures/architecture/fig-ch06-002-serial-vs-parallel.svg){#fig-ch06-002 fig-cap="Single-thread vs parallelizable work. Illustrative teaching timelines; not measured benchmarks."}
+![Illustrative timelines comparing a serial dependency chain with parallelizable chunks across cores.](../../../figures/architecture/fig-ch06-002-serial-vs-parallel.svg){#fig-ch06-002 fig-cap="Single-thread vs parallelizable work. Illustrative teaching timelines; not measured benchmarks." fig-alt="Illustrative timelines comparing a serial dependency chain with parallelizable chunks across cores."}
 
 ### Parallelism without fairy tales
 
@@ -162,11 +161,13 @@ These cards are a first toolkit—not a bill of materials for every SoC.
 
 ### Process / thread
 
-**Plain definition.** OS abstractions for concurrent work units [@tanenbaum-bos].
+**Plain definition.** OS abstractions for concurrent work: a **process** typically owns an address-space boundary; a **thread** is a schedulable execution path inside a process (often what the scheduler actually picks next) [@tanenbaum-bos].
 
 **Experience benefit.** Multiple activities can progress without being one single frozen program counter from the person’s point of view.
 
 **Failure symptom.** Too many competing units; a stuck UI thread; unclear which process owns the lag.
+
+**Not the same as.** A hardware **core** (execution engine). Extra cores help only when useful work is ready to overlap.
 
 ### Scheduler
 
@@ -221,7 +222,7 @@ A device can remain **powered on and connected** while the **human experience ha
 
 @fig-ch06-003 separates **CPU-bound** patterns from **waiting** patterns as conceptual diagnosis branches. High CPU percent in a monitor is not always proof the CPU is the root cause of poor feel—that caution is an **illustrative teaching claim** for lab practice, not a fleet-wide measured distribution.
 
-![Conceptual comparison of CPU-bound versus waiting symptom checks.](../../../figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg){#fig-ch06-003 fig-cap="CPU-bound vs waiting-on-I/O symptoms. Conceptual diagnosis aid for observation vs inference."}
+![Conceptual comparison of CPU-bound versus waiting symptom checks.](../../../figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg){#fig-ch06-003 fig-cap="CPU-bound vs waiting-on-I/O symptoms. Conceptual diagnosis aid for observation vs inference." fig-alt="Conceptual comparison of CPU-bound versus waiting symptom checks."}
 
 Three separations matter here:
 
@@ -372,8 +373,8 @@ Career growth here means better questions: “Is this runnable work, waiting, or
 1. **“More CPU cores always make everything faster.”**  
    Counter: useful overlap and non-CPU bottlenecks decide; serial and waiting paths remain [@patterson-hennessy-riscv].
 
-2. **“The operating system runs my app’s logic for me.”**  
-   Counter: the OS schedules and mediates; instructions still execute on processors [@tanenbaum-bos].
+2. **“The operating system is doing my app’s compute for me.”**  
+   Counter: at CPU depth, keep instruction streams and parallel work visible; Chapter 12 deepens what the OS actually schedules versus what the app still computes [@tanenbaum-bos].
 
 3. **“If Wi-Fi is connected, lag must be the network.”**  
    Counter: local contention can fail the Stability Contract while the icon stays polite (LAB-CMS-001 hypothesis set; illustrative until *you* measure).

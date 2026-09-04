@@ -1,6 +1,10 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - labs/**
+
+lang: en
 
 book:
   title: "The Technology Landscape"
@@ -8,13 +12,17 @@ book:
   author: "Edmund Gunn, Jr."
   chapters:
     - index.qmd
+    - book/frontmatter/_frontmatter.qmd
     - book/frontmatter/status.qmd
+    - book/frontmatter/rights.qmd
+    - book/frontmatter/know-first.qmd
     - book/frontmatter/how-to-use.qmd
     - book/frontmatter/reader-pathways.qmd
     - book/frontmatter/device-quartet.qmd
     - book/frontmatter/waike.qmd
     - book/frontmatter/evidence-legend.qmd
     - book/frontmatter/preface.md
+    - book/frontmatter/_mainmatter.qmd
     - book/chapters/ch01/chapter.md
     - book/chapters/ch02/chapter.md
     - book/chapters/ch03/chapter.md
@@ -46,11 +54,15 @@ book:
     - book/chapters/ch29/chapter.md
     - book/chapters/ch30/chapter.md
     - book/chapters/ch31/chapter.md
+    - book/appendices/_backmatter.qmd
+    - book/appendices/parts-chapters.qmd
     - book/appendices/glossary.qmd
     - book/appendices/references.qmd
+    - book/appendices/key-standards.qmd
     - book/appendices/lab-index.qmd
     - book/appendices/figure-index.qmd
     - book/appendices/career-role-map.qmd
+    - book/appendices/errata.qmd
     - book/appendices/acknowledgments.qmd
 
 bibliography: book/references/references.bib
@@ -62,5 +74,7 @@ format:
     theme: cosmo
   pdf:
     documentclass: book
+    # Front/back matter uses number: false. Body chapters keep a single H1
+    # chapter title (YAML title removed from chapter.md to avoid double \chapter).
   epub:
     toc: true

@@ -1,0 +1,125 @@
+schema_version: 1.0.0
+report_id: FULL31_PUBLICATION_QA
+agent: agent-h-publication-qa
+generated_at: '2026-09-04T02:11:29Z'
+git_sha: a03d9c03dcc665b5f5ade53d0016afe9e15f1f20
+preferred_base_branch: cursor/full31-quality-convergence-001
+gate_3_policy: DO_NOT_TOUCH
+certification_claims:
+  wcag: false
+  epub_accessibility: false
+  human_print_quality: false
+toolchain:
+  quarto: /Users/gunnchos/Downloads/gunnchos-technology-landscape/tools/quarto/bin/quarto
+  LOCAL_RENDER_TOOLCHAIN_UNAVAILABLE: false
+artifacts:
+  html: preview/full31/technology-landscape-full31-html
+  epub: preview/full31/technology-landscape-full31-epub.epub
+  pdf: preview/full31/technology-landscape-full31-pdf.pdf
+  print_checklist: publication/full31/quality/HUMAN_PRINT_VISUAL_CHECKLIST.md
+severity_counts:
+  BLOCKER: 0
+  MAJOR: 0
+  MODERATE: 1
+  MINOR: 0
+  EDITORIAL: 0
+checks:
+  source_semantics:
+    chapters_scanned: 31
+    figures_embedded: 72
+    fig_cap_without_fig_alt: 0
+    empty_markdown_alts: 0
+    generic_section_id_collisions: {}
+    heading_hierarchy_failures: []
+    nondescriptive_links: 0
+    reader_facing_localhost_or_filesystem: 0
+    tables_missing_header_sep: 0
+  figures:
+    registry_count: 110
+    missing_sidecar: 0
+    missing_asset: 0
+    missing_fields: 0
+    color_only_risk_notes: 0
+  labs:
+    labs: 14
+    missing_accessible_routes: 0
+    browser_missing_lang: 0
+    browser_missing_live_region: 0
+    a11y_doc_present: 11
+  acronyms:
+    registry_entries: 12
+    identity_expansions: 0
+    first_use_heuristic: source_scan_limited
+  html:
+    artifact_present: true
+    pages: 65
+    missing_lang: 0
+    imgs_total: 72
+    imgs_missing_alt: 0
+    broken_internal_anchors: 0
+    reader_facing_localhost_href: 0
+    nav_sidebar_detected: true
+  epub:
+    artifact_present: true
+    validator: deterministic_structural_checks
+    epubcheck: PASS
+    epubcheck_limitation: Official W3C EPUBCheck executed; not an accessibility certification.
+    mimetype_ok: true
+    container_ok: true
+    opf_ok: true
+    nav_ok: true
+    spine_ok: true
+    dc_language: en
+    dc_title: The Technology Landscape
+    dc_creator: Edmund Gunn, Jr.
+    imgs_total: 72
+    imgs_missing_alt: 0
+    xhtml_missing_lang: 0
+    epubcheck_version: 5.2.1
+    epubcheck_errors: 0
+    epubcheck_fatal_errors: 0
+    epubcheck_warnings: 0
+  pdf:
+    artifact_present: true
+    page_count: 618
+    render_success: true
+    overfull_hbox: 0
+    overfull_vbox: 0
+    underfull_hbox: 0
+    missing_image_log_hits: 0
+    duplicate_identifier_warnings: 0
+    blank_page_heuristic: not_automated
+    orphan_heading_heuristic: not_automated
+    tiny_text_heuristic: not_automated
+    clipping_heuristic: not_automated
+    wide_table_heuristic: log_overfull_proxy
+    pdf_max_chapter_number_seen: 379
+    pdf_chapter_number_mentions: 492
+    pdf_latex_chapter_headers:
+    - 1
+    - 2
+    - 4
+    - 7
+    - 11
+    - 23
+    pdf_max_latex_chapter_header: 23
+    pdf_body_title_hits: 61
+    pdf_body_chapter_headers:
+    - 1
+    - 2
+    - 4
+    - 7
+    - 11
+    - 23
+    pdf_backmatter_numeric_chapter_headers: []
+    pdf_body_chapter_header_count: 6
+issues:
+- issue_id: PDF-FRONTMATTER-NUMBERING
+  severity: MODERATE
+  category: pdf_structure
+  location: preview/full31/technology-landscape-full31-pdf.pdf
+  finding: PDF body LaTeX CHAPTER headers are within 1..31 (max=23); no Chapter 32+
+    backmatter inflation after \frontmatter/\mainmatter/\backmatter. Residual TOC
+    cosmetics are human print review only.
+  evidence: body_headers_sample=[1, 2, 4, 7, 11, 23]; count=6; backmatter_numeric=[]
+  fix_status: FIXED

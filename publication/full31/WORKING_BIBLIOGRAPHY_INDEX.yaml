@@ -13,23 +13,23 @@ integration_path:
   validator: scripts/validate_ce_sources.py
   builder: scripts/build_full31_working_bibliography.py
 counts:
-  ce_source_occurrences: 64
-  full31_citation_token_occurrences: 116
-  unique_bib_keys: 63
-  unique_canonical_works: 55
+  ce_source_occurrences: 81
+  full31_citation_token_occurrences: 193
+  unique_bib_keys: 81
+  unique_canonical_works: 73
   same_work_alias_groups: 7
 verification_counts:
   NEEDS_PRIMARY_VERIFICATION: 1
-  PRIMARY_METADATA_VERIFIED: 47
+  PRIMARY_METADATA_VERIFIED: 65
   REPOSITORY_EVIDENCE_VERIFIED: 8
   SECONDARY_EXPLANATORY: 7
 classification_counts:
-  official_technical_documentation: 14
-  other_explanatory: 5
+  official_technical_documentation: 18
+  other_explanatory: 13
   peer_reviewed: 2
   project_accepted_main: 8
-  standards_specifications: 25
-  textbooks: 9
+  standards_specifications: 30
+  textbooks: 10
 wcag_resolution:
   strategy: two_dated_recommendation_keys
   keys:
@@ -88,10 +88,7 @@ same_work_aliases:
   bib_keys:
   - whatwg-html
   - whatwg-html-ce06
-blocked_undated_wcag_occurrences:
-- chapter: ch14
-  token: wcag22
-  origin: claim_plan.citation_keys
+blocked_undated_wcag_occurrences: []
 non_bib_tokens:
 - chapter: ch02
   token: gate3-review-snapshot
@@ -171,6 +168,26 @@ unresolved_citation_tokens:
   origin: source_needs.table
   reason: bib_key_not_in_working_set
 records:
+- bib_key: android-ab-ota
+  entry_type: misc
+  title: A/B (seamless) system updates
+  year: '2026'
+  url: https://source.android.com/docs/core/ota/ab
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://source.android.com/docs/core/ota/ab|year:2026
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch11
+  chapter_usage:
+  - ce-05
+  - ch11
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
 - bib_key: digitalregulation-qos-qoe
   entry_type: misc
   title: "Technical regulation \u2013 Quality of service"
@@ -186,6 +203,26 @@ records:
   full31_chapter_usage: []
   chapter_usage:
   - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: git-scm-docs
+  entry_type: misc
+  title: Git - Reference
+  year: '2026'
+  url: https://git-scm.com/docs
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://git-scm.com/docs|year:2026
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch26
+  chapter_usage:
+  - ce-01
+  - ch26
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -248,6 +285,47 @@ records:
   promotion_origin: book_references_accepted_main
   metadata_conflict_status: NONE
   dated_edition: null
+- bib_key: harris-harris-riscv
+  entry_type: book
+  title: Digital Design and Computer Architecture, RISC-V Edition
+  year: '2021'
+  url: null
+  doi: null
+  isbn: 978-0-12-820064-3
+  source_class: textbooks
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: isbn:9780128200643|edition:1
+  ce_chapter_usage: []
+  full31_chapter_usage:
+  - ch02
+  chapter_usage:
+  - book/references
+  - ch02
+  promotion_origin: book_references_accepted_main
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: iec-62133-2
+  entry_type: misc
+  title: "Secondary cells and batteries containing alkaline or other non-acid electrolytes\
+    \ \u2014 Safety requirements for portable sealed secondary cells, and for batteries\
+    \ made from them, for use in portable applications \u2014 Part 2: Lithium systems"
+  year: '2017'
+  url: https://webstore.iec.ch/en/publication/70017
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://webstore.iec.ch/en/publication/70017|year:2017
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage:
+  - ch09
+  chapter_usage:
+  - ce-03
+  - ch09
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
 - bib_key: ieee80211-2020
   entry_type: misc
   title: null
@@ -260,9 +338,17 @@ records:
   canonical_identifier: standard:ieee80211-2020|dated:2020
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch15
+  - ch16
+  - ch17
+  - ch18
   chapter_usage:
   - ce-04
+  - ch15
+  - ch16
+  - ch17
+  - ch18
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -284,6 +370,27 @@ records:
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
+- bib_key: iso-23247-1-2021
+  entry_type: misc
+  title: "Automation systems and integration \u2014 Digital twin framework for manufacturing\
+    \ \u2014 Part 1: Overview and general principles"
+  year: '2021'
+  url: https://www.iso.org/standard/75066.html
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.iso.org/standard/75066.html|year:2021
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage:
+  - ch28
+  chapter_usage:
+  - ce-06
+  - ch28
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
 - bib_key: iso-iec-25010-2023
   entry_type: misc
   title: null
@@ -296,9 +403,53 @@ records:
   canonical_identifier: url:https://www.iso.org/standard/78176.html|year:2023
   ce_chapter_usage:
   - ce-01
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch03
+  - ch20
   chapter_usage:
   - ce-01
+  - ch03
+  - ch20
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: itu-facts-figures-2025
+  entry_type: misc
+  title: 'Measuring digital development: Facts and Figures 2025'
+  year: '2025'
+  url: https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx|year:2025
+  ce_chapter_usage:
+  - ce-06
+  full31_chapter_usage:
+  - ch25
+  chapter_usage:
+  - ce-06
+  - ch25
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: itu-r-m2160-2023
+  entry_type: misc
+  title: null
+  year: '2023'
+  url: https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en|year:2023
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage:
+  - ch17
+  chapter_usage:
+  - ce-04
+  - ch17
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -315,9 +466,13 @@ records:
   ce_chapter_usage:
   - ce-06
   full31_chapter_usage:
+  - ch19
+  - ch20
   - ch27
   chapter_usage:
   - ce-06
+  - ch19
+  - ch20
   - ch27
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
@@ -334,9 +489,15 @@ records:
   canonical_identifier: url:https://www.itu.int/rec/T-REC-P.10/en
   ce_chapter_usage:
   - ce-06
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch03
+  - ch19
+  - ch20
   chapter_usage:
   - ce-06
+  - ch03
+  - ch19
+  - ch20
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -388,9 +549,17 @@ records:
   canonical_identifier: isbn:9780136681557|edition:8
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch16
+  - ch17
+  - ch18
+  - ch19
   chapter_usage:
   - ce-04
+  - ch16
+  - ch17
+  - ch18
+  - ch19
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -406,9 +575,11 @@ records:
   canonical_identifier: url:https://docs.kernel.org/admin-guide/pm/cpufreq.html|year:2026
   ce_chapter_usage:
   - ce-03
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch09
   chapter_usage:
   - ce-03
+  - ch09
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -521,11 +692,15 @@ records:
   - ce-01
   - ce-03
   full31_chapter_usage:
+  - ch03
   - ch14
+  - ch20
   chapter_usage:
   - ce-01
   - ce-03
+  - ch03
   - ch14
+  - ch20
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -544,6 +719,26 @@ records:
   full31_chapter_usage: []
   chapter_usage:
   - ce-06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: mdn-requestanimationframe
+  entry_type: misc
+  title: 'Window: requestAnimationFrame() method'
+  year: '2026'
+  url: https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame|year:2026
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch08
+  chapter_usage:
+  - ce-01
+  - ch08
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -577,9 +772,11 @@ records:
   canonical_identifier: url:https://csrc.nist.gov/pubs/sp/500/325/final|year:2018
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch15
   chapter_usage:
   - ce-04
+  - ch15
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -595,9 +792,31 @@ records:
   canonical_identifier: url:https://csrc.nist.gov/pubs/sp/800/145/final|year:2011
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch15
   chapter_usage:
   - ce-04
+  - ch15
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: nist-sp800-88r1
+  entry_type: misc
+  title: Guidelines for Media Sanitization
+  year: '2014'
+  url: https://csrc.nist.gov/pubs/sp/800/88/r1/final
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://csrc.nist.gov/pubs/sp/800/88/r1/final|year:2014
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch13
+  chapter_usage:
+  - ce-05
+  - ch13
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -661,6 +880,26 @@ records:
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
+- bib_key: oci-runtime-spec
+  entry_type: misc
+  title: Open Container Initiative Runtime Specification
+  year: '2026'
+  url: https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md|year:2026
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage:
+  - ch15
+  chapter_usage:
+  - ce-04
+  - ch15
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
 - bib_key: otel-signals
   entry_type: misc
   title: Signals
@@ -673,9 +912,11 @@ records:
   canonical_identifier: url:https://opentelemetry.io/docs/concepts/signals/|year:2026
   ce_chapter_usage:
   - ce-06
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch27
   chapter_usage:
   - ce-06
+  - ch27
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -693,9 +934,17 @@ records:
   ce_chapter_usage:
   - ce-01
   full31_chapter_usage:
+  - ch05
+  - ch06
+  - ch07
+  - ch10
   - ch12
   chapter_usage:
   - ce-01
+  - ch05
+  - ch06
+  - ch07
+  - ch10
   - ch12
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
@@ -731,9 +980,31 @@ records:
   canonical_identifier: isbn:9780128203316|edition:2
   ce_chapter_usage:
   - ce-03
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch06
   chapter_usage:
   - ce-03
+  - ch06
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: postgresql-mvcc
+  entry_type: misc
+  title: Concurrency Control
+  year: '2026'
+  url: https://www.postgresql.org/docs/current/mvcc.html
+  doi: null
+  isbn: null
+  source_class: official_technical_documentation
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.postgresql.org/docs/current/mvcc.html|year:2026
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage:
+  - ch13
+  chapter_usage:
+  - ce-05
+  - ch13
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -749,9 +1020,11 @@ records:
   canonical_identifier: standard:rfc1034|dated:1987
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch16
   chapter_usage:
   - ce-04
+  - ch16
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -767,9 +1040,11 @@ records:
   canonical_identifier: standard:rfc1035|dated:1987
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch16
   chapter_usage:
   - ce-04
+  - ch16
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -978,12 +1253,14 @@ records:
   - ce-01
   full31_chapter_usage:
   - ch01
+  - ch03
   - ch11
   - ch13
   - ch14
   chapter_usage:
   - ce-01
   - ch01
+  - ch03
   - ch11
   - ch13
   - ch14
@@ -1007,6 +1284,24 @@ records:
   chapter_usage:
   - ce-05
   - ch23
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: semver-2.0.0
+  entry_type: misc
+  title: Semantic Versioning 2.0.0
+  year: null
+  url: https://semver.org/spec/v2.0.0.html
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://semver.org/spec/v2.0.0.html
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-01
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -1251,6 +1546,7 @@ records:
   - ch11
   - ch12
   - ch13
+  - ch15
   chapter_usage:
   - ce-01
   - ce-03
@@ -1262,6 +1558,45 @@ records:
   - ch11
   - ch12
   - ch13
+  - ch15
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: tcg-pc-client-pfp-1.06
+  entry_type: misc
+  title: TCG PC Client Platform Firmware Profile Specification
+  year: '2023'
+  url: https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf|year:2023
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-05
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: threegpp-tr38821
+  entry_type: misc
+  title: null
+  year: '2023'
+  url: https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3525
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: standard:threegpp-tr38821|dated:2023
+  ce_chapter_usage:
+  - ce-04
+  full31_chapter_usage:
+  - ch19
+  chapter_usage:
+  - ce-04
+  - ch19
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -1277,9 +1612,97 @@ records:
   canonical_identifier: standard:threegpp-ts23501|dated:2026
   ce_chapter_usage:
   - ce-04
-  full31_chapter_usage: []
+  full31_chapter_usage:
+  - ch15
+  - ch16
+  - ch17
+  - ch19
   chapter_usage:
   - ce-04
+  - ch15
+  - ch16
+  - ch17
+  - ch19
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: uefi-secure-boot-2.10
+  entry_type: misc
+  title: Secure Boot and Driver Signing
+  year: null
+  url: https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html
+  ce_chapter_usage:
+  - ce-05
+  full31_chapter_usage: []
+  chapter_usage:
+  - ce-05
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: ul-2054
+  entry_type: misc
+  title: Household and Commercial Batteries
+  year: '2021'
+  url: https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2054
+  doi: null
+  isbn: null
+  source_class: other_explanatory
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2054|year:2021
+  ce_chapter_usage:
+  - ce-03
+  full31_chapter_usage:
+  - ch09
+  chapter_usage:
+  - ce-03
+  - ch09
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: w3c-mediacapture-streams-20251009
+  entry_type: misc
+  title: Media Capture and Streams
+  year: '2025'
+  url: https://www.w3.org/TR/mediacapture-streams/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.w3.org/TR/mediacapture-streams/|year:2025
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch08
+  - ch22
+  chapter_usage:
+  - ce-01
+  - ch08
+  - ch22
+  promotion_origin: ce_candidate
+  metadata_conflict_status: NONE
+  dated_edition: null
+- bib_key: w3c-permissions-20251006
+  entry_type: misc
+  title: Permissions
+  year: '2025'
+  url: https://www.w3.org/TR/2025/WD-permissions-20251006/
+  doi: null
+  isbn: null
+  source_class: standards_specifications
+  verification_status: PRIMARY_METADATA_VERIFIED
+  canonical_identifier: url:https://www.w3.org/TR/2025/WD-permissions-20251006/|year:2025
+  ce_chapter_usage:
+  - ce-01
+  full31_chapter_usage:
+  - ch22
+  chapter_usage:
+  - ce-01
+  - ch22
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
   dated_edition: null
@@ -1390,9 +1813,11 @@ records:
   ce_chapter_usage:
   - ce-01
   full31_chapter_usage:
+  - ch14
   - ch24
   chapter_usage:
   - ce-01
+  - ch14
   - ch24
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE
@@ -1410,10 +1835,12 @@ records:
   ce_chapter_usage:
   - ce-06
   full31_chapter_usage:
+  - ch14
   - ch24
   - ch25
   chapter_usage:
   - ce-06
+  - ch14
   - ch24
   - ch25
   promotion_origin: ce_candidate
@@ -1453,10 +1880,12 @@ records:
   - ce-01
   full31_chapter_usage:
   - ch01
+  - ch08
   - ch14
   chapter_usage:
   - ce-01
   - ch01
+  - ch08
   - ch14
   promotion_origin: ce_candidate
   metadata_conflict_status: NONE

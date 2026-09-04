@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH02
 chapter_number: 2
-title: "Follow One Tap Through the Entire Stack"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: true
@@ -67,9 +66,9 @@ Optional comparison, available on almost any device you already own: tap a contr
 
 A tap is not a single object. It is a path through an ecosystem. @fig-ch02-001 is the first-minute map: person → device → optional network → result. @fig-ch02-003 opens the box conceptually. Both are **conceptual / Representative educational architecture**—not a claim that any specific manufactured revision looks exactly like the diagram. The Device Quartet used elsewhere in this series—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—are research form factors and learning benchmarks defined in the hardware industrial-design source of truth; physical fabrication remains pending (**PHYSICAL_PENDING**) (CLM-0003).
 
-![End-to-end map from human tap through input, software, optional network, output, and perception.](../../../figures/ecosystem/fig-ch02-001-human-to-system.svg){#fig-ch02-001 fig-cap="One Tap: Human-to-System Overview. Conceptual educational experience map with a dashed optional network/service branch."}
+![End-to-end map from human tap through input, software, optional network, output, and perception.](../../../figures/ecosystem/fig-ch02-001-human-to-system.svg){#fig-ch02-001 fig-cap="One Tap: Human-to-System Overview. Conceptual educational experience map with a dashed optional network/service branch." fig-alt="End-to-end map from human tap through input, software, optional network, output, and perception."}
 
-![Exploded educational device view with display, digitizer, SoC, memory, storage, radio, battery, and thermal path.](../../../figures/exploded-views/fig-ch02-003-device-exploded.svg){#fig-ch02-003 fig-cap="Representative educational architecture of a touch-capable device. Not a validated gunnchOS EVT."}
+![Exploded educational device view with display, digitizer, SoC, memory, storage, radio, battery, and thermal path.](../../../figures/exploded-views/fig-ch02-003-device-exploded.svg){#fig-ch02-003 fig-cap="Representative educational architecture of a touch-capable device. Not a validated gunnchOS EVT." fig-alt="Exploded educational device view with display, digitizer, SoC, memory, storage, radio, battery, and thermal path."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -109,7 +108,7 @@ Visual change, sound, vibration, and the felt sense of “alive” close the loo
 
 @fig-ch02-004 stacks Application → Runtime/framework → Libraries/system services → Kernel → Drivers → Firmware → Hardware as a conceptual ladder. Names differ across platforms; the ladder’s purpose is orientation, not brand loyalty.
 
-![Vertical software stack from application down to hardware.](../../../figures/architecture/fig-ch02-004-software-stack.svg){#fig-ch02-004 fig-cap="Software stack supporting a tap-to-response path. Conceptual layering; real systems vary."}
+![Vertical software stack from application down to hardware.](../../../figures/architecture/fig-ch02-004-software-stack.svg){#fig-ch02-004 fig-cap="Software stack supporting a tap-to-response path. Conceptual layering; real systems vary." fig-alt="Vertical software stack from application down to hardware."}
 
 ---
 
@@ -117,7 +116,7 @@ Visual change, sound, vibration, and the felt sense of “alive” close the loo
 
 @fig-ch02-002 shows a numbered path with optional branches and a failure branch. Read it as a logical story, not as a claim that a CPU executes exactly one step at a time with no overlap.
 
-![Sequence across Human, Input HW, OS, Application, Network, Service, and Renderer.](../../../figures/sequence/fig-ch02-002-cross-layer-sequence.svg){#fig-ch02-002 fig-cap="Cross-Layer Tap Sequence. Conceptual sequence diagram with optional network path and failure/retry branch."}
+![Sequence across Human, Input HW, OS, Application, Network, Service, and Renderer.](../../../figures/sequence/fig-ch02-002-cross-layer-sequence.svg){#fig-ch02-002 fig-cap="Cross-Layer Tap Sequence. Conceptual sequence diagram with optional network path and failure/retry branch." fig-alt="Sequence across Human, Input HW, OS, Application, Network, Service, and Renderer."}
 
 1. **Human intent.** You decide to act.
 2. **Finger movement.** Contact begins.
@@ -156,7 +155,7 @@ Several of these may overlap. Sensing can continue while earlier events are stil
 
 @fig-ch02-005 places these side by side. Immediate local feedback can succeed on the local-only path while a later remote path is still pending—or has already failed. That split is not a trick of one brand’s UI; it is a structural fact of modern interfaces.
 
-![Side-by-side local-only and network-dependent execution paths.](../../../figures/ecosystem/fig-ch02-005-local-vs-network.svg){#fig-ch02-005 fig-cap="Local-only versus network-dependent tap paths. Conceptual compare-and-choose plate."}
+![Side-by-side local-only and network-dependent execution paths.](../../../figures/ecosystem/fig-ch02-005-local-vs-network.svg){#fig-ch02-005 fig-cap="Local-only versus network-dependent tap paths. Conceptual compare-and-choose plate." fig-alt="Side-by-side local-only and network-dependent execution paths."}
 
 ---
 
@@ -254,7 +253,7 @@ For Chapter 2, a successful tap-to-response experience may require all of the fo
 
 @fig-ch02-007 shows these as concurrent conditions, not a vanity checklist.
 
-![Hub-and-spoke diagram of concurrent Stability Contract conditions.](../../../figures/architecture/fig-ch02-007-stability-contract.svg){#fig-ch02-007 fig-cap="Stability Contract: concurrent hidden conditions behind a successful tap experience."}
+![Hub-and-spoke diagram of concurrent Stability Contract conditions.](../../../figures/architecture/fig-ch02-007-stability-contract.svg){#fig-ch02-007 fig-cap="Stability Contract: concurrent hidden conditions behind a successful tap experience." fig-alt="Hub-and-spoke diagram of concurrent Stability Contract conditions."}
 
 Three separations matter:
 
@@ -266,7 +265,7 @@ You experience the combined result. Blaming “the Wi-Fi” or “the app” wit
 
 @fig-ch02-006 sketches where time can accumulate. Segments shown there are labeled **illustrative** teaching aids (not measured gunnchOS benchmarks). This chapter does not invent hardware scores. Commodity lab timings you collect in **LAB-TAP-001** are *your* measured evidence for *your* device and browser—not a universal score.
 
-![Horizontal stacked bar of illustrative latency segments.](../../../figures/architecture/fig-ch02-006-latency-budget.svg){#fig-ch02-006 fig-cap="Illustrative tap latency budget. Segments are teaching aids, not measured gunnchOS benchmarks."}
+![Horizontal stacked bar of illustrative latency segments.](../../../figures/architecture/fig-ch02-006-latency-budget.svg){#fig-ch02-006 fig-cap="Illustrative tap latency budget. Segments are teaching aids, not measured gunnchOS benchmarks." fig-alt="Horizontal stacked bar of illustrative latency segments."}
 
 ---
 

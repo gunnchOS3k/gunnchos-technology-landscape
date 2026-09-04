@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH24
 chapter_number: 24
-title: "Privacy, Identity, Safety, Accessibility, and Ethics"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false
@@ -29,10 +28,11 @@ Two non-collapse rules govern the prose:
 
 1. **Privacy ≠ security.** Encryption, authentication, and least privilege can hold while collection, retention, sharing, or deletion still fail the person.
 2. **Accessibility ≠ convenience.** A path that is faster for one body/tool is not automatically usable for another; alternate routes are success conditions, not polish.
+3. **Safety ≠ censorship.** Safety limits aim to reduce harm from fluent or actionable outputs; they are not the same as viewpoint-censorship claims, and over-refusal is a distinct failure mode to name honestly.
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch24-moment}
 
 You need to finish something ordinary: reset access after a lockout, accept a permission or privacy notice, recover an account, or complete a verify step so a familiar feature will run. The app looks modern. A classmate finishes in seconds. Your path stalls—CAPTCHA that never announces, SMS you cannot receive, a privacy wall of text you cannot act on, or a recovery flow that exists only as a vision-only selfie.
 
@@ -48,7 +48,7 @@ This is CE-5’s responsible-use spine expanded for full-book depth. It is not a
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch24-notice}
 
 Before naming Solove harms or assurance levels, notice the human contract that broke.
 
@@ -62,7 +62,7 @@ Optional commodity notice (no specialized gear): open one familiar app’s priva
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch24-ecosystem}
 
 A stuck recovery or opaque consent is not a single object. It is a path through an ecosystem. **FIG-CH24-001** is the first-minute map: human experience at the center, with concurrent spokes for collect → use → retain → share → delete/redact. Treat it as **Representative educational architecture**, not a claim that every app shares one vendor topology.
 
@@ -104,7 +104,7 @@ Vendors, reviewers, regulators, and equity of private compute shape who can comp
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch24-signal}
 
 Here the “signal” is a person trying to keep usable control of access and data—not a single TLS handshake. Read the sequence as a logical journey. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -144,7 +144,7 @@ Prefer failure *domains* over confident blame: disclosure/consent, identity proo
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch24-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -177,7 +177,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 - **Plain language.** Limits that keep harmful outcomes from being easy to enact—especially fluent outputs that look actionable.
 - **Analogy (labeled).** Like a power tool’s guard: it does not make the tool “moral”; it changes what is easy.
 - **Technical function.** Bounds deployment and reliance practices; NIST AI RMF vocabulary is useful without declaring AI itself good or bad [@nist_ai_rmf_100_1].
-- **Constraints.** Filters can over-refuse; fluency can still mislead; humans remain accountable for reliance.
+- **Constraints.** Safety ≠ censorship: filters can over-refuse without becoming a free-speech slogan; fluency can still mislead; humans remain accountable for reliance.
 - **Symptoms.** Confident wrong answer treated as fact; unexplained refusal storms; tool actions without disclosure.
 
 ### Accessibility path
@@ -206,7 +206,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch24-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -238,7 +238,7 @@ WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) hosts adj
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch24-try}
 
 ### LAB-TRUST-001 — Compare local vs remote AI paths and write a consent/trust card
 
@@ -282,7 +282,7 @@ WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) hosts adj
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch24-build}
 
 Extend LAB-TRUST-001 without turning Part V into a fake compliance certificate.
 
@@ -310,7 +310,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F first-class.
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch24-secure-include}
 
 This section is the chapter’s core—not an appendix. Keep threats attached to user experience.
 
@@ -344,7 +344,7 @@ Observation before inference (**FIG-CH24-003** ethics ladder). Disclose AI assis
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch24-career}
 
 One blocked recovery crosses many ownership domains. No table promises employment; roles vary by organization. LAB-TRUST-001 artifacts resemble early professional evidence in miniature: labeled observations, consent cards, and explicit uncertainty.
 
@@ -361,7 +361,7 @@ Portfolio hint: a scrubbed consent card with `fixture` labels beats a vibes-base
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch24-check}
 
 **Concept.** In one sentence, distinguish *privacy* from *security* so neither swallows the other.
 
@@ -393,7 +393,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch24-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch24/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 
@@ -410,6 +410,7 @@ Candidate terms introduced or reinforced here (see also `publication/full31/chap
 | Consent / trust card | Audience, purpose, classes, retention, opt-out, AI disclosure |
 | Privacy ≠ security | Controls can hold while lifecycle still fails the person |
 | Accessibility ≠ convenience | Faster for one path is not usable for all paths |
+| Safety ≠ censorship | Harm-reduction limits ≠ viewpoint-censorship claims; over-refusal is a named failure |
 | Stability Contract | Concurrent hidden conditions that keep an experience alive (book teaching model) |
 
 Related earlier chapters: CE-5 / CH21 inference and disclosure adjacency; CH23 security boundaries without replacing privacy. Related later chapters: equity deepening (CH25), evidence practice (CH27), responsibility synthesis (CH30/CH31).

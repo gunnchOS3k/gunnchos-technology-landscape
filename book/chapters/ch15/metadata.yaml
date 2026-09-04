@@ -90,5 +90,6 @@ anatomy_anchors:
 blockers:
   - "CLM-CH15-005 Device Quartet / Edge IO placement benchmarks PHYSICAL_PENDING"
   - "Gate 3 reader evidence pending — no PASS claimed; do not alter gate-3 responses"
-  - "LAB-PLACE-001 remains proposed-only; not a live publication lab ID"
+  - "LAB-PLACE-001 disposition: INLINE_ACTIVITY via LAB-PKT-001 placement hypothesis (not a labs/ package)"
+
 bibliography_note: "Cite keys present in book/references/references.bib (CH15 additions from CE-4 verified candidates); project physical claims stay PHYSICAL_PENDING."

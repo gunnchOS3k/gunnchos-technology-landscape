@@ -1,8 +1,7 @@
 ---
-status: working_draft
+status: draft
 chapter_id: CH12
 chapter_number: 12
-title: "Operating Systems, Processes, Threads, and Scheduling"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false
@@ -68,7 +67,7 @@ Optional seat comparison: start a familiar local editor and a media player. Scro
 
 Shared-device feel is not a single object. It is a path through an inside-the-device ecosystem. @fig-ch12-001 is the first-minute map for this chapter: app icons → processes → threads → scheduler → CPU cores. Treat it as **conceptual / Representative educational architecture**—not a claim that any specific manufactured revision looks exactly like the diagram.
 
-![Conceptual map from apps through processes and threads to the OS scheduler and CPU cores.](../../../figures/architecture/fig-ch12-001-apps-to-scheduler.svg){#fig-ch12-001 fig-cap="Apps → processes/threads → scheduler → CPU cores. Conceptual educational map; OS mediates while instructions still execute on hardware."}
+![Conceptual map from apps through processes and threads to the OS scheduler and CPU cores.](../../../figures/architecture/fig-ch12-001-apps-to-scheduler.svg){#fig-ch12-001 fig-cap="Apps → processes/threads → scheduler → CPU cores. Conceptual educational map; OS mediates while instructions still execute on hardware." fig-alt="Conceptual map from apps through processes and threads to the OS scheduler and CPU cores."}
 
 The Device Quartet used elsewhere in this series—Student 14.5-inch, Handheld Hybrid, DS-XL Coder, and Edge IO Wearables—are research form factors and learning benchmarks. Physical fabrication and EVT scheduler/load traces remain **PHYSICAL_PENDING**; do not treat comparison-matrix core counts or thermal-scheduler stories as shipping product facts [@src-hardware-quartet].
 
@@ -117,13 +116,13 @@ Follow one ordinary shared-device moment—say, scrolling a document while audio
 7. **Waits appear.** A thread may stop being runnable while it waits for memory, storage, a lock, or another thread. Busy and waiting can both feel like “frozen” from the seat.
 8. **Feedback returns.** Pixels update; audio buffers refill; or the UI stops responding. Your nervous system judges the combined timeline.
 
-![Conceptual context-switch swimlane from Thread A through an OS save/restore step to Thread B.](../../../figures/architecture/fig-ch12-002-context-switch.svg){#fig-ch12-002 fig-cap="Context-switch swimlane. Conceptual teaching sequence; not a measured ftrace capture."}
+![Conceptual context-switch swimlane from Thread A through an OS save/restore step to Thread B.](../../../figures/architecture/fig-ch12-002-context-switch.svg){#fig-ch12-002 fig-cap="Context-switch swimlane. Conceptual teaching sequence; not a measured ftrace capture." fig-alt="Conceptual context-switch swimlane from Thread A through an OS save/restore step to Thread B."}
 
 ### Concurrency without fairy tales
 
 @fig-ch12-003 separates **concurrency** (structuring overlapping work over time) from **parallelism** (simultaneous progress on multiple cores). The distinction is an **illustrative** teaching aid—not a measured speedup curve [@patterson-hennessy; @tanenbaum-bos].
 
-![Illustrative comparison of concurrency interleaving versus parallel multi-core execution.](../../../figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg){#fig-ch12-003 fig-cap="Concurrency vs parallelism. Illustrative teaching comparison; not measured benchmarks."}
+![Illustrative comparison of concurrency interleaving versus parallel multi-core execution.](../../../figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg){#fig-ch12-003 fig-cap="Concurrency vs parallelism. Illustrative teaching comparison; not measured benchmarks." fig-alt="Illustrative comparison of concurrency interleaving versus parallel multi-core execution."}
 
 In plain language for this book:
 
@@ -238,7 +237,7 @@ Three separations matter here:
 
 Commodity observations you collect in **LAB-CMS-001** are *your* evidence for *your* device and session—not universal EVT curves, and not Gate 3 reader validation. @fig-ch12-004 shows a classroom **n=1** before/during fixture snapshot inherited from that lab’s teaching transcript—not a product SLO and not Device Quartet EVT [@src-hardware-quartet].
 
-![Before/during OS-monitor fixture snapshots for classroom teaching (n=1).](../../../figures/architecture/fig-ch12-004-monitor-snapshots.svg){#fig-ch12-004 fig-cap="LAB-CMS-001 fixture before/during monitor readings. Classroom n=1 teaching figure; not a product SLO or Quartet EVT."}
+![Before/during OS-monitor fixture snapshots for classroom teaching (n=1).](../../../figures/architecture/fig-ch12-004-monitor-snapshots.svg){#fig-ch12-004 fig-cap="LAB-CMS-001 fixture before/during monitor readings. Classroom n=1 teaching figure; not a product SLO or Quartet EVT." fig-alt="Before/during OS-monitor fixture snapshots for classroom teaching (n=1)."}
 
 Device Quartet scheduler behavior under load remains **PHYSICAL_PENDING**—no fabricated thermal/scheduler traces in this chapter.
 
@@ -248,7 +247,7 @@ Device Quartet scheduler behavior under load remains **PHYSICAL_PENDING**—no f
 
 ### LAB-CMS-001 — Make Local Slowness Visible
 
-**Observable question.** When a familiar local app feels slow but the connectivity icon looks fine, what evidence can I gather—using only commodity tools—to separate **CPU**, **memory**, **storage**, and **scheduling/thermal** hypotheses?
+**Observable question.** When two apps share one machine—or one hung window freezes the UI—what evidence can I gather—using only commodity tools—to separate **process**, **thread**, and **scheduler** behavior from a vague “the CPU is dying” story?
 
 This chapter’s Try It **inherits and links** the publication-owned CE-3 lab rather than inventing a duplicate `LAB-SCHED-001` package. Follow the full lab packet at [`labs/LAB-CMS-001/`](../../../labs/LAB-CMS-001/) (README, routes, fixtures, portfolio templates). Focus your write-up on the **process / thread / scheduler** columns of the diagnosis; Chapters 6–7 reuse the same lab for CPU and memory/storage emphasis.
 
@@ -268,7 +267,7 @@ This chapter’s Try It **inherits and links** the publication-owned CE-3 lab ra
 
 #### Prediction
 
-Before measuring, write which hidden part you expect to dominate during your controlled action: CPU activity, memory pressure, storage I/O, or scheduling/thermal contention.
+Before measuring, write which OS behavior you expect to dominate during your controlled action: process contention, thread/UI-thread stalls, scheduling latency, or memory/storage side effects that only *look* like “CPU is busy.”
 
 #### Route A — Commodity OS monitor (baseline)
 
@@ -287,7 +286,7 @@ Read-only sampling where the OS exposes coarse stats. If a metric is unavailable
 
 #### Route C — Fixture fallback
 
-Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible or you must avoid personal screenshots. Fixtures teach concepts; they are not claims about your personal device. @fig-ch12-004 reproduces fixture `the blocked CMS measured plate` for classroom reading.
+Use `labs/LAB-CMS-001/fixtures/` when monitors are inaccessible or you must avoid personal screenshots. Fixtures teach concepts; they are not claims about your personal device. @fig-ch12-004 reproduces the LAB-CMS-001 before/during monitor teaching fixture for classroom reading. A separate CE measured-plate figure remains blocked pending qualifying evidence—do not treat this classroom plate as that blocked asset.
 
 #### Evidence (minimum)
 
@@ -386,8 +385,8 @@ Day-one habits transfer across those roles: write a prediction before you open a
 2. **“An app icon is the same thing as a process.”**  
    Counter: icons are the surface; processes are OS abstractions that may outlive or outnumber windows [@silberschatz-galvin-gagne].
 
-3. **“More CPU cores always make everything faster.”**  
-   Counter: useful overlap and non-CPU bottlenecks decide; serial and waiting paths remain [@patterson-hennessy].
+3. **“If the clock widget still ticks, a frozen window cannot be a scheduling problem.”**  
+   Counter: other processes can keep running while one UI thread or process is stuck waiting or not being scheduled [@tanenbaum-bos; @silberschatz-galvin-gagne].
 
 4. **“Concurrency and parallelism are synonyms.”**  
    Counter: concurrency structures overlapping work; parallelism is simultaneous hardware progress [@patterson-hennessy].
@@ -464,8 +463,8 @@ See also Chapter 2 (process/thread/scheduler naming), Chapter 6 (CPU / parallel 
 ### FIG-CH12-004 — OS-monitor before/during (fixture)
 
 - **File:** `figures/architecture/fig-ch12-004-monitor-snapshots.svg`
-- **Truth:** measured teaching fixture (LAB-CMS-001 / the blocked CMS measured plate); classroom n=1
-- **A11y:** `figures/preproduction/accessibility/fig-ch12-004.yaml`
+- **Truth:** illustrative classroom fixture (n=1) from LAB-CMS-001 before/during monitor readings (not product evidence; separate CE measured-plate asset remains blocked)
+- **A11y:** `figures/accessibility/fig-ch12-004.yaml`
 
 Related CE-3 maps (optional cross-read, not required embeds): `figures/preproduction/ce-03/fig-ce3-001.svg`, `fig-ce3-003.svg`.
 

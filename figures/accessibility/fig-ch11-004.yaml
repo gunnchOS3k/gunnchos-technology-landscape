@@ -1,14 +1,20 @@
 figure_id: FIG-CH11-004
-title: "Update and recovery boundary"
-caption: "Update and recovery boundary. Truth classification: conceptual. Color is not the sole encoding."
-alt_text: "Update and recovery boundary. Reading order: Trusted update; Interrupted update; Recovery path; Unsafe rollback."
+title: "Update failure → recovery → outcomes"
+caption: "Trusted update can interrupt; recovery may restore a usable device or leave an unusable outcome. Conceptual Stability Contract teaching—not vendor brick statistics."
+alt_text: "FIG-CH11-004: Trusted update to interrupted update to recovery path, then usable restored or unusable outcome."
 text_equivalent: |
-  Update and recovery boundary. Nodes in reading order: Trusted update; Interrupted update; Recovery path; Unsafe rollback. Truth: conceptual. Educational architecture; no invented measurements.
+  FIG-CH11-004 reading order: (1) Trusted update — signed/expected path,
+  (2) Interrupted update — power loss/abort/mismatch (dashed),
+  (3) Recovery path — rollback/rescue/reflash,
+  (4a) Usable restored — device boots; human can continue,
+  (4b) Unusable outcome — stuck/unbootable/needs external rescue (dashed).
+  Formal interrupted-update claims remain SOURCE_NEEDED. Quartet measured update/recovery = PHYSICAL_PENDING.
 reading_order:
 - Trusted update
 - Interrupted update
 - Recovery path
-- Unsafe rollback
+- Usable restored
+- Unusable outcome
 source: figures/full31/ch11/fig-ch11-004.svg
 evidence_note: "Conceptual/illustrative teaching asset; no invented measurements."
 truth_classification: conceptual
@@ -17,4 +23,4 @@ status: conceptual
 production_status: implemented
 color_independent_encoding: "Shape + label + solid vs dashed stroke; do not rely on color alone."
 reviewer: pending-human-visual-review
-version: 0.1.0
+version: 0.2.0

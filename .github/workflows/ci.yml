@@ -58,8 +58,20 @@ jobs:
         run: make full31-html
       - name: Full31 EPUB book
         run: make full31-epub
+      - name: Official EPUBCheck (pinned W3C)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y default-jre-headless
+          make full31-epubcheck
       - name: Full31 PDF book
         run: make full31-pdf
+      - name: Full31 publication QA
+        run: make full31-publication-qa
+      - name: Full31 quality / continuity / terminology / pre-review
+        run: |
+          make full31-quality-audit
+          make full31-terminology-check
+          make full31-pre-review-check
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4
         with:

@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH25
 chapter_number: 25
-title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false
@@ -27,7 +26,7 @@ Part V asks who is protected, who is served, and who is quietly left out. Chapte
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch25-moment}
 
 Two peers attempt the same task. One finishes on a strong device and a stable link. The other stalls: cheaper hardware, metered cellular, shared computer time, denser language, or an assistive path that never announces “done.” From the author’s seat the product looks fine. From the second seat the experience never existed.
 
@@ -43,7 +42,7 @@ This is not a census chapter, not a WCAG certification course, and not a Device 
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch25-notice}
 
 Before naming “digital divide” numbers, notice the human contract that broke for one person and held for another.
 
@@ -57,7 +56,7 @@ Optional commodity notice (no specialized gear): pick one familiar send/submit/s
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch25-ecosystem}
 
 Exclusion is rarely a single broken widget. It is a path through an ecosystem where one privileged configuration can hide concurrent failures. **FIG-CH25-001** is the first-minute map: same task, divergent completion across constraints. Treat it as **Representative educational architecture**, not a claim that every product fails the same way.
 
@@ -95,7 +94,7 @@ How teams label observations, what they publish as “inclusive,” and what pri
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch25-signal}
 
 Here the “signal” is the human task’s fate across privileged and constrained seats—not a single ping. Read the sequence as a logical equity-diagnosis story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -128,7 +127,7 @@ Prefer exclusion *mechanisms* over blaming individuals: device class, cost, band
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch25-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -182,7 +181,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch25-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -212,7 +211,7 @@ Inherit CE-6 concurrent conditions (SC-01…SC-11), then emphasize these measura
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch25-try}
 
 ### LAB-CE06-001 — Equity fields inside EMIT (inherit)
 
@@ -257,7 +256,7 @@ Inherit CE-6 concurrent conditions (SC-01…SC-11), then emphasize these measura
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch25-build}
 
 Extend equity practice without turning Part V into invented benchmarks.
 
@@ -285,7 +284,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F as a first-clas
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch25-secure-include}
 
 ### Security
 
@@ -313,7 +312,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch25-career}
 
 Equity work crosses product, research, policy, and education. No table promises employment; roles vary by organization. LAB-CE06-001 equity fields resemble early professional evidence in miniature: labeled observations, constrained-route notes, and explicit uncertainty.
 
@@ -330,7 +329,7 @@ Portfolio hint: a scrubbed two-seat completion table with evidence labels is mor
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch25-check}
 
 **Concept.** In one sentence, define *digital equity* so that it requires asking who is excluded—not only who is delighted.
 
@@ -360,7 +359,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch25-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

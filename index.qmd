@@ -1,5 +1,7 @@
-# The Technology Landscape
-
+---
+title: "The Technology Landscape"
+number: false
+---
 ::: {.callout-important}
 ## WORKING FULL-MANUSCRIPT DRAFT
 
@@ -15,3 +17,14 @@ Welcome to the full-book working manuscript preview.
 Teaching model: **Human experience → system → component → code → network → society**
 
 Gate posture remains `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`. Historical `CH02-REVIEW-R1` is chapter-prototype evidence only; full-book human validation is deferred until all 31 working drafts exist.
+
+## Start here
+
+| Need | Page |
+|---|---|
+| Know first | [Know first](book/frontmatter/know-first.qmd) |
+| Status / rights | [Manuscript status](book/frontmatter/status.qmd) · [Rights notice](book/frontmatter/rights.qmd) |
+| How to use / pathways | [How to use](book/frontmatter/how-to-use.qmd) · [Pathways](book/frontmatter/reader-pathways.qmd) |
+| Where am I? | [Parts and chapters](book/appendices/parts-chapters.qmd) |
+| Glossary / labs / figures | [Glossary](book/appendices/glossary.qmd) · [Labs](book/appendices/lab-index.qmd) · [Figures](book/appendices/figure-index.qmd) |
+| References / standards / roles / errata | [References](book/appendices/references.qmd) · [Key standards](book/appendices/key-standards.qmd) · [Roles](book/appendices/career-role-map.qmd) · [Errata](book/appendices/errata.qmd) |

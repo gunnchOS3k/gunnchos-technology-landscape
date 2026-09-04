@@ -1,0 +1,4477 @@
+# FIGURE_AUDIT.yaml — Agent F visual pedagogy ledger (Phase 1)
+# issue_state: KEEP | POLISH | REDESIGN | REMOVE | BLOCKED_EVIDENCE_REQUIRED
+schema_version: 1
+audit_id: full31-quality-F-visual-pedagogy
+agent: F
+wave: full31-quality-convergence-001
+base_sha: "2e440e43f89b61c112f088939f73440024283bbf"
+scope: "All reader-facing FIG-* cited in book/chapters/*/chapter.md plus registry live assets; FIG-CE3-009 blocked ledger row."
+method:
+  - "Asset resolution via figure_registry.yaml, CE registry, and filesystem fallback"
+  - "SVG structural/legibility scan (font sizes, data-figure-id, C1 mojibake, stamp template)"
+  - "Accessibility sidecar presence and required fields"
+  - "Figure-to-prose teaching-window heuristic"
+  - "Human prioritization: REDESIGN reserved for misleading stamp reuse and structurally wrong forms"
+constraints_honored:
+  - "FIG-CE3-009 remains BLOCKED_EVIDENCE_REQUIRED"
+  - "No Gate 3 / CH02-REVIEW-R1 changes"
+  - "No wholesale manuscript rewrite"
+  - "Audit before rewrite"
+  - "Color never sole encoding (verified via labels/shapes/stroke patterns in sampled figures)"
+counts:
+  KEEP: 60
+  POLISH: 62
+  REDESIGN: 3
+  REMOVE: 0
+  BLOCKED_EVIDENCE_REQUIRED: 1
+  total_entries: 126
+  live_reader_refs: 125
+  a11y_failures: 0
+  unresolved_reader_refs: 0
+  empty_see_figure_refs: 0
+phase2_scope:
+  fix_mojibake_and_operators: true
+  add_missing_data_figure_id: true
+  register_ch23: true
+  redesign_high_priority_stamps:
+    - "FIG-CH11-004"
+    - "FIG-CH26-003"
+    - "FIG-CH30-003"
+  no_wholesale_redesign: true
+phase2_results:
+  completed: true
+  figures_changed_count: 39
+  figures_changed:
+    - "Mojibake/C1 glyph repair on 14 SVGs (U+0092/U+0094 → →)"
+    - "Relational backtick repairs on FIG-CH06-003, FIG-CH15-002, FIG-CH23-001, FIG-CH23-003"
+    - "Added data-figure-id on 17 CH02/CH04/CH05/CH09 assets"
+    - "Bumped sub-10pt labels on FIG-CH02-002 and FIG-CH02-003"
+    - "REDESIGN FIG-CH11-004 update-failure map (preserve ID)"
+    - "REDESIGN FIG-CH26-003 secrets refuse-line (was wrong employment stamp; preserve ID)"
+    - "REDESIGN FIG-CH30-003 learning-proof ≠ employment boundary (preserve ID)"
+    - "Registered FIG-CH23-001/002/003 in figure_registry.yaml + accessibility sidecars"
+  redesigned_ids:
+    - FIG-CH11-004
+    - FIG-CH26-003
+    - FIG-CH30-003
+  post_phase2_notes:
+    - "Phase 1 issue_state values retained as audit ledger; redesigned IDs addressed in phase2_results."
+    - "Remaining POLISH rows are mostly thin prose-integration or template-scaffold residuals deferred (no wholesale redesign)."
+    - "FIG-CE3-009 remains BLOCKED_EVIDENCE_REQUIRED."
+  a11y_failures: 0
+  unresolved_reader_refs: 0
+  empty_see_figure_refs: 0
+
+figures:
+  -
+    figure_id: "FIG-CE3-009"
+    issue_state: BLOCKED_EVIDENCE_REQUIRED
+    priority: blocker
+    chapter: CH03
+    path: null
+    truth_class: measured_pending
+    live_reader_ref: false
+    criteria:
+      teaches: false
+      chapter_explains: false
+      labels_clear: null
+      flow_clear: null
+      hierarchy_clear: null
+      book_size_readable: null
+      value_beyond_paragraph: false
+      intentional_artwork: false
+      a11y_matches: false
+      truth_class_ok: true
+    findings:
+      - "Measured annotated monitor snapshot remains blocked pending real fixture evidence."
+      - "LAB-CMS-001 synthetic fixtures do not unblock this figure."
+      - "Must not appear as a live reader-facing FIG ref."
+    phase2_action: none_keep_blocked
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH11-004"
+    issue_state: REDESIGN
+    priority: high
+    chapter: CH11
+    chapters:
+      - CH11
+    path: "figures/full31/ch11/fig-ch11-004.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: false
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: false
+      hierarchy_clear: false
+      book_size_readable: true
+      value_beyond_paragraph: false
+      intentional_artwork: false
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch11-004.yaml"
+    findings:
+      - "Concentric stamp template does not match the claimed concept; needs concept-appropriate structure."
+    phase2_action: redesign_structure
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH26-003"
+    issue_state: REDESIGN
+    priority: high
+    chapter: CH26
+    chapters:
+      - CH26
+    path: "figures/full31/ch26/fig-ch26-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: false
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: false
+      hierarchy_clear: false
+      book_size_readable: true
+      value_beyond_paragraph: false
+      intentional_artwork: false
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch26-003.yaml"
+    findings:
+      - "Concentric stamp template does not match the claimed concept; needs concept-appropriate structure."
+    phase2_action: redesign_structure
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH30-003"
+    issue_state: REDESIGN
+    priority: high
+    chapter: CH30
+    chapters:
+      - CH30
+    path: "figures/full31/ch30/fig-ch30-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: false
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: false
+      hierarchy_clear: false
+      book_size_readable: true
+      value_beyond_paragraph: false
+      intentional_artwork: false
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch30-003.yaml"
+    findings:
+      - "Concentric stamp template does not match the claimed concept; needs concept-appropriate structure."
+    phase2_action: redesign_structure
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE06-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH20
+    chapters:
+      - CH20
+      - CH31
+    path: "figures/preproduction/ce-06/fig-ce06-001.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: false
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 19
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce06-001.yaml"
+    findings:
+      - "Prose cites figure with weak teaching takeaway nearby (introduce/explain in chapter body)."
+    phase2_action: flag_prose_integration
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/ecosystem/fig-ch02-001-human-to-system.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 20
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-001.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-002"
+    issue_state: POLISH
+    priority: high
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/sequence/fig-ch02-002-cross-layer-sequence.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: false
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: false
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 9.0
+      n_text_nodes: 28
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-002.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+      - "Body labels use font-size 9.0 (print/book legibility risk; prefer ≥10–11)."
+      - "Prose cites figure with weak teaching takeaway nearby (introduce/explain in chapter body)."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/exploded-views/fig-ch02-003-device-exploded.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: false
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 9.0
+      n_text_nodes: 36
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-003.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+      - "Body labels use font-size 9.0 (print/book legibility risk; prefer ≥10–11)."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-004"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/architecture/fig-ch02-004-software-stack.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 23
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-004.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-005"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/ecosystem/fig-ch02-005-local-vs-network.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 20
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-005.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-006"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/architecture/fig-ch02-006-latency-budget.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 21
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-006.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH02-007"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH02
+    chapters:
+      - CH02
+    path: "figures/architecture/fig-ch02-007-stability-contract.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 22
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch02-007.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH04-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH04
+    chapters:
+      - CH04
+    path: "figures/ecosystem/fig-ch04-001-quartet-learning-lab.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch04-001.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH04-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH04
+    chapters:
+      - CH04
+    path: "figures/ecosystem/fig-ch04-002-same-task-constraints.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 12.0
+      n_text_nodes: 13
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch04-002.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH04-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH04
+    chapters:
+      - CH04
+    path: "figures/ecosystem/fig-ch04-003-constraint-matrix.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 12.0
+      n_text_nodes: 33
+      has_c1_mojibake: true
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch04-003.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x94); replace with Unicode arrows/punctuation."
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH05-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH05
+    chapters:
+      - CH05
+    path: "figures/ecosystem/fig-ch05-001-press-to-logic.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 14
+      has_c1_mojibake: true
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch05-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH05-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH05
+    chapters:
+      - CH05
+    path: "figures/architecture/fig-ch05-002-analog-vs-digital.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch05-002.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH05-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH05
+    chapters:
+      - CH05
+    path: "figures/sequence/fig-ch05-003-clock-edges.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 13
+      has_c1_mojibake: true
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch05-003.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH05-004"
+    issue_state: POLISH
+    priority: high
+    chapter: CH05
+    chapters:
+      - CH05
+    path: "figures/architecture/fig-ch05-004-logic-blocks.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 12.0
+      n_text_nodes: 11
+      has_c1_mojibake: true
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch05-004.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH06-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH06
+    chapters:
+      - CH06
+    path: "figures/architecture/fig-ch06-001-app-to-cores.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 17
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ch06-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH06-002"
+    issue_state: POLISH
+    priority: high
+    chapter: CH06
+    chapters:
+      - CH06
+    path: "figures/architecture/fig-ch06-002-serial-vs-parallel.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 13
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ch06-002.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH06-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH06
+    chapters:
+      - CH06
+    path: "figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 17
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ch06-003.yaml"
+    findings:
+      - "Backtick used as relational operator (should be ≠ / vs / →)."
+    phase2_action: fix_operators
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH07-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH07
+    chapters:
+      - CH07
+    path: "figures/architecture/fig-ch07-001-memory-hierarchy.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 14
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch07-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH07-002"
+    issue_state: POLISH
+    priority: high
+    chapter: CH07
+    chapters:
+      - CH07
+    path: "figures/sequence/fig-ch07-002-open-file-path.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch07-002.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH07-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH07
+    chapters:
+      - CH07
+    path: "figures/architecture/fig-ch07-003-memory-pressure.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch07-003.yaml"
+    findings:
+      - "Backtick used as relational operator (should be ≠ / vs / →)."
+    phase2_action: fix_operators
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH08-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH08
+    chapters:
+      - CH08
+    path: "figures/ecosystem/fig-ch08-001-media-sensorium.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 19
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch08-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92, 0x94); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH08-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH08
+    chapters:
+      - CH08
+    path: "figures/architecture/fig-ch08-003-sampling.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 7
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch08-003.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH09-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH09
+    chapters:
+      - CH09
+    path: "figures/ecosystem/fig-ch09-001-energy-path.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 16
+      has_c1_mojibake: true
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch09-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH09-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH09
+    chapters:
+      - CH09
+    path: "figures/ecosystem/fig-ch09-002-charger-vs-battery.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 12.0
+      n_text_nodes: 13
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch09-002.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH09-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH09
+    chapters:
+      - CH09
+    path: "figures/exploded-views/fig-ch09-003-enclosure-roles.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: true
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch09-003.yaml"
+    findings:
+      - "Missing data-figure-id attribute on root SVG."
+    phase2_action: add_data_figure_id
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH11-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH11
+    chapters:
+      - CH11
+    path: "figures/full31/ch11/fig-ch11-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch11-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH11-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH11
+    chapters:
+      - CH11
+    path: "figures/full31/ch11/fig-ch11-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch11-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH11-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH11
+    chapters:
+      - CH11
+    path: "figures/full31/ch11/fig-ch11-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: false
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch11-003.yaml"
+    findings:
+      - "Prose cites figure with weak teaching takeaway nearby (introduce/explain in chapter body)."
+    phase2_action: flag_prose_integration
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH12-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH12
+    chapters:
+      - CH12
+    path: "figures/architecture/fig-ch12-001-apps-to-scheduler.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 21
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch12-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH13-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH13
+    chapters:
+      - CH13
+    path: "figures/full31/ch13/fig-ch13-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch13-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH13-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH13
+    chapters:
+      - CH13
+    path: "figures/full31/ch13/fig-ch13-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 7
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch13-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH14-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH14
+    chapters:
+      - CH14
+    path: "figures/full31/ch14/fig-ch14-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch14-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH14-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH14
+    chapters:
+      - CH14
+    path: "figures/full31/ch14/fig-ch14-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch14-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH15-002"
+    issue_state: POLISH
+    priority: high
+    chapter: CH15
+    chapters:
+      - CH15
+    path: "figures/ecosystem/fig-ch15-002-access-vs-placement.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 16
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch15-002.yaml"
+    findings:
+      - "Backtick used as relational operator (should be ≠ / vs / →)."
+    phase2_action: fix_operators
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH16-004"
+    issue_state: POLISH
+    priority: high
+    chapter: CH16
+    chapters:
+      - CH16
+    path: "figures/measured/fig-ch16-004-lab-timing.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 19
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch16-004.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH17-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH17
+    chapters:
+      - CH17
+    path: "figures/full31/ch17/fig-ch17-002.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 7
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch17-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH17-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH17
+    chapters:
+      - CH17
+    path: "figures/full31/ch17/fig-ch17-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch17-003.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH18-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH18
+    chapters:
+      - CH18
+    path: "figures/full31/ch18/fig-ch18-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 7
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch18-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH19-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH19
+    chapters:
+      - CH19
+    path: "figures/full31/ch19/fig-ch19-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch19-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH20-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH20
+    chapters:
+      - CH20
+    path: "figures/full31/ch20/fig-ch20-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: false
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch20-002.yaml"
+    findings:
+      - "Prose cites figure with weak teaching takeaway nearby (introduce/explain in chapter body)."
+    phase2_action: flag_prose_integration
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH20-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH20
+    chapters:
+      - CH20
+    path: "figures/full31/ch20/fig-ch20-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch20-003.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH21-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH21
+    chapters:
+      - CH21
+    path: "figures/full31/ch21/fig-ch21-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch21-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH22-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH22
+    chapters:
+      - CH22
+    path: "figures/full31/ch22/fig-ch22-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch22-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH22-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH22
+    chapters:
+      - CH22
+    path: "figures/full31/ch22/fig-ch22-002.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 7
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch22-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH23-001"
+    issue_state: POLISH
+    priority: high
+    chapter: CH23
+    chapters:
+      - CH23
+    path: "figures/architecture/fig-ch23-001-identity-authn-authz.svg"
+    registry_source: disk
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: false
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 12
+      has_c1_mojibake: true
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ch23-001.yaml"
+    findings:
+      - "C1 control / mojibake glyphs in SVG text (0x92); replace with Unicode arrows/punctuation."
+      - "Backtick used as relational operator (should be ≠ / vs / →)."
+      - "Live reader-facing figure not listed in figures/figure_registry.yaml (disk-resolved)."
+    phase2_action: fix_mojibake
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH23-002"
+    issue_state: POLISH
+    priority: high
+    chapter: CH23
+    chapters:
+      - CH23
+    path: "figures/ecosystem/fig-ch23-002-chip-to-cloud-trust.svg"
+    registry_source: disk
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 21
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ch23-002.yaml"
+    findings:
+      - "Live reader-facing figure not listed in figures/figure_registry.yaml (disk-resolved)."
+    phase2_action: register_figure
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH23-003"
+    issue_state: POLISH
+    priority: high
+    chapter: CH23
+    chapters:
+      - CH23
+    path: "figures/architecture/fig-ch23-003-encryption-boundaries.svg"
+    registry_source: disk
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ch23-003.yaml"
+    findings:
+      - "Live reader-facing figure not listed in figures/figure_registry.yaml (disk-resolved)."
+    phase2_action: register_figure
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH24-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH24
+    chapters:
+      - CH24
+    path: "figures/full31/ch24/fig-ch24-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch24-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH24-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH24
+    chapters:
+      - CH24
+    path: "figures/full31/ch24/fig-ch24-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch24-003.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH25-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH25
+    chapters:
+      - CH25
+    path: "figures/full31/ch25/fig-ch25-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 7
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch25-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH25-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH25
+    chapters:
+      - CH25
+    path: "figures/full31/ch25/fig-ch25-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch25-003.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH26-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH26
+    chapters:
+      - CH26
+    path: "figures/full31/ch26/fig-ch26-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch26-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH26-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH26
+    chapters:
+      - CH26
+    path: "figures/full31/ch26/fig-ch26-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: false
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch26-002.yaml"
+    findings:
+      - "Prose cites figure with weak teaching takeaway nearby (introduce/explain in chapter body)."
+    phase2_action: flag_prose_integration
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH27-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH27
+    chapters:
+      - CH27
+    path: "figures/full31/ch27/fig-ch27-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch27-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH27-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH27
+    chapters:
+      - CH27
+    path: "figures/full31/ch27/fig-ch27-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 7
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch27-003.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH28-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH28
+    chapters:
+      - CH28
+    path: "figures/full31/ch28/fig-ch28-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: false
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch28-002.yaml"
+    findings:
+      - "Prose cites figure with weak teaching takeaway nearby (introduce/explain in chapter body)."
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: flag_prose_integration
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH29-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH29
+    chapters:
+      - CH29
+    path: "figures/full31/ch29/fig-ch29-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch29-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH29-003"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH29
+    chapters:
+      - CH29
+    path: "figures/full31/ch29/fig-ch29-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch29-003.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH30-001"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH30
+    chapters:
+      - CH30
+    path: "figures/full31/ch30/fig-ch30-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch30-001.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH30-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH30
+    chapters:
+      - CH30
+    path: "figures/full31/ch30/fig-ch30-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch30-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH31-002"
+    issue_state: POLISH
+    priority: medium
+    chapter: CH31
+    chapters:
+      - CH31
+    path: "figures/full31/ch31/fig-ch31-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 8
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch31-002.yaml"
+    findings:
+      - "Template linear/box scaffold; acceptable if concept is a short sequence, but visually thin."
+    phase2_action: polish_scaffold_labels
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-001.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-002.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 14
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-003.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 13
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-004.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-005"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-005.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 16
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-005.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-006"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-006.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 16
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-006.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE1-007"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/preproduction/ce-01/fig-ce1-007.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 23
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce1-007.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE4-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH16
+    chapters:
+      - CH16
+    path: "figures/preproduction/ce-04/fig-ce4-001.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce4-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE4-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH16
+    chapters:
+      - CH16
+    path: "figures/preproduction/ce-04/fig-ce4-002.svg"
+    registry_source: ce
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 12
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce4-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE5-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH21
+    chapters:
+      - CH21
+    path: "figures/preproduction/ce-05/fig-ce5-001.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce5-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE5-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH21
+    chapters:
+      - CH21
+    path: "figures/preproduction/ce-05/fig-ce5-002.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce5-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE5-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH23
+    chapters:
+      - CH23
+    path: "figures/preproduction/ce-05/fig-ce5-003.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 12
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce5-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE5-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH23
+    chapters:
+      - CH23
+    path: "figures/preproduction/ce-05/fig-ce5-004.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce5-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CE5-007"
+    issue_state: KEEP
+    priority: low
+    chapter: CH23
+    chapters:
+      - CH23
+    path: "figures/preproduction/ce-05/fig-ce5-007.svg"
+    registry_source: ce
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/preproduction/accessibility/fig-ce5-007.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/ecosystem/fig-ch01-001-ecosystem-map.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/sequence/fig-ch01-002-inputs-state-outputs.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 14
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/architecture/fig-ch01-003-app-not-one-thing.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 13
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/ecosystem/fig-ch01-004-local-vs-network.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-005"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/architecture/fig-ch01-005-failure-domains.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 16
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-005.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-006"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/exploded-views/fig-ch01-006-ecosystem-preview.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 16
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-006.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH01-007"
+    issue_state: KEEP
+    priority: low
+    chapter: CH01
+    chapters:
+      - CH01
+    path: "figures/architecture/fig-ch01-007-stability-preview.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 23
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch01-007.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH03-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH03
+    chapters:
+      - CH03
+    path: "figures/ecosystem/fig-ch03-001-feel-axes.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 13
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch03-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH03-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH03
+    chapters:
+      - CH03
+    path: "figures/sequence/fig-ch03-002-action-to-hitch.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 13
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch03-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH03-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH03
+    chapters:
+      - CH03
+    path: "figures/sequence/fig-ch03-003-jitter-contrast.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch03-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH03-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH03
+    chapters:
+      - CH03
+    path: "figures/architecture/fig-ch03-004-local-vs-network.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch03-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH08-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH08
+    chapters:
+      - CH08
+    path: "figures/sequence/fig-ch08-002-presentation-timing.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 19
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch08-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH10-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH10
+    chapters:
+      - CH10
+    path: "figures/architecture/fig-ch10-001-board-buses-ports.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch10-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH10-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH10
+    chapters:
+      - CH10
+    path: "figures/sequence/fig-ch10-002-host-bus-device.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch10-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH10-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH10
+    chapters:
+      - CH10
+    path: "figures/architecture/fig-ch10-003-electrical-vs-protocol.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch10-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH10-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH10
+    chapters:
+      - CH10
+    path: "figures/exploded-views/fig-ch10-004-packaging-stages.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch10-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH12-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH12
+    chapters:
+      - CH12
+    path: "figures/architecture/fig-ch12-002-context-switch.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 15
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch12-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH12-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH12
+    chapters:
+      - CH12
+    path: "figures/architecture/fig-ch12-003-concurrency-vs-parallelism.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 18
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch12-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH12-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH12
+    chapters:
+      - CH12
+    path: "figures/architecture/fig-ch12-004-monitor-snapshots.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 18
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch12-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH13-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH13
+    chapters:
+      - CH13
+    path: "figures/full31/ch13/fig-ch13-003.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch13-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH13-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH13
+    chapters:
+      - CH13
+    path: "figures/full31/ch13/fig-ch13-004.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 4
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch13-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH14-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH14
+    chapters:
+      - CH14
+    path: "figures/full31/ch14/fig-ch14-003.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 3
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch14-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH15-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH15
+    chapters:
+      - CH15
+    path: "figures/architecture/fig-ch15-001-vm-vs-container.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 18
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch15-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH15-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH15
+    chapters:
+      - CH15
+    path: "figures/sequence/fig-ch15-003-same-app-three-ways.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 17
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch15-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH16-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH16
+    chapters:
+      - CH16
+    path: "figures/ecosystem/fig-ch16-001-scopes.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 9
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch16-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH16-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH16
+    chapters:
+      - CH16
+    path: "figures/sequence/fig-ch16-002-encapsulation.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 11.0
+      n_text_nodes: 11
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch16-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH16-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH16
+    chapters:
+      - CH16
+    path: "figures/architecture/fig-ch16-003-dns-critical-path.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 16
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch16-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH17-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH17
+    chapters:
+      - CH17
+    path: "figures/full31/ch17/fig-ch17-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch17-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH18-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH18
+    chapters:
+      - CH18
+    path: "figures/full31/ch18/fig-ch18-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 9
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch18-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH18-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH18
+    chapters:
+      - CH18
+    path: "figures/full31/ch18/fig-ch18-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch18-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH18-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH18
+    chapters:
+      - CH18
+    path: "figures/full31/ch18/fig-ch18-004.svg"
+    registry_source: main
+    truth_class: project_specific
+    status: project_specific
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch18-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH19-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH19
+    chapters:
+      - CH19
+    path: "figures/full31/ch19/fig-ch19-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch19-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH19-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH19
+    chapters:
+      - CH19
+    path: "figures/full31/ch19/fig-ch19-003.svg"
+    registry_source: main
+    truth_class: illustrative
+    status: illustrative
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch19-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH20-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH20
+    chapters:
+      - CH20
+    path: "figures/full31/ch20/fig-ch20-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 9
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch20-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH20-004"
+    issue_state: KEEP
+    priority: low
+    chapter: CH20
+    chapters:
+      - CH20
+    path: "figures/full31/ch20/fig-ch20-004.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 1
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch20-004.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH21-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH21
+    chapters:
+      - CH21
+    path: "figures/full31/ch21/fig-ch21-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch21-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH21-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH21
+    chapters:
+      - CH21
+    path: "figures/full31/ch21/fig-ch21-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch21-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH22-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH22
+    chapters:
+      - CH22
+    path: "figures/full31/ch22/fig-ch22-003.svg"
+    registry_source: main
+    truth_class: project_specific
+    status: project_specific
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch22-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH24-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH24
+    chapters:
+      - CH24
+    path: "figures/full31/ch24/fig-ch24-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch24-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH25-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH25
+    chapters:
+      - CH25
+    path: "figures/full31/ch25/fig-ch25-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch25-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH27-002"
+    issue_state: KEEP
+    priority: low
+    chapter: CH27
+    chapters:
+      - CH27
+    path: "figures/full31/ch27/fig-ch27-002.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch27-002.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH28-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH28
+    chapters:
+      - CH28
+    path: "figures/full31/ch28/fig-ch28-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch28-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH28-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH28
+    chapters:
+      - CH28
+    path: "figures/full31/ch28/fig-ch28-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch28-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH29-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH29
+    chapters:
+      - CH29
+    path: "figures/full31/ch29/fig-ch29-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch29-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH31-001"
+    issue_state: KEEP
+    priority: low
+    chapter: CH31
+    chapters:
+      - CH31
+    path: "figures/full31/ch31/fig-ch31-001.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 10
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: false
+      a11y_path: "figures/accessibility/fig-ch31-001.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false
+  -
+    figure_id: "FIG-CH31-003"
+    issue_state: KEEP
+    priority: low
+    chapter: CH31
+    chapters:
+      - CH31
+    path: "figures/full31/ch31/fig-ch31-003.svg"
+    registry_source: main
+    truth_class: conceptual
+    status: conceptual
+    live_reader_ref: true
+    prose_ref_count: 2
+    criteria:
+      teaches: true
+      chapter_explains: true
+      labels_clear: true
+      flow_clear: true
+      hierarchy_clear: true
+      book_size_readable: true
+      value_beyond_paragraph: true
+      intentional_artwork: true
+      a11y_matches: true
+      truth_class_ok: true
+    signals:
+      min_font_size: 10.0
+      n_text_nodes: 6
+      has_c1_mojibake: false
+      missing_data_figure_id: false
+      stamp_template: true
+      a11y_path: "figures/accessibility/fig-ch31-003.yaml"
+    findings:
+      - "Meets pedagogy bar for this wave; no high-priority visual defects found."
+    phase2_action: none
+    a11y_failure: false

@@ -1,14 +1,14 @@
 schema_version: "1.0.0"
-total_words: 120089
-word_min: 3160
-word_max: 4976
-word_mean: 3873.84
-word_median: 3881.00
+total_words: 123079
+word_min: 3224
+word_max: 5065
+word_mean: 3970.29
+word_median: 3963.00
 chapters:
   - id: CH01
     title: "Technology Is a System, Not a Screen"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4275
+    words: 4407
     citation_occurrences: 40
     unique_citation_keys: 19
     figure_refs: 14
@@ -24,7 +24,7 @@ chapters:
   - id: CH02
     title: "Follow One Tap Through the Entire Stack"
     status: "draft"
-    words: 4976
+    words: 5065
     citation_occurrences: 23
     unique_citation_keys: 18
     figure_refs: 7
@@ -40,7 +40,7 @@ chapters:
   - id: CH03
     title: "Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3922
+    words: 3939
     citation_occurrences: 42
     unique_citation_keys: 14
     figure_refs: 4
@@ -56,7 +56,7 @@ chapters:
   - id: CH04
     title: "The Device Quartet as a Learning Laboratory"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3628
+    words: 3662
     citation_occurrences: 25
     unique_citation_keys: 7
     figure_refs: 3
@@ -72,7 +72,7 @@ chapters:
   - id: CH05
     title: "Electricity, Signals, Clocks, and Logic"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4147
+    words: 4317
     citation_occurrences: 31
     unique_citation_keys: 8
     figure_refs: 4
@@ -88,7 +88,7 @@ chapters:
   - id: CH06
     title: "CPU, Instructions, and Parallel Work"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4043
+    words: 4172
     citation_occurrences: 50
     unique_citation_keys: 9
     figure_refs: 3
@@ -104,7 +104,7 @@ chapters:
   - id: CH07
     title: "Memory, Cache, and Storage"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3723
+    words: 3780
     citation_occurrences: 24
     unique_citation_keys: 5
     figure_refs: 3
@@ -120,9 +120,9 @@ chapters:
   - id: CH08
     title: "Graphics, Displays, Audio, Cameras, and Sensors"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3507
-    citation_occurrences: 31
-    unique_citation_keys: 11
+    words: 3583
+    citation_occurrences: 33
+    unique_citation_keys: 13
     figure_refs: 3
     resolved_figures: 3
     unresolved_figures: []
@@ -136,7 +136,7 @@ chapters:
   - id: CH09
     title: "Power, Batteries, Thermals, and Mechanical Design"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3642
+    words: 3687
     citation_occurrences: 30
     unique_citation_keys: 8
     figure_refs: 3
@@ -152,7 +152,7 @@ chapters:
   - id: CH10
     title: "Ports, Buses, Boards, Packaging, and Manufacturing"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3817
+    words: 3829
     citation_occurrences: 16
     unique_citation_keys: 2
     figure_refs: 4
@@ -168,9 +168,9 @@ chapters:
   - id: CH11
     title: "Firmware, Boot, and Trust"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4290
-    citation_occurrences: 34
-    unique_citation_keys: 4
+    words: 4468
+    citation_occurrences: 36
+    unique_citation_keys: 5
     figure_refs: 4
     resolved_figures: 4
     unresolved_figures: []
@@ -184,8 +184,8 @@ chapters:
   - id: CH12
     title: "Operating Systems, Processes, Threads, and Scheduling"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4154
-    citation_occurrences: 74
+    words: 4277
+    citation_occurrences: 75
     unique_citation_keys: 9
     figure_refs: 4
     resolved_figures: 4
@@ -200,9 +200,9 @@ chapters:
   - id: CH13
     title: "Files, Databases, and Data Lifecycles"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4250
-    citation_occurrences: 25
-    unique_citation_keys: 2
+    words: 4390
+    citation_occurrences: 27
+    unique_citation_keys: 4
     figure_refs: 4
     resolved_figures: 4
     unresolved_figures: []
@@ -216,7 +216,7 @@ chapters:
   - id: CH14
     title: "Applications, APIs, Runtimes, and User Interfaces"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4076
+    words: 4219
     citation_occurrences: 33
     unique_citation_keys: 8
     figure_refs: 3
@@ -232,7 +232,7 @@ chapters:
   - id: CH15
     title: "Containers, Virtualization, Cloud, and Edge Computing"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3881
+    words: 4044
     citation_occurrences: 44
     unique_citation_keys: 7
     figure_refs: 3
@@ -248,8 +248,8 @@ chapters:
   - id: CH16
     title: "Packets, Protocols, Routing, and the Internet"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3778
-    citation_occurrences: 74
+    words: 3916
+    citation_occurrences: 76
     unique_citation_keys: 15
     figure_refs: 6
     resolved_figures: 6
@@ -264,9 +264,9 @@ chapters:
   - id: CH17
     title: "Wi-Fi, Cellular, 5G, and the Road to 6G"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3930
-    citation_occurrences: 31
-    unique_citation_keys: 3
+    words: 4111
+    citation_occurrences: 35
+    unique_citation_keys: 4
     figure_refs: 3
     resolved_figures: 3
     unresolved_figures: []
@@ -280,8 +280,8 @@ chapters:
   - id: CH18
     title: "Spectrum, Antennas, Beams, MIMO, and Radio Conditions"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3765
-    citation_occurrences: 32
+    words: 4092
+    citation_occurrences: 34
     unique_citation_keys: 4
     figure_refs: 4
     resolved_figures: 4
@@ -296,13 +296,13 @@ chapters:
   - id: CH19
     title: "NTN and Service Continuity Across Ground, Air, and Space"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3329
-    citation_occurrences: 22
-    unique_citation_keys: 6
+    words: 3493
+    citation_occurrences: 26
+    unique_citation_keys: 7
     figure_refs: 3
     resolved_figures: 3
     unresolved_figures: []
-    lab_refs: 2
+    lab_refs: 3
     unknown_labs: []
     try_it: true
     build_it: true
@@ -312,7 +312,7 @@ chapters:
   - id: CH20
     title: "Latency, Reliability, QoE, and the Stability Contract"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4358
+    words: 4551
     citation_occurrences: 41
     unique_citation_keys: 9
     figure_refs: 5
@@ -328,8 +328,8 @@ chapters:
   - id: CH21
     title: "Data, Machine Learning, and Generative AI"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4083
-    citation_occurrences: 23
+    words: 4167
+    citation_occurrences: 24
     unique_citation_keys: 5
     figure_refs: 5
     resolved_figures: 5
@@ -344,9 +344,9 @@ chapters:
   - id: CH22
     title: "Edge AI, Sensors, and Embodied Interaction"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3359
-    citation_occurrences: 28
-    unique_citation_keys: 6
+    words: 3360
+    citation_occurrences: 31
+    unique_citation_keys: 7
     figure_refs: 3
     resolved_figures: 3
     unresolved_figures: []
@@ -360,7 +360,7 @@ chapters:
   - id: CH23
     title: "Cybersecurity from Chip to Cloud"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3893
+    words: 3964
     citation_occurrences: 51
     unique_citation_keys: 8
     figure_refs: 6
@@ -376,7 +376,7 @@ chapters:
   - id: CH24
     title: "Privacy, Identity, Safety, Accessibility, and Ethics"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3907
+    words: 3975
     citation_occurrences: 42
     unique_citation_keys: 7
     figure_refs: 3
@@ -392,7 +392,7 @@ chapters:
   - id: CH25
     title: "Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3951
+    words: 3963
     citation_occurrences: 30
     unique_citation_keys: 5
     figure_refs: 3
@@ -408,13 +408,13 @@ chapters:
   - id: CH26
     title: "Software Development and Version Control"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3160
+    words: 3232
     citation_occurrences: 32
     unique_citation_keys: 5
     figure_refs: 3
     resolved_figures: 3
     unresolved_figures: []
-    lab_refs: 0
+    lab_refs: 1
     unknown_labs: []
     try_it: true
     build_it: true
@@ -424,7 +424,7 @@ chapters:
   - id: CH27
     title: "Testing, Observability, and Evidence"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3608
+    words: 3619
     citation_occurrences: 27
     unique_citation_keys: 4
     figure_refs: 3
@@ -456,7 +456,7 @@ chapters:
   - id: CH29
     title: "Designing a Complete Technology Product"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3815
+    words: 3896
     citation_occurrences: 33
     unique_citation_keys: 8
     figure_refs: 3
@@ -472,7 +472,7 @@ chapters:
   - id: CH30
     title: "Career Maps and Portfolio Proof"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3199
+    words: 3224
     citation_occurrences: 5
     unique_citation_keys: 1
     figure_refs: 3
@@ -488,8 +488,8 @@ chapters:
   - id: CH31
     title: "Capstone: Explain, Measure, Improve, and Teach the Ecosystem"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3815
-    citation_occurrences: 44
+    words: 3869
+    citation_occurrences: 43
     unique_citation_keys: 15
     figure_refs: 4
     resolved_figures: 4

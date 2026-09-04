@@ -1,9 +1,9 @@
 ---
 title: "Manuscript status"
+number: false
 ---
 
-# WORKING FULL-MANUSCRIPT DRAFT
-
+## WORKING FULL-MANUSCRIPT DRAFT
 Human reader validation pending.
 
 Technical/editorial revision pending.
@@ -18,3 +18,4 @@ This build is a **working full-manuscript draft** of *The Technology Landscape*.
 - Historical chapter-prototype review `CH02-REVIEW-R1` is **not** full-manuscript validation.
 - Full-book human validation is **deferred until** the entire 31-chapter working draft exists (see `publication/full31/VALIDATION_SEQUENCE_DECISION.md`).
 - Successful HTML/PDF/EPUB rendering does **not** mean publication-ready.
+- Rights: All Rights Reserved © 2026 Edmund Gunn Jr. for manuscript/artwork/instructor materials; MIT only where explicitly scoped for code/tooling; upstream retains upstream. See [Rights notice](rights.qmd).

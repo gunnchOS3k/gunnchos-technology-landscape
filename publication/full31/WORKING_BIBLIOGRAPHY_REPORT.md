@@ -10,10 +10,10 @@
 
 | Metric | Value |
 |---|---:|
-| CE chapter-local source occurrences | 64 |
-| Full31 citation-token occurrences (CLAIM_PLAN + SOURCE_NEEDS) | 116 |
-| Unique bib keys (working set) | 63 |
-| Unique canonical works | 55 |
+| CE chapter-local source occurrences | 81 |
+| Full31 citation-token occurrences (CLAIM_PLAN + SOURCE_NEEDS) | 193 |
+| Unique bib keys (working set) | 81 |
+| Unique canonical works | 73 |
 | Same-work alias groups | 7 |
 
 Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC → URL+dated edition → repo+commit+role → title/author/year uncertain fallback. The two WCAG dated Recommendations remain distinct works.
@@ -23,7 +23,7 @@ Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC �
 | verification_status | count |
 |---|---:|
 | `NEEDS_PRIMARY_VERIFICATION` | 1 |
-| `PRIMARY_METADATA_VERIFIED` | 47 |
+| `PRIMARY_METADATA_VERIFIED` | 65 |
 | `REPOSITORY_EVIDENCE_VERIFIED` | 8 |
 | `SECONDARY_EXPLANATORY` | 7 |
 
@@ -31,12 +31,12 @@ Canonical-work grouping priority: DOI → ISBN+edition → dated standards/RFC �
 
 | source_class | count |
 |---|---:|
-| `official_technical_documentation` | 14 |
-| `other_explanatory` | 5 |
+| `official_technical_documentation` | 18 |
+| `other_explanatory` | 13 |
 | `peer_reviewed` | 2 |
 | `project_accepted_main` | 8 |
-| `standards_specifications` | 25 |
-| `textbooks` | 9 |
+| `standards_specifications` | 30 |
+| `textbooks` | 10 |
 
 ## WCAG 2.2 confirmation
 
@@ -47,8 +47,7 @@ Working bibliography preserves **two** dated Recommendation records:
 | `wcag22-20231005` | 2023 | https://www.w3.org/TR/2023/REC-WCAG22-20231005/ | yes |
 | `wcag22-20241212` | 2024 | https://www.w3.org/TR/2024/REC-WCAG22-20241212/ | yes |
 
-Blocked undated key `wcag22` occurrences in Full31 packets: **1** (must remap to dated keys before prose cite).
-- `ch14` via `claim_plan.citation_keys` token `wcag22`
+Blocked undated key `wcag22` occurrences in Full31 packets: **0** (must remap to dated keys before prose cite).
 
 ## Same-work aliases
 
@@ -85,38 +84,49 @@ Blocked undated key `wcag22` occurrences in Full31 packets: **1** (must remap to
 
 | bib_key | source_class | verification_status | chapter_usage | canonical_identifier | origin |
 |---|---|---|---|---|---|
+| `android-ab-ota` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch11 | `url:https://source.android.com/docs/core/ota/ab|year:2026` | `ce_candidate` |
 | `digitalregulation-qos-qoe` | `other_explanatory` | `SECONDARY_EXPLANATORY` | ce-06 | `url:https://digitalregulation.org/technical-regulation-quality-of-service/|year:2024` | `ce_candidate` |
+| `git-scm-docs` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch26 | `url:https://git-scm.com/docs|year:2026` | `ce_candidate` |
 | `goodfellow_deep_learning` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch21,ch22 | `url:https://www.deeplearningbook.org/|year:2016` | `ce_candidate` |
 | `gunnchos-technology-landscape-ce06` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-06 | `url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026` | `ce_candidate` |
 | `gunnchosTechnologyLandscape2026` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | book/references,ch02 | `url:https://github.com/gunnchOS3k/gunnchos-technology-landscape|year:2026` | `book_references_accepted_main` |
-| `ieee80211-2020` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:ieee80211-2020|dated:2020` | `ce_candidate` |
+| `harris-harris-riscv` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | book/references,ch02 | `isbn:9780128200643|edition:1` | `book_references_accepted_main` |
+| `iec-62133-2` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-03,ch09 | `url:https://webstore.iec.ch/en/publication/70017|year:2017` | `ce_candidate` |
+| `ieee80211-2020` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch15,ch16,ch17,ch18 | `standard:ieee80211-2020|dated:2020` | `ce_candidate` |
 | `ieee80211-wg` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `url:https://www.ieee802.org/11/|year:2026` | `ce_candidate` |
-| `iso-iec-25010-2023` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `url:https://www.iso.org/standard/78176.html|year:2023` | `ce_candidate` |
-| `itu-t-g1011` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch27 | `url:https://www.itu.int/rec/T-REC-G.1011|year:2016` | `ce_candidate` |
-| `itu-t-p10-g100` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://www.itu.int/rec/T-REC-P.10/en` | `ce_candidate` |
+| `iso-23247-1-2021` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch28 | `url:https://www.iso.org/standard/75066.html|year:2021` | `ce_candidate` |
+| `iso-iec-25010-2023` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch03,ch20 | `url:https://www.iso.org/standard/78176.html|year:2023` | `ce_candidate` |
+| `itu-facts-figures-2025` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch25 | `url:https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx|year:2025` | `ce_candidate` |
+| `itu-r-m2160-2023` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch17 | `url:https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en|year:2023` | `ce_candidate` |
+| `itu-t-g1011` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch19,ch20,ch27 | `url:https://www.itu.int/rec/T-REC-G.1011|year:2016` | `ce_candidate` |
+| `itu-t-p10-g100` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch03,ch19,ch20 | `url:https://www.itu.int/rec/T-REC-P.10/en` | `ce_candidate` |
 | `jedec-jesd79-4d` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `url:https://www.jedec.org/standards-documents/docs/jesd79-4a|year:2021` | `ce_candidate` |
 | `khronos-vulkan-overview` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `url:https://www.khronos.org/vulkan/|year:2026` | `ce_candidate` |
-| `kurose-ross-8` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `isbn:9780136681557|edition:8` | `ce_candidate` |
-| `linux-cpu-freq` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `url:https://docs.kernel.org/admin-guide/pm/cpufreq.html|year:2026` | `ce_candidate` |
+| `kurose-ross-8` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch16,ch17,ch18,ch19 | `isbn:9780136681557|edition:8` | `ce_candidate` |
+| `linux-cpu-freq` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-03,ch09 | `url:https://docs.kernel.org/admin-guide/pm/cpufreq.html|year:2026` | `ce_candidate` |
 | `linux-input` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | book/references,ch02 | `url:https://docs.kernel.org/input/input.html|year:2026` | `book_references_accepted_main` |
 | `linux-memory` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `url:https://docs.kernel.org/admin-guide/mm/index.html|year:2026` | `ce_candidate` |
 | `linux-scheduler` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-01,ce-03,ch12 | `url:https://docs.kernel.org/scheduler/|year:2026` | `ce_candidate` |
 | `linux-scheduler-ce06` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://docs.kernel.org/scheduler/|year:2026` | `ce_candidate` |
 | `mdn-network-monitor` | `official_technical_documentation` | `SECONDARY_EXPLANATORY` | ce-04 | `url:https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor|year:2026` | `ce_candidate` |
-| `mdn-performance` | `other_explanatory` | `SECONDARY_EXPLANATORY` | ce-01,ce-03,ch14 | `url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026` | `ce_candidate` |
+| `mdn-performance` | `other_explanatory` | `SECONDARY_EXPLANATORY` | ce-01,ce-03,ch03,ch14,ch20 | `url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026` | `ce_candidate` |
 | `mdn-performance-ce06` | `other_explanatory` | `SECONDARY_EXPLANATORY` | ce-06 | `url:https://developer.mozilla.org/en-US/docs/Web/API/Performance|year:2026` | `ce_candidate` |
+| `mdn-requestanimationframe` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch08 | `url:https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame|year:2026` | `ce_candidate` |
 | `mdn-resource-timing` | `official_technical_documentation` | `SECONDARY_EXPLANATORY` | ce-04 | `url:https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Resource_timing|year:2026` | `ce_candidate` |
-| `nist-sp500-325` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `url:https://csrc.nist.gov/pubs/sp/500/325/final|year:2018` | `ce_candidate` |
-| `nist-sp800-145` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `url:https://csrc.nist.gov/pubs/sp/800/145/final|year:2011` | `ce_candidate` |
+| `nist-sp500-325` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch15 | `url:https://csrc.nist.gov/pubs/sp/500/325/final|year:2018` | `ce_candidate` |
+| `nist-sp800-145` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch15 | `url:https://csrc.nist.gov/pubs/sp/800/145/final|year:2011` | `ce_candidate` |
+| `nist-sp800-88r1` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch13 | `url:https://csrc.nist.gov/pubs/sp/800/88/r1/final|year:2014` | `ce_candidate` |
 | `nist_ai_rmf_100_1` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch21 | `doi:10.6028/nist.ai.100-1` | `ce_candidate` |
 | `nist_sp_800_63_4` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch23,ch24 | `doi:10.6028/nist.sp.800-63-4` | `ce_candidate` |
 | `nvme-base-spec` | `official_technical_documentation` | `SECONDARY_EXPLANATORY` | ce-03 | `url:https://nvmexpress.org/specifications/|year:2026` | `ce_candidate` |
-| `otel-signals` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://opentelemetry.io/docs/concepts/signals/|year:2026` | `ce_candidate` |
-| `patterson-hennessy` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch12 | `title:computer organization and design: the hardware/software interface|author:patterson, david a. and hennessy, john l.|year:2020` | `ce_candidate` |
+| `oci-runtime-spec` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch15 | `url:https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md|year:2026` | `ce_candidate` |
+| `otel-signals` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch27 | `url:https://opentelemetry.io/docs/concepts/signals/|year:2026` | `ce_candidate` |
+| `patterson-hennessy` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch05,ch06,ch07,ch10,ch12 | `title:computer organization and design: the hardware/software interface|author:patterson, david a. and hennessy, john l.|year:2020` | `ce_candidate` |
 | `patterson-hennessy-ce06` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `title:computer organization and design: the hardware/software interface|author:patterson, david a. and hennessy, john l.|year:2020` | `ce_candidate` |
-| `patterson-hennessy-riscv` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-03 | `isbn:9780128203316|edition:2` | `ce_candidate` |
-| `rfc1034` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:rfc1034|dated:1987` | `ce_candidate` |
-| `rfc1035` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:rfc1035|dated:1987` | `ce_candidate` |
+| `patterson-hennessy-riscv` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-03,ch06 | `isbn:9780128203316|edition:2` | `ce_candidate` |
+| `postgresql-mvcc` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch13 | `url:https://www.postgresql.org/docs/current/mvcc.html|year:2026` | `ce_candidate` |
+| `rfc1034` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch16 | `standard:rfc1034|dated:1987` | `ce_candidate` |
+| `rfc1035` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch16 | `standard:rfc1035|dated:1987` | `ce_candidate` |
 | `rfc1122` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:rfc1122|dated:1989` | `ce_candidate` |
 | `rfc1918` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:rfc1918|dated:1996` | `ce_candidate` |
 | `rfc3022` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:rfc3022|dated:2001` | `ce_candidate` |
@@ -127,8 +137,9 @@ Blocked undated key `wcag22` occurrences in Full31 packets: **1** (must remap to
 | `rfc9000` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:rfc9000|dated:2021` | `ce_candidate` |
 | `rfc9293` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01,ce-04,ch16 | `standard:rfc9293|dated:2022` | `ce_candidate` |
 | `russell_norvig_aima` | `textbooks` | `NEEDS_PRIMARY_VERIFICATION` | ce-05,ch21 | `title:artificial intelligence: a modern approach|author:russell, stuart and norvig, peter|year:unknown` | `ce_candidate` |
-| `saltzer-kaashoek` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch01,ch11,ch13,ch14 | `isbn:9780123749574|edition:2009` | `ce_candidate` |
+| `saltzer-kaashoek` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch01,ch03,ch11,ch13,ch14 | `isbn:9780123749574|edition:2009` | `ce_candidate` |
 | `saltzer_schroeder_1975` | `peer_reviewed` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch23 | `doi:10.1109/proc.1975.9939` | `ce_candidate` |
+| `semver-2.0.0` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-01 | `url:https://semver.org/spec/v2.0.0.html` | `ce_candidate` |
 | `silberschatz-galvin-gagne` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-03,ch12 | `isbn:9781119320913|edition:10` | `ce_candidate` |
 | `solove_taxonomy_2006` | `peer_reviewed` | `PRIMARY_METADATA_VERIFIED` | ce-05,ch24 | `title:a taxonomy of privacy|author:solove, daniel j.|year:2006` | `ce_candidate` |
 | `src-device-os-ce3` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-03,ch23,ch29 | `url:https://github.com/gunnchOS3k/gunnchos-device-os|year:2026` | `ce_candidate` |
@@ -136,16 +147,22 @@ Blocked undated key `wcag22` occurrences in Full31 packets: **1** (must remap to
 | `src-hardware-quartet` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-01,ch01,ch03,ch04,ch05,ch06,ch07,ch08,ch09,ch10,ch22,ch23,ch25,ch26,ch28,ch29 | `url:https://github.com/gunnchOS3k/gunnchos-hardware-industrial-design|year:2026` | `ce_candidate` |
 | `src-waike` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-01,ch02,ch21,ch22,ch23,ch24,ch25,ch26,ch27,ch28,ch30,ch31 | `url:https://github.com/gunnchOS3k/waike-research-ops|year:2026` | `ce_candidate` |
 | `src-waike-ce3` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-03,ch21,ch22,ch23,ch24,ch25,ch26,ch27,ch28,ch30,ch31 | `url:https://github.com/gunnchOS3k/waike-research-ops|year:2026` | `ce_candidate` |
-| `tanenbaum-bos` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ce-03,ch01,ch03,ch06,ch07,ch08,ch11,ch12,ch13 | `title:modern operating systems|author:tanenbaum, andrew s. and bos, herbert|year:2022` | `ce_candidate` |
-| `threegpp-ts23501` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `standard:threegpp-ts23501|dated:2026` | `ce_candidate` |
+| `tanenbaum-bos` | `textbooks` | `PRIMARY_METADATA_VERIFIED` | ce-01,ce-03,ch01,ch03,ch06,ch07,ch08,ch11,ch12,ch13,ch15 | `title:modern operating systems|author:tanenbaum, andrew s. and bos, herbert|year:2022` | `ce_candidate` |
+| `tcg-pc-client-pfp-1.06` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `url:https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf|year:2023` | `ce_candidate` |
+| `threegpp-tr38821` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch19 | `standard:threegpp-tr38821|dated:2023` | `ce_candidate` |
+| `threegpp-ts23501` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-04,ch15,ch16,ch17,ch19 | `standard:threegpp-ts23501|dated:2026` | `ce_candidate` |
+| `uefi-secure-boot-2.10` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-05 | `url:https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html` | `ce_candidate` |
+| `ul-2054` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-03,ch09 | `url:https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2054|year:2021` | `ce_candidate` |
+| `w3c-mediacapture-streams-20251009` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch08,ch22 | `url:https://www.w3.org/TR/mediacapture-streams/|year:2025` | `ce_candidate` |
+| `w3c-permissions-20251006` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch22 | `url:https://www.w3.org/TR/2025/WD-permissions-20251006/|year:2025` | `ce_candidate` |
 | `w3c-pointerevents` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | book/references,ch02 | `url:https://www.w3.org/TR/pointerevents3/|year:2026` | `book_references_accepted_main` |
 | `w3c-uievents` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | book/references,ch02 | `url:https://www.w3.org/TR/uievents/|year:2026` | `book_references_accepted_main` |
 | `waike-main-ce4-audit` | `other_explanatory` | `PRIMARY_METADATA_VERIFIED` | ce-04 | `title:waike research-ops accepted main audit for ce-4 crosswalk|author:|year:2026` | `ce_candidate` |
 | `waike-research-ops-ce06` | `project_accepted_main` | `REPOSITORY_EVIDENCE_VERIFIED` | ce-06,ch21,ch22,ch23,ch24,ch25,ch26,ch27,ch28,ch30,ch31 | `url:https://github.com/gunnchOS3k/waike-research-ops|year:2026` | `ce_candidate` |
-| `wcag22-20231005` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch24 | `standard:wcag22-20231005|dated:2023` | `ce_candidate` |
-| `wcag22-20241212` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch24,ch25 | `standard:wcag22-20241212|dated:2024` | `ce_candidate` |
+| `wcag22-20231005` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch14,ch24 | `standard:wcag22-20231005|dated:2023` | `ce_candidate` |
+| `wcag22-20241212` | `standards_specifications` | `PRIMARY_METADATA_VERIFIED` | ce-06,ch14,ch24,ch25 | `standard:wcag22-20241212|dated:2024` | `ce_candidate` |
 | `whatwg-dom` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch01 | `url:https://dom.spec.whatwg.org/|year:2026` | `ce_candidate` |
-| `whatwg-html` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch01,ch14 | `url:https://html.spec.whatwg.org/|year:2026` | `ce_candidate` |
+| `whatwg-html` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-01,ch01,ch08,ch14 | `url:https://html.spec.whatwg.org/|year:2026` | `ce_candidate` |
 | `whatwg-html-ce06` | `official_technical_documentation` | `PRIMARY_METADATA_VERIFIED` | ce-06 | `url:https://html.spec.whatwg.org/|year:2026` | `ce_candidate` |
 | `wifi-alliance-discover` | `other_explanatory` | `SECONDARY_EXPLANATORY` | ce-04 | `url:https://www.wi-fi.org/discover-wi-fi|year:2026` | `ce_candidate` |
 

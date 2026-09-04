@@ -2,14 +2,13 @@
 status: draft
 chapter_id: CH29
 chapter_number: 29
-title: "Designing a Complete Technology Product"
 author: "Edmund Gunn, Jr."
 part: VI
 concept_edition: false
 manuscript_status: WORKING_DRAFT_COMPLETE
 human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
 publication_status: NOT_PUBLICATION_READY
-labs: [LAB-CH29-ONEPAGER-001, LAB-CE06-001, LAB-TRUST-001]
+labs: [LAB-CE06-001, LAB-TRUST-001]
 figures:
   - FIG-CH29-001
   - FIG-CH29-002
@@ -27,7 +26,7 @@ Part VI asks you to build, prove, and contribute. Earlier chapters taught layers
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch29-moment}
 
 The demo works. The slide looks finished. The feature lights up on the presenter’s laptop on fast Wi‑Fi. Applause. Then a classmate on a weaker phone, a metered cellular link, or an assistive path tries the same flow. The spinner never resolves. Privacy wording is vague. Accessibility feedback is missing. There is no evidence packet—only confidence.
 
@@ -39,11 +38,11 @@ The governing question for this chapter:
 
 > What must a complete technology product keep true—experience, stack, evidence, security/inclusion, and honest claims—before anyone may say it is usable?
 
-This is not a pitch deck chapter, not a Device Quartet SKU catalog, and not a PMI certification course. Product-management body-of-knowledge citations that would require unverified ISBNs are omitted here (**CLM-CH29-003** remains `SOURCE_NEEDED`; do not invent PMI/ISBN cites). Systems and quality vocabulary come from standards and textbooks already in the bibliography [@iso-iec-25010-2023; @saltzer-kaashoek].
+This is not a pitch deck chapter, not a Device Quartet SKU catalog, and not a PMI certification course. Product-management body-of-knowledge citations are not selected this wave (**CLM-CH29-003** · `ILLUSTRATIVE_ONLY`; do not invent PMI/ISBN cites). Systems and quality vocabulary come from standards and textbooks already in the bibliography [@iso-iec-25010-2023; @saltzer-kaashoek].
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch29-notice}
 
 Before naming architectures or gates, notice what broke for a person.
 
@@ -57,7 +56,7 @@ Optional commodity notice (no specialized gear): pick one feature you already us
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch29-ecosystem}
 
 A “complete product” is not a single screen. It is a stack of cooperating layers under a Stability Contract. **FIG-CH29-001** is the first-minute map: human experience at the center; surrounding rings for interaction, application/code, local resources, network path, services/identity, evidence/observability, and society (privacy, equity, accessibility). Treat it as **Representative educational architecture**, not a claim that every product shares one topology [@saltzer-kaashoek].
 
@@ -95,7 +94,7 @@ Who is excluded when “works on the author’s laptop” is the only gate. Equi
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch29-signal}
 
 Here the “signal” is the product claim’s fate across design gates—not a single demo click. Read the sequence as a logical assembly story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -105,7 +104,7 @@ Here the “signal” is the product claim’s fate across design gates—not a 
 4. **Assign failure domains.** For each fragile step, who owns diagnosis when it breaks?
 5. **Write design gates.** Checks that must pass before “ship/usable” language (**FIG-CH29-002**).
 6. **Attach an evidence plan.** What will be observed, measured, or fixture-labeled—and what remains unknown?
-7. **Draw the claim boundary.** What may the product assert given current evidence (**FIG-CH29-003**)?
+7. **Draw the claim boundary.** What may the product assert given current evidence? Use the one-pager evidence fields (**FIG-CH29-003**) and write allowed/forbidden wording—including **PHYSICAL_PENDING** badges—in the packet text, not as inventing measurements on the diagram.
 8. **Name tradeoffs.** Latency, cost, privacy, power, inclusion—together, not one hero metric.
 9. **Secure and include.** Threat, privacy, a11y, equity routes integrated—not bolted on last.
 10. **Portfolio handoff.** One-pager + evidence + inclusion routes someone else can review.
@@ -129,7 +128,7 @@ Prefer failure *domains* over confident blame: interaction/AT, compute/schedule,
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch29-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -175,7 +174,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch29-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -223,13 +222,13 @@ For a successful product experience under classroom/portfolio scope, conditions 
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch29-try}
 
-### Proposed LAB-CH29-ONEPAGER-001 — Product one-pager + evidence/inclusion gates
+### INLINE_ACTIVITY — Product one-pager + evidence/inclusion gates
 
 **Goal.** Assemble prior lab artifacts into a non-marketing **product one-pager** that names the experience, stack layers, Stability Contract conditions, design gates (including secure/include), evidence plan, claim boundary, and explicit tradeoffs.
 
-**Status.** `proposed` (publication-owned proposal). Prefer inheriting real prior lab IDs. Do **not** invent WAIKE course/lab IDs. WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) offers only **adjacent** culture (`capstones/`, `COMM_PD_ETHICS` / `lab_pd_capstone`, `CLOUD_DEVOPS`)—not an exact CH29 module [@src-waike].
+**Status.** `INLINE_ACTIVITY` (chapter-native worksheet). The namespaced idea `LAB-CH29-ONEPAGER-001` is **not** a shipped `labs/` package—do not treat it as a FULL_LAB ID. Prefer inheriting real prior lab IDs (`LAB-CE06-001`, `LAB-TRUST-001`). Do **not** invent WAIKE course/lab IDs. WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) offers only **adjacent** culture (`capstones/`, `COMM_PD_ETHICS` / `lab_pd_capstone`, `CLOUD_DEVOPS`)—not an exact CH29 module [@src-waike].
 
 **Safety (hard stops).**
 
@@ -270,7 +269,7 @@ For a successful product experience under classroom/portfolio scope, conditions 
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch29-build}
 
 Extend the one-pager without turning Part VI into a fake product catalog.
 
@@ -298,7 +297,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F equitable—not
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch29-secure-include}
 
 **FIG-CH29-002** places secure/include *inside* design gates, not in an appendix after the pitch.
 
@@ -328,7 +327,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch29-career}
 
 One “works in the demo” failure crosses many ownership domains. No table promises employment; roles vary by organization. The product one-pager resembles early professional evidence in miniature: labeled claims, gates, and explicit uncertainty.
 
@@ -345,7 +344,7 @@ Portfolio hint: a scrubbed one-pager with claim-boundary badges is more honest t
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch29-check}
 
 **Concept.** In one sentence, define a *complete technology product* so that UI alone cannot satisfy the definition.
 
@@ -357,7 +356,7 @@ Portfolio hint: a scrubbed one-pager with claim-boundary badges is more honest t
 
 **Misconception check.** Why must this chapter refuse Device Quartet shipping-SKU language and finished gunnchOS OS certification language?
 
-**Evidence ethics.** What is the difference between proposed LAB-CH29-ONEPAGER-001 fixture synthesis and Gate 3 human reader validation? Why are illustrative EMIT examples not human evidence?
+**Evidence ethics.** What is the difference between INLINE_ACTIVITY fixture synthesis for the CH29 one-pager and Gate 3 human reader validation? Why are illustrative EMIT examples not human evidence?
 
 **Teach-it-back.** Explain to a newcomer—using only this chapter’s vocabulary—why a polished demo is not a Stability Contract.
 
@@ -375,7 +374,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch29-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch29/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 
@@ -413,12 +412,12 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 - **Truth class.** Conceptual.
 - **Alt text requirement.** List gate families in reading order; state that gates are teaching tools, not legal certification.
 
-### FIG-CH29-003 — Claim boundary board with PHYSICAL_PENDING badges
+### FIG-CH29-003 — One-pager evidence fields (claim-boundary support)
 
-- **Type.** Conceptual boundary board.
-- **Reader should notice.** Allowed vs forbidden wording; PHYSICAL_PENDING for Device Quartet / unfinished OS claims.
-- **Truth class.** Conceptual; qualification **PHYSICAL_PENDING** where hardware/OS shipping would be implied.
-- **Alt text requirement.** State allowed/forbidden columns and badge meaning; forbid reading the board as a shipping certificate.
+- **Type.** Conceptual field stack (Experience → System boundary → Risks → Evidence → Limitations).
+- **Reader should notice.** Evidence and limitations fields must be filled before “ready/ship” language; claim-boundary / PHYSICAL_PENDING badges belong in the written one-pager, not as invented SVG measurements.
+- **Truth class.** Conceptual; qualification **PHYSICAL_PENDING** where hardware/OS shipping would be implied in accompanying text.
+- **Alt text requirement.** Name the five fields in reading order; state that the figure is a teaching template, not a shipping certificate.
 
 ---
 
@@ -426,4 +425,4 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 - **CLM-CH29-001.** Device Quartet form factors are research/learning benchmarks, not commercial product SKUs—**PHYSICAL_PENDING** [@src-hardware-quartet].
 - **CLM-CH29-002.** gunnchOS device OS documents claim boundaries and is not a finished shipping OS (`beta_ready` false per CE-5 audit language)—claim-boundary teaching only [@src-device-os-ce3].
-- **CLM-CH29-003.** Product-management BoK citations need selection/verification if used beyond pedagogy—**SOURCE_NEEDED**; omitted in this draft (no invented PMI/ISBN).
+- **CLM-CH29-003.** Product-management BoK citations not selected this wave—**ILLUSTRATIVE_ONLY** pedagogy/synthesis (no invented PMI/ISBN).

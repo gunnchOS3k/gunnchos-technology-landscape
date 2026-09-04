@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH11
 chapter_number: 11
-title: "Firmware, Boot, and Trust"
 author: "Edmund Gunn, Jr."
 part: III
 concept_edition: false
@@ -26,7 +25,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch11-moment}
 
 You press the power button—or wake a phone that was only sleeping. A logo appears. Lights blink. A spinner turns. Then, if you are lucky, a lock screen or desktop. If you are unlucky: an endless logo, a recovery menu you did not ask for, or a warning that software could not be verified.
 
@@ -42,7 +41,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch11-notice}
 
 Before words like *root of trust* or *measured boot* enter, notice the human contract you already expect.
 
@@ -58,9 +57,11 @@ Optional comparison on a device you already own: cold boot once (power fully off
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch11-ecosystem}
 
 Boot is not a single object. It is a path through an ecosystem. **FIG-CH11-001** is the first-minute map: power/reset → firmware → bootloader → kernel → userspace → lock screen or recovery. Treat it as **Representative educational architecture**, not a claim that every phone or laptop implements identical stages with identical names.
+
+![Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings.](../../../figures/full31/ch11/fig-ch11-001.svg){fig-alt="Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings." #fig-ch11-001 fig-cap="Power → firmware → bootloader → kernel → lock screen. Conceptual educational sequence; not universal timings."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -94,9 +95,11 @@ Platforms often provide alternate paths when primary images fail verification or
 
 **FIG-CH11-002** later sketches root-of-trust → verified stages as policy intent—not a product badge for any reader’s unit.
 
+![Root of trust → verified stages as policy intent—not a product badge.](../../../figures/full31/ch11/fig-ch11-002.svg){fig-alt="Root of trust → verified stages as policy intent—not a product badge." #fig-ch11-002 fig-cap="Root of trust → verified stages as policy intent—not a product badge."}
+
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch11-signal}
 
 **FIG-CH11-001** shows a numbered path. Read it as a logical story, not as a universal SoC bring-up with invented millisecond budgets.
 
@@ -127,7 +130,7 @@ Outside observation rarely distinguishes those cleanly. That limitation is liter
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch11-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies.
 
@@ -189,7 +192,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch11-stability}
 
 A boot experience continues only while multiple hidden conditions stay within acceptable bounds.
 
@@ -200,7 +203,7 @@ For the ordinary “I pressed power and got a trustworthy-enough computer” fee
 1. **Firmware completes enough init** for storage, display, and input paths the experience needs.
 2. **Boot chain reaches** an intended OS **or** an honest recovery UI—not a silent brick from the learner’s view.
 3. **Trust policy matches learner expectation**, or failure is visible rather than silent.
-4. **Update state** does not leave the device mid-change without a recovery affordance the person can understand (teaching concern; interrupted-update failure modes as a formal claim remain **SOURCE_NEEDED** and are **omitted** here as CLM-CH11-006—see blockers).
+4. **Update state** does not leave the device mid-change without a recovery affordance the person can understand (CLM-CH11-006 · `SOURCE_IDENTIFIED` via [@android-ab-ota] as a representative A/B seamless-update example; not universal firmware law).
 5. **Accessibility:** boot and recovery messages have readable or alternate paths where the platform allows—not logo-only dead ends when text is possible.
 
 A system can remain *electrically on* while the human experience has already failed: endless logo, inaccessible verify step, lock screen that appears after an unverified chain the person never consented to trust. Conversely, a lock screen can look “secure” while secure-boot policy was never enabled. Stability is concurrent conditions—not a single spinner.
@@ -211,9 +214,9 @@ CE-5’s stability sketch (answer usability, identity continuity, authorization 
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch11-try}
 
-### LAB-BOOT-OBS-001 — Observe Boot and Wake (publication-owned, proposed)
+### LAB-BOOT-OBS-001 — Observe Boot and Wake (publication-owned, `IMPLEMENTED_DIGITAL`)
 
 **Goal.** Observe cold boot vs wake (and any already-visible update/recovery banners) on a commodity device you own—or complete the offline fixture route—without flashing, unlocking, or bypassing anything.
 
@@ -256,7 +259,7 @@ Optional Operator post-boot health path: **LAB-CMS-001** (CE-3 adjacency) after 
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch11-build}
 
 Extend LAB-BOOT-OBS-001 without turning Part III into a firmware flashing course.
 
@@ -278,13 +281,13 @@ Build a one-page evidence plan: what would convert “marketing secure boot” i
 
 ### Researcher
 
-Build an evidence plan for a claim you are *not* allowed to assert yet—for example, interrupted firmware updates as a Stability Contract failure mode—keeping CLM-CH11-006 **SOURCE_NEEDED** / omitted, and Quartet boot claims **PHYSICAL_PENDING** (CLM-CH11-005).
+Build an evidence plan for a claim you are *not* allowed to assert yet—for example, Quartet-specific interrupted-update EVT measurements—keeping Quartet boot claims **PHYSICAL_PENDING** (CLM-CH11-005) while citing only living vendor/OS update docs already identified for CLM-CH11-006.
 
 Educators can facilitate Section 11 teach-backs and keep classrooms on the offline fixture route when admin rights or spare devices are unavailable.
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch11-secure-include}
 
 ### Security — authentication vs authorization vs boot authenticity
 
@@ -323,7 +326,7 @@ Do not claim measured attestation results you did not obtain. Do not treat a fea
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch11-career}
 
 One power press crosses many ownership domains. No table promises employment; roles vary by organization. LAB-BOOT-OBS-001 artifacts resemble early professional evidence in miniature: labeled diagrams, observation discipline, and explicit uncertainty.
 
@@ -340,7 +343,7 @@ Portfolio hint: a scrubbed boot-chain diagram plus “lock screen ≠ secure boo
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch11-check}
 
 **Concept.** In one sentence each, define *firmware*, *bootloader*, and *secure boot (intent)* so that none of them swallows the other two.
 
@@ -358,7 +361,7 @@ Portfolio hint: a scrubbed boot-chain diagram plus “lock screen ≠ secure boo
 
 ## References
 
-Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`). Project-specific Device Quartet boot/firmware status remains **PHYSICAL_PENDING** (CLM-CH11-005). Interrupted firmware-update failure modes remain **SOURCE_NEEDED** (CLM-CH11-006) and are omitted as cited claims in this draft.
+Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`), including representative A/B update recovery docs [@android-ab-ota]. Project-specific Device Quartet boot/firmware status remains **PHYSICAL_PENDING** (CLM-CH11-005).
 
 Inline citations used in this chapter include @tanenbaum-bos, @saltzer-kaashoek, @uefi-secure-boot-2.10, and @tcg-pc-client-pfp-1.06.
 
@@ -366,7 +369,7 @@ CE-5 preproduction (`publication/preproduction/ce-05/`) is trust/identity/privac
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch11-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 
@@ -388,13 +391,13 @@ Related earlier chapters: system lens (CH01), signals/power adjacency (CH05, CH0
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry or attestation quotes.
 
 ### FIG-CH11-001 — Power → firmware → bootloader → kernel → lock screen
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Sequence diagram.
 - **Reader should notice.** Ordered handoff plus optional recovery branch; lock screen is late.
 - **Truth class.** Conceptual.
@@ -402,7 +405,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-002 — Root of trust → verified stages
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** System map.
 - **Reader should notice.** Policy intent layers—not a product badge for the reader’s device.
 - **Truth class.** Conceptual.
@@ -410,7 +413,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-003 — Lock screen vs secure boot
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+![Lock screen authentication vs secure-boot authenticity policy (authorization callout).](../../../figures/full31/ch11/fig-ch11-003.svg){fig-alt="Lock screen authentication vs secure-boot authenticity policy (authorization callout)." #fig-ch11-003 fig-cap="Lock screen authentication vs secure-boot authenticity policy (authorization callout)."}
+
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** User authentication vs software authenticity policy; authorization as a third idea.
 - **Truth class.** Illustrative.
@@ -418,7 +423,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH11-004 — Update failure → recovery → outcomes
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+![Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates.](../../../figures/full31/ch11/fig-ch11-004.svg){fig-alt="Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates." #fig-ch11-004 fig-cap="Update failure → recovery → outcomes. Conceptual Stability Contract teaching; not vendor brick rates."}
+
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Failure map.
 - **Reader should notice.** Readable recovery vs unusable outcomes as Stability Contract teaching—not vendor brick statistics.
 - **Truth class.** Conceptual.
@@ -433,4 +440,4 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 - **CLM-CH11-003.** Secure boot as policy intent; feature name ≠ measured guarantee for a reader’s device [@uefi-secure-boot-2.10].
 - **CLM-CH11-004.** Attestation / measured boot distinct from UI lock screens [@tcg-pc-client-pfp-1.06].
 - **CLM-CH11-005.** Device Quartet boot/firmware behavior **PHYSICAL_PENDING**; research form factors only.
-- **CLM-CH11-006.** **OMITTED as cited claim** (`SOURCE_NEEDED`—pin vendor/OS capsule or A/B update recovery docs before promoting). Recovery paths appear only as qualitative Stability Contract teaching.
+- **CLM-CH11-006.** Failed/interrupted firmware updates can leave recovery or unusable states (`SOURCE_IDENTIFIED` via `android-ab-ota`). Living docs; representative example only.

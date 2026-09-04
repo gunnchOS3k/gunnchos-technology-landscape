@@ -1,0 +1,378 @@
+meta:
+  agent: B
+  parts:
+  - III
+  - IV
+  chapters:
+  - CH11
+  - CH12
+  - CH13
+  - CH14
+  - CH15
+  - CH16
+  - CH17
+  - CH18
+  - CH19
+  - CH20
+  base_ref: cursor/full31-quality-convergence-001
+  base_sha: 76bee2e67c35ff445f46c83af30809e5b307f06e
+  audit_phase: complete
+  fix_phase_policy: BLOCKER_and_MAJOR_only
+  gate3_touched: false
+severity_counts_before:
+  BLOCKER: 0
+  MAJOR: 7
+  MODERATE: 6
+  MINOR: 3
+  EDITORIAL: 2
+severity_counts_after:
+  BLOCKER: 0
+  MAJOR_open: 0
+  MAJOR_fixed: 7
+  MODERATE_open: 6
+  MINOR_open: 3
+  EDITORIAL_open: 2
+issues:
+- issue_id: TECH-B-CH12-001
+  chapter: CH12
+  part: III
+  category: TECHNICAL
+  severity: MAJOR
+  location: "book/chapters/ch12/chapter.md \xA77 Route C (~L291); \xA7Figure references\
+    \ FIG-CH12-004 (~L467)"
+  finding: "Reader-facing prose uses the opaque placeholder \u201Cthe blocked CMS\
+    \ measured plate\u201D (mechanical remnant of FIG-CE3-009 scrub). Readers cannot\
+    \ map that phrase to the LAB-CMS-001 teaching fixture @fig-ch12-004 actually shows.\n"
+  evidence: "close_full31_reader_assets.py rewrites FIG-CE3-009 \u2192 \u201Cthe blocked\
+    \ CMS measured plate\u201D; validators forbid the string FIG-CE3-009 in chapter\
+    \ prose; LAB-CMS-001 fixtures remain the intended classroom source for FIG-CH12-004\
+    \ numbers.\n"
+  proposed_fix: "Replace placeholder with clear wording that @fig-ch12-004 reproduces\
+    \ LAB-CMS-001 before/during monitor teaching fixtures, and that a separate CE\
+    \ measured-plate figure remains blocked\u2014without naming FIG-CE3-009.\n"
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-CH19-001
+  chapter: CH19
+  part: IV
+  category: TECHNICAL
+  severity: MAJOR
+  location: "book/chapters/ch19/chapter.md \xA74 step 4 (~L98)"
+  finding: 'Qualitative LEO vs GEO delay-regime teaching is cited to @tanenbaum-bos
+    (Modern Operating Systems), which is the wrong authority class for satellite propagation
+    regimes; claim is already SOURCE_NEEDED and must not lean on an OS textbook.
+
+    '
+  evidence: 'references.bib tanenbaum-bos title is Modern Operating Systems 5e; delay-regime
+    sentence pairs orbit classes with that cite while CLM-CH19-003 remains SOURCE_NEEDED.
+
+    '
+  proposed_fix: 'Retarget the qualitative regime pointer to @kurose-ross-8 (already
+    in Part IV bibliography) or drop the inline cite and keep SOURCE_NEEDED honesty
+    only.
+
+    '
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-CH18-001
+  chapter: CH18
+  part: IV
+  category: TECHNICAL
+  severity: MAJOR
+  location: "book/chapters/ch18/chapter.md \xA73 Shared spectrum/channel; \xA75 MIMO\
+    \ card"
+  finding: 'Part IV boundary requires spectrum vs channel and SISO/MIMO disambiguation.
+    Spectrum and channel are merged under one heading without a crisp channel definition;
+    SISO baseline is never named beside MIMO.
+
+    '
+  evidence: "Heading \u201CShared spectrum / channel\u201D; Spectrum card mentions\
+    \ channelization but no Channel card; MIMO card has no SISO contrast; master prompt\
+    \ Part IV audit list.\n"
+  proposed_fix: "Split spectrum vs channel in ecosystem prose; add a Channel component\
+    \ card; add one SISO baseline sentence on the MIMO card\u2014survey depth only,\
+    \ no invented gains.\n"
+  fix_status: FIXED
+  meaning_change: true
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-CH16-001
+  chapter: CH16
+  part: IV
+  category: TECHNICAL
+  severity: MAJOR
+  location: "book/chapters/ch16/chapter.md \xA73 LAN scope (~L79\u2013L81)"
+  finding: 'Part IV boundary asks for Ethernet/LAN/Internet distinctions. Chapter
+    teaches LAN vs Internet well but never names Ethernet as the common wired LAN
+    family, leaving wired vs wireless LAN undifferentiated.
+
+    '
+  evidence: 'LAN scope discusses Wi-Fi association and private address spaces; no
+    Ethernet/802.3 naming; Internet and DNS sections are otherwise careful.
+
+    '
+  proposed_fix: "One clarifying sentence under LAN scope: LAN includes wired Ethernet\
+    \ segments and wireless LAN attachment\u2014still neither equals Internet scope.\n"
+  fix_status: FIXED
+  meaning_change: true
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-FIG-001
+  chapter: CH11
+  part: III
+  category: TECHNICAL
+  severity: MAJOR
+  location: book/chapters/ch11/chapter.md Figure references footer
+  finding: "Chapter claims figures are draft-blocked with \u201Cno SVG embed,\u201D\
+    \ but registered SVGs and a11y sidecars already exist under figures/full31/ch11/\
+    \ and figures/accessibility/.\n"
+  evidence: 'figure_registry.yaml paths figures/full31/ch11/fig-ch11-00{1-4}.svg status
+    conceptual; chapter footer still says draft-blocked; body references FIG IDs without
+    embeds.
+
+    '
+  proposed_fix: 'Correct production-status language; embed registered SVGs at first
+    teaching mention (relative path to figures/full31/ch11/).
+
+    '
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-FIG-002
+  chapter: CH13
+  part: III
+  category: TECHNICAL
+  severity: MAJOR
+  location: book/chapters/ch13/chapter.md Figure references footer
+  finding: Same false draft-blocked claim; SVGs exist under figures/full31/ch13/.
+  evidence: figure_registry.yaml FIG-CH13-001..004 paths; footer draft-blocked; no
+    embeds.
+  proposed_fix: Correct status language; embed at first teaching mentions.
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-FIG-003
+  chapter: multi
+  part: IV
+  category: TECHNICAL
+  severity: MAJOR
+  location: CH14, CH17, CH18, CH19, CH20 figure reference footers
+  finding: "Same false draft-blocked / \u201Cno SVG embed\u201D claim across Part\
+    \ IV chapters that already have registered full31 SVGs + a11y YAML (CH14, CH17\u2013\
+    CH20).\n"
+  evidence: 'figures/full31/ch{14,17,18,19,20}/ populated; figure_registry entries
+    present; chapter footers still claim draft-blocked; body often references FIG
+    IDs without embeds.
+
+    '
+  proposed_fix: 'Correct status language and embed registered SVGs at first teaching
+    mentions for CH14/CH17/CH18/CH19/CH20.
+
+    '
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-CH13-001
+  chapter: CH13
+  part: III
+  category: TECHNICAL
+  severity: MODERATE
+  location: CLM-CH13-003 / database component card
+  finding: 'Filesystem vs database responsibility split is taught qualitatively, but
+    formal DB systems sourcing (recovery/concurrency) remains SOURCE_NEEDED / omitted.
+
+    '
+  evidence: CLAIM_PLAN SOURCE_NEEDED; prose explicitly omits ACID textbook cite.
+  proposed_fix: Agent E source-gap closure with a pinned DB textbook/edition; not
+    invented here.
+  fix_status: DEFERRED_HUMAN_REVIEW
+  meaning_change: false
+  citation_required: true
+  reviewer_type_needed: evidence
+- issue_id: TECH-B-CH17-001
+  chapter: CH17
+  part: IV
+  category: TECHNICAL
+  severity: MODERATE
+  location: CLM-CH17-003 6G roadmap
+  finding: '6G correctly kept as roadmap (not deployed consumer fact), but dated IMT-2030
+    / 3GPP study-item primary remains SOURCE_NEEDED.
+
+    '
+  evidence: Chapter repeatedly labels roadmap; claim footnote SOURCE_NEEDED; no fabricated
+    study IDs.
+  proposed_fix: Agent E pin dated ITU IMT-2030 / 3GPP study primary; do not invent
+    cites.
+  fix_status: DEFERRED_HUMAN_REVIEW
+  meaning_change: false
+  citation_required: true
+  reviewer_type_needed: evidence
+- issue_id: TECH-B-CH19-002
+  chapter: CH19
+  part: IV
+  category: TECHNICAL
+  severity: MODERATE
+  location: CLM-CH19-003 / CLM-CH19-004
+  finding: Orbit-delay product numbers and operator capability-class docs remain SOURCE_NEEDED.
+  evidence: Claim footnotes; qualitative teaching only.
+  proposed_fix: Agent E / human evidence pin; keep PHYSICAL_PENDING for project NTN
+    twin.
+  fix_status: DEFERRED_HUMAN_REVIEW
+  meaning_change: false
+  citation_required: true
+  reviewer_type_needed: evidence
+- issue_id: TECH-B-CH16-002
+  chapter: CH16
+  part: IV
+  category: TECHNICAL
+  severity: MODERATE
+  location: "\xA75 Routing card"
+  finding: "Survey prose uses \u201Crouting\u201D for next-hop choice without naming\
+    \ forwarding vs routing (data plane vs control plane)\u2014acceptable survey depth\
+    \ but slightly imprecise.\n"
+  evidence: book/chapters/ch16/chapter.md Routing component card
+  proposed_fix: Added forwarding vs routing (data-plane action vs control-plane reachability)
+    under Routing card.
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-CH15-001
+  chapter: CH15
+  part: III
+  category: TECHNICAL
+  severity: MODERATE
+  location: Orchestration intro card
+  finding: Orchestration kept survey-deep without naming control-plane vs data-plane
+    failure modes beyond a symptom line.
+  evidence: book/chapters/ch15/chapter.md Orchestration intro + component card
+  proposed_fix: Added Engineer-depth control-plane vs data-plane distinction under
+    Orchestration while keeping survey depth.
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: engineer
+- issue_id: TECH-B-CH11-001
+  chapter: CH11
+  part: III
+  category: TECHNICAL
+  severity: MODERATE
+  location: CLM-CH11-006 interrupted-update claim
+  finding: Interrupted firmware-update failure modes correctly omitted as SOURCE_NEEDED.
+  evidence: Claim footnotes; recovery discussed only qualitatively.
+  proposed_fix: Agent E pin vendor/OS update-recovery docs before promoting claim.
+  fix_status: DEFERRED_HUMAN_REVIEW
+  meaning_change: false
+  citation_required: true
+  reviewer_type_needed: evidence
+- issue_id: TECH-B-CH17-002
+  chapter: CH17
+  part: IV
+  category: TECHNICAL
+  severity: MINOR
+  location: chapter banner
+  finding: CH17/CH18 banners omit explicit Gate 3 posture line present in sibling
+    chapters.
+  evidence: publication/full31/quality/CHAPTER_STATUS_BANNER_POLICY.md
+  proposed_fix: Documented canonical chapter-status/banner policy; Gate 3 posture
+    stays book-level rather than repetitive chapter banners.
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: editorial
+- issue_id: TECH-B-CH12-002
+  chapter: CH12
+  part: III
+  category: TECHNICAL
+  severity: MINOR
+  location: FIG-CH12-004 truth labels
+  finding: "SVG/desc says \u201Cmeasured teaching fixture\u201D while accessibility\
+    \ YAML truth_classification is illustrative\u2014label drift around the same classroom\
+    \ n=1 fixture.\n"
+  evidence: figures/architecture/fig-ch12-004-monitor-snapshots.svg; figures/accessibility/fig-ch12-004.yaml;
+    figures/figure_registry.yaml; ch12 chapter.md
+  proposed_fix: Normalized FIG-CH12-004 truth to illustrative classroom fixture (n=1)
+    across SVG/a11y/registry/prose; added drift check.
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: visual
+- issue_id: TECH-B-REG-001
+  chapter: multi
+  part: III
+  category: TECHNICAL
+  severity: MINOR
+  location: figures/figure_registry.yaml CH11/CH13 chapter fields
+  finding: "Registry chapter fields truncated as \u201CCH1-\u201D / \u201CCH3-\u201D\
+    \ for CH11/CH13 entries."
+  evidence: 'python recount: truncated chapter fields = 0 for all 110 registry entries'
+  proposed_fix: Confirmed zero truncated chapter fields remain in figures/figure_registry.yaml
+    (deterministic recount).
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: integrator
+- issue_id: TECH-B-CH12-003
+  chapter: CH12
+  part: III
+  category: TECHNICAL
+  severity: EDITORIAL
+  location: status frontmatter
+  finding: "CH12 uses status working_draft while several siblings use draft\u2014\
+    cosmetic inconsistency."
+  evidence: book/chapters/ch12/metadata.yaml + chapter.md YAML header
+  proposed_fix: Normalized CH12 status to draft; preserved manuscript_status/human_validation_status/publication_status.
+  fix_status: FIXED
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: editorial
+- issue_id: TECH-B-CH20-001
+  chapter: CH20
+  part: IV
+  category: TECHNICAL
+  severity: EDITORIAL
+  location: "\xA71\u2013\xA76"
+  finding: Latency/reliability/QoE/QoS/ping separations are strong; no technical defect
+    found beyond false draft-blocked figure footer (covered by TECH-B-FIG-003).
+  evidence: Metric family table; ITU/ISO cites present; numeric humility rule explicit.
+  proposed_fix: None beyond figure embed/status fix.
+  fix_status: NOT_AN_ISSUE
+  meaning_change: false
+  citation_required: false
+  reviewer_type_needed: none
+boundary_checklist:
+  part_iii:
+    firmware_vs_bootloader_vs_os: PASS
+    secure_boot_trust_language: PASS
+    process_vs_thread: PASS
+    scheduling_vs_parallelism: PASS
+    filesystem_vs_database: PASS_with_SOURCE_NEEDED_depth
+    volatile_vs_durable: PASS
+    api_vs_runtime_vs_ui: PASS
+    vm_vs_container: PASS
+    cloud_vs_edge: PASS
+  part_iv:
+    ethernet_lan_internet: MAJOR_gap_ethernet_naming
+    dns_role: PASS
+    routing_vs_application_service: PASS
+    wifi_vs_cellular: PASS
+    five_g_vs_six_g_roadmap: PASS_with_SOURCE_NEEDED_primary
+    spectrum_vs_channel: MAJOR_gap
+    antenna_vs_beamforming: PASS
+    siso_mimo: MAJOR_gap_siso
+    ntn: PASS_with_SOURCE_NEEDED
+    service_continuity: PASS
+    latency_vs_reliability_vs_qoe: PASS
+    observed_vs_network_attribution: PASS
+notes:
+- No speculative deployed-consumer 6G claims found.
+- No gate-3 edits performed or required.
+- No invented citations introduced in Phase 2.
+- PHYSICAL_PENDING Device Quartet / NTN / RF claims correctly labeled where present.

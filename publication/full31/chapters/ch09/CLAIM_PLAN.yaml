@@ -22,24 +22,27 @@ claims:
   claim_class: general_technical
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_or_standards
-  status: SOURCE_NEEDED
-  citation_keys: []
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - iec-62133-2
+  - ul-2054
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
   wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
     measurements; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH09-003
   text: Mechanical design choices affect thermals, durability, accessibility of controls,
-    and repairability (qualitative).
-  claim_class: general_technical
+    and repairability (qualitative teaching model; no pinned industrial-design textbook
+    in this wave).
+  claim_class: illustrative
   evidence_required: See SOURCE_NEEDS.md for preferred evidence class.
   preferred_source_type: textbook_or_design_refs
-  status: SOURCE_NEEDED
+  status: ILLUSTRATIVE_ONLY
   citation_keys: []
   overclaim_risk: Over-specific product numbers, invented EVT results, or Gate 3 PASS
     claims.
-  wording_boundary: 'approved: evidence-scoped teaching claim | prohibited: fabricated
-    measurements; shipping Quartet SKUs; Gate 3 PASS'
+  wording_boundary: 'approved: qualitative teaching model without pinned design BoK
+    | prohibited: invented ISBN/EVT; shipping Quartet SKUs; Gate 3 PASS'
 - provisional_id: CLM-CH09-004
   text: Device Quartet thermal/battery EVT curves remain PHYSICAL_PENDING.
   claim_class: project_specific

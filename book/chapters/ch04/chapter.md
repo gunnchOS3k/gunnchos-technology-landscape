@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH04
 chapter_number: 4
-title: "The Device Quartet as a Learning Laboratory"
 author: "Edmund Gunn, Jr."
 part: I
 concept_edition: false
@@ -71,7 +70,7 @@ Optional commodity comparison (no Quartet required): take one task you already d
 
 A learning laboratory is not a store shelf. @fig-ch04-001 shows the Quartet as four educational lenses. Treat the diagram as **conceptual**—representative educational architecture for teaching roles—not a photograph of validated manufactured units.
 
-![Four research form factors as a learning laboratory, not a product catalog.](../../../figures/ecosystem/fig-ch04-001-quartet-learning-lab.svg){#fig-ch04-001 fig-cap="Device Quartet as a Learning Laboratory. Conceptual: research form factors with PHYSICAL_PENDING physical attributes; not a shipping catalog."}
+![Four research form factors as a learning laboratory, not a product catalog.](../../../figures/ecosystem/fig-ch04-001-quartet-learning-lab.svg){#fig-ch04-001 fig-cap="Device Quartet as a Learning Laboratory. Conceptual: research form factors with PHYSICAL_PENDING physical attributes; not a shipping catalog." fig-alt="Four research form factors as a learning laboratory, not a product catalog."}
 
 ### Human
 
@@ -105,7 +104,7 @@ Publication machine-readable roles live in `devices/quartet.yaml` [@gunnchosTech
 
 @fig-ch04-002 keeps one task in the center and fans constraint callouts outward. Read it as a logical story about *where pressure appears*, not as a measured EVT report.
 
-![Same human task with different constraint callouts by form factor.](../../../figures/ecosystem/fig-ch04-002-same-task-constraints.svg){#fig-ch04-002 fig-cap="Same task across form factors. Illustrative teaching diagram; constraint callouts are conceptual, not Device Quartet EVT measurements."}
+![Same human task with different constraint callouts by form factor.](../../../figures/ecosystem/fig-ch04-002-same-task-constraints.svg){#fig-ch04-002 fig-cap="Same task across form factors. Illustrative teaching diagram; constraint callouts are conceptual, not Device Quartet EVT measurements." fig-alt="Same human task with different constraint callouts by form factor."}
 
 Walk one example task—“finish and submit a short write-up”—across the four lenses:
 
@@ -226,7 +225,7 @@ Concurrent conditions for a fair Chapter 4 learning experience include:
 
 @fig-ch04-003 makes the matrix idea visible. Cells show **role classes**, not measured EVT values. Color is not required to read it; labels carry the meaning.
 
-![Conceptual constraint matrix across Quartet lenses.](../../../figures/ecosystem/fig-ch04-003-constraint-matrix.svg){#fig-ch04-003 fig-cap="Constraint matrix for power class, thermals class, I/O, mobility, and accessibility. Conceptual; Quartet numeric EVT cells remain PHYSICAL_PENDING."}
+![Conceptual constraint matrix across Quartet lenses.](../../../figures/ecosystem/fig-ch04-003-constraint-matrix.svg){#fig-ch04-003 fig-cap="Constraint matrix for power class, thermals class, I/O, mobility, and accessibility. Conceptual; Quartet numeric EVT cells remain PHYSICAL_PENDING." fig-alt="Conceptual constraint matrix across Quartet lenses."}
 
 Three separations matter here:
 

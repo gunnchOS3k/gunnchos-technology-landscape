@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH10
 chapter_number: 10
-title: "Ports, Buses, Boards, Packaging, and Manufacturing"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false
@@ -25,7 +24,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch10-moment}
 
 You plug in a cable. Or you seat a card. Or you notice the seam lines on a phone—the thin edges where plastic, glass, and metal meet around a port you use every day.
 
@@ -43,7 +42,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch10-notice}
 
 Before names like *protocol* or *DFM* enter, notice the human contract you already expect.
 
@@ -59,7 +58,7 @@ Optional comparison, available on almost any device you already own: plug a fami
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch10-ecosystem}
 
 A plug-in is not a single object. It is a path through an ecosystem. **FIG-CH10-001** is the first-minute map: chips and modules on a board ↔ shared buses ↔ ports ↔ the external world of cables and accessories. Treat it as **Representative educational architecture**, not a claim that any sealed phone or laptop looks exactly like the diagram inside.
 
@@ -101,7 +100,7 @@ Firmware and operating-system drivers eventually interpret enumeration, power ro
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch10-signal}
 
 **FIG-CH10-002** shows a numbered path: host request → bus transaction → device response, with failure branches. Read it as a logical story, not as a claim that every commodity cable executes exactly these steps with no overlap.
 
@@ -132,7 +131,7 @@ Outside observation rarely distinguishes those cleanly. That limitation is a fea
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch10-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies.
 
@@ -186,7 +185,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch10-stability}
 
 A plug-in experience continues only while multiple hidden conditions stay within acceptable bounds.
 
@@ -208,7 +207,7 @@ A system can remain *physically* plugged while the human experience has already 
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch10-try}
 
 ### LAB-BUS-001 — Name the Interconnect
 
@@ -249,7 +248,7 @@ A system can remain *physically* plugged while the human experience has already 
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch10-build}
 
 Extend LAB-BUS-001 without turning Part II into a parts catalog.
 
@@ -277,7 +276,7 @@ Educators can facilitate teach-backs from Section 11 and adapt LAB-BUS-001 for c
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch10-secure-include}
 
 ### Security
 
@@ -305,7 +304,7 @@ Do not claim factory yields, sealed teardowns you did not perform, or Quartet EV
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch10-career}
 
 One cable crosses many ownership domains. No table promises employment; roles vary by organization. LAB-BUS-001 artifacts resemble early professional evidence in miniature: labeled diagrams, observation discipline, and explicit uncertainty.
 
@@ -322,7 +321,7 @@ Portfolio hint: a scrubbed interconnect map plus an observation-vs-inference tab
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch10-check}
 
 **Concept.** In one sentence each, define *port*, *bus*, and *PCB* so that none of them swallows the other two.
 
@@ -346,7 +345,7 @@ Inline citations used in this chapter include @patterson-hennessy and @tanenbaum
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch10-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

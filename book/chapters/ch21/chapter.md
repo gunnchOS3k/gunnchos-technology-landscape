@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH21
 chapter_number: 21
-title: "Data, Machine Learning, and Generative AI"
 author: "Edmund Gunn, Jr."
 part: V
 concept_edition: false
@@ -27,7 +26,7 @@ Part V opens the intelligence, security, and responsibility arc. This chapter in
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch21-moment}
 
 You ask a practical question of an on-device or in-browser assistant. The reply arrives quickly. The sentences are smooth. The tone sounds certain—or it hedges, or it refuses, or it changes style after an app update you barely noticed.
 
@@ -43,7 +42,7 @@ This is not a product review of any named assistant, not a course in training la
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch21-notice}
 
 Before naming parameters or cloud regions, notice what broke or felt strange in human terms.
 
@@ -57,7 +56,7 @@ Optional commodity notice (no specialized gear): ask one non-sensitive practical
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch21-ecosystem}
 
 An assistant answer is not a single object. It is a path through an ecosystem. **FIG-CH21-001** is the first-minute map: human experience at the center, with cooperating layers—not a cartoon brain. Treat it as **representative educational architecture**, not a claim that every product wires the same stack.
 
@@ -101,7 +100,7 @@ Who can complete the lab without paid APIs or GPUs? Who is harmed by fluent erro
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch21-signal}
 
 Here the “signal” is the fate of one practical question—from input to human judgment—not a mystical spark of understanding. Read the sequence as a logical path. Alternate product paths exist; open questions stay labeled undetermined.
 
@@ -117,7 +116,7 @@ Here the “signal” is the fate of one practical question—from input to huma
 
 ### Generative systems without mythology
 
-**Generative AI**, in this book’s systems view, means systems that produce new text, images, code, or similar media by predicting likely continuations under a model and decoding procedure. Prediction of likely tokens is not comprehension. The pedagogical firewall is deliberate: speak of inputs, parameters, inference, and outputs—not beliefs or intentions (CLM-CH21-001 wording boundary).
+**Machine learning** is the broader practice of fitting model parameters from data and applying them at inference—classification, ranking, detection, and generation all sit under that umbrella when they learn from examples [@goodfellow_deep_learning]. **Generative AI**, in this book’s systems view, means systems that produce new text, images, code, or similar media by predicting likely continuations under a model and decoding procedure. Generative systems are one family of ML applications, not a synonym for all machine learning. Prediction of likely tokens is not comprehension. The pedagogical firewall is deliberate: speak of inputs, parameters, inference, and outputs—not beliefs or intentions (CLM-CH21-001 wording boundary).
 
 ### Local versus cloud as a path fork
 
@@ -141,7 +140,7 @@ Illustrative comparison tables for latency, energy, privacy, and control are **t
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch21-components}
 
 Plain-language cards for the objects that cooperate. Each card names constraints and human-visible failure symptoms. None of these components is a person.
 
@@ -193,7 +192,7 @@ Plain-language cards for the objects that cooperate. Each card names constraints
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch21-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -223,7 +222,7 @@ Non-claims: no numeric product SLOs for gunnchOS AI features; no assertion that 
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch21-try}
 
 **Primary lab:** **LAB-TRUST-001** — Compare local versus remote AI paths and write a consent/trust card.
 
@@ -259,7 +258,7 @@ Safety: use only non-sensitive prompts; never paste real secrets, health records
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch21-build}
 
 Extend LAB-TRUST-001 without turning Part V into a fake benchmark catalog.
 
@@ -287,7 +286,7 @@ Educators can facilitate Section 11 teach-backs and keep fixture routes as equit
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch21-secure-include}
 
 ### Security (UX-linked, not a scare-list)
 
@@ -315,7 +314,7 @@ Do not anthropomorphize models as moral agents; humans remain accountable for de
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch21-career}
 
 One assistant answer crosses many ownership domains. No table promises employment; roles vary by organization. LAB-TRUST-001 artifacts resemble early professional evidence in miniature: labeled observations, disclosure notes, and explicit uncertainty.
 
@@ -332,7 +331,7 @@ Portfolio hint: a scrubbed consent card plus an uncertainty note beats a vibes-b
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch21-check}
 
 **Concept.** In one sentence, frame a familiar AI feature as data conditioning a model applied at inference to produce outputs—without saying the system understands.
 
@@ -366,16 +365,17 @@ Primary inheritance (link, prefer over duplication): Concept Edition CE-5 under 
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch21-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 
 | Term | Plain link |
 |---|---|
 | Training and input data | Examples/records used to fit a model or answer a question |
+| Machine learning | Broader practice of fitting models from data and applying them at inference (not only generative systems) |
 | Model parameters | Stored numbers shaping inputs→outputs; not a mind |
 | Inference / output | Running a model on new inputs to produce a prediction or generation |
-| Generative AI (systems view) | Systems that produce new text/images/code by predicting likely continuations |
+| Generative AI (systems view) | One ML family: systems that produce new text/images/code by predicting likely continuations (not all ML) |
 | Uncertainty and errors | Outputs can be wrong or incomplete even when fluent |
 | Local vs cloud AI | Whether inference runs on-device or on remote computers |
 | Evaluation under uncertainty | Checking usefulness with labeled observations and limits |

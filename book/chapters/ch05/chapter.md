@@ -2,7 +2,6 @@
 status: WORKING_DRAFT_COMPLETE
 chapter_id: CH05
 chapter_number: 5
-title: "Electricity, Signals, Clocks, and Logic"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false
@@ -58,7 +57,7 @@ Optional comparison available on almost any device you already own: press a phys
 
 @fig-ch05-001 is the first-minute map for this chapter: press → electrical change → signal → clocked logic → perceptible effect. It is **conceptual**—not a claim that any particular manufactured revision wires those stages the same way, and not a measured Device Quartet waveform. Device Quartet form factors used elsewhere in this series remain research/learning spines; physical fabrication and EVT electrical measurements stay **PHYSICAL_PENDING** [@src-hardware-quartet].
 
-![Causal flow from human press through electrical change, signal, clocked logic, and perceptible effect.](../../../figures/ecosystem/fig-ch05-001-press-to-logic.svg){#fig-ch05-001 fig-cap="Press → electrical change → signal → clocked logic → effect. Conceptual educational flow; not measured telemetry."}
+![Causal flow from human press through electrical change, signal, clocked logic, and perceptible effect.](../../../figures/ecosystem/fig-ch05-001-press-to-logic.svg){#fig-ch05-001 fig-cap="Press → electrical change → signal → clocked logic → effect. Conceptual educational flow; not measured telemetry." fig-alt="Causal flow from human press through electrical change, signal, clocked logic, and perceptible effect."}
 
 Walk the ecosystem in ordinary language. Keep the same layers when vocabulary deepens. Do **not** treat this as a bill of materials.
 
@@ -72,7 +71,7 @@ Something converts the action into an electrical change. A mechanical switch ope
 
 ### Electrical medium
 
-Charge, voltage, and current are the ordinary medium for doing work and carrying control information inside devices. You do not need a full circuits course to hold the idea: energy and control arrive as electrical quantities that must be present, limited, and safe enough for the intended parts. Later sections stay qualitative; this book will not invent precision meter readings for research hardware that has not been measured.
+Three ordinary electrical quantities stay distinct in this chapter. **Voltage** is a potential difference—the “pressure” that can drive charge when a path exists. **Current** is charge in motion along that path. **Power** is how fast energy is delivered or converted (qualitatively: when both voltage and current are present in a useful path, work can be done and heat can appear). You do not need a full circuits course to hold the separation: energy and control arrive as electrical quantities that must be present, limited, and safe enough for the intended parts. Later sections stay qualitative; this book will not invent precision meter readings for research hardware that has not been measured.
 
 ### Signal
 
@@ -110,11 +109,11 @@ Read the following as a logical story, not as a claim that every device executes
 8. **Downstream action.** The decision enables a driver, updates a register that software will read, or changes a display path.
 9. **Human feedback.** Light, motion, sound, or haptic change closes the loop.
 
-![Side-by-side comparison of a continuous analog waveform and discrete digital logic levels.](../../../figures/architecture/fig-ch05-002-analog-vs-digital.svg){#fig-ch05-002 fig-cap="Analog continuous quantity versus digital level bands. Conceptual; not a measured scope capture."}
+![Side-by-side comparison of a continuous analog waveform and discrete digital logic levels.](../../../figures/architecture/fig-ch05-002-analog-vs-digital.svg){#fig-ch05-002 fig-cap="Analog continuous quantity versus digital level bands. Conceptual; not a measured scope capture." fig-alt="Side-by-side comparison of a continuous analog waveform and discrete digital logic levels."}
 
-![Illustrative clock edges sequencing sampling of a digital signal.](../../../figures/sequence/fig-ch05-003-clock-edges.svg){#fig-ch05-003 fig-cap="Illustrative clock edges sequencing decisions. Teaching sketch only; no invented frequency claims."}
+![Illustrative clock edges sequencing sampling of a digital signal.](../../../figures/sequence/fig-ch05-003-clock-edges.svg){#fig-ch05-003 fig-cap="Illustrative clock edges sequencing decisions. Teaching sketch only; no invented frequency claims." fig-alt="Illustrative clock edges sequencing sampling of a digital signal."}
 
-![Small logic gates composing a larger Boolean decision path.](../../../figures/architecture/fig-ch05-004-logic-blocks.svg){#fig-ch05-004 fig-cap="Boolean building blocks composing larger digital behavior. Conceptual educational diagram."}
+![Small logic gates composing a larger Boolean decision path.](../../../figures/architecture/fig-ch05-004-logic-blocks.svg){#fig-ch05-004 fig-cap="Boolean building blocks composing larger digital behavior. Conceptual educational diagram." fig-alt="Small logic gates composing a larger Boolean decision path."}
 
 Failure branches are part of honesty:
 
@@ -135,10 +134,11 @@ These cards are teaching tools, not a catalog of SKUs. If removing a name still 
 
 ### Electricity as useful energy and control
 
-- **What it is.** Charge in motion and potential differences that can do work or convey control.
+- **What it is.** Voltage (potential difference), current (charge flow), and power (energy delivery rate) used together to do work or convey control—three related quantities, not three names for one thing.
 - **What it does.** Powers sensors, logic, radios, and actuators; carries many of the signals this chapter cares about.
 - **When it works.** Enough energy arrives where it is needed, within limits the parts can tolerate.
 - **When it fails.** Brownout, open path, short, or wrong domain powered—often experienced as “dead” behavior without a helpful error message.
+- **Misconception to drop.** Seeing a glowing screen (some power domain alive) does not prove the input path has voltage, current, and power where the decision needs them.
 
 ### Signal
 
@@ -370,6 +370,9 @@ Inline citations used in this chapter include @harris-harris-riscv, @patterson-h
 | Term | Role in this chapter |
 |---|---|
 | Electricity (energy/control) | Medium for power and many control signals |
+| Voltage | Potential difference that can drive charge when a path exists |
+| Current | Charge in motion along a path |
+| Power | Rate of energy delivery or conversion (not a synonym for voltage) |
 | Signal | Time-varying physical quantity carrying information |
 | Analog | Continuous physical representation |
 | Digital | Discrete symbolic levels interpreted from physical media |

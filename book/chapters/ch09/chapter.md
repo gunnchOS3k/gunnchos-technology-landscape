@@ -2,7 +2,6 @@
 status: WORKING_DRAFT_COMPLETE
 chapter_id: CH09
 chapter_number: 9
-title: "Power, Batteries, Thermals, and Mechanical Design"
 author: "Edmund Gunn, Jr."
 part: II
 concept_edition: false
@@ -49,7 +48,7 @@ Optional commodity comparison (no specialized hardware): run a light local task 
 
 Energy does not appear inside the SoC by magic. It enters, converts, feeds loads, becomes heat, and leaves—or it accumulates until policy intervenes. @fig-ch09-001 is the first-minute map: energy in → conversion → loads → heat out, with a throttle feedback path. It is **conceptual**, not a measured board layout.
 
-![Energy path from source through conversion and loads to heat, with throttle feedback.](../../../figures/ecosystem/fig-ch09-001-energy-path.svg){#fig-ch09-001 fig-cap="Energy in → conversion → loads → heat out, with throttle feedback. Conceptual educational diagram; not measured Device Quartet telemetry."}
+![Energy path from source through conversion and loads to heat, with throttle feedback.](../../../figures/ecosystem/fig-ch09-001-energy-path.svg){#fig-ch09-001 fig-cap="Energy in → conversion → loads → heat out, with throttle feedback. Conceptual educational diagram; not measured Device Quartet telemetry." fig-alt="Energy path from source through conversion and loads to heat, with throttle feedback."}
 
 Walk the layers in ordinary language.
 
@@ -79,7 +78,7 @@ The case, hinges, seals, vents, materials, and button placement are **mechanical
 
 @fig-ch09-003 opens the enclosure roles conceptually: protection, heat path, and human interface.
 
-![Exploded conceptual enclosure showing protection, heat path, and human-interface roles.](../../../figures/exploded-views/fig-ch09-003-enclosure-roles.svg){#fig-ch09-003 fig-cap="Mechanical enclosure roles: protection, heat path, and human interface. Conceptual; not a validated EVT."}
+![Exploded conceptual enclosure showing protection, heat path, and human-interface roles.](../../../figures/exploded-views/fig-ch09-003-enclosure-roles.svg){#fig-ch09-003 fig-cap="Mechanical enclosure roles: protection, heat path, and human interface. Conceptual; not a validated EVT." fig-alt="Exploded conceptual enclosure showing protection, heat path, and human-interface roles."}
 
 ---
 
@@ -112,7 +111,7 @@ Here the “signal” is energy and control, not a tap packet. Read the sequence
 
 @fig-ch09-002 contrasts on-charger vs on-battery feel as an **illustrative** teaching plate—no invented watts.
 
-![Side-by-side on-charger versus on-battery experience with shared app and different budgets.](../../../figures/ecosystem/fig-ch09-002-charger-vs-battery.svg){#fig-ch09-002 fig-cap="On charger vs on battery feel. Illustrative compare plate; no fabricated watt or °C product curves."}
+![Side-by-side on-charger versus on-battery experience with shared app and different budgets.](../../../figures/ecosystem/fig-ch09-002-charger-vs-battery.svg){#fig-ch09-002 fig-cap="On charger vs on battery feel. Illustrative compare plate; no fabricated watt or °C product curves." fig-alt="Side-by-side on-charger versus on-battery experience with shared app and different budgets."}
 
 ---
 
@@ -417,8 +416,8 @@ All figures below are **conceptual** or **illustrative** unless a future revisio
 | Claim ID | Approved gist | Classification |
 |---|---|---|
 | CLM-CH09-001 | Interactive devices operate under finite power/thermal budgets that can reduce available performance | general_technical · SOURCE_IDENTIFIED via @linux-cpu-freq |
-| CLM-CH09-002 | Batteries as non-ideal finite sources | **OMITTED as cited claim**; safety standards cited separately |
-| CLM-CH09-003 | Mechanical design affects thermals/durability/a11y/repairability | **QUALITATIVE ONLY** in this draft (no unsupported textbook pin) |
+| CLM-CH09-002 | Batteries as non-ideal finite sources | **SOURCE_IDENTIFIED** (`iec-62133-2`, `ul-2054`); safety posture only |
+| CLM-CH09-003 | Mechanical design affects thermals/durability/a11y/repairability | **ILLUSTRATIVE_ONLY** (no pinned industrial-design textbook this wave) |
 | CLM-CH09-004 | Device Quartet thermal/battery EVT curves | PHYSICAL_PENDING via @src-hardware-quartet |
 
 General statements about heat needing a path out of a closed system are treated as ordinary physical reasoning and are not rewritten as repository claims. Any future numeric watt/°C figures must carry **illustrative**, **measured**, or **inferred** labels—and Quartet measured figures stay blocked until PHYSICAL_PENDING clears.

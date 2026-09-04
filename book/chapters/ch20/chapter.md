@@ -2,7 +2,6 @@
 status: draft
 chapter_id: CH20
 chapter_number: 20
-title: "Latency, Reliability, QoE, and the Stability Contract"
 author: "Edmund Gunn, Jr."
 part: IV
 concept_edition: false
@@ -28,7 +27,7 @@ Part IV has already named paths, packets, radios, and services. This chapter clo
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch20-moment}
 
 Everything looks connected. The icon says online. The Wi‑Fi name is familiar. Cellular bars are present. You tap send, submit, refresh, or sync—and the experience stalls, flickers, retries, or never finishes. Sometimes a toast claims success while the remote effect never arrives. Sometimes ping looks fine and the app still feels awful.
 
@@ -44,7 +43,7 @@ This is Part IV’s synthesis close and the full-book expansion of CE-6. It is n
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch20-notice}
 
 Before naming latency budgets or reliability mathematics, notice the human contract that broke.
 
@@ -58,9 +57,11 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch20-ecosystem}
 
 A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH20-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **Representative educational architecture**, not a claim that every app fails the same way.
+
+![Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke.](../../../figures/full31/ch20/fig-ch20-001.svg){fig-alt="Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke." #fig-ch20-001 fig-cap="Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke."}
 
 Walk the layers in ordinary language.
 
@@ -110,9 +111,11 @@ SC-11: delay and variability remain acceptable *to this person in this context*.
 
 **FIG-CH20-002** separates latency vs reliability vs throughput symptom families so readers stop treating one green probe as all three.
 
+![Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe.](../../../figures/full31/ch20/fig-ch20-002.svg){fig-alt="Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe." #fig-ch20-002 fig-cap="Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe."}
+
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch20-signal}
 
 Here the “signal” is the human action’s fate across layers—not a single ICMP echo. Read the sequence as a logical diagnosis story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -142,6 +145,8 @@ Latency, reliability, and throughput are different failure/success families; col
 
 **FIG-CH20-003** and CE-6’s evidence ladder teach the same honesty:
 
+![QoE vs QoS vs ping. Conceptual non-entailment teaching.](../../../figures/full31/ch20/fig-ch20-003.svg){fig-alt="QoE vs QoS vs ping. Conceptual non-entailment teaching." #fig-ch20-003 fig-cap="QoE vs QoS vs ping. Conceptual non-entailment teaching."}
+
 1. Illustrative teaching aid (labeled)
 2. Commodity observation (status UI, wall-clock, visible stalls)
 3. Browser / OS instrumentation where exposed (for example Performance API timings) [@mdn-performance; @mdn-resource-timing]
@@ -157,7 +162,7 @@ Prefer failure *domains* over confident blame: input, compute/schedule, memory/s
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch20-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -219,7 +224,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch20-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -267,7 +272,7 @@ For a successful send/submit/sync experience, conditions such as the following m
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch20-try}
 
 ### LAB-CE06-001 — Explain, Measure, Improve, and Teach
 
@@ -310,7 +315,7 @@ For a successful send/submit/sync experience, conditions such as the following m
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch20-build}
 
 Extend LAB-CE06-001 without turning Part IV into a fake SLO catalog.
 
@@ -338,7 +343,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F as a first-clas
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch20-secure-include}
 
 ### Security
 
@@ -366,7 +371,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch20-career}
 
 One stalled submit crosses many ownership domains. No table promises employment; roles vary by organization. LAB-CE06-001 artifacts resemble early professional evidence in miniature: labeled observations, failure-domain shortlists, and explicit uncertainty.
 
@@ -384,7 +389,7 @@ Portfolio hint: a scrubbed result table with observation/inference/`fixture` lab
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch20-check}
 
 **Concept.** In one sentence each, distinguish *latency*, *reliability*, and *throughput* so that none swallows the other two.
 
@@ -414,7 +419,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch20-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 
@@ -436,13 +441,13 @@ Related earlier chapters: experience-first path and observation craft (CH02/CH03
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured learner or lab evidence. No fabricated telemetry. No product SLO curves.
 
 ### FIG-CH20-001 — Stability Contract concurrent conditions
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Conceptual / hub-and-spoke (inherit CE-6 FIG-CE06-001 intent).
 - **Reader should notice.** Multiple concurrent conditions; any one can break the experience.
 - **Truth class.** Conceptual.
@@ -450,7 +455,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-002 — Latency vs reliability vs throughput
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** Three symptom families that must not collapse into one green probe.
 - **Truth class.** Conceptual.
@@ -458,7 +463,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-003 — QoE vs QoS vs ping
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Conceptual comparative.
 - **Reader should notice.** Human-facing QoE ≠ service QoS language ≠ one probe.
 - **Truth class.** Conceptual.
@@ -466,7 +471,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-004 — Learner portfolio timings labeled n=1
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+![Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data.](../../../figures/full31/ch20/fig-ch20-004.svg){fig-alt="Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data." #fig-ch20-004 fig-cap="Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data."}
+
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Measured-only when filled with learner data; otherwise illustrative placeholder.
 - **Reader should notice.** n=1 classroom evidence; fixture rows labeled `fixture`; not Gate 3 human validation.
 - **Truth class.** Measured *only* for learner-owned labeled timings; illustrative otherwise.

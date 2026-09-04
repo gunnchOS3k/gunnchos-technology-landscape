@@ -1,0 +1,553 @@
+schema: full31.chapter_identity_matrix.v1
+generated: '2026-09-03'
+base_sha: 3264321e0f878e16fb4d6b0f84cd189ac4538532
+chapters:
+- chapter_id: CH01
+  number: 1
+  title: Technology Is a System, Not a Screen
+  part: I
+  anchor_moment: "You unlock a familiar phone, tablet, or laptop. You open something\
+    \ you already use\u2014messages, a document, a map, a school portal. The chrome\
+    \ appears quickly: the icon, the title, the navigation bar, the skeleton layout\
+    \ that looks almost ready."
+  central_question: Why is the screen not the whole system?
+  primary_contribution: 'Part I: experience-first systems thinking'
+  reader_promise: "After this chapter, a reader can look at an ordinary device experience\
+    \ and name the hidden cooperating parts\u2014not just the colorful surface\u2014\
+    and explain why \u201Cthe app\u201D is usually not one thing."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH02
+  number: 2
+  title: Follow One Tap Through the Entire Stack
+  part: I
+  anchor_moment: "You open an app you already know. Maybe it is a school portal, a\
+    \ messaging thread, a map, or a weather page. Your finger finds a familiar control\u2014\
+    a button that says *Refresh*, *Send*, *Open*, or *Show more*\u2014and you tap."
+  central_question: What actually happens when I tap a button?
+  primary_contribution: 'Part I: method proof (canonical prototype)'
+  reader_promise: "After this chapter, a reader can follow one ordinary tap through\
+    \ the stack\u2014from human intent through sensors, software, optional network,\
+    \ and perceptible response\u2014and separate observation from inference."
+  forward_backward_link: 'references later/adjacent: 2'
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH03
+  number: 3
+  title: 'Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable'
+  part: I
+  anchor_moment: "You scroll a feed. You scrub a video scrubber. You switch apps.\
+    \ Sometimes motion is continuous enough that your attention stays on the content.\
+    \ Sometimes the same gesture hitches, freezes, then recovers unevenly\u2014even\
+    \ when the network icon still looks fine, or the device is relatively new."
+  central_question: Why does this experience feel fast, slow, smooth, or unstable?
+  primary_contribution: "Part I: human perception \u2194 measurable system behavior"
+  reader_promise: "After this chapter, a reader can connect how technology feels (fast,\
+    \ slow, smooth, unstable) to observable system behaviors\u2014latency, jitter,\
+    \ throughput, stalls, thermal/power limits\u2014without inventing fake benchmarks."
+  forward_backward_link: 'references later/adjacent: 3'
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH04
+  number: 4
+  title: The Device Quartet as a Learning Laboratory
+  part: I
+  anchor_moment: "You imagine one ordinary goal\u2014write a short report, measure\
+    \ how long a page takes to become usable, sense whether a device is with you,\
+    \ or carry a work session across a day\u2014and then you ask a dishonestly simple\
+    \ question:"
+  central_question: "Why do four research form factors make a better learning laboratory\
+    \ than one \u201Cideal\u201D device?"
+  primary_contribution: 'Part I: recurring learning laboratory; research form factors
+    only'
+  reader_promise: "After this chapter, a reader can explain why four recurring research\
+    \ form factors (Student 14.5\", Handheld Hybrid, DS-XL Coder, Edge IO Wearables)\
+    \ are a learning laboratory\u2014exposing different constraints\u2014without treating\
+    \ them as shipping products."
+  forward_backward_link: 'references later/adjacent: 4, 4'
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH05
+  number: 5
+  title: Electricity, Signals, Clocks, and Logic
+  part: II
+  anchor_moment: "You press a button\u2014or touch a screen that *behaves* like a\
+    \ button. The control darkens. A light turns on. A menu opens. A lock clicks.\
+    \ Something you can see, hear, or feel has changed."
+  central_question: How does an everyday device turn a human action into an electrical
+    story that logic can decide?
+  primary_contribution: 'Part II: hardware/electrical fundamentals (not component
+    catalog)'
+  reader_promise: "After this chapter, a reader can explain how everyday device behavior\
+    \ rests on electricity, signals over time, shared clocks, and logic decisions\u2014\
+    connecting human moments to physical fundamentals without cataloguing every component."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH06
+  number: 6
+  title: CPU, Instructions, and Parallel Work
+  part: II
+  anchor_moment: "You open a local app you already know\u2014notes, a photo editor,\
+    \ an IDE, a spreadsheet\u2014while other work is already running. The connectivity\
+    \ icon still looks fine. The window still draws. Scroll still tries. Yet the interface\
+    \ stutters, a save hangs a beat too long, fans spin up, or the chassis warms under\
+    \ your wrists."
+  central_question: "When my device feels slow while the network icon looks fine,\
+    \ what is the CPU doing\u2014and why doesn't more cores always help?"
+  primary_contribution: "Part II: compute fundamentals \u2014 instructions and parallel\
+    \ work"
+  reader_promise: "After this chapter, a reader can explain that programs run as instructions\
+    \ on a CPU (and sometimes accelerators), that the OS schedules competing work,\
+    \ and that \u2018more cores\u2019 only helps some workloads."
+  forward_backward_link: 'references later/adjacent: 2, 9'
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH07
+  number: 7
+  title: Memory, Cache, and Storage
+  part: II
+  anchor_moment: "You reopen an app you already know\u2014or a large file you edited\
+    \ yesterday. Sometimes the window returns as if it never left. Sometimes a spinner\
+    \ spins long enough that you notice. Sometimes the drive (or fan) makes a thrash-sound,\
+    \ the pointer hitch-steps, and the app reloads as if starting over."
+  central_question: Why is RAM not the same as storage, and how do hierarchy misses
+    change how technology feels?
+  primary_contribution: 'Part II: hierarchy and persistence fundamentals'
+  reader_promise: "After this chapter, a reader can explain the memory hierarchy (registers/cache/RAM/storage),\
+    \ why RAM \u2260 storage, and how hierarchy misses and storage I/O change how\
+    \ technology feels."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH08
+  number: 8
+  title: Graphics, Displays, Audio, Cameras, and Sensors
+  part: II
+  anchor_moment: "You watch a short video. A notification banner slides in from the\
+    \ top. Music from another app keeps playing. Somewhere in the same pocket of glass\
+    \ and metal, a microphone may be waiting for a wake word\u2014or a camera preview\
+    \ may be one tap away if you decide to take a photo."
+  central_question: "How do displays, audio, cameras, and sensors turn between the\
+    \ physical world and digital representations\u2014and why do frames, sampling,\
+    \ and pipelines shape feel?"
+  primary_contribution: 'Part II: I/O pipelines and human-perceptible media'
+  reader_promise: "After this chapter, a reader can explain how displays, audio, cameras,\
+    \ and sensors turn between the physical world and digital representations\u2014\
+    and why frames, sampling, and pipelines shape feel."
+  forward_backward_link: 'references later/adjacent: 8'
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH09
+  number: 9
+  title: Power, Batteries, Thermals, and Mechanical Design
+  part: II
+  anchor_moment: "You are on battery in a warm room. The same app that felt fine an\
+    \ hour ago\u2014plugged in, cooler air, quieter fan\u2014now hitchs when you scroll,\
+    \ dims the display, or takes a beat longer before the next frame. Nothing in the\
+    \ icon tray says \u201Csoftware forgot how.\u201D The code path you care about\
+    \ is still the code path. What change"
+  central_question: Why does the same app feel worse on battery in a warm room?
+  primary_contribution: 'Part II: power/thermal/mechanical constraints'
+  reader_promise: "After this chapter, a reader can explain why power, batteries,\
+    \ heat, and mechanical design shape what technology can sustainably feel like\u2014\
+    and why \u2018performance\u2019 collapses when energy/thermal budgets tighten."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH10
+  number: 10
+  title: Ports, Buses, Boards, Packaging, and Manufacturing
+  part: II
+  anchor_moment: "You plug in a cable. Or you seat a card. Or you notice the seam\
+    \ lines on a phone\u2014the thin edges where plastic, glass, and metal meet around\
+    \ a port you use every day."
+  central_question: How do ports, buses, boards, and packaging turn a design into
+    a device I can plug into?
+  primary_contribution: 'Part II: interconnect, boards, packaging, manufacturing literacy'
+  reader_promise: "After this chapter, a reader can explain how ports and buses move\
+    \ information and power between parts, how boards organize those connections,\
+    \ and how packaging/manufacturing turn designs into physical devices\u2014with\
+    \ honesty about PHYSICAL_PENDING fabrication evidence."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH11
+  number: 11
+  title: Firmware, Boot, and Trust
+  part: III
+  anchor_moment: "You press the power button\u2014or wake a phone that was only sleeping.\
+    \ A logo appears. Lights blink. A spinner turns. Then, if you are lucky, a lock\
+    \ screen or desktop. If you are unlucky: an endless logo, a recovery menu you\
+    \ did not ask for, or a warning that software could not be verified."
+  central_question: How does a device become a trustworthy-enough computer from power-on
+    through firmware and boot?
+  primary_contribution: firmware, boot-sequence, bootloader, root-of-trust, secure-boot,
+    measured-boot, attestation, recovery-mode
+  reader_promise: "After this chapter, a reader can explain how a device becomes a\
+    \ trustworthy-enough computer\u2014from power-on through firmware and boot into\
+    \ an OS\u2014and can separate secure-boot intent from marketing claims without\
+    \ inventing measured attestation results."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH12
+  number: 12
+  title: Operating Systems, Processes, Threads, and Scheduling
+  part: III
+  anchor_moment: "You open two apps. One keeps playing audio while you scroll another.\
+    \ Or one hung window freezes the whole UI while a clock somewhere still ticks.\
+    \ From the seat it feels like multitasking magic\u2014or \u201Cthe phone froze.\u201D\
+    \ Underneath, an **operating system** is isolating address spaces, scheduling\
+    \ runnable work, and mediating "
+  central_question: "When two apps seem to run at once, what is the OS doing\u2014\
+    and how is that different from the OS doing my app's work?"
+  primary_contribution: operating-system, process, thread, scheduler, context-switch,
+    isolation, syscall, concurrency-vs-parallelism
+  reader_promise: "After this chapter, a reader can explain the OS as the mediator\
+    \ that makes hardware shareable\u2014processes, threads, and scheduling\u2014\
+    and can separate 'the OS schedules' from 'the OS does my app's work.'"
+  forward_backward_link: 'references later/adjacent: 2, 9'
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH13
+  number: 13
+  title: Files, Databases, and Data Lifecycles
+  part: III
+  anchor_moment: You hit Save. Or you close a tab. Or you walk away assuming the document
+    will be there tomorrow the way you left it.
+  central_question: When I hit Save, what durable-state contracts and lifecycle stages
+    must hold for the experience to stay honest?
+  primary_contribution: file, filesystem, database, durability, consistency-model,
+    data-lifecycle, cache-vs-durable, deletion
+  reader_promise: "After this chapter, a reader can explain files and databases as\
+    \ durable-state abstractions, and can map a data lifecycle (create to use to retain\
+    \ to share to delete/redact) to human consequences\u2014without treating saved\
+    \ as instantaneous truth."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH14
+  number: 14
+  title: Applications, APIs, Runtimes, and User Interfaces
+  part: III
+  anchor_moment: 'You launch an app you already use. The skeleton appears almost at
+    once: icon, title bar, navigation chrome, maybe a gray tile where a list should
+    live. Something about the surface says *I am here*.'
+  central_question: "How do I explode an app into UI, runtime, libraries, and APIs\u2014\
+    and why is chrome-ready not work-complete?"
+  primary_contribution: application, user-interface, runtime, api, library-framework,
+    event-loop, local-vs-remote-api
+  reader_promise: "After this chapter, a reader can explode an app into UI, runtime,\
+    \ libraries, and APIs\u2014and explain why chrome-ready is not work-complete."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH15
+  number: 15
+  title: Containers, Virtualization, Cloud, and Edge Computing
+  part: III
+  anchor_moment: "A classroom lab says: *run this in a container*. Or your school\
+    \ Chromebook opens the same assignment as a website that \u201Cjust works,\u201D\
+    \ while a local install never appears. Or a sync spinner sits on \u201Cwaiting\
+    \ for network\u201D even though the Wi-Fi or cellular icon still looks healthy."
+  central_question: "When an app runs in a container or \"in the cloud,\" what is\
+    \ being multiplexed\u2014and why is edge/cloud placement not the same thing as\
+    \ Wi-Fi or cellular?"
+  primary_contribution: virtual-machine, container, hypervisor, image, cloud-placement,
+    edge-placement, multitenancy, orchestration-intro
+  reader_promise: "After this chapter, a reader can explain virtualization and containers\
+    \ as isolation/packaging abstractions, and can treat edge vs cloud as placement\
+    \ decisions\u2014not marketing synonyms for the Internet."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH16
+  number: 16
+  title: Packets, Protocols, Routing, and the Internet
+  part: IV
+  anchor_moment: "You send a short message. The UI shows **sent**. Then nothing: no\
+    \ delivered check, no reply, a spinner that will not end. You refresh a page you\
+    \ trust. The browser stalls on \u201Clooking up\u2026\u201D or hangs on connect.\
+    \ From your seat it feels like one verdict: *the Internet is broken*."
+  central_question: "When a message shows sent then stalls, what packet, address,\
+    \ route, and name-resolution conditions failed\u2014and which scopes still worked?"
+  primary_contribution: packet, encapsulation, addressing, routing, protocol, transport,
+    dns, local-lan-internet
+  reader_promise: "After this chapter, a reader can follow everyday connected work\
+    \ as packets under protocols, with routing across local/LAN/Internet scopes\u2014\
+    without calling Wi-Fi or cloud the Internet."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH17
+  number: 17
+  title: Wi-Fi, Cellular, 5G, and the Road to 6G
+  part: IV
+  anchor_moment: "You leave a building. The Wi-Fi icon disappears\u2014or stays, weakly\u2014\
+    and a cellular icon takes over. A call continues, or it does not. A chat that\
+    \ felt instant now stalls. Sometimes a **5G** badge appears while the experience\
+    \ still feels bad. From your seat it feels like one story: *I have signal, so\
+    \ it should be fine.*"
+  central_question: "When my access icon changes\u2014or stays lit while the experience\
+    \ fails\u2014what actually changed?"
+  primary_contribution: wifi, cellular, rat, 5g-system, 6g-roadmap, handover, bars-vs-experience
+  reader_promise: "After this chapter, a reader can distinguish Wi-Fi vs cellular\
+    \ as different access technologies, place 5G in a standards evolution story, and\
+    \ treat 6G as a roadmap\u2014not a present synonym for better bars."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH18
+  number: 18
+  title: Spectrum, Antennas, Beams, MIMO, and Radio Conditions
+  part: IV
+  anchor_moment: "You stand by a window and a stuttering video suddenly smooths out.\
+    \ In a kitchen, a call freezes when someone starts the microwave. You rotate the\
+    \ phone in your hand and the bars rearrange themselves\u2014without opening Settings,\
+    \ without changing the app, without \u201Cfixing the Internet.\u201D"
+  central_question: "Why do radio conditions change what wireless feels like\u2014\
+    even when the connection icon stays lit?"
+  primary_contribution: spectrum, antenna, path-loss, interference, mimo, beamforming,
+    radio-condition
+  reader_promise: "After this chapter, a reader can explain why radio conditions (spectrum,\
+    \ antennas, beams/MIMO at survey depth) change experience\u2014without running\
+    \ unauthorized transmitters or inventing drive-test numbers."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH19
+  number: 19
+  title: NTN and Service Continuity Across Ground, Air, and Space
+  part: IV
+  anchor_moment: You are somewhere the usual story breaks.
+  central_question: "When terrestrial service fails, what does an NTN or satellite\
+    \ feature actually continue\u2014and what does an icon alone hide?"
+  primary_contribution: ntn, terrestrial-network, service-continuity, coverage-gap,
+    delay-regime, multi-path-continuity
+  reader_promise: "After this chapter, a reader can explain non-terrestrial networks\
+    \ (NTN) as an additional path class and treat service continuity as experience\
+    \ continuity across ground/air/space\u2014not as an always-on icon."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH20
+  number: 20
+  title: Latency, Reliability, QoE, and the Stability Contract
+  part: IV
+  anchor_moment: "Everything looks connected. The icon says online. The Wi\u2011Fi\
+    \ name is familiar. Cellular bars are present. You tap send, submit, refresh,\
+    \ or sync\u2014and the experience stalls, flickers, retries, or never finishes.\
+    \ Sometimes a toast claims success while the remote effect never arrives. Sometimes\
+    \ ping looks fine and the app s"
+  central_question: Why can everything look connected while send, submit, or sync
+    still fails or feels awful?
+  primary_contribution: latency, reliability, throughput, qoe, qos, connected-not-usable,
+    evidence-hierarchy
+  reader_promise: "After this chapter, a reader can apply the Stability Contract with\
+    \ latency, reliability, and QoE as distinct lenses\u2014and can diagnose connected-but-unusable\
+    \ experiences without collapsing metrics."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH21
+  number: 21
+  title: Data, Machine Learning, and Generative AI
+  part: V
+  anchor_moment: "You ask a practical question of an on-device or in-browser assistant.\
+    \ The reply arrives quickly. The sentences are smooth. The tone sounds certain\u2014\
+    or it hedges, or it refuses, or it changes style after an app update you barely\
+    \ noticed."
+  central_question: "When an assistant answer appears, what path produced it\u2014\
+    and where do uncertainty, logging, and deployment choice change the experience?"
+  primary_contribution: training-input-data, model-parameters, inference-output, generative-ai-systems,
+    uncertainty-errors, local-vs-cloud-ai, evaluation-under-uncertainty
+  reader_promise: "Trace a familiar AI answer as data conditioning a model whose parameters\
+    \ are applied at inference time\u2014without treating fluency as understanding\u2014\
+    and name where uncertainty, logging, and deployment choice change the experience."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH22
+  number: 22
+  title: Edge AI, Sensors, and Embodied Interaction
+  part: V
+  anchor_moment: "You raise a hand, glance at a camera preview, or feel a short haptic\
+    \ pulse meant to confirm an assistive action. Sometimes the feedback arrives while\
+    \ you are still mid-gesture\u2014offline, private, immediate. Sometimes nothing\
+    \ happens: the preview is black because a permission was denied; the model stalls\
+    \ while the device "
+  central_question: "When a gesture, glance, or haptic cue triggers a local assistive\
+    \ action, what must stay true for the embodied loop to feel alive\u2014and what\
+    \ fails when sensors, budgets, or permissions break?"
+  primary_contribution: embodied-sensing, edge-on-device-inference, edge-resource-budget,
+    embodied-interaction-loop, sensing-privacy-boundary, edge-cloud-fallback
+  reader_promise: "Explain how sensing + on-device/edge inference changes latency,\
+    \ energy, privacy, and embodied interaction\u2014without claiming shipping Device\
+    \ Quartet AI performance."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH23
+  number: 23
+  title: Cybersecurity from Chip to Cloud
+  part: V
+  anchor_moment: "You sign in. The app looks connected. Then one of two ordinary things\
+    \ happens: an action you can see is refused\u2014\u201Cyou don\u2019t have permission\u201D\
+    \u2014or a \u201Cverify it\u2019s you\u201D step interrupts a flow that felt already\
+    \ open. The glass still shows the product. The network icon may still look fine.\
+    \ Trust, from your seat, has already hi"
+  central_question: "When a login succeeds but an action is denied\u2014or a verify-it-is-you\
+    \ step appears\u2014what trust conditions from chip to cloud still have to hold?"
+  primary_contribution: attack-surface-ux, identity, authentication, authorization,
+    encryption-goals-limits, chip-to-cloud-trust, protection-design-principles
+  reader_promise: "Follow security as UX-linked conditions from chip/boot trust through\
+    \ identity and cloud dependencies\u2014principles and symptoms, never exploit\
+    \ recipes."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH24
+  number: 24
+  title: Privacy, Identity, Safety, Accessibility, and Ethics
+  part: V
+  anchor_moment: "You need to finish something ordinary: reset access after a lockout,\
+    \ accept a permission or privacy notice, recover an account, or complete a verify\
+    \ step so a familiar feature will run. The app looks modern. A classmate finishes\
+    \ in seconds. Your path stalls\u2014CAPTCHA that never announces, SMS you cannot\
+    \ receive, a privac"
+  central_question: "When a permission, recovery, or accessibility path decides whether\
+    \ someone can finish a task others complete easily\u2014which conditions broke,\
+    \ and what evidence do I actually have?"
+  primary_contribution: privacy-lifecycle, identity-human-systems, safety-constraints,
+    accessibility-path, ethics-ladder, wcag-dated-guidance, consent-trust-card
+  reader_promise: "Treat privacy, identity, safety, accessibility, and ethics as concurrent\
+    \ conditions of usable technology\u2014not an appendix lecture."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH25
+  number: 25
+  title: 'Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure'
+  part: V
+  anchor_moment: "Two peers attempt the same task. One finishes on a strong device\
+    \ and a stable link. The other stalls: cheaper hardware, metered cellular, shared\
+    \ computer time, denser language, or an assistive path that never announces \u201C\
+    done.\u201D From the author\u2019s seat the product looks fine. From the second\
+    \ seat the experience never exis"
+  central_question: "Who can complete this experience\u2014and who is excluded\u2014\
+    and what evidence do we actually have?"
+  primary_contribution: digital-equity, exclusion-mechanism, measurable-inclusion-signals,
+    constrained-completion-route, honest-evidence-labeling
+  reader_promise: "Measure who can complete an experience\u2014and who is excluded\u2014\
+    using honest observation labels, not marketing inclusion claims."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH26
+  number: 26
+  title: Software Development and Version Control
+  part: VI
+  anchor_moment: You change one behavior.
+  central_question: After I change one behavior, can I show what differed, leave a
+    clear message, and recover without history myths?
+  primary_contribution: version-control, commit, branch-integration, code-review,
+    secrets-hygiene, build-test-loop
+  reader_promise: "Use version control and small development loops to produce reviewable\
+    \ change\u2014portfolio evidence of building, not slogans about being a developer."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH27
+  number: 27
+  title: Testing, Observability, and Evidence
+  part: VI
+  anchor_moment: "A feature \u201Cpasses\u201D locally. Unit tests are green. The\
+    \ staging checklist is checked. Status dashboards look calm\u2014until a classmate,\
+    \ a customer, or you on a slower link see stalls, silent failures, or a success\
+    \ toast that never finished the remote work."
+  central_question: When tests and dashboards look fine while people still suffer,
+    what was tested, what was observed, and what was only simulated or inferred?
+  primary_contribution: testing, observability, test-oracle, evidence-redaction, simulation-ne-measurement
+  reader_promise: "Produce evidence that distinguishes tests, observations, and inferences\u2014\
+    so 'it works' becomes inspectable."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH28
+  number: 28
+  title: Digital Twins, Simulation, and Reproducible Research
+  part: VI
+  anchor_moment: "A simulation says the design is fine. The team ships confidence.\
+    \ Then the real device path, network path, or classroom fixture disagrees\u2014\
+    timeouts, thermal throttling, a sensor that never arrives, a peer who cannot regenerate\
+    \ the table you published in the shared notebook."
+  central_question: "When a simulation says a design is fine but the real path fails\u2014\
+    or a peer cannot regenerate a result\u2014what bounded stand-in were we using,\
+    \ and what must be pinned to reproduce it?"
+  primary_contribution: simulation, digital-twin, validity-bounds, reproducible-research,
+    fixture
+  reader_promise: "Use models, simulations, and twins as bounded stand-ins for reality\u2014\
+    and make research steps reproducible at a declared SHA/fixture."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH29
+  number: 29
+  title: Designing a Complete Technology Product
+  part: VI
+  anchor_moment: "The demo works. The slide looks finished. The feature lights up\
+    \ on the presenter\u2019s laptop on fast Wi\u2011Fi. Applause. Then a classmate\
+    \ on a weaker phone, a metered cellular link, or an assistive path tries the same\
+    \ flow. The spinner never resolves. Privacy wording is vague. Accessibility feedback\
+    \ is missing. There is no e"
+  central_question: "What must a complete technology product keep true\u2014experience,\
+    \ stack, evidence, security/inclusion, and honest claims\u2014before anyone may\
+    \ say it is usable?"
+  primary_contribution: complete-technology-product, design-gates, evidence-plan,
+    explicit-tradeoffs, claim-boundary
+  reader_promise: "Assemble experience, stack, evidence, security/inclusion, and career\
+    \ artifacts into a complete product design story\u2014without marketing language."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH30
+  number: 30
+  title: Career Maps and Portfolio Proof
+  part: VI
+  anchor_moment: "You finished the labs. Folders exist. Screenshots exist. Maybe a\
+    \ README you wrote at 1 a.m. Still, when someone asks \u201Cshow me what you can\
+    \ do,\u201D the packet falls apart. You open five unrelated capture files. Claims\
+    \ live in your head, not next to the artifacts. Limitations are missing. A mentor\
+    \ cannot tell which rows wer"
+  central_question: How do I turn completed labs into a coherent, reviewable portfolio
+    packet without promising a job?
+  primary_contribution: role-family, portfolio-proof, review-criteria, employment-non-guarantee,
+    portfolio-index
+  reader_promise: "Map real work families to portfolio artifacts that prove skill\u2014\
+    with no employment guarantee and no credential theater."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none
+- chapter_id: CH31
+  number: 31
+  title: 'Capstone: Explain, Measure, Improve, and Teach the Ecosystem'
+  part: VI
+  anchor_moment: "You sit down to *prove* what this book taught\u2014not to re-diagnose\
+    \ connectivity from scratch. In front of you: one real accessible experience you\
+    \ already lived (or a LAB-CE06-001 fixture stand-in), a blank EMIT portfolio,\
+    \ and a peer who needs a teach-back they can actually use. Chapter 20 already\
+    \ named the connected\u2260usab"
+  central_question: "Using the book\u2019s full model, what evidence can I gather\
+    \ to explain a real experience, measure what is observable, propose one improvement,\
+    \ and teach the ecosystem to someone else\u2014without promoting fixtures to human\
+    \ validation?"
+  primary_contribution: emit-spine, teach-back, evidence-limitations, fixture-validated-infrastructure,
+    capstone-portfolio
+  reader_promise: "Complete an Explain \u2192 Measure \u2192 Improve \u2192 Teach\
+    \ cycle on a real accessible experience, producing a portfolio packet with honest\
+    \ evidence labels."
+  forward_backward_link: see part registry / neighboring chapters
+  identity_clear: true
+  identity_risk: none

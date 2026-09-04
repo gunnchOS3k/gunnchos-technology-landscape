@@ -4,16 +4,13 @@
 **Gate posture:** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`  
 **Rule:** ≥1 plausible lab where appropriate; do not invent WAIKE lab IDs as if they were publication labs.
 
-## Candidates
+## INHERIT: `LAB-CMS-001` (FULL_LAB)
 
-### `LAB-CPU-001` — Watch Work Compete
+Primary Try It / Build It — Make Local Slowness Visible with **CPU / scheduler / parallel-work** column emphasis. Link `labs/LAB-CMS-001/`; do not duplicate.
 
-Plausible commodity OS monitor lab; align with CE-3 LAB-CMS-001 where overlap exists—prefer inherit/adapt rather than duplicate.
+## SUPERSEDED PROPOSAL: `LAB-CPU-001`
 
-- **Device Quartet required?** No (analogy only; PHYSICAL_PENDING).
-- **Offline/fixture fallback:** Required in eventual lab plan.
-- **Safety / privacy:** Follow chapter SECURITY notes; no unsafe electrical/battery abuse.
-
+**Disposition (Agent G quality wave):** `proposed→inline` via LAB-CMS-001. Not worth a separate `labs/` directory.
 
 ## Pathway coverage intent
 

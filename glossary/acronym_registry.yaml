@@ -1,13 +1,66 @@
 acronyms:
-  - acronym: API
-    expands_to: "API"
-    concept_id: api
-  - acronym: CPU
-    expands_to: "CPU"
-    concept_id: cpu
-  - acronym: GPU
-    expands_to: "GPU"
-    concept_id: gpu
-  - acronym: RAM
-    expands_to: "RAM"
-    concept_id: ram
+- acronym: API
+  expands_to: application programming interface
+  concept_id: api
+  familiar: true
+- acronym: CPU
+  expands_to: central processing unit
+  concept_id: cpu
+  familiar: true
+- acronym: GPU
+  expands_to: graphics processing unit
+  concept_id: gpu
+  familiar: true
+- acronym: RAM
+  expands_to: random-access memory
+  concept_id: ram
+  familiar: true
+- acronym: OS
+  expands_to: operating system
+  concept_id: operating-system
+  familiar: true
+- acronym: DNS
+  expands_to: Domain Name System
+  concept_id: dns
+  familiar: false
+- acronym: LAN
+  expands_to: local area network
+  concept_id: lan
+  familiar: false
+- acronym: MIMO
+  expands_to: multiple-input multiple-output
+  concept_id: mimo
+  familiar: false
+- acronym: NTN
+  expands_to: non-terrestrial network
+  concept_id: ntn
+  familiar: false
+- acronym: QoE
+  expands_to: quality of experience
+  concept_id: qoe
+  familiar: false
+- acronym: AI
+  expands_to: artificial intelligence
+  concept_id: generative-ai
+  familiar: true
+  notes: Familiar; do not over-expand. Prefer generative AI / ML specificity when teaching.
+- acronym: ML
+  expands_to: machine learning
+  concept_id: model
+  familiar: false
+policy:
+  familiar_sparingly_reexpand:
+  - CPU
+  - GPU
+  - RAM
+  - API
+  - AI
+  - OS
+  expand_on_first_meaningful_use:
+  - DNS
+  - MIMO
+  - NTN
+  - QoE
+  - ML
+  - LAN
+notes: Aligned with book/terminology.yaml acronym_first_use_policy.

@@ -1,0 +1,221 @@
+schema_version: 1
+count: 31
+working_drafts_expected: 31
+chapters:
+- chapter_id: CH01
+  path: book/chapters/ch01/chapter.md
+  exists: true
+  sha256: b83b4fd23fdecb35feff2dbc19ac43b444b2a0a82b33623dd2ec2a50cb5ebcad
+  metadata_sha256: ebaafdaa492e11d49ebef56a9e0f5b37d6b1955626028885715be39b50c7373d
+  title: Technology Is a System, Not a Screen
+  status: draft
+- chapter_id: CH02
+  path: book/chapters/ch02/chapter.md
+  exists: true
+  sha256: aff6c10074711cb877a952655de66496108b5a0de5d9eb459be3620f66830fb0
+  metadata_sha256: 381bcae984a88cf2713451faf47a82adacb42004afab93580c13f38d1384021c
+  title: Follow One Tap Through the Entire Stack
+  status: draft
+- chapter_id: CH03
+  path: book/chapters/ch03/chapter.md
+  exists: true
+  sha256: 3d5af42d02261a93f9a7aa162dd1ac22c452dc0a643900c7589b2da580c7dde0
+  metadata_sha256: 13cab57a6d3a5172bbda23cc93dade73cfafac345e2e990e54d77155a0ffa613
+  title: 'Performance: Why Technology Feels Fast, Slow, Smooth, or Unstable'
+  status: draft
+- chapter_id: CH04
+  path: book/chapters/ch04/chapter.md
+  exists: true
+  sha256: 574234683184a6cbd4a601a704870f305d78de0f10a45eb6e08a1ecc3cd9e680
+  metadata_sha256: 4b920d7fdb74b471ebc23390bad5091191b05b7c368553dc3e83ce0b9769562e
+  title: The Device Quartet as a Learning Laboratory
+  status: draft
+- chapter_id: CH05
+  path: book/chapters/ch05/chapter.md
+  exists: true
+  sha256: 4d10ccaaf4bd0e4e0b4b1880e1910bd4d59646d9db2fa0f0a580505f6e9b246e
+  metadata_sha256: 5ec8d3062b6c9f6f09832fa04f417ee174dd445c5d016f69ac3ba36cb13579df
+  title: Electricity, Signals, Clocks, and Logic
+  status: draft
+- chapter_id: CH06
+  path: book/chapters/ch06/chapter.md
+  exists: true
+  sha256: 371673b10d294c0289fbb935baf01a8d0e0af22959dea3fcfefaef2114f13a40
+  metadata_sha256: 706b911eae0da0ebb49d8aa8bcd8bb23fec3f69f9ef9e727164ca5cc1421d942
+  title: CPU, Instructions, and Parallel Work
+  status: draft
+- chapter_id: CH07
+  path: book/chapters/ch07/chapter.md
+  exists: true
+  sha256: 7af410ff707c3c80d9da04bd29198ff7493c55f171a9f9e399c041a35787e01e
+  metadata_sha256: ef139dea492f744be1fbe454c834f5190f939f0edea89dc3b7492d1a3d03a5b6
+  title: Memory, Cache, and Storage
+  status: draft
+- chapter_id: CH08
+  path: book/chapters/ch08/chapter.md
+  exists: true
+  sha256: 830100ba95346a7b7334ec6ac9bec0661d2e019ee122925fd612a91e8e79a053
+  metadata_sha256: f131698157f71e3afdb6313cbece9b90e394411efb037e31f84571f97e2c285e
+  title: Graphics, Displays, Audio, Cameras, and Sensors
+  status: draft
+- chapter_id: CH09
+  path: book/chapters/ch09/chapter.md
+  exists: true
+  sha256: b526cdc9601118bc51246be43a568753fd7ec7ec7834e38fad9af71719de2b2c
+  metadata_sha256: 98b4e8a413000fef8ffd752f4cd995cf01fcaad1c6304bd3ba66df59a9b3e53e
+  title: Power, Batteries, Thermals, and Mechanical Design
+  status: draft
+- chapter_id: CH10
+  path: book/chapters/ch10/chapter.md
+  exists: true
+  sha256: 6ebbc0517a4a89ce9c7fa397e078356595bd198ffada9fb529d1a1a61707f7c2
+  metadata_sha256: d04eec18b78186757ad40e05aa012d26bfdb377e48b8eb1d0b0e45b59139dbad
+  title: Ports, Buses, Boards, Packaging, and Manufacturing
+  status: draft
+- chapter_id: CH11
+  path: book/chapters/ch11/chapter.md
+  exists: true
+  sha256: a7757d0d0c5c1c105cb8099a972575465ed1f20bad555e9e87fecb396b0f1978
+  metadata_sha256: 34d1907afeac288eeb7eca9acef8b56ad4ca02f4e44257167158dd3a19ba79a2
+  title: Firmware, Boot, and Trust
+  status: draft
+- chapter_id: CH12
+  path: book/chapters/ch12/chapter.md
+  exists: true
+  sha256: 887aacfeeadd7698c6be0040aae87a96491192ce653e13d170d3812110e3dc87
+  metadata_sha256: 023f8f76e00ee54a199339eb43b87c04c3141056f5641e679d99dbcc36294b3d
+  title: Operating Systems, Processes, Threads, and Scheduling
+  status: draft
+- chapter_id: CH13
+  path: book/chapters/ch13/chapter.md
+  exists: true
+  sha256: 33228a0797c7e44311a83be253bba5266164ae48b54faa23ab9023069db6ce5a
+  metadata_sha256: 3eb507a7f351e39167139f1c85d3e8e5269eb3e91b5c85f1028c1f9eb20b240d
+  title: Files, Databases, and Data Lifecycles
+  status: draft
+- chapter_id: CH14
+  path: book/chapters/ch14/chapter.md
+  exists: true
+  sha256: f99a66d50827fc49af9bd94cbaf12151e7f05376db2f8e1f1681553691ed8bd6
+  metadata_sha256: 15c0e028b3d7c3030abd66e97b5746c45f5546c753a415da07488839524c10f6
+  title: Applications, APIs, Runtimes, and User Interfaces
+  status: draft
+- chapter_id: CH15
+  path: book/chapters/ch15/chapter.md
+  exists: true
+  sha256: 465e320ac3e8b638ee4ff173cd5995d10a1d0574f11d50f22c28d9e37abdb5b4
+  metadata_sha256: 0ee40d44f9e9ed3d0426ea4aa10e2cb192614b7d27fa498393ac183a65f7d9a7
+  title: Containers, Virtualization, Cloud, and Edge Computing
+  status: draft
+- chapter_id: CH16
+  path: book/chapters/ch16/chapter.md
+  exists: true
+  sha256: e65c72acc9e015fa63ad9f4ed8dd92de31a10fbfde07572be859623e9da56f8c
+  metadata_sha256: 96fa9c499afc866305e99a5201a06667229b5b7f3352f7e415deed947275b987
+  title: Packets, Protocols, Routing, and the Internet
+  status: draft
+- chapter_id: CH17
+  path: book/chapters/ch17/chapter.md
+  exists: true
+  sha256: d09a691761bccf5f48cfa8d717958993e8051c252402bdd5c78a08bd5910c93d
+  metadata_sha256: 8c7158480c8e37e2b4ca714499bd8edbceaa9778dfc2830ee2393d296e684aaa
+  title: Wi-Fi, Cellular, 5G, and the Road to 6G
+  status: draft
+- chapter_id: CH18
+  path: book/chapters/ch18/chapter.md
+  exists: true
+  sha256: 082adfb3a0b60e2d53301bdbaf1bd87b830f9fd87e349e4ec80406ee4887a255
+  metadata_sha256: 50cee2fa3e5894d2eeb2b861d9757c00a13acb489448878676a31f5cefe26e04
+  title: Spectrum, Antennas, Beams, MIMO, and Radio Conditions
+  status: draft
+- chapter_id: CH19
+  path: book/chapters/ch19/chapter.md
+  exists: true
+  sha256: 64a4dd49f76ac2019579cf6a18568e947f6b05b54782b81f899040f4b6c38a30
+  metadata_sha256: 5f95bc50fc720890a3bbd22dd4126b21c768d7afc5d7b2383d43f4958b5d5537
+  title: NTN and Service Continuity Across Ground, Air, and Space
+  status: draft
+- chapter_id: CH20
+  path: book/chapters/ch20/chapter.md
+  exists: true
+  sha256: dd58ec3e52e5a9c0b0ca22eb5fbcb5653923b2a7a649b1bc5d3e52fd50f718c2
+  metadata_sha256: 29f3ccc016fa798c866ac2c7146b1c4076e55cfb7756d91947d35ba2735ca815
+  title: Latency, Reliability, QoE, and the Stability Contract
+  status: draft
+- chapter_id: CH21
+  path: book/chapters/ch21/chapter.md
+  exists: true
+  sha256: b5f40c0f3a64f1bf2a7a44b2d9d614092458e82dd6c8b24a3da36e1bd499ea83
+  metadata_sha256: 6af6a9e0250189a72cd8a888930c0d1cc248e248520d63f1bb9c81e4b1af16da
+  title: Data, Machine Learning, and Generative AI
+  status: draft
+- chapter_id: CH22
+  path: book/chapters/ch22/chapter.md
+  exists: true
+  sha256: 3c9e734a12bf515151ece4d158e83a68dd48d72afcccb5bddb7644fd4e6e80f4
+  metadata_sha256: 80ddb53ecfb0d9f51f544d296445fd5fc0522a268924a12c0283349adb28e844
+  title: Edge AI, Sensors, and Embodied Interaction
+  status: draft
+- chapter_id: CH23
+  path: book/chapters/ch23/chapter.md
+  exists: true
+  sha256: 69044be8457767ba473adf1c03d6b36d1475a3f215bf45a0e9aa3c3c2b9556e2
+  metadata_sha256: 393a507b865fbe80e7f7ec1408c10f7cce9c386533250ddc305398c6d72c97a7
+  title: Cybersecurity from Chip to Cloud
+  status: draft
+- chapter_id: CH24
+  path: book/chapters/ch24/chapter.md
+  exists: true
+  sha256: 4f5e2e4fa78771f70d7f94dfa711d691c167e3c438bfb913fb7d87e0da9ed1cf
+  metadata_sha256: c9c57e8f33a9d77e4faa2c88a50eccfd5883d6e6dd4886525831a5775cb3657e
+  title: Privacy, Identity, Safety, Accessibility, and Ethics
+  status: draft
+- chapter_id: CH25
+  path: book/chapters/ch25/chapter.md
+  exists: true
+  sha256: e79999182115e064eee43dbde9389531102ccc77043865eae95e90dc41d1a6c1
+  metadata_sha256: d02b5f8f01111a316fa0d285508fd0249a5f4a8f1049aa2662e9da28bd19014c
+  title: 'Digital Equity: Who Benefits, Who Is Excluded, and What We Can Measure'
+  status: draft
+- chapter_id: CH26
+  path: book/chapters/ch26/chapter.md
+  exists: true
+  sha256: 9e686da98a9139a25737318ef4e075b8e169dc27b801daeda3288ef1f1f4b4c0
+  metadata_sha256: e56ab57d72fbfe46b8b93da09b7e81ce4d4baf2905c9e528021b757414c86bf1
+  title: Software Development and Version Control
+  status: draft
+- chapter_id: CH27
+  path: book/chapters/ch27/chapter.md
+  exists: true
+  sha256: 7d35127b3e23524ce3d9a0e3d4838f36ef711871b4814b5a48e0a1c0488c2435
+  metadata_sha256: be38887984a390a4a192046fcaeee43c4aac502d40b4de759704af9aadc00d68
+  title: Testing, Observability, and Evidence
+  status: draft
+- chapter_id: CH28
+  path: book/chapters/ch28/chapter.md
+  exists: true
+  sha256: 794ac488ac4c57f1eca7001b885dc58de0dbe9a9f3105fdabcbb382ebe18bb69
+  metadata_sha256: ce68d78848ffae9ac35e4bcd9c55ae60a6cf249ebb600a374df9cbae83f62f8a
+  title: Digital Twins, Simulation, and Reproducible Research
+  status: draft
+- chapter_id: CH29
+  path: book/chapters/ch29/chapter.md
+  exists: true
+  sha256: 5fd63444490996bddd6af710125bd192a6437c414e1bdeb3a082567b54eab36c
+  metadata_sha256: 473c3c0f1e3cff6641681731161b85569bf8ea9102dfa53f48986b161d895ea9
+  title: Designing a Complete Technology Product
+  status: draft
+- chapter_id: CH30
+  path: book/chapters/ch30/chapter.md
+  exists: true
+  sha256: 2f46dc06ebc55f065ce2a644d06b1a7cbbdca3afc268cdab4509bf11e12866f1
+  metadata_sha256: 007120ead08584b55127aa3915f4e4e92b15df9df666429cec19d87cdba54aa6
+  title: Career Maps and Portfolio Proof
+  status: draft
+- chapter_id: CH31
+  path: book/chapters/ch31/chapter.md
+  exists: true
+  sha256: 3647e384987fa62f61e31eb0a44c4f0cb91e884088c29c3be03b564067a6aa18
+  metadata_sha256: 941c9fa05a83e0ece22b751ac1f6fb7362540fe2ee78368b9e9abfb9de127922
+  title: 'Capstone: Explain, Measure, Improve, and Teach the Ecosystem'
+  status: draft

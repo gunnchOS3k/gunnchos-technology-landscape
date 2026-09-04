@@ -1,9 +1,9 @@
 ---
 title: "WAIKE"
+number: false
 ---
 
-# WAIKE explanation
-
+## WAIKE explanation
 **WAIKE** is the learning-system alignment layer used with this publication: courses, assessments, and portfolio-style evidence maps that connect chapter outcomes to practice.
 
 ## What WAIKE is

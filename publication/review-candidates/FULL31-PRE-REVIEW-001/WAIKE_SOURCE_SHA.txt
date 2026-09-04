@@ -1,0 +1,5 @@
+repo: gunnchOS3k/waike-research-ops
+ref: main
+WAIKE source SHA verified by integration:
+e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+mode: live GitHub API main tip

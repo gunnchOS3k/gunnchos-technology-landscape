@@ -2,49 +2,61 @@ schema_version: 1.0.0
 chapter_id: CH22
 claims:
 - provisional_id: CLM-CH22-001
-  text: "On-device/edge inference can reduce round-trip dependency compared with remote APIs, at the cost of device resource budgets."
+  text: On-device/edge inference can reduce round-trip dependency compared with remote
+    APIs, at the cost of device resource budgets.
   claim_class: general_technical
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - goodfellow_deep_learning
-  overclaim_risk: "prohibited: measured Device Quartet FPS/mW without evidence"
-  wording_boundary: "approved: systems tradeoff language | prohibited: measured Device Quartet FPS/mW without evidence"
+  overclaim_risk: 'prohibited: measured Device Quartet FPS/mW without evidence'
+  wording_boundary: 'approved: systems tradeoff language | prohibited: measured Device
+    Quartet FPS/mW without evidence'
 - provisional_id: CLM-CH22-002
-  text: Device Quartet Edge IO Wearables remains a research/learning form factor; physical fabrication and measured AI/sensing benchmarks are pending.
+  text: Device Quartet Edge IO Wearables remains a research/learning form factor;
+    physical fabrication and measured AI/sensing benchmarks are pending.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: PHYSICAL_PENDING
   citation_keys:
   - SRC-HARDWARE
-  overclaim_risk: "prohibited: shipping wearable AI product claims"
-  wording_boundary: "approved: concept-complete research form factor | prohibited: shipping wearable AI product claims"
+  overclaim_risk: 'prohibited: shipping wearable AI product claims'
+  wording_boundary: 'approved: concept-complete research form factor | prohibited:
+    shipping wearable AI product claims'
   project_evidence:
     repository: gunnchOS3k/waike-research-ops
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH22-003
-  text: "WAIKE AI_ML_EDGE lab_quantize_budget and EMBEDDED_PROTOTYPING latency-budget labs are competency neighbors, not CH22 module IDs."
+  text: WAIKE AI_ML_EDGE lab_quantize_budget and EMBEDDED_PROTOTYPING latency-budget
+    labs are competency neighbors, not CH22 module IDs.
   claim_class: project_specific
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
   status: SOURCE_IDENTIFIED
   citation_keys:
   - SRC-WAIKE
-  overclaim_risk: "prohibited: invent edge_ai_ch22 WAIKE lab"
-  wording_boundary: "approved: adjacent | prohibited: invent edge_ai_ch22 WAIKE lab"
+  overclaim_risk: 'prohibited: invent edge_ai_ch22 WAIKE lab'
+  wording_boundary: 'approved: adjacent | prohibited: invent edge_ai_ch22 WAIKE lab'
   project_evidence:
     repository: gunnchOS3k/waike-research-ops
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH22-004
-  text: Concrete sensor fusion / IMU / camera privacy standards citations for this chapter still need primary selection.
+  text: Camera/microphone sensing is mediated by platform permission and media-capture
+    models (W3C). Do not invent IMU-fusion ISO/IEEE designations in this wave.
   claim_class: standards_based
   evidence_required: Primary source citation or project evidence as status requires
-  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository / publication-internal
-  status: SOURCE_NEEDED
-  citation_keys: []
-  overclaim_risk: "prohibited: fake ISO/IEEE citations"
-  wording_boundary: "approved: mark SOURCE_NEEDED | prohibited: fake ISO/IEEE citations"
+  preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
+    / publication-internal
+  status: SOURCE_IDENTIFIED
+  citation_keys:
+  - w3c-mediacapture-streams-20251009
+  - w3c-permissions-20251006
+  overclaim_risk: 'prohibited: fake ISO/IEEE citations'
+  wording_boundary: 'approved: mark SOURCE_NEEDED | prohibited: fake ISO/IEEE citations'
