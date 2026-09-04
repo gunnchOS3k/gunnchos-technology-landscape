@@ -1,7 +1,7 @@
 # Accessibility + publication QA (full31)
 
 - **Generated:** 2026-09-04T00:18:31Z
-- **Git SHA:** `2e440e43f89b61c112f088939f73440024283bbf`
+- **Git SHA:** `c8400b2b840b3f76a55d78771f05260564c9b53a`
 - **Agent:** agent-h-publication-qa
 
 ## Certification posture

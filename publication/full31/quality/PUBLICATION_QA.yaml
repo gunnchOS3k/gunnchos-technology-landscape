@@ -2,7 +2,7 @@ schema_version: 1.0.0
 report_id: FULL31_PUBLICATION_QA
 agent: agent-h-publication-qa
 generated_at: '2026-09-04T00:18:31Z'
-git_sha: 2e440e43f89b61c112f088939f73440024283bbf
+git_sha: c8400b2b840b3f76a55d78771f05260564c9b53a
 preferred_base_branch: cursor/full31-quality-convergence-001
 gate_3_policy: DO_NOT_TOUCH
 certification_claims:
@@ -110,3 +110,10 @@ issues:
     \ chapters; likely LaTeX chapter-counter inflation \u2014 needs human print QA."
   evidence: ''
   fix_status: NEEDS_HUMAN
+commits:
+  quality_tip_before_land: ddfde3ba27e8dc00042f0fe219081f12d9aca03a
+  agent_h_substantive: 51e36228a7152e3423bc867a74ca0f9825aa023b
+  agent_h_branch_head: d1a8152157bbb735f7d9ab300b709f6145dc426d
+  landed_on_quality: c8400b2b840b3f76a55d78771f05260564c9b53a
+integrator_notes: PDF-CHAPTER-COUNTER remains MAJOR/NEEDS_HUMAN for integrator adjudication.
+  No WCAG/EPUB/print certification claimed.
