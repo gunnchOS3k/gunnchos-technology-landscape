@@ -26,7 +26,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch16-moment}
 
 You send a short message. The UI shows **sent**. Then nothing: no delivered check, no reply, a spinner that will not end. You refresh a page you trust. The browser stalls on “looking up…” or hangs on connect. From your seat it feels like one verdict: *the Internet is broken*.
 
@@ -40,7 +40,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch16-notice}
 
 Before words like *TTL* or *TCP*, notice the human contracts you already enforce with frustration.
 
@@ -56,11 +56,11 @@ Optional notice on a device you already own (safe, commodity only): open a page 
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch16-ecosystem}
 
 A stalled sync is not one object. It is a path through an ecosystem. **FIG-CH16-001** is the first-minute map: **device (local)**, **LAN**, and **Internet** as nested reachability scopes—not synonyms (CLM-CH16-002).
 
-![Conceptual nested scopes: device, LAN, and Internet.](../../../figures/ecosystem/fig-ch16-001-scopes.svg){#fig-ch16-001 fig-cap="Local / LAN / Internet scopes. Conceptual educational map; Wi-Fi association is not Internet usability."}
+![Conceptual nested scopes: device, LAN, and Internet.](../../../figures/ecosystem/fig-ch16-001-scopes.svg){#fig-ch16-001 fig-cap="Local / LAN / Internet scopes. Conceptual educational map; Wi-Fi association is not Internet usability." fig-alt="Conceptual nested scopes: device, LAN, and Internet."}
 
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
@@ -102,11 +102,11 @@ Browsers and OS tools can expose request phases useful for classroom observation
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch16-signal}
 
 **FIG-CH16-002** follows one connected action as encapsulation “sticky notes” across hops. Read it as a logical story, not as a claim that every messenger executes identical steps with measured timings.
 
-![Encapsulation sequence from app through gateway and path to service.](../../../figures/sequence/fig-ch16-002-encapsulation.svg){#fig-ch16-002 fig-cap="Encapsulation sticky notes along one path. Conceptual; no measured timings."}
+![Encapsulation sequence from app through gateway and path to service.](../../../figures/sequence/fig-ch16-002-encapsulation.svg){#fig-ch16-002 fig-cap="Encapsulation sticky notes along one path. Conceptual; no measured timings." fig-alt="Encapsulation sequence from app through gateway and path to service."}
 
 1. **Intent.** You tap send or refresh. The UI may optimistically show progress.
 2. **Local enqueue.** The app and OS prepare a request on the **device**. Failure here is not “the Internet.”
@@ -118,7 +118,7 @@ Browsers and OS tools can expose request phases useful for classroom observation
 8. **Service response.** A remote service accepts, rejects, or times out. Placement (edge/cloud) is a hypothesis until evidenced.
 9. **Human feedback.** Checkmarks, errors, or eternal spinners close the loop—or fail to.
 
-![DNS failure can look like Internet failure while other paths work.](../../../figures/architecture/fig-ch16-003-dns-critical-path.svg){#fig-ch16-003 fig-cap="DNS on the critical path. Conceptual teaching aid; DNS ≠ routing ≠ service."}
+![DNS failure can look like Internet failure while other paths work.](../../../figures/architecture/fig-ch16-003-dns-critical-path.svg){#fig-ch16-003 fig-cap="DNS on the critical path. Conceptual teaching aid; DNS ≠ routing ≠ service." fig-alt="DNS failure can look like Internet failure while other paths work."}
 
 ### Failure domains without drama
 
@@ -137,7 +137,7 @@ Outside observation rarely separates these cleanly. That limitation is literacy,
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch16-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies.
 
@@ -207,7 +207,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch16-stability}
 
 The **Stability Contract** returns:
 
@@ -232,7 +232,7 @@ A radio icon can stay positive while the human experience has already failed. Co
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch16-try}
 
 ### LAB-PKT-001 — Trace One Connected Action Across Path and Access
 
@@ -274,11 +274,11 @@ A radio icon can stay positive while the human experience has already failed. Co
 
 **FIG-CH16-004** shows the phase vocabulary learners record—measured as *classroom learning*, not as a product scoreboard.
 
-![Classroom timing phase vocabulary for LAB-PKT-001.](../../../figures/measured/fig-ch16-004-lab-timing.svg){#fig-ch16-004 fig-cap="LAB-PKT-001 timing phases. Learner or fixture measured rows; not a published benchmark."}
+![Classroom timing phase vocabulary for LAB-PKT-001.](../../../figures/measured/fig-ch16-004-lab-timing.svg){#fig-ch16-004 fig-cap="LAB-PKT-001 timing phases. Learner or fixture measured rows; not a published benchmark." fig-alt="Classroom timing phase vocabulary for LAB-PKT-001."}
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch16-build}
 
 Extend LAB-PKT-001 without turning Part IV into a certification dump.
 
@@ -306,7 +306,7 @@ Educators: facilitate teach-backs from Section 11; default classrooms without st
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch16-secure-include}
 
 ### Security
 
@@ -334,7 +334,7 @@ Connectivity failures are often system and policy issues, not learner moral fail
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch16-career}
 
 One stalled message crosses many ownership domains. No table promises employment; roles vary by organization. Completing LAB-PKT-001 does not grant CCNA or cloud certifications.
 
@@ -351,7 +351,7 @@ Portfolio hint: a scrubbed path diagram plus a DNS-vs-routing differential is mo
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch16-check}
 
 **Concept.** In one sentence each, define *packet*, *routing*, and *DNS* so that none of them swallows the other two.
 
@@ -377,7 +377,7 @@ Inline citation keys used in this chapter include @rfc791, @rfc768, @rfc8200, @r
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch16-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch16/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 

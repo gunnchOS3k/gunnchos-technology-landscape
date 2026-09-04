@@ -21,12 +21,12 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa
 
 setup:
 	python3 -m venv .venv
 	$(PIP) install -U pip
-	$(PIP) install pyyaml pytest
+	$(PIP) install pyyaml pytest pypdf
 	@if [ ! -x tools/quarto/bin/quarto ] && ! command -v quarto >/dev/null 2>&1; then \
 	  echo "NOTE: Quarto not found. Run scripts/bootstrap_quarto.sh or install Quarto."; \
 	fi
@@ -124,6 +124,11 @@ ce-sources-check:
 
 full31-claim-sources-check:
 	$(PYTHON) scripts/check_full31_claim_sources.py --check
+
+# Automated HTML/EPUB/PDF + manuscript a11y QA. Does not certify WCAG/EPUB/print.
+# Coordinate with `make validate` (source validators); this target audits rendered full31 artifacts.
+full31-publication-qa:
+	$(PYTHON) scripts/publication_qa_full31.py --pdf-log /tmp/full31-pdf-render.log
 
 full31-report:
 	$(PYTHON) scripts/merge_full31_registry.py

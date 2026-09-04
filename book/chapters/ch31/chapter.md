@@ -27,7 +27,7 @@ Part VI asks you to build, prove, and contribute. This chapter is the book’s c
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch31-moment}
 
 You sit down to *prove* what this book taught—not to re-diagnose connectivity from scratch. In front of you: one real accessible experience you already lived (or a LAB-CE06-001 fixture stand-in), a blank EMIT portfolio, and a peer who needs a teach-back they can actually use. Chapter 20 already named the connected≠usable contradiction and the formal Stability Contract vocabulary. This chapter’s job is different: finish **Explain → Measure → Improve → Teach** with honest evidence labels, without turning fixtures into Gate 3 human validation [@gunnchos-technology-landscape-ce06].
 
@@ -43,7 +43,7 @@ This is the CE-6 capstone spine expanded for the full book. It is not a second l
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch31-notice}
 
 Before filling fifteen portfolio fields, notice what “done” usually fakes.
 
@@ -57,7 +57,7 @@ Inheritance, not duplication: if you already recorded a connected≠usable send/
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch31-ecosystem}
 
 A stalled send is not a single object—and this capstone does not re-teach Part IV from zero. It is a path through an ecosystem you must *document*. **FIG-CH31-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **representative educational architecture**, not a claim that every app fails the same way [@saltzer-kaashoek].
 
@@ -103,7 +103,7 @@ Who can complete this experience under real constraints—metered data, shared d
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch31-signal}
 
 Here the “signal” is the human action’s fate across layers—and the portfolio’s climb from notice to teach-back. Read the sequence as a logical diagnosis and evidence story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -122,7 +122,7 @@ Here the “signal” is the human action’s fate across layers—and the portf
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch31-components}
 
 For the capstone, “components” are failure-domain cards plus portfolio field cards. Each card needs plain language, a constraint, and a failure symptom.
 
@@ -199,7 +199,7 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch31-try}
 
 ### LAB-CE06-001 — Explain, Measure, Improve, and Teach
 
@@ -236,7 +236,7 @@ Illustrative EMIT examples under `labs/LAB-CE06-001/fixtures/illustrative_exampl
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch31-build}
 
 Extend LAB-CE06-001 without turning the capstone into a fake SLO catalog or a copied illustrative packet.
 
@@ -264,7 +264,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F as a first-clas
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch31-secure-include}
 
 ### Security
 
@@ -292,7 +292,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch31-career}
 
 A finished EMIT packet is closer to professional evidence than a single stalled-submit anecdote. No table promises employment; roles vary by organization. What travels is labeled observation, an Improve proposal with tradeoffs, a teach-back another person can run, and explicit uncertainty—skills mentors and hiring panels can inspect without trusting vibes.
 
@@ -309,7 +309,7 @@ Portfolio hint: a scrubbed fifteen-field packet with observation / inference / `
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch31-check}
 
 **Concept.** In one sentence, state the EMIT spine and why Teach is required portfolio proof—not optional fluff.
 
@@ -339,7 +339,7 @@ Inline citations used in this chapter include @gunnchos-technology-landscape-ce0
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch31-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

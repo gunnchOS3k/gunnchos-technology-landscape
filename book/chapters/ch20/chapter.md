@@ -28,7 +28,7 @@ Part IV has already named paths, packets, radios, and services. This chapter clo
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch20-moment}
 
 Everything looks connected. The icon says online. The Wi‑Fi name is familiar. Cellular bars are present. You tap send, submit, refresh, or sync—and the experience stalls, flickers, retries, or never finishes. Sometimes a toast claims success while the remote effect never arrives. Sometimes ping looks fine and the app still feels awful.
 
@@ -44,7 +44,7 @@ This is Part IV’s synthesis close and the full-book expansion of CE-6. It is n
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch20-notice}
 
 Before naming latency budgets or reliability mathematics, notice the human contract that broke.
 
@@ -58,7 +58,7 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch20-ecosystem}
 
 A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH20-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **Representative educational architecture**, not a claim that every app fails the same way.
 
@@ -116,7 +116,7 @@ SC-11: delay and variability remain acceptable *to this person in this context*.
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch20-signal}
 
 Here the “signal” is the human action’s fate across layers—not a single ICMP echo. Read the sequence as a logical diagnosis story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -163,7 +163,7 @@ Prefer failure *domains* over confident blame: input, compute/schedule, memory/s
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch20-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -225,7 +225,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch20-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -273,7 +273,7 @@ For a successful send/submit/sync experience, conditions such as the following m
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch20-try}
 
 ### LAB-CE06-001 — Explain, Measure, Improve, and Teach
 
@@ -316,7 +316,7 @@ For a successful send/submit/sync experience, conditions such as the following m
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch20-build}
 
 Extend LAB-CE06-001 without turning Part IV into a fake SLO catalog.
 
@@ -344,7 +344,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F as a first-clas
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch20-secure-include}
 
 ### Security
 
@@ -372,7 +372,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch20-career}
 
 One stalled submit crosses many ownership domains. No table promises employment; roles vary by organization. LAB-CE06-001 artifacts resemble early professional evidence in miniature: labeled observations, failure-domain shortlists, and explicit uncertainty.
 
@@ -390,7 +390,7 @@ Portfolio hint: a scrubbed result table with observation/inference/`fixture` lab
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch20-check}
 
 **Concept.** In one sentence each, distinguish *latency*, *reliability*, and *throughput* so that none swallows the other two.
 
@@ -420,7 +420,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch20-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

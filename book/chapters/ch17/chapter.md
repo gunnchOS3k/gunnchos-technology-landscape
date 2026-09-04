@@ -24,7 +24,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch17-moment}
 
 You leave a building. The Wi-Fi icon disappears—or stays, weakly—and a cellular icon takes over. A call continues, or it does not. A chat that felt instant now stalls. Sometimes a **5G** badge appears while the experience still feels bad. From your seat it feels like one story: *I have signal, so it should be fine.*
 
@@ -38,7 +38,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch17-notice}
 
 Before names like *handover* or *5G System* enter, notice the human contract you already expect.
 
@@ -54,7 +54,7 @@ Optional comparison, available on a phone or laptop you already own (or via fixt
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch17-ecosystem}
 
 An everyday walk is not one radio. It is a path through an ecosystem. **FIG-CH17-001** is the first-minute map: device ↔ Wi-Fi access point path **versus** cellular radio access network (RAN) path ↔ operator or campus backhaul ↔ Internet path ↔ edge/cloud service. Treat it as **Representative educational architecture**, not a claim that your phone’s sealed internals look exactly like the diagram.
 
@@ -96,7 +96,7 @@ Status UI summarizes radio and attachment state for humans. It is an interpretat
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch17-signal}
 
 **FIG-CH17-003** shows a walk: indoor Wi-Fi association → approach exit → Wi-Fi weakens → cellular attachment or handover/offload → app traffic continues or stalls. Read it as a logical story, not as a measured drive test of your city.
 
@@ -129,7 +129,7 @@ Outside observation rarely distinguishes those cleanly. That limitation is liter
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch17-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies.
 
@@ -191,7 +191,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch17-stability}
 
 A connected walk continues only while multiple hidden conditions stay within acceptable bounds.
 
@@ -213,7 +213,7 @@ A system can remain *radio-connected* while the human experience has already fai
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch17-try}
 
 ### LAB-PKT-001 — Trace One Connected Action Across Path and Access
 
@@ -257,7 +257,7 @@ A system can remain *radio-connected* while the human experience has already fai
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch17-build}
 
 Extend LAB-PKT-001 without turning Part IV into a spectrum encyclopedia.
 
@@ -285,7 +285,7 @@ Educators can facilitate teach-backs from Section 11 and keep classrooms on Rout
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch17-secure-include}
 
 ### Security
 
@@ -313,7 +313,7 @@ Do not claim deployed consumer 6G, invent drive-test dB tables, or present Quart
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch17-career}
 
 One doorway walk crosses many ownership domains. No table promises employment; roles vary by organization. LAB-PKT-001 artifacts resemble early professional evidence in miniature: labeled access, observation discipline, and explicit uncertainty.
 
@@ -330,7 +330,7 @@ Portfolio hint: a scrubbed access-labeled path diagram plus observation-vs-infer
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch17-check}
 
 **Concept.** In one sentence each, define *Wi-Fi*, *cellular*, and *Internet* so that none of them swallows the other two—and add why *cloud* is still a fourth idea.
 
@@ -354,7 +354,7 @@ Inline citations used in this chapter include @ieee80211-2020, @threegpp-ts23501
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch17-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 

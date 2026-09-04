@@ -60,7 +60,7 @@ A second optional notice: open a camera or microphone permission dialog in a con
 
 @fig-ch08-001 is the first-minute map for this chapter: physical world ↔ sensors/cameras/mics ↔ processing ↔ display/speakers ↔ human perception. It is **conceptual**—Representative educational architecture, not a claim that any specific manufactured revision wires exactly like the diagram.
 
-![Conceptual map from physical world through capture and processing to presentation and perception.](../../../figures/ecosystem/fig-ch08-001-media-sensorium.svg){#fig-ch08-001 fig-cap="World ↔ sensing ↔ processing ↔ presentation. Conceptual educational map; not measured telemetry."}
+![Conceptual map from physical world through capture and processing to presentation and perception.](../../../figures/ecosystem/fig-ch08-001-media-sensorium.svg){#fig-ch08-001 fig-cap="World ↔ sensing ↔ processing ↔ presentation. Conceptual educational map; not measured telemetry." fig-alt="Conceptual map from physical world through capture and processing to presentation and perception."}
 
 Walk the layers in ordinary language.
 
@@ -104,7 +104,7 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 
 @fig-ch08-002 sketches steady versus uneven presentation *feel* as an **illustrative** teaching aid. It does not assert product hitch thresholds or a surveyed law of missed deadlines; that survey-depth evidence gap remains open as **CLM-CH08-001** (claim footnotes below). Read it as “rhythm you can notice,” not as a measured scoreboard.
 
-![Illustrative timeline of steady versus uneven frame presentation feel.](../../../figures/sequence/fig-ch08-002-presentation-timing.svg){#fig-ch08-002 fig-cap="Illustrative presentation timing and feel. Teaching aid only; not product benchmarks."}
+![Illustrative timeline of steady versus uneven frame presentation feel.](../../../figures/sequence/fig-ch08-002-presentation-timing.svg){#fig-ch08-002 fig-cap="Illustrative presentation timing and feel. Teaching aid only; not product benchmarks." fig-alt="Illustrative timeline of steady versus uneven frame presentation feel."}
 
 ### Path C — Capture (world → representation)
 
@@ -115,7 +115,7 @@ Two directions matter. Presentation moves bits toward light and sound. Capture m
 5. **Buffer / store / send.** Representations land in memory, files, or network messages.
 6. **Optional preview.** A presentation path may show what is being captured—still a representation.
 
-![Conceptual comparison of a continuous phenomenon and discrete samples.](../../../figures/architecture/fig-ch08-003-sampling.svg){#fig-ch08-003 fig-cap="Sampling: continuous phenomenon to discrete samples. Conceptual; media are representations."}
+![Conceptual comparison of a continuous phenomenon and discrete samples.](../../../figures/architecture/fig-ch08-003-sampling.svg){#fig-ch08-003 fig-cap="Sampling: continuous phenomenon to discrete samples. Conceptual; media are representations." fig-alt="Conceptual comparison of a continuous phenomenon and discrete samples."}
 
 ### Honesty rule
 

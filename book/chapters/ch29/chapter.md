@@ -27,7 +27,7 @@ Part VI asks you to build, prove, and contribute. Earlier chapters taught layers
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch29-moment}
 
 The demo works. The slide looks finished. The feature lights up on the presenter’s laptop on fast Wi‑Fi. Applause. Then a classmate on a weaker phone, a metered cellular link, or an assistive path tries the same flow. The spinner never resolves. Privacy wording is vague. Accessibility feedback is missing. There is no evidence packet—only confidence.
 
@@ -43,7 +43,7 @@ This is not a pitch deck chapter, not a Device Quartet SKU catalog, and not a PM
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch29-notice}
 
 Before naming architectures or gates, notice what broke for a person.
 
@@ -57,7 +57,7 @@ Optional commodity notice (no specialized gear): pick one feature you already us
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch29-ecosystem}
 
 A “complete product” is not a single screen. It is a stack of cooperating layers under a Stability Contract. **FIG-CH29-001** is the first-minute map: human experience at the center; surrounding rings for interaction, application/code, local resources, network path, services/identity, evidence/observability, and society (privacy, equity, accessibility). Treat it as **Representative educational architecture**, not a claim that every product shares one topology [@saltzer-kaashoek].
 
@@ -95,7 +95,7 @@ Who is excluded when “works on the author’s laptop” is the only gate. Equi
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch29-signal}
 
 Here the “signal” is the product claim’s fate across design gates—not a single demo click. Read the sequence as a logical assembly story. Alternate paths exist; open questions stay labeled undetermined.
 
@@ -129,7 +129,7 @@ Prefer failure *domains* over confident blame: interaction/AT, compute/schedule,
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch29-components}
 
 For each idea: plain language, analogy (labeled), technical function, constraints, common symptoms.
 
@@ -175,7 +175,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch29-stability}
 
 **Definition (publication teaching model):** a user experience exists only while multiple hidden technical conditions remain within acceptable bounds.
 
@@ -223,7 +223,7 @@ For a successful product experience under classroom/portfolio scope, conditions 
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch29-try}
 
 ### INLINE_ACTIVITY — Product one-pager + evidence/inclusion gates
 
@@ -270,7 +270,7 @@ For a successful product experience under classroom/portfolio scope, conditions 
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch29-build}
 
 Extend the one-pager without turning Part VI into a fake product catalog.
 
@@ -298,7 +298,7 @@ Educators can facilitate Section 11 teach-backs and keep Route F equitable—not
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch29-secure-include}
 
 **FIG-CH29-002** places secure/include *inside* design gates, not in an appendix after the pitch.
 
@@ -328,7 +328,7 @@ Do not present illustrative fixture numbers as measured human evidence. Do not p
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch29-career}
 
 One “works in the demo” failure crosses many ownership domains. No table promises employment; roles vary by organization. The product one-pager resembles early professional evidence in miniature: labeled claims, gates, and explicit uncertainty.
 
@@ -345,7 +345,7 @@ Portfolio hint: a scrubbed one-pager with claim-boundary badges is more honest t
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch29-check}
 
 **Concept.** In one sentence, define a *complete technology product* so that UI alone cannot satisfy the definition.
 
@@ -375,7 +375,7 @@ Primary inheritance (link, prefer over duplication): `publication/preproduction/
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch29-glossary}
 
 Candidate terms introduced or reinforced here (see also `publication/full31/chapters/ch29/GLOSSARY_CANDIDATES.yaml`; do not treat this list as an auto-merge into the live glossary):
 

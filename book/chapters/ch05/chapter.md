@@ -58,7 +58,7 @@ Optional comparison available on almost any device you already own: press a phys
 
 @fig-ch05-001 is the first-minute map for this chapter: press → electrical change → signal → clocked logic → perceptible effect. It is **conceptual**—not a claim that any particular manufactured revision wires those stages the same way, and not a measured Device Quartet waveform. Device Quartet form factors used elsewhere in this series remain research/learning spines; physical fabrication and EVT electrical measurements stay **PHYSICAL_PENDING** [@src-hardware-quartet].
 
-![Causal flow from human press through electrical change, signal, clocked logic, and perceptible effect.](../../../figures/ecosystem/fig-ch05-001-press-to-logic.svg){#fig-ch05-001 fig-cap="Press → electrical change → signal → clocked logic → effect. Conceptual educational flow; not measured telemetry."}
+![Causal flow from human press through electrical change, signal, clocked logic, and perceptible effect.](../../../figures/ecosystem/fig-ch05-001-press-to-logic.svg){#fig-ch05-001 fig-cap="Press → electrical change → signal → clocked logic → effect. Conceptual educational flow; not measured telemetry." fig-alt="Causal flow from human press through electrical change, signal, clocked logic, and perceptible effect."}
 
 Walk the ecosystem in ordinary language. Keep the same layers when vocabulary deepens. Do **not** treat this as a bill of materials.
 
@@ -110,11 +110,11 @@ Read the following as a logical story, not as a claim that every device executes
 8. **Downstream action.** The decision enables a driver, updates a register that software will read, or changes a display path.
 9. **Human feedback.** Light, motion, sound, or haptic change closes the loop.
 
-![Side-by-side comparison of a continuous analog waveform and discrete digital logic levels.](../../../figures/architecture/fig-ch05-002-analog-vs-digital.svg){#fig-ch05-002 fig-cap="Analog continuous quantity versus digital level bands. Conceptual; not a measured scope capture."}
+![Side-by-side comparison of a continuous analog waveform and discrete digital logic levels.](../../../figures/architecture/fig-ch05-002-analog-vs-digital.svg){#fig-ch05-002 fig-cap="Analog continuous quantity versus digital level bands. Conceptual; not a measured scope capture." fig-alt="Side-by-side comparison of a continuous analog waveform and discrete digital logic levels."}
 
-![Illustrative clock edges sequencing sampling of a digital signal.](../../../figures/sequence/fig-ch05-003-clock-edges.svg){#fig-ch05-003 fig-cap="Illustrative clock edges sequencing decisions. Teaching sketch only; no invented frequency claims."}
+![Illustrative clock edges sequencing sampling of a digital signal.](../../../figures/sequence/fig-ch05-003-clock-edges.svg){#fig-ch05-003 fig-cap="Illustrative clock edges sequencing decisions. Teaching sketch only; no invented frequency claims." fig-alt="Illustrative clock edges sequencing sampling of a digital signal."}
 
-![Small logic gates composing a larger Boolean decision path.](../../../figures/architecture/fig-ch05-004-logic-blocks.svg){#fig-ch05-004 fig-cap="Boolean building blocks composing larger digital behavior. Conceptual educational diagram."}
+![Small logic gates composing a larger Boolean decision path.](../../../figures/architecture/fig-ch05-004-logic-blocks.svg){#fig-ch05-004 fig-cap="Boolean building blocks composing larger digital behavior. Conceptual educational diagram." fig-alt="Small logic gates composing a larger Boolean decision path."}
 
 Failure branches are part of honesty:
 

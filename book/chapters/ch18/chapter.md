@@ -25,7 +25,7 @@ figures:
 
 ---
 
-## 1. The moment {#sec-moment}
+## 1. The moment {#sec-ch18-moment}
 
 You stand by a window and a stuttering video suddenly smooths out. In a kitchen, a call freezes when someone starts the microwave. You rotate the phone in your hand and the bars rearrange themselves—without opening Settings, without changing the app, without “fixing the Internet.”
 
@@ -41,7 +41,7 @@ The governing question:
 
 ---
 
-## 2. What you notice {#sec-notice}
+## 2. What you notice {#sec-ch18-notice}
 
 Before names like *MIMO* or *delay spread* enter, notice the human contract you already expect.
 
@@ -57,7 +57,7 @@ Optional comparison, available on almost any device you already own: pick one fa
 
 ---
 
-## 3. Exploded ecosystem {#sec-ecosystem}
+## 3. Exploded ecosystem {#sec-ch18-ecosystem}
 
 A wireless moment is not a single object. It is a path through an ecosystem. **FIG-CH18-001** is the first-minute map: device ↔ obstacles/body ↔ antennas ↔ shared spectrum ↔ access point or cell site ↔ beyond. Treat it as **Representative educational architecture**, not a claim that your sealed phone’s antenna layout matches the cartoon (CLM-CH18-005).
 
@@ -97,7 +97,7 @@ Packets, DNS, transport retries, and edge/cloud placement still apply (CH16–CH
 
 ---
 
-## 4. Follow the signal {#sec-signal}
+## 4. Follow the signal {#sec-ch18-signal}
 
 **FIG-CH18-002** and the MIMO metaphor in **FIG-CH18-003** support this sequence. Read the steps as a logical story, not as a claim that every commodity chipset exposes every step to the UI.
 
@@ -133,7 +133,7 @@ Outside observation rarely yields calibrated dBm root cause. That limitation is 
 
 ---
 
-## 5. Component cards {#sec-components}
+## 5. Component cards {#sec-ch18-components}
 
 For each object: plain language, analogy, technical function, constraints, common symptoms. Analogies are labeled as analogies. No invented antenna gain or receiver sensitivity figures.
 
@@ -203,7 +203,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 ---
 
-## 6. Stability contract {#sec-stability}
+## 6. Stability contract {#sec-ch18-stability}
 
 A wireless experience continues only while multiple hidden conditions stay within acceptable bounds.
 
@@ -223,7 +223,7 @@ A system can remain *technically* associated while the human experience has alre
 
 ---
 
-## 7. Try it {#sec-try}
+## 7. Try it {#sec-ch18-try}
 
 ### LAB-RADIO-OBS-001 — Observe Radio Conditions Without Transmitting
 
@@ -267,7 +267,7 @@ A system can remain *technically* associated while the human experience has alre
 
 ---
 
-## 8. Build it {#sec-build}
+## 8. Build it {#sec-ch18-build}
 
 Extend LAB-RADIO-OBS-001 without turning Part IV into an illegal RF hobby kit.
 
@@ -295,7 +295,7 @@ Educators can facilitate teach-backs from Section 11 and keep classrooms on the 
 
 ---
 
-## 9. Secure and include it {#sec-secure-include}
+## 9. Secure and include it {#sec-ch18-secure-include}
 
 ### Security
 
@@ -323,7 +323,7 @@ Do not invent antenna gains, sensitivity floors, drive-test plots, or Quartet RF
 
 ---
 
-## 10. Career lens {#sec-career}
+## 10. Career lens {#sec-ch18-career}
 
 One stuttering call crosses many ownership domains. No table promises employment; roles vary by organization. LAB-RADIO-OBS-001 artifacts resemble early professional evidence in miniature: observation discipline, labeled diagrams, and explicit uncertainty.
 
@@ -340,7 +340,7 @@ Portfolio hint: a scrubbed observation-vs-inference table plus a teach-back that
 
 ---
 
-## 11. Check understanding {#sec-check}
+## 11. Check understanding {#sec-ch18-check}
 
 **Concept.** In one sentence each, define *spectrum*, *channel*, and *antenna* so that none of them swallows the other two.
 
@@ -364,7 +364,7 @@ Inline citations used in this chapter include @ieee80211-2020, @kurose-ross-8, @
 
 ---
 
-## 12. Glossary links {#sec-glossary}
+## 12. Glossary links {#sec-ch18-glossary}
 
 Candidate terms introduced or reinforced here (see also chapter glossary candidates; do not treat this list as an auto-merge into the live glossary):
 
