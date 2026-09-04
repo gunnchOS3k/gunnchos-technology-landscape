@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-labelledby="title003 desc003">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-labelledby="title003 desc003" data-figure-id="FIG-CH05-003">
   <title id="title003">FIG-CH05-003: Clock Edges Sequencing Decisions</title>
   <desc id="desc003">Illustrative timing diagram. Top trace: clock with rising edges marked Sample. Bottom trace: data signal. Vertical dashed lines at selected rising edges. Status: Illustrative teaching sketch; no frequency claim.</desc>
   <defs>
@@ -29,6 +29,6 @@
   <text x="610" y="270" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">low</text>
   <text x="820" y="178" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">high</text>
 
-  <text x="28" y="320" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: clock trace leftright; dashed markers; then data trace. Teaching sketch only.</text>
+  <text x="28" y="320" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: clock trace left→right; dashed markers; then data trace. Teaching sketch only.</text>
   <text x="28" y="342" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Legend: solid = waveform · dashed vertical = rising-edge sample time</text>
 </svg>

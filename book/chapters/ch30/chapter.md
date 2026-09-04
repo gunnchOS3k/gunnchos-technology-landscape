@@ -9,7 +9,7 @@ concept_edition: false
 manuscript_status: WORKING_DRAFT_COMPLETE
 human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
 publication_status: NOT_PUBLICATION_READY
-labs: [LAB-CH30-PORTFOLIO-001]
+labs: [LAB-CE06-001]
 figures:
   - FIG-CH30-001
   - FIG-CH30-002
@@ -186,7 +186,7 @@ For each idea: plain language, analogy (labeled), technical function, constraint
 
 - **Plain language.** Map from artifact → claim → limitation (plus role family).
 - **Analogy (labeled).** Like a table of contents that also admits what is unfinished.
-- **Technical function.** Gives mentors a front door and learners a assembly checklist (proposed LAB-CH30-PORTFOLIO-001).
+- **Technical function.** Gives mentors a front door and learners an assembly checklist (CH30 INLINE_ACTIVITY portfolio index; namespaced idea LAB-CH30-PORTFOLIO-001 is not a FULL_LAB package).
 - **Constraints.** Index quality depends on honest rows; cannot repair missing underlying labs.
 - **Symptoms.** Orphan files; duplicate claims; one screenshot mapped to five unrelated skills.
 
@@ -215,7 +215,7 @@ Device Quartet hardware is **not required** for this chapter.
 
 ## 7. Try it {#sec-try}
 
-**Lab posture:** Prefer inherit and assemble. Do not invent WAIKE course IDs. Proposed publication lab: **LAB-CH30-PORTFOLIO-001** (assemble an index from existing CE lab artifacts). Until that package is fully authored, complete the Try route using any CE lab `portfolio/` outputs you already have plus the careers scaffolds.
+**Lab posture:** Prefer inherit and assemble. Do not invent WAIKE course IDs. This chapter’s Try It is an **INLINE_ACTIVITY** (portfolio index assembly). The namespaced idea `LAB-CH30-PORTFOLIO-001` is **not** a shipped `labs/` package—complete the Try route using any CE lab `portfolio/` outputs you already have plus the careers scaffolds.
 
 ### Route A — Commodity assemble (preferred)
 

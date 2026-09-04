@@ -4,16 +4,13 @@
 **Gate posture:** `GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING`  
 **Rule:** ≥1 plausible lab where appropriate; do not invent WAIKE lab IDs as if they were publication labs.
 
-## Candidates
+## INHERIT: `LAB-CMS-001` (FULL_LAB)
 
-### `LAB-MEM-001` — RAM Is Not Storage
+Primary Try It / Build It — memory / storage column emphasis on the shared CE-3 packet. Link `labs/LAB-CMS-001/`; do not duplicate.
 
-Plausible commodity monitor lab; coordinate with CE-3 LAB-CMS-001 inheritance to avoid duplication.
+## SUPERSEDED PROPOSAL: `LAB-MEM-001`
 
-- **Device Quartet required?** No (analogy only; PHYSICAL_PENDING).
-- **Offline/fixture fallback:** Required in eventual lab plan.
-- **Safety / privacy:** Follow chapter SECURITY notes; no unsafe electrical/battery abuse.
-
+**Disposition (Agent G quality wave):** `proposed→inline` via LAB-CMS-001. Not worth a separate `labs/` directory.
 
 ## Pathway coverage intent
 

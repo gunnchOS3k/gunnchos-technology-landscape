@@ -9,7 +9,7 @@ concept_edition: false
 manuscript_status: WORKING_DRAFT_COMPLETE
 human_validation_status: PENDING_FULL_MANUSCRIPT_REVIEW
 publication_status: NOT_PUBLICATION_READY
-labs: [LAB-CH29-ONEPAGER-001, LAB-CE06-001, LAB-TRUST-001]
+labs: [LAB-CE06-001, LAB-TRUST-001]
 figures:
   - FIG-CH29-001
   - FIG-CH29-002
@@ -225,11 +225,11 @@ For a successful product experience under classroom/portfolio scope, conditions 
 
 ## 7. Try it {#sec-try}
 
-### Proposed LAB-CH29-ONEPAGER-001 — Product one-pager + evidence/inclusion gates
+### INLINE_ACTIVITY — Product one-pager + evidence/inclusion gates
 
 **Goal.** Assemble prior lab artifacts into a non-marketing **product one-pager** that names the experience, stack layers, Stability Contract conditions, design gates (including secure/include), evidence plan, claim boundary, and explicit tradeoffs.
 
-**Status.** `proposed` (publication-owned proposal). Prefer inheriting real prior lab IDs. Do **not** invent WAIKE course/lab IDs. WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) offers only **adjacent** culture (`capstones/`, `COMM_PD_ETHICS` / `lab_pd_capstone`, `CLOUD_DEVOPS`)—not an exact CH29 module [@src-waike].
+**Status.** `INLINE_ACTIVITY` (chapter-native worksheet). The namespaced idea `LAB-CH29-ONEPAGER-001` is **not** a shipped `labs/` package—do not treat it as a FULL_LAB ID. Prefer inheriting real prior lab IDs (`LAB-CE06-001`, `LAB-TRUST-001`). Do **not** invent WAIKE course/lab IDs. WAIKE accepted `main` (SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) offers only **adjacent** culture (`capstones/`, `COMM_PD_ETHICS` / `lab_pd_capstone`, `CLOUD_DEVOPS`)—not an exact CH29 module [@src-waike].
 
 **Safety (hard stops).**
 
@@ -357,7 +357,7 @@ Portfolio hint: a scrubbed one-pager with claim-boundary badges is more honest t
 
 **Misconception check.** Why must this chapter refuse Device Quartet shipping-SKU language and finished gunnchOS OS certification language?
 
-**Evidence ethics.** What is the difference between proposed LAB-CH29-ONEPAGER-001 fixture synthesis and Gate 3 human reader validation? Why are illustrative EMIT examples not human evidence?
+**Evidence ethics.** What is the difference between INLINE_ACTIVITY fixture synthesis for the CH29 one-pager and Gate 3 human reader validation? Why are illustrative EMIT examples not human evidence?
 
 **Teach-it-back.** Explain to a newcomer—using only this chapter’s vocabulary—why a polished demo is not a Stability Contract.
 

@@ -4,13 +4,23 @@ title: "Lab index"
 
 # Lab index
 
-| Lab ID | Primary chapter / module | Notes |
-|---|---|---|
-| `LAB-TAP-001` | CH02 | Canonical Gate 3 prototype lab |
-| `LAB-SYS-001` | CE-1 / CH01 | Concept Edition systems lab |
-| `LAB-CMS-001` | CE-3 | CPU/memory/storage teaching fixtures |
-| `LAB-PKT-001` | CE-4 | Packets / network path lab |
-| `LAB-TRUST-001` | CE-5 | Trust / security teaching lab |
-| `LAB-CE06-001` | CE-6 | Stability Contract / capstone lab |
+Machine-readable registry: `labs/lab_registry.yaml`. Packages live under `labs/`.
 
-Lab packages live under `labs/`. Fixture data is teaching material unless labeled as measured evidence. Synthetic fixtures must never be described as human reader validation.
+| Lab ID | Title | Chapter / module | Registry status |
+|---|---|---|---|
+| `LAB-TAP-001` | Trace and Measure One Tap | CH02 | `draft` |
+| `LAB-SYS-001` | Name the System Behind a Familiar “Open” | CH01 | `IMPLEMENTED_DIGITAL` |
+| `LAB-CMS-001` | Make Local Slowness Visible | CE-3 | `IMPLEMENTED_DIGITAL` |
+| `LAB-PERF-001` | Make Feel Visible | CH03 | `IMPLEMENTED_DIGITAL` |
+| `LAB-PKT-001` | Trace One Connected Action Across Path and Access | CE-4 | `IMPLEMENTED_DIGITAL` |
+| `LAB-TRUST-001` | Compare local vs remote AI paths and write a consent/trust card | CE-5 | `IMPLEMENTED_DIGITAL` |
+| `LAB-CE06-001` | Explain, Measure, Improve, and Teach One Real Technology Experience | CE-6 | `FIXTURE_VALIDATED` |
+| `LAB-QUARTET-001` | Constraint Contrast Without Quartet Hardware | CH04 | `unspecified` |
+| `LAB-SIG-001` | From Press to Logic | CH05 | `unspecified` |
+| `LAB-PWR-001` | Budget Collapse Observation | CH09 | `IMPLEMENTED_DIGITAL` |
+| `LAB-IO-001` | Map One Media Pipeline (Capture → Process → Present) | CH08 | `DRAFT_DIGITAL` |
+| `LAB-BUS-001` | Name the Interconnect | CH10 | `IMPLEMENTED_DIGITAL` |
+| `LAB-RADIO-OBS-001` | Observe Radio Conditions Without Transmitting | CH18 | `IMPLEMENTED_DIGITAL` |
+| `LAB-BOOT-OBS-001` | Observe Boot and Wake | CH11 | `IMPLEMENTED_DIGITAL` |
+
+Fixture data is teaching material unless labeled as measured evidence. Synthetic fixtures must never be described as human reader validation or Gate 3 PASS.

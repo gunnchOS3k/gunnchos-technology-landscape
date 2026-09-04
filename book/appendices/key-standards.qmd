@@ -1,0 +1,37 @@
+---
+title: "Key standards"
+---
+
+# Key standards
+
+Working navigational list of bibliography entries classified `standards_specifications` in `publication/full31/WORKING_BIBLIOGRAPHY_INDEX.yaml` (25 keys). Cite with Quarto/Pandoc keys (for example `@rfc791`). This is **not** a complete standards corpus and **not** a claim of normative compliance (including WCAG).
+
+| Bib key | Title (when known) | Year |
+|---|---|---|
+| `@ieee80211-2020` | {IEEE} Standard for Information Technology—Telecommunications and Information Exchange between Systems Local and Metropolitan Area Networks—Specific Requirements Part 11: Wireless {LAN} Medium Access Control ({MAC}) and Physical Layer ({PHY}) Specifications | 2020 |
+| `@ieee80211-wg` | *(see BibTeX / working bibliography)* | 2026 |
+| `@iso-iec-25010-2023` | Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model | 2023 |
+| `@itu-t-g1011` | Reference guide to quality of experience assessment methodologies | 2016 |
+| `@itu-t-p10-g100` | Vocabulary for performance, quality of service and quality of experience | — |
+| `@nist-sp500-325` | Fog Computing Conceptual Model | 2018 |
+| `@nist-sp800-145` | The {NIST} Definition of Cloud Computing | 2011 |
+| `@nist_ai_rmf_100_1` | *(see BibTeX / working bibliography)* | 2023 |
+| `@nist_sp_800_63_4` | Digital Identity Guidelines | 2025 |
+| `@rfc1034` | Domain Names \u2014 Concepts and Facilities | 1987 |
+| `@rfc1035` | Domain Names \u2014 Implementation and Specification | 1987 |
+| `@rfc1122` | Requirements for Internet Hosts \u2014 Communication Layers | 1989 |
+| `@rfc1918` | Address Allocation for Private Internets | 1996 |
+| `@rfc3022` | Traditional IP Network Address Translator (Traditional NAT) | 2001 |
+| `@rfc768` | User Datagram Protocol | 1980 |
+| `@rfc791` | Internet Protocol | 1981 |
+| `@rfc8200` | Internet Protocol, Version 6 (IPv6) Specification | 2017 |
+| `@rfc8446` | The Transport Layer Security (TLS) Protocol Version 1.3 | 2018 |
+| `@rfc9000` | QUIC: A UDP-Based Multiplexed and Secure Transport | 2021 |
+| `@rfc9293` | Transmission Control Protocol (TCP) | 2022 |
+| `@threegpp-ts23501` | System architecture for the 5G System (5GS) | 2026 |
+| `@w3c-pointerevents` | Pointer Events | 2026 |
+| `@w3c-uievents` | UI Events | 2026 |
+| `@wcag22-20231005` | Web Content Accessibility Guidelines ({WCAG}) 2.2 | 2023 |
+| `@wcag22-20241212` | Web Content Accessibility Guidelines (WCAG) 2.2 | 2024 |
+
+Canonical cite files: `book/references/references.bib` and the Full31 working bibliography under `publication/full31/`.

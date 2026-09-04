@@ -4,9 +4,9 @@
 
 Prefer inheriting existing CE labs. Do not invent CE/WAIKE IDs. Proposed publication labs are namespaced ideas only.
 
-## OPPORTUNITY: `LAB-BOOT-OBS-001 (proposed publication-owned)`
+## FULL_LAB: `LAB-BOOT-OBS-001`
 
-Observe boot/wake symptoms on a commodity device the learner owns: cold boot vs wake, update pending banners, recovery entry if already available—no custom flashing. Fixture route for learners without admin rights.
+**Status:** `IMPLEMENTED_DIGITAL` under `labs/LAB-BOOT-OBS-001/`. Observe boot/wake symptoms on a commodity device the learner owns: cold boot vs wake, update pending banners, recovery entry if already available—no custom flashing. Fixture route for learners without admin rights.
 
 ## INHERIT: `LAB-TRUST-001`
 

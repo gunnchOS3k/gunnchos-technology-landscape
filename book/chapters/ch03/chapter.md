@@ -48,9 +48,9 @@ Before jargon, name the feel.
 
 **Fast** usually means a response arrives soon enough that waiting does not become the story. **Slow** means waiting *is* the story—progress indicators linger, key echoes trail fingers, lists fill late. **Smooth** means motion and updates feel continuous enough that your attention stays on intent. **Unstable** means the same action is sometimes fine and sometimes not: hitch, stall, recovery, surprise.
 
-Those words mix several technical stories. A device can move a lot of data per second (**throughput**) while still feeling unresponsive if the *first* useful response is delayed (**latency**) or if delay wanders unpredictably (**jitter**) [@saltzer-kaashoek; @iso-iec-25010-2023]. A screen can look “busy” while the interactive path is starved. A connectivity icon can look healthy while local contention is the real seat problem [@tanenbaum-bos].
+Those words mix several technical stories. A device can move a lot of data per second (**throughput**) while still feeling unresponsive if the *first* useful response is delayed (**latency**) or if delay wanders unpredictably (**jitter**) [@saltzer-kaashoek]. A screen can look “busy” while the interactive path is starved. A connectivity icon can look healthy while local contention is the real seat problem [@tanenbaum-bos].
 
-**Perceived performance is a human judgment produced by multiple measurable behaviors—not a single score.**
+**Perceived performance** is a human judgment produced by multiple measurable behaviors—not a single score [@iso-iec-25010-2023]. **Responsiveness** is that seat judgment for interactive work: whether latency (and its variability) stayed tolerable—not a synonym for peak throughput.
 
 Notice three traps early:
 
@@ -270,7 +270,7 @@ Follow **LAB-CMS-001** Route A or fixture fallback: before/during CPU, memory, a
 
 #### Route C — Offline / fixture fallback
 
-If monitors are inaccessible, use LAB-CMS-001 fixtures for local-diagnosis literacy. Treat fixture numbers as **teaching illustrations**, not measurements of your device. a measured CMS monitor plate (still blocked pending qualifying evidence) (measured annotated monitor snapshot) remains **`BLOCKED_EVIDENCE_REQUIRED`**; synthetic fixtures labeled with that ID do **not** unblock the measured figure.
+If monitors are inaccessible, use LAB-CMS-001 fixtures for local-diagnosis literacy. Treat fixture numbers as **teaching illustrations**, not measurements of your device. The measured annotated CMS monitor plate remains **`BLOCKED_EVIDENCE_REQUIRED`** until qualifying evidence exists; synthetic fixtures labeled with that ID do **not** unblock the measured figure.
 
 #### Evidence (minimum)
 

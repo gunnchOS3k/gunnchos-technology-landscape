@@ -7,7 +7,7 @@
   <desc id="desc">Conceptual left-to-right map: physical world to sensors cameras and microphones to processing including compositor and GPU to display and speakers returning to human perception. Truth classification: conceptual.</desc>
   <rect width="1100" height="420" fill="#ffffff"/>
   <rect x="1" y="1" width="1098" height="418" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CH08-001  World  sensing  processing  presentation</text>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CH08-001  World → sensing → processing → presentation</text>
   <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Conceptual educational map · not measured telemetry · shape+label encoding</text>
   <defs>
     <marker id="a1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#111111"/></marker>
@@ -37,5 +37,5 @@
   <rect x="886" y="150" width="180" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
   <text x="976" y="185" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">5 Human</text>
   <text x="976" y="205" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">perception</text>
-  <text x="24" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Reading order 15. Pipelines may run in both directions (present while capturing). Conceptual only.</text>
+  <text x="24" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Reading order 1→5. Pipelines may run in both directions (present while capturing). Conceptual only.</text>
 </svg>

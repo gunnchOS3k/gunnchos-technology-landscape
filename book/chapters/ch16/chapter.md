@@ -78,7 +78,7 @@ Apps, OS network stack, and NIC/radio on *this* machine. Local drafts, local cac
 
 ### LAN scope
 
-Neighbors reachable under the same local network / gateway neighborhood—printers, captive portals, private address spaces commonly used on home and campus nets [@rfc1918]. A device can be “on Wi‑Fi” and still fail Internet-scoped work.
+Neighbors reachable under the same local network / gateway neighborhood—printers, captive portals, private address spaces commonly used on home and campus nets [@rfc1918]. A **LAN** may include **wired Ethernet** segments and/or wireless LAN attachment; those are local on-ramps and link technologies, not synonyms for Internet scope [@kurose-ross-8; @ieee80211-2020]. A device can be “on Wi‑Fi” or “on Ethernet” and still fail Internet-scoped work.
 
 ### DNS (dependency, not the whole path)
 

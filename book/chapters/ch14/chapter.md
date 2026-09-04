@@ -63,6 +63,8 @@ Accessibility belongs in this noticing, not later as a disclaimer. If the only �
 
 An ordinary app experience is not a single binary floating alone. It is a path through cooperating parts: people, UI, application logic, runtime, libraries, OS services, and optional remote APIs (CLM-CH14-001) [@saltzer-kaashoek; @whatwg-html]. **FIG-CH14-001** is the first-minute stack map: UI → app logic → runtime → libraries → OS services → optional remote API. Treat it as **Representative educational architecture**—not a measured teardown of any brand’s process list.
 
+![UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack.](../../../figures/full31/ch14/fig-ch14-001.svg){#fig-ch14-001 fig-cap="UI → app logic → runtime → libraries → OS services → optional remote API. Conceptual stack."}
+
 Walk the layers in ordinary language. Keep the same layers when vocabulary deepens.
 
 ### Human
@@ -105,6 +107,8 @@ Equity belongs in the map: always-online assumptions exclude learners on metered
 
 Everyday interactive software commonly waits for inputs, dispatches handlers, updates remembered **state**, and presents outputs [@whatwg-html; @whatwg-dom]. **FIG-CH14-002** shows one teaching path for a feature after chrome is already visible: event → handler → API call → state update → render / AT feedback. Read it as a logical story, not as a claim that every platform uses one identical event-loop implementation or that steps never overlap.
 
+![Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap.](../../../figures/full31/ch14/fig-ch14-002.svg){#fig-ch14-002 fig-cap="Event → handler → API → state → render/AT feedback. Conceptual sequence; steps may overlap."}
+
 A useful reading of the chrome-before-content moment inside an already-running app:
 
 1. **Input arrives** — tap, key, switch, or voice becomes an event the software can interpret.
@@ -116,6 +120,8 @@ A useful reading of the chrome-before-content moment inside an already-running a
 7. **Human judgment** — ready enough to use, still busy, or failed.
 
 **FIG-CH14-003** separates **local API** failure domains from **remote API** failure domains. Same call metaphor (“ask for data”); different latency, authorization, and blame stories. Association ≠ DNS ≠ route ≠ auth ≠ this API version.
+
+![Local API vs remote API failure domains. Illustrative teaching comparison.](../../../figures/full31/ch14/fig-ch14-003.svg){#fig-ch14-003 fig-cap="Local API vs remote API failure domains. Illustrative teaching comparison."}
 
 ### Alternate paths (the honesty rule)
 
@@ -215,7 +221,7 @@ Prefer inheriting existing CE labs. Do not invent CE/WAIKE lab IDs. The chapter�
 
 ### LAB-SYS-001 — Name the system behind a familiar “open” (CE-1 adjacency)
 
-**Observable question.** When I open something I already use, what becomes visible first, what becomes usable later, and which hidden parts might still be working?
+**Observable question.** When chrome appears before a feature finishes, which cooperating parts—**UI**, **runtime**, **libraries**, and **APIs**—might still be working, and how do I avoid collapsing them into one vague “the app”?
 
 **Why this lab here.** CE-1 / Chapter 1 adjacency: explode “the app” into cooperating parts and teach chrome versus content without claiming Quartet timings. Full procedure lives under `labs/LAB-SYS-001/`; do not duplicate the entire write-up in this chapter.
 
@@ -373,9 +379,9 @@ Deeper entries, analogies labeled as analogies, and “not the same as” warnin
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
-All figures below are **conceptual** or **illustrative** unless a future revision cites a specific validated hardware release. Source preference: editable SVG in the publication repository. Production status: **planned** (prose references IDs until art lands).
+All figures below are **conceptual** or **illustrative** unless a future revision cites a specific validated hardware release. Source: editable SVG in the publication repository (`figures/full31/`). Production status: **embedded**.
 
 ### FIG-CH14-001 — UI → logic → runtime → libraries → OS → optional remote API
 

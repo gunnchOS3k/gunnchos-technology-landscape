@@ -62,6 +62,8 @@ Optional commodity notice (no specialized gear): attempt one familiar send/submi
 
 A stalled send is not a single object. It is a path through an ecosystem. **FIG-CH20-001** is the first-minute map: human experience at the center, with concurrent spokes—not a single ordered villain chain. Treat it as **Representative educational architecture**, not a claim that every app fails the same way.
 
+![Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke.](../../../figures/full31/ch20/fig-ch20-001.svg){#fig-ch20-001 fig-cap="Stability Contract concurrent conditions around human experience. Conceptual hub-and-spoke."}
+
 Walk the layers in ordinary language.
 
 ### Human and context
@@ -110,6 +112,8 @@ SC-11: delay and variability remain acceptable *to this person in this context*.
 
 **FIG-CH20-002** separates latency vs reliability vs throughput symptom families so readers stop treating one green probe as all three.
 
+![Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe.](../../../figures/full31/ch20/fig-ch20-002.svg){#fig-ch20-002 fig-cap="Latency vs reliability vs throughput symptom families. Conceptual; do not collapse into one probe."}
+
 ---
 
 ## 4. Follow the signal {#sec-signal}
@@ -141,6 +145,8 @@ Latency, reliability, and throughput are different failure/success families; col
 ### Evidence hierarchy (climb only as far as tools and ethics allow)
 
 **FIG-CH20-003** and CE-6’s evidence ladder teach the same honesty:
+
+![QoE vs QoS vs ping. Conceptual non-entailment teaching.](../../../figures/full31/ch20/fig-ch20-003.svg){#fig-ch20-003 fig-cap="QoE vs QoS vs ping. Conceptual non-entailment teaching."}
 
 1. Illustrative teaching aid (labeled)
 2. Commodity observation (status UI, wall-clock, visible stalls)
@@ -436,13 +442,13 @@ Related earlier chapters: experience-first path and observation craft (CH02/CH03
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All four figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured learner or lab evidence. No fabricated telemetry. No product SLO curves.
 
 ### FIG-CH20-001 — Stability Contract concurrent conditions
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Conceptual / hub-and-spoke (inherit CE-6 FIG-CE06-001 intent).
 - **Reader should notice.** Multiple concurrent conditions; any one can break the experience.
 - **Truth class.** Conceptual.
@@ -450,7 +456,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-002 — Latency vs reliability vs throughput
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** Three symptom families that must not collapse into one green probe.
 - **Truth class.** Conceptual.
@@ -458,7 +464,7 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-003 — QoE vs QoS vs ping
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Conceptual comparative.
 - **Reader should notice.** Human-facing QoE ≠ service QoS language ≠ one probe.
 - **Truth class.** Conceptual.
@@ -466,7 +472,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 
 ### FIG-CH20-004 — Learner portfolio timings labeled n=1
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+![Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data.](../../../figures/full31/ch20/fig-ch20-004.svg){#fig-ch20-004 fig-cap="Learner portfolio timings labeled n=1. Illustrative unless filled with learner-owned data."}
+
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Measured-only when filled with learner data; otherwise illustrative placeholder.
 - **Reader should notice.** n=1 classroom evidence; fixture rows labeled `fixture`; not Gate 3 human validation.
 - **Truth class.** Measured *only* for learner-owned labeled timings; illustrative otherwise.

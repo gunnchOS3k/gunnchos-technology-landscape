@@ -12,4 +12,25 @@ Machine-readable maps:
 - `careers/skill_map.yaml`
 - `careers/chapter_role_map.md` (Chapter 2 prototype map)
 
+| Role ID | Title | Related chapters (registry) | Employment guarantee |
+|---|---|---|---|
+| `ROLE-UX` | UX Designer | CH02 | `false` |
+| `ROLE-HCI` | HCI Engineer | CH02 | `false` |
+| `ROLE-EMBEDDED` | Embedded Engineer | CH02 | `false` |
+| `ROLE-FIRMWARE` | Firmware Engineer | CH02 | `false` |
+| `ROLE-DRIVER` | Device-Driver Engineer | CH02 | `false` |
+| `ROLE-KERNEL` | Kernel / OS Engineer | CH02 | `false` |
+| `ROLE-APP` | Application Developer | CH02 | `false` |
+| `ROLE-FRONTEND` | Frontend Engineer | CH02 | `false` |
+| `ROLE-BACKEND` | Backend / Cloud Engineer | CH02 | `false` |
+| `ROLE-SRE` | SRE | CH02 | `false` |
+| `ROLE-NET` | Network Engineer | CH02 | `false` |
+| `ROLE-WIRELESS` | Wireless Engineer | CH02 | `false` |
+| `ROLE-SEC` | Cybersecurity Engineer | CH02 | `false` |
+| `ROLE-PERF` | Performance Engineer | CH02 | `false` |
+| `ROLE-ARCH` | Computer Architect | CH02 | `false` |
+| `ROLE-A11Y` | Accessibility Engineer | CH02 | `false` |
+| `ROLE-RESEARCH` | Researcher | CH02 | `false` |
+| `ROLE-TPM` | Technical Program Manager | CH02 | `false` |
+
 As later chapters leave scaffold state, role links should stay evidence-based and free of invented endorsements.

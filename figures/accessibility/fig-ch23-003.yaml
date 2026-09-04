@@ -1,0 +1,20 @@
+figure_id: FIG-CH23-003
+title: "Encryption transit, at-rest, and endpoint limits"
+caption: "Transit and at-rest encryption goals with honest unlocked-endpoint limits. Conceptual; inherits CE-5 FIG-CE5-004."
+alt_text: "FIG-CH23-003: Transit encrypted, at rest encrypted, unlocked endpoint readable if allowed; dashed note on what encryption cannot alone guarantee."
+text_equivalent: |
+  FIG-CH23-003 reading order: (1) Transit — encrypted in motion, (2) At rest — encrypted storage,
+  (3) Unlocked endpoint — readable if authn+authz allow, (4) Cannot alone guarantee correct UX, honest UI, safe endpoint, or human trust.
+reading_order:
+  - "Transit"
+  - "At rest"
+  - "Unlocked endpoint"
+  - "Cannot alone guarantee"
+source: "figures/architecture/fig-ch23-003-encryption-boundaries.svg"
+inherits: FIG-CE5-004
+truth_classification: conceptual
+status: conceptual
+production_status: implemented
+color_independent_encoding: "Shape + label + stroke pattern; color is not the sole encoding."
+reviewer: pending-human-visual-review
+version: "0.1.0"

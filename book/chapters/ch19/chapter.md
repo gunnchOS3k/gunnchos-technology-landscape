@@ -58,6 +58,8 @@ Notice the split timelines. A radio indicator can remain green while an applicat
 
 A continuity moment is not a single radio. It is a path through cooperating layers. **FIG-CH19-001** is the first-minute map: human task → device → terrestrial and/or NTN path classes → core/service → human-visible outcome. Treat it as **Representative educational architecture**, not a claim that any one operator’s sky looks exactly like the diagram.
 
+![Ground / air / space path classes to a device. Conceptual educational architecture.](../../../figures/full31/ch19/fig-ch19-001.svg){#fig-ch19-001 fig-cap="Ground / air / space path classes to a device. Conceptual educational architecture."}
+
 ### Human
 
 You form intent: send a status to family, keep a document syncing, reach emergency services, finish a class upload. Eyes and ears judge whether the experience continued.
@@ -95,9 +97,11 @@ Follow one human-visible action across a path change—without inventing sky tel
 1. **Intent forms.** You tap send, sync, or join.
 2. **Local stack checks path class.** The device reports terrestrial availability, NTN/satellite feature availability, or neither.
 3. **Capability gate.** The active path either supports the required class (for example short message vs bulk upload) or refuses.
-4. **Delay and reliability regime.** Propagation and system delays differ by path class. Orbit *classes* (for example low Earth orbit vs geostationary) imply different qualitative delay regimes; **do not invent product latency numbers** here (CLM-CH19-003 · **SOURCE_NEEDED**) [@tanenbaum-bos].
+4. **Delay and reliability regime.** Propagation and system delays differ by path class. Orbit *classes* (for example low Earth orbit vs geostationary) imply different qualitative delay regimes; **do not invent product latency numbers** here (CLM-CH19-003 · **SOURCE_NEEDED**). Networking survey texts discuss satellite-link delay as a path-class property distinct from terrestrial access—useful orientation only, not an operator guarantee [@kurose-ross-8].
 5. **Handover / multi-path behavior.** The stack may stay on one path, fail over, or use more than one path (**multi-path continuity** / multi-connectivity ideas at survey depth).
 6. **Human-visible state.** Progress, errors, and drafts either survive or silently break—**FIG-CH19-002** contrasts continuity of experience vs icon-lit status.
+
+![Service continuity vs icon-lit status. Conceptual; color not sole encoding.](../../../figures/full31/ch19/fig-ch19-002.svg){#fig-ch19-002 fig-cap="Service continuity vs icon-lit status. Conceptual; color not sole encoding."}
 
 ### Alternate paths (the honesty rule)
 
@@ -143,6 +147,8 @@ Common honest failures: no usable path for the required capability; path exists 
 - **Misread.** One “satellite latency” number fits all orbits and operators.
 - **Figure.** **FIG-CH19-003** may show comparative bars only when labeled illustrative—never as measured product data.
 
+![Delay-regime comparison. Illustrative bars only—not operator measurements.](../../../figures/full31/ch19/fig-ch19-003.svg){#fig-ch19-003 fig-cap="Delay-regime comparison. Illustrative bars only—not operator measurements."}
+
 ### Multi-path continuity
 
 - **Role.** Using more than one access path to sustain experience.
@@ -174,7 +180,7 @@ A system can remain *icon-connected* while the human experience has already fail
 
 **Goal.** Practice continuity literacy on path and usability changes you can ethically observe—then extend the same worksheet logic toward public NTN/satellite *feature classification* using official documents only.
 
-**WAIKE alignment note.** WAIKE accepted `main` maps advanced wireless coursework adjacently (`WIRELESS_6G`); it does **not** provide an exact NTN lab ID. Do not invent one. Publication continuity work inherits **LAB-PKT-001** (path/access framing) and **LAB-CE06-001** (connected-but-unusable diagnosis). A future continuity worksheet across CE-4/CE-6/CH19 remains **proposed**, not shipped as a new WAIKE course ID.
+**WAIKE alignment note.** WAIKE accepted `main` maps advanced wireless coursework adjacently (`WIRELESS_6G`); it does **not** provide an exact NTN lab ID. Do not invent one. Publication continuity work inherits **LAB-PKT-001** (path/access framing) and **LAB-CE06-001** (connected-but-unusable diagnosis). The NTN document-only capability-class route below is an **INLINE_ACTIVITY** (namespaced idea `LAB-CONT-001` is **not** a shipped `labs/` package and must not be minted as a WAIKE course ID).
 
 **Safety (hard stops).**
 
@@ -304,7 +310,6 @@ Selected authoritative sources for this chapter’s general technical explanatio
 
 ## 12. Glossary links
 
-
 | Term | Plain link |
 |---|---|
 | Non-terrestrial network (NTN) | Network components using space or airborne platforms |
@@ -320,13 +325,13 @@ Related earlier chapters: packets/Internet path literacy (CH16), Wi-Fi/cellular/
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All three figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated satellite telemetry.
 
 ### FIG-CH19-001 — Ground / air / space path classes to a device
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** System map.
 - **Reader should notice.** Distinct terrestrial vs NTN path classes feeding one human task.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -334,7 +339,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH19-002 — Continuity vs icon-lit
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** Icon can remain lit while human-visible task fails (or narrow messaging succeeds).
 - **Truth class.** Conceptual.
@@ -342,7 +347,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH19-003 — Delay regime comparison (illustrative)
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Illustrative comparative bars.
 - **Reader should notice.** Regime classes differ; bars are not product measurements.
 - **Truth class.** Illustrative.

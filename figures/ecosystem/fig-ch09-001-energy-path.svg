@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="title001 desc001">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="420" viewBox="0 0 1040 420" role="img" aria-labelledby="title001 desc001" data-figure-id="FIG-CH09-001">
   <title id="title001">FIG-CH09-001: Energy Path with Throttle Feedback</title>
   <desc id="desc001">Left to right: Energy in, Conversion, Loads, Heat out. A dashed feedback arrow labeled Throttle returns from Heat/policy toward Loads. Status: Conceptual educational diagram. Color is not the sole encoding; shapes and labels carry meaning.</desc>
   <defs>
@@ -34,7 +34,7 @@
 
   <rect x="670" y="160" width="160" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
   <text x="750" y="198" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">4 Heat out</text>
-  <text x="750" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">case  room</text>
+  <text x="750" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">case → room</text>
 
   <path d="M750,250 L750,320 L540,320 L540,250" fill="none" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr901d)"/>
   <rect x="560" y="292" width="170" height="36" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>

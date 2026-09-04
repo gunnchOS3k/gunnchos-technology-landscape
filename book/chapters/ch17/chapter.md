@@ -58,6 +58,8 @@ Optional comparison, available on a phone or laptop you already own (or via fixt
 
 An everyday walk is not one radio. It is a path through an ecosystem. **FIG-CH17-001** is the first-minute map: device ↔ Wi-Fi access point path **versus** cellular radio access network (RAN) path ↔ operator or campus backhaul ↔ Internet path ↔ edge/cloud service. Treat it as **Representative educational architecture**, not a claim that your phone’s sealed internals look exactly like the diagram.
 
+![Wi-Fi AP path vs cellular RAN/core path vs Internet onward path. Conceptual; Wi-Fi ≠ cellular ≠ Internet.](../../../figures/full31/ch17/fig-ch17-001.svg){#fig-ch17-001 fig-cap="Wi-Fi AP path vs cellular RAN/core path vs Internet onward path. Conceptual; Wi-Fi ≠ cellular ≠ Internet."}
+
 Walk the layers in ordinary language, then keep the same layers when vocabulary deepens.
 
 ### Human
@@ -90,11 +92,15 @@ Status UI summarizes radio and attachment state for humans. It is an interpretat
 
 **FIG-CH17-002** later places cellular generations through 5G and marks **6G as roadmap**—research and standards direction, not a deployed consumer fact in this manuscript (CLM-CH17-003; `SOURCE_NEEDED` for a dated 3GPP study-item primary).
 
+![Cellular generations through 5G with 6G labeled roadmap—not a consumer deployment fact.](../../../figures/full31/ch17/fig-ch17-002.svg){#fig-ch17-002 fig-cap="Cellular generations through 5G with 6G labeled roadmap—not a consumer deployment fact."}
+
 ---
 
 ## 4. Follow the signal {#sec-signal}
 
 **FIG-CH17-003** shows a walk: indoor Wi-Fi association → approach exit → Wi-Fi weakens → cellular attachment or handover/offload → app traffic continues or stalls. Read it as a logical story, not as a measured drive test of your city.
+
+![Wi-Fi to cellular transition during a walk. Conceptual teaching sequence; not a drive test.](../../../figures/full31/ch17/fig-ch17-003.svg){#fig-ch17-003 fig-cap="Wi-Fi to cellular transition during a walk. Conceptual teaching sequence; not a drive test."}
 
 1. **Intent.** A person starts or continues a task that needs a path.
 2. **Access choice.** The device uses Wi-Fi, cellular, or switches between them according to policy and conditions [@kurose-ross-8].
@@ -368,13 +374,13 @@ Related earlier chapters: packets/Internet (CH16), cloud/edge placement (CH15), 
 
 ---
 
-## Figure references (planned embeds; **draft-blocked** until SVG + a11y land)
+## Figure references (embedded; registered SVG + a11y)
 
 All three figures are **conceptual / illustrative teaching aids** unless a future revision replaces them with measured evidence. No fabricated telemetry or drive-test plots.
 
 ### FIG-CH17-001 — Wi-Fi AP path vs cellular RAN path vs Internet
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Comparative layers.
 - **Reader should notice.** Access technologies are on-ramps; Internet path and cloud/edge placement sit beyond; Wi-Fi ≠ cellular ≠ Internet.
 - **Truth class.** Conceptual / Representative educational architecture.
@@ -382,7 +388,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH17-002 — Generations survey to 5G to 6G roadmap
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Timeline.
 - **Reader should notice.** 5G as deployed-generation survey language vs **6G clearly labeled roadmap** (not consumer deployment fact).
 - **Truth class.** Illustrative.
@@ -390,7 +396,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 ### FIG-CH17-003 — Wi-Fi to cellular transition during a walk
 
-- **Production status.** `draft-blocked` (no SVG embed in this draft).
+- **Production status.** `embedded` (registered SVG + accessibility sidecar).
 - **Type.** Sequence.
 - **Reader should notice.** Numbered mobility/offload steps plus a failure branch where icons stay lit.
 - **Truth class.** Conceptual.

@@ -1,0 +1,227 @@
+schema_version: 1.0.0
+agent: quality-i-frontmatter
+wave: full31-quality-convergence-001
+audited_at: "2026-09-03"
+base_sha: "2e440e43f89b61c112f088939f73440024283bbf"
+gate_posture: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+publication_ready_claimed: false
+human_validation_fabricated: false
+
+scope:
+  - title_status
+  - preface
+  - how_to_use
+  - know_first
+  - reader_pathways
+  - device_quartet
+  - waike
+  - evidence_status_legend
+  - rights_notice
+  - acknowledgments_placeholder
+  - glossary_index
+  - references
+  - key_standards_index
+  - figure_index
+  - lab_index
+  - career_role_map
+  - parts_chapters_index
+  - errata_workflow
+  - subject_index_policy
+
+rights:
+  manuscript_artwork_instructor: "All Rights Reserved © 2026 Edmund Gunn Jr."
+  code_tooling: "MIT only where explicitly scoped"
+  upstream: "upstream retains upstream"
+  blanket_cc: false
+  decision_records:
+    - publication/BOOK_LICENSE_DECISION.md
+    - publication/RIGHTS_AND_PERMISSIONS.md
+  reader_facing: book/frontmatter/rights.qmd
+
+acknowledgments:
+  status: PLACEHOLDER_ONLY
+  fabricated_names: false
+  fabricated_endorsements: false
+  fabricated_forewords_testimonials: false
+  path: book/appendices/acknowledgments.qmd
+
+front_matter:
+  title_status:
+    path: book/frontmatter/status.qmd
+    verdict: PASS
+    notes:
+      - Working-draft banner and Gate 3 posture preserved
+      - Rights pointer added
+  preface:
+    path: book/frontmatter/preface.md
+    verdict: PASS
+    notes:
+      - Short; status banner retained; links orientation without inventing endorsements
+  know_first:
+    path: book/frontmatter/know-first.qmd
+    verdict: ADDED
+    notes:
+      - Navigation hub for where-am-I / glossary / labs / figures / references / pathway / errata
+  how_to_use:
+    path: book/frontmatter/how-to-use.qmd
+    verdict: IMPROVED
+    notes:
+      - Navigation hub table added; first-pass steps retained
+  reader_pathways:
+    path: book/frontmatter/reader-pathways.qmd
+    verdict: PASS
+    notes:
+      - Six pathways present; no prestige ranking
+  device_quartet:
+    path: book/frontmatter/device-quartet.qmd
+    verdict: PASS
+    notes:
+      - Research form factors; PHYSICAL_PENDING integrity rules present
+  waike:
+    path: book/frontmatter/waike.qmd
+    verdict: PASS
+    notes:
+      - Alignment layer; not credentialing; not Gate 3 evidence
+  evidence_legend:
+    path: book/frontmatter/evidence-legend.qmd
+    verdict: IMPROVED
+    notes:
+      - Added lab maturity labels; clarified fixtures ≠ Gate 3 PASS
+  rights_notice:
+    path: book/frontmatter/rights.qmd
+    verdict: ADDED
+
+back_matter:
+  parts_chapters:
+    path: book/appendices/parts-chapters.qmd
+    verdict: ADDED
+    counts:
+      chapters: 31
+      parts: 6
+    notes:
+      - Canonical part titles from specs/02_BOOK_ARCHITECTURE_AND_CHAPTER_REGISTRY.md
+      - Subject index explicitly deferred as human/editorial (not keyword dump)
+  glossary:
+    path: book/appendices/glossary.qmd
+    source: glossary/glossary.yaml
+    verdict: IMPROVED
+    counts:
+      term_ids_indexed: 91
+    notes:
+      - Navigation index of term IDs; full definitions remain in YAML
+  references:
+    path: book/appendices/references.qmd
+    verdict: IMPROVED
+    notes:
+      - Points to book bib + Full31 working bibliography; no invented endorsements
+  key_standards:
+    path: book/appendices/key-standards.qmd
+    source: publication/full31/WORKING_BIBLIOGRAPHY_INDEX.yaml
+    verdict: ADDED
+    counts:
+      standards_specifications_keys: 25
+    notes:
+      - Navigational list only; not compliance certification
+  lab_index:
+    path: book/appendices/lab-index.qmd
+    source: labs/lab_registry.yaml
+    verdict: IMPROVED
+    counts:
+      labs_indexed: 14
+      labs_previously_listed: 6
+    notes:
+      - Expanded from incomplete CE/prototype subset to full registry
+  figure_index:
+    path: book/appendices/figure-index.qmd
+    source: figures/figure_registry.yaml
+    verdict: IMPROVED
+    counts:
+      figures_indexed: 107
+    notes:
+      - Chapter column derived from figure_id due to registry field corruption
+  career_role_map:
+    path: book/appendices/career-role-map.qmd
+    source: careers/role_registry.yaml
+    verdict: IMPROVED
+    counts:
+      roles_indexed: 18
+    notes:
+      - employment_guarantee false retained; no employment promises
+  errata:
+    reader_facing: book/appendices/errata.qmd
+    issue_template: .github/ISSUE_TEMPLATE/errata.yml
+    workflow_stub: publication/full31/quality/ERRATA_WORKFLOW.md
+    verdict: ADDED_STUB
+    notes:
+      - Issue template already existed; workflow stub + reader page added
+  acknowledgments:
+    verdict: PASS_PLACEHOLDER
+
+navigability_targets:
+  where_am_i: book/appendices/parts-chapters.qmd
+  know_first: book/frontmatter/know-first.qmd
+  glossary: book/appendices/glossary.qmd
+  labs: book/appendices/lab-index.qmd
+  figures: book/appendices/figure-index.qmd
+  references: book/appendices/references.qmd
+  pathway: book/frontmatter/reader-pathways.qmd
+  hub_pages:
+    - index.qmd
+    - book/frontmatter/how-to-use.qmd
+    - book/frontmatter/know-first.qmd
+
+findings:
+  - id: FIG-CHAPTER-FIELD-TRUNCATION
+    severity: major
+    area: figures/figure_registry.yaml
+    count: 55
+    summary: >
+      Many figure entries store truncated chapter fields (e.g. CH1- for CH11,
+      CH0- for CH20/CH30). Figure index derives chapter from figure_id.
+    owner_hint: visuals / figure-registry maintainer
+    agent_i_action: documented + ID-derived index; registry not rewritten here to avoid clash
+  - id: LAB-INDEX-INCOMPLETE
+    severity: minor
+    area: book/appendices/lab-index.qmd
+    summary: Prior appendix listed 6 labs; registry has 14. Expanded.
+    agent_i_action: fixed
+  - id: SUBJECT-INDEX-NOT-CLAIMED
+    severity: info
+    summary: >
+      Traditional subject index remains human/editorial. Explicitly stated that
+      keyword dumps are not publication-grade subject indexes.
+    agent_i_action: policy recorded in parts-chapters appendix + this audit
+  - id: CHAPTER-REGISTRY-STATUS-DRIFT
+    severity: info
+    area: book/chapter_registry.yaml
+    summary: >
+      Most chapters still show registry status outline while working drafts exist.
+      Parts/chapters index warns these are structural markers, not Gate outcomes.
+    agent_i_action: labeled honestly in parts-chapters appendix
+
+quarto_wiring:
+  path: _quarto.yml
+  chapters_count: 31
+  front_matter_pages_added:
+    - book/frontmatter/rights.qmd
+    - book/frontmatter/know-first.qmd
+  back_matter_pages_added:
+    - book/appendices/parts-chapters.qmd
+    - book/appendices/key-standards.qmd
+    - book/appendices/errata.qmd
+
+constraints_honored:
+  - No fabricated acknowledgments, reviewers, endorsements, forewords, or testimonials
+  - Gate 3 / CH02-REVIEW-R1 untouched
+  - publication/gates/gate-3/ not modified
+  - No Gate 3 PASS claim
+  - No publication-ready claim
+  - No blanket Creative Commons claim
+
+completeness:
+  audit_yaml: true
+  optional_report: true
+  errata_workflow_stub: true
+  scoped_nav_index_improvements: true
+  push_required: true
+  pr_required: false

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="340" viewBox="0 0 1040 340" role="img" aria-labelledby="title004 desc004">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="340" viewBox="0 0 1040 340" role="img" aria-labelledby="title004 desc004" data-figure-id="FIG-CH05-004">
   <title id="title004">FIG-CH05-004: Logic Building Blocks</title>
   <desc id="desc004">Inputs A and B feed an AND gate. Input C feeds a NOT gate. AND and NOT outputs feed an OR gate producing Output decision. Status: Conceptual educational diagram.</desc>
   <defs>
@@ -37,5 +37,5 @@
   <text x="850" y="180" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#111111">Output decision</text>
   <text x="850" y="202" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">(A AND B) OR (NOT C)</text>
 
-  <text x="28" y="310" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: inputs A/B/C  AND / NOT  OR  output. Example Boolean composition only.</text>
+  <text x="28" y="310" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Reading order: inputs A/B/C → AND / NOT → OR → output. Example Boolean composition only.</text>
 </svg>

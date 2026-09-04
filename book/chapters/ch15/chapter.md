@@ -276,7 +276,7 @@ Primary lab: **LAB-PKT-001** — Trace one connected action across path and acce
 
 Optional stretch only: **LAB-CMS-001** if many local containers/VMs make the host feel slow—keep that as *local resource pressure*, not as proof the cloud failed.
 
-Proposed-only (not live): `LAB-PLACE-001` remains a packet opportunity name—do **not** treat it as an implemented publication lab ID.
+Placement literacy is an **INLINE_ACTIVITY** folded into LAB-PKT-001 above (access vs placement columns). The namespaced idea `LAB-PLACE-001` is **not** a shipped `labs/` package—do not treat it as a FULL_LAB ID.
 
 ---
 

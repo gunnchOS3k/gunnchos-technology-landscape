@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img"
      aria-labelledby="fig-ch11-004-title fig-ch11-004-desc"
      data-figure-id="FIG-CH11-004">
-  <title id="fig-ch11-004-title">Update and recovery boundary</title>
-  <desc id="fig-ch11-004-desc">Update and recovery boundary. Truth class: conceptual. Nodes: Trusted update, Interrupted update, Recovery path, Unsafe rollback. Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</desc>
+  <title id="fig-ch11-004-title">Update failure → recovery → outcomes</title>
+  <desc id="fig-ch11-004-desc">Failure map: trusted update path can interrupt; recovery may restore a usable device or leave an unusable outcome. Reading order: Trusted update; Interrupted update; Recovery path; Usable restored; Unusable / brick-like outcome. Conceptual Stability Contract teaching—not vendor brick statistics. Device Quartet update behavior remains PHYSICAL_PENDING. Color is not the sole encoding.</desc>
   <defs>
     <marker id="arr-fig-ch11-004" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#111111"/>
     </marker>
   </defs>
-  <rect width="1000" height="420" fill="#ffffff"/>
-  <rect x="1" y="1" width="998" height="418" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">Update and recovery boundary</text>
-  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">FIG-CH11-004 · truth: conceptual · educational architecture (not a product measurement)</text>
-  <circle cx="500" cy="210" r="120" fill="#ffffff" stroke="#111111" stroke-width="3"/><circle cx="500" cy="210" r="70" fill="#f5f5f5" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
-  <text x="500" y="205" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">Trusted update</text><text x="500" y="225" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#1F4B7A">Interrupted update</text>
-  <text x="500" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#333333">Recovery path — Unsafe rollback</text>
-  <text x="24" y="400" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Conceptual/illustrative teaching figure; not measured data. No invented physical measurements.</text>
+  <rect width="1000" height="460" fill="#ffffff"/>
+  <rect x="1" y="1" width="998" height="458" fill="none" stroke="#222222" stroke-width="2"/>
+  <text x="24" y="32" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#111111">FIG-CH11-004 — Update failure → recovery → outcomes</text>
+  <text x="24" y="52" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">Truth: conceptual · Stability Contract teaching · not vendor brick statistics · Color is not the sole encoding</text>
+
+  <rect x="40" y="100" width="200" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="140" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">1 Trusted update</text>
+  <text x="140" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">signed / expected path</text>
+  <line x1="240" y1="135" x2="290" y2="135" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch11-004)"/>
+
+  <rect x="290" y="100" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="400" y="130" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">2 Interrupted update</text>
+  <text x="400" y="150" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">power loss / abort / mismatch</text>
+
+  <line x1="400" y1="170" x2="400" y2="220" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch11-004)"/>
+
+  <rect x="290" y="220" width="220" height="70" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="400" y="250" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">3 Recovery path</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">rollback / rescue / reflash</text>
+
+  <line x1="510" y1="255" x2="610" y2="210" stroke="#111111" stroke-width="2" marker-end="url(#arr-fig-ch11-004)"/>
+  <line x1="510" y1="255" x2="610" y2="300" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-fig-ch11-004)"/>
+
+  <rect x="610" y="170" width="320" height="70" fill="#f5f5f5" stroke="#111111" stroke-width="2"/>
+  <text x="770" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">4a Usable restored</text>
+  <text x="770" y="220" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">device boots; human can continue</text>
+
+  <rect x="610" y="270" width="320" height="70" fill="#ffffff" stroke="#1F4B7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="770" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#111111">4b Unusable outcome</text>
+  <text x="770" y="320" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555555">stuck / unbootable / needs external rescue</text>
+
+  <text x="24" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Solid = expected / restored path · Dashed = interrupt or unusable branch · Labels + stroke pattern encode meaning</text>
+  <text x="24" y="420" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Formal interrupted-update claims remain SOURCE_NEEDED (CLM-CH11-006). Quartet measured update/recovery = PHYSICAL_PENDING.</text>
+  <text x="24" y="442" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Conceptual educational architecture; not measured product telemetry.</text>
 </svg>

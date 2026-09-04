@@ -4,16 +4,17 @@
 
 Prefer inheriting existing CE labs. Do not invent CE/WAIKE IDs. Proposed publication labs are namespaced ideas only.
 
-## OPPORTUNITY: `LAB-CONT-001 (proposed)`
+## INHERIT: `LAB-CE06-001` / `LAB-PKT-001` (FULL_LAB)
 
-Case-study worksheet: classify a public NTN/satellite consumer feature by capability class using official docs only; fixture articles; no flights required.
+Continuity under connected-but-unusable + path/access framing.
 
-## INHERIT: `LAB-CE06-001`
+## INLINE_ACTIVITY (was `LAB-CONT-001`)
 
-Continuity under connected-but-unusable.
+**Disposition (Agent G quality wave):** `proposed→inline`. Document-only NTN/satellite capability-class card using official docs; fixture articles; no flights. Lives in CH19 Try It — not a new `labs/` directory.
 
 ## Safety / equity defaults
 
 - Commodity devices + fixtures; no specialized RF TX.
 - Redact secrets/PII from portfolio artifacts.
 - Observation vs inference columns required.
+- NTN field twin claims remain PHYSICAL_PENDING.

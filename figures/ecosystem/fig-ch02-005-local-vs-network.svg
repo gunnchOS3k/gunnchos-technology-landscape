@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="560" viewBox="0 0 1040 560" role="img" aria-label="Two columns: local-only path versus network-dependent path sharing Human Input OS prefix then splitting.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="560" viewBox="0 0 1040 560" role="img" aria-label="Two columns: local-only path versus network-dependent path sharing Human Input OS prefix then splitting." data-figure-id="FIG-CH02-005">
   <title>FIG-CH02-005: Local vs Network-Dependent Tap</title>
   <desc>Two columns share a common prefix of Human, Input, and OS. The left Local-only column continues through Application to Renderer. The right Network-dependent column continues through Application, packets, access network, and remote Service, then rejoins at Renderer. Annotations mark cache hit nearby on the left and cloud far on the right. Solid connectors for required stages; dashed strokes for network stages.</desc>
   <defs>

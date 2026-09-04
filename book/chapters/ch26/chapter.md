@@ -214,7 +214,7 @@ A repository can be “technically present” while the human experience has alr
 
 **Inherited adjacency.** Builder pathway habits from Concept Edition packages and WAIKE `SOFTWARE_BUILDER` remain **adjacent**—link, do not invent a CH26 WAIKE lab ID [@src-waike] (CLM-CH26-002).
 
-**Proposed publication worksheet (not shipped this wave).** A publication-owned git fixture lab remains **proposed** in the CH26 packet (safe commit/review worksheet with offline fixture route). Until it ships under `labs/`, do not treat the proposal as an implemented lab ID and do not mint it as a WAIKE course code.
+**INLINE_ACTIVITY (chapter-native).** The safe commit/review worksheet below *is* the learning activity. The namespaced idea `LAB-CH26-GIT-001` is **not** a shipped `labs/` package and must not be minted as a WAIKE course code. Fixture / offline routes remain first-class.
 
 **Living example without marketing.** This publication repository itself is a real Git history you can read as a learner: status, diff, commit messages, and SHAs are ordinary evidence surfaces. Reading history is not permission to invent product claims.
 

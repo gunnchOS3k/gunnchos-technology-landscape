@@ -18,7 +18,12 @@ experience:
 reader_paths: [explorer, operator, builder, engineer, researcher, educator]
 systems: [complete-product, design-gates, evidence-plan, claim-boundary, explicit-tradeoffs, stability-contract]
 devices: [commodity-phone, commodity-computer, commodity-tablet]
-labs: [LAB-CH29-ONEPAGER-001, LAB-CE06-001, LAB-TRUST-001]
+labs: [LAB-CE06-001, LAB-TRUST-001]
+inline_activities:
+  - id: LAB-CH29-ONEPAGER-001
+    status: INLINE_ACTIVITY
+    note: "Chapter-native one-pager worksheet; not a labs/ FULL_LAB package."
+
 figures:
   - FIG-CH29-001
   - FIG-CH29-002
@@ -30,7 +35,8 @@ concepts:
 waike:
   mapped: true
   courses: [COMM_PD_ETHICS, CLOUD_DEVOPS]
-  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (capstones/, lab_pd_capstone, CLOUD_DEVOPS). No exact CH29 WAIKE module. LAB-CH29-ONEPAGER-001 is publication-proposed."
+  note: "Adjacent only at WAIKE SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0 (capstones/, lab_pd_capstone, CLOUD_DEVOPS). No exact CH29 WAIKE module. LAB-CH29-ONEPAGER-001 is INLINE_ACTIVITY only."
+
 claims:
   plan: publication/full31/chapters/ch29/CLAIM_PLAN.yaml
 ce_inheritance:
@@ -42,5 +48,6 @@ blockers:
   - "CLM-CH29-001 Device Quartet shipping claims PHYSICAL_PENDING"
   - "CLM-CH29-002 finished shipping OS claims prohibited (beta_ready false; claim-boundary teaching only)"
   - "CLM-CH29-003 PM BoK / product_design_refs SOURCE_NEEDED — omitted pending verified ISBN"
-  - "LAB-CH29-ONEPAGER-001 is proposed; figures FIG-CH29-001..003 not_drawn"
+  - "LAB-CH29-ONEPAGER-001 is INLINE_ACTIVITY (not a labs/ package); figures FIG-CH29-001..003 not_drawn"
+
   - "No invented WAIKE module IDs or Device Quartet marketing"

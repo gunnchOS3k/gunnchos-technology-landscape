@@ -20,3 +20,16 @@ Agents A–J may base work from the tip of this branch after bootstrap.
 - Misconception matrix: `publication/full31/quality/MISCONCEPTION_MATRIX.md`
 - Check: `make full31-terminology-check`
 - Report: `publication/full31/quality/AGENT_J_TERMINOLOGY_REPORT.md`
+
+## Agent I (front/back + nav + indexes)
+
+- Audit: `FRONTMATTER_NAV_AUDIT.yaml`
+- Report: `FRONTMATTER_NAV_REPORT.md`
+- Errata stub: `ERRATA_WORKFLOW.md`
+
+## Continuity / duplication (Agent D)
+
+- Tool: `scripts/audit_full31_continuity.py` (audit aid; not auto-rewrite)
+- Ledger: `CONTINUITY_LEDGER.yaml`
+- Report: `CONTINUITY_REPORT.md`
+- Identity matrix: `CHAPTER_IDENTITY_MATRIX.yaml` (+ `.md`)

@@ -4,7 +4,7 @@
   <desc id="FIG-CH07-002-desc">Conceptual left-to-right flow. Reading order: 1 Storage (durable file); 2 RAM (working copy); 3 Cache (nearby copy); 4 CPU (uses data); 5 UI progress. Misses at a layer cost time. Truth: conceptual.</desc>
   <rect width="900" height="320" fill="#ffffff"/>
   <rect x="1" y="1" width="898" height="318" fill="none" stroke="#222222" stroke-width="2"/>
-  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH07-002  Opening a file: storage  RAM  cache  CPU</text>
+  <text x="24" y="28" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#111111">FIG-CH07-002  Opening a file: storage → RAM → cache → CPU</text>
   <text x="24" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#444444">truth_classification: conceptual · Color is not the sole encoding</text>
   <rect x="40" y="100" width="140" height="90" fill="#ffffff" stroke="#111111" stroke-width="1.75" stroke-dasharray="6 3"/>
   <text x="110" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">1 Storage</text>
@@ -25,8 +25,8 @@
   <rect x="780" y="100" width="90" height="90" fill="#f5f5f5" stroke="#111111" stroke-width="1.75"/>
   <text x="825" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#111111">5 UI</text>
   <text x="825" y="158" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">progress</text>
-  <text x="40" y="230" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Hit: data already nearby  less wait. Miss: fetch from a farther layer  more wait.</text>
-  <text x="40" y="252" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">First open often pays storageRAM cost; later edits may ride cache/RAM until a durable save.</text>
+  <text x="40" y="230" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">Hit: data already nearby → less wait. Miss: fetch from a farther layer → more wait.</text>
+  <text x="40" y="252" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#333333">First open often pays storage→RAM cost; later edits may ride cache/RAM until a durable save.</text>
   <text x="24" y="295" font-family="Helvetica,Arial,sans-serif" font-size="10" fill="#555555">Caption: Conceptual open-file path. Not a measured device timeline.</text>
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
