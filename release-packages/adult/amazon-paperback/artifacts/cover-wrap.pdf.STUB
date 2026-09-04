@@ -1,0 +1,4 @@
+STUB_ONLY
+platform=amazon_kdp_paperback
+replace_with_real_artifact
+retrieved_on=2026-09-03

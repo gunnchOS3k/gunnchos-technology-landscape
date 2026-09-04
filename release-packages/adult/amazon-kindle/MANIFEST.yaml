@@ -1,0 +1,16 @@
+package_id: adult-amazon-kindle
+platform_id: amazon_kdp_kindle
+status: ADULT_SUBMISSION_PACKAGE_PREPARED
+not_status: PUBLICATION_READY
+created_on: "2026-09-03"
+integration_base: "ce9cc419841fa0588e30d8d917b048c72f8cc2c0"
+full31_pre_review_content_sha: "dd7f0003beae5c56d5ee8b5050aff151ef67d803"
+credentials_included: false
+files:
+  - path: HUMAN_CHECKLIST.md
+  - path: MANIFEST.yaml
+  - path: README.md
+  - path: artifacts/cover.jpg.STUB
+  - path: artifacts/manuscript.epub.STUB
+  - path: validation-stub.md
+  - path: CHECKSUMS.sha256

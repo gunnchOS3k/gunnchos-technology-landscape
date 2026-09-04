@@ -1,0 +1,20 @@
+# Quarto print geometry overlay for KDP-oriented 8.5x11 interiors.
+# Does NOT replace review PDF workflow (make full31-pdf → preview/full31/...).
+# Not printer-certified. Margins are conservative starters; re-check against final page count.
+# Status: DRAFT_INTERNAL — ADULT print engineering aid only.
+profile:
+  - print-85x11
+
+format:
+  pdf:
+    documentclass: book
+    papersize: letter
+    geometry:
+      - paperwidth=8.5in
+      - paperheight=11in
+      - inner=0.75in
+      - outer=0.5in
+      - top=0.75in
+      - bottom=0.75in
+    # inner 0.75in covers KDP gutter bands through ~700 pages; tighten only after page count known.
+    keep-tex: false

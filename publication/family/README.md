@@ -52,7 +52,12 @@ Use these labels only; do not invent softer synonyms that imply gate progress.
 | `READY_FOR_TRACK_REVIEW` | Track-local review only — **not** PUBLICATION_READY |
 | `PUBLICATION_READY` | Reserved; requires explicit gate/evidence criteria (currently 0/31) |
 
-Wave bootstrap status: **`SCAFFOLD_ONLY`** for all tracks listed above.
+Wave bootstrap status (initial): **`SCAFFOLD_ONLY`**.
+
+Adult distribution track update: see
+`publication/distribution/ADULT_DISTRIBUTION_READINESS_REPORT.md` —
+track-local **`READY_FOR_TRACK_REVIEW`** / ceiling
+`ADULT_SUBMISSION_PACKAGE_PREPARED` (still **not** `PUBLICATION_READY`).
 
 ## Frozen references (read-only for this wave)
 

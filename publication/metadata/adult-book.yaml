@@ -1,0 +1,63 @@
+# Adult edition metadata instance — DRAFT_INTERNAL
+# Does not claim PUBLICATION_READY / Gate 3 PASS / WCAG certification.
+schema_ref: publication/metadata/BOOK_METADATA_SCHEMA.yaml
+work_id: TTL-ADULT-FULL31
+title:
+  main: "The Technology Landscape"
+  subtitle: "How Computers, Networks, AI, and Devices Create the Experiences We Depend On"
+contributors:
+  - name: "Edmund Gunn, Jr."
+    role: author
+language: en
+publication_status: ADULT_SUBMISSION_PACKAGE_PREPARED
+# Ceiling only: package prepared for future human submission — NOT live publication.
+rights_statement: >
+  All Rights Reserved (development-stage manuscript and original artwork).
+  Software tooling and explicitly marked lab samples: MIT.
+  Free storefront/$0 access does not change license to Creative Commons.
+  See publication/BOOK_LICENSE_DECISION.md and publication/distribution/FREE_ACCESS_POLICY.md.
+audience:
+  primary: "Adult / lifelong learners; middle-school-accessible baseline with progressive depth"
+  reading_age_min: null
+subjects:
+  - scheme: BISAC
+    code: UNKNOWN_NEEDS_OWNER_REVIEW
+    heading: "Computers / General (candidate — owner confirm)"
+  - scheme: Thema
+    code: UNKNOWN_NEEDS_OWNER_REVIEW
+    heading: "Computing and information technology (candidate)"
+identifiers:
+  isbn13_ebook: null  # PENDING_OWNER_PURCHASE
+  isbn13_paperback: null
+  isbn13_hardcover: null
+products:
+  - product_id: adult-kindle
+    form: EDITION_EBOOK_KINDLE
+    file_role: reflowable_epub_or_kpf
+    platform_targets: [amazon_kdp_kindle]
+    price_policy_ref: publication/distribution/FREE_ACCESS_POLICY.md
+  - product_id: adult-paperback
+    form: EDITION_PAPERBACK
+    file_role: print_pdf_interior_plus_cover
+    platform_targets: [amazon_kdp_paperback]
+    price_policy_ref: publication/distribution/FREE_ACCESS_POLICY.md
+  - product_id: adult-hardcover
+    form: EDITION_HARDCOVER
+    file_role: print_pdf_interior_plus_cover
+    platform_targets: [amazon_kdp_hardcover]
+    price_policy_ref: publication/distribution/FREE_ACCESS_POLICY.md
+  - product_id: adult-epub-wide
+    form: EDITION_EBOOK_EPUB
+    file_role: epub3
+    platform_targets: [apple_books, google_play_books, kobo_writing_life, direct_web, library_distributor]
+    price_policy_ref: publication/distribution/FREE_ACCESS_POLICY.md
+accessibility_claims:
+  automated_epubcheck: "Pinned W3C EPUBCheck available via make full31-epubcheck — not a11y certification"
+  wcag_certified: false
+provenance:
+  full31_pre_review_content_sha: "dd7f0003beae5c56d5ee8b5050aff151ef67d803"
+  gate3_status: "GATE_3_IN_PROGRESS — READER_EVIDENCE_PENDING"
+  frozen_candidate_package: publication/review-candidates/FULL31-PRE-REVIEW-001/
+  note: "Do not rewrite freeze provenance from this track"
+series: "A gunnchOS3k + WAIKE learning system"
+last_updated: "2026-09-03"
