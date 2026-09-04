@@ -1,9 +1,9 @@
 schema_version: "1.0.0"
-total_words: 122932
+total_words: 123079
 word_min: 3224
 word_max: 5065
-word_mean: 3965.55
-word_median: 3943.00
+word_mean: 3970.29
+word_median: 3963.00
 chapters:
   - id: CH01
     title: "Technology Is a System, Not a Screen"
@@ -184,7 +184,7 @@ chapters:
   - id: CH12
     title: "Operating Systems, Processes, Threads, and Scheduling"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 4280
+    words: 4277
     citation_occurrences: 75
     unique_citation_keys: 9
     figure_refs: 4
@@ -232,7 +232,7 @@ chapters:
   - id: CH15
     title: "Containers, Virtualization, Cloud, and Edge Computing"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3943
+    words: 4044
     citation_occurrences: 44
     unique_citation_keys: 7
     figure_refs: 3
@@ -248,7 +248,7 @@ chapters:
   - id: CH16
     title: "Packets, Protocols, Routing, and the Internet"
     status: "WORKING_DRAFT_COMPLETE"
-    words: 3867
+    words: 3916
     citation_occurrences: 76
     unique_citation_keys: 15
     figure_refs: 6

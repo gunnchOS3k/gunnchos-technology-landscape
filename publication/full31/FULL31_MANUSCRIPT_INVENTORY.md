@@ -5,11 +5,11 @@ Not a human validation report. Gate 3 remains READER_EVIDENCE_PENDING.
 
 ## Word-count summary
 
-- total: **122932**
+- total: **123079**
 - min: **3224**
 - max: **5065**
-- mean: **3965.5**
-- median: **3943.0**
+- mean: **3970.3**
+- median: **3963.0**
 
 Chapters under 2500 words (editorial review flag only):
 
@@ -130,7 +130,7 @@ Chapters under 2500 words (editorial review flag only):
 ### CH12 — Operating Systems, Processes, Threads, and Scheduling
 
 - status: `WORKING_DRAFT_COMPLETE`
-- words: 4280
+- words: 4277
 - citations: 75 occurrences / 9 unique keys
 - figures: 4 refs / 4 resolved / unresolved=[]
 - labs: 3 refs ['LAB-CMS-001', 'LAB-SCHED-001', 'LAB-TAP-001']; unknown=[]
@@ -160,7 +160,7 @@ Chapters under 2500 words (editorial review flag only):
 ### CH15 — Containers, Virtualization, Cloud, and Edge Computing
 
 - status: `WORKING_DRAFT_COMPLETE`
-- words: 3943
+- words: 4044
 - citations: 44 occurrences / 7 unique keys
 - figures: 3 refs / 3 resolved / unresolved=[]
 - labs: 3 refs ['LAB-CMS-001', 'LAB-PKT-001', 'LAB-PLACE-001']; unknown=[]
@@ -170,7 +170,7 @@ Chapters under 2500 words (editorial review flag only):
 ### CH16 — Packets, Protocols, Routing, and the Internet
 
 - status: `WORKING_DRAFT_COMPLETE`
-- words: 3867
+- words: 3916
 - citations: 76 occurrences / 15 unique keys
 - figures: 6 refs / 6 resolved / unresolved=[]
 - labs: 1 refs ['LAB-PKT-001']; unknown=[]
