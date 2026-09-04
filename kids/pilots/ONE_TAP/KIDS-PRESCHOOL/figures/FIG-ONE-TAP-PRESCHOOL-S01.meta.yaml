@@ -1,0 +1,14 @@
+asset_id: FIG-ONE-TAP-PRESCHOOL-S01
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-PRESCHOOL
+alt: "Style-neutral illustration for 'The sticky song': Meet the problem."
+description: "Meet the problem."
+purpose: "ONE TAP pilot spread S01 (STORY)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 100]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/pilots/ONE_TAP/KIDS-PRESCHOOL/figures/FIG-ONE-TAP-PRESCHOOL-S01.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false

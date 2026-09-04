@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-ONE-TAP-TODDLER-S06-title FIG-ONE-TAP-TODDLER-S06-desc" data-asset-id="FIG-ONE-TAP-TODDLER-S06">
+  <title id="FIG-ONE-TAP-TODDLER-S06-title">FIG-ONE-TAP-TODDLER-S06: Find</title>
+  <desc id="FIG-ONE-TAP-TODDLER-S06-desc">Style-neutral ONE TAP prototype spread for TODDLER. Focal action: Match control.. Text: Find the button.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="56" font-family="Georgia, serif" font-size="22" fill="#111">FIG-ONE-TAP-TODDLER-S06</text>
+  <text x="40" y="86" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: TODDLER</text>
+  <text x="40" y="120" font-family="Georgia, serif" font-size="36" font-weight="bold" fill="#111">Find</text>
+  <g transform="translate(400,40)">
+    <polygon points="200,140 270,260 130,260" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+    
+  <circle cx="200" cy="210" r="10" fill="#111"/>
+  <line x1="200" y1="220" x2="200" y2="280" stroke="#111" stroke-width="4"/>
+  <path d="M200 280 L180 300 L220 300 Z" fill="#111"/>
+
+  </g>
+  <foreignObject x="40" y="340" width="720" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 22px; color:#111; line-height:1.35;">Find the button.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+  <!-- text-safe zone: left 40..760, top title band; illustration primarily x=400..700 -->
+</svg>
