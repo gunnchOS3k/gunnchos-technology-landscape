@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check
 
 setup:
 	python3 -m venv .venv
@@ -39,6 +39,7 @@ validate:
 	$(PYTHON) scripts/validate_book.py
 	$(PYTHON) scripts/validate_claims.py
 	$(PYTHON) scripts/validate_glossary.py
+	$(PYTHON) scripts/validate_terminology.py
 	$(PYTHON) scripts/validate_labs.py
 	$(PYTHON) scripts/validate_figures.py
 	$(PYTHON) scripts/validate_accessibility.py
@@ -147,6 +148,9 @@ full31-reference-check:
 full31-inventory:
 	$(PYTHON) scripts/generate_full31_manuscript_inventory.py --write
 	$(PYTHON) scripts/generate_full31_manuscript_inventory.py --check
+
+full31-terminology-check:
+	$(PYTHON) scripts/validate_terminology.py
 
 continuation-preview:
 	$(PYTHON) scripts/build_continuation_preview.py

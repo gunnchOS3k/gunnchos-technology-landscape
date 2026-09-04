@@ -4,6 +4,12 @@ title: "Glossary"
 
 # Glossary
 
-Working glossary entries are maintained in `glossary/glossary.yaml` (with aliases and acronyms in sibling registries). Chapter “Glossary links” sections should point to defined terms rather than inventing conflicting definitions.
+Working glossary entries live in `glossary/glossary.yaml` (aliases in `glossary/aliases.yaml`, acronyms in `glossary/acronym_registry.yaml`).
 
-This appendix is a **navigation stub** for the full-book build. As chapters leave scaffold state, term lists here may expand; do not treat an incomplete glossary as publication-ready terminology.
+Book-wide canonical meanings for high-risk terms live in `book/terminology.yaml`. Use that registry to prevent contradictions; chapter prose may vary in wording.
+
+Cross-book misconception mapping: `publication/full31/quality/MISCONCEPTION_MATRIX.md`.
+
+Chapter “Glossary links” sections should point to defined terms rather than inventing conflicting definitions.
+
+This appendix is a **navigation stub** for the full-book build. Do not treat an incomplete glossary as publication-ready terminology.

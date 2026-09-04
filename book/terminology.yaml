@@ -1,0 +1,893 @@
+registry_id: full31-canonical-terminology
+schema_version: 1.0.0
+purpose: Book-wide canonical terminology for contradiction prevention across the full31 manuscript. Prose
+  may vary; meanings must not conflict. Complements glossary/glossary.yaml.
+rules:
+- Do not force identical sentences into every chapter.
+- Prefer chapter-owned teaching moments for first_introduced over raw keyword first-hit.
+- Familiar acronyms (CPU, GPU, RAM, API, AI) need not be re-expanded on every later use.
+- Expand DNS, MIMO, NTN, QoE, ML on first meaningful use per part when readers may be new to them.
+- glossary_id links living glossary entries when present; null means terminology-only (not yet promoted).
+acronym_first_use_policy:
+  expand_on_first_meaningful_use:
+  - DNS
+  - MIMO
+  - NTN
+  - QoE
+  - ML
+  notes: Per-chapter first use may still expand once for accessibility; avoid robotic repetition.
+  familiar_sparingly_reexpand:
+  - CPU
+  - GPU
+  - RAM
+  - API
+  - AI
+terms:
+- id: system
+  term: system
+  glossary_id: null
+  aliases: []
+  acronyms: []
+  plain_definition: A set of cooperating parts that together produce an experience or result.
+  deeper_definition: In this book, a system is the whole stack of hardware, firmware, software, networks,
+    people, and constraints that interact to create what a reader sees and feels—not only the visible
+    app or screen.
+  first_introduced: CH01
+  later_reinforcement:
+  - CH02
+  - CH15
+  - CH29
+  - CH31
+  common_misconception: Confusing the visible interface with the whole system that makes it work.
+  not_the_same_as:
+  - component
+  - user-interface
+- id: component
+  term: component
+  glossary_id: null
+  aliases:
+  - part
+  - subsystem
+  acronyms: []
+  plain_definition: One cooperating piece inside a larger system.
+  deeper_definition: A component has a bounded role (for example digitizer, kernel, radio, or service)
+    and interfaces with other components; removing or failing one can change the whole experience without
+    being “the system” by itself.
+  first_introduced: CH01
+  later_reinforcement:
+  - CH02
+  - CH10
+  - CH29
+  common_misconception: Treating any important part as if it were the entire product.
+  not_the_same_as:
+  - system
+- id: latency
+  term: latency
+  glossary_id: latency
+  aliases:
+  - delay
+  acronyms: []
+  plain_definition: How long you wait between a cause and an observable effect.
+  deeper_definition: Latency is a delay measured at a stated boundary (touch-to-photon, request-to-response,
+    one-way network). Different boundaries are not interchangeable; average latency is not the same as
+    variability.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH03
+  - CH16
+  - CH20
+  common_misconception: Assuming “faster” always means higher throughput, or that one latency number describes
+    the whole path.
+  not_the_same_as:
+  - throughput
+  - jitter
+  - reliability
+  - qoe
+- id: throughput
+  term: throughput
+  glossary_id: null
+  aliases:
+  - bandwidth-delivered
+  - goodput
+  acronyms: []
+  plain_definition: How much useful work or data completes per unit time.
+  deeper_definition: Throughput measures rate (bits/s, transactions/s, frames/s). A path can have high
+    throughput and still feel bad if latency or jitter is high; the reverse is also possible.
+  first_introduced: CH03
+  later_reinforcement:
+  - CH06
+  - CH16
+  - CH20
+  common_misconception: Equating megabits-per-second with how snappy an interaction feels.
+  not_the_same_as:
+  - latency
+  - jitter
+  - reliability
+- id: jitter
+  term: jitter / variability
+  glossary_id: jitter
+  aliases:
+  - variability
+  - delay variation
+  acronyms: []
+  plain_definition: How much delay changes from moment to moment.
+  deeper_definition: Jitter is instability in latency over time. Moderate average delay with high jitter
+    can feel worse than slightly higher but steady delay.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH03
+  - CH20
+  common_misconception: Judging performance only by average delay and ignoring unevenness.
+  not_the_same_as:
+  - latency
+  - throughput
+- id: reliability
+  term: reliability
+  glossary_id: null
+  aliases:
+  - dependability
+  acronyms: []
+  plain_definition: How consistently a service or path succeeds under stated conditions.
+  deeper_definition: Reliability is about successful completion and continuity over time (availability,
+    error rate, recovery), not how fast a single successful attempt feels.
+  first_introduced: CH03
+  later_reinforcement:
+  - CH16
+  - CH20
+  - CH27
+  common_misconception: Treating a fast but flaky path as “good performance.”
+  not_the_same_as:
+  - latency
+  - throughput
+  - qoe
+- id: qoe
+  term: quality of experience (QoE)
+  glossary_id: null
+  aliases:
+  - quality of experience
+  - user-perceived quality
+  acronyms:
+  - QoE
+  plain_definition: How good the experience feels to a person, not only what network meters report.
+  deeper_definition: QoE combines latency, jitter, reliability, content quality, and human factors into
+    perceived outcome. Network KPIs can look fine while QoE is poor, and vice versa for some tasks.
+  first_introduced: CH03
+  later_reinforcement:
+  - CH17
+  - CH20
+  - CH25
+  common_misconception: Assuming lab or network metrics automatically equal lived experience.
+  not_the_same_as:
+  - latency
+  - throughput
+  - reliability
+- id: cpu
+  term: CPU
+  glossary_id: cpu
+  aliases:
+  - processor
+  - central processing unit
+  acronyms:
+  - CPU
+  plain_definition: The general-purpose processor that executes program instructions.
+  deeper_definition: A CPU fetches, decodes, and executes instructions and coordinates with memory and
+    devices. It is not the only compute engine; GPUs and accelerators handle other parallel work.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH06
+  - CH07
+  - CH12
+  common_misconception: Calling every slowdown a “CPU problem” without checking memory, I/O, or network.
+  not_the_same_as:
+  - gpu
+  - core
+  - process
+- id: core
+  term: CPU core
+  glossary_id: null
+  aliases:
+  - core
+  acronyms: []
+  plain_definition: One independent execution engine inside a CPU package.
+  deeper_definition: A multi-core CPU can run multiple instruction streams in parallel. A core is hardware;
+    a thread is a software execution context that a scheduler may place on a core.
+  first_introduced: CH06
+  later_reinforcement:
+  - CH12
+  common_misconception: Equating “more cores” with “always faster” for every workload.
+  not_the_same_as:
+  - cpu
+  - thread
+  - process
+- id: process
+  term: process
+  glossary_id: process
+  aliases: []
+  acronyms: []
+  plain_definition: A running program instance with its own managed resources.
+  deeper_definition: An OS process typically has its own address space, credentials, and one or more threads.
+    Isolating processes protects memory and crash boundaries.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH12
+  - CH14
+  common_misconception: Using “process” and “thread” as if they were the same unit of concurrency.
+  not_the_same_as:
+  - thread
+  - cpu
+- id: thread
+  term: thread
+  glossary_id: thread
+  aliases: []
+  acronyms: []
+  plain_definition: One sequence of executing instructions inside a process.
+  deeper_definition: Threads share a process’s address space while keeping separate execution context.
+    Blocking the UI thread freezes interaction even if other threads are busy.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH06
+  - CH12
+  common_misconception: Assuming more threads always mean more useful parallelism.
+  not_the_same_as:
+  - process
+  - core
+  - event-loop
+- id: memory
+  term: memory (working / volatile)
+  glossary_id: ram
+  aliases:
+  - RAM
+  - working memory
+  - main memory
+  acronyms:
+  - RAM
+  plain_definition: Fast working space that holds active code and data while a device is powered.
+  deeper_definition: Volatile memory (typically RAM) is for active computation. It is not durable storage;
+    power loss or eviction can discard contents unless they were written elsewhere.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH07
+  - CH13
+  common_misconception: Thinking “memory” and “storage” are interchangeable places for keeping files forever.
+  not_the_same_as:
+  - storage
+  - cache
+- id: cache
+  term: cache
+  glossary_id: cache
+  aliases: []
+  acronyms: []
+  plain_definition: A smaller, faster store that keeps recently or frequently used data close.
+  deeper_definition: Caches sit between processors and slower memory/storage (or between clients and services).
+    Hits feel fast; misses pay the slower path. Cached copies can be stale.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH07
+  - CH14
+  common_misconception: Treating cache as unlimited permanent storage.
+  not_the_same_as:
+  - memory
+  - storage
+- id: storage
+  term: storage (persistent)
+  glossary_id: storage
+  aliases:
+  - disk
+  - flash
+  - persistent storage
+  acronyms: []
+  plain_definition: Durable place for data that should survive app exits and power cycles.
+  deeper_definition: Storage media and filesystems keep durable state. Access is usually slower than RAM;
+    durability and consistency semantics differ from volatile memory.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH07
+  - CH13
+  common_misconception: Expecting storage access to feel as fast as RAM, or assuming deletion is always
+    immediate everywhere.
+  not_the_same_as:
+  - memory
+  - cache
+- id: firmware
+  term: firmware
+  glossary_id: null
+  aliases: []
+  acronyms: []
+  plain_definition: Software that lives close to hardware and helps the device start and operate.
+  deeper_definition: Firmware includes boot and device-control software often stored in non-volatile memory.
+    It is not the full general-purpose OS, though boundaries can blur on embedded systems.
+  first_introduced: CH11
+  later_reinforcement:
+  - CH10
+  - CH23
+  common_misconception: Calling every low-level bug “firmware” or treating firmware as the entire operating
+    system.
+  not_the_same_as:
+  - operating-system
+  - bootloader
+- id: operating-system
+  term: operating system
+  glossary_id: kernel
+  aliases:
+  - OS
+  acronyms:
+  - OS
+  plain_definition: Software that manages hardware and shared resources so apps can run.
+  deeper_definition: An OS (kernel plus userland services) schedules work, mediates devices, and isolates
+    processes. The kernel is the privileged core; apps are not “the OS.”
+  first_introduced: CH02
+  later_reinforcement:
+  - CH12
+  - CH14
+  common_misconception: Equating the desktop shell or one app with the whole operating system.
+  not_the_same_as:
+  - firmware
+  - runtime
+  - user-interface
+- id: api
+  term: API
+  glossary_id: api
+  aliases:
+  - application programming interface
+  acronyms:
+  - API
+  plain_definition: A defined way for one piece of software to request services from another.
+  deeper_definition: An API specifies calls, messages, or endpoints and their contracts. It is not the
+    user interface a person clicks; UIs often call APIs underneath.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH14
+  - CH16
+  common_misconception: Treating an API as synonymous with a graphical UI.
+  not_the_same_as:
+  - user-interface
+  - runtime
+- id: runtime
+  term: runtime
+  glossary_id: null
+  aliases:
+  - execution environment
+  acronyms: []
+  plain_definition: The environment that executes a program after it is written or built.
+  deeper_definition: A runtime (language VM, container, interpreter, or OS process context) provides services
+    such as memory management and libraries. It is not the API contract itself.
+  first_introduced: CH14
+  later_reinforcement:
+  - CH15
+  - CH21
+  common_misconception: Confusing “runtime error” language with API design, or assuming one runtime equals
+    one OS.
+  not_the_same_as:
+  - api
+  - operating-system
+- id: lan
+  term: LAN
+  glossary_id: null
+  aliases:
+  - local area network
+  acronyms:
+  - LAN
+  plain_definition: A network that connects devices in a limited local area, such as a home or campus.
+  deeper_definition: A LAN provides local connectivity (often Ethernet or Wi-Fi access). Reaching the
+    global Internet requires routing beyond the LAN.
+  first_introduced: CH16
+  later_reinforcement:
+  - CH02
+  - CH17
+  common_misconception: Thinking being “on Wi-Fi” automatically means you have working Internet.
+  not_the_same_as:
+  - internet
+  - wifi
+- id: internet
+  term: Internet
+  glossary_id: router
+  aliases:
+  - global internetwork
+  acronyms: []
+  plain_definition: The global system of interconnected networks that routes traffic between many networks.
+  deeper_definition: The Internet is an internetwork of networks using shared protocols (notably IP routing).
+    Wi-Fi, cellular, and cloud services may use the Internet; none of them is identical to it.
+  first_introduced: CH16
+  later_reinforcement:
+  - CH01
+  - CH17
+  - CH15
+  common_misconception: Using “Internet,” “Wi-Fi,” and “the cloud” as if they named one thing.
+  not_the_same_as:
+  - wifi
+  - lan
+  - cloud
+- id: dns
+  term: DNS
+  glossary_id: null
+  aliases:
+  - Domain Name System
+  acronyms:
+  - DNS
+  plain_definition: The naming system that helps turn human-readable names into network addresses.
+  deeper_definition: DNS resolves names to records (often IP addresses) used by clients. Name resolution
+    failure can look like “the Internet is down” even when routing otherwise works.
+  first_introduced: CH16
+  later_reinforcement:
+  - CH14
+  - CH20
+  common_misconception: Assuming a site is offline whenever a name fails to resolve.
+  not_the_same_as:
+  - internet
+  - router
+- id: wifi
+  term: Wi-Fi
+  glossary_id: radio
+  aliases:
+  - WLAN
+  - wireless LAN
+  acronyms: []
+  plain_definition: A common wireless technology for local network access.
+  deeper_definition: Wi-Fi is a local radio access technology (IEEE 802.11 family). It can connect you
+    to a LAN that may or may not reach the Internet.
+  first_introduced: CH17
+  later_reinforcement:
+  - CH02
+  - CH16
+  - CH18
+  common_misconception: Saying “the Internet is Wi-Fi” or blaming Wi-Fi for every remote service failure.
+  not_the_same_as:
+  - internet
+  - cellular
+  - lan
+- id: cellular
+  term: cellular
+  glossary_id: null
+  aliases:
+  - mobile network
+  - mobile broadband
+  acronyms: []
+  plain_definition: Wide-area wireless access provided by mobile network operators.
+  deeper_definition: Cellular systems (including 4G/5G families) provide radio access and core network
+    services over large areas. They are not Wi-Fi, though both can reach Internet services.
+  first_introduced: CH17
+  later_reinforcement:
+  - CH18
+  - CH19
+  - CH20
+  common_misconception: Treating all wireless access as interchangeable, or treating “5G” as a guarantee
+    of good experience.
+  not_the_same_as:
+  - wifi
+  - internet
+  - ntn
+- id: edge
+  term: edge (computing)
+  glossary_id: edge-computing
+  aliases:
+  - edge computing
+  - on-device
+  acronyms: []
+  plain_definition: Placing compute and data closer to users or devices, not only in distant data centers.
+  deeper_definition: Edge placement reduces some latency and can keep data local, with tighter resource
+    budgets. “Edge” is a placement choice, not a single product.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH15
+  - CH22
+  common_misconception: Assuming edge always means “on the phone” or always means better than cloud.
+  not_the_same_as:
+  - cloud
+- id: cloud
+  term: cloud (computing)
+  glossary_id: cloud-computing
+  aliases:
+  - cloud computing
+  - remote service
+  acronyms: []
+  plain_definition: Shared remote computing and storage you use over a network.
+  deeper_definition: Cloud services run in provider-operated infrastructure accessed over networks (often
+    the Internet). Cloud is a delivery and placement model, not a synonym for the Internet itself.
+  first_introduced: CH02
+  later_reinforcement:
+  - CH15
+  - CH23
+  common_misconception: Equating “in the cloud” with “on the Internet” as if they were identical terms.
+  not_the_same_as:
+  - internet
+  - edge
+- id: spectrum
+  term: spectrum
+  glossary_id: null
+  aliases:
+  - radio spectrum
+  acronyms: []
+  plain_definition: The range of radio frequencies that wireless systems may use.
+  deeper_definition: Spectrum is a regulated shared resource. Different bands have different coverage,
+    capacity, and penetration tradeoffs; spectrum is not a single channel.
+  first_introduced: CH18
+  later_reinforcement:
+  - CH17
+  - CH19
+  common_misconception: Treating “more spectrum” as the only explanation for better wireless experience.
+  not_the_same_as:
+  - channel
+- id: channel
+  term: radio channel
+  glossary_id: null
+  aliases:
+  - channel
+  acronyms: []
+  plain_definition: A usable slice of spectrum and conditions over which a radio link communicates.
+  deeper_definition: A channel has bandwidth, noise, interference, and fading. In this radio sense it
+    is not a chat “channel” or an application message queue.
+  first_introduced: CH18
+  later_reinforcement:
+  - CH16
+  - CH17
+  common_misconception: Confusing application chat channels with physical/logical radio channels.
+  not_the_same_as:
+  - spectrum
+  - antenna
+- id: antenna
+  term: antenna
+  glossary_id: null
+  aliases: []
+  acronyms: []
+  plain_definition: The hardware that radiates and receives radio energy.
+  deeper_definition: Antennas convert between guided electrical signals and radiated fields. Pattern,
+    gain, and placement shape coverage; an antenna is not the same as beamforming algorithms.
+  first_introduced: CH18
+  later_reinforcement:
+  - CH16
+  common_misconception: Assuming a bigger antenna sticker or count automatically means better service
+    everywhere.
+  not_the_same_as:
+  - beamforming
+  - mimo
+- id: beamforming
+  term: beamforming
+  glossary_id: null
+  aliases: []
+  acronyms: []
+  plain_definition: Steering radio energy toward useful directions instead of spraying it equally.
+  deeper_definition: Beamforming uses multiple antenna elements and signal processing to shape spatial
+    energy. It depends on antennas and channel conditions; it is a technique, not a separate radio network.
+  first_introduced: CH18
+  later_reinforcement: []
+  common_misconception: Treating beamforming as magic coverage that removes all radio physics.
+  not_the_same_as:
+  - antenna
+  - mimo
+- id: mimo
+  term: MIMO
+  glossary_id: null
+  aliases:
+  - multiple-input multiple-output
+  acronyms:
+  - MIMO
+  plain_definition: Using multiple transmit and receive antennas to carry more or more robust wireless
+    streams.
+  deeper_definition: MIMO exploits spatial paths between multi-antenna transmitters and receivers. It
+    is related to, but not identical with, beamforming; SISO is the single-stream baseline.
+  first_introduced: CH18
+  later_reinforcement: []
+  common_misconception: Assuming MIMO always multiplies speed by the antenna count in real rooms.
+  not_the_same_as:
+  - antenna
+  - beamforming
+  - siso
+- id: ntn
+  term: NTN (non-terrestrial network)
+  glossary_id: null
+  aliases:
+  - non-terrestrial network
+  - satellite access
+  acronyms:
+  - NTN
+  plain_definition: Network access that uses platforms beyond ground towers, such as satellites or high-altitude
+    systems.
+  deeper_definition: NTN extends coverage via non-terrestrial platforms. Latency, handover, and service
+    continuity differ from terrestrial cellular; do not treat every satellite headline as identical deployed
+    capability.
+  first_introduced: CH19
+  later_reinforcement:
+  - CH17
+  - CH18
+  common_misconception: Assuming space-based access behaves like ordinary urban cellular in delay and
+    reliability.
+  not_the_same_as:
+  - cellular
+  - wifi
+- id: service-continuity
+  term: service continuity
+  glossary_id: null
+  aliases:
+  - session continuity
+  - mobility continuity
+  acronyms: []
+  plain_definition: Keeping a useful service going as you move across networks or coverage types.
+  deeper_definition: Service continuity covers handovers and session preservation across terrestrial and
+    non-terrestrial access. Connectivity to some network is not the same as uninterrupted application
+    experience.
+  first_introduced: CH19
+  later_reinforcement:
+  - CH17
+  - CH20
+  common_misconception: Equating “bars” or a new attachment with unbroken application sessions.
+  not_the_same_as:
+  - reliability
+  - qoe
+- id: model
+  term: model (ML)
+  glossary_id: model-parameters
+  aliases:
+  - machine learning model
+  acronyms: []
+  plain_definition: A learned or structured artifact that maps inputs to predictions or outputs.
+  deeper_definition: In ML chapters, a model is parameterized behavior fit from data (and choices). It
+    is not automatically a digital twin, and it does not “understand” in the human sense.
+  first_introduced: CH21
+  later_reinforcement:
+  - CH22
+  - CH28
+  common_misconception: Anthropomorphizing models as knowing, wanting, or deciding.
+  not_the_same_as:
+  - training
+  - inference
+  - digital-twin
+- id: training
+  term: training
+  glossary_id: training-and-input-data
+  aliases:
+  - model training
+  - fitting
+  acronyms: []
+  plain_definition: The process of fitting model parameters using data and an objective.
+  deeper_definition: Training consumes data, compute, and evaluation loops to produce parameters. It is
+    distinct from later inference that applies a trained model to new inputs.
+  first_introduced: CH21
+  later_reinforcement:
+  - CH28
+  common_misconception: Calling every model use “training,” including ordinary predictions.
+  not_the_same_as:
+  - inference
+  - model
+- id: inference
+  term: inference
+  glossary_id: inference-output
+  aliases:
+  - model inference
+  - prediction
+  acronyms: []
+  plain_definition: Running a trained model on new inputs to produce outputs.
+  deeper_definition: Inference applies fixed (or slowly updated) parameters to inputs. It is not the same
+    as training, and local vs remote inference change latency, privacy, and cost.
+  first_introduced: CH21
+  later_reinforcement:
+  - CH02
+  - CH22
+  common_misconception: Treating inference as proof the system “understands” the user.
+  not_the_same_as:
+  - training
+  - model
+- id: generative-ai
+  term: generative AI
+  glossary_id: generative-ai-systems-view
+  aliases:
+  - GenAI
+  acronyms:
+  - AI
+  plain_definition: AI systems that produce new content such as text, images, or code from prompts and
+    context.
+  deeper_definition: Generative AI is a class of models/systems that synthesize outputs. It is a subset
+    of broader AI/ML practice, not a synonym for all machine learning.
+  first_introduced: CH21
+  later_reinforcement:
+  - CH22
+  - CH24
+  common_misconception: Using “AI,” “ML,” and “generative AI” as if every term meant the same system.
+  not_the_same_as:
+  - model
+  - training
+  - inference
+- id: authentication
+  term: authentication
+  glossary_id: authentication
+  aliases:
+  - authn
+  acronyms: []
+  plain_definition: Checking that an identity is who or what it claims to be.
+  deeper_definition: Authentication verifies identity (passwords, keys, factors). It does not by itself
+    decide what that identity is allowed to do.
+  first_introduced: CH23
+  later_reinforcement:
+  - CH11
+  - CH24
+  common_misconception: Assuming logging in automatically grants every permission.
+  not_the_same_as:
+  - authorization
+  - identity
+  - privacy
+- id: authorization
+  term: authorization
+  glossary_id: authorization
+  aliases:
+  - authz
+  - access control
+  acronyms: []
+  plain_definition: Deciding what an authenticated identity is allowed to do.
+  deeper_definition: Authorization enforces permissions and policies after (or alongside) authentication.
+    Correct authn with wrong authz still produces unsafe access.
+  first_introduced: CH23
+  later_reinforcement:
+  - CH14
+  - CH24
+  common_misconception: Collapsing “logged in” with “allowed.”
+  not_the_same_as:
+  - authentication
+  - identity
+- id: privacy
+  term: privacy
+  glossary_id: privacy-data-lifecycle
+  aliases:
+  - data privacy
+  acronyms: []
+  plain_definition: Control and limits around how personal information is collected, used, shared, and
+    kept.
+  deeper_definition: Privacy concerns data lifecycle, consent, minimization, and disclosure risk. A system
+    can be secure against outsiders and still privacy-harming in its data practices.
+  first_introduced: CH24
+  later_reinforcement:
+  - CH22
+  - CH25
+  common_misconception: Equating encryption or login walls with privacy by themselves.
+  not_the_same_as:
+  - security
+  - authentication
+- id: security
+  term: security
+  glossary_id: protection-design-principles
+  aliases:
+  - cybersecurity
+  acronyms: []
+  plain_definition: Protecting systems and data against unauthorized access, tampering, and disruption.
+  deeper_definition: Security commonly targets confidentiality, integrity, and availability across chip-to-cloud
+    paths. It overlaps privacy but is not identical.
+  first_introduced: CH23
+  later_reinforcement:
+  - CH11
+  - CH24
+  common_misconception: Treating “secure” as a single checkbox that also settles privacy and safety ethics.
+  not_the_same_as:
+  - privacy
+  - safety-constraints
+- id: accessibility
+  term: accessibility
+  glossary_id: accessibility-path
+  aliases:
+  - a11y
+  acronyms: []
+  plain_definition: Designing so people with diverse abilities can perceive, operate, and understand technology.
+  deeper_definition: Accessibility is about equitable access paths (including WCAG-guided practices),
+    not merely making something slightly more convenient for already-served users.
+  first_introduced: CH24
+  later_reinforcement:
+  - CH25
+  - CH02
+  common_misconception: Reducing accessibility to optional niceties or “convenience features.”
+  not_the_same_as:
+  - digital-equity
+  - convenience
+- id: digital-equity
+  term: digital equity
+  glossary_id: digital-equity
+  aliases:
+  - digital inclusion
+  acronyms: []
+  plain_definition: Whether people have fair opportunity to benefit from digital systems—not only whether
+    a feature exists.
+  deeper_definition: Digital equity examines who can access, afford, use, and benefit from technology,
+    and what can be measured. Feature shipping is not proof of equitable outcomes.
+  first_introduced: CH25
+  later_reinforcement:
+  - CH24
+  - CH20
+  common_misconception: Assuming availability of an app equals equitable benefit.
+  not_the_same_as:
+  - accessibility
+- id: simulation
+  term: simulation
+  glossary_id: simulation
+  aliases:
+  - sim
+  acronyms: []
+  plain_definition: A model-driven imitation of a system used to explore behavior under assumptions.
+  deeper_definition: Simulations produce results under modeled conditions. They are not measurements of
+    the real system unless carefully validated against observation.
+  first_introduced: CH28
+  later_reinforcement:
+  - CH05
+  - CH27
+  common_misconception: Treating simulated outputs as field measurements.
+  not_the_same_as:
+  - measurement
+  - digital-twin
+  - reproducibility
+- id: digital-twin
+  term: digital twin
+  glossary_id: digital-twin-teaching-sense
+  aliases: []
+  acronyms: []
+  plain_definition: A maintained digital counterpart used to mirror and reason about a real system within
+    stated bounds.
+  deeper_definition: 'In this book’s teaching sense, a digital twin is more than “any model”: it is tied
+    to a real counterpart with update/validity discipline. Not every ML model is a twin.'
+  first_introduced: CH28
+  later_reinforcement: []
+  common_misconception: Calling every dashboard or ML model a digital twin.
+  not_the_same_as:
+  - model
+  - simulation
+- id: reproducibility
+  term: reproducibility
+  glossary_id: reproducible-research
+  aliases:
+  - reproducible research
+  acronyms: []
+  plain_definition: Others can obtain consistent results when they repeat the stated method with the stated
+    materials.
+  deeper_definition: Reproducibility requires clear methods, versions, data/fixtures, and limits. A single
+    demo that cannot be repeated is not reproducible evidence.
+  first_introduced: CH28
+  later_reinforcement:
+  - CH27
+  - CH31
+  - CH26
+  common_misconception: Treating a one-off screenshot or unreplicable notebook as sufficient scientific
+    evidence.
+  not_the_same_as:
+  - simulation
+  - measurement
+- id: portfolio-proof
+  term: portfolio proof
+  glossary_id: portfolio-proof
+  aliases:
+  - portfolio evidence
+  acronyms: []
+  plain_definition: Artifacts that show what you can explain, build, measure, and teach.
+  deeper_definition: Portfolio proof is evidence of capability. It is not a job offer or employment guarantee.
+  first_introduced: CH30
+  later_reinforcement:
+  - CH31
+  common_misconception: Treating a strong portfolio as a guaranteed hire.
+  not_the_same_as:
+  - employment-non-guarantee
+- id: measurement
+  term: measurement
+  glossary_id: null
+  aliases:
+  - observation
+  - empirical measurement
+  acronyms: []
+  plain_definition: Recording real-system quantities with a stated method and instruments.
+  deeper_definition: Measurement observes an actual system under stated conditions. It is distinct from
+    simulation outputs and from informal impressions.
+  first_introduced: CH03
+  later_reinforcement:
+  - CH20
+  - CH27
+  - CH28
+  common_misconception: Labeling modeled or guessed numbers as measurements.
+  not_the_same_as:
+  - simulation
+- id: identity
+  term: identity
+  glossary_id: identity
+  aliases: []
+  acronyms: []
+  plain_definition: Who or what an actor is claimed to be in a system.
+  deeper_definition: Identity is the subject of authentication and the input to authorization. Having
+    an identity record is not the same as being authenticated or authorized.
+  first_introduced: CH23
+  later_reinforcement:
+  - CH24
+  common_misconception: Collapsing identity, login success, and permissions into one idea.
+  not_the_same_as:
+  - authentication
+  - authorization

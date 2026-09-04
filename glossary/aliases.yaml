@@ -1,1 +1,254 @@
-aliases: []
+aliases:
+- alias: part
+  canonical_term_id: component
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: subsystem
+  canonical_term_id: component
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: delay
+  canonical_term_id: latency
+  glossary_id: latency
+  source: book/terminology.yaml
+- alias: bandwidth-delivered
+  canonical_term_id: throughput
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: goodput
+  canonical_term_id: throughput
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: variability
+  canonical_term_id: jitter
+  glossary_id: jitter
+  source: book/terminology.yaml
+- alias: delay variation
+  canonical_term_id: jitter
+  glossary_id: jitter
+  source: book/terminology.yaml
+- alias: dependability
+  canonical_term_id: reliability
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: quality of experience
+  canonical_term_id: qoe
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: user-perceived quality
+  canonical_term_id: qoe
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: QoE
+  canonical_term_id: qoe
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: processor
+  canonical_term_id: cpu
+  glossary_id: cpu
+  source: book/terminology.yaml
+- alias: central processing unit
+  canonical_term_id: cpu
+  glossary_id: cpu
+  source: book/terminology.yaml
+- alias: core
+  canonical_term_id: core
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: RAM
+  canonical_term_id: memory
+  glossary_id: ram
+  source: book/terminology.yaml
+- alias: working memory
+  canonical_term_id: memory
+  glossary_id: ram
+  source: book/terminology.yaml
+- alias: main memory
+  canonical_term_id: memory
+  glossary_id: ram
+  source: book/terminology.yaml
+- alias: RAM
+  canonical_term_id: memory
+  glossary_id: ram
+  source: book/terminology.yaml
+- alias: disk
+  canonical_term_id: storage
+  glossary_id: storage
+  source: book/terminology.yaml
+- alias: flash
+  canonical_term_id: storage
+  glossary_id: storage
+  source: book/terminology.yaml
+- alias: persistent storage
+  canonical_term_id: storage
+  glossary_id: storage
+  source: book/terminology.yaml
+- alias: OS
+  canonical_term_id: operating-system
+  glossary_id: kernel
+  source: book/terminology.yaml
+- alias: OS
+  canonical_term_id: operating-system
+  glossary_id: kernel
+  source: book/terminology.yaml
+- alias: application programming interface
+  canonical_term_id: api
+  glossary_id: api
+  source: book/terminology.yaml
+- alias: execution environment
+  canonical_term_id: runtime
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: local area network
+  canonical_term_id: lan
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: global internetwork
+  canonical_term_id: internet
+  glossary_id: router
+  source: book/terminology.yaml
+- alias: Domain Name System
+  canonical_term_id: dns
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: WLAN
+  canonical_term_id: wifi
+  glossary_id: radio
+  source: book/terminology.yaml
+- alias: wireless LAN
+  canonical_term_id: wifi
+  glossary_id: radio
+  source: book/terminology.yaml
+- alias: mobile network
+  canonical_term_id: cellular
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: mobile broadband
+  canonical_term_id: cellular
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: edge computing
+  canonical_term_id: edge
+  glossary_id: edge-computing
+  source: book/terminology.yaml
+- alias: on-device
+  canonical_term_id: edge
+  glossary_id: edge-computing
+  source: book/terminology.yaml
+- alias: cloud computing
+  canonical_term_id: cloud
+  glossary_id: cloud-computing
+  source: book/terminology.yaml
+- alias: remote service
+  canonical_term_id: cloud
+  glossary_id: cloud-computing
+  source: book/terminology.yaml
+- alias: radio spectrum
+  canonical_term_id: spectrum
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: channel
+  canonical_term_id: channel
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: multiple-input multiple-output
+  canonical_term_id: mimo
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: non-terrestrial network
+  canonical_term_id: ntn
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: satellite access
+  canonical_term_id: ntn
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: NTN
+  canonical_term_id: ntn
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: session continuity
+  canonical_term_id: service-continuity
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: mobility continuity
+  canonical_term_id: service-continuity
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: machine learning model
+  canonical_term_id: model
+  glossary_id: model-parameters
+  source: book/terminology.yaml
+- alias: model training
+  canonical_term_id: training
+  glossary_id: training-and-input-data
+  source: book/terminology.yaml
+- alias: fitting
+  canonical_term_id: training
+  glossary_id: training-and-input-data
+  source: book/terminology.yaml
+- alias: model inference
+  canonical_term_id: inference
+  glossary_id: inference-output
+  source: book/terminology.yaml
+- alias: prediction
+  canonical_term_id: inference
+  glossary_id: inference-output
+  source: book/terminology.yaml
+- alias: GenAI
+  canonical_term_id: generative-ai
+  glossary_id: generative-ai-systems-view
+  source: book/terminology.yaml
+- alias: AI
+  canonical_term_id: generative-ai
+  glossary_id: generative-ai-systems-view
+  source: book/terminology.yaml
+- alias: authn
+  canonical_term_id: authentication
+  glossary_id: authentication
+  source: book/terminology.yaml
+- alias: authz
+  canonical_term_id: authorization
+  glossary_id: authorization
+  source: book/terminology.yaml
+- alias: access control
+  canonical_term_id: authorization
+  glossary_id: authorization
+  source: book/terminology.yaml
+- alias: data privacy
+  canonical_term_id: privacy
+  glossary_id: privacy-data-lifecycle
+  source: book/terminology.yaml
+- alias: cybersecurity
+  canonical_term_id: security
+  glossary_id: protection-design-principles
+  source: book/terminology.yaml
+- alias: a11y
+  canonical_term_id: accessibility
+  glossary_id: accessibility-path
+  source: book/terminology.yaml
+- alias: digital inclusion
+  canonical_term_id: digital-equity
+  glossary_id: digital-equity
+  source: book/terminology.yaml
+- alias: sim
+  canonical_term_id: simulation
+  glossary_id: simulation
+  source: book/terminology.yaml
+- alias: reproducible research
+  canonical_term_id: reproducibility
+  glossary_id: reproducible-research
+  source: book/terminology.yaml
+- alias: portfolio evidence
+  canonical_term_id: portfolio-proof
+  glossary_id: portfolio-proof
+  source: book/terminology.yaml
+- alias: observation
+  canonical_term_id: measurement
+  glossary_id: null
+  source: book/terminology.yaml
+- alias: empirical measurement
+  canonical_term_id: measurement
+  glossary_id: null
+  source: book/terminology.yaml
+notes: Generated/strengthened from book/terminology.yaml for cross-book alias resolution.

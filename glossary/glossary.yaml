@@ -184,6 +184,8 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH12
   labs:
   - LAB-TAP-001
   careers: []
@@ -208,6 +210,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - process
+  - core
   failure_or_limit:
   - UI freezes when a critical thread blocks.
   measure_it:
@@ -215,6 +218,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH06
+  - CH12
   labs:
   - LAB-TAP-001
   careers: []
@@ -302,6 +308,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - user-interface
+  - runtime
   failure_or_limit:
   - Broken features when contracts change or fail.
   measure_it:
@@ -309,6 +316,8 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH14
   labs:
   - LAB-TAP-001
   careers: []
@@ -332,6 +341,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - gpu
+  - core
   failure_or_limit:
   - Slowdowns when the CPU is saturated.
   measure_it:
@@ -339,6 +349,8 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH06
   labs:
   - LAB-TAP-001
   careers: []
@@ -393,6 +405,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - storage
+  - cache
   failure_or_limit:
   - Memory pressure, slowdowns, app termination.
   measure_it:
@@ -400,6 +413,8 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH07
   labs:
   - LAB-TAP-001
   careers: []
@@ -424,6 +439,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - ram
+  - cache
   failure_or_limit:
   - Slow opens or stalls when storage is busy.
   measure_it:
@@ -431,6 +447,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH07
+  - CH13
   labs:
   - LAB-TAP-001
   careers: []
@@ -515,6 +534,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - router
+  - internet
   failure_or_limit:
   - Drops, weak signal, high latency.
   measure_it:
@@ -523,6 +543,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH17
+  - CH18
   labs:
   - LAB-TAP-001
   careers: []
@@ -576,6 +599,8 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - jitter
+  - throughput
+  - reliability
   failure_or_limit:
   - Interactions feel sluggish.
   measure_it:
@@ -583,6 +608,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH03
+  - CH20
   labs:
   - LAB-TAP-001
   careers: []
@@ -606,6 +634,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - latency
+  - throughput
   failure_or_limit:
   - Stutter or unstable feel.
   measure_it:
@@ -613,6 +642,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH03
+  - CH20
   labs:
   - LAB-TAP-001
   careers: []
@@ -697,6 +729,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - storage
+  - ram
   failure_or_limit:
   - Stalls when needed data is not cached.
   measure_it:
@@ -704,6 +737,8 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH07
   labs:
   - LAB-TAP-001
   careers: []
@@ -766,6 +801,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH15
+  - CH22
   labs:
   - LAB-TAP-001
   careers: []
@@ -790,6 +828,7 @@ entries:
     explicitly_labeled: true
   not_the_same_as:
   - edge-computing
+  - internet
   failure_or_limit:
   - Unavailable when connectivity or service fails.
   measure_it:
@@ -797,6 +836,9 @@ entries:
   related: []
   introduced_in:
   - CH02
+  reinforced_in:
+  - CH15
+  - CH16
   labs:
   - LAB-TAP-001
   careers: []
@@ -878,7 +920,8 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - inference-output
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -931,7 +974,8 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - training-and-input-data
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -939,6 +983,8 @@ entries:
   related: []
   introduced_in:
   - CH21
+  reinforced_in:
+  - CH22
   labs: []
   careers: []
   full31_source: GL-CH21-INFERENCE
@@ -961,7 +1007,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - training-and-input-data
+  - inference-output
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -969,6 +1017,8 @@ entries:
   related: []
   introduced_in:
   - CH21
+  reinforced_in:
+  - CH22
   labs: []
   careers: []
   full31_source: GL-CH21-GENAI
@@ -1292,7 +1342,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - authorization
+  - identity
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -1300,6 +1352,8 @@ entries:
   related: []
   introduced_in:
   - CH23
+  reinforced_in:
+  - CH24
   labs: []
   careers: []
   full31_source: GL-CH23-AUTHN
@@ -1320,7 +1374,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - authentication
+  - identity
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -1328,6 +1384,8 @@ entries:
   related: []
   introduced_in:
   - CH23
+  reinforced_in:
+  - CH24
   labs: []
   careers: []
   full31_source: GL-CH23-AUTHZ
@@ -1407,7 +1465,8 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - privacy-data-lifecycle
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -1415,6 +1474,8 @@ entries:
   related: []
   introduced_in:
   - CH23
+  reinforced_in:
+  - CH24
   labs: []
   careers: []
   full31_source: GL-CH23-PRINCIPLES
@@ -1435,7 +1496,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - security
+  - protection-design-principles
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -1443,6 +1506,8 @@ entries:
   related: []
   introduced_in:
   - CH24
+  reinforced_in:
+  - CH25
   labs: []
   careers: []
   full31_source: GL-CH24-PRIVACY
@@ -1519,7 +1584,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - digital-equity
+  - convenience
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -1527,6 +1594,8 @@ entries:
   related: []
   introduced_in:
   - CH24
+  reinforced_in:
+  - CH25
   labs: []
   careers: []
   full31_source: GL-CH24-A11Y
@@ -2080,7 +2149,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - measurement
+  - digital-twin-teaching-sense
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -2088,6 +2159,8 @@ entries:
   related: []
   introduced_in:
   - CH28
+  reinforced_in:
+  - CH27
   labs: []
   careers: []
   full31_source: GL-CH28-SIM
@@ -2110,7 +2183,9 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - model-parameters
+  - simulation
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -2387,7 +2462,8 @@ entries:
     text: "A named part of a larger cooperating system\u2014not the whole story by\
       \ itself.\n"
     explicitly_labeled: true
-  not_the_same_as: []
+  not_the_same_as:
+  - employment-non-guarantee
   failure_or_limit:
   - Misnaming this part as the entire product or experience.
   measure_it:
@@ -2395,6 +2471,8 @@ entries:
   related: []
   introduced_in:
   - CH30
+  reinforced_in:
+  - CH31
   labs: []
   careers: []
   full31_source: GL-CH30-PORTFOLIO

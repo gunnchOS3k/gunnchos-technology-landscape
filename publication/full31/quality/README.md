@@ -13,3 +13,10 @@ Working area for manuscript quality convergence on branch
 ## Base
 
 Agents A–J may base work from the tip of this branch after bootstrap.
+
+## Terminology (Agent J)
+
+- Canonical registry: `book/terminology.yaml`
+- Misconception matrix: `publication/full31/quality/MISCONCEPTION_MATRIX.md`
+- Check: `make full31-terminology-check`
+- Report: `publication/full31/quality/AGENT_J_TERMINOLOGY_REPORT.md`
