@@ -33,12 +33,16 @@ Machine-readable architecture for **crosswalking** early-years / primary technol
 
 | Code | Meaning |
 | --- | --- |
-| `OFFICIAL_VERIFIED` | Official source URL retrieved; version/date recorded |
-| `IDENTIFIED` | Authority and likely instrument named; full version pin pending |
+| `OFFICIAL_SOURCE_VERIFIED` | Official source URL retrieved; version/date recorded (Track 2 preferred) |
+| `OFFICIAL_VERIFIED` | Legacy alias of `OFFICIAL_SOURCE_VERIFIED` (still counted) |
+| `OFFICIAL_PORTAL_IDENTIFIED` | Official education authority portal confirmed; framework PDF/edition pin may remain pending |
+| `IDENTIFIED` | Legacy lighter identification (prefer `OFFICIAL_PORTAL_IDENTIFIED` going forward) |
 | `TRANSLATION_REQUIRED` | Official source exists primarily in non-English; translation/review needed |
 | `ACCESS_BLOCKED` | Known official source behind paywall, geo-block, or login |
 | `NOT_YET_RESEARCHED` | Jurisdiction listed for coverage architecture; research not started |
 | `SOURCE_VERSION_UNCLEAR` | Source found but edition/effective date ambiguous |
+| `NO_CENTRAL_NATIONAL_CURRICULUM` | Education authority is primarily subnational; no single national K–12 curriculum |
+| `SUBNATIONAL_RESEARCH_REQUIRED` | National instrument exists but provinces/states/networks still need row-level research |
 
 ### Mapping fidelity
 

@@ -11,30 +11,26 @@
 | Metric | Count |
 | --- | ---: |
 | Jurisdictions total | 275 |
-| OFFICIAL_VERIFIED | 14 |
-| IDENTIFIED | 65 |
-| TRANSLATION_REQUIRED | 54 |
+| OFFICIAL_SOURCE_VERIFIED | 3 |
+| OFFICIAL_VERIFIED (legacy) | 12 |
+| OFFICIAL_PORTAL_IDENTIFIED | 72 |
+| IDENTIFIED (legacy) | 61 |
+| TRANSLATION_REQUIRED | 73 |
+| SOURCE_VERSION_UNCLEAR | 3 |
+| NO_CENTRAL_NATIONAL_CURRICULUM | 1 |
 | ACCESS_BLOCKED | 7 |
-| NOT_YET_RESEARCHED | 135 |
-
-## Track 2C region before → after
-
-| Region | Before | After |
-| --- | --- | --- |
-| africa | IDENTIFIED=4, NOT_YET_RESEARCHED=49, OFFICIAL_VERIFIED=1 | ACCESS_BLOCKED=2, IDENTIFIED=19, OFFICIAL_VERIFIED=2, TRANSLATION_REQUIRED=31 |
-| middle_east | IDENTIFIED=2, NOT_YET_RESEARCHED=12 | ACCESS_BLOCKED=2, IDENTIFIED=3, TRANSLATION_REQUIRED=9 |
-| asia_pacific | IDENTIFIED=10, NOT_YET_RESEARCHED=36, OFFICIAL_VERIFIED=5 | ACCESS_BLOCKED=3, IDENTIFIED=30, OFFICIAL_VERIFIED=5, TRANSLATION_REQUIRED=13 |
+| NOT_YET_RESEARCHED | 43 |
 
 ## Mapping metrics
 
 | Fidelity | Count |
 | --- | ---: |
 | EXACT | 0 |
-| ADJACENT | 23 |
-| PROPOSED | 5 |
+| ADJACENT | 27 |
+| PROPOSED | 8 |
 | NO_MAP | 0 |
-| NOT_YET_MAPPED | 3 |
-| **Mappings total** | **31** |
+| NOT_YET_MAPPED | 6 |
+| **Mappings total** | **41** |
 
 ## Mandatory framework baseline status
 
@@ -86,3 +82,19 @@
 - Presence of a jurisdiction row ≠ completed clause-level mapping.
 - This track does not advance Gate 3 or PUBLICATION_READY counts.
 
+## Americas Track 2A (2026-09-03)
+
+**Before:** Americas 99 — `NOT_YET_RESEARCHED` 92, `IDENTIFIED` 4, `OFFICIAL_VERIFIED` 2, `TRANSLATION_REQUIRED` 1.
+
+**After:** Americas 99 — `OFFICIAL_PORTAL_IDENTIFIED` 72, `TRANSLATION_REQUIRED` 20, `OFFICIAL_SOURCE_VERIFIED` 3, `SOURCE_VERSION_UNCLEAR` 3, `NO_CENTRAL_NATIONAL_CURRICULUM` 1, `NOT_YET_RESEARCHED` **0**.
+
+### Mandatory US framework pins
+
+| Framework | ID | Version pin | URL |
+| --- | --- | --- | --- |
+| Head Start ELOF | `FW-US-HS-ELOF` | ELOF birth–five (replaces 2010; HeadStart.gov) | https://www.headstart.gov/school-readiness/article/head-start-early-learning-outcomes-framework |
+| Common Core ELA & Math | `FW-US-CCSS-2010` | 2010 initiative; state adoption varies | https://corestandards.org/ |
+| CSTA PK–12 | `FW-CSTA-PK12-2026` | 2026 (DOI 10.1145/3820482) | https://csteachers.org/pk12standards/ |
+| NGSS | `FW-US-NGSS` | NGSS K–12 (2013 lead-states; state-adopted where applicable) | https://www.nextgenscience.org/ |
+
+No fabricated official alignment claims. Relationships remain `CROSSWALKED_AGAINST` / `INFORMED_BY` / `MAPPED_TO` only.

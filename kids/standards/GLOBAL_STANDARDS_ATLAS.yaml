@@ -507,4 +507,130 @@ mapping_counts_by_fidelity:
   ADJACENT: 12
   PROPOSED: 4
   NOT_YET_MAPPED: 6
-mapping_count: 31
+mapping_count: 41
+- mapping_id: MAP-AR-NAP-DIGITAL-KE
+  relationship: INFORMED_BY
+  fidelity: PROPOSED
+  from_framework_id: FW-AR-NAP
+  from_node: NAP Educación digital, programación y robótica (domain family)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - B5
+  - B6
+  - B7
+  - B8
+  notes: Proposed editorial bridge only; TRANSLATION_REQUIRED; not CFE endorsement.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-BC-ELF-PLAY-KE
+  relationship: CROSSWALKED_AGAINST
+  fidelity: ADJACENT
+  from_framework_id: FW-CA-BC-ELF-2019
+  from_node: Living inquiries / play and inquiry (birth–8)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K2
+  - K3
+  - K4
+  - K5
+  notes: Editorial crosswalk only; not a Ministry endorsement claim.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-BNCC-COMP-KE
+  relationship: INFORMED_BY
+  fidelity: PROPOSED
+  from_framework_id: FW-BR-BNCC
+  from_node: Competências gerais / pensamento científico-criativo (early grain paraphrase)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Proposed editorial bridge only; TRANSLATION_REQUIRED for clause work; not official alignment.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CAPS-NYM
+  relationship: MAPPED_TO
+  fidelity: NOT_YET_MAPPED
+  from_framework_id: FW-ZA-CAPS
+  from_node: Foundation Phase (subject grain TBD)
+  to_kids_target_id: KE-TARGET-SCIENCE-PRACTICES
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Placeholder edge — subject PDFs not yet pinned.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CCSS-LIT-KE
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-US-CCSS-2010
+  from_node: ELA / literacy anchor skills (K–early primary grain)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  notes: Editorial INFORMED_BY only; not a Common Core adoption or certification claim. Prefer ADJACENT over EXACT.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CCSS-MATH-KE
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-US-CCSS-2010
+  from_node: Mathematics practices / early number-pattern sense
+  to_kids_target_id: KE-TARGET-DATA-PATTERNS
+  kids_bands:
+  - K5
+  - K6
+  - K7
+  - B5
+  notes: Editorial INFORMED_BY only; not certification. State adoption varies.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-CL-PARV-PLAY-KE
+  relationship: INFORMED_BY
+  fidelity: ADJACENT
+  from_framework_id: FW-CL-PARVULARIA-2019
+  from_node: Educación parvularia núcleos (paraphrase)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K2
+  - K3
+  - K4
+  - K5
+  notes: Editorial INFORMED_BY only; TRANSLATION_REQUIRED for clause work.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-JP-COS-NYM
+  relationship: MAPPED_TO
+  fidelity: NOT_YET_MAPPED
+  from_framework_id: FW-JP-MEXT-COS
+  from_node: Elementary Courses of Study (ICT-related)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - K6
+  - K7
+  - B5
+  notes: TRANSLATION_REQUIRED before fidelity upgrade.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-MX-NEM-INQUIRY-KE
+  relationship: INFORMED_BY
+  fidelity: PROPOSED
+  from_framework_id: FW-MX-NEM-2022
+  from_node: Campos formativos / inquiry in community (paraphrase)
+  to_kids_target_id: KE-TARGET-PLAY-INQUIRY
+  kids_bands:
+  - K3
+  - K4
+  - K5
+  - K6
+  notes: Proposed editorial bridge only; TRANSLATION_REQUIRED; not SEP endorsement.
+  reviewed_on: '2026-09-03'
+- mapping_id: MAP-ZA-CODING-NYM
+  relationship: MAPPED_TO
+  fidelity: NOT_YET_MAPPED
+  from_framework_id: FW-ZA-CODING-ROBOTICS
+  from_node: Coding and Robotics (phase TBD)
+  to_kids_target_id: KE-TARGET-ALGO-FOUNDATIONS
+  kids_bands:
+  - B5
+  - B6
+  - B7
+  - B8
+  notes: Awaiting official phase PDF pins.
+  reviewed_on: '2026-09-03'
