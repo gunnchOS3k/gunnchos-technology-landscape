@@ -75,7 +75,7 @@ spreads:
     talk_together_child_safe: "Discuss kindly; no shame."
   - id: S10
     facilitator_note: "Teach-back is evidence of process."
-    author_meta: "stable_cast_continuity; participatory_prompts"
+    author_meta: "stable_cast_continuity; participatory_prompts; project-status honesty stays on artifact banner, not child lines."
     talk_together_child_safe: "Optional peer; easy stop."
 
 standards:

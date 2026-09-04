@@ -10,7 +10,7 @@ NOT PUBLICATION-READY
 
 **`KIDS_REVIEW_PROTOTYPE_COMPLETE`** for Track 3 (review-quality developmental prototypes).
 
-Not claimed at pilot-report ceiling: `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` — that family aggregate (if declared) is earned only when research-complete + review-prototype validators both pass elsewhere; this report still ceilings at review-prototype only.
+Not claimed: `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` (standards research / global foundation remains a sister-track concern).
 
 ## Provenance
 
@@ -28,8 +28,8 @@ Not claimed at pilot-report ceiling: `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYP
 | KIDS-TODDLER | 10 | 30 | 10 | yes | yes | yes |
 | KIDS-PRESCHOOL | 10 | 120 | 10 | yes | yes | yes |
 | KIDS-PREK | 10 | 146 | 10 | yes | yes | yes |
-| KIDS-ELEM1 | 10 | 408 | 10 | yes | yes | yes |
-| KIDS-ELEM2 | 10 | 806 | 10 | yes | yes | yes |
+| KIDS-ELEM1 | 10 | 406 | 10 | yes | yes | yes |
+| KIDS-ELEM2 | 10 | 821 | 10 | yes | yes | yes |
 
 ## Standards mappings
 
