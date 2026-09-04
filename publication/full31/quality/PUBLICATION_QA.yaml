@@ -1,8 +1,8 @@
 schema_version: 1.0.0
 report_id: FULL31_PUBLICATION_QA
 agent: agent-h-publication-qa
-generated_at: '2026-09-04T00:18:57Z'
-git_sha: 51e36228a7152e3423bc867a74ca0f9825aa023b
+generated_at: '2026-09-04T00:19:04Z'
+git_sha: 4f041e0a9a219488e97dd9f679123c5d60f66c43
 preferred_base_branch: cursor/full31-quality-convergence-001
 gate_3_policy: DO_NOT_TOUCH
 certification_claims:
