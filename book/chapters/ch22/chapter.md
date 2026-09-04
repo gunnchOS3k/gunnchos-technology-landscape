@@ -145,7 +145,7 @@ Common honest failures: permission denied; sensor occluded; thermal/power budget
 - **Role.** What continuous capture may expose beyond the visible UI.
 - **Plain contract.** Background faces, overheard speech, and motion patterns can leave the intended subject.
 - **Misread.** A local model automatically makes capture ethical.
-- **Citation posture.** Concrete IMU/camera privacy *standards* selection for this chapter remains unresolved; this draft teaches boundary literacy and platform permission mediation without inventing ISO/IEEE designations. Claim CLM-CH22-004 is **omitted** (SOURCE_NEEDED).
+- **Citation posture.** Camera/microphone permission mediation is cited (CLM-CH22-004 · `SOURCE_IDENTIFIED` via [@w3c-mediacapture-streams-20251009; @w3c-permissions-20251006]). Do not invent IMU-fusion ISO/IEEE designations.
 
 ### Edge / cloud fallback
 
@@ -303,7 +303,7 @@ Portfolio signal: a scrubbed permission/occlusion card plus an honest PHYSICAL_P
 
 ## References
 
-Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`), including systems framing for models and inference [@goodfellow_deep_learning], platform-mediated capture permissions [@w3c-mediacapture-streams-20251009], voluntary AI risk-management guidance [@nist_ai_rmf_100_1], and accessibility feedback requirements [@wcag22-20241212]. Project-specific Device Quartet and WAIKE adjacency evidence is cited via [@src-hardware-quartet] and [@src-waike], separately from external literature. Concrete sensing/IMU/camera privacy *standards* designations remain **SOURCE_NEEDED** and are **omitted** from claim promotion in this draft (CLM-CH22-004). Official MCU-NN / edge-ML system references (`edge_ml_sys_refs`) likewise remain SOURCE_NEEDED for later depth.
+Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`), including systems framing for models and inference [@goodfellow_deep_learning], platform-mediated capture permissions [@w3c-mediacapture-streams-20251009; @w3c-permissions-20251006], voluntary AI risk-management guidance [@nist_ai_rmf_100_1], and accessibility feedback requirements [@wcag22-20241212]. Project-specific Device Quartet and WAIKE adjacency evidence is cited via [@src-hardware-quartet] and [@src-waike], separately from external literature. IMU-fusion *standards* designations remain out of claim scope this wave (CLM-CH22-004 resolved for camera/mic permission mediation only). Official MCU-NN / edge-ML system references (`edge_ml_sys_refs`) remain SOURCE_NEEDED for later depth.
 
 ---
 
@@ -361,4 +361,4 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 | CLM-CH22-001 | On-device/edge inference can reduce round-trip dependency vs remote APIs, at device budget cost | SOURCE_IDENTIFIED (`goodfellow_deep_learning`) |
 | CLM-CH22-002 | Device Quartet Edge IO Wearables remain research/learning form factors; physical AI/sensing benchmarks pending | **PHYSICAL_PENDING** (`src-hardware-quartet`) |
 | CLM-CH22-003 | WAIKE `AI_ML_EDGE` / `lab_quantize_budget` / `EMBEDDED_PROTOTYPING` are adjacent, not CH22 module IDs | SOURCE_IDENTIFIED (`src-waike` @ `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) |
-| CLM-CH22-004 | Sensing/IMU/camera privacy standards citations | **OMITTED** (SOURCE_NEEDED — unresolved; no invented designations) |
+| CLM-CH22-004 | Camera/mic permission mediation (no invented IMU-fusion ISO) | **SOURCE_IDENTIFIED** (`w3c-mediacapture-streams-20251009`, `w3c-permissions-20251006`) |

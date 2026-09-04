@@ -204,7 +204,7 @@ For the ordinary “I pressed power and got a trustworthy-enough computer” fee
 1. **Firmware completes enough init** for storage, display, and input paths the experience needs.
 2. **Boot chain reaches** an intended OS **or** an honest recovery UI—not a silent brick from the learner’s view.
 3. **Trust policy matches learner expectation**, or failure is visible rather than silent.
-4. **Update state** does not leave the device mid-change without a recovery affordance the person can understand (teaching concern; interrupted-update failure modes as a formal claim remain **SOURCE_NEEDED** and are **omitted** here as CLM-CH11-006—see blockers).
+4. **Update state** does not leave the device mid-change without a recovery affordance the person can understand (CLM-CH11-006 · `SOURCE_IDENTIFIED` via [@android-ab-ota] as a representative A/B seamless-update example; not universal firmware law).
 5. **Accessibility:** boot and recovery messages have readable or alternate paths where the platform allows—not logo-only dead ends when text is possible.
 
 A system can remain *electrically on* while the human experience has already failed: endless logo, inaccessible verify step, lock screen that appears after an unverified chain the person never consented to trust. Conversely, a lock screen can look “secure” while secure-boot policy was never enabled. Stability is concurrent conditions—not a single spinner.
@@ -282,7 +282,7 @@ Build a one-page evidence plan: what would convert “marketing secure boot” i
 
 ### Researcher
 
-Build an evidence plan for a claim you are *not* allowed to assert yet—for example, interrupted firmware updates as a Stability Contract failure mode—keeping CLM-CH11-006 **SOURCE_NEEDED** / omitted, and Quartet boot claims **PHYSICAL_PENDING** (CLM-CH11-005).
+Build an evidence plan for a claim you are *not* allowed to assert yet—for example, Quartet-specific interrupted-update EVT measurements—keeping Quartet boot claims **PHYSICAL_PENDING** (CLM-CH11-005) while citing only living vendor/OS update docs already identified for CLM-CH11-006.
 
 Educators can facilitate Section 11 teach-backs and keep classrooms on the offline fixture route when admin rights or spare devices are unavailable.
 
@@ -362,7 +362,7 @@ Portfolio hint: a scrubbed boot-chain diagram plus “lock screen ≠ secure boo
 
 ## References
 
-Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`). Project-specific Device Quartet boot/firmware status remains **PHYSICAL_PENDING** (CLM-CH11-005). Interrupted firmware-update failure modes remain **SOURCE_NEEDED** (CLM-CH11-006) and are omitted as cited claims in this draft.
+Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`), including representative A/B update recovery docs [@android-ab-ota]. Project-specific Device Quartet boot/firmware status remains **PHYSICAL_PENDING** (CLM-CH11-005).
 
 Inline citations used in this chapter include @tanenbaum-bos, @saltzer-kaashoek, @uefi-secure-boot-2.10, and @tcg-pc-client-pfp-1.06.
 
@@ -441,4 +441,4 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 - **CLM-CH11-003.** Secure boot as policy intent; feature name ≠ measured guarantee for a reader’s device [@uefi-secure-boot-2.10].
 - **CLM-CH11-004.** Attestation / measured boot distinct from UI lock screens [@tcg-pc-client-pfp-1.06].
 - **CLM-CH11-005.** Device Quartet boot/firmware behavior **PHYSICAL_PENDING**; research form factors only.
-- **CLM-CH11-006.** **OMITTED as cited claim** (`SOURCE_NEEDED`—pin vendor/OS capsule or A/B update recovery docs before promoting). Recovery paths appear only as qualitative Stability Contract teaching.
+- **CLM-CH11-006.** Failed/interrupted firmware updates can leave recovery or unusable states (`SOURCE_IDENTIFIED` via `android-ab-ota`). Living docs; representative example only.

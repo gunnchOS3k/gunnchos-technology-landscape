@@ -90,7 +90,7 @@ Flash, disk, and related controllers hold durable bytes—until wear, full volum
 
 ### Structured stores (qualitative)
 
-Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—without citing a pinned database-systems textbook edition. Formal recovery and consistency slogans stay out of the cited-claim set until SOURCE_NEEDED closes (CLM-CH13-003 omitted as a sourced claim). **FIG-CH13-004** sketches file versus database responsibilities as a teaching plate, not as product endorsement.
+Many apps also keep state in **databases** or other structured stores: tables, indexes, and concurrency rules sitting above raw files. This draft treats that as a **responsibility split**—structure and concurrent access versus a single file blob—anchored to official concurrency docs (CLM-CH13-003 · `SOURCE_IDENTIFIED` via [@postgresql-mvcc]) without inventing textbook ACID slogans. **FIG-CH13-004** sketches file versus database responsibilities as a teaching plate, not as product endorsement.
 
 ![File vs database responsibilities. Teaching split; not product endorsement.](../../../figures/full31/ch13/fig-ch13-004.svg){#fig-ch13-004 fig-cap="File vs database responsibilities. Teaching split; not product endorsement."}
 
@@ -323,7 +323,7 @@ Design a one-page **durability checklist** for a tiny app: when is content only 
 
 ### Engineer
 
-Compare **file vs database responsibilities** for one use case (for example, a homework tracker): what belongs in a named file, what needs structured records and concurrent updates. Keep the comparison qualitative; do not invent ACID slogans as if a pinned textbook were already cited (CLM-CH13-003 still SOURCE_NEEDED). Sketch against **FIG-CH13-004**’s teaching split.
+Compare **file vs database responsibilities** for one use case (for example, a homework tracker): what belongs in a named file, what needs structured records and concurrent updates. Keep the comparison qualitative; cite concurrency docs without inventing ACID slogans beyond published definitions (CLM-CH13-003 · SOURCE_IDENTIFIED). Sketch against **FIG-CH13-004**’s teaching split.
 
 ### Researcher
 
@@ -341,7 +341,7 @@ Files and databases are access-control surfaces. Ordinary posture: least privile
 
 ### Privacy
 
-Lifecycle honesty matters: collect, use, retain, share, and delete/redact are human stakes, not only storage jargon. Discuss deletion as **policy plus mechanism**—qualitatively. Because replica and garbage-collection recoverability claims remain SOURCE_NEEDED (CLM-CH13-005), do not assert global erasure from a trash click. Portfolio artifacts must scrub identifiers; do not sync lab evidence to cloud accounts as a requirement.
+Lifecycle honesty matters: collect, use, retain, share, and delete/redact are human stakes, not only storage jargon. Discuss deletion as **policy plus mechanism**—qualitatively. Media-sanitization guidance (CLM-CH13-005 · `SOURCE_IDENTIFIED` via [@nist-sp800-88r1]) supports “UI delete ≠ globally unrecoverable” without giving recovery exploit steps. Portfolio artifacts must scrub identifiers; do not sync lab evidence to cloud accounts as a requirement.
 
 ### Accessibility
 
@@ -401,9 +401,9 @@ Inline citations used in this chapter include @tanenbaum-bos and @saltzer-kaasho
 
 **Omitted as cited technical claims (SOURCE_NEEDED remaining in the chapter claim plan):**
 
-- **CLM-CH13-003** — databases add structure/concurrency/recovery relative to raw files (needs a pinned database-systems textbook edition; no invented ISBN in this draft).
+- **CLM-CH13-003** — databases add structure/concurrency/recovery relative to raw files (`SOURCE_IDENTIFIED` via `postgresql-mvcc`; no invented textbook ISBN).
 - **CLM-CH13-004** — cloud sync conflicts as distributed-state problems (needs distributed-systems chapter and/or official sync docs).
-- **CLM-CH13-005** — deletion as policy plus garbage collection plus replicas (needs privacy/retention and storage GC primary docs; no recovery exploit steps).
+- **CLM-CH13-005** — deletion as policy plus garbage collection plus replicas (`SOURCE_IDENTIFIED` via `nist-sp800-88r1`; no recovery exploit steps).
 
 Prose above treats those topics **qualitatively** or omits them as sourced claims.
 
@@ -476,9 +476,9 @@ All four figures are **conceptual / illustrative teaching aids** unless a future
 |---|---|---|
 | CLM-CH13-001 | Files are ordinary persistence on personal devices; RAM is not a durable substitute | general_technical · SOURCE_IDENTIFIED via @tanenbaum-bos |
 | CLM-CH13-002 | Write-back caches/buffers can delay durability; Save UI ≠ proof on stable media | general_technical · SOURCE_IDENTIFIED via @tanenbaum-bos, @saltzer-kaashoek |
-| CLM-CH13-003 | Databases add structure/concurrency/recovery vs raw files | SOURCE_NEEDED — **omitted as cited claim**; qualitative responsibility split only |
+| CLM-CH13-003 | Databases add structure/concurrency/recovery vs raw files | **SOURCE_IDENTIFIED** (`postgresql-mvcc`); qualitative responsibility split |
 | CLM-CH13-004 | Cloud sync conflicts are distributed-state symptoms, not proof FS broke | SOURCE_NEEDED — **reframed qualitatively**; observation vs inference only |
-| CLM-CH13-005 | Deletion is often policy + GC + replicas; UI delete ≠ global unrecoverable | SOURCE_NEEDED — **qualitative uncertainty only**; no recovery steps |
+| CLM-CH13-005 | Deletion is often policy + GC + replicas; UI delete ≠ global unrecoverable | **SOURCE_IDENTIFIED** (`nist-sp800-88r1`); no recovery steps |
 | CLM-CH13-006 | Quartet storage endurance/performance | PHYSICAL_PENDING |
 
 General teaching statements that working memory is volatile relative to durable files are tied to CLM-CH13-001 and the cited OS/systems texts. Any future numeric durability or endurance figures must carry **illustrative**, **measured**, or **inferred** labels—and Quartet measured figures stay blocked until PHYSICAL_PENDING clears.

@@ -36,8 +36,8 @@ Link deeper CE registers rather than copying:
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
 
-## Remaining SOURCE_NEEDED (EVIDENCE-A)
+## Remaining SOURCE_NEEDED (QUALITY-E)
 
-| Claim / need | Next step |
+| Claim / need | Status / next step |
 |---|---|
-| `CLM-CH29-003` / `product_design_refs` | Select non-marketing product-engineering / PM BoK refs only if used beyond pedagogy; no invented PMI/ISBN. |
+| `CLM-CH29-003` / `product_design_refs` | Reframed `ILLUSTRATIVE_ONLY` — pedagogy/synthesis only; no PMI/ISBN selected this wave |

@@ -39,7 +39,7 @@ The governing question for this chapter:
 
 > What must a complete technology product keep true—experience, stack, evidence, security/inclusion, and honest claims—before anyone may say it is usable?
 
-This is not a pitch deck chapter, not a Device Quartet SKU catalog, and not a PMI certification course. Product-management body-of-knowledge citations that would require unverified ISBNs are omitted here (**CLM-CH29-003** remains `SOURCE_NEEDED`; do not invent PMI/ISBN cites). Systems and quality vocabulary come from standards and textbooks already in the bibliography [@iso-iec-25010-2023; @saltzer-kaashoek].
+This is not a pitch deck chapter, not a Device Quartet SKU catalog, and not a PMI certification course. Product-management body-of-knowledge citations are not selected this wave (**CLM-CH29-003** · `ILLUSTRATIVE_ONLY`; do not invent PMI/ISBN cites). Systems and quality vocabulary come from standards and textbooks already in the bibliography [@iso-iec-25010-2023; @saltzer-kaashoek].
 
 ---
 
@@ -426,4 +426,4 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 - **CLM-CH29-001.** Device Quartet form factors are research/learning benchmarks, not commercial product SKUs—**PHYSICAL_PENDING** [@src-hardware-quartet].
 - **CLM-CH29-002.** gunnchOS device OS documents claim boundaries and is not a finished shipping OS (`beta_ready` false per CE-5 audit language)—claim-boundary teaching only [@src-device-os-ce3].
-- **CLM-CH29-003.** Product-management BoK citations need selection/verification if used beyond pedagogy—**SOURCE_NEEDED**; omitted in this draft (no invented PMI/ISBN).
+- **CLM-CH29-003.** Product-management BoK citations not selected this wave—**ILLUSTRATIVE_ONLY** pedagogy/synthesis (no invented PMI/ISBN).

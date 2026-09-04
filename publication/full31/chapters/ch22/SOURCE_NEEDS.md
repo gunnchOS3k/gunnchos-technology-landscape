@@ -36,8 +36,8 @@ Link deeper CE registers rather than copying:
 
 Do not merge candidates into global `book/references/references.bib` until promotion rules authorize it.
 
-## Remaining SOURCE_NEEDED (EVIDENCE-A)
+## Remaining SOURCE_NEEDED (QUALITY-E)
 
-| Claim / need | Next step |
+| Claim / need | Status / next step |
 |---|---|
-| `CLM-CH22-004` sensing / IMU / camera privacy | Select primary sensing/privacy standards or official platform privacy docs with verified designation. |
+| `CLM-CH22-004` sensing / camera privacy | `SOURCE_IDENTIFIED` via `w3c-mediacapture-streams-20251009` + `w3c-permissions-20251006` (camera/mic permission mediation; no invented IMU-fusion ISO) |

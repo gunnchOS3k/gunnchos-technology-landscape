@@ -26,9 +26,9 @@
 - Invented DOIs/ISBNs/page numbers.
 - Fabricated Gate 3 reader quotes.
 
-## Remaining SOURCE_NEEDED (EVIDENCE-A)
+## Remaining SOURCE_NEEDED (QUALITY-E)
 
-| Claim / need | Next step |
+| Claim / need | Status / next step |
 |---|---|
-| `CLM-CH08-001` display frame deadlines / hitching | Pin multimedia systems textbook edition OR platform display-timing official docs; no invented hitch thresholds. |
+| `CLM-CH08-001` display frame deadlines / hitching | `SOURCE_IDENTIFIED` via `mdn-requestanimationframe` + `whatwg-html` (qualitative frame timing only; no invented hitch thresholds) |
 | Camera/mic sampling | `SOURCE_IDENTIFIED` via `w3c-mediacapture-streams-20251009` |

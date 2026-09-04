@@ -33,13 +33,14 @@ claims:
     commit: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
     source_id: SRC-WAIKE
 - provisional_id: CLM-CH29-003
-  text: Product-management body-of-knowledge citations need selection/verification
-    if used beyond pedagogy.
-  claim_class: general_technical
+  text: Product-management body-of-knowledge citations are not selected for this edition;
+    chapter remains pedagogy/synthesis-only without PMI/ISBN claims.
+  claim_class: illustrative
   evidence_required: Primary source citation or project evidence as status requires
   preferred_source_type: standards / official docs / peer-reviewed / textbook / repository
     / publication-internal
-  status: SOURCE_NEEDED
+  status: ILLUSTRATIVE_ONLY
   citation_keys: []
   overclaim_risk: 'prohibited: fake PMI/ISBN cites'
-  wording_boundary: 'approved: SOURCE_NEEDED | prohibited: fake PMI/ISBN cites'
+  wording_boundary: 'approved: pedagogy/synthesis without external PM BoK | prohibited:
+    fake PMI/ISBN cites'

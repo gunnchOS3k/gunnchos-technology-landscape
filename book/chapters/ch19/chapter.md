@@ -97,7 +97,7 @@ Follow one human-visible action across a path change—without inventing sky tel
 1. **Intent forms.** You tap send, sync, or join.
 2. **Local stack checks path class.** The device reports terrestrial availability, NTN/satellite feature availability, or neither.
 3. **Capability gate.** The active path either supports the required class (for example short message vs bulk upload) or refuses.
-4. **Delay and reliability regime.** Propagation and system delays differ by path class. Orbit *classes* (for example low Earth orbit vs geostationary) imply different qualitative delay regimes; **do not invent product latency numbers** here (CLM-CH19-003 · **SOURCE_NEEDED**). Networking survey texts discuss satellite-link delay as a path-class property distinct from terrestrial access—useful orientation only, not an operator guarantee [@kurose-ross-8].
+4. **Delay and reliability regime.** Propagation and system delays differ by path class. Orbit *classes* (for example low Earth orbit vs geostationary) imply different qualitative delay regimes; **do not invent product latency numbers** here (CLM-CH19-003 · **SOURCE_IDENTIFIED** via [@threegpp-tr38821; @kurose-ross-8]). Networking survey texts discuss satellite-link delay as a path-class property distinct from terrestrial access—useful orientation only, not an operator guarantee [@kurose-ross-8].
 5. **Handover / multi-path behavior.** The stack may stay on one path, fail over, or use more than one path (**multi-path continuity** / multi-connectivity ideas at survey depth).
 6. **Human-visible state.** Progress, errors, and drafts either survive or silently break—**FIG-CH19-002** contrasts continuity of experience vs icon-lit status.
 
@@ -143,7 +143,7 @@ Common honest failures: no usable path for the required capability; path exists 
 ### Delay regime
 
 - **Role.** Propagation and system delay classes that differ sharply across terrestrial vs orbit classes.
-- **Plain contract.** Compare regimes qualitatively; refuse invented product latency tables (CLM-CH19-003 · SOURCE_NEEDED).
+- **Plain contract.** Compare regimes qualitatively; refuse invented product latency tables (CLM-CH19-003 · SOURCE_IDENTIFIED).
 - **Misread.** One “satellite latency” number fits all orbits and operators.
 - **Figure.** **FIG-CH19-003** may show comparative bars only when labeled illustrative—never as measured product data.
 
@@ -199,14 +199,14 @@ A system can remain *icon-connected* while the human experience has already fail
 
 1. Predict whether your chosen task fails for path absence, delay/reliability, service placement, or capability-class mismatch.
 2. Run one terrestrial continuity observation (LAB-PKT-001 or LAB-CE06-001 route) **or** complete the document-only capability-class card.
-3. Fill observation-vs-inference columns. Icon state is an observation; “the satellite is 40 ms away” is an inference you are **not** allowed to invent (CLM-CH19-003 · SOURCE_NEEDED).
+3. Fill observation-vs-inference columns. Icon state is an observation; “the satellite is 40 ms away” is an inference you are **not** allowed to invent (CLM-CH19-003 · SOURCE_IDENTIFIED; qualitative only).
 4. Write a five-sentence teach-back: NTN is an additional path class; continuity is experience; icons are not proof.
 
 **Operator extension.** Compare two official feature descriptions (two products or two modes). Note where marketing pages and support docs disagree; prefer the more specific official capability statement.
 
 **Builder extension.** Produce a one-page continuity checklist: path class → capability class → human-visible state survivors → evidence still needed.
 
-**Engineer extension.** Sketch qualitative delay-regime comparison (terrestrial vs LEO-class vs GEO-class) with **no numeric product claims**; list what primary source would be required to promote CLM-CH19-003 out of SOURCE_NEEDED.
+**Engineer extension.** Sketch qualitative delay-regime comparison (terrestrial vs LEO-class vs GEO-class) with **no numeric product claims**; cite NTN/orbit-class sources without inventing product milliseconds (CLM-CH19-003 · SOURCE_IDENTIFIED).
 
 **Researcher extension.** Read the WAIKE synthetic polar NTN case-study boundary: teaching fixture, local validation needed, **PHYSICAL_PENDING** for field twin claims (CLM-CH19-005) [@src-waike]. Write what evidence would be required to change that label—and what still would not be proven.
 
@@ -232,7 +232,7 @@ Build a labeled continuity diagram for one task: human → device → path class
 
 ### Engineer
 
-Build a qualitative delay-regime brief: define LEO-class vs GEO-class as orbit *regimes* affecting propagation scale, cite only sources you actually have, and leave product milliseconds blank pending SOURCE_NEEDED closure (CLM-CH19-003). Pair with 5G system-architecture literacy [@threegpp-ts23501] without collapsing NTN into terrestrial 5G.
+Build a qualitative delay-regime brief: define LEO-class vs GEO-class as orbit *regimes* affecting propagation scale, cite [@threegpp-tr38821; @kurose-ross-8], and leave product milliseconds blank (CLM-CH19-003). Pair with 5G system-architecture literacy [@threegpp-ts23501] without collapsing NTN into terrestrial 5G.
 
 ### Researcher
 
@@ -351,7 +351,7 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 - **Type.** Illustrative comparative bars.
 - **Reader should notice.** Regime classes differ; bars are not product measurements.
 - **Truth class.** Illustrative.
-- **Alt text requirement.** State illustrative only; forbid reading numbers as operator guarantees; note CLM-CH19-003 SOURCE_NEEDED.
+- **Alt text requirement.** State illustrative only; forbid reading numbers as operator guarantees; note CLM-CH19-003 SOURCE_IDENTIFIED qualitative-only.
 
 ---
 
@@ -361,6 +361,6 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 |---|---|---|
 | CLM-CH19-001 | NTN adds non-ground path classes; not automatically identical to terrestrial 5G | SOURCE_IDENTIFIED (`threegpp-ts23501`) |
 | CLM-CH19-002 | Service continuity is experience across changes—not merely an icon | SOURCE_IDENTIFIED (`itu-t-p10-g100`, `itu-t-g1011`, `threegpp-ts23501`) |
-| CLM-CH19-003 | Satellite delay regimes differ by orbit class; do not invent product latency numbers | **SOURCE_NEEDED** (qualitative teaching only in this draft) |
+| CLM-CH19-003 | Satellite delay regimes differ by orbit class; do not invent product latency numbers | **SOURCE_IDENTIFIED** (`threegpp-tr38821`, `kurose-ross-8`); qualitative only |
 | CLM-CH19-004 | Marketing satellite connectivity may mean messaging-only or limited modes—verify capability class | **SOURCE_NEEDED** (official operator docs per feature) |
 | CLM-CH19-005 | Project NTN twin/demo remains PHYSICAL_PENDING; WAIKE polar NTN case study is synthetic teaching fixture only | **PHYSICAL_PENDING** (`src-waike` @ `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0`) |

@@ -13,12 +13,28 @@
 %   wcag22-20241212 → https://www.w3.org/TR/2024/REC-WCAG22-20241212/
 % Undated https://www.w3.org/TR/WCAG22/ is blocked as a bib key.
 
+@misc{android-ab-ota,
+  title        = {A/B (seamless) system updates},
+  year         = {2026},
+  howpublished = {AOSP documentation (living)},
+  url          = {https://source.android.com/docs/core/ota/ab},
+  note         = {Verified HTTP 200 on 2026-09-03. Documents dual-slot / seamless update and recovery posture for interrupted updates. Living docs; representative vendor/OS example — not universal firmware law.}
+}
+
 @misc{digitalregulation-qos-qoe,
   title        = {Technical regulation – Quality of service},
   year         = {2024},
   howpublished = {Explanatory overview},
   url          = {https://digitalregulation.org/technical-regulation-quality-of-service/},
   note         = {Secondary explanatory source citing ITU QoE/QoS vocabulary; prefer primary ITU text for claims}
+}
+
+@misc{git-scm-docs,
+  title        = {Git - Reference},
+  year         = {2026},
+  howpublished = {Official Git documentation (living)},
+  url          = {https://git-scm.com/docs},
+  note         = {Hub + git(1) pages verified HTTP 200 on 2026-09-03 (title: Git - git Documentation). Living docs; do not invent command semantics beyond published manpages.}
 }
 
 @book{goodfellow_deep_learning,
@@ -48,6 +64,24 @@
   note         = {Wave 1 foundation draft; project citation — keep separate from external technical standards}
 }
 
+@book{harris-harris-riscv,
+  author       = {Harris, Sarah and Harris, David},
+  title        = {Digital Design and Computer Architecture, RISC-V Edition},
+  publisher    = {Morgan Kaufmann},
+  year         = {2021},
+  edition      = {1},
+  isbn         = {978-0-12-820064-3},
+  note         = {Verified via Elsevier shop product page (ISBN 978-0-12-820064-3; edition details list July/October 2021). Use for digital logic gates, combinational/sequential circuits, and synchronous design fundamentals. Do not invent page citations.}
+}
+
+@misc{iec-62133-2,
+  title        = {Secondary cells and batteries containing alkaline or other non-acid electrolytes — Safety requirements for portable sealed secondary cells, and for batteries made from them, for use in portable applications — Part 2: Lithium systems},
+  year         = {2017},
+  howpublished = {IEC 62133-2:2017 (amended by IEC 62133-2:2017/AMD1:2021; consolidated CSV ISBN 978-2-8322-5203-1)},
+  url          = {https://webstore.iec.ch/en/publication/70017},
+  note         = {Catalogue-verified portable lithium cell/battery safety requirements; cite for safety posture only — not a DIY abuse lab protocol. Mirrored from accepted-main book/references.}
+}
+
 @misc{ieee80211-2020,
   year         = {2020},
   howpublished = {IEEE Std 802.11-2020 listing},
@@ -62,12 +96,35 @@
   note         = {Living page; Wi-Fi access standards family home}
 }
 
+@misc{iso-23247-1-2021,
+  title        = {Automation systems and integration — Digital twin framework for manufacturing — Part 1: Overview and general principles},
+  year         = {2021},
+  howpublished = {ISO 23247-1:2021 (Edition 1, published 2021-10)},
+  url          = {https://www.iso.org/standard/75066.html},
+  note         = {ISO catalogue metadata verified 2026-09-03 (Published; stage 60.60). Manufacturing digital-twin vocabulary; do not invent clause/page citations without the standard text.}
+}
+
 @misc{iso-iec-25010-2023,
   year         = {2023},
   month        = {11},
   howpublished = {ISO/IEC 25010:2023},
   url          = {https://www.iso.org/standard/78176.html},
   note         = {International Standard published 2023-11; replaces ISO/IEC 25010:2011. Used for quality-characteristic vocabulary only — not a certification claim.}
+}
+
+@misc{itu-facts-figures-2025,
+  title        = {Measuring digital development: Facts and Figures 2025},
+  year         = {2025},
+  howpublished = {ITU-D ICT statistics publication},
+  url          = {https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx},
+  note         = {Landing page verified 2026-09-03; edition title Facts and Figures 2025. Use for ICT access / digital-divide pedagogy only—cite specific tables from the PDF/interactive report before quoting numeric estimates.}
+}
+
+@misc{itu-r-m2160-2023,
+  year         = {2023},
+  howpublished = {Recommendation ITU-R M.2160-0 (11/2023)},
+  url          = {https://www.itu.int/rec/R-REC-M.2160-0-202311-I/en},
+  note         = {Catalogue page + dated designation verified HTTP 200 on 2026-09-03. IMT-2030 / 6G framework roadmap — not a deployed consumer-network fact. Do not invent capability numbers from secondary summaries.}
 }
 
 @misc{itu-t-g1011,
@@ -176,6 +233,14 @@
   note         = {Browser-visible timing interfaces for commodity Measure path}
 }
 
+@misc{mdn-requestanimationframe,
+  title        = {Window: requestAnimationFrame() method},
+  year         = {2026},
+  howpublished = {Mozilla Developer Network},
+  url          = {https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame},
+  note         = {Verified HTTP 200 on 2026-09-03. Documents callback alignment to display refresh / next repaint. Use for qualitative frame-timing pedagogy only; do not invent hitch/tearing thresholds.}
+}
+
 @misc{mdn-resource-timing,
   title        = {Resource Timing API},
   year         = {2026},
@@ -203,6 +268,14 @@
   number       = {NIST Special Publication 800-145},
   url          = {https://csrc.nist.gov/pubs/sp/800/145/final},
   note         = {Verified via CSRC publication page 2026-09-02}
+}
+
+@misc{nist-sp800-88r1,
+  title        = {Guidelines for Media Sanitization},
+  year         = {2014},
+  howpublished = {NIST Special Publication 800-88 Revision 1 (Final)},
+  url          = {https://csrc.nist.gov/pubs/sp/800/88/r1/final},
+  note         = {CSRC final publication page verified HTTP 200 on 2026-09-03. Supports deletion/sanitization vs recoverability pedagogy; no data-recovery exploit steps.}
 }
 
 @techreport{nist_ai_rmf_100_1,
@@ -234,6 +307,14 @@
   howpublished = {Industry specification family},
   url          = {https://nvmexpress.org/specifications/},
   note         = {Living standards home verified. Specific revision number intentionally NOT asserted until integrator pins an exact published version.}
+}
+
+@misc{oci-runtime-spec,
+  title        = {Open Container Initiative Runtime Specification},
+  year         = {2026},
+  howpublished = {Living specification (main branch document)},
+  url          = {https://raw.githubusercontent.com/opencontainers/runtime-spec/main/spec.md},
+  note         = {spec.md abstract verified 2026-09-03. Containers as OCI runtime configuration/lifecycle; pair with OS textbook for VM contrast. Living document—pin a tagged release before clause-level quotes.}
 }
 
 @misc{otel-signals,
@@ -270,6 +351,14 @@
   edition      = {2},
   isbn         = {978-0-12-820331-6},
   note         = {Verified via Elsevier shop (published Dec 2020). Alternate format ISBN also listed 978-0-12-824558-3. Use for instruction execution, memory hierarchy, parallelism, domain-specific architectures.}
+}
+
+@misc{postgresql-mvcc,
+  title        = {Concurrency Control},
+  year         = {2026},
+  howpublished = {PostgreSQL 18 documentation (living current docs)},
+  url          = {https://www.postgresql.org/docs/current/mvcc.html},
+  note         = {Verified HTTP 200 on 2026-09-03. Official concurrency/isolation docs for database-vs-files pedagogy; do not invent ACID slogans beyond published definitions. Living versioned docs.}
 }
 
 @misc{rfc1034,
@@ -399,6 +488,14 @@
   note         = {Pages per IEEE Xplore record; DOI verified 2026-09-02}
 }
 
+@misc{semver-2.0.0,
+  author       = {Preston-Werner, Tom},
+  title        = {Semantic Versioning 2.0.0},
+  howpublished = {Specification (v2.0.0)},
+  url          = {https://semver.org/spec/v2.0.0.html},
+  note         = {Spec text verified 2026-09-03. Formal MAJOR.MINOR.PATCH compatibility contract vocabulary for API versioning pedagogy. Publication calendar year not asserted from the page header.}
+}
+
 @book{silberschatz-galvin-gagne,
   author       = {Silberschatz, Abraham and Galvin, Peter B. and Gagne, Greg},
   title        = {Operating System Concepts},
@@ -468,12 +565,58 @@
   note         = {Reused from publication accepted-main bibliography; processes and OS abstractions}
 }
 
+@misc{tcg-pc-client-pfp-1.06,
+  title        = {TCG PC Client Platform Firmware Profile Specification},
+  year         = {2023},
+  howpublished = {Family ``2.0'', Level 00, Version 1.06, Revision 52 (published 2023-12-04)},
+  url          = {https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-3.pdf},
+  note         = {PDF title/header verified 2026-09-03. Defines measurement log / attestation uses of PCRs as evidence mechanisms distinct from UI authentication.}
+}
+
+@misc{threegpp-tr38821,
+  year         = {2023},
+  howpublished = {3GPP TR 38.821 (Release 16 family; portal lists versions under change control; ETSI TR 138 821 V16.2.0 cover 2023-03)},
+  url          = {https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3525},
+  note         = {Portal entry reachable (HTTP 200) on 2026-09-03. Use for qualitative NTN / orbit-class delay pedagogy only; pin a dated PDF before clause quotes; never invent product latency numbers.}
+}
+
 @misc{threegpp-ts23501,
   title        = {System architecture for the 5G System (5GS)},
   year         = {2026},
   howpublished = {3GPP TS 23.501 (living specification family; revision not pinned in CE-4 preproduction)},
   url          = {https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144},
   note         = {Portal entry reachable; pin exact version/date only after integrator holds a dated PDF}
+}
+
+@misc{uefi-secure-boot-2.10,
+  title        = {Secure Boot and Driver Signing},
+  howpublished = {UEFI Specification Version 2.10, Chapter 32 (HTML)},
+  url          = {https://uefi.org/specs/UEFI/2.10/32_Secure_Boot_and_Driver_Signing.html},
+  note         = {HTML chapter verified HTTP 200 on 2026-09-03. Documents Secure Boot / authentication-info protocols as policy mechanisms; does not prove a reader's device configuration. Release calendar year not asserted from the HTML chapter alone; edition identity is Version 2.10.}
+}
+
+@misc{ul-2054,
+  title        = {Household and Commercial Batteries},
+  year         = {2021},
+  howpublished = {UL 2054, Edition 3 (published 2021-11-17; revision 2022-03-10)},
+  url          = {https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2054},
+  note         = {Catalogue-verified UL standard for portable primary/secondary batteries; safety requirements — not a classroom teardown guide. Mirrored from accepted-main book/references.}
+}
+
+@misc{w3c-mediacapture-streams-20251009,
+  title        = {Media Capture and Streams},
+  year         = {2025},
+  howpublished = {W3C Candidate Recommendation Draft 09 October 2025},
+  url          = {https://www.w3.org/TR/mediacapture-streams/},
+  note         = {Dated subtitle verified from W3C document header on 2026-09-03. Camera/microphone capture as mediated representations with permission model; not a product privacy certification.}
+}
+
+@misc{w3c-permissions-20251006,
+  title        = {Permissions},
+  year         = {2025},
+  howpublished = {W3C Working Draft 06 October 2025},
+  url          = {https://www.w3.org/TR/2025/WD-permissions-20251006/},
+  note         = {Dated This-version URL verified 2026-09-03 (sibling latest: https://www.w3.org/TR/permissions/). Platform permission mediation vocabulary; not a product privacy certification.}
 }
 
 @misc{w3c-pointerevents,
@@ -505,14 +648,6 @@
   howpublished = {GitHub repository},
   url          = {https://github.com/gunnchOS3k/waike-research-ops},
   note         = {Audited SHA e97e74fc9bfb44b1cdc26b272dc4848264f15fe0; dual catalog/digital_rc IDs; no invented module IDs}
-}
-
-@misc{semver-2.0.0,
-  title        = {Semantic Versioning 2.0.0},
-  author       = {Preston-Werner, Tom},
-  howpublished = {Specification (v2.0.0)},
-  url          = {https://semver.org/spec/v2.0.0.html},
-  note         = {Spec text verified for CH14 API-contract pedagogy. Formal MAJOR.MINOR.PATCH compatibility vocabulary. Publication calendar year not asserted from the page header.}
 }
 
 @misc{wcag22-20231005,
@@ -560,48 +695,4 @@
   howpublished = {Industry explainer (non-normative)},
   url          = {https://www.wi-fi.org/discover-wi-fi},
   note         = {Secondary to IEEE 802.11; useful for reader-facing Wi-Fi vocabulary}
-}
-
-% --- CH08 manuscript wave (verified in CANDIDATE_BIBLIOGRAPHY) ---
-
-@misc{w3c-mediacapture-streams-20251009,
-  title        = {Media Capture and Streams},
-  year         = {2025},
-  howpublished = {W3C Candidate Recommendation Draft 09 October 2025},
-  url          = {https://www.w3.org/TR/mediacapture-streams/},
-  note         = {Dated subtitle verified from W3C document header on 2026-09-03. Camera/microphone capture as mediated representations with permission model; not a product privacy certification.}
-}
-
-% --- Batch 1 manuscript promotions ---
-
-@misc{iec-62133-2,
-  title        = {Secondary cells and batteries containing alkaline or other non-acid electrolytes — Safety requirements for portable sealed secondary cells, and for batteries made from them, for use in portable applications — Part 2: Lithium systems},
-  author       = {{International Electrotechnical Commission}},
-  year         = {2017},
-  howpublished = {IEC 62133-2:2017 (amended by IEC 62133-2:2017/AMD1:2021; consolidated CSV ISBN 978-2-8322-5203-1)},
-  url          = {https://webstore.iec.ch/en/publication/70017},
-  note         = {Catalogue-verified portable lithium cell/battery safety requirements; cite for safety posture only — not a DIY abuse lab protocol}
-}
-
-% --- Batch 1 manuscript promotions ---
-
-@misc{ul-2054,
-  title        = {Household and Commercial Batteries},
-  author       = {{UL Standards \& Engagement}},
-  year         = {2021},
-  howpublished = {UL 2054, Edition 3 (published 2021-11-17; revision 2022-03-10)},
-  url          = {https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2054},
-  note         = {Catalogue-verified UL standard for portable primary/secondary batteries; safety requirements — not a classroom teardown guide}
-}
-
-% --- Batch 1 manuscript promotions ---
-
-@book{harris-harris-riscv,
-  title     = {Digital Design and Computer Architecture, RISC-V Edition},
-  author    = {Harris, Sarah and Harris, David},
-  year      = {2021},
-  edition   = {1},
-  publisher = {Morgan Kaufmann},
-  isbn      = {978-0-12-820064-3},
-  note      = {Verified via Elsevier shop product page (ISBN 978-0-12-820064-3; edition details list July/October 2021). Use for digital logic gates, combinational/sequential circuits, and synchronous design fundamentals. Do not invent page citations.}
 }

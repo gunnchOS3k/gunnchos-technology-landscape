@@ -90,7 +90,7 @@ Packets that leave the access network still need addressing, routing, and a plac
 
 Status UI summarizes radio and attachment state for humans. It is an interpretation layer—not a QoE meter, not a latency class certificate, and not proof that a particular 5G feature set is active for your app (CLM-CH17-002).
 
-**FIG-CH17-002** later places cellular generations through 5G and marks **6G as roadmap**—research and standards direction, not a deployed consumer fact in this manuscript (CLM-CH17-003; `SOURCE_NEEDED` for a dated 3GPP study-item primary).
+**FIG-CH17-002** later places cellular generations through 5G and marks **6G as roadmap**—research and standards direction, not a deployed consumer fact in this manuscript (CLM-CH17-003 · `SOURCE_IDENTIFIED` via [@itu-r-m2160-2023]).
 
 ![Cellular generations through 5G with 6G labeled roadmap—not a consumer deployment fact.](../../../figures/full31/ch17/fig-ch17-002.svg){#fig-ch17-002 fig-cap="Cellular generations through 5G with 6G labeled roadmap—not a consumer deployment fact."}
 
@@ -169,7 +169,7 @@ For each object: plain language, analogy, technical function, constraints, commo
 
 - **Plain language.** Research and standards *direction* after 5G—not a present consumer network fact in this book.
 - **Analogy (labeled).** Like a published transit expansion plan—useful for orientation, not a ticket you can punch today.
-- **Technical function.** Teaching humility: roadmap ≠ deployment. This manuscript does **not** invent 6G radio parameters, commercial availability dates, or performance guarantees (CLM-CH17-003; primary study-item cite remains `SOURCE_NEEDED`).
+- **Technical function.** Teaching humility: roadmap ≠ deployment. This manuscript does **not** invent 6G radio parameters, commercial availability dates, or performance guarantees (CLM-CH17-003 · `SOURCE_IDENTIFIED` via IMT-2030 framework [@itu-r-m2160-2023]).
 - **Constraints.** Any consumer “6G” marketing claim needs dated primary evidence before it becomes fact language.
 - **Symptoms.** Treating “road to 6G” as “my phone already has 6G bars.”
 
@@ -209,7 +209,7 @@ For the ordinary “I walked outside and it kept working” feeling, conditions 
 
 A system can remain *radio-connected* while the human experience has already failed. Conversely, an icon can look weak while a dual-path device still completes the task on another RAT. Stability is concurrent conditions—not a single badge.
 
-**Honesty bound for this edition:** Any gunnchOS / Device Quartet cellular or Wi-Fi drive-test numbers remain **PHYSICAL_PENDING** (CLM-CH17-005). Commodity observation in **LAB-PKT-001** produces *your* evidence for *your* path—or fixture honesty—not a universal RF score. **6G stays roadmap language** until a dated primary can be pinned (CLM-CH17-003).
+**Honesty bound for this edition:** Any gunnchOS / Device Quartet cellular or Wi-Fi drive-test numbers remain **PHYSICAL_PENDING** (CLM-CH17-005). Commodity observation in **LAB-PKT-001** produces *your* evidence for *your* path—or fixture honesty—not a universal RF score. **6G stays roadmap language** under IMT-2030 framework cite (CLM-CH17-003 · SOURCE_IDENTIFIED).
 
 ---
 
@@ -249,7 +249,7 @@ A system can remain *radio-connected* while the human experience has already fai
 
 **Engineer extension.** Place “5G” at survey depth: cite architecture literacy via 3GPP TS 23.501 family without pinning undownloaded clause numbers [@threegpp-ts23501]. List which failure domains your observations cannot distinguish.
 
-**Researcher extension.** Separate roadmap claims from deployed facts with dates. For 6G, state explicitly: **not deployed consumer fact here**; primary study-item cite `SOURCE_NEEDED` (CLM-CH17-003). Forbid inventing Quartet drive-test numbers (CLM-CH17-005).
+**Researcher extension.** Separate roadmap claims from deployed facts with dates. For 6G, state explicitly: **not deployed consumer fact here**; cite IMT-2030 framework [@itu-r-m2160-2023] (CLM-CH17-003). Forbid inventing Quartet drive-test numbers (CLM-CH17-005).
 
 **Proposed observation-only stretch (not a separate shipping lab ID).** `LAB-ACCESS-OBS-001` in the chapter packet remains a **proposed** name for a walk-test icon-vs-outcome log with fixture alternative—still **no RF TX**.
 
@@ -350,7 +350,7 @@ Portfolio hint: a scrubbed access-labeled path diagram plus observation-vs-infer
 
 Selected authoritative sources for this chapter’s general technical explanations are listed in the bibliography (`book/references/references.bib`). Project-specific Device Quartet RF status remains in `evidence/claim_registry.yaml` and in the chapter claim plan (CLM-CH17-005), separately from external literature.
 
-Inline citations used in this chapter include @ieee80211-2020, @threegpp-ts23501, and @kurose-ross-8. Claim CLM-CH17-003 (6G roadmap primary) remains `SOURCE_NEEDED`—bounded in prose without fabricated study-item IDs.
+Inline citations used in this chapter include @ieee80211-2020, @threegpp-ts23501, @kurose-ross-8, and @itu-r-m2160-2023. Claim CLM-CH17-003 (6G/IMT-2030 roadmap) is `SOURCE_IDENTIFIED`—still bounded as not deployed consumer fact.
 
 ---
 
@@ -408,6 +408,6 @@ All three figures are **conceptual / illustrative teaching aids** unless a futur
 
 - **CLM-CH17-001.** Wi-Fi and cellular are different access technologies; neither is the Internet—framed with IEEE 802.11, 3GPP TS 23.501, and textbook survey depth [@ieee80211-2020; @threegpp-ts23501; @kurose-ross-8].
 - **CLM-CH17-002.** 5G denotes a 3GPP system generation; icon presence does not prove a specific latency/reliability class for the user’s app [@threegpp-ts23501].
-- **CLM-CH17-003.** 6G is future/roadmap; do not claim deployed consumer 6G as present fact without dated evidence. Status: `SOURCE_NEEDED` (no fabricated study-item cite in this draft).
+- **CLM-CH17-003.** 6G/IMT-2030 is future/roadmap; do not claim deployed consumer 6G as present fact. Status: `SOURCE_IDENTIFIED` (`itu-r-m2160-2023`).
 - **CLM-CH17-004.** Handover and offload can cause transient experience failures while icons stay lit [@threegpp-ts23501; @kurose-ross-8].
 - **CLM-CH17-005.** Any gunnchOS/Quartet cellular/Wi-Fi drive-test numbers are **PHYSICAL_PENDING**.
