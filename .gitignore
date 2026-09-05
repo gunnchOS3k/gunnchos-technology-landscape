@@ -27,4 +27,6 @@ book/chapters/figures/
 
 # Isolated agent worktrees (do not commit)
 .worktrees/
+
+# Worktree .venv symlink (directory form already listed as .venv/)
 .venv

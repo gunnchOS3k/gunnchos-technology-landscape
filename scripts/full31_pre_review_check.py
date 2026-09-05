@@ -66,6 +66,7 @@ PROVENANCE_ALLOWLIST_PREFIXES = (
     "kids/",
     "_quarto-print-",
     "Makefile",
+    ".gitignore",
     ".github/workflows/ci.yml",
     "scripts/check_distribution_requirements.py",
     "scripts/check_adult_release_packages.py",
