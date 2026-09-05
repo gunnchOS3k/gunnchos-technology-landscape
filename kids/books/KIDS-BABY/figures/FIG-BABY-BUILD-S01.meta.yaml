@@ -1,22 +1,15 @@
 asset_id: FIG-BABY-BUILD-S01
-truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+truth_class: CONCEPTUAL_EDUCATIONAL_DIAGRAM
 age_band: KIDS-BABY
-unit_id: UNIT-BABY-BUILD-01
-spread_id: S01
-alt: "Style-neutral diagram for 'Look.': Look back at a favorite earlier moment."
-description: "Look back at a favorite earlier moment."
-purpose: "UNIT-BABY-BUILD-01 spread S01 (LOOK)"
-text_safe_zones:
-  title_band: [40, 40, 720, 90]
-  body_band: [40, 340, 720, 80]
-print_dimensions_px: {width: 800, height: 500}
-digital_dimensions_px: {width: 800, height: 500}
-path: "kids/books/KIDS-BABY/figures/FIG-BABY-BUILD-S01.svg"
-owner_aesthetic_approval: PENDING
-copyrighted_character_imitation: false
+alt: 'Show: Look at what happened.'
+description: 'Show: Look at what happened.'
+production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+print_dimensions_px:
+  width: 800
+  height: 500
+media_evidence_ids:
+- CME-001
+- CME-005
+- CME-008
+- CME-011
 character_cast_option: A_Signal_Crew_provisional
-media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-a11y:
-  has_title_desc: true
-  color_not_sole_encoding: true
-  reading_order: title_then_focal_then_body

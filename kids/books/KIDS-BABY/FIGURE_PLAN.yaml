@@ -1,564 +1,169 @@
-# FIGURE_PLAN — KIDS-BABY
-# Diagrams: DIAGRAM_READY SVG; narrative art: ILLUSTRATION_DIRECTION_READY (no IMAGE HERE)
-
-meta:
-  age_band: KIDS-BABY
-  print_target_px: {width: 800, height: 500}
-  style: style_neutral_prototype
-  character_cast_option: A_Signal_Crew_provisional
-
 figures:
-  - figure_id: FIG-BABY-METECH-S01
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S01
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S01.svg
-    child_facing_text: "Look."
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-METECH-S02
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S02
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S02.svg
-    child_facing_text: "Hand."
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-METECH-S03
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S03.svg
-    child_facing_text: "Touch."
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-METECH-S04
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S04.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-METECH-S05
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S05
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S05.svg
-    child_facing_text: "Change!"
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-METECH-S06
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S06
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S06.svg
-    child_facing_text: "Again?"
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-METECH-S07
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S07
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S07.svg
-    child_facing_text: "Same."
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: ILLUS-BABY-METECH-S08
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S08
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'New.'. Focal: Move attention to another control.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "New."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-METECH-S09
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S09
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Point.'. Focal: Point to what changed.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Point."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-METECH-S10
-    unit_id: UNIT-BABY-ME-TECH-01
-    spread_id: S10
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-METECH-S10.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
-  - figure_id: FIG-BABY-INSIDE-S01
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S01
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S01.svg
-    child_facing_text: "Dark."
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: FIG-BABY-INSIDE-S02
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S02
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S02.svg
-    child_facing_text: "Here."
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: FIG-BABY-INSIDE-S03
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S03.svg
-    child_facing_text: "Press."
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: FIG-BABY-INSIDE-S04
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S04.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: FIG-BABY-INSIDE-S05
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S05
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S05.svg
-    child_facing_text: "Light."
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: FIG-BABY-INSIDE-S06
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S06
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S06.svg
-    child_facing_text: "Awake."
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: ILLUS-BABY-INSIDE-S07
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S07
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Again?'. Focal: Optional off→on if baby still attending.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Again?"
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-INSIDE-S08
-    unit_id: UNIT-BABY-INSIDE-01
-    spread_id: S08
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSIDE-S08.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-001, CME-003, CME-005, CME-008]
-  - figure_id: FIG-BABY-INSTR-S01
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S01
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S01.svg
-    child_facing_text: "Look."
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: FIG-BABY-INSTR-S02
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S02
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S02.svg
-    child_facing_text: "Touch."
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: FIG-BABY-INSTR-S03
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S03.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: FIG-BABY-INSTR-S04
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S04.svg
-    child_facing_text: "Change!"
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: FIG-BABY-INSTR-S05
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S05
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S05.svg
-    child_facing_text: "Again."
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: FIG-BABY-INSTR-S06
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S06
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S06.svg
-    child_facing_text: "Same."
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: ILLUS-BABY-INSTR-S07
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S07
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Point.'. Focal: Point to the place again.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Point."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-INSTR-S08
-    unit_id: UNIT-BABY-INSTRUCTIONS-01
-    spread_id: S08
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-INSTR-S08.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
-  - figure_id: FIG-BABY-MSG-S01
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S01
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S01.svg
-    child_facing_text: "Here."
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: FIG-BABY-MSG-S02
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S02
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S02.svg
-    child_facing_text: "Point."
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: FIG-BABY-MSG-S03
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S03.svg
-    child_facing_text: "There."
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: FIG-BABY-MSG-S04
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S04.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: FIG-BABY-MSG-S05
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S05
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S05.svg
-    child_facing_text: "Wave."
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: ILLUS-BABY-MSG-S06
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S06
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Again?'. Focal: Optional second here→there gesture.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Again?"
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-MSG-S07
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S07
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S07.svg
-    child_facing_text: "Here."
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: FIG-BABY-MSG-S08
-    unit_id: UNIT-BABY-MESSAGES-01
-    spread_id: S08
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-MSG-S08.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-001, CME-005, CME-008, CME-009]
-  - figure_id: ILLUS-BABY-DATA-S01
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S01
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Face.'. Focal: Look at a known caregiver face.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Face."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-DATA-S02
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S02
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'You.'. Focal: Name the familiar person.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "You."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-DATA-S03
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-DATA-S03.svg
-    child_facing_text: "Same."
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: FIG-BABY-DATA-S04
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-DATA-S04.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: ILLUS-BABY-DATA-S05
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S05
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Soft.'. Focal: Familiar soft sound or smile returns.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Soft."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-DATA-S06
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S06
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Again?'. Focal: Offer the known rhyme once more.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Again?"
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-DATA-S07
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S07
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Known.'. Focal: Return to the familiar face.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Known."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-DATA-S08
-    unit_id: UNIT-BABY-DATA-01
-    spread_id: S08
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-DATA-S08.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: FIG-BABY-SAFE-S01
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S01
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-SAFE-S01.svg
-    child_facing_text: "Look."
-    media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
-  - figure_id: FIG-BABY-SAFE-S02
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S02
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-SAFE-S02.svg
-    child_facing_text: "Grown-up."
-    media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
-  - figure_id: FIG-BABY-SAFE-S03
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-SAFE-S03.svg
-    child_facing_text: "Hands."
-    media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
-  - figure_id: FIG-BABY-SAFE-S04
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-SAFE-S04.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
-  - figure_id: ILLUS-BABY-SAFE-S05
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S05
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Soft.'. Focal: Redirect to a baby-safe soft object.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Soft."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-SAFE-S06
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S06
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Yours.'. Focal: Name a baby-safe object as yours.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Yours."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-SAFE-S07
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S07
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-SAFE-S07.svg
-    child_facing_text: "Pause."
-    media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
-  - figure_id: FIG-BABY-SAFE-S08
-    unit_id: UNIT-BABY-SAFE-01
-    spread_id: S08
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-SAFE-S08.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
-  - figure_id: FIG-BABY-BUILD-S01
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S01
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-BUILD-S01.svg
-    child_facing_text: "Look."
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: FIG-BABY-BUILD-S02
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S02
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-BUILD-S02.svg
-    child_facing_text: "Point."
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: FIG-BABY-BUILD-S03
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S03
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-BUILD-S03.svg
-    child_facing_text: "Show."
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: FIG-BABY-BUILD-S04
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S04
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-BUILD-S04.svg
-    child_facing_text: "Wait…"
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
-  - figure_id: ILLUS-BABY-BUILD-S05
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S05
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'That!'. Focal: Celebrate any gesture toward the moment.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "That!"
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-BUILD-S06
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S06
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Again?'. Focal: Optional one more show.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Again?"
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: ILLUS-BABY-BUILD-S07
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S07
-    status: ILLUSTRATION_DIRECTION_READY
-    kind: narrative_illustration_direction
-    asset_path: null
-    direction: "Sparse board-book art for 'Together.'. Focal: Share the memory together.. No clutter. Optional provisional cast presence only."
-    do_not:
-      - "IMAGE HERE placeholders"
-      - "dense scenes"
-      - "screen UI chrome"
-      - "final character IP lock"
-    child_facing_text: "Together."
-    media_evidence_ids: [CME-001, CME-005, CME-006, CME-016]
-  - figure_id: FIG-BABY-BUILD-S08
-    unit_id: UNIT-BABY-BUILD-01
-    spread_id: S08
-    status: DIAGRAM_READY
-    kind: deterministic_svg_diagram
-    asset_path: figures/FIG-BABY-BUILD-S08.svg
-    child_facing_text: "All done."
-    media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
+- figure_id: FIG-BABY-ME-TECH-S01
+  unit_id: UNIT-BABY-ME-TECH-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-ME-TECH-S02
+  unit_id: UNIT-BABY-ME-TECH-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-ME-TECH-S03
+  unit_id: UNIT-BABY-ME-TECH-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-ME-TECH-S04
+  unit_id: UNIT-BABY-ME-TECH-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-ME-TECH-S05
+  unit_id: UNIT-BABY-ME-TECH-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-ME-TECH-S06
+  unit_id: UNIT-BABY-ME-TECH-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSIDE-S01
+  unit_id: UNIT-BABY-INSIDE-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSIDE-S02
+  unit_id: UNIT-BABY-INSIDE-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSIDE-S03
+  unit_id: UNIT-BABY-INSIDE-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSIDE-S04
+  unit_id: UNIT-BABY-INSIDE-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSIDE-S05
+  unit_id: UNIT-BABY-INSIDE-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSIDE-S06
+  unit_id: UNIT-BABY-INSIDE-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSTRUCTIONS-S01
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSTRUCTIONS-S02
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSTRUCTIONS-S03
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSTRUCTIONS-S04
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSTRUCTIONS-S05
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-INSTRUCTIONS-S06
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-MESSAGES-S01
+  unit_id: UNIT-BABY-MESSAGES-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-MESSAGES-S02
+  unit_id: UNIT-BABY-MESSAGES-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-MESSAGES-S03
+  unit_id: UNIT-BABY-MESSAGES-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-MESSAGES-S04
+  unit_id: UNIT-BABY-MESSAGES-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-MESSAGES-S05
+  unit_id: UNIT-BABY-MESSAGES-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-MESSAGES-S06
+  unit_id: UNIT-BABY-MESSAGES-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-DATA-S01
+  unit_id: UNIT-BABY-DATA-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-DATA-S02
+  unit_id: UNIT-BABY-DATA-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-DATA-S03
+  unit_id: UNIT-BABY-DATA-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-DATA-S04
+  unit_id: UNIT-BABY-DATA-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-DATA-S05
+  unit_id: UNIT-BABY-DATA-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-DATA-S06
+  unit_id: UNIT-BABY-DATA-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-SAFE-S01
+  unit_id: UNIT-BABY-SAFE-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-SAFE-S02
+  unit_id: UNIT-BABY-SAFE-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-SAFE-S03
+  unit_id: UNIT-BABY-SAFE-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-SAFE-S04
+  unit_id: UNIT-BABY-SAFE-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-SAFE-S05
+  unit_id: UNIT-BABY-SAFE-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-SAFE-S06
+  unit_id: UNIT-BABY-SAFE-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-BUILD-S01
+  unit_id: UNIT-BABY-BUILD-01
+  cadence: LOOK
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-BUILD-S02
+  unit_id: UNIT-BABY-BUILD-01
+  cadence: POINT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-BUILD-S03
+  unit_id: UNIT-BABY-BUILD-01
+  cadence: NAME
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-BUILD-S04
+  unit_id: UNIT-BABY-BUILD-01
+  cadence: WAIT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-BUILD-S05
+  unit_id: UNIT-BABY-BUILD-01
+  cadence: RESPOND
+  status: DETERMINISTIC_DIAGRAM_SHIPPED
+- figure_id: FIG-BABY-BUILD-S06
+  unit_id: UNIT-BABY-BUILD-01
+  cadence: REPEAT
+  status: DETERMINISTIC_DIAGRAM_SHIPPED

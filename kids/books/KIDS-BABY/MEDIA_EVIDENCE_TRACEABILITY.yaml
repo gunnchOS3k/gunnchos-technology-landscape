@@ -1,109 +1,50 @@
-# MEDIA_EVIDENCE_TRACEABILITY — KIDS-BABY
-# Real CME-* IDs only from kids/research/CHILD_MEDIA_EVIDENCE_REGISTER.yaml
-# NO_CHILD_VALIDATION_EVIDENCE
-
-meta:
-  age_band: KIDS-BABY
-  register: kids/research/CHILD_MEDIA_EVIDENCE_REGISTER.yaml
-  child_validation_evidence: NONE
-
-design_rule_evidence_index:
-  one_focal_action: [CME-001, CME-005, CME-007]
-  low_clutter: [CME-005, CME-006]
-  color_not_sole_encoding: [CME-003, CME-004]
-  high_contrast_infant: [CME-001, CME-003]
-  print_first_infant_toddler: [CME-002, CME-019, CME-020]
-  serve_and_return: [CME-008, CME-009, CME-010]
-  contingent_cause_effect: [CME-011, CME-013]
-  stable_cast_continuity: [CME-016, CME-017, CME-018]
-  participatory_prompts: [CME-018, CME-021]
-  easy_stop_agency: [CME-022, CME-023, CME-024]
-  no_dark_patterns: [CME-025, CME-026, CME-027]
-  observation_over_diagnosis: [CME-028, CME-029]
-  style_neutral_prototype: [CME-006, CME-016]
-
-unit_evidence:
-  - unit_id: UNIT-BABY-ME-TECH-01
-    media_evidence_ids:
-      - CME-001
-      - CME-002
-      - CME-003
-      - CME-005
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-019
-      - CME-022
-      - CME-025
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
-  - unit_id: UNIT-BABY-INSIDE-01
-    media_evidence_ids:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-008
-      - CME-009
-      - CME-011
-      - CME-013
-      - CME-019
-      - CME-022
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
-  - unit_id: UNIT-BABY-INSTRUCTIONS-01
-    media_evidence_ids:
-      - CME-005
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-018
-      - CME-021
-      - CME-022
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
-  - unit_id: UNIT-BABY-MESSAGES-01
-    media_evidence_ids:
-      - CME-001
-      - CME-005
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-012
-      - CME-018
-      - CME-019
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
-  - unit_id: UNIT-BABY-DATA-01
-    media_evidence_ids:
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-012
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-028
-      - CME-029
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
-  - unit_id: UNIT-BABY-SAFE-01
-    media_evidence_ids:
-      - CME-019
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
-  - unit_id: UNIT-BABY-BUILD-01
-    media_evidence_ids:
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-012
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-028
-    notes: "Design-rule adjacency only; not proof of child learning outcomes."
+meta: {}
+units:
+- unit_id: UNIT-BABY-ME-TECH-01
+  media_evidence_ids: &id001
+  - CME-001
+  - CME-005
+  - CME-008
+  - CME-011
+  - CME-016
+  - CME-022
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-INSIDE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-INSTRUCTIONS-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-MESSAGES-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-DATA-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-SAFE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-BUILD-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop

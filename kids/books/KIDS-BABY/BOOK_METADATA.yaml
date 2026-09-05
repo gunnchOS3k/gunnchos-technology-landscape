@@ -1,43 +1,13 @@
-# KIDS-BABY book metadata — adult-facing
-# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · KIDS_CHILD_VALIDATION_PENDING
-# NO_CHILD_VALIDATION_EVIDENCE · NO_STANDARDS_CERTIFICATION_EVIDENCE
-
-document_id: KIDS-BABY-BOOK-MANUSCRIPT
+book_id: KIDS-BABY
+title: Tap, Wait, and Wonder
 age_band: KIDS-BABY
-age_guide: "0–18 months"
-title: "Tap, Look, Wait — and Other Soft Tech Moments"
-subtitle: "A caregiver-mediated board book across seven kids technology strands"
+age_guide: 0–18 months
 status: WORKING_DRAFT_COMPLETE
-publication_ready: false
 child_validated: false
-claim_ceiling: WORKING_DRAFT_COMPLETE
-format: board_book_caregiver_mediated
-language_primary: en
-cast_option: A_Signal_Crew_provisional
-cast_names: [Mira, Bolt, Step, Ping, Shield]
-unit_count: 7
-spread_count_total: 58
-word_count_child_facing_total: 65
-truth_banners:
-  - NOT CHILD-VALIDATED
-  - NOT PUBLICATION-READY
-  - KIDS_CHILD_VALIDATION_PENDING
-  - NO_CHILD_VALIDATION_EVIDENCE
-  - NO_STANDARDS_CERTIFICATION_EVIDENCE
-developmental_cadence: [LOOK, POINT, NAME, WAIT, RESPOND, REPEAT]
-print_first: true
-screen_dependency: false
-safety:
-  child_accounts: false
-  pii_collection: false
-  hidden_recording: false
-  dark_patterns: false
-  diagnostic_claims: false
-sources:
-  scope_sequence: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
-  age_band: kids/age-bands/KIDS-BABY.md
-  pilot_anchor: kids/pilots/ONE_TAP/KIDS-BABY
-  waike_crosswalk: kids/waike/KIDS_WAIKE_CROSSWALK.yaml
-  waike_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
-  media_evidence: kids/research/CHILD_MEDIA_EVIDENCE_REGISTER.yaml
-  character_bible: kids/characters/CHARACTER_BIBLE.md
+publication_ready: false
+cast: A_Signal_Crew_provisional
+waike_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+honesty:
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+- KIDS_CHILD_VALIDATION_PENDING

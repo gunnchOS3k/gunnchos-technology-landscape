@@ -1,99 +1,77 @@
-# STANDARDS_TRACEABILITY — KIDS-BABY
-# Honest ADJACENT / NOT_YET_MAPPED only — never invent EXACT; no certification claims
-# NO_STANDARDS_CERTIFICATION_EVIDENCE
-
 meta:
-  age_band: KIDS-BABY
-  source: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
-  fidelity_ceiling: ADJACENT
-  certification_claims: false
-
-unit_mappings:
-  - unit_id: UNIT-BABY-ME-TECH-01
-    mapping_id: MAP-UNIT-BABY-ME-TECH-01
-    status: ADJACENT
-    wire_id: STD-WIRE-UNIT-BABY-ME-TECH-01
-    atlas_mapping_ids:
-      - MAP-ELOF-PLAY-KE
-      - MAP-EYFS-PLAY-KE
-      - MAP-EYLF-PLAY-KE
-      - MAP-TEWHARIKI-PLAY-KE
-      - MAP-NEL-PLAY-KE
-      - MAP-ON-KG-PLAY-KE
-      - MAP-OECD-AGENCY-KE
-      - MAP-NCF-PLAY-KE
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-      - MAP-CSTA2026-SYS-KE
-    note: "Editorial ADJACENT crosswalk only — not official alignment."
-    concept_ids:
-      - KCON-CH02-ONE-TAP
-  - unit_id: UNIT-BABY-INSIDE-01
-    mapping_id: MAP-UNIT-BABY-INSIDE-01
-    status: ADJACENT
-    wire_id: STD-WIRE-UNIT-BABY-INSIDE-01
-    atlas_mapping_ids:
-      - MAP-NGSS-SCI-KE
-      - MAP-CSTA2026-SYS-KE
-    note: "Editorial ADJACENT crosswalk only — not official alignment."
-    concept_ids:
-      - KCON-CH11-BOOT-TRUST
-  - unit_id: UNIT-BABY-INSTRUCTIONS-01
-    mapping_id: MAP-UNIT-BABY-INSTRUCTIONS-01
-    status: ADJACENT
-    wire_id: STD-WIRE-UNIT-BABY-INSTRUCTIONS-01
-    atlas_mapping_ids:
-      - MAP-ELOF-PLAY-KE
-      - MAP-EYFS-PLAY-KE
-      - MAP-EYLF-PLAY-KE
-      - MAP-TEWHARIKI-PLAY-KE
-      - MAP-NEL-PLAY-KE
-      - MAP-ON-KG-PLAY-KE
-      - MAP-OECD-AGENCY-KE
-      - MAP-NCF-PLAY-KE
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-      - MAP-CSTA2026-SYS-KE
-    note: "Editorial ADJACENT crosswalk only — not official alignment."
-    concept_ids:
-      - KCON-CH02-ONE-TAP
-  - unit_id: UNIT-BABY-MESSAGES-01
-    mapping_id: MAP-UNIT-BABY-MESSAGES-01
-    status: NOT_YET_MAPPED
-    wire_id: STD-WIRE-UNIT-BABY-MESSAGES-01
-    atlas_mapping_ids: []
-    note: "Atlas lacks honest grain for messaging/network at this band; kept NOT_YET_MAPPED."
-    concept_ids:
-      - KCON-CH16-PACKETS-INTERNET
-  - unit_id: UNIT-BABY-DATA-01
-    mapping_id: MAP-UNIT-BABY-DATA-01
-    status: ADJACENT
-    wire_id: STD-WIRE-UNIT-BABY-DATA-01
-    atlas_mapping_ids:
-      - MAP-CSTA2026-DATA-KE
-      - MAP-UNESCO-AI-KE
-    note: "Editorial ADJACENT crosswalk only — not official alignment."
-    concept_ids:
-      - KCON-CH21-DATA-AI
-  - unit_id: UNIT-BABY-SAFE-01
-    mapping_id: MAP-UNIT-BABY-SAFE-01
-    status: ADJACENT
-    wire_id: STD-WIRE-UNIT-BABY-SAFE-01
-    atlas_mapping_ids:
-      - MAP-UNESCO-AI-CITIZEN-KE
-      - MAP-CSTA2026-SOC-KE
-      - MAP-CSTA2026-SYS-KE
-    note: "Editorial ADJACENT crosswalk only — not official alignment."
-    concept_ids:
-      - KCON-CH23-CYBERSECURITY
-  - unit_id: UNIT-BABY-BUILD-01
-    mapping_id: MAP-UNIT-BABY-BUILD-01
-    status: ADJACENT
-    wire_id: STD-WIRE-UNIT-BABY-BUILD-01
-    atlas_mapping_ids:
-      - MAP-NGSS-SCI-KE
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-    note: "Editorial ADJACENT crosswalk only — not official alignment."
-    concept_ids:
-      - KCON-CH31-CAPSTONE-TEACH
+  certification_claim: false
+units:
+- unit_id: UNIT-BABY-ME-TECH-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-ME-TECH-01
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-BABY-INSIDE-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-INSIDE-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-BABY-INSTRUCTIONS-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-INSTRUCTIONS-01
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-BABY-MESSAGES-01
+  fidelity: NOT_YET_MAPPED
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-MESSAGES-01
+  atlas_mapping_ids: []
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-BABY-DATA-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-DATA-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-BABY-SAFE-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-SAFE-01
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-BABY-BUILD-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-BUILD-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  note: Editorial crosswalk only — not official alignment or certification.
