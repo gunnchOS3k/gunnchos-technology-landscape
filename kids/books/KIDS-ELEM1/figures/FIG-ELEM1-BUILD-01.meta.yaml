@@ -1,0 +1,21 @@
+asset_id: FIG-ELEM1-BUILD-01
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-ELEM1
+alt: "Portfolio page template with columns What I saw, What I infer, What I still do not know, plus a teach-back box."
+description: "Portfolio page template with columns What I saw, What I infer, What I still do not know, plus a teach-back box."
+purpose: "Unit 7 evidence folder / portfolio diagram"
+production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+text_safe_zones:
+  title_band: [40, 40, 820, 80]
+  body_band: [40, 420, 820, 90]
+print_dimensions_px: {width: 900, height: 560}
+digital_dimensions_px: {width: 900, height: 560}
+path: "kids/books/KIDS-ELEM1/figures/FIG-ELEM1-BUILD-01.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-018, CME-021, CME-028, CME-029]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_labels_then_notes

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="FIG-ELEM1-DATA-01-title FIG-ELEM1-DATA-01-desc" data-asset-id="FIG-ELEM1-DATA-01">
+  <title id="FIG-ELEM1-DATA-01-title">FIG-ELEM1-DATA-01: Examples help a prediction</title>
+  <desc id="FIG-ELEM1-DATA-01-desc">Three example cards feed a predict box; a separate check box asks a person to verify the guess.</desc>
+  <rect width="900" height="560" fill="#fffef8"/>
+  <rect x="18" y="18" width="864" height="524" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM1-DATA-01</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: KIDS-ELEM1 · cast: Signal Crew (provisional)</text>
+  <text x="40" y="104" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Examples help a prediction</text>
+  <rect x="60" y="160" width="120" height="80" rx="6" fill="#eef6ef" stroke="#111" stroke-width="2"/>
+  <text x="120" y="208" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#111">Example A</text>
+  <rect x="200" y="160" width="120" height="80" rx="6" fill="#eef6ef" stroke="#111" stroke-width="2"/>
+  <text x="260" y="208" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#111">Example B</text>
+  <rect x="340" y="160" width="120" height="80" rx="6" fill="#eef6ef" stroke="#111" stroke-width="2"/>
+  <text x="400" y="208" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#111">Example C</text>
+  <polygon points="480,200 530,180 530,220" fill="#111"/>
+  <rect x="540" y="150" width="160" height="100" rx="8" fill="#f0f4f8" stroke="#111" stroke-width="3"/>
+  <text x="620" y="195" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#111">Predict</text>
+  <text x="620" y="225" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#333">pattern guess</text>
+  <rect x="720" y="150" width="140" height="100" rx="8" fill="#fff" stroke="#111" stroke-width="3"/>
+  <text x="790" y="195" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#111">Check</text>
+  <text x="790" y="225" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#333">person verifies</text>
+  <text x="40" y="320" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">Data = information we collected. A model can guess from patterns — and can be wrong.</text>
+  <text x="40" y="360" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333">Misconception: AI is not a person who knows everything.</text>
+  <text x="40" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">No open child–AI chat in this unit. Caregiver mediation required.</text>
+  <text x="40" y="536" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS FULL WORKING MANUSCRIPT · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

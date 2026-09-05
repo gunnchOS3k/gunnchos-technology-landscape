@@ -1,0 +1,90 @@
+document_id: KIDS-ELEM1-STANDARDS_TRACEABILITY
+age_band: KIDS-ELEM1
+relationship: CROSSWALKED_AGAINST
+fidelity_ceiling: ADJACENT
+certification_claim: false
+non_claims:
+- NO_STANDARDS_CERTIFICATION_EVIDENCE
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+units:
+- unit_id: UNIT-ELEM1-ME-TECH-01
+  mapping_id: MAP-UNIT-ELEM1-ME-TECH-01
+  wire_id: STD-WIRE-UNIT-ELEM1-ME-TECH-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  note: Editorial ADJACENT crosswalk only — not official alignment.
+- unit_id: UNIT-ELEM1-INSIDE-01
+  mapping_id: MAP-UNIT-ELEM1-INSIDE-01
+  wire_id: STD-WIRE-UNIT-ELEM1-INSIDE-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  note: Editorial ADJACENT crosswalk only — not official alignment.
+- unit_id: UNIT-ELEM1-INSTRUCTIONS-01
+  mapping_id: MAP-UNIT-ELEM1-INSTRUCTIONS-01
+  wire_id: STD-WIRE-UNIT-ELEM1-INSTRUCTIONS-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-ALGO-FOUNDATIONS
+  note: Editorial ADJACENT crosswalk only — not official alignment.
+- unit_id: UNIT-ELEM1-MESSAGES-01
+  mapping_id: MAP-UNIT-ELEM1-MESSAGES-01
+  wire_id: STD-WIRE-UNIT-ELEM1-MESSAGES-01
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  note: Atlas lacks honest messaging/network grain; kept NOT_YET_MAPPED with rationale
+    from scope/wire registry.
+- unit_id: UNIT-ELEM1-DATA-01
+  mapping_id: MAP-UNIT-ELEM1-DATA-01
+  wire_id: STD-WIRE-UNIT-ELEM1-DATA-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  note: Editorial ADJACENT crosswalk only — not official alignment.
+- unit_id: UNIT-ELEM1-SAFE-01
+  mapping_id: MAP-UNIT-ELEM1-SAFE-01
+  wire_id: STD-WIRE-UNIT-ELEM1-SAFE-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  note: Editorial ADJACENT crosswalk only — not official alignment.
+- unit_id: UNIT-ELEM1-BUILD-01
+  mapping_id: MAP-UNIT-ELEM1-BUILD-01
+  wire_id: STD-WIRE-UNIT-ELEM1-BUILD-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  note: Editorial ADJACENT crosswalk only — not official alignment.

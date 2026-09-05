@@ -1,0 +1,94 @@
+document_id: KIDS-ELEM1-MEDIA_EVIDENCE_TRACEABILITY
+age_band: KIDS-ELEM1
+register: kids/research/CHILD_MEDIA_EVIDENCE_REGISTER.yaml
+applied_rules:
+- salience_without_clutter
+- age_appropriate_color_with_redundant_encoding
+- repetition_with_variation
+- participatory_pauses
+- caregiver_co_use
+- stable_characters
+- moderate_pacing
+- no_compulsion_patterns
+- observation_over_diagnosis
+rejected_claims:
+- magic_frequencies
+- brain_activating_colors
+- attention_equals_learning
+- high_pitch_equals_intelligence
+- autoplay_infinite_engagement
+units:
+- unit_id: UNIT-ELEM1-ME-TECH-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-011
+  - CME-013
+  - CME-016
+  - CME-018
+  - CME-022
+- unit_id: UNIT-ELEM1-INSIDE-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-016
+  - CME-018
+- unit_id: UNIT-ELEM1-INSTRUCTIONS-01
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-016
+  - CME-018
+- unit_id: UNIT-ELEM1-MESSAGES-01
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-013
+  - CME-016
+  - CME-022
+- unit_id: UNIT-ELEM1-DATA-01
+  media_evidence_ids:
+  - CME-003
+  - CME-011
+  - CME-013
+  - CME-016
+  - CME-021
+  - CME-028
+- unit_id: UNIT-ELEM1-SAFE-01
+  media_evidence_ids:
+  - CME-003
+  - CME-016
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+- unit_id: UNIT-ELEM1-BUILD-01
+  media_evidence_ids:
+  - CME-016
+  - CME-018
+  - CME-021
+  - CME-022
+  - CME-028
+  - CME-029
+figure_media_ids_union:
+- CME-001
+- CME-003
+- CME-005
+- CME-006
+- CME-011
+- CME-013
+- CME-016
+- CME-018
+- CME-021
+- CME-022
+- CME-024
+- CME-025
+- CME-026
+- CME-028
+- CME-029
