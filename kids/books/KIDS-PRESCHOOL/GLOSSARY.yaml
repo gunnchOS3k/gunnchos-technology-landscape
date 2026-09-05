@@ -1,60 +1,24 @@
-# GLOSSARY — KIDS-PRESCHOOL (caregiver/educator facing)
-# Child-facing prose uses plain words; this glossary supports adults.
+meta:
+  audience: caregiver
 terms:
-  - term: part
-    plain_meaning: "A piece of a device we can notice or name (button, light, speaker, screen)."
-    audience: caregiver_educator
-  - term: outside
-    plain_meaning: "Parts we can see without opening a sealed device."
-    audience: caregiver_educator
-  - term: inside
-    plain_meaning: "Helpers we cannot see; we gesture toward them without disassembly."
-    audience: caregiver_educator
-  - term: screen
-    plain_meaning: "One outside part that shows pictures or words — not the whole device."
-    audience: caregiver_educator
-  - term: device
-    plain_meaning: "A made thing that can light up, make sound, or help us do a job."
-    audience: caregiver_educator
-  - term: button
-    plain_meaning: "A part we press; it can notice a press."
-    audience: caregiver_educator
-  - term: light
-    plain_meaning: "A part that can blink or glow as a simple signal."
-    audience: caregiver_educator
-  - term: speaker
-    plain_meaning: "A part that can make sound."
-    audience: caregiver_educator
-  - term: step
-    plain_meaning: "One action in an order: first, next, or last."
-    audience: caregiver_educator
-  - term: instruction
-    plain_meaning: "Steps a helper can follow; order matters."
-    audience: caregiver_educator
-  - term: helper
-    plain_meaning: "A person, toy, or program that follows steps to do a job."
-    audience: caregiver_educator
-  - term: message
-    plain_meaning: "Something we send from here to there."
-    audience: caregiver_educator
-  - term: send
-    plain_meaning: "Start a message on its path."
-    audience: caregiver_educator
-  - term: keep-box
-    plain_meaning: "A named place (folder, envelope, device folder) that holds something for later."
-    audience: caregiver_educator
-  - term: name
-    plain_meaning: "A label on a keep-box that helps us find things."
-    audience: caregiver_educator
-  - term: private
-    plain_meaning: "Not for everyone; share with people we trust after asking."
-    audience: caregiver_educator
-  - term: share
-    plain_meaning: "Let someone see or use something — ask first when private."
-    audience: caregiver_educator
-  - term: test
-    plain_meaning: "Try and see; check whether the change we wanted happened."
-    audience: caregiver_educator
-  - term: evidence
-    plain_meaning: "What we noticed (saw/heard) after a try — not only what we hoped."
-    audience: caregiver_educator
+- term: Screen
+  plain_language: Outside vs inside
+  unit_id: UNIT-PRESCHOOL-ME-TECH-01
+- term: Parts
+  plain_language: Button, light, speaker
+  unit_id: UNIT-PRESCHOOL-INSIDE-01
+- term: Steps
+  plain_language: First/next/last
+  unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+- term: Devices
+  plain_language: Local story of sending
+  unit_id: UNIT-PRESCHOOL-MESSAGES-01
+- term: Keep-Boxes
+  plain_language: Named keepsakes/files
+  unit_id: UNIT-PRESCHOOL-DATA-01
+- term: Private
+  plain_language: Share with caregiver
+  unit_id: UNIT-PRESCHOOL-SAFE-01
+- term: Test
+  plain_language: Check the change
+  unit_id: UNIT-PRESCHOOL-BUILD-01

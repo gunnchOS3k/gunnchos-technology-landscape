@@ -1,258 +1,50 @@
-# MEDIA EVIDENCE TRACEABILITY — KIDS-PRESCHOOL (adult-facing)
-# Sources: kids/research/CHILD_MEDIA_EVIDENCE_REGISTER.yaml
-meta:
-  age_band: KIDS-PRESCHOOL
-  register: kids/research/CHILD_MEDIA_EVIDENCE_REGISTER.yaml
-  claim: implementation_implications_only
-  child_validation: NONE
-band_rules:
-  one_focal_action: [CME-001, CME-005, CME-007]
-  low_clutter: [CME-005, CME-006]
-  color_not_sole_encoding: [CME-003, CME-004]
-  serve_and_return: [CME-008, CME-009, CME-010]
-  contingent_cause_effect: [CME-011, CME-013]
-  stable_cast_continuity: [CME-016, CME-017, CME-018]
-  participatory_prompts: [CME-018, CME-021]
-  easy_stop_agency: [CME-022, CME-023, CME-024]
-  no_dark_patterns: [CME-025, CME-026, CME-027]
-  observation_over_diagnosis: [CME-028, CME-029]
-  style_neutral_prototype: [CME-006, CME-016]
+meta: {}
 units:
-  - unit_id: UNIT-PRESCHOOL-ME-TECH-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-  - unit_id: UNIT-PRESCHOOL-INSIDE-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-  - unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-  - unit_id: UNIT-PRESCHOOL-MESSAGES-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-  - unit_id: UNIT-PRESCHOOL-DATA-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-  - unit_id: UNIT-PRESCHOOL-SAFE-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-  - unit_id: UNIT-PRESCHOOL-BUILD-01
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    figure_visual_evidence:
-      - CME-001
-      - CME-003
-      - CME-005
-      - CME-006
-      - CME-016
-    safety_evidence:
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
+- unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  media_evidence_ids: &id001
+  - CME-001
+  - CME-005
+  - CME-008
+  - CME-011
+  - CME-016
+  - CME-022
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-INSIDE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-DATA-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-SAFE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-BUILD-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop

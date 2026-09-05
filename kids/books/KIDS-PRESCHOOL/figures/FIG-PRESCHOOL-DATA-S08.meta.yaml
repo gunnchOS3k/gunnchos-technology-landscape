@@ -1,23 +1,15 @@
 asset_id: FIG-PRESCHOOL-DATA-S08
-truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+truth_class: CONCEPTUAL_EDUCATIONAL_DIAGRAM
 age_band: KIDS-PRESCHOOL
-unit_id: UNIT-PRESCHOOL-DATA-01
-spread: S08
-domain: MAKE
-alt: "Style-neutral illustration for 'Make two named boxes': Sort into named boxes."
-description: "Sort into named boxes."
-purpose: "UNIT-PRESCHOOL-DATA-01 spread S08 (MAKE)"
-text_safe_zones:
-  title_band: [40, 40, 720, 90]
-  body_band: [40, 320, 720, 120]
-print_dimensions_px: {width: 800, height: 500}
-digital_dimensions_px: {width: 800, height: 500}
-path: "kids/books/KIDS-PRESCHOOL/figures/FIG-PRESCHOOL-DATA-S08.svg"
-owner_aesthetic_approval: PENDING
-copyrighted_character_imitation: false
+alt: 'Make: Make one thing.'
+description: 'Make: Make one thing.'
+production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+print_dimensions_px:
+  width: 800
+  height: 500
+media_evidence_ids:
+- CME-001
+- CME-005
+- CME-008
+- CME-011
 character_cast_option: A_Signal_Crew_provisional
-media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
-a11y:
-  has_title_desc: true
-  color_not_sole_encoding: true
-  reading_order: title_then_focal_then_body

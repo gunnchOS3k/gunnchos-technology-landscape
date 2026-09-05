@@ -1,30 +1,20 @@
-# Accessibility Notes — KIDS-PRESCHOOL (adult-facing)
+# Accessibility notes — KIDS-PRESCHOOL
 
 ```
-KIDS DEVELOPMENTAL PROTOTYPE
 NOT CHILD-VALIDATED
 NOT PUBLICATION-READY
-KIDS_CHILD_VALIDATION_PENDING
-NO_CHILD_VALIDATION_EVIDENCE
-NO_STANDARDS_CERTIFICATION_EVIDENCE
 ```
 
-## Routes (always offer)
+Routes (do not lower conceptual expectations automatically):
 
-- Pointing / gesture answers count as full participation.
-- Drawing, sorting cards, or AAC may replace spoken teach-back.
-- No forced verbal performance; optional TEACH spreads only.
-- High luminance contrast in figures; color is never the sole encoding.
-- Reading order: title → focal → child text.
-- Caregiver may shorten or split units across days.
-- Easy stop is success; resume later without shame.
+- **Low vision:** large print caregiver cards; high-contrast SVG; describe figures aloud.
+- **Color vision:** color never sole encoding; shapes/labels redundant.
+- **Hearing:** visual cues; caregiver speech optional; no required audio-only content.
+- **Dyslexia / readability:** short lines; generous spacing; avoid dense walls of text.
+- **Motor differences:** pointing alternatives (eye gaze, partner-assisted scan); large targets.
+- **Neurodiversity:** predictable cadence; easy stop; low sensory clutter.
+- **AAC / communication differences:** accept gesture, device, or partner-assisted responses as full participation.
+- **Sensory sensitivity:** reduce simultaneous sound/motion; offer quiet route.
+- **Multilingual families:** caregivers may translate; concepts travel across languages.
 
-## Sensory
-
-- Volume / brightness mediated by adult; stop if overwhelmed.
-- Prefer print/cards for MAKE spreads; digital is optional co-use.
-
-## Inclusive representation
-
-- Signal Crew is provisional Option A — culturally inclusive silhouettes in future art.
-- Disability inclusion is ordinary belonging (CHARACTER_BIBLE design requirements).
+No diagnostic claims. Observation notes only.

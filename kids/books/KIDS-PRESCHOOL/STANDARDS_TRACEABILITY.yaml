@@ -1,134 +1,65 @@
-# STANDARDS TRACEABILITY — KIDS-PRESCHOOL (adult-facing)
-# relationship: CROSSWALKED_AGAINST · fidelity_ceiling: ADJACENT
-# NO_STANDARDS_CERTIFICATION_EVIDENCE · never invent EXACT
 meta:
-  age_band: KIDS-PRESCHOOL
-  waike_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
-  waike_audience: caregiver_educator_only
-  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  certification_claim: false
 units:
-  - unit_id: UNIT-PRESCHOOL-ME-TECH-01
-    concept_id: KCON-CH01-SYSTEM-NOT-SCREEN
-    mapping_id: MAP-UNIT-PRESCHOOL-ME-TECH-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-ME-TECH-01
-    status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-ELOF-PLAY-KE
-      - MAP-EYFS-PLAY-KE
-      - MAP-EYLF-PLAY-KE
-      - MAP-TEWHARIKI-PLAY-KE
-      - MAP-NEL-PLAY-KE
-      - MAP-ON-KG-PLAY-KE
-      - MAP-OECD-AGENCY-KE
-      - MAP-NCF-PLAY-KE
-      - MAP-CSTA2026-SYS-KE
-    atlas_kids_targets:
-      - KE-TARGET-PLAY-INQUIRY
-      - KE-TARGET-SYSTEMS-STABILITY
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH01-SYSTEM-NOT-SCREEN
-        waike_id: null
-        status: proposed
-        notes: "Early systems precursor; no exact WAIKE module on audited SHA."
-  - unit_id: UNIT-PRESCHOOL-INSIDE-01
-    concept_id: KCON-CH04-DEVICE-FORMS
-    mapping_id: MAP-UNIT-PRESCHOOL-INSIDE-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-INSIDE-01
-    status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-NGSS-SCI-KE
-      - MAP-CSTA2026-SYS-KE
-    atlas_kids_targets:
-      - KE-TARGET-SCIENCE-PRACTICES
-      - KE-TARGET-SYSTEMS-STABILITY
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH04-DEVICE-FORMS
-        waike_id: EMBEDDED_PROTOTYPING
-        status: adjacent
-        notes: "Form/parts adjacency only; not an exact kids module."
-  - unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
-    concept_id: KCON-CH14-APPS-UI
-    mapping_id: MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-INSTRUCTIONS-01
-    status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-    atlas_kids_targets:
-      - KE-TARGET-ALGO-FOUNDATIONS
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH14-APPS-UI
-        waike_id: SOFTWARE_BUILDER
-        status: adjacent
-        notes: "UI/steps precursor adjacency; not exact WAIKE course."
-  - unit_id: UNIT-PRESCHOOL-MESSAGES-01
-    concept_id: KCON-CH16-PACKETS-INTERNET
-    mapping_id: MAP-UNIT-PRESCHOOL-MESSAGES-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-MESSAGES-01
-    status: NOT_YET_MAPPED
-    atlas_mapping_ids:
-      []
-    not_yet_mapped_rationale: "Atlas kids_targets lack an honest messaging/network grain for KCON-CH16; leave NOT_YET_MAPPED (editorial honesty)."
-    atlas_kids_targets:
-      []
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH16-PACKETS-INTERNET
-        waike_id: COMPUTER_NETWORKING
-        status: adjacent
-        notes: "Optional send-message adjacency only; atlas messaging grain remains NOT_YET_MAPPED."
-  - unit_id: UNIT-PRESCHOOL-DATA-01
-    concept_id: KCON-CH13-FILES-DATA-LIFE
-    mapping_id: MAP-UNIT-PRESCHOOL-DATA-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-DATA-01
-    status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-CSTA2026-DATA-KE
-      - MAP-UNESCO-AI-KE
-    atlas_kids_targets:
-      - KE-TARGET-DATA-PATTERNS
-      - KE-TARGET-AI-LITERACY
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH13-FILES-DATA-LIFE
-        waike_id: null
-        status: proposed
-        notes: "Keep-box naming precursor; no exact WAIKE file-life module invented."
-  - unit_id: UNIT-PRESCHOOL-SAFE-01
-    concept_id: KCON-CH24-PRIVACY-ETHICS
-    mapping_id: MAP-UNIT-PRESCHOOL-SAFE-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-SAFE-01
-    status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-UNESCO-AI-CITIZEN-KE
-      - MAP-CSTA2026-SOC-KE
-    atlas_kids_targets:
-      - KE-TARGET-DIGITAL-CITIZENSHIP
-      - KE-TARGET-COMPUTING-SOCIETY
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH24-PRIVACY-ETHICS
-        waike_id: CYBERSECURITY
-        status: adjacent
-        notes: "Privacy/ethics adjacency only; no invented kids privacy course ID."
-  - unit_id: UNIT-PRESCHOOL-BUILD-01
-    concept_id: KCON-CH27-TEST-EVIDENCE
-    mapping_id: MAP-UNIT-PRESCHOOL-BUILD-01
-    wire_id: STD-WIRE-UNIT-PRESCHOOL-BUILD-01
-    status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-NGSS-SCI-KE
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-    atlas_kids_targets:
-      - KE-TARGET-SCIENCE-PRACTICES
-      - KE-TARGET-ALGO-FOUNDATIONS
-    note: "Editorial crosswalk only — not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
-    waike_links:
-      - kids_object: KCON-CH27-TEST-EVIDENCE
-        waike_id: SOFTWARE_BUILDER
-        status: adjacent
-        notes: "Try-and-see / test adjacency; not an exact kids QA module."
+- unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-ME-TECH-01
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-INSIDE-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-INSIDE-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  fidelity: NOT_YET_MAPPED
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-MESSAGES-01
+  atlas_mapping_ids: []
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-DATA-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-DATA-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-SAFE-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-SAFE-01
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-BUILD-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-BUILD-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  note: Editorial crosswalk only — not official alignment or certification.

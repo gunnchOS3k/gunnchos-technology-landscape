@@ -1,18 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PRESCHOOL-SAFE-S01-title FIG-PRESCHOOL-SAFE-S01-desc" data-asset-id="FIG-PRESCHOOL-SAFE-S01">
-  <title id="FIG-PRESCHOOL-SAFE-S01-title">FIG-PRESCHOOL-SAFE-S01: A family photo</title>
-  <desc id="FIG-PRESCHOOL-SAFE-S01-desc">Style-neutral PRESCHOOL prototype. Action: Set the share-or-not problem.. Child text excerpt: Mira has a family photo. Ping wants to show everyone. Shield pauses.</desc>
+  <title id="FIG-PRESCHOOL-SAFE-S01-title">FIG-PRESCHOOL-SAFE-S01: Private Means Not Everyone begins</title>
+  <desc id="FIG-PRESCHOOL-SAFE-S01-desc">Private Means Not Everyone begins: Listen to the tiny story.</desc>
   <rect width="800" height="500" fill="#fffef8"/>
   <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
-  <text x="40" y="52" font-family="Georgia, serif" font-size="20" fill="#111">FIG-PRESCHOOL-SAFE-S01</text>
-  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PRESCHOOL · STORY</text>
-  <text x="40" y="98" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">A family photo</text>
-  <text x="40" y="120" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
-  <g transform="translate(380,50)">
-    <rect x="140" y="160" width="120" height="90" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
-    <circle cx="200" cy="140" r="28" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
-  </g>
-  <foreignObject x="40" y="320" width="720" height="120">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 16px; color:#111; line-height:1.35;">Mira has a family photo. Ping wants to show everyone. Shield pauses.</div>
-  </foreignObject>
-  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+  <text x="36" y="48" font-family="Georgia, serif" font-size="16" fill="#111">FIG-PRESCHOOL-SAFE-S01</text>
+  <text x="36" y="88" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Private Means Not Everyone begins</text>
+  <circle cx="70" cy="140" r="18" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="100" y="146" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">STORY</text>
+  <circle cx="70" cy="190" r="18" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="100" y="196" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">Shield asks who can see Mira's drawing. </text>
+  <circle cx="70" cy="240" r="18" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="100" y="246" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">Signal Crew provisional</text>
+  <text x="36" y="470" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS FULL WORKING MANUSCRIPT · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
 </svg>

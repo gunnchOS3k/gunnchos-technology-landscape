@@ -1,7 +1,7 @@
-# KIDS-PRESCHOOL — Full Working Manuscript (7 Strands)
+# Parts, Paths, and Kind Choices — KIDS-PRESCHOOL
 
 ```
-KIDS DEVELOPMENTAL PROTOTYPE
+KIDS FULL WORKING MANUSCRIPT
 NOT CHILD-VALIDATED
 NOT PUBLICATION-READY
 KIDS_CHILD_VALIDATION_PENDING
@@ -9,814 +9,787 @@ NO_CHILD_VALIDATION_EVIDENCE
 NO_STANDARDS_CERTIFICATION_EVIDENCE
 ```
 
-**Age guide:** 3–4 years (guide, not deadline)  
-**Status ceiling:** `WORKING_DRAFT_COMPLETE`  
-**Cast (provisional — Character Bible Option A):** Mira · Bolt · Step · Ping · Shield  
-_Provisional Character Bible Option A — not owner-locked IP._
+**Age band:** KIDS-PRESCHOOL (guide ages 3–4 years)
+**Cadence:** STORY → NOTICE → NAME → CONNECT → PREDICT → TRY → EXPLAIN → MAKE → SAFE + FAIR → TEACH
+**Claim ceiling:** WORKING_DRAFT_COMPLETE units only — not publication-ready
 
-## Caregiver / educator note
-
-Story first. Notice before naming. Prediction before correction. Stop anytime.  
-Truth banners, standards IDs, SHA provenance, and WAIKE notes live in adult-facing companions — **not** in child-facing text blocks.
+> Adult-facing status banners and provenance live in companion YAML/MD files. Child-facing spread text must stay free of project-state meta, standards IDs, and source SHAs.
 
 ## How to use
 
-1. Read one unit in a short sitting (or split across days).  
-2. Follow the cadence: STORY → NOTICE → NAME → CONNECT → PREDICT → TRY → EXPLAIN → MAKE → SAFE+FAIR → TEACH.  
-3. Prefer pointing, gestures, and play over verbal performance.  
-4. Keep offline play after device tries.
+Read together. Pause. Stop anytime. One idea per spread is enough.
 
-## Safety & accessibility (adult)
+## Caregiver / educator orientation
 
-- Adult mediation for any device try.  
-- No child accounts, no child data collection, no dark patterns.  
-- Easy stop is success.  
-- Offer pointing, AAC, or drawing routes for teach-back.
+Follow attention; never force verbal performance. Observation notes only — no diagnostic claims.
+
+## Cast (provisional — Character Bible Option A)
+
+- Explorer: **Mira** · Builder: **Bolt** · Instructions: **Step** · Signals: **Ping** · Safety: **Shield**
+- _Provisional Character Bible Option A — Signal Crew — not owner-locked IP._
+
+
+## Safety / accessibility note
+
+Caregiver mediation. No child accounts, no unnecessary PII, no hidden recording, no dark patterns, no fearmongering.
 
 ---
 
-## UNIT-PRESCHOOL-ME-TECH-01 — Screen Is One Part
+## Unit 1. Screen Is One Part
 
-**Strand:** Me & Technology (`STRAND-ME-TECH`)  
-**Adult concept (facilitator):** `KCON-CH01-SYSTEM-NOT-SCREEN` · status `WORKING_DRAFT_COMPLETE`
+**Strand:** Me & Technology
+**Learning goal:** Outside vs inside
 
-**Learning goal:** Outside vs inside — screen is one part of a device.
-
-### Spread S01 — The music box (STORY)
+### Spread S01 — Screen Is One Part begins (STORY)
 
 ![FIG-PRESCHOOL-ME-TECH-S01](figures/FIG-PRESCHOOL-ME-TECH-S01.svg)
 
-**Child-facing text:** Mira wants a song. Bolt taps the shiny screen. Is the screen the whole box?
+**Child-facing text:** Mira notices a phone screen and a lamp. The screen is only one part.
 
-**Try it:** Meet Mira and Bolt; set the tiny problem.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Tell the tiny story once. Pause for looking.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — What we notice (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-ME-TECH-S02](figures/FIG-PRESCHOOL-ME-TECH-S02.svg)
 
-**Child-facing text:** The screen lights up. A button waits. A speaker sits nearby. What did you see first?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** List noticed parts with pointing.
+**Try it:** Point to one change.
 
-**Talk together:** Notice before naming tech words.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Name the outsides (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-ME-TECH-S03](figures/FIG-PRESCHOOL-ME-TECH-S03.svg)
 
-**Child-facing text:** Screen. Button. Speaker. Those are outside parts we can name.
+**Child-facing text:** The screen is only one part.
 
-**Try it:** Count three outside parts on fingers.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete nouns only.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Something inside helps (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-ME-TECH-S04](figures/FIG-PRESCHOOL-ME-TECH-S04.svg)
 
-**Child-facing text:** Something inside the box helps the parts work. The screen is not the whole story.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Gesture from outside to inside helpers.
+**Try it:** Find one home example.
 
-**Talk together:** Keep mystery honest: we do not open sealed devices.
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict the parts (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-ME-TECH-S05](figures/FIG-PRESCHOOL-ME-TECH-S05.svg)
 
-**Child-facing text:** If we press the button, which part helps next — screen, light, or speaker?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict which part acts next.
+**Try it:** Make one prediction.
 
-**Talk together:** Accept any sincere guess.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try the song path (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-ME-TECH-S06](figures/FIG-PRESCHOOL-ME-TECH-S06.svg)
 
-**Child-facing text:** First press. Next the screen changes. Last the speaker sings. Act it with Mira.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Act outside to inside to sound with gestures.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Movement helps memory.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — One part of many (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-ME-TECH-S07](figures/FIG-PRESCHOOL-ME-TECH-S07.svg)
 
-**Child-facing text:** Bolt says the screen is one part. Inside helpers and outside parts work together.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain screen-as-one-part in plain words.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Keep language concrete.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Sort outside and inside (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-ME-TECH-S08](figures/FIG-PRESCHOOL-ME-TECH-S08.svg)
 
-**Child-facing text:** Sort cards: outside parts / inside helpers. Can you put them in two piles?
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Sorting outside vs inside with cards.
+**Try it:** Make one thing.
 
-**Talk together:** Use drawings or cards.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Stop anytime (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-ME-TECH-S09](figures/FIG-PRESCHOOL-ME-TECH-S09.svg)
 
-**Child-facing text:** If the song is too loud, Shield says we stop. Stopping is fair.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model agency to stop.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** Model stop without shame.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach a friend (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-ME-TECH-S10](figures/FIG-PRESCHOOL-ME-TECH-S10.svg)
 
-**Child-facing text:** Tell the story: screen is one part. Teach someone you trust.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** Optional peer or caregiver share.
+**Talk together:** Easy stop.
 
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+## Unit 2. Parts We Can Name
 
----
+**Strand:** Inside the Machine
+**Learning goal:** Button, light, speaker
 
-## UNIT-PRESCHOOL-INSIDE-01 — Parts We Can Name
-
-**Strand:** Inside the Machine (`STRAND-INSIDE`)  
-**Adult concept (facilitator):** `KCON-CH04-DEVICE-FORMS` · status `WORKING_DRAFT_COMPLETE`
-
-**Learning goal:** Name button, light, and speaker on different device shapes.
-
-### Spread S01 — Three friend devices (STORY)
+### Spread S01 — Parts We Can Name begins (STORY)
 
 ![FIG-PRESCHOOL-INSIDE-S01](figures/FIG-PRESCHOOL-INSIDE-S01.svg)
 
-**Child-facing text:** Mira finds a phone, a speaker, and a lamp. Bolt wonders: what parts do they share?
+**Child-facing text:** Bolt opens a pretend device picture. Parts we can name: button, light, speaker.
 
-**Try it:** Meet three device shapes.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Pause to look at each shape.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — Notice the parts (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-INSIDE-S02](figures/FIG-PRESCHOOL-INSIDE-S02.svg)
 
-**Child-facing text:** A button to press. A light that blinks. A speaker that sings. What do you notice?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** Point to button, light, speaker.
+**Try it:** Point to one change.
 
-**Talk together:** Accept pointing as answers.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Name three parts (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-INSIDE-S03](figures/FIG-PRESCHOOL-INSIDE-S03.svg)
 
-**Child-facing text:** Button. Light. Speaker. We can name the same parts on different devices.
+**Child-facing text:** Parts we can name: button, light, speaker.
 
-**Try it:** Say or gesture each part name.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete nouns only.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Same parts, different shapes (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-INSIDE-S04](figures/FIG-PRESCHOOL-INSIDE-S04.svg)
 
-**Child-facing text:** Big speaker, small phone — both can have a button and a light. Shapes change; parts stay nameable.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Connect same part across two shapes.
+**Try it:** Find one home example.
 
-**Talk together:** Gesture matching parts.
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict the job (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-INSIDE-S05](figures/FIG-PRESCHOOL-INSIDE-S05.svg)
 
-**Child-facing text:** If Bolt presses the button on the lamp, what happens first?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict before trying.
+**Try it:** Make one prediction.
 
-**Talk together:** Accept sincere guesses.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try naming on each (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-INSIDE-S06](figures/FIG-PRESCHOOL-INSIDE-S06.svg)
 
-**Child-facing text:** Find button, light, speaker on each friend device. Act a press, blink, then sound.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Name parts on each device in turn.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Keep tries short and stoppable.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — Parts help jobs (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-INSIDE-S07](figures/FIG-PRESCHOOL-INSIDE-S07.svg)
 
-**Child-facing text:** Step says parts help the device do its job. Naming parts helps us look carefully.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain why naming parts helps.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Keep language concrete.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Make a parts collage (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-INSIDE-S08](figures/FIG-PRESCHOOL-INSIDE-S08.svg)
 
-**Child-facing text:** Draw or cut three cards: button, light, speaker. Stick them on your favorite device shape.
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Hands-on parts collage.
+**Try it:** Make one thing.
 
-**Talk together:** Local art only; no photos required.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Gentle hands (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-INSIDE-S09](figures/FIG-PRESCHOOL-INSIDE-S09.svg)
 
-**Child-facing text:** Shield says we look and name with gentle hands. We do not open sealed devices.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model gentle, mediated looking.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** Adult mediation always.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach the three names (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-INSIDE-S10](figures/FIG-PRESCHOOL-INSIDE-S10.svg)
 
-**Child-facing text:** Teach a friend: button, light, speaker. Three parts we can name.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back of three names.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** No forced performance.
+**Talk together:** Easy stop.
 
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+## Unit 3. Steps for a Helper
 
----
+**Strand:** Instructions & Code
+**Learning goal:** First/next/last
 
-## UNIT-PRESCHOOL-INSTRUCTIONS-01 — Steps for a Helper
-
-**Strand:** Instructions & Code (`STRAND-INSTRUCTIONS`)  
-**Adult concept (facilitator):** `KCON-CH14-APPS-UI` · status `WORKING_DRAFT_COMPLETE`
-
-**Learning goal:** First / next / last steps for a helper.
-
-### Spread S01 — Helper needs steps (STORY)
+### Spread S01 — Steps for a Helper begins (STORY)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S01](figures/FIG-PRESCHOOL-INSTRUCTIONS-S01.svg)
 
-**Child-facing text:** Mira wants a helper to bring a cup. Step says helpers need clear steps.
+**Child-facing text:** Step gives Mira three helper cards. First, next, then — steps for a helper.
 
-**Try it:** Set the helper problem.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Story first; no lecture.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — Notice the order (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S02](figures/FIG-PRESCHOOL-INSTRUCTIONS-S02.svg)
 
-**Child-facing text:** First find the cup. Next carry it. Last give it to Mira. What order did you hear?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** Notice first/next/last with gestures.
+**Try it:** Point to one change.
 
-**Talk together:** Order before fancy words.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Name the steps (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S03](figures/FIG-PRESCHOOL-INSTRUCTIONS-S03.svg)
 
-**Child-facing text:** First. Next. Last. Those are step words we can name.
+**Child-facing text:** First, next, then — steps for a helper.
 
-**Try it:** Count three step words on fingers.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete sequencing words.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Icons are not the whole helper (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S04](figures/FIG-PRESCHOOL-INSTRUCTIONS-S04.svg)
 
-**Child-facing text:** A picture button starts the helper. The picture is not the whole plan. Steps still matter.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Connect icon to steps behind it.
+**Try it:** Find one home example.
 
-**Talk together:** Icon is not the whole program (plain words).
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict a mix-up (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S05](figures/FIG-PRESCHOOL-INSTRUCTIONS-S05.svg)
 
-**Child-facing text:** What if last comes first? What might go wrong?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict a scrambled-order outcome.
+**Try it:** Make one prediction.
 
-**Talk together:** Playful, not scary.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try the helper steps (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S06](figures/FIG-PRESCHOOL-INSTRUCTIONS-S06.svg)
 
-**Child-facing text:** Act first, next, last with Mira and Step. Bring the cup in order.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Body sequence of three steps.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Movement helps memory.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — Instructions are steps (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S07](figures/FIG-PRESCHOOL-INSTRUCTIONS-S07.svg)
 
-**Child-facing text:** Step says instructions are steps a helper can follow. Order matters.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain instructions-as-steps.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Keep language concrete.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Make step cards (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S08](figures/FIG-PRESCHOOL-INSTRUCTIONS-S08.svg)
 
-**Child-facing text:** Make three cards: first / next / last. Line them up for your helper story.
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Sequence cards for the helper.
+**Try it:** Make one thing.
 
-**Talk together:** Hands-on evidence of order.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Fair turns for helpers (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S09](figures/FIG-PRESCHOOL-INSTRUCTIONS-S09.svg)
 
-**Child-facing text:** Shield says everyone gets a fair turn giving steps. We can stop if it feels too hard.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model fair turns and easy stop.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** Stopping is success.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach the steps (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-INSTRUCTIONS-S10](figures/FIG-PRESCHOOL-INSTRUCTIONS-S10.svg)
 
-**Child-facing text:** Teach someone: first, next, last for the helper. Share your cards.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back of sequence.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** Optional peer share.
+**Talk together:** Easy stop.
 
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+## Unit 4. Devices Send Messages
 
----
+**Strand:** Messages & Connections
+**Learning goal:** Local story of sending
 
-## UNIT-PRESCHOOL-MESSAGES-01 — Devices Send Messages
-
-**Strand:** Messages & Connections (`STRAND-MESSAGES`)  
-**Adult concept (facilitator):** `KCON-CH16-PACKETS-INTERNET` · status `WORKING_DRAFT_COMPLETE`
-
-**Learning goal:** Local story of sending a message from here to there.
-
-### Spread S01 — A picture for Bolt (STORY)
+### Spread S01 — Devices Send Messages begins (STORY)
 
 ![FIG-PRESCHOOL-MESSAGES-S01](figures/FIG-PRESCHOOL-MESSAGES-S01.svg)
 
-**Child-facing text:** Mira draws a star. She wants Bolt to see it over there. Can a device send a message?
+**Child-facing text:** Ping carries a note from Mira to Bolt. Devices can send messages here to there.
 
-**Try it:** Set the send-message problem.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Keep the story local and concrete.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — Notice here and there (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-MESSAGES-S02](figures/FIG-PRESCHOOL-MESSAGES-S02.svg)
 
-**Child-facing text:** Mira’s device is here. Bolt’s device is there. What do you notice about the two places?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** Point here and there.
+**Try it:** Point to one change.
 
-**Talk together:** Space before network words.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Name a message (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-MESSAGES-S03](figures/FIG-PRESCHOOL-MESSAGES-S03.svg)
 
-**Child-facing text:** A message is something we send. Mira’s star picture can be a message.
+**Child-facing text:** Devices can send messages here to there.
 
-**Try it:** Name message in plain words.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete noun.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Ping carries it (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-MESSAGES-S04](figures/FIG-PRESCHOOL-MESSAGES-S04.svg)
 
-**Child-facing text:** Ping hops the message from here to there. Sometimes it waits. Sometimes it arrives.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Connect send to travel to arrive.
+**Try it:** Find one home example.
 
-**Talk together:** No magic wire claims.
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict arrival (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-MESSAGES-S05](figures/FIG-PRESCHOOL-MESSAGES-S05.svg)
 
-**Child-facing text:** If Mira sends the star, what happens first? Next? Last?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict send order.
+**Try it:** Make one prediction.
 
-**Talk together:** Accept sincere guesses.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try a room send (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-MESSAGES-S06](figures/FIG-PRESCHOOL-MESSAGES-S06.svg)
 
-**Child-facing text:** Caregiver helps: send a picture or tap-message across the room. Watch for arrive.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Supervised local send try.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Adult mediates; stop anytime.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — Sending is a path (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-MESSAGES-S07](figures/FIG-PRESCHOOL-MESSAGES-S07.svg)
 
-**Child-facing text:** Ping says sending follows a path. Messages do not always arrive right away.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain path and waiting.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Honest: messages can wait or miss.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Make a message path (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-MESSAGES-S08](figures/FIG-PRESCHOOL-MESSAGES-S08.svg)
 
-**Child-facing text:** Draw here, then a path, then there. Put your star message on the path.
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Draw a simple message path.
+**Try it:** Make one thing.
 
-**Talk together:** Local art artifact.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Ask before sending (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-MESSAGES-S09](figures/FIG-PRESCHOOL-MESSAGES-S09.svg)
 
-**Child-facing text:** Shield asks: who should see this message? We ask a grown-up before sending.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model consent before send.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** Caregiver gate for sharing.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach the send story (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-MESSAGES-S10](figures/FIG-PRESCHOOL-MESSAGES-S10.svg)
 
-**Child-facing text:** Teach a friend: here, send, there. Devices can send messages.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** Optional share.
+**Talk together:** Easy stop.
 
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+## Unit 5. Keep-Boxes Have Names
 
----
+**Strand:** Data & Intelligence
+**Learning goal:** Named keepsakes/files
 
-## UNIT-PRESCHOOL-DATA-01 — Keep-Boxes Have Names
-
-**Strand:** Data & Intelligence (`STRAND-DATA`)  
-**Adult concept (facilitator):** `KCON-CH13-FILES-DATA-LIFE` · status `WORKING_DRAFT_COMPLETE`
-
-**Learning goal:** Named keepsakes/files help us find things later.
-
-### Spread S01 — Where did the drawing go? (STORY)
+### Spread S01 — Keep-Boxes Have Names begins (STORY)
 
 ![FIG-PRESCHOOL-DATA-S01](figures/FIG-PRESCHOOL-DATA-S01.svg)
 
-**Child-facing text:** Mira made a rainbow drawing. Later she cannot find it. Bolt looks for a keep-box.
+**Child-facing text:** Mira labels keep-boxes: toys, crayons, photos. Keep-boxes have names.
 
-**Try it:** Set the lost-drawing problem.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Familiar household moment.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — Notice keep-boxes (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-DATA-S02](figures/FIG-PRESCHOOL-DATA-S02.svg)
 
-**Child-facing text:** Envelopes, folders, and device folders can be keep-boxes. What keep-boxes do you see?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** Notice named containers.
+**Try it:** Point to one change.
 
-**Talk together:** Point and name.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Names on boxes (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-DATA-S03](figures/FIG-PRESCHOOL-DATA-S03.svg)
 
-**Child-facing text:** Keep-boxes have names. Mira’s box says Rainbow. Names help us find things.
+**Child-facing text:** Keep-boxes have names.
 
-**Try it:** Name a keep-box aloud.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete naming.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Save means keep (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-DATA-S04](figures/FIG-PRESCHOOL-DATA-S04.svg)
 
-**Child-facing text:** Saving puts the drawing in a keep-box. It can wait for later.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Connect save to keep-box to later.
+**Try it:** Find one home example.
 
-**Talk together:** Gesture the keep action.
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict the find (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-DATA-S05](figures/FIG-PRESCHOOL-DATA-S05.svg)
 
-**Child-facing text:** If the name says Rainbow, which box holds Mira’s drawing?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict by name.
+**Try it:** Make one prediction.
 
-**Talk together:** Accept sincere guesses.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try naming a keep-box (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-DATA-S06](figures/FIG-PRESCHOOL-DATA-S06.svg)
 
-**Child-facing text:** Put a drawing in a paper keep-box. Write or sticker a name with a grown-up.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Hands-on named keep-box.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Adult helps with writing.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — Names help find (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-DATA-S07](figures/FIG-PRESCHOOL-DATA-S07.svg)
 
-**Child-facing text:** Bolt says names are labels for keep-boxes. Good names make finding easier.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain why names help.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Plain words only.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Make two named boxes (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-DATA-S08](figures/FIG-PRESCHOOL-DATA-S08.svg)
 
-**Child-facing text:** Make two keep-boxes with different names. Sort two drawings into them.
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Sort into named boxes.
+**Try it:** Make one thing.
 
-**Talk together:** Sorting as evidence.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Private keep-boxes (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-DATA-S09](figures/FIG-PRESCHOOL-DATA-S09.svg)
 
-**Child-facing text:** Shield says some keep-boxes are private. Ask a grown-up before opening someone else’s.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model private vs shared boxes.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** Consent and fairness.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach keep-box names (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-DATA-S10](figures/FIG-PRESCHOOL-DATA-S10.svg)
 
-**Child-facing text:** Teach a friend: keep-boxes have names so we can find things later.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** Optional share.
+**Talk together:** Easy stop.
 
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+## Unit 6. Private Means Not Everyone
 
----
+**Strand:** Safe, Private & Fair
+**Learning goal:** Share with caregiver
 
-## UNIT-PRESCHOOL-SAFE-01 — Private Means Not Everyone
-
-**Strand:** Safe, Private & Fair (`STRAND-SAFE`)  
-**Adult concept (facilitator):** `KCON-CH24-PRIVACY-ETHICS` · status `WORKING_DRAFT_COMPLETE`
-
-**Learning goal:** Private means not for everyone; share with a trusted caregiver.
-
-### Spread S01 — A family photo (STORY)
+### Spread S01 — Private Means Not Everyone begins (STORY)
 
 ![FIG-PRESCHOOL-SAFE-S01](figures/FIG-PRESCHOOL-SAFE-S01.svg)
 
-**Child-facing text:** Mira has a family photo. Ping wants to show everyone. Shield pauses.
+**Child-facing text:** Shield asks who can see Mira's drawing. Private means not everyone.
 
-**Try it:** Set the share-or-not problem.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Gentle pause, not fear.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — Notice who can see (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-SAFE-S02](figures/FIG-PRESCHOOL-SAFE-S02.svg)
 
-**Child-facing text:** Who is here now? Who is not here? What do you notice about who can see?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** Notice audience with pointing.
+**Try it:** Point to one change.
 
-**Talk together:** People before jargon.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Name private (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-SAFE-S03](figures/FIG-PRESCHOOL-SAFE-S03.svg)
 
-**Child-facing text:** Private means not for everyone. Some things stay with people we trust.
+**Child-facing text:** Private means not everyone.
 
-**Try it:** Name private in plain words.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete meaning.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Ask a grown-up (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-SAFE-S04](figures/FIG-PRESCHOOL-SAFE-S04.svg)
 
-**Child-facing text:** Shield connects private things to asking a grown-up before sharing.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Connect private to ask to share.
+**Try it:** Find one home example.
 
-**Talk together:** Caregiver as trusted gate.
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict the choice (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-SAFE-S05](figures/FIG-PRESCHOOL-SAFE-S05.svg)
 
-**Child-facing text:** If Mira shares with everyone, who might see the photo?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict share outcomes.
+**Try it:** Make one prediction.
 
-**Talk together:** No scare tactics.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try a private choice (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-SAFE-S06](figures/FIG-PRESCHOOL-SAFE-S06.svg)
 
-**Child-facing text:** Practice: photo card goes to Trusted pile or Everyone pile. Choose with Shield.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Sort trusted vs everyone.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Playful choice practice.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — Private is a kind choice (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-SAFE-S07](figures/FIG-PRESCHOOL-SAFE-S07.svg)
 
-**Child-facing text:** Shield says private is not hiding forever. It is choosing carefully who can see.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain private as careful choice.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Warm, concrete language.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Make a trust sign (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-SAFE-S08](figures/FIG-PRESCHOOL-SAFE-S08.svg)
 
-**Child-facing text:** Make a simple sign: Ask first. Put it near shared devices.
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Make an Ask-first reminder.
+**Try it:** Make one thing.
 
-**Talk together:** Local artifact.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Fair for everyone (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-SAFE-S09](figures/FIG-PRESCHOOL-SAFE-S09.svg)
 
-**Child-facing text:** Fair means we do not share someone’s private thing without asking. Stopping is fair.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model fair share rules.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** Inclusive, no shame.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach private (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-SAFE-S10](figures/FIG-PRESCHOOL-SAFE-S10.svg)
 
-**Child-facing text:** Teach a friend: private means not everyone. Ask a grown-up you trust.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** Optional share.
+**Talk together:** Easy stop.
 
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+## Unit 7. Test Means Try and See
 
----
+**Strand:** Build, Test & Share
+**Learning goal:** Check the change
 
-## UNIT-PRESCHOOL-BUILD-01 — Test Means Try and See
-
-**Strand:** Build, Test & Share (`STRAND-BUILD`)  
-**Adult concept (facilitator):** `KCON-CH27-TEST-EVIDENCE` · status `WORKING_DRAFT_COMPLETE`
-
-**Learning goal:** Test means try and see; check the change.
-
-### Spread S01 — Will the paper button work? (STORY)
+### Spread S01 — Test Means Try and See begins (STORY)
 
 ![FIG-PRESCHOOL-BUILD-S01](figures/FIG-PRESCHOOL-BUILD-S01.svg)
 
-**Child-facing text:** Bolt builds a paper button for Mira’s song game. Will it work? They need to test.
+**Child-facing text:** The crew builds a tower and tests if it stands. Test means try and see.
 
-**Try it:** Set the build-and-test problem.
+**Try it:** Listen to the tiny story.
 
-**Talk together:** Curiosity over perfection.
+**Talk together:** Pause for wonder.
 
-### Spread S02 — Notice before and after (NOTICE)
+### Spread S02 — What changed? (NOTICE)
 
 ![FIG-PRESCHOOL-BUILD-S02](figures/FIG-PRESCHOOL-BUILD-S02.svg)
 
-**Child-facing text:** Before the press, quiet. After the press — what changes? What do you notice?
+**Child-facing text:** Mira asks: what did we notice first?
 
-**Try it:** Notice before/after.
+**Try it:** Point to one change.
 
-**Talk together:** Observation first.
+**Talk together:** One idea is enough.
 
-### Spread S03 — Name test (NAME)
+### Spread S03 — Name it (NAME)
 
 ![FIG-PRESCHOOL-BUILD-S03](figures/FIG-PRESCHOOL-BUILD-S03.svg)
 
-**Child-facing text:** Test means try and see. We check if the change we want happened.
+**Child-facing text:** Test means try and see.
 
-**Try it:** Name test in plain words.
+**Try it:** Say the new word once while pointing.
 
-**Talk together:** Concrete definition.
+**Talk together:** No quiz pressure.
 
-### Spread S04 — Plan connects to check (CONNECT)
+### Spread S04 — Connect (CONNECT)
 
 ![FIG-PRESCHOOL-BUILD-S04](figures/FIG-PRESCHOOL-BUILD-S04.svg)
 
-**Child-facing text:** Step connects the plan to a check: try, see, then maybe try again.
+**Child-facing text:** Bolt connects the idea to something at home.
 
-**Try it:** Connect plan to check.
+**Try it:** Find one home example.
 
-**Talk together:** Gesture the loop.
+**Talk together:** Caregiver helps.
 
-### Spread S05 — Predict the change (PREDICT)
+### Spread S05 — Predict (PREDICT)
 
 ![FIG-PRESCHOOL-BUILD-S05](figures/FIG-PRESCHOOL-BUILD-S05.svg)
 
-**Child-facing text:** If we press the paper button, what change do you predict?
+**Child-facing text:** Step asks what might happen next.
 
-**Try it:** Predict before trying.
+**Try it:** Make one prediction.
 
-**Talk together:** Accept sincere guesses.
+**Talk together:** Wrong guesses are OK.
 
-### Spread S06 — Try and see (TRY)
+### Spread S06 — Try it (TRY)
 
 ![FIG-PRESCHOOL-BUILD-S06](figures/FIG-PRESCHOOL-BUILD-S06.svg)
 
-**Child-facing text:** Press. Look. Listen. Did the change happen? Act it with Bolt.
+**Child-facing text:** The crew tries a short, stoppable activity.
 
-**Try it:** Try and observe together.
+**Try it:** Try once; stop anytime.
 
-**Talk together:** Short, stoppable try.
+**Talk together:** Adult mediates devices.
 
-### Spread S07 — Evidence is what we saw (EXPLAIN)
+### Spread S07 — Explain (EXPLAIN)
 
 ![FIG-PRESCHOOL-BUILD-S07](figures/FIG-PRESCHOOL-BUILD-S07.svg)
 
-**Child-facing text:** Bolt says the test evidence is what we saw or heard — not only what we hoped.
+**Child-facing text:** Mira explains in kid words what happened.
 
-**Try it:** Explain evidence as what we noticed.
+**Try it:** Explain with a drawing or words.
 
-**Talk together:** Honest observation.
+**Talk together:** Celebrate clarity.
 
-### Spread S08 — Make a try-again card (MAKE)
+### Spread S08 — Make (MAKE)
 
 ![FIG-PRESCHOOL-BUILD-S08](figures/FIG-PRESCHOOL-BUILD-S08.svg)
 
-**Child-facing text:** Make cards: Try / See / Again. Line them up after your test.
+**Child-facing text:** Make a tiny artifact: card, sequence, or drawing.
 
-**Try it:** Sequence try-see-again cards.
+**Try it:** Make one thing.
 
-**Talk together:** Hands-on loop.
+**Talk together:** Keep it simple.
 
-### Spread S09 — Fair tests (SAFE + FAIR)
+### Spread S09 — Safe and fair (SAFE)
 
 ![FIG-PRESCHOOL-BUILD-S09](figures/FIG-PRESCHOOL-BUILD-S09.svg)
 
-**Child-facing text:** Shield says fair tests give everyone a turn. One try does not prove always. We can stop.
+**Child-facing text:** Shield checks: is this safe and fair for everyone?
 
-**Try it:** Model fair turns and limits.
+**Try it:** Answer with yes/not yet.
 
-**Talk together:** No shame if it fails.
+**Talk together:** No fear stories.
 
-### Spread S10 — Teach try and see (TEACH)
+### Spread S10 — Teach-back (TEACH)
 
 ![FIG-PRESCHOOL-BUILD-S10](figures/FIG-PRESCHOOL-BUILD-S10.svg)
 
-**Child-facing text:** Teach a friend: test means try and see. Share your cards.
+**Child-facing text:** Teach a grown-up one idea from today.
 
-**Try it:** Optional teach-back.
+**Try it:** Child teaches; adult listens.
 
-**Talk together:** Optional share.
-
-**Facilitator pointer:** Editor, standards, media, and provenance notes live in companion YAML/MD files — not in child-facing spreads.
+**Talk together:** Easy stop.
 
 ---
 
-## Back matter (adult-facing)
+## Back matter
 
-- Glossary: `GLOSSARY.yaml`  
-- Caregiver / educator notes: `CAREGIVER_EDUCATOR_NOTES.md`  
-- Accessibility: `ACCESSIBILITY_NOTES.md`  
-- Standards traceability: `STANDARDS_TRACEABILITY.yaml`  
-- Media evidence: `MEDIA_EVIDENCE_TRACEABILITY.yaml`  
-- WAIKE: caregiver/educator facing only; audited SHA `e97e74fc9bfb44b1cdc26b272dc4848264f15fe0` — see `BOOK_METADATA.yaml` / `STANDARDS_TRACEABILITY.yaml`. Do not invent Kids Edition WAIKE course IDs.
+### Age-appropriate glossary
+
+See `GLOSSARY.yaml` (caregiver-facing definitions).
+
+### Caregiver / educator extensions
+
+See `CAREGIVER_EDUCATOR_NOTES.md`.
+
+### Adult standards / evidence appendix
+
+See `STANDARDS_TRACEABILITY.yaml` and `MEDIA_EVIDENCE_TRACEABILITY.yaml`. Not for child read-aloud.
+
+### Accessibility alternatives
+
+See `ACCESSIBILITY_NOTES.md`.
+
+### Provenance
+
+Adult-facing only. Working draft. Not child-validated. Not publication-ready.

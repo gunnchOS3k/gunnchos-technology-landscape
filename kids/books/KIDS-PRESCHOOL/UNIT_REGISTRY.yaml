@@ -1,542 +1,283 @@
-# UNIT REGISTRY — KIDS-PRESCHOOL (adult-facing)
-# claim_ceiling: WORKING_DRAFT_COMPLETE
+meta:
+  age_band: KIDS-PRESCHOOL
+  status: WORKING_DRAFT_COMPLETE
 units:
-  - unit_id: UNIT-PRESCHOOL-ME-TECH-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-ME-TECH
-    strand_name: Me & Technology
-    title: "Screen Is One Part"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 134
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH01-SYSTEM-NOT-SCREEN
-    adult_chapter_connections:
-      - CH01
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-ME-TECH-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-ME-TECH-01
-    standards_status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-ELOF-PLAY-KE
-      - MAP-EYFS-PLAY-KE
-      - MAP-EYLF-PLAY-KE
-      - MAP-TEWHARIKI-PLAY-KE
-      - MAP-NEL-PLAY-KE
-      - MAP-ON-KG-PLAY-KE
-      - MAP-OECD-AGENCY-KE
-      - MAP-NCF-PLAY-KE
-      - MAP-CSTA2026-SYS-KE
-    atlas_kids_targets:
-      - KE-TARGET-PLAY-INQUIRY
-      - KE-TARGET-SYSTEMS-STABILITY
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - part
-      - outside
-      - inside
-      - screen
-      - device
-    figures:
-      - FIG-PRESCHOOL-ME-TECH-S01
-      - FIG-PRESCHOOL-ME-TECH-S02
-      - FIG-PRESCHOOL-ME-TECH-S03
-      - FIG-PRESCHOOL-ME-TECH-S04
-      - FIG-PRESCHOOL-ME-TECH-S05
-      - FIG-PRESCHOOL-ME-TECH-S06
-      - FIG-PRESCHOOL-ME-TECH-S07
-      - FIG-PRESCHOOL-ME-TECH-S08
-      - FIG-PRESCHOOL-ME-TECH-S09
-      - FIG-PRESCHOOL-ME-TECH-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
-  - unit_id: UNIT-PRESCHOOL-INSIDE-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-INSIDE
-    strand_name: Inside the Machine
-    title: "Parts We Can Name"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 142
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH04-DEVICE-FORMS
-    adult_chapter_connections:
-      - CH04
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-INSIDE-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-INSIDE-01
-    standards_status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-NGSS-SCI-KE
-      - MAP-CSTA2026-SYS-KE
-    atlas_kids_targets:
-      - KE-TARGET-SCIENCE-PRACTICES
-      - KE-TARGET-SYSTEMS-STABILITY
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - button
-      - light
-      - speaker
-      - part
-      - device
-    figures:
-      - FIG-PRESCHOOL-INSIDE-S01
-      - FIG-PRESCHOOL-INSIDE-S02
-      - FIG-PRESCHOOL-INSIDE-S03
-      - FIG-PRESCHOOL-INSIDE-S04
-      - FIG-PRESCHOOL-INSIDE-S05
-      - FIG-PRESCHOOL-INSIDE-S06
-      - FIG-PRESCHOOL-INSIDE-S07
-      - FIG-PRESCHOOL-INSIDE-S08
-      - FIG-PRESCHOOL-INSIDE-S09
-      - FIG-PRESCHOOL-INSIDE-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
-  - unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-INSTRUCTIONS
-    strand_name: Instructions & Code
-    title: "Steps for a Helper"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 131
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH14-APPS-UI
-    adult_chapter_connections:
-      - CH14
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-INSTRUCTIONS-01
-    standards_status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-    atlas_kids_targets:
-      - KE-TARGET-ALGO-FOUNDATIONS
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - step
-      - first
-      - next
-      - last
-      - helper
-      - instruction
-    figures:
-      - FIG-PRESCHOOL-INSTRUCTIONS-S01
-      - FIG-PRESCHOOL-INSTRUCTIONS-S02
-      - FIG-PRESCHOOL-INSTRUCTIONS-S03
-      - FIG-PRESCHOOL-INSTRUCTIONS-S04
-      - FIG-PRESCHOOL-INSTRUCTIONS-S05
-      - FIG-PRESCHOOL-INSTRUCTIONS-S06
-      - FIG-PRESCHOOL-INSTRUCTIONS-S07
-      - FIG-PRESCHOOL-INSTRUCTIONS-S08
-      - FIG-PRESCHOOL-INSTRUCTIONS-S09
-      - FIG-PRESCHOOL-INSTRUCTIONS-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
-  - unit_id: UNIT-PRESCHOOL-MESSAGES-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-MESSAGES
-    strand_name: Messages & Connections
-    title: "Devices Send Messages"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 139
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH16-PACKETS-INTERNET
-    adult_chapter_connections:
-      - CH16
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-MESSAGES-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-MESSAGES-01
-    standards_status: NOT_YET_MAPPED
-    atlas_mapping_ids:
-      []
-    atlas_kids_targets:
-      []
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - message
-      - send
-      - here
-      - there
-      - arrive
-    figures:
-      - FIG-PRESCHOOL-MESSAGES-S01
-      - FIG-PRESCHOOL-MESSAGES-S02
-      - FIG-PRESCHOOL-MESSAGES-S03
-      - FIG-PRESCHOOL-MESSAGES-S04
-      - FIG-PRESCHOOL-MESSAGES-S05
-      - FIG-PRESCHOOL-MESSAGES-S06
-      - FIG-PRESCHOOL-MESSAGES-S07
-      - FIG-PRESCHOOL-MESSAGES-S08
-      - FIG-PRESCHOOL-MESSAGES-S09
-      - FIG-PRESCHOOL-MESSAGES-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
-  - unit_id: UNIT-PRESCHOOL-DATA-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-DATA
-    strand_name: Data & Intelligence
-    title: "Keep-Boxes Have Names"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 140
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH13-FILES-DATA-LIFE
-    adult_chapter_connections:
-      - CH13
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-DATA-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-DATA-01
-    standards_status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-CSTA2026-DATA-KE
-      - MAP-UNESCO-AI-KE
-    atlas_kids_targets:
-      - KE-TARGET-DATA-PATTERNS
-      - KE-TARGET-AI-LITERACY
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - keep-box
-      - name
-      - save
-      - find
-      - later
-    figures:
-      - FIG-PRESCHOOL-DATA-S01
-      - FIG-PRESCHOOL-DATA-S02
-      - FIG-PRESCHOOL-DATA-S03
-      - FIG-PRESCHOOL-DATA-S04
-      - FIG-PRESCHOOL-DATA-S05
-      - FIG-PRESCHOOL-DATA-S06
-      - FIG-PRESCHOOL-DATA-S07
-      - FIG-PRESCHOOL-DATA-S08
-      - FIG-PRESCHOOL-DATA-S09
-      - FIG-PRESCHOOL-DATA-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
-  - unit_id: UNIT-PRESCHOOL-SAFE-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-SAFE
-    strand_name: Safe, Private & Fair
-    title: "Private Means Not Everyone"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 127
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH24-PRIVACY-ETHICS
-    adult_chapter_connections:
-      - CH24
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-SAFE-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-SAFE-01
-    standards_status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-UNESCO-AI-CITIZEN-KE
-      - MAP-CSTA2026-SOC-KE
-    atlas_kids_targets:
-      - KE-TARGET-DIGITAL-CITIZENSHIP
-      - KE-TARGET-COMPUTING-SOCIETY
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - private
-      - share
-      - ask
-      - trusted
-      - everyone
-    figures:
-      - FIG-PRESCHOOL-SAFE-S01
-      - FIG-PRESCHOOL-SAFE-S02
-      - FIG-PRESCHOOL-SAFE-S03
-      - FIG-PRESCHOOL-SAFE-S04
-      - FIG-PRESCHOOL-SAFE-S05
-      - FIG-PRESCHOOL-SAFE-S06
-      - FIG-PRESCHOOL-SAFE-S07
-      - FIG-PRESCHOOL-SAFE-S08
-      - FIG-PRESCHOOL-SAFE-S09
-      - FIG-PRESCHOOL-SAFE-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
-  - unit_id: UNIT-PRESCHOOL-BUILD-01
-    age_band: KIDS-PRESCHOOL
-    strand: STRAND-BUILD
-    strand_name: Build, Test & Share
-    title: "Test Means Try and See"
-    status: WORKING_DRAFT_COMPLETE
-    word_count_child_facing: 133
-    spread_or_section_count: 10
-    concept_ids:
-      - KCON-CH27-TEST-EVIDENCE
-    adult_chapter_connections:
-      - CH27
-    standards_mapping_ids:
-      - MAP-UNIT-PRESCHOOL-BUILD-01
-    standards_wire_ids:
-      - STD-WIRE-UNIT-PRESCHOOL-BUILD-01
-    standards_status: ADJACENT
-    atlas_mapping_ids:
-      - MAP-NGSS-SCI-KE
-      - MAP-CSTA2026-ALGO-KE
-      - MAP-AC-DT-KE
-    atlas_kids_targets:
-      - KE-TARGET-SCIENCE-PRACTICES
-      - KE-TARGET-ALGO-FOUNDATIONS
-    media_evidence_ids:
-      - CME-005
-      - CME-006
-      - CME-008
-      - CME-009
-      - CME-010
-      - CME-011
-      - CME-013
-      - CME-016
-      - CME-017
-      - CME-018
-      - CME-021
-      - CME-022
-      - CME-023
-      - CME-024
-      - CME-025
-      - CME-026
-      - CME-027
-      - CME-028
-      - CME-029
-    vocabulary:
-      - test
-      - try
-      - see
-      - check
-      - change
-      - again
-    figures:
-      - FIG-PRESCHOOL-BUILD-S01
-      - FIG-PRESCHOOL-BUILD-S02
-      - FIG-PRESCHOOL-BUILD-S03
-      - FIG-PRESCHOOL-BUILD-S04
-      - FIG-PRESCHOOL-BUILD-S05
-      - FIG-PRESCHOOL-BUILD-S06
-      - FIG-PRESCHOOL-BUILD-S07
-      - FIG-PRESCHOOL-BUILD-S08
-      - FIG-PRESCHOOL-BUILD-S09
-      - FIG-PRESCHOOL-BUILD-S10
-    activities:
-      - prediction_before_try
-      - sequencing_first_next_last
-      - sorting_or_card_make
-      - optional_teach_back
-    safety_notes:
-      - adult_mediation
-      - easy_stop
-      - no_child_data_collection
-      - no_dark_patterns
-      - no_sealed_device_disassembly
-    accessibility_routes:
-      - pointing_gestures
-      - drawing_cards
-      - AAC_ok
-      - no_forced_verbal_performance
+- unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-ME-TECH
+  title: Screen Is One Part
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 79
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  adult_chapter_connections:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-ME-TECH-01
+  media_evidence_ids: &id001
+  - CME-001
+  - CME-005
+  - CME-008
+  - CME-011
+  - CME-016
+  - CME-022
+  figures:
+  - FIG-PRESCHOOL-ME-TECH-S01
+  - FIG-PRESCHOOL-ME-TECH-S02
+  - FIG-PRESCHOOL-ME-TECH-S03
+  - FIG-PRESCHOOL-ME-TECH-S04
+  - FIG-PRESCHOOL-ME-TECH-S05
+  - FIG-PRESCHOOL-ME-TECH-S06
+  - FIG-PRESCHOOL-ME-TECH-S07
+  - FIG-PRESCHOOL-ME-TECH-S08
+  - FIG-PRESCHOOL-ME-TECH-S09
+  - FIG-PRESCHOOL-ME-TECH-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-PRESCHOOL-INSIDE-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-INSIDE
+  title: Parts We Can Name
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 79
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH04-DEVICE-FORMS
+  adult_chapter_connections:
+  - KCON-CH04-DEVICE-FORMS
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-INSIDE-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-PRESCHOOL-INSIDE-S01
+  - FIG-PRESCHOOL-INSIDE-S02
+  - FIG-PRESCHOOL-INSIDE-S03
+  - FIG-PRESCHOOL-INSIDE-S04
+  - FIG-PRESCHOOL-INSIDE-S05
+  - FIG-PRESCHOOL-INSIDE-S06
+  - FIG-PRESCHOOL-INSIDE-S07
+  - FIG-PRESCHOOL-INSIDE-S08
+  - FIG-PRESCHOOL-INSIDE-S09
+  - FIG-PRESCHOOL-INSIDE-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-INSTRUCTIONS
+  title: Steps for a Helper
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 81
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH14-APPS-UI
+  adult_chapter_connections:
+  - KCON-CH14-APPS-UI
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-PRESCHOOL-INSTRUCTIONS-S01
+  - FIG-PRESCHOOL-INSTRUCTIONS-S02
+  - FIG-PRESCHOOL-INSTRUCTIONS-S03
+  - FIG-PRESCHOOL-INSTRUCTIONS-S04
+  - FIG-PRESCHOOL-INSTRUCTIONS-S05
+  - FIG-PRESCHOOL-INSTRUCTIONS-S06
+  - FIG-PRESCHOOL-INSTRUCTIONS-S07
+  - FIG-PRESCHOOL-INSTRUCTIONS-S08
+  - FIG-PRESCHOOL-INSTRUCTIONS-S09
+  - FIG-PRESCHOOL-INSTRUCTIONS-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-MESSAGES
+  title: Devices Send Messages
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 81
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+  adult_chapter_connections:
+  - KCON-CH16-PACKETS-INTERNET
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-MESSAGES-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-PRESCHOOL-MESSAGES-S01
+  - FIG-PRESCHOOL-MESSAGES-S02
+  - FIG-PRESCHOOL-MESSAGES-S03
+  - FIG-PRESCHOOL-MESSAGES-S04
+  - FIG-PRESCHOOL-MESSAGES-S05
+  - FIG-PRESCHOOL-MESSAGES-S06
+  - FIG-PRESCHOOL-MESSAGES-S07
+  - FIG-PRESCHOOL-MESSAGES-S08
+  - FIG-PRESCHOOL-MESSAGES-S09
+  - FIG-PRESCHOOL-MESSAGES-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-PRESCHOOL-DATA-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-DATA
+  title: Keep-Boxes Have Names
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 71
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH13-FILES-DATA-LIFE
+  adult_chapter_connections:
+  - KCON-CH13-FILES-DATA-LIFE
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-DATA-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-PRESCHOOL-DATA-S01
+  - FIG-PRESCHOOL-DATA-S02
+  - FIG-PRESCHOOL-DATA-S03
+  - FIG-PRESCHOOL-DATA-S04
+  - FIG-PRESCHOOL-DATA-S05
+  - FIG-PRESCHOOL-DATA-S06
+  - FIG-PRESCHOOL-DATA-S07
+  - FIG-PRESCHOOL-DATA-S08
+  - FIG-PRESCHOOL-DATA-S09
+  - FIG-PRESCHOOL-DATA-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-PRESCHOOL-SAFE-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-SAFE
+  title: Private Means Not Everyone
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 74
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH24-PRIVACY-ETHICS
+  adult_chapter_connections:
+  - KCON-CH24-PRIVACY-ETHICS
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-SAFE-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-PRESCHOOL-SAFE-S01
+  - FIG-PRESCHOOL-SAFE-S02
+  - FIG-PRESCHOOL-SAFE-S03
+  - FIG-PRESCHOOL-SAFE-S04
+  - FIG-PRESCHOOL-SAFE-S05
+  - FIG-PRESCHOOL-SAFE-S06
+  - FIG-PRESCHOOL-SAFE-S07
+  - FIG-PRESCHOOL-SAFE-S08
+  - FIG-PRESCHOOL-SAFE-S09
+  - FIG-PRESCHOOL-SAFE-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-PRESCHOOL-BUILD-01
+  age_band: KIDS-PRESCHOOL
+  strand: STRAND-BUILD
+  title: Test Means Try and See
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 79
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH27-TEST-EVIDENCE
+  adult_chapter_connections:
+  - KCON-CH27-TEST-EVIDENCE
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-BUILD-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-PRESCHOOL-BUILD-S01
+  - FIG-PRESCHOOL-BUILD-S02
+  - FIG-PRESCHOOL-BUILD-S03
+  - FIG-PRESCHOOL-BUILD-S04
+  - FIG-PRESCHOOL-BUILD-S05
+  - FIG-PRESCHOOL-BUILD-S06
+  - FIG-PRESCHOOL-BUILD-S07
+  - FIG-PRESCHOOL-BUILD-S08
+  - FIG-PRESCHOOL-BUILD-S09
+  - FIG-PRESCHOOL-BUILD-S10
+  activities:
+  - Listen to the tiny story.
+  - Point to one change.
+  - Say the new word once while pointing.
+  - Find one home example.
+  - Make one prediction.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual

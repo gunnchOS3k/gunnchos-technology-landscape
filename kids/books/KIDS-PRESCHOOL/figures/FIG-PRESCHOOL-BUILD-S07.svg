@@ -1,19 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PRESCHOOL-BUILD-S07-title FIG-PRESCHOOL-BUILD-S07-desc" data-asset-id="FIG-PRESCHOOL-BUILD-S07">
-  <title id="FIG-PRESCHOOL-BUILD-S07-title">FIG-PRESCHOOL-BUILD-S07: Evidence is what we saw</title>
-  <desc id="FIG-PRESCHOOL-BUILD-S07-desc">Style-neutral PRESCHOOL prototype. Action: Explain evidence as what we noticed.. Child text excerpt: Bolt says the test evidence is what we saw or heard — not only what we hoped.</desc>
+  <title id="FIG-PRESCHOOL-BUILD-S07-title">FIG-PRESCHOOL-BUILD-S07: Explain</title>
+  <desc id="FIG-PRESCHOOL-BUILD-S07-desc">Explain: Explain with a drawing or words.</desc>
   <rect width="800" height="500" fill="#fffef8"/>
   <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
-  <text x="40" y="52" font-family="Georgia, serif" font-size="20" fill="#111">FIG-PRESCHOOL-BUILD-S07</text>
-  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PRESCHOOL · EXPLAIN</text>
-  <text x="40" y="98" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Evidence is what we saw</text>
-  <text x="40" y="120" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
-  <g transform="translate(320,90)">
-    <rect x="40" y="160" width="100" height="70" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
-    <line x1="140" y1="195" x2="220" y2="195" stroke="#111" stroke-width="4"/>
-    <circle cx="260" cy="195" r="40" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
-  </g>
-  <foreignObject x="40" y="320" width="720" height="120">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 16px; color:#111; line-height:1.35;">Bolt says the test evidence is what we saw or heard — not only what we hoped.</div>
-  </foreignObject>
-  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+  <text x="36" y="48" font-family="Georgia, serif" font-size="16" fill="#111">FIG-PRESCHOOL-BUILD-S07</text>
+  <text x="36" y="88" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Explain</text>
+  <circle cx="70" cy="140" r="18" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="100" y="146" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">EXPLAIN</text>
+  <circle cx="70" cy="190" r="18" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="100" y="196" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">Mira explains in kid words what happened</text>
+  <circle cx="70" cy="240" r="18" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="100" y="246" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">Signal Crew provisional</text>
+  <text x="36" y="470" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS FULL WORKING MANUSCRIPT · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
 </svg>
