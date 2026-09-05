@@ -1,0 +1,28 @@
+# BOOK METADATA — KIDS-PRESCHOOL (adult-facing)
+# KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY · KIDS_CHILD_VALIDATION_PENDING · NO_CHILD_VALIDATION_EVIDENCE · NO_STANDARDS_CERTIFICATION_EVIDENCE
+
+meta:
+  book_id: KIDS-PRESCHOOL-FULL-WORKING-MANUSCRIPT
+  age_band: KIDS-PRESCHOOL
+  age_guide: "3–4 years"
+  title: "KIDS-PRESCHOOL Full Working Manuscript (7 Strands)"
+  claim_ceiling: WORKING_DRAFT_COMPLETE
+  child_validation: NONE
+  publication_ready: false
+  character_cast: A_Signal_Crew_provisional
+  cadence: STORY→NOTICE→NAME→CONNECT→PREDICT→TRY→EXPLAIN→MAKE→SAFE+FAIR→TEACH
+  spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+  scope_ref: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
+  pilot_anchor: kids/pilots/ONE_TAP/KIDS-PRESCHOOL
+  adult_main_sha: 82284cd8f41d750ff508cd6ea5bad0a9534d8162
+  waike_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  waike_posture: caregiver_educator_facing_only
+  standards_relationship: CROSSWALKED_AGAINST
+  fidelity_ceiling: ADJACENT
+  unit_count: 7
+  non_claims:
+    - NOT CHILD-VALIDATED
+    - NOT PUBLICATION-READY
+    - NO_CHILD_VALIDATION_EVIDENCE
+    - NO_STANDARDS_CERTIFICATION_EVIDENCE
+    - NOT GLOBALLY_ALIGNED

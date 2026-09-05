@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PRESCHOOL-ME-TECH-S02-title FIG-PRESCHOOL-ME-TECH-S02-desc" data-asset-id="FIG-PRESCHOOL-ME-TECH-S02">
+  <title id="FIG-PRESCHOOL-ME-TECH-S02-title">FIG-PRESCHOOL-ME-TECH-S02: What we notice</title>
+  <desc id="FIG-PRESCHOOL-ME-TECH-S02-desc">Style-neutral PRESCHOOL prototype. Action: List noticed parts with pointing.. Child text excerpt: The screen lights up. A button waits. A speaker sits nearby. What did you see first?</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="20" fill="#111">FIG-PRESCHOOL-ME-TECH-S02</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PRESCHOOL · NOTICE</text>
+  <text x="40" y="98" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">What we notice</text>
+  <text x="40" y="120" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+  <g transform="translate(300,80)">
+    <circle cx="80" cy="180" r="36" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+    <rect x="160" y="150" width="70" height="70" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+    <polygon points="280,220 320,150 360,220" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+  </g>
+  <foreignObject x="40" y="320" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 16px; color:#111; line-height:1.35;">The screen lights up. A button waits. A speaker sits nearby. What did you see first?</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

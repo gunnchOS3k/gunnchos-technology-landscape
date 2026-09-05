@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PRESCHOOL-MESSAGES-S09-title FIG-PRESCHOOL-MESSAGES-S09-desc" data-asset-id="FIG-PRESCHOOL-MESSAGES-S09">
+  <title id="FIG-PRESCHOOL-MESSAGES-S09-title">FIG-PRESCHOOL-MESSAGES-S09: Ask before sending</title>
+  <desc id="FIG-PRESCHOOL-MESSAGES-S09-desc">Style-neutral PRESCHOOL prototype. Action: Model consent before send.. Child text excerpt: Shield asks: who should see this message? We ask a grown-up before sending.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="20" fill="#111">FIG-PRESCHOOL-MESSAGES-S09</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PRESCHOOL · SAFE + FAIR</text>
+  <text x="40" y="98" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Ask before sending</text>
+  <text x="40" y="120" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+  <g transform="translate(380,70)">
+    <path d="M200 140 L260 160 L260 210 C260 250 200 280 200 280 C200 280 140 250 140 210 L140 160 Z" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+    <circle cx="200" cy="200" r="10" fill="#111"/>
+  </g>
+  <foreignObject x="40" y="320" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 16px; color:#111; line-height:1.35;">Shield asks: who should see this message? We ask a grown-up before sending.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

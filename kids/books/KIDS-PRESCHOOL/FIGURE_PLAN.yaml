@@ -1,0 +1,706 @@
+# FIGURE PLAN — KIDS-PRESCHOOL
+meta:
+  age_band: KIDS-PRESCHOOL
+  style: style_neutral_prototype
+  print_safe_px: {width: 800, height: 500}
+figures:
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S01
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S01
+    domain: STORY
+    title: "The music box"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S01.svg
+    alt: "Style-neutral preschool figure for The music box: Meet Mira and Bolt; set the tiny problem."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S02
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S02
+    domain: NOTICE
+    title: "What we notice"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S02.svg
+    alt: "Style-neutral preschool figure for What we notice: List noticed parts with pointing."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S03
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S03
+    domain: NAME
+    title: "Name the outsides"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S03.svg
+    alt: "Style-neutral preschool figure for Name the outsides: Count three outside parts on fingers."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S04
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S04
+    domain: CONNECT
+    title: "Something inside helps"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S04.svg
+    alt: "Style-neutral preschool figure for Something inside helps: Gesture from outside to inside helpers."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S05
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict the parts"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S05.svg
+    alt: "Style-neutral preschool figure for Predict the parts: Predict which part acts next."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S06
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S06
+    domain: TRY
+    title: "Try the song path"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S06.svg
+    alt: "Style-neutral preschool figure for Try the song path: Act outside to inside to sound with gestures."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S07
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S07
+    domain: EXPLAIN
+    title: "One part of many"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S07.svg
+    alt: "Style-neutral preschool figure for One part of many: Explain screen-as-one-part in plain words."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S08
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S08
+    domain: MAKE
+    title: "Sort outside and inside"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S08.svg
+    alt: "Style-neutral preschool figure for Sort outside and inside: Sorting outside vs inside with cards."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S09
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Stop anytime"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S09.svg
+    alt: "Style-neutral preschool figure for Stop anytime: Model agency to stop."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-ME-TECH-S10
+    unit_id: UNIT-PRESCHOOL-ME-TECH-01
+    spread: S10
+    domain: TEACH
+    title: "Teach a friend"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-ME-TECH-S10.svg
+    alt: "Style-neutral preschool figure for Teach a friend: Optional teach-back."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S01
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S01
+    domain: STORY
+    title: "Three friend devices"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S01.svg
+    alt: "Style-neutral preschool figure for Three friend devices: Meet three device shapes."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S02
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S02
+    domain: NOTICE
+    title: "Notice the parts"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S02.svg
+    alt: "Style-neutral preschool figure for Notice the parts: Point to button, light, speaker."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S03
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S03
+    domain: NAME
+    title: "Name three parts"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S03.svg
+    alt: "Style-neutral preschool figure for Name three parts: Say or gesture each part name."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S04
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S04
+    domain: CONNECT
+    title: "Same parts, different shapes"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S04.svg
+    alt: "Style-neutral preschool figure for Same parts, different shapes: Connect same part across two shapes."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S05
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict the job"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S05.svg
+    alt: "Style-neutral preschool figure for Predict the job: Predict before trying."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S06
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S06
+    domain: TRY
+    title: "Try naming on each"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S06.svg
+    alt: "Style-neutral preschool figure for Try naming on each: Name parts on each device in turn."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S07
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S07
+    domain: EXPLAIN
+    title: "Parts help jobs"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S07.svg
+    alt: "Style-neutral preschool figure for Parts help jobs: Explain why naming parts helps."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S08
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S08
+    domain: MAKE
+    title: "Make a parts collage"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S08.svg
+    alt: "Style-neutral preschool figure for Make a parts collage: Hands-on parts collage."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S09
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Gentle hands"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S09.svg
+    alt: "Style-neutral preschool figure for Gentle hands: Model gentle, mediated looking."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSIDE-S10
+    unit_id: UNIT-PRESCHOOL-INSIDE-01
+    spread: S10
+    domain: TEACH
+    title: "Teach the three names"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSIDE-S10.svg
+    alt: "Style-neutral preschool figure for Teach the three names: Optional teach-back of three names."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S01
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S01
+    domain: STORY
+    title: "Helper needs steps"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S01.svg
+    alt: "Style-neutral preschool figure for Helper needs steps: Set the helper problem."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S02
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S02
+    domain: NOTICE
+    title: "Notice the order"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S02.svg
+    alt: "Style-neutral preschool figure for Notice the order: Notice first/next/last with gestures."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S03
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S03
+    domain: NAME
+    title: "Name the steps"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S03.svg
+    alt: "Style-neutral preschool figure for Name the steps: Count three step words on fingers."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S04
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S04
+    domain: CONNECT
+    title: "Icons are not the whole helper"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S04.svg
+    alt: "Style-neutral preschool figure for Icons are not the whole helper: Connect icon to steps behind it."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S05
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict a mix-up"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S05.svg
+    alt: "Style-neutral preschool figure for Predict a mix-up: Predict a scrambled-order outcome."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S06
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S06
+    domain: TRY
+    title: "Try the helper steps"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S06.svg
+    alt: "Style-neutral preschool figure for Try the helper steps: Body sequence of three steps."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S07
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S07
+    domain: EXPLAIN
+    title: "Instructions are steps"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S07.svg
+    alt: "Style-neutral preschool figure for Instructions are steps: Explain instructions-as-steps."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S08
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S08
+    domain: MAKE
+    title: "Make step cards"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S08.svg
+    alt: "Style-neutral preschool figure for Make step cards: Sequence cards for the helper."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S09
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Fair turns for helpers"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S09.svg
+    alt: "Style-neutral preschool figure for Fair turns for helpers: Model fair turns and easy stop."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-INSTRUCTIONS-S10
+    unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+    spread: S10
+    domain: TEACH
+    title: "Teach the steps"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-INSTRUCTIONS-S10.svg
+    alt: "Style-neutral preschool figure for Teach the steps: Optional teach-back of sequence."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S01
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S01
+    domain: STORY
+    title: "A picture for Bolt"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S01.svg
+    alt: "Style-neutral preschool figure for A picture for Bolt: Set the send-message problem."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S02
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S02
+    domain: NOTICE
+    title: "Notice here and there"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S02.svg
+    alt: "Style-neutral preschool figure for Notice here and there: Point here and there."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S03
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S03
+    domain: NAME
+    title: "Name a message"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S03.svg
+    alt: "Style-neutral preschool figure for Name a message: Name message in plain words."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S04
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S04
+    domain: CONNECT
+    title: "Ping carries it"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S04.svg
+    alt: "Style-neutral preschool figure for Ping carries it: Connect send to travel to arrive."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S05
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict arrival"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S05.svg
+    alt: "Style-neutral preschool figure for Predict arrival: Predict send order."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S06
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S06
+    domain: TRY
+    title: "Try a room send"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S06.svg
+    alt: "Style-neutral preschool figure for Try a room send: Supervised local send try."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S07
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S07
+    domain: EXPLAIN
+    title: "Sending is a path"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S07.svg
+    alt: "Style-neutral preschool figure for Sending is a path: Explain path and waiting."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S08
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S08
+    domain: MAKE
+    title: "Make a message path"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S08.svg
+    alt: "Style-neutral preschool figure for Make a message path: Draw a simple message path."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S09
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Ask before sending"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S09.svg
+    alt: "Style-neutral preschool figure for Ask before sending: Model consent before send."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-MESSAGES-S10
+    unit_id: UNIT-PRESCHOOL-MESSAGES-01
+    spread: S10
+    domain: TEACH
+    title: "Teach the send story"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-MESSAGES-S10.svg
+    alt: "Style-neutral preschool figure for Teach the send story: Optional teach-back."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S01
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S01
+    domain: STORY
+    title: "Where did the drawing go?"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S01.svg
+    alt: "Style-neutral preschool figure for Where did the drawing go?: Set the lost-drawing problem."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S02
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S02
+    domain: NOTICE
+    title: "Notice keep-boxes"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S02.svg
+    alt: "Style-neutral preschool figure for Notice keep-boxes: Notice named containers."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S03
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S03
+    domain: NAME
+    title: "Names on boxes"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S03.svg
+    alt: "Style-neutral preschool figure for Names on boxes: Name a keep-box aloud."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S04
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S04
+    domain: CONNECT
+    title: "Save means keep"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S04.svg
+    alt: "Style-neutral preschool figure for Save means keep: Connect save to keep-box to later."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S05
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict the find"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S05.svg
+    alt: "Style-neutral preschool figure for Predict the find: Predict by name."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S06
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S06
+    domain: TRY
+    title: "Try naming a keep-box"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S06.svg
+    alt: "Style-neutral preschool figure for Try naming a keep-box: Hands-on named keep-box."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S07
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S07
+    domain: EXPLAIN
+    title: "Names help find"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S07.svg
+    alt: "Style-neutral preschool figure for Names help find: Explain why names help."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S08
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S08
+    domain: MAKE
+    title: "Make two named boxes"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S08.svg
+    alt: "Style-neutral preschool figure for Make two named boxes: Sort into named boxes."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S09
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Private keep-boxes"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S09.svg
+    alt: "Style-neutral preschool figure for Private keep-boxes: Model private vs shared boxes."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-DATA-S10
+    unit_id: UNIT-PRESCHOOL-DATA-01
+    spread: S10
+    domain: TEACH
+    title: "Teach keep-box names"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-DATA-S10.svg
+    alt: "Style-neutral preschool figure for Teach keep-box names: Optional teach-back."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S01
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S01
+    domain: STORY
+    title: "A family photo"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S01.svg
+    alt: "Style-neutral preschool figure for A family photo: Set the share-or-not problem."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S02
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S02
+    domain: NOTICE
+    title: "Notice who can see"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S02.svg
+    alt: "Style-neutral preschool figure for Notice who can see: Notice audience with pointing."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S03
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S03
+    domain: NAME
+    title: "Name private"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S03.svg
+    alt: "Style-neutral preschool figure for Name private: Name private in plain words."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S04
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S04
+    domain: CONNECT
+    title: "Ask a grown-up"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S04.svg
+    alt: "Style-neutral preschool figure for Ask a grown-up: Connect private to ask to share."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S05
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict the choice"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S05.svg
+    alt: "Style-neutral preschool figure for Predict the choice: Predict share outcomes."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S06
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S06
+    domain: TRY
+    title: "Try a private choice"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S06.svg
+    alt: "Style-neutral preschool figure for Try a private choice: Sort trusted vs everyone."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S07
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S07
+    domain: EXPLAIN
+    title: "Private is a kind choice"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S07.svg
+    alt: "Style-neutral preschool figure for Private is a kind choice: Explain private as careful choice."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S08
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S08
+    domain: MAKE
+    title: "Make a trust sign"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S08.svg
+    alt: "Style-neutral preschool figure for Make a trust sign: Make an Ask-first reminder."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S09
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Fair for everyone"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S09.svg
+    alt: "Style-neutral preschool figure for Fair for everyone: Model fair share rules."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-SAFE-S10
+    unit_id: UNIT-PRESCHOOL-SAFE-01
+    spread: S10
+    domain: TEACH
+    title: "Teach private"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-SAFE-S10.svg
+    alt: "Style-neutral preschool figure for Teach private: Optional teach-back."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S01
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S01
+    domain: STORY
+    title: "Will the paper button work?"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S01.svg
+    alt: "Style-neutral preschool figure for Will the paper button work?: Set the build-and-test problem."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S02
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S02
+    domain: NOTICE
+    title: "Notice before and after"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S02.svg
+    alt: "Style-neutral preschool figure for Notice before and after: Notice before/after."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S03
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S03
+    domain: NAME
+    title: "Name test"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S03.svg
+    alt: "Style-neutral preschool figure for Name test: Name test in plain words."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S04
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S04
+    domain: CONNECT
+    title: "Plan connects to check"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S04.svg
+    alt: "Style-neutral preschool figure for Plan connects to check: Connect plan to check."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S05
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S05
+    domain: PREDICT
+    title: "Predict the change"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S05.svg
+    alt: "Style-neutral preschool figure for Predict the change: Predict before trying."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S06
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S06
+    domain: TRY
+    title: "Try and see"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S06.svg
+    alt: "Style-neutral preschool figure for Try and see: Try and observe together."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S07
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S07
+    domain: EXPLAIN
+    title: "Evidence is what we saw"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S07.svg
+    alt: "Style-neutral preschool figure for Evidence is what we saw: Explain evidence as what we noticed."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S08
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S08
+    domain: MAKE
+    title: "Make a try-again card"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S08.svg
+    alt: "Style-neutral preschool figure for Make a try-again card: Sequence try-see-again cards."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S09
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S09
+    domain: SAFE + FAIR
+    title: "Fair tests"
+    status: DIAGRAM_SVG_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S09.svg
+    alt: "Style-neutral preschool figure for Fair tests: Model fair turns and limits."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+  - figure_id: FIG-PRESCHOOL-BUILD-S10
+    unit_id: UNIT-PRESCHOOL-BUILD-01
+    spread: S10
+    domain: TEACH
+    title: "Teach try and see"
+    status: ILLUSTRATION_DIRECTION_READY
+    production_status: STYLE_NEUTRAL_SVG_PROTOTYPE
+    path: figures/FIG-PRESCHOOL-BUILD-S10.svg
+    alt: "Style-neutral preschool figure for Teach try and see: Optional teach-back."
+    media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
