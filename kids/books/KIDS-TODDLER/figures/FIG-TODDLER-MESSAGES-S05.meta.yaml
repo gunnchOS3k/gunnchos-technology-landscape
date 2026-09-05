@@ -1,0 +1,23 @@
+asset_id: FIG-TODDLER-MESSAGES-S05
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-TODDLER
+unit_id: UNIT-TODDLER-MESSAGES-01
+cadence_beat: WAIT
+alt: "Style-neutral diagram for 'On the way.': Watch it move."
+description: "Watch it move."
+purpose: "Messages Move spread S05 (WAIT)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 400, 720, 60]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/books/KIDS-TODDLER/figures/FIG-TODDLER-MESSAGES-S05.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body
+production_status: DETERMINISTIC_DIAGRAM_READY

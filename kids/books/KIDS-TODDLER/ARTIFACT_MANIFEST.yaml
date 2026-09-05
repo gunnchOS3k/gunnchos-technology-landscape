@@ -1,0 +1,272 @@
+# ARTIFACT_MANIFEST — KIDS-TODDLER
+meta:
+  age_band: KIDS-TODDLER
+  status: WORKING_DRAFT_COMPLETE
+  child_validation: NONE
+artifacts:
+  - path: README.md
+    kind: document
+  - path: BOOK_MANUSCRIPT.md
+    kind: document
+  - path: BOOK_METADATA.yaml
+    kind: document
+  - path: UNIT_REGISTRY.yaml
+    kind: document
+  - path: GLOSSARY.yaml
+    kind: document
+  - path: STANDARDS_TRACEABILITY.yaml
+    kind: document
+  - path: MEDIA_EVIDENCE_TRACEABILITY.yaml
+    kind: document
+  - path: ACCESSIBILITY_NOTES.md
+    kind: document
+  - path: CAREGIVER_EDUCATOR_NOTES.md
+    kind: document
+  - path: FIGURE_PLAN.yaml
+    kind: document
+  - path: ARTIFACT_MANIFEST.yaml
+    kind: document
+  - path: figures/FIG-TODDLER-ME-TECH-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S08.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S09.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S09.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-ME-TECH-S10.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-ME-TECH-S10.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSIDE-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSIDE-S08.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S08.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S09.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-INSTRUCTIONS-S09.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S08.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-MESSAGES-S09.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-MESSAGES-S09.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S08.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-DATA-S09.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-DATA-S09.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-SAFE-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-SAFE-S08.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S01.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S01.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S02.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S02.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S03.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S03.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S04.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S04.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S05.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S05.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S06.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S06.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S07.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S07.meta.yaml
+    kind: figure_metadata
+  - path: figures/FIG-TODDLER-BUILD-S08.svg
+    kind: deterministic_diagram
+  - path: figures/FIG-TODDLER-BUILD-S08.meta.yaml
+    kind: figure_metadata
