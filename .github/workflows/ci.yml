@@ -98,6 +98,13 @@ jobs:
             make kids-full-manuscript-meta-check
             make kids-full-manuscript-assets-check
           fi
+      - name: Human validation freeze + intake checks
+        run: |
+          make adult-review-freeze-check
+          make kids-review-freeze-check
+          make review-response-schema-check
+          make review-coverage-report
+          make review-integrity-check
       - name: Confirm evidence sentinels
         run: |
           out="$(.venv/bin/python scripts/check_publication_family.py)"
@@ -136,10 +143,22 @@ jobs:
               raise SystemExit(1)
           print("standards-certification sentinel: OK")
           PY
+          # Human-validation launch-prep sentinels (prep wave; empty responses are correct)
+          adult_freeze="$(make adult-review-freeze-check)"
+          kids_freeze="$(make kids-review-freeze-check)"
+          echo "$adult_freeze"
+          echo "$kids_freeze"
+          echo "$adult_freeze" | grep -q 'FULL31_REVIEW_R1_FREEZE_VALID'
+          echo "$kids_freeze" | grep -q 'KIDS_FAMILY_REVIEW_R1_FREEZE_VALID'
+          echo "$adult_freeze" | grep -q 'NO_REVIEW_RESPONSES_YET'
+          echo "$kids_freeze" | grep -q 'NO_CHILD_VALIDATION_EVIDENCE'
           echo "NO_READER_EVIDENCE"
+          echo "NO_REVIEW_RESPONSES_YET"
           echo "NO_CHILD_VALIDATION_EVIDENCE"
           echo "NO_RETAILER_SUBMISSION_EVIDENCE"
           echo "NO_STANDARDS_CERTIFICATION_EVIDENCE"
+          echo "FULL31_REVIEW_R1_FREEZE_VALID"
+          echo "KIDS_FAMILY_REVIEW_R1_FREEZE_VALID"
           echo "evidence sentinels: OK"
       - name: Upload preview artifacts
         uses: actions/upload-artifact@v4

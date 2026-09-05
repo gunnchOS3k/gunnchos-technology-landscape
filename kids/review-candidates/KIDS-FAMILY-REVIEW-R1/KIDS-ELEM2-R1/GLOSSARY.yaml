@@ -1,0 +1,57 @@
+# KIDS-ELEM2 glossary — child-facing terms with plain restatements
+# Adult misconception notes are labeled separately
+
+terms:
+  - term: CPU
+    plain: Part that runs instructions right now.
+  - term: Memory
+    plain: Working space holding what a program uses this moment.
+  - term: Storage
+    plain: Keep-box for durable files and data.
+  - term: Operating system
+    plain: System software that notices input and helps apps run.
+  - term: Event
+    plain: A noticed happening the system can respond to.
+  - term: Handler
+    plain: Instructions that run when an event arrives.
+  - term: State
+    plain: The program's current facts.
+  - term: File
+    plain: Durable stored data you can open later.
+  - term: Packet
+    plain: Small addressed piece of a message on a network path.
+  - term: Route
+    plain: Path hops a packet may take.
+  - term: Latency
+    plain: Waiting time somewhere on a path.
+  - term: Reliability
+    plain: How completely and dependably a message arrives.
+  - term: Wi-Fi
+    plain: Common local radio hop — not the whole Internet.
+  - term: Cellular
+    plain: Another radio access road for packets.
+  - term: Internet
+    plain: Many connected networks that can carry packets farther.
+  - term: Sensor
+    plain: Part that detects light, motion, touch, or similar signals.
+  - term: Model
+    plain: Tool that finds patterns in data to predict or generate outputs.
+  - term: Inference
+    plain: Running a model to get an output now.
+  - term: Privacy
+    plain: Choices about who can see or keep information.
+  - term: Security
+    plain: Controls that protect systems and accounts.
+  - term: Equity
+    plain: Fair chance to access, learn, and benefit.
+  - term: EMIT
+    plain: Explain, Measure, Improve, Teach.
+misconceptions_adult_labeled:
+  - Wi-Fi is not the Internet.
+  - CPU is not the same as memory or storage.
+  - Cloud services are remote computers — not weather.
+  - AI models do not understand like people.
+  - Deleting locally does not guarantee deletion everywhere.
+  - The screen is not the whole computer.
+  - One success does not prove always-works.
+  - Having a phone does not mean equity is solved.

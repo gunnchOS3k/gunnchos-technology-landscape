@@ -1,0 +1,59 @@
+document_id: KIDS-ELEM1-BOOK
+age_band: KIDS-ELEM1
+age_guide: Kindergarten–Grade 2
+working_title: Systems We Can Learn
+status: WORKING_DRAFT_COMPLETE
+claim_ceiling: KIDS_FULL_MANUSCRIPT_FAMILY_WORKING_DRAFT_COMPLETE
+child_validation: NONE
+publication_ready: false
+truth_banners:
+- KIDS FULL WORKING MANUSCRIPT
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+- KIDS_CHILD_VALIDATION_PENDING
+- NO_CHILD_VALIDATION_EVIDENCE
+- NO_STANDARDS_CERTIFICATION_EVIDENCE
+character_cast: A_Signal_Crew_provisional
+cast_members:
+- Mira
+- Bolt
+- Step
+- Ping
+- Shield
+cadence:
+- OBSERVE
+- PREDICT
+- TEST
+- MEASURE
+- EXPLAIN
+- BUILD
+- SECURE
+- REFLECT
+- TEACH
+unit_count: 7
+strand_coverage:
+- STRAND-ME-TECH
+- STRAND-INSIDE
+- STRAND-INSTRUCTIONS
+- STRAND-MESSAGES
+- STRAND-DATA
+- STRAND-SAFE
+- STRAND-BUILD
+format_posture:
+  print: PICTURE_BOOK_PRINT_CANDIDATE
+  html: HTML_REVIEW_PROTOTYPE
+  pdf: PDF_REVIEW_PROTOTYPE
+  epub: REFLOWABLE_EPUB_CANDIDATE
+one_tap_relationship: Unit 1 expands systems-not-screens and embeds ONE TAP local/network
+  IPO habits from kids/pilots/ONE_TAP/KIDS-ELEM1
+waike:
+  crosswalk_path: kids/waike/KIDS_WAIKE_CROSSWALK.yaml
+  waike_sha_reconfirmed: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  bridge: optional_adult_facing_portfolio_evidence_adjacent_only
+metrics:
+  child_facing_words: 2955
+  section_count_h2: 68
+  figure_svg_count: 15
+  caregiver_educator_words_approx: 572
+  glossary_terms: 20
+  activities: 21

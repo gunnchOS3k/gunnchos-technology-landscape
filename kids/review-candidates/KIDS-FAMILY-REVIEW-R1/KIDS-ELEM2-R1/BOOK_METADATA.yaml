@@ -1,0 +1,41 @@
+# KIDS-ELEM2 book metadata — working manuscript draft
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY
+
+book_id: KIDS-ELEM2
+title: "Technology Landscape Kids — KIDS-ELEM2"
+subtitle: "Junior technology / young-engineer reference (working draft)"
+age_band: KIDS-ELEM2
+age_guide: "Grades 3–5/6"
+status: WORKING_MANUSCRIPT_DRAFT
+claim_ceiling: KIDS_FULL_MANUSCRIPT_WORKING_DRAFT
+child_validation: NONE
+publication_ready: false
+character_cast_option: A_Signal_Crew_provisional
+cast_provisional:
+  explorer: Mira
+  builder: Bolt
+  instructions: Step
+  signals: Ping
+  safety: Shield
+cadence: [OBSERVE, PREDICT, TEST, MEASURE, EXPLAIN, BUILD, SECURE, REFLECT, TEACH]
+unit_count: 7
+section_count: 63
+figure_svg_count: 15
+illustration_direction_entries: 12
+child_facing_word_count_units: 3598
+glossary_word_count_approx: 142
+adult_main_sha: "82284cd8f41d750ff508cd6ea5bad0a9534d8162"
+waike_crosswalk_sha: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+waike_bridge: optional_adjacent_only
+spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+scope_ref: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
+pilot_anchor: kids/pilots/ONE_TAP/KIDS-ELEM2
+paths:
+  manuscript: kids/books/KIDS-ELEM2/BOOK_MANUSCRIPT.md
+  figures: kids/books/KIDS-ELEM2/figures/
+non_claims:
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - NO_CHILD_VALIDATION_EVIDENCE
+  - NO_STANDARDS_CERTIFICATION_EVIDENCE
+  - KIDS_CHILD_VALIDATION_PENDING

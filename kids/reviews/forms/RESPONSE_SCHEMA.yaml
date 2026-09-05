@@ -1,0 +1,56 @@
+schema_version: 1
+schema_id: KIDS_REVIEW_RESPONSE_SCHEMA
+field_classification_default: PUBLIC_SAFE
+child_fields_classification: CHILD_SENSITIVE_DO_NOT_COMMIT
+required_fields:
+  - review_id
+  - candidate_id
+  - reviewer_role
+  - scope
+  - started_at
+  - completed_at
+  - overall_completion_state
+  - findings
+finding_required_fields:
+  - finding_id
+  - location
+  - severity
+  - category
+  - observation
+  - why_it_matters
+  - suggested_change
+  - confidence
+  - finding_class
+  - requires_sme
+  - accessibility_issue
+  - safety_issue
+finding_class_values:
+  - CONTENT_STRUCTURE_FINDING
+  - VISUAL_DIRECTION_FINDING
+  - FINAL_ART_FINDING
+allowed_severity:
+  - BLOCKER
+  - MAJOR
+  - MODERATE
+  - MINOR
+  - EDITORIAL
+allowed_categories:
+  - TECHNICAL
+  - CLARITY
+  - DEVELOPMENTAL
+  - PEDAGOGY
+  - ACCESSIBILITY
+  - SAFETY
+  - PRIVACY
+  - CULTURAL
+  - VISUAL
+  - NAVIGATION
+  - LAB_ACTIVITY
+  - STANDARDS
+  - TERMINOLOGY
+  - EVIDENCE
+  - PRINT
+notes:
+  - Stage 1 is adult review only.
+  - Stage 2 child session notes must never include child names/contact info in-repo.
+  - Validators reject obvious email/phone/address patterns in child artifacts.

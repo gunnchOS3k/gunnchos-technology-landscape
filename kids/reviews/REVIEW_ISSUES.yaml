@@ -1,0 +1,8 @@
+schema_version: 1
+candidate_id: KIDS-FAMILY-REVIEW-R1
+updated_at: null
+issues: []
+honesty:
+  - NO_REVIEW_RESPONSES_YET
+  - NO_CHILD_VALIDATION_EVIDENCE
+  - Empty issues array is correct before human review.

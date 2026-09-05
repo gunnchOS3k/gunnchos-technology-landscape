@@ -1,0 +1,323 @@
+schema_version: 1
+candidate_id: FULL31-REVIEW-R1
+planning_targets:
+  Explorer: 3
+  Builder: 3
+  Engineer: 3
+  Educator: 3
+  SME: 1-2 per relevant Part
+  Accessibility: 1
+  Visual/print: 1
+  note: "Planning targets only \u2014 not PASS thresholds."
+review_modes:
+  whole_book_navigation:
+  - ADULT-EXPLORER
+  - ADULT-EDUCATOR
+  - ADULT-VISUAL-PRINT
+  deep_technical:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  - ADULT-SME-PART-III-IV
+  - ADULT-SME-PART-V-VI
+  - ADULT-BUILDER
+honesty:
+- NO_REVIEW_RESPONSES_YET
+- Coverage PLANNED != COMPLETE
+chapters:
+- chapter_id: CH01
+  part: I
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-I-II
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH02
+  part: I
+  planned_roles:
+  - ADULT-ACCESS
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-I-II
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH03
+  part: I
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH04
+  part: I
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH05
+  part: I
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-I-II
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH06
+  part: II
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH07
+  part: II
+  planned_roles:
+  - ADULT-BUILDER
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH08
+  part: II
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH09
+  part: II
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-I-II
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH10
+  part: II
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-I-II
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH11
+  part: III
+  planned_roles:
+  - ADULT-BUILDER
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-III-IV
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH12
+  part: III
+  planned_roles:
+  - ADULT-ACCESS
+  - ADULT-BUILDER
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-III-IV
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH13
+  part: III
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-III-IV
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH14
+  part: III
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-III-IV
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH15
+  part: III
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-III-IV
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH16
+  part: IV
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-III-IV
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH17
+  part: IV
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-III-IV
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH18
+  part: IV
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-III-IV
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH19
+  part: IV
+  planned_roles:
+  - ADULT-BUILDER
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-III-IV
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH20
+  part: IV
+  planned_roles:
+  - ADULT-ACCESS
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-III-IV
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH21
+  part: V
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-V-VI
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH22
+  part: V
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH23
+  part: V
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH24
+  part: V
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH25
+  part: V
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-V-VI
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH26
+  part: VI
+  planned_roles:
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-V-VI
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH27
+  part: VI
+  planned_roles:
+  - ADULT-BUILDER
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH28
+  part: VI
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH29
+  part: VI
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH30
+  part: VI
+  planned_roles:
+  - ADULT-ENGINEER
+  - ADULT-SME-PART-V-VI
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+- chapter_id: CH31
+  part: VI
+  planned_roles:
+  - ADULT-ACCESS
+  - ADULT-EDUCATOR
+  - ADULT-ENGINEER
+  - ADULT-EXPLORER
+  - ADULT-SME-PART-V-VI
+  - ADULT-VISUAL-PRINT
+  assigned_reviewer_ids: []
+  response_state: PLANNED
+  actual_response_count: 0
+totals:
+  chapters: 31
+  actual_responses: 0
+  chapters_with_completed_response: 0

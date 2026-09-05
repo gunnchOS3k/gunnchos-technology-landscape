@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-review-prototype-check kids-curriculum-generate kids-one-tap-review-generate distribution-requirements-check adult-release-package-check adult-artifact-package-check adult-print-profiles adult-artifact-packages print-profile-check kids-standards-generate kids-standards-check kids-standards-research-complete-check kids-pilot-mapped-check publication-family-check publication-secrets-scan kids-epubcheck kids-full-manuscript-build kids-full-manuscript-check kids-full-manuscript-inventory kids-full-manuscript-continuity-check kids-full-manuscript-accessibility-check kids-full-manuscript-safety-check kids-full-manuscript-meta-check kids-full-manuscript-assets-check
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-review-prototype-check kids-curriculum-generate kids-one-tap-review-generate distribution-requirements-check adult-release-package-check adult-artifact-package-check adult-print-profiles adult-artifact-packages print-profile-check kids-standards-generate kids-standards-check kids-standards-research-complete-check kids-pilot-mapped-check publication-family-check publication-secrets-scan kids-epubcheck kids-full-manuscript-build kids-full-manuscript-check kids-full-manuscript-inventory kids-full-manuscript-continuity-check kids-full-manuscript-accessibility-check kids-full-manuscript-safety-check kids-full-manuscript-meta-check kids-full-manuscript-assets-check adult-review-freeze-check kids-review-freeze-check review-response-schema-check review-coverage-report review-integrity-check
 
 setup:
 	python3 -m venv .venv
@@ -312,3 +312,19 @@ kids-full-manuscript-meta-check:
 
 kids-full-manuscript-assets-check:
 	$(PYTHON) scripts/validate_kids_full_manuscript_assets.py
+
+# Human validation launch prep (Prompt 28) — freeze + intake honesty checks.
+adult-review-freeze-check:
+	$(PYTHON) scripts/validate_full31_review_r1_freeze.py
+
+kids-review-freeze-check:
+	$(PYTHON) scripts/validate_kids_family_review_r1_freeze.py
+
+review-response-schema-check:
+	$(PYTHON) scripts/review_intake.py schema-check
+
+review-coverage-report:
+	$(PYTHON) scripts/review_intake.py coverage-report
+
+review-integrity-check:
+	$(PYTHON) scripts/review_intake.py integrity-check

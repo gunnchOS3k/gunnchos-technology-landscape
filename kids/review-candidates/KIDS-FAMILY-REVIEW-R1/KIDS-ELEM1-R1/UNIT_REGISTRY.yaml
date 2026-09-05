@@ -1,0 +1,325 @@
+document_id: KIDS-ELEM1-UNIT_REGISTRY
+age_band: KIDS-ELEM1
+status_ceiling: WORKING_DRAFT_COMPLETE
+publication_ready: false
+child_validation: NONE
+units:
+- unit_id: UNIT-ELEM1-ME-TECH-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-ME-TECH
+  title: Systems Not Screens
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 489
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  - KCON-CH02-ONE-TAP
+  adult_chapter_connections:
+  - CH01
+  - CH02
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-ME-TECH-01
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM1-ME-TECH-01
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-011
+  - CME-013
+  - CME-016
+  - CME-018
+  - CME-022
+  figures:
+  - FIG-ELEM1-ME-TECH-01
+  - FIG-ELEM1-ME-TECH-02
+  - FIG-ELEM1-ME-TECH-03
+  activities:
+  - system_map
+  - local_vs_network_tap_test
+  - teachback_system
+  safety_notes:
+  - caregiver_mediation
+  - no_child_accounts
+  - no_unknown_installs
+  - ask_before_share
+  accessibility_routes:
+  - labeled_diagrams
+  - shape_not_color_alone
+  - easy_stop
+  - oral_teachback_ok
+- unit_id: UNIT-ELEM1-INSIDE-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-INSIDE
+  title: Inside the Box
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 434
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH06-CPU-WORK
+  adult_chapter_connections:
+  - CH06
+  - CH07
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-INSIDE-01
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM1-INSIDE-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-016
+  - CME-018
+  figures:
+  - FIG-ELEM1-INSIDE-01
+  - FIG-ELEM1-INSIDE-02
+  activities:
+  - role_card_sort
+  - three_pocket_sorter
+  - busy_ready_observe
+  safety_notes:
+  - no_device_disassembly
+  - no_passcode_sharing
+  - adult_mediated_settings
+  accessibility_routes:
+  - tactile_pockets
+  - large_labels
+  - partner_placement_ok
+- unit_id: UNIT-ELEM1-INSTRUCTIONS-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-INSTRUCTIONS
+  title: Hardware and Software
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 422
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH12-OS-SCHEDULE
+  adult_chapter_connections:
+  - CH12
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-INSTRUCTIONS-01
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM1-INSTRUCTIONS-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-ALGO-FOUNDATIONS
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-016
+  - CME-018
+  figures:
+  - FIG-ELEM1-INSTRUCTIONS-01
+  - FIG-ELEM1-INSTRUCTIONS-02
+  activities:
+  - os_turn_taking_game
+  - four_step_algorithm_card
+  - ipo_under_algorithm
+  safety_notes:
+  - no_unknown_software
+  - permission_switches_with_adult
+  - fair_access_tools
+  accessibility_routes:
+  - physical_turn_game
+  - oral_algorithm
+  - large_print_rule_cards
+- unit_id: UNIT-ELEM1-MESSAGES-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-MESSAGES
+  title: Networks Connect
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 385
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+  adult_chapter_connections:
+  - CH16
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-MESSAGES-01
+  standards_status: NOT_YET_MAPPED
+  wire_id: STD-WIRE-UNIT-ELEM1-MESSAGES-01
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  standards_note: Atlas lacks honest messaging/network grain; kept NOT_YET_MAPPED
+    with rationale from scope/wire registry.
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-013
+  - CME-016
+  - CME-022
+  figures:
+  - FIG-ELEM1-MESSAGES-01
+  - FIG-ELEM1-MESSAGES-02
+  activities:
+  - packet_envelope_relay
+  - paper_network_model
+  - ask_before_send
+  safety_notes:
+  - no_unsupervised_messaging
+  - no_PII_in_messages
+  - consent_gate
+  accessibility_routes:
+  - physical_relay
+  - numbered_packets
+  - partner_router_roles
+- unit_id: UNIT-ELEM1-DATA-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-DATA
+  title: Data Helps Predictions
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 364
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH21-DATA-AI
+  adult_chapter_connections:
+  - CH21
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-DATA-01
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM1-DATA-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  media_evidence_ids:
+  - CME-003
+  - CME-011
+  - CME-013
+  - CME-016
+  - CME-021
+  - CME-028
+  figures:
+  - FIG-ELEM1-DATA-01
+  - FIG-ELEM1-DATA-02
+  activities:
+  - pattern_card_predict
+  - data_poster
+  - check_with_person
+  safety_notes:
+  - no_open_child_ai_chat
+  - classroom_safe_examples_only
+  - caregiver_mediation_digital
+  accessibility_routes:
+  - picture_cards
+  - oral_prediction
+  - nonranking_tallies
+- unit_id: UNIT-ELEM1-SAFE-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-SAFE
+  title: Locks and Fair Access
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 413
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH24-PRIVACY-ETHICS
+  adult_chapter_connections:
+  - CH24
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-SAFE-01
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM1-SAFE-01
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  media_evidence_ids:
+  - CME-003
+  - CME-016
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  figures:
+  - FIG-ELEM1-SAFE-01
+  - FIG-ELEM1-SAFE-02
+  activities:
+  - permission_roleplay
+  - ask_first_card
+  - habit_tally
+  safety_notes:
+  - no_real_password_sharing
+  - no_stranger_chat
+  - calm_not_scare
+  - consent_for_photos
+  accessibility_routes:
+  - roleplay_freeze
+  - large_print_rules
+  - AAC_teachback_ok
+- unit_id: UNIT-ELEM1-BUILD-01
+  age_band: KIDS-ELEM1
+  strand: STRAND-BUILD
+  title: Evidence Folder
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 341
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH30-CAREER-PORTFOLIO
+  adult_chapter_connections:
+  - CH30
+  standards_mapping_ids:
+  - MAP-UNIT-ELEM1-BUILD-01
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM1-BUILD-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  media_evidence_ids:
+  - CME-016
+  - CME-018
+  - CME-021
+  - CME-022
+  - CME-028
+  - CME-029
+  figures:
+  - FIG-ELEM1-BUILD-01
+  - FIG-ELEM1-BUILD-02
+  activities:
+  - evidence_folder_assemble
+  - cover_sheet_columns
+  - gallery_teachback
+  safety_notes:
+  - no_ranking_portfolio
+  - consent_before_face_photos
+  - no_child_cloud_account_required
+  accessibility_routes:
+  - paper_first
+  - oral_gallery
+  - partner_scribe_ok
+  waike_bridge:
+    kids_object: KCON-CH30-CAREER-PORTFOLIO
+    waike_id: portfolio_evidence
+    status: adjacent
+    notes: Adult-facing adjacency only; not an exact early-learning WAIKE module.

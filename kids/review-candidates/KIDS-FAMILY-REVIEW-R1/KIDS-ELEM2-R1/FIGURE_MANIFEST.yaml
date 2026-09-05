@@ -1,0 +1,35 @@
+book_id: KIDS-ELEM2
+plan_sha256: 2eb3d981bbf3ab8f030afd1bdf0ea15fba6bcaa108721086f325a0b400d0ed3e
+planned_figures: []
+svg_files:
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S01.svg
+  sha256: ecc36b7f3c9e64c458ad2752eadd6dbf39307045bf47be028b89013082212d93
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S02.svg
+  sha256: 2b68cc1ca6526bbbf016609efb4c401e0b4541baa40cf167839ff676519935e8
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S05.svg
+  sha256: c8c3945f77da5ee6886872c6676d998f25a8e078e2946b482c1e6204f5f00fd2
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S01.svg
+  sha256: a662e8116311eff9baad7c4fab7a5745f9379830473a195415619407e717b733
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S04.svg
+  sha256: f1051d76d1393bde59c21db45f222e102cc96a9ebaa266772ac6688713cc30e1
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S01.svg
+  sha256: cf832447b42bd59ab02831fd38db680adb00171a920133c6a4d65f92f0f76f2a
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S03.svg
+  sha256: 415a8453c6b9ec6e2b7dab7b5325a6c41ecd8d6035d9714146789744e51a0c5a
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S01.svg
+  sha256: 15688a98bb3616b5b6e0d12b663c9be10fb2130bbd8798b71192552f6c062562
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S03.svg
+  sha256: c633c3a7dddd62e0376c5b58b53f1444858dd15f14d4bb030c2293d23b9ae531
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S01.svg
+  sha256: ec6faeb2d752fbe6c84d4c5adbbcb01ea17bb39d0aad70e0873699f49dad1916
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S04.svg
+  sha256: d7fa7553db17065edb8550fe8d903c310b11e50e02361302332eb31946efe8dc
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S01.svg
+  sha256: 94627e9da1ea316360074826f69f9d487b7247fd8be3c1cf80ca60b51b1a420f
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S05.svg
+  sha256: f1ece445aadd9d80c6231f3406186a3f9f18e62d6eacdd3c25602eb5642a37ee
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S01.svg
+  sha256: b909c67c1cd9a1113405219d7747b118f338916eb65325bc98622732561bd781
+- path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S08.svg
+  sha256: 83a70df23e6e33cea23a7fca503e701cf91a642fe0ceafd99553840218339cb4
+svg_count: 15

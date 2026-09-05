@@ -1,0 +1,45 @@
+# GLOSSARY — KIDS-PREK (caregiver-facing glosses for child use)
+# Introduce 1–2 terms per spread with pointing. Not a memorization list.
+
+meta:
+  age_band: KIDS-PREK
+  audience: caregiver_educator_mediated
+  child_validation: NONE
+
+terms:
+  - term: input
+    child_gloss: "What you put in or do first — like a press or a choice."
+    caregiver_note: "Pair with a concrete action; avoid abstract I/O lectures."
+  - term: output
+    child_gloss: "What happens after — light, sound, picture, or movement."
+    caregiver_note: "Point to the change the child can notice."
+  - term: part
+    child_gloss: "One piece of a bigger thing."
+    caregiver_note: "Use real objects; one part at a time."
+  - term: system
+    child_gloss: "Parts that work together to make something happen."
+    caregiver_note: "Screen is not the whole system."
+  - term: instruction
+    child_gloss: "A step that tells what to do."
+    caregiver_note: "Keep steps short and ordered."
+  - term: sequence
+    child_gloss: "Instructions in order — first, next, last."
+    caregiver_note: "Also call it a simple algorithm when helpful."
+  - term: message
+    child_gloss: "Information that can travel from here to there."
+    caregiver_note: "No unsupervised messaging."
+  - term: pattern
+    child_gloss: "A repeating order we can notice and use again."
+    caregiver_note: "create→save→find and plan→try→fix are patterns."
+  - term: data
+    child_gloss: "Information we keep — like a drawing we save."
+    caregiver_note: "Caregiver controls what is saved about a child."
+  - term: safe
+    child_gloss: "A choice that helps people stay okay."
+    caregiver_note: "Calm tone; no fearmongering."
+  - term: private
+    child_gloss: "Not for everyone — ask a trusted adult before sharing."
+    caregiver_note: "Private ≠ hiding forever."
+  - term: test
+    child_gloss: "A check to see if our sequence works."
+    caregiver_note: "Not a grade; celebrate repair."

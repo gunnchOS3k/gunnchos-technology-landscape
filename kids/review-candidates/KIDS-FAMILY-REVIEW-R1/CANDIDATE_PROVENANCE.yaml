@@ -1,0 +1,75 @@
+schema_version: 1
+candidate_id: KIDS-FAMILY-REVIEW-R1
+verified_candidate_content_sha: d511eec102c311f980eead2629175c09d2bf8a49
+accepted_main_base_sha: d511eec102c311f980eead2629175c09d2bf8a49
+generated_at: '2026-09-05T17:14:37Z'
+books:
+  KIDS-BABY:
+    subcandidate_id: KIDS-BABY-R1
+    manuscript_sha256: 5d48941cd201fe84d7ff3a68f9248375ad768270b6dcf770c02a1921d46dc8d8
+    figure_manifest_sha256: 1396cfedbcb3dcb152be7e5194f59af05476aea7f8e0c9fedda67000b5e1c9fa
+    standards_traceability_sha256: 1d48dd2c1999c0050d2509182ed163bfbad2932c9994964af06717336949d876
+    media_evidence_sha256: b6013161a002226ec31cc9ff755e70aa81691c3a38a86bf802748212f8b50889
+    artifact_manifest_sha256: 80d618fbcfa42deefa21697cd30ca36389ed5e42a5536ccafdb6639d1f3c733c
+    unit_count: 7
+  KIDS-TODDLER:
+    subcandidate_id: KIDS-TODDLER-R1
+    manuscript_sha256: 230a4548332bd22e17443babd763e688922027417d6ea3245b09aef933a022ad
+    figure_manifest_sha256: b17c40bc31ef74c333412971ef7315efbb65dbc3451eaff7b8f79ddcaa1dbf69
+    standards_traceability_sha256: 7a51a2a91d1c9a807e4e7f7389c332babad24b37bdfec597a3baf5083539d913
+    media_evidence_sha256: f44dd2d2e6a6001149dca10b324b21224a44c76559fe588878006efbbc84c50c
+    artifact_manifest_sha256: daec6db82035202843b90dcb21540874ad2176d037ec132febac2a8cc746c968
+    unit_count: 7
+  KIDS-PRESCHOOL:
+    subcandidate_id: KIDS-PRESCHOOL-R1
+    manuscript_sha256: 2a296b64436ad3db39cf6a0bacab39316cf9486317a6c584dec84b5449a86afe
+    figure_manifest_sha256: bb6a7306ee786bef5c160c64d7aa8c3943e82567d27db0ea827f4a17a25d51fc
+    standards_traceability_sha256: 7c8a3c0cdb60dca2b9c2d3f7362ca0515b199f547dc2a769f4bf9224a6f36606
+    media_evidence_sha256: 6bca3b9bd9c25d789759176d3b07d25cd822807b712ee65b24c399fbf62935ee
+    artifact_manifest_sha256: c7ae29bba906afcce336b6acf7ad1bf9c788631244d201c424b6d0b73cd377d8
+    unit_count: 7
+  KIDS-PREK:
+    subcandidate_id: KIDS-PREK-R1
+    manuscript_sha256: 908b599dfb314d4387ad33f08576be33d3a17d2df1b698b9621fc6f9db7c0e81
+    figure_manifest_sha256: d99fa0b1f241e3e96c73682c8c8ab16d14b8ff84571421ea123ba90b0487db78
+    standards_traceability_sha256: b9ac5fce423eea4daef0b4a8019299c362539194711ea4d524d8c6161b31dc35
+    media_evidence_sha256: 7ea4e083b59697e94172c703b69e3314894248dff3fe15458e5f4e0355b1810d
+    artifact_manifest_sha256: 23ea82e5efcfa53ea260bb01e6071137c362f2567828b7e40aaebc929a19a690
+    unit_count: 7
+  KIDS-ELEM1:
+    subcandidate_id: KIDS-ELEM1-R1
+    manuscript_sha256: a9bc5510bf2340d4959a32d59165f74f04eb4ad45f9180bada0f955daf312e44
+    figure_manifest_sha256: d7e3f5977172b64d5ab5749d6ce9307ec80b995a12ea9db29cb136457aad8949
+    standards_traceability_sha256: e5eebf085bee880325638f33d256a86fa8a6ba49b2379732bd009a7999ffc98f
+    media_evidence_sha256: 853f777875f754da005608e11645e9e863bdb11cc3a71186cacf7895ffb68400
+    artifact_manifest_sha256: a70cf65191a4995dfb71b953d9b87270d061676c677b822e8357943c4c425ea3
+    unit_count: 7
+  KIDS-ELEM2:
+    subcandidate_id: KIDS-ELEM2-R1
+    manuscript_sha256: 92e509ff28727ca20790caddcd3b94c7087f235cd2c914c45f1e372f8470fadc
+    figure_manifest_sha256: 15489e514082adfd7ac0e0334879bceaa8eecb2c152374972ae85513d66f683f
+    standards_traceability_sha256: e1d512e630d119e18524590df8667baaa5c813f2aeef8200be8fa56497abc48a
+    media_evidence_sha256: 5e97f7ea2c38f857521a05431ad262297446409cfe5e4ebf4c6eec0210564735
+    artifact_manifest_sha256: 9fc226ae53a5c49dd4bc3ba04585f22e5615f27d1e028ccee01119bb714eab79
+    unit_count: 7
+book_count: 6
+unit_count_total: 42
+family_continuity_sha256: 7987ced22a5975ca71ea5104e2fbd99913a7737e78fefd433b9082266dbd6874
+misconception_matrix_sha256: 7ceff63830b16b1c2917687509a37bfddedd10ae0947bf9baad12c2ffc656eaf
+global_standards_atlas_sha256: 58f7a1db1dc6c092e0592e1e277da828cee5eaea844b3917f036c4c1c58b022c
+child_media_evidence_register_sha256: 2f1f6282446880f9164e9ebb952235cd21556f95842accf2c94f6ec07c857889
+manuscript_inventory_sha256: 20d862d320aca555305bc1412162d687bf4caa87a6951c3b8409f1b3c4dbb37b
+waike_source_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+child_validation_status: NOT_RUN
+publication_status: NOT_PUBLICATION_READY
+stage_1_status: READY_FOR_ADULT_REVIEW
+stage_2_status: PROTOCOL_PREPARED_NOT_EXECUTED
+response_count: 0
+labels:
+- KIDS FULL FAMILY HUMAN REVIEW CANDIDATE
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+- NO_CHILD_VALIDATION_EVIDENCE
+- NO_REVIEW_RESPONSES_YET
+source_commit_policy: SOURCE_COMMIT.txt / verified_candidate_content_sha pin manuscript
+  family content being frozen; may differ from final HEAD after provenance-only commits.

@@ -1,0 +1,210 @@
+document_id: KIDS-ELEM1-FIGURE_PLAN
+age_band: KIDS-ELEM1
+visual_system: kids/design/KIDS_VISUAL_SYSTEM.md
+figures:
+- figure_id: FIG-ELEM1-BUILD-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-BUILD-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: Portfolio page template with columns What I saw, What I infer, What I still
+    do not know, plus a teach-back box.
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-018
+  - CME-021
+  - CME-028
+  - CME-029
+- figure_id: FIG-ELEM1-BUILD-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-BUILD-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: full Signal Crew around a table reviewing folder pages;
+    Mira teaches IPO; easy-stop sign visible.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-016
+  - CME-018
+  - CME-022
+  - CME-024
+- figure_id: FIG-ELEM1-DATA-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-DATA-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: Three example cards feed a predict box; a separate check box asks a person
+    to verify the guess.
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-003
+  - CME-011
+  - CME-013
+  - CME-028
+- figure_id: FIG-ELEM1-DATA-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-DATA-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: Mira sorts picture cards of cloudy/sunny mornings;
+    Step writes a prediction; Shield reminds to check with a person.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-016
+  - CME-018
+  - CME-021
+- figure_id: FIG-ELEM1-INSIDE-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-INSIDE-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: 'Three labeled roles inside a device outline: CPU does steps now, memory holds
+    working notes, storage keeps for later.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+- figure_id: FIG-ELEM1-INSIDE-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-INSIDE-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: Bolt lifts a clear device case metaphor; Mira watches
+    a busy/ready indicator beside Step''s checklist.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-006
+  - CME-016
+  - CME-018
+- figure_id: FIG-ELEM1-INSTRUCTIONS-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-INSTRUCTIONS-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: 'Split diagram: hardware side senses a touch; software side shows ordered instructions
+    and a turn-taking schedule.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-016
+- figure_id: FIG-ELEM1-INSTRUCTIONS-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-INSTRUCTIONS-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: Step holds a turn ticket board while two apps wait;
+    Shield watches fair sharing of device time.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-006
+  - CME-016
+  - CME-018
+- figure_id: FIG-ELEM1-ME-TECH-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-ME-TECH-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: Three labeled boxes — People, Parts, Rules — around a tablet screen that is
+    only one part of a larger system.
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+- figure_id: FIG-ELEM1-ME-TECH-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-ME-TECH-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: Mira and Bolt at a classroom tablet; labeled people,
+    charger, speakers, and a rules card around the screen.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-001
+  - CME-006
+  - CME-016
+  - CME-018
+- figure_id: FIG-ELEM1-ME-TECH-03
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-ME-TECH-03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: 'Two paths from one tablet: a short local loop labeled Local, and a longer
+    path labeled Network message.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-013
+- figure_id: FIG-ELEM1-MESSAGES-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-MESSAGES-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: A message card splits into three numbered packet envelopes traveling a path
+    from Device A to Device B.
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-003
+  - CME-005
+  - CME-011
+  - CME-013
+- figure_id: FIG-ELEM1-MESSAGES-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-MESSAGES-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: Ping carries dotted trail from classroom tablet to
+    a hallway router icon to a home tablet; Shield at consent gate.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-016
+  - CME-018
+  - CME-022
+- figure_id: FIG-ELEM1-SAFE-01
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-SAFE-01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+  alt: 'Three panels: lock/password, ask-before-share permission, and fair access
+    tools for different needs.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-003
+  - CME-022
+  - CME-025
+  - CME-026
+- figure_id: FIG-ELEM1-SAFE-02
+  path: kids/books/KIDS-ELEM1/figures/FIG-ELEM1-SAFE-02.svg
+  truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt: 'Composition direction: Shield holds open-hand pause; Mira considers sharing
+    a drawing; caregiver silhouette present; calm not scary.'
+  print_dimensions_px:
+    width: 900
+    height: 560
+  media_evidence_ids:
+  - CME-016
+  - CME-022
+  - CME-024
+  - CME-025

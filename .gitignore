@@ -27,3 +27,4 @@ book/chapters/figures/
 
 # Isolated agent worktrees (do not commit)
 .worktrees/
+.venv

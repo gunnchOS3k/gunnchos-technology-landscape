@@ -1,0 +1,39 @@
+# Caregiver-facing glossary for KIDS-TODDLER co-reading
+# Not a child quiz. Not diagnostic.
+
+meta:
+  age_band: KIDS-TODDLER
+  audience: caregiver_educator
+  status: WORKING_DRAFT_COMPLETE
+
+terms:
+  - term: input
+    caregiver_gloss: "What the child does — a touch, press, or point."
+    child_phrase: "Touch is input."
+  - term: output
+    caregiver_gloss: "What changes after the input — light, sound, move."
+    child_phrase: "Change is output."
+  - term: first
+    caregiver_gloss: "The step that comes before the next."
+    child_phrase: "First."
+  - term: next
+    caregiver_gloss: "The step that comes after first."
+    child_phrase: "Next."
+  - term: busy
+    caregiver_gloss: "The device is still doing a job."
+    child_phrase: "Busy."
+  - term: ready
+    caregiver_gloss: "The job finished; we can look or try again."
+    child_phrase: "Ready."
+  - term: message
+    caregiver_gloss: "Something that moves from here to there (toy, sound, look)."
+    child_phrase: "Message moves."
+  - term: guess
+    caregiver_gloss: "A try based on a pattern; can be wrong."
+    child_phrase: "We guess."
+  - term: ask
+    caregiver_gloss: "Pause and check with a trusted adult before a new control."
+    child_phrase: "Ask."
+  - term: try again
+    caregiver_gloss: "Change one thing and test once more — mistakes are OK."
+    child_phrase: "Try again."

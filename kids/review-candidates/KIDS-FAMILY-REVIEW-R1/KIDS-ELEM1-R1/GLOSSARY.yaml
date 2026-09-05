@@ -1,0 +1,83 @@
+document_id: KIDS-ELEM1-GLOSSARY
+age_band: KIDS-ELEM1
+terms:
+- term: hardware
+  kid_definition: Parts you can touch.
+  concept_ids:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+- term: software
+  kid_definition: Instructions that decide what happens.
+  concept_ids:
+  - KCON-CH12-OS-SCHEDULE
+- term: system
+  kid_definition: People, parts, and rules working together — not only a screen.
+  concept_ids:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+- term: input
+  kid_definition: What goes in (like a press or tap).
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+- term: process
+  kid_definition: What happens inside after the input.
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+- term: output
+  kid_definition: What you notice afterward (light, sound, motion, words).
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+- term: algorithm
+  kid_definition: A clear ordered plan.
+  concept_ids:
+  - KCON-CH12-OS-SCHEDULE
+- term: CPU
+  kid_definition: The part that follows steps right now.
+  concept_ids:
+  - KCON-CH06-CPU-WORK
+- term: memory
+  kid_definition: Working notes for the job happening now.
+  concept_ids:
+  - KCON-CH06-CPU-WORK
+- term: storage
+  kid_definition: The keep-box for later.
+  concept_ids:
+  - KCON-CH06-CPU-WORK
+- term: operating system
+  kid_definition: A manager program that helps apps take turns.
+  concept_ids:
+  - KCON-CH12-OS-SCHEDULE
+- term: local
+  kid_definition: Finished on this device.
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+- term: network
+  kid_definition: Devices connected so messages can travel.
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+- term: packet
+  kid_definition: A piece of a message with addressing.
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+- term: data
+  kid_definition: Information we collect.
+  concept_ids:
+  - KCON-CH21-DATA-AI
+- term: prediction
+  kid_definition: A guess guided by examples and patterns.
+  concept_ids:
+  - KCON-CH21-DATA-AI
+- term: privacy
+  kid_definition: Choosing who can see information.
+  concept_ids:
+  - KCON-CH24-PRIVACY-ETHICS
+- term: permission
+  kid_definition: A rule about what may be shared or used.
+  concept_ids:
+  - KCON-CH24-PRIVACY-ETHICS
+- term: fair access
+  kid_definition: Tools and designs that help more people join.
+  concept_ids:
+  - KCON-CH24-PRIVACY-ETHICS
+- term: evidence folder
+  kid_definition: Process proof of learning — not a contest.
+  concept_ids:
+  - KCON-CH30-CAREER-PORTFOLIO

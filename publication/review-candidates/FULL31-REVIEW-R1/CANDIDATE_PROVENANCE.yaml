@@ -1,0 +1,29 @@
+schema_version: 1
+candidate_id: FULL31-REVIEW-R1
+verified_candidate_content_sha: d511eec102c311f980eead2629175c09d2bf8a49
+accepted_main_base_sha: d511eec102c311f980eead2629175c09d2bf8a49
+generated_at: '2026-09-05T17:14:37Z'
+chapter_manifest_sha256: c20418effae23d40d6e8f2aa6316f73d41bb17d5a3cf3d64352bb3b805c2e834
+bibliography_sha256: 75119ef678e3746d46878b3f6f7bdc0c95b90cd36bef36cfa6cca2736e338ffc
+figure_manifest_sha256: 57561fa934f3ddb0ea936d40575be43dc554052f585acf6dddd3ac2abd05cd09
+lab_registry_sha256: 83d94ab927541b484503178a1d8861c8562e43feda2617a3045b3b796ec4ab59
+glossary_terminology_sha256: c2a0fad6adb9e72c411d58fd425c10064b55b61e34a959203462fc5efc99b2e2
+front_back_matter_sha256: 18bfdec120e3afe1973e2c36f0f665fcd391e8681866fcefd3ca4eafcb4467eb
+waike_source_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+waike_verification_mode: 'fallback recorded SHA (live fetch failed: <urlopen error
+  Tunnel connection failed: 403 Forbidden>)'
+quality_issues_sha256: d969e1859edd822838969078186ee4692cdca5e2cd888e667bc3218d7fe4b193
+artifact_manifest_sha256: a032d4e61b6563ac0ed9a8cbf5a2e8872e39b67fb803cd3d800966334b0a7671
+human_validation_status: NOT_RUN
+gate_3_status: READER_EVIDENCE_PENDING
+publication_status: NOT_PUBLICATION_READY
+response_count: 0
+historical_pre_review_candidate: FULL31-PRE-REVIEW-001
+source_commit_policy: SOURCE_COMMIT.txt and verified_candidate_content_sha mean the
+  commit containing manuscript/assets/QA being frozen. They intentionally differ from
+  final HEAD when only provenance/review-infra metadata is pinned afterward.
+labels:
+- FULL31-REVIEW-R1
+- HUMAN REVIEW CANDIDATE
+- NO HUMAN VALIDATION HAS OCCURRED
+- NOT PUBLICATION-READY

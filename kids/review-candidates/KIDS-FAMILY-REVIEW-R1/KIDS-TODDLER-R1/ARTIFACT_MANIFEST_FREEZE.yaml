@@ -1,0 +1,10 @@
+book_id: KIDS-TODDLER
+artifacts:
+  TODDLER_FULL_MANUSCRIPT.pdf:
+    path: kids/books/KIDS-TODDLER/builds/TODDLER_FULL_MANUSCRIPT.pdf
+    sha256: c3805f8708ac8686388720e532fca2185fe8408915a0f8af56e0303d91d14379
+    bytes: 46117
+  review-preview.html:
+    path: kids/books/KIDS-TODDLER/builds/review-preview.html
+    sha256: 41f70dd34ac30fc35348be7cf8d46f22a0d1872ead6e5b52ec5ec7fc8b92b700
+    bytes: 11944

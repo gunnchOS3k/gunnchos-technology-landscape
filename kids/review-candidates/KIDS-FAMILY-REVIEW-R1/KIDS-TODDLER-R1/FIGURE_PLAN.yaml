@@ -1,0 +1,742 @@
+# FIGURE_PLAN — KIDS-TODDLER
+meta:
+  age_band: KIDS-TODDLER
+  style: style_neutral_prototype
+  character_cast: A_Signal_Crew_provisional
+  rules:
+    - deterministic_svg_for_concept_diagrams
+    - ILLUSTRATION_DIRECTION_READY_for_narrative_art
+    - no_IMAGE_HERE_placeholders
+figures:
+  - figure_id: FIG-TODDLER-ME-TECH-S01
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S01.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S01
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'We look.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S02
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S02.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S02
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Point here.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S03
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S03.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S03
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Touch is input.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S04
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S04
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S04.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S04
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S04
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Change is output.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S05
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S05
+    cadence_beat: WAIT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S05.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S05
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S05
+    cadence_beat: WAIT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'First: touch.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S06
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S06
+    cadence_beat: RESPOND
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S06.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S06
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S06
+    cadence_beat: RESPOND
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Next: change.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S07
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S07
+    cadence_beat: TRY
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S07.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S07
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S07
+    cadence_beat: TRY
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Match touch to change.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S08
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S08
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S08.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S08
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S08
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Again — same.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S09
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S09
+    cadence_beat: SAFE
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S09.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S09
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S09
+    cadence_beat: SAFE
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'New button? Ask.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-ME-TECH-S10
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S10
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-ME-TECH-S10.svg
+  - figure_id: NARR-TODDLER-ME-TECH-S10
+    unit_id: UNIT-TODDLER-ME-TECH-01
+    spread: S10
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Bolt; one focal action for 'Show me touch → change.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S01
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S01.svg
+  - figure_id: NARR-TODDLER-INSIDE-S01
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'We look inside.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S02
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S02.svg
+  - figure_id: NARR-TODDLER-INSIDE-S02
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Point to the helper.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S03
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S03.svg
+  - figure_id: NARR-TODDLER-INSIDE-S03
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Busy.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S04
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S04
+    cadence_beat: WAIT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S04.svg
+  - figure_id: NARR-TODDLER-INSIDE-S04
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S04
+    cadence_beat: WAIT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Still busy.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S05
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S05.svg
+  - figure_id: NARR-TODDLER-INSIDE-S05
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Ready.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S06
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S06.svg
+  - figure_id: NARR-TODDLER-INSIDE-S06
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'One job. Then next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S07
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S07.svg
+  - figure_id: NARR-TODDLER-INSIDE-S07
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Busy. Ready. Again.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSIDE-S08
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S08
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSIDE-S08.svg
+  - figure_id: NARR-TODDLER-INSIDE-S08
+    unit_id: UNIT-TODDLER-INSIDE-01
+    spread: S08
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Show me busy → ready.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S01
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S01.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S01
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Two steps.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S02
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S02.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S02
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Point to first.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S03
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S03.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S03
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'First.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S04
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S04
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S04.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S04
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S04
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Point to next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S05
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S05
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S05.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S05
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S05
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S06
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S06
+    cadence_beat: WAIT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S06.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S06
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S06
+    cadence_beat: WAIT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Wait. Then next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S07
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S07
+    cadence_beat: TRY
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S07.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S07
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S07
+    cadence_beat: TRY
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Do first. Then next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S08
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S08
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S08.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S08
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S08
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Again — first, next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-INSTRUCTIONS-S09
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S09
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-INSTRUCTIONS-S09.svg
+  - figure_id: NARR-TODDLER-INSTRUCTIONS-S09
+    unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    spread: S09
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Step, Mira; one focal action for 'Show me first → next.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S01
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S01.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S01
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Here. There.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S02
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S02.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S02
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Point here.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S03
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S03
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S03.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S03
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S03
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Point there.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S04
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S04
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S04.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S04
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S04
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Message moves.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S05
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S05
+    cadence_beat: WAIT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S05.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S05
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S05
+    cadence_beat: WAIT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'On the way.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S06
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S06
+    cadence_beat: RESPOND
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S06.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S06
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S06
+    cadence_beat: RESPOND
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'It arrived.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S07
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S07.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S07
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Again — here to there.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S08
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S08
+    cadence_beat: SAFE
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S08.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S08
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S08
+    cadence_beat: SAFE
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Ask before send.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-MESSAGES-S09
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S09
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-MESSAGES-S09.svg
+  - figure_id: NARR-TODDLER-MESSAGES-S09
+    unit_id: UNIT-TODDLER-MESSAGES-01
+    spread: S09
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Ping, Mira; one focal action for 'Show me here → there.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S01
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S01.svg
+  - figure_id: NARR-TODDLER-DATA-S01
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'See the pattern.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S02
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S02.svg
+  - figure_id: NARR-TODDLER-DATA-S02
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Point to same.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S03
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S03.svg
+  - figure_id: NARR-TODDLER-DATA-S03
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'We guess.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S04
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S04
+    cadence_beat: WAIT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S04.svg
+  - figure_id: NARR-TODDLER-DATA-S04
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S04
+    cadence_beat: WAIT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Is it right?'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S05
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S05.svg
+  - figure_id: NARR-TODDLER-DATA-S05
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Wrong is OK.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S06
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S06.svg
+  - figure_id: NARR-TODDLER-DATA-S06
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Try again.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S07
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S07.svg
+  - figure_id: NARR-TODDLER-DATA-S07
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Guess. Check. Again.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S08
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S08
+    cadence_beat: SAFE
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S08.svg
+  - figure_id: NARR-TODDLER-DATA-S08
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S08
+    cadence_beat: SAFE
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Ask a person.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-DATA-S09
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S09
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-DATA-S09.svg
+  - figure_id: NARR-TODDLER-DATA-S09
+    unit_id: UNIT-TODDLER-DATA-01
+    spread: S09
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Mira, Shield; one focal action for 'Show me a guess.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S01
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S01.svg
+  - figure_id: NARR-TODDLER-SAFE-S01
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'We see a new button.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S02
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S02.svg
+  - figure_id: NARR-TODDLER-SAFE-S02
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'Point. Stop.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S03
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S03.svg
+  - figure_id: NARR-TODDLER-SAFE-S03
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'Ask.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S04
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S04
+    cadence_beat: WAIT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S04.svg
+  - figure_id: NARR-TODDLER-SAFE-S04
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S04
+    cadence_beat: WAIT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'Wait for adult.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S05
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S05.svg
+  - figure_id: NARR-TODDLER-SAFE-S05
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'Adult says OK — or not.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S06
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S06.svg
+  - figure_id: NARR-TODDLER-SAFE-S06
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'Known is OK.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S07
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S07.svg
+  - figure_id: NARR-TODDLER-SAFE-S07
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'New? Ask.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-SAFE-S08
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S08
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-SAFE-S08.svg
+  - figure_id: NARR-TODDLER-SAFE-S08
+    unit_id: UNIT-TODDLER-SAFE-01
+    spread: S08
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Shield, Mira; one focal action for 'Show me ask.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S01
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S01.svg
+  - figure_id: NARR-TODDLER-BUILD-S01
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S01
+    cadence_beat: LOOK
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'We can make.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S02
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S02.svg
+  - figure_id: NARR-TODDLER-BUILD-S02
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S02
+    cadence_beat: POINT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Point to parts.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S03
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S03.svg
+  - figure_id: NARR-TODDLER-BUILD-S03
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S03
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Make.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S04
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S04
+    cadence_beat: TRY
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S04.svg
+  - figure_id: NARR-TODDLER-BUILD-S04
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S04
+    cadence_beat: TRY
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Try.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S05
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S05.svg
+  - figure_id: NARR-TODDLER-BUILD-S05
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S05
+    cadence_beat: RESPOND
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'It fell. OK.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S06
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S06.svg
+  - figure_id: NARR-TODDLER-BUILD-S06
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S06
+    cadence_beat: NAME
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Change. Try again.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S07
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S07.svg
+  - figure_id: NARR-TODDLER-BUILD-S07
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S07
+    cadence_beat: REPEAT
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Make. Try. Again.'; high contrast; minimal clutter; print-first; no copyrighted imitation."
+  - figure_id: FIG-TODDLER-BUILD-S08
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S08
+    cadence_beat: TEACH
+    production_status: DETERMINISTIC_DIAGRAM_READY
+    path: figures/FIG-TODDLER-BUILD-S08.svg
+  - figure_id: NARR-TODDLER-BUILD-S08
+    unit_id: UNIT-TODDLER-BUILD-01
+    spread: S08
+    cadence_beat: TEACH
+    production_status: ILLUSTRATION_DIRECTION_READY
+    illustration_direction: "Signal Crew Option A sparse scene: Bolt, Step; one focal action for 'Show me make → try.'; high contrast; minimal clutter; print-first; no copyrighted imitation."

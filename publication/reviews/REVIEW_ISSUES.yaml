@@ -1,0 +1,7 @@
+schema_version: 1
+candidate_id: FULL31-REVIEW-R1
+updated_at: null
+issues: []
+honesty:
+  - NO_REVIEW_RESPONSES_YET
+  - Empty issues array is correct before human review.

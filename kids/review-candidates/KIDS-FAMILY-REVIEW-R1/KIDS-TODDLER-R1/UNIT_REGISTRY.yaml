@@ -1,0 +1,404 @@
+# UNIT_REGISTRY — KIDS-TODDLER
+# status ceiling: WORKING_DRAFT_COMPLETE only
+meta:
+  age_band: KIDS-TODDLER
+  claim_ceiling: WORKING_DRAFT_COMPLETE
+  child_validation: NONE
+units:
+  - unit_id: UNIT-TODDLER-ME-TECH-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-ME-TECH
+    title: "Touch Then Change"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 27
+    spread_or_section_count: 10
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    adult_chapter_connections:
+      - CH02
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-ME-TECH-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-ME-TECH-S01
+      - FIG-TODDLER-ME-TECH-S02
+      - FIG-TODDLER-ME-TECH-S03
+      - FIG-TODDLER-ME-TECH-S04
+      - FIG-TODDLER-ME-TECH-S05
+      - FIG-TODDLER-ME-TECH-S06
+      - FIG-TODDLER-ME-TECH-S07
+      - FIG-TODDLER-ME-TECH-S08
+      - FIG-TODDLER-ME-TECH-S09
+      - FIG-TODDLER-ME-TECH-S10
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram
+  - unit_id: UNIT-TODDLER-INSIDE-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-INSIDE
+    title: "Busy Then Ready"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 22
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH06-CPU-WORK
+    adult_chapter_connections:
+      - CH06
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-INSIDE-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-INSIDE-S01
+      - FIG-TODDLER-INSIDE-S02
+      - FIG-TODDLER-INSIDE-S03
+      - FIG-TODDLER-INSIDE-S04
+      - FIG-TODDLER-INSIDE-S05
+      - FIG-TODDLER-INSIDE-S06
+      - FIG-TODDLER-INSIDE-S07
+      - FIG-TODDLER-INSIDE-S08
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram
+  - unit_id: UNIT-TODDLER-INSTRUCTIONS-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-INSTRUCTIONS
+    title: "First Next"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 24
+    spread_or_section_count: 9
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    adult_chapter_connections:
+      - CH02
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-INSTRUCTIONS-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-INSTRUCTIONS-S01
+      - FIG-TODDLER-INSTRUCTIONS-S02
+      - FIG-TODDLER-INSTRUCTIONS-S03
+      - FIG-TODDLER-INSTRUCTIONS-S04
+      - FIG-TODDLER-INSTRUCTIONS-S05
+      - FIG-TODDLER-INSTRUCTIONS-S06
+      - FIG-TODDLER-INSTRUCTIONS-S07
+      - FIG-TODDLER-INSTRUCTIONS-S08
+      - FIG-TODDLER-INSTRUCTIONS-S09
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram
+  - unit_id: UNIT-TODDLER-MESSAGES-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-MESSAGES
+    title: "Messages Move"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 24
+    spread_or_section_count: 9
+    concept_ids:
+      - KCON-CH16-PACKETS-INTERNET
+    adult_chapter_connections:
+      - CH16
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-MESSAGES-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-MESSAGES-S01
+      - FIG-TODDLER-MESSAGES-S02
+      - FIG-TODDLER-MESSAGES-S03
+      - FIG-TODDLER-MESSAGES-S04
+      - FIG-TODDLER-MESSAGES-S05
+      - FIG-TODDLER-MESSAGES-S06
+      - FIG-TODDLER-MESSAGES-S07
+      - FIG-TODDLER-MESSAGES-S08
+      - FIG-TODDLER-MESSAGES-S09
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram
+  - unit_id: UNIT-TODDLER-DATA-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-DATA
+    title: "Guess Can Be Wrong"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 26
+    spread_or_section_count: 9
+    concept_ids:
+      - KCON-CH21-DATA-AI
+    adult_chapter_connections:
+      - CH21
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-DATA-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-DATA-S01
+      - FIG-TODDLER-DATA-S02
+      - FIG-TODDLER-DATA-S03
+      - FIG-TODDLER-DATA-S04
+      - FIG-TODDLER-DATA-S05
+      - FIG-TODDLER-DATA-S06
+      - FIG-TODDLER-DATA-S07
+      - FIG-TODDLER-DATA-S08
+      - FIG-TODDLER-DATA-S09
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram
+  - unit_id: UNIT-TODDLER-SAFE-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-SAFE
+    title: "Ask Before New"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 24
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH23-CYBERSECURITY
+    adult_chapter_connections:
+      - CH23
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-SAFE-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-SAFE-S01
+      - FIG-TODDLER-SAFE-S02
+      - FIG-TODDLER-SAFE-S03
+      - FIG-TODDLER-SAFE-S04
+      - FIG-TODDLER-SAFE-S05
+      - FIG-TODDLER-SAFE-S06
+      - FIG-TODDLER-SAFE-S07
+      - FIG-TODDLER-SAFE-S08
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram
+  - unit_id: UNIT-TODDLER-BUILD-01
+    age_band: KIDS-TODDLER
+    strand: STRAND-BUILD
+    title: "Make and Try Again"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 21
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH26-SOFTWARE-VCS
+    adult_chapter_connections:
+      - CH26
+    standards_mapping_ids:
+      - MAP-UNIT-TODDLER-BUILD-01
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-006
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-016
+      - CME-018
+      - CME-019
+      - CME-020
+      - CME-021
+      - CME-022
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-028
+    figures:
+      - FIG-TODDLER-BUILD-S01
+      - FIG-TODDLER-BUILD-S02
+      - FIG-TODDLER-BUILD-S03
+      - FIG-TODDLER-BUILD-S04
+      - FIG-TODDLER-BUILD-S05
+      - FIG-TODDLER-BUILD-S06
+      - FIG-TODDLER-BUILD-S07
+      - FIG-TODDLER-BUILD-S08
+    activities:
+      - point_match
+      - supervised_try
+      - teach_back_gesture
+    safety_notes:
+      - caregiver_mediation
+      - easy_stop
+      - no_child_data_collection
+      - no_dark_patterns
+    accessibility_routes:
+      - point_or_gesture_or_aac
+      - print_first
+      - high_contrast_diagram

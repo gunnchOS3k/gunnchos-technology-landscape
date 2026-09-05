@@ -1,0 +1,14 @@
+candidate_id: FULL31-REVIEW-R1
+generated_at: '2026-09-05T17:14:37Z'
+artifacts:
+  html_dir:
+    present: false
+    path: preview/full31/technology-landscape-full31-html
+  pdf:
+    present: false
+    path: preview/full31/technology-landscape-full31-pdf.pdf
+  epub:
+    present: false
+    path: preview/full31/technology-landscape-full31-epub.epub
+note: Missing preview artifacts are recorded honestly; rebuild before recruiting if
+  needed.
