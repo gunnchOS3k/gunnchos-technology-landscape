@@ -81,6 +81,7 @@ PROVENANCE_ALLOWLIST_PREFIXES = (
     "scripts/build_kids_",
     "scripts/validate_kids_",
     "scripts/generate_kids_",
+    "scripts/kids_full_manuscript_",
     "scripts/full31_pre_review_check.py",
     "tests/test_adult_",
     "tests/test_kids_",
