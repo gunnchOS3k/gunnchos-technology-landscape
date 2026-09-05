@@ -92,6 +92,7 @@ PROVENANCE_ALLOWLIST_PREFIXES = (
     "scripts/build_kids_family_review_r1_candidate.py",
     "scripts/validate_kids_family_review_r1_freeze.py",
     "scripts/review_intake.py",
+    "scripts/validate_links.py",
     "tests/test_adult_",
     "tests/test_kids_",
     "tests/test_full31_pre_review_provenance.py",

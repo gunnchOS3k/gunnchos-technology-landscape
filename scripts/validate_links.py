@@ -13,8 +13,21 @@ LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 def main() -> int:
     errors: list[str] = []
     skip_parts = {".venv", ".git", "tools", "preview", "_book", "node_modules", ".quarto"}
+    # Freeze trees pin content via hashes/manifests; skip deep copies to avoid false link fails
+    # when optional binaries (figures/builds) are linked rather than duplicated.
+    skip_path_markers = (
+        ("publication", "review-candidates"),
+        ("kids", "review-candidates"),
+    )
     for path in ROOT.rglob("*.md"):
         if skip_parts.intersection(path.parts):
+            continue
+        parts = path.parts
+        if any(
+            marker[0] in parts and marker[1] in parts and parts.index(marker[0]) < parts.index(marker[1])
+            for marker in skip_path_markers
+            if marker[0] in parts and marker[1] in parts
+        ):
             continue
         text = path.read_text(encoding="utf-8")
         for label, target in LINK_RE.findall(text):

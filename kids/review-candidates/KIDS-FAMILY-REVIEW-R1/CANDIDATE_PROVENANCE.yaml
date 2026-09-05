@@ -2,7 +2,7 @@ schema_version: 1
 candidate_id: KIDS-FAMILY-REVIEW-R1
 verified_candidate_content_sha: d511eec102c311f980eead2629175c09d2bf8a49
 accepted_main_base_sha: d511eec102c311f980eead2629175c09d2bf8a49
-generated_at: '2026-09-05T17:14:37Z'
+generated_at: '2026-09-05T17:19:21Z'
 books:
   KIDS-BABY:
     subcandidate_id: KIDS-BABY-R1

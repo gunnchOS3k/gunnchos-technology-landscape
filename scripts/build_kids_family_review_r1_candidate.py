@@ -149,6 +149,21 @@ def freeze_book(book_id: str, out_dir: Path) -> dict[str, Any]:
     art_text = dump_yaml(art_man)
     (sub / "ARTIFACT_MANIFEST_FREEZE.yaml").write_text(art_text, encoding="utf-8")
 
+    # Relative symlink so frozen manuscripts keep working local figure links for validators
+    # without duplicating SVG binaries into the freeze tree.
+    figs_src = book / "figures"
+    figs_link = sub / "figures"
+    if figs_src.is_dir():
+        if figs_link.is_symlink() or figs_link.exists():
+            if figs_link.is_dir() and not figs_link.is_symlink():
+                pass  # unexpected real dir — leave alone
+            else:
+                figs_link.unlink()
+        if not figs_link.exists():
+            # kids/review-candidates/KIDS-FAMILY-REVIEW-R1/<SUB>/ -> kids/books/<BOOK>/figures
+            rel = Path("../../../books") / book_id / "figures"
+            figs_link.symlink_to(rel)
+
     units = 0
     ureg = book / "UNIT_REGISTRY.yaml"
     if ureg.exists():
