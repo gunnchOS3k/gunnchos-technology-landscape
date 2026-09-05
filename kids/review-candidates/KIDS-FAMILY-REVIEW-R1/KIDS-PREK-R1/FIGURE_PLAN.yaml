@@ -1,0 +1,849 @@
+# FIGURE PLAN — KIDS-PREK
+
+meta:
+  age_band: KIDS-PREK
+  style: style_neutral_prototype
+  print_safe_default_px: "800x500"
+  cast: A_Signal_Crew_provisional
+
+figures:
+- figure_id: FIG-PREK-ME-TECH-S01
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S01
+  beat: "STORY"
+  title: "The lamp that needs help"
+  path: figures/FIG-PREK-ME-TECH-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mira and Bolt beside a lamp with switch, cord, and bulb labeled as parts."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S02
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "What changes?"
+  path: figures/FIG-PREK-ME-TECH-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Arrow diagram: input press leads to output light."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S03
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S03
+  beat: "NAME"
+  title: "System and part"
+  path: figures/FIG-PREK-ME-TECH-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Lamp outline with three labeled parts."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S04
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Parts work together"
+  path: figures/FIG-PREK-ME-TECH-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Three boxes: power, switch, light."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S05
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "What if the bulb is out?"
+  path: figures/FIG-PREK-ME-TECH-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mira guessing about a dark bulb while Bolt holds a spare."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S06
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Find the parts"
+  path: figures/FIG-PREK-ME-TECH-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Checklist icons: input, part, output."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S07
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Tell the story of parts"
+  path: figures/FIG-PREK-ME-TECH-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching Mira by pointing at lamp parts."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S08
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Build a tiny system"
+  path: figures/FIG-PREK-ME-TECH-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Three labeled cards: input, part, output."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S09
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Ask before opening"
+  path: figures/FIG-PREK-ME-TECH-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield showing ask-an-adult vs open-alone choices."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-ME-TECH-S10
+  unit_id: UNIT-PREK-ME-TECH-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach the words"
+  path: figures/FIG-PREK-ME-TECH-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver with four word cards."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S01
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S01
+  beat: "STORY"
+  title: "Two boxes on the table"
+  path: figures/FIG-PREK-INSIDE-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Bolt presenting Working Space and Keep-Box side by side."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S02
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "What stays?"
+  path: figures/FIG-PREK-INSIDE-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Working Space and Keep-Box with now/later labels."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S03
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S03
+  beat: "NAME"
+  title: "Name the places"
+  path: figures/FIG-PREK-INSIDE-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Labeled Working Space and Keep-Box."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S04
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Same pattern"
+  path: figures/FIG-PREK-INSIDE-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Four steps: make, use now, save, find later."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S05
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "If we do not save?"
+  path: figures/FIG-PREK-INSIDE-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mira predicting empty Keep-Box if nothing is saved."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S06
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Save and find"
+  path: figures/FIG-PREK-INSIDE-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Arrow from drawing to Keep-Box then back to hand."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S07
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Explain the two places"
+  path: figures/FIG-PREK-INSIDE-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child explaining two boxes to Ping."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S08
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Make sorting mats"
+  path: figures/FIG-PREK-INSIDE-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Two mats with sample cards sorted."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S09
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Who may see saved things?"
+  path: figures/FIG-PREK-INSIDE-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield covering a private Keep-Box while sharing with caregiver is ok."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSIDE-S10
+  unit_id: UNIT-PREK-INSIDE-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach now vs later"
+  path: figures/FIG-PREK-INSIDE-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver with two mats."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S01
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S01
+  beat: "STORY"
+  title: "Step brings cards"
+  path: figures/FIG-PREK-INSTRUCTIONS-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Step holding three numbered instruction cards."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S02
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "First, next, last"
+  path: figures/FIG-PREK-INSTRUCTIONS-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Three steps for wash, get cup, pour."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S03
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S03
+  beat: "NAME"
+  title: "Instruction and sequence"
+  path: figures/FIG-PREK-INSTRUCTIONS-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Cards labeled instruction forming a sequence."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S04
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Input to output"
+  path: figures/FIG-PREK-INSTRUCTIONS-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Input, steps, output flowchart."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S05
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "Wrong order?"
+  path: figures/FIG-PREK-INSTRUCTIONS-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mixed-up cards with Mira predicting a spill."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S06
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Run the steps"
+  path: figures/FIG-PREK-INSTRUCTIONS-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Child finger following numbered steps."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S07
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Explain your sequence"
+  path: figures/FIG-PREK-INSTRUCTIONS-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child explaining sequence to Mira."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S08
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Build-a-sequence"
+  path: figures/FIG-PREK-INSTRUCTIONS-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Input, Steps, Output, optional Fix cards."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S09
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Fair turns with steps"
+  path: figures/FIG-PREK-INSTRUCTIONS-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield helping friends take turns with step cards."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-INSTRUCTIONS-S10
+  unit_id: UNIT-PREK-INSTRUCTIONS-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach three steps"
+  path: figures/FIG-PREK-INSTRUCTIONS-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver three steps."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S01
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S01
+  beat: "STORY"
+  title: "Ping draws a path"
+  path: figures/FIG-PREK-MESSAGES-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Ping drawing a dotted path between two places."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S02
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "Local or far?"
+  path: figures/FIG-PREK-MESSAGES-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Local copy vs far ask paths."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S03
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S03
+  beat: "NAME"
+  title: "Message and path"
+  path: figures/FIG-PREK-MESSAGES-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Labeled message on a path with a rule badge."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S04
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Rules for the path"
+  path: figures/FIG-PREK-MESSAGES-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Start, path, arrive, reply."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S05
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "If the path is blocked?"
+  path: figures/FIG-PREK-MESSAGES-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Blocked path with Ping waiting calmly."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S06
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Draw Ping's path"
+  path: figures/FIG-PREK-MESSAGES-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Out-and-back dotted path diagram."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S07
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Explain the path"
+  path: figures/FIG-PREK-MESSAGES-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child explaining a drawn path to Mira."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S08
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Message relay"
+  path: figures/FIG-PREK-MESSAGES-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Paper note moving along a path with Ask First rule."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S09
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Who may get the message?"
+  path: figures/FIG-PREK-MESSAGES-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield choosing trusted adult over stranger."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-MESSAGES-S10
+  unit_id: UNIT-PREK-MESSAGES-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach the path"
+  path: figures/FIG-PREK-MESSAGES-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver a message path."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S01
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S01
+  beat: "STORY"
+  title: "A drawing to keep"
+  path: figures/FIG-PREK-DATA-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mira drawing; Bolt pointing to a save envelope."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S02
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "Create, save, find"
+  path: figures/FIG-PREK-DATA-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Create, save, find sequence."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S03
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S03
+  beat: "NAME"
+  title: "Name the data"
+  path: figures/FIG-PREK-DATA-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Drawing with a name label in a Keep-Box."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S04
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Same idea in devices"
+  path: figures/FIG-PREK-DATA-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Paper pattern mirroring a simple device save icon."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S05
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "If we skip save?"
+  path: figures/FIG-PREK-DATA-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Empty Keep-Box after skipped save."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S06
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Save and find again"
+  path: figures/FIG-PREK-DATA-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Create to envelope to find-again arrows."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S07
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Explain the pattern"
+  path: figures/FIG-PREK-DATA-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child explaining create-save-find to Step."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S08
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Make a find box"
+  path: figures/FIG-PREK-DATA-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Box of labeled envelopes."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S09
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Private data"
+  path: figures/FIG-PREK-DATA-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield marking a private envelope."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-DATA-S10
+  unit_id: UNIT-PREK-DATA-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach create-save-find"
+  path: figures/FIG-PREK-DATA-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver create-save-find."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S01
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S01
+  beat: "STORY"
+  title: "Shield's two doors"
+  path: figures/FIG-PREK-SAFE-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield beside Safe Choice and Pause-to-Ask doors."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S02
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "Who can see?"
+  path: figures/FIG-PREK-SAFE-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Audience circles: family, friend, stranger."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S03
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S03
+  beat: "NAME"
+  title: "Safe and private"
+  path: figures/FIG-PREK-SAFE-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Safe and private word cards with icons."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S04
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Fair includes helpers"
+  path: figures/FIG-PREK-SAFE-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Circle of friends with different tools included."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S05
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "Share with a stranger?"
+  path: figures/FIG-PREK-SAFE-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mira predicting ask-adult vs share-with-stranger."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S06
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Practice the choice"
+  path: figures/FIG-PREK-SAFE-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Three choice cards with safer path highlighted."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S07
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Explain your choice"
+  path: figures/FIG-PREK-SAFE-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child explaining a safe choice to Shield."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S08
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Make a pause sign"
+  path: figures/FIG-PREK-SAFE-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Simple Pause-and-Ask sign."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S09
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Stop is always ok"
+  path: figures/FIG-PREK-SAFE-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield affirming easy stop with open hand."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-SAFE-S10
+  unit_id: UNIT-PREK-SAFE-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach safe or private"
+  path: figures/FIG-PREK-SAFE-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver safe and private cards."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S01
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S01
+  beat: "STORY"
+  title: "Plan on the table"
+  path: figures/FIG-PREK-BUILD-S01.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Crew around a plan for a sequence."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S02
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S02
+  beat: "NOTICE"
+  title: "Two versions"
+  path: figures/FIG-PREK-BUILD-S02.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Version 1 and Version 2 cards."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S03
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S03
+  beat: "NAME"
+  title: "Test means check"
+  path: figures/FIG-PREK-BUILD-S03.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Test checkbox beside a sequence."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S04
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S04
+  beat: "CONNECT"
+  title: "Plan, try, fix"
+  path: figures/FIG-PREK-BUILD-S04.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Plan, try, test, fix."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S05
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S05
+  beat: "PREDICT"
+  title: "What will Version 2 fix?"
+  path: figures/FIG-PREK-BUILD-S05.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Mira predicting a fix for Version 2."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S06
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S06
+  beat: "TRY"
+  title: "Try and test"
+  path: figures/FIG-PREK-BUILD-S06.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Try arrow into test checkbox."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S07
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S07
+  beat: "EXPLAIN"
+  title: "Explain what changed"
+  path: figures/FIG-PREK-BUILD-S07.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child explaining version change to Ping."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S08
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S08
+  beat: "MAKE"
+  title: "Keep both versions"
+  path: figures/FIG-PREK-BUILD-S08.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: DETERMINISTIC_SVG_READY
+  alt_description: "Two version cards saved side by side."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S09
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S09
+  beat: "SAFE + FAIR"
+  title: "Share kindly"
+  path: figures/FIG-PREK-BUILD-S09.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Shield coaching kind feedback."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"
+- figure_id: FIG-PREK-BUILD-S10
+  unit_id: UNIT-PREK-BUILD-01
+  spread_id: S10
+  beat: "TEACH"
+  title: "Teach plan-try-fix"
+  path: figures/FIG-PREK-BUILD-S10.svg
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  production_status: ILLUSTRATION_DIRECTION_READY
+  alt_description: "Child teaching caregiver plan-try-test-fix."
+  age_band_style: prek_path_diagrams_and_scenes
+  color_not_sole_encoding: true
+  print_safe_dimensions: "800x500"

@@ -1,0 +1,8 @@
+schema_version: 1
+classes:
+  PUBLIC_SAFE:
+    description: Sanitized structured findings allowed in public GitHub
+  PRIVATE_REVIEW_DATA:
+    description: Identifiable adult feedback; store outside public repo
+  CHILD_SENSITIVE_DO_NOT_COMMIT:
+    description: Child identifying or guardian contact data; never commit

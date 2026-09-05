@@ -1,0 +1,39 @@
+# KIDS-TODDLER book metadata — adult/integrator facing
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · KIDS_CHILD_VALIDATION_PENDING
+
+book_id: KIDS-TODDLER-LOOK-TOUCH-WAIT
+working_title: "Look Touch Wait"
+age_band: KIDS-TODDLER
+age_guide: "18–36 months"
+language_primary: en
+status: WORKING_DRAFT_COMPLETE
+claim_ceiling: WORKING_DRAFT_COMPLETE
+child_validation: NONE
+publication_ready: false
+truth_banners:
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - KIDS_CHILD_VALIDATION_PENDING
+  - NO_CHILD_VALIDATION_EVIDENCE
+  - NO_STANDARDS_CERTIFICATION_EVIDENCE
+character_cast: A_Signal_Crew_provisional
+character_names: [Mira, Bolt, Step, Ping, Shield]
+cadence: LOOK_POINT_NAME_WAIT_RESPOND_REPEAT
+format:
+  print: board_or_picture_book
+  digital: caregiver_PDF_optional_co_use
+  print_first: true
+unit_count: 7
+unit_ids:
+  - UNIT-TODDLER-ME-TECH-01
+  - UNIT-TODDLER-INSIDE-01
+  - UNIT-TODDLER-INSTRUCTIONS-01
+  - UNIT-TODDLER-MESSAGES-01
+  - UNIT-TODDLER-DATA-01
+  - UNIT-TODDLER-SAFE-01
+  - UNIT-TODDLER-BUILD-01
+adult_main_sha: "82284cd8f41d750ff508cd6ea5bad0a9534d8162"
+waike_sha_reconfirmed: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+scope_ref: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
+pilot_anchor: kids/pilots/ONE_TAP/KIDS-TODDLER

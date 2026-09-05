@@ -1,0 +1,24 @@
+meta:
+  audience: caregiver
+terms:
+- term: Screen
+  plain_language: Outside vs inside
+  unit_id: UNIT-PRESCHOOL-ME-TECH-01
+- term: Parts
+  plain_language: Button, light, speaker
+  unit_id: UNIT-PRESCHOOL-INSIDE-01
+- term: Steps
+  plain_language: First/next/last
+  unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+- term: Devices
+  plain_language: Local story of sending
+  unit_id: UNIT-PRESCHOOL-MESSAGES-01
+- term: Keep-Boxes
+  plain_language: Named keepsakes/files
+  unit_id: UNIT-PRESCHOOL-DATA-01
+- term: Private
+  plain_language: Share with caregiver
+  unit_id: UNIT-PRESCHOOL-SAFE-01
+- term: Test
+  plain_language: Check the change
+  unit_id: UNIT-PRESCHOOL-BUILD-01

@@ -1,0 +1,480 @@
+# UNIT REGISTRY — KIDS-PREK
+# status ceiling: WORKING_DRAFT_COMPLETE only
+
+meta:
+  age_band: KIDS-PREK
+  unit_count: 7
+  child_validation: NONE
+  publication_ready: false
+
+units:
+- unit_id: UNIT-PREK-ME-TECH-01
+  age_band: KIDS-PREK
+  strand: STRAND-ME-TECH
+  strand_name: "Me & Technology"
+  title: "Systems Have Parts"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 177
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  adult_chapter_connections:
+  - CH01
+  - "Technology Is a System, Not a Screen"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-ME-TECH-01
+  standards_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-ME-TECH-01
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  media_evidence_ids:
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-012
+  - CME-016
+  - CME-017
+  - CME-018
+  - CME-019
+  - CME-021
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  - CME-030
+  figures:
+  - FIG-PREK-ME-TECH-S01
+  - FIG-PREK-ME-TECH-S02
+  - FIG-PREK-ME-TECH-S03
+  - FIG-PREK-ME-TECH-S04
+  - FIG-PREK-ME-TECH-S05
+  - FIG-PREK-ME-TECH-S06
+  - FIG-PREK-ME-TECH-S07
+  - FIG-PREK-ME-TECH-S08
+  - FIG-PREK-ME-TECH-S09
+  - FIG-PREK-ME-TECH-S10
+  activities:
+  - "Point to parts on a real lamp or toy"
+  - "Build a three-part cardboard system"
+  safety_notes:
+  - "Caregiver co-use; stop anytime; no child accounts."
+  accessibility_routes:
+  - high_contrast_shapes
+  - color_not_sole
+  - verbal_naming_route
+  - motor_pointing_ok
+  vocabulary_introduced:
+  - system
+  - part
+  - input
+  - output
+- unit_id: UNIT-PREK-INSIDE-01
+  age_band: KIDS-PREK
+  strand: STRAND-INSIDE
+  strand_name: "Inside the Machine"
+  title: "Working Space vs Keep-Box"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 159
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH07-MEMORY-STORAGE
+  adult_chapter_connections:
+  - CH07
+  - "Memory, Cache, and Storage"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-INSIDE-01
+  standards_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-INSIDE-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  media_evidence_ids:
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-012
+  - CME-016
+  - CME-017
+  - CME-018
+  - CME-019
+  - CME-021
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  - CME-030
+  figures:
+  - FIG-PREK-INSIDE-S01
+  - FIG-PREK-INSIDE-S02
+  - FIG-PREK-INSIDE-S03
+  - FIG-PREK-INSIDE-S04
+  - FIG-PREK-INSIDE-S05
+  - FIG-PREK-INSIDE-S06
+  - FIG-PREK-INSIDE-S07
+  - FIG-PREK-INSIDE-S08
+  - FIG-PREK-INSIDE-S09
+  - FIG-PREK-INSIDE-S10
+  activities:
+  - "Sort cards into Working Space vs Keep-Box"
+  - "Save a drawing then find it later"
+  safety_notes:
+  - "No pressure to memorize jargon; caregiver names gently."
+  accessibility_routes:
+  - tactile_two_boxes
+  - verbal_now_later
+  - low_clutter
+  vocabulary_introduced:
+  - part
+  - system
+  - data
+  - pattern
+- unit_id: UNIT-PREK-INSTRUCTIONS-01
+  age_band: KIDS-PREK
+  strand: STRAND-INSTRUCTIONS
+  strand_name: "Instructions & Code"
+  title: "Simple Algorithm"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 143
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH14-APPS-UI
+  adult_chapter_connections:
+  - CH14
+  - "Applications, APIs, Runtimes, and User Interfaces"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-INSTRUCTIONS-01
+  standards_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-INSTRUCTIONS-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-ALGO-FOUNDATIONS
+  media_evidence_ids:
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-012
+  - CME-016
+  - CME-017
+  - CME-018
+  - CME-019
+  - CME-021
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  - CME-030
+  figures:
+  - FIG-PREK-INSTRUCTIONS-S01
+  - FIG-PREK-INSTRUCTIONS-S02
+  - FIG-PREK-INSTRUCTIONS-S03
+  - FIG-PREK-INSTRUCTIONS-S04
+  - FIG-PREK-INSTRUCTIONS-S05
+  - FIG-PREK-INSTRUCTIONS-S06
+  - FIG-PREK-INSTRUCTIONS-S07
+  - FIG-PREK-INSTRUCTIONS-S08
+  - FIG-PREK-INSTRUCTIONS-S09
+  - FIG-PREK-INSTRUCTIONS-S10
+  activities:
+  - "Line up three instruction cards"
+  - "Fix a mixed-up sequence"
+  safety_notes:
+  - "Age-appropriate apps only; caregiver gatekeeping."
+  accessibility_routes:
+  - large_step_cards
+  - left_to_right_or_top_down
+  - AAC_step_symbols
+  vocabulary_introduced:
+  - instruction
+  - sequence
+  - input
+  - output
+- unit_id: UNIT-PREK-MESSAGES-01
+  age_band: KIDS-PREK
+  strand: STRAND-MESSAGES
+  strand_name: "Messages & Connections"
+  title: "Paths and Rules"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 163
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+  adult_chapter_connections:
+  - CH16
+  - "Packets, Protocols, Routing, and the Internet"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-MESSAGES-01
+  standards_status: NOT_YET_MAPPED
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-MESSAGES-01
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  media_evidence_ids:
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-012
+  - CME-016
+  - CME-017
+  - CME-018
+  - CME-019
+  - CME-021
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  - CME-030
+  figures:
+  - FIG-PREK-MESSAGES-S01
+  - FIG-PREK-MESSAGES-S02
+  - FIG-PREK-MESSAGES-S03
+  - FIG-PREK-MESSAGES-S04
+  - FIG-PREK-MESSAGES-S05
+  - FIG-PREK-MESSAGES-S06
+  - FIG-PREK-MESSAGES-S07
+  - FIG-PREK-MESSAGES-S08
+  - FIG-PREK-MESSAGES-S09
+  - FIG-PREK-MESSAGES-S10
+  activities:
+  - "Draw out-and-back message path"
+  - "Paper note relay with a rule card"
+  safety_notes:
+  - "No unsupervised messaging; caregiver mediation."
+  accessibility_routes:
+  - paper_path_drawing
+  - tactile_string_path
+  - verbal_path_narration
+  vocabulary_introduced:
+  - message
+  - path
+  - pattern
+  - rule
+- unit_id: UNIT-PREK-DATA-01
+  age_band: KIDS-PREK
+  strand: STRAND-DATA
+  strand_name: "Data & Intelligence"
+  title: "Saved for Later"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 145
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH13-FILES-DATA-LIFE
+  adult_chapter_connections:
+  - CH13
+  - "Files, Databases, and Data Lifecycles"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-DATA-01
+  standards_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-DATA-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  media_evidence_ids:
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-012
+  - CME-016
+  - CME-017
+  - CME-018
+  - CME-019
+  - CME-021
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  - CME-030
+  figures:
+  - FIG-PREK-DATA-S01
+  - FIG-PREK-DATA-S02
+  - FIG-PREK-DATA-S03
+  - FIG-PREK-DATA-S04
+  - FIG-PREK-DATA-S05
+  - FIG-PREK-DATA-S06
+  - FIG-PREK-DATA-S07
+  - FIG-PREK-DATA-S08
+  - FIG-PREK-DATA-S09
+  - FIG-PREK-DATA-S10
+  activities:
+  - "Create-save-find drawing cycle"
+  - "Folder-envelope sorting game"
+  safety_notes:
+  - "Caregiver controls what is saved about a child; no child PII collection in prototype."
+  accessibility_routes:
+  - large_name_labels
+  - sort_by_shape
+  - verbal_create_save_find
+  vocabulary_introduced:
+  - data
+  - pattern
+  - save
+  - find
+- unit_id: UNIT-PREK-SAFE-01
+  age_band: KIDS-PREK
+  strand: STRAND-SAFE
+  strand_name: "Safe, Private & Fair"
+  title: "Safe or Private Choice"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 143
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH24-PRIVACY-ETHICS
+  adult_chapter_connections:
+  - CH24
+  - "Privacy, Identity, Safety, Accessibility, and Ethics"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-SAFE-01
+  standards_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-SAFE-01
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  media_evidence_ids:
+  - CME-022
+  - CME-023
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  figures:
+  - FIG-PREK-SAFE-S01
+  - FIG-PREK-SAFE-S02
+  - FIG-PREK-SAFE-S03
+  - FIG-PREK-SAFE-S04
+  - FIG-PREK-SAFE-S05
+  - FIG-PREK-SAFE-S06
+  - FIG-PREK-SAFE-S07
+  - FIG-PREK-SAFE-S08
+  - FIG-PREK-SAFE-S09
+  - FIG-PREK-SAFE-S10
+  activities:
+  - "Safe/private choice cards"
+  - "Role-play ask-a-trusted-adult"
+  safety_notes:
+  - "No fearmongering; no child PII; easy stop; caregiver mediation."
+  accessibility_routes:
+  - choice_cards_with_symbols
+  - AAC_safe_private
+  - calm_pacing
+  vocabulary_introduced:
+  - safe
+  - private
+  - fair
+  - ask
+- unit_id: UNIT-PREK-BUILD-01
+  age_band: KIDS-PREK
+  strand: STRAND-BUILD
+  strand_name: "Build, Test & Share"
+  title: "Build a Sequence"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 152
+  spread_or_section_count: 10
+  concept_ids:
+  - KCON-CH26-SOFTWARE-VCS
+  adult_chapter_connections:
+  - CH26
+  - "Software Development and Version Control"
+  standards_mapping_ids:
+  - MAP-UNIT-PREK-BUILD-01
+  standards_status: ADJACENT
+  standards_wire_ids:
+  - STD-WIRE-UNIT-PREK-BUILD-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  media_evidence_ids:
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-012
+  - CME-016
+  - CME-017
+  - CME-018
+  - CME-019
+  - CME-021
+  - CME-022
+  - CME-024
+  - CME-025
+  - CME-026
+  - CME-027
+  - CME-028
+  - CME-029
+  - CME-030
+  figures:
+  - FIG-PREK-BUILD-S01
+  - FIG-PREK-BUILD-S02
+  - FIG-PREK-BUILD-S03
+  - FIG-PREK-BUILD-S04
+  - FIG-PREK-BUILD-S05
+  - FIG-PREK-BUILD-S06
+  - FIG-PREK-BUILD-S07
+  - FIG-PREK-BUILD-S08
+  - FIG-PREK-BUILD-S09
+  - FIG-PREK-BUILD-S10
+  activities:
+  - "Plan-try-fix with sequence cards"
+  - "Keep Version 1 and Version 2 side by side"
+  safety_notes:
+  - "Celebrate repair; no perfection pressure; offline artifacts preferred."
+  accessibility_routes:
+  - version_photo_or_tracing
+  - large_plan_cards
+  - partner_build_ok
+  vocabulary_introduced:
+  - sequence
+  - test
+  - fix
+  - plan

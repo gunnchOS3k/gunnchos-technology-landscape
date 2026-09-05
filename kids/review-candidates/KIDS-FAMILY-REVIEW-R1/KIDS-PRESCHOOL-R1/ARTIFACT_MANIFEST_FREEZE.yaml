@@ -1,0 +1,10 @@
+book_id: KIDS-PRESCHOOL
+artifacts:
+  PRESCHOOL_FULL_MANUSCRIPT.pdf:
+    path: kids/books/KIDS-PRESCHOOL/builds/PRESCHOOL_FULL_MANUSCRIPT.pdf
+    sha256: 74c180858b4f33bab80076b15cca41dd0aaa75246192b92e31cbd7bdd2d1e0fc
+    bytes: 62518
+  review-preview.html:
+    path: kids/books/KIDS-PRESCHOOL/builds/review-preview.html
+    sha256: b4cf68564350f2e2c470e736905bdff394a0dccde1b1056f0983a4981fd97875
+    bytes: 23073

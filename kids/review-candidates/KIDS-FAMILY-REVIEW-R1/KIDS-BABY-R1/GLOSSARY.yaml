@@ -1,0 +1,24 @@
+meta:
+  audience: caregiver
+terms:
+- term: Tap-Look
+  plain_language: Notice change after contact
+  unit_id: UNIT-BABY-ME-TECH-01
+- term: Awake
+  plain_language: Dark to awake with adult
+  unit_id: UNIT-BABY-INSIDE-01
+- term: Same
+  plain_language: Repeat a known cause
+  unit_id: UNIT-BABY-INSTRUCTIONS-01
+- term: Here
+  plain_language: Gesture across space
+  unit_id: UNIT-BABY-MESSAGES-01
+- term: Familiar
+  plain_language: Known face/sound comfort
+  unit_id: UNIT-BABY-DATA-01
+- term: Grown-Up
+  plain_language: Some controls are adult
+  unit_id: UNIT-BABY-SAFE-01
+- term: Show
+  plain_language: Gesture teach-back
+  unit_id: UNIT-BABY-BUILD-01

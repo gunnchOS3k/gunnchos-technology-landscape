@@ -1,0 +1,31 @@
+# KIDS-ELEM2 media evidence traceability
+# Applies existing CME rules — no magic frequencies / no compulsion patterns
+
+meta:
+  age_band: KIDS-ELEM2
+  visual_style: style_neutral_prototype
+  character_cast_option: A_Signal_Crew_provisional
+applied_rules:
+  one_focal_action: [CME-001, CME-005, CME-007]
+  low_clutter: [CME-005, CME-006]
+  color_not_sole_encoding: [CME-003, CME-004]
+  contingent_cause_effect: [CME-011, CME-013]
+  stable_cast_continuity: [CME-016, CME-017, CME-018]
+  participatory_prompts: [CME-018, CME-021]
+  easy_stop_agency: [CME-022, CME-023, CME-024]
+  no_dark_patterns: [CME-025, CME-026, CME-027]
+  observation_over_diagnosis: [CME-028, CME-029]
+rejected_claims:
+  - magic_frequencies
+  - brain_activating_colors
+  - attention_equals_learning
+  - high_pitch_equals_intelligence
+  - autoplay_infinite_engagement
+per_unit_default_media_ids:
+  UNIT-ELEM2-ME-TECH-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]
+  UNIT-ELEM2-INSIDE-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]
+  UNIT-ELEM2-INSTRUCTIONS-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]
+  UNIT-ELEM2-MESSAGES-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]
+  UNIT-ELEM2-DATA-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]
+  UNIT-ELEM2-SAFE-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]
+  UNIT-ELEM2-BUILD-01: [CME-001, CME-003, CME-006, CME-011, CME-016, CME-022, CME-025, CME-028]

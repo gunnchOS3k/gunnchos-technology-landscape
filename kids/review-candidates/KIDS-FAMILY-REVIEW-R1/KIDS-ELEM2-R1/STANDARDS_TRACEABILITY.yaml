@@ -1,0 +1,116 @@
+# KIDS-ELEM2 standards traceability
+# Editorial crosswalk only — NOT certification / NOT official alignment
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY
+
+meta:
+  age_band: KIDS-ELEM2
+  standards_relationship: CROSSWALKED_AGAINST
+  fidelity_ceiling: ADJACENT
+  child_validation: NONE
+  no_standards_certification_evidence: true
+units:
+- unit_id: UNIT-ELEM2-ME-TECH-01
+  concept_ids: [KCON-CH01-SYSTEM-NOT-SCREEN]
+  wire_id: STD-WIRE-UNIT-ELEM2-ME-TECH-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  note: "Editorial ADJACENT crosswalk only; not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+- unit_id: UNIT-ELEM2-INSIDE-01
+  concept_ids: [KCON-CH09-POWER-HEAT]
+  wire_id: STD-WIRE-UNIT-ELEM2-INSIDE-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  note: "Editorial ADJACENT crosswalk only; not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+- unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+  concept_ids: [KCON-CH14-APPS-UI]
+  wire_id: STD-WIRE-UNIT-ELEM2-INSTRUCTIONS-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-ALGO-FOUNDATIONS
+  note: "Editorial ADJACENT crosswalk only; not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+- unit_id: UNIT-ELEM2-MESSAGES-01
+  concept_ids: [KCON-CH16-PACKETS-INTERNET]
+  wire_id: STD-WIRE-UNIT-ELEM2-MESSAGES-01
+  status: NOT_YET_MAPPED
+  atlas_mapping_ids:
+    # empty — NOT_YET_MAPPED
+  atlas_kids_targets:
+  # empty — NOT_YET_MAPPED
+  note: "Atlas lacks honest messaging/network grain; NOT_YET_MAPPED with rationale; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+- unit_id: UNIT-ELEM2-DATA-01
+  concept_ids: [KCON-CH21-DATA-AI]
+  wire_id: STD-WIRE-UNIT-ELEM2-DATA-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  note: "Editorial ADJACENT crosswalk only; not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+- unit_id: UNIT-ELEM2-SAFE-01
+  concept_ids: [KCON-CH25-DIGITAL-EQUITY]
+  wire_id: STD-WIRE-UNIT-ELEM2-SAFE-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  note: "Editorial ADJACENT crosswalk only; not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+- unit_id: UNIT-ELEM2-BUILD-01
+  concept_ids: [KCON-CH31-CAPSTONE-TEACH]
+  wire_id: STD-WIRE-UNIT-ELEM2-BUILD-01
+  status: ADJACENT
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  note: "Editorial ADJACENT crosswalk only; not official alignment; NO_CHILD_VALIDATION_EVIDENCE."
+  evidence_rules: [no_fabricated_child_validation, observation_over_diagnosis]
+
+waike_optional_bridge:
+  crosswalk_path: kids/waike/KIDS_WAIKE_CROSSWALK.yaml
+  waike_sha: e97e74fc9bfb44b1cdc26b272dc4848264f15fe0
+  entries_used:
+    - kids_object: KCON-CH21-DATA-AI
+      waike_id: AI_ML_EDGE
+      status: adjacent
+      note: Precursor only; not a WAIKE module.
+    - kids_object: KCON-CH30-CAREER-PORTFOLIO
+      waike_id: portfolio_evidence
+      status: adjacent
+      note: Portfolio culture adjacency for Unit 7 precursor; not exact module.
+  non_claims:
+    - No invented WAIKE course IDs for KIDS-ELEM2.
+    - Kids Edition is not a certified WAIKE track.

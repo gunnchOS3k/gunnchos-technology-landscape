@@ -1,0 +1,10 @@
+book_id: KIDS-BABY
+artifacts:
+  BABY_FULL_MANUSCRIPT.pdf:
+    path: kids/books/KIDS-BABY/builds/BABY_FULL_MANUSCRIPT.pdf
+    sha256: 8481d3cd315f8406c94189db913e648ed1e6ef82484c53384f1fe496ef949e1d
+    bytes: 37739
+  review-preview.html:
+    path: kids/books/KIDS-BABY/builds/review-preview.html
+    sha256: 5ad5eccfbf6ec54ff080a9d9eda70408285071d9c3164932fad95245f2427e55
+    bytes: 10879

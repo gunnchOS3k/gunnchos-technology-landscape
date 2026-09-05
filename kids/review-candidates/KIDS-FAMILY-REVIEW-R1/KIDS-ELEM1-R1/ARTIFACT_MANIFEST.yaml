@@ -1,0 +1,69 @@
+figure_count: 15
+unit_count: 7
+document_id: KIDS-ELEM1-ARTIFACT_MANIFEST
+age_band: KIDS-ELEM1
+status: WORKING_DRAFT_COMPLETE
+publication_ready: false
+files:
+- ACCESSIBILITY_NOTES.md
+- ARTIFACT_MANIFEST.yaml
+- BOOK_MANUSCRIPT.md
+- BOOK_METADATA.yaml
+- CAREGIVER_EDUCATOR_NOTES.md
+- FIGURE_PLAN.yaml
+- GLOSSARY.yaml
+- MEDIA_EVIDENCE_TRACEABILITY.yaml
+- README.md
+- STANDARDS_TRACEABILITY.yaml
+- UNIT_REGISTRY.yaml
+- figures/FIG-ELEM1-BUILD-01.meta.yaml
+- figures/FIG-ELEM1-BUILD-01.svg
+- figures/FIG-ELEM1-BUILD-02.meta.yaml
+- figures/FIG-ELEM1-BUILD-02.svg
+- figures/FIG-ELEM1-DATA-01.meta.yaml
+- figures/FIG-ELEM1-DATA-01.svg
+- figures/FIG-ELEM1-DATA-02.meta.yaml
+- figures/FIG-ELEM1-DATA-02.svg
+- figures/FIG-ELEM1-INSIDE-01.meta.yaml
+- figures/FIG-ELEM1-INSIDE-01.svg
+- figures/FIG-ELEM1-INSIDE-02.meta.yaml
+- figures/FIG-ELEM1-INSIDE-02.svg
+- figures/FIG-ELEM1-INSTRUCTIONS-01.meta.yaml
+- figures/FIG-ELEM1-INSTRUCTIONS-01.svg
+- figures/FIG-ELEM1-INSTRUCTIONS-02.meta.yaml
+- figures/FIG-ELEM1-INSTRUCTIONS-02.svg
+- figures/FIG-ELEM1-ME-TECH-01.meta.yaml
+- figures/FIG-ELEM1-ME-TECH-01.svg
+- figures/FIG-ELEM1-ME-TECH-02.meta.yaml
+- figures/FIG-ELEM1-ME-TECH-02.svg
+- figures/FIG-ELEM1-ME-TECH-03.meta.yaml
+- figures/FIG-ELEM1-ME-TECH-03.svg
+- figures/FIG-ELEM1-MESSAGES-01.meta.yaml
+- figures/FIG-ELEM1-MESSAGES-01.svg
+- figures/FIG-ELEM1-MESSAGES-02.meta.yaml
+- figures/FIG-ELEM1-MESSAGES-02.svg
+- figures/FIG-ELEM1-SAFE-01.meta.yaml
+- figures/FIG-ELEM1-SAFE-01.svg
+- figures/FIG-ELEM1-SAFE-02.meta.yaml
+- figures/FIG-ELEM1-SAFE-02.svg
+metrics:
+  child_facing_words: 2955
+  caregiver_educator_words_approx: 572
+  units: 7
+  sections_per_unit: 9
+  h2_sections_in_manuscript: 68
+  figures_svg: 15
+  figures_illustration_direction_ready: 7
+  figures_deterministic_diagrams: 8
+  activities: 21
+  glossary_terms: 20
+  standards_mappings: 7
+  standards_adjacent: 6
+  standards_not_yet_mapped: 1
+builds:
+  html_review_prototype: PENDING_INTEGRATOR
+  pdf_review_prototype: PENDING_INTEGRATOR
+  banner_required:
+  - KIDS FULL WORKING MANUSCRIPT
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY

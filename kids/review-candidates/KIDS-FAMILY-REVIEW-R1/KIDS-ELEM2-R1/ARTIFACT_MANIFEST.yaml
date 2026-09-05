@@ -1,0 +1,88 @@
+# KIDS-ELEM2 artifact manifest
+figure_count: 15
+unit_count: 7
+
+meta:
+  age_band: KIDS-ELEM2
+  status: WORKING_MANUSCRIPT_DRAFT
+artifacts:
+  - path: kids/books/KIDS-ELEM2/BOOK_MANUSCRIPT.md
+    type: manuscript
+  - path: kids/books/KIDS-ELEM2/BOOK_METADATA.yaml
+    type: metadata
+  - path: kids/books/KIDS-ELEM2/UNIT_REGISTRY.yaml
+    type: registry
+  - path: kids/books/KIDS-ELEM2/GLOSSARY.yaml
+    type: glossary
+  - path: kids/books/KIDS-ELEM2/STANDARDS_TRACEABILITY.yaml
+    type: standards
+  - path: kids/books/KIDS-ELEM2/MEDIA_EVIDENCE_TRACEABILITY.yaml
+    type: media_evidence
+  - path: kids/books/KIDS-ELEM2/ACCESSIBILITY_NOTES.md
+    type: accessibility
+  - path: kids/books/KIDS-ELEM2/CAREGIVER_EDUCATOR_NOTES.md
+    type: caregiver
+  - path: kids/books/KIDS-ELEM2/FIGURE_PLAN.yaml
+    type: figure_plan
+  - path: kids/books/KIDS-ELEM2/README.md
+    type: readme
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S02.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S02.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S05.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S05.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S04.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S04.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S03.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S03.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S03.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S03.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S04.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S04.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S05.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S05.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S01.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S01.meta.yaml
+    type: figure_meta
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S08.svg
+    type: figure_svg
+  - path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S08.meta.yaml
+    type: figure_meta

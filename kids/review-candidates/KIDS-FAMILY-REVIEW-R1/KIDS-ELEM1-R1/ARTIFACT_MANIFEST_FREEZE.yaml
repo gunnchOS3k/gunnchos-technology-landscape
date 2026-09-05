@@ -1,0 +1,10 @@
+book_id: KIDS-ELEM1
+artifacts:
+  ELEM1_FULL_MANUSCRIPT.pdf:
+    path: kids/books/KIDS-ELEM1/builds/ELEM1_FULL_MANUSCRIPT.pdf
+    sha256: 966dd0d8d692ff0018847a4525f25fc20346bcc1aafa33ebf2c5217fe666c779
+    bytes: 58369
+  review-preview.html:
+    path: kids/books/KIDS-ELEM1/builds/review-preview.html
+    sha256: b88f73f251f50914708b1bedd7473c817c7d498681de123a8623145befdc08e0
+    bytes: 24384

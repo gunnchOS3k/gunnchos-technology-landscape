@@ -1,0 +1,10 @@
+book_id: KIDS-PREK
+artifacts:
+  PREK_FULL_MANUSCRIPT.pdf:
+    path: kids/books/KIDS-PREK/builds/PREK_FULL_MANUSCRIPT.pdf
+    sha256: 032ea6744a3c56824e19b99d98dd8e11a2970a50bd33eaecafa3ecb59ba557a7
+    bytes: 70481
+  review-preview.html:
+    path: kids/books/KIDS-PREK/builds/review-preview.html
+    sha256: 0b550bc1f98ca891dd70a263d45101b15887c048649dc1f8fd0e47d4d338311f
+    bytes: 30259

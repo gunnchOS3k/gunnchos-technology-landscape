@@ -49,6 +49,10 @@ REQUIRED_CANDIDATE_FILES = [
 # manuscript chapters / labs / glossary remain non-allowlisted.
 PROVENANCE_ALLOWLIST_PREFIXES = (
     "publication/review-candidates/FULL31-PRE-REVIEW-001/",
+    "publication/review-candidates/FULL31-REVIEW-R1/",
+    "publication/review-candidates/FULL31_REVIEW_R1_STATUS.md",
+    "publication/review-candidates/HUMAN_VALIDATION_OWNER_GUIDE.md",
+    "publication/reviews/",
     "publication/full31/FULL31_PRE_HUMAN_REVIEW_CANDIDATE.md",
     "publication/full31/quality/",
     "publication/full31/FULL31_MANUSCRIPT_INVENTORY.md",
@@ -62,6 +66,7 @@ PROVENANCE_ALLOWLIST_PREFIXES = (
     "kids/",
     "_quarto-print-",
     "Makefile",
+    ".gitignore",
     ".github/workflows/ci.yml",
     "scripts/check_distribution_requirements.py",
     "scripts/check_adult_release_packages.py",
@@ -83,9 +88,16 @@ PROVENANCE_ALLOWLIST_PREFIXES = (
     "scripts/generate_kids_",
     "scripts/kids_full_manuscript_",
     "scripts/full31_pre_review_check.py",
+    "scripts/build_full31_review_r1_candidate.py",
+    "scripts/validate_full31_review_r1_freeze.py",
+    "scripts/build_kids_family_review_r1_candidate.py",
+    "scripts/validate_kids_family_review_r1_freeze.py",
+    "scripts/review_intake.py",
+    "scripts/validate_links.py",
     "tests/test_adult_",
     "tests/test_kids_",
     "tests/test_full31_pre_review_provenance.py",
+    "tests/test_human_validation_launch_prep.py",
 )
 
 

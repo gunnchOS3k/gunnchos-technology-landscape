@@ -1,0 +1,9 @@
+book_id: KIDS-PRESCHOOL
+artifacts:
+- BOOK_MANUSCRIPT.md
+- UNIT_REGISTRY.yaml
+- figures/
+- builds/
+figure_count: 70
+unit_count: 7
+child_facing_words: 544
