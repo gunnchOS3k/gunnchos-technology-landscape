@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PREK-INSTRUCTIONS-S08-title FIG-PREK-INSTRUCTIONS-S08-desc" data-asset-id="FIG-PREK-INSTRUCTIONS-S08">
+  <title id="FIG-PREK-INSTRUCTIONS-S08-title">FIG-PREK-INSTRUCTIONS-S08: Build-a-sequence</title>
+  <desc id="FIG-PREK-INSTRUCTIONS-S08-desc">Input, Steps, Output, optional Fix cards.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-PREK-INSTRUCTIONS-S08</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PREK</text>
+  <text x="40" y="98" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Build-a-sequence</text>
+  <text x="40" y="108" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#111"/></marker></defs><rect x="136" y="200" width="120" height="70" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+<text x="196.0" y="240.0" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#111">input</text>
+<line x1="256" y1="235.0" x2="272" y2="235.0" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="272" y="200" width="120" height="70" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+<text x="332.0" y="240.0" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#111">steps</text>
+<line x1="392" y1="235.0" x2="408" y2="235.0" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="408" y="200" width="120" height="70" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+<text x="468.0" y="240.0" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#111">output</text>
+<line x1="528" y1="235.0" x2="544" y2="235.0" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="544" y="200" width="120" height="70" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+<text x="604.0" y="240.0" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#111">fix</text>
+  <foreignObject x="40" y="360" width="720" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">Build cards: Input → Steps → Output. Add a Fix card if something goes wrong.</div>
+  </foreignObject>
+
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

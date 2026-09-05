@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PREK-SAFE-S02-title FIG-PREK-SAFE-S02-desc" data-asset-id="FIG-PREK-SAFE-S02">
+  <title id="FIG-PREK-SAFE-S02-title">FIG-PREK-SAFE-S02: Who can see?</title>
+  <desc id="FIG-PREK-SAFE-S02-desc">Audience circles: family, friend, stranger.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-PREK-SAFE-S02</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PREK</text>
+  <text x="40" y="98" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Who can see?</text>
+  <text x="40" y="108" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+  
+  <circle cx="200" cy="250" r="55" fill="#f4f4f4" stroke="#111" stroke-width="3"/><text x="200" y="255" text-anchor="middle">family</text>
+  <circle cx="400" cy="250" r="55" fill="#f4f4f4" stroke="#111" stroke-width="3"/><text x="400" y="255" text-anchor="middle">friend</text>
+  <circle cx="600" cy="250" r="55" fill="#fff" stroke="#111" stroke-width="3" stroke-dasharray="6 4"/><text x="600" y="255" text-anchor="middle">stranger</text>
+
+  <foreignObject x="40" y="360" width="720" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">Notice who can see: family, friend, or stranger? Private means not for everyone.</div>
+  </foreignObject>
+
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

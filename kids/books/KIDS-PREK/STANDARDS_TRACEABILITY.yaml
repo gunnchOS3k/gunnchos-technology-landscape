@@ -1,0 +1,108 @@
+# STANDARDS TRACEABILITY — KIDS-PREK
+# Editorial crosswalk only. No certification. No EXACT invention.
+
+meta:
+  age_band: KIDS-PREK
+  relationship: CROSSWALKED_AGAINST
+  fidelity_ceiling: ADJACENT
+  child_validation: NONE
+  standards_certification_evidence: NO_STANDARDS_CERTIFICATION_EVIDENCE
+  atlas_ref: kids/standards/GLOBAL_STANDARDS_ATLAS.yaml
+  wire_ref: kids/standards/WIRE_HOOK_REGISTRY.yaml
+  scope_ref: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
+
+units:
+- unit_id: UNIT-PREK-ME-TECH-01
+  mapping_id: MAP-UNIT-PREK-ME-TECH-01
+  status: ADJACENT
+  wire_id: STD-WIRE-UNIT-PREK-ME-TECH-01
+  note: "Integrator-wired ADJACENT to atlas maps ['MAP-ELOF-PLAY-KE', 'MAP-EYFS-PLAY-KE', 'MAP-EYLF-PLAY-KE', 'MAP-TEWHARIKI-PLAY-KE', 'MAP-NEL-PLAY-KE', 'MAP-ON-KG-PLAY-KE', 'MAP-OECD-AGENCY-KE', 'MAP-NCF-PLAY-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment."
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-PLAY-INQUIRY
+  - KE-TARGET-SYSTEMS-STABILITY
+  exact_claims: []
+  invented_exact: false
+- unit_id: UNIT-PREK-INSIDE-01
+  mapping_id: MAP-UNIT-PREK-INSIDE-01
+  status: ADJACENT
+  wire_id: STD-WIRE-UNIT-PREK-INSIDE-01
+  note: "Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-SYS-KE']; editorial crosswalk only — not official alignment."
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-SYSTEMS-STABILITY
+  exact_claims: []
+  invented_exact: false
+- unit_id: UNIT-PREK-INSTRUCTIONS-01
+  mapping_id: MAP-UNIT-PREK-INSTRUCTIONS-01
+  status: ADJACENT
+  wire_id: STD-WIRE-UNIT-PREK-INSTRUCTIONS-01
+  note: "Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial crosswalk only — not official alignment."
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-ALGO-FOUNDATIONS
+  exact_claims: []
+  invented_exact: false
+- unit_id: UNIT-PREK-MESSAGES-01
+  mapping_id: MAP-UNIT-PREK-MESSAGES-01
+  status: NOT_YET_MAPPED
+  wire_id: STD-WIRE-UNIT-PREK-MESSAGES-01
+  note: "Atlas lacks honest grain for this unit strand (messaging/network); kept NOT_YET_MAPPED with rationale."
+  atlas_mapping_ids: []
+  atlas_kids_targets: []
+  exact_claims: []
+  invented_exact: false
+- unit_id: UNIT-PREK-DATA-01
+  mapping_id: MAP-UNIT-PREK-DATA-01
+  status: ADJACENT
+  wire_id: STD-WIRE-UNIT-PREK-DATA-01
+  note: "Integrator-wired ADJACENT to atlas maps ['MAP-CSTA2026-DATA-KE', 'MAP-UNESCO-AI-KE']; editorial crosswalk only — not official alignment."
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  atlas_kids_targets:
+  - KE-TARGET-DATA-PATTERNS
+  - KE-TARGET-AI-LITERACY
+  exact_claims: []
+  invented_exact: false
+- unit_id: UNIT-PREK-SAFE-01
+  mapping_id: MAP-UNIT-PREK-SAFE-01
+  status: ADJACENT
+  wire_id: STD-WIRE-UNIT-PREK-SAFE-01
+  note: "Integrator-wired ADJACENT to atlas maps ['MAP-UNESCO-AI-CITIZEN-KE', 'MAP-CSTA2026-SOC-KE']; editorial crosswalk only — not official alignment."
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  atlas_kids_targets:
+  - KE-TARGET-DIGITAL-CITIZENSHIP
+  - KE-TARGET-COMPUTING-SOCIETY
+  exact_claims: []
+  invented_exact: false
+- unit_id: UNIT-PREK-BUILD-01
+  mapping_id: MAP-UNIT-PREK-BUILD-01
+  status: ADJACENT
+  wire_id: STD-WIRE-UNIT-PREK-BUILD-01
+  note: "Integrator-wired ADJACENT to atlas maps ['MAP-NGSS-SCI-KE', 'MAP-CSTA2026-ALGO-KE', 'MAP-AC-DT-KE']; editorial crosswalk only — not official alignment."
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  atlas_kids_targets:
+  - KE-TARGET-SCIENCE-PRACTICES
+  - KE-TARGET-ALGO-FOUNDATIONS
+  exact_claims: []
+  invented_exact: false
