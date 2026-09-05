@@ -88,6 +88,15 @@ jobs:
           make kids-pilot-check
           make kids-review-prototype-check
           make kids-epubcheck
+          # Kids full manuscript family (Prompt 26) — only when books/ exists
+          if [ -d kids/books/KIDS-BABY ]; then
+            make kids-full-manuscript-check
+            make kids-full-manuscript-inventory
+            make kids-full-manuscript-continuity-check
+            make kids-full-manuscript-accessibility-check
+            make kids-full-manuscript-safety-check
+            make kids-full-manuscript-meta-check
+          fi
       - name: Confirm evidence sentinels
         run: |
           out="$(.venv/bin/python scripts/check_publication_family.py)"
