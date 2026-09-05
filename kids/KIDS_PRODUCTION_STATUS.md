@@ -53,3 +53,17 @@ Next human rung: `KIDS_CHILD_VALIDATION_PENDING`.
 4. Do not mark child validation complete.
 5. Gate 3 / FULL31-PRE-REVIEW-001 provenance untouched (no manuscript rewrite).
 6. Aggregate `KIDS_GLOBAL_FOUNDATION_AND_REVIEW_PROTOTYPE_COMPLETE` does **not** imply EXACT deep maps or certification.
+
+
+## Full manuscript family (Prompt 26)
+
+Allowed ceiling: `KIDS_FULL_MANUSCRIPT_FAMILY_WORKING_DRAFT_COMPLETE`
+
+Still true:
+- `KIDS_CHILD_VALIDATION_PENDING`
+- `NOT CHILD-VALIDATED`
+- `NOT PUBLICATION-READY`
+- `NO_CHILD_VALIDATION_EVIDENCE`
+- `NO_STANDARDS_CERTIFICATION_EVIDENCE`
+
+Path: `kids/books/` (six age-band working manuscripts, 42/42 units).

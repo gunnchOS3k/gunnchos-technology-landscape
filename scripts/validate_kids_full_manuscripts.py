@@ -68,7 +68,11 @@ CHILD_FACING_BLOCK_RE = re.compile(
     r"\*\*Child-facing text:\*\*\s*(.+?)(?=\n\n|\n\*\*|$)",
     re.S,
 )
-PLACEHOLDER_RE = re.compile(r"IMAGE HERE|TODO_IMAGE|lorem ipsum|\[placeholder\]", re.I)
+# Match real placeholders only — allow explicit "no IMAGE HERE" / "without IMAGE HERE" notes.
+PLACEHOLDER_RE = re.compile(
+    r"(?<!\bno\s)(?<!\bwithout\s)(?<!\breject\s)IMAGE HERE|TODO_IMAGE|lorem ipsum|\[placeholder\]",
+    re.I,
+)
 CHILD_FACING_PROJECT_META_RE = re.compile(
     r"(?:"
     r"not\s+child[- ]validated"

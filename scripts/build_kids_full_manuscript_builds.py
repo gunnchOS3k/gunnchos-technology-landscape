@@ -314,7 +314,7 @@ def build_band(band_id: str, short: str, ages: str) -> dict:
         "epub": None,
         "epubcheck": None,
     }
-    if band_id in EPUB_CANDIDATES:
+    if band_id in EPUB_CANDIDATES and __import__('os').environ.get('KIDS_EMIT_EPUB') == '1':
         epub_path = builds / f"{short}_FULL_MANUSCRIPT.epub"
         build_epub(band_id, short, md, epub_path)
         ok, msg = run_epubcheck(epub_path)

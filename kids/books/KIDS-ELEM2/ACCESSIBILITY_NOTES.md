@@ -28,3 +28,16 @@ Provisional Signal Crew should be illustrated with inclusive, non-stereotyped de
 ## Non-claims
 
 These notes are design targets, not validation evidence that materials “work for all learners.”
+
+## Route checklist (integrator completeness)
+
+- Low vision routes: large print, high contrast, described figures
+- Color vision: redundant non-color cues
+- Hearing: visual alternatives; no audio-only requirements
+- Dyslexia / readability: short lines, clear spacing
+- Motor differences: large targets, partner-assisted options
+- Neurodiversity: predictable cadence, easy stop, low clutter
+- AAC / communication differences: gesture/device/partner responses count
+- Sensory sensitivity: quiet route available
+- Multilingual families: caregiver translation welcome
+

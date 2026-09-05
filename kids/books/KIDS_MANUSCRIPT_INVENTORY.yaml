@@ -1,0 +1,80 @@
+document_id: KIDS_MANUSCRIPT_INVENTORY
+status: KIDS_FULL_MANUSCRIPT_FAMILY_WORKING_DRAFT_COMPLETE
+honesty:
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+- KIDS_CHILD_VALIDATION_PENDING
+- NO_CHILD_VALIDATION_EVIDENCE
+- NO_STANDARDS_CERTIFICATION_EVIDENCE
+totals:
+  books: 6
+  units: 42
+  child_facing_words: 7158
+  figures_svg: 300
+books:
+- age_band: KIDS-BABY
+  child_facing_words: 44
+  caregiver_educator_words: 198
+  units: 7
+  spreads_or_sections: 42
+  figures_svg: 69
+  activities: 35
+  standards_mappings: 7
+  glossary_terms: 7
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-TODDLER
+  child_facing_words: 177
+  caregiver_educator_words: 457
+  units: 7
+  spreads_or_sections: 61
+  figures_svg: 61
+  activities: 21
+  standards_mappings: 0
+  glossary_terms: 10
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-PRESCHOOL
+  child_facing_words: 544
+  caregiver_educator_words: 198
+  units: 7
+  spreads_or_sections: 70
+  figures_svg: 70
+  activities: 35
+  standards_mappings: 7
+  glossary_terms: 7
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-PREK
+  child_facing_words: 1094
+  caregiver_educator_words: 467
+  units: 7
+  spreads_or_sections: 70
+  figures_svg: 70
+  activities: 14
+  standards_mappings: 0
+  glossary_terms: 12
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-ELEM1
+  child_facing_words: 2396
+  caregiver_educator_words: 380
+  units: 7
+  spreads_or_sections: 63
+  figures_svg: 15
+  activities: 21
+  standards_mappings: 0
+  glossary_terms: 20
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-ELEM2
+  child_facing_words: 2903
+  caregiver_educator_words: 501
+  units: 7
+  spreads_or_sections: 63
+  figures_svg: 15
+  activities: 63
+  standards_mappings: 0
+  glossary_terms: 22
+  html_build: true
+  pdf_build: true

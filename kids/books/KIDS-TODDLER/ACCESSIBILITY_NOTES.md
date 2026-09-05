@@ -25,3 +25,16 @@ Every deterministic SVG includes `title`, `desc`, `role="img"`, and reading orde
 ## Non-claims
 
 Accessibility notes are a checklist — not WCAG/EPUB certification.
+
+## Route checklist (integrator completeness)
+
+- Low vision routes: large print, high contrast, described figures
+- Color vision: redundant non-color cues
+- Hearing: visual alternatives; no audio-only requirements
+- Dyslexia / readability: short lines, clear spacing
+- Motor differences: large targets, partner-assisted options
+- Neurodiversity: predictable cadence, easy stop, low clutter
+- AAC / communication differences: gesture/device/partner responses count
+- Sensory sensitivity: quiet route available
+- Multilingual families: caregiver translation welcome
+
