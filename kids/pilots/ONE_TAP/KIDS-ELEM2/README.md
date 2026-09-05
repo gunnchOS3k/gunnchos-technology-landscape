@@ -7,7 +7,7 @@ NOT PUBLICATION-READY
 ```
 
 - Spreads: 10
-- Child-facing words: 806
+- Child-facing words: 821
 - Figures: 10
 - AUTHOR_NOTES: `AUTHOR_NOTES.yaml`
 - HTML: `builds/caregiver-preview.html`

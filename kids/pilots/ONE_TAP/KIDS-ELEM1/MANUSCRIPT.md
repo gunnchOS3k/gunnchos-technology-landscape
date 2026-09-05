@@ -113,7 +113,7 @@ Observe before explaining. Portfolio over ranking. Stop anytime.
 
 ![FIG-ONE-TAP-ELEM1-S10](figures/FIG-ONE-TAP-ELEM1-S10.svg)
 
-**Child-facing text:** Teach a partner or caregiver the IPO path for one tap. Use Mira’s cast roles if it helps: Bolt for parts you can touch, Step for instructions, Ping for optional messages, Shield for pause-and-check. Stop anytime. This prototype is for learning practice — not a test score.
+**Child-facing text:** Teach a partner or caregiver the IPO path for one tap. Use Mira’s cast roles if it helps: Bolt for parts you can touch, Step for instructions, Ping for optional messages, Shield for pause-and-check. Stop anytime. This activity is for practice, not for ranking anyone.
 
 **Try it:** Teach-back IPO path.
 

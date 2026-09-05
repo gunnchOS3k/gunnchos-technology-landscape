@@ -1,8 +1,8 @@
 asset_id: FIG-ONE-TAP-ELEM2-S08
 truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
 age_band: KIDS-ELEM2
-alt: "Style-neutral illustration for 'Build, test, teach': Paper protocol + younger-band teach script + one repair."
-description: "Paper protocol + younger-band teach script + one repair."
+alt: "Style-neutral illustration for 'Build, test, teach': Paper protocol + younger teach script + one repair."
+description: "Paper protocol + younger teach script + one repair."
 purpose: "ONE TAP review prototype spread S08 (BUILD)"
 text_safe_zones:
   title_band: [40, 40, 720, 90]

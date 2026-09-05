@@ -516,11 +516,11 @@ def spreads_for(short: str) -> list[dict]:
                 "words": (
                     "Teach a partner or caregiver the IPO path for one tap. Use Mira’s cast roles if it helps: "
                     "Bolt for parts you can touch, Step for instructions, Ping for optional messages, Shield for pause-and-check. "
-                    "Stop anytime. This prototype is for learning practice — not a test score."
+                    "Stop anytime. This activity is for practice, not for ranking anyone."
                 ),
                 "action": "Teach-back IPO path.",
                 "talk": "Optional peer; easy stop.",
-                "author_meta": "stable_cast_continuity; participatory_prompts",
+                "author_meta": "stable_cast_continuity; participatory_prompts; project-status honesty stays on artifact banner, not child lines.",
                 "facilitator": "Teach-back is evidence of process.",
             },
         ]
@@ -552,12 +552,13 @@ def spreads_for(short: str) -> list[dict]:
                 "Bolt deals three role cards. CPU: runs instructions right now. Memory (working space): holds state "
                 "the program is using this moment. Storage (keep-box): keeps durable data for later. "
                 "Sort classroom examples: the instructions being followed, today’s draft text still open, yesterday’s "
-                "saved file. Say the roles aloud. We describe jobs machines do — we do not invent magic megahertz, "
-                "“brain speed,” or frequency-to-intelligence product claims. If a label sounds like an ad, rewrite it."
+                "saved file. Say the roles aloud. We describe jobs machines do. A bigger number on an advertisement "
+                "does not tell the whole story — ask what was actually measured. If a label sounds like an ad for "
+                "“brain speed,” rewrite it as a job the machine can do."
             ),
             "action": "Sort role cards for CPU / memory / storage.",
             "talk": "Roles, not marketing numbers.",
-            "author_meta": "EDITOR: no false GHz / IQ claims (author constraint).",
+            "author_meta": "EDITOR: no false GHz / IQ claims (author constraint — not child-facing).",
             "facilitator": "Plain roles beat specs theater.",
         },
         {
@@ -569,12 +570,12 @@ def spreads_for(short: str) -> list[dict]:
                 "toward the app that should respond. Inside the app, an event loop can dispatch a handler that updates "
                 "state and asks for a new frame of output. Draw one chain on a single page: "
                 "tap → OS event → app handler → updated state → screen or sound. "
-                "This is a junior model of stack ideas — earned with classroom words. Do not copy adult chapter prose; "
-                "if a word is new, define it once with a pointing example."
+                "This is a classroom model — useful, incomplete, and revisable. If a word is new, define it once with "
+                "a pointing example from the chain you drew. Then explain the same chain in your own words."
             ),
             "action": "Draw event-handling sequence.",
-            "talk": "Keep the chain on one page; avoid jargon dumps.",
-            "author_meta": "EDITOR: honest adjacency to adult CH02; no paste.",
+            "talk": "Keep the chain on one page; define new words once with pointing.",
+            "author_meta": "EDITOR: honest adjacency to adult CH02; no paste of adult prose into kids body.",
             "facilitator": "Event → handler → state → output.",
         },
         {
@@ -621,7 +622,7 @@ def spreads_for(short: str) -> list[dict]:
                 "Add a third tiny box if needed: Still don’t know — and keep it empty of fake certainty."
             ),
             "action": "Two-column notes with uncertainty marks.",
-            "talk": "Core systems skill — model it first.",
+            "talk": "Practice the columns before you argue causes.",
             "author_meta": None,
             "facilitator": "Uncertainty is a feature.",
         },
@@ -634,11 +635,11 @@ def spreads_for(short: str) -> list[dict]:
                 "accounts — lock screen, updates, permission prompts. Privacy: choices about who can see or keep your "
                 "information. List one security control and one privacy choice that change a tap path. "
                 "We may talk about HTTPS as “the path tries to keep the message harder for strangers to read on the way.” "
-                "No exploit steps. No hacking practice. Calm tools beat scary stories."
+                "We learn what tools protect people — we do not practice breaking into systems. Calm tools beat scary stories."
             ),
             "action": "List one security control + one privacy choice.",
-            "talk": "No exploit content.",
-            "author_meta": "EDITOR: no exploit / offensive content.",
+            "talk": "Protection tools, not scare stories.",
+            "author_meta": "EDITOR: no exploit / offensive content (author constraint — not child-facing).",
             "facilitator": "Security ≠ privacy; both matter.",
         },
         {
@@ -647,13 +648,13 @@ def spreads_for(short: str) -> list[dict]:
             "title": "Build, test, teach",
             "words": (
                 "Build a paper protocol for tracing one tap: numbered steps, a failure branch "
-                "(“if no change, check power / ask a trusted adult”), and a teach-back script written for a younger band "
-                "(Pre‑K or K–2 language — short sentences, no stack jargon). Test the protocol once with a partner. "
-                "Repair one unclear step and date the repair. Portfolio artifact = protocol + teach script + one repair note. "
+                "(“if no change, check power / ask a trusted adult”), and a teach-back script for someone younger "
+                "(short sentences; no stack jargon). Test the protocol once with a partner. "
+                "Repair one unclear step and date the repair. Your work packet = protocol + teach script + one repair note. "
                 "Repair is success."
             ),
-            "action": "Paper protocol + younger-band teach script + one repair.",
-            "talk": "Portfolio artifact; process evidence.",
+            "action": "Paper protocol + younger teach script + one repair.",
+            "talk": "Work packet shows process evidence.",
             "author_meta": None,
             "facilitator": "Repair is celebrated.",
         },
@@ -665,12 +666,12 @@ def spreads_for(short: str) -> list[dict]:
                 "What stays the same from baby LOOK → CHANGE to this cross-layer map? Contingent action and response — "
                 "something happens, then something answers. What vocabulary was earned later: input, output, event, packet, "
                 "latency, privacy, security? Spiral learning means the same idea grows tools as learners grow. "
-                "It does not mean babies should hear junior-reference prose. Honor the sparse earlier bands. "
-                "Write one sentence you would teach a toddler and one you would only teach this band."
+                "How would you explain the same idea to someone younger using fewer new words? "
+                "Write one sentence you would teach a toddler and one you would only teach this class."
             ),
             "action": "Spiral reflection note.",
-            "talk": "Honor earlier bands’ restraint.",
-            "author_meta": "Spiral reflection — not adult dump.",
+            "talk": "Same idea, fewer new words for younger listeners.",
+            "author_meta": "Spiral reflection — not adult dump; project-status honesty stays on artifact banner.",
             "facilitator": "Continuity without densifying babies.",
         },
         {
@@ -679,15 +680,14 @@ def spreads_for(short: str) -> list[dict]:
             "title": "EMIT mini-capstone",
             "words": (
                 "EMIT loop: Explain one tap path · Measure one wait · Improve one step of your protocol · Teach someone else. "
-                "Say the honesty lines with Shield, calmly: this is a kids developmental prototype; it is not child-validated; "
-                "it is not publication-ready. Learning bravely includes labeling what we have not tested with children. "
-                "Your portfolio shows process evidence — not a fake certificate. When you teach, invite questions you cannot "
-                "answer yet, and write them down for next time."
+                "With Shield, say what you observed, label what you inferred, and admit what you still do not know. "
+                "Do not invent evidence to sound finished. Your work packet shows process — not a fake certificate. "
+                "When you teach, invite questions you cannot answer yet, and write them down for next time."
             ),
-            "action": "Complete EMIT loop with honesty labels spoken.",
-            "talk": "Honesty labels are part of the learning, spoken calmly.",
-            "author_meta": "EDITOR: honesty label required in facilitator practice — keep prototype banner on artifacts.",
-            "facilitator": "EMIT + honesty; no fabricated validation.",
+            "action": "Complete EMIT loop; name observed, inferred, and still-unknown.",
+            "talk": "Evidence and uncertainty, spoken calmly.",
+            "author_meta": "EDITOR: prototype/not-child-validated/not-publication-ready honesty stays on artifact banner + AUTHOR_NOTES — not child-facing recite lines.",
+            "facilitator": "EMIT + epistemic humility; no fabricated validation.",
         },
     ]
 

@@ -43,12 +43,12 @@ spreads:
     talk_together_child_safe: "Keep discussion concrete; shared figure is a tool, not a quiz key."
   - id: S02
     facilitator_note: "Plain roles beat specs theater."
-    author_meta: "EDITOR: no false GHz / IQ claims (author constraint)."
+    author_meta: "EDITOR: no false GHz / IQ claims (author constraint — not child-facing)."
     talk_together_child_safe: "Roles, not marketing numbers."
   - id: S03
     facilitator_note: "Event → handler → state → output."
-    author_meta: "EDITOR: honest adjacency to adult CH02; no paste."
-    talk_together_child_safe: "Keep the chain on one page; avoid jargon dumps."
+    author_meta: "EDITOR: honest adjacency to adult CH02; no paste of adult prose into kids body."
+    talk_together_child_safe: "Keep the chain on one page; define new words once with pointing."
   - id: S04
     facilitator_note: "Hypothesis discipline."
     author_meta: "none"
@@ -60,23 +60,23 @@ spreads:
   - id: S06
     facilitator_note: "Uncertainty is a feature."
     author_meta: "none"
-    talk_together_child_safe: "Core systems skill — model it first."
+    talk_together_child_safe: "Practice the columns before you argue causes."
   - id: S07
     facilitator_note: "Security ≠ privacy; both matter."
-    author_meta: "EDITOR: no exploit / offensive content."
-    talk_together_child_safe: "No exploit content."
+    author_meta: "EDITOR: no exploit / offensive content (author constraint — not child-facing)."
+    talk_together_child_safe: "Protection tools, not scare stories."
   - id: S08
     facilitator_note: "Repair is celebrated."
     author_meta: "none"
-    talk_together_child_safe: "Portfolio artifact; process evidence."
+    talk_together_child_safe: "Work packet shows process evidence."
   - id: S09
     facilitator_note: "Continuity without densifying babies."
-    author_meta: "Spiral reflection — not adult dump."
-    talk_together_child_safe: "Honor earlier bands’ restraint."
+    author_meta: "Spiral reflection — not adult dump; project-status honesty stays on artifact banner."
+    talk_together_child_safe: "Same idea, fewer new words for younger listeners."
   - id: S10
-    facilitator_note: "EMIT + honesty; no fabricated validation."
-    author_meta: "EDITOR: honesty label required in facilitator practice — keep prototype banner on artifacts."
-    talk_together_child_safe: "Honesty labels are part of the learning, spoken calmly."
+    facilitator_note: "EMIT + epistemic humility; no fabricated validation."
+    author_meta: "EDITOR: prototype/not-child-validated/not-publication-ready honesty stays on artifact banner + AUTHOR_NOTES — not child-facing recite lines."
+    talk_together_child_safe: "Evidence and uncertainty, spoken calmly."
 
 standards:
   see: TRACEABILITY.yaml

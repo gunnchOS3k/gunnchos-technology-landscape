@@ -33,7 +33,7 @@ Separate observation from inference. Measure roughly. Stop anytime.
 
 ![FIG-ONE-TAP-ELEM2-S02](figures/FIG-ONE-TAP-ELEM2-S02.svg)
 
-**Child-facing text:** Bolt deals three role cards. CPU: runs instructions right now. Memory (working space): holds state the program is using this moment. Storage (keep-box): keeps durable data for later. Sort classroom examples: the instructions being followed, today’s draft text still open, yesterday’s saved file. Say the roles aloud. We describe jobs machines do — we do not invent magic megahertz, “brain speed,” or frequency-to-intelligence product claims. If a label sounds like an ad, rewrite it.
+**Child-facing text:** Bolt deals three role cards. CPU: runs instructions right now. Memory (working space): holds state the program is using this moment. Storage (keep-box): keeps durable data for later. Sort classroom examples: the instructions being followed, today’s draft text still open, yesterday’s saved file. Say the roles aloud. We describe jobs machines do. A bigger number on an advertisement does not tell the whole story — ask what was actually measured. If a label sounds like an ad for “brain speed,” rewrite it as a job the machine can do.
 
 **Try it:** Sort role cards for CPU / memory / storage.
 
@@ -43,11 +43,11 @@ Separate observation from inference. Measure roughly. Stop anytime.
 
 ![FIG-ONE-TAP-ELEM2-S03](figures/FIG-ONE-TAP-ELEM2-S03.svg)
 
-**Child-facing text:** A tap becomes an event. The operating system notices input-hardware activity and delivers an event toward the app that should respond. Inside the app, an event loop can dispatch a handler that updates state and asks for a new frame of output. Draw one chain on a single page: tap → OS event → app handler → updated state → screen or sound. This is a junior model of stack ideas — earned with classroom words. Do not copy adult chapter prose; if a word is new, define it once with a pointing example.
+**Child-facing text:** A tap becomes an event. The operating system notices input-hardware activity and delivers an event toward the app that should respond. Inside the app, an event loop can dispatch a handler that updates state and asks for a new frame of output. Draw one chain on a single page: tap → OS event → app handler → updated state → screen or sound. This is a classroom model — useful, incomplete, and revisable. If a word is new, define it once with a pointing example from the chain you drew. Then explain the same chain in your own words.
 
 **Try it:** Draw event-handling sequence.
 
-**Talk together:** Keep the chain on one page; avoid jargon dumps.
+**Talk together:** Keep the chain on one page; define new words once with pointing.
 
 ## Spread S04 — Packets or not? (PREDICT)
 
@@ -77,47 +77,47 @@ Separate observation from inference. Measure roughly. Stop anytime.
 
 **Try it:** Two-column notes with uncertainty marks.
 
-**Talk together:** Core systems skill — model it first.
+**Talk together:** Practice the columns before you argue causes.
 
 ## Spread S07 — Security vs privacy (SECURE)
 
 ![FIG-ONE-TAP-ELEM2-S07](figures/FIG-ONE-TAP-ELEM2-S07.svg)
 
-**Child-facing text:** Shield separates two ideas that often get mashed together. Security: controls that protect systems and accounts — lock screen, updates, permission prompts. Privacy: choices about who can see or keep your information. List one security control and one privacy choice that change a tap path. We may talk about HTTPS as “the path tries to keep the message harder for strangers to read on the way.” No exploit steps. No hacking practice. Calm tools beat scary stories.
+**Child-facing text:** Shield separates two ideas that often get mashed together. Security: controls that protect systems and accounts — lock screen, updates, permission prompts. Privacy: choices about who can see or keep your information. List one security control and one privacy choice that change a tap path. We may talk about HTTPS as “the path tries to keep the message harder for strangers to read on the way.” We learn what tools protect people — we do not practice breaking into systems. Calm tools beat scary stories.
 
 **Try it:** List one security control + one privacy choice.
 
-**Talk together:** No exploit content.
+**Talk together:** Protection tools, not scare stories.
 
 ## Spread S08 — Build, test, teach (BUILD)
 
 ![FIG-ONE-TAP-ELEM2-S08](figures/FIG-ONE-TAP-ELEM2-S08.svg)
 
-**Child-facing text:** Build a paper protocol for tracing one tap: numbered steps, a failure branch (“if no change, check power / ask a trusted adult”), and a teach-back script written for a younger band (Pre‑K or K–2 language — short sentences, no stack jargon). Test the protocol once with a partner. Repair one unclear step and date the repair. Portfolio artifact = protocol + teach script + one repair note. Repair is success.
+**Child-facing text:** Build a paper protocol for tracing one tap: numbered steps, a failure branch (“if no change, check power / ask a trusted adult”), and a teach-back script for someone younger (short sentences; no stack jargon). Test the protocol once with a partner. Repair one unclear step and date the repair. Your work packet = protocol + teach script + one repair note. Repair is success.
 
-**Try it:** Paper protocol + younger-band teach script + one repair.
+**Try it:** Paper protocol + younger teach script + one repair.
 
-**Talk together:** Portfolio artifact; process evidence.
+**Talk together:** Work packet shows process evidence.
 
 ## Spread S09 — Spiral: baby to map (REFLECT)
 
 ![FIG-ONE-TAP-ELEM2-S09](figures/FIG-ONE-TAP-ELEM2-S09.svg)
 
-**Child-facing text:** What stays the same from baby LOOK → CHANGE to this cross-layer map? Contingent action and response — something happens, then something answers. What vocabulary was earned later: input, output, event, packet, latency, privacy, security? Spiral learning means the same idea grows tools as learners grow. It does not mean babies should hear junior-reference prose. Honor the sparse earlier bands. Write one sentence you would teach a toddler and one you would only teach this band.
+**Child-facing text:** What stays the same from baby LOOK → CHANGE to this cross-layer map? Contingent action and response — something happens, then something answers. What vocabulary was earned later: input, output, event, packet, latency, privacy, security? Spiral learning means the same idea grows tools as learners grow. How would you explain the same idea to someone younger using fewer new words? Write one sentence you would teach a toddler and one you would only teach this class.
 
 **Try it:** Spiral reflection note.
 
-**Talk together:** Honor earlier bands’ restraint.
+**Talk together:** Same idea, fewer new words for younger listeners.
 
 ## Spread S10 — EMIT mini-capstone (TEACH)
 
 ![FIG-ONE-TAP-ELEM2-S10](figures/FIG-ONE-TAP-ELEM2-S10.svg)
 
-**Child-facing text:** EMIT loop: Explain one tap path · Measure one wait · Improve one step of your protocol · Teach someone else. Say the honesty lines with Shield, calmly: this is a kids developmental prototype; it is not child-validated; it is not publication-ready. Learning bravely includes labeling what we have not tested with children. Your portfolio shows process evidence — not a fake certificate. When you teach, invite questions you cannot answer yet, and write them down for next time.
+**Child-facing text:** EMIT loop: Explain one tap path · Measure one wait · Improve one step of your protocol · Teach someone else. With Shield, say what you observed, label what you inferred, and admit what you still do not know. Do not invent evidence to sound finished. Your work packet shows process — not a fake certificate. When you teach, invite questions you cannot answer yet, and write them down for next time.
 
-**Try it:** Complete EMIT loop with honesty labels spoken.
+**Try it:** Complete EMIT loop; name observed, inferred, and still-unknown.
 
-**Talk together:** Honesty labels are part of the learning, spoken calmly.
+**Talk together:** Evidence and uncertainty, spoken calmly.
 
 ## Facilitator pointer
 
