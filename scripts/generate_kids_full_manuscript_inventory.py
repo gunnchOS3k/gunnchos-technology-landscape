@@ -1,13 +1,31 @@
 #!/usr/bin/env python3
-"""Generate Kids full-manuscript inventory + fill shared family reports from registries."""
+"""Generate Kids full-manuscript inventory + fill shared family reports from registries.
+
+Standards mapping counts use STANDARDS_TRACEABILITY.yaml unique atlas_mapping_ids only
+(not UNIT_REGISTRY), so registry + traceability never double-count.
+
+Figure counts use live_registered_figures (FIGURE_PLAN IDs with on-disk SVG), not raw
+directory .svg counts (orphans excluded).
+"""
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from kids_full_manuscript_asset_lib import (  # noqa: E402
+    live_registered_ids,
+    load_yaml,
+    physical_svg_ids,
+    registered_figure_ids,
+    standards_status_counts,
+    unique_atlas_mapping_ids,
+)
+
 BOOKS = ROOT / "kids" / "books"
 BANDS = [
     "KIDS-BABY",
@@ -52,9 +70,14 @@ def caregiver_words(path: Path) -> int:
 
 def band_stats(band: str) -> dict:
     root = BOOKS / band
+    figs_dir = root / "figures"
     ms = (root / "BOOK_MANUSCRIPT.md").read_text(encoding="utf-8")
     units = as_units(load(root / "UNIT_REGISTRY.yaml"))
-    figs = list((root / "figures").glob("*.svg")) if (root / "figures").is_dir() else []
+    plan = load_yaml(root / "FIGURE_PLAN.yaml") or {}
+    registered = registered_figure_ids(plan)
+    live = live_registered_ids(plan, figs_dir)
+    physical = physical_svg_ids(figs_dir)
+    orphans = sorted(physical - registered)
     gloss = load(root / "GLOSSARY.yaml") if (root / "GLOSSARY.yaml").is_file() else {}
     terms = 0
     if isinstance(gloss, dict):
@@ -62,15 +85,9 @@ def band_stats(band: str) -> dict:
             terms = len(gloss["terms"])
         else:
             terms = sum(1 for k, v in gloss.items() if isinstance(v, dict) and k != "meta")
-    std = load(root / "STANDARDS_TRACEABILITY.yaml") if (root / "STANDARDS_TRACEABILITY.yaml").is_file() else {}
-    maps = 0
-    if isinstance(std, dict):
-        if isinstance(std.get("mappings"), list):
-            maps = len(std["mappings"])
-        elif isinstance(std.get("units"), list):
-            for u in std["units"]:
-                if isinstance(u, dict):
-                    maps += len(u.get("mappings") or u.get("standards_mapping_ids") or [])
+    std = load_yaml(root / "STANDARDS_TRACEABILITY.yaml") or {}
+    atlas_ids = unique_atlas_mapping_ids(std)
+    status_counts = standards_status_counts(std)
     activities = 0
     spreads = 0
     for u in units:
@@ -84,9 +101,18 @@ def band_stats(band: str) -> dict:
         + caregiver_words(root / "ACCESSIBILITY_NOTES.md"),
         "units": len(units),
         "spreads_or_sections": spreads,
-        "figures_svg": len(figs),
+        "live_registered_figures": len(live),
+        "registered_figure_ids": len(registered),
+        "physical_svg_files": len(physical),
+        "orphan_svg_files": len(orphans),
+        "orphan_svg_ids": orphans,
+        # Backward-compatible alias: inventory "figures" == live registered, not orphans.
+        "figures_svg": len(live),
         "activities": activities,
-        "standards_mappings": maps,
+        "standards_mappings": len(atlas_ids),
+        "standards_mapping_ids_unique": sorted(atlas_ids),
+        "standards_counting_source": "STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids (unique)",
+        "standards_units_by_status": status_counts,
         "glossary_terms": terms,
         "html_build": (root / "builds" / "review-preview.html").is_file(),
         "pdf_build": any((root / "builds").glob("*.pdf")) if (root / "builds").is_dir() else False,
@@ -104,11 +130,24 @@ def write_inventory(stats: list[dict]) -> None:
             "NO_CHILD_VALIDATION_EVIDENCE",
             "NO_STANDARDS_CERTIFICATION_EVIDENCE",
         ],
+        "counting_notes": {
+            "standards_mappings": (
+                "Unique atlas_mapping_ids from STANDARDS_TRACEABILITY.yaml only "
+                "(UNIT_REGISTRY not double-counted)."
+            ),
+            "figures": (
+                "live_registered_figures = FIGURE_PLAN IDs with on-disk SVG; "
+                "orphan SVGs excluded from manuscript figure counts."
+            ),
+        },
         "totals": {
             "books": len(stats),
             "units": sum(s["units"] for s in stats),
             "child_facing_words": sum(s["child_facing_words"] for s in stats),
-            "figures_svg": sum(s["figures_svg"] for s in stats),
+            "live_registered_figures": sum(s["live_registered_figures"] for s in stats),
+            "physical_svg_files": sum(s["physical_svg_files"] for s in stats),
+            "orphan_svg_files": sum(s["orphan_svg_files"] for s in stats),
+            "standards_mappings_unique_sum": sum(s["standards_mappings"] for s in stats),
         },
         "books": stats,
     }
@@ -124,15 +163,35 @@ def write_inventory(stats: list[dict]) -> None:
         "KIDS_CHILD_VALIDATION_PENDING",
         "```",
         "",
-        "| Band | Child words | Caregiver/educator words | Units | Spreads | Figures | Activities | Standards maps | Glossary | HTML | PDF |",
-        "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |",
+        "Counting rules:",
+        "",
+        "- **Standards maps** = unique `atlas_mapping_ids` in `STANDARDS_TRACEABILITY.yaml` (not UNIT_REGISTRY).",
+        "- **Figures** = `live_registered_figures` (FIGURE_PLAN IDs with on-disk SVG). Orphan SVGs are excluded.",
+        "",
+        "| Band | Child words | Caregiver/educator words | Units | Spreads | Live figures | Physical SVG | Orphans | Activities | Standards maps | Glossary | HTML | PDF |",
+        "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |",
     ]
     for s in stats:
         lines.append(
             f"| {s['age_band']} | {s['child_facing_words']} | {s['caregiver_educator_words']} | "
-            f"{s['units']} | {s['spreads_or_sections']} | {s['figures_svg']} | {s['activities']} | "
+            f"{s['units']} | {s['spreads_or_sections']} | {s['live_registered_figures']} | "
+            f"{s['physical_svg_files']} | {s['orphan_svg_files']} | {s['activities']} | "
             f"{s['standards_mappings']} | {s['glossary_terms']} | "
             f"{'yes' if s['html_build'] else 'no'} | {'yes' if s['pdf_build'] else 'no'} |"
+        )
+    lines += [
+        "",
+        "## Standards units by status",
+        "",
+        "| Band | ADJACENT | PROPOSED | NOT_YET_MAPPED | NO_MAP | TRANSLATION_REQUIRED | VERSION_UNCLEAR |",
+        "| --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+    ]
+    for s in stats:
+        sc = s["standards_units_by_status"]
+        lines.append(
+            f"| {s['age_band']} | {sc.get('ADJACENT', 0)} | {sc.get('PROPOSED', 0)} | "
+            f"{sc.get('NOT_YET_MAPPED', 0)} | {sc.get('NO_MAP', 0)} | "
+            f"{sc.get('TRANSLATION_REQUIRED', 0)} | {sc.get('VERSION_UNCLEAR', 0)} |"
         )
     lines += [
         "",
@@ -141,11 +200,12 @@ def write_inventory(stats: list[dict]) -> None:
         f"- Books: {inv['totals']['books']}",
         f"- Units: {inv['totals']['units']}",
         f"- Child-facing words: {inv['totals']['child_facing_words']}",
-        f"- SVG figures: {inv['totals']['figures_svg']}",
+        f"- Live registered figures: {inv['totals']['live_registered_figures']}",
+        f"- Physical SVG files: {inv['totals']['physical_svg_files']}",
+        f"- Orphan SVG files: {inv['totals']['orphan_svg_files']}",
         "",
     ]
     (BOOKS / "KIDS_MANUSCRIPT_INVENTORY.md").write_text("\n".join(lines), encoding="utf-8")
-
 
 def write_format_matrix() -> None:
     data = {
@@ -275,51 +335,98 @@ Adult appendix only for standards IDs — not inside child-facing blocks.
 
 
 def write_quality_issues() -> None:
+    """Upsert integrity-closure issues as FIXED; keep human MODERATE/EDITORIAL open."""
+    path = BOOKS / "KIDS_FULL_MANUSCRIPT_QUALITY_ISSUES.yaml"
+    existing = load(path) if path.is_file() else {}
+    by_id = {}
+    if isinstance(existing, dict):
+        for issue in existing.get("issues") or []:
+            if isinstance(issue, dict) and issue.get("id"):
+                by_id[issue["id"]] = issue
+    # Preserve human-facing residual issues.
+    defaults = [
+        {
+            "id": "KQI-001",
+            "severity": "MODERATE",
+            "status": "OPEN",
+            "summary": "Character Bible Option A remains provisional pending owner IP lock.",
+        },
+        {
+            "id": "KQI-002",
+            "severity": "MODERATE",
+            "status": "OPEN",
+            "summary": "Narrative illustrations are ILLUSTRATION_DIRECTION_READY; final art not commissioned.",
+        },
+        {
+            "id": "KQI-003",
+            "severity": "MINOR",
+            "status": "OPEN",
+            "summary": "PRESCHOOL/PREK fixed-layout EPUB evaluated as candidate only; not shipped.",
+        },
+        {
+            "id": "KQI-004",
+            "severity": "EDITORIAL",
+            "status": "OPEN",
+            "summary": "Human continuity pass recommended across keep-box / memory metaphors.",
+        },
+        {
+            "id": "KQI-005",
+            "severity": "EDITORIAL",
+            "status": "OPEN",
+            "summary": "Child/caregiver/educator validation still pending — no fabricated evidence.",
+        },
+        {
+            "id": "KQI-006",
+            "severity": "MAJOR",
+            "status": "FIXED",
+            "category": "INVENTORY_STANDARDS_COUNT_DRIFT",
+            "summary": "Inventory now counts unique STANDARDS_TRACEABILITY atlas_mapping_ids (not empty/misparsed).",
+        },
+        {
+            "id": "KQI-007",
+            "severity": "MAJOR",
+            "status": "FIXED",
+            "category": "BABY_ORPHAN_FIGURE_ASSETS",
+            "summary": "Removed orphan/duplicate BABY SVG naming families; live registered figures match FIGURE_PLAN.",
+        },
+        {
+            "id": "KQI-008",
+            "severity": "MAJOR",
+            "status": "FIXED",
+            "category": "INTEGRATION_SENTINEL_FILE",
+            "summary": "Removed kids/books integration sentinel .write_ok; hygiene check forbids reintroduction.",
+        },
+    ]
+    for issue in defaults:
+        prev = by_id.get(issue["id"])
+        # Do not reopen FIXED integrity issues; do not downgrade OPEN human issues accidentally.
+        if prev and issue["id"] in {"KQI-001", "KQI-002", "KQI-003", "KQI-004", "KQI-005"}:
+            by_id[issue["id"]] = prev if prev.get("status") else issue
+        else:
+            by_id[issue["id"]] = issue
+    issues = [by_id[i] for i in sorted(by_id)]
+    open_blocker = sum(
+        1
+        for i in issues
+        if str(i.get("status", "")).upper() == "OPEN" and str(i.get("severity", "")).upper() == "BLOCKER"
+    )
+    open_major = sum(
+        1
+        for i in issues
+        if str(i.get("status", "")).upper() == "OPEN" and str(i.get("severity", "")).upper() == "MAJOR"
+    )
     data = {
         "document_id": "KIDS_FULL_MANUSCRIPT_QUALITY_ISSUES",
-        "open_blocker": 0,
-        "open_major": 0,
+        "open_blocker": open_blocker,
+        "open_major": open_major,
         "honesty": [
             "NOT CHILD-VALIDATED",
             "NOT PUBLICATION-READY",
             "KIDS_CHILD_VALIDATION_PENDING",
         ],
-        "issues": [
-            {
-                "id": "KQI-001",
-                "severity": "MODERATE",
-                "status": "OPEN",
-                "summary": "Character Bible Option A remains provisional pending owner IP lock.",
-            },
-            {
-                "id": "KQI-002",
-                "severity": "MODERATE",
-                "status": "OPEN",
-                "summary": "Narrative illustrations are ILLUSTRATION_DIRECTION_READY; final art not commissioned.",
-            },
-            {
-                "id": "KQI-003",
-                "severity": "MINOR",
-                "status": "OPEN",
-                "summary": "PRESCHOOL/PREK fixed-layout EPUB evaluated as candidate only; not shipped.",
-            },
-            {
-                "id": "KQI-004",
-                "severity": "EDITORIAL",
-                "status": "OPEN",
-                "summary": "Human continuity pass recommended across keep-box / memory metaphors.",
-            },
-            {
-                "id": "KQI-005",
-                "severity": "EDITORIAL",
-                "status": "OPEN",
-                "summary": "Child/caregiver/educator validation still pending — no fabricated evidence.",
-            },
-        ],
+        "issues": issues,
     }
-    (BOOKS / "KIDS_FULL_MANUSCRIPT_QUALITY_ISSUES.yaml").write_text(
-        yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8"
-    )
+    path.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
 
 
 def main() -> None:

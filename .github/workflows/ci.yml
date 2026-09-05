@@ -96,6 +96,7 @@ jobs:
             make kids-full-manuscript-accessibility-check
             make kids-full-manuscript-safety-check
             make kids-full-manuscript-meta-check
+            make kids-full-manuscript-assets-check
           fi
       - name: Confirm evidence sentinels
         run: |

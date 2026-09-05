@@ -27,3 +27,21 @@ issues:
   severity: EDITORIAL
   status: OPEN
   summary: Child/caregiver/educator validation still pending — no fabricated evidence.
+- id: KQI-006
+  severity: MAJOR
+  status: FIXED
+  category: INVENTORY_STANDARDS_COUNT_DRIFT
+  summary: Inventory now counts unique STANDARDS_TRACEABILITY atlas_mapping_ids (not
+    empty/misparsed).
+- id: KQI-007
+  severity: MAJOR
+  status: FIXED
+  category: BABY_ORPHAN_FIGURE_ASSETS
+  summary: Removed orphan/duplicate BABY SVG naming families; live registered figures
+    match FIGURE_PLAN.
+- id: KQI-008
+  severity: MAJOR
+  status: FIXED
+  category: INTEGRATION_SENTINEL_FILE
+  summary: Removed kids/books integration sentinel .write_ok; hygiene check forbids
+    reintroduction.
