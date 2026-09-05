@@ -1,0 +1,22 @@
+asset_id: FIG-BABY-DATA-S08
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-BABY
+unit_id: UNIT-BABY-DATA-01
+spread_id: S08
+alt: "Style-neutral diagram for 'All done.': Cuddle close; end."
+description: "Cuddle close; end."
+purpose: "UNIT-BABY-DATA-01 spread S08 (RESPOND)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 80]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/books/KIDS-BABY/figures/FIG-BABY-DATA-S08.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-008, CME-009, CME-010, CME-012]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body

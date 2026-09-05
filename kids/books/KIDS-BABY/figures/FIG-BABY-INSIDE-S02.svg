@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-BABY-INSIDE-S02-title FIG-BABY-INSIDE-S02-desc" data-asset-id="FIG-BABY-INSIDE-S02">
+  <title id="FIG-BABY-INSIDE-S02-title">FIG-BABY-INSIDE-S02: Here</title>
+  <desc id="FIG-BABY-INSIDE-S02-desc">Style-neutral KIDS-BABY diagram for Awake Device S02. Caregiver action: Adult points to the power place. Child text: Here.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-BABY-INSIDE-S02</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: KIDS-BABY</text>
+  <text x="40" y="102" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Here</text>
+
+  <g transform="translate(300,150)">
+    <rect x="40" y="30" width="160" height="140" rx="10" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+    <circle cx="120" cy="120" r="18" fill="#fff" stroke="#111" stroke-width="4"/>
+    <line x1="120" y1="40" x2="120" y2="95" stroke="#111" stroke-width="4" stroke-dasharray="6 6"/>
+    <path d="M120 95 L110 80 L130 80 Z" fill="#111"/>
+  </g>
+  <foreignObject x="40" y="340" width="720" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 18px; color:#111; line-height:1.35;">Here.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

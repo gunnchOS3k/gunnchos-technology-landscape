@@ -1,0 +1,338 @@
+# UNIT_REGISTRY — KIDS-BABY
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY · status ceiling WORKING_DRAFT_COMPLETE
+
+meta:
+  age_band: KIDS-BABY
+  document_id: KIDS-BABY-UNIT-REGISTRY
+  claim_ceiling: WORKING_DRAFT_COMPLETE
+  child_validation: NONE
+  publication_ready: false
+
+units:
+  - unit_id: UNIT-BABY-ME-TECH-01
+    age_band: KIDS-BABY
+    strand: STRAND-ME-TECH
+    title: "Tap-Look Wait"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 11
+    spread_or_section_count: 10
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    adult_chapter_connections:
+      - CH02
+      - KCON-CH02-ONE-TAP
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-ME-TECH-01
+    standards_status: ADJACENT
+    media_evidence_ids:
+      - CME-001
+      - CME-002
+      - CME-003
+      - CME-005
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-019
+      - CME-022
+      - CME-025
+    figures:
+      - FIG-BABY-METECH-S01
+      - FIG-BABY-METECH-S02
+      - FIG-BABY-METECH-S03
+      - FIG-BABY-METECH-S04
+      - FIG-BABY-METECH-S05
+      - FIG-BABY-METECH-S06
+      - FIG-BABY-METECH-S07
+      - ILLUS-BABY-METECH-S08
+      - ILLUS-BABY-METECH-S09
+      - FIG-BABY-METECH-S10
+    activities:
+      - "Caregiver-mediated look-point-touch-wait with one household control (lamp switch, music button). Stop anytime."
+    safety_notes:
+      - "Adult mediation required."
+      - "No screens as default."
+      - "No child accounts or data collection."
+      - "Choke-safe props only."
+      - "Easy stop honored."
+    accessibility_routes:
+      - "High-contrast print spreads."
+      - "Gaze-following instead of pointing."
+      - "Tactile control + vibration/sound if vision limited."
+      - "No speech required."
+    pilot_anchor: kids/pilots/ONE_TAP/KIDS-BABY
+
+  - unit_id: UNIT-BABY-INSIDE-01
+    age_band: KIDS-BABY
+    strand: STRAND-INSIDE
+    title: "Awake Device"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 9
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH11-BOOT-TRUST
+    adult_chapter_connections:
+      - CH11
+      - KCON-CH11-BOOT-TRUST
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-INSIDE-01
+    standards_status: ADJACENT
+    media_evidence_ids:
+      - CME-001
+      - CME-003
+      - CME-005
+      - CME-008
+      - CME-009
+      - CME-011
+      - CME-013
+      - CME-019
+      - CME-022
+    figures:
+      - FIG-BABY-INSIDE-S01
+      - FIG-BABY-INSIDE-S02
+      - FIG-BABY-INSIDE-S03
+      - FIG-BABY-INSIDE-S04
+      - FIG-BABY-INSIDE-S05
+      - FIG-BABY-INSIDE-S06
+      - ILLUS-BABY-INSIDE-S07
+      - FIG-BABY-INSIDE-S08
+    activities:
+      - "Adult powers a familiar lamp or toy from dark to awake once. Baby watches; no independent handling of plugs."
+    safety_notes:
+      - "Adult-only power actions."
+      - "No cords in mouth reach."
+      - "No child login or network setup."
+      - "Stop if overstimulated."
+    accessibility_routes:
+      - "Sound-on-awake alternative to light."
+      - "Describe dark→awake verbally."
+      - "Tactile vibrate-on-awake toys ok if soft."
+
+  - unit_id: UNIT-BABY-INSTRUCTIONS-01
+    age_band: KIDS-BABY
+    strand: STRAND-INSTRUCTIONS
+    title: "Same Action Again"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 9
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH02-ONE-TAP
+    adult_chapter_connections:
+      - CH02
+      - KCON-CH02-ONE-TAP
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-INSTRUCTIONS-01
+    standards_status: ADJACENT
+    media_evidence_ids:
+      - CME-005
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-011
+      - CME-013
+      - CME-018
+      - CME-021
+      - CME-022
+    figures:
+      - FIG-BABY-INSTR-S01
+      - FIG-BABY-INSTR-S02
+      - FIG-BABY-INSTR-S03
+      - FIG-BABY-INSTR-S04
+      - FIG-BABY-INSTR-S05
+      - FIG-BABY-INSTR-S06
+      - ILLUS-BABY-INSTR-S07
+      - FIG-BABY-INSTR-S08
+    activities:
+      - "Repeat one known household cause→effect twice only. Emphasize sameness, not novelty."
+    safety_notes:
+      - "No forced repetition."
+      - "Accept refusal."
+      - "No apps requiring sequences."
+      - "Adult mediates every action."
+    accessibility_routes:
+      - "Consistent spatial placement of control."
+      - "Rhythm claps as non-device repeat pattern."
+      - "No verbal performance."
+
+  - unit_id: UNIT-BABY-MESSAGES-01
+    age_band: KIDS-BABY
+    strand: STRAND-MESSAGES
+    title: "Here to There"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 9
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH16-PACKETS-INTERNET
+    adult_chapter_connections:
+      - CH16
+      - KCON-CH16-PACKETS-INTERNET
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-MESSAGES-01
+    standards_status: NOT_YET_MAPPED
+    media_evidence_ids:
+      - CME-001
+      - CME-005
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-012
+      - CME-018
+      - CME-019
+    figures:
+      - FIG-BABY-MSG-S01
+      - FIG-BABY-MSG-S02
+      - FIG-BABY-MSG-S03
+      - FIG-BABY-MSG-S04
+      - FIG-BABY-MSG-S05
+      - ILLUS-BABY-MSG-S06
+      - FIG-BABY-MSG-S07
+      - FIG-BABY-MSG-S08
+    activities:
+      - "Gesture a soft toy or gaze from near (here) to across the room (there). No screens, no messaging apps."
+    safety_notes:
+      - "Physical space only — no network demos."
+      - "No child messaging."
+      - "Clear floor path."
+      - "Stop if startled."
+    accessibility_routes:
+      - "Sound cue at 'there' location."
+      - "Light cue at destination."
+      - "Caregiver carries baby along path for vestibular route."
+
+  - unit_id: UNIT-BABY-DATA-01
+    age_band: KIDS-BABY
+    strand: STRAND-DATA
+    title: "Familiar Pattern"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 9
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH21-DATA-AI
+    adult_chapter_connections:
+      - CH21
+      - KCON-CH21-DATA-AI
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-DATA-01
+    standards_status: ADJACENT
+    media_evidence_ids:
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-012
+      - CME-016
+      - CME-017
+      - CME-018
+      - CME-028
+      - CME-029
+    figures:
+      - ILLUS-BABY-DATA-S01
+      - ILLUS-BABY-DATA-S02
+      - FIG-BABY-DATA-S03
+      - FIG-BABY-DATA-S04
+      - ILLUS-BABY-DATA-S05
+      - ILLUS-BABY-DATA-S06
+      - ILLUS-BABY-DATA-S07
+      - FIG-BABY-DATA-S08
+    activities:
+      - "Repeat a familiar face + song pattern. Emphasize known comfort — not sorting, not AI, not cameras."
+    safety_notes:
+      - "No facial recognition tech."
+      - "No recording."
+      - "No diagnostic claims about recognition."
+      - "Observation of delight only."
+    accessibility_routes:
+      - "Familiar scent or touch pattern if vision/hearing limited."
+      - "Consistent caregiver voice."
+      - "AAC caregiver labels ok."
+
+  - unit_id: UNIT-BABY-SAFE-01
+    age_band: KIDS-BABY
+    strand: STRAND-SAFE
+    title: "Grown-Up Only"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 9
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH23-CYBERSECURITY
+    adult_chapter_connections:
+      - CH23
+      - KCON-CH23-CYBERSECURITY
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-SAFE-01
+    standards_status: ADJACENT
+    media_evidence_ids:
+      - CME-019
+      - CME-022
+      - CME-023
+      - CME-024
+      - CME-025
+      - CME-026
+      - CME-027
+      - CME-028
+    figures:
+      - FIG-BABY-SAFE-S01
+      - FIG-BABY-SAFE-S02
+      - FIG-BABY-SAFE-S03
+      - FIG-BABY-SAFE-S04
+      - ILLUS-BABY-SAFE-S05
+      - ILLUS-BABY-SAFE-S06
+      - FIG-BABY-SAFE-S07
+      - FIG-BABY-SAFE-S08
+    activities:
+      - "Show one adult-only control (outlet cover area, phone lock) then redirect to a baby-safe toy. Boundary without fear."
+    safety_notes:
+      - "No scare tactics."
+      - "No passwords shown to child as game."
+      - "No child accounts."
+      - "No hidden recording."
+      - "Redirect, do not shame."
+    accessibility_routes:
+      - "Consistent verbal cue for pause."
+      - "Visual stop-hand shape + word."
+      - "Tactile baby-safe alternative always offered."
+
+  - unit_id: UNIT-BABY-BUILD-01
+    age_band: KIDS-BABY
+    strand: STRAND-BUILD
+    title: "Show What Happened"
+    status: WORKING_DRAFT_COMPLETE
+    word_count_child_facing: 9
+    spread_or_section_count: 8
+    concept_ids:
+      - KCON-CH31-CAPSTONE-TEACH
+    adult_chapter_connections:
+      - CH31
+      - KCON-CH31-CAPSTONE-TEACH
+    standards_mapping_ids:
+      - MAP-UNIT-BABY-BUILD-01
+    standards_status: ADJACENT
+    media_evidence_ids:
+      - CME-008
+      - CME-009
+      - CME-010
+      - CME-012
+      - CME-018
+      - CME-021
+      - CME-022
+      - CME-028
+    figures:
+      - FIG-BABY-BUILD-S01
+      - FIG-BABY-BUILD-S02
+      - FIG-BABY-BUILD-S03
+      - FIG-BABY-BUILD-S04
+      - ILLUS-BABY-BUILD-S05
+      - ILLUS-BABY-BUILD-S06
+      - ILLUS-BABY-BUILD-S07
+      - FIG-BABY-BUILD-S08
+    activities:
+      - "Gesture teach-back of one earlier cause→effect. Caregiver may note favorite page privately offline — optional."
+    safety_notes:
+      - "No testing or scoring."
+      - "No forced performance."
+      - "No photos required."
+      - "Observation of delight only."
+    accessibility_routes:
+      - "Gaze or reach counts as show."
+      - "Caregiver narrates show without requiring baby action."
+      - "Switch-adapted pointer ok for older-in-band motor support."

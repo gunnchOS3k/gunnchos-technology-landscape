@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-BABY-MSG-S02-title FIG-BABY-MSG-S02-desc" data-asset-id="FIG-BABY-MSG-S02">
+  <title id="FIG-BABY-MSG-S02-title">FIG-BABY-MSG-S02: Point</title>
+  <desc id="FIG-BABY-MSG-S02-desc">Style-neutral KIDS-BABY diagram for Here to There S02. Caregiver action: Point from near object. Child text: Point.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-BABY-MSG-S02</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: KIDS-BABY</text>
+  <text x="40" y="102" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Point</text>
+
+  <g transform="translate(220,150)">
+    <circle cx="60" cy="100" r="36" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+    <line x1="100" y1="80" x2="220" y2="40" stroke="#111" stroke-width="4"/>
+    <path d="M220 40 L195 45 L210 65 Z" fill="#111"/>
+  </g>
+  <foreignObject x="40" y="340" width="720" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 18px; color:#111; line-height:1.35;">Point.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

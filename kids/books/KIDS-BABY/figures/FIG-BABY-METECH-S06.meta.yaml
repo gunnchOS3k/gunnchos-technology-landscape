@@ -1,0 +1,22 @@
+asset_id: FIG-BABY-METECH-S06
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-BABY
+unit_id: UNIT-BABY-ME-TECH-01
+spread_id: S06
+alt: "Style-neutral diagram for 'Again?': Optional second touch."
+description: "Optional second touch."
+purpose: "UNIT-BABY-ME-TECH-01 spread S06 (REPEAT)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 80]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/books/KIDS-BABY/figures/FIG-BABY-METECH-S06.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-001, CME-002, CME-003, CME-005]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body

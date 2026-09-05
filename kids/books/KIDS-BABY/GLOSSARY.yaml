@@ -1,0 +1,49 @@
+# GLOSSARY — KIDS-BABY (caregiver-facing terms)
+# Not child vocabulary drill
+
+meta:
+  age_band: KIDS-BABY
+  audience: caregiver_educator
+  status: WORKING_DRAFT_COMPLETE
+
+terms:
+  - term: "cause and effect"
+    definition: "Something happens after a touch or action."
+    unit_ref: UNIT-BABY-ME-TECH-01
+    child_facing: false
+  - term: "wait"
+    definition: "A short pause before a change."
+    unit_ref: UNIT-BABY-ME-TECH-01
+    child_facing: false
+  - term: "awake device"
+    definition: "A familiar device that was dark and is now on, with an adult."
+    unit_ref: UNIT-BABY-INSIDE-01
+    child_facing: false
+  - term: "same action"
+    definition: "Doing a known touch again to see the same kind of change."
+    unit_ref: UNIT-BABY-INSTRUCTIONS-01
+    child_facing: false
+  - term: "here to there"
+    definition: "Attention or a gesture moving from near to farther away."
+    unit_ref: UNIT-BABY-MESSAGES-01
+    child_facing: false
+  - term: "familiar pattern"
+    definition: "A known face, sound, or rhyme that brings comfort."
+    unit_ref: UNIT-BABY-DATA-01
+    child_facing: false
+  - term: "grown-up only"
+    definition: "A control or place babies do not use; adults handle it."
+    unit_ref: UNIT-BABY-SAFE-01
+    child_facing: false
+  - term: "show what happened"
+    definition: "A gesture or gaze that points back to a moment together."
+    unit_ref: UNIT-BABY-BUILD-01
+    child_facing: false
+  - term: "serve and return"
+    definition: "Caregiver notices, names, waits, and responds to baby cues."
+    unit_ref: front-matter
+    child_facing: false
+  - term: "easy stop"
+    definition: "Ending the session as soon as interest fades or baby cues stop."
+    unit_ref: all-units
+    child_facing: false

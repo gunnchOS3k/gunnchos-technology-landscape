@@ -1,0 +1,22 @@
+asset_id: FIG-BABY-INSTR-S01
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-BABY
+unit_id: UNIT-BABY-INSTRUCTIONS-01
+spread_id: S01
+alt: "Style-neutral diagram for 'Look.': Return to a known control."
+description: "Return to a known control."
+purpose: "UNIT-BABY-INSTRUCTIONS-01 spread S01 (LOOK)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 80]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/books/KIDS-BABY/figures/FIG-BABY-INSTR-S01.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-005, CME-008, CME-009, CME-010]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body

@@ -1,0 +1,22 @@
+asset_id: FIG-BABY-SAFE-S07
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-BABY
+unit_id: UNIT-BABY-SAFE-01
+spread_id: S07
+alt: "Style-neutral diagram for 'Pause.': Practice pause near adult-only thing."
+description: "Practice pause near adult-only thing."
+purpose: "UNIT-BABY-SAFE-01 spread S07 (REPEAT)"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 80]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/books/KIDS-BABY/figures/FIG-BABY-SAFE-S07.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-019, CME-022, CME-023, CME-024]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body
