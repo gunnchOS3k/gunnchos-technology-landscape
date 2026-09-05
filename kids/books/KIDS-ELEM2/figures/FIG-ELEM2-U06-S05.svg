@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-ELEM2-U06-S05-title FIG-ELEM2-U06-S05-desc" data-asset-id="FIG-ELEM2-U06-S05">
+  <title id="FIG-ELEM2-U06-S05-title">FIG-ELEM2-U06-S05: Deletion is not everywhere</title>
+  <desc id="FIG-ELEM2-U06-S05-desc">Style-neutral KIDS-ELEM2 working-draft diagram. Deletion is not everywhere. Child text excerpt: Deletion is not everywhere — junior technology diagram for grades 3–5/6.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM2-U06-S05</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: ELEM2</text>
+  <text x="40" y="102" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Deletion is not everywhere</text>
+  <text x="40" y="122" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+<g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+    <text x="40" y="140">1. local delete</text>
+    <text x="40" y="162">2. copies may remain</text>
+    <text x="40" y="184">3. ask adult</text>
+  </g>
+  <g transform="translate(400,110)" font-family="Helvetica, Arial, sans-serif" font-size="13">
+    <circle cx="80" cy="70" r="55" fill="#f4f4f4" stroke="#111" stroke-width="3"/><text x="48" y="75">privacy</text>
+    <circle cx="200" cy="70" r="55" fill="#eee" stroke="#111" stroke-width="3"/><text x="162" y="75">security</text>
+    <circle cx="140" cy="160" r="55" fill="#e6e6e6" stroke="#111" stroke-width="3"/><text x="115" y="165">equity</text>
+  </g>
+  <foreignObject x="40" y="340" width="720" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">Deletion is not everywhere — junior technology diagram for grades 3–5/6.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

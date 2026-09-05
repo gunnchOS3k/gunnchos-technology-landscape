@@ -1,0 +1,326 @@
+# KIDS-ELEM2 unit registry — WORKING DRAFT
+# NOT CHILD-VALIDATED · NOT PUBLICATION-READY
+meta:
+  age_band: KIDS-ELEM2
+  claim_ceiling: KIDS_FULL_MANUSCRIPT_WORKING_DRAFT
+  child_validation: NONE
+  publication_ready: false
+  character_cast: A_Signal_Crew_provisional
+  cadence: [OBSERVE, PREDICT, TEST, MEASURE, EXPLAIN, BUILD, SECURE, REFLECT, TEACH]
+units:
+- unit_id: UNIT-ELEM2-ME-TECH-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-ME-TECH
+  title: "Experience Maps Systems"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 660
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH01-SYSTEM-NOT-SCREEN
+  adult_chapter_connections:
+  - CH01
+  standards_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM2-ME-TECH-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U01-S01
+  - FIG-ELEM2-U01-S02
+  - FIG-ELEM2-U01-S05
+  activities:
+  - "Annotate a visible→hidden systems map; mark observe vs infer."
+  - "Write a local-vs-remote prediction for one familiar action."
+  - "One supervised radio-off observation, or a written “test waited” note."
+  - "Three rough stopwatch marks on one approved action."
+  - "Sort role cards for CPU / memory / storage with real examples."
+  - "Protocol draft + younger teach script stub."
+  - "One security control + one privacy choice tied to your map."
+  - "Spiral reflection note (younger / this class)."
+  - "Partner teach-back with observed / inferred / unknown."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back
+- unit_id: UNIT-ELEM2-INSIDE-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-INSIDE
+  title: "Hardware Constraints"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 510
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH09-POWER-HEAT
+  adult_chapter_connections:
+  - CH09
+  standards_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM2-INSIDE-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U02-S01
+  - FIG-ELEM2-U02-S04
+  activities:
+  - "Observation sheet: energy clue + warmth clue + adult note."
+  - "Rank three actions by predicted energy cost."
+  - "Two one-minute supervised trials; note battery if visible."
+  - "Write a thermal stop rule; role-play asking an adult."
+  - "List two constraints (power/heat/interconnect) that could change a design."
+  - "Three constraint cards with observation + question."
+  - "Copy the safe-handling checklist into your notebook."
+  - "Rewrite one “slow” story with a possible constraint + ?."
+  - "Two teach scripts (younger / peer)."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back
+- unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-INSTRUCTIONS
+  title: "Events and Handlers"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 516
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH14-APPS-UI
+  adult_chapter_connections:
+  - CH14
+  standards_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM2-INSTRUCTIONS-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U03-S01
+  - FIG-ELEM2-U03-S03
+  activities:
+  - "Draw the event-handling sequence on one page."
+  - "Two if-event → then-handler predictions."
+  - "Two events → visible state notes."
+  - "Count visible steps from event to “done enough.”"
+  - "Trace save/open as events that touch storage."
+  - "Paper app + one repair after rehearsal."
+  - "Name one permission decision for an adult."
+  - "Failure → repair sentence."
+  - "Teach-back with one named limit."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back
+- unit_id: UNIT-ELEM2-MESSAGES-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-MESSAGES
+  title: "Packets and Routes"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 485
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+  adult_chapter_connections:
+  - CH16
+  standards_mapping_ids: []
+  # NOT_YET_MAPPED — no honest atlas grain
+  standards_status: NOT_YET_MAPPED
+  wire_id: STD-WIRE-UNIT-ELEM2-MESSAGES-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U04-S01
+  - FIG-ELEM2-U04-S03
+  activities:
+  - "Packet relay with addressed paper pieces."
+  - "Missing-piece and slow-hop predictions."
+  - "Label Wi‑Fi hop vs farther Internet path on a diagram."
+  - "Relay timer + lost-piece count."
+  - "Five-box flow: represent / transmit / route / receive / interpret."
+  - "Two-route map with timing notes."
+  - "List two things that should not ride on a practice packet."
+  - "Local vs routed sensor/message table."
+  - "Teach-back ending in the Wi‑Fi misconception fix."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back
+- unit_id: UNIT-ELEM2-DATA-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-DATA
+  title: "Models Need Checks"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 504
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH21-DATA-AI
+  adult_chapter_connections:
+  - CH21
+  standards_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM2-DATA-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U05-S01
+  - FIG-ELEM2-U05-S04
+  activities:
+  - "Sort examples; note what pattern a classmate might “learn.”"
+  - "Out-of-example failure prediction."
+  - "Five-card test with hit/miss tally."
+  - "Compute a tiny-set error rate with units."
+  - "Draw the pipeline; star the human-check step."
+  - "Three-question check card."
+  - "Rewrite a bad data idea into a privacy-safe version."
+  - "One portfolio skill sentence."
+  - "Teach-back + one deliberate wrong fluent example to catch."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back
+- unit_id: UNIT-ELEM2-SAFE-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-SAFE
+  title: "Privacy Security Equity"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 445
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH25-DIGITAL-EQUITY
+  adult_chapter_connections:
+  - CH25
+  standards_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM2-SAFE-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U06-S01
+  - FIG-ELEM2-U06-S05
+  activities:
+  - "Three-column notes: security / privacy / equity examples."
+  - "Three predictions tied to the triad."
+  - "Two pause role-plays."
+  - "One access-support measure, anonymized."
+  - "List three layers where a privacy or security choice can appear."
+  - "Classroom fair-tech charter draft."
+  - "Write verify vs infer for a deletion story."
+  - "Benefits / left out / fairer idea."
+  - "Triad teach-back + non-harm closer."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back
+- unit_id: UNIT-ELEM2-BUILD-01
+  age_band: KIDS-ELEM2
+  strand: STRAND-BUILD
+  title: "Explain Measure Improve Teach"
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 478
+  spread_or_section_count: 9
+  concept_ids:
+  - KCON-CH31-CAPSTONE-TEACH
+  adult_chapter_connections:
+  - CH31
+  standards_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  standards_status: ADJACENT
+  wire_id: STD-WIRE-UNIT-ELEM2-BUILD-01
+  media_evidence_ids:
+  - CME-001
+  - CME-003
+  - CME-005
+  - CME-006
+  - CME-007
+  - CME-011
+  - CME-013
+  - CME-016
+  figures:
+  - FIG-ELEM2-U07-S01
+  - FIG-ELEM2-U07-S08
+  activities:
+  - "Inventory checklist of prior artifacts."
+  - "Predicted confusion + planned fix."
+  - "One rehearsal + stumble marks."
+  - "Three labeled measures or explicit gaps."
+  - "EMIT explanation page with ? marks."
+  - "Six-part work packet assembly."
+  - "Pre-share safety checklist initialed by adult if sharing beyond class."
+  - "Role reflection + two next questions."
+  - "Final teach-back with unknown list."
+  safety_notes:
+  - Adult mediation; easy stop; no child data collection
+  - No offensive security; no open-ended required child-AI chat
+  accessibility_routes:
+  - Partner scribe / verbal teach-back / large-print figure printouts
+  - AAC-friendly short scripts for EMIT teach-back

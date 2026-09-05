@@ -1,0 +1,21 @@
+asset_id: FIG-ELEM2-U03-S01
+truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+age_band: KIDS-ELEM2
+alt: "Style-neutral diagram for 'Event to handler chain'."
+description: "Event to handler chain"
+purpose: "KIDS-ELEM2 working manuscript figure"
+text_safe_zones:
+  title_band: [40, 40, 720, 90]
+  body_band: [40, 340, 720, 100]
+print_dimensions_px: {width: 800, height: 500}
+digital_dimensions_px: {width: 800, height: 500}
+path: "kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S01.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-001, CME-003, CME-006, CME-016]
+illustration_status: DETERMINISTIC_DIAGRAM_COMPLETE
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_focal_then_body

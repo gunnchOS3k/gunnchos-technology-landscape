@@ -1,0 +1,142 @@
+# KIDS-ELEM2 figure plan
+# Deterministic SVGs shipped; narrative art = ILLUSTRATION_DIRECTION_READY
+# No IMAGE HERE placeholders
+
+meta:
+  age_band: KIDS-ELEM2
+  truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE
+  print_safe_px: {width: 800, height: 500}
+deterministic_diagrams:
+  - asset_id: FIG-ELEM2-U01-S01
+    unit_id: UNIT-ELEM2-ME-TECH-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S01.svg
+  - asset_id: FIG-ELEM2-U01-S02
+    unit_id: UNIT-ELEM2-ME-TECH-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S02.svg
+  - asset_id: FIG-ELEM2-U01-S05
+    unit_id: UNIT-ELEM2-ME-TECH-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U01-S05.svg
+  - asset_id: FIG-ELEM2-U02-S01
+    unit_id: UNIT-ELEM2-INSIDE-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S01.svg
+  - asset_id: FIG-ELEM2-U02-S04
+    unit_id: UNIT-ELEM2-INSIDE-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U02-S04.svg
+  - asset_id: FIG-ELEM2-U03-S01
+    unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S01.svg
+  - asset_id: FIG-ELEM2-U03-S03
+    unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U03-S03.svg
+  - asset_id: FIG-ELEM2-U04-S01
+    unit_id: UNIT-ELEM2-MESSAGES-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S01.svg
+  - asset_id: FIG-ELEM2-U04-S03
+    unit_id: UNIT-ELEM2-MESSAGES-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U04-S03.svg
+  - asset_id: FIG-ELEM2-U05-S01
+    unit_id: UNIT-ELEM2-DATA-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S01.svg
+  - asset_id: FIG-ELEM2-U05-S04
+    unit_id: UNIT-ELEM2-DATA-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U05-S04.svg
+  - asset_id: FIG-ELEM2-U06-S01
+    unit_id: UNIT-ELEM2-SAFE-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S01.svg
+  - asset_id: FIG-ELEM2-U06-S05
+    unit_id: UNIT-ELEM2-SAFE-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U06-S05.svg
+  - asset_id: FIG-ELEM2-U07-S01
+    unit_id: UNIT-ELEM2-BUILD-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S01.svg
+  - asset_id: FIG-ELEM2-U07-S08
+    unit_id: UNIT-ELEM2-BUILD-01
+    status: DETERMINISTIC_DIAGRAM_COMPLETE
+    path: kids/books/KIDS-ELEM2/figures/FIG-ELEM2-U07-S08.svg
+illustration_direction_ready:
+  - asset_id: FIG-ELEM2-U01-ILL-MAP
+    unit_id: UNIT-ELEM2-ME-TECH-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: Mira annotating layered map with observe/infer marks"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U01-ILL-RADIO
+    unit_id: UNIT-ELEM2-ME-TECH-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: supervised airplane-mode test beat"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U02-ILL-WARM
+    unit_id: UNIT-ELEM2-INSIDE-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: Bolt noticing warm device; Shield stop gesture"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U02-ILL-CARDS
+    unit_id: UNIT-ELEM2-INSIDE-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: power/heat/interconnect constraint cards"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U03-ILL-PAPERAPP
+    unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: Step and Mira rehearsing paper event app"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U03-ILL-PERMIT
+    unit_id: UNIT-ELEM2-INSTRUCTIONS-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: permission prompt pause with adult"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U04-ILL-RELAY
+    unit_id: UNIT-ELEM2-MESSAGES-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: classroom packet relay across hops"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U04-ILL-LABELS
+    unit_id: UNIT-ELEM2-MESSAGES-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: Wi-Fi hop vs Internet path wall labels"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U05-ILL-SORT
+    unit_id: UNIT-ELEM2-DATA-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: example-card sorting before model check"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U05-ILL-CHECK
+    unit_id: UNIT-ELEM2-DATA-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: three-question check protocol card"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U06-ILL-CHARTER
+    unit_id: UNIT-ELEM2-SAFE-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: fair classroom tech charter signing optional"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
+  - asset_id: FIG-ELEM2-U07-ILL-TEACH
+    unit_id: UNIT-ELEM2-BUILD-01
+    status: ILLUSTRATION_DIRECTION_READY
+    direction: "Narrative: EMIT teach-back with unknown list on board"
+    cast: A_Signal_Crew_provisional
+    note: Final narrative art pending owner aesthetic approval; no IMAGE HERE placeholder.
