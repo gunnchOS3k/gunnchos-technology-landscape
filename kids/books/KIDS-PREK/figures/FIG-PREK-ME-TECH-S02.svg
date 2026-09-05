@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PREK-ME-TECH-S02-title FIG-PREK-ME-TECH-S02-desc" data-asset-id="FIG-PREK-ME-TECH-S02">
+  <title id="FIG-PREK-ME-TECH-S02-title">FIG-PREK-ME-TECH-S02: What changes?</title>
+  <desc id="FIG-PREK-ME-TECH-S02-desc">Arrow diagram: input press leads to output light.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-PREK-ME-TECH-S02</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PREK</text>
+  <text x="40" y="98" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">What changes?</text>
+  <text x="40" y="108" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#111"/></marker></defs><rect x="248" y="200" width="140" height="70" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+<text x="318.0" y="240.0" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#111">input</text>
+<line x1="388" y1="235.0" x2="412" y2="235.0" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="412" y="200" width="140" height="70" rx="8" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+<text x="482.0" y="240.0" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#111">output</text>
+  <foreignObject x="40" y="360" width="720" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">When Mira presses the switch, light comes on. That press is an input. The light is an output.</div>
+  </foreignObject>
+
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

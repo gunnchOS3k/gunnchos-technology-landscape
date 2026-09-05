@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-PREK-INSIDE-S01-title FIG-PREK-INSIDE-S01-desc" data-asset-id="FIG-PREK-INSIDE-S01">
+  <title id="FIG-PREK-INSIDE-S01-title">FIG-PREK-INSIDE-S01: Two boxes on the table</title>
+  <desc id="FIG-PREK-INSIDE-S01-desc">Bolt presenting Working Space and Keep-Box side by side.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-PREK-INSIDE-S01</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: PREK</text>
+  <text x="40" y="98" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Two boxes on the table</text>
+  <text x="40" y="108" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+  
+  <rect x="80" y="150" width="640" height="220" rx="12" fill="#f7f7f2" stroke="#111" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="400" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="18">Illustration direction</text>
+  <foreignObject x="100" y="240" width="600" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color:#222; text-align:center; line-height:1.35;">Bolt presenting Working Space and Keep-Box side by side.</div>
+  </foreignObject>
+  <text x="400" y="390" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#444">status: ILLUSTRATION_DIRECTION_READY</text>
+
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

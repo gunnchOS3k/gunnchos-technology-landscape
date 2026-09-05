@@ -1,0 +1,286 @@
+document_id: KIDS_MANUSCRIPT_INVENTORY
+status: KIDS_FULL_MANUSCRIPT_FAMILY_WORKING_DRAFT_COMPLETE
+honesty:
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+- KIDS_CHILD_VALIDATION_PENDING
+- NO_CHILD_VALIDATION_EVIDENCE
+- NO_STANDARDS_CERTIFICATION_EVIDENCE
+counting_notes:
+  standards_mappings: Unique atlas_mapping_ids from STANDARDS_TRACEABILITY.yaml only
+    (UNIT_REGISTRY not double-counted).
+  figures: live_registered_figures = FIGURE_PLAN IDs with on-disk SVG; orphan SVGs
+    excluded from manuscript figure counts.
+totals:
+  books: 6
+  units: 42
+  child_facing_words: 7158
+  live_registered_figures: 273
+  physical_svg_files: 273
+  orphan_svg_files: 0
+  standards_mappings_unique_sum: 96
+books:
+- age_band: KIDS-BABY
+  child_facing_words: 44
+  caregiver_educator_words: 198
+  units: 7
+  spreads_or_sections: 42
+  live_registered_figures: 42
+  registered_figure_ids: 42
+  physical_svg_files: 42
+  orphan_svg_files: 0
+  orphan_svg_ids: []
+  figures_svg: 42
+  activities: 35
+  standards_mappings: 16
+  standards_mapping_ids_unique:
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-CSTA2026-DATA-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-UNESCO-AI-KE
+  standards_counting_source: STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids
+    (unique)
+  standards_units_by_status:
+    ADJACENT: 6
+    EXACT: 0
+    PROPOSED: 0
+    NOT_YET_MAPPED: 1
+    NO_MAP: 0
+    TRANSLATION_REQUIRED: 0
+    VERSION_UNCLEAR: 0
+    OTHER: 0
+  glossary_terms: 7
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-TODDLER
+  child_facing_words: 177
+  caregiver_educator_words: 457
+  units: 7
+  spreads_or_sections: 61
+  live_registered_figures: 61
+  registered_figure_ids: 122
+  physical_svg_files: 61
+  orphan_svg_files: 0
+  orphan_svg_ids: []
+  figures_svg: 61
+  activities: 21
+  standards_mappings: 16
+  standards_mapping_ids_unique:
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-CSTA2026-DATA-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-UNESCO-AI-KE
+  standards_counting_source: STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids
+    (unique)
+  standards_units_by_status:
+    ADJACENT: 6
+    EXACT: 0
+    PROPOSED: 0
+    NOT_YET_MAPPED: 1
+    NO_MAP: 0
+    TRANSLATION_REQUIRED: 0
+    VERSION_UNCLEAR: 0
+    OTHER: 0
+  glossary_terms: 10
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-PRESCHOOL
+  child_facing_words: 544
+  caregiver_educator_words: 198
+  units: 7
+  spreads_or_sections: 70
+  live_registered_figures: 70
+  registered_figure_ids: 70
+  physical_svg_files: 70
+  orphan_svg_files: 0
+  orphan_svg_ids: []
+  figures_svg: 70
+  activities: 35
+  standards_mappings: 16
+  standards_mapping_ids_unique:
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-CSTA2026-DATA-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-UNESCO-AI-KE
+  standards_counting_source: STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids
+    (unique)
+  standards_units_by_status:
+    ADJACENT: 6
+    EXACT: 0
+    PROPOSED: 0
+    NOT_YET_MAPPED: 1
+    NO_MAP: 0
+    TRANSLATION_REQUIRED: 0
+    VERSION_UNCLEAR: 0
+    OTHER: 0
+  glossary_terms: 7
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-PREK
+  child_facing_words: 1094
+  caregiver_educator_words: 467
+  units: 7
+  spreads_or_sections: 70
+  live_registered_figures: 70
+  registered_figure_ids: 70
+  physical_svg_files: 70
+  orphan_svg_files: 0
+  orphan_svg_ids: []
+  figures_svg: 70
+  activities: 14
+  standards_mappings: 16
+  standards_mapping_ids_unique:
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-CSTA2026-DATA-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-UNESCO-AI-KE
+  standards_counting_source: STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids
+    (unique)
+  standards_units_by_status:
+    ADJACENT: 6
+    EXACT: 0
+    PROPOSED: 0
+    NOT_YET_MAPPED: 1
+    NO_MAP: 0
+    TRANSLATION_REQUIRED: 0
+    VERSION_UNCLEAR: 0
+    OTHER: 0
+  glossary_terms: 12
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-ELEM1
+  child_facing_words: 2396
+  caregiver_educator_words: 380
+  units: 7
+  spreads_or_sections: 63
+  live_registered_figures: 15
+  registered_figure_ids: 15
+  physical_svg_files: 15
+  orphan_svg_files: 0
+  orphan_svg_ids: []
+  figures_svg: 15
+  activities: 21
+  standards_mappings: 16
+  standards_mapping_ids_unique:
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-CSTA2026-DATA-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-UNESCO-AI-KE
+  standards_counting_source: STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids
+    (unique)
+  standards_units_by_status:
+    ADJACENT: 6
+    EXACT: 0
+    PROPOSED: 0
+    NOT_YET_MAPPED: 1
+    NO_MAP: 0
+    TRANSLATION_REQUIRED: 0
+    VERSION_UNCLEAR: 0
+    OTHER: 0
+  glossary_terms: 20
+  html_build: true
+  pdf_build: true
+- age_band: KIDS-ELEM2
+  child_facing_words: 2903
+  caregiver_educator_words: 501
+  units: 7
+  spreads_or_sections: 63
+  live_registered_figures: 15
+  registered_figure_ids: 15
+  physical_svg_files: 15
+  orphan_svg_files: 0
+  orphan_svg_ids: []
+  figures_svg: 15
+  activities: 63
+  standards_mappings: 16
+  standards_mapping_ids_unique:
+  - MAP-AC-DT-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-CSTA2026-DATA-KE
+  - MAP-CSTA2026-SOC-KE
+  - MAP-CSTA2026-SYS-KE
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-NGSS-SCI-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-UNESCO-AI-KE
+  standards_counting_source: STANDARDS_TRACEABILITY.yaml#units[].atlas_mapping_ids
+    (unique)
+  standards_units_by_status:
+    ADJACENT: 6
+    EXACT: 0
+    PROPOSED: 0
+    NOT_YET_MAPPED: 1
+    NO_MAP: 0
+    TRANSLATION_REQUIRED: 0
+    VERSION_UNCLEAR: 0
+    OTHER: 0
+  glossary_terms: 22
+  html_build: true
+  pdf_build: true

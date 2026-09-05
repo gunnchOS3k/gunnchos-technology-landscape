@@ -1,0 +1,50 @@
+meta: {}
+units:
+- unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  media_evidence_ids: &id001
+  - CME-001
+  - CME-005
+  - CME-008
+  - CME-011
+  - CME-016
+  - CME-022
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-INSIDE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-DATA-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-SAFE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-PRESCHOOL-BUILD-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop

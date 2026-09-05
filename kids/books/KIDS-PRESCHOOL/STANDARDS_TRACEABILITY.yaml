@@ -1,0 +1,65 @@
+meta:
+  certification_claim: false
+units:
+- unit_id: UNIT-PRESCHOOL-ME-TECH-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-ME-TECH-01
+  atlas_mapping_ids:
+  - MAP-ELOF-PLAY-KE
+  - MAP-EYFS-PLAY-KE
+  - MAP-EYLF-PLAY-KE
+  - MAP-TEWHARIKI-PLAY-KE
+  - MAP-NEL-PLAY-KE
+  - MAP-ON-KG-PLAY-KE
+  - MAP-OECD-AGENCY-KE
+  - MAP-NCF-PLAY-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-INSIDE-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-INSIDE-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-SYS-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-INSTRUCTIONS-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-INSTRUCTIONS-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-MESSAGES-01
+  fidelity: NOT_YET_MAPPED
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-MESSAGES-01
+  atlas_mapping_ids: []
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-DATA-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-DATA-01
+  atlas_mapping_ids:
+  - MAP-CSTA2026-DATA-KE
+  - MAP-UNESCO-AI-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-SAFE-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-SAFE-01
+  atlas_mapping_ids:
+  - MAP-UNESCO-AI-CITIZEN-KE
+  - MAP-CSTA2026-SOC-KE
+  note: Editorial crosswalk only — not official alignment or certification.
+- unit_id: UNIT-PRESCHOOL-BUILD-01
+  fidelity: ADJACENT
+  standards_mapping_ids:
+  - MAP-UNIT-PRESCHOOL-BUILD-01
+  atlas_mapping_ids:
+  - MAP-NGSS-SCI-KE
+  - MAP-CSTA2026-ALGO-KE
+  - MAP-AC-DT-KE
+  note: Editorial crosswalk only — not official alignment or certification.

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="FIG-ELEM1-INSTRUCTIONS-01-title FIG-ELEM1-INSTRUCTIONS-01-desc" data-asset-id="FIG-ELEM1-INSTRUCTIONS-01">
+  <title id="FIG-ELEM1-INSTRUCTIONS-01-title">FIG-ELEM1-INSTRUCTIONS-01: Hardware senses, software decides</title>
+  <desc id="FIG-ELEM1-INSTRUCTIONS-01-desc">Split diagram: hardware side senses a touch; software side shows ordered instructions and a turn-taking schedule.</desc>
+  <rect width="900" height="560" fill="#fffef8"/>
+  <rect x="18" y="18" width="864" height="524" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM1-INSTRUCTIONS-01</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: KIDS-ELEM1 · cast: Signal Crew (provisional)</text>
+  <text x="40" y="104" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Hardware senses, software decides</text>
+  <rect x="60" y="140" width="360" height="250" rx="10" fill="#f7f2e8" stroke="#111" stroke-width="3"/>
+  <text x="240" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#111">Hardware</text>
+  <text x="240" y="220" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">senses the press</text>
+  <text x="240" y="250" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">screen · buttons · mic</text>
+  <text x="240" y="300" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333">Bolt: things you can touch</text>
+  <rect x="480" y="140" width="360" height="250" rx="10" fill="#f0f4f8" stroke="#111" stroke-width="3"/>
+  <text x="660" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#111">Software</text>
+  <text x="660" y="220" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#222">instructions decide next</text>
+  <text x="660" y="255" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">1 sense  2 check  3 act  4 show</text>
+  <text x="660" y="295" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">OS takes turns: App A → App B</text>
+  <text x="660" y="330" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#333">Step: order matters</text>
+  <text x="40" y="450" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">Closing one window may not stop every background turn — observe, then ask.</text>
+  <text x="40" y="536" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS FULL WORKING MANUSCRIPT · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

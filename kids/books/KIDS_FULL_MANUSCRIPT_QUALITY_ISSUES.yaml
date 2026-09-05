@@ -1,0 +1,47 @@
+document_id: KIDS_FULL_MANUSCRIPT_QUALITY_ISSUES
+open_blocker: 0
+open_major: 0
+honesty:
+- NOT CHILD-VALIDATED
+- NOT PUBLICATION-READY
+- KIDS_CHILD_VALIDATION_PENDING
+issues:
+- id: KQI-001
+  severity: MODERATE
+  status: OPEN
+  summary: Character Bible Option A remains provisional pending owner IP lock.
+- id: KQI-002
+  severity: MODERATE
+  status: OPEN
+  summary: Narrative illustrations are ILLUSTRATION_DIRECTION_READY; final art not
+    commissioned.
+- id: KQI-003
+  severity: MINOR
+  status: OPEN
+  summary: PRESCHOOL/PREK fixed-layout EPUB evaluated as candidate only; not shipped.
+- id: KQI-004
+  severity: EDITORIAL
+  status: OPEN
+  summary: Human continuity pass recommended across keep-box / memory metaphors.
+- id: KQI-005
+  severity: EDITORIAL
+  status: OPEN
+  summary: Child/caregiver/educator validation still pending — no fabricated evidence.
+- id: KQI-006
+  severity: MAJOR
+  status: FIXED
+  category: INVENTORY_STANDARDS_COUNT_DRIFT
+  summary: Inventory now counts unique STANDARDS_TRACEABILITY atlas_mapping_ids (not
+    empty/misparsed).
+- id: KQI-007
+  severity: MAJOR
+  status: FIXED
+  category: BABY_ORPHAN_FIGURE_ASSETS
+  summary: Removed orphan/duplicate BABY SVG naming families; live registered figures
+    match FIGURE_PLAN.
+- id: KQI-008
+  severity: MAJOR
+  status: FIXED
+  category: INTEGRATION_SENTINEL_FILE
+  summary: Removed kids/books integration sentinel .write_ok; hygiene check forbids
+    reintroduction.

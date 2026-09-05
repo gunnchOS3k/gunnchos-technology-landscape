@@ -1,0 +1,15 @@
+asset_id: FIG-PRESCHOOL-DATA-S09
+truth_class: CONCEPTUAL_EDUCATIONAL_DIAGRAM
+age_band: KIDS-PRESCHOOL
+alt: 'Safe and fair: Answer with yes/not yet.'
+description: 'Safe and fair: Answer with yes/not yet.'
+production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+print_dimensions_px:
+  width: 800
+  height: 500
+media_evidence_ids:
+- CME-001
+- CME-005
+- CME-008
+- CME-011
+character_cast_option: A_Signal_Crew_provisional

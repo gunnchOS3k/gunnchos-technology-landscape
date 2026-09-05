@@ -1,0 +1,21 @@
+asset_id: FIG-ELEM1-ME-TECH-02
+truth_class: NARRATIVE_ILLUSTRATION_DIRECTION
+age_band: KIDS-ELEM1
+alt: "Composition direction: Mira and Bolt at a classroom tablet; labeled people, charger, speakers, and a rules card around the screen."
+description: "Composition direction: Mira and Bolt at a classroom tablet; labeled people, charger, speakers, and a rules card around the screen."
+purpose: "Unit 1 narrative illustration direction"
+production_status: ILLUSTRATION_DIRECTION_READY
+text_safe_zones:
+  title_band: [40, 40, 820, 80]
+  body_band: [40, 420, 820, 90]
+print_dimensions_px: {width: 900, height: 560}
+digital_dimensions_px: {width: 900, height: 560}
+path: "kids/books/KIDS-ELEM1/figures/FIG-ELEM1-ME-TECH-02.svg"
+owner_aesthetic_approval: PENDING
+copyrighted_character_imitation: false
+character_cast_option: A_Signal_Crew_provisional
+media_evidence_ids: [CME-001, CME-006, CME-016, CME-018]
+a11y:
+  has_title_desc: true
+  color_not_sole_encoding: true
+  reading_order: title_then_labels_then_notes

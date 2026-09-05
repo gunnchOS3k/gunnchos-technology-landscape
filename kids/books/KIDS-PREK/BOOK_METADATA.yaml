@@ -1,0 +1,46 @@
+# BOOK METADATA — KIDS-PREK
+# Adult-facing only. NOT CHILD-VALIDATED · NOT PUBLICATION-READY
+
+book_id: KIDS-PREK-FULL-001
+title: "Systems, Paths, and Kind Choices"
+subtitle: "A Pre-K working manuscript for parts, sequences, messages, and safe choices"
+age_band: KIDS-PREK
+age_guide: "4–6 years"
+status: WORKING_DRAFT_COMPLETE
+claim_ceiling: KIDS_FULL_MANUSCRIPT_FAMILY_WORKING_DRAFT_COMPLETE_CANDIDATE
+child_validation: NONE
+child_validation_evidence: NO_CHILD_VALIDATION_EVIDENCE
+publication_ready: false
+standards_certification_evidence: NO_STANDARDS_CERTIFICATION_EVIDENCE
+manuscript_status_banner:
+  - KIDS FULL WORKING MANUSCRIPT
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - KIDS_CHILD_VALIDATION_PENDING
+unit_count: 7
+strand_coverage: ALL_SEVEN_CANONICAL
+cadence: "STORY → NOTICE → NAME → CONNECT → PREDICT → TRY → EXPLAIN → MAKE → SAFE + FAIR → TEACH"
+character_cast: A_Signal_Crew_provisional
+character_bible: kids/characters/CHARACTER_BIBLE.md
+spiral_ref: kids/concepts/ADULT31_TO_KIDS_SPIRAL.yaml
+scope_ref: kids/curriculum/KIDS_SCOPE_AND_SEQUENCE.yaml
+pilot_anchor:
+  path: kids/pilots/ONE_TAP/KIDS-PREK
+  note: "Strand 1 prose/spread style anchored to ONE TAP PREK pilot; concept expanded to KCON-CH01-SYSTEM-NOT-SCREEN."
+waike:
+  crosswalk: kids/waike/KIDS_WAIKE_CROSSWALK.yaml
+  waike_sha_reconfirmed: "e97e74fc9bfb44b1cdc26b272dc4848264f15fe0"
+  posture: caregiver_educator_facing_with_optional_light_bridge
+  invented_modules: false
+format_candidates:
+  - PICTURE_BOOK_PRINT_CANDIDATE
+  - ACTIVITY_BOOK_PRINT_CANDIDATE
+  - PDF_REVIEW_PROTOTYPE
+  - HTML_REVIEW_PROTOTYPE
+  - FIXED_LAYOUT_EPUB_CANDIDATE
+non_claims:
+  - NOT CHILD-VALIDATED
+  - NOT PUBLICATION-READY
+  - NO_CHILD_VALIDATION_EVIDENCE
+  - NO_STANDARDS_CERTIFICATION_EVIDENCE
+  - No EXACT standards invention

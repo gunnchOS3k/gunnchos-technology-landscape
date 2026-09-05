@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="FIG-ELEM1-INSIDE-01-title FIG-ELEM1-INSIDE-01-desc" data-asset-id="FIG-ELEM1-INSIDE-01">
+  <title id="FIG-ELEM1-INSIDE-01-title">FIG-ELEM1-INSIDE-01: CPU, memory, storage roles</title>
+  <desc id="FIG-ELEM1-INSIDE-01-desc">Three labeled roles inside a device outline: CPU does steps now, memory holds working notes, storage keeps for later.</desc>
+  <rect width="900" height="560" fill="#fffef8"/>
+  <rect x="18" y="18" width="864" height="524" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM1-INSIDE-01</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: KIDS-ELEM1 · cast: Signal Crew (provisional)</text>
+  <text x="40" y="104" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">CPU, memory, storage roles</text>
+  <rect x="120" y="130" width="660" height="300" rx="16" fill="#fafafa" stroke="#111" stroke-width="3"/>
+  <text x="450" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#111">Inside the box (roles, not real sizes)</text>
+  <rect x="160" y="190" width="180" height="180" rx="8" fill="#eef6ef" stroke="#111" stroke-width="3"/>
+  <text x="250" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#111">CPU</text>
+  <text x="250" y="275" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">does steps</text>
+  <text x="250" y="298" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">right now</text>
+  <rect x="360" y="190" width="180" height="180" rx="8" fill="#f0f4f8" stroke="#111" stroke-width="3"/>
+  <text x="450" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#111">Memory</text>
+  <text x="450" y="275" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">working notes</text>
+  <text x="450" y="298" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">for this job</text>
+  <rect x="560" y="190" width="180" height="180" rx="8" fill="#f7f2e8" stroke="#111" stroke-width="3"/>
+  <text x="650" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#111">Storage</text>
+  <text x="650" y="275" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">keep-box</text>
+  <text x="650" y="298" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">for later</text>
+  <text x="40" y="470" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">Misconception check: CPU is not a tiny person; it is a part that follows instructions.</text>
+  <text x="40" y="536" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS FULL WORKING MANUSCRIPT · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

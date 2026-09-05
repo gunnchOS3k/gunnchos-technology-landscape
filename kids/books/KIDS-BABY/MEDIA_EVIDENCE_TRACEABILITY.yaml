@@ -1,0 +1,50 @@
+meta: {}
+units:
+- unit_id: UNIT-BABY-ME-TECH-01
+  media_evidence_ids: &id001
+  - CME-001
+  - CME-005
+  - CME-008
+  - CME-011
+  - CME-016
+  - CME-022
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-INSIDE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-INSTRUCTIONS-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-MESSAGES-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-DATA-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-SAFE-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop
+- unit_id: UNIT-BABY-BUILD-01
+  media_evidence_ids: *id001
+  rules_applied:
+  - salience
+  - co_use
+  - easy_stop

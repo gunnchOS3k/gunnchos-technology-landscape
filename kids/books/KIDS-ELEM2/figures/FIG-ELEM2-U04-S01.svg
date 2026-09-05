@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-ELEM2-U04-S01-title FIG-ELEM2-U04-S01-desc" data-asset-id="FIG-ELEM2-U04-S01">
+  <title id="FIG-ELEM2-U04-S01-title">FIG-ELEM2-U04-S01: Packets on a path</title>
+  <desc id="FIG-ELEM2-U04-S01-desc">Style-neutral KIDS-ELEM2 working-draft diagram. Packets on a path. Child text excerpt: Packets on a path — junior technology diagram for grades 3–5/6.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM2-U04-S01</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: ELEM2</text>
+  <text x="40" y="102" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Packets on a path</text>
+  <text x="40" y="122" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+<g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+    <text x="40" y="140">1. split message</text>
+    <text x="40" y="162">2. addressed pieces</text>
+    <text x="40" y="184">3. reassemble</text>
+  </g>
+  <g transform="translate(360,120)" font-family="Helvetica, Arial, sans-serif" font-size="12">
+    <rect x="0" y="40" width="70" height="50" fill="#f4f4f4" stroke="#111" stroke-width="3"/><text x="12" y="70">sender</text>
+    <rect x="100" y="20" width="50" height="30" fill="#fff" stroke="#111" stroke-width="2"/><text x="108" y="40">P1</text>
+    <rect x="100" y="55" width="50" height="30" fill="#fff" stroke="#111" stroke-width="2"/><text x="108" y="75">P2</text>
+    <rect x="100" y="90" width="50" height="30" fill="#fff" stroke="#111" stroke-width="2"/><text x="108" y="110">P3</text>
+    <path d="M160 70 H230" stroke="#111" stroke-width="3"/>
+    <text x="175" y="60">routes</text>
+    <rect x="240" y="40" width="90" height="50" fill="#eee" stroke="#111" stroke-width="3"/><text x="252" y="70">receiver</text>
+  </g>
+  <foreignObject x="40" y="340" width="720" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">Packets on a path — junior technology diagram for grades 3–5/6.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

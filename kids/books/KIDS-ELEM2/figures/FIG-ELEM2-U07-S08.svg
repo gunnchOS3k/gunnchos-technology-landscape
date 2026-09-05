@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-ELEM2-U07-S08-title FIG-ELEM2-U07-S08-desc" data-asset-id="FIG-ELEM2-U07-S08">
+  <title id="FIG-ELEM2-U07-S08-title">FIG-ELEM2-U07-S08: Portfolio evidence packet</title>
+  <desc id="FIG-ELEM2-U07-S08-desc">Style-neutral KIDS-ELEM2 working-draft diagram. Portfolio evidence packet. Child text excerpt: Portfolio evidence packet — junior technology diagram for grades 3–5/6.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM2-U07-S08</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: ELEM2</text>
+  <text x="40" y="102" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Portfolio evidence packet</text>
+  <text x="40" y="122" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+<g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+    <text x="40" y="140">1. protocol</text>
+    <text x="40" y="162">2. measures</text>
+    <text x="40" y="184">3. repair note</text>
+    <text x="40" y="206">4. teach script</text>
+  </g>
+  <g transform="translate(360,110)" font-family="Helvetica, Arial, sans-serif" font-size="13">
+    <rect x="0" y="40" width="90" height="60" fill="#f4f4f4" stroke="#111" stroke-width="3"/><text x="18" y="75">Explain</text>
+    <rect x="110" y="40" width="90" height="60" fill="#eee" stroke="#111" stroke-width="3"/><text x="122" y="75">Measure</text>
+    <rect x="220" y="40" width="90" height="60" fill="#e6e6e6" stroke="#111" stroke-width="3"/><text x="235" y="75">Improve</text>
+    <rect x="330" y="40" width="90" height="60" fill="#ddd" stroke="#111" stroke-width="3"/><text x="350" y="75">Teach</text>
+    <path d="M45 110 V140 H375 V110" fill="none" stroke="#111" stroke-width="2" stroke-dasharray="4 3"/>
+  </g>
+  <foreignObject x="40" y="340" width="720" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">Portfolio evidence packet — junior technology diagram for grades 3–5/6.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

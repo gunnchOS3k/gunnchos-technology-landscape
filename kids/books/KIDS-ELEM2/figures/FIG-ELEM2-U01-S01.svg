@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-ELEM2-U01-S01-title FIG-ELEM2-U01-S01-desc" data-asset-id="FIG-ELEM2-U01-S01">
+  <title id="FIG-ELEM2-U01-S01-title">FIG-ELEM2-U01-S01: Visible to hidden map</title>
+  <desc id="FIG-ELEM2-U01-S01-desc">Style-neutral KIDS-ELEM2 working-draft diagram. Visible to hidden map. Child text excerpt: Visible to hidden map — junior technology diagram for grades 3–5/6.</desc>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-ELEM2-U01-S01</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: ELEM2</text>
+  <text x="40" y="102" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#111">Visible to hidden map</text>
+  <text x="40" y="122" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">Cast (provisional): Mira · Bolt · Step · Ping · Shield</text>
+<g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+    <text x="40" y="140">1. visible UI</text>
+    <text x="40" y="162">2. software layers</text>
+    <text x="40" y="184">3. hardware</text>
+    <text x="40" y="206">4. remote?</text>
+  </g>
+  <g transform="translate(420,90)">
+    <rect x="0" y="0" width="300" height="40" fill="#f4f4f4" stroke="#111" stroke-width="3"/>
+    <text x="12" y="26" font-family="Helvetica, Arial, sans-serif" font-size="13">visible experience</text>
+    <rect x="20" y="50" width="260" height="40" fill="#eee" stroke="#111" stroke-width="3"/>
+    <text x="32" y="76" font-family="Helvetica, Arial, sans-serif" font-size="13">software / OS / app</text>
+    <rect x="40" y="100" width="220" height="40" fill="#e6e6e6" stroke="#111" stroke-width="3"/>
+    <text x="52" y="126" font-family="Helvetica, Arial, sans-serif" font-size="13">hardware parts</text>
+    <rect x="60" y="150" width="180" height="40" fill="#ddd" stroke="#111" stroke-width="3"/>
+    <text x="72" y="176" font-family="Helvetica, Arial, sans-serif" font-size="13">optional remote path?</text>
+  </g>
+  <foreignObject x="40" y="340" width="720" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, serif; font-size: 15px; color:#111; line-height:1.35;">Visible to hidden map — junior technology diagram for grades 3–5/6.</div>
+  </foreignObject>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

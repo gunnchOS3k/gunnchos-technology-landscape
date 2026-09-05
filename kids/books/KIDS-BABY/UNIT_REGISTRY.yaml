@@ -1,0 +1,255 @@
+meta:
+  age_band: KIDS-BABY
+  status: WORKING_DRAFT_COMPLETE
+units:
+- unit_id: UNIT-BABY-ME-TECH-01
+  age_band: KIDS-BABY
+  strand: STRAND-ME-TECH
+  title: Tap-Look Wait
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 6
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  adult_chapter_connections:
+  - KCON-CH02-ONE-TAP
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-ME-TECH-01
+  media_evidence_ids: &id001
+  - CME-001
+  - CME-005
+  - CME-008
+  - CME-011
+  - CME-016
+  - CME-022
+  figures:
+  - FIG-BABY-ME-TECH-S01
+  - FIG-BABY-ME-TECH-S02
+  - FIG-BABY-ME-TECH-S03
+  - FIG-BABY-ME-TECH-S04
+  - FIG-BABY-ME-TECH-S05
+  - FIG-BABY-ME-TECH-S06
+  activities:
+  - Look together at one lit control.
+  - Notice hand near surface.
+  - Finger meets surface.
+  - Short wait before change.
+  - Light or sound changes.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-BABY-INSIDE-01
+  age_band: KIDS-BABY
+  strand: STRAND-INSIDE
+  title: Awake Device
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 6
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH11-BOOT-TRUST
+  adult_chapter_connections:
+  - KCON-CH11-BOOT-TRUST
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-INSIDE-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-BABY-INSIDE-S01
+  - FIG-BABY-INSIDE-S02
+  - FIG-BABY-INSIDE-S03
+  - FIG-BABY-INSIDE-S04
+  - FIG-BABY-INSIDE-S05
+  - FIG-BABY-INSIDE-S06
+  activities:
+  - Device looks quiet.
+  - Point to wake control.
+  - Name the waking moment.
+  - Short boot wait.
+  - Screen or light wakes.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-BABY-INSTRUCTIONS-01
+  age_band: KIDS-BABY
+  strand: STRAND-INSTRUCTIONS
+  title: Same Action Again
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 8
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH02-ONE-TAP
+  adult_chapter_connections:
+  - KCON-CH02-ONE-TAP
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-INSTRUCTIONS-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-BABY-INSTRUCTIONS-S01
+  - FIG-BABY-INSTRUCTIONS-S02
+  - FIG-BABY-INSTRUCTIONS-S03
+  - FIG-BABY-INSTRUCTIONS-S04
+  - FIG-BABY-INSTRUCTIONS-S05
+  - FIG-BABY-INSTRUCTIONS-S06
+  activities:
+  - Same control as before.
+  - Point to same spot.
+  - Same action name.
+  - Wait for same change.
+  - Same response returns.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-BABY-MESSAGES-01
+  age_band: KIDS-BABY
+  strand: STRAND-MESSAGES
+  title: Here to There
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 6
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH16-PACKETS-INTERNET
+  adult_chapter_connections:
+  - KCON-CH16-PACKETS-INTERNET
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-MESSAGES-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-BABY-MESSAGES-S01
+  - FIG-BABY-MESSAGES-S02
+  - FIG-BABY-MESSAGES-S03
+  - FIG-BABY-MESSAGES-S04
+  - FIG-BABY-MESSAGES-S05
+  - FIG-BABY-MESSAGES-S06
+  activities:
+  - Toy or phone here.
+  - Point across room.
+  - Something can go.
+  - Short travel wait.
+  - Change appears there.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-BABY-DATA-01
+  age_band: KIDS-BABY
+  strand: STRAND-DATA
+  title: Familiar Pattern
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 6
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH21-DATA-AI
+  adult_chapter_connections:
+  - KCON-CH21-DATA-AI
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-DATA-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-BABY-DATA-S01
+  - FIG-BABY-DATA-S02
+  - FIG-BABY-DATA-S03
+  - FIG-BABY-DATA-S04
+  - FIG-BABY-DATA-S05
+  - FIG-BABY-DATA-S06
+  activities:
+  - Familiar face or shape.
+  - Point to matching pair.
+  - Name the familiar.
+  - Pause before reveal.
+  - Familiar pattern returns.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-BABY-SAFE-01
+  age_band: KIDS-BABY
+  strand: STRAND-SAFE
+  title: Grown-Up Only
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 6
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH23-CYBERSECURITY
+  adult_chapter_connections:
+  - KCON-CH23-CYBERSECURITY
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-SAFE-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-BABY-SAFE-S01
+  - FIG-BABY-SAFE-S02
+  - FIG-BABY-SAFE-S03
+  - FIG-BABY-SAFE-S04
+  - FIG-BABY-SAFE-S05
+  - FIG-BABY-SAFE-S06
+  activities:
+  - Look at device with grown-up.
+  - Point to caregiver hands.
+  - Name together time.
+  - Pause before new app.
+  - Grown-up chooses.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual
+- unit_id: UNIT-BABY-BUILD-01
+  age_band: KIDS-BABY
+  strand: STRAND-BUILD
+  title: Show What Happened
+  status: WORKING_DRAFT_COMPLETE
+  word_count_child_facing: 6
+  spread_or_section_count: 6
+  concept_ids:
+  - KCON-CH31-CAPSTONE-TEACH
+  adult_chapter_connections:
+  - KCON-CH31-CAPSTONE-TEACH
+  standards_mapping_ids:
+  - MAP-UNIT-BABY-BUILD-01
+  media_evidence_ids: *id001
+  figures:
+  - FIG-BABY-BUILD-S01
+  - FIG-BABY-BUILD-S02
+  - FIG-BABY-BUILD-S03
+  - FIG-BABY-BUILD-S04
+  - FIG-BABY-BUILD-S05
+  - FIG-BABY-BUILD-S06
+  activities:
+  - Look at what happened.
+  - Point to the change.
+  - Name what changed.
+  - Pause for baby response.
+  - Share the moment.
+  safety_notes:
+  - Adult mediation; no child data collection; inclusive routes.
+  accessibility_routes:
+  - low_vision
+  - motor
+  - aac
+  - sensory
+  - multilingual

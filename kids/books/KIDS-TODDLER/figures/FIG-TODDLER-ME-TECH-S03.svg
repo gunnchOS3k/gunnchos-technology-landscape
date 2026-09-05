@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-TODDLER-ME-TECH-S03-title FIG-TODDLER-ME-TECH-S03-desc" data-asset-id="FIG-TODDLER-ME-TECH-S03">
+  <title id="FIG-TODDLER-ME-TECH-S03-title">FIG-TODDLER-ME-TECH-S03: Touch is input.</title>
+  <desc id="FIG-TODDLER-ME-TECH-S03-desc">Style-neutral TODDLER diagram. Cadence NAME. Goal: Name input with a gesture..</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-TODDLER-ME-TECH-S03</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: TODDLER · cadence: NAME</text>
+  <text x="40" y="108" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Touch is input.</text>
+  
+  <circle cx="220" cy="230" r="70" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+  <text x="220" y="238" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">TOUCH</text>
+  <line x1="300" y1="230" x2="420" y2="230" stroke="#111" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="440" y="170" width="160" height="120" rx="12" fill="#f4f4f4" stroke="#111" stroke-width="4"/>
+  <text x="520" y="240" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111">CHANGE</text>
+
+  <text x="40" y="420" font-family="Georgia, serif" font-size="16" fill="#111">Touch is input.</text>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

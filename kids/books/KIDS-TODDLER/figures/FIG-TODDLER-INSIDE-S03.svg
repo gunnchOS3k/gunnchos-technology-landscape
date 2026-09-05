@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="FIG-TODDLER-INSIDE-S03-title FIG-TODDLER-INSIDE-S03-desc" data-asset-id="FIG-TODDLER-INSIDE-S03">
+  <title id="FIG-TODDLER-INSIDE-S03-title">FIG-TODDLER-INSIDE-S03: Busy.</title>
+  <desc id="FIG-TODDLER-INSIDE-S03-desc">Style-neutral TODDLER diagram. Cadence NAME. Goal: Name busy when it works..</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#fffef8"/>
+  <rect x="16" y="16" width="768" height="468" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="18" fill="#111">FIG-TODDLER-INSIDE-S03</text>
+  <text x="40" y="74" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333">truth_class: CONCEPTUAL_EDUCATIONAL_PROTOTYPE · age_band: TODDLER · cadence: NAME</text>
+  <text x="40" y="108" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#111">Busy.</text>
+  
+  <rect x="260" y="160" width="280" height="160" rx="16" fill="#e8e8e8" stroke="#111" stroke-width="4"/>
+  <circle cx="320" cy="240" r="28" fill="#333" stroke="#111" stroke-width="3"/>
+  <text x="430" y="248" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#111">BUSY</text>
+
+  <text x="40" y="420" font-family="Georgia, serif" font-size="16" fill="#111">Busy.</text>
+  <text x="40" y="460" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#444">KIDS DEVELOPMENTAL PROTOTYPE · NOT CHILD-VALIDATED · NOT PUBLICATION-READY</text>
+</svg>

@@ -1,0 +1,15 @@
+asset_id: FIG-PRESCHOOL-BUILD-S03
+truth_class: CONCEPTUAL_EDUCATIONAL_DIAGRAM
+age_band: KIDS-PRESCHOOL
+alt: 'Name it: Say the new word once while pointing.'
+description: 'Name it: Say the new word once while pointing.'
+production_status: DETERMINISTIC_DIAGRAM_SHIPPED
+print_dimensions_px:
+  width: 800
+  height: 500
+media_evidence_ids:
+- CME-001
+- CME-005
+- CME-008
+- CME-011
+character_cast_option: A_Signal_Crew_provisional

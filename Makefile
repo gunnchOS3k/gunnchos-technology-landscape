@@ -21,7 +21,7 @@ export PATH := $(CURDIR)/tools/quarto/bin:$(TEX_BIN_DIR):$(PATH)
 # full31-draft-check default mode: infra (Batch 0). Override with FULL31_DRAFT_CHECK_MODE=strict
 FULL31_DRAFT_CHECK_MODE ?= infra
 
-.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-review-prototype-check kids-curriculum-generate kids-one-tap-review-generate distribution-requirements-check adult-release-package-check adult-artifact-package-check adult-print-profiles adult-artifact-packages print-profile-check kids-standards-generate kids-standards-check kids-standards-research-complete-check kids-pilot-mapped-check publication-family-check publication-secrets-scan kids-epubcheck
+.PHONY: setup validate test preview pdf epub book all ci clean reader-preview analyze-reader-feedback ce-preproduction-normalize ce-preproduction-check ce-labs-test ce-figures-check ce-sources-check full31-check full31-report full31-draft-check full31-assets-check full31-reference-check full31-inventory full31-html full31-pdf full31-epub full31-book continuation-check continuation-preview ce-source-integrity ce-visual-text-check full31-claim-sources-check full31-terminology-check full31-publication-qa full31-quality-audit full31-continuity-check full31-pre-review-check full31-epubcheck kids-media-evidence-check kids-concept-spiral-check kids-pilot-check kids-review-prototype-check kids-curriculum-generate kids-one-tap-review-generate distribution-requirements-check adult-release-package-check adult-artifact-package-check adult-print-profiles adult-artifact-packages print-profile-check kids-standards-generate kids-standards-check kids-standards-research-complete-check kids-pilot-mapped-check publication-family-check publication-secrets-scan kids-epubcheck kids-full-manuscript-build kids-full-manuscript-check kids-full-manuscript-inventory kids-full-manuscript-continuity-check kids-full-manuscript-accessibility-check kids-full-manuscript-safety-check kids-full-manuscript-meta-check kids-full-manuscript-assets-check
 
 setup:
 	python3 -m venv .venv
@@ -221,8 +221,15 @@ kids-epubcheck:
 	if [ "$$eps" = "0" ]; then \
 	  echo "kids-epubcheck: SKIP (no kids EPUB artifacts)"; \
 	else \
-	  echo "kids-epubcheck: found $$eps EPUB(s) — run official EPUBCheck per artifact in CI when authored"; \
-	  exit 1; \
+	  echo "kids-epubcheck: found $$eps EPUB(s)"; \
+	  if command -v epubcheck >/dev/null 2>&1; then \
+	    find kids -name '*.epub' -print0 | xargs -0 -n1 epubcheck; \
+	  elif [ -f tools/epubcheck.jar ]; then \
+	    find kids -name '*.epub' -print0 | xargs -0 -n1 java -jar tools/epubcheck.jar; \
+	  else \
+	    echo "kids-epubcheck: EPUBCheck not installed — FAIL (EPUBs present require official check)"; \
+	    exit 1; \
+	  fi; \
 	fi
 continuation-preview:
 	$(PYTHON) scripts/build_continuation_preview.py
@@ -280,3 +287,28 @@ kids-standards-research-complete-check:
 
 kids-pilot-mapped-check:
 	$(PYTHON) scripts/validate_kids_standards.py --pilot-mapped
+
+# Kids full manuscript family (Prompt 26 working drafts — not publication-ready)
+kids-full-manuscript-build:
+	$(PYTHON) scripts/build_kids_full_manuscript_builds.py
+
+kids-full-manuscript-check:
+	$(PYTHON) scripts/validate_kids_full_manuscripts.py --mode check
+
+kids-full-manuscript-inventory:
+	$(PYTHON) scripts/validate_kids_full_manuscripts.py --mode inventory
+
+kids-full-manuscript-continuity-check:
+	$(PYTHON) scripts/validate_kids_full_manuscripts.py --mode continuity
+
+kids-full-manuscript-accessibility-check:
+	$(PYTHON) scripts/validate_kids_full_manuscripts.py --mode accessibility
+
+kids-full-manuscript-safety-check:
+	$(PYTHON) scripts/validate_kids_full_manuscripts.py --mode safety
+
+kids-full-manuscript-meta-check:
+	$(PYTHON) scripts/validate_kids_full_manuscripts.py --mode meta
+
+kids-full-manuscript-assets-check:
+	$(PYTHON) scripts/validate_kids_full_manuscript_assets.py
