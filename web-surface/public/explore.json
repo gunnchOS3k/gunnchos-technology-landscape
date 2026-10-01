@@ -1,0 +1,112 @@
+{
+  "schema": "gunnchos.surfacekit.v2",
+  "measured_topology": false,
+  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "nodes": [
+    {
+      "id": "overview",
+      "label": "Overview"
+    },
+    {
+      "id": "what-is-this",
+      "label": "What is this?"
+    },
+    {
+      "id": "who-is-it-for",
+      "label": "Who is it for?"
+    },
+    {
+      "id": "what-will-i-understand",
+      "label": "What will I understand?"
+    }
+  ],
+  "rows": [
+    {
+      "source": "README.md",
+      "scenario_id": "Overview",
+      "site_id": "Research",
+      "ethical_framing": "# The Technology Landscape **Author:** Edmund Gunn, Jr. **Series:** A gunnchOS3k + WAIKE learning system **Subtitle:** How Computers, Networks, AI, and Devices Create the Experiences We Depend On"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What is this?",
+      "site_id": "Research",
+      "ethical_framing": "A synchronized publication system for an illustrated technology field guide, textbook, lab manual, systems-thinking guide, career map, and bridge into deeper engineering and research. It is not a generic \u201clearn computers\u201d book. Readers begin with experiences they already understand and trace those experiences through the systems that make them possible."
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "Who is it for?",
+      "site_id": "Research",
+      "ethical_framing": "Learners and educators across six pathways: - **Explorer** \u2014 little or no technical background - **Operator** \u2014 regular device/software user - **Builder** \u2014 student, maker, career changer - **Engineer** \u2014 undergraduate learner or practitioner - **Researcher** \u2014 graduate learner or investigator - **Educator** \u2014 teacher, mentor, tutor, parent, or community guide"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What will I understand?",
+      "site_id": "Research",
+      "ethical_framing": "How familiar experiences\u2014taps, calls, builds, AI answers, wearable alerts, weak-signal connections\u2014map through: > **Human experience \u2192 system \u2192 component \u2192 code \u2192 network \u2192 society**"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "What makes it different?",
+      "site_id": "Research",
+      "ethical_framing": "- Experience-first teaching with authentic technology (not toy substitutes) - Device Quartet as recurring research/learning form factors - WAIKE-aligned labs that produce portfolio evidence - Stability Contract: connected is not the same as usable - Evidence integrity: no fabricated capabilities or benchmarks"
+    },
+    {
+      "source": "README.md",
+      "scenario_id": "How do I read it?",
+      "site_id": "Research",
+      "ethical_framing": "1. Start with the Concept Edition scaffolds under `concept-edition/` 2. Read the canonical prototype: [`book/chapters/ch02/chapter.md`](book/chapters/ch02/chapter.md) 3. Use the glossary as a concept network: `glossary/glossary.yaml` 4. Follow figure accessibility sidecars in `figures/accessibility/` Full-book architecture: 31 chapters in six parts (`BOOK_ARCHITECTURE.md`). Wave 1 does **not** manufacture all 31 chap"
+    }
+  ],
+  "sources": [],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "body": "# The Technology Landscape **Author:** Edmund Gunn, Jr. **Series:** A gunnchOS3k + WAIKE learning system **Subtitle:** How Computers, Networks, AI, and Devices Create the Experiences We Depend On"
+    },
+    {
+      "id": "what-is-this",
+      "title": "What is this?",
+      "body": "A synchronized publication system for an illustrated technology field guide, textbook, lab manual, systems-thinking guide, career map, and bridge into deeper engineering and research. It is not a generic \u201clearn computers\u201d book. Readers begin with experiences they already understand and trace those experiences through the systems that make them possible."
+    },
+    {
+      "id": "who-is-it-for",
+      "title": "Who is it for?",
+      "body": "Learners and educators across six pathways: - **Explorer** \u2014 little or no technical background - **Operator** \u2014 regular device/software user - **Builder** \u2014 student, maker, career changer - **Engineer** \u2014 undergraduate learner or practitioner - **Researcher** \u2014 graduate learner or investigator - **Educator** \u2014 teacher, mentor, tutor, parent, or community guide"
+    },
+    {
+      "id": "what-will-i-understand",
+      "title": "What will I understand?",
+      "body": "How familiar experiences\u2014taps, calls, builds, AI answers, wearable alerts, weak-signal connections\u2014map through: > **Human experience \u2192 system \u2192 component \u2192 code \u2192 network \u2192 society**"
+    },
+    {
+      "id": "what-makes-it-different",
+      "title": "What makes it different?",
+      "body": "- Experience-first teaching with authentic technology (not toy substitutes) - Device Quartet as recurring research/learning form factors - WAIKE-aligned labs that produce portfolio evidence - Stability Contract: connected is not the same as usable - Evidence integrity: no fabricated capabilities or benchmarks"
+    },
+    {
+      "id": "how-do-i-read-it",
+      "title": "How do I read it?",
+      "body": "1. Start with the Concept Edition scaffolds under `concept-edition/` 2. Read the canonical prototype: [`book/chapters/ch02/chapter.md`](book/chapters/ch02/chapter.md) 3. Use the glossary as a concept network: `glossary/glossary.yaml` 4. Follow figure accessibility sidecars in `figures/accessibility/` Full-book architecture: 31 chapters in six parts (`BOOK_ARCHITECTURE.md`). Wave 1 does **not** manufacture all 31 chap"
+    }
+  ],
+  "artifacts": [
+    "figures/architecture/fig-ch01-003-app-not-one-thing.svg",
+    "figures/architecture/fig-ch01-005-failure-domains.svg",
+    "figures/architecture/fig-ch01-007-stability-preview.svg",
+    "figures/architecture/fig-ch02-004-software-stack.svg",
+    "figures/architecture/fig-ch02-006-latency-budget.svg",
+    "figures/architecture/fig-ch02-007-stability-contract.svg",
+    "figures/architecture/fig-ch03-004-local-vs-network.svg",
+    "figures/architecture/fig-ch05-002-analog-vs-digital.svg",
+    "figures/architecture/fig-ch05-004-logic-blocks.svg",
+    "figures/architecture/fig-ch06-001-app-to-cores.svg",
+    "figures/architecture/fig-ch06-002-serial-vs-parallel.svg",
+    "figures/architecture/fig-ch06-003-cpu-bound-vs-waiting.svg"
+  ],
+  "methods": "",
+  "cards": [],
+  "runtime_mode": "PRECOMPUTED",
+  "runtime_boot": false
+}
