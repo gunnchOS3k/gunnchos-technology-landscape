@@ -1,0 +1,21 @@
+{
+  "repo": "gunnchos-technology-landscape",
+  "productName": "Technology landscape",
+  "family": "Research",
+  "classification": "STATIC_RESEARCH_SURFACE_WORKER",
+  "acceptedSha": "8d56d214fa6490ba6f99058babea834b5d3bb4ab",
+  "status": "STAGING_WORKER",
+  "summary": "An accessible systems-level guide connecting human experience to communications and computing topics.",
+  "capabilities": [
+    "Read the guide's scope",
+    "Open the source repository"
+  ],
+  "limitations": [
+    "A guide is not a completed scientific survey",
+    "No peer-review or standards-body endorsement is claimed"
+  ],
+  "sourceUrl": "https://github.com/gunnchOS3k/gunnchos-technology-landscape",
+  "returnUrlEnv": "GUNNCHOS_PORTAL_URL",
+  "returnUrl": "https://gunnchos-site.gunnchos-finds.workers.dev",
+  "workerName": "gunnchos-tech-landscape"
+}
